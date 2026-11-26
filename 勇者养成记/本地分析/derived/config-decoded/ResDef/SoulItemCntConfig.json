@@ -1,0 +1,4433 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_soulitemcntconfig.bytes.ab",
+    "path_id": -8664011564320785134,
+    "name": "SoulItemCntConfig",
+    "sha256": "bb0cd68df2dd959bc5a5c12c9ac79eeb48b5c34c44163c26d895282f11b6e774",
+    "export": "derived/unity/text/assets_resources_config_resbin_soulitemcntconfig.bytes/SoulItemCntConfig__-8664011564320785134.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 7732,
+      "version": 1,
+      "record_count": 482,
+      "stored_crc32": "058865e8",
+      "computed_inverted_crc32": "058865e8"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "SoulItemCntConfig",
+      "fields": [
+        {
+          "type": "int",
+          "name": "SoulID",
+          "object_offset": 16
+        },
+        {
+          "type": "int",
+          "name": "LevelMin",
+          "object_offset": 20
+        },
+        {
+          "type": "int",
+          "name": "LevelMax",
+          "object_offset": 24
+        },
+        {
+          "type": "int",
+          "name": "ItemLimitCnt",
+          "object_offset": 28
+        }
+      ],
+      "unpack_va": 32064784,
+      "dump_line": 211404
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1e94544",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e94568",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e9458c",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e945cc",
+        "target_va": "0x21f67d0",
+        "opcode": "B-tail",
+        "reader": "readInt32",
+        "destination_object_offset": 28,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 482
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "SoulID": 111,
+      "LevelMin": 0,
+      "LevelMax": 139,
+      "ItemLimitCnt": 120,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 36,
+      "SoulID": 111,
+      "LevelMin": 140,
+      "LevelMax": 169,
+      "ItemLimitCnt": 150,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 52,
+      "SoulID": 111,
+      "LevelMin": 170,
+      "LevelMax": 199,
+      "ItemLimitCnt": 180,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 68,
+      "SoulID": 111,
+      "LevelMin": 200,
+      "LevelMax": 229,
+      "ItemLimitCnt": 210,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 84,
+      "SoulID": 111,
+      "LevelMin": 230,
+      "LevelMax": 259,
+      "ItemLimitCnt": 240,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 100,
+      "SoulID": 111,
+      "LevelMin": 260,
+      "LevelMax": 289,
+      "ItemLimitCnt": 270,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 116,
+      "SoulID": 111,
+      "LevelMin": 290,
+      "LevelMax": 319,
+      "ItemLimitCnt": 300,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 132,
+      "SoulID": 111,
+      "LevelMin": 320,
+      "LevelMax": 349,
+      "ItemLimitCnt": 330,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 148,
+      "SoulID": 111,
+      "LevelMin": 350,
+      "LevelMax": 379,
+      "ItemLimitCnt": 360,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 164,
+      "SoulID": 111,
+      "LevelMin": 380,
+      "LevelMax": 409,
+      "ItemLimitCnt": 390,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 180,
+      "SoulID": 111,
+      "LevelMin": 410,
+      "LevelMax": 439,
+      "ItemLimitCnt": 420,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 196,
+      "SoulID": 111,
+      "LevelMin": 440,
+      "LevelMax": 469,
+      "ItemLimitCnt": 450,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 212,
+      "SoulID": 111,
+      "LevelMin": 470,
+      "LevelMax": 499,
+      "ItemLimitCnt": 480,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 228,
+      "SoulID": 111,
+      "LevelMin": 500,
+      "LevelMax": 529,
+      "ItemLimitCnt": 510,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 244,
+      "SoulID": 111,
+      "LevelMin": 530,
+      "LevelMax": 559,
+      "ItemLimitCnt": 540,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 260,
+      "SoulID": 111,
+      "LevelMin": 560,
+      "LevelMax": 589,
+      "ItemLimitCnt": 570,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 276,
+      "SoulID": 111,
+      "LevelMin": 590,
+      "LevelMax": 850,
+      "ItemLimitCnt": 600,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 292,
+      "SoulID": 112,
+      "LevelMin": 0,
+      "LevelMax": 139,
+      "ItemLimitCnt": 120,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 308,
+      "SoulID": 112,
+      "LevelMin": 140,
+      "LevelMax": 169,
+      "ItemLimitCnt": 150,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 19,
+      "_byte_offset": 324,
+      "SoulID": 112,
+      "LevelMin": 170,
+      "LevelMax": 199,
+      "ItemLimitCnt": 180,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 20,
+      "_byte_offset": 340,
+      "SoulID": 112,
+      "LevelMin": 200,
+      "LevelMax": 229,
+      "ItemLimitCnt": 210,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 21,
+      "_byte_offset": 356,
+      "SoulID": 112,
+      "LevelMin": 230,
+      "LevelMax": 259,
+      "ItemLimitCnt": 240,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 22,
+      "_byte_offset": 372,
+      "SoulID": 112,
+      "LevelMin": 260,
+      "LevelMax": 289,
+      "ItemLimitCnt": 270,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 23,
+      "_byte_offset": 388,
+      "SoulID": 112,
+      "LevelMin": 290,
+      "LevelMax": 319,
+      "ItemLimitCnt": 300,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 24,
+      "_byte_offset": 404,
+      "SoulID": 112,
+      "LevelMin": 320,
+      "LevelMax": 349,
+      "ItemLimitCnt": 330,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 25,
+      "_byte_offset": 420,
+      "SoulID": 112,
+      "LevelMin": 350,
+      "LevelMax": 379,
+      "ItemLimitCnt": 360,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 26,
+      "_byte_offset": 436,
+      "SoulID": 112,
+      "LevelMin": 380,
+      "LevelMax": 409,
+      "ItemLimitCnt": 390,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 27,
+      "_byte_offset": 452,
+      "SoulID": 112,
+      "LevelMin": 410,
+      "LevelMax": 439,
+      "ItemLimitCnt": 420,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 28,
+      "_byte_offset": 468,
+      "SoulID": 112,
+      "LevelMin": 440,
+      "LevelMax": 469,
+      "ItemLimitCnt": 450,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 29,
+      "_byte_offset": 484,
+      "SoulID": 112,
+      "LevelMin": 470,
+      "LevelMax": 499,
+      "ItemLimitCnt": 480,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 30,
+      "_byte_offset": 500,
+      "SoulID": 112,
+      "LevelMin": 500,
+      "LevelMax": 529,
+      "ItemLimitCnt": 510,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 31,
+      "_byte_offset": 516,
+      "SoulID": 112,
+      "LevelMin": 530,
+      "LevelMax": 559,
+      "ItemLimitCnt": 540,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 32,
+      "_byte_offset": 532,
+      "SoulID": 112,
+      "LevelMin": 560,
+      "LevelMax": 589,
+      "ItemLimitCnt": 570,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 33,
+      "_byte_offset": 548,
+      "SoulID": 112,
+      "LevelMin": 590,
+      "LevelMax": 850,
+      "ItemLimitCnt": 600,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 34,
+      "_byte_offset": 564,
+      "SoulID": 113,
+      "LevelMin": 0,
+      "LevelMax": 139,
+      "ItemLimitCnt": 80,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 35,
+      "_byte_offset": 580,
+      "SoulID": 113,
+      "LevelMin": 140,
+      "LevelMax": 169,
+      "ItemLimitCnt": 100,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 36,
+      "_byte_offset": 596,
+      "SoulID": 113,
+      "LevelMin": 170,
+      "LevelMax": 199,
+      "ItemLimitCnt": 120,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 37,
+      "_byte_offset": 612,
+      "SoulID": 113,
+      "LevelMin": 200,
+      "LevelMax": 229,
+      "ItemLimitCnt": 140,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 38,
+      "_byte_offset": 628,
+      "SoulID": 113,
+      "LevelMin": 230,
+      "LevelMax": 259,
+      "ItemLimitCnt": 160,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 39,
+      "_byte_offset": 644,
+      "SoulID": 113,
+      "LevelMin": 260,
+      "LevelMax": 289,
+      "ItemLimitCnt": 180,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 40,
+      "_byte_offset": 660,
+      "SoulID": 113,
+      "LevelMin": 290,
+      "LevelMax": 319,
+      "ItemLimitCnt": 200,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 41,
+      "_byte_offset": 676,
+      "SoulID": 113,
+      "LevelMin": 320,
+      "LevelMax": 349,
+      "ItemLimitCnt": 220,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 42,
+      "_byte_offset": 692,
+      "SoulID": 113,
+      "LevelMin": 350,
+      "LevelMax": 379,
+      "ItemLimitCnt": 240,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 43,
+      "_byte_offset": 708,
+      "SoulID": 113,
+      "LevelMin": 380,
+      "LevelMax": 409,
+      "ItemLimitCnt": 260,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 44,
+      "_byte_offset": 724,
+      "SoulID": 113,
+      "LevelMin": 410,
+      "LevelMax": 439,
+      "ItemLimitCnt": 280,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 45,
+      "_byte_offset": 740,
+      "SoulID": 113,
+      "LevelMin": 440,
+      "LevelMax": 469,
+      "ItemLimitCnt": 300,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 46,
+      "_byte_offset": 756,
+      "SoulID": 113,
+      "LevelMin": 470,
+      "LevelMax": 499,
+      "ItemLimitCnt": 320,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 47,
+      "_byte_offset": 772,
+      "SoulID": 113,
+      "LevelMin": 500,
+      "LevelMax": 529,
+      "ItemLimitCnt": 340,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 48,
+      "_byte_offset": 788,
+      "SoulID": 113,
+      "LevelMin": 530,
+      "LevelMax": 559,
+      "ItemLimitCnt": 360,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 49,
+      "_byte_offset": 804,
+      "SoulID": 113,
+      "LevelMin": 560,
+      "LevelMax": 589,
+      "ItemLimitCnt": 380,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 50,
+      "_byte_offset": 820,
+      "SoulID": 113,
+      "LevelMin": 590,
+      "LevelMax": 850,
+      "ItemLimitCnt": 400,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 51,
+      "_byte_offset": 836,
+      "SoulID": 114,
+      "LevelMin": 0,
+      "LevelMax": 139,
+      "ItemLimitCnt": 80,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 52,
+      "_byte_offset": 852,
+      "SoulID": 114,
+      "LevelMin": 140,
+      "LevelMax": 169,
+      "ItemLimitCnt": 100,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 53,
+      "_byte_offset": 868,
+      "SoulID": 114,
+      "LevelMin": 170,
+      "LevelMax": 199,
+      "ItemLimitCnt": 120,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 54,
+      "_byte_offset": 884,
+      "SoulID": 114,
+      "LevelMin": 200,
+      "LevelMax": 229,
+      "ItemLimitCnt": 140,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 55,
+      "_byte_offset": 900,
+      "SoulID": 114,
+      "LevelMin": 230,
+      "LevelMax": 259,
+      "ItemLimitCnt": 160,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 56,
+      "_byte_offset": 916,
+      "SoulID": 114,
+      "LevelMin": 260,
+      "LevelMax": 289,
+      "ItemLimitCnt": 180,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 57,
+      "_byte_offset": 932,
+      "SoulID": 114,
+      "LevelMin": 290,
+      "LevelMax": 319,
+      "ItemLimitCnt": 200,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 58,
+      "_byte_offset": 948,
+      "SoulID": 114,
+      "LevelMin": 320,
+      "LevelMax": 349,
+      "ItemLimitCnt": 220,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 59,
+      "_byte_offset": 964,
+      "SoulID": 114,
+      "LevelMin": 350,
+      "LevelMax": 379,
+      "ItemLimitCnt": 240,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 60,
+      "_byte_offset": 980,
+      "SoulID": 114,
+      "LevelMin": 380,
+      "LevelMax": 409,
+      "ItemLimitCnt": 260,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 61,
+      "_byte_offset": 996,
+      "SoulID": 114,
+      "LevelMin": 410,
+      "LevelMax": 439,
+      "ItemLimitCnt": 280,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 62,
+      "_byte_offset": 1012,
+      "SoulID": 114,
+      "LevelMin": 440,
+      "LevelMax": 469,
+      "ItemLimitCnt": 300,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 63,
+      "_byte_offset": 1028,
+      "SoulID": 114,
+      "LevelMin": 470,
+      "LevelMax": 499,
+      "ItemLimitCnt": 320,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 64,
+      "_byte_offset": 1044,
+      "SoulID": 114,
+      "LevelMin": 500,
+      "LevelMax": 529,
+      "ItemLimitCnt": 340,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 65,
+      "_byte_offset": 1060,
+      "SoulID": 114,
+      "LevelMin": 530,
+      "LevelMax": 559,
+      "ItemLimitCnt": 360,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 66,
+      "_byte_offset": 1076,
+      "SoulID": 114,
+      "LevelMin": 560,
+      "LevelMax": 589,
+      "ItemLimitCnt": 380,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 67,
+      "_byte_offset": 1092,
+      "SoulID": 114,
+      "LevelMin": 590,
+      "LevelMax": 850,
+      "ItemLimitCnt": 400,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 68,
+      "_byte_offset": 1108,
+      "SoulID": 115,
+      "LevelMin": 0,
+      "LevelMax": 139,
+      "ItemLimitCnt": 40,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 69,
+      "_byte_offset": 1124,
+      "SoulID": 115,
+      "LevelMin": 140,
+      "LevelMax": 169,
+      "ItemLimitCnt": 50,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 70,
+      "_byte_offset": 1140,
+      "SoulID": 115,
+      "LevelMin": 170,
+      "LevelMax": 199,
+      "ItemLimitCnt": 60,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 71,
+      "_byte_offset": 1156,
+      "SoulID": 115,
+      "LevelMin": 200,
+      "LevelMax": 229,
+      "ItemLimitCnt": 70,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 72,
+      "_byte_offset": 1172,
+      "SoulID": 115,
+      "LevelMin": 230,
+      "LevelMax": 259,
+      "ItemLimitCnt": 80,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 73,
+      "_byte_offset": 1188,
+      "SoulID": 115,
+      "LevelMin": 260,
+      "LevelMax": 289,
+      "ItemLimitCnt": 90,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 74,
+      "_byte_offset": 1204,
+      "SoulID": 115,
+      "LevelMin": 290,
+      "LevelMax": 319,
+      "ItemLimitCnt": 100,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 75,
+      "_byte_offset": 1220,
+      "SoulID": 115,
+      "LevelMin": 320,
+      "LevelMax": 349,
+      "ItemLimitCnt": 110,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 76,
+      "_byte_offset": 1236,
+      "SoulID": 115,
+      "LevelMin": 350,
+      "LevelMax": 379,
+      "ItemLimitCnt": 120,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 77,
+      "_byte_offset": 1252,
+      "SoulID": 115,
+      "LevelMin": 380,
+      "LevelMax": 409,
+      "ItemLimitCnt": 130,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 78,
+      "_byte_offset": 1268,
+      "SoulID": 115,
+      "LevelMin": 410,
+      "LevelMax": 439,
+      "ItemLimitCnt": 140,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 79,
+      "_byte_offset": 1284,
+      "SoulID": 115,
+      "LevelMin": 440,
+      "LevelMax": 469,
+      "ItemLimitCnt": 150,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 80,
+      "_byte_offset": 1300,
+      "SoulID": 115,
+      "LevelMin": 470,
+      "LevelMax": 499,
+      "ItemLimitCnt": 160,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 81,
+      "_byte_offset": 1316,
+      "SoulID": 115,
+      "LevelMin": 500,
+      "LevelMax": 529,
+      "ItemLimitCnt": 170,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 82,
+      "_byte_offset": 1332,
+      "SoulID": 115,
+      "LevelMin": 530,
+      "LevelMax": 559,
+      "ItemLimitCnt": 180,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 83,
+      "_byte_offset": 1348,
+      "SoulID": 115,
+      "LevelMin": 560,
+      "LevelMax": 589,
+      "ItemLimitCnt": 190,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 84,
+      "_byte_offset": 1364,
+      "SoulID": 115,
+      "LevelMin": 590,
+      "LevelMax": 850,
+      "ItemLimitCnt": 200,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 85,
+      "_byte_offset": 1380,
+      "SoulID": 116,
+      "LevelMin": 0,
+      "LevelMax": 139,
+      "ItemLimitCnt": 40,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 86,
+      "_byte_offset": 1396,
+      "SoulID": 116,
+      "LevelMin": 140,
+      "LevelMax": 169,
+      "ItemLimitCnt": 50,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 87,
+      "_byte_offset": 1412,
+      "SoulID": 116,
+      "LevelMin": 170,
+      "LevelMax": 199,
+      "ItemLimitCnt": 60,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 88,
+      "_byte_offset": 1428,
+      "SoulID": 116,
+      "LevelMin": 200,
+      "LevelMax": 229,
+      "ItemLimitCnt": 70,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 89,
+      "_byte_offset": 1444,
+      "SoulID": 116,
+      "LevelMin": 230,
+      "LevelMax": 259,
+      "ItemLimitCnt": 80,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 90,
+      "_byte_offset": 1460,
+      "SoulID": 116,
+      "LevelMin": 260,
+      "LevelMax": 289,
+      "ItemLimitCnt": 90,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 91,
+      "_byte_offset": 1476,
+      "SoulID": 116,
+      "LevelMin": 290,
+      "LevelMax": 319,
+      "ItemLimitCnt": 100,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 92,
+      "_byte_offset": 1492,
+      "SoulID": 116,
+      "LevelMin": 320,
+      "LevelMax": 349,
+      "ItemLimitCnt": 110,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 93,
+      "_byte_offset": 1508,
+      "SoulID": 116,
+      "LevelMin": 350,
+      "LevelMax": 379,
+      "ItemLimitCnt": 120,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 94,
+      "_byte_offset": 1524,
+      "SoulID": 116,
+      "LevelMin": 380,
+      "LevelMax": 409,
+      "ItemLimitCnt": 130,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 95,
+      "_byte_offset": 1540,
+      "SoulID": 116,
+      "LevelMin": 410,
+      "LevelMax": 439,
+      "ItemLimitCnt": 140,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 96,
+      "_byte_offset": 1556,
+      "SoulID": 116,
+      "LevelMin": 440,
+      "LevelMax": 469,
+      "ItemLimitCnt": 150,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 97,
+      "_byte_offset": 1572,
+      "SoulID": 116,
+      "LevelMin": 470,
+      "LevelMax": 499,
+      "ItemLimitCnt": 160,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 98,
+      "_byte_offset": 1588,
+      "SoulID": 116,
+      "LevelMin": 500,
+      "LevelMax": 529,
+      "ItemLimitCnt": 170,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 99,
+      "_byte_offset": 1604,
+      "SoulID": 116,
+      "LevelMin": 530,
+      "LevelMax": 559,
+      "ItemLimitCnt": 180,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 100,
+      "_byte_offset": 1620,
+      "SoulID": 116,
+      "LevelMin": 560,
+      "LevelMax": 589,
+      "ItemLimitCnt": 190,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 101,
+      "_byte_offset": 1636,
+      "SoulID": 116,
+      "LevelMin": 590,
+      "LevelMax": 850,
+      "ItemLimitCnt": 200,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 102,
+      "_byte_offset": 1652,
+      "SoulID": 117,
+      "LevelMin": 0,
+      "LevelMax": 139,
+      "ItemLimitCnt": 40,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 103,
+      "_byte_offset": 1668,
+      "SoulID": 117,
+      "LevelMin": 140,
+      "LevelMax": 169,
+      "ItemLimitCnt": 50,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 104,
+      "_byte_offset": 1684,
+      "SoulID": 117,
+      "LevelMin": 170,
+      "LevelMax": 199,
+      "ItemLimitCnt": 60,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 105,
+      "_byte_offset": 1700,
+      "SoulID": 117,
+      "LevelMin": 200,
+      "LevelMax": 229,
+      "ItemLimitCnt": 70,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 106,
+      "_byte_offset": 1716,
+      "SoulID": 117,
+      "LevelMin": 230,
+      "LevelMax": 259,
+      "ItemLimitCnt": 80,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 107,
+      "_byte_offset": 1732,
+      "SoulID": 117,
+      "LevelMin": 260,
+      "LevelMax": 289,
+      "ItemLimitCnt": 90,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 108,
+      "_byte_offset": 1748,
+      "SoulID": 117,
+      "LevelMin": 290,
+      "LevelMax": 319,
+      "ItemLimitCnt": 100,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 109,
+      "_byte_offset": 1764,
+      "SoulID": 117,
+      "LevelMin": 320,
+      "LevelMax": 349,
+      "ItemLimitCnt": 110,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 110,
+      "_byte_offset": 1780,
+      "SoulID": 117,
+      "LevelMin": 350,
+      "LevelMax": 379,
+      "ItemLimitCnt": 120,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 111,
+      "_byte_offset": 1796,
+      "SoulID": 117,
+      "LevelMin": 380,
+      "LevelMax": 409,
+      "ItemLimitCnt": 130,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 112,
+      "_byte_offset": 1812,
+      "SoulID": 117,
+      "LevelMin": 410,
+      "LevelMax": 439,
+      "ItemLimitCnt": 140,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 113,
+      "_byte_offset": 1828,
+      "SoulID": 117,
+      "LevelMin": 440,
+      "LevelMax": 469,
+      "ItemLimitCnt": 150,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 114,
+      "_byte_offset": 1844,
+      "SoulID": 117,
+      "LevelMin": 470,
+      "LevelMax": 499,
+      "ItemLimitCnt": 160,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 115,
+      "_byte_offset": 1860,
+      "SoulID": 117,
+      "LevelMin": 500,
+      "LevelMax": 529,
+      "ItemLimitCnt": 170,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 116,
+      "_byte_offset": 1876,
+      "SoulID": 117,
+      "LevelMin": 530,
+      "LevelMax": 559,
+      "ItemLimitCnt": 180,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 117,
+      "_byte_offset": 1892,
+      "SoulID": 117,
+      "LevelMin": 560,
+      "LevelMax": 589,
+      "ItemLimitCnt": 190,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 118,
+      "_byte_offset": 1908,
+      "SoulID": 117,
+      "LevelMin": 590,
+      "LevelMax": 850,
+      "ItemLimitCnt": 200,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 119,
+      "_byte_offset": 1924,
+      "SoulID": 118,
+      "LevelMin": 1,
+      "LevelMax": 2,
+      "ItemLimitCnt": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 120,
+      "_byte_offset": 1940,
+      "SoulID": 118,
+      "LevelMin": 2,
+      "LevelMax": 3,
+      "ItemLimitCnt": 100,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 121,
+      "_byte_offset": 1956,
+      "SoulID": 118,
+      "LevelMin": 3,
+      "LevelMax": 4,
+      "ItemLimitCnt": 100,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 122,
+      "_byte_offset": 1972,
+      "SoulID": 118,
+      "LevelMin": 4,
+      "LevelMax": 5,
+      "ItemLimitCnt": 200,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 123,
+      "_byte_offset": 1988,
+      "SoulID": 118,
+      "LevelMin": 5,
+      "LevelMax": 6,
+      "ItemLimitCnt": 200,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 124,
+      "_byte_offset": 2004,
+      "SoulID": 118,
+      "LevelMin": 6,
+      "LevelMax": 7,
+      "ItemLimitCnt": 300,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 125,
+      "_byte_offset": 2020,
+      "SoulID": 118,
+      "LevelMin": 7,
+      "LevelMax": 8,
+      "ItemLimitCnt": 300,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 126,
+      "_byte_offset": 2036,
+      "SoulID": 118,
+      "LevelMin": 8,
+      "LevelMax": 9,
+      "ItemLimitCnt": 400,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 127,
+      "_byte_offset": 2052,
+      "SoulID": 118,
+      "LevelMin": 9,
+      "LevelMax": 10,
+      "ItemLimitCnt": 400,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 128,
+      "_byte_offset": 2068,
+      "SoulID": 118,
+      "LevelMin": 10,
+      "LevelMax": 11,
+      "ItemLimitCnt": 500,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 129,
+      "_byte_offset": 2084,
+      "SoulID": 118,
+      "LevelMin": 11,
+      "LevelMax": 12,
+      "ItemLimitCnt": 500,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 130,
+      "_byte_offset": 2100,
+      "SoulID": 118,
+      "LevelMin": 12,
+      "LevelMax": 13,
+      "ItemLimitCnt": 600,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 131,
+      "_byte_offset": 2116,
+      "SoulID": 118,
+      "LevelMin": 13,
+      "LevelMax": 14,
+      "ItemLimitCnt": 600,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 132,
+      "_byte_offset": 2132,
+      "SoulID": 118,
+      "LevelMin": 14,
+      "LevelMax": 15,
+      "ItemLimitCnt": 700,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 133,
+      "_byte_offset": 2148,
+      "SoulID": 118,
+      "LevelMin": 15,
+      "LevelMax": 16,
+      "ItemLimitCnt": 700,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 134,
+      "_byte_offset": 2164,
+      "SoulID": 118,
+      "LevelMin": 16,
+      "LevelMax": 17,
+      "ItemLimitCnt": 800,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 135,
+      "_byte_offset": 2180,
+      "SoulID": 118,
+      "LevelMin": 17,
+      "LevelMax": 18,
+      "ItemLimitCnt": 800,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 136,
+      "_byte_offset": 2196,
+      "SoulID": 118,
+      "LevelMin": 18,
+      "LevelMax": 19,
+      "ItemLimitCnt": 900,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 137,
+      "_byte_offset": 2212,
+      "SoulID": 118,
+      "LevelMin": 19,
+      "LevelMax": 20,
+      "ItemLimitCnt": 900,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 138,
+      "_byte_offset": 2228,
+      "SoulID": 118,
+      "LevelMin": 20,
+      "LevelMax": 21,
+      "ItemLimitCnt": 1000,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 139,
+      "_byte_offset": 2244,
+      "SoulID": 118,
+      "LevelMin": 21,
+      "LevelMax": 22,
+      "ItemLimitCnt": 1000,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 140,
+      "_byte_offset": 2260,
+      "SoulID": 119,
+      "LevelMin": 1,
+      "LevelMax": 2,
+      "ItemLimitCnt": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 141,
+      "_byte_offset": 2276,
+      "SoulID": 119,
+      "LevelMin": 2,
+      "LevelMax": 3,
+      "ItemLimitCnt": 100,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 142,
+      "_byte_offset": 2292,
+      "SoulID": 119,
+      "LevelMin": 3,
+      "LevelMax": 4,
+      "ItemLimitCnt": 100,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 143,
+      "_byte_offset": 2308,
+      "SoulID": 119,
+      "LevelMin": 4,
+      "LevelMax": 5,
+      "ItemLimitCnt": 200,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 144,
+      "_byte_offset": 2324,
+      "SoulID": 119,
+      "LevelMin": 5,
+      "LevelMax": 6,
+      "ItemLimitCnt": 200,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 145,
+      "_byte_offset": 2340,
+      "SoulID": 119,
+      "LevelMin": 6,
+      "LevelMax": 7,
+      "ItemLimitCnt": 300,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 146,
+      "_byte_offset": 2356,
+      "SoulID": 119,
+      "LevelMin": 7,
+      "LevelMax": 8,
+      "ItemLimitCnt": 300,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 147,
+      "_byte_offset": 2372,
+      "SoulID": 119,
+      "LevelMin": 8,
+      "LevelMax": 9,
+      "ItemLimitCnt": 400,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 148,
+      "_byte_offset": 2388,
+      "SoulID": 119,
+      "LevelMin": 9,
+      "LevelMax": 10,
+      "ItemLimitCnt": 400,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 149,
+      "_byte_offset": 2404,
+      "SoulID": 119,
+      "LevelMin": 10,
+      "LevelMax": 11,
+      "ItemLimitCnt": 500,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 150,
+      "_byte_offset": 2420,
+      "SoulID": 119,
+      "LevelMin": 11,
+      "LevelMax": 12,
+      "ItemLimitCnt": 500,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 151,
+      "_byte_offset": 2436,
+      "SoulID": 119,
+      "LevelMin": 12,
+      "LevelMax": 13,
+      "ItemLimitCnt": 600,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 152,
+      "_byte_offset": 2452,
+      "SoulID": 119,
+      "LevelMin": 13,
+      "LevelMax": 14,
+      "ItemLimitCnt": 600,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 153,
+      "_byte_offset": 2468,
+      "SoulID": 119,
+      "LevelMin": 14,
+      "LevelMax": 15,
+      "ItemLimitCnt": 700,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 154,
+      "_byte_offset": 2484,
+      "SoulID": 119,
+      "LevelMin": 15,
+      "LevelMax": 16,
+      "ItemLimitCnt": 700,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 155,
+      "_byte_offset": 2500,
+      "SoulID": 119,
+      "LevelMin": 16,
+      "LevelMax": 17,
+      "ItemLimitCnt": 800,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 156,
+      "_byte_offset": 2516,
+      "SoulID": 119,
+      "LevelMin": 17,
+      "LevelMax": 18,
+      "ItemLimitCnt": 800,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 157,
+      "_byte_offset": 2532,
+      "SoulID": 119,
+      "LevelMin": 18,
+      "LevelMax": 19,
+      "ItemLimitCnt": 900,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 158,
+      "_byte_offset": 2548,
+      "SoulID": 119,
+      "LevelMin": 19,
+      "LevelMax": 20,
+      "ItemLimitCnt": 900,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 159,
+      "_byte_offset": 2564,
+      "SoulID": 119,
+      "LevelMin": 20,
+      "LevelMax": 21,
+      "ItemLimitCnt": 1000,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 160,
+      "_byte_offset": 2580,
+      "SoulID": 119,
+      "LevelMin": 21,
+      "LevelMax": 22,
+      "ItemLimitCnt": 1000,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 161,
+      "_byte_offset": 2596,
+      "SoulID": 120,
+      "LevelMin": 1,
+      "LevelMax": 2,
+      "ItemLimitCnt": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 162,
+      "_byte_offset": 2612,
+      "SoulID": 120,
+      "LevelMin": 2,
+      "LevelMax": 3,
+      "ItemLimitCnt": 100,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 163,
+      "_byte_offset": 2628,
+      "SoulID": 120,
+      "LevelMin": 3,
+      "LevelMax": 4,
+      "ItemLimitCnt": 100,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 164,
+      "_byte_offset": 2644,
+      "SoulID": 120,
+      "LevelMin": 4,
+      "LevelMax": 5,
+      "ItemLimitCnt": 200,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 165,
+      "_byte_offset": 2660,
+      "SoulID": 120,
+      "LevelMin": 5,
+      "LevelMax": 6,
+      "ItemLimitCnt": 200,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 166,
+      "_byte_offset": 2676,
+      "SoulID": 120,
+      "LevelMin": 6,
+      "LevelMax": 7,
+      "ItemLimitCnt": 300,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 167,
+      "_byte_offset": 2692,
+      "SoulID": 120,
+      "LevelMin": 7,
+      "LevelMax": 8,
+      "ItemLimitCnt": 300,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 168,
+      "_byte_offset": 2708,
+      "SoulID": 120,
+      "LevelMin": 8,
+      "LevelMax": 9,
+      "ItemLimitCnt": 400,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 169,
+      "_byte_offset": 2724,
+      "SoulID": 120,
+      "LevelMin": 9,
+      "LevelMax": 10,
+      "ItemLimitCnt": 400,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 170,
+      "_byte_offset": 2740,
+      "SoulID": 120,
+      "LevelMin": 10,
+      "LevelMax": 11,
+      "ItemLimitCnt": 500,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 171,
+      "_byte_offset": 2756,
+      "SoulID": 120,
+      "LevelMin": 11,
+      "LevelMax": 12,
+      "ItemLimitCnt": 500,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 172,
+      "_byte_offset": 2772,
+      "SoulID": 120,
+      "LevelMin": 12,
+      "LevelMax": 13,
+      "ItemLimitCnt": 600,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 173,
+      "_byte_offset": 2788,
+      "SoulID": 120,
+      "LevelMin": 13,
+      "LevelMax": 14,
+      "ItemLimitCnt": 600,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 174,
+      "_byte_offset": 2804,
+      "SoulID": 120,
+      "LevelMin": 14,
+      "LevelMax": 15,
+      "ItemLimitCnt": 700,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 175,
+      "_byte_offset": 2820,
+      "SoulID": 120,
+      "LevelMin": 15,
+      "LevelMax": 16,
+      "ItemLimitCnt": 700,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 176,
+      "_byte_offset": 2836,
+      "SoulID": 120,
+      "LevelMin": 16,
+      "LevelMax": 17,
+      "ItemLimitCnt": 800,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 177,
+      "_byte_offset": 2852,
+      "SoulID": 120,
+      "LevelMin": 17,
+      "LevelMax": 18,
+      "ItemLimitCnt": 800,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 178,
+      "_byte_offset": 2868,
+      "SoulID": 120,
+      "LevelMin": 18,
+      "LevelMax": 19,
+      "ItemLimitCnt": 900,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 179,
+      "_byte_offset": 2884,
+      "SoulID": 120,
+      "LevelMin": 19,
+      "LevelMax": 20,
+      "ItemLimitCnt": 900,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 180,
+      "_byte_offset": 2900,
+      "SoulID": 120,
+      "LevelMin": 20,
+      "LevelMax": 21,
+      "ItemLimitCnt": 1000,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 181,
+      "_byte_offset": 2916,
+      "SoulID": 120,
+      "LevelMin": 21,
+      "LevelMax": 22,
+      "ItemLimitCnt": 1000,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 182,
+      "_byte_offset": 2932,
+      "SoulID": 211,
+      "LevelMin": 0,
+      "LevelMax": 29,
+      "ItemLimitCnt": 30,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 183,
+      "_byte_offset": 2948,
+      "SoulID": 211,
+      "LevelMin": 30,
+      "LevelMax": 109,
+      "ItemLimitCnt": 60,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 184,
+      "_byte_offset": 2964,
+      "SoulID": 211,
+      "LevelMin": 110,
+      "LevelMax": 169,
+      "ItemLimitCnt": 120,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 185,
+      "_byte_offset": 2980,
+      "SoulID": 211,
+      "LevelMin": 170,
+      "LevelMax": 229,
+      "ItemLimitCnt": 180,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 186,
+      "_byte_offset": 2996,
+      "SoulID": 211,
+      "LevelMin": 230,
+      "LevelMax": 289,
+      "ItemLimitCnt": 240,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 187,
+      "_byte_offset": 3012,
+      "SoulID": 211,
+      "LevelMin": 290,
+      "LevelMax": 349,
+      "ItemLimitCnt": 300,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 188,
+      "_byte_offset": 3028,
+      "SoulID": 211,
+      "LevelMin": 350,
+      "LevelMax": 409,
+      "ItemLimitCnt": 360,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 189,
+      "_byte_offset": 3044,
+      "SoulID": 211,
+      "LevelMin": 410,
+      "LevelMax": 469,
+      "ItemLimitCnt": 420,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 190,
+      "_byte_offset": 3060,
+      "SoulID": 211,
+      "LevelMin": 470,
+      "LevelMax": 529,
+      "ItemLimitCnt": 480,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 191,
+      "_byte_offset": 3076,
+      "SoulID": 211,
+      "LevelMin": 530,
+      "LevelMax": 589,
+      "ItemLimitCnt": 540,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 192,
+      "_byte_offset": 3092,
+      "SoulID": 211,
+      "LevelMin": 590,
+      "LevelMax": 850,
+      "ItemLimitCnt": 600,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 193,
+      "_byte_offset": 3108,
+      "SoulID": 212,
+      "LevelMin": 0,
+      "LevelMax": 29,
+      "ItemLimitCnt": 30,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 194,
+      "_byte_offset": 3124,
+      "SoulID": 212,
+      "LevelMin": 30,
+      "LevelMax": 109,
+      "ItemLimitCnt": 60,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 195,
+      "_byte_offset": 3140,
+      "SoulID": 212,
+      "LevelMin": 110,
+      "LevelMax": 169,
+      "ItemLimitCnt": 120,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 196,
+      "_byte_offset": 3156,
+      "SoulID": 212,
+      "LevelMin": 170,
+      "LevelMax": 229,
+      "ItemLimitCnt": 180,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 197,
+      "_byte_offset": 3172,
+      "SoulID": 212,
+      "LevelMin": 230,
+      "LevelMax": 289,
+      "ItemLimitCnt": 240,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 198,
+      "_byte_offset": 3188,
+      "SoulID": 212,
+      "LevelMin": 290,
+      "LevelMax": 349,
+      "ItemLimitCnt": 300,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 199,
+      "_byte_offset": 3204,
+      "SoulID": 212,
+      "LevelMin": 350,
+      "LevelMax": 409,
+      "ItemLimitCnt": 360,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 200,
+      "_byte_offset": 3220,
+      "SoulID": 212,
+      "LevelMin": 410,
+      "LevelMax": 469,
+      "ItemLimitCnt": 420,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 201,
+      "_byte_offset": 3236,
+      "SoulID": 212,
+      "LevelMin": 470,
+      "LevelMax": 529,
+      "ItemLimitCnt": 480,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 202,
+      "_byte_offset": 3252,
+      "SoulID": 212,
+      "LevelMin": 530,
+      "LevelMax": 589,
+      "ItemLimitCnt": 540,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 203,
+      "_byte_offset": 3268,
+      "SoulID": 212,
+      "LevelMin": 590,
+      "LevelMax": 850,
+      "ItemLimitCnt": 600,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 204,
+      "_byte_offset": 3284,
+      "SoulID": 213,
+      "LevelMin": 0,
+      "LevelMax": 29,
+      "ItemLimitCnt": 20,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 205,
+      "_byte_offset": 3300,
+      "SoulID": 213,
+      "LevelMin": 30,
+      "LevelMax": 109,
+      "ItemLimitCnt": 40,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 206,
+      "_byte_offset": 3316,
+      "SoulID": 213,
+      "LevelMin": 110,
+      "LevelMax": 169,
+      "ItemLimitCnt": 80,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 207,
+      "_byte_offset": 3332,
+      "SoulID": 213,
+      "LevelMin": 170,
+      "LevelMax": 229,
+      "ItemLimitCnt": 120,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 208,
+      "_byte_offset": 3348,
+      "SoulID": 213,
+      "LevelMin": 230,
+      "LevelMax": 289,
+      "ItemLimitCnt": 160,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 209,
+      "_byte_offset": 3364,
+      "SoulID": 213,
+      "LevelMin": 290,
+      "LevelMax": 349,
+      "ItemLimitCnt": 200,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 210,
+      "_byte_offset": 3380,
+      "SoulID": 213,
+      "LevelMin": 350,
+      "LevelMax": 409,
+      "ItemLimitCnt": 240,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 211,
+      "_byte_offset": 3396,
+      "SoulID": 213,
+      "LevelMin": 410,
+      "LevelMax": 469,
+      "ItemLimitCnt": 280,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 212,
+      "_byte_offset": 3412,
+      "SoulID": 213,
+      "LevelMin": 470,
+      "LevelMax": 529,
+      "ItemLimitCnt": 320,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 213,
+      "_byte_offset": 3428,
+      "SoulID": 213,
+      "LevelMin": 530,
+      "LevelMax": 589,
+      "ItemLimitCnt": 360,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 214,
+      "_byte_offset": 3444,
+      "SoulID": 213,
+      "LevelMin": 590,
+      "LevelMax": 850,
+      "ItemLimitCnt": 400,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 215,
+      "_byte_offset": 3460,
+      "SoulID": 214,
+      "LevelMin": 0,
+      "LevelMax": 29,
+      "ItemLimitCnt": 20,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 216,
+      "_byte_offset": 3476,
+      "SoulID": 214,
+      "LevelMin": 30,
+      "LevelMax": 109,
+      "ItemLimitCnt": 40,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 217,
+      "_byte_offset": 3492,
+      "SoulID": 214,
+      "LevelMin": 110,
+      "LevelMax": 169,
+      "ItemLimitCnt": 80,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 218,
+      "_byte_offset": 3508,
+      "SoulID": 214,
+      "LevelMin": 170,
+      "LevelMax": 229,
+      "ItemLimitCnt": 120,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 219,
+      "_byte_offset": 3524,
+      "SoulID": 214,
+      "LevelMin": 230,
+      "LevelMax": 289,
+      "ItemLimitCnt": 160,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 220,
+      "_byte_offset": 3540,
+      "SoulID": 214,
+      "LevelMin": 290,
+      "LevelMax": 349,
+      "ItemLimitCnt": 200,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 221,
+      "_byte_offset": 3556,
+      "SoulID": 214,
+      "LevelMin": 350,
+      "LevelMax": 409,
+      "ItemLimitCnt": 240,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 222,
+      "_byte_offset": 3572,
+      "SoulID": 214,
+      "LevelMin": 410,
+      "LevelMax": 469,
+      "ItemLimitCnt": 280,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 223,
+      "_byte_offset": 3588,
+      "SoulID": 214,
+      "LevelMin": 470,
+      "LevelMax": 529,
+      "ItemLimitCnt": 320,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 224,
+      "_byte_offset": 3604,
+      "SoulID": 214,
+      "LevelMin": 530,
+      "LevelMax": 589,
+      "ItemLimitCnt": 360,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 225,
+      "_byte_offset": 3620,
+      "SoulID": 214,
+      "LevelMin": 590,
+      "LevelMax": 850,
+      "ItemLimitCnt": 400,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 226,
+      "_byte_offset": 3636,
+      "SoulID": 215,
+      "LevelMin": 0,
+      "LevelMax": 29,
+      "ItemLimitCnt": 10,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 227,
+      "_byte_offset": 3652,
+      "SoulID": 215,
+      "LevelMin": 30,
+      "LevelMax": 109,
+      "ItemLimitCnt": 20,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 228,
+      "_byte_offset": 3668,
+      "SoulID": 215,
+      "LevelMin": 110,
+      "LevelMax": 169,
+      "ItemLimitCnt": 40,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 229,
+      "_byte_offset": 3684,
+      "SoulID": 215,
+      "LevelMin": 170,
+      "LevelMax": 229,
+      "ItemLimitCnt": 60,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 230,
+      "_byte_offset": 3700,
+      "SoulID": 215,
+      "LevelMin": 230,
+      "LevelMax": 289,
+      "ItemLimitCnt": 80,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 231,
+      "_byte_offset": 3716,
+      "SoulID": 215,
+      "LevelMin": 290,
+      "LevelMax": 349,
+      "ItemLimitCnt": 100,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 232,
+      "_byte_offset": 3732,
+      "SoulID": 215,
+      "LevelMin": 350,
+      "LevelMax": 409,
+      "ItemLimitCnt": 120,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 233,
+      "_byte_offset": 3748,
+      "SoulID": 215,
+      "LevelMin": 410,
+      "LevelMax": 469,
+      "ItemLimitCnt": 140,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 234,
+      "_byte_offset": 3764,
+      "SoulID": 215,
+      "LevelMin": 470,
+      "LevelMax": 529,
+      "ItemLimitCnt": 160,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 235,
+      "_byte_offset": 3780,
+      "SoulID": 215,
+      "LevelMin": 530,
+      "LevelMax": 589,
+      "ItemLimitCnt": 180,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 236,
+      "_byte_offset": 3796,
+      "SoulID": 215,
+      "LevelMin": 590,
+      "LevelMax": 850,
+      "ItemLimitCnt": 200,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 237,
+      "_byte_offset": 3812,
+      "SoulID": 216,
+      "LevelMin": 0,
+      "LevelMax": 29,
+      "ItemLimitCnt": 10,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 238,
+      "_byte_offset": 3828,
+      "SoulID": 216,
+      "LevelMin": 30,
+      "LevelMax": 109,
+      "ItemLimitCnt": 20,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 239,
+      "_byte_offset": 3844,
+      "SoulID": 216,
+      "LevelMin": 110,
+      "LevelMax": 169,
+      "ItemLimitCnt": 40,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 240,
+      "_byte_offset": 3860,
+      "SoulID": 216,
+      "LevelMin": 170,
+      "LevelMax": 229,
+      "ItemLimitCnt": 60,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 241,
+      "_byte_offset": 3876,
+      "SoulID": 216,
+      "LevelMin": 230,
+      "LevelMax": 289,
+      "ItemLimitCnt": 80,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 242,
+      "_byte_offset": 3892,
+      "SoulID": 216,
+      "LevelMin": 290,
+      "LevelMax": 349,
+      "ItemLimitCnt": 100,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 243,
+      "_byte_offset": 3908,
+      "SoulID": 216,
+      "LevelMin": 350,
+      "LevelMax": 409,
+      "ItemLimitCnt": 120,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 244,
+      "_byte_offset": 3924,
+      "SoulID": 216,
+      "LevelMin": 410,
+      "LevelMax": 469,
+      "ItemLimitCnt": 140,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 245,
+      "_byte_offset": 3940,
+      "SoulID": 216,
+      "LevelMin": 470,
+      "LevelMax": 529,
+      "ItemLimitCnt": 160,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 246,
+      "_byte_offset": 3956,
+      "SoulID": 216,
+      "LevelMin": 530,
+      "LevelMax": 589,
+      "ItemLimitCnt": 180,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 247,
+      "_byte_offset": 3972,
+      "SoulID": 216,
+      "LevelMin": 590,
+      "LevelMax": 850,
+      "ItemLimitCnt": 200,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 248,
+      "_byte_offset": 3988,
+      "SoulID": 217,
+      "LevelMin": 0,
+      "LevelMax": 29,
+      "ItemLimitCnt": 10,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 249,
+      "_byte_offset": 4004,
+      "SoulID": 217,
+      "LevelMin": 30,
+      "LevelMax": 109,
+      "ItemLimitCnt": 20,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 250,
+      "_byte_offset": 4020,
+      "SoulID": 217,
+      "LevelMin": 110,
+      "LevelMax": 169,
+      "ItemLimitCnt": 40,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 251,
+      "_byte_offset": 4036,
+      "SoulID": 217,
+      "LevelMin": 170,
+      "LevelMax": 229,
+      "ItemLimitCnt": 60,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 252,
+      "_byte_offset": 4052,
+      "SoulID": 217,
+      "LevelMin": 230,
+      "LevelMax": 289,
+      "ItemLimitCnt": 80,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 253,
+      "_byte_offset": 4068,
+      "SoulID": 217,
+      "LevelMin": 290,
+      "LevelMax": 349,
+      "ItemLimitCnt": 100,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 254,
+      "_byte_offset": 4084,
+      "SoulID": 217,
+      "LevelMin": 350,
+      "LevelMax": 409,
+      "ItemLimitCnt": 120,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 255,
+      "_byte_offset": 4100,
+      "SoulID": 217,
+      "LevelMin": 410,
+      "LevelMax": 469,
+      "ItemLimitCnt": 140,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 256,
+      "_byte_offset": 4116,
+      "SoulID": 217,
+      "LevelMin": 470,
+      "LevelMax": 529,
+      "ItemLimitCnt": 160,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 257,
+      "_byte_offset": 4132,
+      "SoulID": 217,
+      "LevelMin": 530,
+      "LevelMax": 589,
+      "ItemLimitCnt": 180,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 258,
+      "_byte_offset": 4148,
+      "SoulID": 217,
+      "LevelMin": 590,
+      "LevelMax": 850,
+      "ItemLimitCnt": 200,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 259,
+      "_byte_offset": 4164,
+      "SoulID": 218,
+      "LevelMin": 1,
+      "LevelMax": 2,
+      "ItemLimitCnt": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 260,
+      "_byte_offset": 4180,
+      "SoulID": 218,
+      "LevelMin": 2,
+      "LevelMax": 3,
+      "ItemLimitCnt": 100,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 261,
+      "_byte_offset": 4196,
+      "SoulID": 218,
+      "LevelMin": 3,
+      "LevelMax": 4,
+      "ItemLimitCnt": 100,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 262,
+      "_byte_offset": 4212,
+      "SoulID": 218,
+      "LevelMin": 4,
+      "LevelMax": 5,
+      "ItemLimitCnt": 200,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 263,
+      "_byte_offset": 4228,
+      "SoulID": 218,
+      "LevelMin": 5,
+      "LevelMax": 6,
+      "ItemLimitCnt": 200,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 264,
+      "_byte_offset": 4244,
+      "SoulID": 218,
+      "LevelMin": 6,
+      "LevelMax": 7,
+      "ItemLimitCnt": 300,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 265,
+      "_byte_offset": 4260,
+      "SoulID": 218,
+      "LevelMin": 7,
+      "LevelMax": 8,
+      "ItemLimitCnt": 300,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 266,
+      "_byte_offset": 4276,
+      "SoulID": 218,
+      "LevelMin": 8,
+      "LevelMax": 9,
+      "ItemLimitCnt": 400,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 267,
+      "_byte_offset": 4292,
+      "SoulID": 218,
+      "LevelMin": 9,
+      "LevelMax": 10,
+      "ItemLimitCnt": 400,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 268,
+      "_byte_offset": 4308,
+      "SoulID": 218,
+      "LevelMin": 10,
+      "LevelMax": 11,
+      "ItemLimitCnt": 500,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 269,
+      "_byte_offset": 4324,
+      "SoulID": 218,
+      "LevelMin": 11,
+      "LevelMax": 12,
+      "ItemLimitCnt": 500,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 270,
+      "_byte_offset": 4340,
+      "SoulID": 218,
+      "LevelMin": 12,
+      "LevelMax": 13,
+      "ItemLimitCnt": 600,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 271,
+      "_byte_offset": 4356,
+      "SoulID": 218,
+      "LevelMin": 13,
+      "LevelMax": 14,
+      "ItemLimitCnt": 600,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 272,
+      "_byte_offset": 4372,
+      "SoulID": 218,
+      "LevelMin": 14,
+      "LevelMax": 15,
+      "ItemLimitCnt": 700,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 273,
+      "_byte_offset": 4388,
+      "SoulID": 218,
+      "LevelMin": 15,
+      "LevelMax": 16,
+      "ItemLimitCnt": 700,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 274,
+      "_byte_offset": 4404,
+      "SoulID": 218,
+      "LevelMin": 16,
+      "LevelMax": 17,
+      "ItemLimitCnt": 800,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 275,
+      "_byte_offset": 4420,
+      "SoulID": 218,
+      "LevelMin": 17,
+      "LevelMax": 18,
+      "ItemLimitCnt": 800,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 276,
+      "_byte_offset": 4436,
+      "SoulID": 218,
+      "LevelMin": 18,
+      "LevelMax": 19,
+      "ItemLimitCnt": 900,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 277,
+      "_byte_offset": 4452,
+      "SoulID": 218,
+      "LevelMin": 19,
+      "LevelMax": 20,
+      "ItemLimitCnt": 900,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 278,
+      "_byte_offset": 4468,
+      "SoulID": 218,
+      "LevelMin": 20,
+      "LevelMax": 21,
+      "ItemLimitCnt": 1000,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 279,
+      "_byte_offset": 4484,
+      "SoulID": 218,
+      "LevelMin": 21,
+      "LevelMax": 22,
+      "ItemLimitCnt": 1000,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 280,
+      "_byte_offset": 4500,
+      "SoulID": 219,
+      "LevelMin": 1,
+      "LevelMax": 2,
+      "ItemLimitCnt": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 281,
+      "_byte_offset": 4516,
+      "SoulID": 219,
+      "LevelMin": 2,
+      "LevelMax": 3,
+      "ItemLimitCnt": 100,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 282,
+      "_byte_offset": 4532,
+      "SoulID": 219,
+      "LevelMin": 3,
+      "LevelMax": 4,
+      "ItemLimitCnt": 100,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 283,
+      "_byte_offset": 4548,
+      "SoulID": 219,
+      "LevelMin": 4,
+      "LevelMax": 5,
+      "ItemLimitCnt": 200,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 284,
+      "_byte_offset": 4564,
+      "SoulID": 219,
+      "LevelMin": 5,
+      "LevelMax": 6,
+      "ItemLimitCnt": 200,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 285,
+      "_byte_offset": 4580,
+      "SoulID": 219,
+      "LevelMin": 6,
+      "LevelMax": 7,
+      "ItemLimitCnt": 300,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 286,
+      "_byte_offset": 4596,
+      "SoulID": 219,
+      "LevelMin": 7,
+      "LevelMax": 8,
+      "ItemLimitCnt": 300,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 287,
+      "_byte_offset": 4612,
+      "SoulID": 219,
+      "LevelMin": 8,
+      "LevelMax": 9,
+      "ItemLimitCnt": 400,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 288,
+      "_byte_offset": 4628,
+      "SoulID": 219,
+      "LevelMin": 9,
+      "LevelMax": 10,
+      "ItemLimitCnt": 400,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 289,
+      "_byte_offset": 4644,
+      "SoulID": 219,
+      "LevelMin": 10,
+      "LevelMax": 11,
+      "ItemLimitCnt": 500,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 290,
+      "_byte_offset": 4660,
+      "SoulID": 219,
+      "LevelMin": 11,
+      "LevelMax": 12,
+      "ItemLimitCnt": 500,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 291,
+      "_byte_offset": 4676,
+      "SoulID": 219,
+      "LevelMin": 12,
+      "LevelMax": 13,
+      "ItemLimitCnt": 600,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 292,
+      "_byte_offset": 4692,
+      "SoulID": 219,
+      "LevelMin": 13,
+      "LevelMax": 14,
+      "ItemLimitCnt": 600,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 293,
+      "_byte_offset": 4708,
+      "SoulID": 219,
+      "LevelMin": 14,
+      "LevelMax": 15,
+      "ItemLimitCnt": 700,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 294,
+      "_byte_offset": 4724,
+      "SoulID": 219,
+      "LevelMin": 15,
+      "LevelMax": 16,
+      "ItemLimitCnt": 700,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 295,
+      "_byte_offset": 4740,
+      "SoulID": 219,
+      "LevelMin": 16,
+      "LevelMax": 17,
+      "ItemLimitCnt": 800,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 296,
+      "_byte_offset": 4756,
+      "SoulID": 219,
+      "LevelMin": 17,
+      "LevelMax": 18,
+      "ItemLimitCnt": 800,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 297,
+      "_byte_offset": 4772,
+      "SoulID": 219,
+      "LevelMin": 18,
+      "LevelMax": 19,
+      "ItemLimitCnt": 900,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 298,
+      "_byte_offset": 4788,
+      "SoulID": 219,
+      "LevelMin": 19,
+      "LevelMax": 20,
+      "ItemLimitCnt": 900,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 299,
+      "_byte_offset": 4804,
+      "SoulID": 219,
+      "LevelMin": 20,
+      "LevelMax": 21,
+      "ItemLimitCnt": 1000,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 300,
+      "_byte_offset": 4820,
+      "SoulID": 219,
+      "LevelMin": 21,
+      "LevelMax": 22,
+      "ItemLimitCnt": 1000,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 301,
+      "_byte_offset": 4836,
+      "SoulID": 220,
+      "LevelMin": 1,
+      "LevelMax": 2,
+      "ItemLimitCnt": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 302,
+      "_byte_offset": 4852,
+      "SoulID": 220,
+      "LevelMin": 2,
+      "LevelMax": 3,
+      "ItemLimitCnt": 100,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 303,
+      "_byte_offset": 4868,
+      "SoulID": 220,
+      "LevelMin": 3,
+      "LevelMax": 4,
+      "ItemLimitCnt": 100,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 304,
+      "_byte_offset": 4884,
+      "SoulID": 220,
+      "LevelMin": 4,
+      "LevelMax": 5,
+      "ItemLimitCnt": 200,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 305,
+      "_byte_offset": 4900,
+      "SoulID": 220,
+      "LevelMin": 5,
+      "LevelMax": 6,
+      "ItemLimitCnt": 200,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 306,
+      "_byte_offset": 4916,
+      "SoulID": 220,
+      "LevelMin": 6,
+      "LevelMax": 7,
+      "ItemLimitCnt": 300,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 307,
+      "_byte_offset": 4932,
+      "SoulID": 220,
+      "LevelMin": 7,
+      "LevelMax": 8,
+      "ItemLimitCnt": 300,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 308,
+      "_byte_offset": 4948,
+      "SoulID": 220,
+      "LevelMin": 8,
+      "LevelMax": 9,
+      "ItemLimitCnt": 400,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 309,
+      "_byte_offset": 4964,
+      "SoulID": 220,
+      "LevelMin": 9,
+      "LevelMax": 10,
+      "ItemLimitCnt": 400,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 310,
+      "_byte_offset": 4980,
+      "SoulID": 220,
+      "LevelMin": 10,
+      "LevelMax": 11,
+      "ItemLimitCnt": 500,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 311,
+      "_byte_offset": 4996,
+      "SoulID": 220,
+      "LevelMin": 11,
+      "LevelMax": 12,
+      "ItemLimitCnt": 500,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 312,
+      "_byte_offset": 5012,
+      "SoulID": 220,
+      "LevelMin": 12,
+      "LevelMax": 13,
+      "ItemLimitCnt": 600,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 313,
+      "_byte_offset": 5028,
+      "SoulID": 220,
+      "LevelMin": 13,
+      "LevelMax": 14,
+      "ItemLimitCnt": 600,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 314,
+      "_byte_offset": 5044,
+      "SoulID": 220,
+      "LevelMin": 14,
+      "LevelMax": 15,
+      "ItemLimitCnt": 700,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 315,
+      "_byte_offset": 5060,
+      "SoulID": 220,
+      "LevelMin": 15,
+      "LevelMax": 16,
+      "ItemLimitCnt": 700,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 316,
+      "_byte_offset": 5076,
+      "SoulID": 220,
+      "LevelMin": 16,
+      "LevelMax": 17,
+      "ItemLimitCnt": 800,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 317,
+      "_byte_offset": 5092,
+      "SoulID": 220,
+      "LevelMin": 17,
+      "LevelMax": 18,
+      "ItemLimitCnt": 800,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 318,
+      "_byte_offset": 5108,
+      "SoulID": 220,
+      "LevelMin": 18,
+      "LevelMax": 19,
+      "ItemLimitCnt": 900,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 319,
+      "_byte_offset": 5124,
+      "SoulID": 220,
+      "LevelMin": 19,
+      "LevelMax": 20,
+      "ItemLimitCnt": 900,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 320,
+      "_byte_offset": 5140,
+      "SoulID": 220,
+      "LevelMin": 20,
+      "LevelMax": 21,
+      "ItemLimitCnt": 1000,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 321,
+      "_byte_offset": 5156,
+      "SoulID": 220,
+      "LevelMin": 21,
+      "LevelMax": 22,
+      "ItemLimitCnt": 1000,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 322,
+      "_byte_offset": 5172,
+      "SoulID": 401,
+      "LevelMin": 1,
+      "LevelMax": 49,
+      "ItemLimitCnt": 60,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 323,
+      "_byte_offset": 5188,
+      "SoulID": 401,
+      "LevelMin": 50,
+      "LevelMax": 89,
+      "ItemLimitCnt": 120,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 324,
+      "_byte_offset": 5204,
+      "SoulID": 401,
+      "LevelMin": 90,
+      "LevelMax": 129,
+      "ItemLimitCnt": 180,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 325,
+      "_byte_offset": 5220,
+      "SoulID": 401,
+      "LevelMin": 130,
+      "LevelMax": 169,
+      "ItemLimitCnt": 240,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 326,
+      "_byte_offset": 5236,
+      "SoulID": 401,
+      "LevelMin": 170,
+      "LevelMax": 209,
+      "ItemLimitCnt": 300,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 327,
+      "_byte_offset": 5252,
+      "SoulID": 401,
+      "LevelMin": 210,
+      "LevelMax": 249,
+      "ItemLimitCnt": 360,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 328,
+      "_byte_offset": 5268,
+      "SoulID": 401,
+      "LevelMin": 250,
+      "LevelMax": 289,
+      "ItemLimitCnt": 420,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 329,
+      "_byte_offset": 5284,
+      "SoulID": 401,
+      "LevelMin": 290,
+      "LevelMax": 329,
+      "ItemLimitCnt": 480,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 330,
+      "_byte_offset": 5300,
+      "SoulID": 401,
+      "LevelMin": 330,
+      "LevelMax": 369,
+      "ItemLimitCnt": 540,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 331,
+      "_byte_offset": 5316,
+      "SoulID": 401,
+      "LevelMin": 370,
+      "LevelMax": 409,
+      "ItemLimitCnt": 600,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 332,
+      "_byte_offset": 5332,
+      "SoulID": 402,
+      "LevelMin": 1,
+      "LevelMax": 49,
+      "ItemLimitCnt": 40,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 333,
+      "_byte_offset": 5348,
+      "SoulID": 402,
+      "LevelMin": 50,
+      "LevelMax": 89,
+      "ItemLimitCnt": 80,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 334,
+      "_byte_offset": 5364,
+      "SoulID": 402,
+      "LevelMin": 90,
+      "LevelMax": 129,
+      "ItemLimitCnt": 120,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 335,
+      "_byte_offset": 5380,
+      "SoulID": 402,
+      "LevelMin": 130,
+      "LevelMax": 169,
+      "ItemLimitCnt": 160,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 336,
+      "_byte_offset": 5396,
+      "SoulID": 402,
+      "LevelMin": 170,
+      "LevelMax": 209,
+      "ItemLimitCnt": 200,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 337,
+      "_byte_offset": 5412,
+      "SoulID": 402,
+      "LevelMin": 210,
+      "LevelMax": 249,
+      "ItemLimitCnt": 240,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 338,
+      "_byte_offset": 5428,
+      "SoulID": 402,
+      "LevelMin": 250,
+      "LevelMax": 289,
+      "ItemLimitCnt": 280,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 339,
+      "_byte_offset": 5444,
+      "SoulID": 402,
+      "LevelMin": 290,
+      "LevelMax": 329,
+      "ItemLimitCnt": 320,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 340,
+      "_byte_offset": 5460,
+      "SoulID": 402,
+      "LevelMin": 330,
+      "LevelMax": 369,
+      "ItemLimitCnt": 360,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 341,
+      "_byte_offset": 5476,
+      "SoulID": 402,
+      "LevelMin": 370,
+      "LevelMax": 409,
+      "ItemLimitCnt": 400,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 342,
+      "_byte_offset": 5492,
+      "SoulID": 403,
+      "LevelMin": 1,
+      "LevelMax": 49,
+      "ItemLimitCnt": 20,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 343,
+      "_byte_offset": 5508,
+      "SoulID": 403,
+      "LevelMin": 50,
+      "LevelMax": 89,
+      "ItemLimitCnt": 40,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 344,
+      "_byte_offset": 5524,
+      "SoulID": 403,
+      "LevelMin": 90,
+      "LevelMax": 129,
+      "ItemLimitCnt": 60,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 345,
+      "_byte_offset": 5540,
+      "SoulID": 403,
+      "LevelMin": 130,
+      "LevelMax": 169,
+      "ItemLimitCnt": 80,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 346,
+      "_byte_offset": 5556,
+      "SoulID": 403,
+      "LevelMin": 170,
+      "LevelMax": 209,
+      "ItemLimitCnt": 100,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 347,
+      "_byte_offset": 5572,
+      "SoulID": 403,
+      "LevelMin": 210,
+      "LevelMax": 249,
+      "ItemLimitCnt": 120,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 348,
+      "_byte_offset": 5588,
+      "SoulID": 403,
+      "LevelMin": 250,
+      "LevelMax": 289,
+      "ItemLimitCnt": 140,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 349,
+      "_byte_offset": 5604,
+      "SoulID": 403,
+      "LevelMin": 290,
+      "LevelMax": 329,
+      "ItemLimitCnt": 160,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 350,
+      "_byte_offset": 5620,
+      "SoulID": 403,
+      "LevelMin": 330,
+      "LevelMax": 369,
+      "ItemLimitCnt": 180,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 351,
+      "_byte_offset": 5636,
+      "SoulID": 403,
+      "LevelMin": 370,
+      "LevelMax": 409,
+      "ItemLimitCnt": 200,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 352,
+      "_byte_offset": 5652,
+      "SoulID": 404,
+      "LevelMin": 1,
+      "LevelMax": 49,
+      "ItemLimitCnt": 100,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 353,
+      "_byte_offset": 5668,
+      "SoulID": 404,
+      "LevelMin": 50,
+      "LevelMax": 89,
+      "ItemLimitCnt": 200,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 354,
+      "_byte_offset": 5684,
+      "SoulID": 404,
+      "LevelMin": 90,
+      "LevelMax": 129,
+      "ItemLimitCnt": 300,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 355,
+      "_byte_offset": 5700,
+      "SoulID": 404,
+      "LevelMin": 130,
+      "LevelMax": 169,
+      "ItemLimitCnt": 400,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 356,
+      "_byte_offset": 5716,
+      "SoulID": 404,
+      "LevelMin": 170,
+      "LevelMax": 209,
+      "ItemLimitCnt": 500,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 357,
+      "_byte_offset": 5732,
+      "SoulID": 404,
+      "LevelMin": 210,
+      "LevelMax": 249,
+      "ItemLimitCnt": 600,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 358,
+      "_byte_offset": 5748,
+      "SoulID": 404,
+      "LevelMin": 250,
+      "LevelMax": 289,
+      "ItemLimitCnt": 700,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 359,
+      "_byte_offset": 5764,
+      "SoulID": 404,
+      "LevelMin": 290,
+      "LevelMax": 329,
+      "ItemLimitCnt": 800,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 360,
+      "_byte_offset": 5780,
+      "SoulID": 404,
+      "LevelMin": 330,
+      "LevelMax": 369,
+      "ItemLimitCnt": 900,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 361,
+      "_byte_offset": 5796,
+      "SoulID": 404,
+      "LevelMin": 370,
+      "LevelMax": 409,
+      "ItemLimitCnt": 1000,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 362,
+      "_byte_offset": 5812,
+      "SoulID": 501,
+      "LevelMin": 1,
+      "LevelMax": 49,
+      "ItemLimitCnt": 60,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 363,
+      "_byte_offset": 5828,
+      "SoulID": 501,
+      "LevelMin": 50,
+      "LevelMax": 89,
+      "ItemLimitCnt": 120,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 364,
+      "_byte_offset": 5844,
+      "SoulID": 501,
+      "LevelMin": 90,
+      "LevelMax": 129,
+      "ItemLimitCnt": 180,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 365,
+      "_byte_offset": 5860,
+      "SoulID": 501,
+      "LevelMin": 130,
+      "LevelMax": 169,
+      "ItemLimitCnt": 240,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 366,
+      "_byte_offset": 5876,
+      "SoulID": 501,
+      "LevelMin": 170,
+      "LevelMax": 209,
+      "ItemLimitCnt": 300,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 367,
+      "_byte_offset": 5892,
+      "SoulID": 501,
+      "LevelMin": 210,
+      "LevelMax": 249,
+      "ItemLimitCnt": 360,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 368,
+      "_byte_offset": 5908,
+      "SoulID": 501,
+      "LevelMin": 250,
+      "LevelMax": 289,
+      "ItemLimitCnt": 420,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 369,
+      "_byte_offset": 5924,
+      "SoulID": 501,
+      "LevelMin": 290,
+      "LevelMax": 329,
+      "ItemLimitCnt": 480,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 370,
+      "_byte_offset": 5940,
+      "SoulID": 501,
+      "LevelMin": 330,
+      "LevelMax": 369,
+      "ItemLimitCnt": 540,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 371,
+      "_byte_offset": 5956,
+      "SoulID": 501,
+      "LevelMin": 370,
+      "LevelMax": 409,
+      "ItemLimitCnt": 600,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 372,
+      "_byte_offset": 5972,
+      "SoulID": 502,
+      "LevelMin": 1,
+      "LevelMax": 49,
+      "ItemLimitCnt": 40,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 373,
+      "_byte_offset": 5988,
+      "SoulID": 502,
+      "LevelMin": 50,
+      "LevelMax": 89,
+      "ItemLimitCnt": 80,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 374,
+      "_byte_offset": 6004,
+      "SoulID": 502,
+      "LevelMin": 90,
+      "LevelMax": 129,
+      "ItemLimitCnt": 120,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 375,
+      "_byte_offset": 6020,
+      "SoulID": 502,
+      "LevelMin": 130,
+      "LevelMax": 169,
+      "ItemLimitCnt": 160,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 376,
+      "_byte_offset": 6036,
+      "SoulID": 502,
+      "LevelMin": 170,
+      "LevelMax": 209,
+      "ItemLimitCnt": 200,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 377,
+      "_byte_offset": 6052,
+      "SoulID": 502,
+      "LevelMin": 210,
+      "LevelMax": 249,
+      "ItemLimitCnt": 240,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 378,
+      "_byte_offset": 6068,
+      "SoulID": 502,
+      "LevelMin": 250,
+      "LevelMax": 289,
+      "ItemLimitCnt": 280,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 379,
+      "_byte_offset": 6084,
+      "SoulID": 502,
+      "LevelMin": 290,
+      "LevelMax": 329,
+      "ItemLimitCnt": 320,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 380,
+      "_byte_offset": 6100,
+      "SoulID": 502,
+      "LevelMin": 330,
+      "LevelMax": 369,
+      "ItemLimitCnt": 360,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 381,
+      "_byte_offset": 6116,
+      "SoulID": 502,
+      "LevelMin": 370,
+      "LevelMax": 409,
+      "ItemLimitCnt": 400,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 382,
+      "_byte_offset": 6132,
+      "SoulID": 503,
+      "LevelMin": 1,
+      "LevelMax": 49,
+      "ItemLimitCnt": 20,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 383,
+      "_byte_offset": 6148,
+      "SoulID": 503,
+      "LevelMin": 50,
+      "LevelMax": 89,
+      "ItemLimitCnt": 40,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 384,
+      "_byte_offset": 6164,
+      "SoulID": 503,
+      "LevelMin": 90,
+      "LevelMax": 129,
+      "ItemLimitCnt": 60,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 385,
+      "_byte_offset": 6180,
+      "SoulID": 503,
+      "LevelMin": 130,
+      "LevelMax": 169,
+      "ItemLimitCnt": 80,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 386,
+      "_byte_offset": 6196,
+      "SoulID": 503,
+      "LevelMin": 170,
+      "LevelMax": 209,
+      "ItemLimitCnt": 100,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 387,
+      "_byte_offset": 6212,
+      "SoulID": 503,
+      "LevelMin": 210,
+      "LevelMax": 249,
+      "ItemLimitCnt": 120,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 388,
+      "_byte_offset": 6228,
+      "SoulID": 503,
+      "LevelMin": 250,
+      "LevelMax": 289,
+      "ItemLimitCnt": 140,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 389,
+      "_byte_offset": 6244,
+      "SoulID": 503,
+      "LevelMin": 290,
+      "LevelMax": 329,
+      "ItemLimitCnt": 160,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 390,
+      "_byte_offset": 6260,
+      "SoulID": 503,
+      "LevelMin": 330,
+      "LevelMax": 369,
+      "ItemLimitCnt": 180,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 391,
+      "_byte_offset": 6276,
+      "SoulID": 503,
+      "LevelMin": 370,
+      "LevelMax": 409,
+      "ItemLimitCnt": 200,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 392,
+      "_byte_offset": 6292,
+      "SoulID": 504,
+      "LevelMin": 1,
+      "LevelMax": 49,
+      "ItemLimitCnt": 100,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 393,
+      "_byte_offset": 6308,
+      "SoulID": 504,
+      "LevelMin": 50,
+      "LevelMax": 89,
+      "ItemLimitCnt": 200,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 394,
+      "_byte_offset": 6324,
+      "SoulID": 504,
+      "LevelMin": 90,
+      "LevelMax": 129,
+      "ItemLimitCnt": 300,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 395,
+      "_byte_offset": 6340,
+      "SoulID": 504,
+      "LevelMin": 130,
+      "LevelMax": 169,
+      "ItemLimitCnt": 400,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 396,
+      "_byte_offset": 6356,
+      "SoulID": 504,
+      "LevelMin": 170,
+      "LevelMax": 209,
+      "ItemLimitCnt": 500,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 397,
+      "_byte_offset": 6372,
+      "SoulID": 504,
+      "LevelMin": 210,
+      "LevelMax": 249,
+      "ItemLimitCnt": 600,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 398,
+      "_byte_offset": 6388,
+      "SoulID": 504,
+      "LevelMin": 250,
+      "LevelMax": 289,
+      "ItemLimitCnt": 700,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 399,
+      "_byte_offset": 6404,
+      "SoulID": 504,
+      "LevelMin": 290,
+      "LevelMax": 329,
+      "ItemLimitCnt": 800,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 400,
+      "_byte_offset": 6420,
+      "SoulID": 504,
+      "LevelMin": 330,
+      "LevelMax": 369,
+      "ItemLimitCnt": 900,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 401,
+      "_byte_offset": 6436,
+      "SoulID": 504,
+      "LevelMin": 370,
+      "LevelMax": 409,
+      "ItemLimitCnt": 1000,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 402,
+      "_byte_offset": 6452,
+      "SoulID": 601,
+      "LevelMin": 1,
+      "LevelMax": 49,
+      "ItemLimitCnt": 60,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 403,
+      "_byte_offset": 6468,
+      "SoulID": 601,
+      "LevelMin": 50,
+      "LevelMax": 89,
+      "ItemLimitCnt": 120,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 404,
+      "_byte_offset": 6484,
+      "SoulID": 601,
+      "LevelMin": 90,
+      "LevelMax": 129,
+      "ItemLimitCnt": 180,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 405,
+      "_byte_offset": 6500,
+      "SoulID": 601,
+      "LevelMin": 130,
+      "LevelMax": 169,
+      "ItemLimitCnt": 240,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 406,
+      "_byte_offset": 6516,
+      "SoulID": 601,
+      "LevelMin": 170,
+      "LevelMax": 209,
+      "ItemLimitCnt": 300,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 407,
+      "_byte_offset": 6532,
+      "SoulID": 601,
+      "LevelMin": 210,
+      "LevelMax": 249,
+      "ItemLimitCnt": 360,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 408,
+      "_byte_offset": 6548,
+      "SoulID": 601,
+      "LevelMin": 250,
+      "LevelMax": 289,
+      "ItemLimitCnt": 420,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 409,
+      "_byte_offset": 6564,
+      "SoulID": 601,
+      "LevelMin": 290,
+      "LevelMax": 329,
+      "ItemLimitCnt": 480,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 410,
+      "_byte_offset": 6580,
+      "SoulID": 601,
+      "LevelMin": 330,
+      "LevelMax": 369,
+      "ItemLimitCnt": 540,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 411,
+      "_byte_offset": 6596,
+      "SoulID": 601,
+      "LevelMin": 370,
+      "LevelMax": 409,
+      "ItemLimitCnt": 600,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 412,
+      "_byte_offset": 6612,
+      "SoulID": 602,
+      "LevelMin": 1,
+      "LevelMax": 49,
+      "ItemLimitCnt": 40,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 413,
+      "_byte_offset": 6628,
+      "SoulID": 602,
+      "LevelMin": 50,
+      "LevelMax": 89,
+      "ItemLimitCnt": 80,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 414,
+      "_byte_offset": 6644,
+      "SoulID": 602,
+      "LevelMin": 90,
+      "LevelMax": 129,
+      "ItemLimitCnt": 120,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 415,
+      "_byte_offset": 6660,
+      "SoulID": 602,
+      "LevelMin": 130,
+      "LevelMax": 169,
+      "ItemLimitCnt": 160,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 416,
+      "_byte_offset": 6676,
+      "SoulID": 602,
+      "LevelMin": 170,
+      "LevelMax": 209,
+      "ItemLimitCnt": 200,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 417,
+      "_byte_offset": 6692,
+      "SoulID": 602,
+      "LevelMin": 210,
+      "LevelMax": 249,
+      "ItemLimitCnt": 240,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 418,
+      "_byte_offset": 6708,
+      "SoulID": 602,
+      "LevelMin": 250,
+      "LevelMax": 289,
+      "ItemLimitCnt": 280,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 419,
+      "_byte_offset": 6724,
+      "SoulID": 602,
+      "LevelMin": 290,
+      "LevelMax": 329,
+      "ItemLimitCnt": 320,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 420,
+      "_byte_offset": 6740,
+      "SoulID": 602,
+      "LevelMin": 330,
+      "LevelMax": 369,
+      "ItemLimitCnt": 360,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 421,
+      "_byte_offset": 6756,
+      "SoulID": 602,
+      "LevelMin": 370,
+      "LevelMax": 409,
+      "ItemLimitCnt": 400,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 422,
+      "_byte_offset": 6772,
+      "SoulID": 603,
+      "LevelMin": 1,
+      "LevelMax": 49,
+      "ItemLimitCnt": 20,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 423,
+      "_byte_offset": 6788,
+      "SoulID": 603,
+      "LevelMin": 50,
+      "LevelMax": 89,
+      "ItemLimitCnt": 40,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 424,
+      "_byte_offset": 6804,
+      "SoulID": 603,
+      "LevelMin": 90,
+      "LevelMax": 129,
+      "ItemLimitCnt": 60,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 425,
+      "_byte_offset": 6820,
+      "SoulID": 603,
+      "LevelMin": 130,
+      "LevelMax": 169,
+      "ItemLimitCnt": 80,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 426,
+      "_byte_offset": 6836,
+      "SoulID": 603,
+      "LevelMin": 170,
+      "LevelMax": 209,
+      "ItemLimitCnt": 100,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 427,
+      "_byte_offset": 6852,
+      "SoulID": 603,
+      "LevelMin": 210,
+      "LevelMax": 249,
+      "ItemLimitCnt": 120,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 428,
+      "_byte_offset": 6868,
+      "SoulID": 603,
+      "LevelMin": 250,
+      "LevelMax": 289,
+      "ItemLimitCnt": 140,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 429,
+      "_byte_offset": 6884,
+      "SoulID": 603,
+      "LevelMin": 290,
+      "LevelMax": 329,
+      "ItemLimitCnt": 160,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 430,
+      "_byte_offset": 6900,
+      "SoulID": 603,
+      "LevelMin": 330,
+      "LevelMax": 369,
+      "ItemLimitCnt": 180,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 431,
+      "_byte_offset": 6916,
+      "SoulID": 603,
+      "LevelMin": 370,
+      "LevelMax": 409,
+      "ItemLimitCnt": 200,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 432,
+      "_byte_offset": 6932,
+      "SoulID": 604,
+      "LevelMin": 1,
+      "LevelMax": 49,
+      "ItemLimitCnt": 100,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 433,
+      "_byte_offset": 6948,
+      "SoulID": 604,
+      "LevelMin": 50,
+      "LevelMax": 89,
+      "ItemLimitCnt": 200,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 434,
+      "_byte_offset": 6964,
+      "SoulID": 604,
+      "LevelMin": 90,
+      "LevelMax": 129,
+      "ItemLimitCnt": 300,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 435,
+      "_byte_offset": 6980,
+      "SoulID": 604,
+      "LevelMin": 130,
+      "LevelMax": 169,
+      "ItemLimitCnt": 400,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 436,
+      "_byte_offset": 6996,
+      "SoulID": 604,
+      "LevelMin": 170,
+      "LevelMax": 209,
+      "ItemLimitCnt": 500,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 437,
+      "_byte_offset": 7012,
+      "SoulID": 604,
+      "LevelMin": 210,
+      "LevelMax": 249,
+      "ItemLimitCnt": 600,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 438,
+      "_byte_offset": 7028,
+      "SoulID": 604,
+      "LevelMin": 250,
+      "LevelMax": 289,
+      "ItemLimitCnt": 700,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 439,
+      "_byte_offset": 7044,
+      "SoulID": 604,
+      "LevelMin": 290,
+      "LevelMax": 329,
+      "ItemLimitCnt": 800,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 440,
+      "_byte_offset": 7060,
+      "SoulID": 604,
+      "LevelMin": 330,
+      "LevelMax": 369,
+      "ItemLimitCnt": 900,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 441,
+      "_byte_offset": 7076,
+      "SoulID": 604,
+      "LevelMin": 370,
+      "LevelMax": 409,
+      "ItemLimitCnt": 1000,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 442,
+      "_byte_offset": 7092,
+      "SoulID": 701,
+      "LevelMin": 1,
+      "LevelMax": 49,
+      "ItemLimitCnt": 60,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 443,
+      "_byte_offset": 7108,
+      "SoulID": 701,
+      "LevelMin": 50,
+      "LevelMax": 89,
+      "ItemLimitCnt": 120,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 444,
+      "_byte_offset": 7124,
+      "SoulID": 701,
+      "LevelMin": 90,
+      "LevelMax": 129,
+      "ItemLimitCnt": 180,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 445,
+      "_byte_offset": 7140,
+      "SoulID": 701,
+      "LevelMin": 130,
+      "LevelMax": 169,
+      "ItemLimitCnt": 240,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 446,
+      "_byte_offset": 7156,
+      "SoulID": 701,
+      "LevelMin": 170,
+      "LevelMax": 209,
+      "ItemLimitCnt": 300,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 447,
+      "_byte_offset": 7172,
+      "SoulID": 701,
+      "LevelMin": 210,
+      "LevelMax": 249,
+      "ItemLimitCnt": 360,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 448,
+      "_byte_offset": 7188,
+      "SoulID": 701,
+      "LevelMin": 250,
+      "LevelMax": 289,
+      "ItemLimitCnt": 420,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 449,
+      "_byte_offset": 7204,
+      "SoulID": 701,
+      "LevelMin": 290,
+      "LevelMax": 329,
+      "ItemLimitCnt": 480,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 450,
+      "_byte_offset": 7220,
+      "SoulID": 701,
+      "LevelMin": 330,
+      "LevelMax": 369,
+      "ItemLimitCnt": 540,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 451,
+      "_byte_offset": 7236,
+      "SoulID": 701,
+      "LevelMin": 370,
+      "LevelMax": 409,
+      "ItemLimitCnt": 600,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 452,
+      "_byte_offset": 7252,
+      "SoulID": 702,
+      "LevelMin": 1,
+      "LevelMax": 49,
+      "ItemLimitCnt": 40,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 453,
+      "_byte_offset": 7268,
+      "SoulID": 702,
+      "LevelMin": 50,
+      "LevelMax": 89,
+      "ItemLimitCnt": 80,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 454,
+      "_byte_offset": 7284,
+      "SoulID": 702,
+      "LevelMin": 90,
+      "LevelMax": 129,
+      "ItemLimitCnt": 120,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 455,
+      "_byte_offset": 7300,
+      "SoulID": 702,
+      "LevelMin": 130,
+      "LevelMax": 169,
+      "ItemLimitCnt": 160,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 456,
+      "_byte_offset": 7316,
+      "SoulID": 702,
+      "LevelMin": 170,
+      "LevelMax": 209,
+      "ItemLimitCnt": 200,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 457,
+      "_byte_offset": 7332,
+      "SoulID": 702,
+      "LevelMin": 210,
+      "LevelMax": 249,
+      "ItemLimitCnt": 240,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 458,
+      "_byte_offset": 7348,
+      "SoulID": 702,
+      "LevelMin": 250,
+      "LevelMax": 289,
+      "ItemLimitCnt": 280,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 459,
+      "_byte_offset": 7364,
+      "SoulID": 702,
+      "LevelMin": 290,
+      "LevelMax": 329,
+      "ItemLimitCnt": 320,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 460,
+      "_byte_offset": 7380,
+      "SoulID": 702,
+      "LevelMin": 330,
+      "LevelMax": 369,
+      "ItemLimitCnt": 360,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 461,
+      "_byte_offset": 7396,
+      "SoulID": 702,
+      "LevelMin": 370,
+      "LevelMax": 409,
+      "ItemLimitCnt": 400,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 462,
+      "_byte_offset": 7412,
+      "SoulID": 703,
+      "LevelMin": 1,
+      "LevelMax": 49,
+      "ItemLimitCnt": 20,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 463,
+      "_byte_offset": 7428,
+      "SoulID": 703,
+      "LevelMin": 50,
+      "LevelMax": 89,
+      "ItemLimitCnt": 40,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 464,
+      "_byte_offset": 7444,
+      "SoulID": 703,
+      "LevelMin": 90,
+      "LevelMax": 129,
+      "ItemLimitCnt": 60,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 465,
+      "_byte_offset": 7460,
+      "SoulID": 703,
+      "LevelMin": 130,
+      "LevelMax": 169,
+      "ItemLimitCnt": 80,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 466,
+      "_byte_offset": 7476,
+      "SoulID": 703,
+      "LevelMin": 170,
+      "LevelMax": 209,
+      "ItemLimitCnt": 100,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 467,
+      "_byte_offset": 7492,
+      "SoulID": 703,
+      "LevelMin": 210,
+      "LevelMax": 249,
+      "ItemLimitCnt": 120,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 468,
+      "_byte_offset": 7508,
+      "SoulID": 703,
+      "LevelMin": 250,
+      "LevelMax": 289,
+      "ItemLimitCnt": 140,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 469,
+      "_byte_offset": 7524,
+      "SoulID": 703,
+      "LevelMin": 290,
+      "LevelMax": 329,
+      "ItemLimitCnt": 160,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 470,
+      "_byte_offset": 7540,
+      "SoulID": 703,
+      "LevelMin": 330,
+      "LevelMax": 369,
+      "ItemLimitCnt": 180,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 471,
+      "_byte_offset": 7556,
+      "SoulID": 703,
+      "LevelMin": 370,
+      "LevelMax": 409,
+      "ItemLimitCnt": 200,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 472,
+      "_byte_offset": 7572,
+      "SoulID": 704,
+      "LevelMin": 1,
+      "LevelMax": 49,
+      "ItemLimitCnt": 100,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 473,
+      "_byte_offset": 7588,
+      "SoulID": 704,
+      "LevelMin": 50,
+      "LevelMax": 89,
+      "ItemLimitCnt": 200,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 474,
+      "_byte_offset": 7604,
+      "SoulID": 704,
+      "LevelMin": 90,
+      "LevelMax": 129,
+      "ItemLimitCnt": 300,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 475,
+      "_byte_offset": 7620,
+      "SoulID": 704,
+      "LevelMin": 130,
+      "LevelMax": 169,
+      "ItemLimitCnt": 400,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 476,
+      "_byte_offset": 7636,
+      "SoulID": 704,
+      "LevelMin": 170,
+      "LevelMax": 209,
+      "ItemLimitCnt": 500,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 477,
+      "_byte_offset": 7652,
+      "SoulID": 704,
+      "LevelMin": 210,
+      "LevelMax": 249,
+      "ItemLimitCnt": 600,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 478,
+      "_byte_offset": 7668,
+      "SoulID": 704,
+      "LevelMin": 250,
+      "LevelMax": 289,
+      "ItemLimitCnt": 700,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 479,
+      "_byte_offset": 7684,
+      "SoulID": 704,
+      "LevelMin": 290,
+      "LevelMax": 329,
+      "ItemLimitCnt": 800,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 480,
+      "_byte_offset": 7700,
+      "SoulID": 704,
+      "LevelMin": 330,
+      "LevelMax": 369,
+      "ItemLimitCnt": 900,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 481,
+      "_byte_offset": 7716,
+      "SoulID": 704,
+      "LevelMin": 370,
+      "LevelMax": 409,
+      "ItemLimitCnt": 1000,
+      "_byte_length": 16
+    }
+  ]
+}

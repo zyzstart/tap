@@ -1,0 +1,193 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_fp_mijingparamconfig.bytes.ab",
+    "path_id": -8546361689684576543,
+    "name": "MiJingParamConfig",
+    "sha256": "fed6ac5fa436f74776ceae2a454dc19c52e2f16e781ac4281819a04378591091",
+    "export": "derived/unity/text/assets_resources_config_resbin_fp_mijingparamconfig.bytes/MiJingParamConfig__-8546361689684576543.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 236,
+      "version": 1,
+      "record_count": 18,
+      "stored_crc32": "9618d513",
+      "computed_inverted_crc32": "9618d513"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "BattleCore",
+      "name": "MiJingParamConfig",
+      "fields": [
+        {
+          "type": "int",
+          "name": "MiJingFuncID",
+          "object_offset": 16
+        },
+        {
+          "type": "FP",
+          "name": "FuncVal",
+          "object_offset": 24
+        }
+      ],
+      "unpack_va": 23348396,
+      "dump_line": 167635
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x16444e0",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1644520",
+        "target_va": "0x21f6938",
+        "opcode": "B-tail",
+        "reader": "readInt64",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 18
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "MiJingFuncID": 1,
+      "FuncVal__raw_int64": 4290672328704,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 32,
+      "MiJingFuncID": 2,
+      "FuncVal__raw_int64": 8766028251136,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 44,
+      "MiJingFuncID": 3,
+      "FuncVal__raw_int64": 4294967296,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 56,
+      "MiJingFuncID": 4,
+      "FuncVal__raw_int64": 4290672328704,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 68,
+      "MiJingFuncID": 5,
+      "FuncVal__raw_int64": 12884901888,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 80,
+      "MiJingFuncID": 6,
+      "FuncVal__raw_int64": 2147483648,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 92,
+      "MiJingFuncID": 7,
+      "FuncVal__raw_int64": 21474836480,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 104,
+      "MiJingFuncID": 8,
+      "FuncVal__raw_int64": 128849018880,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 116,
+      "MiJingFuncID": 9,
+      "FuncVal__raw_int64": 515396075520,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 128,
+      "MiJingFuncID": 10,
+      "FuncVal__raw_int64": 429496729600,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 140,
+      "MiJingFuncID": 11,
+      "FuncVal__raw_int64": 42949672960,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 152,
+      "MiJingFuncID": 12,
+      "FuncVal__raw_int64": 21474836480,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 164,
+      "MiJingFuncID": 13,
+      "FuncVal__raw_int64": 4299262263296,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 176,
+      "MiJingFuncID": 14,
+      "FuncVal__raw_int64": 2184678064783360,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 188,
+      "MiJingFuncID": 15,
+      "FuncVal__raw_int64": 12884901888,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 200,
+      "MiJingFuncID": 16,
+      "FuncVal__raw_int64": 42949672960,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 212,
+      "MiJingFuncID": 17,
+      "FuncVal__raw_int64": 429496729600,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 224,
+      "MiJingFuncID": 18,
+      "FuncVal__raw_int64": 214748364,
+      "_byte_length": 12
+    }
+  ]
+}

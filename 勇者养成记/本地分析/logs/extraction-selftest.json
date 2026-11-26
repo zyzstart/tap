@@ -1,0 +1,32 @@
+[
+  {
+    "test": "valid-and-resume",
+    "pass": true,
+    "expected_error": null,
+    "actual_error": ""
+  },
+  {
+    "test": "refuse-conflict",
+    "pass": true,
+    "expected_error": "Refusing existing",
+    "actual_error": "Refusing existing conflicting output: assets/test.txt"
+  },
+  {
+    "test": "path-traversal",
+    "pass": true,
+    "expected_error": "Unsafe path",
+    "actual_error": "Unsafe path: ../outside.txt"
+  },
+  {
+    "test": "case-collision",
+    "pass": true,
+    "expected_error": "case-colliding",
+    "actual_error": "Duplicate/case-colliding ZIP path: a.txt"
+  },
+  {
+    "test": "backslash-path",
+    "pass": true,
+    "expected_error": "Unsafe path",
+    "actual_error": "Unsafe path: assets\\bad.txt"
+  }
+]

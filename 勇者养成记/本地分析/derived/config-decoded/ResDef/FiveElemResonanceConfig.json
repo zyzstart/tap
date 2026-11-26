@@ -1,0 +1,209 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_fiveelemresonanceconfig.bytes.ab",
+    "path_id": -1811640154964391378,
+    "name": "FiveElemResonanceConfig",
+    "sha256": "41131dcc46b8ca00d463ac05d6d3a61e922f788df418abba4f9499426e70d8de",
+    "export": "derived/unity/text/assets_resources_config_resbin_fiveelemresonanceconfig.bytes/FiveElemResonanceConfig__-1811640154964391378.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 530,
+      "version": 1,
+      "record_count": 10,
+      "stored_crc32": "5e14b67a",
+      "computed_inverted_crc32": "5e14b67a"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "FiveElemResonanceConfig",
+      "fields": [
+        {
+          "type": "int",
+          "name": "Level",
+          "object_offset": 16
+        },
+        {
+          "type": "int",
+          "name": "MinTokenLevel",
+          "object_offset": 20
+        },
+        {
+          "type": "int",
+          "name": "AttrValue",
+          "object_offset": 24
+        },
+        {
+          "type": "string",
+          "name": "AttrDesc",
+          "object_offset": 32
+        },
+        {
+          "type": "uint",
+          "name": "SkillID",
+          "object_offset": 40
+        }
+      ],
+      "unpack_va": 31311504,
+      "dump_line": 203969
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1ddc6c4",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1ddc6e8",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1ddc70c",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1ddc734",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1ddc774",
+        "target_va": "0x21f6908",
+        "opcode": "B-tail",
+        "reader": "readUInt32",
+        "destination_object_offset": 40,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 10
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "Level": 1,
+      "MinTokenLevel": 20,
+      "AttrValue": 0,
+      "AttrDesc": "全部五行令属性提升10%",
+      "SkillID": 30101,
+      "_byte_length": 51
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 71,
+      "Level": 2,
+      "MinTokenLevel": 40,
+      "AttrValue": 0,
+      "AttrDesc": "全部五行令属性提升14%",
+      "SkillID": 30102,
+      "_byte_length": 51
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 122,
+      "Level": 3,
+      "MinTokenLevel": 60,
+      "AttrValue": 0,
+      "AttrDesc": "全部五行令属性提升18%",
+      "SkillID": 30103,
+      "_byte_length": 51
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 173,
+      "Level": 4,
+      "MinTokenLevel": 80,
+      "AttrValue": 0,
+      "AttrDesc": "全部五行令属性提升22%",
+      "SkillID": 30104,
+      "_byte_length": 51
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 224,
+      "Level": 5,
+      "MinTokenLevel": 100,
+      "AttrValue": 0,
+      "AttrDesc": "全部五行令属性提升26%",
+      "SkillID": 30105,
+      "_byte_length": 51
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 275,
+      "Level": 6,
+      "MinTokenLevel": 120,
+      "AttrValue": 0,
+      "AttrDesc": "全部五行令属性提升30%",
+      "SkillID": 30106,
+      "_byte_length": 51
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 326,
+      "Level": 7,
+      "MinTokenLevel": 140,
+      "AttrValue": 0,
+      "AttrDesc": "全部五行令属性提升35%",
+      "SkillID": 30107,
+      "_byte_length": 51
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 377,
+      "Level": 8,
+      "MinTokenLevel": 160,
+      "AttrValue": 0,
+      "AttrDesc": "全部五行令属性提升40%",
+      "SkillID": 30108,
+      "_byte_length": 51
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 428,
+      "Level": 9,
+      "MinTokenLevel": 180,
+      "AttrValue": 0,
+      "AttrDesc": "全部五行令属性提升45%",
+      "SkillID": 30109,
+      "_byte_length": 51
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 479,
+      "Level": 10,
+      "MinTokenLevel": 200,
+      "AttrValue": 0,
+      "AttrDesc": "全部五行令属性提升50%",
+      "SkillID": 30110,
+      "_byte_length": 51
+    }
+  ]
+}

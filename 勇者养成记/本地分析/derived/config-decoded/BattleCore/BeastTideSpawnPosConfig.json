@@ -1,0 +1,2624 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_fp_beasttidespawnposconfig.bytes.ab",
+    "path_id": 3599272220307585861,
+    "name": "BeastTideSpawnPosConfig",
+    "sha256": "fbfd4483f5ca9ff849a722a1993dcf21b153a732ea22977868e5516f640d34f5",
+    "export": "derived/unity/text/assets_resources_config_resbin_fp_beasttidespawnposconfig.bytes/BeastTideSpawnPosConfig__3599272220307585861.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 6764,
+      "version": 1,
+      "record_count": 281,
+      "stored_crc32": "623266ad",
+      "computed_inverted_crc32": "623266ad"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "BattleCore",
+      "name": "BeastTideSpawnPosConfig",
+      "fields": [
+        {
+          "type": "uint",
+          "name": "SpawnPosLibID",
+          "object_offset": 16
+        },
+        {
+          "type": "FP",
+          "name": "Row",
+          "object_offset": 24
+        },
+        {
+          "type": "FP",
+          "name": "Column",
+          "object_offset": 32
+        },
+        {
+          "type": "uint",
+          "name": "Weight",
+          "object_offset": 40
+        }
+      ],
+      "unpack_va": 23318076,
+      "dump_line": 165972
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x163ce70",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x163ce94",
+        "target_va": "0x21f6938",
+        "opcode": "BL",
+        "reader": "readInt64",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x163ceb8",
+        "target_va": "0x21f6938",
+        "opcode": "BL",
+        "reader": "readInt64",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x163cef8",
+        "target_va": "0x21f6908",
+        "opcode": "B-tail",
+        "reader": "readUInt32",
+        "destination_object_offset": 40,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 281
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "SpawnPosLibID": 1001,
+      "Row__raw_int64": 107374182400,
+      "Column__raw_int64": 73014444032,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 44,
+      "SpawnPosLibID": 1002,
+      "Row__raw_int64": 107374182400,
+      "Column__raw_int64": 81604378624,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 68,
+      "SpawnPosLibID": 1101,
+      "Row__raw_int64": 8589934592,
+      "Column__raw_int64": 12884901888,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 92,
+      "SpawnPosLibID": 1101,
+      "Row__raw_int64": 8589934592,
+      "Column__raw_int64": 38654705664,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 116,
+      "SpawnPosLibID": 1101,
+      "Row__raw_int64": 8589934592,
+      "Column__raw_int64": 73014444032,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 140,
+      "SpawnPosLibID": 1101,
+      "Row__raw_int64": 8589934592,
+      "Column__raw_int64": 107374182400,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 164,
+      "SpawnPosLibID": 1101,
+      "Row__raw_int64": 30064771072,
+      "Column__raw_int64": 137438953472,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 188,
+      "SpawnPosLibID": 1101,
+      "Row__raw_int64": 60129542144,
+      "Column__raw_int64": 137438953472,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 212,
+      "SpawnPosLibID": 1101,
+      "Row__raw_int64": 94489280512,
+      "Column__raw_int64": 137438953472,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 236,
+      "SpawnPosLibID": 1101,
+      "Row__raw_int64": 128849018880,
+      "Column__raw_int64": 137438953472,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 260,
+      "SpawnPosLibID": 1101,
+      "Row__raw_int64": 158913789952,
+      "Column__raw_int64": 137438953472,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 284,
+      "SpawnPosLibID": 1101,
+      "Row__raw_int64": 180388626432,
+      "Column__raw_int64": 115964116992,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 308,
+      "SpawnPosLibID": 1101,
+      "Row__raw_int64": 180388626432,
+      "Column__raw_int64": 55834574848,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 332,
+      "SpawnPosLibID": 1101,
+      "Row__raw_int64": 180388626432,
+      "Column__raw_int64": 25769803776,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 356,
+      "SpawnPosLibID": 1101,
+      "Row__raw_int64": 180388626432,
+      "Column__raw_int64": 115964116992,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 380,
+      "SpawnPosLibID": 1101,
+      "Row__raw_int64": 158913789952,
+      "Column__raw_int64": 8589934592,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 404,
+      "SpawnPosLibID": 1101,
+      "Row__raw_int64": 128849018880,
+      "Column__raw_int64": 8589934592,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 428,
+      "SpawnPosLibID": 1101,
+      "Row__raw_int64": 94489280512,
+      "Column__raw_int64": 8589934592,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 452,
+      "SpawnPosLibID": 1101,
+      "Row__raw_int64": 60129542144,
+      "Column__raw_int64": 8589934592,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 19,
+      "_byte_offset": 476,
+      "SpawnPosLibID": 1101,
+      "Row__raw_int64": 180388626432,
+      "Column__raw_int64": 115964116992,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 20,
+      "_byte_offset": 500,
+      "SpawnPosLibID": 1101,
+      "Row__raw_int64": 94489280512,
+      "Column__raw_int64": 8589934592,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 21,
+      "_byte_offset": 524,
+      "SpawnPosLibID": 1101,
+      "Row__raw_int64": 94489280512,
+      "Column__raw_int64": 137438953472,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 22,
+      "_byte_offset": 548,
+      "SpawnPosLibID": 1101,
+      "Row__raw_int64": 146028888064,
+      "Column__raw_int64": 73014444032,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 23,
+      "_byte_offset": 572,
+      "SpawnPosLibID": 1101,
+      "Row__raw_int64": 47244640256,
+      "Column__raw_int64": 73014444032,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 24,
+      "_byte_offset": 596,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 25,
+      "_byte_offset": 620,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 8589934592,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 26,
+      "_byte_offset": 644,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 12884901888,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 27,
+      "_byte_offset": 668,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 17179869184,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 28,
+      "_byte_offset": 692,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 21474836480,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 29,
+      "_byte_offset": 716,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 25769803776,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 30,
+      "_byte_offset": 740,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 30064771072,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 31,
+      "_byte_offset": 764,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 34359738368,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 32,
+      "_byte_offset": 788,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 38654705664,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 33,
+      "_byte_offset": 812,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 42949672960,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 34,
+      "_byte_offset": 836,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 47244640256,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 35,
+      "_byte_offset": 860,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 51539607552,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 36,
+      "_byte_offset": 884,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 55834574848,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 37,
+      "_byte_offset": 908,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 60129542144,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 38,
+      "_byte_offset": 932,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 64424509440,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 39,
+      "_byte_offset": 956,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 68719476736,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 40,
+      "_byte_offset": 980,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 73014444032,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 41,
+      "_byte_offset": 1004,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 77309411328,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 42,
+      "_byte_offset": 1028,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 81604378624,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 43,
+      "_byte_offset": 1052,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 85899345920,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 44,
+      "_byte_offset": 1076,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 90194313216,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 45,
+      "_byte_offset": 1100,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 94489280512,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 46,
+      "_byte_offset": 1124,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 98784247808,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 47,
+      "_byte_offset": 1148,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 103079215104,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 48,
+      "_byte_offset": 1172,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 107374182400,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 49,
+      "_byte_offset": 1196,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 111669149696,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 50,
+      "_byte_offset": 1220,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 115964116992,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 51,
+      "_byte_offset": 1244,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 120259084288,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 52,
+      "_byte_offset": 1268,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 124554051584,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 53,
+      "_byte_offset": 1292,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 128849018880,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 54,
+      "_byte_offset": 1316,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 133143986176,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 55,
+      "_byte_offset": 1340,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 137438953472,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 56,
+      "_byte_offset": 1364,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 141733920768,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 57,
+      "_byte_offset": 1388,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 146028888064,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 58,
+      "_byte_offset": 1412,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 150323855360,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 59,
+      "_byte_offset": 1436,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 154618822656,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 60,
+      "_byte_offset": 1460,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 158913789952,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 61,
+      "_byte_offset": 1484,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 163208757248,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 62,
+      "_byte_offset": 1508,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 167503724544,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 63,
+      "_byte_offset": 1532,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 171798691840,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 64,
+      "_byte_offset": 1556,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 176093659136,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 65,
+      "_byte_offset": 1580,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 180388626432,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 66,
+      "_byte_offset": 1604,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 67,
+      "_byte_offset": 1628,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 8589934592,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 68,
+      "_byte_offset": 1652,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 12884901888,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 69,
+      "_byte_offset": 1676,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 17179869184,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 70,
+      "_byte_offset": 1700,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 21474836480,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 71,
+      "_byte_offset": 1724,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 25769803776,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 72,
+      "_byte_offset": 1748,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 30064771072,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 73,
+      "_byte_offset": 1772,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 34359738368,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 74,
+      "_byte_offset": 1796,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 38654705664,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 75,
+      "_byte_offset": 1820,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 42949672960,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 76,
+      "_byte_offset": 1844,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 47244640256,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 77,
+      "_byte_offset": 1868,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 51539607552,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 78,
+      "_byte_offset": 1892,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 55834574848,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 79,
+      "_byte_offset": 1916,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 60129542144,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 80,
+      "_byte_offset": 1940,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 64424509440,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 81,
+      "_byte_offset": 1964,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 68719476736,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 82,
+      "_byte_offset": 1988,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 73014444032,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 83,
+      "_byte_offset": 2012,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 77309411328,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 84,
+      "_byte_offset": 2036,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 81604378624,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 85,
+      "_byte_offset": 2060,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 85899345920,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 86,
+      "_byte_offset": 2084,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 90194313216,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 87,
+      "_byte_offset": 2108,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 94489280512,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 88,
+      "_byte_offset": 2132,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 98784247808,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 89,
+      "_byte_offset": 2156,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 103079215104,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 90,
+      "_byte_offset": 2180,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 107374182400,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 91,
+      "_byte_offset": 2204,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 111669149696,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 92,
+      "_byte_offset": 2228,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 115964116992,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 93,
+      "_byte_offset": 2252,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 120259084288,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 94,
+      "_byte_offset": 2276,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 124554051584,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 95,
+      "_byte_offset": 2300,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 128849018880,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 96,
+      "_byte_offset": 2324,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 133143986176,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 97,
+      "_byte_offset": 2348,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 137438953472,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 98,
+      "_byte_offset": 2372,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 99,
+      "_byte_offset": 2396,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 8589934592,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 100,
+      "_byte_offset": 2420,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 12884901888,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 101,
+      "_byte_offset": 2444,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 17179869184,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 102,
+      "_byte_offset": 2468,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 21474836480,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 103,
+      "_byte_offset": 2492,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 25769803776,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 104,
+      "_byte_offset": 2516,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 30064771072,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 105,
+      "_byte_offset": 2540,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 34359738368,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 106,
+      "_byte_offset": 2564,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 38654705664,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 107,
+      "_byte_offset": 2588,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 42949672960,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 108,
+      "_byte_offset": 2612,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 47244640256,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 109,
+      "_byte_offset": 2636,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 51539607552,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 110,
+      "_byte_offset": 2660,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 55834574848,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 111,
+      "_byte_offset": 2684,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 60129542144,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 112,
+      "_byte_offset": 2708,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 64424509440,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 113,
+      "_byte_offset": 2732,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 68719476736,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 114,
+      "_byte_offset": 2756,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 73014444032,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 115,
+      "_byte_offset": 2780,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 77309411328,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 116,
+      "_byte_offset": 2804,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 81604378624,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 117,
+      "_byte_offset": 2828,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 85899345920,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 118,
+      "_byte_offset": 2852,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 90194313216,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 119,
+      "_byte_offset": 2876,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 94489280512,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 120,
+      "_byte_offset": 2900,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 98784247808,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 121,
+      "_byte_offset": 2924,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 103079215104,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 122,
+      "_byte_offset": 2948,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 107374182400,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 123,
+      "_byte_offset": 2972,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 111669149696,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 124,
+      "_byte_offset": 2996,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 115964116992,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 125,
+      "_byte_offset": 3020,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 120259084288,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 126,
+      "_byte_offset": 3044,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 124554051584,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 127,
+      "_byte_offset": 3068,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 128849018880,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 128,
+      "_byte_offset": 3092,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 133143986176,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 129,
+      "_byte_offset": 3116,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 137438953472,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 130,
+      "_byte_offset": 3140,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 141733920768,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 131,
+      "_byte_offset": 3164,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 146028888064,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 132,
+      "_byte_offset": 3188,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 150323855360,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 133,
+      "_byte_offset": 3212,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 154618822656,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 134,
+      "_byte_offset": 3236,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 158913789952,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 135,
+      "_byte_offset": 3260,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 163208757248,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 136,
+      "_byte_offset": 3284,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 167503724544,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 137,
+      "_byte_offset": 3308,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 171798691840,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 138,
+      "_byte_offset": 3332,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 176093659136,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 139,
+      "_byte_offset": 3356,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 180388626432,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 140,
+      "_byte_offset": 3380,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 141,
+      "_byte_offset": 3404,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 142,
+      "_byte_offset": 3428,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 8589934592,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 143,
+      "_byte_offset": 3452,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 12884901888,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 144,
+      "_byte_offset": 3476,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 17179869184,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 145,
+      "_byte_offset": 3500,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 21474836480,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 146,
+      "_byte_offset": 3524,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 25769803776,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 147,
+      "_byte_offset": 3548,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 30064771072,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 148,
+      "_byte_offset": 3572,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 34359738368,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 149,
+      "_byte_offset": 3596,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 38654705664,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 150,
+      "_byte_offset": 3620,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 42949672960,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 151,
+      "_byte_offset": 3644,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 47244640256,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 152,
+      "_byte_offset": 3668,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 51539607552,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 153,
+      "_byte_offset": 3692,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 55834574848,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 154,
+      "_byte_offset": 3716,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 60129542144,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 155,
+      "_byte_offset": 3740,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 64424509440,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 156,
+      "_byte_offset": 3764,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 68719476736,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 157,
+      "_byte_offset": 3788,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 73014444032,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 158,
+      "_byte_offset": 3812,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 77309411328,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 159,
+      "_byte_offset": 3836,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 81604378624,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 160,
+      "_byte_offset": 3860,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 85899345920,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 161,
+      "_byte_offset": 3884,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 90194313216,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 162,
+      "_byte_offset": 3908,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 94489280512,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 163,
+      "_byte_offset": 3932,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 98784247808,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 164,
+      "_byte_offset": 3956,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 103079215104,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 165,
+      "_byte_offset": 3980,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 107374182400,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 166,
+      "_byte_offset": 4004,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 111669149696,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 167,
+      "_byte_offset": 4028,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 115964116992,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 168,
+      "_byte_offset": 4052,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 120259084288,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 169,
+      "_byte_offset": 4076,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 124554051584,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 170,
+      "_byte_offset": 4100,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 128849018880,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 171,
+      "_byte_offset": 4124,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 133143986176,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 172,
+      "_byte_offset": 4148,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 137438953472,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 173,
+      "_byte_offset": 4172,
+      "SpawnPosLibID": 1102,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 174,
+      "_byte_offset": 4196,
+      "SpawnPosLibID": 1201,
+      "Row__raw_int64": 128849018880,
+      "Column__raw_int64": 77309411328,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 175,
+      "_byte_offset": 4220,
+      "SpawnPosLibID": 1201,
+      "Row__raw_int64": 94489280512,
+      "Column__raw_int64": 60129542144,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 176,
+      "_byte_offset": 4244,
+      "SpawnPosLibID": 1201,
+      "Row__raw_int64": 146028888064,
+      "Column__raw_int64": 73014444032,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 177,
+      "_byte_offset": 4268,
+      "SpawnPosLibID": 1201,
+      "Row__raw_int64": 103079215104,
+      "Column__raw_int64": 64424509440,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 178,
+      "_byte_offset": 4292,
+      "SpawnPosLibID": 1301,
+      "Row__raw_int64": 94489280512,
+      "Column__raw_int64": 137438953472,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 179,
+      "_byte_offset": 4316,
+      "SpawnPosLibID": 1301,
+      "Row__raw_int64": 128849018880,
+      "Column__raw_int64": 137438953472,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 180,
+      "_byte_offset": 4340,
+      "SpawnPosLibID": 1301,
+      "Row__raw_int64": 158913789952,
+      "Column__raw_int64": 137438953472,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 181,
+      "_byte_offset": 4364,
+      "SpawnPosLibID": 1301,
+      "Row__raw_int64": 180388626432,
+      "Column__raw_int64": 115964116992,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 182,
+      "_byte_offset": 4388,
+      "SpawnPosLibID": 1301,
+      "Row__raw_int64": 180388626432,
+      "Column__raw_int64": 55834574848,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 183,
+      "_byte_offset": 4412,
+      "SpawnPosLibID": 1301,
+      "Row__raw_int64": 180388626432,
+      "Column__raw_int64": 25769803776,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 184,
+      "_byte_offset": 4436,
+      "SpawnPosLibID": 1301,
+      "Row__raw_int64": 180388626432,
+      "Column__raw_int64": 115964116992,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 185,
+      "_byte_offset": 4460,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 34359738368,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 186,
+      "_byte_offset": 4484,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 38654705664,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 187,
+      "_byte_offset": 4508,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 42949672960,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 188,
+      "_byte_offset": 4532,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 47244640256,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 189,
+      "_byte_offset": 4556,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 51539607552,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 190,
+      "_byte_offset": 4580,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 55834574848,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 191,
+      "_byte_offset": 4604,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 60129542144,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 192,
+      "_byte_offset": 4628,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 64424509440,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 193,
+      "_byte_offset": 4652,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 68719476736,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 194,
+      "_byte_offset": 4676,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 73014444032,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 195,
+      "_byte_offset": 4700,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 77309411328,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 196,
+      "_byte_offset": 4724,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 81604378624,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 197,
+      "_byte_offset": 4748,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 85899345920,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 198,
+      "_byte_offset": 4772,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 90194313216,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 199,
+      "_byte_offset": 4796,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 94489280512,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 200,
+      "_byte_offset": 4820,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 98784247808,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 201,
+      "_byte_offset": 4844,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 103079215104,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 202,
+      "_byte_offset": 4868,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 107374182400,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 203,
+      "_byte_offset": 4892,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 111669149696,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 204,
+      "_byte_offset": 4916,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 115964116992,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 205,
+      "_byte_offset": 4940,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 120259084288,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 206,
+      "_byte_offset": 4964,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 124554051584,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 207,
+      "_byte_offset": 4988,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 128849018880,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 208,
+      "_byte_offset": 5012,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 133143986176,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 209,
+      "_byte_offset": 5036,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 137438953472,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 210,
+      "_byte_offset": 5060,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 141733920768,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 211,
+      "_byte_offset": 5084,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 146028888064,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 212,
+      "_byte_offset": 5108,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 150323855360,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 213,
+      "_byte_offset": 5132,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 154618822656,
+      "Column__raw_int64": 4294967296,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 214,
+      "_byte_offset": 5156,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 34359738368,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 215,
+      "_byte_offset": 5180,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 38654705664,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 216,
+      "_byte_offset": 5204,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 42949672960,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 217,
+      "_byte_offset": 5228,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 47244640256,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 218,
+      "_byte_offset": 5252,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 51539607552,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 219,
+      "_byte_offset": 5276,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 55834574848,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 220,
+      "_byte_offset": 5300,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 60129542144,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 221,
+      "_byte_offset": 5324,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 64424509440,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 222,
+      "_byte_offset": 5348,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 68719476736,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 223,
+      "_byte_offset": 5372,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 73014444032,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 224,
+      "_byte_offset": 5396,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 77309411328,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 225,
+      "_byte_offset": 5420,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 81604378624,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 226,
+      "_byte_offset": 5444,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 85899345920,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 227,
+      "_byte_offset": 5468,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 90194313216,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 228,
+      "_byte_offset": 5492,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 94489280512,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 229,
+      "_byte_offset": 5516,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 98784247808,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 230,
+      "_byte_offset": 5540,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 103079215104,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 231,
+      "_byte_offset": 5564,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 107374182400,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 232,
+      "_byte_offset": 5588,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 111669149696,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 233,
+      "_byte_offset": 5612,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 115964116992,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 234,
+      "_byte_offset": 5636,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 120259084288,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 235,
+      "_byte_offset": 5660,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 124554051584,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 236,
+      "_byte_offset": 5684,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 128849018880,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 237,
+      "_byte_offset": 5708,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 133143986176,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 238,
+      "_byte_offset": 5732,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 137438953472,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 239,
+      "_byte_offset": 5756,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 141733920768,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 240,
+      "_byte_offset": 5780,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 146028888064,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 241,
+      "_byte_offset": 5804,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 150323855360,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 242,
+      "_byte_offset": 5828,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 154618822656,
+      "Column__raw_int64": 141733920768,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 243,
+      "_byte_offset": 5852,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 34359738368,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 244,
+      "_byte_offset": 5876,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 38654705664,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 245,
+      "_byte_offset": 5900,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 42949672960,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 246,
+      "_byte_offset": 5924,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 47244640256,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 247,
+      "_byte_offset": 5948,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 51539607552,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 248,
+      "_byte_offset": 5972,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 55834574848,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 249,
+      "_byte_offset": 5996,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 60129542144,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 250,
+      "_byte_offset": 6020,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 64424509440,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 251,
+      "_byte_offset": 6044,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 68719476736,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 252,
+      "_byte_offset": 6068,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 73014444032,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 253,
+      "_byte_offset": 6092,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 77309411328,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 254,
+      "_byte_offset": 6116,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 81604378624,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 255,
+      "_byte_offset": 6140,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 85899345920,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 256,
+      "_byte_offset": 6164,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 90194313216,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 257,
+      "_byte_offset": 6188,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 94489280512,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 258,
+      "_byte_offset": 6212,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 98784247808,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 259,
+      "_byte_offset": 6236,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 103079215104,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 260,
+      "_byte_offset": 6260,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 107374182400,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 261,
+      "_byte_offset": 6284,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 4294967296,
+      "Column__raw_int64": 111669149696,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 262,
+      "_byte_offset": 6308,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 34359738368,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 263,
+      "_byte_offset": 6332,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 38654705664,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 264,
+      "_byte_offset": 6356,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 42949672960,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 265,
+      "_byte_offset": 6380,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 47244640256,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 266,
+      "_byte_offset": 6404,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 51539607552,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 267,
+      "_byte_offset": 6428,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 55834574848,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 268,
+      "_byte_offset": 6452,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 60129542144,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 269,
+      "_byte_offset": 6476,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 64424509440,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 270,
+      "_byte_offset": 6500,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 68719476736,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 271,
+      "_byte_offset": 6524,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 73014444032,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 272,
+      "_byte_offset": 6548,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 77309411328,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 273,
+      "_byte_offset": 6572,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 81604378624,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 274,
+      "_byte_offset": 6596,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 85899345920,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 275,
+      "_byte_offset": 6620,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 90194313216,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 276,
+      "_byte_offset": 6644,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 94489280512,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 277,
+      "_byte_offset": 6668,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 98784247808,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 278,
+      "_byte_offset": 6692,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 103079215104,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 279,
+      "_byte_offset": 6716,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 107374182400,
+      "Weight": 100,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 280,
+      "_byte_offset": 6740,
+      "SpawnPosLibID": 1109,
+      "Row__raw_int64": 184683593728,
+      "Column__raw_int64": 111669149696,
+      "Weight": 100,
+      "_byte_length": 24
+    }
+  ]
+}

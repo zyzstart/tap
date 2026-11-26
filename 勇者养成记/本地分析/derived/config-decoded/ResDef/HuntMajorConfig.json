@@ -1,0 +1,419 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_huntmajorconfig.bytes.ab",
+    "path_id": -4227070624402410982,
+    "name": "HuntMajorConfig",
+    "sha256": "cc779cb278b1d8c5f0785c9a3d8db24377201835ba20f1d88abf821d1d0fd094",
+    "export": "derived/unity/text/assets_resources_config_resbin_huntmajorconfig.bytes/HuntMajorConfig__-4227070624402410982.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 956,
+      "version": 1,
+      "record_count": 36,
+      "stored_crc32": "487537fd",
+      "computed_inverted_crc32": "487537fd"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "HuntMajorConfig",
+      "fields": [
+        {
+          "type": "byte",
+          "name": "Major",
+          "object_offset": 16
+        },
+        {
+          "type": "string",
+          "name": "Name",
+          "object_offset": 24
+        },
+        {
+          "type": "int",
+          "name": "ChapterID",
+          "object_offset": 32
+        },
+        {
+          "type": "uint",
+          "name": "CostHuntExp",
+          "object_offset": 36
+        }
+      ],
+      "unpack_va": 30732148,
+      "dump_line": 205467
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1d4efa8",
+        "target_va": "0x21f65e0",
+        "opcode": "BL",
+        "reader": "readUInt8",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d4efd0",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d4eff4",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d4f034",
+        "target_va": "0x21f6908",
+        "opcode": "B-tail",
+        "reader": "readUInt32",
+        "destination_object_offset": 36,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 36
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "Major": 1,
+      "Name": "恐狼猎手",
+      "ChapterID": 1,
+      "CostHuntExp": 300,
+      "_byte_length": 26
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 46,
+      "Major": 2,
+      "Name": "火蜥猎手",
+      "ChapterID": 2,
+      "CostHuntExp": 600,
+      "_byte_length": 26
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 72,
+      "Major": 3,
+      "Name": "深窟猎手",
+      "ChapterID": 3,
+      "CostHuntExp": 900,
+      "_byte_length": 26
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 98,
+      "Major": 4,
+      "Name": "剑虎猎手",
+      "ChapterID": 4,
+      "CostHuntExp": 1200,
+      "_byte_length": 26
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 124,
+      "Major": 5,
+      "Name": "巨石猎手",
+      "ChapterID": 5,
+      "CostHuntExp": 1500,
+      "_byte_length": 26
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 150,
+      "Major": 6,
+      "Name": "猛象猎手",
+      "ChapterID": 6,
+      "CostHuntExp": 2000,
+      "_byte_length": 26
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 176,
+      "Major": 7,
+      "Name": "剑龙猎手",
+      "ChapterID": 7,
+      "CostHuntExp": 3000,
+      "_byte_length": 26
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 202,
+      "Major": 8,
+      "Name": "灰烬猎手",
+      "ChapterID": 8,
+      "CostHuntExp": 4000,
+      "_byte_length": 26
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 228,
+      "Major": 9,
+      "Name": "翼龙猎手",
+      "ChapterID": 9,
+      "CostHuntExp": 6000,
+      "_byte_length": 26
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 254,
+      "Major": 10,
+      "Name": "灵语猎手",
+      "ChapterID": 10,
+      "CostHuntExp": 8000,
+      "_byte_length": 26
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 280,
+      "Major": 11,
+      "Name": "伊始猎手",
+      "ChapterID": 11,
+      "CostHuntExp": 10000,
+      "_byte_length": 26
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 306,
+      "Major": 12,
+      "Name": "雷鸣猎手",
+      "ChapterID": 12,
+      "CostHuntExp": 12000,
+      "_byte_length": 26
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 332,
+      "Major": 13,
+      "Name": "云顶猎手",
+      "ChapterID": 13,
+      "CostHuntExp": 14000,
+      "_byte_length": 26
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 358,
+      "Major": 14,
+      "Name": "日炎猎手",
+      "ChapterID": 14,
+      "CostHuntExp": 16000,
+      "_byte_length": 26
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 384,
+      "Major": 15,
+      "Name": "自然猎手",
+      "ChapterID": 15,
+      "CostHuntExp": 18000,
+      "_byte_length": 26
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 410,
+      "Major": 16,
+      "Name": "海神猎手",
+      "ChapterID": 16,
+      "CostHuntExp": 20000,
+      "_byte_length": 26
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 436,
+      "Major": 17,
+      "Name": "彩虹猎手",
+      "ChapterID": 17,
+      "CostHuntExp": 22000,
+      "_byte_length": 26
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 462,
+      "Major": 18,
+      "Name": "星月猎手",
+      "ChapterID": 18,
+      "CostHuntExp": 24000,
+      "_byte_length": 26
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 488,
+      "Major": 19,
+      "Name": "极光猎手",
+      "ChapterID": 19,
+      "CostHuntExp": 26000,
+      "_byte_length": 26
+    },
+    {
+      "_record_index": 19,
+      "_byte_offset": 514,
+      "Major": 20,
+      "Name": "圣火猎手",
+      "ChapterID": 20,
+      "CostHuntExp": 28000,
+      "_byte_length": 26
+    },
+    {
+      "_record_index": 20,
+      "_byte_offset": 540,
+      "Major": 21,
+      "Name": "智械猎手",
+      "ChapterID": 21,
+      "CostHuntExp": 30000,
+      "_byte_length": 26
+    },
+    {
+      "_record_index": 21,
+      "_byte_offset": 566,
+      "Major": 22,
+      "Name": "禁咒猎手",
+      "ChapterID": 22,
+      "CostHuntExp": 32000,
+      "_byte_length": 26
+    },
+    {
+      "_record_index": 22,
+      "_byte_offset": 592,
+      "Major": 23,
+      "Name": "暗裔猎手",
+      "ChapterID": 23,
+      "CostHuntExp": 34000,
+      "_byte_length": 26
+    },
+    {
+      "_record_index": 23,
+      "_byte_offset": 618,
+      "Major": 24,
+      "Name": "青藤猎手",
+      "ChapterID": 24,
+      "CostHuntExp": 36000,
+      "_byte_length": 26
+    },
+    {
+      "_record_index": 24,
+      "_byte_offset": 644,
+      "Major": 25,
+      "Name": "蛮荒猎手",
+      "ChapterID": 25,
+      "CostHuntExp": 38000,
+      "_byte_length": 26
+    },
+    {
+      "_record_index": 25,
+      "_byte_offset": 670,
+      "Major": 26,
+      "Name": "龙侍猎手",
+      "ChapterID": 26,
+      "CostHuntExp": 40000,
+      "_byte_length": 26
+    },
+    {
+      "_record_index": 26,
+      "_byte_offset": 696,
+      "Major": 27,
+      "Name": "岩渊猎手",
+      "ChapterID": 27,
+      "CostHuntExp": 42000,
+      "_byte_length": 26
+    },
+    {
+      "_record_index": 27,
+      "_byte_offset": 722,
+      "Major": 28,
+      "Name": "暗夜猎手",
+      "ChapterID": 28,
+      "CostHuntExp": 44000,
+      "_byte_length": 26
+    },
+    {
+      "_record_index": 28,
+      "_byte_offset": 748,
+      "Major": 29,
+      "Name": "雪神猎手",
+      "ChapterID": 29,
+      "CostHuntExp": 46000,
+      "_byte_length": 26
+    },
+    {
+      "_record_index": 29,
+      "_byte_offset": 774,
+      "Major": 30,
+      "Name": "赤焰猎手",
+      "ChapterID": 30,
+      "CostHuntExp": 48000,
+      "_byte_length": 26
+    },
+    {
+      "_record_index": 30,
+      "_byte_offset": 800,
+      "Major": 31,
+      "Name": "魔沼猎手",
+      "ChapterID": 31,
+      "CostHuntExp": 50000,
+      "_byte_length": 26
+    },
+    {
+      "_record_index": 31,
+      "_byte_offset": 826,
+      "Major": 32,
+      "Name": "亡灵猎手",
+      "ChapterID": 32,
+      "CostHuntExp": 52000,
+      "_byte_length": 26
+    },
+    {
+      "_record_index": 32,
+      "_byte_offset": 852,
+      "Major": 33,
+      "Name": "星渊猎手",
+      "ChapterID": 33,
+      "CostHuntExp": 54000,
+      "_byte_length": 26
+    },
+    {
+      "_record_index": 33,
+      "_byte_offset": 878,
+      "Major": 34,
+      "Name": "源能猎手",
+      "ChapterID": 34,
+      "CostHuntExp": 56000,
+      "_byte_length": 26
+    },
+    {
+      "_record_index": 34,
+      "_byte_offset": 904,
+      "Major": 35,
+      "Name": "静寂猎手",
+      "ChapterID": 35,
+      "CostHuntExp": 58000,
+      "_byte_length": 26
+    },
+    {
+      "_record_index": 35,
+      "_byte_offset": 930,
+      "Major": 36,
+      "Name": "浮迹猎手",
+      "ChapterID": 36,
+      "CostHuntExp": 60000,
+      "_byte_length": 26
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_menpainpchaoganconfig.bytes.ab",
+    "path_id": 8544737879365431839,
+    "name": "MenPaiNpcHaoGanConfig",
+    "sha256": "ab36ca0df21d7204a9c42aee2a4b9684bdd9cd3d390079375597369766269257",
+    "export": "derived/unity/text/assets_resources_config_resbin_menpainpchaoganconfig.bytes/MenPaiNpcHaoGanConfig__8544737879365431839.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 505,
+      "version": 1,
+      "record_count": 8,
+      "stored_crc32": "536864b9",
+      "computed_inverted_crc32": "536864b9"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "MenPaiNpcHaoGanConfig",
+      "fields": [
+        {
+          "type": "uint",
+          "name": "HaoGanDuLv",
+          "object_offset": 16
+        },
+        {
+          "type": "uint",
+          "name": "NeedHaoGanDu",
+          "object_offset": 20
+        },
+        {
+          "type": "string",
+          "name": "Icon",
+          "object_offset": 24
+        },
+        {
+          "type": "string",
+          "name": "HaoGanName",
+          "object_offset": 32
+        },
+        {
+          "type": "string",
+          "name": "TopColor",
+          "object_offset": 40
+        },
+        {
+          "type": "string",
+          "name": "BottomColor",
+          "object_offset": 48
+        },
+        {
+          "type": "byte",
+          "name": "InPage",
+          "object_offset": 56
+        }
+      ],
+      "unpack_va": 30782028,
+      "dump_line": 208370
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1d5b280",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d5b2a4",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d5b2cc",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d5b2f4",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d5b31c",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 40,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d5b344",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 48,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d5b384",
+        "target_va": "0x21f65e0",
+        "opcode": "B-tail",
+        "reader": "readUInt8",
+        "destination_object_offset": 56,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 8
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "HaoGanDuLv": 1,
+      "NeedHaoGanDu": 10,
+      "Icon": "buluo_xx",
+      "HaoGanName": "陌生人",
+      "TopColor": "d84d2d",
+      "BottomColor": "c9781b",
+      "InPage": 1,
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 78,
+      "HaoGanDuLv": 2,
+      "NeedHaoGanDu": 50,
+      "Icon": "buluo_xx",
+      "HaoGanName": "初次见面",
+      "TopColor": "d84d2d",
+      "BottomColor": "c9781b",
+      "InPage": 2,
+      "_byte_length": 61
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 139,
+      "HaoGanDuLv": 3,
+      "NeedHaoGanDu": 100,
+      "Icon": "buluo_xx",
+      "HaoGanName": "逐渐熟悉",
+      "TopColor": "b91e1b",
+      "BottomColor": "d14f35",
+      "InPage": 2,
+      "_byte_length": 61
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 200,
+      "HaoGanDuLv": 4,
+      "NeedHaoGanDu": 200,
+      "Icon": "buluo_xx",
+      "HaoGanName": "互帮互助",
+      "TopColor": "b91e1b",
+      "BottomColor": "d14f35",
+      "InPage": 2,
+      "_byte_length": 61
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 261,
+      "HaoGanDuLv": 5,
+      "NeedHaoGanDu": 400,
+      "Icon": "buluo_xx",
+      "HaoGanName": "信赖有加",
+      "TopColor": "b91e1b",
+      "BottomColor": "d14f35",
+      "InPage": 2,
+      "_byte_length": 61
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 322,
+      "HaoGanDuLv": 6,
+      "NeedHaoGanDu": 800,
+      "Icon": "buluo_xx",
+      "HaoGanName": "亲密伙伴",
+      "TopColor": "b71d41",
+      "BottomColor": "d74047",
+      "InPage": 3,
+      "_byte_length": 61
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 383,
+      "HaoGanDuLv": 7,
+      "NeedHaoGanDu": 1600,
+      "Icon": "buluo_xx",
+      "HaoGanName": "血脉相连",
+      "TopColor": "b71d41",
+      "BottomColor": "d74047",
+      "InPage": 3,
+      "_byte_length": 61
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 444,
+      "HaoGanDuLv": 8,
+      "NeedHaoGanDu": 0,
+      "Icon": "buluo_xx",
+      "HaoGanName": "生死与共",
+      "TopColor": "b71d41",
+      "BottomColor": "d74047",
+      "InPage": 3,
+      "_byte_length": 61
+    }
+  ]
+}

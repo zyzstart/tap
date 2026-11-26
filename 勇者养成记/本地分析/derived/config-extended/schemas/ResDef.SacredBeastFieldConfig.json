@@ -1,0 +1,363 @@
+{
+  "namespace": "ResDef",
+  "name": "SacredBeastFieldConfig",
+  "fields": [
+    {
+      "type": "int",
+      "name": "ID",
+      "object_offset": 16
+    },
+    {
+      "type": "int",
+      "name": "Level",
+      "object_offset": 20
+    },
+    {
+      "type": "int",
+      "name": "MinSacredBeastLevel",
+      "object_offset": 24
+    },
+    {
+      "type": "int",
+      "name": "ConsumeItemID",
+      "object_offset": 28
+    },
+    {
+      "type": "int",
+      "name": "ConsumeItemCnt",
+      "object_offset": 32
+    },
+    {
+      "type": "float",
+      "name": "SkillTriggerPercent",
+      "object_offset": 36
+    },
+    {
+      "type": "string",
+      "name": "SkillName",
+      "object_offset": 40
+    },
+    {
+      "type": "int",
+      "name": "SkillID",
+      "object_offset": 48
+    },
+    {
+      "type": "string",
+      "name": "SkillDesc",
+      "object_offset": 56
+    },
+    {
+      "type": "string",
+      "name": "NextEffect",
+      "object_offset": 64
+    },
+    {
+      "type": "ResAttrImpactData",
+      "name": "AttrList",
+      "object_offset": 72
+    }
+  ],
+  "unpack_va": 32039924,
+  "dump_line": 210563,
+  "layout": [
+    {
+      "type": "int",
+      "name": "ID",
+      "object_offset": 16,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e8e428",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "type": "int",
+      "name": "Level",
+      "object_offset": 20,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e8e44c",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "type": "int",
+      "name": "MinSacredBeastLevel",
+      "object_offset": 24,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e8e470",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            24
+          ]
+        }
+      ]
+    },
+    {
+      "type": "int",
+      "name": "ConsumeItemID",
+      "object_offset": 28,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e8e494",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            28
+          ]
+        }
+      ]
+    },
+    {
+      "type": "int",
+      "name": "ConsumeItemCnt",
+      "object_offset": 32,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e8e4b8",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "type": "float",
+      "name": "SkillTriggerPercent",
+      "object_offset": 36,
+      "wire_type": "float",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e8e4dc",
+          "target_va": "0x21f6b98",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readFloat"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readFloat",
+          "destination": [
+            "self",
+            36
+          ]
+        }
+      ]
+    },
+    {
+      "type": "string",
+      "name": "SkillName",
+      "object_offset": 40,
+      "wire_type": "string",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e8e504",
+          "target_va": "0x21f6ce8",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readString"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readString",
+          "destination": [
+            "self",
+            40
+          ],
+          "max_string_size": 256
+        }
+      ],
+      "max_string_size": 256
+    },
+    {
+      "type": "int",
+      "name": "SkillID",
+      "object_offset": 48,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e8e528",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "type": "string",
+      "name": "SkillDesc",
+      "object_offset": 56,
+      "wire_type": "string",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e8e550",
+          "target_va": "0x21f6ce8",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readString"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readString",
+          "destination": [
+            "self",
+            56
+          ],
+          "max_string_size": 1024
+        }
+      ],
+      "max_string_size": 1024
+    },
+    {
+      "type": "string",
+      "name": "NextEffect",
+      "object_offset": 64,
+      "wire_type": "string",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e8e578",
+          "target_va": "0x21f6ce8",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readString"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readString",
+          "destination": [
+            "self",
+            64
+          ],
+          "max_string_size": 1024
+        }
+      ],
+      "max_string_size": 1024
+    },
+    {
+      "type": "ResAttrImpactData",
+      "name": "AttrList",
+      "object_offset": 72,
+      "wire_type": "ResAttrImpactData",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e8e5b8",
+          "target_va": "0x1e879c8",
+          "target_names": [
+            "ResDef.ResAttrImpactData$$unpack"
+          ],
+          "opcode": "B",
+          "kind": "nested",
+          "nested_schema": "ResDef.ResAttrImpactData",
+          "destination": [
+            "field",
+            72
+          ],
+          "cut_version": 1
+        }
+      ],
+      "nested_schema": "ResDef.ResAttrImpactData"
+    }
+  ],
+  "native_evidence": {
+    "method_start_va": "0x1e8e3f4",
+    "instruction_steps": 88,
+    "event_count": 11,
+    "branch_evidence": [],
+    "loops": [],
+    "instruction_sha256": "ac8ea83fdb2cbcee8ed7c910786865008c8822997299f72b7098daf0733771e3",
+    "gate": "concrete-success-path; all sequential readers/nested callees; full field/destination/stride matching",
+    "assumptions": [
+      "non-null input buffer and created nested objects/arrays",
+      "managed array bounds valid",
+      "AAPCS64 callee-saved register preservation",
+      "reader and nested call success; version 1 only"
+    ]
+  }
+}

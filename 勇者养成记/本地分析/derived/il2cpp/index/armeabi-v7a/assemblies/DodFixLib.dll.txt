@@ -1,0 +1,3073 @@
+// TEXT-ONLY METADATA/SIGNATURE EXCERPT; NOT RECOVERED C# IMPLEMENTATION.
+// Source: derived/il2cpp/armeabi-v7a/dump.cs
+// SHA256: 4b189984f87cc6d586f1c23c3122323a28473ae06384d36ea292e3e13f97e6a1
+// Assembly: DodFixLib.dll; types: 90; original dump lines 146920-149896
+
+// ORIGINAL DUMP LINES 146920-146922; TypeDefIndex 2436
+// Namespace: 
+internal class <Module> // TypeDefIndex: 2436
+{}
+
+// ORIGINAL DUMP LINES 146924-147128; TypeDefIndex 2437
+// Namespace: BattleCore
+[Serializable]
+public struct FP : IEquatable<FP>, IComparable<FP>, IXmlSerializable // TypeDefIndex: 2437
+{
+	// Fields
+	public long _serializedValue; // 0x0
+	public const long L_MAX_VALUE = 9223372036854775807;
+	public const long L_MIN_VALUE = -9223372036854775808;
+	public const int NUM_BITS = 64;
+	public const int FRACTIONAL_PLACES = 32;
+	public const long L_ONE = 4294967296;
+	public const long L_TEN = 42949672960;
+	public const long L_HALF = 2147483648;
+	public const long L_PI_TIMES_2 = 26986075409;
+	public const long L_PI = 13493037704;
+	public const long L_PI_OVER_2 = 6746518852;
+	public const long L_LN2 = 2977044471;
+	public const long L_LOG2MAX = 133143986176;
+	public const long L_LOG2MIN = -137438953472;
+	public const int LUT_SIZE = 205887;
+	public static readonly FP Precision; // 0x0
+	public static readonly FP MaxValue; // 0x8
+	public static readonly FP MinValue; // 0x10
+	public static readonly FP One; // 0x18
+	public static readonly FP Ten; // 0x20
+	public static readonly FP Half; // 0x28
+	public static readonly FP Zero; // 0x30
+	public static readonly FP PositiveInfinity; // 0x38
+	public static readonly FP NegativeInfinity; // 0x40
+	public static readonly FP NaN; // 0x48
+	public static readonly FP EN1; // 0x50
+	public static readonly FP EN2; // 0x58
+	public static readonly FP EN3; // 0x60
+	public static readonly FP EN4; // 0x68
+	public static readonly FP EN5; // 0x70
+	public static readonly FP EN6; // 0x78
+	public static readonly FP EN7; // 0x80
+	public static readonly FP EN8; // 0x88
+	public static readonly FP EN9; // 0x90
+	public static readonly FP Epsilon; // 0x98
+	public static readonly FP Pi; // 0xA0
+	public static readonly FP PiOver2; // 0xA8
+	public static readonly FP PiTimes2; // 0xB0
+	public static readonly FP PiInv; // 0xB8
+	public static readonly FP PiOver2Inv; // 0xC0
+	public static readonly FP Deg2Rad; // 0xC8
+	public static readonly FP Rad2Deg; // 0xD0
+	public static readonly FP LutInterval; // 0xD8
+	public static readonly FP Log2Max; // 0xE0
+	public static readonly FP Log2Min; // 0xE8
+	public static readonly FP Ln2; // 0xF0
+
+	// Properties
+	public long RawValue { get; }
+	public static long[] SinLut { get; }
+
+	// Methods
+
+	// RVA: 0x1973FFC Offset: 0x1973FFC VA: 0x1973FFC
+	public static int Sign(FP value) { }
+
+	// RVA: 0x1974014 Offset: 0x1974014 VA: 0x1974014
+	public static FP Abs(FP value) { }
+
+	// RVA: 0x19740D4 Offset: 0x19740D4 VA: 0x19740D4
+	public static FP FastAbs(FP value) { }
+
+	// RVA: 0x19740F0 Offset: 0x19740F0 VA: 0x19740F0
+	public static FP Floor(FP value) { }
+
+	// RVA: 0x1974104 Offset: 0x1974104 VA: 0x1974104
+	public static FP Ceiling(FP value) { }
+
+	// RVA: 0x19741C4 Offset: 0x19741C4 VA: 0x19741C4
+	public static FP Round(FP value) { }
+
+	// RVA: 0x19741B0 Offset: 0x19741B0 VA: 0x19741B0
+	public static FP op_Addition(FP x, FP y) { }
+
+	// RVA: 0x19742EC Offset: 0x19742EC VA: 0x19742EC
+	public static FP op_Subtraction(FP x, FP y) { }
+
+	// RVA: 0x1974300 Offset: 0x1974300 VA: 0x1974300
+	public static FP FastSub(FP x, FP y) { }
+
+	// RVA: 0x1974324 Offset: 0x1974324 VA: 0x1974324
+	public static FP op_Multiply(FP x, FP y) { }
+
+	// RVA: 0x19743E0 Offset: 0x19743E0 VA: 0x19743E0
+	public static FP FastMul(FP x, FP y) { }
+
+	// RVA: 0x1974428 Offset: 0x1974428 VA: 0x1974428
+	public static int CountLeadingZeroes(ulong x) { }
+
+	// RVA: 0x1974470 Offset: 0x1974470 VA: 0x1974470
+	public static FP op_Division(FP x, FP y) { }
+
+	// RVA: 0x1974514 Offset: 0x1974514 VA: 0x1974514
+	private static FP Div(FP x, FP y) { }
+
+	// RVA: 0x197499C Offset: 0x197499C VA: 0x197499C
+	public static FP op_UnaryNegation(FP x) { }
+
+	// RVA: 0x1974A50 Offset: 0x1974A50 VA: 0x1974A50
+	public static bool op_Equality(FP x, FP y) { }
+
+	// RVA: 0x1974A68 Offset: 0x1974A68 VA: 0x1974A68
+	public static bool op_Inequality(FP x, FP y) { }
+
+	// RVA: 0x1974A7C Offset: 0x1974A7C VA: 0x1974A7C
+	public static bool op_GreaterThan(FP x, FP y) { }
+
+	// RVA: 0x1974A94 Offset: 0x1974A94 VA: 0x1974A94
+	public static bool op_LessThan(FP x, FP y) { }
+
+	// RVA: 0x1974AAC Offset: 0x1974AAC VA: 0x1974AAC
+	public static bool op_GreaterThanOrEqual(FP x, FP y) { }
+
+	// RVA: 0x1974AC4 Offset: 0x1974AC4 VA: 0x1974AC4
+	public static bool op_LessThanOrEqual(FP x, FP y) { }
+
+	// RVA: 0x1974ADC Offset: 0x1974ADC VA: 0x1974ADC
+	public static FP Sqrt(FP x) { }
+
+	// RVA: 0x1974CC4 Offset: 0x1974CC4 VA: 0x1974CC4
+	public static FP Sin(FP x) { }
+
+	// RVA: 0x19751E8 Offset: 0x19751E8 VA: 0x19751E8
+	public static long ClampSinValue(long angle, out bool flipHorizontal, out bool flipVertical) { }
+
+	// RVA: 0x1975378 Offset: 0x1975378 VA: 0x1975378
+	public static FP Cos(FP x) { }
+
+	// RVA: 0x1975444 Offset: 0x1975444 VA: 0x1975444
+	public static FP Atan(FP z) { }
+
+	// RVA: 0x1975948 Offset: 0x1975948 VA: 0x1975948
+	public static FP Atan2(FP y, FP x) { }
+
+	// RVA: 0x1975EF0 Offset: 0x1975EF0 VA: 0x1975EF0
+	public static FP Acos(FP x) { }
+
+	// RVA: 0x19761C8 Offset: 0x19761C8 VA: 0x19761C8
+	public static FP op_Implicit(long value) { }
+
+	// RVA: 0x1975368 Offset: 0x1975368 VA: 0x1975368
+	public static long op_Explicit(FP value) { }
+
+	// RVA: 0x19761DC Offset: 0x19761DC VA: 0x19761DC
+	public static float op_Explicit(FP value) { }
+
+	// RVA: 0x1976200 Offset: 0x1976200 VA: 0x1976200
+	public static FP op_Explicit(Decimal value) { }
+
+	// RVA: 0x197498C Offset: 0x197498C VA: 0x197498C
+	public static FP op_Implicit(int value) { }
+
+	// RVA: 0x4F5BBC Offset: 0x4F5BBC VA: 0x4F5BBC
+	public float AsFloat() { }
+
+	// RVA: 0x4F5BC4 Offset: 0x4F5BC4 VA: 0x4F5BC4
+	public int AsInt() { }
+
+	// RVA: 0x1976404 Offset: 0x1976404 VA: 0x1976404
+	public static int ToInt(FP value) { }
+
+	// RVA: 0x1976480 Offset: 0x1976480 VA: 0x1976480
+	public static FP FromFloat(float value) { }
+
+	// RVA: 0x19764AC Offset: 0x19764AC VA: 0x19764AC
+	public static bool IsNaN(FP value) { }
+
+	// RVA: 0x4F5BCC Offset: 0x4F5BCC VA: 0x4F5BCC Slot: 0
+	public override bool Equals(object obj) { }
+
+	// RVA: 0x4F5BD4 Offset: 0x4F5BD4 VA: 0x4F5BD4 Slot: 2
+	public override int GetHashCode() { }
+
+	// RVA: 0x4F5BE0 Offset: 0x4F5BE0 VA: 0x4F5BE0 Slot: 4
+	public bool Equals(FP other) { }
+
+	// RVA: 0x4F5BFC Offset: 0x4F5BFC VA: 0x4F5BFC Slot: 5
+	public int CompareTo(FP other) { }
+
+	// RVA: 0x4F5C20 Offset: 0x4F5C20 VA: 0x4F5C20 Slot: 3
+	public override string ToString() { }
+
+	// RVA: 0x19766EC Offset: 0x19766EC VA: 0x19766EC
+	public static FP FromRaw(long rawValue) { }
+
+	// RVA: 0x4F5C28 Offset: 0x4F5C28 VA: 0x4F5C28
+	public long get_RawValue() { }
+
+	// RVA: 0x4F5C30 Offset: 0x4F5C30 VA: 0x4F5C30
+	private void .ctor(long rawValue) { }
+
+	// RVA: 0x4F5C40 Offset: 0x4F5C40 VA: 0x4F5C40
+	public void .ctor(int value) { }
+
+	// RVA: 0x1975304 Offset: 0x1975304 VA: 0x1975304
+	public static long[] get_SinLut() { }
+
+	// RVA: 0x197670C Offset: 0x197670C VA: 0x197670C
+	private static void .cctor() { }
+}
+
+// ORIGINAL DUMP LINES 147130-147144; TypeDefIndex 2438
+// Namespace: BattleCore
+public static class Fix64LutData // TypeDefIndex: 2438
+{
+	// Fields
+	internal static long[] SinLut; // 0x0
+	internal static long[] TanLut; // 0x4
+
+	// Methods
+
+	// RVA: 0x1976B98 Offset: 0x1976B98 VA: 0x1976B98
+	public static void LoadLut(byte[] data) { }
+
+	// RVA: 0x1976C04 Offset: 0x1976C04 VA: 0x1976C04
+	private static void LoadLutData(byte[] data, out long[] sinData, out long[] tanData) { }
+}
+
+// ORIGINAL DUMP LINES 147146-147203; TypeDefIndex 2439
+// Namespace: BattleCore
+public sealed class TSMath // TypeDefIndex: 2439
+{
+	// Fields
+	public static FP Pi; // 0x0
+	public static FP PiOver2; // 0x8
+	public static FP Epsilon; // 0x10
+	public static FP Deg2Rad; // 0x18
+	public static FP Rad2Deg; // 0x20
+	public static FP Infinity; // 0x28
+
+	// Methods
+
+	// RVA: 0x1C8C35C Offset: 0x1C8C35C VA: 0x1C8C35C
+	public static FP Sqrt(FP number) { }
+
+	// RVA: 0x1C877BC Offset: 0x1C877BC VA: 0x1C877BC
+	public static FP Max(FP val1, FP val2) { }
+
+	// RVA: 0x1C8C3FC Offset: 0x1C8C3FC VA: 0x1C8C3FC
+	public static FP Min(FP val1, FP val2) { }
+
+	// RVA: 0x1C8C4BC Offset: 0x1C8C4BC VA: 0x1C8C4BC
+	public static FP Clamp(FP value, FP min, FP max) { }
+
+	// RVA: 0x1C8C5D8 Offset: 0x1C8C5D8 VA: 0x1C8C5D8
+	public static FP Clamp01(FP value) { }
+
+	// RVA: 0x1C8C788 Offset: 0x1C8C788 VA: 0x1C8C788
+	public static FP Sin(FP value) { }
+
+	// RVA: 0x1C8C828 Offset: 0x1C8C828 VA: 0x1C8C828
+	public static FP Cos(FP value) { }
+
+	// RVA: 0x1C8C8C8 Offset: 0x1C8C8C8 VA: 0x1C8C8C8
+	public static FP Acos(FP value) { }
+
+	// RVA: 0x1C8C968 Offset: 0x1C8C968 VA: 0x1C8C968
+	public static FP Atan2(FP y, FP x) { }
+
+	// RVA: 0x1C8CA14 Offset: 0x1C8CA14 VA: 0x1C8CA14
+	public static FP Floor(FP value) { }
+
+	// RVA: 0x1C8CAB4 Offset: 0x1C8CAB4 VA: 0x1C8CAB4
+	public static FP Ceiling(FP value) { }
+
+	// RVA: 0x1C8CB54 Offset: 0x1C8CB54 VA: 0x1C8CB54
+	public static FP Round(FP value) { }
+
+	// RVA: 0x1C8CBF4 Offset: 0x1C8CBF4 VA: 0x1C8CBF4
+	public static FP Abs(FP value) { }
+
+	// RVA: 0x1C8CC94 Offset: 0x1C8CC94 VA: 0x1C8CC94
+	public static FP Lerp(FP value1, FP value2, FP amount) { }
+
+	// RVA: 0x1C8CDB4 Offset: 0x1C8CDB4 VA: 0x1C8CDB4
+	private static void .cctor() { }
+}
+
+// ORIGINAL DUMP LINES 147205-147241; TypeDefIndex 2440
+// Namespace: BattleCore
+public struct TSMatrix // TypeDefIndex: 2440
+{
+	// Fields
+	public FP M11; // 0x0
+	public FP M12; // 0x8
+	public FP M13; // 0x10
+	public FP M21; // 0x18
+	public FP M22; // 0x20
+	public FP M23; // 0x28
+	public FP M31; // 0x30
+	public FP M32; // 0x38
+	public FP M33; // 0x40
+	internal static TSMatrix InternalIdentity; // 0x0
+	public static readonly TSMatrix Identity; // 0x48
+	public static readonly TSMatrix Zero; // 0x90
+
+	// Methods
+
+	// RVA: 0x1C8CEE8 Offset: 0x1C8CEE8 VA: 0x1C8CEE8
+	private static void .cctor() { }
+
+	// RVA: 0x1C8CFF4 Offset: 0x1C8CFF4 VA: 0x1C8CFF4
+	public static TSMatrix LookAt(TSVector forward, TSVector upwards) { }
+
+	// RVA: 0x1C8D0E8 Offset: 0x1C8D0E8 VA: 0x1C8D0E8
+	public static void LookAt(TSVector forward, TSVector upwards, out TSMatrix result) { }
+
+	// RVA: 0x4F70F4 Offset: 0x4F70F4 VA: 0x4F70F4 Slot: 0
+	public override bool Equals(object obj) { }
+
+	// RVA: 0x4F70FC Offset: 0x4F70FC VA: 0x4F70FC Slot: 2
+	public override int GetHashCode() { }
+
+	// RVA: 0x4F7104 Offset: 0x4F7104 VA: 0x4F7104 Slot: 3
+	public override string ToString() { }
+}
+
+// ORIGINAL DUMP LINES 147243-147308; TypeDefIndex 2441
+// Namespace: BattleCore
+[Serializable]
+public struct TSQuaternion // TypeDefIndex: 2441
+{
+	// Fields
+	public FP x; // 0x0
+	public FP y; // 0x8
+	public FP z; // 0x10
+	public FP w; // 0x18
+	public static readonly TSQuaternion identity; // 0x0
+	public static TSQuaternion Left90Rotate; // 0x20
+	public static TSQuaternion Right90Rotate; // 0x40
+
+	// Methods
+
+	// RVA: 0x1C8E024 Offset: 0x1C8E024 VA: 0x1C8E024
+	private static void .cctor() { }
+
+	// RVA: 0x4F710C Offset: 0x4F710C VA: 0x4F710C
+	public void .ctor(FP x, FP y, FP z, FP w) { }
+
+	// RVA: 0x1C8E3D0 Offset: 0x1C8E3D0 VA: 0x1C8E3D0
+	public static TSQuaternion LookRotation(TSVector forward) { }
+
+	// RVA: 0x1C8E66C Offset: 0x1C8E66C VA: 0x1C8E66C
+	public static TSQuaternion RotateTowards(TSQuaternion from, TSQuaternion to, FP maxDegreesDelta) { }
+
+	// RVA: 0x1C8E204 Offset: 0x1C8E204 VA: 0x1C8E204
+	public static TSQuaternion Euler(FP x, FP y, FP z) { }
+
+	// RVA: 0x1C8F064 Offset: 0x1C8F064 VA: 0x1C8F064
+	public static void CreateFromYawPitchRoll(FP yaw, FP pitch, FP roll, out TSQuaternion result) { }
+
+	// RVA: 0x1C8F4F0 Offset: 0x1C8F4F0 VA: 0x1C8F4F0
+	public static void Add(ref TSQuaternion quaternion1, ref TSQuaternion quaternion2, out TSQuaternion result) { }
+
+	// RVA: 0x1C8ECEC Offset: 0x1C8ECEC VA: 0x1C8ECEC
+	public static FP Dot(TSQuaternion a, TSQuaternion b) { }
+
+	// RVA: 0x1C8F60C Offset: 0x1C8F60C VA: 0x1C8F60C
+	public static void Multiply(ref TSQuaternion quaternion1, ref TSQuaternion quaternion2, out TSQuaternion result) { }
+
+	// RVA: 0x1C8EE40 Offset: 0x1C8EE40 VA: 0x1C8EE40
+	public static TSQuaternion Multiply(TSQuaternion quaternion1, FP scaleFactor) { }
+
+	// RVA: 0x1C8FAA0 Offset: 0x1C8FAA0 VA: 0x1C8FAA0
+	public static void Multiply(ref TSQuaternion quaternion1, FP scaleFactor, out TSQuaternion result) { }
+
+	// RVA: 0x1C8E5A4 Offset: 0x1C8E5A4 VA: 0x1C8E5A4
+	public static TSQuaternion CreateFromMatrix(TSMatrix matrix) { }
+
+	// RVA: 0x1C8FBB8 Offset: 0x1C8FBB8 VA: 0x1C8FBB8
+	public static void CreateFromMatrix(ref TSMatrix matrix, out TSQuaternion result) { }
+
+	// RVA: 0x1C90490 Offset: 0x1C90490 VA: 0x1C90490
+	public static TSQuaternion op_Multiply(TSQuaternion value1, TSQuaternion value2) { }
+
+	// RVA: 0x1C8EF38 Offset: 0x1C8EF38 VA: 0x1C8EF38
+	public static TSQuaternion op_Addition(TSQuaternion value1, TSQuaternion value2) { }
+
+	// RVA: 0x1C905BC Offset: 0x1C905BC VA: 0x1C905BC
+	public static TSVector op_Multiply(TSQuaternion quat, TSVector vec) { }
+
+	// RVA: 0x4F7148 Offset: 0x4F7148 VA: 0x4F7148 Slot: 3
+	public override string ToString() { }
+}
+
+// ORIGINAL DUMP LINES 147310-147364; TypeDefIndex 2442
+// Namespace: BattleCore
+public class TSRandom // TypeDefIndex: 2442
+{
+	// Fields
+	private const int N = 624;
+	private const int M = 397;
+	private const uint MATRIX_A = 2567483615;
+	private const uint UPPER_MASK = 2147483648;
+	private const uint LOWER_MASK = 2147483647;
+	private const int MAX_RAND_INT = 2147483647;
+	private uint[] mag01; // 0x8
+	private uint[] mt; // 0xC
+	private int mti; // 0x10
+
+	// Properties
+	public static int MaxRandomInt { get; }
+
+	// Methods
+
+	// RVA: 0x1C90F04 Offset: 0x1C90F04 VA: 0x1C90F04
+	public static TSRandom New(int seed) { }
+
+	// RVA: 0x1C90F74 Offset: 0x1C90F74 VA: 0x1C90F74
+	private void .ctor(int seed) { }
+
+	// RVA: 0x1C911AC Offset: 0x1C911AC VA: 0x1C911AC
+	public static int get_MaxRandomInt() { }
+
+	// RVA: 0x1C911B4 Offset: 0x1C911B4 VA: 0x1C911B4
+	public int Next() { }
+
+	// RVA: 0x1C911DC Offset: 0x1C911DC VA: 0x1C911DC
+	public int Next(int minValue, int maxValue) { }
+
+	// RVA: 0x1C91210 Offset: 0x1C91210 VA: 0x1C91210
+	public FP Next(FP min, FP max) { }
+
+	// RVA: 0x1C914C0 Offset: 0x1C914C0 VA: 0x1C914C0
+	public FP Next01() { }
+
+	// RVA: 0x1C91578 Offset: 0x1C91578 VA: 0x1C91578
+	public TSVector2 RandomInsideCircle(FP radius) { }
+
+	// RVA: 0x1C913F4 Offset: 0x1C913F4 VA: 0x1C913F4
+	public FP NextFP() { }
+
+	// RVA: 0x1C91058 Offset: 0x1C91058 VA: 0x1C91058
+	private void init_genrand(uint s) { }
+
+	// RVA: 0x1C91684 Offset: 0x1C91684 VA: 0x1C91684
+	private uint genrand_int32() { }
+
+	// RVA: 0x1C911C8 Offset: 0x1C911C8 VA: 0x1C911C8
+	private int genrand_int31() { }
+}
+
+// ORIGINAL DUMP LINES 147366-147498; TypeDefIndex 2443
+// Namespace: BattleCore
+[Serializable]
+public struct TSVector // TypeDefIndex: 2443
+{
+	// Fields
+	private static FP ZeroEpsilonSq; // 0x0
+	internal static TSVector InternalZero; // 0x8
+	internal static TSVector Arbitrary; // 0x20
+	public FP x; // 0x0
+	public FP y; // 0x8
+	public FP z; // 0x10
+	public static readonly TSVector zero; // 0x38
+	public static readonly TSVector left; // 0x50
+	public static readonly TSVector right; // 0x68
+	public static readonly TSVector up; // 0x80
+	public static readonly TSVector down; // 0x98
+	public static readonly TSVector back; // 0xB0
+	public static readonly TSVector forward; // 0xC8
+	public static readonly TSVector one; // 0xE0
+	public static readonly TSVector MinValue; // 0xF8
+	public static readonly TSVector MaxValue; // 0x110
+
+	// Properties
+	public FP sqrMagnitude { get; }
+	public FP magnitude { get; }
+
+	// Methods
+
+	// RVA: 0x1C91ADC Offset: 0x1C91ADC VA: 0x1C91ADC
+	private static void .cctor() { }
+
+	// RVA: 0x4F7150 Offset: 0x4F7150 VA: 0x4F7150
+	public FP get_sqrMagnitude() { }
+
+	// RVA: 0x4F7164 Offset: 0x4F7164 VA: 0x4F7164
+	public FP get_magnitude() { }
+
+	// RVA: 0x4F7178 Offset: 0x4F7178 VA: 0x4F7178
+	public void .ctor(int x, int y, int z) { }
+
+	// RVA: 0x4F7194 Offset: 0x4F7194 VA: 0x4F7194
+	public void .ctor(FP x, FP y, FP z) { }
+
+	// RVA: 0x4F71C0 Offset: 0x4F71C0 VA: 0x4F71C0
+	public void Set(FP x, FP y, FP z) { }
+
+	// RVA: 0x4F71EC Offset: 0x4F71EC VA: 0x4F71EC
+	public void .ctor(FP xyz) { }
+
+	// RVA: 0x1C9221C Offset: 0x1C9221C VA: 0x1C9221C
+	public static TSVector Lerp(TSVector from, TSVector to, FP percent) { }
+
+	// RVA: 0x4F7210 Offset: 0x4F7210 VA: 0x4F7210 Slot: 3
+	public override string ToString() { }
+
+	// RVA: 0x4F7218 Offset: 0x4F7218 VA: 0x4F7218 Slot: 0
+	public override bool Equals(object obj) { }
+
+	// RVA: 0x1C92964 Offset: 0x1C92964 VA: 0x1C92964
+	public static bool op_Equality(TSVector value1, TSVector value2) { }
+
+	// RVA: 0x1C92AD8 Offset: 0x1C92AD8 VA: 0x1C92AD8
+	public static bool op_Inequality(TSVector value1, TSVector value2) { }
+
+	// RVA: 0x1C92C4C Offset: 0x1C92C4C VA: 0x1C92C4C
+	public static FP Distance(TSVector v1, TSVector v2) { }
+
+	// RVA: 0x1C92E38 Offset: 0x1C92E38 VA: 0x1C92E38
+	public static FP DistanceSquare(TSVector v1, TSVector v2) { }
+
+	// RVA: 0x4F7220 Offset: 0x4F7220 VA: 0x4F7220
+	public bool IsZero() { }
+
+	// RVA: 0x4F7228 Offset: 0x4F7228 VA: 0x4F7228
+	public bool IsNearlyZero() { }
+
+	// RVA: 0x1C931AC Offset: 0x1C931AC VA: 0x1C931AC
+	public static FP Dot(TSVector vector1, TSVector vector2) { }
+
+	// RVA: 0x1C93384 Offset: 0x1C93384 VA: 0x1C93384
+	public static bool IsSameDir(FP dotVal) { }
+
+	// RVA: 0x1C9328C Offset: 0x1C9328C VA: 0x1C9328C
+	public static FP Dot(ref TSVector vector1, ref TSVector vector2) { }
+
+	// RVA: 0x1C93460 Offset: 0x1C93460 VA: 0x1C93460
+	public static void Add(ref TSVector value1, ref TSVector value2, out TSVector result) { }
+
+	// RVA: 0x1C93570 Offset: 0x1C93570 VA: 0x1C93570
+	public static void Divide(ref TSVector value1, FP scaleFactor, out TSVector result) { }
+
+	// RVA: 0x1C9365C Offset: 0x1C9365C VA: 0x1C9365C
+	public static void Subtract(ref TSVector value1, ref TSVector value2, out TSVector result) { }
+
+	// RVA: 0x1C8D51C Offset: 0x1C8D51C VA: 0x1C8D51C
+	public static TSVector Cross(TSVector vector1, TSVector vector2) { }
+
+	// RVA: 0x1C9376C Offset: 0x1C9376C VA: 0x1C9376C
+	public static void Cross(ref TSVector vector1, ref TSVector vector2, out TSVector result) { }
+
+	// RVA: 0x4F7230 Offset: 0x4F7230 VA: 0x4F7230 Slot: 2
+	public override int GetHashCode() { }
+
+	// RVA: 0x4F7238 Offset: 0x4F7238 VA: 0x4F7238
+	public void Negate() { }
+
+	// RVA: 0x4F7240 Offset: 0x4F7240 VA: 0x4F7240
+	public void Normalize() { }
+
+	// RVA: 0x1C93A28 Offset: 0x1C93A28 VA: 0x1C93A28
+	public static void Multiply(ref TSVector value1, FP scaleFactor, out TSVector result) { }
+
+	// RVA: 0x1C92498 Offset: 0x1C92498 VA: 0x1C92498
+	public static TSVector op_Multiply(TSVector value1, FP value2) { }
+
+	// RVA: 0x1C93B14 Offset: 0x1C93B14 VA: 0x1C93B14
+	public static TSVector op_Multiply(FP value1, TSVector value2) { }
+
+	// RVA: 0x1C92388 Offset: 0x1C92388 VA: 0x1C92388
+	public static TSVector op_Subtraction(TSVector value1, TSVector value2) { }
+
+	// RVA: 0x1C92588 Offset: 0x1C92588 VA: 0x1C92588
+	public static TSVector op_Addition(TSVector value1, TSVector value2) { }
+
+	// RVA: 0x1C93C0C Offset: 0x1C93C0C VA: 0x1C93C0C
+	public static TSVector op_Division(TSVector value1, FP value2) { }
+
+	// RVA: 0x1C93CFC Offset: 0x1C93CFC VA: 0x1C93CFC
+	public static TSVector RotateTowards(TSVector from, TSVector to, FP maxDegree) { }
+
+	// RVA: 0x1C93F24 Offset: 0x1C93F24 VA: 0x1C93F24
+	public static TSVector Reflect(TSVector inDirection, TSVector inNormal) { }
+}
+
+// ORIGINAL DUMP LINES 147500-147628; TypeDefIndex 2444
+// Namespace: BattleCore
+[Serializable]
+public struct TSVector2 : IEquatable<TSVector2> // TypeDefIndex: 2444
+{
+	// Fields
+	private static TSVector2 zeroVector; // 0x0
+	private static TSVector2 oneVector; // 0x10
+	private static TSVector2 rightVector; // 0x20
+	private static TSVector2 leftVector; // 0x30
+	private static TSVector2 upVector; // 0x40
+	private static TSVector2 downVector; // 0x50
+	public FP x; // 0x0
+	public FP y; // 0x8
+
+	// Properties
+	public static TSVector2 zero { get; }
+	public static TSVector2 right { get; }
+	public static TSVector2 up { get; }
+	public FP magnitude { get; }
+	public FP sqrtMagnitude { get; }
+	public TSVector2 normalized { get; }
+
+	// Methods
+
+	// RVA: 0x1C89C24 Offset: 0x1C89C24 VA: 0x1C89C24
+	public static TSVector2 get_zero() { }
+
+	// RVA: 0x1C940E4 Offset: 0x1C940E4 VA: 0x1C940E4
+	public static TSVector2 get_right() { }
+
+	// RVA: 0x1C8AC54 Offset: 0x1C8AC54 VA: 0x1C8AC54
+	public static TSVector2 get_up() { }
+
+	// RVA: 0x1C9417C Offset: 0x1C9417C VA: 0x1C9417C
+	public static TSVector2 FromFloat(float x, float y) { }
+
+	// RVA: 0x4F7248 Offset: 0x4F7248 VA: 0x4F7248
+	public void .ctor(FP x, FP y) { }
+
+	// RVA: 0x4F7260 Offset: 0x4F7260 VA: 0x4F7260
+	public void .ctor(FP value) { }
+
+	// RVA: 0x1C94248 Offset: 0x1C94248 VA: 0x1C94248
+	public static void Reflect(ref TSVector2 vector, ref TSVector2 normal, out TSVector2 result) { }
+
+	// RVA: 0x1C94460 Offset: 0x1C94460 VA: 0x1C94460
+	public static TSVector2 Reflect(TSVector2 vector, TSVector2 normal) { }
+
+	// RVA: 0x1C8C124 Offset: 0x1C8C124 VA: 0x1C8C124
+	public static FP DistanceSquared(TSVector2 value1, TSVector2 value2) { }
+
+	// RVA: 0x1C9453C Offset: 0x1C9453C VA: 0x1C9453C
+	public static void DistanceSquared(ref TSVector2 value1, ref TSVector2 value2, out FP result) { }
+
+	// RVA: 0x1C8B6E8 Offset: 0x1C8B6E8 VA: 0x1C8B6E8
+	public static FP Dot(TSVector2 value1, TSVector2 value2) { }
+
+	// RVA: 0x1C94674 Offset: 0x1C94674 VA: 0x1C94674
+	public static void Dot(ref TSVector2 value1, ref TSVector2 value2, out FP result) { }
+
+	// RVA: 0x4F7278 Offset: 0x4F7278 VA: 0x4F7278 Slot: 0
+	public override bool Equals(object obj) { }
+
+	// RVA: 0x4F7280 Offset: 0x4F7280 VA: 0x4F7280 Slot: 4
+	public bool Equals(TSVector2 other) { }
+
+	// RVA: 0x4F72A8 Offset: 0x4F72A8 VA: 0x4F72A8 Slot: 2
+	public override int GetHashCode() { }
+
+	// RVA: 0x4F72B0 Offset: 0x4F72B0 VA: 0x4F72B0
+	public FP get_magnitude() { }
+
+	// RVA: 0x4F72C4 Offset: 0x4F72C4 VA: 0x4F72C4
+	public FP get_sqrtMagnitude() { }
+
+	// RVA: 0x4F72D8 Offset: 0x4F72D8 VA: 0x4F72D8
+	public FP LengthSquared() { }
+
+	// RVA: 0x1C949C4 Offset: 0x1C949C4 VA: 0x1C949C4
+	public static TSVector2 Max(TSVector2 value1, TSVector2 value2) { }
+
+	// RVA: 0x1C94A9C Offset: 0x1C94A9C VA: 0x1C94A9C
+	public static void Max(ref TSVector2 value1, ref TSVector2 value2, out TSVector2 result) { }
+
+	// RVA: 0x1C94B70 Offset: 0x1C94B70 VA: 0x1C94B70
+	public static TSVector2 Min(TSVector2 value1, TSVector2 value2) { }
+
+	// RVA: 0x1C94C48 Offset: 0x1C94C48 VA: 0x1C94C48
+	public static void Min(ref TSVector2 value1, ref TSVector2 value2, out TSVector2 result) { }
+
+	// RVA: 0x4F72EC Offset: 0x4F72EC VA: 0x4F72EC
+	public void Normalize() { }
+
+	// RVA: 0x4F72F4 Offset: 0x4F72F4 VA: 0x4F72F4
+	public TSVector2 get_normalized() { }
+
+	// RVA: 0x1C94D1C Offset: 0x1C94D1C VA: 0x1C94D1C
+	public static void Normalize(ref TSVector2 value, out TSVector2 result) { }
+
+	// RVA: 0x4F7308 Offset: 0x4F7308 VA: 0x4F7308
+	public TSVector ToTSVector() { }
+
+	// RVA: 0x4F731C Offset: 0x4F731C VA: 0x4F731C Slot: 3
+	public override string ToString() { }
+
+	// RVA: 0x1C8C284 Offset: 0x1C8C284 VA: 0x1C8C284
+	public static TSVector2 op_UnaryNegation(TSVector2 value) { }
+
+	// RVA: 0x1C89CB8 Offset: 0x1C89CB8 VA: 0x1C89CB8
+	public static bool op_Equality(TSVector2 value1, TSVector2 value2) { }
+
+	// RVA: 0x1C896F0 Offset: 0x1C896F0 VA: 0x1C896F0
+	public static TSVector2 op_Addition(TSVector2 value1, TSVector2 value2) { }
+
+	// RVA: 0x1C8B600 Offset: 0x1C8B600 VA: 0x1C8B600
+	public static TSVector2 op_Subtraction(TSVector2 value1, TSVector2 value2) { }
+
+	// RVA: 0x1C8AB70 Offset: 0x1C8AB70 VA: 0x1C8AB70
+	public static TSVector2 op_Multiply(TSVector2 value, FP scaleFactor) { }
+
+	// RVA: 0x1C8960C Offset: 0x1C8960C VA: 0x1C8960C
+	public static TSVector2 op_Multiply(FP scaleFactor, TSVector2 value) { }
+
+	// RVA: 0x1C95050 Offset: 0x1C95050 VA: 0x1C95050
+	public static TSVector2 op_Division(TSVector2 value1, FP divider) { }
+
+	// RVA: 0x1C9515C Offset: 0x1C9515C VA: 0x1C9515C
+	private static void .cctor() { }
+}
+
+// ORIGINAL DUMP LINES 147630-147632; TypeDefIndex 2445
+// Namespace: BattleCore
+public interface IBody // TypeDefIndex: 2445
+{}
+
+// ORIGINAL DUMP LINES 147634-147636; TypeDefIndex 2446
+// Namespace: BattleCore
+public interface IBody2D : IBody // TypeDefIndex: 2446
+{}
+
+// ORIGINAL DUMP LINES 147638-147640; TypeDefIndex 2447
+// Namespace: BattleCore
+public interface IBodyConstraint // TypeDefIndex: 2447
+{}
+
+// ORIGINAL DUMP LINES 147642-147664; TypeDefIndex 2448
+// Namespace: BattleCore
+public class PhyGameObject // TypeDefIndex: 2448
+{
+	// Fields
+	public string name; // 0x8
+	public int layer; // 0xC
+	public Body body; // 0x10
+
+	// Properties
+	public TSVector2 Position { set; }
+	public TSVector2 Forward { set; }
+
+	// Methods
+
+	// RVA: 0x1976F14 Offset: 0x1976F14 VA: 0x1976F14
+	public void .ctor(string _name) { }
+
+	// RVA: 0x1976F34 Offset: 0x1976F34 VA: 0x1976F34
+	public void set_Position(TSVector2 value) { }
+
+	// RVA: 0x1977000 Offset: 0x1977000 VA: 0x1977000
+	public void set_Forward(TSVector2 value) { }
+}
+
+// ORIGINAL DUMP LINES 147666-147676; TypeDefIndex 2449
+// Namespace: BattleCore
+public class PhyUtil // TypeDefIndex: 2449
+{
+	// Methods
+
+	// RVA: 0x1977060 Offset: 0x1977060 VA: 0x1977060
+	public static TSVector PhyVed2ToVec3(TSVector2 vec2) { }
+
+	// RVA: 0x1977124 Offset: 0x1977124 VA: 0x1977124
+	public static TSVector PhyVed2ToVec3(TSVector2 vec2, FP y) { }
+}
+
+// ORIGINAL DUMP LINES 147678-147686; TypeDefIndex 2450
+// Namespace: BattleCore.Physics2D
+public struct ContactFeature // TypeDefIndex: 2450
+{
+	// Fields
+	public byte IndexA; // 0x0
+	public byte IndexB; // 0x1
+	public byte TypeA; // 0x2
+	public byte TypeB; // 0x3
+}
+
+// ORIGINAL DUMP LINES 147688-147694; TypeDefIndex 2451
+// Namespace: BattleCore.Physics2D
+public struct ContactID // TypeDefIndex: 2451
+{
+	// Fields
+	public ContactFeature Features; // 0x0
+	public uint Key; // 0x0
+}
+
+// ORIGINAL DUMP LINES 147696-147704; TypeDefIndex 2452
+// Namespace: BattleCore.Physics2D
+public struct ManifoldPoint // TypeDefIndex: 2452
+{
+	// Fields
+	public ContactID Id; // 0x0
+	public TSVector2 LocalPoint; // 0x8
+	public FP NormalImpulse; // 0x18
+	public FP TangentImpulse; // 0x20
+}
+
+// ORIGINAL DUMP LINES 147706-147714; TypeDefIndex 2453
+// Namespace: BattleCore.Physics2D
+public enum ManifoldType // TypeDefIndex: 2453
+{
+	// Fields
+	public int value__; // 0x0
+	public const ManifoldType Circles = 0;
+	public const ManifoldType FaceA = 1;
+	public const ManifoldType FaceB = 2;
+}
+
+// ORIGINAL DUMP LINES 147716-147725; TypeDefIndex 2454
+// Namespace: BattleCore.Physics2D
+public struct Manifold // TypeDefIndex: 2454
+{
+	// Fields
+	public TSVector2 LocalNormal; // 0x0
+	public TSVector2 LocalPoint; // 0x10
+	public int PointCount; // 0x20
+	public FixedArray2<ManifoldPoint> Points; // 0x28
+	public ManifoldType Type; // 0x78
+}
+
+// ORIGINAL DUMP LINES 147727-147733; TypeDefIndex 2455
+// Namespace: BattleCore.Physics2D
+public struct ClipVertex // TypeDefIndex: 2455
+{
+	// Fields
+	public ContactID ID; // 0x0
+	public TSVector2 V; // 0x8
+}
+
+// ORIGINAL DUMP LINES 147735-147743; TypeDefIndex 2456
+// Namespace: BattleCore.Physics2D
+public struct RayCastInput // TypeDefIndex: 2456
+{
+	// Fields
+	public FP MaxFraction; // 0x0
+	public TSVector2 Point1; // 0x8
+	public TSVector2 Point2; // 0x18
+	public int ExceptTag; // 0x28
+}
+
+// ORIGINAL DUMP LINES 147745-147758; TypeDefIndex 2457
+// Namespace: BattleCore.Physics2D
+public class CircleCastOutput // TypeDefIndex: 2457
+{
+	// Fields
+	public Fixture fixture; // 0x8
+	public int shapeIndex; // 0xC
+	public FP fraction; // 0x10
+	public bool isZeroNormal; // 0x18
+
+	// Methods
+
+	// RVA: 0x197A5B4 Offset: 0x197A5B4 VA: 0x197A5B4
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 147760-147772; TypeDefIndex 2458
+// Namespace: BattleCore.Physics2D
+public struct CircleCastInput // TypeDefIndex: 2458
+{
+	// Fields
+	public FP MaxFraction; // 0x0
+	public TSVector2 Point1; // 0x8
+	public TSVector2 Point2; // 0x18
+	public TSVector2 CastDir; // 0x28
+	public FP Radius; // 0x38
+	public int ExceptTag; // 0x40
+	public TOIInput SweepInput; // 0x44
+	public CircleCastOutput Output; // 0x48
+}
+
+// ORIGINAL DUMP LINES 147774-147780; TypeDefIndex 2459
+// Namespace: BattleCore.Physics2D
+public struct RayCastOutput // TypeDefIndex: 2459
+{
+	// Fields
+	public FP Fraction; // 0x0
+	public TSVector2 Normal; // 0x8
+}
+
+// ORIGINAL DUMP LINES 147782-147813; TypeDefIndex 2460
+// Namespace: BattleCore.Physics2D
+public struct AABB // TypeDefIndex: 2460
+{
+	// Fields
+	public TSVector2 LowerBound; // 0x0
+	public TSVector2 UpperBound; // 0x10
+
+	// Properties
+	public TSVector2 Center { get; }
+	public TSVector2 Extents { get; }
+	public FP Perimeter { get; }
+
+	// Methods
+
+	// RVA: 0x4F5C50 Offset: 0x4F5C50 VA: 0x4F5C50
+	public TSVector2 get_Center() { }
+
+	// RVA: 0x4F5C64 Offset: 0x4F5C64 VA: 0x4F5C64
+	public TSVector2 get_Extents() { }
+
+	// RVA: 0x4F5C78 Offset: 0x4F5C78 VA: 0x4F5C78
+	public FP get_Perimeter() { }
+
+	// RVA: 0x4F5C8C Offset: 0x4F5C8C VA: 0x4F5C8C
+	public void Combine(ref AABB aabb1, ref AABB aabb2) { }
+
+	// RVA: 0x4F5C94 Offset: 0x4F5C94 VA: 0x4F5C94
+	public bool Contains(ref AABB aabb) { }
+
+	// RVA: 0x19776C0 Offset: 0x19776C0 VA: 0x19776C0
+	public static bool TestOverlap(ref AABB a, ref AABB b) { }
+}
+
+// ORIGINAL DUMP LINES 147815-147827; TypeDefIndex 2461
+// Namespace: BattleCore.Physics2D
+public class TempPolygon // TypeDefIndex: 2461
+{
+	// Fields
+	public TSVector2[] Vertices; // 0x8
+	public TSVector2[] Normals; // 0xC
+	public int Count; // 0x10
+
+	// Methods
+
+	// RVA: 0x1983140 Offset: 0x1983140 VA: 0x1983140
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 147829-147836; TypeDefIndex 2462
+// Namespace: BattleCore.Physics2D
+public struct EPAxis // TypeDefIndex: 2462
+{
+	// Fields
+	public int Index; // 0x0
+	public FP Separation; // 0x8
+	public EPAxisType Type; // 0x10
+}
+
+// ORIGINAL DUMP LINES 147838-147851; TypeDefIndex 2463
+// Namespace: BattleCore.Physics2D
+public struct ReferenceFace // TypeDefIndex: 2463
+{
+	// Fields
+	public int i1; // 0x0
+	public int i2; // 0x4
+	public TSVector2 v1; // 0x8
+	public TSVector2 v2; // 0x18
+	public TSVector2 normal; // 0x28
+	public TSVector2 sideNormal1; // 0x38
+	public FP sideOffset1; // 0x48
+	public TSVector2 sideNormal2; // 0x50
+	public FP sideOffset2; // 0x60
+}
+
+// ORIGINAL DUMP LINES 147853-147861; TypeDefIndex 2464
+// Namespace: BattleCore.Physics2D
+public enum EPAxisType // TypeDefIndex: 2464
+{
+	// Fields
+	public int value__; // 0x0
+	public const EPAxisType Unknown = 0;
+	public const EPAxisType EdgeA = 1;
+	public const EPAxisType EdgeB = 2;
+}
+
+// ORIGINAL DUMP LINES 147863-147894; TypeDefIndex 2465
+// Namespace: BattleCore.Physics2D
+public static class Collision // TypeDefIndex: 2465
+{
+	// Methods
+
+	// RVA: 0x197B234 Offset: 0x197B234 VA: 0x197B234
+	public static void CollideCircles(ref Manifold manifold, CircleShape circleA, ref Transform xfA, CircleShape circleB, ref Transform xfB) { }
+
+	// RVA: 0x197B4CC Offset: 0x197B4CC VA: 0x197B4CC
+	public static void CollidePolygonAndCircle(ref Manifold manifold, PolygonShape polygonA, ref Transform xfA, CircleShape circleB, ref Transform xfB) { }
+
+	// RVA: 0x197C610 Offset: 0x197C610 VA: 0x197C610
+	public static void CollidePolygons(ref Manifold manifold, PolygonShape polyA, ref Transform transformA, PolygonShape polyB, ref Transform transformB) { }
+
+	// RVA: 0x197E0D0 Offset: 0x197E0D0 VA: 0x197E0D0
+	public static void CollideEdgeAndCircle(ref Manifold manifold, EdgeShape edgeA, ref Transform transformA, CircleShape circleB, ref Transform transformB) { }
+
+	// RVA: 0x197F0A0 Offset: 0x197F0A0 VA: 0x197F0A0
+	public static void CollideEdgeAndPolygon(ref Manifold manifold, EdgeShape edgeA, ref Transform xfA, PolygonShape polygonB, ref Transform xfB) { }
+
+	// RVA: 0x197DC14 Offset: 0x197DC14 VA: 0x197DC14
+	private static int ClipSegmentToLine(out FixedArray2<ClipVertex> vOut, ref FixedArray2<ClipVertex> vIn, TSVector2 normal, FP offset, int vertexIndexA) { }
+
+	// RVA: 0x1981DC4 Offset: 0x1981DC4 VA: 0x1981DC4
+	private static FP EdgeSeparation(PolygonShape poly1, ref Transform xf1, int edge1, PolygonShape poly2, ref Transform xf2) { }
+
+	// RVA: 0x197D190 Offset: 0x197D190 VA: 0x197D190
+	private static FP FindMaxSeparation(out int edgeIndex, PolygonShape poly1, ref Transform xf1, PolygonShape poly2, ref Transform xf2) { }
+
+	// RVA: 0x197D73C Offset: 0x197D73C VA: 0x197D73C
+	private static void FindIncidentEdge(out FixedArray2<ClipVertex> c, PolygonShape poly1, ref Transform xf1, int edge1, PolygonShape poly2, ref Transform xf2) { }
+}
+
+// ORIGINAL DUMP LINES 147896-147929; TypeDefIndex 2466
+// Namespace: 
+private class Collision.EPCollider // TypeDefIndex: 2466
+{
+	// Fields
+	private TempPolygon _polygonB; // 0x8
+	private Transform _xf; // 0x10
+	private TSVector2 _centroidB; // 0x30
+	private TSVector2 _v0; // 0x40
+	private TSVector2 _v1; // 0x50
+	private TSVector2 _v2; // 0x60
+	private TSVector2 _v3; // 0x70
+	private TSVector2 _normal0; // 0x80
+	private TSVector2 _normal1; // 0x90
+	private TSVector2 _normal2; // 0xA0
+	private TSVector2 _normal; // 0xB0
+	private TSVector2 _lowerLimit; // 0xC0
+	private TSVector2 _upperLimit; // 0xD0
+	private FP _radius; // 0xE0
+	private bool _front; // 0xE8
+
+	// Methods
+
+	// RVA: 0x197F1C0 Offset: 0x197F1C0 VA: 0x197F1C0
+	public void Collide(ref Manifold manifold, EdgeShape edgeA, ref Transform xfA, PolygonShape polygonB, ref Transform xfB) { }
+
+	// RVA: 0x1982570 Offset: 0x1982570 VA: 0x1982570
+	private EPAxis ComputeEdgeSeparation() { }
+
+	// RVA: 0x198284C Offset: 0x198284C VA: 0x198284C
+	private EPAxis ComputePolygonSeparation() { }
+
+	// RVA: 0x197F148 Offset: 0x197F148 VA: 0x197F148
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 147931-147948; TypeDefIndex 2467
+// Namespace: BattleCore.Physics2D
+public class DistanceProxy // TypeDefIndex: 2467
+{
+	// Fields
+	internal FP Radius; // 0x8
+	internal Vertices Vertices; // 0x10
+
+	// Methods
+
+	// RVA: 0x19893F8 Offset: 0x19893F8 VA: 0x19893F8
+	public void Set(Shape shape, int index) { }
+
+	// RVA: 0x19889CC Offset: 0x19889CC VA: 0x19889CC
+	public int GetSupport(TSVector2 direction) { }
+
+	// RVA: 0x198937C Offset: 0x198937C VA: 0x198937C
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 147950-147958; TypeDefIndex 2468
+// Namespace: BattleCore.Physics2D
+public struct SimplexCache // TypeDefIndex: 2468
+{
+	// Fields
+	public ushort Count; // 0x0
+	public FixedArray3<byte> IndexA; // 0x2
+	public FixedArray3<byte> IndexB; // 0x5
+	public FP Metric; // 0x8
+}
+
+// ORIGINAL DUMP LINES 147960-147974; TypeDefIndex 2469
+// Namespace: BattleCore.Physics2D
+public class DistanceInput // TypeDefIndex: 2469
+{
+	// Fields
+	public DistanceProxy ProxyA; // 0x8
+	public DistanceProxy ProxyB; // 0xC
+	public Transform TransformA; // 0x10
+	public Transform TransformB; // 0x30
+	public bool UseRadii; // 0x50
+
+	// Methods
+
+	// RVA: 0x19892F0 Offset: 0x19892F0 VA: 0x19892F0
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 147976-147984; TypeDefIndex 2470
+// Namespace: BattleCore.Physics2D
+public struct DistanceOutput // TypeDefIndex: 2470
+{
+	// Fields
+	public FP Distance; // 0x0
+	public int Iterations; // 0x8
+	public TSVector2 PointA; // 0x10
+	public TSVector2 PointB; // 0x20
+}
+
+// ORIGINAL DUMP LINES 147986-147996; TypeDefIndex 2471
+// Namespace: BattleCore.Physics2D
+internal struct SimplexVertex // TypeDefIndex: 2471
+{
+	// Fields
+	public FP A; // 0x0
+	public int IndexA; // 0x8
+	public int IndexB; // 0xC
+	public TSVector2 W; // 0x10
+	public TSVector2 WA; // 0x20
+	public TSVector2 WB; // 0x30
+}
+
+// ORIGINAL DUMP LINES 147998-148027; TypeDefIndex 2472
+// Namespace: BattleCore.Physics2D
+internal struct Simplex // TypeDefIndex: 2472
+{
+	// Fields
+	internal int Count; // 0x0
+	internal FixedArray3<SimplexVertex> V; // 0x8
+
+	// Methods
+
+	// RVA: 0x4F5ED4 Offset: 0x4F5ED4 VA: 0x4F5ED4
+	internal void ReadCache(ref SimplexCache cache, DistanceProxy proxyA, ref Transform transformA, DistanceProxy proxyB, ref Transform transformB) { }
+
+	// RVA: 0x4F5EFC Offset: 0x4F5EFC VA: 0x4F5EFC
+	internal void WriteCache(ref SimplexCache cache) { }
+
+	// RVA: 0x4F5F04 Offset: 0x4F5F04 VA: 0x4F5F04
+	internal TSVector2 GetSearchDirection() { }
+
+	// RVA: 0x4F5F18 Offset: 0x4F5F18 VA: 0x4F5F18
+	internal void GetWitnessPoints(out TSVector2 pA, out TSVector2 pB) { }
+
+	// RVA: 0x4F5F20 Offset: 0x4F5F20 VA: 0x4F5F20
+	internal FP GetMetric() { }
+
+	// RVA: 0x4F5F34 Offset: 0x4F5F34 VA: 0x4F5F34
+	internal void Solve2() { }
+
+	// RVA: 0x4F5F3C Offset: 0x4F5F3C VA: 0x4F5F3C
+	internal void Solve3() { }
+}
+
+// ORIGINAL DUMP LINES 148029-148036; TypeDefIndex 2473
+// Namespace: BattleCore.Physics2D
+public static class Distance // TypeDefIndex: 2473
+{
+	// Methods
+
+	// RVA: 0x1984C88 Offset: 0x1984C88 VA: 0x1984C88
+	public static void ComputeDistance(out DistanceOutput output, out SimplexCache cache, DistanceInput input) { }
+}
+
+// ORIGINAL DUMP LINES 148038-148072; TypeDefIndex 2474
+// Namespace: BattleCore.Physics2D
+internal class TreeNode<T> // TypeDefIndex: 2474
+{
+	// Fields
+	internal AABB AABB; // 0x0
+	internal int Child1; // 0x0
+	internal int Child2; // 0x0
+	internal int Height; // 0x0
+	internal int ParentOrNext; // 0x0
+	internal T UserData; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	internal bool IsLeaf() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x1A14B28 Offset: 0x1A14B28 VA: 0x1A14B28
+	|-TreeNode<FixtureProxy>.IsLeaf
+	|
+	|-RVA: 0x1A14B68 Offset: 0x1A14B68 VA: 0x1A14B68
+	|-TreeNode<object>.IsLeaf
+	*/
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x1A14B3C Offset: 0x1A14B3C VA: 0x1A14B3C
+	|-TreeNode<FixtureProxy>..ctor
+	|
+	|-RVA: 0x1A14B7C Offset: 0x1A14B7C VA: 0x1A14B7C
+	|-TreeNode<object>..ctor
+	*/
+}
+
+// ORIGINAL DUMP LINES 148074-148219; TypeDefIndex 2475
+// Namespace: BattleCore.Physics2D
+public class DynamicTree<T> // TypeDefIndex: 2475
+{
+	// Fields
+	internal Stack<int> _raycastStack; // 0x0
+	internal Stack<int> _queryStack; // 0x0
+	internal int _freeList; // 0x0
+	internal int _nodeCapacity; // 0x0
+	internal int _nodeCount; // 0x0
+	internal TreeNode<T>[] _nodes; // 0x0
+	internal int _root; // 0x0
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x11BCEDC Offset: 0x11BCEDC VA: 0x11BCEDC
+	|-DynamicTree<FixtureProxy>..ctor
+	|
+	|-RVA: 0x1A0F8B0 Offset: 0x1A0F8B0 VA: 0x1A0F8B0
+	|-DynamicTree<object>..ctor
+	*/
+
+	// RVA: -1 Offset: -1
+	public int AddProxy(ref AABB aabb, T userData) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x11BD2E8 Offset: 0x11BD2E8 VA: 0x11BD2E8
+	|-DynamicTree<FixtureProxy>.AddProxy
+	|
+	|-RVA: 0x1A0FCBC Offset: 0x1A0FCBC VA: 0x1A0FCBC
+	|-DynamicTree<object>.AddProxy
+	*/
+
+	// RVA: -1 Offset: -1
+	public void RemoveProxy(int proxyId) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x11BD690 Offset: 0x11BD690 VA: 0x11BD690
+	|-DynamicTree<FixtureProxy>.RemoveProxy
+	|
+	|-RVA: 0x1A0FFE8 Offset: 0x1A0FFE8 VA: 0x1A0FFE8
+	|-DynamicTree<object>.RemoveProxy
+	*/
+
+	// RVA: -1 Offset: -1
+	public bool MoveProxy(int proxyId, ref AABB aabb, TSVector2 displacement) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x11BD700 Offset: 0x11BD700 VA: 0x11BD700
+	|-DynamicTree<FixtureProxy>.MoveProxy
+	|
+	|-RVA: 0x1A10058 Offset: 0x1A10058 VA: 0x1A10058
+	|-DynamicTree<object>.MoveProxy
+	*/
+
+	// RVA: -1 Offset: -1
+	public T GetUserData(int proxyId) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x11BDC7C Offset: 0x11BDC7C VA: 0x11BDC7C
+	|-DynamicTree<FixtureProxy>.GetUserData
+	|
+	|-RVA: 0x1A105D4 Offset: 0x1A105D4 VA: 0x1A105D4
+	|-DynamicTree<object>.GetUserData
+	*/
+
+	// RVA: -1 Offset: -1
+	public void RayCast(Func<RayCastInput, int, int, FP> callback, ref RayCastInput input, int layerMask) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x11BDCEC Offset: 0x11BDCEC VA: 0x11BDCEC
+	|-DynamicTree<FixtureProxy>.RayCast
+	|
+	|-RVA: 0x1A10630 Offset: 0x1A10630 VA: 0x1A10630
+	|-DynamicTree<object>.RayCast
+	*/
+
+	// RVA: -1 Offset: -1
+	public void CircleCast(Func<CircleCastInput, int, int, FP> callback, ref CircleCastInput input, int layerMask) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x11BE7F4 Offset: 0x11BE7F4 VA: 0x11BE7F4
+	|-DynamicTree<FixtureProxy>.CircleCast
+	|
+	|-RVA: 0x1A11138 Offset: 0x1A11138 VA: 0x1A11138
+	|-DynamicTree<object>.CircleCast
+	*/
+
+	// RVA: -1 Offset: -1
+	private int AllocateNode() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x11BEE1C Offset: 0x11BEE1C VA: 0x11BEE1C
+	|-DynamicTree<FixtureProxy>.AllocateNode
+	|
+	|-RVA: 0x1A11760 Offset: 0x1A11760 VA: 0x1A11760
+	|-DynamicTree<object>.AllocateNode
+	*/
+
+	// RVA: -1 Offset: -1
+	private void FreeNode(int nodeId) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x11BF39C Offset: 0x11BF39C VA: 0x11BF39C
+	|-DynamicTree<FixtureProxy>.FreeNode
+	|
+	|-RVA: 0x1A11CCC Offset: 0x1A11CCC VA: 0x1A11CCC
+	|-DynamicTree<object>.FreeNode
+	*/
+
+	// RVA: -1 Offset: -1
+	private void InsertLeaf(int leaf) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x11BF460 Offset: 0x11BF460 VA: 0x11BF460
+	|-DynamicTree<FixtureProxy>.InsertLeaf
+	|
+	|-RVA: 0x1A11D90 Offset: 0x1A11D90 VA: 0x1A11D90
+	|-DynamicTree<object>.InsertLeaf
+	*/
+
+	// RVA: -1 Offset: -1
+	private void RemoveLeaf(int leaf) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x11C07A4 Offset: 0x11C07A4 VA: 0x11C07A4
+	|-DynamicTree<FixtureProxy>.RemoveLeaf
+	|
+	|-RVA: 0x1A130C0 Offset: 0x1A130C0 VA: 0x1A130C0
+	|-DynamicTree<object>.RemoveLeaf
+	*/
+
+	// RVA: -1 Offset: -1
+	private int Balance(int iA) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x11C0DD8 Offset: 0x11C0DD8 VA: 0x11C0DD8
+	|-DynamicTree<FixtureProxy>.Balance
+	|
+	|-RVA: 0x1A136F4 Offset: 0x1A136F4 VA: 0x1A136F4
+	|-DynamicTree<object>.Balance
+	*/
+}
+
+// ORIGINAL DUMP LINES 148221-148232; TypeDefIndex 2476
+// Namespace: BattleCore.Physics2D
+internal struct Pair : IComparable<Pair> // TypeDefIndex: 2476
+{
+	// Fields
+	public int ProxyIdA; // 0x0
+	public int ProxyIdB; // 0x4
+
+	// Methods
+
+	// RVA: 0x4F5DB0 Offset: 0x4F5DB0 VA: 0x4F5DB0 Slot: 4
+	public int CompareTo(Pair other) { }
+}
+
+// ORIGINAL DUMP LINES 148234-148283; TypeDefIndex 2477
+// Namespace: BattleCore.Physics2D
+public class DynamicTreeBroadPhase : IBroadPhase // TypeDefIndex: 2477
+{
+	// Fields
+	internal int[] _moveBuffer; // 0x8
+	internal int _moveCapacity; // 0xC
+	internal int _moveCount; // 0x10
+	internal Pair[] _pairBuffer; // 0x14
+	internal int _pairCapacity; // 0x18
+	internal int _pairCount; // 0x1C
+	internal int _proxyCount; // 0x20
+	private Func<int, bool> _queryCallback; // 0x24
+	internal int _queryProxyId; // 0x28
+	internal DynamicTree<FixtureProxy> _tree; // 0x2C
+
+	// Methods
+
+	// RVA: 0x1989AE0 Offset: 0x1989AE0 VA: 0x1989AE0
+	public void .ctor() { }
+
+	// RVA: 0x1989C08 Offset: 0x1989C08 VA: 0x1989C08 Slot: 4
+	public int AddProxy(ref FixtureProxy proxy) { }
+
+	// RVA: 0x1989E1C Offset: 0x1989E1C VA: 0x1989E1C Slot: 5
+	public void RemoveProxy(int proxyId) { }
+
+	// RVA: 0x1989F68 Offset: 0x1989F68 VA: 0x1989F68 Slot: 6
+	public void MoveProxy(int proxyId, ref AABB aabb, TSVector2 displacement) { }
+
+	// RVA: 0x198A034 Offset: 0x198A034 VA: 0x198A034 Slot: 8
+	public void TouchProxy(int proxyId) { }
+
+	// RVA: 0x1989D3C Offset: 0x1989D3C VA: 0x1989D3C
+	private void BufferMove(int proxyId) { }
+
+	// RVA: 0x1989EB4 Offset: 0x1989EB4 VA: 0x1989EB4
+	private void UnBufferMove(int proxyId) { }
+
+	// RVA: 0x198A038 Offset: 0x198A038 VA: 0x198A038
+	private bool QueryCallback(int proxyId) { }
+
+	// RVA: 0x198A18C Offset: 0x198A18C VA: 0x198A18C Slot: 7
+	public FixtureProxy GetProxy(int proxyId) { }
+
+	// RVA: 0x198A214 Offset: 0x198A214 VA: 0x198A214 Slot: 9
+	public void RayCast(Func<RayCastInput, int, int, FP> callback, ref RayCastInput input, int layerMask) { }
+
+	// RVA: 0x198A2B0 Offset: 0x198A2B0 VA: 0x198A2B0 Slot: 10
+	public void CircleCast(Func<CircleCastInput, int, int, FP> callback, ref CircleCastInput input, int layerMask) { }
+}
+
+// ORIGINAL DUMP LINES 148285-148310; TypeDefIndex 2478
+// Namespace: BattleCore.Physics2D
+public interface IBroadPhase // TypeDefIndex: 2478
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract int AddProxy(ref FixtureProxy proxy);
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract void RemoveProxy(int proxyId);
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract void MoveProxy(int proxyId, ref AABB aabb, TSVector2 displacement);
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract FixtureProxy GetProxy(int proxyId);
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract void TouchProxy(int proxyId);
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract void RayCast(Func<RayCastInput, int, int, FP> callback, ref RayCastInput input, int layerMask);
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract void CircleCast(Func<CircleCastInput, int, int, FP> callback, ref CircleCastInput input, int layerMask);
+}
+
+// ORIGINAL DUMP LINES 148312-148359; TypeDefIndex 2479
+// Namespace: BattleCore.Physics2D
+public class ChainShape : Shape // TypeDefIndex: 2479
+{
+	// Fields
+	public Vertices Vertices; // 0x1C
+	private TSVector2 _prevVertex; // 0x20
+	private TSVector2 _nextVertex; // 0x30
+	private bool _hasPrevVertex; // 0x40
+	private bool _hasNextVertex; // 0x41
+	private static EdgeShape _edgeShape; // 0x0
+
+	// Properties
+	public override int ChildCount { get; }
+	public TSVector2 PrevVertex { set; }
+	public TSVector2 NextVertex { set; }
+
+	// Methods
+
+	// RVA: 0x1979774 Offset: 0x1979774 VA: 0x1979774
+	public void .ctor() { }
+
+	// RVA: 0x1979844 Offset: 0x1979844 VA: 0x1979844
+	public void .ctor(Vertices vertices, bool createLoop = False) { }
+
+	// RVA: 0x1979B9C Offset: 0x1979B9C VA: 0x1979B9C Slot: 4
+	public override int get_ChildCount() { }
+
+	// RVA: 0x1979B4C Offset: 0x1979B4C VA: 0x1979B4C
+	public void set_PrevVertex(TSVector2 value) { }
+
+	// RVA: 0x1979B74 Offset: 0x1979B74 VA: 0x1979B74
+	public void set_NextVertex(TSVector2 value) { }
+
+	// RVA: 0x1979C18 Offset: 0x1979C18 VA: 0x1979C18
+	internal void GetChildEdge(EdgeShape edge, int index) { }
+
+	// RVA: 0x1979EBC Offset: 0x1979EBC VA: 0x1979EBC Slot: 6
+	public override bool RayCast(out RayCastOutput output, ref RayCastInput input, ref Transform transform, int childIndex) { }
+
+	// RVA: 0x197A0B4 Offset: 0x197A0B4 VA: 0x197A0B4 Slot: 7
+	public override void ComputeAABB(out AABB aabb, ref Transform transform, int childIndex) { }
+
+	// RVA: 0x197A310 Offset: 0x197A310 VA: 0x197A310 Slot: 5
+	public override Shape Clone() { }
+
+	// RVA: 0x197A490 Offset: 0x197A490 VA: 0x197A490
+	private static void .cctor() { }
+}
+
+// ORIGINAL DUMP LINES 148361-148393; TypeDefIndex 2480
+// Namespace: BattleCore.Physics2D
+public class CircleShape : Shape // TypeDefIndex: 2480
+{
+	// Fields
+	internal TSVector2 _position; // 0x20
+
+	// Properties
+	public override int ChildCount { get; }
+	public TSVector2 Position { get; }
+
+	// Methods
+
+	// RVA: 0x197A5BC Offset: 0x197A5BC VA: 0x197A5BC
+	public void .ctor(FP radius) { }
+
+	// RVA: 0x197A738 Offset: 0x197A738 VA: 0x197A738
+	internal void .ctor() { }
+
+	// RVA: 0x197A838 Offset: 0x197A838 VA: 0x197A838 Slot: 4
+	public override int get_ChildCount() { }
+
+	// RVA: 0x197A840 Offset: 0x197A840 VA: 0x197A840
+	public TSVector2 get_Position() { }
+
+	// RVA: 0x197A850 Offset: 0x197A850 VA: 0x197A850 Slot: 6
+	public override bool RayCast(out RayCastOutput output, ref RayCastInput input, ref Transform transform, int childIndex) { }
+
+	// RVA: 0x197AF3C Offset: 0x197AF3C VA: 0x197AF3C Slot: 7
+	public override void ComputeAABB(out AABB aabb, ref Transform transform, int childIndex) { }
+
+	// RVA: 0x197B124 Offset: 0x197B124 VA: 0x197B124 Slot: 5
+	public override Shape Clone() { }
+}
+
+// ORIGINAL DUMP LINES 148395-148485; TypeDefIndex 2481
+// Namespace: BattleCore.Physics2D
+public class EdgeShape : Shape // TypeDefIndex: 2481
+{
+	// Fields
+	internal TSVector2 _vertex1; // 0x20
+	internal TSVector2 _vertex2; // 0x30
+	[CompilerGeneratedAttribute] // RVA: 0x461BFC Offset: 0x461BFC VA: 0x461BFC
+	private bool <HasVertex0>k__BackingField; // 0x40
+	[CompilerGeneratedAttribute] // RVA: 0x461C0C Offset: 0x461C0C VA: 0x461C0C
+	private bool <HasVertex3>k__BackingField; // 0x41
+	[CompilerGeneratedAttribute] // RVA: 0x461C1C Offset: 0x461C1C VA: 0x461C1C
+	private TSVector2 <Vertex0>k__BackingField; // 0x48
+	[CompilerGeneratedAttribute] // RVA: 0x461C2C Offset: 0x461C2C VA: 0x461C2C
+	private TSVector2 <Vertex3>k__BackingField; // 0x58
+
+	// Properties
+	public override int ChildCount { get; }
+	public bool HasVertex0 { get; set; }
+	public bool HasVertex3 { get; set; }
+	public TSVector2 Vertex0 { get; set; }
+	public TSVector2 Vertex3 { get; set; }
+	public TSVector2 Vertex1 { get; set; }
+	public TSVector2 Vertex2 { get; set; }
+
+	// Methods
+
+	// RVA: 0x197A50C Offset: 0x197A50C VA: 0x197A50C
+	internal void .ctor() { }
+
+	// RVA: 0x198A34C Offset: 0x198A34C VA: 0x198A34C
+	public void .ctor(TSVector2 start, TSVector2 end) { }
+
+	// RVA: 0x198A490 Offset: 0x198A490 VA: 0x198A490 Slot: 4
+	public override int get_ChildCount() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x461E7C Offset: 0x461E7C VA: 0x461E7C
+	// RVA: 0x197F070 Offset: 0x197F070 VA: 0x197F070
+	public bool get_HasVertex0() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x461E8C Offset: 0x461E8C VA: 0x461E8C
+	// RVA: 0x1979E94 Offset: 0x1979E94 VA: 0x1979E94
+	public void set_HasVertex0(bool value) { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x461E9C Offset: 0x461E9C VA: 0x461E9C
+	// RVA: 0x197F088 Offset: 0x197F088 VA: 0x197F088
+	public bool get_HasVertex3() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x461EAC Offset: 0x461EAC VA: 0x461EAC
+	// RVA: 0x1979EB4 Offset: 0x1979EB4 VA: 0x1979EB4
+	public void set_HasVertex3(bool value) { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x461EBC Offset: 0x461EBC VA: 0x461EBC
+	// RVA: 0x197F078 Offset: 0x197F078 VA: 0x197F078
+	public TSVector2 get_Vertex0() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x461ECC Offset: 0x461ECC VA: 0x461ECC
+	// RVA: 0x1979E7C Offset: 0x1979E7C VA: 0x1979E7C
+	public void set_Vertex0(TSVector2 value) { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x461EDC Offset: 0x461EDC VA: 0x461EDC
+	// RVA: 0x197F090 Offset: 0x197F090 VA: 0x197F090
+	public TSVector2 get_Vertex3() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x461EEC Offset: 0x461EEC VA: 0x461EEC
+	// RVA: 0x1979E9C Offset: 0x1979E9C VA: 0x1979E9C
+	public void set_Vertex3(TSVector2 value) { }
+
+	// RVA: 0x197F050 Offset: 0x197F050 VA: 0x197F050
+	public TSVector2 get_Vertex1() { }
+
+	// RVA: 0x1979E4C Offset: 0x1979E4C VA: 0x1979E4C
+	public void set_Vertex1(TSVector2 value) { }
+
+	// RVA: 0x197F060 Offset: 0x197F060 VA: 0x197F060
+	public TSVector2 get_Vertex2() { }
+
+	// RVA: 0x1979E64 Offset: 0x1979E64 VA: 0x1979E64
+	public void set_Vertex2(TSVector2 value) { }
+
+	// RVA: 0x198A444 Offset: 0x198A444 VA: 0x198A444
+	public void Set(TSVector2 start, TSVector2 end) { }
+
+	// RVA: 0x198A498 Offset: 0x198A498 VA: 0x198A498 Slot: 6
+	public override bool RayCast(out RayCastOutput output, ref RayCastInput input, ref Transform transform, int childIndex) { }
+
+	// RVA: 0x198AD48 Offset: 0x198AD48 VA: 0x198AD48 Slot: 7
+	public override void ComputeAABB(out AABB aabb, ref Transform transform, int childIndex) { }
+
+	// RVA: 0x198AF38 Offset: 0x198AF38 VA: 0x198AF38 Slot: 5
+	public override Shape Clone() { }
+}
+
+// ORIGINAL DUMP LINES 148487-148527; TypeDefIndex 2482
+// Namespace: BattleCore.Physics2D
+public class PolygonShape : Shape // TypeDefIndex: 2482
+{
+	// Fields
+	internal Vertices _vertices; // 0x1C
+	internal Vertices _normals; // 0x20
+
+	// Properties
+	public Vertices Vertices { get; set; }
+	public Vertices Normals { get; }
+	public override int ChildCount { get; }
+
+	// Methods
+
+	// RVA: 0x198F994 Offset: 0x198F994 VA: 0x198F994
+	public void .ctor(Vertices vertices) { }
+
+	// RVA: 0x1991008 Offset: 0x1991008 VA: 0x1991008
+	internal void .ctor() { }
+
+	// RVA: 0x197C600 Offset: 0x197C600 VA: 0x197C600
+	public Vertices get_Vertices() { }
+
+	// RVA: 0x1990BBC Offset: 0x1990BBC VA: 0x1990BBC
+	public void set_Vertices(Vertices value) { }
+
+	// RVA: 0x197C608 Offset: 0x197C608 VA: 0x197C608
+	public Vertices get_Normals() { }
+
+	// RVA: 0x1991114 Offset: 0x1991114 VA: 0x1991114 Slot: 4
+	public override int get_ChildCount() { }
+
+	// RVA: 0x199111C Offset: 0x199111C VA: 0x199111C Slot: 6
+	public override bool RayCast(out RayCastOutput output, ref RayCastInput input, ref Transform transform, int childIndex) { }
+
+	// RVA: 0x19919B8 Offset: 0x19919B8 VA: 0x19919B8 Slot: 7
+	public override void ComputeAABB(out AABB aabb, ref Transform transform, int childIndex) { }
+
+	// RVA: 0x1991D1C Offset: 0x1991D1C VA: 0x1991D1C Slot: 5
+	public override Shape Clone() { }
+}
+
+// ORIGINAL DUMP LINES 148529-148540; TypeDefIndex 2483
+// Namespace: BattleCore.Physics2D
+public enum ShapeType // TypeDefIndex: 2483
+{
+	// Fields
+	public int value__; // 0x0
+	public const ShapeType Unknown = -1;
+	public const ShapeType Circle = 0;
+	public const ShapeType Edge = 1;
+	public const ShapeType Polygon = 2;
+	public const ShapeType Chain = 3;
+	public const ShapeType TypeCount = 4;
+}
+
+// ORIGINAL DUMP LINES 148542-148586; TypeDefIndex 2484
+// Namespace: BattleCore.Physics2D
+public abstract class Shape // TypeDefIndex: 2484
+{
+	// Fields
+	internal FP _radius; // 0x8
+	internal FP _2radius; // 0x10
+	[CompilerGeneratedAttribute] // RVA: 0x461C3C Offset: 0x461C3C VA: 0x461C3C
+	private ShapeType <ShapeType>k__BackingField; // 0x18
+
+	// Properties
+	public ShapeType ShapeType { get; set; }
+	public abstract int ChildCount { get; }
+	public FP Radius { get; set; }
+
+	// Methods
+
+	// RVA: 0x197981C Offset: 0x197981C VA: 0x197981C
+	protected void .ctor() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x461EFC Offset: 0x461EFC VA: 0x461EFC
+	// RVA: 0x197A488 Offset: 0x197A488 VA: 0x197A488
+	public ShapeType get_ShapeType() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x461F0C Offset: 0x461F0C VA: 0x461F0C
+	// RVA: 0x197983C Offset: 0x197983C VA: 0x197983C
+	internal void set_ShapeType(ShapeType value) { }
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract int get_ChildCount();
+
+	// RVA: 0x197B118 Offset: 0x197B118 VA: 0x197B118
+	public FP get_Radius() { }
+
+	// RVA: 0x197A684 Offset: 0x197A684 VA: 0x197A684
+	public void set_Radius(FP value) { }
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract Shape Clone();
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract bool RayCast(out RayCastOutput output, ref RayCastInput input, ref Transform transform, int childIndex);
+
+	// RVA: -1 Offset: -1 Slot: 7
+	public abstract void ComputeAABB(out AABB aabb, ref Transform transform, int childIndex);
+}
+
+// ORIGINAL DUMP LINES 148588-148602; TypeDefIndex 2485
+// Namespace: BattleCore.Physics2D
+public class TOIInput // TypeDefIndex: 2485
+{
+	// Fields
+	public DistanceProxy ProxyA; // 0x8
+	public DistanceProxy ProxyB; // 0xC
+	public Sweep SweepA; // 0x10
+	public Sweep SweepB; // 0x58
+	public FP TMax; // 0xA0
+
+	// Methods
+
+	// RVA: 0x1994854 Offset: 0x1994854 VA: 0x1994854
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 148604-148614; TypeDefIndex 2486
+// Namespace: BattleCore.Physics2D
+public enum TOIOutputState // TypeDefIndex: 2486
+{
+	// Fields
+	public int value__; // 0x0
+	public const TOIOutputState Unknown = 0;
+	public const TOIOutputState Failed = 1;
+	public const TOIOutputState Overlapped = 2;
+	public const TOIOutputState Touching = 3;
+	public const TOIOutputState Seperated = 4;
+}
+
+// ORIGINAL DUMP LINES 148616-148622; TypeDefIndex 2487
+// Namespace: BattleCore.Physics2D
+public struct TOIOutput // TypeDefIndex: 2487
+{
+	// Fields
+	public TOIOutputState State; // 0x0
+	public FP T; // 0x8
+}
+
+// ORIGINAL DUMP LINES 148624-148632; TypeDefIndex 2488
+// Namespace: BattleCore.Physics2D
+public enum SeparationFunctionType // TypeDefIndex: 2488
+{
+	// Fields
+	public int value__; // 0x0
+	public const SeparationFunctionType Points = 0;
+	public const SeparationFunctionType FaceA = 1;
+	public const SeparationFunctionType FaceB = 2;
+}
+
+// ORIGINAL DUMP LINES 148634-148663; TypeDefIndex 2489
+// Namespace: BattleCore.Physics2D
+public static class SeparationFunction // TypeDefIndex: 2489
+{
+	// Fields
+	[ThreadStaticAttribute] // RVA: 0x461C4C Offset: 0x461C4C VA: 0x461C4C
+	private static TSVector2 _axis; // 0x80000000
+	[ThreadStaticAttribute] // RVA: 0x461C5C Offset: 0x461C5C VA: 0x461C5C
+	private static TSVector2 _localPoint; // 0x80000010
+	[ThreadStaticAttribute] // RVA: 0x461C6C Offset: 0x461C6C VA: 0x461C6C
+	private static DistanceProxy _proxyA; // 0x80000020
+	[ThreadStaticAttribute] // RVA: 0x461C7C Offset: 0x461C7C VA: 0x461C7C
+	private static DistanceProxy _proxyB; // 0x80000024
+	[ThreadStaticAttribute] // RVA: 0x461C8C Offset: 0x461C8C VA: 0x461C8C
+	private static Sweep _sweepA; // 0x80000028
+	[ThreadStaticAttribute] // RVA: 0x461C9C Offset: 0x461C9C VA: 0x461C9C
+	private static Sweep _sweepB; // 0x80000070
+	[ThreadStaticAttribute] // RVA: 0x461CAC Offset: 0x461CAC VA: 0x461CAC
+	private static SeparationFunctionType _type; // 0x800000B8
+
+	// Methods
+
+	// RVA: 0x1991EFC Offset: 0x1991EFC VA: 0x1991EFC
+	public static void Set(ref SimplexCache cache, DistanceProxy proxyA, ref Sweep sweepA, DistanceProxy proxyB, ref Sweep sweepB, FP t1) { }
+
+	// RVA: 0x1992F98 Offset: 0x1992F98 VA: 0x1992F98
+	public static FP FindMinSeparation(out int indexA, out int indexB, FP t) { }
+
+	// RVA: 0x1993950 Offset: 0x1993950 VA: 0x1993950
+	public static FP Evaluate(int indexA, int indexB, FP t) { }
+}
+
+// ORIGINAL DUMP LINES 148665-148676; TypeDefIndex 2490
+// Namespace: BattleCore.Physics2D
+public static class TimeOfImpact // TypeDefIndex: 2490
+{
+	// Fields
+	[ThreadStaticAttribute] // RVA: 0x461CBC Offset: 0x461CBC VA: 0x461CBC
+	private static DistanceInput _distanceInput; // 0x80000000
+
+	// Methods
+
+	// RVA: 0x1C86988 Offset: 0x1C86988 VA: 0x1C86988
+	public static void CalculateTimeOfImpact(out TOIOutput output, TOIInput input) { }
+}
+
+// ORIGINAL DUMP LINES 148678-148685; TypeDefIndex 2491
+// Namespace: BattleCore.Physics2D
+public static class GiftWrap // TypeDefIndex: 2491
+{
+	// Methods
+
+	// RVA: 0x198BB30 Offset: 0x198BB30 VA: 0x198BB30
+	public static Vertices GetConvexHull(Vertices vertices) { }
+}
+
+// ORIGINAL DUMP LINES 148687-148733; TypeDefIndex 2492
+// Namespace: BattleCore.Physics2D
+[DefaultMemberAttribute] // RVA: 0x461AA8 Offset: 0x461AA8 VA: 0x461AA8
+public struct FixedArray2<T> // TypeDefIndex: 2492
+{
+	// Fields
+	private T _value0; // 0x0
+	private T _value1; // 0x0
+
+	// Properties
+	public T Item { get; set; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public T get_Item(int index) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4F6040 Offset: 0x4F6040 VA: 0x4F6040
+	|-FixedArray2<ClipVertex>.get_Item
+	|
+	|-RVA: 0x4F6090 Offset: 0x4F6090 VA: 0x4F6090
+	|-FixedArray2<ManifoldPoint>.get_Item
+	|
+	|-RVA: 0x4F60F4 Offset: 0x4F60F4 VA: 0x4F60F4
+	|-FixedArray2<TSVector2>.get_Item
+	|
+	|-RVA: 0x4F6130 Offset: 0x4F6130 VA: 0x4F6130
+	|-FixedArray2<object>.get_Item
+	*/
+
+	// RVA: -1 Offset: -1
+	public void set_Item(int index, T value) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4F6054 Offset: 0x4F6054 VA: 0x4F6054
+	|-FixedArray2<ClipVertex>.set_Item
+	|
+	|-RVA: 0x4F60A4 Offset: 0x4F60A4 VA: 0x4F60A4
+	|-FixedArray2<ManifoldPoint>.set_Item
+	|
+	|-RVA: 0x4F6108 Offset: 0x4F6108 VA: 0x4F6108
+	|-FixedArray2<TSVector2>.set_Item
+	|
+	|-RVA: 0x4F6138 Offset: 0x4F6138 VA: 0x4F6138
+	|-FixedArray2<object>.set_Item
+	*/
+}
+
+// ORIGINAL DUMP LINES 148735-148782; TypeDefIndex 2493
+// Namespace: BattleCore.Physics2D
+[DefaultMemberAttribute] // RVA: 0x461ADC Offset: 0x461ADC VA: 0x461ADC
+public struct FixedArray3<T> // TypeDefIndex: 2493
+{
+	// Fields
+	private T _value0; // 0x0
+	private T _value1; // 0x0
+	private T _value2; // 0x0
+
+	// Properties
+	public T Item { get; set; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public T get_Item(int index) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4F6140 Offset: 0x4F6140 VA: 0x4F6140
+	|-FixedArray3<SimplexVertex>.get_Item
+	|
+	|-RVA: 0x4F61D0 Offset: 0x4F61D0 VA: 0x4F61D0
+	|-FixedArray3<byte>.get_Item
+	|
+	|-RVA: 0x4F61E0 Offset: 0x4F61E0 VA: 0x4F61E0
+	|-FixedArray3<int>.get_Item
+	|
+	|-RVA: 0x4F61F0 Offset: 0x4F61F0 VA: 0x4F61F0
+	|-FixedArray3<object>.get_Item
+	*/
+
+	// RVA: -1 Offset: -1
+	public void set_Item(int index, T value) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x4F6154 Offset: 0x4F6154 VA: 0x4F6154
+	|-FixedArray3<SimplexVertex>.set_Item
+	|
+	|-RVA: 0x4F61D8 Offset: 0x4F61D8 VA: 0x4F61D8
+	|-FixedArray3<byte>.set_Item
+	|
+	|-RVA: 0x4F61E8 Offset: 0x4F61E8 VA: 0x4F61E8
+	|-FixedArray3<int>.set_Item
+	|
+	|-RVA: 0x4F61F8 Offset: 0x4F61F8 VA: 0x4F61F8
+	|-FixedArray3<object>.set_Item
+	*/
+}
+
+// ORIGINAL DUMP LINES 148784-148840; TypeDefIndex 2494
+// Namespace: BattleCore.Physics2D
+[ExtensionAttribute] // RVA: 0x461B10 Offset: 0x461B10 VA: 0x461B10
+public static class MathUtils // TypeDefIndex: 2494
+{
+	// Methods
+
+	// RVA: 0x198C3B4 Offset: 0x198C3B4 VA: 0x198C3B4
+	public static FP Cross(ref TSVector2 a, ref TSVector2 b) { }
+
+	// RVA: 0x198251C Offset: 0x198251C VA: 0x198251C
+	public static FP Cross(TSVector2 a, TSVector2 b) { }
+
+	// RVA: 0x198C488 Offset: 0x198C488 VA: 0x198C488
+	public static TSVector2 Abs(TSVector2 v) { }
+
+	// RVA: 0x197A2E4 Offset: 0x197A2E4 VA: 0x197A2E4
+	public static TSVector2 Mul(ref Transform T, TSVector2 v) { }
+
+	// RVA: 0x197EEEC Offset: 0x197EEEC VA: 0x197EEEC
+	public static TSVector2 Mul(ref Transform T, ref TSVector2 v) { }
+
+	// RVA: 0x197C5D4 Offset: 0x197C5D4 VA: 0x197C5D4
+	public static TSVector2 MulT(ref Transform T, TSVector2 v) { }
+
+	// RVA: 0x198C558 Offset: 0x198C558 VA: 0x198C558
+	public static TSVector2 MulT(ref Transform T, ref TSVector2 v) { }
+
+	// RVA: 0x198C6CC Offset: 0x198C6CC VA: 0x198C6CC
+	public static Rot MulT(Rot q, Rot r) { }
+
+	// RVA: 0x19823BC Offset: 0x19823BC VA: 0x19823BC
+	public static Transform MulT(Transform A, Transform B) { }
+
+	// RVA: 0x197ADDC Offset: 0x197ADDC VA: 0x197ADDC
+	public static TSVector2 Mul(Rot q, TSVector2 v) { }
+
+	// RVA: 0x1982250 Offset: 0x1982250 VA: 0x1982250
+	public static TSVector2 MulT(Rot q, TSVector2 v) { }
+
+	// RVA: 0x198C81C Offset: 0x198C81C VA: 0x198C81C
+	public static FP Clamp(FP a, FP low, FP high) { }
+
+	// RVA: 0x198C8E8 Offset: 0x198C8E8 VA: 0x198C8E8
+	public static FP Area(ref TSVector2 a, ref TSVector2 b, ref TSVector2 c) { }
+
+	// RVA: 0x198CA40 Offset: 0x198CA40 VA: 0x198CA40
+	public static bool IsCollinear(ref TSVector2 a, ref TSVector2 b, ref TSVector2 c, FP tolerance) { }
+
+	// RVA: 0x198CB0C Offset: 0x198CB0C VA: 0x198CB0C
+	public static bool FPInRange(FP value, FP min, FP max) { }
+
+	// RVA: 0x198CBE4 Offset: 0x198CBE4 VA: 0x198CBE4
+	public static TSVector2 Mul(ref Rot rot, TSVector2 axis) { }
+
+	// RVA: 0x198CC20 Offset: 0x198CC20 VA: 0x198CC20
+	public static TSVector2 MulT(ref Rot rot, TSVector2 axis) { }
+}
+
+// ORIGINAL DUMP LINES 148842-148856; TypeDefIndex 2495
+// Namespace: BattleCore.Physics2D
+public struct Rot // TypeDefIndex: 2495
+{
+	// Fields
+	public FP s; // 0x0
+	public FP c; // 0x8
+
+	// Methods
+
+	// RVA: 0x4F5E44 Offset: 0x4F5E44 VA: 0x4F5E44
+	public void Set(FP angle) { }
+
+	// RVA: 0x4F5E60 Offset: 0x4F5E60 VA: 0x4F5E60
+	public void Set(TSVector2 forward) { }
+}
+
+// ORIGINAL DUMP LINES 148858-148869; TypeDefIndex 2496
+// Namespace: BattleCore.Physics2D
+public struct Transform // TypeDefIndex: 2496
+{
+	// Fields
+	public TSVector2 p; // 0x0
+	public Rot q; // 0x10
+
+	// Methods
+
+	// RVA: 0x4F7020 Offset: 0x4F7020 VA: 0x4F7020
+	public void Set(TSVector2 pos, TSVector2 forward) { }
+}
+
+// ORIGINAL DUMP LINES 148871-148889; TypeDefIndex 2497
+// Namespace: BattleCore.Physics2D
+public struct Sweep // TypeDefIndex: 2497
+{
+	// Fields
+	public FP A; // 0x0
+	public FP A0; // 0x8
+	public FP Alpha0; // 0x10
+	public TSVector2 C; // 0x18
+	public TSVector2 C0; // 0x28
+	public TSVector2 LocalCenter; // 0x38
+
+	// Methods
+
+	// RVA: 0x4F5FA0 Offset: 0x4F5FA0 VA: 0x4F5FA0
+	public void GetTransform(out Transform xfb, FP beta) { }
+
+	// RVA: 0x4F5FBC Offset: 0x4F5FBC VA: 0x4F5FBC
+	public void Normalize() { }
+}
+
+// ORIGINAL DUMP LINES 148891-148898; TypeDefIndex 2498
+// Namespace: BattleCore.Physics2D
+[FlagsAttribute] // RVA: 0x461B20 Offset: 0x461B20 VA: 0x461B20
+public enum PhysicsLogicType // TypeDefIndex: 2498
+{
+	// Fields
+	public int value__; // 0x0
+	public const PhysicsLogicType Explosion = 1;
+}
+
+// ORIGINAL DUMP LINES 148900-148905; TypeDefIndex 2499
+// Namespace: BattleCore.Physics2D
+public struct PhysicsLogicFilter // TypeDefIndex: 2499
+{
+	// Fields
+	public PhysicsLogicType ControllerIgnores; // 0x0
+}
+
+// ORIGINAL DUMP LINES 148907-148914; TypeDefIndex 2500
+// Namespace: BattleCore.Physics2D
+public static class PolygonTools // TypeDefIndex: 2500
+{
+	// Methods
+
+	// RVA: 0x198E0AC Offset: 0x198E0AC VA: 0x198E0AC
+	public static Vertices CreateRectangle(FP hx, FP hy) { }
+}
+
+// ORIGINAL DUMP LINES 148916-148958; TypeDefIndex 2501
+// Namespace: BattleCore.Physics2D
+[DebuggerDisplayAttribute] // RVA: 0x461B30 Offset: 0x461B30 VA: 0x461B30
+public class Vertices : List<TSVector2> // TypeDefIndex: 2501
+{
+	// Fields
+	[CompilerGeneratedAttribute] // RVA: 0x461CCC Offset: 0x461CCC VA: 0x461CCC
+	private bool <AttachedToBody>k__BackingField; // 0x14
+	[CompilerGeneratedAttribute] // RVA: 0x461CDC Offset: 0x461CDC VA: 0x461CDC
+	private List<Vertices> <Holes>k__BackingField; // 0x18
+	private static readonly Vertices.IndexableCyclicalLinkedList<Vertices.Vertex> polygonVertices; // 0x0
+	private static readonly Vertices.IndexableCyclicalLinkedList<Vertices.Vertex> earVertices; // 0x4
+	private static readonly Vertices.CyclicalList<Vertices.Vertex> convexVertices; // 0x8
+	private static readonly Vertices.CyclicalList<Vertices.Vertex> reflexVertices; // 0xC
+
+	// Methods
+
+	// RVA: 0x1C878D0 Offset: 0x1C878D0 VA: 0x1C878D0
+	public void .ctor() { }
+
+	// RVA: 0x1C87960 Offset: 0x1C87960 VA: 0x1C87960
+	public void .ctor(int capacity) { }
+
+	// RVA: 0x1C879F8 Offset: 0x1C879F8 VA: 0x1C879F8
+	public void .ctor(IEnumerable<TSVector2> vertices) { }
+
+	// RVA: 0x1C87AA8 Offset: 0x1C87AA8 VA: 0x1C87AA8
+	public int NextIndex(int index) { }
+
+	// RVA: 0x1C87B20 Offset: 0x1C87B20 VA: 0x1C87B20
+	public FP GetSignedArea() { }
+
+	// RVA: 0x1C87E50 Offset: 0x1C87E50 VA: 0x1C87E50
+	public bool IsCounterClockWise() { }
+
+	// RVA: 0x1C87F30 Offset: 0x1C87F30 VA: 0x1C87F30
+	public void ForceCounterClockWise() { }
+
+	// RVA: 0x1C87FC8 Offset: 0x1C87FC8 VA: 0x1C87FC8 Slot: 3
+	public override string ToString() { }
+
+	// RVA: 0x1C88260 Offset: 0x1C88260 VA: 0x1C88260
+	private static void .cctor() { }
+}
+
+// ORIGINAL DUMP LINES 148960-148980; TypeDefIndex 2502
+// Namespace: 
+private struct Vertices.Vertex // TypeDefIndex: 2502
+{
+	// Fields
+	public readonly TSVector2 Position; // 0x0
+	public readonly short Index; // 0x10
+
+	// Methods
+
+	// RVA: 0x4F7078 Offset: 0x4F7078 VA: 0x4F7078 Slot: 0
+	public override bool Equals(object obj) { }
+
+	// RVA: 0x4F7080 Offset: 0x4F7080 VA: 0x4F7080
+	public bool Equals(Vertices.Vertex obj) { }
+
+	// RVA: 0x4F70B0 Offset: 0x4F70B0 VA: 0x4F70B0 Slot: 2
+	public override int GetHashCode() { }
+
+	// RVA: 0x4F70EC Offset: 0x4F70EC VA: 0x4F70EC Slot: 3
+	public override string ToString() { }
+}
+
+// ORIGINAL DUMP LINES 148982-148998; TypeDefIndex 2503
+// Namespace: 
+[DefaultMemberAttribute] // RVA: 0x461B84 Offset: 0x461B84 VA: 0x461B84
+private class Vertices.CyclicalList<T> : List<T> // TypeDefIndex: 2503
+{
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x1A14BA8 Offset: 0x1A14BA8 VA: 0x1A14BA8
+	|-Vertices.CyclicalList<Vertices.Vertex>..ctor
+	|
+	|-RVA: 0x1A14C64 Offset: 0x1A14C64 VA: 0x1A14C64
+	|-Vertices.CyclicalList<object>..ctor
+	*/
+}
+
+// ORIGINAL DUMP LINES 149000-149016; TypeDefIndex 2504
+// Namespace: 
+[DefaultMemberAttribute] // RVA: 0x461BB8 Offset: 0x461BB8 VA: 0x461BB8
+private class Vertices.IndexableCyclicalLinkedList<T> : LinkedList<T> // TypeDefIndex: 2504
+{
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x1A14D20 Offset: 0x1A14D20 VA: 0x1A14D20
+	|-Vertices.IndexableCyclicalLinkedList<Vertices.Vertex>..ctor
+	|
+	|-RVA: 0x1A14D5C Offset: 0x1A14D5C VA: 0x1A14D5C
+	|-Vertices.IndexableCyclicalLinkedList<object>..ctor
+	*/
+}
+
+// ORIGINAL DUMP LINES 149018-149026; TypeDefIndex 2505
+// Namespace: BattleCore.Physics2D
+public enum BodySpecialSensor // TypeDefIndex: 2505
+{
+	// Fields
+	public int value__; // 0x0
+	public const BodySpecialSensor None = 0;
+	public const BodySpecialSensor ActiveOnce = 1;
+	public const BodySpecialSensor ActiveAll = 2;
+}
+
+// ORIGINAL DUMP LINES 149028-149035; TypeDefIndex 2506
+// Namespace: BattleCore.Physics2D
+public enum BodyType // TypeDefIndex: 2506
+{
+	// Fields
+	public int value__; // 0x0
+	public const BodyType Static = 0;
+	public const BodyType Dynamic = 1;
+}
+
+// ORIGINAL DUMP LINES 149037-149184; TypeDefIndex 2507
+// Namespace: BattleCore.Physics2D
+public class Body : IDisposable, IBody2D, IBody // TypeDefIndex: 2507
+{
+	// Fields
+	[ThreadStaticAttribute] // RVA: 0x461CEC Offset: 0x461CEC VA: 0x461CEC
+	internal static int _bodyIdCounter; // 0x80000000
+	internal BodySpecialSensor _specialSensor; // 0x8
+	public int SpecialSensorMask; // 0xC
+	public List<Body> _specialSensorResults; // 0x10
+	internal BodyType _bodyType; // 0x14
+	internal bool _sleepingAllowed; // 0x18
+	internal bool _awake; // 0x19
+	internal bool _enabled; // 0x1A
+	internal FP _sleepTime; // 0x20
+	internal Sweep _sweep; // 0x28
+	internal World _world; // 0x70
+	internal Transform _xf; // 0x78
+	internal bool disabled; // 0x98
+	public List<IBodyConstraint> bodyConstraints; // 0x9C
+	public PhysicsLogicFilter PhysicsLogicFilter; // 0xA0
+	[CompilerGeneratedAttribute] // RVA: 0x461CFC Offset: 0x461CFC VA: 0x461CFC
+	private int <BodyId>k__BackingField; // 0xA4
+	[CompilerGeneratedAttribute] // RVA: 0x461D0C Offset: 0x461D0C VA: 0x461D0C
+	private int <IslandIndex>k__BackingField; // 0xA8
+	[CompilerGeneratedAttribute] // RVA: 0x461D1C Offset: 0x461D1C VA: 0x461D1C
+	private FP <GravityScale>k__BackingField; // 0xB0
+	[CompilerGeneratedAttribute] // RVA: 0x461D2C Offset: 0x461D2C VA: 0x461D2C
+	private object <UserData>k__BackingField; // 0xB8
+	[CompilerGeneratedAttribute] // RVA: 0x461D3C Offset: 0x461D3C VA: 0x461D3C
+	private List<Fixture> <FixtureList>k__BackingField; // 0xBC
+	[CompilerGeneratedAttribute] // RVA: 0x461D4C Offset: 0x461D4C VA: 0x461D4C
+	private bool <IsDisposed>k__BackingField; // 0xC0
+
+	// Properties
+	private int BodyId { set; }
+	public FP GravityScale { set; }
+	public object UserData { get; set; }
+	public BodyType BodyType { set; }
+	public bool Awake { set; }
+	public bool Enabled { get; set; }
+	public List<Fixture> FixtureList { get; set; }
+	public TSVector2 Position { get; set; }
+	public TSVector2 Forward { get; set; }
+	public Category CollisionCategories { set; }
+	public int CollisionTag { set; }
+	public bool IsSensor { set; }
+	public bool IsDisposed { get; set; }
+
+	// Methods
+
+	// RVA: 0x1977950 Offset: 0x1977950 VA: 0x1977950
+	public void .ctor(World world, Nullable<TSVector2> position, TSVector2 forward, object userdata) { }
+
+	// RVA: 0x197807C Offset: 0x197807C VA: 0x197807C
+	private FP GetAngle(TSVector2 dir) { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x461F1C Offset: 0x461F1C VA: 0x461F1C
+	// RVA: 0x1977BC8 Offset: 0x1977BC8 VA: 0x1977BC8
+	private void set_BodyId(int value) { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x461F2C Offset: 0x461F2C VA: 0x461F2C
+	// RVA: 0x1977BD8 Offset: 0x1977BD8 VA: 0x1977BD8
+	public void set_GravityScale(FP value) { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x461F3C Offset: 0x461F3C VA: 0x461F3C
+	// RVA: 0x1978244 Offset: 0x1978244 VA: 0x1978244
+	public object get_UserData() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x461F4C Offset: 0x461F4C VA: 0x461F4C
+	// RVA: 0x1977BD0 Offset: 0x1977BD0 VA: 0x1977BD0
+	public void set_UserData(object value) { }
+
+	// RVA: 0x1977BE8 Offset: 0x1977BE8 VA: 0x1977BE8
+	public void set_BodyType(BodyType value) { }
+
+	// RVA: 0x1978350 Offset: 0x1978350 VA: 0x1978350
+	public void set_Awake(bool value) { }
+
+	// RVA: 0x1977EA4 Offset: 0x1977EA4 VA: 0x1977EA4
+	public void set_Enabled(bool value) { }
+
+	// RVA: 0x19787EC Offset: 0x19787EC VA: 0x19787EC
+	public bool get_Enabled() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x461F5C Offset: 0x461F5C VA: 0x461F5C
+	// RVA: 0x1978418 Offset: 0x1978418 VA: 0x1978418
+	public List<Fixture> get_FixtureList() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x461F6C Offset: 0x461F6C VA: 0x461F6C
+	// RVA: 0x1977BC0 Offset: 0x1977BC0 VA: 0x1977BC0
+	internal void set_FixtureList(List<Fixture> value) { }
+
+	// RVA: 0x19787F4 Offset: 0x19787F4 VA: 0x19787F4
+	public TSVector2 get_Position() { }
+
+	// RVA: 0x1976F80 Offset: 0x1976F80 VA: 0x1976F80
+	public void set_Position(TSVector2 value) { }
+
+	// RVA: 0x1978804 Offset: 0x1978804 VA: 0x1978804
+	public TSVector2 get_Forward() { }
+
+	// RVA: 0x1977048 Offset: 0x1977048 VA: 0x1977048
+	public void set_Forward(TSVector2 value) { }
+
+	// RVA: 0x197887C Offset: 0x197887C VA: 0x197887C
+	public void set_CollisionCategories(Category value) { }
+
+	// RVA: 0x197897C Offset: 0x197897C VA: 0x197897C
+	public void set_CollisionTag(int value) { }
+
+	// RVA: 0x1978A54 Offset: 0x1978A54 VA: 0x1978A54
+	public void set_IsSensor(bool value) { }
+
+	// RVA: 0x1978420 Offset: 0x1978420 VA: 0x1978420
+	public void ResetDynamics() { }
+
+	// RVA: 0x1978B64 Offset: 0x1978B64 VA: 0x1978B64
+	public Fixture CreateFixture(Shape shape, object userData) { }
+
+	// RVA: 0x1978C40 Offset: 0x1978C40 VA: 0x1978C40
+	public void DestroyFixture(Fixture fixture) { }
+
+	// RVA: 0x1978840 Offset: 0x1978840 VA: 0x1978840
+	public void SetTransform(ref TSVector2 position, ref TSVector2 forward) { }
+
+	// RVA: 0x1978E3C Offset: 0x1978E3C VA: 0x1978E3C
+	public void SetTransformIgnoreContacts(ref TSVector2 position, ref TSVector2 forward) { }
+
+	// RVA: 0x1978E78 Offset: 0x1978E78 VA: 0x1978E78
+	private void ApplyTransformChanged() { }
+
+	// RVA: 0x19791DC Offset: 0x19791DC VA: 0x19791DC
+	public void GetTransform(out Transform transform) { }
+
+	// RVA: 0x197824C Offset: 0x197824C VA: 0x197824C
+	internal void SynchronizeFixtures() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x461F7C Offset: 0x461F7C VA: 0x461F7C
+	// RVA: 0x19791F8 Offset: 0x19791F8 VA: 0x19791F8
+	public bool get_IsDisposed() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x461F8C Offset: 0x461F8C VA: 0x461F8C
+	// RVA: 0x1979200 Offset: 0x1979200 VA: 0x1979200
+	public void set_IsDisposed(bool value) { }
+
+	// RVA: 0x1979208 Offset: 0x1979208 VA: 0x1979208 Slot: 4
+	public void Dispose() { }
+}
+
+// ORIGINAL DUMP LINES 149186-149199; TypeDefIndex 2508
+// Namespace: BattleCore.Physics2D
+public sealed class ContactEdge // TypeDefIndex: 2508
+{
+	// Fields
+	public Contact Contact; // 0x8
+	public ContactEdge Next; // 0xC
+	public Body Other; // 0x10
+	public ContactEdge Prev; // 0x14
+
+	// Methods
+
+	// RVA: 0x1983350 Offset: 0x1983350 VA: 0x1983350
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 149201-149312; TypeDefIndex 2509
+// Namespace: BattleCore.Physics2D
+public class Contact // TypeDefIndex: 2509
+{
+	// Fields
+	internal Contact.ContactType _type; // 0x8
+	private static EdgeShape _edge; // 0x0
+	private static Contact.ContactType[,] _registers; // 0x4
+	internal ContactEdge _nodeA; // 0xC
+	internal ContactEdge _nodeB; // 0x10
+	internal int _toiCount; // 0x14
+	internal FP _toi; // 0x18
+	public Fixture FixtureA; // 0x20
+	public Fixture FixtureB; // 0x24
+	[CompilerGeneratedAttribute] // RVA: 0x461D5C Offset: 0x461D5C VA: 0x461D5C
+	private FP <Friction>k__BackingField; // 0x28
+	[CompilerGeneratedAttribute] // RVA: 0x461D6C Offset: 0x461D6C VA: 0x461D6C
+	private FP <Restitution>k__BackingField; // 0x30
+	public Manifold Manifold; // 0x38
+	[CompilerGeneratedAttribute] // RVA: 0x461D7C Offset: 0x461D7C VA: 0x461D7C
+	private FP <TangentSpeed>k__BackingField; // 0xB8
+	[CompilerGeneratedAttribute] // RVA: 0x461D8C Offset: 0x461D8C VA: 0x461D8C
+	private bool <Enabled>k__BackingField; // 0xC0
+	[CompilerGeneratedAttribute] // RVA: 0x461D9C Offset: 0x461D9C VA: 0x461D9C
+	private int <ChildIndexA>k__BackingField; // 0xC4
+	[CompilerGeneratedAttribute] // RVA: 0x461DAC Offset: 0x461DAC VA: 0x461DAC
+	private int <ChildIndexB>k__BackingField; // 0xC8
+	[CompilerGeneratedAttribute] // RVA: 0x461DBC Offset: 0x461DBC VA: 0x461DBC
+	private bool <IsTouching>k__BackingField; // 0xCC
+	[CompilerGeneratedAttribute] // RVA: 0x461DCC Offset: 0x461DCC VA: 0x461DCC
+	private bool <IslandFlag>k__BackingField; // 0xCD
+	[CompilerGeneratedAttribute] // RVA: 0x461DDC Offset: 0x461DDC VA: 0x461DDC
+	private bool <TOIFlag>k__BackingField; // 0xCE
+	[CompilerGeneratedAttribute] // RVA: 0x461DEC Offset: 0x461DEC VA: 0x461DEC
+	private bool <FilterFlag>k__BackingField; // 0xCF
+	private World m_world; // 0xD0
+
+	// Properties
+	public FP Friction { set; }
+	public FP Restitution { set; }
+	public FP TangentSpeed { set; }
+	public bool Enabled { set; }
+	public int ChildIndexA { get; set; }
+	internal int ChildIndexB { set; }
+	public bool IsTouching { set; }
+	internal bool IslandFlag { set; }
+	internal bool TOIFlag { set; }
+	internal bool FilterFlag { set; }
+
+	// Methods
+
+	[CompilerGeneratedAttribute] // RVA: 0x461F9C Offset: 0x461F9C VA: 0x461F9C
+	// RVA: 0x1983218 Offset: 0x1983218 VA: 0x1983218
+	public void set_Friction(FP value) { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x461FAC Offset: 0x461FAC VA: 0x461FAC
+	// RVA: 0x1983228 Offset: 0x1983228 VA: 0x1983228
+	public void set_Restitution(FP value) { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x461FBC Offset: 0x461FBC VA: 0x461FBC
+	// RVA: 0x1983238 Offset: 0x1983238 VA: 0x1983238
+	public void set_TangentSpeed(FP value) { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x461FCC Offset: 0x461FCC VA: 0x461FCC
+	// RVA: 0x1983248 Offset: 0x1983248 VA: 0x1983248
+	public void set_Enabled(bool value) { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x461FDC Offset: 0x461FDC VA: 0x461FDC
+	// RVA: 0x1983250 Offset: 0x1983250 VA: 0x1983250
+	public int get_ChildIndexA() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x461FEC Offset: 0x461FEC VA: 0x461FEC
+	// RVA: 0x1983258 Offset: 0x1983258 VA: 0x1983258
+	internal void set_ChildIndexA(int value) { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x461FFC Offset: 0x461FFC VA: 0x461FFC
+	// RVA: 0x1983260 Offset: 0x1983260 VA: 0x1983260
+	internal void set_ChildIndexB(int value) { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x46200C Offset: 0x46200C VA: 0x46200C
+	// RVA: 0x1983268 Offset: 0x1983268 VA: 0x1983268
+	public void set_IsTouching(bool value) { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x46201C Offset: 0x46201C VA: 0x46201C
+	// RVA: 0x1983270 Offset: 0x1983270 VA: 0x1983270
+	internal void set_IslandFlag(bool value) { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x46202C Offset: 0x46202C VA: 0x46202C
+	// RVA: 0x1983278 Offset: 0x1983278 VA: 0x1983278
+	internal void set_TOIFlag(bool value) { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x46203C Offset: 0x46203C VA: 0x46203C
+	// RVA: 0x1983280 Offset: 0x1983280 VA: 0x1983280
+	internal void set_FilterFlag(bool value) { }
+
+	// RVA: 0x1983288 Offset: 0x1983288 VA: 0x1983288
+	internal void .ctor(World world, Fixture fA, int indexA, Fixture fB, int indexB) { }
+
+	// RVA: 0x1983358 Offset: 0x1983358 VA: 0x1983358
+	private void Reset(Fixture fA, int indexA, Fixture fB, int indexB) { }
+
+	// RVA: 0x198372C Offset: 0x198372C VA: 0x198372C
+	internal void Evaluate(ref Manifold manifold, ref Transform transformA, ref Transform transformB) { }
+
+	// RVA: 0x19843D4 Offset: 0x19843D4 VA: 0x19843D4
+	internal static Contact Create(World world, Fixture fixtureA, int indexA, Fixture fixtureB, int indexB) { }
+
+	// RVA: 0x19846AC Offset: 0x19846AC VA: 0x19846AC
+	internal void Destroy() { }
+
+	// RVA: 0x1984824 Offset: 0x1984824 VA: 0x1984824
+	private static void .cctor() { }
+}
+
+// ORIGINAL DUMP LINES 149314-149327; TypeDefIndex 2510
+// Namespace: 
+internal enum Contact.ContactType // TypeDefIndex: 2510
+{
+	// Fields
+	public int value__; // 0x0
+	public const Contact.ContactType NotSupported = 0;
+	public const Contact.ContactType Polygon = 1;
+	public const Contact.ContactType PolygonAndCircle = 2;
+	public const Contact.ContactType Circle = 3;
+	public const Contact.ContactType EdgeAndPolygon = 4;
+	public const Contact.ContactType EdgeAndCircle = 5;
+	public const Contact.ContactType ChainAndPolygon = 6;
+	public const Contact.ContactType ChainAndCircle = 7;
+}
+
+// ORIGINAL DUMP LINES 149329-149336; TypeDefIndex 2511
+// Namespace: BattleCore.Physics2D
+public static class WorldManifold // TypeDefIndex: 2511
+{
+	// Methods
+
+	// RVA: 0x1C89DCC Offset: 0x1C89DCC VA: 0x1C89DCC
+	public static void Initialize(ref Manifold manifold, ref Transform xfA, FP radiusA, ref Transform xfB, FP radiusB, out TSVector2 normal, out FixedArray2<TSVector2> points) { }
+}
+
+// ORIGINAL DUMP LINES 149338-149377; TypeDefIndex 2512
+// Namespace: BattleCore.Physics2D
+[FlagsAttribute] // RVA: 0x461BEC Offset: 0x461BEC VA: 0x461BEC
+public enum Category // TypeDefIndex: 2512
+{
+	// Fields
+	public int value__; // 0x0
+	public const Category None = 0;
+	public const Category All = 2147483647;
+	public const Category Cat1 = 1;
+	public const Category Cat2 = 2;
+	public const Category Cat3 = 4;
+	public const Category Cat4 = 8;
+	public const Category Cat5 = 16;
+	public const Category Cat6 = 32;
+	public const Category Cat7 = 64;
+	public const Category Cat8 = 128;
+	public const Category Cat9 = 256;
+	public const Category Cat10 = 512;
+	public const Category Cat11 = 1024;
+	public const Category Cat12 = 2048;
+	public const Category Cat13 = 4096;
+	public const Category Cat14 = 8192;
+	public const Category Cat15 = 16384;
+	public const Category Cat16 = 32768;
+	public const Category Cat17 = 65536;
+	public const Category Cat18 = 131072;
+	public const Category Cat19 = 262144;
+	public const Category Cat20 = 524288;
+	public const Category Cat21 = 1048576;
+	public const Category Cat22 = 2097152;
+	public const Category Cat23 = 4194304;
+	public const Category Cat24 = 8388608;
+	public const Category Cat25 = 16777216;
+	public const Category Cat26 = 33554432;
+	public const Category Cat27 = 67108864;
+	public const Category Cat28 = 134217728;
+	public const Category Cat29 = 268435456;
+	public const Category Cat30 = 536870912;
+	public const Category Cat31 = 1073741824;
+}
+
+// ORIGINAL DUMP LINES 149379-149387; TypeDefIndex 2513
+// Namespace: BattleCore.Physics2D
+public struct FixtureProxy // TypeDefIndex: 2513
+{
+	// Fields
+	public AABB AABB; // 0x0
+	public int ChildIndex; // 0x20
+	public Fixture Fixture; // 0x24
+	public int ProxyId; // 0x28
+}
+
+// ORIGINAL DUMP LINES 149389-149515; TypeDefIndex 2514
+// Namespace: BattleCore.Physics2D
+public class Fixture : IDisposable // TypeDefIndex: 2514
+{
+	// Fields
+	[ThreadStaticAttribute] // RVA: 0x461DFC Offset: 0x461DFC VA: 0x461DFC
+	internal static int _fixtureIdCounter; // 0x80000000
+	private bool _isSensor; // 0x8
+	private FP _friction; // 0x10
+	private FP _restitution; // 0x18
+	internal Category _collisionCategories; // 0x20
+	internal short _collisionGroup; // 0x24
+	public FixtureProxy[] Proxies; // 0x28
+	public int ProxyCount; // 0x2C
+	public int CollisionTag; // 0x30
+	[CompilerGeneratedAttribute] // RVA: 0x461E0C Offset: 0x461E0C VA: 0x461E0C
+	private Shape <Shape>k__BackingField; // 0x34
+	[CompilerGeneratedAttribute] // RVA: 0x461E1C Offset: 0x461E1C VA: 0x461E1C
+	private Body <Body>k__BackingField; // 0x38
+	[CompilerGeneratedAttribute] // RVA: 0x461E2C Offset: 0x461E2C VA: 0x461E2C
+	private object <UserData>k__BackingField; // 0x3C
+	[CompilerGeneratedAttribute] // RVA: 0x461E3C Offset: 0x461E3C VA: 0x461E3C
+	private int <FixtureId>k__BackingField; // 0x40
+	[CompilerGeneratedAttribute] // RVA: 0x461E4C Offset: 0x461E4C VA: 0x461E4C
+	private bool <IsDisposed>k__BackingField; // 0x44
+
+	// Properties
+	public Category CollisionCategories { get; set; }
+	public Shape Shape { get; set; }
+	public bool IsSensor { get; set; }
+	public Body Body { get; set; }
+	public object UserData { set; }
+	public FP Friction { get; set; }
+	public FP Restitution { get; set; }
+	internal int FixtureId { set; }
+	public bool IsDisposed { get; set; }
+
+	// Methods
+
+	// RVA: 0x198B0A8 Offset: 0x198B0A8 VA: 0x198B0A8
+	internal void .ctor() { }
+
+	// RVA: 0x1978BEC Offset: 0x1978BEC VA: 0x1978BEC
+	internal void .ctor(Body body, Shape shape, object userData) { }
+
+	// RVA: 0x198B42C Offset: 0x198B42C VA: 0x198B42C
+	internal void Initialize(Shape shape, bool isSensor) { }
+
+	// RVA: 0x198B4E4 Offset: 0x198B4E4 VA: 0x198B4E4
+	public Category get_CollisionCategories() { }
+
+	// RVA: 0x1978968 Offset: 0x1978968 VA: 0x1978968
+	public void set_CollisionCategories(Category value) { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x46204C Offset: 0x46204C VA: 0x46204C
+	// RVA: 0x19843CC Offset: 0x19843CC VA: 0x19843CC
+	public Shape get_Shape() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x46205C Offset: 0x46205C VA: 0x46205C
+	// RVA: 0x198B22C Offset: 0x198B22C VA: 0x198B22C
+	internal void set_Shape(Shape value) { }
+
+	// RVA: 0x1984814 Offset: 0x1984814 VA: 0x1984814
+	public bool get_IsSensor() { }
+
+	// RVA: 0x1978B3C Offset: 0x1978B3C VA: 0x1978B3C
+	public void set_IsSensor(bool value) { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x46206C Offset: 0x46206C VA: 0x46206C
+	// RVA: 0x198481C Offset: 0x198481C VA: 0x198481C
+	public Body get_Body() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x46207C Offset: 0x46207C VA: 0x46207C
+	// RVA: 0x1978E34 Offset: 0x1978E34 VA: 0x1978E34
+	internal void set_Body(Body value) { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x46208C Offset: 0x46208C VA: 0x46208C
+	// RVA: 0x198B224 Offset: 0x198B224 VA: 0x198B224
+	public void set_UserData(object value) { }
+
+	// RVA: 0x19835B4 Offset: 0x19835B4 VA: 0x19835B4
+	public FP get_Friction() { }
+
+	// RVA: 0x198B204 Offset: 0x198B204 VA: 0x198B204
+	public void set_Friction(FP value) { }
+
+	// RVA: 0x1983674 Offset: 0x1983674 VA: 0x1983674
+	public FP get_Restitution() { }
+
+	// RVA: 0x198B214 Offset: 0x198B214 VA: 0x198B214
+	public void set_Restitution(FP value) { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x46209C Offset: 0x46209C VA: 0x46209C
+	// RVA: 0x198B1FC Offset: 0x198B1FC VA: 0x198B1FC
+	internal void set_FixtureId(int value) { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x4620AC Offset: 0x4620AC VA: 0x4620AC
+	// RVA: 0x198B654 Offset: 0x198B654 VA: 0x198B654
+	public bool get_IsDisposed() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x4620BC Offset: 0x4620BC VA: 0x4620BC
+	// RVA: 0x198B65C Offset: 0x198B65C VA: 0x198B65C
+	public void set_IsDisposed(bool value) { }
+
+	// RVA: 0x198B664 Offset: 0x198B664 VA: 0x198B664 Slot: 4
+	public void Dispose() { }
+
+	// RVA: 0x198B4EC Offset: 0x198B4EC VA: 0x198B4EC
+	private void Refilter() { }
+
+	// RVA: 0x198B234 Offset: 0x198B234 VA: 0x198B234
+	private void RegisterFixture() { }
+
+	// RVA: 0x198BA70 Offset: 0x198BA70 VA: 0x198BA70
+	public bool RayCast(out RayCastOutput output, ref RayCastInput input, int childIndex) { }
+
+	// RVA: 0x1978D34 Offset: 0x1978D34 VA: 0x1978D34
+	internal void Destroy() { }
+
+	// RVA: 0x1978424 Offset: 0x1978424 VA: 0x1978424
+	internal void CreateProxies(IBroadPhase broadPhase, ref Transform xf) { }
+
+	// RVA: 0x1978654 Offset: 0x1978654 VA: 0x1978654
+	internal void DestroyProxies(IBroadPhase broadPhase) { }
+
+	// RVA: 0x1978F7C Offset: 0x1978F7C VA: 0x1978F7C
+	internal void Synchronize(IBroadPhase broadPhase, ref Transform transform2) { }
+}
+
+// ORIGINAL DUMP LINES 149517-149618; TypeDefIndex 2515
+// Namespace: BattleCore.Physics2D
+public class World : IWorld // TypeDefIndex: 2515
+{
+	// Fields
+	internal FP _invDt0; // 0x8
+	internal Body[] _stack; // 0x10
+	internal bool _stepComplete; // 0x14
+	internal List<Body> _bodyAddList; // 0x18
+	internal List<Body> _bodyRemoveList; // 0x1C
+	internal Func<Fixture, bool> _queryAABBCallback; // 0x20
+	private Func<int, bool> _queryAABBCallbackWrapper; // 0x24
+	internal TOIInput _input; // 0x28
+	internal Fixture _myFixture; // 0x2C
+	private TSVector2 _point1; // 0x30
+	internal TSVector2 _point2; // 0x40
+	internal List<Fixture> _testPointAllFixtures; // 0x50
+	private Func<Fixture, TSVector2, TSVector2, FP, FP> _rayCastCallback; // 0x54
+	private Func<RayCastInput, int, int, FP> _rayCastCallbackWrapper; // 0x58
+	private Func<CircleCastInput, int, int, FP> _circleCastCallbackWrapper; // 0x5C
+	internal Queue<Contact> _contactPool; // 0x60
+	internal bool _worldHasNewFixture; // 0x64
+	public BodyDelegate BodyAdded; // 0x68
+	public BodyDelegate BodyRemoved; // 0x6C
+	public FixtureDelegate FixtureAdded; // 0x70
+	public FixtureDelegate FixtureRemoved; // 0x74
+	public IBroadPhase BroadPhase; // 0x78
+	public TSVector2 Gravity; // 0x80
+	[CompilerGeneratedAttribute] // RVA: 0x461E5C Offset: 0x461E5C VA: 0x461E5C
+	private List<Body> <BodyList>k__BackingField; // 0x90
+	[CompilerGeneratedAttribute] // RVA: 0x461E6C Offset: 0x461E6C VA: 0x461E6C
+	private bool <Enabled>k__BackingField; // 0x94
+	private Fixture m_castFixture; // 0x98
+	private TOIInput m_sweepInput; // 0x9C
+	private Shape m_circleShape; // 0xA0
+	private CircleCastOutput m_output; // 0xA4
+
+	// Properties
+	public List<Body> BodyList { get; set; }
+	public bool Enabled { set; }
+
+	// Methods
+
+	// RVA: 0x1C88780 Offset: 0x1C88780 VA: 0x1C88780
+	public void .ctor(TSVector2 gravity) { }
+
+	// RVA: 0x1C88A88 Offset: 0x1C88A88 VA: 0x1C88A88
+	private void ProcessRemovedJoints() { }
+
+	// RVA: 0x1C88A8C Offset: 0x1C88A8C VA: 0x1C88A8C
+	private void ProcessAddedJoints() { }
+
+	// RVA: 0x1C88A90 Offset: 0x1C88A90 VA: 0x1C88A90
+	public void ProcessAddedBodies() { }
+
+	// RVA: 0x1C88C84 Offset: 0x1C88C84 VA: 0x1C88C84
+	public void ProcessRemovedBodies() { }
+
+	// RVA: 0x1C89134 Offset: 0x1C89134 VA: 0x1C89134
+	private bool QueryAABBCallbackWrapper(int proxyId) { }
+
+	// RVA: 0x1C89254 Offset: 0x1C89254 VA: 0x1C89254
+	private FP RayCastCallbackWrapper(RayCastInput rayCastInput, int proxyId, int layerMask) { }
+
+	// RVA: 0x1C897D8 Offset: 0x1C897D8 VA: 0x1C897D8
+	private bool ConvertHitPointAndNormal(Transform transA, Transform transB, Fixture fixtureA, Fixture fixtureB, int shapeIndex, FP shapeRadiusA, FP shapeRadiusB, out TSVector2 hitPoint, out TSVector2 hitNoraml, out bool zeroNormal) { }
+
+	// RVA: 0x1C8ACEC Offset: 0x1C8ACEC VA: 0x1C8ACEC
+	private FP CircleCastCallbackWrapper(CircleCastInput rayCastInput, int proxyId, int layerMask) { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x4620CC Offset: 0x4620CC VA: 0x4620CC
+	// RVA: 0x1C88C7C Offset: 0x1C88C7C VA: 0x1C88C7C
+	public List<Body> get_BodyList() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x4620DC Offset: 0x4620DC VA: 0x4620DC
+	// RVA: 0x1C88A80 Offset: 0x1C88A80 VA: 0x1C88A80
+	private void set_BodyList(List<Body> value) { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x4620EC Offset: 0x4620EC VA: 0x4620EC
+	// RVA: 0x1C88A78 Offset: 0x1C88A78 VA: 0x1C88A78
+	public void set_Enabled(bool value) { }
+
+	// RVA: 0x1C8B7C8 Offset: 0x1C8B7C8 VA: 0x1C8B7C8
+	internal void AddBody(Body body) { }
+
+	// RVA: 0x1C8B880 Offset: 0x1C8B880 VA: 0x1C8B880
+	public void RemoveBody(Body body) { }
+
+	// RVA: 0x1C8B938 Offset: 0x1C8B938 VA: 0x1C8B938
+	public void ProcessChanges() { }
+
+	// RVA: 0x1C8B954 Offset: 0x1C8B954 VA: 0x1C8B954
+	public void RayCast(Func<Fixture, TSVector2, TSVector2, FP, FP> callback, TSVector2 point1, TSVector2 point2, int layerMask = 2147483647, int exceptTag = 0) { }
+
+	// RVA: 0x1C8BB14 Offset: 0x1C8BB14 VA: 0x1C8BB14
+	public void CircleCast(Func<Fixture, TSVector2, TSVector2, FP, FP> callback, TSVector2 point1, TSVector2 dir, FP dist, FP radius, int layerMask = 2147483647, int exceptTag = 0) { }
+
+	// RVA: 0x1C8BE3C Offset: 0x1C8BE3C VA: 0x1C8BE3C
+	private void InitSweep(TOIInput sweepInput, TSVector2 p1, TSVector2 p2, FP radius) { }
+
+	// RVA: 0x1C8C024 Offset: 0x1C8C024 VA: 0x1C8C024
+	public void Clear() { }
+}
+
+// ORIGINAL DUMP LINES 149620-149636; TypeDefIndex 2516
+// Namespace: BattleCore.Physics2D
+public sealed class FixtureDelegate : MulticastDelegate // TypeDefIndex: 2516
+{
+	// Methods
+
+	// RVA: 0x198BAE4 Offset: 0x198BAE4 VA: 0x198BAE4
+	public void .ctor(object object, IntPtr method) { }
+
+	// RVA: 0x198B6B4 Offset: 0x198B6B4 VA: 0x198B6B4 Slot: 11
+	public virtual void Invoke(Fixture fixture) { }
+
+	// RVA: 0x198BAF8 Offset: 0x198BAF8 VA: 0x198BAF8 Slot: 12
+	public virtual IAsyncResult BeginInvoke(Fixture fixture, AsyncCallback callback, object object) { }
+
+	// RVA: 0x198BB24 Offset: 0x198BB24 VA: 0x198BB24 Slot: 13
+	public virtual void EndInvoke(IAsyncResult result) { }
+}
+
+// ORIGINAL DUMP LINES 149638-149654; TypeDefIndex 2517
+// Namespace: BattleCore.Physics2D
+public sealed class BodyDelegate : MulticastDelegate // TypeDefIndex: 2517
+{
+	// Methods
+
+	// RVA: 0x197925C Offset: 0x197925C VA: 0x197925C
+	public void .ctor(object object, IntPtr method) { }
+
+	// RVA: 0x1979270 Offset: 0x1979270 VA: 0x1979270 Slot: 11
+	public virtual void Invoke(Body body) { }
+
+	// RVA: 0x197962C Offset: 0x197962C VA: 0x197962C Slot: 12
+	public virtual IAsyncResult BeginInvoke(Body body, AsyncCallback callback, object object) { }
+
+	// RVA: 0x1979658 Offset: 0x1979658 VA: 0x1979658 Slot: 13
+	public virtual void EndInvoke(IAsyncResult result) { }
+}
+
+// ORIGINAL DUMP LINES 149656-149663; TypeDefIndex 2518
+// Namespace: BattleCore.Physics2D
+public static class BodyFactory // TypeDefIndex: 2518
+{
+	// Methods
+
+	// RVA: 0x1979664 Offset: 0x1979664 VA: 0x1979664
+	public static Body CreateBody(World world, TSVector2 position, TSVector2 forward, object userData) { }
+}
+
+// ORIGINAL DUMP LINES 149665-149667; TypeDefIndex 2519
+// Namespace: BattleCore.Physics2D
+public interface IWorld // TypeDefIndex: 2519
+{}
+
+// ORIGINAL DUMP LINES 149669-149715; TypeDefIndex 2520
+// Namespace: BattleCore.Physics2D
+public static class Settings // TypeDefIndex: 2520
+{
+	// Fields
+	public static readonly FP MaxFP; // 0x0
+	public static readonly FP Epsilon; // 0x8
+	public static readonly FP EpsilonSqr; // 0x10
+	public static readonly FP Pi; // 0x18
+	public static int VelocityIterations; // 0x20
+	public static int PositionIterations; // 0x24
+	public static bool ContinuousPhysics; // 0x28
+	public static bool UseConvexHullPolygons; // 0x29
+	public static int TOIVelocityIterations; // 0x2C
+	public static int TOIPositionIterations; // 0x30
+	public static bool AllowSleep; // 0x34
+	public static int MaxPolygonVertices; // 0x38
+	public static Category DefaultFixtureCollisionCategories; // 0x3C
+	public static Category DefaultFixtureCollidesWith; // 0x40
+	public static Category DefaultFixtureIgnoreCCDWith; // 0x44
+	public static readonly FP AABBExtension; // 0x48
+	public static readonly FP AABBMultiplier; // 0x50
+	public static readonly FP LinearSlop; // 0x58
+	public static readonly FP AngularSlop; // 0x60
+	public static readonly FP PolygonRadius; // 0x68
+	public static readonly FP VelocityThreshold; // 0x70
+	public static readonly FP MaxLinearCorrection; // 0x78
+	public static readonly FP MaxAngularCorrection; // 0x80
+	public static readonly FP Baumgarte; // 0x88
+	public static readonly FP TimeToSleep; // 0x90
+	public static readonly FP LinearSleepTolerance; // 0x98
+	public static readonly FP AngularSleepTolerance; // 0xA0
+	public static readonly FP MaxTranslation; // 0xA8
+	public static readonly FP MaxTranslationSquared; // 0xB0
+	public static readonly FP MaxRotation; // 0xB8
+	public static readonly FP MaxRotationSquared; // 0xC0
+
+	// Methods
+
+	// RVA: 0x19835C0 Offset: 0x19835C0 VA: 0x19835C0
+	public static FP MixFriction(FP friction1, FP friction2) { }
+
+	// RVA: 0x1983680 Offset: 0x1983680 VA: 0x1983680
+	public static FP MixRestitution(FP restitution1, FP restitution2) { }
+
+	// RVA: 0x1993F64 Offset: 0x1993F64 VA: 0x1993F64
+	private static void .cctor() { }
+}
+
+// ORIGINAL DUMP LINES 149717-149775; TypeDefIndex 2521
+// Namespace: BattleCore.Physics2D
+public class MergeShape // TypeDefIndex: 2521
+{
+	// Fields
+	private Transform m_xf; // 0x8
+	public TSVector2 m_center; // 0x28
+	public TSVector2 m_forward; // 0x38
+	public int m_layer; // 0x48
+	public int m_tag; // 0x4C
+	public string m_name; // 0x50
+	public uint m_source; // 0x54
+	public Vertices m_vertex; // 0x58
+	public bool m_loop; // 0x5C
+	public bool m_canMerge; // 0x5D
+
+	// Properties
+	public int EdgeCount { get; }
+
+	// Methods
+
+	// RVA: 0x198CC5C Offset: 0x198CC5C VA: 0x198CC5C
+	public int get_EdgeCount() { }
+
+	// RVA: 0x198CCE0 Offset: 0x198CCE0 VA: 0x198CCE0
+	public void GetEdge(int index, out TSVector2 start, out TSVector2 end) { }
+
+	// RVA: 0x198CE34 Offset: 0x198CE34 VA: 0x198CE34
+	public TSVector2 GetWorldPoint(TSVector2 localPoint) { }
+
+	// RVA: 0x198CE64 Offset: 0x198CE64 VA: 0x198CE64
+	public TSVector2 GetLocalPoint(TSVector2 worldPoint) { }
+
+	// RVA: 0x198CE90 Offset: 0x198CE90 VA: 0x198CE90
+	public void .ctor(string name, int layer, uint source, TSVector2 center, TSVector2 forward, Vertices vertex, bool loop, bool canMerge = True) { }
+
+	// RVA: 0x198CFE8 Offset: 0x198CFE8 VA: 0x198CFE8
+	public bool IsPointMatch(TSVector2 p1, TSVector2 p2) { }
+
+	// RVA: 0x198D120 Offset: 0x198D120 VA: 0x198D120
+	public int FindVertexIndex(TSVector2 worldVert) { }
+
+	// RVA: 0x198D274 Offset: 0x198D274 VA: 0x198D274
+	public bool TryReplaceVertex(int index, TSVector2 worldPos) { }
+
+	// RVA: 0x198D478 Offset: 0x198D478 VA: 0x198D478
+	public int FindEdge(TSVector2 start, TSVector2 end) { }
+
+	// RVA: 0x198D610 Offset: 0x198D610 VA: 0x198D610
+	public List<MergeShape> CutEdge(int index) { }
+
+	// RVA: 0x198DBA8 Offset: 0x198DBA8 VA: 0x198DBA8
+	public MergeShape FetchEdge(int index) { }
+
+	// RVA: 0x198DDA4 Offset: 0x198DDA4 VA: 0x198DDA4
+	private MergeShape CreateChildShape(Vertices vertex) { }
+
+	// RVA: 0x198D63C Offset: 0x198D63C VA: 0x198D63C
+	private List<MergeShape> CutEdge(int index, out TSVector2 cutStart, out TSVector2 cutEnd) { }
+}
+
+// ORIGINAL DUMP LINES 149777-149812; TypeDefIndex 2522
+// Namespace: BattleCore.Physics2D
+public class PhyBoxSimplify // TypeDefIndex: 2522
+{
+	// Fields
+	private List<MergeShape> m_listShape; // 0x8
+	private uint m_nextSource; // 0xC
+
+	// Methods
+
+	// RVA: 0x198DEDC Offset: 0x198DEDC VA: 0x198DEDC
+	public void AddBox(string name, TSVector2 center, TSVector2 forward, TSVector2 size, int layer, bool canMerge = True) { }
+
+	// RVA: 0x198E344 Offset: 0x198E344 VA: 0x198E344
+	public List<MergeShape> Simplify() { }
+
+	// RVA: 0x198E6A0 Offset: 0x198E6A0 VA: 0x198E6A0
+	private void SplitToEdage(List<MergeShape> listSource, List<MergeShape> listFinal) { }
+
+	// RVA: 0x198E8E8 Offset: 0x198E8E8 VA: 0x198E8E8
+	private void MergeEdage(List<MergeShape> listSource, List<MergeShape> listFinal) { }
+
+	// RVA: 0x198EA78 Offset: 0x198EA78 VA: 0x198EA78
+	private bool TryMerge(MergeShape shape1, MergeShape shape2) { }
+
+	// RVA: 0x198E490 Offset: 0x198E490 VA: 0x198E490
+	private void SimplifyShape(MergeShape shape, List<MergeShape> sourceList, List<MergeShape> resShapeList) { }
+
+	// RVA: 0x198EC30 Offset: 0x198EC30 VA: 0x198EC30
+	private bool CheckCut(MergeShape shape, List<MergeShape> sourceList, out List<MergeShape> cutAfterShaper) { }
+
+	// RVA: 0x198ED90 Offset: 0x198ED90 VA: 0x198ED90
+	private bool CheckShapeSameEdage(MergeShape checkShape, MergeShape sourceShape, out int cutIndex) { }
+
+	// RVA: 0x198EEB4 Offset: 0x198EEB4 VA: 0x198EEB4
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 149814-149822; TypeDefIndex 2523
+// Namespace: BattleCore.Physics2D
+public struct PhyHitInfo // TypeDefIndex: 2523
+{
+	// Fields
+	public PhyGameObject go; // 0x0
+	public TSVector point; // 0x8
+	public TSVector normal; // 0x20
+	public FP distance; // 0x38
+}
+
+// ORIGINAL DUMP LINES 149824-149852; TypeDefIndex 2524
+// Namespace: BattleCore.Physics2D
+internal class PhyRaycastResultCallback // TypeDefIndex: 2524
+{
+	// Fields
+	private List<PhyHitInfo> m_rayallList; // 0x8
+	private FP m_height; // 0x10
+	private FP m_dist; // 0x18
+	public Func<Fixture, TSVector2, TSVector2, FP, FP> m_raycastCallback; // 0x20
+	public Func<Fixture, TSVector2, TSVector2, FP, FP> m_raycastAllCallback; // 0x24
+	public Func<Fixture, TSVector2, TSVector2, FP, FP> m_circlecastCallback; // 0x28
+	public PhyHitInfo m_hit; // 0x30
+
+	// Methods
+
+	// RVA: 0x198EF48 Offset: 0x198EF48 VA: 0x198EF48
+	public void .ctor() { }
+
+	// RVA: 0x198F038 Offset: 0x198F038 VA: 0x198F038
+	public void InitRaycast(FP height, FP distance) { }
+
+	// RVA: 0x198F05C Offset: 0x198F05C VA: 0x198F05C
+	public void InitCircleCast(FP height, FP distance) { }
+
+	// RVA: 0x198F080 Offset: 0x198F080 VA: 0x198F080
+	private FP RaycastCallback(Fixture f, TSVector2 p, TSVector2 n, FP fr) { }
+
+	// RVA: 0x198F288 Offset: 0x198F288 VA: 0x198F288
+	private FP RaycastAllCallback(Fixture f, TSVector2 p, TSVector2 n, FP fr) { }
+}
+
+// ORIGINAL DUMP LINES 149854-149896; TypeDefIndex 2525
+// Namespace: BattleCore.Physics2D
+public class PhyWorld // TypeDefIndex: 2525
+{
+	// Fields
+	private World m_world; // 0x8
+	private PhyGameObject m_ground; // 0xC
+	private PhyRaycastResultCallback m_castResult; // 0x10
+
+	// Methods
+
+	// RVA: 0x198F534 Offset: 0x198F534 VA: 0x198F534
+	public void .ctor(int groundLayer) { }
+
+	// RVA: 0x198F694 Offset: 0x198F694 VA: 0x198F694
+	public void Destroy() { }
+
+	// RVA: 0x198F6C0 Offset: 0x198F6C0 VA: 0x198F6C0
+	public PhyGameObject AddMergeShape(MergeShape mergeShape) { }
+
+	// RVA: 0x198FC1C Offset: 0x198FC1C VA: 0x198FC1C
+	public PhyGameObject AddBoxCollider(string name, TSVector2 centerPos, TSVector2 forward, TSVector2 size, int layer, BodyType bodyType = 0, int tag = 0) { }
+
+	// RVA: 0x198FDA4 Offset: 0x198FDA4 VA: 0x198FDA4
+	public PhyGameObject AddCircleCollider(string name, TSVector2 centerPos, TSVector2 forward, FP radius, int layer, BodyType bodyType = 0, int tag = 0) { }
+
+	// RVA: 0x198FE88 Offset: 0x198FE88 VA: 0x198FE88
+	public bool Raycast(TSVector point1, TSVector dir, FP dist, int layerMask, out PhyHitInfo hit, int exceptTag = 0) { }
+
+	// RVA: 0x19902AC Offset: 0x19902AC VA: 0x19902AC
+	public bool Raycast(TSVector2 p1, FP y, TSVector2 dir2, FP dist, int layerMask, out PhyHitInfo hit, int exceptTag = 0) { }
+
+	// RVA: 0x19904A4 Offset: 0x19904A4 VA: 0x19904A4
+	public bool CircleCast(TSVector2 p1, FP y, FP radius, TSVector2 dir, FP dist, int layerMask, out PhyHitInfo hit, int exceptTag = 0) { }
+
+	// RVA: 0x1990604 Offset: 0x1990604 VA: 0x1990604
+	public bool CircleCastQuick(TSVector position, FP radius, TSVector inDirNormal, out FP dist, FP maxDist, int layerMask, int exceptTag = 0) { }
+
+	// RVA: 0x198FA4C Offset: 0x198FA4C VA: 0x198FA4C
+	private PhyGameObject AddShape(string name, TSVector2 centerPos, TSVector2 forward, Shape shape, BodyType bodyType, int layer, int tag) { }
+
+	// RVA: 0x1990B54 Offset: 0x1990B54 VA: 0x1990B54
+	public void RemoveGameObject(PhyGameObject go) { }
+}
+

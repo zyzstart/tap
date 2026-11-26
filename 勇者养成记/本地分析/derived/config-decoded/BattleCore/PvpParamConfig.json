@@ -1,0 +1,270 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_fp_pvpparamconfig.bytes.ab",
+    "path_id": 7918374780402567093,
+    "name": "PvpParamConfig",
+    "sha256": "71c7f218be42d8128cd5e54aa775b8b335801c8a75fd2f7e5c87802e0a9a0d9e",
+    "export": "derived/unity/text/assets_resources_config_resbin_fp_pvpparamconfig.bytes/PvpParamConfig__7918374780402567093.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 368,
+      "version": 1,
+      "record_count": 29,
+      "stored_crc32": "43251c82",
+      "computed_inverted_crc32": "43251c82"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "BattleCore",
+      "name": "PvpParamConfig",
+      "fields": [
+        {
+          "type": "int",
+          "name": "PvpFuncID",
+          "object_offset": 16
+        },
+        {
+          "type": "FP",
+          "name": "FuncVal",
+          "object_offset": 24
+        }
+      ],
+      "unpack_va": 35217376,
+      "dump_line": 168115
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x2196014",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x2196054",
+        "target_va": "0x21f6938",
+        "opcode": "B-tail",
+        "reader": "readInt64",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 29
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "PvpFuncID": 1,
+      "FuncVal__raw_int64": 42949672960,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 32,
+      "PvpFuncID": 2,
+      "FuncVal__raw_int64": 25769803776,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 44,
+      "PvpFuncID": 3,
+      "FuncVal__raw_int64": 128849018880,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 56,
+      "PvpFuncID": 4,
+      "FuncVal__raw_int64": 42949672960,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 68,
+      "PvpFuncID": 5,
+      "FuncVal__raw_int64": 8589934592,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 80,
+      "PvpFuncID": 6,
+      "FuncVal__raw_int64": 8589934592,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 92,
+      "PvpFuncID": 7,
+      "FuncVal__raw_int64": 4294967296000,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 104,
+      "PvpFuncID": 8,
+      "FuncVal__raw_int64": 4277787426816,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 116,
+      "PvpFuncID": 9,
+      "FuncVal__raw_int64": 85899345920,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 128,
+      "PvpFuncID": 10,
+      "FuncVal__raw_int64": 8589934592000,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 140,
+      "PvpFuncID": 11,
+      "FuncVal__raw_int64": 12884901888,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 152,
+      "PvpFuncID": 12,
+      "FuncVal__raw_int64": 85899345920,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 164,
+      "PvpFuncID": 13,
+      "FuncVal__raw_int64": 12884901888,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 176,
+      "PvpFuncID": 14,
+      "FuncVal__raw_int64": 12884901888,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 188,
+      "PvpFuncID": 15,
+      "FuncVal__raw_int64": 433791696896,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 200,
+      "PvpFuncID": 16,
+      "FuncVal__raw_int64": 7730941132800,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 212,
+      "PvpFuncID": 17,
+      "FuncVal__raw_int64": 8589934592,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 224,
+      "PvpFuncID": 18,
+      "FuncVal__raw_int64": 85899345920,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 236,
+      "PvpFuncID": 19,
+      "FuncVal__raw_int64": 257698037760,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 19,
+      "_byte_offset": 248,
+      "PvpFuncID": 20,
+      "FuncVal__raw_int64": 42949672960,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 20,
+      "_byte_offset": 260,
+      "PvpFuncID": 21,
+      "FuncVal__raw_int64": 4294967296,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 21,
+      "_byte_offset": 272,
+      "PvpFuncID": 22,
+      "FuncVal__raw_int64": 85899345920,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 22,
+      "_byte_offset": 284,
+      "PvpFuncID": 23,
+      "FuncVal__raw_int64": 416611827712,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 23,
+      "_byte_offset": 296,
+      "PvpFuncID": 24,
+      "FuncVal__raw_int64": 416616122679296,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 24,
+      "_byte_offset": 308,
+      "PvpFuncID": 25,
+      "FuncVal__raw_int64": 515396075520,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 25,
+      "_byte_offset": 320,
+      "PvpFuncID": 26,
+      "FuncVal__raw_int64": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 26,
+      "_byte_offset": 332,
+      "PvpFuncID": 27,
+      "FuncVal__raw_int64": 4294967296,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 27,
+      "_byte_offset": 344,
+      "PvpFuncID": 28,
+      "FuncVal__raw_int64": 3449292530384896,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 28,
+      "_byte_offset": 356,
+      "PvpFuncID": 29,
+      "FuncVal__raw_int64": 4294967296,
+      "_byte_length": 12
+    }
+  ]
+}

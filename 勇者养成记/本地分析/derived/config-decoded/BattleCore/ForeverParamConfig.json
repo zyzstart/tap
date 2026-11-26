@@ -1,0 +1,242 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_fp_foreverparamconfig.bytes.ab",
+    "path_id": -2840476523691053594,
+    "name": "ForeverParamConfig",
+    "sha256": "534bca219ca79d7efb372d12ab50454665272ebe85bfa7c5cffebc2e2d1548bc",
+    "export": "derived/unity/text/assets_resources_config_resbin_fp_foreverparamconfig.bytes/ForeverParamConfig__-2840476523691053594.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 320,
+      "version": 1,
+      "record_count": 25,
+      "stored_crc32": "ce9ec252",
+      "computed_inverted_crc32": "ce9ec252"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "BattleCore",
+      "name": "ForeverParamConfig",
+      "fields": [
+        {
+          "type": "int",
+          "name": "ForeverFuncID",
+          "object_offset": 16
+        },
+        {
+          "type": "FP",
+          "name": "FuncVal",
+          "object_offset": 24
+        }
+      ],
+      "unpack_va": 23338344,
+      "dump_line": 166496
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1641d9c",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1641ddc",
+        "target_va": "0x21f6938",
+        "opcode": "B-tail",
+        "reader": "readInt64",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 25
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "ForeverFuncID": 1,
+      "FuncVal__raw_int64": 4290672328704,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 32,
+      "ForeverFuncID": 2,
+      "FuncVal__raw_int64": 8766028251136,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 44,
+      "ForeverFuncID": 3,
+      "FuncVal__raw_int64": 4294967296,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 56,
+      "ForeverFuncID": 4,
+      "FuncVal__raw_int64": 4290672328704,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 68,
+      "ForeverFuncID": 5,
+      "FuncVal__raw_int64": 12884901888,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 80,
+      "ForeverFuncID": 6,
+      "FuncVal__raw_int64": 1717986918,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 92,
+      "ForeverFuncID": 7,
+      "FuncVal__raw_int64": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 104,
+      "ForeverFuncID": 8,
+      "FuncVal__raw_int64": 128849018880,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 116,
+      "ForeverFuncID": 9,
+      "FuncVal__raw_int64": 515396075520,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 128,
+      "ForeverFuncID": 10,
+      "FuncVal__raw_int64": 657129996288,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 140,
+      "ForeverFuncID": 11,
+      "FuncVal__raw_int64": 42949672960,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 152,
+      "ForeverFuncID": 12,
+      "FuncVal__raw_int64": 21474836480,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 164,
+      "ForeverFuncID": 13,
+      "FuncVal__raw_int64": 4299262263296,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 176,
+      "ForeverFuncID": 14,
+      "FuncVal__raw_int64": 996492542214144,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 188,
+      "ForeverFuncID": 15,
+      "FuncVal__raw_int64": 12884901888,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 200,
+      "ForeverFuncID": 16,
+      "FuncVal__raw_int64": 42949672960,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 212,
+      "ForeverFuncID": 17,
+      "FuncVal__raw_int64": 429496729600,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 224,
+      "ForeverFuncID": 18,
+      "FuncVal__raw_int64": 429496729600,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 236,
+      "ForeverFuncID": 19,
+      "FuncVal__raw_int64": 429496729,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 19,
+      "_byte_offset": 248,
+      "ForeverFuncID": 20,
+      "FuncVal__raw_int64": 644245094400,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 20,
+      "_byte_offset": 260,
+      "ForeverFuncID": 21,
+      "FuncVal__raw_int64": 2147483648,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 21,
+      "_byte_offset": 272,
+      "ForeverFuncID": 22,
+      "FuncVal__raw_int64": 858993459200,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 22,
+      "_byte_offset": 284,
+      "ForeverFuncID": 23,
+      "FuncVal__raw_int64": 6442450944,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 23,
+      "_byte_offset": 296,
+      "ForeverFuncID": 24,
+      "FuncVal__raw_int64": 515396075520,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 24,
+      "_byte_offset": 308,
+      "ForeverFuncID": 25,
+      "FuncVal__raw_int64": 42949672,
+      "_byte_length": 12
+    }
+  ]
+}

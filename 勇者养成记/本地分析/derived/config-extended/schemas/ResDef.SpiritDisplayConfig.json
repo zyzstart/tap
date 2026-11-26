@@ -1,0 +1,177 @@
+{
+  "namespace": "ResDef",
+  "name": "SpiritDisplayConfig",
+  "fields": [
+    {
+      "type": "uint",
+      "name": "ColorID",
+      "object_offset": 16
+    },
+    {
+      "type": "ColorData",
+      "name": "RimColor",
+      "object_offset": 24
+    },
+    {
+      "type": "float",
+      "name": "RimRange",
+      "object_offset": 32
+    },
+    {
+      "type": "float",
+      "name": "RimScale",
+      "object_offset": 36
+    },
+    {
+      "type": "float",
+      "name": "Alpha",
+      "object_offset": 40
+    }
+  ],
+  "unpack_va": 32068576,
+  "dump_line": 211794,
+  "layout": [
+    {
+      "type": "uint",
+      "name": "ColorID",
+      "object_offset": 16,
+      "wire_type": "uint",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e95418",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "self",
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ColorData",
+      "name": "RimColor",
+      "object_offset": 24,
+      "wire_type": "ColorData",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e95444",
+          "target_va": "0x1dcebec",
+          "target_names": [
+            "ResDef.ColorData$$unpack"
+          ],
+          "opcode": "BL",
+          "kind": "nested",
+          "nested_schema": "ResDef.ColorData",
+          "destination": [
+            "field",
+            24
+          ],
+          "cut_version": 1
+        }
+      ],
+      "nested_schema": "ResDef.ColorData"
+    },
+    {
+      "type": "float",
+      "name": "RimRange",
+      "object_offset": 32,
+      "wire_type": "float",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e95468",
+          "target_va": "0x21f6b98",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readFloat"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readFloat",
+          "destination": [
+            "self",
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "type": "float",
+      "name": "RimScale",
+      "object_offset": 36,
+      "wire_type": "float",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e9548c",
+          "target_va": "0x21f6b98",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readFloat"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readFloat",
+          "destination": [
+            "self",
+            36
+          ]
+        }
+      ]
+    },
+    {
+      "type": "float",
+      "name": "Alpha",
+      "object_offset": 40,
+      "wire_type": "float",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e954cc",
+          "target_va": "0x21f6b98",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readFloat"
+          ],
+          "opcode": "B",
+          "kind": "reader",
+          "reader": "readFloat",
+          "destination": [
+            "self",
+            40
+          ]
+        }
+      ]
+    }
+  ],
+  "native_evidence": {
+    "method_start_va": "0x1e953e0",
+    "instruction_steps": 46,
+    "event_count": 5,
+    "branch_evidence": [],
+    "loops": [],
+    "instruction_sha256": "5c83d4469d43ca1c0a62603628994c59c449fd01cb1240b7257d8227b6e784ab",
+    "gate": "concrete-success-path; all sequential readers/nested callees; full field/destination/stride matching",
+    "assumptions": [
+      "non-null input buffer and created nested objects/arrays",
+      "managed array bounds valid",
+      "AAPCS64 callee-saved register preservation",
+      "reader and nested call success; version 1 only"
+    ]
+  }
+}

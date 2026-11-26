@@ -1,0 +1,167 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_leaguebossconfig.bytes.ab",
+    "path_id": -3609074297299686644,
+    "name": "LeagueBossConfig",
+    "sha256": "5c82b3416cacaba463251cb835f7aa288491f5dc1e63b23773e70bfcbc1a02ee",
+    "export": "derived/unity/text/assets_resources_config_resbin_leaguebossconfig.bytes/LeagueBossConfig__-3609074297299686644.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 168,
+      "version": 1,
+      "record_count": 4,
+      "stored_crc32": "4210e75f",
+      "computed_inverted_crc32": "4210e75f"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "LeagueBossConfig",
+      "fields": [
+        {
+          "type": "uint",
+          "name": "BossID",
+          "object_offset": 16
+        },
+        {
+          "type": "uint",
+          "name": "Weight",
+          "object_offset": 20
+        },
+        {
+          "type": "string",
+          "name": "BossName",
+          "object_offset": 24
+        },
+        {
+          "type": "uint",
+          "name": "MonsterID",
+          "object_offset": 32
+        },
+        {
+          "type": "uint",
+          "name": "ModelID",
+          "object_offset": 36
+        },
+        {
+          "type": "float",
+          "name": "ModelPosY",
+          "object_offset": 40
+        }
+      ],
+      "unpack_va": 30744876,
+      "dump_line": 207027
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1d52160",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d52184",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d521ac",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d521d0",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d521f4",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 36,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d52234",
+        "target_va": "0x21f6b98",
+        "opcode": "B-tail",
+        "reader": "readFloat",
+        "destination_object_offset": 40,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 4
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "BossID": 1,
+      "Weight": 500,
+      "BossName": "彩虹角兽",
+      "MonsterID": 1001001,
+      "ModelID": 210001,
+      "ModelPosY": 0.0,
+      "_byte_length": 37
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 57,
+      "BossID": 2,
+      "Weight": 500,
+      "BossName": "远古智械",
+      "MonsterID": 1001002,
+      "ModelID": 210002,
+      "ModelPosY": -300.0,
+      "_byte_length": 37
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 94,
+      "BossID": 3,
+      "Weight": 500,
+      "BossName": "禁咒大蛇",
+      "MonsterID": 1001003,
+      "ModelID": 210003,
+      "ModelPosY": 0.0,
+      "_byte_length": 37
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 131,
+      "BossID": 4,
+      "Weight": 500,
+      "BossName": "灵光蜘蛛",
+      "MonsterID": 1001004,
+      "ModelID": 210004,
+      "ModelPosY": 0.0,
+      "_byte_length": 37
+    }
+  ]
+}

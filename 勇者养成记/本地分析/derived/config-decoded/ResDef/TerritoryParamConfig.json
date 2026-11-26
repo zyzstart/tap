@@ -1,0 +1,158 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_territoryparamconfig.bytes.ab",
+    "path_id": -5796299295602027720,
+    "name": "TerritoryParamConfig",
+    "sha256": "7ec1178ec971a5d2e3d674d774b7e9f423939f4665d9eaa0540cecb17d3006ec",
+    "export": "derived/unity/text/assets_resources_config_resbin_territoryparamconfig.bytes/TerritoryParamConfig__-5796299295602027720.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 124,
+      "version": 1,
+      "record_count": 13,
+      "stored_crc32": "7099bad0",
+      "computed_inverted_crc32": "7099bad0"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "TerritoryParamConfig",
+      "fields": [
+        {
+          "type": "int",
+          "name": "FuncID",
+          "object_offset": 16
+        },
+        {
+          "type": "float",
+          "name": "FuncVal",
+          "object_offset": 20
+        }
+      ],
+      "unpack_va": 32091544,
+      "dump_line": 212331
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1e9adcc",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e9ae0c",
+        "target_va": "0x21f6b98",
+        "opcode": "B-tail",
+        "reader": "readFloat",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 13
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "FuncID": 1,
+      "FuncVal": 4.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 28,
+      "FuncID": 2,
+      "FuncVal": 2.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 36,
+      "FuncID": 3,
+      "FuncVal": 10800.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 44,
+      "FuncID": 4,
+      "FuncVal": 10.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 52,
+      "FuncID": 5,
+      "FuncVal": 100000000.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 60,
+      "FuncID": 6,
+      "FuncVal": 20.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 68,
+      "FuncID": 7,
+      "FuncVal": 10.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 76,
+      "FuncID": 8,
+      "FuncVal": 4.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 84,
+      "FuncID": 9,
+      "FuncVal": 1.350000023841858,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 92,
+      "FuncID": 10,
+      "FuncVal": 118.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 100,
+      "FuncID": 11,
+      "FuncVal": 30.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 108,
+      "FuncID": 12,
+      "FuncVal": 2010.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 116,
+      "FuncID": 13,
+      "FuncVal": 2011.0,
+      "_byte_length": 8
+    }
+  ]
+}

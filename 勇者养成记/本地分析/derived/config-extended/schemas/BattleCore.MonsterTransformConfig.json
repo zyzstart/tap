@@ -1,0 +1,1225 @@
+{
+  "namespace": "BattleCore",
+  "name": "MonsterTransformConfig",
+  "fields": [
+    {
+      "type": "uint",
+      "name": "MonsterID",
+      "object_offset": 16
+    },
+    {
+      "type": "uint",
+      "name": "TransFormType",
+      "object_offset": 20
+    },
+    {
+      "type": "FP",
+      "name": "MinHPPercent",
+      "object_offset": 24
+    },
+    {
+      "type": "FP",
+      "name": "MaxHPPercent",
+      "object_offset": 32
+    },
+    {
+      "type": "uint",
+      "name": "MonsterAI",
+      "object_offset": 40
+    },
+    {
+      "type": "uint[]",
+      "name": "Skills",
+      "object_offset": 48
+    },
+    {
+      "type": "uint[]",
+      "name": "Buffs",
+      "object_offset": 56
+    },
+    {
+      "type": "uint",
+      "name": "ActiveSkill",
+      "object_offset": 64
+    }
+  ],
+  "unpack_va": 35213916,
+  "dump_line": 167870,
+  "layout": [
+    {
+      "type": "uint",
+      "name": "MonsterID",
+      "object_offset": 16,
+      "wire_type": "uint",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x2195294",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "self",
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "type": "uint",
+      "name": "TransFormType",
+      "object_offset": 20,
+      "wire_type": "uint",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x21952b8",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "self",
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "type": "FP",
+      "name": "MinHPPercent",
+      "object_offset": 24,
+      "wire_type": "FP",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x21952dc",
+          "target_va": "0x21f6938",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt64"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt64",
+          "destination": [
+            "self",
+            24
+          ]
+        }
+      ]
+    },
+    {
+      "type": "FP",
+      "name": "MaxHPPercent",
+      "object_offset": 32,
+      "wire_type": "FP",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x2195300",
+          "target_va": "0x21f6938",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt64"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt64",
+          "destination": [
+            "self",
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "type": "uint",
+      "name": "MonsterAI",
+      "object_offset": 40,
+      "wire_type": "uint",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x2195324",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "self",
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "type": "uint[]",
+      "name": "Skills",
+      "object_offset": 48,
+      "wire_type": "uint",
+      "kind": "array",
+      "count": 4,
+      "count_encoding": "none-native-fixed",
+      "native_calls": [
+        {
+          "instruction_va": "0x219537c",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            48,
+            32
+          ]
+        },
+        {
+          "instruction_va": "0x219537c",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            48,
+            36
+          ]
+        },
+        {
+          "instruction_va": "0x219537c",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            48,
+            40
+          ]
+        },
+        {
+          "instruction_va": "0x219537c",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            48,
+            44
+          ]
+        }
+      ]
+    },
+    {
+      "type": "uint[]",
+      "name": "Buffs",
+      "object_offset": 56,
+      "wire_type": "uint",
+      "kind": "array",
+      "count": 10,
+      "count_encoding": "none-native-fixed",
+      "native_calls": [
+        {
+          "instruction_va": "0x21953e4",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            56,
+            32
+          ]
+        },
+        {
+          "instruction_va": "0x21953e4",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            56,
+            36
+          ]
+        },
+        {
+          "instruction_va": "0x21953e4",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            56,
+            40
+          ]
+        },
+        {
+          "instruction_va": "0x21953e4",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            56,
+            44
+          ]
+        },
+        {
+          "instruction_va": "0x21953e4",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            56,
+            48
+          ]
+        },
+        {
+          "instruction_va": "0x21953e4",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            56,
+            52
+          ]
+        },
+        {
+          "instruction_va": "0x21953e4",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            56,
+            56
+          ]
+        },
+        {
+          "instruction_va": "0x21953e4",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            56,
+            60
+          ]
+        },
+        {
+          "instruction_va": "0x21953e4",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            56,
+            64
+          ]
+        },
+        {
+          "instruction_va": "0x21953e4",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            56,
+            68
+          ]
+        }
+      ]
+    },
+    {
+      "type": "uint",
+      "name": "ActiveSkill",
+      "object_offset": 64,
+      "wire_type": "uint",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x2195428",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "B",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "self",
+            64
+          ]
+        }
+      ]
+    }
+  ],
+  "native_evidence": {
+    "method_start_va": "0x219525c",
+    "instruction_steps": 280,
+    "event_count": 20,
+    "branch_evidence": [
+      {
+        "instruction_va": "0x219535c",
+        "cmp_va": "0x2195358",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 48,
+        "index": 0
+      },
+      {
+        "instruction_va": "0x2195390",
+        "target_va": "0x2195334",
+        "kind": "concrete-loop-test",
+        "left": 0,
+        "right": 3,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x219535c",
+        "cmp_va": "0x2195358",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 48,
+        "index": 1
+      },
+      {
+        "instruction_va": "0x2195390",
+        "target_va": "0x2195334",
+        "kind": "concrete-loop-test",
+        "left": 1,
+        "right": 3,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x219535c",
+        "cmp_va": "0x2195358",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 48,
+        "index": 2
+      },
+      {
+        "instruction_va": "0x2195390",
+        "target_va": "0x2195334",
+        "kind": "concrete-loop-test",
+        "left": 2,
+        "right": 3,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x219535c",
+        "cmp_va": "0x2195358",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 48,
+        "index": 3
+      },
+      {
+        "instruction_va": "0x2195390",
+        "target_va": "0x2195334",
+        "kind": "concrete-loop-test",
+        "left": 3,
+        "right": 3,
+        "condition": "lt",
+        "taken": false
+      },
+      {
+        "instruction_va": "0x21953c4",
+        "cmp_va": "0x21953c0",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 56,
+        "index": 0
+      },
+      {
+        "instruction_va": "0x21953f8",
+        "target_va": "0x219539c",
+        "kind": "concrete-loop-test",
+        "left": 0,
+        "right": 9,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x21953c4",
+        "cmp_va": "0x21953c0",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 56,
+        "index": 1
+      },
+      {
+        "instruction_va": "0x21953f8",
+        "target_va": "0x219539c",
+        "kind": "concrete-loop-test",
+        "left": 1,
+        "right": 9,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x21953c4",
+        "cmp_va": "0x21953c0",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 56,
+        "index": 2
+      },
+      {
+        "instruction_va": "0x21953f8",
+        "target_va": "0x219539c",
+        "kind": "concrete-loop-test",
+        "left": 2,
+        "right": 9,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x21953c4",
+        "cmp_va": "0x21953c0",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 56,
+        "index": 3
+      },
+      {
+        "instruction_va": "0x21953f8",
+        "target_va": "0x219539c",
+        "kind": "concrete-loop-test",
+        "left": 3,
+        "right": 9,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x21953c4",
+        "cmp_va": "0x21953c0",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 56,
+        "index": 4
+      },
+      {
+        "instruction_va": "0x21953f8",
+        "target_va": "0x219539c",
+        "kind": "concrete-loop-test",
+        "left": 4,
+        "right": 9,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x21953c4",
+        "cmp_va": "0x21953c0",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 56,
+        "index": 5
+      },
+      {
+        "instruction_va": "0x21953f8",
+        "target_va": "0x219539c",
+        "kind": "concrete-loop-test",
+        "left": 5,
+        "right": 9,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x21953c4",
+        "cmp_va": "0x21953c0",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 56,
+        "index": 6
+      },
+      {
+        "instruction_va": "0x21953f8",
+        "target_va": "0x219539c",
+        "kind": "concrete-loop-test",
+        "left": 6,
+        "right": 9,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x21953c4",
+        "cmp_va": "0x21953c0",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 56,
+        "index": 7
+      },
+      {
+        "instruction_va": "0x21953f8",
+        "target_va": "0x219539c",
+        "kind": "concrete-loop-test",
+        "left": 7,
+        "right": 9,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x21953c4",
+        "cmp_va": "0x21953c0",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 56,
+        "index": 8
+      },
+      {
+        "instruction_va": "0x21953f8",
+        "target_va": "0x219539c",
+        "kind": "concrete-loop-test",
+        "left": 8,
+        "right": 9,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x21953c4",
+        "cmp_va": "0x21953c0",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 56,
+        "index": 9
+      },
+      {
+        "instruction_va": "0x21953f8",
+        "target_va": "0x219539c",
+        "kind": "concrete-loop-test",
+        "left": 9,
+        "right": 9,
+        "condition": "lt",
+        "taken": false
+      }
+    ],
+    "loops": [
+      {
+        "backedge_va": "0x2195390",
+        "body_start_va": "0x2195334",
+        "body": [
+          {
+            "instruction_va": "0x2195334",
+            "bytes": "971a40f9",
+            "mnemonic": "ldr",
+            "operands": "x23, [x20, #0x30]"
+          },
+          {
+            "instruction_va": "0x2195338",
+            "bytes": "770000b5",
+            "mnemonic": "cbnz",
+            "operands": "x23, #0x2195344"
+          },
+          {
+            "instruction_va": "0x219533c",
+            "bytes": "e0031faa",
+            "mnemonic": "mov",
+            "operands": "x0, xzr"
+          },
+          {
+            "instruction_va": "0x2195340",
+            "bytes": "fb58ae97",
+            "mnemonic": "bl",
+            "operands": "#0xd2b72c"
+          },
+          {
+            "instruction_va": "0x2195344",
+            "bytes": "b8060091",
+            "mnemonic": "add",
+            "operands": "x24, x21, #1"
+          },
+          {
+            "instruction_va": "0x2195348",
+            "bytes": "730000b5",
+            "mnemonic": "cbnz",
+            "operands": "x19, #0x2195354"
+          },
+          {
+            "instruction_va": "0x219534c",
+            "bytes": "e0031faa",
+            "mnemonic": "mov",
+            "operands": "x0, xzr"
+          },
+          {
+            "instruction_va": "0x2195350",
+            "bytes": "f758ae97",
+            "mnemonic": "bl",
+            "operands": "#0xd2b72c"
+          },
+          {
+            "instruction_va": "0x2195354",
+            "bytes": "e81a40b9",
+            "mnemonic": "ldr",
+            "operands": "w8, [x23, #0x18]"
+          },
+          {
+            "instruction_va": "0x2195358",
+            "bytes": "1f0308eb",
+            "mnemonic": "cmp",
+            "operands": "x24, x8"
+          },
+          {
+            "instruction_va": "0x219535c",
+            "bytes": "a3000054",
+            "mnemonic": "b.lo",
+            "operands": "#0x2195370"
+          },
+          {
+            "instruction_va": "0x2195360",
+            "bytes": "2c5cae97",
+            "mnemonic": "bl",
+            "operands": "#0xd2c410"
+          },
+          {
+            "instruction_va": "0x2195364",
+            "bytes": "e1031faa",
+            "mnemonic": "mov",
+            "operands": "x1, xzr"
+          },
+          {
+            "instruction_va": "0x2195368",
+            "bytes": "e2031faa",
+            "mnemonic": "mov",
+            "operands": "x2, xzr"
+          },
+          {
+            "instruction_va": "0x219536c",
+            "bytes": "cc58ae97",
+            "mnemonic": "bl",
+            "operands": "#0xd2b69c"
+          },
+          {
+            "instruction_va": "0x2195370",
+            "bytes": "e102168b",
+            "mnemonic": "add",
+            "operands": "x1, x23, x22"
+          },
+          {
+            "instruction_va": "0x2195374",
+            "bytes": "e00313aa",
+            "mnemonic": "mov",
+            "operands": "x0, x19"
+          },
+          {
+            "instruction_va": "0x2195378",
+            "bytes": "e2031faa",
+            "mnemonic": "mov",
+            "operands": "x2, xzr"
+          },
+          {
+            "instruction_va": "0x219537c",
+            "bytes": "63850194",
+            "mnemonic": "bl",
+            "operands": "#0x21f6908"
+          },
+          {
+            "instruction_va": "0x2195380",
+            "bytes": "60050035",
+            "mnemonic": "cbnz",
+            "operands": "w0, #0x219542c"
+          },
+          {
+            "instruction_va": "0x2195384",
+            "bytes": "b5060091",
+            "mnemonic": "add",
+            "operands": "x21, x21, #1"
+          },
+          {
+            "instruction_va": "0x2195388",
+            "bytes": "bf0e00f1",
+            "mnemonic": "cmp",
+            "operands": "x21, #3"
+          },
+          {
+            "instruction_va": "0x219538c",
+            "bytes": "d6120091",
+            "mnemonic": "add",
+            "operands": "x22, x22, #4"
+          },
+          {
+            "instruction_va": "0x2195390",
+            "bytes": "2bfdff54",
+            "mnemonic": "b.lt",
+            "operands": "#0x2195334"
+          }
+        ],
+        "preheader_initialization": [
+          {
+            "instruction_va": "0x2195328",
+            "bytes": "20080035",
+            "mnemonic": "cbnz",
+            "operands": "w0, #0x219542c"
+          },
+          {
+            "instruction_va": "0x219532c",
+            "bytes": "15008092",
+            "mnemonic": "mov",
+            "operands": "x21, #-1"
+          },
+          {
+            "instruction_va": "0x2195330",
+            "bytes": "f6031b32",
+            "mnemonic": "mov",
+            "operands": "w22, #0x20"
+          }
+        ],
+        "index_stride_updates": [
+          {
+            "instruction_va": "0x2195384",
+            "bytes": "b5060091",
+            "mnemonic": "add",
+            "operands": "x21, x21, #1"
+          },
+          {
+            "instruction_va": "0x219538c",
+            "bytes": "d6120091",
+            "mnemonic": "add",
+            "operands": "x22, x22, #4"
+          }
+        ],
+        "compare_instructions": [
+          {
+            "instruction_va": "0x2195358",
+            "bytes": "1f0308eb",
+            "mnemonic": "cmp",
+            "operands": "x24, x8"
+          },
+          {
+            "instruction_va": "0x2195388",
+            "bytes": "bf0e00f1",
+            "mnemonic": "cmp",
+            "operands": "x21, #3"
+          }
+        ],
+        "concrete_tests_in_order": [
+          {
+            "instruction_va": "0x2195390",
+            "target_va": "0x2195334",
+            "kind": "concrete-loop-test",
+            "left": 0,
+            "right": 3,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x2195390",
+            "target_va": "0x2195334",
+            "kind": "concrete-loop-test",
+            "left": 1,
+            "right": 3,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x2195390",
+            "target_va": "0x2195334",
+            "kind": "concrete-loop-test",
+            "left": 2,
+            "right": 3,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x2195390",
+            "target_va": "0x2195334",
+            "kind": "concrete-loop-test",
+            "left": 3,
+            "right": 3,
+            "condition": "lt",
+            "taken": false
+          }
+        ],
+        "trip_count": 4
+      },
+      {
+        "backedge_va": "0x21953f8",
+        "body_start_va": "0x219539c",
+        "body": [
+          {
+            "instruction_va": "0x219539c",
+            "bytes": "971e40f9",
+            "mnemonic": "ldr",
+            "operands": "x23, [x20, #0x38]"
+          },
+          {
+            "instruction_va": "0x21953a0",
+            "bytes": "770000b5",
+            "mnemonic": "cbnz",
+            "operands": "x23, #0x21953ac"
+          },
+          {
+            "instruction_va": "0x21953a4",
+            "bytes": "e0031faa",
+            "mnemonic": "mov",
+            "operands": "x0, xzr"
+          },
+          {
+            "instruction_va": "0x21953a8",
+            "bytes": "e158ae97",
+            "mnemonic": "bl",
+            "operands": "#0xd2b72c"
+          },
+          {
+            "instruction_va": "0x21953ac",
+            "bytes": "b8060091",
+            "mnemonic": "add",
+            "operands": "x24, x21, #1"
+          },
+          {
+            "instruction_va": "0x21953b0",
+            "bytes": "730000b5",
+            "mnemonic": "cbnz",
+            "operands": "x19, #0x21953bc"
+          },
+          {
+            "instruction_va": "0x21953b4",
+            "bytes": "e0031faa",
+            "mnemonic": "mov",
+            "operands": "x0, xzr"
+          },
+          {
+            "instruction_va": "0x21953b8",
+            "bytes": "dd58ae97",
+            "mnemonic": "bl",
+            "operands": "#0xd2b72c"
+          },
+          {
+            "instruction_va": "0x21953bc",
+            "bytes": "e81a40b9",
+            "mnemonic": "ldr",
+            "operands": "w8, [x23, #0x18]"
+          },
+          {
+            "instruction_va": "0x21953c0",
+            "bytes": "1f0308eb",
+            "mnemonic": "cmp",
+            "operands": "x24, x8"
+          },
+          {
+            "instruction_va": "0x21953c4",
+            "bytes": "a3000054",
+            "mnemonic": "b.lo",
+            "operands": "#0x21953d8"
+          },
+          {
+            "instruction_va": "0x21953c8",
+            "bytes": "125cae97",
+            "mnemonic": "bl",
+            "operands": "#0xd2c410"
+          },
+          {
+            "instruction_va": "0x21953cc",
+            "bytes": "e1031faa",
+            "mnemonic": "mov",
+            "operands": "x1, xzr"
+          },
+          {
+            "instruction_va": "0x21953d0",
+            "bytes": "e2031faa",
+            "mnemonic": "mov",
+            "operands": "x2, xzr"
+          },
+          {
+            "instruction_va": "0x21953d4",
+            "bytes": "b258ae97",
+            "mnemonic": "bl",
+            "operands": "#0xd2b69c"
+          },
+          {
+            "instruction_va": "0x21953d8",
+            "bytes": "e102168b",
+            "mnemonic": "add",
+            "operands": "x1, x23, x22"
+          },
+          {
+            "instruction_va": "0x21953dc",
+            "bytes": "e00313aa",
+            "mnemonic": "mov",
+            "operands": "x0, x19"
+          },
+          {
+            "instruction_va": "0x21953e0",
+            "bytes": "e2031faa",
+            "mnemonic": "mov",
+            "operands": "x2, xzr"
+          },
+          {
+            "instruction_va": "0x21953e4",
+            "bytes": "49850194",
+            "mnemonic": "bl",
+            "operands": "#0x21f6908"
+          },
+          {
+            "instruction_va": "0x21953e8",
+            "bytes": "20020035",
+            "mnemonic": "cbnz",
+            "operands": "w0, #0x219542c"
+          },
+          {
+            "instruction_va": "0x21953ec",
+            "bytes": "b5060091",
+            "mnemonic": "add",
+            "operands": "x21, x21, #1"
+          },
+          {
+            "instruction_va": "0x21953f0",
+            "bytes": "bf2600f1",
+            "mnemonic": "cmp",
+            "operands": "x21, #9"
+          },
+          {
+            "instruction_va": "0x21953f4",
+            "bytes": "d6120091",
+            "mnemonic": "add",
+            "operands": "x22, x22, #4"
+          },
+          {
+            "instruction_va": "0x21953f8",
+            "bytes": "2bfdff54",
+            "mnemonic": "b.lt",
+            "operands": "#0x219539c"
+          }
+        ],
+        "preheader_initialization": [
+          {
+            "instruction_va": "0x2195380",
+            "bytes": "60050035",
+            "mnemonic": "cbnz",
+            "operands": "w0, #0x219542c"
+          },
+          {
+            "instruction_va": "0x2195384",
+            "bytes": "b5060091",
+            "mnemonic": "add",
+            "operands": "x21, x21, #1"
+          },
+          {
+            "instruction_va": "0x2195388",
+            "bytes": "bf0e00f1",
+            "mnemonic": "cmp",
+            "operands": "x21, #3"
+          },
+          {
+            "instruction_va": "0x219538c",
+            "bytes": "d6120091",
+            "mnemonic": "add",
+            "operands": "x22, x22, #4"
+          },
+          {
+            "instruction_va": "0x2195390",
+            "bytes": "2bfdff54",
+            "mnemonic": "b.lt",
+            "operands": "#0x2195334"
+          },
+          {
+            "instruction_va": "0x2195394",
+            "bytes": "15008092",
+            "mnemonic": "mov",
+            "operands": "x21, #-1"
+          },
+          {
+            "instruction_va": "0x2195398",
+            "bytes": "f6031b32",
+            "mnemonic": "mov",
+            "operands": "w22, #0x20"
+          }
+        ],
+        "index_stride_updates": [
+          {
+            "instruction_va": "0x21953ec",
+            "bytes": "b5060091",
+            "mnemonic": "add",
+            "operands": "x21, x21, #1"
+          },
+          {
+            "instruction_va": "0x21953f4",
+            "bytes": "d6120091",
+            "mnemonic": "add",
+            "operands": "x22, x22, #4"
+          }
+        ],
+        "compare_instructions": [
+          {
+            "instruction_va": "0x21953c0",
+            "bytes": "1f0308eb",
+            "mnemonic": "cmp",
+            "operands": "x24, x8"
+          },
+          {
+            "instruction_va": "0x21953f0",
+            "bytes": "bf2600f1",
+            "mnemonic": "cmp",
+            "operands": "x21, #9"
+          }
+        ],
+        "concrete_tests_in_order": [
+          {
+            "instruction_va": "0x21953f8",
+            "target_va": "0x219539c",
+            "kind": "concrete-loop-test",
+            "left": 0,
+            "right": 9,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x21953f8",
+            "target_va": "0x219539c",
+            "kind": "concrete-loop-test",
+            "left": 1,
+            "right": 9,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x21953f8",
+            "target_va": "0x219539c",
+            "kind": "concrete-loop-test",
+            "left": 2,
+            "right": 9,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x21953f8",
+            "target_va": "0x219539c",
+            "kind": "concrete-loop-test",
+            "left": 3,
+            "right": 9,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x21953f8",
+            "target_va": "0x219539c",
+            "kind": "concrete-loop-test",
+            "left": 4,
+            "right": 9,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x21953f8",
+            "target_va": "0x219539c",
+            "kind": "concrete-loop-test",
+            "left": 5,
+            "right": 9,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x21953f8",
+            "target_va": "0x219539c",
+            "kind": "concrete-loop-test",
+            "left": 6,
+            "right": 9,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x21953f8",
+            "target_va": "0x219539c",
+            "kind": "concrete-loop-test",
+            "left": 7,
+            "right": 9,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x21953f8",
+            "target_va": "0x219539c",
+            "kind": "concrete-loop-test",
+            "left": 8,
+            "right": 9,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x21953f8",
+            "target_va": "0x219539c",
+            "kind": "concrete-loop-test",
+            "left": 9,
+            "right": 9,
+            "condition": "lt",
+            "taken": false
+          }
+        ],
+        "trip_count": 10
+      }
+    ],
+    "instruction_sha256": "dd19602fd5e28e869a6119fc205b30ad9242977f5d8e0a62251efba5059cfc08",
+    "gate": "concrete-success-path; all sequential readers/nested callees; full field/destination/stride matching",
+    "assumptions": [
+      "non-null input buffer and created nested objects/arrays",
+      "managed array bounds valid",
+      "AAPCS64 callee-saved register preservation",
+      "reader and nested call success; version 1 only"
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+package com.tencent.bugly.opengame.crashreport.biz;
+
+/* JADX INFO: loaded from: D:\VibeCoding\勇者养成记\本地分析\unpacked\classes.dex */
+public class UserInfoBean implements android.os.Parcelable {
+    public static final android.os.Parcelable.Creator CREATOR = new android.os.Parcelable.Creator() { // from class: com.tencent.bugly.opengame.crashreport.biz.UserInfoBean.1
+        @Override // android.os.Parcelable.Creator
+        public final /* synthetic */ java.lang.Object createFromParcel(android.os.Parcel parcel) {
+            return new com.tencent.bugly.opengame.crashreport.biz.UserInfoBean(parcel);
+        }
+
+        @Override // android.os.Parcelable.Creator
+        public final /* bridge */ /* synthetic */ java.lang.Object[] newArray(int i) {
+            return new com.tencent.bugly.opengame.crashreport.biz.UserInfoBean[i];
+        }
+    };
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    public long f331a;
+    public int b;
+    public java.lang.String c;
+    public java.lang.String d;
+    public long e;
+    public long f;
+    public long g;
+    public long h;
+    public long i;
+    public java.lang.String j;
+    public long k;
+    public boolean l;
+    public java.lang.String m;
+    public java.lang.String n;
+    public int o;
+    public int p;
+    public int q;
+    public java.util.Map r;
+    public java.util.Map s;
+
+    public UserInfoBean() {
+        this.k = 0L;
+        this.l = false;
+        this.m = android.support.v4.os.EnvironmentCompat.MEDIA_UNKNOWN;
+        this.p = -1;
+        this.q = -1;
+        this.r = null;
+        this.s = null;
+    }
+
+    public UserInfoBean(android.os.Parcel parcel) {
+        this.k = 0L;
+        this.l = false;
+        this.m = android.support.v4.os.EnvironmentCompat.MEDIA_UNKNOWN;
+        this.p = -1;
+        this.q = -1;
+        this.r = null;
+        this.s = null;
+        this.b = parcel.readInt();
+        this.c = parcel.readString();
+        this.d = parcel.readString();
+        this.e = parcel.readLong();
+        this.f = parcel.readLong();
+        this.g = parcel.readLong();
+        this.h = parcel.readLong();
+        this.i = parcel.readLong();
+        this.j = parcel.readString();
+        this.k = parcel.readLong();
+        this.l = parcel.readByte() == 1;
+        this.m = parcel.readString();
+        this.p = parcel.readInt();
+        this.q = parcel.readInt();
+        this.r = com.tencent.bugly.opengame.proguard.z.b(parcel);
+        this.s = com.tencent.bugly.opengame.proguard.z.b(parcel);
+        this.n = parcel.readString();
+        this.o = parcel.readInt();
+    }
+
+    @Override // android.os.Parcelable
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(android.os.Parcel parcel, int i) {
+        parcel.writeInt(this.b);
+        parcel.writeString(this.c);
+        parcel.writeString(this.d);
+        parcel.writeLong(this.e);
+        parcel.writeLong(this.f);
+        parcel.writeLong(this.g);
+        parcel.writeLong(this.h);
+        parcel.writeLong(this.i);
+        parcel.writeString(this.j);
+        parcel.writeLong(this.k);
+        parcel.writeByte(this.l ? (byte) 1 : (byte) 0);
+        parcel.writeString(this.m);
+        parcel.writeInt(this.p);
+        parcel.writeInt(this.q);
+        com.tencent.bugly.opengame.proguard.z.b(parcel, this.r);
+        com.tencent.bugly.opengame.proguard.z.b(parcel, this.s);
+        parcel.writeString(this.n);
+        parcel.writeInt(this.o);
+    }
+}

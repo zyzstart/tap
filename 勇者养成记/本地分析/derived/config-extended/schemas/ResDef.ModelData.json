@@ -1,0 +1,119 @@
+{
+  "namespace": "ResDef",
+  "name": "ModelData",
+  "fields": [
+    {
+      "type": "string",
+      "name": "ModelFile",
+      "object_offset": 16
+    },
+    {
+      "type": "string",
+      "name": "DummyPoint",
+      "object_offset": 24
+    },
+    {
+      "type": "uint",
+      "name": "EffectID",
+      "object_offset": 32
+    }
+  ],
+  "unpack_va": 30792660,
+  "dump_line": 208989,
+  "layout": [
+    {
+      "type": "string",
+      "name": "ModelFile",
+      "object_offset": 16,
+      "wire_type": "string",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d5dc0c",
+          "target_va": "0x21f6ce8",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readString"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readString",
+          "destination": [
+            "self",
+            16
+          ],
+          "max_string_size": 128
+        }
+      ],
+      "max_string_size": 128
+    },
+    {
+      "type": "string",
+      "name": "DummyPoint",
+      "object_offset": 24,
+      "wire_type": "string",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d5dc34",
+          "target_va": "0x21f6ce8",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readString"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readString",
+          "destination": [
+            "self",
+            24
+          ],
+          "max_string_size": 64
+        }
+      ],
+      "max_string_size": 64
+    },
+    {
+      "type": "uint",
+      "name": "EffectID",
+      "object_offset": 32,
+      "wire_type": "uint",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d5dc74",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "B",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "self",
+            32
+          ]
+        }
+      ]
+    }
+  ],
+  "native_evidence": {
+    "method_start_va": "0x1d5dbd4",
+    "instruction_steps": 31,
+    "event_count": 3,
+    "branch_evidence": [],
+    "loops": [],
+    "instruction_sha256": "41b32443a6b8b0e5fbed174346f04785d49806573d0acfd845472b51b4015d95",
+    "gate": "concrete-success-path; all sequential readers/nested callees; full field/destination/stride matching",
+    "assumptions": [
+      "non-null input buffer and created nested objects/arrays",
+      "managed array bounds valid",
+      "AAPCS64 callee-saved register preservation",
+      "reader and nested call success; version 1 only"
+    ]
+  }
+}

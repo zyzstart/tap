@@ -1,0 +1,87 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_elfhelpconfig.bytes.ab",
+    "path_id": -1005221730877269164,
+    "name": "ElfHelpConfig",
+    "sha256": "b16276e7655385fdaedf22df9f29838440c7cf11aad60655ac0221dbfe401801",
+    "export": "derived/unity/text/assets_resources_config_resbin_elfhelpconfig.bytes/ElfHelpConfig__-1005221730877269164.bin",
+    "schema": "ResDef.ElfHelpConfig",
+    "path_id_decimal": "-1005221730877269164",
+    "legacy_status": "raw-header-verified",
+    "legacy_reason": "Unsupported arrays/nested/enum fields: ResAttrImpactData[] AttrList",
+    "status": "decoded-validated-native-recursive",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 188,
+      "version": 1,
+      "record_count": 2,
+      "stored_crc32": "6a2d7218",
+      "computed_inverted_crc32": "6a2d7218"
+    },
+    "native_layout_verified": true,
+    "schema_file": "derived/config-extended/schemas/ResDef.ElfHelpConfig.json",
+    "minimum_record_size": 37,
+    "min_expected_payload_bytes": 74,
+    "actual_payload_bytes": 168,
+    "decoded_record_count": 2,
+    "validation": {
+      "header_verified": true,
+      "count_verified": true,
+      "exact_eof": true,
+      "full_reencode_equal": true,
+      "full_reencode_sha256": "b16276e7655385fdaedf22df9f29838440c7cf11aad60655ac0221dbfe401801",
+      "decoded_node_count": 22,
+      "payload_bytes": 168
+    },
+    "arrays": [
+      {
+        "field": "AttrList",
+        "count": 1,
+        "count_encoding": "none-native-fixed"
+      }
+    ],
+    "decoded_json": "derived/config-extended/ResDef/ElfHelpConfig.json",
+    "decoded_csv": "derived/config-extended/ResDef/ElfHelpConfig.csv"
+  },
+  "precision": "Exact JSON integer number tokens, with decimal-string mirrors for every int64/uint64/FP. FP is raw signed int64; no scaling.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "HelpID": 1,
+      "HelpName": "进化共鸣",
+      "RequiredCnt": 2,
+      "RequiredPromotionLevel": 10,
+      "RequiredQuality": 5,
+      "ElvesSkillDes": "所有精灵的主动和被动技能星级+1",
+      "AttrList": [
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "SpecialElfFuncID": 1,
+      "_byte_length": 93
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 113,
+      "HelpID": 2,
+      "HelpName": "灵影交织",
+      "RequiredCnt": 4,
+      "RequiredPromotionLevel": 15,
+      "RequiredQuality": 6,
+      "ElvesSkillDes": "角色护盾值上限+100%",
+      "AttrList": [
+        {
+          "DataType": 85,
+          "AddType": 1,
+          "Value": 1.0
+        }
+      ],
+      "SpecialElfFuncID": 0,
+      "_byte_length": 75
+    }
+  ]
+}

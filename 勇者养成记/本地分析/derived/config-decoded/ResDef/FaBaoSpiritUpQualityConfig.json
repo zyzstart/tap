@@ -1,0 +1,137 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_fabaospiritupqualityconfig.bytes.ab",
+    "path_id": -3235694969110573744,
+    "name": "FaBaoSpiritUpQualityConfig",
+    "sha256": "c213a396880b823536c074ba7641ad2e71d58da70f46cc591f459108026af433",
+    "export": "derived/unity/text/assets_resources_config_resbin_fabaospiritupqualityconfig.bytes/FaBaoSpiritUpQualityConfig__-3235694969110573744.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 104,
+      "version": 1,
+      "record_count": 7,
+      "stored_crc32": "23038081",
+      "computed_inverted_crc32": "23038081"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "FaBaoSpiritUpQualityConfig",
+      "fields": [
+        {
+          "type": "int",
+          "name": "ColorQuality",
+          "object_offset": 16
+        },
+        {
+          "type": "int",
+          "name": "ProvideScore",
+          "object_offset": 20
+        },
+        {
+          "type": "int",
+          "name": "NeedScore",
+          "object_offset": 24
+        }
+      ],
+      "unpack_va": 31298252,
+      "dump_line": 203689
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1dd9300",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd9324",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd9364",
+        "target_va": "0x21f67d0",
+        "opcode": "B-tail",
+        "reader": "readInt32",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 7
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "ColorQuality": 1,
+      "ProvideScore": 8,
+      "NeedScore": 14,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 32,
+      "ColorQuality": 2,
+      "ProvideScore": 40,
+      "NeedScore": 200,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 44,
+      "ColorQuality": 3,
+      "ProvideScore": 100,
+      "NeedScore": 600,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 56,
+      "ColorQuality": 4,
+      "ProvideScore": 500,
+      "NeedScore": 3500,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 68,
+      "ColorQuality": 5,
+      "ProvideScore": 1500,
+      "NeedScore": 13500,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 80,
+      "ColorQuality": 6,
+      "ProvideScore": 5000,
+      "NeedScore": 65000,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 92,
+      "ColorQuality": 7,
+      "ProvideScore": 14000,
+      "NeedScore": 0,
+      "_byte_length": 12
+    }
+  ]
+}

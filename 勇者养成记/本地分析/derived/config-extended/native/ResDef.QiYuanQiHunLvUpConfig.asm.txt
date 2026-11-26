@@ -1,0 +1,60 @@
+0x1e8c604: stp       x24, x23, [sp, #-0x40]!
+0x1e8c608: stp       x22, x21, [sp, #0x10]
+0x1e8c60c: stp       x20, x19, [sp, #0x20]
+0x1e8c610: stp       x29, x30, [sp, #0x30]
+0x1e8c614: add       x29, sp, #0x30
+0x1e8c618: mov       x20, x0
+0x1e8c61c: mov       x19, x1
+0x1e8c620: add       x21, x20, #0x10
+0x1e8c624: cbnz      x19, #0x1e8c630
+0x1e8c628: mov       x0, xzr
+0x1e8c62c: bl        #0xd2b72c ; 
+0x1e8c630: mov       x0, x19
+0x1e8c634: mov       x1, x21
+0x1e8c638: mov       x2, xzr
+0x1e8c63c: bl        #0x21f6908 ; ProtoBase.PbReadBuf$$readUInt32
+0x1e8c640: cbnz      w0, #0x1e8c6e0
+0x1e8c644: mov       x21, #-1
+0x1e8c648: mov       w22, #0x20
+0x1e8c64c: ldr       x23, [x20, #0x18]
+0x1e8c650: cbnz      x23, #0x1e8c65c
+0x1e8c654: mov       x0, xzr
+0x1e8c658: bl        #0xd2b72c ; 
+0x1e8c65c: add       x24, x21, #1
+0x1e8c660: cbnz      x19, #0x1e8c66c
+0x1e8c664: mov       x0, xzr
+0x1e8c668: bl        #0xd2b72c ; 
+0x1e8c66c: ldr       w8, [x23, #0x18]
+0x1e8c670: cmp       x24, x8
+0x1e8c674: b.lo      #0x1e8c688
+0x1e8c678: bl        #0xd2c410 ; 
+0x1e8c67c: mov       x1, xzr
+0x1e8c680: mov       x2, xzr
+0x1e8c684: bl        #0xd2b69c ; 
+0x1e8c688: add       x1, x23, x22
+0x1e8c68c: mov       x0, x19
+0x1e8c690: mov       x2, xzr
+0x1e8c694: bl        #0x21f6908 ; ProtoBase.PbReadBuf$$readUInt32
+0x1e8c698: cbnz      w0, #0x1e8c6e0
+0x1e8c69c: add       x21, x21, #1
+0x1e8c6a0: cmp       x21, #0x13
+0x1e8c6a4: add       x22, x22, #4
+0x1e8c6a8: b.lt      #0x1e8c64c
+0x1e8c6ac: add       x20, x20, #0x20
+0x1e8c6b0: cbnz      x19, #0x1e8c6bc
+0x1e8c6b4: mov       x0, xzr
+0x1e8c6b8: bl        #0xd2b72c ; 
+0x1e8c6bc: mov       x0, x19
+0x1e8c6c0: mov       x1, x20
+0x1e8c6c4: ldp       x29, x30, [sp, #0x30]
+0x1e8c6c8: ldp       x20, x19, [sp, #0x20]
+0x1e8c6cc: ldp       x22, x21, [sp, #0x10]
+0x1e8c6d0: mov       w2, #0x80
+0x1e8c6d4: mov       x3, xzr
+0x1e8c6d8: ldp       x24, x23, [sp], #0x40
+0x1e8c6dc: b         #0x21f6ce8 ; ProtoBase.PbReadBuf$$readString
+0x1e8c6e0: ldp       x29, x30, [sp, #0x30]
+0x1e8c6e4: ldp       x20, x19, [sp, #0x20]
+0x1e8c6e8: ldp       x22, x21, [sp, #0x10]
+0x1e8c6ec: ldp       x24, x23, [sp], #0x40
+0x1e8c6f0: ret       

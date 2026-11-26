@@ -1,0 +1,60 @@
+{
+  "target_tables": 174,
+  "status_counts": {
+    "decoded-validated-native-recursive": 164,
+    "payload-rejected": 10
+  },
+  "decoded_table_count": 164,
+  "decoded_record_count": 254657,
+  "reject_reasons": {
+    "DecodeError: Count * minimum record size exceeds payload": 10
+  },
+  "schemas_analyzed": 223,
+  "output_provenance_validation": {
+    "decoded_tables_checked": 164,
+    "unique_output_paths": true,
+    "full_source_entry_equal": true,
+    "bundle_path_id_sha256_equal": true
+  },
+  "source_disambiguated_output_count": 14,
+  "unindexed_legacy_outputs_policy": "Unindexed artifacts from older runs are not current deliverables; use resbin-index.json only. Source-collision legacy unsuffixed files are preserved, not deleted.",
+  "native_array_field_count": 212,
+  "native_nested_field_count": 172,
+  "native_fp_field_count": 39,
+  "native_enum_field_count": 0,
+  "legacy_baseline": {
+    "index": "derived/config-decoded/resbin-index.json",
+    "index_sha256": "e34a6ec864e984744afda3b5037cb71e52497da7f23f54251cc835d1d722d6ff",
+    "table_count": 545,
+    "decoded_table_count": 280,
+    "decoded_record_count": 108533,
+    "unchanged": true
+  },
+  "source_sha256": {
+    "libil2cpp.so": "1985e959848ae18321d89daa7119b46addcccc9ffa89f14b023906572e0a018c",
+    "dump.cs": "aea4266774a2fd2364bf05084439735f82caed6bffefbef1008ad5ecd4081e08",
+    "script.json": "f6604c71e0ecbf81313d6e6487074e37e67ff00bf658e547721aa1457e2accac"
+  },
+  "bounds": {
+    "max_depth": 24,
+    "max_record_count": 2000000,
+    "max_nodes_per_table": 10000000,
+    "max_fixed_array": 4096,
+    "max_string_bytes": 1000000,
+    "max_file_bytes": 268435456,
+    "max_native_steps": 200000,
+    "max_native_events": 16384
+  },
+  "limits": [
+    "Static success-path model, not execution or complete runtime equivalence proof.",
+    "Assumes created nonnull nested objects/arrays, valid managed bounds, AAPCS64 callee preservation and cutVer=1.",
+    "Unknown native instructions/calls/data-dependent paths fail closed; only exact sequential overloads and exact nested targets accepted.",
+    "Array counts have no wire prefix when count_encoding=none-native-fixed; loop trip counts/strides are recovered from concrete ARM64 instructions.",
+    "Big-endian is supported by reader initialization IsNetEndian=1 and native NetworkToHostOrder calls; runtime endian branches and UTF8 virtual method are not formally proved.",
+    "Native readString consumes signed int32 length, validates 0<length<=maxStrSize, decodes length-1 bytes and advances length; it does not explicitly check terminal zero. This tool strictly requires terminal zero and valid UTF-8, a conservative subset.",
+    "No enum range filtering: enums retain raw numeric values, since unknown/flag values may be valid. Enum wire reader width requires native reader evidence.",
+    "FP raw signed int64 is never normalized; exact integer number tokens and decimal-string precision mirrors are emitted. JavaScript consumers must use decimal mirrors or lossless parsing.",
+    "CSV nested cells are compact JSON; formula-like/control-leading scalar strings and unsafe spreadsheet integers are apostrophe-prefixed; JSON preserves source values.",
+    "Only the 174 baseline arrays/nested/enum rejects are targeted. Baseline missing-schema/layout rejects are left for separate recovery; duplicate namespace variants are distinct source tables."
+  ]
+}

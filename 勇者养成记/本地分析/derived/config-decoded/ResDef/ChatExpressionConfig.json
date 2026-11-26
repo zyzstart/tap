@@ -1,0 +1,5729 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_chatexpressionconfig.bytes.ab",
+    "path_id": -3576871866315862031,
+    "name": "ChatExpressionConfig",
+    "sha256": "96871241755c061f8f64ef24b6e502e9b0ce14978d5a7997439c8c453299582f",
+    "export": "derived/unity/text/assets_resources_config_resbin_chatexpressionconfig.bytes/ChatExpressionConfig__-3576871866315862031.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 26415,
+      "version": 1,
+      "record_count": 626,
+      "stored_crc32": "7170816d",
+      "computed_inverted_crc32": "7170816d"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "ChatExpressionConfig",
+      "fields": [
+        {
+          "type": "string",
+          "name": "FormatStr",
+          "object_offset": 16
+        },
+        {
+          "type": "byte",
+          "name": "FrameNo",
+          "object_offset": 24
+        },
+        {
+          "type": "string",
+          "name": "AtlasName",
+          "object_offset": 32
+        },
+        {
+          "type": "string",
+          "name": "IconName",
+          "object_offset": 40
+        }
+      ],
+      "unpack_va": 31252640,
+      "dump_line": 202687
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1dce0d8",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dce0fc",
+        "target_va": "0x21f65e0",
+        "opcode": "BL",
+        "reader": "readUInt8",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dce124",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dce168",
+        "target_va": "0x21f6ce8",
+        "opcode": "B-tail",
+        "reader": "readString",
+        "destination_object_offset": 40,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 626
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "FormatStr": "[baiyan_01]",
+      "FrameNo": 1,
+      "AtlasName": "YsEmoji",
+      "IconName": "baiyan_00",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 63,
+      "FormatStr": "[baiyan_01]",
+      "FrameNo": 2,
+      "AtlasName": "YsEmoji",
+      "IconName": "baiyan_01",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 106,
+      "FormatStr": "[baiyan_01]",
+      "FrameNo": 3,
+      "AtlasName": "YsEmoji",
+      "IconName": "baiyan_02",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 149,
+      "FormatStr": "[baiyan_01]",
+      "FrameNo": 4,
+      "AtlasName": "YsEmoji",
+      "IconName": "baiyan_03",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 192,
+      "FormatStr": "[baiyan_01]",
+      "FrameNo": 5,
+      "AtlasName": "YsEmoji",
+      "IconName": "baiyan_04",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 235,
+      "FormatStr": "[baiyan_01]",
+      "FrameNo": 6,
+      "AtlasName": "YsEmoji",
+      "IconName": "baiyan_05",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 278,
+      "FormatStr": "[baiyan_01]",
+      "FrameNo": 7,
+      "AtlasName": "YsEmoji",
+      "IconName": "baiyan_06",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 321,
+      "FormatStr": "[baiyan_01]",
+      "FrameNo": 8,
+      "AtlasName": "YsEmoji",
+      "IconName": "baiyan_07",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 364,
+      "FormatStr": "[baiyan_01]",
+      "FrameNo": 9,
+      "AtlasName": "YsEmoji",
+      "IconName": "baiyan_08",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 407,
+      "FormatStr": "[baiyan_01]",
+      "FrameNo": 10,
+      "AtlasName": "YsEmoji",
+      "IconName": "baiyan_09",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 450,
+      "FormatStr": "[baiyan_01]",
+      "FrameNo": 11,
+      "AtlasName": "YsEmoji",
+      "IconName": "baiyan_10",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 493,
+      "FormatStr": "[baiyan_01]",
+      "FrameNo": 12,
+      "AtlasName": "YsEmoji",
+      "IconName": "baiyan_11",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 536,
+      "FormatStr": "[baiyan_01]",
+      "FrameNo": 13,
+      "AtlasName": "YsEmoji",
+      "IconName": "baiyan_12",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 579,
+      "FormatStr": "[baiyan_01]",
+      "FrameNo": 14,
+      "AtlasName": "YsEmoji",
+      "IconName": "baiyan_13",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 622,
+      "FormatStr": "[baiyan_01]",
+      "FrameNo": 15,
+      "AtlasName": "YsEmoji",
+      "IconName": "baiyan_14",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 665,
+      "FormatStr": "[baiyan_01]",
+      "FrameNo": 16,
+      "AtlasName": "YsEmoji",
+      "IconName": "baiyan_15",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 708,
+      "FormatStr": "[baiyan_01]",
+      "FrameNo": 17,
+      "AtlasName": "YsEmoji",
+      "IconName": "baiyan_16",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 751,
+      "FormatStr": "[baiyan_01]",
+      "FrameNo": 18,
+      "AtlasName": "YsEmoji",
+      "IconName": "baiyan_17",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 794,
+      "FormatStr": "[baiyan_01]",
+      "FrameNo": 19,
+      "AtlasName": "YsEmoji",
+      "IconName": "baiyan_18",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 19,
+      "_byte_offset": 837,
+      "FormatStr": "[baishi_01]",
+      "FrameNo": 1,
+      "AtlasName": "YsEmoji",
+      "IconName": "bishi_00",
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 20,
+      "_byte_offset": 879,
+      "FormatStr": "[baishi_01]",
+      "FrameNo": 2,
+      "AtlasName": "YsEmoji",
+      "IconName": "bishi_01",
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 21,
+      "_byte_offset": 921,
+      "FormatStr": "[baishi_01]",
+      "FrameNo": 3,
+      "AtlasName": "YsEmoji",
+      "IconName": "bishi_02",
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 22,
+      "_byte_offset": 963,
+      "FormatStr": "[baishi_01]",
+      "FrameNo": 4,
+      "AtlasName": "YsEmoji",
+      "IconName": "bishi_03",
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 23,
+      "_byte_offset": 1005,
+      "FormatStr": "[baishi_01]",
+      "FrameNo": 5,
+      "AtlasName": "YsEmoji",
+      "IconName": "bishi_04",
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 24,
+      "_byte_offset": 1047,
+      "FormatStr": "[baishi_01]",
+      "FrameNo": 6,
+      "AtlasName": "YsEmoji",
+      "IconName": "bishi_05",
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 25,
+      "_byte_offset": 1089,
+      "FormatStr": "[baishi_01]",
+      "FrameNo": 7,
+      "AtlasName": "YsEmoji",
+      "IconName": "bishi_06",
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 26,
+      "_byte_offset": 1131,
+      "FormatStr": "[baishi_01]",
+      "FrameNo": 8,
+      "AtlasName": "YsEmoji",
+      "IconName": "bishi_07",
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 27,
+      "_byte_offset": 1173,
+      "FormatStr": "[baishi_01]",
+      "FrameNo": 9,
+      "AtlasName": "YsEmoji",
+      "IconName": "bishi_08",
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 28,
+      "_byte_offset": 1215,
+      "FormatStr": "[baishi_01]",
+      "FrameNo": 10,
+      "AtlasName": "YsEmoji",
+      "IconName": "bishi_09",
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 29,
+      "_byte_offset": 1257,
+      "FormatStr": "[baishi_01]",
+      "FrameNo": 11,
+      "AtlasName": "YsEmoji",
+      "IconName": "bishi_10",
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 30,
+      "_byte_offset": 1299,
+      "FormatStr": "[baishi_01]",
+      "FrameNo": 12,
+      "AtlasName": "YsEmoji",
+      "IconName": "bishi_11",
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 31,
+      "_byte_offset": 1341,
+      "FormatStr": "[baishi_01]",
+      "FrameNo": 13,
+      "AtlasName": "YsEmoji",
+      "IconName": "bishi_12",
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 32,
+      "_byte_offset": 1383,
+      "FormatStr": "[baishi_01]",
+      "FrameNo": 14,
+      "AtlasName": "YsEmoji",
+      "IconName": "bishi_13",
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 33,
+      "_byte_offset": 1425,
+      "FormatStr": "[baishi_01]",
+      "FrameNo": 15,
+      "AtlasName": "YsEmoji",
+      "IconName": "bishi_14",
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 34,
+      "_byte_offset": 1467,
+      "FormatStr": "[baishi_01]",
+      "FrameNo": 16,
+      "AtlasName": "YsEmoji",
+      "IconName": "bishi_15",
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 35,
+      "_byte_offset": 1509,
+      "FormatStr": "[baishi_01]",
+      "FrameNo": 17,
+      "AtlasName": "YsEmoji",
+      "IconName": "bishi_16",
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 36,
+      "_byte_offset": 1551,
+      "FormatStr": "[baishi_01]",
+      "FrameNo": 18,
+      "AtlasName": "YsEmoji",
+      "IconName": "bishi_17",
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 37,
+      "_byte_offset": 1593,
+      "FormatStr": "[baishi_01]",
+      "FrameNo": 19,
+      "AtlasName": "YsEmoji",
+      "IconName": "bishi_18",
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 38,
+      "_byte_offset": 1635,
+      "FormatStr": "[bushuang_01]",
+      "FrameNo": 1,
+      "AtlasName": "YsEmoji",
+      "IconName": "bushuang_00",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 39,
+      "_byte_offset": 1682,
+      "FormatStr": "[bushuang_01]",
+      "FrameNo": 2,
+      "AtlasName": "YsEmoji",
+      "IconName": "bushuang_01",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 40,
+      "_byte_offset": 1729,
+      "FormatStr": "[bushuang_01]",
+      "FrameNo": 3,
+      "AtlasName": "YsEmoji",
+      "IconName": "bushuang_02",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 41,
+      "_byte_offset": 1776,
+      "FormatStr": "[bushuang_01]",
+      "FrameNo": 4,
+      "AtlasName": "YsEmoji",
+      "IconName": "bushuang_03",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 42,
+      "_byte_offset": 1823,
+      "FormatStr": "[bushuang_01]",
+      "FrameNo": 5,
+      "AtlasName": "YsEmoji",
+      "IconName": "bushuang_04",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 43,
+      "_byte_offset": 1870,
+      "FormatStr": "[bushuang_01]",
+      "FrameNo": 6,
+      "AtlasName": "YsEmoji",
+      "IconName": "bushuang_05",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 44,
+      "_byte_offset": 1917,
+      "FormatStr": "[bushuang_01]",
+      "FrameNo": 7,
+      "AtlasName": "YsEmoji",
+      "IconName": "bushuang_06",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 45,
+      "_byte_offset": 1964,
+      "FormatStr": "[bushuang_01]",
+      "FrameNo": 8,
+      "AtlasName": "YsEmoji",
+      "IconName": "bushuang_07",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 46,
+      "_byte_offset": 2011,
+      "FormatStr": "[bushuang_01]",
+      "FrameNo": 9,
+      "AtlasName": "YsEmoji",
+      "IconName": "bushuang_08",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 47,
+      "_byte_offset": 2058,
+      "FormatStr": "[bushuang_01]",
+      "FrameNo": 10,
+      "AtlasName": "YsEmoji",
+      "IconName": "bushuang_09",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 48,
+      "_byte_offset": 2105,
+      "FormatStr": "[bushuang_01]",
+      "FrameNo": 11,
+      "AtlasName": "YsEmoji",
+      "IconName": "bushuang_10",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 49,
+      "_byte_offset": 2152,
+      "FormatStr": "[bushuang_01]",
+      "FrameNo": 12,
+      "AtlasName": "YsEmoji",
+      "IconName": "bushuang_11",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 50,
+      "_byte_offset": 2199,
+      "FormatStr": "[bushuang_01]",
+      "FrameNo": 13,
+      "AtlasName": "YsEmoji",
+      "IconName": "bushuang_12",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 51,
+      "_byte_offset": 2246,
+      "FormatStr": "[bushuang_01]",
+      "FrameNo": 14,
+      "AtlasName": "YsEmoji",
+      "IconName": "bushuang_13",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 52,
+      "_byte_offset": 2293,
+      "FormatStr": "[bushuang_01]",
+      "FrameNo": 15,
+      "AtlasName": "YsEmoji",
+      "IconName": "bushuang_14",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 53,
+      "_byte_offset": 2340,
+      "FormatStr": "[bushuang_01]",
+      "FrameNo": 16,
+      "AtlasName": "YsEmoji",
+      "IconName": "bushuang_15",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 54,
+      "_byte_offset": 2387,
+      "FormatStr": "[bushuang_01]",
+      "FrameNo": 17,
+      "AtlasName": "YsEmoji",
+      "IconName": "bushuang_16",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 55,
+      "_byte_offset": 2434,
+      "FormatStr": "[bushuang_01]",
+      "FrameNo": 18,
+      "AtlasName": "YsEmoji",
+      "IconName": "bushuang_17",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 56,
+      "_byte_offset": 2481,
+      "FormatStr": "[bushuang_01]",
+      "FrameNo": 19,
+      "AtlasName": "YsEmoji",
+      "IconName": "bushuang_18",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 57,
+      "_byte_offset": 2528,
+      "FormatStr": "[bushuang_01]",
+      "FrameNo": 20,
+      "AtlasName": "YsEmoji",
+      "IconName": "bushuang_19",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 58,
+      "_byte_offset": 2575,
+      "FormatStr": "[bushuang_01]",
+      "FrameNo": 21,
+      "AtlasName": "YsEmoji",
+      "IconName": "bushuang_20",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 59,
+      "_byte_offset": 2622,
+      "FormatStr": "[bushuang_01]",
+      "FrameNo": 22,
+      "AtlasName": "YsEmoji",
+      "IconName": "bushuang_21",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 60,
+      "_byte_offset": 2669,
+      "FormatStr": "[chijing_01]",
+      "FrameNo": 1,
+      "AtlasName": "YsEmoji",
+      "IconName": "chijing_00",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 61,
+      "_byte_offset": 2714,
+      "FormatStr": "[chijing_01]",
+      "FrameNo": 2,
+      "AtlasName": "YsEmoji",
+      "IconName": "chijing_01",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 62,
+      "_byte_offset": 2759,
+      "FormatStr": "[chijing_01]",
+      "FrameNo": 3,
+      "AtlasName": "YsEmoji",
+      "IconName": "chijing_02",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 63,
+      "_byte_offset": 2804,
+      "FormatStr": "[chijing_01]",
+      "FrameNo": 4,
+      "AtlasName": "YsEmoji",
+      "IconName": "chijing_03",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 64,
+      "_byte_offset": 2849,
+      "FormatStr": "[chijing_01]",
+      "FrameNo": 5,
+      "AtlasName": "YsEmoji",
+      "IconName": "chijing_04",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 65,
+      "_byte_offset": 2894,
+      "FormatStr": "[chijing_01]",
+      "FrameNo": 6,
+      "AtlasName": "YsEmoji",
+      "IconName": "chijing_05",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 66,
+      "_byte_offset": 2939,
+      "FormatStr": "[chijing_01]",
+      "FrameNo": 7,
+      "AtlasName": "YsEmoji",
+      "IconName": "chijing_06",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 67,
+      "_byte_offset": 2984,
+      "FormatStr": "[chijing_01]",
+      "FrameNo": 8,
+      "AtlasName": "YsEmoji",
+      "IconName": "chijing_07",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 68,
+      "_byte_offset": 3029,
+      "FormatStr": "[chijing_01]",
+      "FrameNo": 9,
+      "AtlasName": "YsEmoji",
+      "IconName": "chijing_08",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 69,
+      "_byte_offset": 3074,
+      "FormatStr": "[chijing_01]",
+      "FrameNo": 10,
+      "AtlasName": "YsEmoji",
+      "IconName": "chijing_09",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 70,
+      "_byte_offset": 3119,
+      "FormatStr": "[chijing_01]",
+      "FrameNo": 11,
+      "AtlasName": "YsEmoji",
+      "IconName": "chijing_10",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 71,
+      "_byte_offset": 3164,
+      "FormatStr": "[chijing_01]",
+      "FrameNo": 12,
+      "AtlasName": "YsEmoji",
+      "IconName": "chijing_11",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 72,
+      "_byte_offset": 3209,
+      "FormatStr": "[chijing_01]",
+      "FrameNo": 13,
+      "AtlasName": "YsEmoji",
+      "IconName": "chijing_12",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 73,
+      "_byte_offset": 3254,
+      "FormatStr": "[daimeng_01]",
+      "FrameNo": 1,
+      "AtlasName": "YsEmoji",
+      "IconName": "daimeng_00",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 74,
+      "_byte_offset": 3299,
+      "FormatStr": "[daimeng_01]",
+      "FrameNo": 2,
+      "AtlasName": "YsEmoji",
+      "IconName": "daimeng_01",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 75,
+      "_byte_offset": 3344,
+      "FormatStr": "[daimeng_01]",
+      "FrameNo": 3,
+      "AtlasName": "YsEmoji",
+      "IconName": "daimeng_02",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 76,
+      "_byte_offset": 3389,
+      "FormatStr": "[daimeng_01]",
+      "FrameNo": 4,
+      "AtlasName": "YsEmoji",
+      "IconName": "daimeng_03",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 77,
+      "_byte_offset": 3434,
+      "FormatStr": "[daimeng_01]",
+      "FrameNo": 5,
+      "AtlasName": "YsEmoji",
+      "IconName": "daimeng_04",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 78,
+      "_byte_offset": 3479,
+      "FormatStr": "[daimeng_01]",
+      "FrameNo": 6,
+      "AtlasName": "YsEmoji",
+      "IconName": "daimeng_05",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 79,
+      "_byte_offset": 3524,
+      "FormatStr": "[daimeng_01]",
+      "FrameNo": 7,
+      "AtlasName": "YsEmoji",
+      "IconName": "daimeng_06",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 80,
+      "_byte_offset": 3569,
+      "FormatStr": "[daimeng_01]",
+      "FrameNo": 8,
+      "AtlasName": "YsEmoji",
+      "IconName": "daimeng_07",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 81,
+      "_byte_offset": 3614,
+      "FormatStr": "[daimeng_01]",
+      "FrameNo": 9,
+      "AtlasName": "YsEmoji",
+      "IconName": "daimeng_08",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 82,
+      "_byte_offset": 3659,
+      "FormatStr": "[daimeng_01]",
+      "FrameNo": 10,
+      "AtlasName": "YsEmoji",
+      "IconName": "daimeng_09",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 83,
+      "_byte_offset": 3704,
+      "FormatStr": "[daimeng_01]",
+      "FrameNo": 11,
+      "AtlasName": "YsEmoji",
+      "IconName": "daimeng_10",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 84,
+      "_byte_offset": 3749,
+      "FormatStr": "[daimeng_01]",
+      "FrameNo": 12,
+      "AtlasName": "YsEmoji",
+      "IconName": "daimeng_11",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 85,
+      "_byte_offset": 3794,
+      "FormatStr": "[daimeng_01]",
+      "FrameNo": 13,
+      "AtlasName": "YsEmoji",
+      "IconName": "daimeng_12",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 86,
+      "_byte_offset": 3839,
+      "FormatStr": "[daimeng_01]",
+      "FrameNo": 14,
+      "AtlasName": "YsEmoji",
+      "IconName": "daimeng_13",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 87,
+      "_byte_offset": 3884,
+      "FormatStr": "[daimeng_01]",
+      "FrameNo": 15,
+      "AtlasName": "YsEmoji",
+      "IconName": "daimeng_14",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 88,
+      "_byte_offset": 3929,
+      "FormatStr": "[daimeng_01]",
+      "FrameNo": 16,
+      "AtlasName": "YsEmoji",
+      "IconName": "daimeng_15",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 89,
+      "_byte_offset": 3974,
+      "FormatStr": "[daimeng_01]",
+      "FrameNo": 17,
+      "AtlasName": "YsEmoji",
+      "IconName": "daimeng_16",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 90,
+      "_byte_offset": 4019,
+      "FormatStr": "[daimeng_01]",
+      "FrameNo": 18,
+      "AtlasName": "YsEmoji",
+      "IconName": "daimeng_17",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 91,
+      "_byte_offset": 4064,
+      "FormatStr": "[daimeng_01]",
+      "FrameNo": 19,
+      "AtlasName": "YsEmoji",
+      "IconName": "daimeng_18",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 92,
+      "_byte_offset": 4109,
+      "FormatStr": "[daimeng_01]",
+      "FrameNo": 20,
+      "AtlasName": "YsEmoji",
+      "IconName": "daimeng_19",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 93,
+      "_byte_offset": 4154,
+      "FormatStr": "[daimeng_01]",
+      "FrameNo": 21,
+      "AtlasName": "YsEmoji",
+      "IconName": "daimeng_20",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 94,
+      "_byte_offset": 4199,
+      "FormatStr": "[daimeng_01]",
+      "FrameNo": 22,
+      "AtlasName": "YsEmoji",
+      "IconName": "daimeng_21",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 95,
+      "_byte_offset": 4244,
+      "FormatStr": "[daimeng_01]",
+      "FrameNo": 23,
+      "AtlasName": "YsEmoji",
+      "IconName": "daimeng_22",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 96,
+      "_byte_offset": 4289,
+      "FormatStr": "[daimeng_01]",
+      "FrameNo": 24,
+      "AtlasName": "YsEmoji",
+      "IconName": "daimeng_23",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 97,
+      "_byte_offset": 4334,
+      "FormatStr": "[daimeng_01]",
+      "FrameNo": 25,
+      "AtlasName": "YsEmoji",
+      "IconName": "daimeng_24",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 98,
+      "_byte_offset": 4379,
+      "FormatStr": "[daxiao_01]",
+      "FrameNo": 1,
+      "AtlasName": "YsEmoji",
+      "IconName": "daxiao_00",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 99,
+      "_byte_offset": 4422,
+      "FormatStr": "[daxiao_01]",
+      "FrameNo": 2,
+      "AtlasName": "YsEmoji",
+      "IconName": "daxiao_01",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 100,
+      "_byte_offset": 4465,
+      "FormatStr": "[daxiao_01]",
+      "FrameNo": 3,
+      "AtlasName": "YsEmoji",
+      "IconName": "daxiao_02",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 101,
+      "_byte_offset": 4508,
+      "FormatStr": "[daxiao_01]",
+      "FrameNo": 4,
+      "AtlasName": "YsEmoji",
+      "IconName": "daxiao_03",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 102,
+      "_byte_offset": 4551,
+      "FormatStr": "[daxiao_01]",
+      "FrameNo": 5,
+      "AtlasName": "YsEmoji",
+      "IconName": "daxiao_04",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 103,
+      "_byte_offset": 4594,
+      "FormatStr": "[daxiao_01]",
+      "FrameNo": 6,
+      "AtlasName": "YsEmoji",
+      "IconName": "daxiao_05",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 104,
+      "_byte_offset": 4637,
+      "FormatStr": "[daxiao_01]",
+      "FrameNo": 7,
+      "AtlasName": "YsEmoji",
+      "IconName": "daxiao_06",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 105,
+      "_byte_offset": 4680,
+      "FormatStr": "[daxiao_01]",
+      "FrameNo": 8,
+      "AtlasName": "YsEmoji",
+      "IconName": "daxiao_07",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 106,
+      "_byte_offset": 4723,
+      "FormatStr": "[daxiao_01]",
+      "FrameNo": 9,
+      "AtlasName": "YsEmoji",
+      "IconName": "daxiao_08",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 107,
+      "_byte_offset": 4766,
+      "FormatStr": "[daxiao_01]",
+      "FrameNo": 10,
+      "AtlasName": "YsEmoji",
+      "IconName": "daxiao_09",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 108,
+      "_byte_offset": 4809,
+      "FormatStr": "[daxiao_01]",
+      "FrameNo": 11,
+      "AtlasName": "YsEmoji",
+      "IconName": "daxiao_10",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 109,
+      "_byte_offset": 4852,
+      "FormatStr": "[daxiao_01]",
+      "FrameNo": 12,
+      "AtlasName": "YsEmoji",
+      "IconName": "daxiao_11",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 110,
+      "_byte_offset": 4895,
+      "FormatStr": "[daxiao_01]",
+      "FrameNo": 13,
+      "AtlasName": "YsEmoji",
+      "IconName": "daxiao_12",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 111,
+      "_byte_offset": 4938,
+      "FormatStr": "[daxiao_01]",
+      "FrameNo": 14,
+      "AtlasName": "YsEmoji",
+      "IconName": "daxiao_13",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 112,
+      "_byte_offset": 4981,
+      "FormatStr": "[daxiao_01]",
+      "FrameNo": 15,
+      "AtlasName": "YsEmoji",
+      "IconName": "daxiao_14",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 113,
+      "_byte_offset": 5024,
+      "FormatStr": "[fadai_01]",
+      "FrameNo": 1,
+      "AtlasName": "YsEmoji",
+      "IconName": "fadai_00",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 114,
+      "_byte_offset": 5065,
+      "FormatStr": "[fadai_01]",
+      "FrameNo": 2,
+      "AtlasName": "YsEmoji",
+      "IconName": "fadai_01",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 115,
+      "_byte_offset": 5106,
+      "FormatStr": "[fadai_01]",
+      "FrameNo": 3,
+      "AtlasName": "YsEmoji",
+      "IconName": "fadai_02",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 116,
+      "_byte_offset": 5147,
+      "FormatStr": "[fadai_01]",
+      "FrameNo": 4,
+      "AtlasName": "YsEmoji",
+      "IconName": "fadai_03",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 117,
+      "_byte_offset": 5188,
+      "FormatStr": "[fadai_01]",
+      "FrameNo": 5,
+      "AtlasName": "YsEmoji",
+      "IconName": "fadai_04",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 118,
+      "_byte_offset": 5229,
+      "FormatStr": "[fadai_01]",
+      "FrameNo": 6,
+      "AtlasName": "YsEmoji",
+      "IconName": "fadai_05",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 119,
+      "_byte_offset": 5270,
+      "FormatStr": "[fadai_01]",
+      "FrameNo": 7,
+      "AtlasName": "YsEmoji",
+      "IconName": "fadai_06",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 120,
+      "_byte_offset": 5311,
+      "FormatStr": "[fadai_01]",
+      "FrameNo": 8,
+      "AtlasName": "YsEmoji",
+      "IconName": "fadai_07",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 121,
+      "_byte_offset": 5352,
+      "FormatStr": "[fadai_01]",
+      "FrameNo": 9,
+      "AtlasName": "YsEmoji",
+      "IconName": "fadai_08",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 122,
+      "_byte_offset": 5393,
+      "FormatStr": "[fadai_01]",
+      "FrameNo": 10,
+      "AtlasName": "YsEmoji",
+      "IconName": "fadai_09",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 123,
+      "_byte_offset": 5434,
+      "FormatStr": "[fadai_01]",
+      "FrameNo": 11,
+      "AtlasName": "YsEmoji",
+      "IconName": "fadai_10",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 124,
+      "_byte_offset": 5475,
+      "FormatStr": "[fadai_01]",
+      "FrameNo": 12,
+      "AtlasName": "YsEmoji",
+      "IconName": "fadai_11",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 125,
+      "_byte_offset": 5516,
+      "FormatStr": "[fadai_01]",
+      "FrameNo": 13,
+      "AtlasName": "YsEmoji",
+      "IconName": "fadai_12",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 126,
+      "_byte_offset": 5557,
+      "FormatStr": "[fadai_01]",
+      "FrameNo": 14,
+      "AtlasName": "YsEmoji",
+      "IconName": "fadai_13",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 127,
+      "_byte_offset": 5598,
+      "FormatStr": "[fadai_01]",
+      "FrameNo": 15,
+      "AtlasName": "YsEmoji",
+      "IconName": "fadai_14",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 128,
+      "_byte_offset": 5639,
+      "FormatStr": "[fadai_01]",
+      "FrameNo": 16,
+      "AtlasName": "YsEmoji",
+      "IconName": "fadai_15",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 129,
+      "_byte_offset": 5680,
+      "FormatStr": "[fadai_01]",
+      "FrameNo": 17,
+      "AtlasName": "YsEmoji",
+      "IconName": "fadai_16",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 130,
+      "_byte_offset": 5721,
+      "FormatStr": "[fadai_01]",
+      "FrameNo": 18,
+      "AtlasName": "YsEmoji",
+      "IconName": "fadai_17",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 131,
+      "_byte_offset": 5762,
+      "FormatStr": "[fadai_01]",
+      "FrameNo": 19,
+      "AtlasName": "YsEmoji",
+      "IconName": "fadai_18",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 132,
+      "_byte_offset": 5803,
+      "FormatStr": "[fadai_01]",
+      "FrameNo": 20,
+      "AtlasName": "YsEmoji",
+      "IconName": "fadai_19",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 133,
+      "_byte_offset": 5844,
+      "FormatStr": "[fadai_01]",
+      "FrameNo": 21,
+      "AtlasName": "YsEmoji",
+      "IconName": "fadai_20",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 134,
+      "_byte_offset": 5885,
+      "FormatStr": "[fadai_01]",
+      "FrameNo": 22,
+      "AtlasName": "YsEmoji",
+      "IconName": "fadai_21",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 135,
+      "_byte_offset": 5926,
+      "FormatStr": "[fadai_01]",
+      "FrameNo": 23,
+      "AtlasName": "YsEmoji",
+      "IconName": "fadai_22",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 136,
+      "_byte_offset": 5967,
+      "FormatStr": "[fadai_01]",
+      "FrameNo": 24,
+      "AtlasName": "YsEmoji",
+      "IconName": "fadai_23",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 137,
+      "_byte_offset": 6008,
+      "FormatStr": "[fadai_01]",
+      "FrameNo": 25,
+      "AtlasName": "YsEmoji",
+      "IconName": "fadai_24",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 138,
+      "_byte_offset": 6049,
+      "FormatStr": "[fadai_01]",
+      "FrameNo": 26,
+      "AtlasName": "YsEmoji",
+      "IconName": "fadai_25",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 139,
+      "_byte_offset": 6090,
+      "FormatStr": "[fadai_01]",
+      "FrameNo": 27,
+      "AtlasName": "YsEmoji",
+      "IconName": "fadai_26",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 140,
+      "_byte_offset": 6131,
+      "FormatStr": "[fadai_01]",
+      "FrameNo": 28,
+      "AtlasName": "YsEmoji",
+      "IconName": "fadai_27",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 141,
+      "_byte_offset": 6172,
+      "FormatStr": "[fadai_01]",
+      "FrameNo": 29,
+      "AtlasName": "YsEmoji",
+      "IconName": "fadai_28",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 142,
+      "_byte_offset": 6213,
+      "FormatStr": "[fadai_01]",
+      "FrameNo": 30,
+      "AtlasName": "YsEmoji",
+      "IconName": "fadai_29",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 143,
+      "_byte_offset": 6254,
+      "FormatStr": "[fadai_01]",
+      "FrameNo": 31,
+      "AtlasName": "YsEmoji",
+      "IconName": "fadai_30",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 144,
+      "_byte_offset": 6295,
+      "FormatStr": "[fadai_01]",
+      "FrameNo": 32,
+      "AtlasName": "YsEmoji",
+      "IconName": "fadai_31",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 145,
+      "_byte_offset": 6336,
+      "FormatStr": "[fadai_01]",
+      "FrameNo": 33,
+      "AtlasName": "YsEmoji",
+      "IconName": "fadai_32",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 146,
+      "_byte_offset": 6377,
+      "FormatStr": "[fadai_01]",
+      "FrameNo": 34,
+      "AtlasName": "YsEmoji",
+      "IconName": "fadai_33",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 147,
+      "_byte_offset": 6418,
+      "FormatStr": "[fadai_01]",
+      "FrameNo": 35,
+      "AtlasName": "YsEmoji",
+      "IconName": "fadai_34",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 148,
+      "_byte_offset": 6459,
+      "FormatStr": "[fadai_01]",
+      "FrameNo": 36,
+      "AtlasName": "YsEmoji",
+      "IconName": "fadai_35",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 149,
+      "_byte_offset": 6500,
+      "FormatStr": "[feiwen_01]",
+      "FrameNo": 1,
+      "AtlasName": "YsEmoji",
+      "IconName": "feiwen_00",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 150,
+      "_byte_offset": 6543,
+      "FormatStr": "[feiwen_01]",
+      "FrameNo": 2,
+      "AtlasName": "YsEmoji",
+      "IconName": "feiwen_01",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 151,
+      "_byte_offset": 6586,
+      "FormatStr": "[feiwen_01]",
+      "FrameNo": 3,
+      "AtlasName": "YsEmoji",
+      "IconName": "feiwen_02",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 152,
+      "_byte_offset": 6629,
+      "FormatStr": "[feiwen_01]",
+      "FrameNo": 4,
+      "AtlasName": "YsEmoji",
+      "IconName": "feiwen_03",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 153,
+      "_byte_offset": 6672,
+      "FormatStr": "[feiwen_01]",
+      "FrameNo": 5,
+      "AtlasName": "YsEmoji",
+      "IconName": "feiwen_04",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 154,
+      "_byte_offset": 6715,
+      "FormatStr": "[feiwen_01]",
+      "FrameNo": 6,
+      "AtlasName": "YsEmoji",
+      "IconName": "feiwen_05",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 155,
+      "_byte_offset": 6758,
+      "FormatStr": "[feiwen_01]",
+      "FrameNo": 7,
+      "AtlasName": "YsEmoji",
+      "IconName": "feiwen_06",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 156,
+      "_byte_offset": 6801,
+      "FormatStr": "[feiwen_01]",
+      "FrameNo": 8,
+      "AtlasName": "YsEmoji",
+      "IconName": "feiwen_07",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 157,
+      "_byte_offset": 6844,
+      "FormatStr": "[feiwen_01]",
+      "FrameNo": 9,
+      "AtlasName": "YsEmoji",
+      "IconName": "feiwen_08",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 158,
+      "_byte_offset": 6887,
+      "FormatStr": "[feiwen_01]",
+      "FrameNo": 10,
+      "AtlasName": "YsEmoji",
+      "IconName": "feiwen_09",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 159,
+      "_byte_offset": 6930,
+      "FormatStr": "[feiwen_01]",
+      "FrameNo": 11,
+      "AtlasName": "YsEmoji",
+      "IconName": "feiwen_10",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 160,
+      "_byte_offset": 6973,
+      "FormatStr": "[feiwen_01]",
+      "FrameNo": 12,
+      "AtlasName": "YsEmoji",
+      "IconName": "feiwen_11",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 161,
+      "_byte_offset": 7016,
+      "FormatStr": "[feiwen_01]",
+      "FrameNo": 13,
+      "AtlasName": "YsEmoji",
+      "IconName": "feiwen_12",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 162,
+      "_byte_offset": 7059,
+      "FormatStr": "[feiwen_01]",
+      "FrameNo": 14,
+      "AtlasName": "YsEmoji",
+      "IconName": "feiwen_13",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 163,
+      "_byte_offset": 7102,
+      "FormatStr": "[feiwen_01]",
+      "FrameNo": 15,
+      "AtlasName": "YsEmoji",
+      "IconName": "feiwen_14",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 164,
+      "_byte_offset": 7145,
+      "FormatStr": "[feiwen_01]",
+      "FrameNo": 16,
+      "AtlasName": "YsEmoji",
+      "IconName": "feiwen_15",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 165,
+      "_byte_offset": 7188,
+      "FormatStr": "[guzhang_01]",
+      "FrameNo": 1,
+      "AtlasName": "YsEmoji",
+      "IconName": "guzhang_00",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 166,
+      "_byte_offset": 7233,
+      "FormatStr": "[guzhang_01]",
+      "FrameNo": 2,
+      "AtlasName": "YsEmoji",
+      "IconName": "guzhang_01",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 167,
+      "_byte_offset": 7278,
+      "FormatStr": "[guzhang_01]",
+      "FrameNo": 3,
+      "AtlasName": "YsEmoji",
+      "IconName": "guzhang_02",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 168,
+      "_byte_offset": 7323,
+      "FormatStr": "[guzhang_01]",
+      "FrameNo": 4,
+      "AtlasName": "YsEmoji",
+      "IconName": "guzhang_03",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 169,
+      "_byte_offset": 7368,
+      "FormatStr": "[guzhang_01]",
+      "FrameNo": 5,
+      "AtlasName": "YsEmoji",
+      "IconName": "guzhang_04",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 170,
+      "_byte_offset": 7413,
+      "FormatStr": "[guzhang_01]",
+      "FrameNo": 6,
+      "AtlasName": "YsEmoji",
+      "IconName": "guzhang_05",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 171,
+      "_byte_offset": 7458,
+      "FormatStr": "[guzhang_01]",
+      "FrameNo": 7,
+      "AtlasName": "YsEmoji",
+      "IconName": "guzhang_06",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 172,
+      "_byte_offset": 7503,
+      "FormatStr": "[guzhang_01]",
+      "FrameNo": 8,
+      "AtlasName": "YsEmoji",
+      "IconName": "guzhang_07",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 173,
+      "_byte_offset": 7548,
+      "FormatStr": "[guzhang_01]",
+      "FrameNo": 9,
+      "AtlasName": "YsEmoji",
+      "IconName": "guzhang_08",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 174,
+      "_byte_offset": 7593,
+      "FormatStr": "[guzhang_01]",
+      "FrameNo": 10,
+      "AtlasName": "YsEmoji",
+      "IconName": "guzhang_09",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 175,
+      "_byte_offset": 7638,
+      "FormatStr": "[guzhang_01]",
+      "FrameNo": 11,
+      "AtlasName": "YsEmoji",
+      "IconName": "guzhang_10",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 176,
+      "_byte_offset": 7683,
+      "FormatStr": "[guzhang_01]",
+      "FrameNo": 12,
+      "AtlasName": "YsEmoji",
+      "IconName": "guzhang_11",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 177,
+      "_byte_offset": 7728,
+      "FormatStr": "[guzhang_01]",
+      "FrameNo": 13,
+      "AtlasName": "YsEmoji",
+      "IconName": "guzhang_12",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 178,
+      "_byte_offset": 7773,
+      "FormatStr": "[guzhang_01]",
+      "FrameNo": 14,
+      "AtlasName": "YsEmoji",
+      "IconName": "guzhang_13",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 179,
+      "_byte_offset": 7818,
+      "FormatStr": "[guzhang_01]",
+      "FrameNo": 15,
+      "AtlasName": "YsEmoji",
+      "IconName": "guzhang_14",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 180,
+      "_byte_offset": 7863,
+      "FormatStr": "[guzhang_01]",
+      "FrameNo": 16,
+      "AtlasName": "YsEmoji",
+      "IconName": "guzhang_15",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 181,
+      "_byte_offset": 7908,
+      "FormatStr": "[guzhang_01]",
+      "FrameNo": 17,
+      "AtlasName": "YsEmoji",
+      "IconName": "guzhang_16",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 182,
+      "_byte_offset": 7953,
+      "FormatStr": "[guzhang_01]",
+      "FrameNo": 18,
+      "AtlasName": "YsEmoji",
+      "IconName": "guzhang_17",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 183,
+      "_byte_offset": 7998,
+      "FormatStr": "[guzhang_01]",
+      "FrameNo": 19,
+      "AtlasName": "YsEmoji",
+      "IconName": "guzhang_18",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 184,
+      "_byte_offset": 8043,
+      "FormatStr": "[guzhang_01]",
+      "FrameNo": 20,
+      "AtlasName": "YsEmoji",
+      "IconName": "guzhang_19",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 185,
+      "_byte_offset": 8088,
+      "FormatStr": "[guzhang_01]",
+      "FrameNo": 21,
+      "AtlasName": "YsEmoji",
+      "IconName": "guzhang_20",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 186,
+      "_byte_offset": 8133,
+      "FormatStr": "[guzhang_01]",
+      "FrameNo": 22,
+      "AtlasName": "YsEmoji",
+      "IconName": "guzhang_21",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 187,
+      "_byte_offset": 8178,
+      "FormatStr": "[guzhang_01]",
+      "FrameNo": 23,
+      "AtlasName": "YsEmoji",
+      "IconName": "guzhang_22",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 188,
+      "_byte_offset": 8223,
+      "FormatStr": "[guzhang_01]",
+      "FrameNo": 24,
+      "AtlasName": "YsEmoji",
+      "IconName": "guzhang_23",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 189,
+      "_byte_offset": 8268,
+      "FormatStr": "[guzhang_01]",
+      "FrameNo": 25,
+      "AtlasName": "YsEmoji",
+      "IconName": "guzhang_24",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 190,
+      "_byte_offset": 8313,
+      "FormatStr": "[guzhang_01]",
+      "FrameNo": 26,
+      "AtlasName": "YsEmoji",
+      "IconName": "guzhang_25",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 191,
+      "_byte_offset": 8358,
+      "FormatStr": "[haixiu_01]",
+      "FrameNo": 1,
+      "AtlasName": "YsEmoji",
+      "IconName": "haixiu_00",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 192,
+      "_byte_offset": 8401,
+      "FormatStr": "[haixiu_01]",
+      "FrameNo": 2,
+      "AtlasName": "YsEmoji",
+      "IconName": "haixiu_01",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 193,
+      "_byte_offset": 8444,
+      "FormatStr": "[haixiu_01]",
+      "FrameNo": 3,
+      "AtlasName": "YsEmoji",
+      "IconName": "haixiu_02",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 194,
+      "_byte_offset": 8487,
+      "FormatStr": "[haixiu_01]",
+      "FrameNo": 4,
+      "AtlasName": "YsEmoji",
+      "IconName": "haixiu_03",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 195,
+      "_byte_offset": 8530,
+      "FormatStr": "[haixiu_01]",
+      "FrameNo": 5,
+      "AtlasName": "YsEmoji",
+      "IconName": "haixiu_04",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 196,
+      "_byte_offset": 8573,
+      "FormatStr": "[haixiu_01]",
+      "FrameNo": 6,
+      "AtlasName": "YsEmoji",
+      "IconName": "haixiu_05",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 197,
+      "_byte_offset": 8616,
+      "FormatStr": "[haixiu_01]",
+      "FrameNo": 7,
+      "AtlasName": "YsEmoji",
+      "IconName": "haixiu_06",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 198,
+      "_byte_offset": 8659,
+      "FormatStr": "[haixiu_01]",
+      "FrameNo": 8,
+      "AtlasName": "YsEmoji",
+      "IconName": "haixiu_07",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 199,
+      "_byte_offset": 8702,
+      "FormatStr": "[haixiu_01]",
+      "FrameNo": 9,
+      "AtlasName": "YsEmoji",
+      "IconName": "haixiu_08",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 200,
+      "_byte_offset": 8745,
+      "FormatStr": "[haixiu_01]",
+      "FrameNo": 10,
+      "AtlasName": "YsEmoji",
+      "IconName": "haixiu_09",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 201,
+      "_byte_offset": 8788,
+      "FormatStr": "[haixiu_01]",
+      "FrameNo": 11,
+      "AtlasName": "YsEmoji",
+      "IconName": "haixiu_10",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 202,
+      "_byte_offset": 8831,
+      "FormatStr": "[haixiu_01]",
+      "FrameNo": 12,
+      "AtlasName": "YsEmoji",
+      "IconName": "haixiu_11",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 203,
+      "_byte_offset": 8874,
+      "FormatStr": "[haixiu_01]",
+      "FrameNo": 13,
+      "AtlasName": "YsEmoji",
+      "IconName": "haixiu_12",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 204,
+      "_byte_offset": 8917,
+      "FormatStr": "[haixiu_01]",
+      "FrameNo": 14,
+      "AtlasName": "YsEmoji",
+      "IconName": "haixiu_13",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 205,
+      "_byte_offset": 8960,
+      "FormatStr": "[haixiu_01]",
+      "FrameNo": 15,
+      "AtlasName": "YsEmoji",
+      "IconName": "haixiu_14",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 206,
+      "_byte_offset": 9003,
+      "FormatStr": "[haixiu_01]",
+      "FrameNo": 16,
+      "AtlasName": "YsEmoji",
+      "IconName": "haixiu_15",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 207,
+      "_byte_offset": 9046,
+      "FormatStr": "[haixiu_01]",
+      "FrameNo": 17,
+      "AtlasName": "YsEmoji",
+      "IconName": "haixiu_16",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 208,
+      "_byte_offset": 9089,
+      "FormatStr": "[haixiu_01]",
+      "FrameNo": 18,
+      "AtlasName": "YsEmoji",
+      "IconName": "haixiu_17",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 209,
+      "_byte_offset": 9132,
+      "FormatStr": "[haixiu_01]",
+      "FrameNo": 19,
+      "AtlasName": "YsEmoji",
+      "IconName": "haixiu_18",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 210,
+      "_byte_offset": 9175,
+      "FormatStr": "[haixiu_01]",
+      "FrameNo": 20,
+      "AtlasName": "YsEmoji",
+      "IconName": "haixiu_19",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 211,
+      "_byte_offset": 9218,
+      "FormatStr": "[haixiu_01]",
+      "FrameNo": 21,
+      "AtlasName": "YsEmoji",
+      "IconName": "haixiu_20",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 212,
+      "_byte_offset": 9261,
+      "FormatStr": "[hanxiao_01]",
+      "FrameNo": 1,
+      "AtlasName": "YsEmoji",
+      "IconName": "hanxiao_00",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 213,
+      "_byte_offset": 9306,
+      "FormatStr": "[hanxiao_01]",
+      "FrameNo": 2,
+      "AtlasName": "YsEmoji",
+      "IconName": "hanxiao_01",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 214,
+      "_byte_offset": 9351,
+      "FormatStr": "[hanxiao_01]",
+      "FrameNo": 3,
+      "AtlasName": "YsEmoji",
+      "IconName": "hanxiao_02",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 215,
+      "_byte_offset": 9396,
+      "FormatStr": "[hanxiao_01]",
+      "FrameNo": 4,
+      "AtlasName": "YsEmoji",
+      "IconName": "hanxiao_03",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 216,
+      "_byte_offset": 9441,
+      "FormatStr": "[hanxiao_01]",
+      "FrameNo": 5,
+      "AtlasName": "YsEmoji",
+      "IconName": "hanxiao_04",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 217,
+      "_byte_offset": 9486,
+      "FormatStr": "[hanxiao_01]",
+      "FrameNo": 6,
+      "AtlasName": "YsEmoji",
+      "IconName": "hanxiao_05",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 218,
+      "_byte_offset": 9531,
+      "FormatStr": "[hanxiao_01]",
+      "FrameNo": 7,
+      "AtlasName": "YsEmoji",
+      "IconName": "hanxiao_06",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 219,
+      "_byte_offset": 9576,
+      "FormatStr": "[hanxiao_01]",
+      "FrameNo": 8,
+      "AtlasName": "YsEmoji",
+      "IconName": "hanxiao_07",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 220,
+      "_byte_offset": 9621,
+      "FormatStr": "[hanxiao_01]",
+      "FrameNo": 9,
+      "AtlasName": "YsEmoji",
+      "IconName": "hanxiao_08",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 221,
+      "_byte_offset": 9666,
+      "FormatStr": "[hanxiao_01]",
+      "FrameNo": 10,
+      "AtlasName": "YsEmoji",
+      "IconName": "hanxiao_09",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 222,
+      "_byte_offset": 9711,
+      "FormatStr": "[hanxiao_01]",
+      "FrameNo": 11,
+      "AtlasName": "YsEmoji",
+      "IconName": "hanxiao_10",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 223,
+      "_byte_offset": 9756,
+      "FormatStr": "[hanxiao_01]",
+      "FrameNo": 12,
+      "AtlasName": "YsEmoji",
+      "IconName": "hanxiao_11",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 224,
+      "_byte_offset": 9801,
+      "FormatStr": "[hanxiao_01]",
+      "FrameNo": 13,
+      "AtlasName": "YsEmoji",
+      "IconName": "hanxiao_12",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 225,
+      "_byte_offset": 9846,
+      "FormatStr": "[hanxiao_01]",
+      "FrameNo": 14,
+      "AtlasName": "YsEmoji",
+      "IconName": "hanxiao_13",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 226,
+      "_byte_offset": 9891,
+      "FormatStr": "[hanxiao_01]",
+      "FrameNo": 15,
+      "AtlasName": "YsEmoji",
+      "IconName": "hanxiao_14",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 227,
+      "_byte_offset": 9936,
+      "FormatStr": "[hanxiao_01]",
+      "FrameNo": 16,
+      "AtlasName": "YsEmoji",
+      "IconName": "hanxiao_15",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 228,
+      "_byte_offset": 9981,
+      "FormatStr": "[hanxiao_01]",
+      "FrameNo": 17,
+      "AtlasName": "YsEmoji",
+      "IconName": "hanxiao_16",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 229,
+      "_byte_offset": 10026,
+      "FormatStr": "[hanxiao_01]",
+      "FrameNo": 18,
+      "AtlasName": "YsEmoji",
+      "IconName": "hanxiao_17",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 230,
+      "_byte_offset": 10071,
+      "FormatStr": "[hanxiao_01]",
+      "FrameNo": 19,
+      "AtlasName": "YsEmoji",
+      "IconName": "hanxiao_18",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 231,
+      "_byte_offset": 10116,
+      "FormatStr": "[hanxiao_01]",
+      "FrameNo": 20,
+      "AtlasName": "YsEmoji",
+      "IconName": "hanxiao_19",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 232,
+      "_byte_offset": 10161,
+      "FormatStr": "[hanxiao_01]",
+      "FrameNo": 21,
+      "AtlasName": "YsEmoji",
+      "IconName": "hanxiao_20",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 233,
+      "_byte_offset": 10206,
+      "FormatStr": "[hanxiao_01]",
+      "FrameNo": 22,
+      "AtlasName": "YsEmoji",
+      "IconName": "hanxiao_21",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 234,
+      "_byte_offset": 10251,
+      "FormatStr": "[heiha_01]",
+      "FrameNo": 1,
+      "AtlasName": "YsEmoji",
+      "IconName": "heiha_00",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 235,
+      "_byte_offset": 10292,
+      "FormatStr": "[heiha_01]",
+      "FrameNo": 2,
+      "AtlasName": "YsEmoji",
+      "IconName": "heiha_01",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 236,
+      "_byte_offset": 10333,
+      "FormatStr": "[heiha_01]",
+      "FrameNo": 3,
+      "AtlasName": "YsEmoji",
+      "IconName": "heiha_02",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 237,
+      "_byte_offset": 10374,
+      "FormatStr": "[heiha_01]",
+      "FrameNo": 4,
+      "AtlasName": "YsEmoji",
+      "IconName": "heiha_03",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 238,
+      "_byte_offset": 10415,
+      "FormatStr": "[heiha_01]",
+      "FrameNo": 5,
+      "AtlasName": "YsEmoji",
+      "IconName": "heiha_04",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 239,
+      "_byte_offset": 10456,
+      "FormatStr": "[heiha_01]",
+      "FrameNo": 6,
+      "AtlasName": "YsEmoji",
+      "IconName": "heiha_05",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 240,
+      "_byte_offset": 10497,
+      "FormatStr": "[heiha_01]",
+      "FrameNo": 7,
+      "AtlasName": "YsEmoji",
+      "IconName": "heiha_06",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 241,
+      "_byte_offset": 10538,
+      "FormatStr": "[heiha_01]",
+      "FrameNo": 8,
+      "AtlasName": "YsEmoji",
+      "IconName": "heiha_07",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 242,
+      "_byte_offset": 10579,
+      "FormatStr": "[heiha_01]",
+      "FrameNo": 9,
+      "AtlasName": "YsEmoji",
+      "IconName": "heiha_08",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 243,
+      "_byte_offset": 10620,
+      "FormatStr": "[heiha_01]",
+      "FrameNo": 10,
+      "AtlasName": "YsEmoji",
+      "IconName": "heiha_09",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 244,
+      "_byte_offset": 10661,
+      "FormatStr": "[heiha_01]",
+      "FrameNo": 11,
+      "AtlasName": "YsEmoji",
+      "IconName": "heiha_10",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 245,
+      "_byte_offset": 10702,
+      "FormatStr": "[heiha_01]",
+      "FrameNo": 12,
+      "AtlasName": "YsEmoji",
+      "IconName": "heiha_11",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 246,
+      "_byte_offset": 10743,
+      "FormatStr": "[huaji_01]",
+      "FrameNo": 1,
+      "AtlasName": "YsEmoji",
+      "IconName": "huaji_00",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 247,
+      "_byte_offset": 10784,
+      "FormatStr": "[huaji_01]",
+      "FrameNo": 2,
+      "AtlasName": "YsEmoji",
+      "IconName": "huaji_01",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 248,
+      "_byte_offset": 10825,
+      "FormatStr": "[huaji_01]",
+      "FrameNo": 3,
+      "AtlasName": "YsEmoji",
+      "IconName": "huaji_02",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 249,
+      "_byte_offset": 10866,
+      "FormatStr": "[huaji_01]",
+      "FrameNo": 4,
+      "AtlasName": "YsEmoji",
+      "IconName": "huaji_03",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 250,
+      "_byte_offset": 10907,
+      "FormatStr": "[huaji_01]",
+      "FrameNo": 5,
+      "AtlasName": "YsEmoji",
+      "IconName": "huaji_04",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 251,
+      "_byte_offset": 10948,
+      "FormatStr": "[huaji_01]",
+      "FrameNo": 6,
+      "AtlasName": "YsEmoji",
+      "IconName": "huaji_05",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 252,
+      "_byte_offset": 10989,
+      "FormatStr": "[huaji_01]",
+      "FrameNo": 7,
+      "AtlasName": "YsEmoji",
+      "IconName": "huaji_06",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 253,
+      "_byte_offset": 11030,
+      "FormatStr": "[huaji_01]",
+      "FrameNo": 8,
+      "AtlasName": "YsEmoji",
+      "IconName": "huaji_07",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 254,
+      "_byte_offset": 11071,
+      "FormatStr": "[huaji_01]",
+      "FrameNo": 9,
+      "AtlasName": "YsEmoji",
+      "IconName": "huaji_08",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 255,
+      "_byte_offset": 11112,
+      "FormatStr": "[huaji_01]",
+      "FrameNo": 10,
+      "AtlasName": "YsEmoji",
+      "IconName": "huaji_09",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 256,
+      "_byte_offset": 11153,
+      "FormatStr": "[huaji_01]",
+      "FrameNo": 11,
+      "AtlasName": "YsEmoji",
+      "IconName": "huaji_10",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 257,
+      "_byte_offset": 11194,
+      "FormatStr": "[huaji_01]",
+      "FrameNo": 12,
+      "AtlasName": "YsEmoji",
+      "IconName": "huaji_11",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 258,
+      "_byte_offset": 11235,
+      "FormatStr": "[huaji_01]",
+      "FrameNo": 13,
+      "AtlasName": "YsEmoji",
+      "IconName": "huaji_12",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 259,
+      "_byte_offset": 11276,
+      "FormatStr": "[huaji_01]",
+      "FrameNo": 14,
+      "AtlasName": "YsEmoji",
+      "IconName": "huaji_13",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 260,
+      "_byte_offset": 11317,
+      "FormatStr": "[huaji_01]",
+      "FrameNo": 15,
+      "AtlasName": "YsEmoji",
+      "IconName": "huaji_14",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 261,
+      "_byte_offset": 11358,
+      "FormatStr": "[huaji_01]",
+      "FrameNo": 16,
+      "AtlasName": "YsEmoji",
+      "IconName": "huaji_15",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 262,
+      "_byte_offset": 11399,
+      "FormatStr": "[huaji_01]",
+      "FrameNo": 17,
+      "AtlasName": "YsEmoji",
+      "IconName": "huaji_16",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 263,
+      "_byte_offset": 11440,
+      "FormatStr": "[huaji_01]",
+      "FrameNo": 18,
+      "AtlasName": "YsEmoji",
+      "IconName": "huaji_17",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 264,
+      "_byte_offset": 11481,
+      "FormatStr": "[huaji_01]",
+      "FrameNo": 19,
+      "AtlasName": "YsEmoji",
+      "IconName": "huaji_18",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 265,
+      "_byte_offset": 11522,
+      "FormatStr": "[huaji_01]",
+      "FrameNo": 20,
+      "AtlasName": "YsEmoji",
+      "IconName": "huaji_19",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 266,
+      "_byte_offset": 11563,
+      "FormatStr": "[huaji_01]",
+      "FrameNo": 21,
+      "AtlasName": "YsEmoji",
+      "IconName": "huaji_20",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 267,
+      "_byte_offset": 11604,
+      "FormatStr": "[huaji_01]",
+      "FrameNo": 22,
+      "AtlasName": "YsEmoji",
+      "IconName": "huaji_21",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 268,
+      "_byte_offset": 11645,
+      "FormatStr": "[huaji_01]",
+      "FrameNo": 23,
+      "AtlasName": "YsEmoji",
+      "IconName": "huaji_22",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 269,
+      "_byte_offset": 11686,
+      "FormatStr": "[huaji_01]",
+      "FrameNo": 24,
+      "AtlasName": "YsEmoji",
+      "IconName": "huaji_23",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 270,
+      "_byte_offset": 11727,
+      "FormatStr": "[ku_01]",
+      "FrameNo": 1,
+      "AtlasName": "YsEmoji",
+      "IconName": "ku_00",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 271,
+      "_byte_offset": 11762,
+      "FormatStr": "[ku_01]",
+      "FrameNo": 2,
+      "AtlasName": "YsEmoji",
+      "IconName": "ku_01",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 272,
+      "_byte_offset": 11797,
+      "FormatStr": "[ku_01]",
+      "FrameNo": 3,
+      "AtlasName": "YsEmoji",
+      "IconName": "ku_02",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 273,
+      "_byte_offset": 11832,
+      "FormatStr": "[ku_01]",
+      "FrameNo": 4,
+      "AtlasName": "YsEmoji",
+      "IconName": "ku_03",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 274,
+      "_byte_offset": 11867,
+      "FormatStr": "[ku_01]",
+      "FrameNo": 5,
+      "AtlasName": "YsEmoji",
+      "IconName": "ku_04",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 275,
+      "_byte_offset": 11902,
+      "FormatStr": "[ku_01]",
+      "FrameNo": 6,
+      "AtlasName": "YsEmoji",
+      "IconName": "ku_05",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 276,
+      "_byte_offset": 11937,
+      "FormatStr": "[ku_01]",
+      "FrameNo": 7,
+      "AtlasName": "YsEmoji",
+      "IconName": "ku_06",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 277,
+      "_byte_offset": 11972,
+      "FormatStr": "[ku_01]",
+      "FrameNo": 8,
+      "AtlasName": "YsEmoji",
+      "IconName": "ku_07",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 278,
+      "_byte_offset": 12007,
+      "FormatStr": "[ku_01]",
+      "FrameNo": 9,
+      "AtlasName": "YsEmoji",
+      "IconName": "ku_08",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 279,
+      "_byte_offset": 12042,
+      "FormatStr": "[ku_01]",
+      "FrameNo": 10,
+      "AtlasName": "YsEmoji",
+      "IconName": "ku_09",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 280,
+      "_byte_offset": 12077,
+      "FormatStr": "[ku_01]",
+      "FrameNo": 11,
+      "AtlasName": "YsEmoji",
+      "IconName": "ku_10",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 281,
+      "_byte_offset": 12112,
+      "FormatStr": "[ku_01]",
+      "FrameNo": 12,
+      "AtlasName": "YsEmoji",
+      "IconName": "ku_11",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 282,
+      "_byte_offset": 12147,
+      "FormatStr": "[ku_01]",
+      "FrameNo": 13,
+      "AtlasName": "YsEmoji",
+      "IconName": "ku_12",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 283,
+      "_byte_offset": 12182,
+      "FormatStr": "[ku_01]",
+      "FrameNo": 14,
+      "AtlasName": "YsEmoji",
+      "IconName": "ku_13",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 284,
+      "_byte_offset": 12217,
+      "FormatStr": "[ku_01]",
+      "FrameNo": 15,
+      "AtlasName": "YsEmoji",
+      "IconName": "ku_14",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 285,
+      "_byte_offset": 12252,
+      "FormatStr": "[ku_01]",
+      "FrameNo": 16,
+      "AtlasName": "YsEmoji",
+      "IconName": "ku_15",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 286,
+      "_byte_offset": 12287,
+      "FormatStr": "[ku_01]",
+      "FrameNo": 17,
+      "AtlasName": "YsEmoji",
+      "IconName": "ku_16",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 287,
+      "_byte_offset": 12322,
+      "FormatStr": "[ku_01]",
+      "FrameNo": 18,
+      "AtlasName": "YsEmoji",
+      "IconName": "ku_17",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 288,
+      "_byte_offset": 12357,
+      "FormatStr": "[ku_01]",
+      "FrameNo": 19,
+      "AtlasName": "YsEmoji",
+      "IconName": "ku_18",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 289,
+      "_byte_offset": 12392,
+      "FormatStr": "[ku_01]",
+      "FrameNo": 20,
+      "AtlasName": "YsEmoji",
+      "IconName": "ku_19",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 290,
+      "_byte_offset": 12427,
+      "FormatStr": "[ku_01]",
+      "FrameNo": 21,
+      "AtlasName": "YsEmoji",
+      "IconName": "ku_20",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 291,
+      "_byte_offset": 12462,
+      "FormatStr": "[ku_01]",
+      "FrameNo": 22,
+      "AtlasName": "YsEmoji",
+      "IconName": "ku_21",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 292,
+      "_byte_offset": 12497,
+      "FormatStr": "[ku_01]",
+      "FrameNo": 23,
+      "AtlasName": "YsEmoji",
+      "IconName": "ku_22",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 293,
+      "_byte_offset": 12532,
+      "FormatStr": "[ku_01]",
+      "FrameNo": 24,
+      "AtlasName": "YsEmoji",
+      "IconName": "ku_23",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 294,
+      "_byte_offset": 12567,
+      "FormatStr": "[ku_01]",
+      "FrameNo": 25,
+      "AtlasName": "YsEmoji",
+      "IconName": "ku_24",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 295,
+      "_byte_offset": 12602,
+      "FormatStr": "[ku_01]",
+      "FrameNo": 26,
+      "AtlasName": "YsEmoji",
+      "IconName": "ku_25",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 296,
+      "_byte_offset": 12637,
+      "FormatStr": "[lenghan_01]",
+      "FrameNo": 1,
+      "AtlasName": "YsEmoji",
+      "IconName": "lenghan_00",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 297,
+      "_byte_offset": 12682,
+      "FormatStr": "[lenghan_01]",
+      "FrameNo": 2,
+      "AtlasName": "YsEmoji",
+      "IconName": "lenghan_01",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 298,
+      "_byte_offset": 12727,
+      "FormatStr": "[lenghan_01]",
+      "FrameNo": 3,
+      "AtlasName": "YsEmoji",
+      "IconName": "lenghan_02",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 299,
+      "_byte_offset": 12772,
+      "FormatStr": "[lenghan_01]",
+      "FrameNo": 4,
+      "AtlasName": "YsEmoji",
+      "IconName": "lenghan_03",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 300,
+      "_byte_offset": 12817,
+      "FormatStr": "[lenghan_01]",
+      "FrameNo": 5,
+      "AtlasName": "YsEmoji",
+      "IconName": "lenghan_04",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 301,
+      "_byte_offset": 12862,
+      "FormatStr": "[lenghan_01]",
+      "FrameNo": 6,
+      "AtlasName": "YsEmoji",
+      "IconName": "lenghan_05",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 302,
+      "_byte_offset": 12907,
+      "FormatStr": "[lenghan_01]",
+      "FrameNo": 7,
+      "AtlasName": "YsEmoji",
+      "IconName": "lenghan_06",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 303,
+      "_byte_offset": 12952,
+      "FormatStr": "[lenghan_01]",
+      "FrameNo": 8,
+      "AtlasName": "YsEmoji",
+      "IconName": "lenghan_07",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 304,
+      "_byte_offset": 12997,
+      "FormatStr": "[lenghan_01]",
+      "FrameNo": 9,
+      "AtlasName": "YsEmoji",
+      "IconName": "lenghan_08",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 305,
+      "_byte_offset": 13042,
+      "FormatStr": "[lenghan_01]",
+      "FrameNo": 10,
+      "AtlasName": "YsEmoji",
+      "IconName": "lenghan_09",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 306,
+      "_byte_offset": 13087,
+      "FormatStr": "[lenghan_01]",
+      "FrameNo": 11,
+      "AtlasName": "YsEmoji",
+      "IconName": "lenghan_10",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 307,
+      "_byte_offset": 13132,
+      "FormatStr": "[lenghan_01]",
+      "FrameNo": 12,
+      "AtlasName": "YsEmoji",
+      "IconName": "lenghan_11",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 308,
+      "_byte_offset": 13177,
+      "FormatStr": "[lenghan_01]",
+      "FrameNo": 13,
+      "AtlasName": "YsEmoji",
+      "IconName": "lenghan_12",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 309,
+      "_byte_offset": 13222,
+      "FormatStr": "[lenghan_01]",
+      "FrameNo": 14,
+      "AtlasName": "YsEmoji",
+      "IconName": "lenghan_13",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 310,
+      "_byte_offset": 13267,
+      "FormatStr": "[lenghan_01]",
+      "FrameNo": 15,
+      "AtlasName": "YsEmoji",
+      "IconName": "lenghan_14",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 311,
+      "_byte_offset": 13312,
+      "FormatStr": "[lenghan_01]",
+      "FrameNo": 16,
+      "AtlasName": "YsEmoji",
+      "IconName": "lenghan_15",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 312,
+      "_byte_offset": 13357,
+      "FormatStr": "[lenghan_01]",
+      "FrameNo": 17,
+      "AtlasName": "YsEmoji",
+      "IconName": "lenghan_16",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 313,
+      "_byte_offset": 13402,
+      "FormatStr": "[lenghan_01]",
+      "FrameNo": 18,
+      "AtlasName": "YsEmoji",
+      "IconName": "lenghan_17",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 314,
+      "_byte_offset": 13447,
+      "FormatStr": "[lenghan_01]",
+      "FrameNo": 19,
+      "AtlasName": "YsEmoji",
+      "IconName": "lenghan_18",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 315,
+      "_byte_offset": 13492,
+      "FormatStr": "[lenghan_01]",
+      "FrameNo": 20,
+      "AtlasName": "YsEmoji",
+      "IconName": "lenghan_19",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 316,
+      "_byte_offset": 13537,
+      "FormatStr": "[lenghan_01]",
+      "FrameNo": 21,
+      "AtlasName": "YsEmoji",
+      "IconName": "lenghan_20",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 317,
+      "_byte_offset": 13582,
+      "FormatStr": "[miao_01]",
+      "FrameNo": 1,
+      "AtlasName": "YsEmoji",
+      "IconName": "miao_00",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 318,
+      "_byte_offset": 13621,
+      "FormatStr": "[miao_01]",
+      "FrameNo": 2,
+      "AtlasName": "YsEmoji",
+      "IconName": "miao_01",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 319,
+      "_byte_offset": 13660,
+      "FormatStr": "[miao_01]",
+      "FrameNo": 3,
+      "AtlasName": "YsEmoji",
+      "IconName": "miao_02",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 320,
+      "_byte_offset": 13699,
+      "FormatStr": "[miao_01]",
+      "FrameNo": 4,
+      "AtlasName": "YsEmoji",
+      "IconName": "miao_03",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 321,
+      "_byte_offset": 13738,
+      "FormatStr": "[miao_01]",
+      "FrameNo": 5,
+      "AtlasName": "YsEmoji",
+      "IconName": "miao_04",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 322,
+      "_byte_offset": 13777,
+      "FormatStr": "[miao_01]",
+      "FrameNo": 6,
+      "AtlasName": "YsEmoji",
+      "IconName": "miao_05",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 323,
+      "_byte_offset": 13816,
+      "FormatStr": "[miao_01]",
+      "FrameNo": 7,
+      "AtlasName": "YsEmoji",
+      "IconName": "miao_06",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 324,
+      "_byte_offset": 13855,
+      "FormatStr": "[miao_01]",
+      "FrameNo": 8,
+      "AtlasName": "YsEmoji",
+      "IconName": "miao_07",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 325,
+      "_byte_offset": 13894,
+      "FormatStr": "[miao_01]",
+      "FrameNo": 9,
+      "AtlasName": "YsEmoji",
+      "IconName": "miao_08",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 326,
+      "_byte_offset": 13933,
+      "FormatStr": "[miao_01]",
+      "FrameNo": 10,
+      "AtlasName": "YsEmoji",
+      "IconName": "miao_09",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 327,
+      "_byte_offset": 13972,
+      "FormatStr": "[miao_01]",
+      "FrameNo": 11,
+      "AtlasName": "YsEmoji",
+      "IconName": "miao_10",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 328,
+      "_byte_offset": 14011,
+      "FormatStr": "[miao_01]",
+      "FrameNo": 12,
+      "AtlasName": "YsEmoji",
+      "IconName": "miao_11",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 329,
+      "_byte_offset": 14050,
+      "FormatStr": "[miao_01]",
+      "FrameNo": 13,
+      "AtlasName": "YsEmoji",
+      "IconName": "miao_12",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 330,
+      "_byte_offset": 14089,
+      "FormatStr": "[miao_01]",
+      "FrameNo": 14,
+      "AtlasName": "YsEmoji",
+      "IconName": "miao_13",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 331,
+      "_byte_offset": 14128,
+      "FormatStr": "[miao_01]",
+      "FrameNo": 15,
+      "AtlasName": "YsEmoji",
+      "IconName": "miao_14",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 332,
+      "_byte_offset": 14167,
+      "FormatStr": "[miao_01]",
+      "FrameNo": 16,
+      "AtlasName": "YsEmoji",
+      "IconName": "miao_15",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 333,
+      "_byte_offset": 14206,
+      "FormatStr": "[miao_01]",
+      "FrameNo": 17,
+      "AtlasName": "YsEmoji",
+      "IconName": "miao_16",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 334,
+      "_byte_offset": 14245,
+      "FormatStr": "[miao_01]",
+      "FrameNo": 18,
+      "AtlasName": "YsEmoji",
+      "IconName": "miao_17",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 335,
+      "_byte_offset": 14284,
+      "FormatStr": "[miao_01]",
+      "FrameNo": 19,
+      "AtlasName": "YsEmoji",
+      "IconName": "miao_18",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 336,
+      "_byte_offset": 14323,
+      "FormatStr": "[miao_01]",
+      "FrameNo": 20,
+      "AtlasName": "YsEmoji",
+      "IconName": "miao_19",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 337,
+      "_byte_offset": 14362,
+      "FormatStr": "[se_01]",
+      "FrameNo": 1,
+      "AtlasName": "YsEmoji",
+      "IconName": "se_00",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 338,
+      "_byte_offset": 14397,
+      "FormatStr": "[se_01]",
+      "FrameNo": 2,
+      "AtlasName": "YsEmoji",
+      "IconName": "se_01",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 339,
+      "_byte_offset": 14432,
+      "FormatStr": "[se_01]",
+      "FrameNo": 3,
+      "AtlasName": "YsEmoji",
+      "IconName": "se_02",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 340,
+      "_byte_offset": 14467,
+      "FormatStr": "[se_01]",
+      "FrameNo": 4,
+      "AtlasName": "YsEmoji",
+      "IconName": "se_03",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 341,
+      "_byte_offset": 14502,
+      "FormatStr": "[se_01]",
+      "FrameNo": 5,
+      "AtlasName": "YsEmoji",
+      "IconName": "se_04",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 342,
+      "_byte_offset": 14537,
+      "FormatStr": "[se_01]",
+      "FrameNo": 6,
+      "AtlasName": "YsEmoji",
+      "IconName": "se_05",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 343,
+      "_byte_offset": 14572,
+      "FormatStr": "[se_01]",
+      "FrameNo": 7,
+      "AtlasName": "YsEmoji",
+      "IconName": "se_06",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 344,
+      "_byte_offset": 14607,
+      "FormatStr": "[se_01]",
+      "FrameNo": 8,
+      "AtlasName": "YsEmoji",
+      "IconName": "se_07",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 345,
+      "_byte_offset": 14642,
+      "FormatStr": "[shengqi_01]",
+      "FrameNo": 1,
+      "AtlasName": "YsEmoji",
+      "IconName": "shengqi_00",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 346,
+      "_byte_offset": 14687,
+      "FormatStr": "[shengqi_01]",
+      "FrameNo": 2,
+      "AtlasName": "YsEmoji",
+      "IconName": "shengqi_01",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 347,
+      "_byte_offset": 14732,
+      "FormatStr": "[shengqi_01]",
+      "FrameNo": 3,
+      "AtlasName": "YsEmoji",
+      "IconName": "shengqi_02",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 348,
+      "_byte_offset": 14777,
+      "FormatStr": "[shengqi_01]",
+      "FrameNo": 4,
+      "AtlasName": "YsEmoji",
+      "IconName": "shengqi_03",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 349,
+      "_byte_offset": 14822,
+      "FormatStr": "[shengqi_01]",
+      "FrameNo": 5,
+      "AtlasName": "YsEmoji",
+      "IconName": "shengqi_04",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 350,
+      "_byte_offset": 14867,
+      "FormatStr": "[shengqi_01]",
+      "FrameNo": 6,
+      "AtlasName": "YsEmoji",
+      "IconName": "shengqi_05",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 351,
+      "_byte_offset": 14912,
+      "FormatStr": "[shengqi_01]",
+      "FrameNo": 7,
+      "AtlasName": "YsEmoji",
+      "IconName": "shengqi_06",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 352,
+      "_byte_offset": 14957,
+      "FormatStr": "[shengqi_01]",
+      "FrameNo": 8,
+      "AtlasName": "YsEmoji",
+      "IconName": "shengqi_07",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 353,
+      "_byte_offset": 15002,
+      "FormatStr": "[shengqi_01]",
+      "FrameNo": 9,
+      "AtlasName": "YsEmoji",
+      "IconName": "shengqi_08",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 354,
+      "_byte_offset": 15047,
+      "FormatStr": "[shengqi_01]",
+      "FrameNo": 10,
+      "AtlasName": "YsEmoji",
+      "IconName": "shengqi_09",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 355,
+      "_byte_offset": 15092,
+      "FormatStr": "[shengqi_01]",
+      "FrameNo": 11,
+      "AtlasName": "YsEmoji",
+      "IconName": "shengqi_10",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 356,
+      "_byte_offset": 15137,
+      "FormatStr": "[shengqi_01]",
+      "FrameNo": 12,
+      "AtlasName": "YsEmoji",
+      "IconName": "shengqi_11",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 357,
+      "_byte_offset": 15182,
+      "FormatStr": "[shengqi_01]",
+      "FrameNo": 13,
+      "AtlasName": "YsEmoji",
+      "IconName": "shengqi_12",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 358,
+      "_byte_offset": 15227,
+      "FormatStr": "[shengqi_01]",
+      "FrameNo": 14,
+      "AtlasName": "YsEmoji",
+      "IconName": "shengqi_13",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 359,
+      "_byte_offset": 15272,
+      "FormatStr": "[shengqi_01]",
+      "FrameNo": 15,
+      "AtlasName": "YsEmoji",
+      "IconName": "shengqi_14",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 360,
+      "_byte_offset": 15317,
+      "FormatStr": "[shengqi_01]",
+      "FrameNo": 16,
+      "AtlasName": "YsEmoji",
+      "IconName": "shengqi_15",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 361,
+      "_byte_offset": 15362,
+      "FormatStr": "[shengqi_01]",
+      "FrameNo": 17,
+      "AtlasName": "YsEmoji",
+      "IconName": "shengqi_16",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 362,
+      "_byte_offset": 15407,
+      "FormatStr": "[shengqi_01]",
+      "FrameNo": 18,
+      "AtlasName": "YsEmoji",
+      "IconName": "shengqi_17",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 363,
+      "_byte_offset": 15452,
+      "FormatStr": "[shengqi_01]",
+      "FrameNo": 19,
+      "AtlasName": "YsEmoji",
+      "IconName": "shengqi_18",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 364,
+      "_byte_offset": 15497,
+      "FormatStr": "[shengqi_01]",
+      "FrameNo": 20,
+      "AtlasName": "YsEmoji",
+      "IconName": "shengqi_19",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 365,
+      "_byte_offset": 15542,
+      "FormatStr": "[shengqi_01]",
+      "FrameNo": 21,
+      "AtlasName": "YsEmoji",
+      "IconName": "shengqi_20",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 366,
+      "_byte_offset": 15587,
+      "FormatStr": "[shiluo_01]",
+      "FrameNo": 1,
+      "AtlasName": "YsEmoji",
+      "IconName": "shiluo_00",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 367,
+      "_byte_offset": 15630,
+      "FormatStr": "[shiluo_01]",
+      "FrameNo": 2,
+      "AtlasName": "YsEmoji",
+      "IconName": "shiluo_01",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 368,
+      "_byte_offset": 15673,
+      "FormatStr": "[shiluo_01]",
+      "FrameNo": 3,
+      "AtlasName": "YsEmoji",
+      "IconName": "shiluo_02",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 369,
+      "_byte_offset": 15716,
+      "FormatStr": "[shiluo_01]",
+      "FrameNo": 4,
+      "AtlasName": "YsEmoji",
+      "IconName": "shiluo_03",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 370,
+      "_byte_offset": 15759,
+      "FormatStr": "[shiluo_01]",
+      "FrameNo": 5,
+      "AtlasName": "YsEmoji",
+      "IconName": "shiluo_04",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 371,
+      "_byte_offset": 15802,
+      "FormatStr": "[shiluo_01]",
+      "FrameNo": 6,
+      "AtlasName": "YsEmoji",
+      "IconName": "shiluo_05",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 372,
+      "_byte_offset": 15845,
+      "FormatStr": "[shiluo_01]",
+      "FrameNo": 7,
+      "AtlasName": "YsEmoji",
+      "IconName": "shiluo_06",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 373,
+      "_byte_offset": 15888,
+      "FormatStr": "[shiluo_01]",
+      "FrameNo": 8,
+      "AtlasName": "YsEmoji",
+      "IconName": "shiluo_07",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 374,
+      "_byte_offset": 15931,
+      "FormatStr": "[shiluo_01]",
+      "FrameNo": 9,
+      "AtlasName": "YsEmoji",
+      "IconName": "shiluo_08",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 375,
+      "_byte_offset": 15974,
+      "FormatStr": "[shiluo_01]",
+      "FrameNo": 10,
+      "AtlasName": "YsEmoji",
+      "IconName": "shiluo_09",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 376,
+      "_byte_offset": 16017,
+      "FormatStr": "[shiluo_01]",
+      "FrameNo": 11,
+      "AtlasName": "YsEmoji",
+      "IconName": "shiluo_10",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 377,
+      "_byte_offset": 16060,
+      "FormatStr": "[shiluo_01]",
+      "FrameNo": 12,
+      "AtlasName": "YsEmoji",
+      "IconName": "shiluo_11",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 378,
+      "_byte_offset": 16103,
+      "FormatStr": "[shiluo_01]",
+      "FrameNo": 13,
+      "AtlasName": "YsEmoji",
+      "IconName": "shiluo_12",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 379,
+      "_byte_offset": 16146,
+      "FormatStr": "[shiluo_01]",
+      "FrameNo": 14,
+      "AtlasName": "YsEmoji",
+      "IconName": "shiluo_13",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 380,
+      "_byte_offset": 16189,
+      "FormatStr": "[shiluo_01]",
+      "FrameNo": 15,
+      "AtlasName": "YsEmoji",
+      "IconName": "shiluo_14",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 381,
+      "_byte_offset": 16232,
+      "FormatStr": "[shiluo_01]",
+      "FrameNo": 16,
+      "AtlasName": "YsEmoji",
+      "IconName": "shiluo_15",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 382,
+      "_byte_offset": 16275,
+      "FormatStr": "[shiluo_01]",
+      "FrameNo": 17,
+      "AtlasName": "YsEmoji",
+      "IconName": "shiluo_16",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 383,
+      "_byte_offset": 16318,
+      "FormatStr": "[shiluo_01]",
+      "FrameNo": 18,
+      "AtlasName": "YsEmoji",
+      "IconName": "shiluo_17",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 384,
+      "_byte_offset": 16361,
+      "FormatStr": "[shiluo_01]",
+      "FrameNo": 19,
+      "AtlasName": "YsEmoji",
+      "IconName": "shiluo_18",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 385,
+      "_byte_offset": 16404,
+      "FormatStr": "[shiluo_01]",
+      "FrameNo": 20,
+      "AtlasName": "YsEmoji",
+      "IconName": "shiluo_19",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 386,
+      "_byte_offset": 16447,
+      "FormatStr": "[shiluo_01]",
+      "FrameNo": 21,
+      "AtlasName": "YsEmoji",
+      "IconName": "shiluo_20",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 387,
+      "_byte_offset": 16490,
+      "FormatStr": "[shuijiao_01]",
+      "FrameNo": 1,
+      "AtlasName": "YsEmoji",
+      "IconName": "shuijiao_00",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 388,
+      "_byte_offset": 16537,
+      "FormatStr": "[shuijiao_01]",
+      "FrameNo": 2,
+      "AtlasName": "YsEmoji",
+      "IconName": "shuijiao_01",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 389,
+      "_byte_offset": 16584,
+      "FormatStr": "[shuijiao_01]",
+      "FrameNo": 3,
+      "AtlasName": "YsEmoji",
+      "IconName": "shuijiao_02",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 390,
+      "_byte_offset": 16631,
+      "FormatStr": "[shuijiao_01]",
+      "FrameNo": 4,
+      "AtlasName": "YsEmoji",
+      "IconName": "shuijiao_03",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 391,
+      "_byte_offset": 16678,
+      "FormatStr": "[shuijiao_01]",
+      "FrameNo": 5,
+      "AtlasName": "YsEmoji",
+      "IconName": "shuijiao_04",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 392,
+      "_byte_offset": 16725,
+      "FormatStr": "[shuijiao_01]",
+      "FrameNo": 6,
+      "AtlasName": "YsEmoji",
+      "IconName": "shuijiao_05",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 393,
+      "_byte_offset": 16772,
+      "FormatStr": "[shuijiao_01]",
+      "FrameNo": 7,
+      "AtlasName": "YsEmoji",
+      "IconName": "shuijiao_06",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 394,
+      "_byte_offset": 16819,
+      "FormatStr": "[shuijiao_01]",
+      "FrameNo": 8,
+      "AtlasName": "YsEmoji",
+      "IconName": "shuijiao_07",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 395,
+      "_byte_offset": 16866,
+      "FormatStr": "[shuijiao_01]",
+      "FrameNo": 9,
+      "AtlasName": "YsEmoji",
+      "IconName": "shuijiao_08",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 396,
+      "_byte_offset": 16913,
+      "FormatStr": "[shuijiao_01]",
+      "FrameNo": 10,
+      "AtlasName": "YsEmoji",
+      "IconName": "shuijiao_09",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 397,
+      "_byte_offset": 16960,
+      "FormatStr": "[shuijiao_01]",
+      "FrameNo": 11,
+      "AtlasName": "YsEmoji",
+      "IconName": "shuijiao_10",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 398,
+      "_byte_offset": 17007,
+      "FormatStr": "[shuijiao_01]",
+      "FrameNo": 12,
+      "AtlasName": "YsEmoji",
+      "IconName": "shuijiao_11",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 399,
+      "_byte_offset": 17054,
+      "FormatStr": "[shuijiao_01]",
+      "FrameNo": 13,
+      "AtlasName": "YsEmoji",
+      "IconName": "shuijiao_12",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 400,
+      "_byte_offset": 17101,
+      "FormatStr": "[shuijiao_01]",
+      "FrameNo": 14,
+      "AtlasName": "YsEmoji",
+      "IconName": "shuijiao_13",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 401,
+      "_byte_offset": 17148,
+      "FormatStr": "[shuijiao_01]",
+      "FrameNo": 15,
+      "AtlasName": "YsEmoji",
+      "IconName": "shuijiao_14",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 402,
+      "_byte_offset": 17195,
+      "FormatStr": "[shuijiao_01]",
+      "FrameNo": 16,
+      "AtlasName": "YsEmoji",
+      "IconName": "shuijiao_15",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 403,
+      "_byte_offset": 17242,
+      "FormatStr": "[shuijiao_01]",
+      "FrameNo": 17,
+      "AtlasName": "YsEmoji",
+      "IconName": "shuijiao_16",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 404,
+      "_byte_offset": 17289,
+      "FormatStr": "[shuijiao_01]",
+      "FrameNo": 18,
+      "AtlasName": "YsEmoji",
+      "IconName": "shuijiao_17",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 405,
+      "_byte_offset": 17336,
+      "FormatStr": "[shuijiao_01]",
+      "FrameNo": 19,
+      "AtlasName": "YsEmoji",
+      "IconName": "shuijiao_18",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 406,
+      "_byte_offset": 17383,
+      "FormatStr": "[tanshou_01]",
+      "FrameNo": 1,
+      "AtlasName": "YsEmoji",
+      "IconName": "tanshou_00",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 407,
+      "_byte_offset": 17428,
+      "FormatStr": "[tanshou_01]",
+      "FrameNo": 2,
+      "AtlasName": "YsEmoji",
+      "IconName": "tanshou_01",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 408,
+      "_byte_offset": 17473,
+      "FormatStr": "[tanshou_01]",
+      "FrameNo": 3,
+      "AtlasName": "YsEmoji",
+      "IconName": "tanshou_02",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 409,
+      "_byte_offset": 17518,
+      "FormatStr": "[tanshou_01]",
+      "FrameNo": 4,
+      "AtlasName": "YsEmoji",
+      "IconName": "tanshou_03",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 410,
+      "_byte_offset": 17563,
+      "FormatStr": "[tanshou_01]",
+      "FrameNo": 5,
+      "AtlasName": "YsEmoji",
+      "IconName": "tanshou_04",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 411,
+      "_byte_offset": 17608,
+      "FormatStr": "[tanshou_01]",
+      "FrameNo": 6,
+      "AtlasName": "YsEmoji",
+      "IconName": "tanshou_05",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 412,
+      "_byte_offset": 17653,
+      "FormatStr": "[tanshou_01]",
+      "FrameNo": 7,
+      "AtlasName": "YsEmoji",
+      "IconName": "tanshou_06",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 413,
+      "_byte_offset": 17698,
+      "FormatStr": "[tanshou_01]",
+      "FrameNo": 8,
+      "AtlasName": "YsEmoji",
+      "IconName": "tanshou_07",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 414,
+      "_byte_offset": 17743,
+      "FormatStr": "[tanshou_01]",
+      "FrameNo": 9,
+      "AtlasName": "YsEmoji",
+      "IconName": "tanshou_08",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 415,
+      "_byte_offset": 17788,
+      "FormatStr": "[tanshou_01]",
+      "FrameNo": 10,
+      "AtlasName": "YsEmoji",
+      "IconName": "tanshou_09",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 416,
+      "_byte_offset": 17833,
+      "FormatStr": "[tanshou_01]",
+      "FrameNo": 11,
+      "AtlasName": "YsEmoji",
+      "IconName": "tanshou_10",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 417,
+      "_byte_offset": 17878,
+      "FormatStr": "[tanshou_01]",
+      "FrameNo": 12,
+      "AtlasName": "YsEmoji",
+      "IconName": "tanshou_11",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 418,
+      "_byte_offset": 17923,
+      "FormatStr": "[tanshou_01]",
+      "FrameNo": 13,
+      "AtlasName": "YsEmoji",
+      "IconName": "tanshou_12",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 419,
+      "_byte_offset": 17968,
+      "FormatStr": "[tanshou_01]",
+      "FrameNo": 14,
+      "AtlasName": "YsEmoji",
+      "IconName": "tanshou_13",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 420,
+      "_byte_offset": 18013,
+      "FormatStr": "[tanshou_01]",
+      "FrameNo": 15,
+      "AtlasName": "YsEmoji",
+      "IconName": "tanshou_14",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 421,
+      "_byte_offset": 18058,
+      "FormatStr": "[tanshou_01]",
+      "FrameNo": 16,
+      "AtlasName": "YsEmoji",
+      "IconName": "tanshou_15",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 422,
+      "_byte_offset": 18103,
+      "FormatStr": "[tanshou_01]",
+      "FrameNo": 17,
+      "AtlasName": "YsEmoji",
+      "IconName": "tanshou_16",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 423,
+      "_byte_offset": 18148,
+      "FormatStr": "[tanshou_01]",
+      "FrameNo": 18,
+      "AtlasName": "YsEmoji",
+      "IconName": "tanshou_17",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 424,
+      "_byte_offset": 18193,
+      "FormatStr": "[tanshou_01]",
+      "FrameNo": 19,
+      "AtlasName": "YsEmoji",
+      "IconName": "tanshou_18",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 425,
+      "_byte_offset": 18238,
+      "FormatStr": "[tanshou_01]",
+      "FrameNo": 20,
+      "AtlasName": "YsEmoji",
+      "IconName": "tanshou_19",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 426,
+      "_byte_offset": 18283,
+      "FormatStr": "[tanshou_01]",
+      "FrameNo": 21,
+      "AtlasName": "YsEmoji",
+      "IconName": "tanshou_20",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 427,
+      "_byte_offset": 18328,
+      "FormatStr": "[tanshou_01]",
+      "FrameNo": 22,
+      "AtlasName": "YsEmoji",
+      "IconName": "tanshou_21",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 428,
+      "_byte_offset": 18373,
+      "FormatStr": "[tanshou_01]",
+      "FrameNo": 23,
+      "AtlasName": "YsEmoji",
+      "IconName": "tanshou_22",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 429,
+      "_byte_offset": 18418,
+      "FormatStr": "[tanshou_01]",
+      "FrameNo": 24,
+      "AtlasName": "YsEmoji",
+      "IconName": "tanshou_23",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 430,
+      "_byte_offset": 18463,
+      "FormatStr": "[tanshou_01]",
+      "FrameNo": 25,
+      "AtlasName": "YsEmoji",
+      "IconName": "tanshou_24",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 431,
+      "_byte_offset": 18508,
+      "FormatStr": "[tanshou_01]",
+      "FrameNo": 26,
+      "AtlasName": "YsEmoji",
+      "IconName": "tanshou_25",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 432,
+      "_byte_offset": 18553,
+      "FormatStr": "[tanshou_01]",
+      "FrameNo": 27,
+      "AtlasName": "YsEmoji",
+      "IconName": "tanshou_26",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 433,
+      "_byte_offset": 18598,
+      "FormatStr": "[tanshou_01]",
+      "FrameNo": 28,
+      "AtlasName": "YsEmoji",
+      "IconName": "tanshou_27",
+      "_byte_length": 45
+    },
+    {
+      "_record_index": 434,
+      "_byte_offset": 18643,
+      "FormatStr": "[tushetou_01]",
+      "FrameNo": 1,
+      "AtlasName": "YsEmoji",
+      "IconName": "tushetou_00",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 435,
+      "_byte_offset": 18690,
+      "FormatStr": "[tushetou_01]",
+      "FrameNo": 2,
+      "AtlasName": "YsEmoji",
+      "IconName": "tushetou_01",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 436,
+      "_byte_offset": 18737,
+      "FormatStr": "[tushetou_01]",
+      "FrameNo": 3,
+      "AtlasName": "YsEmoji",
+      "IconName": "tushetou_02",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 437,
+      "_byte_offset": 18784,
+      "FormatStr": "[tushetou_01]",
+      "FrameNo": 4,
+      "AtlasName": "YsEmoji",
+      "IconName": "tushetou_03",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 438,
+      "_byte_offset": 18831,
+      "FormatStr": "[tushetou_01]",
+      "FrameNo": 5,
+      "AtlasName": "YsEmoji",
+      "IconName": "tushetou_04",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 439,
+      "_byte_offset": 18878,
+      "FormatStr": "[tushetou_01]",
+      "FrameNo": 6,
+      "AtlasName": "YsEmoji",
+      "IconName": "tushetou_05",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 440,
+      "_byte_offset": 18925,
+      "FormatStr": "[tushetou_01]",
+      "FrameNo": 7,
+      "AtlasName": "YsEmoji",
+      "IconName": "tushetou_06",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 441,
+      "_byte_offset": 18972,
+      "FormatStr": "[tushetou_01]",
+      "FrameNo": 8,
+      "AtlasName": "YsEmoji",
+      "IconName": "tushetou_07",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 442,
+      "_byte_offset": 19019,
+      "FormatStr": "[tuxue_01]",
+      "FrameNo": 1,
+      "AtlasName": "YsEmoji",
+      "IconName": "tuxue_00",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 443,
+      "_byte_offset": 19060,
+      "FormatStr": "[tuxue_01]",
+      "FrameNo": 2,
+      "AtlasName": "YsEmoji",
+      "IconName": "tuxue_01",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 444,
+      "_byte_offset": 19101,
+      "FormatStr": "[tuxue_01]",
+      "FrameNo": 3,
+      "AtlasName": "YsEmoji",
+      "IconName": "tuxue_02",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 445,
+      "_byte_offset": 19142,
+      "FormatStr": "[tuxue_01]",
+      "FrameNo": 4,
+      "AtlasName": "YsEmoji",
+      "IconName": "tuxue_03",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 446,
+      "_byte_offset": 19183,
+      "FormatStr": "[tuxue_01]",
+      "FrameNo": 5,
+      "AtlasName": "YsEmoji",
+      "IconName": "tuxue_04",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 447,
+      "_byte_offset": 19224,
+      "FormatStr": "[tuxue_01]",
+      "FrameNo": 6,
+      "AtlasName": "YsEmoji",
+      "IconName": "tuxue_05",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 448,
+      "_byte_offset": 19265,
+      "FormatStr": "[tuxue_01]",
+      "FrameNo": 7,
+      "AtlasName": "YsEmoji",
+      "IconName": "tuxue_06",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 449,
+      "_byte_offset": 19306,
+      "FormatStr": "[tuxue_01]",
+      "FrameNo": 8,
+      "AtlasName": "YsEmoji",
+      "IconName": "tuxue_07",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 450,
+      "_byte_offset": 19347,
+      "FormatStr": "[tuxue_01]",
+      "FrameNo": 9,
+      "AtlasName": "YsEmoji",
+      "IconName": "tuxue_08",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 451,
+      "_byte_offset": 19388,
+      "FormatStr": "[tuxue_01]",
+      "FrameNo": 10,
+      "AtlasName": "YsEmoji",
+      "IconName": "tuxue_09",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 452,
+      "_byte_offset": 19429,
+      "FormatStr": "[tuxue_01]",
+      "FrameNo": 11,
+      "AtlasName": "YsEmoji",
+      "IconName": "tuxue_10",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 453,
+      "_byte_offset": 19470,
+      "FormatStr": "[tuxue_01]",
+      "FrameNo": 12,
+      "AtlasName": "YsEmoji",
+      "IconName": "tuxue_11",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 454,
+      "_byte_offset": 19511,
+      "FormatStr": "[tuxue_01]",
+      "FrameNo": 13,
+      "AtlasName": "YsEmoji",
+      "IconName": "tuxue_12",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 455,
+      "_byte_offset": 19552,
+      "FormatStr": "[tuxue_01]",
+      "FrameNo": 14,
+      "AtlasName": "YsEmoji",
+      "IconName": "tuxue_13",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 456,
+      "_byte_offset": 19593,
+      "FormatStr": "[tuxue_01]",
+      "FrameNo": 15,
+      "AtlasName": "YsEmoji",
+      "IconName": "tuxue_14",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 457,
+      "_byte_offset": 19634,
+      "FormatStr": "[tuxue_01]",
+      "FrameNo": 16,
+      "AtlasName": "YsEmoji",
+      "IconName": "tuxue_15",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 458,
+      "_byte_offset": 19675,
+      "FormatStr": "[tuxue_01]",
+      "FrameNo": 17,
+      "AtlasName": "YsEmoji",
+      "IconName": "tuxue_16",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 459,
+      "_byte_offset": 19716,
+      "FormatStr": "[tuxue_01]",
+      "FrameNo": 18,
+      "AtlasName": "YsEmoji",
+      "IconName": "tuxue_17",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 460,
+      "_byte_offset": 19757,
+      "FormatStr": "[tuxue_01]",
+      "FrameNo": 19,
+      "AtlasName": "YsEmoji",
+      "IconName": "tuxue_18",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 461,
+      "_byte_offset": 19798,
+      "FormatStr": "[tuxue_01]",
+      "FrameNo": 20,
+      "AtlasName": "YsEmoji",
+      "IconName": "tuxue_19",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 462,
+      "_byte_offset": 19839,
+      "FormatStr": "[weiqu_01]",
+      "FrameNo": 1,
+      "AtlasName": "YsEmoji",
+      "IconName": "weiqu_00",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 463,
+      "_byte_offset": 19880,
+      "FormatStr": "[weiqu_01]",
+      "FrameNo": 2,
+      "AtlasName": "YsEmoji",
+      "IconName": "weiqu_01",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 464,
+      "_byte_offset": 19921,
+      "FormatStr": "[weiqu_01]",
+      "FrameNo": 3,
+      "AtlasName": "YsEmoji",
+      "IconName": "weiqu_02",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 465,
+      "_byte_offset": 19962,
+      "FormatStr": "[weiqu_01]",
+      "FrameNo": 4,
+      "AtlasName": "YsEmoji",
+      "IconName": "weiqu_03",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 466,
+      "_byte_offset": 20003,
+      "FormatStr": "[weiqu_01]",
+      "FrameNo": 5,
+      "AtlasName": "YsEmoji",
+      "IconName": "weiqu_04",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 467,
+      "_byte_offset": 20044,
+      "FormatStr": "[weiqu_01]",
+      "FrameNo": 6,
+      "AtlasName": "YsEmoji",
+      "IconName": "weiqu_05",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 468,
+      "_byte_offset": 20085,
+      "FormatStr": "[weiqu_01]",
+      "FrameNo": 7,
+      "AtlasName": "YsEmoji",
+      "IconName": "weiqu_06",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 469,
+      "_byte_offset": 20126,
+      "FormatStr": "[weiqu_01]",
+      "FrameNo": 8,
+      "AtlasName": "YsEmoji",
+      "IconName": "weiqu_07",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 470,
+      "_byte_offset": 20167,
+      "FormatStr": "[weiqu_01]",
+      "FrameNo": 9,
+      "AtlasName": "YsEmoji",
+      "IconName": "weiqu_08",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 471,
+      "_byte_offset": 20208,
+      "FormatStr": "[weiqu_01]",
+      "FrameNo": 10,
+      "AtlasName": "YsEmoji",
+      "IconName": "weiqu_09",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 472,
+      "_byte_offset": 20249,
+      "FormatStr": "[weiqu_01]",
+      "FrameNo": 11,
+      "AtlasName": "YsEmoji",
+      "IconName": "weiqu_10",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 473,
+      "_byte_offset": 20290,
+      "FormatStr": "[weiqu_01]",
+      "FrameNo": 12,
+      "AtlasName": "YsEmoji",
+      "IconName": "weiqu_11",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 474,
+      "_byte_offset": 20331,
+      "FormatStr": "[weiqu_01]",
+      "FrameNo": 13,
+      "AtlasName": "YsEmoji",
+      "IconName": "weiqu_12",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 475,
+      "_byte_offset": 20372,
+      "FormatStr": "[weiqu_01]",
+      "FrameNo": 14,
+      "AtlasName": "YsEmoji",
+      "IconName": "weiqu_13",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 476,
+      "_byte_offset": 20413,
+      "FormatStr": "[weiqu_01]",
+      "FrameNo": 15,
+      "AtlasName": "YsEmoji",
+      "IconName": "weiqu_14",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 477,
+      "_byte_offset": 20454,
+      "FormatStr": "[weiqu_01]",
+      "FrameNo": 16,
+      "AtlasName": "YsEmoji",
+      "IconName": "weiqu_15",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 478,
+      "_byte_offset": 20495,
+      "FormatStr": "[wuyu_01]",
+      "FrameNo": 1,
+      "AtlasName": "YsEmoji",
+      "IconName": "wuyu_00",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 479,
+      "_byte_offset": 20534,
+      "FormatStr": "[wuyu_01]",
+      "FrameNo": 2,
+      "AtlasName": "YsEmoji",
+      "IconName": "wuyu_01",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 480,
+      "_byte_offset": 20573,
+      "FormatStr": "[wuyu_01]",
+      "FrameNo": 3,
+      "AtlasName": "YsEmoji",
+      "IconName": "wuyu_02",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 481,
+      "_byte_offset": 20612,
+      "FormatStr": "[wuyu_01]",
+      "FrameNo": 4,
+      "AtlasName": "YsEmoji",
+      "IconName": "wuyu_03",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 482,
+      "_byte_offset": 20651,
+      "FormatStr": "[wuyu_01]",
+      "FrameNo": 5,
+      "AtlasName": "YsEmoji",
+      "IconName": "wuyu_04",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 483,
+      "_byte_offset": 20690,
+      "FormatStr": "[wuyu_01]",
+      "FrameNo": 6,
+      "AtlasName": "YsEmoji",
+      "IconName": "wuyu_05",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 484,
+      "_byte_offset": 20729,
+      "FormatStr": "[wuyu_01]",
+      "FrameNo": 7,
+      "AtlasName": "YsEmoji",
+      "IconName": "wuyu_06",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 485,
+      "_byte_offset": 20768,
+      "FormatStr": "[wuyu_01]",
+      "FrameNo": 8,
+      "AtlasName": "YsEmoji",
+      "IconName": "wuyu_07",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 486,
+      "_byte_offset": 20807,
+      "FormatStr": "[wuyu_01]",
+      "FrameNo": 9,
+      "AtlasName": "YsEmoji",
+      "IconName": "wuyu_08",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 487,
+      "_byte_offset": 20846,
+      "FormatStr": "[wuyu_01]",
+      "FrameNo": 10,
+      "AtlasName": "YsEmoji",
+      "IconName": "wuyu_09",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 488,
+      "_byte_offset": 20885,
+      "FormatStr": "[wuyu_01]",
+      "FrameNo": 11,
+      "AtlasName": "YsEmoji",
+      "IconName": "wuyu_10",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 489,
+      "_byte_offset": 20924,
+      "FormatStr": "[wuyu_01]",
+      "FrameNo": 12,
+      "AtlasName": "YsEmoji",
+      "IconName": "wuyu_11",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 490,
+      "_byte_offset": 20963,
+      "FormatStr": "[wuyu_01]",
+      "FrameNo": 13,
+      "AtlasName": "YsEmoji",
+      "IconName": "wuyu_12",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 491,
+      "_byte_offset": 21002,
+      "FormatStr": "[wuyu_01]",
+      "FrameNo": 14,
+      "AtlasName": "YsEmoji",
+      "IconName": "wuyu_13",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 492,
+      "_byte_offset": 21041,
+      "FormatStr": "[wuyu_01]",
+      "FrameNo": 15,
+      "AtlasName": "YsEmoji",
+      "IconName": "wuyu_14",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 493,
+      "_byte_offset": 21080,
+      "FormatStr": "[wuyu_01]",
+      "FrameNo": 16,
+      "AtlasName": "YsEmoji",
+      "IconName": "wuyu_15",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 494,
+      "_byte_offset": 21119,
+      "FormatStr": "[wuyu_01]",
+      "FrameNo": 17,
+      "AtlasName": "YsEmoji",
+      "IconName": "wuyu_16",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 495,
+      "_byte_offset": 21158,
+      "FormatStr": "[wuyu_01]",
+      "FrameNo": 18,
+      "AtlasName": "YsEmoji",
+      "IconName": "wuyu_17",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 496,
+      "_byte_offset": 21197,
+      "FormatStr": "[wuyu_01]",
+      "FrameNo": 19,
+      "AtlasName": "YsEmoji",
+      "IconName": "wuyu_18",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 497,
+      "_byte_offset": 21236,
+      "FormatStr": "[wuyu_01]",
+      "FrameNo": 20,
+      "AtlasName": "YsEmoji",
+      "IconName": "wuyu_19",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 498,
+      "_byte_offset": 21275,
+      "FormatStr": "[wuyu_01]",
+      "FrameNo": 21,
+      "AtlasName": "YsEmoji",
+      "IconName": "wuyu_20",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 499,
+      "_byte_offset": 21314,
+      "FormatStr": "[xiaoku_01]",
+      "FrameNo": 1,
+      "AtlasName": "YsEmoji",
+      "IconName": "xiaoku_00",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 500,
+      "_byte_offset": 21357,
+      "FormatStr": "[xiaoku_01]",
+      "FrameNo": 2,
+      "AtlasName": "YsEmoji",
+      "IconName": "xiaoku_01",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 501,
+      "_byte_offset": 21400,
+      "FormatStr": "[xiaoku_01]",
+      "FrameNo": 3,
+      "AtlasName": "YsEmoji",
+      "IconName": "xiaoku_02",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 502,
+      "_byte_offset": 21443,
+      "FormatStr": "[xiaoku_01]",
+      "FrameNo": 4,
+      "AtlasName": "YsEmoji",
+      "IconName": "xiaoku_03",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 503,
+      "_byte_offset": 21486,
+      "FormatStr": "[xiaoku_01]",
+      "FrameNo": 5,
+      "AtlasName": "YsEmoji",
+      "IconName": "xiaoku_04",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 504,
+      "_byte_offset": 21529,
+      "FormatStr": "[xiaoku_01]",
+      "FrameNo": 6,
+      "AtlasName": "YsEmoji",
+      "IconName": "xiaoku_05",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 505,
+      "_byte_offset": 21572,
+      "FormatStr": "[ye_01]",
+      "FrameNo": 1,
+      "AtlasName": "YsEmoji",
+      "IconName": "ye_00",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 506,
+      "_byte_offset": 21607,
+      "FormatStr": "[ye_01]",
+      "FrameNo": 2,
+      "AtlasName": "YsEmoji",
+      "IconName": "ye_01",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 507,
+      "_byte_offset": 21642,
+      "FormatStr": "[ye_01]",
+      "FrameNo": 3,
+      "AtlasName": "YsEmoji",
+      "IconName": "ye_02",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 508,
+      "_byte_offset": 21677,
+      "FormatStr": "[ye_01]",
+      "FrameNo": 4,
+      "AtlasName": "YsEmoji",
+      "IconName": "ye_03",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 509,
+      "_byte_offset": 21712,
+      "FormatStr": "[ye_01]",
+      "FrameNo": 5,
+      "AtlasName": "YsEmoji",
+      "IconName": "ye_04",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 510,
+      "_byte_offset": 21747,
+      "FormatStr": "[ye_01]",
+      "FrameNo": 6,
+      "AtlasName": "YsEmoji",
+      "IconName": "ye_05",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 511,
+      "_byte_offset": 21782,
+      "FormatStr": "[ye_01]",
+      "FrameNo": 7,
+      "AtlasName": "YsEmoji",
+      "IconName": "ye_06",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 512,
+      "_byte_offset": 21817,
+      "FormatStr": "[ye_01]",
+      "FrameNo": 8,
+      "AtlasName": "YsEmoji",
+      "IconName": "ye_07",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 513,
+      "_byte_offset": 21852,
+      "FormatStr": "[ye_01]",
+      "FrameNo": 9,
+      "AtlasName": "YsEmoji",
+      "IconName": "ye_08",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 514,
+      "_byte_offset": 21887,
+      "FormatStr": "[ye_01]",
+      "FrameNo": 10,
+      "AtlasName": "YsEmoji",
+      "IconName": "ye_09",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 515,
+      "_byte_offset": 21922,
+      "FormatStr": "[ye_01]",
+      "FrameNo": 11,
+      "AtlasName": "YsEmoji",
+      "IconName": "ye_10",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 516,
+      "_byte_offset": 21957,
+      "FormatStr": "[ye_01]",
+      "FrameNo": 12,
+      "AtlasName": "YsEmoji",
+      "IconName": "ye_11",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 517,
+      "_byte_offset": 21992,
+      "FormatStr": "[ye_01]",
+      "FrameNo": 13,
+      "AtlasName": "YsEmoji",
+      "IconName": "ye_12",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 518,
+      "_byte_offset": 22027,
+      "FormatStr": "[ye_01]",
+      "FrameNo": 14,
+      "AtlasName": "YsEmoji",
+      "IconName": "ye_13",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 519,
+      "_byte_offset": 22062,
+      "FormatStr": "[ye_01]",
+      "FrameNo": 15,
+      "AtlasName": "YsEmoji",
+      "IconName": "ye_14",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 520,
+      "_byte_offset": 22097,
+      "FormatStr": "[ye_01]",
+      "FrameNo": 16,
+      "AtlasName": "YsEmoji",
+      "IconName": "ye_15",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 521,
+      "_byte_offset": 22132,
+      "FormatStr": "[ye_01]",
+      "FrameNo": 17,
+      "AtlasName": "YsEmoji",
+      "IconName": "ye_16",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 522,
+      "_byte_offset": 22167,
+      "FormatStr": "[ye_01]",
+      "FrameNo": 18,
+      "AtlasName": "YsEmoji",
+      "IconName": "ye_17",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 523,
+      "_byte_offset": 22202,
+      "FormatStr": "[ye_01]",
+      "FrameNo": 19,
+      "AtlasName": "YsEmoji",
+      "IconName": "ye_18",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 524,
+      "_byte_offset": 22237,
+      "FormatStr": "[ye_01]",
+      "FrameNo": 20,
+      "AtlasName": "YsEmoji",
+      "IconName": "ye_19",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 525,
+      "_byte_offset": 22272,
+      "FormatStr": "[ye_01]",
+      "FrameNo": 21,
+      "AtlasName": "YsEmoji",
+      "IconName": "ye_20",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 526,
+      "_byte_offset": 22307,
+      "FormatStr": "[ye_01]",
+      "FrameNo": 22,
+      "AtlasName": "YsEmoji",
+      "IconName": "ye_21",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 527,
+      "_byte_offset": 22342,
+      "FormatStr": "[ye_01]",
+      "FrameNo": 23,
+      "AtlasName": "YsEmoji",
+      "IconName": "ye_22",
+      "_byte_length": 35
+    },
+    {
+      "_record_index": 528,
+      "_byte_offset": 22377,
+      "FormatStr": "[yiwen_01]",
+      "FrameNo": 1,
+      "AtlasName": "YsEmoji",
+      "IconName": "yiwen_00",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 529,
+      "_byte_offset": 22418,
+      "FormatStr": "[yiwen_01]",
+      "FrameNo": 2,
+      "AtlasName": "YsEmoji",
+      "IconName": "yiwen_01",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 530,
+      "_byte_offset": 22459,
+      "FormatStr": "[yiwen_01]",
+      "FrameNo": 3,
+      "AtlasName": "YsEmoji",
+      "IconName": "yiwen_02",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 531,
+      "_byte_offset": 22500,
+      "FormatStr": "[yiwen_01]",
+      "FrameNo": 4,
+      "AtlasName": "YsEmoji",
+      "IconName": "yiwen_03",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 532,
+      "_byte_offset": 22541,
+      "FormatStr": "[yiwen_01]",
+      "FrameNo": 5,
+      "AtlasName": "YsEmoji",
+      "IconName": "yiwen_04",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 533,
+      "_byte_offset": 22582,
+      "FormatStr": "[yiwen_01]",
+      "FrameNo": 6,
+      "AtlasName": "YsEmoji",
+      "IconName": "yiwen_05",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 534,
+      "_byte_offset": 22623,
+      "FormatStr": "[yiwen_01]",
+      "FrameNo": 7,
+      "AtlasName": "YsEmoji",
+      "IconName": "yiwen_06",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 535,
+      "_byte_offset": 22664,
+      "FormatStr": "[yiwen_01]",
+      "FrameNo": 8,
+      "AtlasName": "YsEmoji",
+      "IconName": "yiwen_07",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 536,
+      "_byte_offset": 22705,
+      "FormatStr": "[yiwen_01]",
+      "FrameNo": 9,
+      "AtlasName": "YsEmoji",
+      "IconName": "yiwen_08",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 537,
+      "_byte_offset": 22746,
+      "FormatStr": "[yiwen_01]",
+      "FrameNo": 10,
+      "AtlasName": "YsEmoji",
+      "IconName": "yiwen_09",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 538,
+      "_byte_offset": 22787,
+      "FormatStr": "[yiwen_01]",
+      "FrameNo": 11,
+      "AtlasName": "YsEmoji",
+      "IconName": "yiwen_10",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 539,
+      "_byte_offset": 22828,
+      "FormatStr": "[yiwen_01]",
+      "FrameNo": 12,
+      "AtlasName": "YsEmoji",
+      "IconName": "yiwen_11",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 540,
+      "_byte_offset": 22869,
+      "FormatStr": "[yiwen_01]",
+      "FrameNo": 13,
+      "AtlasName": "YsEmoji",
+      "IconName": "yiwen_12",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 541,
+      "_byte_offset": 22910,
+      "FormatStr": "[yiwen_01]",
+      "FrameNo": 14,
+      "AtlasName": "YsEmoji",
+      "IconName": "yiwen_13",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 542,
+      "_byte_offset": 22951,
+      "FormatStr": "[yiwen_01]",
+      "FrameNo": 15,
+      "AtlasName": "YsEmoji",
+      "IconName": "yiwen_14",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 543,
+      "_byte_offset": 22992,
+      "FormatStr": "[yiwen_01]",
+      "FrameNo": 16,
+      "AtlasName": "YsEmoji",
+      "IconName": "yiwen_15",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 544,
+      "_byte_offset": 23033,
+      "FormatStr": "[yiwen_01]",
+      "FrameNo": 17,
+      "AtlasName": "YsEmoji",
+      "IconName": "yiwen_16",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 545,
+      "_byte_offset": 23074,
+      "FormatStr": "[yiwen_01]",
+      "FrameNo": 18,
+      "AtlasName": "YsEmoji",
+      "IconName": "yiwen_17",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 546,
+      "_byte_offset": 23115,
+      "FormatStr": "[yiwen_01]",
+      "FrameNo": 19,
+      "AtlasName": "YsEmoji",
+      "IconName": "yiwen_18",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 547,
+      "_byte_offset": 23156,
+      "FormatStr": "[yiwen_01]",
+      "FrameNo": 20,
+      "AtlasName": "YsEmoji",
+      "IconName": "yiwen_19",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 548,
+      "_byte_offset": 23197,
+      "FormatStr": "[yiwen_01]",
+      "FrameNo": 21,
+      "AtlasName": "YsEmoji",
+      "IconName": "yiwen_20",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 549,
+      "_byte_offset": 23238,
+      "FormatStr": "[yiwen_01]",
+      "FrameNo": 22,
+      "AtlasName": "YsEmoji",
+      "IconName": "yiwen_21",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 550,
+      "_byte_offset": 23279,
+      "FormatStr": "[yiwen_01]",
+      "FrameNo": 23,
+      "AtlasName": "YsEmoji",
+      "IconName": "yiwen_22",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 551,
+      "_byte_offset": 23320,
+      "FormatStr": "[yiwen_01]",
+      "FrameNo": 24,
+      "AtlasName": "YsEmoji",
+      "IconName": "yiwen_23",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 552,
+      "_byte_offset": 23361,
+      "FormatStr": "[yiwen_01]",
+      "FrameNo": 25,
+      "AtlasName": "YsEmoji",
+      "IconName": "yiwen_24",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 553,
+      "_byte_offset": 23402,
+      "FormatStr": "[yiwen_01]",
+      "FrameNo": 26,
+      "AtlasName": "YsEmoji",
+      "IconName": "yiwen_25",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 554,
+      "_byte_offset": 23443,
+      "FormatStr": "[yiwen_01]",
+      "FrameNo": 27,
+      "AtlasName": "YsEmoji",
+      "IconName": "yiwen_26",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 555,
+      "_byte_offset": 23484,
+      "FormatStr": "[yun_01]",
+      "FrameNo": 1,
+      "AtlasName": "YsEmoji",
+      "IconName": "yun_00",
+      "_byte_length": 37
+    },
+    {
+      "_record_index": 556,
+      "_byte_offset": 23521,
+      "FormatStr": "[yun_01]",
+      "FrameNo": 2,
+      "AtlasName": "YsEmoji",
+      "IconName": "yun_01",
+      "_byte_length": 37
+    },
+    {
+      "_record_index": 557,
+      "_byte_offset": 23558,
+      "FormatStr": "[yun_01]",
+      "FrameNo": 3,
+      "AtlasName": "YsEmoji",
+      "IconName": "yun_02",
+      "_byte_length": 37
+    },
+    {
+      "_record_index": 558,
+      "_byte_offset": 23595,
+      "FormatStr": "[yun_01]",
+      "FrameNo": 4,
+      "AtlasName": "YsEmoji",
+      "IconName": "yun_03",
+      "_byte_length": 37
+    },
+    {
+      "_record_index": 559,
+      "_byte_offset": 23632,
+      "FormatStr": "[yun_01]",
+      "FrameNo": 5,
+      "AtlasName": "YsEmoji",
+      "IconName": "yun_04",
+      "_byte_length": 37
+    },
+    {
+      "_record_index": 560,
+      "_byte_offset": 23669,
+      "FormatStr": "[yun_01]",
+      "FrameNo": 6,
+      "AtlasName": "YsEmoji",
+      "IconName": "yun_05",
+      "_byte_length": 37
+    },
+    {
+      "_record_index": 561,
+      "_byte_offset": 23706,
+      "FormatStr": "[yun_01]",
+      "FrameNo": 7,
+      "AtlasName": "YsEmoji",
+      "IconName": "yun_06",
+      "_byte_length": 37
+    },
+    {
+      "_record_index": 562,
+      "_byte_offset": 23743,
+      "FormatStr": "[yun_01]",
+      "FrameNo": 8,
+      "AtlasName": "YsEmoji",
+      "IconName": "yun_07",
+      "_byte_length": 37
+    },
+    {
+      "_record_index": 563,
+      "_byte_offset": 23780,
+      "FormatStr": "[yun_01]",
+      "FrameNo": 9,
+      "AtlasName": "YsEmoji",
+      "IconName": "yun_08",
+      "_byte_length": 37
+    },
+    {
+      "_record_index": 564,
+      "_byte_offset": 23817,
+      "FormatStr": "[yun_01]",
+      "FrameNo": 10,
+      "AtlasName": "YsEmoji",
+      "IconName": "yun_09",
+      "_byte_length": 37
+    },
+    {
+      "_record_index": 565,
+      "_byte_offset": 23854,
+      "FormatStr": "[yun_01]",
+      "FrameNo": 11,
+      "AtlasName": "YsEmoji",
+      "IconName": "yun_10",
+      "_byte_length": 37
+    },
+    {
+      "_record_index": 566,
+      "_byte_offset": 23891,
+      "FormatStr": "[yun_01]",
+      "FrameNo": 12,
+      "AtlasName": "YsEmoji",
+      "IconName": "yun_11",
+      "_byte_length": 37
+    },
+    {
+      "_record_index": 567,
+      "_byte_offset": 23928,
+      "FormatStr": "[yun_01]",
+      "FrameNo": 13,
+      "AtlasName": "YsEmoji",
+      "IconName": "yun_12",
+      "_byte_length": 37
+    },
+    {
+      "_record_index": 568,
+      "_byte_offset": 23965,
+      "FormatStr": "[yun_01]",
+      "FrameNo": 14,
+      "AtlasName": "YsEmoji",
+      "IconName": "yun_13",
+      "_byte_length": 37
+    },
+    {
+      "_record_index": 569,
+      "_byte_offset": 24002,
+      "FormatStr": "[yun_01]",
+      "FrameNo": 15,
+      "AtlasName": "YsEmoji",
+      "IconName": "yun_14",
+      "_byte_length": 37
+    },
+    {
+      "_record_index": 570,
+      "_byte_offset": 24039,
+      "FormatStr": "[yun_01]",
+      "FrameNo": 16,
+      "AtlasName": "YsEmoji",
+      "IconName": "yun_15",
+      "_byte_length": 37
+    },
+    {
+      "_record_index": 571,
+      "_byte_offset": 24076,
+      "FormatStr": "[yun_01]",
+      "FrameNo": 17,
+      "AtlasName": "YsEmoji",
+      "IconName": "yun_16",
+      "_byte_length": 37
+    },
+    {
+      "_record_index": 572,
+      "_byte_offset": 24113,
+      "FormatStr": "[yun_01]",
+      "FrameNo": 18,
+      "AtlasName": "YsEmoji",
+      "IconName": "yun_17",
+      "_byte_length": 37
+    },
+    {
+      "_record_index": 573,
+      "_byte_offset": 24150,
+      "FormatStr": "[yun_01]",
+      "FrameNo": 19,
+      "AtlasName": "YsEmoji",
+      "IconName": "yun_18",
+      "_byte_length": 37
+    },
+    {
+      "_record_index": 574,
+      "_byte_offset": 24187,
+      "FormatStr": "[yun_01]",
+      "FrameNo": 20,
+      "AtlasName": "YsEmoji",
+      "IconName": "yun_19",
+      "_byte_length": 37
+    },
+    {
+      "_record_index": 575,
+      "_byte_offset": 24224,
+      "FormatStr": "[yun_01]",
+      "FrameNo": 21,
+      "AtlasName": "YsEmoji",
+      "IconName": "yun_20",
+      "_byte_length": 37
+    },
+    {
+      "_record_index": 576,
+      "_byte_offset": 24261,
+      "FormatStr": "[yun_01]",
+      "FrameNo": 22,
+      "AtlasName": "YsEmoji",
+      "IconName": "yun_21",
+      "_byte_length": 37
+    },
+    {
+      "_record_index": 577,
+      "_byte_offset": 24298,
+      "FormatStr": "[yun_01]",
+      "FrameNo": 23,
+      "AtlasName": "YsEmoji",
+      "IconName": "yun_22",
+      "_byte_length": 37
+    },
+    {
+      "_record_index": 578,
+      "_byte_offset": 24335,
+      "FormatStr": "[yun_01]",
+      "FrameNo": 24,
+      "AtlasName": "YsEmoji",
+      "IconName": "yun_23",
+      "_byte_length": 37
+    },
+    {
+      "_record_index": 579,
+      "_byte_offset": 24372,
+      "FormatStr": "[zhuakuang_01]",
+      "FrameNo": 1,
+      "AtlasName": "YsEmoji",
+      "IconName": "zhuakuang_00",
+      "_byte_length": 49
+    },
+    {
+      "_record_index": 580,
+      "_byte_offset": 24421,
+      "FormatStr": "[zhuakuang_01]",
+      "FrameNo": 2,
+      "AtlasName": "YsEmoji",
+      "IconName": "zhuakuang_01",
+      "_byte_length": 49
+    },
+    {
+      "_record_index": 581,
+      "_byte_offset": 24470,
+      "FormatStr": "[zhuakuang_01]",
+      "FrameNo": 3,
+      "AtlasName": "YsEmoji",
+      "IconName": "zhuakuang_02",
+      "_byte_length": 49
+    },
+    {
+      "_record_index": 582,
+      "_byte_offset": 24519,
+      "FormatStr": "[zhuakuang_01]",
+      "FrameNo": 4,
+      "AtlasName": "YsEmoji",
+      "IconName": "zhuakuang_03",
+      "_byte_length": 49
+    },
+    {
+      "_record_index": 583,
+      "_byte_offset": 24568,
+      "FormatStr": "[zhuakuang_01]",
+      "FrameNo": 5,
+      "AtlasName": "YsEmoji",
+      "IconName": "zhuakuang_04",
+      "_byte_length": 49
+    },
+    {
+      "_record_index": 584,
+      "_byte_offset": 24617,
+      "FormatStr": "[zhuakuang_01]",
+      "FrameNo": 6,
+      "AtlasName": "YsEmoji",
+      "IconName": "zhuakuang_05",
+      "_byte_length": 49
+    },
+    {
+      "_record_index": 585,
+      "_byte_offset": 24666,
+      "FormatStr": "[zhuakuang_01]",
+      "FrameNo": 7,
+      "AtlasName": "YsEmoji",
+      "IconName": "zhuakuang_06",
+      "_byte_length": 49
+    },
+    {
+      "_record_index": 586,
+      "_byte_offset": 24715,
+      "FormatStr": "[zhuakuang_01]",
+      "FrameNo": 8,
+      "AtlasName": "YsEmoji",
+      "IconName": "zhuakuang_07",
+      "_byte_length": 49
+    },
+    {
+      "_record_index": 587,
+      "_byte_offset": 24764,
+      "FormatStr": "[zhuakuang_01]",
+      "FrameNo": 9,
+      "AtlasName": "YsEmoji",
+      "IconName": "zhuakuang_08",
+      "_byte_length": 49
+    },
+    {
+      "_record_index": 588,
+      "_byte_offset": 24813,
+      "FormatStr": "[zhuakuang_01]",
+      "FrameNo": 10,
+      "AtlasName": "YsEmoji",
+      "IconName": "zhuakuang_09",
+      "_byte_length": 49
+    },
+    {
+      "_record_index": 589,
+      "_byte_offset": 24862,
+      "FormatStr": "[zhuakuang_01]",
+      "FrameNo": 11,
+      "AtlasName": "YsEmoji",
+      "IconName": "zhuakuang_10",
+      "_byte_length": 49
+    },
+    {
+      "_record_index": 590,
+      "_byte_offset": 24911,
+      "FormatStr": "[zhuakuang_01]",
+      "FrameNo": 12,
+      "AtlasName": "YsEmoji",
+      "IconName": "zhuakuang_11",
+      "_byte_length": 49
+    },
+    {
+      "_record_index": 591,
+      "_byte_offset": 24960,
+      "FormatStr": "[zhuakuang_01]",
+      "FrameNo": 13,
+      "AtlasName": "YsEmoji",
+      "IconName": "zhuakuang_12",
+      "_byte_length": 49
+    },
+    {
+      "_record_index": 592,
+      "_byte_offset": 25009,
+      "FormatStr": "[zhuakuang_01]",
+      "FrameNo": 14,
+      "AtlasName": "YsEmoji",
+      "IconName": "zhuakuang_13",
+      "_byte_length": 49
+    },
+    {
+      "_record_index": 593,
+      "_byte_offset": 25058,
+      "FormatStr": "[zhuakuang_01]",
+      "FrameNo": 15,
+      "AtlasName": "YsEmoji",
+      "IconName": "zhuakuang_14",
+      "_byte_length": 49
+    },
+    {
+      "_record_index": 594,
+      "_byte_offset": 25107,
+      "FormatStr": "[zhuakuang_01]",
+      "FrameNo": 16,
+      "AtlasName": "YsEmoji",
+      "IconName": "zhuakuang_15",
+      "_byte_length": 49
+    },
+    {
+      "_record_index": 595,
+      "_byte_offset": 25156,
+      "FormatStr": "[zhuakuang_01]",
+      "FrameNo": 17,
+      "AtlasName": "YsEmoji",
+      "IconName": "zhuakuang_16",
+      "_byte_length": 49
+    },
+    {
+      "_record_index": 596,
+      "_byte_offset": 25205,
+      "FormatStr": "[zhuakuang_01]",
+      "FrameNo": 18,
+      "AtlasName": "YsEmoji",
+      "IconName": "zhuakuang_17",
+      "_byte_length": 49
+    },
+    {
+      "_record_index": 597,
+      "_byte_offset": 25254,
+      "FormatStr": "[zhuakuang_01]",
+      "FrameNo": 19,
+      "AtlasName": "YsEmoji",
+      "IconName": "zhuakuang_18",
+      "_byte_length": 49
+    },
+    {
+      "_record_index": 598,
+      "_byte_offset": 25303,
+      "FormatStr": "[zhuakuang_01]",
+      "FrameNo": 20,
+      "AtlasName": "YsEmoji",
+      "IconName": "zhuakuang_19",
+      "_byte_length": 49
+    },
+    {
+      "_record_index": 599,
+      "_byte_offset": 25352,
+      "FormatStr": "[zhuakuang_01]",
+      "FrameNo": 21,
+      "AtlasName": "YsEmoji",
+      "IconName": "zhuakuang_20",
+      "_byte_length": 49
+    },
+    {
+      "_record_index": 600,
+      "_byte_offset": 25401,
+      "FormatStr": "[ziya_01]",
+      "FrameNo": 1,
+      "AtlasName": "YsEmoji",
+      "IconName": "ziya_00",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 601,
+      "_byte_offset": 25440,
+      "FormatStr": "[ziya_01]",
+      "FrameNo": 2,
+      "AtlasName": "YsEmoji",
+      "IconName": "ziya_01",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 602,
+      "_byte_offset": 25479,
+      "FormatStr": "[ziya_01]",
+      "FrameNo": 3,
+      "AtlasName": "YsEmoji",
+      "IconName": "ziya_02",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 603,
+      "_byte_offset": 25518,
+      "FormatStr": "[ziya_01]",
+      "FrameNo": 4,
+      "AtlasName": "YsEmoji",
+      "IconName": "ziya_03",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 604,
+      "_byte_offset": 25557,
+      "FormatStr": "[ziya_01]",
+      "FrameNo": 5,
+      "AtlasName": "YsEmoji",
+      "IconName": "ziya_04",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 605,
+      "_byte_offset": 25596,
+      "FormatStr": "[ziya_01]",
+      "FrameNo": 6,
+      "AtlasName": "YsEmoji",
+      "IconName": "ziya_05",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 606,
+      "_byte_offset": 25635,
+      "FormatStr": "[ziya_01]",
+      "FrameNo": 7,
+      "AtlasName": "YsEmoji",
+      "IconName": "ziya_06",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 607,
+      "_byte_offset": 25674,
+      "FormatStr": "[ziya_01]",
+      "FrameNo": 8,
+      "AtlasName": "YsEmoji",
+      "IconName": "ziya_07",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 608,
+      "_byte_offset": 25713,
+      "FormatStr": "[ziya_01]",
+      "FrameNo": 9,
+      "AtlasName": "YsEmoji",
+      "IconName": "ziya_08",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 609,
+      "_byte_offset": 25752,
+      "FormatStr": "[ziya_01]",
+      "FrameNo": 10,
+      "AtlasName": "YsEmoji",
+      "IconName": "ziya_09",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 610,
+      "_byte_offset": 25791,
+      "FormatStr": "[ziya_01]",
+      "FrameNo": 11,
+      "AtlasName": "YsEmoji",
+      "IconName": "ziya_10",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 611,
+      "_byte_offset": 25830,
+      "FormatStr": "[ziya_01]",
+      "FrameNo": 12,
+      "AtlasName": "YsEmoji",
+      "IconName": "ziya_11",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 612,
+      "_byte_offset": 25869,
+      "FormatStr": "[ziya_01]",
+      "FrameNo": 13,
+      "AtlasName": "YsEmoji",
+      "IconName": "ziya_12",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 613,
+      "_byte_offset": 25908,
+      "FormatStr": "[ziya_01]",
+      "FrameNo": 14,
+      "AtlasName": "YsEmoji",
+      "IconName": "ziya_13",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 614,
+      "_byte_offset": 25947,
+      "FormatStr": "[ziya_01]",
+      "FrameNo": 15,
+      "AtlasName": "YsEmoji",
+      "IconName": "ziya_14",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 615,
+      "_byte_offset": 25986,
+      "FormatStr": "[ziya_01]",
+      "FrameNo": 16,
+      "AtlasName": "YsEmoji",
+      "IconName": "ziya_15",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 616,
+      "_byte_offset": 26025,
+      "FormatStr": "[ziya_01]",
+      "FrameNo": 17,
+      "AtlasName": "YsEmoji",
+      "IconName": "ziya_16",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 617,
+      "_byte_offset": 26064,
+      "FormatStr": "[ziya_01]",
+      "FrameNo": 18,
+      "AtlasName": "YsEmoji",
+      "IconName": "ziya_17",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 618,
+      "_byte_offset": 26103,
+      "FormatStr": "[ziya_01]",
+      "FrameNo": 19,
+      "AtlasName": "YsEmoji",
+      "IconName": "ziya_18",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 619,
+      "_byte_offset": 26142,
+      "FormatStr": "[ziya_01]",
+      "FrameNo": 20,
+      "AtlasName": "YsEmoji",
+      "IconName": "ziya_19",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 620,
+      "_byte_offset": 26181,
+      "FormatStr": "[ziya_01]",
+      "FrameNo": 21,
+      "AtlasName": "YsEmoji",
+      "IconName": "ziya_20",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 621,
+      "_byte_offset": 26220,
+      "FormatStr": "[ziya_01]",
+      "FrameNo": 22,
+      "AtlasName": "YsEmoji",
+      "IconName": "ziya_21",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 622,
+      "_byte_offset": 26259,
+      "FormatStr": "[ziya_01]",
+      "FrameNo": 23,
+      "AtlasName": "YsEmoji",
+      "IconName": "ziya_22",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 623,
+      "_byte_offset": 26298,
+      "FormatStr": "[ziya_01]",
+      "FrameNo": 24,
+      "AtlasName": "YsEmoji",
+      "IconName": "ziya_23",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 624,
+      "_byte_offset": 26337,
+      "FormatStr": "[ziya_01]",
+      "FrameNo": 25,
+      "AtlasName": "YsEmoji",
+      "IconName": "ziya_24",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 625,
+      "_byte_offset": 26376,
+      "FormatStr": "[ziya_01]",
+      "FrameNo": 26,
+      "AtlasName": "YsEmoji",
+      "IconName": "ziya_25",
+      "_byte_length": 39
+    }
+  ]
+}

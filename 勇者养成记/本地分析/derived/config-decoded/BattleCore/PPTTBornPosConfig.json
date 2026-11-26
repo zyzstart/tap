@@ -1,0 +1,255 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_fp_ppttbornposconfig.bytes.ab",
+    "path_id": 3214890751961108325,
+    "name": "PPTTBornPosConfig",
+    "sha256": "31b9c4f9ee0d4ed1b4f110d6840e8b17e887ad20feb14f89c1b57ea29b6747ba",
+    "export": "derived/unity/text/assets_resources_config_resbin_fp_ppttbornposconfig.bytes/PPTTBornPosConfig__3214890751961108325.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 452,
+      "version": 1,
+      "record_count": 12,
+      "stored_crc32": "fb421762",
+      "computed_inverted_crc32": "fb421762"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "BattleCore",
+      "name": "PPTTBornPosConfig",
+      "fields": [
+        {
+          "type": "uint",
+          "name": "PosLibID",
+          "object_offset": 16
+        },
+        {
+          "type": "int",
+          "name": "PosType",
+          "object_offset": 20
+        },
+        {
+          "type": "FP",
+          "name": "Row",
+          "object_offset": 24
+        },
+        {
+          "type": "FP",
+          "name": "Column",
+          "object_offset": 32
+        },
+        {
+          "type": "int",
+          "name": "EffectID",
+          "object_offset": 40
+        },
+        {
+          "type": "FP",
+          "name": "PosCooling",
+          "object_offset": 48
+        }
+      ],
+      "unpack_va": 35214836,
+      "dump_line": 167992
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x2195628",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x219564c",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x2195670",
+        "target_va": "0x21f6938",
+        "opcode": "BL",
+        "reader": "readInt64",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x2195694",
+        "target_va": "0x21f6938",
+        "opcode": "BL",
+        "reader": "readInt64",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x21956b8",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 40,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x21956f8",
+        "target_va": "0x21f6938",
+        "opcode": "B-tail",
+        "reader": "readInt64",
+        "destination_object_offset": 48,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 12
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "PosLibID": 0,
+      "PosType": 1,
+      "Row__raw_int64": -12884901888,
+      "Column__raw_int64": 25769803776,
+      "EffectID": 0,
+      "PosCooling__raw_int64": 0,
+      "_byte_length": 36
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 56,
+      "PosLibID": 1,
+      "PosType": 2,
+      "Row__raw_int64": 60129542144,
+      "Column__raw_int64": 5583457484,
+      "EffectID": 0,
+      "PosCooling__raw_int64": 3865470566,
+      "_byte_length": 36
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 92,
+      "PosLibID": 1,
+      "PosType": 2,
+      "Row__raw_int64": 60129542144,
+      "Column__raw_int64": 12455405158,
+      "EffectID": 0,
+      "PosCooling__raw_int64": 3865470566,
+      "_byte_length": 36
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 128,
+      "PosLibID": 1,
+      "PosType": 2,
+      "Row__raw_int64": 60129542144,
+      "Column__raw_int64": 19327352832,
+      "EffectID": 0,
+      "PosCooling__raw_int64": 3865470566,
+      "_byte_length": 36
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 164,
+      "PosLibID": 1,
+      "PosType": 2,
+      "Row__raw_int64": 60129542144,
+      "Column__raw_int64": 25984552140,
+      "EffectID": 0,
+      "PosCooling__raw_int64": 3865470566,
+      "_byte_length": 36
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 200,
+      "PosLibID": 1,
+      "PosType": 2,
+      "Row__raw_int64": 60129542144,
+      "Column__raw_int64": 32641751449,
+      "EffectID": 0,
+      "PosCooling__raw_int64": 3865470566,
+      "_byte_length": 36
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 236,
+      "PosLibID": 1,
+      "PosType": 2,
+      "Row__raw_int64": 60129542144,
+      "Column__raw_int64": 39513699123,
+      "EffectID": 0,
+      "PosCooling__raw_int64": 3865470566,
+      "_byte_length": 36
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 272,
+      "PosLibID": 1,
+      "PosType": 2,
+      "Row__raw_int64": 60129542144,
+      "Column__raw_int64": 46170898432,
+      "EffectID": 0,
+      "PosCooling__raw_int64": 3865470566,
+      "_byte_length": 36
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 308,
+      "PosLibID": 2,
+      "PosType": 2,
+      "Row__raw_int64": 64424509440,
+      "Column__raw_int64": 12412455485,
+      "EffectID": 0,
+      "PosCooling__raw_int64": 21474836480,
+      "_byte_length": 36
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 344,
+      "PosLibID": 2,
+      "PosType": 2,
+      "Row__raw_int64": 64424509440,
+      "Column__raw_int64": 25941602467,
+      "EffectID": 0,
+      "PosCooling__raw_int64": 21474836480,
+      "_byte_length": 36
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 380,
+      "PosLibID": 2,
+      "PosType": 2,
+      "Row__raw_int64": 64424509440,
+      "Column__raw_int64": 39556648796,
+      "EffectID": 0,
+      "PosCooling__raw_int64": 21474836480,
+      "_byte_length": 36
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 416,
+      "PosLibID": 3,
+      "PosType": 2,
+      "Row__raw_int64": 68719476736,
+      "Column__raw_int64": 26027501813,
+      "EffectID": 0,
+      "PosCooling__raw_int64": 21474836480,
+      "_byte_length": 36
+    }
+  ]
+}

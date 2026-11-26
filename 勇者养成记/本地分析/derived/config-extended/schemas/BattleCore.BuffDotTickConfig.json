@@ -1,0 +1,115 @@
+{
+  "namespace": "BattleCore",
+  "name": "BuffDotTickConfig",
+  "fields": [
+    {
+      "type": "FP",
+      "name": "TickTime",
+      "object_offset": 16
+    },
+    {
+      "type": "byte",
+      "name": "TickWhenAdd",
+      "object_offset": 24
+    },
+    {
+      "type": "byte",
+      "name": "RemoveAfterDot",
+      "object_offset": 25
+    }
+  ],
+  "unpack_va": 23321572,
+  "dump_line": 166243,
+  "layout": [
+    {
+      "type": "FP",
+      "name": "TickTime",
+      "object_offset": 16,
+      "wire_type": "FP",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x163dc18",
+          "target_va": "0x21f6938",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt64"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt64",
+          "destination": [
+            "self",
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "type": "byte",
+      "name": "TickWhenAdd",
+      "object_offset": 24,
+      "wire_type": "byte",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x163dc3c",
+          "target_va": "0x21f65e0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt8"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt8",
+          "destination": [
+            "self",
+            24
+          ]
+        }
+      ]
+    },
+    {
+      "type": "byte",
+      "name": "RemoveAfterDot",
+      "object_offset": 25,
+      "wire_type": "byte",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x163dc7c",
+          "target_va": "0x21f65e0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt8"
+          ],
+          "opcode": "B",
+          "kind": "reader",
+          "reader": "readUInt8",
+          "destination": [
+            "self",
+            25
+          ]
+        }
+      ]
+    }
+  ],
+  "native_evidence": {
+    "method_start_va": "0x163dbe4",
+    "instruction_steps": 29,
+    "event_count": 3,
+    "branch_evidence": [],
+    "loops": [],
+    "instruction_sha256": "42e6d52d085cc02685298a7efd5293738e1550867ed83650c6a686b9a81473ef",
+    "gate": "concrete-success-path; all sequential readers/nested callees; full field/destination/stride matching",
+    "assumptions": [
+      "non-null input buffer and created nested objects/arrays",
+      "managed array bounds valid",
+      "AAPCS64 callee-saved register preservation",
+      "reader and nested call success; version 1 only"
+    ]
+  }
+}

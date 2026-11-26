@@ -1,0 +1,57 @@
+0x2196538: str       x21, [sp, #-0x30]!
+0x219653c: stp       x20, x19, [sp, #0x10]
+0x2196540: stp       x29, x30, [sp, #0x20]
+0x2196544: add       x29, sp, #0x20
+0x2196548: mov       x20, x0
+0x219654c: mov       x19, x1
+0x2196550: add       x21, x20, #0x10
+0x2196554: cbnz      x19, #0x2196560
+0x2196558: mov       x0, xzr
+0x219655c: bl        #0xd2b72c ; 
+0x2196560: mov       x0, x19
+0x2196564: mov       x1, x21
+0x2196568: mov       x2, xzr
+0x219656c: bl        #0x21f67d0 ; ProtoBase.PbReadBuf$$readInt32
+0x2196570: cbnz      w0, #0x21965e0
+0x2196574: add       x21, x20, #0x14
+0x2196578: cbnz      x19, #0x2196584
+0x219657c: mov       x0, xzr
+0x2196580: bl        #0xd2b72c ; 
+0x2196584: mov       x0, x19
+0x2196588: mov       x1, x21
+0x219658c: mov       x2, xzr
+0x2196590: bl        #0x21f67d0 ; ProtoBase.PbReadBuf$$readInt32
+0x2196594: cbnz      w0, #0x21965e0
+0x2196598: add       x21, x20, #0x18
+0x219659c: cbnz      x19, #0x21965a8
+0x21965a0: mov       x0, xzr
+0x21965a4: bl        #0xd2b72c ; 
+0x21965a8: mov       x0, x19
+0x21965ac: mov       x1, x21
+0x21965b0: mov       x2, xzr
+0x21965b4: bl        #0x21f6938 ; ProtoBase.PbReadBuf$$readInt64
+0x21965b8: cbnz      w0, #0x21965e0
+0x21965bc: add       x21, x20, #0x20
+0x21965c0: cbnz      x19, #0x21965cc
+0x21965c4: mov       x0, xzr
+0x21965c8: bl        #0xd2b72c ; 
+0x21965cc: mov       x0, x19
+0x21965d0: mov       x1, x21
+0x21965d4: mov       x2, xzr
+0x21965d8: bl        #0x21f6938 ; ProtoBase.PbReadBuf$$readInt64
+0x21965dc: cbz       w0, #0x21965f0
+0x21965e0: ldp       x29, x30, [sp, #0x20]
+0x21965e4: ldp       x20, x19, [sp, #0x10]
+0x21965e8: ldr       x21, [sp], #0x30
+0x21965ec: ret       
+0x21965f0: add       x20, x20, #0x28
+0x21965f4: cbnz      x19, #0x2196600
+0x21965f8: mov       x0, xzr
+0x21965fc: bl        #0xd2b72c ; 
+0x2196600: mov       x0, x19
+0x2196604: mov       x1, x20
+0x2196608: ldp       x29, x30, [sp, #0x20]
+0x219660c: ldp       x20, x19, [sp, #0x10]
+0x2196610: mov       x2, xzr
+0x2196614: ldr       x21, [sp], #0x30
+0x2196618: b         #0x21f6938 ; ProtoBase.PbReadBuf$$readInt64

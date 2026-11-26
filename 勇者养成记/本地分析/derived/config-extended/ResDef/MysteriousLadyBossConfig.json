@@ -1,0 +1,78 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_mysteriousladybossconfig.bytes.ab",
+    "path_id": 1663146801885178219,
+    "name": "MysteriousLadyBossConfig",
+    "sha256": "5a579f41ddee1ac0b914ac9d277db7b41a844611960e39994a72291deb33ff20",
+    "export": "derived/unity/text/assets_resources_config_resbin_mysteriousladybossconfig.bytes/MysteriousLadyBossConfig__1663146801885178219.bin",
+    "schema": "ResDef.MysteriousLadyBossConfig",
+    "path_id_decimal": "1663146801885178219",
+    "legacy_status": "raw-header-verified",
+    "legacy_reason": "Unsupported arrays/nested/enum fields: ItemAttributeData[] AttrItemData",
+    "status": "decoded-validated-native-recursive",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 85,
+      "version": 1,
+      "record_count": 1,
+      "stored_crc32": "d7636b54",
+      "computed_inverted_crc32": "d7636b54"
+    },
+    "native_layout_verified": true,
+    "schema_file": "derived/config-extended/schemas/ResDef.MysteriousLadyBossConfig.json",
+    "minimum_record_size": 53,
+    "min_expected_payload_bytes": 53,
+    "actual_payload_bytes": 65,
+    "decoded_record_count": 1,
+    "validation": {
+      "header_verified": true,
+      "count_verified": true,
+      "exact_eof": true,
+      "full_reencode_equal": true,
+      "full_reencode_sha256": "5a579f41ddee1ac0b914ac9d277db7b41a844611960e39994a72291deb33ff20",
+      "decoded_node_count": 19,
+      "payload_bytes": 65
+    },
+    "arrays": [
+      {
+        "field": "AttrItemData",
+        "count": 3,
+        "count_encoding": "none-native-fixed"
+      }
+    ],
+    "decoded_json": "derived/config-extended/ResDef/MysteriousLadyBossConfig.json",
+    "decoded_csv": "derived/config-extended/ResDef/MysteriousLadyBossConfig.csv"
+  },
+  "precision": "Exact JSON integer number tokens, with decimal-string mirrors for every int64/uint64/FP. FP is raw signed int64; no scaling.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "LadyBossEventID": 1,
+      "ChapertId": 1,
+      "Weight": 63,
+      "AttrItemData": [
+        {
+          "GoodID": 201001,
+          "GoodNum": 1,
+          "CurrencyType": 3,
+          "CurrencyNum": 360
+        },
+        {
+          "GoodID": 0,
+          "GoodNum": 0,
+          "CurrencyType": 0,
+          "CurrencyNum": 0
+        },
+        {
+          "GoodID": 0,
+          "GoodNum": 0,
+          "CurrencyType": 0,
+          "CurrencyNum": 0
+        }
+      ],
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 65
+    }
+  ]
+}

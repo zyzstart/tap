@@ -1,0 +1,277 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_pvpdivisionconfig.bytes.ab",
+    "path_id": -451872779838276880,
+    "name": "PvpDivisionConfig",
+    "sha256": "88bcb4b4dd05ea881ff7a083f65a0499d561366abf6ce87a8125271041af8a92",
+    "export": "derived/unity/text/assets_resources_config_resbin_pvpdivisionconfig.bytes/PvpDivisionConfig__-451872779838276880.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 532,
+      "version": 1,
+      "record_count": 8,
+      "stored_crc32": "2053b81c",
+      "computed_inverted_crc32": "2053b81c"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "PvpDivisionConfig",
+      "fields": [
+        {
+          "type": "int",
+          "name": "DivisionID",
+          "object_offset": 16
+        },
+        {
+          "type": "string",
+          "name": "Name",
+          "object_offset": 24
+        },
+        {
+          "type": "string",
+          "name": "Icon",
+          "object_offset": 32
+        },
+        {
+          "type": "int",
+          "name": "MinScore",
+          "object_offset": 40
+        },
+        {
+          "type": "int",
+          "name": "MaxScore",
+          "object_offset": 44
+        },
+        {
+          "type": "int",
+          "name": "MinRank",
+          "object_offset": 48
+        },
+        {
+          "type": "int",
+          "name": "MaxRank",
+          "object_offset": 52
+        },
+        {
+          "type": "int",
+          "name": "SeasonBeginScore",
+          "object_offset": 56
+        },
+        {
+          "type": "byte",
+          "name": "IsProtectDivision",
+          "object_offset": 60
+        }
+      ],
+      "unpack_va": 32027448,
+      "dump_line": 210060
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1e8b36c",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8b394",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8b3bc",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8b3e0",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 40,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8b404",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 44,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8b428",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 48,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8b44c",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 52,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8b470",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 56,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8b4b0",
+        "target_va": "0x21f65e0",
+        "opcode": "B-tail",
+        "reader": "readUInt8",
+        "destination_object_offset": 60,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 8
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "DivisionID": 1,
+      "Name": "无名小卒",
+      "Icon": "wlmz_dw_icon_jhcn",
+      "MinScore": 0,
+      "MaxScore": 1199,
+      "MinRank": 0,
+      "MaxRank": 0,
+      "SeasonBeginScore": 1000,
+      "IsProtectDivision": 1,
+      "_byte_length": 64
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 84,
+      "DivisionID": 2,
+      "Name": "闲游散仙",
+      "Icon": "wlmz_dw_icon_xymq",
+      "MinScore": 1200,
+      "MaxScore": 1399,
+      "MinRank": 0,
+      "MaxRank": 0,
+      "SeasonBeginScore": 1000,
+      "IsProtectDivision": 1,
+      "_byte_length": 64
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 148,
+      "DivisionID": 3,
+      "Name": "护法天兵",
+      "Icon": "wlmz_dw_icon_mzyf",
+      "MinScore": 1400,
+      "MaxScore": 1599,
+      "MinRank": 0,
+      "MaxRank": 0,
+      "SeasonBeginScore": 1100,
+      "IsProtectDivision": 1,
+      "_byte_length": 64
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 212,
+      "DivisionID": 4,
+      "Name": "天罡神将",
+      "Icon": "wlmz_dw_icon_wlms",
+      "MinScore": 1600,
+      "MaxScore": 1799,
+      "MinRank": 0,
+      "MaxRank": 0,
+      "SeasonBeginScore": 1200,
+      "IsProtectDivision": 1,
+      "_byte_length": 64
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 276,
+      "DivisionID": 5,
+      "Name": "七曜星君",
+      "Icon": "wlmz_dw_icon_ydzs",
+      "MinScore": 1800,
+      "MaxScore": 1999,
+      "MinRank": 0,
+      "MaxRank": 0,
+      "SeasonBeginScore": 1300,
+      "IsProtectDivision": 1,
+      "_byte_length": 64
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 340,
+      "DivisionID": 6,
+      "Name": "神霄真王",
+      "Icon": "wlmz_dw_icon_tsbd",
+      "MinScore": 2000,
+      "MaxScore": 0,
+      "MinRank": 0,
+      "MaxRank": 11,
+      "SeasonBeginScore": 1400,
+      "IsProtectDivision": 0,
+      "_byte_length": 64
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 404,
+      "DivisionID": 7,
+      "Name": "真武大帝",
+      "Icon": "wlmz_dw_icon_szhj",
+      "MinScore": 2000,
+      "MaxScore": 0,
+      "MinRank": 10,
+      "MaxRank": 2,
+      "SeasonBeginScore": 1500,
+      "IsProtectDivision": 0,
+      "_byte_length": 64
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 468,
+      "DivisionID": 8,
+      "Name": "九界天尊",
+      "Icon": "wlmz_dw_icon_wlmz",
+      "MinScore": 2000,
+      "MaxScore": 0,
+      "MinRank": 1,
+      "MaxRank": 1,
+      "SeasonBeginScore": 1600,
+      "IsProtectDivision": 0,
+      "_byte_length": 64
+    }
+  ]
+}

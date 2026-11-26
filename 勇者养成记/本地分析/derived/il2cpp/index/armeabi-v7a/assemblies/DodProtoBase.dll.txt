@@ -1,0 +1,694 @@
+// TEXT-ONLY METADATA/SIGNATURE EXCERPT; NOT RECOVERED C# IMPLEMENTATION.
+// Source: derived/il2cpp/armeabi-v7a/dump.cs
+// SHA256: 4b189984f87cc6d586f1c23c3122323a28473ae06384d36ea292e3e13f97e6a1
+// Assembly: DodProtoBase.dll; types: 29; original dump lines 140400-141058
+
+// ORIGINAL DUMP LINES 140400-140402; TypeDefIndex 2219
+// Namespace: 
+internal class <Module> // TypeDefIndex: 2219
+{}
+
+// ORIGINAL DUMP LINES 140404-140424; TypeDefIndex 2220
+// Namespace: net
+public class CSSecHead : BProtoBaseStruct // TypeDefIndex: 2220
+{
+	// Fields
+	public ushort Magic; // 0x8
+	public ushort PkgLen; // 0xA
+
+	// Methods
+
+	// RVA: 0x1CEEC70 Offset: 0x1CEEC70 VA: 0x1CEEC70 Slot: 5
+	public void create() { }
+
+	// RVA: 0x1CEEC7C Offset: 0x1CEEC7C VA: 0x1CEEC7C Slot: 6
+	public PbError.ErrorType pack(PbWriteBuf destBuf, uint cutVer, PbStack stack) { }
+
+	// RVA: 0x1CEECD8 Offset: 0x1CEECD8 VA: 0x1CEECD8 Slot: 4
+	public PbError.ErrorType unpack(PbReadBuf srcBuf, uint cutVer, PbStack stack) { }
+
+	// RVA: 0x1CEED54 Offset: 0x1CEED54 VA: 0x1CEED54
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 140426-140443; TypeDefIndex 2221
+// Namespace: net
+public class CSSecBody : BProtoBaseStruct // TypeDefIndex: 2221
+{
+	// Fields
+	public uint Crc; // 0x8
+	public ushort Seq; // 0xC
+
+	// Methods
+
+	// RVA: 0x1CEEB90 Offset: 0x1CEEB90 VA: 0x1CEEB90 Slot: 5
+	public PbError.ErrorType pack(PbWriteBuf destBuf, uint cutVer, PbStack stack) { }
+
+	// RVA: 0x1CEEBEC Offset: 0x1CEEBEC VA: 0x1CEEBEC Slot: 4
+	public PbError.ErrorType unpack(PbReadBuf srcBuf, uint cutVer, PbStack stack) { }
+
+	// RVA: 0x1CEEC68 Offset: 0x1CEEC68 VA: 0x1CEEC68
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 140445-140465; TypeDefIndex 2222
+// Namespace: net
+public class CSSecPkgPart : BProtoBaseStruct // TypeDefIndex: 2222
+{
+	// Fields
+	public CSSecHead Head; // 0x8
+	public CSSecBody Body; // 0xC
+
+	// Methods
+
+	// RVA: 0x1CEED5C Offset: 0x1CEED5C VA: 0x1CEED5C
+	public void .ctor() { }
+
+	// RVA: 0x1CEEDFC Offset: 0x1CEEDFC VA: 0x1CEEDFC Slot: 5
+	public void create() { }
+
+	// RVA: 0x1CEEE24 Offset: 0x1CEEE24 VA: 0x1CEEE24 Slot: 6
+	public PbError.ErrorType pack(PbWriteBuf destBuf, uint cutVer, PbStack stack) { }
+
+	// RVA: 0x1CEEE90 Offset: 0x1CEEE90 VA: 0x1CEEE90 Slot: 4
+	public PbError.ErrorType unpack(PbReadBuf srcBuf, uint cutVer, PbStack stack) { }
+}
+
+// ORIGINAL DUMP LINES 140467-140474; TypeDefIndex 2223
+// Namespace: ProtoBase
+public interface BProtoBaseStruct // TypeDefIndex: 2223
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract PbError.ErrorType unpack(PbReadBuf srcBuf, uint cutVer, PbStack stack);
+}
+
+// ORIGINAL DUMP LINES 140476-140489; TypeDefIndex 2224
+// Namespace: ProtoBase
+public class PbStack // TypeDefIndex: 2224
+{
+	// Fields
+	private List<string> m_stack; // 0x8
+
+	// Methods
+
+	// RVA: 0x1CEDCE8 Offset: 0x1CEDCE8 VA: 0x1CEDCE8
+	public string TrackStack() { }
+
+	// RVA: 0x1CEDE48 Offset: 0x1CEDE48 VA: 0x1CEDE48
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 140491-140572; TypeDefIndex 2225
+// Namespace: ProtoBase
+public class PbWriteBuf // TypeDefIndex: 2225
+{
+	// Fields
+	private byte[] beginPtr; // 0x8
+	private int position; // 0xC
+	private int length; // 0x10
+
+	// Methods
+
+	// RVA: 0x1CEDED4 Offset: 0x1CEDED4 VA: 0x1CEDED4
+	private void _set(byte[] ptr, int len) { }
+
+	// RVA: 0x1CEDEF0 Offset: 0x1CEDEF0 VA: 0x1CEDEF0
+	private void _reset() { }
+
+	// RVA: 0x1CEDF04 Offset: 0x1CEDF04 VA: 0x1CEDF04
+	public void .ctor() { }
+
+	// RVA: 0x1CEDF2C Offset: 0x1CEDF2C VA: 0x1CEDF2C
+	public void .ctor(byte[] ptr, int len) { }
+
+	// RVA: 0x1CEDF64 Offset: 0x1CEDF64 VA: 0x1CEDF64
+	public void .ctor(int len) { }
+
+	// RVA: 0x1CEDFF0 Offset: 0x1CEDFF0 VA: 0x1CEDFF0
+	public void set(byte[] ptr, int len) { }
+
+	// RVA: 0x1CEE00C Offset: 0x1CEE00C VA: 0x1CEE00C
+	public void clearUsedData() { }
+
+	// RVA: 0x1CEE018 Offset: 0x1CEE018 VA: 0x1CEE018
+	public int getUsedSize() { }
+
+	// RVA: 0x1CEE020 Offset: 0x1CEE020 VA: 0x1CEE020
+	public int getTotalSize() { }
+
+	// RVA: 0x1CEE028 Offset: 0x1CEE028 VA: 0x1CEE028
+	public byte[] getBeginPtr() { }
+
+	// RVA: 0x1CEE030 Offset: 0x1CEE030 VA: 0x1CEE030
+	public PbError.ErrorType reserve(int gap) { }
+
+	// RVA: 0x1CEE060 Offset: 0x1CEE060 VA: 0x1CEE060
+	public PbError.ErrorType writeUInt8(byte src) { }
+
+	// RVA: 0x1CEE0D0 Offset: 0x1CEE0D0 VA: 0x1CEE0D0
+	public PbError.ErrorType writeUInt16(ushort src) { }
+
+	// RVA: 0x1CEE0D8 Offset: 0x1CEE0D8 VA: 0x1CEE0D8
+	public PbError.ErrorType writeInt16(short src) { }
+
+	// RVA: 0x1CEE224 Offset: 0x1CEE224 VA: 0x1CEE224
+	public PbError.ErrorType writeUInt32(uint src) { }
+
+	// RVA: 0x1CEE228 Offset: 0x1CEE228 VA: 0x1CEE228
+	public PbError.ErrorType writeInt32(int src) { }
+
+	// RVA: 0x1CEE374 Offset: 0x1CEE374 VA: 0x1CEE374
+	public PbError.ErrorType writeUInt64(ulong src) { }
+
+	// RVA: 0x1CEE38C Offset: 0x1CEE38C VA: 0x1CEE38C
+	public PbError.ErrorType writeInt64(long src) { }
+
+	// RVA: 0x1CEE4F0 Offset: 0x1CEE4F0 VA: 0x1CEE4F0
+	public PbError.ErrorType writeFloat(float src) { }
+
+	// RVA: 0x1CEE594 Offset: 0x1CEE594 VA: 0x1CEE594
+	public PbError.ErrorType writeString(string src, int maxStrSize) { }
+
+	// RVA: 0x1CEE8E0 Offset: 0x1CEE8E0 VA: 0x1CEE8E0
+	public PbError.ErrorType writeUInt16(ushort src, int pos) { }
+
+	// RVA: 0x1CEE8E8 Offset: 0x1CEE8E8 VA: 0x1CEE8E8
+	public PbError.ErrorType writeInt16(short src, int pos) { }
+
+	// RVA: 0x1CEE8DC Offset: 0x1CEE8DC VA: 0x1CEE8DC
+	public PbError.ErrorType writeUInt32(uint src, int pos) { }
+
+	// RVA: 0x1CEEA3C Offset: 0x1CEEA3C VA: 0x1CEEA3C
+	public PbError.ErrorType writeInt32(int src, int pos) { }
+}
+
+// ORIGINAL DUMP LINES 140574-140647; TypeDefIndex 2226
+// Namespace: ProtoBase
+public class PbReadBuf // TypeDefIndex: 2226
+{
+	// Fields
+	private byte[] beginPtr; // 0x8
+	private int position; // 0xC
+	private int length; // 0x10
+	private bool IsNetEndian; // 0x14
+
+	// Methods
+
+	// RVA: 0x1CECED0 Offset: 0x1CECED0 VA: 0x1CECED0
+	public void .ctor() { }
+
+	// RVA: 0x1CECF00 Offset: 0x1CECF00 VA: 0x1CECF00
+	public void .ctor(byte[] ptr, int len) { }
+
+	// RVA: 0x1CECF40 Offset: 0x1CECF40 VA: 0x1CECF40
+	public void set(byte[] ptr, int len) { }
+
+	// RVA: 0x1CECF64 Offset: 0x1CECF64 VA: 0x1CECF64
+	public int getUsedSize() { }
+
+	// RVA: 0x1CECF6C Offset: 0x1CECF6C VA: 0x1CECF6C
+	public void setUsedSize(int pos) { }
+
+	// RVA: 0x1CECF84 Offset: 0x1CECF84 VA: 0x1CECF84
+	public int getTotalSize() { }
+
+	// RVA: 0x1CECF8C Offset: 0x1CECF8C VA: 0x1CECF8C
+	public int getLeftSize() { }
+
+	// RVA: 0x1CECF9C Offset: 0x1CECF9C VA: 0x1CECF9C
+	public PbError.ErrorType readUInt8(out byte dest) { }
+
+	// RVA: 0x1CED010 Offset: 0x1CED010 VA: 0x1CED010
+	public PbError.ErrorType readInt16(out short dest) { }
+
+	// RVA: 0x1CED188 Offset: 0x1CED188 VA: 0x1CED188
+	public PbError.ErrorType readUInt16(out ushort dest) { }
+
+	// RVA: 0x1CED1B8 Offset: 0x1CED1B8 VA: 0x1CED1B8
+	public PbError.ErrorType readInt32(out int dest) { }
+
+	// RVA: 0x1CED330 Offset: 0x1CED330 VA: 0x1CED330
+	public PbError.ErrorType readUInt32(out uint dest) { }
+
+	// RVA: 0x1CED360 Offset: 0x1CED360 VA: 0x1CED360
+	public PbError.ErrorType readInt64(out long dest) { }
+
+	// RVA: 0x1CED4E8 Offset: 0x1CED4E8 VA: 0x1CED4E8
+	public PbError.ErrorType readUInt64(out ulong dest) { }
+
+	// RVA: 0x1CED51C Offset: 0x1CED51C VA: 0x1CED51C
+	private void ConvertBytesEndian(byte[] ptr, int pos) { }
+
+	// RVA: 0x1CED610 Offset: 0x1CED610 VA: 0x1CED610
+	public PbError.ErrorType readFloat(out float dest) { }
+
+	// RVA: 0x1CED7B8 Offset: 0x1CED7B8 VA: 0x1CED7B8
+	public PbError.ErrorType readString(out string dest, int maxStrSize) { }
+
+	// RVA: 0x1CED9B0 Offset: 0x1CED9B0 VA: 0x1CED9B0
+	public PbError.ErrorType readInt16(out short dest, int pos) { }
+
+	// RVA: 0x1CEDB1C Offset: 0x1CEDB1C VA: 0x1CEDB1C
+	public PbError.ErrorType readUInt16(out ushort dest, int pos) { }
+
+	// RVA: 0x1CEDB4C Offset: 0x1CEDB4C VA: 0x1CEDB4C
+	public PbError.ErrorType readInt32(out int dest, int pos) { }
+
+	// RVA: 0x1CEDCB8 Offset: 0x1CEDCB8 VA: 0x1CEDCB8
+	public PbError.ErrorType readUInt32(out uint dest, int pos) { }
+}
+
+// ORIGINAL DUMP LINES 140649-140656; TypeDefIndex 2227
+// Namespace: ProtoBase
+public class PbError // TypeDefIndex: 2227
+{
+	// Methods
+
+	// RVA: 0x1CECE1C Offset: 0x1CECE1C VA: 0x1CECE1C
+	public static string getErrorString(PbError.ErrorType errorCode) { }
+}
+
+// ORIGINAL DUMP LINES 140658-140680; TypeDefIndex 2228
+// Namespace: 
+public enum PbError.ErrorType // TypeDefIndex: 2228
+{
+	// Fields
+	public int value__; // 0x0
+	public const PbError.ErrorType PB_NO_ERROR = 0;
+	public const PbError.ErrorType PB_ERR_WRITE_BUFF_INSUFFIX = -1;
+	public const PbError.ErrorType PB_ERR_READ_BUFF_INSUFFIX = 0;
+	public const PbError.ErrorType PB_ERR_STR_LEN_TOO_BIG = -3;
+	public const PbError.ErrorType PB_ERR_STR_LEN_TOO_SMALL = -4;
+	public const PbError.ErrorType PB_ERR_REF_LEN_TOO_SMALL = -6;
+	public const PbError.ErrorType PB_ERR_REF_LEN_TOO_BIG = -7;
+	public const PbError.ErrorType PB_ERR_CUTVER_TOO_SMALL = -9;
+	public const PbError.ErrorType PB_ERR_INVALID_IP_VALUE = -12;
+	public const PbError.ErrorType PB_ERR_INVALID_TIME_VALUE = -13;
+	public const PbError.ErrorType PB_ERR_INVALID_DATE_VALUE = -14;
+	public const PbError.ErrorType PB_ERR_INVALID_DATETIME_VALUE = -15;
+	public const PbError.ErrorType PB_ERR_NET_CUTVER_INVALID = -20;
+	public const PbError.ErrorType PB_ERR_ARG_IS_NULL = -22;
+	public const PbError.ErrorType PB_ERR_INVALID_FORMAT = -24;
+	public const PbError.ErrorType PB_NO_IMP = -25;
+	public const PbError.ErrorType PB_ERR_STRING_BUG = -26;
+}
+
+// ORIGINAL DUMP LINES 140682-140697; TypeDefIndex 2229
+// Namespace: DEditorUIRuntime
+[AttributeUsageAttribute] // RVA: 0x460ACC Offset: 0x460ACC VA: 0x460ACC
+public class DisplayName : Attribute // TypeDefIndex: 2229
+{
+	// Fields
+	private string m_name; // 0x8
+	private string m_toolTip; // 0xC
+
+	// Methods
+
+	// RVA: 0x1CEA0D8 Offset: 0x1CEA0D8 VA: 0x1CEA0D8
+	public void .ctor(string name) { }
+
+	// RVA: 0x1CEA0F8 Offset: 0x1CEA0F8 VA: 0x1CEA0F8
+	public void .ctor(string name, string toolTip) { }
+}
+
+// ORIGINAL DUMP LINES 140699-140711; TypeDefIndex 2230
+// Namespace: DEditorUIRuntime
+[AttributeUsageAttribute] // RVA: 0x460B00 Offset: 0x460B00 VA: 0x460B00
+public class ArrayLenLimit : Attribute // TypeDefIndex: 2230
+{
+	// Fields
+	public int m_minLen; // 0x8
+	public int m_maxLen; // 0xC
+
+	// Methods
+
+	// RVA: 0x1CEA0B0 Offset: 0x1CEA0B0 VA: 0x1CEA0B0
+	public void .ctor(int minLen, int maxLen) { }
+}
+
+// ORIGINAL DUMP LINES 140713-140726; TypeDefIndex 2231
+// Namespace: DEditorUIRuntime
+[AttributeUsageAttribute] // RVA: 0x460B34 Offset: 0x460B34 VA: 0x460B34
+public class ShowSelect : Attribute // TypeDefIndex: 2231
+{
+	// Fields
+	private string m_selectProperty; // 0x8
+	private int m_value; // 0xC
+	private bool m_essentialCond; // 0x10
+
+	// Methods
+
+	// RVA: 0x1CEA1B8 Offset: 0x1CEA1B8 VA: 0x1CEA1B8
+	public void .ctor(string selectProerty, int value, bool essentialCond = False) { }
+}
+
+// ORIGINAL DUMP LINES 140728-140740; TypeDefIndex 2232
+// Namespace: DEditorUIRuntime
+[AttributeUsageAttribute] // RVA: 0x460B68 Offset: 0x460B68 VA: 0x460B68
+public class ShowEnumSelect : Attribute // TypeDefIndex: 2232
+{
+	// Fields
+	public string m_selectProperty; // 0x8
+	public Type m_filterType; // 0xC
+
+	// Methods
+
+	// RVA: 0x1CEA190 Offset: 0x1CEA190 VA: 0x1CEA190
+	public void .ctor(string selectProerty, Type filter) { }
+}
+
+// ORIGINAL DUMP LINES 140742-140753; TypeDefIndex 2233
+// Namespace: DEditorUIRuntime
+public enum FileType // TypeDefIndex: 2233
+{
+	// Fields
+	public int value__; // 0x0
+	public const FileType FILE_NONE = 0;
+	public const FileType FILE_PREFAB = 1;
+	public const FileType FILE_EFFECT = 2;
+	public const FileType FILE_AUDIO_CLIP = 3;
+	public const FileType FILE_CURVE = 4;
+	public const FileType FILE_IMG = 5;
+}
+
+// ORIGINAL DUMP LINES 140755-140766; TypeDefIndex 2234
+// Namespace: DEditorUIRuntime
+[AttributeUsageAttribute] // RVA: 0x460B9C Offset: 0x460B9C VA: 0x460B9C
+public class SelectFile : Attribute // TypeDefIndex: 2234
+{
+	// Fields
+	private FileType m_type; // 0x8
+
+	// Methods
+
+	// RVA: 0x1CEA170 Offset: 0x1CEA170 VA: 0x1CEA170
+	public void .ctor(FileType type) { }
+}
+
+// ORIGINAL DUMP LINES 140768-140782; TypeDefIndex 2235
+// Namespace: DEditorUIRuntime
+[AttributeUsageAttribute] // RVA: 0x460BD0 Offset: 0x460BD0 VA: 0x460BD0
+public class NextSeperator : Attribute // TypeDefIndex: 2235
+{
+	// Fields
+	public float m_border; // 0x8
+
+	// Methods
+
+	// RVA: 0x1CEA120 Offset: 0x1CEA120 VA: 0x1CEA120
+	public void .ctor() { }
+
+	// RVA: 0x1CEA144 Offset: 0x1CEA144 VA: 0x1CEA144
+	public void .ctor(float border = 1) { }
+}
+
+// ORIGINAL DUMP LINES 140784-140809; TypeDefIndex 2236
+// Namespace: DodGame
+public class BAsyncOper // TypeDefIndex: 2236
+{
+	// Fields
+	private uint m_sessId; // 0x8
+
+	// Properties
+	public uint CurrOperId { get; }
+
+	// Methods
+
+	// RVA: 0x1CEA1E8 Offset: 0x1CEA1E8 VA: 0x1CEA1E8
+	public uint get_CurrOperId() { }
+
+	// RVA: 0x1CEA1F0 Offset: 0x1CEA1F0 VA: 0x1CEA1F0
+	public void Begin() { }
+
+	// RVA: 0x1CEA200 Offset: 0x1CEA200 VA: 0x1CEA200
+	public void Cancel() { }
+
+	// RVA: 0x1CEA210 Offset: 0x1CEA210 VA: 0x1CEA210
+	public bool IsCurrOperValid(uint operId) { }
+
+	// RVA: 0x1CEA224 Offset: 0x1CEA224 VA: 0x1CEA224
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 140811-140823; TypeDefIndex 2237
+// Namespace: DodGame
+public enum BLogLevel // TypeDefIndex: 2237
+{
+	// Fields
+	public byte value__; // 0x0
+	public const BLogLevel NONE = 0;
+	public const BLogLevel DEBUG = 1;
+	public const BLogLevel INFO = 2;
+	public const BLogLevel WARNING = 4;
+	public const BLogLevel ERROR = 8;
+	public const BLogLevel FATAL = 16;
+	public const BLogLevel ALL = 31;
+}
+
+// ORIGINAL DUMP LINES 140825-140832; TypeDefIndex 2238
+// Namespace: DodGame
+public struct BLogEvent // TypeDefIndex: 2238
+{
+	// Fields
+	public BLogLevel Level; // 0x0
+	public string Message; // 0x4
+	public float Time; // 0x8
+}
+
+// ORIGINAL DUMP LINES 140834-140841; TypeDefIndex 2239
+// Namespace: DodGame
+public interface BIDLogHandler // TypeDefIndex: 2239
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract void Log(BLogEvent dLogEvent);
+}
+
+// ORIGINAL DUMP LINES 140843-140903; TypeDefIndex 2240
+// Namespace: DodGame
+public class BLogger // TypeDefIndex: 2240
+{
+	// Fields
+	private static uint level_; // 0x0
+	private static BIDLogHandler _idLogHandler; // 0x4
+	private static bool m_levelDebug; // 0x8
+	private static bool m_levelInfo; // 0x9
+	private static bool m_levelError; // 0xA
+	private static bool m_levelWarning; // 0xB
+	private static bool m_levelFatal; // 0xC
+	private static bool m_editorMode; // 0xD
+	private static bool m_editorFatalException; // 0xE
+
+	// Methods
+
+	// RVA: 0x1CEA22C Offset: 0x1CEA22C VA: 0x1CEA22C
+	public static void SetLevel(uint level) { }
+
+	// RVA: 0x1CEA650 Offset: 0x1CEA650 VA: 0x1CEA650
+	public static void SetLogHandler(BIDLogHandler handler) { }
+
+	// RVA: 0x1CEA740 Offset: 0x1CEA740 VA: 0x1CEA740
+	public static void Info(string message, object[] args) { }
+
+	[ConditionalAttribute] // RVA: 0x460C38 Offset: 0x460C38 VA: 0x460C38
+	// RVA: 0x1CEA808 Offset: 0x1CEA808 VA: 0x1CEA808
+	public static void Assert(bool expr) { }
+
+	[ConditionalAttribute] // RVA: 0x460C6C Offset: 0x460C6C VA: 0x460C6C
+	// RVA: 0x1CEAB1C Offset: 0x1CEAB1C VA: 0x1CEAB1C
+	public static void Assert(bool expr, string errFromat, object[] args) { }
+
+	[ConditionalAttribute] // RVA: 0x460CA0 Offset: 0x460CA0 VA: 0x460CA0
+	// RVA: 0x1CEACA0 Offset: 0x1CEACA0 VA: 0x1CEACA0
+	public static void Assert(bool expr, string errFromat) { }
+
+	// RVA: 0x1CEAE14 Offset: 0x1CEAE14 VA: 0x1CEAE14
+	public static void Warning(string message, object[] args) { }
+
+	// RVA: 0x1CEA968 Offset: 0x1CEA968 VA: 0x1CEA968
+	public static void Fatal(string message, object[] args) { }
+
+	// RVA: 0x1CEAF2C Offset: 0x1CEAF2C VA: 0x1CEAF2C
+	public static void EditorFatal(string message, object[] args) { }
+
+	// RVA: 0x1CEB05C Offset: 0x1CEB05C VA: 0x1CEB05C
+	public static void EditorWarning(string message, object[] args) { }
+
+	// RVA: 0x1CEB120 Offset: 0x1CEB120 VA: 0x1CEB120
+	public static void EditorAssert(bool expr) { }
+
+	// RVA: 0x1CEB2A8 Offset: 0x1CEB2A8 VA: 0x1CEB2A8
+	public static void EditorAssert(bool expr, string errFromat, object[] args) { }
+
+	// RVA: 0x1CEA3C8 Offset: 0x1CEA3C8 VA: 0x1CEA3C8
+	private static void Log(BLogLevel level, string msg, object[] args) { }
+
+	// RVA: 0x1CEB454 Offset: 0x1CEB454 VA: 0x1CEB454
+	private static void .cctor() { }
+}
+
+// ORIGINAL DUMP LINES 140905-140913; TypeDefIndex 2241
+// Namespace: DodGame
+[AttributeUsageAttribute] // RVA: 0x460C04 Offset: 0x460C04 VA: 0x460C04
+public class DodLuaNotExportAttribute : Attribute // TypeDefIndex: 2241
+{
+	// Methods
+
+	// RVA: 0x1CEB500 Offset: 0x1CEB500 VA: 0x1CEB500
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 140915-140950; TypeDefIndex 2242
+// Namespace: DodGame
+public class RingBuffer // TypeDefIndex: 2242
+{
+	// Fields
+	private byte[] m_buff; // 0x8
+	private int m_buffHead; // 0xC
+	private int m_buffTail; // 0x10
+	private int m_buffMaxSize; // 0x14
+	private bool m_autoIncrease; // 0x18
+
+	// Methods
+
+	// RVA: 0x1CEB508 Offset: 0x1CEB508 VA: 0x1CEB508
+	public void .ctor(int maxSize, bool autoIncrease = False) { }
+
+	// RVA: 0x1CEB538 Offset: 0x1CEB538 VA: 0x1CEB538
+	protected bool Init(int maxSize, bool autoIncrease) { }
+
+	// RVA: 0x1CEB5D0 Offset: 0x1CEB5D0 VA: 0x1CEB5D0
+	public int GetDataLen() { }
+
+	// RVA: 0x1CEB604 Offset: 0x1CEB604 VA: 0x1CEB604
+	public int GetCapacity() { }
+
+	// RVA: 0x1CEB610 Offset: 0x1CEB610 VA: 0x1CEB610
+	public int FetchData(byte[] dest, int offset, int dataLen) { }
+
+	// RVA: 0x1CEB7A4 Offset: 0x1CEB7A4 VA: 0x1CEB7A4
+	private bool EnsureCapacity(int dataLen) { }
+
+	// RVA: 0x1CEB9D0 Offset: 0x1CEB9D0 VA: 0x1CEB9D0
+	public bool PushData(byte[] src, int offset, int dataLen) { }
+
+	// RVA: 0x1CEBC90 Offset: 0x1CEBC90 VA: 0x1CEBC90
+	public void Clear() { }
+}
+
+// ORIGINAL DUMP LINES 140952-140968; TypeDefIndex 2243
+// Namespace: DodGame
+internal interface IBitOper // TypeDefIndex: 2243
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract void WriteBytes(int val, byte[] dest, ref int offset);
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract void WriteBytes(short val, byte[] dest, ref int offset);
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract void WriteBytes(long val, byte[] dest, ref int offset);
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract void FloatToInt(ref float val, ref int iVal);
+}
+
+// ORIGINAL DUMP LINES 140970-140997; TypeDefIndex 2244
+// Namespace: DodGame
+internal class SafeBitOper : IBitOper // TypeDefIndex: 2244
+{
+	// Fields
+	private static byte[] m_intBuff; // 0x0
+	private static byte[] m_shortBuff; // 0x4
+	private static byte[] m_longBuff; // 0x8
+
+	// Methods
+
+	// RVA: 0x1CEBCA0 Offset: 0x1CEBCA0 VA: 0x1CEBCA0 Slot: 4
+	public void WriteBytes(int val, byte[] dest, ref int offset) { }
+
+	// RVA: 0x1CEBEA8 Offset: 0x1CEBEA8 VA: 0x1CEBEA8 Slot: 5
+	public void WriteBytes(short val, byte[] dest, ref int offset) { }
+
+	// RVA: 0x1CEC0B0 Offset: 0x1CEC0B0 VA: 0x1CEC0B0 Slot: 6
+	public void WriteBytes(long val, byte[] dest, ref int offset) { }
+
+	// RVA: 0x1CEC2BC Offset: 0x1CEC2BC VA: 0x1CEC2BC Slot: 7
+	public void FloatToInt(ref float val, ref int iVal) { }
+
+	// RVA: 0x1CEC2C8 Offset: 0x1CEC2C8 VA: 0x1CEC2C8
+	public void .ctor() { }
+
+	// RVA: 0x1CEC2D0 Offset: 0x1CEC2D0 VA: 0x1CEC2D0
+	private static void .cctor() { }
+}
+
+// ORIGINAL DUMP LINES 140999-141006; TypeDefIndex 2245
+// Namespace: DodGame
+public enum ProtoUnsafeBitMode // TypeDefIndex: 2245
+{
+	// Fields
+	public int value__; // 0x0
+	public const ProtoUnsafeBitMode UnsafeModeNoAlign = 0;
+	public const ProtoUnsafeBitMode UnSafeModeAlign = 1;
+}
+
+// ORIGINAL DUMP LINES 141008-141037; TypeDefIndex 2246
+// Namespace: DodGame
+public class UnsafeBitConvert // TypeDefIndex: 2246
+{
+	// Fields
+	private static IBitOper m_oper; // 0x0
+	private static ProtoUnsafeBitMode m_bitMode; // 0x4
+
+	// Properties
+	public static ProtoUnsafeBitMode BitMode { set; }
+
+	// Methods
+
+	// RVA: 0x1CEC378 Offset: 0x1CEC378 VA: 0x1CEC378
+	public static void set_BitMode(ProtoUnsafeBitMode value) { }
+
+	// RVA: 0x1CEC51C Offset: 0x1CEC51C VA: 0x1CEC51C
+	public static void WriteBytes(int val, byte[] dest, ref int offset) { }
+
+	// RVA: 0x1CEC654 Offset: 0x1CEC654 VA: 0x1CEC654
+	public static void WriteBytes(short val, byte[] dest, ref int offset) { }
+
+	// RVA: 0x1CEC78C Offset: 0x1CEC78C VA: 0x1CEC78C
+	public static void WriteBytes(long val, byte[] dest, ref int offset) { }
+
+	// RVA: 0x1CEC8C8 Offset: 0x1CEC8C8 VA: 0x1CEC8C8
+	public static void FloatToInt(ref float val, ref int iVal) { }
+
+	// RVA: 0x1CEC9EC Offset: 0x1CEC9EC VA: 0x1CEC9EC
+	private static void .cctor() { }
+}
+
+// ORIGINAL DUMP LINES 141039-141058; TypeDefIndex 2247
+// Namespace: DodGame
+internal class UnsafeBitOper : IBitOper // TypeDefIndex: 2247
+{
+	// Methods
+
+	// RVA: 0x1CECA7C Offset: 0x1CECA7C VA: 0x1CECA7C Slot: 4
+	public void WriteBytes(int val, byte[] dest, ref int offset) { }
+
+	// RVA: 0x1CECBAC Offset: 0x1CECBAC VA: 0x1CECBAC Slot: 5
+	public void WriteBytes(short val, byte[] dest, ref int offset) { }
+
+	// RVA: 0x1CECCDC Offset: 0x1CECCDC VA: 0x1CECCDC Slot: 6
+	public void WriteBytes(long val, byte[] dest, ref int offset) { }
+
+	// RVA: 0x1CECE10 Offset: 0x1CECE10 VA: 0x1CECE10 Slot: 7
+	public void FloatToInt(ref float val, ref int iVal) { }
+
+	// RVA: 0x1CEC514 Offset: 0x1CEC514 VA: 0x1CEC514
+	public void .ctor() { }
+}
+

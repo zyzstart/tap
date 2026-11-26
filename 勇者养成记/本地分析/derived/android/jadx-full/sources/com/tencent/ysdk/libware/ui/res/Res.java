@@ -1,0 +1,76 @@
+package com.tencent.ysdk.libware.ui.res;
+
+/* JADX INFO: loaded from: D:\VibeCoding\勇者养成记\本地分析\unpacked\classes.dex */
+public class Res {
+    public static int array(android.content.res.Resources resources, java.lang.String str, java.lang.String str2) {
+        return reflectResouce(resources, "array", str, str2);
+    }
+
+    public static int array(java.lang.String str) {
+        return array(com.tencent.ysdk.framework.YSDKInitProvider.getApplicationContext().getResources(), str, com.tencent.ysdk.framework.YSDKInitProvider.getApplicationContext().getPackageName());
+    }
+
+    public static int color(android.content.res.Resources resources, java.lang.String str, java.lang.String str2) {
+        return reflectResouce(resources, "color", str, str2);
+    }
+
+    public static int color(java.lang.String str) {
+        return color(com.tencent.ysdk.framework.YSDKInitProvider.getApplicationContext().getResources(), str, com.tencent.ysdk.framework.YSDKInitProvider.getApplicationContext().getPackageName());
+    }
+
+    public static int drawable(android.content.res.Resources resources, java.lang.String str, java.lang.String str2) {
+        return reflectResouce(resources, "drawable", str, str2);
+    }
+
+    public static int drawable(java.lang.String str) {
+        return drawable(com.tencent.ysdk.framework.YSDKInitProvider.getApplicationContext().getResources(), str, com.tencent.ysdk.framework.YSDKInitProvider.getApplicationContext().getPackageName());
+    }
+
+    public static int id(android.content.res.Resources resources, java.lang.String str, java.lang.String str2) {
+        return reflectResouce(resources, "id", str, str2);
+    }
+
+    public static int id(java.lang.String str) {
+        return id(com.tencent.ysdk.framework.YSDKInitProvider.getApplicationContext().getResources(), str, com.tencent.ysdk.framework.YSDKInitProvider.getApplicationContext().getPackageName());
+    }
+
+    public static int layout(android.content.res.Resources resources, java.lang.String str, java.lang.String str2) {
+        return reflectResouce(resources, "layout", str, str2);
+    }
+
+    public static int layout(java.lang.String str) {
+        return layout(com.tencent.ysdk.framework.YSDKInitProvider.getApplicationContext().getResources(), str, com.tencent.ysdk.framework.YSDKInitProvider.getApplicationContext().getPackageName());
+    }
+
+    private static int reflectResouce(android.content.res.Resources resources, java.lang.String str, java.lang.String str2, java.lang.String str3) {
+        java.lang.String str4;
+        if (str == null || str2 == null) {
+            str4 = "type || name null";
+        } else {
+            try {
+                return resources.getIdentifier(str2, str, str3);
+            } catch (java.lang.Exception e) {
+                e.printStackTrace();
+                str4 = "getIdentifier exception";
+            }
+        }
+        com.tencent.ysdk.libware.file.Logger.d(str4);
+        return -1;
+    }
+
+    public static int string(android.content.res.Resources resources, java.lang.String str, java.lang.String str2) {
+        return reflectResouce(resources, "string", str, str2);
+    }
+
+    public static int string(java.lang.String str) {
+        return string(com.tencent.ysdk.framework.YSDKInitProvider.getApplicationContext().getResources(), str, com.tencent.ysdk.framework.YSDKInitProvider.getApplicationContext().getPackageName());
+    }
+
+    public static int style(android.content.res.Resources resources, java.lang.String str, java.lang.String str2) {
+        return reflectResouce(resources, "style", str, str2);
+    }
+
+    public static int style(java.lang.String str) {
+        return style(com.tencent.ysdk.framework.YSDKInitProvider.getApplicationContext().getResources(), str, com.tencent.ysdk.framework.YSDKInitProvider.getApplicationContext().getPackageName());
+    }
+}

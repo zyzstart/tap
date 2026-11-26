@@ -1,0 +1,299 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_spinemodelconfig.bytes.ab",
+    "path_id": -4512556620483376857,
+    "name": "SpineModelConfig",
+    "sha256": "1bbf61eaf6b59121817cda64311d7021e91264533d2ea89ef943e4b2f90384e3",
+    "export": "derived/unity/text/assets_resources_config_resbin_spinemodelconfig.bytes/SpineModelConfig__-4512556620483376857.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 1058,
+      "version": 1,
+      "record_count": 19,
+      "stored_crc32": "8ca70f11",
+      "computed_inverted_crc32": "8ca70f11"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "SpineModelConfig",
+      "fields": [
+        {
+          "type": "uint",
+          "name": "ModelID",
+          "object_offset": 16
+        },
+        {
+          "type": "float",
+          "name": "UIScale",
+          "object_offset": 20
+        },
+        {
+          "type": "string",
+          "name": "ModelFile",
+          "object_offset": 24
+        },
+        {
+          "type": "float",
+          "name": "UIOffsetX",
+          "object_offset": 32
+        },
+        {
+          "type": "float",
+          "name": "UIOffsetY",
+          "object_offset": 36
+        }
+      ],
+      "unpack_va": 32066448,
+      "dump_line": 209137
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1e94bc4",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e94be8",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e94c10",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e94c34",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e94c74",
+        "target_va": "0x21f6b98",
+        "opcode": "B-tail",
+        "reader": "readFloat",
+        "destination_object_offset": 36,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 19
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "ModelID": 1,
+      "UIScale": 1.0,
+      "ModelFile": "Model/2DModel/denglu",
+      "UIOffsetX": 0.0,
+      "UIOffsetY": 0.10000000149011612,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 61,
+      "ModelID": 2,
+      "UIScale": 1.149999976158142,
+      "ModelFile": "Model/2DModel/Shengyin/Futa/futa",
+      "UIOffsetX": 0.0,
+      "UIOffsetY": -0.5,
+      "_byte_length": 53
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 114,
+      "ModelID": 3,
+      "UIScale": 1.149999976158142,
+      "ModelFile": "Model/2DModel/Shengyin/Haijing/haijing",
+      "UIOffsetX": 0.0,
+      "UIOffsetY": -0.5,
+      "_byte_length": 59
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 173,
+      "ModelID": 4,
+      "UIScale": 1.149999976158142,
+      "ModelFile": "Model/2DModel/Shengyin/Huangdun/huangdun",
+      "UIOffsetX": 0.0,
+      "UIOffsetY": -0.5,
+      "_byte_length": 61
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 234,
+      "ModelID": 5,
+      "UIScale": 1.149999976158142,
+      "ModelFile": "Model/2DModel/Shengyin/Xukong/xukong",
+      "UIOffsetX": 0.0,
+      "UIOffsetY": -0.5,
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 291,
+      "ModelID": 6,
+      "UIScale": 1.0,
+      "ModelFile": "Model/2DModel/SacredBeast/dragon",
+      "UIOffsetX": 0.0,
+      "UIOffsetY": 0.0,
+      "_byte_length": 53
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 344,
+      "ModelID": 7,
+      "UIScale": 1.0,
+      "ModelFile": "Model/2DModel/SacredBeast/Tiger",
+      "UIOffsetX": 0.0,
+      "UIOffsetY": 0.0,
+      "_byte_length": 52
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 396,
+      "ModelID": 8,
+      "UIScale": 0.8500000238418579,
+      "ModelFile": "Model/2DModel/SacredBeast/ZhuQue",
+      "UIOffsetX": 0.0,
+      "UIOffsetY": 0.0,
+      "_byte_length": 53
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 449,
+      "ModelID": 9,
+      "UIScale": 1.0,
+      "ModelFile": "Model/2DModel/SacredBeast/Tortoise",
+      "UIOffsetX": 0.0,
+      "UIOffsetY": 0.0,
+      "_byte_length": 55
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 504,
+      "ModelID": 10,
+      "UIScale": 1.0,
+      "ModelFile": "Model/2DModel/Elves/weifengjingling",
+      "UIOffsetX": 0.0,
+      "UIOffsetY": 0.0,
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 560,
+      "ModelID": 11,
+      "UIScale": 1.0,
+      "ModelFile": "Model/2DModel/Elves/qinglinjingling",
+      "UIOffsetX": 0.0,
+      "UIOffsetY": 0.0,
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 616,
+      "ModelID": 12,
+      "UIScale": 1.0,
+      "ModelFile": "Model/2DModel/Elves/kuangleijingying",
+      "UIOffsetX": 0.0,
+      "UIOffsetY": 0.0,
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 673,
+      "ModelID": 13,
+      "UIScale": 1.0,
+      "ModelFile": "Model/2DModel/Elves/baoshijingling",
+      "UIOffsetX": 0.0,
+      "UIOffsetY": 0.0,
+      "_byte_length": 55
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 728,
+      "ModelID": 14,
+      "UIScale": 1.0,
+      "ModelFile": "Model/2DModel/Elves/anyejingling",
+      "UIOffsetX": 0.0,
+      "UIOffsetY": 0.0,
+      "_byte_length": 53
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 781,
+      "ModelID": 15,
+      "UIScale": 1.0,
+      "ModelFile": "Model/2DModel/Elves/yaoyangjingling",
+      "UIOffsetX": 0.0,
+      "UIOffsetY": 0.0,
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 837,
+      "ModelID": 16,
+      "UIScale": 1.0,
+      "ModelFile": "Model/2DModel/Elves/youyuejingling",
+      "UIOffsetX": 0.0,
+      "UIOffsetY": 0.0,
+      "_byte_length": 55
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 892,
+      "ModelID": 17,
+      "UIScale": 1.0,
+      "ModelFile": "Model/2DModel/Elves/feiyujingling",
+      "UIOffsetX": 0.0,
+      "UIOffsetY": 0.0,
+      "_byte_length": 54
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 946,
+      "ModelID": 18,
+      "UIScale": 1.0,
+      "ModelFile": "Model/2DModel/Elves/chaoxijingling",
+      "UIOffsetX": 0.0,
+      "UIOffsetY": 0.0,
+      "_byte_length": 55
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 1001,
+      "ModelID": 19,
+      "UIScale": 1.0,
+      "ModelFile": "Model/2DModel/Elves/shanmengjingling",
+      "UIOffsetX": 0.0,
+      "UIOffsetY": -10.0,
+      "_byte_length": 57
+    }
+  ]
+}

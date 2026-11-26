@@ -1,0 +1,95 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_islandadventureattrconfig.bytes.ab",
+    "path_id": -7638453231628136233,
+    "name": "IslandAdventureAttrConfig",
+    "sha256": "99bdc7f0f0efd833ada7ea154a6feafc2a0efcc4cfd83a4206ed8b251382d27a",
+    "export": "derived/unity/text/assets_resources_config_resbin_islandadventureattrconfig.bytes/IslandAdventureAttrConfig__-7638453231628136233.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 52,
+      "version": 1,
+      "record_count": 4,
+      "stored_crc32": "773a04dc",
+      "computed_inverted_crc32": "773a04dc"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "IslandAdventureAttrConfig",
+      "fields": [
+        {
+          "type": "uint",
+          "name": "AttrID",
+          "object_offset": 16
+        },
+        {
+          "type": "float",
+          "name": "AttrValue",
+          "object_offset": 20
+        }
+      ],
+      "unpack_va": 30735856,
+      "dump_line": 205645
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1d4fe24",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d4fe64",
+        "target_va": "0x21f6b98",
+        "opcode": "B-tail",
+        "reader": "readFloat",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 4
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "AttrID": 1,
+      "AttrValue": 1.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 28,
+      "AttrID": 2,
+      "AttrValue": 1.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 36,
+      "AttrID": 16,
+      "AttrValue": 0.30000001192092896,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 44,
+      "AttrID": 18,
+      "AttrValue": 8.0,
+      "_byte_length": 8
+    }
+  ]
+}

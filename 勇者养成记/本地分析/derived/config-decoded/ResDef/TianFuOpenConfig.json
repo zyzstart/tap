@@ -1,0 +1,185 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_tianfuopenconfig.bytes.ab",
+    "path_id": 3031563948039890595,
+    "name": "TianFuOpenConfig",
+    "sha256": "1d24adf6fa4e7d88c7224fd742a9cd6c41b7bee7898aef665e7fca9eca876882",
+    "export": "derived/unity/text/assets_resources_config_resbin_tianfuopenconfig.bytes/TianFuOpenConfig__3031563948039890595.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 306,
+      "version": 1,
+      "record_count": 13,
+      "stored_crc32": "04549fd4",
+      "computed_inverted_crc32": "04549fd4"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "TianFuOpenConfig",
+      "fields": [
+        {
+          "type": "byte",
+          "name": "TianFuPos",
+          "object_offset": 16
+        },
+        {
+          "type": "uint",
+          "name": "OpenLevel",
+          "object_offset": 20
+        },
+        {
+          "type": "string",
+          "name": "IOSVestBag",
+          "object_offset": 24
+        }
+      ],
+      "unpack_va": 32094444,
+      "dump_line": 212376
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1e9b920",
+        "target_va": "0x21f65e0",
+        "opcode": "BL",
+        "reader": "readUInt8",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e9b944",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e9b988",
+        "target_va": "0x21f6ce8",
+        "opcode": "B-tail",
+        "reader": "readString",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 13
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "TianFuPos": 1,
+      "OpenLevel": 60,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 22
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 42,
+      "TianFuPos": 2,
+      "OpenLevel": 10,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 22
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 64,
+      "TianFuPos": 3,
+      "OpenLevel": 20,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 22
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 86,
+      "TianFuPos": 4,
+      "OpenLevel": 30,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 22
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 108,
+      "TianFuPos": 5,
+      "OpenLevel": 40,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 22
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 130,
+      "TianFuPos": 6,
+      "OpenLevel": 50,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 22
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 152,
+      "TianFuPos": 7,
+      "OpenLevel": 60,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 22
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 174,
+      "TianFuPos": 8,
+      "OpenLevel": 70,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 22
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 196,
+      "TianFuPos": 9,
+      "OpenLevel": 80,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 22
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 218,
+      "TianFuPos": 10,
+      "OpenLevel": 90,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 22
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 240,
+      "TianFuPos": 11,
+      "OpenLevel": 100,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 22
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 262,
+      "TianFuPos": 12,
+      "OpenLevel": 110,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 22
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 284,
+      "TianFuPos": 13,
+      "OpenLevel": 120,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 22
+    }
+  ]
+}

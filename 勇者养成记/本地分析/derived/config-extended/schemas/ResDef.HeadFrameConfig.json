@@ -1,0 +1,749 @@
+{
+  "namespace": "ResDef",
+  "name": "HeadFrameConfig",
+  "fields": [
+    {
+      "type": "int",
+      "name": "HeadFrameID",
+      "object_offset": 16
+    },
+    {
+      "type": "string",
+      "name": "Name",
+      "object_offset": 24
+    },
+    {
+      "type": "string",
+      "name": "Icon",
+      "object_offset": 32
+    },
+    {
+      "type": "int",
+      "name": "ValidTime",
+      "object_offset": 40
+    },
+    {
+      "type": "string",
+      "name": "Desc",
+      "object_offset": 48
+    },
+    {
+      "type": "byte",
+      "name": "ActiveType",
+      "object_offset": 56
+    },
+    {
+      "type": "byte",
+      "name": "ShowType",
+      "object_offset": 57
+    },
+    {
+      "type": "HeadActiveConditionData",
+      "name": "ActiveCondition",
+      "object_offset": 64
+    },
+    {
+      "type": "uint",
+      "name": "HideIcon",
+      "object_offset": 72
+    },
+    {
+      "type": "uint",
+      "name": "EffectID",
+      "object_offset": 76
+    },
+    {
+      "type": "string",
+      "name": "ActiveDesc",
+      "object_offset": 80
+    },
+    {
+      "type": "ResAttrImpactData[]",
+      "name": "ImpactData",
+      "object_offset": 88
+    }
+  ],
+  "unpack_va": 30719888,
+  "dump_line": 204969,
+  "layout": [
+    {
+      "type": "int",
+      "name": "HeadFrameID",
+      "object_offset": 16,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d4bfcc",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "type": "string",
+      "name": "Name",
+      "object_offset": 24,
+      "wire_type": "string",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d4bff4",
+          "target_va": "0x21f6ce8",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readString"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readString",
+          "destination": [
+            "self",
+            24
+          ],
+          "max_string_size": 256
+        }
+      ],
+      "max_string_size": 256
+    },
+    {
+      "type": "string",
+      "name": "Icon",
+      "object_offset": 32,
+      "wire_type": "string",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d4c01c",
+          "target_va": "0x21f6ce8",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readString"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readString",
+          "destination": [
+            "self",
+            32
+          ],
+          "max_string_size": 128
+        }
+      ],
+      "max_string_size": 128
+    },
+    {
+      "type": "int",
+      "name": "ValidTime",
+      "object_offset": 40,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d4c040",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "type": "string",
+      "name": "Desc",
+      "object_offset": 48,
+      "wire_type": "string",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d4c068",
+          "target_va": "0x21f6ce8",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readString"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readString",
+          "destination": [
+            "self",
+            48
+          ],
+          "max_string_size": 1024
+        }
+      ],
+      "max_string_size": 1024
+    },
+    {
+      "type": "byte",
+      "name": "ActiveType",
+      "object_offset": 56,
+      "wire_type": "byte",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d4c08c",
+          "target_va": "0x21f65e0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt8"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt8",
+          "destination": [
+            "self",
+            56
+          ]
+        }
+      ]
+    },
+    {
+      "type": "byte",
+      "name": "ShowType",
+      "object_offset": 57,
+      "wire_type": "byte",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d4c0b0",
+          "target_va": "0x21f65e0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt8"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt8",
+          "destination": [
+            "self",
+            57
+          ]
+        }
+      ]
+    },
+    {
+      "type": "HeadActiveConditionData",
+      "name": "ActiveCondition",
+      "object_offset": 64,
+      "wire_type": "HeadActiveConditionData",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d4c0d4",
+          "target_va": "0x1d4b70c",
+          "target_names": [
+            "ResDef.HeadActiveConditionData$$unpack"
+          ],
+          "opcode": "BL",
+          "kind": "nested",
+          "nested_schema": "ResDef.HeadActiveConditionData",
+          "destination": [
+            "field",
+            64
+          ],
+          "cut_version": 1
+        }
+      ],
+      "nested_schema": "ResDef.HeadActiveConditionData"
+    },
+    {
+      "type": "uint",
+      "name": "HideIcon",
+      "object_offset": 72,
+      "wire_type": "uint",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d4c0f8",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "self",
+            72
+          ]
+        }
+      ]
+    },
+    {
+      "type": "uint",
+      "name": "EffectID",
+      "object_offset": 76,
+      "wire_type": "uint",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d4c11c",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "self",
+            76
+          ]
+        }
+      ]
+    },
+    {
+      "type": "string",
+      "name": "ActiveDesc",
+      "object_offset": 80,
+      "wire_type": "string",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d4c144",
+          "target_va": "0x21f6ce8",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readString"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readString",
+          "destination": [
+            "self",
+            80
+          ],
+          "max_string_size": 1024
+        }
+      ],
+      "max_string_size": 1024
+    },
+    {
+      "type": "ResAttrImpactData[]",
+      "name": "ImpactData",
+      "object_offset": 88,
+      "wire_type": "ResAttrImpactData",
+      "kind": "array",
+      "count": 4,
+      "count_encoding": "none-native-fixed",
+      "native_calls": [
+        {
+          "instruction_va": "0x1d4c1a4",
+          "target_va": "0x1e879c8",
+          "target_names": [
+            "ResDef.ResAttrImpactData$$unpack"
+          ],
+          "opcode": "BL",
+          "kind": "nested",
+          "nested_schema": "ResDef.ResAttrImpactData",
+          "destination": [
+            "element",
+            88,
+            0
+          ],
+          "cut_version": 1
+        },
+        {
+          "instruction_va": "0x1d4c1a4",
+          "target_va": "0x1e879c8",
+          "target_names": [
+            "ResDef.ResAttrImpactData$$unpack"
+          ],
+          "opcode": "BL",
+          "kind": "nested",
+          "nested_schema": "ResDef.ResAttrImpactData",
+          "destination": [
+            "element",
+            88,
+            1
+          ],
+          "cut_version": 1
+        },
+        {
+          "instruction_va": "0x1d4c1a4",
+          "target_va": "0x1e879c8",
+          "target_names": [
+            "ResDef.ResAttrImpactData$$unpack"
+          ],
+          "opcode": "BL",
+          "kind": "nested",
+          "nested_schema": "ResDef.ResAttrImpactData",
+          "destination": [
+            "element",
+            88,
+            2
+          ],
+          "cut_version": 1
+        },
+        {
+          "instruction_va": "0x1d4c1a4",
+          "target_va": "0x1e879c8",
+          "target_names": [
+            "ResDef.ResAttrImpactData$$unpack"
+          ],
+          "opcode": "BL",
+          "kind": "nested",
+          "nested_schema": "ResDef.ResAttrImpactData",
+          "destination": [
+            "element",
+            88,
+            3
+          ],
+          "cut_version": 1
+        }
+      ],
+      "nested_schema": "ResDef.ResAttrImpactData"
+    }
+  ],
+  "native_evidence": {
+    "method_start_va": "0x1d4bf90",
+    "instruction_steps": 167,
+    "event_count": 15,
+    "branch_evidence": [
+      {
+        "instruction_va": "0x1d4c168",
+        "cmp_va": "0x1d4c164",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 88,
+        "index": 0
+      },
+      {
+        "instruction_va": "0x1d4c1b4",
+        "target_va": "0x1d4c150",
+        "kind": "concrete-loop-test",
+        "left": 0,
+        "right": 3,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1d4c168",
+        "cmp_va": "0x1d4c164",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 88,
+        "index": 1
+      },
+      {
+        "instruction_va": "0x1d4c1b4",
+        "target_va": "0x1d4c150",
+        "kind": "concrete-loop-test",
+        "left": 1,
+        "right": 3,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1d4c168",
+        "cmp_va": "0x1d4c164",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 88,
+        "index": 2
+      },
+      {
+        "instruction_va": "0x1d4c1b4",
+        "target_va": "0x1d4c150",
+        "kind": "concrete-loop-test",
+        "left": 2,
+        "right": 3,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1d4c168",
+        "cmp_va": "0x1d4c164",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 88,
+        "index": 3
+      },
+      {
+        "instruction_va": "0x1d4c1b4",
+        "target_va": "0x1d4c150",
+        "kind": "concrete-loop-test",
+        "left": 3,
+        "right": 3,
+        "condition": "lt",
+        "taken": false
+      }
+    ],
+    "loops": [
+      {
+        "backedge_va": "0x1d4c1b4",
+        "body_start_va": "0x1d4c150",
+        "body": [
+          {
+            "instruction_va": "0x1d4c150",
+            "bytes": "b62e40f9",
+            "mnemonic": "ldr",
+            "operands": "x22, [x21, #0x58]"
+          },
+          {
+            "instruction_va": "0x1d4c154",
+            "bytes": "760000b5",
+            "mnemonic": "cbnz",
+            "operands": "x22, #0x1d4c160"
+          },
+          {
+            "instruction_va": "0x1d4c158",
+            "bytes": "e0031faa",
+            "mnemonic": "mov",
+            "operands": "x0, xzr"
+          },
+          {
+            "instruction_va": "0x1d4c15c",
+            "bytes": "747dbf97",
+            "mnemonic": "bl",
+            "operands": "#0xd2b72c"
+          },
+          {
+            "instruction_va": "0x1d4c160",
+            "bytes": "c81a40b9",
+            "mnemonic": "ldr",
+            "operands": "w8, [x22, #0x18]"
+          },
+          {
+            "instruction_va": "0x1d4c164",
+            "bytes": "ff0208eb",
+            "mnemonic": "cmp",
+            "operands": "x23, x8"
+          },
+          {
+            "instruction_va": "0x1d4c168",
+            "bytes": "a3000054",
+            "mnemonic": "b.lo",
+            "operands": "#0x1d4c17c"
+          },
+          {
+            "instruction_va": "0x1d4c16c",
+            "bytes": "a980bf97",
+            "mnemonic": "bl",
+            "operands": "#0xd2c410"
+          },
+          {
+            "instruction_va": "0x1d4c170",
+            "bytes": "e1031faa",
+            "mnemonic": "mov",
+            "operands": "x1, xzr"
+          },
+          {
+            "instruction_va": "0x1d4c174",
+            "bytes": "e2031faa",
+            "mnemonic": "mov",
+            "operands": "x2, xzr"
+          },
+          {
+            "instruction_va": "0x1d4c178",
+            "bytes": "497dbf97",
+            "mnemonic": "bl",
+            "operands": "#0xd2b69c"
+          },
+          {
+            "instruction_va": "0x1d4c17c",
+            "bytes": "c80e178b",
+            "mnemonic": "add",
+            "operands": "x8, x22, x23, lsl #3"
+          },
+          {
+            "instruction_va": "0x1d4c180",
+            "bytes": "161140f9",
+            "mnemonic": "ldr",
+            "operands": "x22, [x8, #0x20]"
+          },
+          {
+            "instruction_va": "0x1d4c184",
+            "bytes": "760000b5",
+            "mnemonic": "cbnz",
+            "operands": "x22, #0x1d4c190"
+          },
+          {
+            "instruction_va": "0x1d4c188",
+            "bytes": "e0031faa",
+            "mnemonic": "mov",
+            "operands": "x0, xzr"
+          },
+          {
+            "instruction_va": "0x1d4c18c",
+            "bytes": "687dbf97",
+            "mnemonic": "bl",
+            "operands": "#0xd2b72c"
+          },
+          {
+            "instruction_va": "0x1d4c190",
+            "bytes": "e2030032",
+            "mnemonic": "mov",
+            "operands": "w2, #1"
+          },
+          {
+            "instruction_va": "0x1d4c194",
+            "bytes": "e00316aa",
+            "mnemonic": "mov",
+            "operands": "x0, x22"
+          },
+          {
+            "instruction_va": "0x1d4c198",
+            "bytes": "e10314aa",
+            "mnemonic": "mov",
+            "operands": "x1, x20"
+          },
+          {
+            "instruction_va": "0x1d4c19c",
+            "bytes": "e30313aa",
+            "mnemonic": "mov",
+            "operands": "x3, x19"
+          },
+          {
+            "instruction_va": "0x1d4c1a0",
+            "bytes": "e4031faa",
+            "mnemonic": "mov",
+            "operands": "x4, xzr"
+          },
+          {
+            "instruction_va": "0x1d4c1a4",
+            "bytes": "09ee0494",
+            "mnemonic": "bl",
+            "operands": "#0x1e879c8"
+          },
+          {
+            "instruction_va": "0x1d4c1a8",
+            "bytes": "80000035",
+            "mnemonic": "cbnz",
+            "operands": "w0, #0x1d4c1b8"
+          },
+          {
+            "instruction_va": "0x1d4c1ac",
+            "bytes": "ff0e00f1",
+            "mnemonic": "cmp",
+            "operands": "x23, #3"
+          },
+          {
+            "instruction_va": "0x1d4c1b0",
+            "bytes": "f7060091",
+            "mnemonic": "add",
+            "operands": "x23, x23, #1"
+          },
+          {
+            "instruction_va": "0x1d4c1b4",
+            "bytes": "ebfcff54",
+            "mnemonic": "b.lt",
+            "operands": "#0x1d4c150"
+          }
+        ],
+        "preheader_initialization": [
+          {
+            "instruction_va": "0x1d4c148",
+            "bytes": "80030035",
+            "mnemonic": "cbnz",
+            "operands": "w0, #0x1d4c1b8"
+          },
+          {
+            "instruction_va": "0x1d4c14c",
+            "bytes": "f7031faa",
+            "mnemonic": "mov",
+            "operands": "x23, xzr"
+          }
+        ],
+        "index_stride_updates": [
+          {
+            "instruction_va": "0x1d4c1b0",
+            "bytes": "f7060091",
+            "mnemonic": "add",
+            "operands": "x23, x23, #1"
+          }
+        ],
+        "compare_instructions": [
+          {
+            "instruction_va": "0x1d4c164",
+            "bytes": "ff0208eb",
+            "mnemonic": "cmp",
+            "operands": "x23, x8"
+          },
+          {
+            "instruction_va": "0x1d4c1ac",
+            "bytes": "ff0e00f1",
+            "mnemonic": "cmp",
+            "operands": "x23, #3"
+          }
+        ],
+        "concrete_tests_in_order": [
+          {
+            "instruction_va": "0x1d4c1b4",
+            "target_va": "0x1d4c150",
+            "kind": "concrete-loop-test",
+            "left": 0,
+            "right": 3,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1d4c1b4",
+            "target_va": "0x1d4c150",
+            "kind": "concrete-loop-test",
+            "left": 1,
+            "right": 3,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1d4c1b4",
+            "target_va": "0x1d4c150",
+            "kind": "concrete-loop-test",
+            "left": 2,
+            "right": 3,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1d4c1b4",
+            "target_va": "0x1d4c150",
+            "kind": "concrete-loop-test",
+            "left": 3,
+            "right": 3,
+            "condition": "lt",
+            "taken": false
+          }
+        ],
+        "trip_count": 4
+      }
+    ],
+    "instruction_sha256": "e408357d6ed8c0b5975bf2a7964a84059ccc21413f6ef7a90216187ef94ac2e1",
+    "gate": "concrete-success-path; all sequential readers/nested callees; full field/destination/stride matching",
+    "assumptions": [
+      "non-null input buffer and created nested objects/arrays",
+      "managed array bounds valid",
+      "AAPCS64 callee-saved register preservation",
+      "reader and nested call success; version 1 only"
+    ]
+  }
+}

@@ -1,0 +1,314 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_summondispointconfig.bytes.ab",
+    "path_id": 8574138846052285638,
+    "name": "SummonDisPointConfig",
+    "sha256": "a6bc0b309a194fbb97b992d2509fb0099ac55d76f2f9a2b9e8b8513cc70d7c93",
+    "export": "derived/unity/text/assets_resources_config_resbin_summondispointconfig.bytes/SummonDisPointConfig__8574138846052285638.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 614,
+      "version": 1,
+      "record_count": 9,
+      "stored_crc32": "e5680657",
+      "computed_inverted_crc32": "e5680657"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "SummonDisPointConfig",
+      "fields": [
+        {
+          "type": "uint",
+          "name": "PointLv",
+          "object_offset": 16
+        },
+        {
+          "type": "string",
+          "name": "PointName",
+          "object_offset": 24
+        },
+        {
+          "type": "string",
+          "name": "PointIcon",
+          "object_offset": 32
+        },
+        {
+          "type": "uint",
+          "name": "BootyID",
+          "object_offset": 40
+        },
+        {
+          "type": "uint",
+          "name": "ProductSpeed",
+          "object_offset": 44
+        },
+        {
+          "type": "uint",
+          "name": "PointChildNum",
+          "object_offset": 48
+        },
+        {
+          "type": "int",
+          "name": "DefaultSumID",
+          "object_offset": 52
+        },
+        {
+          "type": "int",
+          "name": "MinFightValue",
+          "object_offset": 56
+        },
+        {
+          "type": "uint",
+          "name": "HelpMax",
+          "object_offset": 60
+        },
+        {
+          "type": "int",
+          "name": "HelpBootyID",
+          "object_offset": 64
+        }
+      ],
+      "unpack_va": 32083036,
+      "dump_line": 212087
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1e98c90",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e98cb8",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e98ce0",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e98d04",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 40,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e98d28",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 44,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e98d4c",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 48,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e98d70",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 52,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e98d94",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 56,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e98db8",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 60,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e98df8",
+        "target_va": "0x21f67d0",
+        "opcode": "B-tail",
+        "reader": "readInt32",
+        "destination_object_offset": 64,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 9
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "PointLv": 1,
+      "PointName": "据点Lv1",
+      "PointIcon": "zhdzz_image_016",
+      "BootyID": 69000,
+      "ProductSpeed": 12,
+      "PointChildNum": 20,
+      "DefaultSumID": 1,
+      "MinFightValue": 120000,
+      "HelpMax": 1,
+      "HelpBootyID": 69001,
+      "_byte_length": 66
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 86,
+      "PointLv": 2,
+      "PointName": "据点Lv2",
+      "PointIcon": "zhdzz_image_016",
+      "BootyID": 69000,
+      "ProductSpeed": 15,
+      "PointChildNum": 20,
+      "DefaultSumID": 1,
+      "MinFightValue": 300000,
+      "HelpMax": 1,
+      "HelpBootyID": 69001,
+      "_byte_length": 66
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 152,
+      "PointLv": 3,
+      "PointName": "据点Lv3",
+      "PointIcon": "zhdzz_image_016",
+      "BootyID": 69000,
+      "ProductSpeed": 18,
+      "PointChildNum": 20,
+      "DefaultSumID": 2,
+      "MinFightValue": 480000,
+      "HelpMax": 1,
+      "HelpBootyID": 69001,
+      "_byte_length": 66
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 218,
+      "PointLv": 4,
+      "PointName": "据点Lv4",
+      "PointIcon": "zhdzz_image_015",
+      "BootyID": 69000,
+      "ProductSpeed": 23,
+      "PointChildNum": 10,
+      "DefaultSumID": 2,
+      "MinFightValue": 660000,
+      "HelpMax": 1,
+      "HelpBootyID": 69002,
+      "_byte_length": 66
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 284,
+      "PointLv": 5,
+      "PointName": "据点Lv5",
+      "PointIcon": "zhdzz_image_015",
+      "BootyID": 69000,
+      "ProductSpeed": 28,
+      "PointChildNum": 10,
+      "DefaultSumID": 3,
+      "MinFightValue": 840000,
+      "HelpMax": 1,
+      "HelpBootyID": 69002,
+      "_byte_length": 66
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 350,
+      "PointLv": 6,
+      "PointName": "据点Lv6",
+      "PointIcon": "zhdzz_image_014",
+      "BootyID": 69000,
+      "ProductSpeed": 33,
+      "PointChildNum": 8,
+      "DefaultSumID": 4,
+      "MinFightValue": 1020000,
+      "HelpMax": 1,
+      "HelpBootyID": 69003,
+      "_byte_length": 66
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 416,
+      "PointLv": 7,
+      "PointName": "据点Lv7",
+      "PointIcon": "zhdzz_image_014",
+      "BootyID": 69000,
+      "ProductSpeed": 38,
+      "PointChildNum": 8,
+      "DefaultSumID": 5,
+      "MinFightValue": 1080000,
+      "HelpMax": 1,
+      "HelpBootyID": 69003,
+      "_byte_length": 66
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 482,
+      "PointLv": 8,
+      "PointName": "据点Lv8",
+      "PointIcon": "zhdzz_image_014",
+      "BootyID": 69000,
+      "ProductSpeed": 43,
+      "PointChildNum": 6,
+      "DefaultSumID": 7,
+      "MinFightValue": 1140000,
+      "HelpMax": 1,
+      "HelpBootyID": 69003,
+      "_byte_length": 66
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 548,
+      "PointLv": 9,
+      "PointName": "据点Lv9",
+      "PointIcon": "zhdzz_image_013",
+      "BootyID": 69000,
+      "ProductSpeed": 48,
+      "PointChildNum": 4,
+      "DefaultSumID": 8,
+      "MinFightValue": 1200000,
+      "HelpMax": 1,
+      "HelpBootyID": 69003,
+      "_byte_length": 66
+    }
+  ]
+}

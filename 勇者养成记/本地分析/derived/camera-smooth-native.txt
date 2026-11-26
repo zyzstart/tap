@@ -1,0 +1,158 @@
+
+A3Game.CameraSmooth$$SmootFollowCamera
+16ec7ac sub sp, sp, #0x80
+16ec7b0 str d14, [sp, #0x10]
+16ec7b4 stp d13, d12, [sp, #0x18]
+16ec7b8 stp d11, d10, [sp, #0x28]
+16ec7bc stp d9, d8, [sp, #0x38]
+16ec7c0 str x23, [sp, #0x48]
+16ec7c4 stp x22, x21, [sp, #0x50]
+16ec7c8 stp x20, x19, [sp, #0x60]
+16ec7cc stp x29, x30, [sp, #0x70]
+16ec7d0 add x29, sp, #0x70
+16ec7d4 adrp x21, #0x2f40000
+16ec7d8 ldrb w8, [x21, #0x147]
+16ec7dc mov v8.16b, v0.16b
+16ec7e0 mov x22, x2
+16ec7e4 mov x19, x1
+16ec7e8 mov x20, x0
+16ec7ec tbnz w8, #0, #0x16ec808
+16ec7f0 adrp x8, #0x2c99000
+16ec7f4 ldr x8, [x8, #0x878]
+16ec7f8 ldr w0, [x8]
+16ec7fc bl #0xd04f28
+16ec800 mov w8, #1
+16ec804 strb w8, [x21, #0x147]
+16ec808 adrp x21, #0x2c78000
+16ec80c ldr x21, [x21, #0x1b8]
+16ec810 ldr x0, [x21]
+16ec814 ldrb w8, [x0, #0x127]
+16ec818 tbz w8, #1, #0x16ec828
+16ec81c ldr w8, [x0, #0xd8]
+16ec820 cbnz w8, #0x16ec828
+16ec824 bl #0xd14168
+16ec828 mov x0, x19
+16ec82c mov x1, xzr
+16ec830 mov x2, xzr
+16ec834 bl #0x1bda5e4 UnityEngine.Object$$op_Equality
+16ec838 tbnz w0, #0, #0x16ec9d4
+16ec83c ldr x0, [x21]
+16ec840 ldrb w8, [x0, #0x127]
+16ec844 tbz w8, #1, #0x16ec854
+16ec848 ldr w8, [x0, #0xd8]
+16ec84c cbnz w8, #0x16ec854
+16ec850 bl #0xd14168
+16ec854 mov x0, x22
+16ec858 mov x1, xzr
+16ec85c mov x2, xzr
+16ec860 bl #0x1bda5e4 UnityEngine.Object$$op_Equality
+16ec864 tbnz w0, #0, #0x16ec9d4
+16ec868 mov x23, x20
+16ec86c ldr s0, [x23, #0x18]!
+16ec870 mov x0, xzr
+16ec874 bl #0x1ba8000 System.Single$$IsNaN
+16ec878 tbz w0, #0, #0x16ec880
+16ec87c str wzr, [x23]
+16ec880 mov x21, x20
+16ec884 ldr s0, [x21, #0x1c]!
+16ec888 mov x0, xzr
+16ec88c bl #0x1ba8000 System.Single$$IsNaN
+16ec890 tbz w0, #0, #0x16ec898
+16ec894 str wzr, [x21]
+16ec898 cbnz x22, #0x16ec8a4
+16ec89c mov x0, xzr
+16ec8a0 bl #0xd2b72c
+16ec8a4 mov x0, x22
+16ec8a8 mov x1, xzr
+16ec8ac bl #0x21783b4 UnityEngine.Transform$$get_position
+16ec8b0 mov v11.16b, v0.16b
+16ec8b4 mov v9.16b, v2.16b
+16ec8b8 cbnz x19, #0x16ec8c4
+16ec8bc mov x0, xzr
+16ec8c0 bl #0xd2b72c
+16ec8c4 mov x0, x19
+16ec8c8 mov x1, xzr
+16ec8cc bl #0x21783b4 UnityEngine.Transform$$get_position
+16ec8d0 adrp x22, #0x2ceb000
+16ec8d4 ldr x22, [x22, #0x240]
+16ec8d8 ldr s13, [x20, #0x10]
+16ec8dc mov v12.16b, v0.16b
+16ec8e0 mov v10.16b, v1.16b
+16ec8e4 ldr x0, [x22]
+16ec8e8 mov v14.16b, v2.16b
+16ec8ec ldrb w8, [x0, #0x127]
+16ec8f0 tbz w8, #1, #0x16ec900
+16ec8f4 ldr w8, [x0, #0xd8]
+16ec8f8 cbnz w8, #0x16ec900
+16ec8fc bl #0xd14168
+16ec900 fsub s0, s14, s9
+16ec904 fmov s1, wzr
+16ec908 mov x0, x23
+16ec90c mov v2.16b, v13.16b
+16ec910 mov x1, xzr
+16ec914 fmov s14, wzr
+16ec918 bl #0x1bd6448 UnityEngine.Mathf$$SmoothDamp
+16ec91c ldr s2, [x20, #0x14]
+16ec920 mov x0, xzr
+16ec924 fneg s1, s2
+16ec928 bl #0x1bd6140 UnityEngine.Mathf$$Clamp
+16ec92c fcmp s8, #0.0
+16ec930 mov v13.16b, v0.16b
+16ec934 b.eq #0x16ec994
+16ec938 ldr x0, [x22]
+16ec93c ldr s14, [x20, #0x10]
+16ec940 ldrb w8, [x0, #0x127]
+16ec944 tbz w8, #1, #0x16ec954
+16ec948 ldr w8, [x0, #0xd8]
+16ec94c cbnz w8, #0x16ec954
+16ec950 bl #0xd14168
+16ec954 fsub s0, s12, s11
+16ec958 fmov s1, wzr
+16ec95c mov x0, x21
+16ec960 mov v2.16b, v14.16b
+16ec964 mov x1, xzr
+16ec968 bl #0x1bd6448 UnityEngine.Mathf$$SmoothDamp
+16ec96c ldr s2, [x20, #0x14]
+16ec970 mov x0, xzr
+16ec974 fneg s1, s2
+16ec978 bl #0x1bd6140 UnityEngine.Mathf$$Clamp
+16ec97c fadd s0, s11, s0
+16ec980 fneg s1, s8
+16ec984 mov v2.16b, v8.16b
+16ec988 mov x0, xzr
+16ec98c bl #0x1bd6140 UnityEngine.Mathf$$Clamp
+16ec990 mov v14.16b, v0.16b
+16ec994 fadd s2, s9, s13
+16ec998 mov x0, sp
+16ec99c mov v0.16b, v14.16b
+16ec9a0 mov v1.16b, v10.16b
+16ec9a4 mov x1, xzr
+16ec9a8 str wzr, [sp, #8]
+16ec9ac str xzr, [sp]
+16ec9b0 bl #0x217c0fc
+16ec9b4 cbnz x19, #0x16ec9c0
+16ec9b8 mov x0, xzr
+16ec9bc bl #0xd2b72c
+16ec9c0 ldp s0, s1, [sp]
+16ec9c4 ldr s2, [sp, #8]
+16ec9c8 mov x0, x19
+16ec9cc mov x1, xzr
+16ec9d0 bl #0x2178458 UnityEngine.Transform$$set_position
+16ec9d4 ldp x29, x30, [sp, #0x70]
+16ec9d8 ldp x20, x19, [sp, #0x60]
+16ec9dc ldp x22, x21, [sp, #0x50]
+16ec9e0 ldr x23, [sp, #0x48]
+16ec9e4 ldp d9, d8, [sp, #0x38]
+16ec9e8 ldp d11, d10, [sp, #0x28]
+16ec9ec ldp d13, d12, [sp, #0x18]
+16ec9f0 ldr d14, [sp, #0x10]
+16ec9f4 add sp, sp, #0x80
+16ec9f8 ret
+
+A3Game.CameraSmooth$$.ctor
+16ec9fc mov x8, #0xcccd
+16eca00 movk x8, #0x3e4c, lsl #16
+16eca04 movk x8, #0x3f00, lsl #48
+16eca08 mov x1, xzr
+16eca0c str x8, [x0, #0x10]
+16eca10 b #0x1a0cdac System.Object$$.ctor

@@ -1,0 +1,479 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_defaultattconfig.bytes.ab",
+    "path_id": -2783397621756273880,
+    "name": "DefaultAttConfig",
+    "sha256": "d73806a529e4ceea7461907f22a2ce5c4f0182d260521f25525a24b92dc3daf3",
+    "export": "derived/unity/text/assets_resources_config_resbin_defaultattconfig.bytes/DefaultAttConfig__-2783397621756273880.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 136,
+      "version": 1,
+      "record_count": 1,
+      "stored_crc32": "83b60fee",
+      "computed_inverted_crc32": "83b60fee"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "DefaultAttConfig",
+      "fields": [
+        {
+          "type": "int",
+          "name": "MaxHP",
+          "object_offset": 16
+        },
+        {
+          "type": "int",
+          "name": "MaxMP",
+          "object_offset": 20
+        },
+        {
+          "type": "int",
+          "name": "Damage",
+          "object_offset": 24
+        },
+        {
+          "type": "float",
+          "name": "CritAtkRatio",
+          "object_offset": 28
+        },
+        {
+          "type": "float",
+          "name": "CritAtkMulti",
+          "object_offset": 32
+        },
+        {
+          "type": "float",
+          "name": "HpRecover",
+          "object_offset": 36
+        },
+        {
+          "type": "float",
+          "name": "MoveSpeed",
+          "object_offset": 40
+        },
+        {
+          "type": "float",
+          "name": "MagicPoisonRatio",
+          "object_offset": 44
+        },
+        {
+          "type": "float",
+          "name": "MagicThunderRatio",
+          "object_offset": 48
+        },
+        {
+          "type": "float",
+          "name": "MagicFireRatio",
+          "object_offset": 52
+        },
+        {
+          "type": "float",
+          "name": "MagicIceRatio",
+          "object_offset": 56
+        },
+        {
+          "type": "float",
+          "name": "BlockDamage",
+          "object_offset": 60
+        },
+        {
+          "type": "float",
+          "name": "SkyHitRatio",
+          "object_offset": 64
+        },
+        {
+          "type": "float",
+          "name": "SkyAddRatio",
+          "object_offset": 68
+        },
+        {
+          "type": "float",
+          "name": "TerraHitRatio",
+          "object_offset": 72
+        },
+        {
+          "type": "float",
+          "name": "TerraAddRatio",
+          "object_offset": 76
+        },
+        {
+          "type": "float",
+          "name": "OceanHitRatio",
+          "object_offset": 80
+        },
+        {
+          "type": "float",
+          "name": "OceanAddRatio",
+          "object_offset": 84
+        },
+        {
+          "type": "float",
+          "name": "ChaosHitRatio",
+          "object_offset": 88
+        },
+        {
+          "type": "float",
+          "name": "ChaosAddRatio",
+          "object_offset": 92
+        },
+        {
+          "type": "float",
+          "name": "ShieldUpLimit",
+          "object_offset": 96
+        },
+        {
+          "type": "float",
+          "name": "SkyCritAtkRatio",
+          "object_offset": 100
+        },
+        {
+          "type": "float",
+          "name": "SkyCritAtkMulti",
+          "object_offset": 104
+        },
+        {
+          "type": "float",
+          "name": "GroundCritAtkRatio",
+          "object_offset": 108
+        },
+        {
+          "type": "float",
+          "name": "GroundCritAtkMulti",
+          "object_offset": 112
+        },
+        {
+          "type": "float",
+          "name": "OceanCritAtkRatio",
+          "object_offset": 116
+        },
+        {
+          "type": "float",
+          "name": "OceanCritAtkMulti",
+          "object_offset": 120
+        },
+        {
+          "type": "float",
+          "name": "ChaosCritAtkRatio",
+          "object_offset": 124
+        },
+        {
+          "type": "float",
+          "name": "ChaosCritAtkMulti",
+          "object_offset": 128
+        }
+      ],
+      "unpack_va": 31262548,
+      "dump_line": 201433
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1dd0788",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd07ac",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd07d0",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd07f4",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 28,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd0818",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd083c",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 36,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd0860",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 40,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd0884",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 44,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd08a8",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 48,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd08cc",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 52,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd08f0",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 56,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd0914",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 60,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd0938",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 64,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd095c",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 68,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd0980",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 72,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd09a4",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 76,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd09c8",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 80,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd09ec",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 84,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd0a10",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 88,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd0a34",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 92,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd0a58",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 96,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd0a7c",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 100,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd0aa0",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 104,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd0ac4",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 108,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd0ae8",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 112,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd0b0c",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 116,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd0b30",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 120,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd0b54",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 124,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd0b94",
+        "target_va": "0x21f6b98",
+        "opcode": "B-tail",
+        "reader": "readFloat",
+        "destination_object_offset": 128,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 1
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "MaxHP": 300,
+      "MaxMP": 80,
+      "Damage": 70,
+      "CritAtkRatio": 0.0,
+      "CritAtkMulti": 1.0,
+      "HpRecover": 0.0,
+      "MoveSpeed": 6.0,
+      "MagicPoisonRatio": 1.0,
+      "MagicThunderRatio": 1.0,
+      "MagicFireRatio": 1.0,
+      "MagicIceRatio": 1.0,
+      "BlockDamage": 0.20000000298023224,
+      "SkyHitRatio": 0.05000000074505806,
+      "SkyAddRatio": 1.0,
+      "TerraHitRatio": 0.05000000074505806,
+      "TerraAddRatio": 1.0,
+      "OceanHitRatio": 0.05000000074505806,
+      "OceanAddRatio": 1.0,
+      "ChaosHitRatio": 0.05000000074505806,
+      "ChaosAddRatio": 1.0,
+      "ShieldUpLimit": 3.0,
+      "SkyCritAtkRatio": 0.0,
+      "SkyCritAtkMulti": 1.0,
+      "GroundCritAtkRatio": 0.0,
+      "GroundCritAtkMulti": 1.0,
+      "OceanCritAtkRatio": 0.0,
+      "OceanCritAtkMulti": 1.0,
+      "ChaosCritAtkRatio": 0.0,
+      "ChaosCritAtkMulti": 1.0,
+      "_byte_length": 116
+    }
+  ]
+}

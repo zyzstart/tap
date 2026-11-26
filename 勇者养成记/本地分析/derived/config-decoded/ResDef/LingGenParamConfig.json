@@ -1,0 +1,74 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_linggenparamconfig.bytes.ab",
+    "path_id": 5134995150822612169,
+    "name": "LingGenParamConfig",
+    "sha256": "444d81e4604d9e2b83e19f0c717e8edde81ddaa8b80550c0718cc3bbb6dcdf43",
+    "export": "derived/unity/text/assets_resources_config_resbin_linggenparamconfig.bytes/LingGenParamConfig__5134995150822612169.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 41,
+      "version": 1,
+      "record_count": 1,
+      "stored_crc32": "e431977d",
+      "computed_inverted_crc32": "e431977d"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "LingGenParamConfig",
+      "fields": [
+        {
+          "type": "int",
+          "name": "GenLingQiTime",
+          "object_offset": 16
+        },
+        {
+          "type": "string",
+          "name": "IOSVestBag",
+          "object_offset": 24
+        }
+      ],
+      "unpack_va": 30755204,
+      "dump_line": 207552
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1d549b8",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d549fc",
+        "target_va": "0x21f6ce8",
+        "opcode": "B-tail",
+        "reader": "readString",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 1
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "GenLingQiTime": 60,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 21
+    }
+  ]
+}

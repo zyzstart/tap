@@ -1,0 +1,305 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_weaponconfig.bytes.ab",
+    "path_id": 1358379265137211462,
+    "name": "WeaponConfig",
+    "sha256": "b10b044418eeb41ce1b8398379fd6d3b60c8a985f95b3788d0dac5bc88d401fb",
+    "export": "derived/unity/text/assets_resources_config_resbin_weaponconfig.bytes/WeaponConfig__1358379265137211462.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 1408,
+      "version": 1,
+      "record_count": 10,
+      "stored_crc32": "8ffc15f3",
+      "computed_inverted_crc32": "8ffc15f3"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "WeaponConfig",
+      "fields": [
+        {
+          "type": "byte",
+          "name": "WeaponType",
+          "object_offset": 16
+        },
+        {
+          "type": "uint",
+          "name": "AttackSkillID",
+          "object_offset": 20
+        },
+        {
+          "type": "string",
+          "name": "MaleAnimPath",
+          "object_offset": 24
+        },
+        {
+          "type": "string",
+          "name": "FemaleAnimPath",
+          "object_offset": 32
+        },
+        {
+          "type": "string",
+          "name": "MaleUIAnimPath",
+          "object_offset": 40
+        },
+        {
+          "type": "string",
+          "name": "FemaleUIAnimPath",
+          "object_offset": 48
+        },
+        {
+          "type": "float",
+          "name": "AttackSpeed",
+          "object_offset": 56
+        },
+        {
+          "type": "float",
+          "name": "PvpBulletDisappearTime",
+          "object_offset": 60
+        },
+        {
+          "type": "int",
+          "name": "WeaponDamageAttrID",
+          "object_offset": 64
+        }
+      ],
+      "unpack_va": 29411704,
+      "dump_line": 206058
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1c0c9ac",
+        "target_va": "0x21f65e0",
+        "opcode": "BL",
+        "reader": "readUInt8",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1c0c9d0",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1c0c9f8",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1c0ca20",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1c0ca48",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 40,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1c0ca70",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 48,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1c0ca94",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 56,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1c0cab8",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 60,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1c0caf8",
+        "target_va": "0x21f67d0",
+        "opcode": "B-tail",
+        "reader": "readInt32",
+        "destination_object_offset": 64,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 10
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "WeaponType": 0,
+      "AttackSkillID": 1004,
+      "MaleAnimPath": "Model/Anim/male_changmao",
+      "FemaleAnimPath": "Model/Anim/female_changmao",
+      "MaleUIAnimPath": "Model/Anim/male_changmao_ui",
+      "FemaleUIAnimPath": "Model/Anim/female_changmao_ui",
+      "AttackSpeed": 0.5,
+      "PvpBulletDisappearTime": 0.5,
+      "WeaponDamageAttrID": 0,
+      "_byte_length": 143
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 163,
+      "WeaponType": 1,
+      "AttackSkillID": 1001,
+      "MaleAnimPath": "Model/Anim/male_changmao",
+      "FemaleAnimPath": "Model/Anim/female_changmao",
+      "MaleUIAnimPath": "Model/Anim/male_changmao_ui",
+      "FemaleUIAnimPath": "Model/Anim/female_changmao_ui",
+      "AttackSpeed": 0.5,
+      "PvpBulletDisappearTime": 0.5,
+      "WeaponDamageAttrID": 11,
+      "_byte_length": 143
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 306,
+      "WeaponType": 2,
+      "AttackSkillID": 1002,
+      "MaleAnimPath": "Model/Anim/male_gongjian",
+      "FemaleAnimPath": "Model/Anim/female_gongjian",
+      "MaleUIAnimPath": "Model/Anim/male_gongjian_ui",
+      "FemaleUIAnimPath": "Model/Anim/female_gongjian_ui",
+      "AttackSpeed": 0.6000000238418579,
+      "PvpBulletDisappearTime": 0.5,
+      "WeaponDamageAttrID": 12,
+      "_byte_length": 143
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 449,
+      "WeaponType": 3,
+      "AttackSkillID": 1003,
+      "MaleAnimPath": "Model/Anim/male_huixuanbiao",
+      "FemaleAnimPath": "Model/Anim/female_huixuanbiao",
+      "MaleUIAnimPath": "Model/Anim/male_huixuanbiao_ui",
+      "FemaleUIAnimPath": "Model/Anim/female_huixuanbiao_ui",
+      "AttackSpeed": 0.5,
+      "PvpBulletDisappearTime": 0.5,
+      "WeaponDamageAttrID": 13,
+      "_byte_length": 155
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 604,
+      "WeaponType": 4,
+      "AttackSkillID": 1004,
+      "MaleAnimPath": "Model/Anim/male_fazhang",
+      "FemaleAnimPath": "Model/Anim/female_fazhang",
+      "MaleUIAnimPath": "Model/Anim/male_fazhang_ui",
+      "FemaleUIAnimPath": "Model/Anim/female_fazhang_ui",
+      "AttackSpeed": 0.550000011920929,
+      "PvpBulletDisappearTime": 0.5,
+      "WeaponDamageAttrID": 14,
+      "_byte_length": 139
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 743,
+      "WeaponType": 5,
+      "AttackSkillID": 0,
+      "MaleAnimPath": "IOS马甲包",
+      "FemaleAnimPath": "IOS马甲包",
+      "MaleUIAnimPath": "IOS马甲包",
+      "FemaleUIAnimPath": "IOS马甲包",
+      "AttackSpeed": 0.0,
+      "PvpBulletDisappearTime": 0.0,
+      "WeaponDamageAttrID": 0,
+      "_byte_length": 85
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 828,
+      "WeaponType": 6,
+      "AttackSkillID": 1005,
+      "MaleAnimPath": "Model/Anim/male_changmao",
+      "FemaleAnimPath": "Model/Anim/female_changmao",
+      "MaleUIAnimPath": "Model/Anim/male_changmao_ui",
+      "FemaleUIAnimPath": "Model/Anim/female_changmao_ui",
+      "AttackSpeed": 0.5,
+      "PvpBulletDisappearTime": 0.5,
+      "WeaponDamageAttrID": 11,
+      "_byte_length": 143
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 971,
+      "WeaponType": 7,
+      "AttackSkillID": 1006,
+      "MaleAnimPath": "Model/Anim/male_gongjian",
+      "FemaleAnimPath": "Model/Anim/female_gongjian",
+      "MaleUIAnimPath": "Model/Anim/male_gongjian_ui",
+      "FemaleUIAnimPath": "Model/Anim/female_gongjian_ui",
+      "AttackSpeed": 0.6000000238418579,
+      "PvpBulletDisappearTime": 0.5,
+      "WeaponDamageAttrID": 12,
+      "_byte_length": 143
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 1114,
+      "WeaponType": 8,
+      "AttackSkillID": 1007,
+      "MaleAnimPath": "Model/Anim/male_huixuanbiao",
+      "FemaleAnimPath": "Model/Anim/female_huixuanbiao",
+      "MaleUIAnimPath": "Model/Anim/male_huixuanbiao_ui",
+      "FemaleUIAnimPath": "Model/Anim/female_huixuanbiao_ui",
+      "AttackSpeed": 0.5,
+      "PvpBulletDisappearTime": 0.5,
+      "WeaponDamageAttrID": 13,
+      "_byte_length": 155
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 1269,
+      "WeaponType": 9,
+      "AttackSkillID": 1008,
+      "MaleAnimPath": "Model/Anim/male_fazhang",
+      "FemaleAnimPath": "Model/Anim/female_fazhang",
+      "MaleUIAnimPath": "Model/Anim/male_fazhang_ui",
+      "FemaleUIAnimPath": "Model/Anim/female_fazhang_ui",
+      "AttackSpeed": 0.550000011920929,
+      "PvpBulletDisappearTime": 0.5,
+      "WeaponDamageAttrID": 14,
+      "_byte_length": 139
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_fp_pvpdiebuffconfig.bytes.ab",
+    "path_id": 5018298114250124721,
+    "name": "PvpDieBuffConfig",
+    "sha256": "fbb9ac8839f199b33f7b3187a7c2d4504862c03911cec9bb9c0cac9a79559e99",
+    "export": "derived/unity/text/assets_resources_config_resbin_fp_pvpdiebuffconfig.bytes/PvpDieBuffConfig__5018298114250124721.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 80,
+      "version": 1,
+      "record_count": 5,
+      "stored_crc32": "c9527c0a",
+      "computed_inverted_crc32": "c9527c0a"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "BattleCore",
+      "name": "PvpDieBuffConfig",
+      "fields": [
+        {
+          "type": "int",
+          "name": "dieCnt",
+          "object_offset": 16
+        },
+        {
+          "type": "int",
+          "name": "buffID",
+          "object_offset": 20
+        },
+        {
+          "type": "int",
+          "name": "buffStackNum",
+          "object_offset": 24
+        }
+      ],
+      "unpack_va": 35217076,
+      "dump_line": 168217
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x2195ee8",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x2195f0c",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x2195f4c",
+        "target_va": "0x21f67d0",
+        "opcode": "B-tail",
+        "reader": "readInt32",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 5
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "dieCnt": 3,
+      "buffID": 39999,
+      "buffStackNum": 1,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 32,
+      "dieCnt": 4,
+      "buffID": 39999,
+      "buffStackNum": 2,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 44,
+      "dieCnt": 5,
+      "buffID": 39999,
+      "buffStackNum": 3,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 56,
+      "dieCnt": 6,
+      "buffID": 39999,
+      "buffStackNum": 4,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 68,
+      "dieCnt": 8,
+      "buffID": 39999,
+      "buffStackNum": 5,
+      "_byte_length": 12
+    }
+  ]
+}

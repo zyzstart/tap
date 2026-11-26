@@ -1,0 +1,2319 @@
+[
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_fp_attrdataconfig.bytes.ab",
+    "path_id": 8523966994571523292,
+    "name": "AttrDataConfig",
+    "sha256": "6363735833b7df4099ce4d5430cc1974dd5448762d1e3123bd7c89e69ca344a3",
+    "export": "derived/unity/text/assets_resources_config_resbin_fp_attrdataconfig.bytes/AttrDataConfig__8523966994571523292.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 3788,
+      "version": 1,
+      "record_count": 93,
+      "stored_crc32": "ece94fd6",
+      "computed_inverted_crc32": "ece94fd6"
+    },
+    "schema_selection": "Unique exact class name across supported namespaces, verified against readers and payload",
+    "schema": "ResDef.AttrDataConfig",
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1dc64dc",
+        "target_va": "0x21f65e0",
+        "opcode": "BL",
+        "reader": "readUInt8",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dc6500",
+        "target_va": "0x21f65e0",
+        "opcode": "BL",
+        "reader": "readUInt8",
+        "destination_object_offset": 17,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dc6524",
+        "target_va": "0x21f65e0",
+        "opcode": "BL",
+        "reader": "readUInt8",
+        "destination_object_offset": 18,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dc6548",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dc6570",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dc6594",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dc65b8",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 36,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dc65dc",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 40,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dc6600",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 44,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dc6640",
+        "target_va": "0x21f6b98",
+        "opcode": "B-tail",
+        "reader": "readFloat",
+        "destination_object_offset": 48,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "reason": "ValueError: Invalid string length -1849826120",
+    "variant": "fp",
+    "path_id_decimal": "8523966994571523292",
+    "evidence_layer": "baseline",
+    "source_record_count": 93,
+    "additional_rejects": [
+      {
+        "layer": "variant-candidate",
+        "reason": "No unique fully companion-matched layout; matches=0"
+      }
+    ]
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_bianshenstonereforgeconfig.bytes.ab",
+    "path_id": -3976808484275325045,
+    "name": "BianShenStoneReforgeConfig",
+    "sha256": "f4df26ea404902ebd52273a4b91cb954794d216280dbe003af89bb1e70aa5792",
+    "export": "derived/unity/text/assets_resources_config_resbin_bianshenstonereforgeconfig.bytes/BianShenStoneReforgeConfig__-3976808484275325045.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 2900,
+      "version": 1,
+      "record_count": 240,
+      "stored_crc32": "c9083009",
+      "computed_inverted_crc32": "c9083009"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "-3976808484275325045",
+    "evidence_layer": "baseline",
+    "source_record_count": 240
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_fp_buffstackconfig.bytes.ab",
+    "path_id": 4460083590774645435,
+    "name": "BuffStackConfig",
+    "sha256": "62ddea59127ca4a8a9f6be9defa09901dab0d7cedc2b53612c03dfdc0272d838",
+    "export": "derived/unity/text/assets_resources_config_resbin_fp_buffstackconfig.bytes/BuffStackConfig__4460083590774645435.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 5220,
+      "version": 1,
+      "record_count": 100,
+      "stored_crc32": "37f9c223",
+      "computed_inverted_crc32": "37f9c223"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "fp",
+    "path_id_decimal": "4460083590774645435",
+    "evidence_layer": "baseline",
+    "source_record_count": 100
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_buffstackconfig.bytes.ab",
+    "path_id": -5582023624467108008,
+    "name": "BuffStackConfig",
+    "sha256": "6867a3512a72b2fea00559e23f1bde8427d74c2b1aabb0e513f3f38746df3805",
+    "export": "derived/unity/text/assets_resources_config_resbin_buffstackconfig.bytes/BuffStackConfig__-5582023624467108008.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 3620,
+      "version": 1,
+      "record_count": 100,
+      "stored_crc32": "dc4e70a9",
+      "computed_inverted_crc32": "dc4e70a9"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "-5582023624467108008",
+    "evidence_layer": "baseline",
+    "source_record_count": 100
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_carnivalgiftconfig.bytes.ab",
+    "path_id": -7986084712482977371,
+    "name": "CarnivalGiftConfig",
+    "sha256": "ed3627411903ccac02cc221dabfd7c53b2707bfd83088ad70549071ab4996190",
+    "export": "derived/unity/text/assets_resources_config_resbin_carnivalgiftconfig.bytes/CarnivalGiftConfig__-7986084712482977371.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 692,
+      "version": 1,
+      "record_count": 28,
+      "stored_crc32": "49bc7d7e",
+      "computed_inverted_crc32": "49bc7d7e"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "-7986084712482977371",
+    "evidence_layer": "baseline",
+    "source_record_count": 28
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_carnivaliconconfig.bytes.ab",
+    "path_id": -49938527107052177,
+    "name": "CarnivalIconConfig",
+    "sha256": "480fbb71808c086c79b4bca28f62d7c16639360caf035aa6bb9f51decf3fe487",
+    "export": "derived/unity/text/assets_resources_config_resbin_carnivaliconconfig.bytes/CarnivalIconConfig__-49938527107052177.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 156,
+      "version": 1,
+      "record_count": 7,
+      "stored_crc32": "a564c312",
+      "computed_inverted_crc32": "a564c312"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "-49938527107052177",
+    "evidence_layer": "baseline",
+    "source_record_count": 7
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_carnivalsubtaskconfig.bytes.ab",
+    "path_id": 5603010817896894180,
+    "name": "CarnivalSubTaskConfig",
+    "sha256": "54353bc93cd650fd61872297df975e8190c33b30c9ce7932d9fe55ab2547e4e0",
+    "export": "derived/unity/text/assets_resources_config_resbin_carnivalsubtaskconfig.bytes/CarnivalSubTaskConfig__5603010817896894180.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 9916,
+      "version": 1,
+      "record_count": 137,
+      "stored_crc32": "70266278",
+      "computed_inverted_crc32": "70266278"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "5603010817896894180",
+    "evidence_layer": "baseline",
+    "source_record_count": 137
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_carnivaltaskcntawardconfig.bytes.ab",
+    "path_id": 1079254829474089619,
+    "name": "CarnivalTaskCntAwardConfig",
+    "sha256": "4f0d166b63887d483b8189c14d0b3782da26de90ca507932409eff0143d6ef1b",
+    "export": "derived/unity/text/assets_resources_config_resbin_carnivaltaskcntawardconfig.bytes/CarnivalTaskCntAwardConfig__1079254829474089619.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 68,
+      "version": 1,
+      "record_count": 6,
+      "stored_crc32": "8fca1d22",
+      "computed_inverted_crc32": "8fca1d22"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "1079254829474089619",
+    "evidence_layer": "baseline",
+    "source_record_count": 6
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_carnivaltaskconfig.bytes.ab",
+    "path_id": 6271728460687605850,
+    "name": "CarnivalTaskConfig",
+    "sha256": "56bf8ed22b32154e3ce1680d58306ecf44c892f46a8e6a70ececad1c4c2d3ed9",
+    "export": "derived/unity/text/assets_resources_config_resbin_carnivaltaskconfig.bytes/CarnivalTaskConfig__6271728460687605850.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 566,
+      "version": 1,
+      "record_count": 21,
+      "stored_crc32": "12f52542",
+      "computed_inverted_crc32": "12f52542"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "6271728460687605850",
+    "evidence_layer": "baseline",
+    "source_record_count": 21
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_channelconfig.bytes.ab",
+    "path_id": -9215471192768785648,
+    "name": "ChannelConfig",
+    "sha256": "33141e05c314cb1b10d9a4d1fb8807a954e5792c8956059ac30685af83d1d398",
+    "export": "derived/unity/text/assets_resources_config_resbin_channelconfig.bytes/ChannelConfig__-9215471192768785648.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 45,
+      "version": 1,
+      "record_count": 2,
+      "stored_crc32": "37999643",
+      "computed_inverted_crc32": "37999643"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "-9215471192768785648",
+    "evidence_layer": "baseline",
+    "source_record_count": 2
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_channelminigamelevelconfig.bytes.ab",
+    "path_id": 1776350871005706921,
+    "name": "ChannelMiniGameLevelConfig",
+    "sha256": "28d9b07e482b55854affbc1355e7f7b4f0e8a6b9ae388cf8f4376e93cc7b818d",
+    "export": "derived/unity/text/assets_resources_config_resbin_channelminigamelevelconfig.bytes/ChannelMiniGameLevelConfig__1776350871005706921.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 9522,
+      "version": 1,
+      "record_count": 39,
+      "stored_crc32": "f392359b",
+      "computed_inverted_crc32": "f392359b"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "1776350871005706921",
+    "evidence_layer": "baseline",
+    "source_record_count": 39
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_corssserverruleconfig.bytes.ab",
+    "path_id": -5565014769934708994,
+    "name": "CorssServerRuleConfig",
+    "sha256": "8126f4ec7332a7bc6a91c87706a2f7d9302a2419242199d1c6ba9625365d8624",
+    "export": "derived/unity/text/assets_resources_config_resbin_corssserverruleconfig.bytes/CorssServerRuleConfig__-5565014769934708994.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 68,
+      "version": 1,
+      "record_count": 6,
+      "stored_crc32": "c6b4064f",
+      "computed_inverted_crc32": "c6b4064f"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "-5565014769934708994",
+    "evidence_layer": "baseline",
+    "source_record_count": 6
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_fp_defaultattconfig.bytes.ab",
+    "path_id": -6386523740053702460,
+    "name": "DefaultAttConfig",
+    "sha256": "5d7060068b823a5aa8d31797a2708156d24322ff447ba93792b31b70b20fa297",
+    "export": "derived/unity/text/assets_resources_config_resbin_fp_defaultattconfig.bytes/DefaultAttConfig__-6386523740053702460.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 104,
+      "version": 1,
+      "record_count": 1,
+      "stored_crc32": "1f0c6422",
+      "computed_inverted_crc32": "1f0c6422"
+    },
+    "schema_selection": "Unique exact class name across supported namespaces, verified against readers and payload",
+    "schema": "ResDef.DefaultAttConfig",
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1dd0788",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd07ac",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd07d0",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd07f4",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 28,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd0818",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd083c",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 36,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd0860",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 40,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd0884",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 44,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd08a8",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 48,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd08cc",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 52,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd08f0",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 56,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd0914",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 60,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd0938",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 64,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd095c",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 68,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd0980",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 72,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd09a4",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 76,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd09c8",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 80,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd09ec",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 84,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd0a10",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 88,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd0a34",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 92,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd0a58",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 96,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd0a7c",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 100,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd0aa0",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 104,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd0ac4",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 108,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd0ae8",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 112,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd0b0c",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 116,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd0b30",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 120,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd0b54",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 124,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd0b94",
+        "target_va": "0x21f6b98",
+        "opcode": "B-tail",
+        "reader": "readFloat",
+        "destination_object_offset": 128,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "reason": "ValueError: Truncated field SkyCritAtkRatio",
+    "variant": "fp",
+    "path_id_decimal": "-6386523740053702460",
+    "evidence_layer": "baseline",
+    "source_record_count": 1,
+    "additional_rejects": [
+      {
+        "layer": "variant-candidate",
+        "reason": "No unique fully companion-matched layout; matches=0"
+      }
+    ]
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_displayminigameconfig.bytes.ab",
+    "path_id": -7724315780273818509,
+    "name": "DisplayMiniGameConfig",
+    "sha256": "6e9b8618708c203efc3e9def0aff4b7fb9b184a3f3c7ab8ea1ed87f3317417df",
+    "export": "derived/unity/text/assets_resources_config_resbin_displayminigameconfig.bytes/DisplayMiniGameConfig__-7724315780273818509.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 3292,
+      "version": 1,
+      "record_count": 55,
+      "stored_crc32": "e604dc40",
+      "computed_inverted_crc32": "e604dc40"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "-7724315780273818509",
+    "evidence_layer": "baseline",
+    "source_record_count": 55
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_districtingconfig.bytes.ab",
+    "path_id": 4226432443308191998,
+    "name": "DistrictingConfig",
+    "sha256": "05f41e9efc5e603b8eab3b3cbda277835ab3191d8e586852aa99b9896b5bc6ef",
+    "export": "derived/unity/text/assets_resources_config_resbin_districtingconfig.bytes/DistrictingConfig__4226432443308191998.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 284,
+      "version": 1,
+      "record_count": 22,
+      "stored_crc32": "94b8bc4a",
+      "computed_inverted_crc32": "94b8bc4a"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "4226432443308191998",
+    "evidence_layer": "baseline",
+    "source_record_count": 22
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_equipdecomposegetmoneyconfig.bytes.ab",
+    "path_id": -2350133455991869701,
+    "name": "EquipDecomposeGetMoneyConfig",
+    "sha256": "3464a5727a04158d0497ace428a83411187d323ff926ca3fdc221d5a116634c8",
+    "export": "derived/unity/text/assets_resources_config_resbin_equipdecomposegetmoneyconfig.bytes/EquipDecomposeGetMoneyConfig__-2350133455991869701.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 180,
+      "version": 1,
+      "record_count": 20,
+      "stored_crc32": "7fe5666c",
+      "computed_inverted_crc32": "7fe5666c"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "-2350133455991869701",
+    "evidence_layer": "baseline",
+    "source_record_count": 20
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_exchangeshopitemconfig.bytes.ab",
+    "path_id": 7048375825022772678,
+    "name": "ExchangeShopItemConfig",
+    "sha256": "bdce61368af6e3bb9a8a55c9aa81a13ebef9a8b7eb9d069f189112166fb87977",
+    "export": "derived/unity/text/assets_resources_config_resbin_exchangeshopitemconfig.bytes/ExchangeShopItemConfig__7048375825022772678.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 19064,
+      "version": 1,
+      "record_count": 414,
+      "stored_crc32": "22c645b1",
+      "computed_inverted_crc32": "22c645b1"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "7048375825022772678",
+    "evidence_layer": "baseline",
+    "source_record_count": 414
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_fabaobuffconfig.bytes.ab",
+    "path_id": -4377976428147316491,
+    "name": "FaBaoBuffConfig",
+    "sha256": "94687de638b6b5512fbda181c6148e1a7406e7d3c05ec27fd03422330e9372ca",
+    "export": "derived/unity/text/assets_resources_config_resbin_fabaobuffconfig.bytes/FaBaoBuffConfig__-4377976428147316491.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 2762,
+      "version": 1,
+      "record_count": 33,
+      "stored_crc32": "9a78fb6a",
+      "computed_inverted_crc32": "9a78fb6a"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "-4377976428147316491",
+    "evidence_layer": "baseline",
+    "source_record_count": 33
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_fabaospiritattrpoolconfig.bytes.ab",
+    "path_id": -7849268919153214214,
+    "name": "FaBaoSpiritAttrPoolConfig",
+    "sha256": "8661823c3e51518cff8844c28953efabe920d89a7e382174fe4a0fad78dcfac4",
+    "export": "derived/unity/text/assets_resources_config_resbin_fabaospiritattrpoolconfig.bytes/FaBaoSpiritAttrPoolConfig__-7849268919153214214.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 18500,
+      "version": 1,
+      "record_count": 924,
+      "stored_crc32": "3f23bf6a",
+      "computed_inverted_crc32": "3f23bf6a"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "-7849268919153214214",
+    "evidence_layer": "baseline",
+    "source_record_count": 924
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_fabaospiritqualificationconfig.bytes.ab",
+    "path_id": -6048229525668167904,
+    "name": "FaBaoSpiritQualificationConfig",
+    "sha256": "fc9110eff3c9935142e4cfa885f1776062b956bb61f9fff2e67575f0c6c2a076",
+    "export": "derived/unity/text/assets_resources_config_resbin_fabaospiritqualificationconfig.bytes/FaBaoSpiritQualificationConfig__-6048229525668167904.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 117,
+      "version": 1,
+      "record_count": 5,
+      "stored_crc32": "273aef8a",
+      "computed_inverted_crc32": "273aef8a"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "-6048229525668167904",
+    "evidence_layer": "baseline",
+    "source_record_count": 5
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_guardblitzdifficultconfig.bytes.ab",
+    "path_id": -8622650719081659413,
+    "name": "GuardBlitzDifficultConfig",
+    "sha256": "7f60fb11f062b443b53a0f95d9ff7ef8409d359ce0e0473ec4b29ab4d736d7fd",
+    "export": "derived/unity/text/assets_resources_config_resbin_guardblitzdifficultconfig.bytes/GuardBlitzDifficultConfig__-8622650719081659413.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 350,
+      "version": 1,
+      "record_count": 10,
+      "stored_crc32": "f8f79df9",
+      "computed_inverted_crc32": "f8f79df9"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "-8622650719081659413",
+    "evidence_layer": "baseline",
+    "source_record_count": 10
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_fp_guardblitzmonsterattrconfig.bytes.ab",
+    "path_id": 8228848559217497434,
+    "name": "GuardBlitzMonsterAttrConfig",
+    "sha256": "59081c35a581836d9681cf461651860b3af8d8d210b9cee47c7806020cf62010",
+    "export": "derived/unity/text/assets_resources_config_resbin_fp_guardblitzmonsterattrconfig.bytes/GuardBlitzMonsterAttrConfig__8228848559217497434.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 60,
+      "version": 1,
+      "record_count": 5,
+      "stored_crc32": "fb2348b5",
+      "computed_inverted_crc32": "fb2348b5"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "fp",
+    "path_id_decimal": "8228848559217497434",
+    "evidence_layer": "baseline",
+    "source_record_count": 5
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_guardblitzmonsterattrconfig.bytes.ab",
+    "path_id": 8932218990988770934,
+    "name": "GuardBlitzMonsterAttrConfig",
+    "sha256": "59081c35a581836d9681cf461651860b3af8d8d210b9cee47c7806020cf62010",
+    "export": "derived/unity/text/assets_resources_config_resbin_guardblitzmonsterattrconfig.bytes/GuardBlitzMonsterAttrConfig__8932218990988770934.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 60,
+      "version": 1,
+      "record_count": 5,
+      "stored_crc32": "fb2348b5",
+      "computed_inverted_crc32": "fb2348b5"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "8932218990988770934",
+    "evidence_layer": "baseline",
+    "source_record_count": 5
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_guardblitzmonsterattrlibraryconfig.bytes.ab",
+    "path_id": 3333448578556077844,
+    "name": "GuardBlitzMonsterAttrLibraryConfig",
+    "sha256": "f070e9b347fb31e2264fa22295ac35f4aa65c99e481666fb676c566a69150a36",
+    "export": "derived/unity/text/assets_resources_config_resbin_guardblitzmonsterattrlibraryconfig.bytes/GuardBlitzMonsterAttrLibraryConfig__3333448578556077844.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 4162,
+      "version": 1,
+      "record_count": 50,
+      "stored_crc32": "5af14167",
+      "computed_inverted_crc32": "5af14167"
+    },
+    "schema_selection": "Unique exact class name across supported namespaces, verified against readers and payload",
+    "schema": "BattleCore.GuardBlitzMonsterAttrLibraryConfig",
+    "reason": "Unsupported arrays/nested/enum fields: ResAttrImpactData[] ImpactData",
+    "variant": "nonfp",
+    "path_id_decimal": "3333448578556077844",
+    "evidence_layer": "baseline",
+    "source_record_count": 50,
+    "additional_rejects": [
+      {
+        "layer": "native-recursive",
+        "reason": "DecodeError: Count * minimum record size exceeds payload"
+      },
+      {
+        "layer": "recursive-variant-candidate",
+        "reason": "DecodeError: Trailing bytes: 442"
+      }
+    ]
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_guardblitzplayerskillconfig.bytes.ab",
+    "path_id": -1159706225181319177,
+    "name": "GuardBlitzPlayerSkillConfig",
+    "sha256": "3e0f2e41ad574097e1c9a613fc10fb0bbde6a8b0cc81007dbbd39d6c2044051e",
+    "export": "derived/unity/text/assets_resources_config_resbin_guardblitzplayerskillconfig.bytes/GuardBlitzPlayerSkillConfig__-1159706225181319177.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 95,
+      "version": 1,
+      "record_count": 3,
+      "stored_crc32": "8b961b4e",
+      "computed_inverted_crc32": "8b961b4e"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "-1159706225181319177",
+    "evidence_layer": "baseline",
+    "source_record_count": 3
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_guardblitzscoreawardconfig.bytes.ab",
+    "path_id": -5575907481481097948,
+    "name": "GuardBlitzScoreAwardConfig",
+    "sha256": "708986ed82f1353591b5dd987e5b87c64ef7ffb0c26bc4d82900fb6332a5d688",
+    "export": "derived/unity/text/assets_resources_config_resbin_guardblitzscoreawardconfig.bytes/GuardBlitzScoreAwardConfig__-5575907481481097948.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 1121,
+      "version": 1,
+      "record_count": 22,
+      "stored_crc32": "68ffa656",
+      "computed_inverted_crc32": "68ffa656"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "-5575907481481097948",
+    "evidence_layer": "baseline",
+    "source_record_count": 22
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_guardblitztreasuryawardconfig.bytes.ab",
+    "path_id": -6580217279997462172,
+    "name": "GuardBlitzTreasuryAwardConfig",
+    "sha256": "97cafa5dac98c225353c9cf41aafd0cb130901c564f9d11dac294d9834e8e122",
+    "export": "derived/unity/text/assets_resources_config_resbin_guardblitztreasuryawardconfig.bytes/GuardBlitzTreasuryAwardConfig__-6580217279997462172.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 1556,
+      "version": 1,
+      "record_count": 48,
+      "stored_crc32": "88c2cb39",
+      "computed_inverted_crc32": "88c2cb39"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "-6580217279997462172",
+    "evidence_layer": "baseline",
+    "source_record_count": 48
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_huntstateconfig.bytes.ab",
+    "path_id": 727142469915199827,
+    "name": "HuntStateConfig",
+    "sha256": "9ac2d0afbe3443dc820d6fdd2222376c22d7873f85c48e37b5a83dd6e05febff",
+    "export": "derived/unity/text/assets_resources_config_resbin_huntstateconfig.bytes/HuntStateConfig__727142469915199827.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 1370,
+      "version": 1,
+      "record_count": 90,
+      "stored_crc32": "0889e2ca",
+      "computed_inverted_crc32": "0889e2ca"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "727142469915199827",
+    "evidence_layer": "baseline",
+    "source_record_count": 90
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_jingjielevelconfig.bytes.ab",
+    "path_id": -1505891257000884806,
+    "name": "JingJieLevelConfig",
+    "sha256": "a4b5fec13f18975c5881c66f8ef4f9c1c0b66bfdc1e799ac1582114057738b64",
+    "export": "derived/unity/text/assets_resources_config_resbin_jingjielevelconfig.bytes/JingJieLevelConfig__-1505891257000884806.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 34094,
+      "version": 1,
+      "record_count": 540,
+      "stored_crc32": "afaedf1b",
+      "computed_inverted_crc32": "afaedf1b"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "-1505891257000884806",
+    "evidence_layer": "baseline",
+    "source_record_count": 540
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_jingjiemajorconfig.bytes.ab",
+    "path_id": -9053292422776619854,
+    "name": "JingJieMajorConfig",
+    "sha256": "d74dbdcc90026ea63aebfa0ee5f0c66728d145bbd793d37658d757761a0c5746",
+    "export": "derived/unity/text/assets_resources_config_resbin_jingjiemajorconfig.bytes/JingJieMajorConfig__-9053292422776619854.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 8327,
+      "version": 1,
+      "record_count": 18,
+      "stored_crc32": "042ec008",
+      "computed_inverted_crc32": "042ec008"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "-9053292422776619854",
+    "evidence_layer": "baseline",
+    "source_record_count": 18
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_jingjieminorconfig.bytes.ab",
+    "path_id": 7684026440492174430,
+    "name": "JingJieMinorConfig",
+    "sha256": "6de08fa6b542c4743170f4649935931d18f2589b9fd70dc9d83773629f32adca",
+    "export": "derived/unity/text/assets_resources_config_resbin_jingjieminorconfig.bytes/JingJieMinorConfig__7684026440492174430.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 17462,
+      "version": 1,
+      "record_count": 54,
+      "stored_crc32": "19520665",
+      "computed_inverted_crc32": "19520665"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "7684026440492174430",
+    "evidence_layer": "baseline",
+    "source_record_count": 54
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_jingjiestateconfig.bytes.ab",
+    "path_id": -3241667536346406176,
+    "name": "JingJieStateConfig",
+    "sha256": "9ccb6c78d9e4a6d507b60b4ce451f21348b54d05f944d5169bca5cbbc6e43268",
+    "export": "derived/unity/text/assets_resources_config_resbin_jingjiestateconfig.bytes/JingJieStateConfig__-3241667536346406176.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 3980,
+      "version": 1,
+      "record_count": 90,
+      "stored_crc32": "4e0a95f1",
+      "computed_inverted_crc32": "4e0a95f1"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "-3241667536346406176",
+    "evidence_layer": "baseline",
+    "source_record_count": 90
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_leagueawardconfig.bytes.ab",
+    "path_id": 6009638050777538501,
+    "name": "LeagueAwardConfig",
+    "sha256": "8e069cc8a574187b94a19ca28f1caa4067422b0aaf2909afc22230338a6c405c",
+    "export": "derived/unity/text/assets_resources_config_resbin_leagueawardconfig.bytes/LeagueAwardConfig__6009638050777538501.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 152,
+      "version": 1,
+      "record_count": 11,
+      "stored_crc32": "5c2d5592",
+      "computed_inverted_crc32": "5c2d5592"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "6009638050777538501",
+    "evidence_layer": "baseline",
+    "source_record_count": 11
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_leaguechallengeconfig.bytes.ab",
+    "path_id": -7566706897662588887,
+    "name": "LeagueChallengeConfig",
+    "sha256": "77172010ab761add713ad60b67be26297fe392bda9844ec9ccbd87b4e86ac691",
+    "export": "derived/unity/text/assets_resources_config_resbin_leaguechallengeconfig.bytes/LeagueChallengeConfig__-7566706897662588887.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 152,
+      "version": 1,
+      "record_count": 4,
+      "stored_crc32": "5ab0f5e2",
+      "computed_inverted_crc32": "5ab0f5e2"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "-7566706897662588887",
+    "evidence_layer": "baseline",
+    "source_record_count": 4
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_leaguemazediscountconfig.bytes.ab",
+    "path_id": 619706306813837406,
+    "name": "LeagueMazeDiscountConfig",
+    "sha256": "7b980e0351fb440e0e5aa2e93d38ff2193cd5debb955c6e6b9dc99ca20febede",
+    "export": "derived/unity/text/assets_resources_config_resbin_leaguemazediscountconfig.bytes/LeagueMazeDiscountConfig__619706306813837406.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 52,
+      "version": 1,
+      "record_count": 4,
+      "stored_crc32": "1ddd2605",
+      "computed_inverted_crc32": "1ddd2605"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "619706306813837406",
+    "evidence_layer": "baseline",
+    "source_record_count": 4
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_leaguemazeeventlibconfig.bytes.ab",
+    "path_id": 7107047692603995300,
+    "name": "LeagueMazeEventLibConfig",
+    "sha256": "815ecd481d80436d928471ebf7f2e6f48569eae9df1eb56aee20e32c67302bd8",
+    "export": "derived/unity/text/assets_resources_config_resbin_leaguemazeeventlibconfig.bytes/LeagueMazeEventLibConfig__7107047692603995300.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 68,
+      "version": 1,
+      "record_count": 4,
+      "stored_crc32": "57cd5b0a",
+      "computed_inverted_crc32": "57cd5b0a"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "7107047692603995300",
+    "evidence_layer": "baseline",
+    "source_record_count": 4
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_leaguemazeeventrateconfig.bytes.ab",
+    "path_id": -1137684791302567165,
+    "name": "LeagueMazeEventRateConfig",
+    "sha256": "75f6185bc6f4e7260d415967fc5bc8c8887319cdc62fa17232a417cb1f2e84cd",
+    "export": "derived/unity/text/assets_resources_config_resbin_leaguemazeeventrateconfig.bytes/LeagueMazeEventRateConfig__-1137684791302567165.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 25940,
+      "version": 1,
+      "record_count": 1080,
+      "stored_crc32": "b909536a",
+      "computed_inverted_crc32": "b909536a"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "-1137684791302567165",
+    "evidence_layer": "baseline",
+    "source_record_count": 1080
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_leaguemazemapconfig.bytes.ab",
+    "path_id": -7268674413421681681,
+    "name": "LeagueMazeMapConfig",
+    "sha256": "c4905a6273bbd06ea6c5ba1fb43167e954895946b2bd13f0c5ab7170c459ddc6",
+    "export": "derived/unity/text/assets_resources_config_resbin_leaguemazemapconfig.bytes/LeagueMazeMapConfig__-7268674413421681681.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 164,
+      "version": 1,
+      "record_count": 9,
+      "stored_crc32": "163f4020",
+      "computed_inverted_crc32": "163f4020"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "-7268674413421681681",
+    "evidence_layer": "baseline",
+    "source_record_count": 9
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_leaguemazemonsterconfig.bytes.ab",
+    "path_id": 7339818944233474531,
+    "name": "LeagueMazeMonsterConfig",
+    "sha256": "94fb2c7b269a6c87417a1732f42510edf63e228781840990e84b0dada9a49704",
+    "export": "derived/unity/text/assets_resources_config_resbin_leaguemazemonsterconfig.bytes/LeagueMazeMonsterConfig__7339818944233474531.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 200,
+      "version": 1,
+      "record_count": 15,
+      "stored_crc32": "d4c1f243",
+      "computed_inverted_crc32": "d4c1f243"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "7339818944233474531",
+    "evidence_layer": "baseline",
+    "source_record_count": 15
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_leveltypeweightconfig.bytes.ab",
+    "path_id": -4496618096584644903,
+    "name": "LevelTypeWeightConfig",
+    "sha256": "9bc037ed5ee952e948079bfbd27ee1fff6823e96a0b419dbaa24be33f243de51",
+    "export": "derived/unity/text/assets_resources_config_resbin_leveltypeweightconfig.bytes/LevelTypeWeightConfig__-4496618096584644903.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 180,
+      "version": 1,
+      "record_count": 5,
+      "stored_crc32": "5b179ea7",
+      "computed_inverted_crc32": "5b179ea7"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "-4496618096584644903",
+    "evidence_layer": "baseline",
+    "source_record_count": 5
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_mhzbcoefficientconfig.bytes.ab",
+    "path_id": -2911039441173812078,
+    "name": "MHZBCoefficientConfig",
+    "sha256": "da8e8f678568b108ec3a76adc65eff8e840123dc7436c81c39e7198a5ddc9016",
+    "export": "derived/unity/text/assets_resources_config_resbin_mhzbcoefficientconfig.bytes/MHZBCoefficientConfig__-2911039441173812078.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 504,
+      "version": 1,
+      "record_count": 11,
+      "stored_crc32": "35d9beae",
+      "computed_inverted_crc32": "35d9beae"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "-2911039441173812078",
+    "evidence_layer": "baseline",
+    "source_record_count": 11
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_fp_mhzbguardbeastconfig.bytes.ab",
+    "path_id": 6000627803872089003,
+    "name": "MHZBGuardBeastConfig",
+    "sha256": "acb580d32c3e843caff8e1df8b3527d345c161678f57fd5ae1c73ccbc4bbdea4",
+    "export": "derived/unity/text/assets_resources_config_resbin_fp_mhzbguardbeastconfig.bytes/MHZBGuardBeastConfig__6000627803872089003.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 300,
+      "version": 1,
+      "record_count": 35,
+      "stored_crc32": "fc0ccf50",
+      "computed_inverted_crc32": "fc0ccf50"
+    },
+    "schema_selection": "Unique exact class name across supported namespaces, verified against readers and payload",
+    "schema": "ResDef.MHZBGuardBeastConfig",
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1d58fc4",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d58fec",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d59010",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d59038",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 40,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d5905c",
+        "target_va": "0x21f65e0",
+        "opcode": "BL",
+        "reader": "readUInt8",
+        "destination_object_offset": 48,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d59080",
+        "target_va": "0x21f65e0",
+        "opcode": "BL",
+        "reader": "readUInt8",
+        "destination_object_offset": 49,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d590a4",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 52,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d590c8",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 56,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d590f0",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 64,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d59130",
+        "target_va": "0x21f67d0",
+        "opcode": "B-tail",
+        "reader": "readInt32",
+        "destination_object_offset": 72,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "reason": "ValueError: Invalid string length 101106",
+    "variant": "fp",
+    "path_id_decimal": "6000627803872089003",
+    "evidence_layer": "baseline",
+    "source_record_count": 35,
+    "additional_rejects": [
+      {
+        "layer": "variant-candidate",
+        "reason": "Companion count differs; no row correspondence assumed"
+      }
+    ]
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_mhzbmainuiconfig.bytes.ab",
+    "path_id": -2959774337172361588,
+    "name": "MHZBMainUIConfig",
+    "sha256": "48e80381627597090594af44ea56e18e20076fd64bf316ca631e1bf4d2f94485",
+    "export": "derived/unity/text/assets_resources_config_resbin_mhzbmainuiconfig.bytes/MHZBMainUIConfig__-2959774337172361588.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 1532,
+      "version": 1,
+      "record_count": 54,
+      "stored_crc32": "fb1ef326",
+      "computed_inverted_crc32": "fb1ef326"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "-2959774337172361588",
+    "evidence_layer": "baseline",
+    "source_record_count": 54
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_mhzbsettlementconfig.bytes.ab",
+    "path_id": -3548693048510804099,
+    "name": "MHZBSettlementConfig",
+    "sha256": "80d93171ed17bd9812faafed2e4d29c2a749432edeeaf57f35f661b702170e03",
+    "export": "derived/unity/text/assets_resources_config_resbin_mhzbsettlementconfig.bytes/MHZBSettlementConfig__-3548693048510804099.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 116,
+      "version": 1,
+      "record_count": 3,
+      "stored_crc32": "a6cdfb38",
+      "computed_inverted_crc32": "a6cdfb38"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "-3548693048510804099",
+    "evidence_layer": "baseline",
+    "source_record_count": 3
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_minigamechapterconfig.bytes.ab",
+    "path_id": -6001203774013868300,
+    "name": "MiniGameChapterConfig",
+    "sha256": "d1ad1b3c42a6edca9d8c6891595519e904e473d6b0318dd5b9c2b71a2d10c250",
+    "export": "derived/unity/text/assets_resources_config_resbin_minigamechapterconfig.bytes/MiniGameChapterConfig__-6001203774013868300.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 915,
+      "version": 1,
+      "record_count": 10,
+      "stored_crc32": "f3fb3eea",
+      "computed_inverted_crc32": "f3fb3eea"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "-6001203774013868300",
+    "evidence_layer": "baseline",
+    "source_record_count": 10
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_minigamestageconfig.bytes.ab",
+    "path_id": 8521643811381840502,
+    "name": "MiniGameStageConfig",
+    "sha256": "2e64ecf923cb5285321360ab173dcee475cb1289b0703c8a4ed660581ad4ac4c",
+    "export": "derived/unity/text/assets_resources_config_resbin_minigamestageconfig.bytes/MiniGameStageConfig__8521643811381840502.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 10575,
+      "version": 1,
+      "record_count": 172,
+      "stored_crc32": "13ac10dd",
+      "computed_inverted_crc32": "13ac10dd"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "8521643811381840502",
+    "evidence_layer": "baseline",
+    "source_record_count": 172
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_opertaskconfig.bytes.ab",
+    "path_id": -5302542159180101123,
+    "name": "OperTaskConfig",
+    "sha256": "d358006a64af8917b2ae865eaeb3dfbe07c5255b88bf27a678b8a656cd94e60f",
+    "export": "derived/unity/text/assets_resources_config_resbin_opertaskconfig.bytes/OperTaskConfig__-5302542159180101123.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 26858,
+      "version": 1,
+      "record_count": 271,
+      "stored_crc32": "4979240d",
+      "computed_inverted_crc32": "4979240d"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "-5302542159180101123",
+    "evidence_layer": "baseline",
+    "source_record_count": 271
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_ppttdisplayconfig.bytes.ab",
+    "path_id": 1102001188140209218,
+    "name": "PPTTDisplayConfig",
+    "sha256": "2572aca17e508d85ecf340016d17cd8339c1fe698b7fbffd34f7c525ded34789",
+    "export": "derived/unity/text/assets_resources_config_resbin_ppttdisplayconfig.bytes/PPTTDisplayConfig__1102001188140209218.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 284,
+      "version": 1,
+      "record_count": 12,
+      "stored_crc32": "242b5d31",
+      "computed_inverted_crc32": "242b5d31"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "1102001188140209218",
+    "evidence_layer": "baseline",
+    "source_record_count": 12
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_fp_ppttmonsterconfig.bytes.ab",
+    "path_id": -2452480336981609626,
+    "name": "PPTTMonsterConfig",
+    "sha256": "7c659f8bd0c16b30b8aa159964af69ef5cb1de3f8a1af20064456cf1662942d5",
+    "export": "derived/unity/text/assets_resources_config_resbin_fp_ppttmonsterconfig.bytes/PPTTMonsterConfig__-2452480336981609626.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 2820,
+      "version": 1,
+      "record_count": 70,
+      "stored_crc32": "900316f3",
+      "computed_inverted_crc32": "900316f3"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "fp",
+    "path_id_decimal": "-2452480336981609626",
+    "evidence_layer": "baseline",
+    "source_record_count": 70
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_ppttmonsterlibraryconfig.bytes.ab",
+    "path_id": 4788147470056189076,
+    "name": "PPTTMonsterLibraryConfig",
+    "sha256": "f80351684639fac24ca7c7b5068d914ca663ba32b3228607992bc14c4fc928cd",
+    "export": "derived/unity/text/assets_resources_config_resbin_ppttmonsterlibraryconfig.bytes/PPTTMonsterLibraryConfig__4788147470056189076.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 17600,
+      "version": 1,
+      "record_count": 879,
+      "stored_crc32": "efba8214",
+      "computed_inverted_crc32": "efba8214"
+    },
+    "schema_selection": "Unique exact class name across supported namespaces, verified against readers and payload",
+    "schema": "BattleCore.PPTTMonsterLibraryConfig",
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x21959f8",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x2195a1c",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x2195a40",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x2195a64",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 28,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x2195aa4",
+        "target_va": "0x21f6938",
+        "opcode": "B-tail",
+        "reader": "readInt64",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "reason": "ValueError: Truncated field KillScore",
+    "variant": "nonfp",
+    "path_id_decimal": "4788147470056189076",
+    "evidence_layer": "baseline",
+    "source_record_count": 879,
+    "additional_rejects": [
+      {
+        "layer": "variant-candidate",
+        "reason": "No unique fully companion-matched layout; matches=0"
+      }
+    ]
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_petattachattrconfig.bytes.ab",
+    "path_id": 1290935078943175921,
+    "name": "PetAttachAttrConfig",
+    "sha256": "fd8f3d980e5a4e3520a4dc29ba499d7e257efda45f7487ceae94715e2a916893",
+    "export": "derived/unity/text/assets_resources_config_resbin_petattachattrconfig.bytes/PetAttachAttrConfig__1290935078943175921.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 305,
+      "version": 1,
+      "record_count": 15,
+      "stored_crc32": "1937b964",
+      "computed_inverted_crc32": "1937b964"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "1290935078943175921",
+    "evidence_layer": "baseline",
+    "source_record_count": 15
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_petfeaturesconfig.bytes.ab",
+    "path_id": 6037412763834145300,
+    "name": "PetFeaturesConfig",
+    "sha256": "48de8c4833ed5b97eed52a0a1b63a67a55fa93f3569a255e78e08e2393856547",
+    "export": "derived/unity/text/assets_resources_config_resbin_petfeaturesconfig.bytes/PetFeaturesConfig__6037412763834145300.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 3299,
+      "version": 1,
+      "record_count": 30,
+      "stored_crc32": "2f550e5e",
+      "computed_inverted_crc32": "2f550e5e"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "6037412763834145300",
+    "evidence_layer": "baseline",
+    "source_record_count": 30
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_petparamconfig.bytes.ab",
+    "path_id": 1171743774455989269,
+    "name": "PetParamConfig",
+    "sha256": "ac2dd79831a6c84ad57805343a1f56ebc79d519b6207d5f2e556153367b91103",
+    "export": "derived/unity/text/assets_resources_config_resbin_petparamconfig.bytes/PetParamConfig__1171743774455989269.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 94,
+      "version": 1,
+      "record_count": 2,
+      "stored_crc32": "989fa6bf",
+      "computed_inverted_crc32": "989fa6bf"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "1171743774455989269",
+    "evidence_layer": "baseline",
+    "source_record_count": 2
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_petskillcomposeskillconfig.bytes.ab",
+    "path_id": 7631064030035251521,
+    "name": "PetSkillComposeSkillConfig",
+    "sha256": "5659fa4833161247ff7591d007d04b93a9b61bc54b43906bc63084aaace369c0",
+    "export": "derived/unity/text/assets_resources_config_resbin_petskillcomposeskillconfig.bytes/PetSkillComposeSkillConfig__7631064030035251521.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 860,
+      "version": 1,
+      "record_count": 70,
+      "stored_crc32": "1f013cfd",
+      "computed_inverted_crc32": "1f013cfd"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "7631064030035251521",
+    "evidence_layer": "baseline",
+    "source_record_count": 70
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_petskillslotopenconfig.bytes.ab",
+    "path_id": -817882392981422923,
+    "name": "PetSkillSlotOpenConfig",
+    "sha256": "accc4dc23f060ad4a065c683a787511a6a06eaf646528c58e79f4ae76b88514e",
+    "export": "derived/unity/text/assets_resources_config_resbin_petskillslotopenconfig.bytes/PetSkillSlotOpenConfig__-817882392981422923.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 44,
+      "version": 1,
+      "record_count": 2,
+      "stored_crc32": "d72a3bdb",
+      "computed_inverted_crc32": "d72a3bdb"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "-817882392981422923",
+    "evidence_layer": "baseline",
+    "source_record_count": 2
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_fp_pvpcollectitemwaveconfig.bytes.ab",
+    "path_id": 2338946350988749627,
+    "name": "PvpCollectItemWaveConfig",
+    "sha256": "82f0d695d3d1030d6c3d3e2f0f6cc603bbf4b8f792b1ce08ff3752cfe354379b",
+    "export": "derived/unity/text/assets_resources_config_resbin_fp_pvpcollectitemwaveconfig.bytes/PvpCollectItemWaveConfig__2338946350988749627.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 548,
+      "version": 1,
+      "record_count": 44,
+      "stored_crc32": "0872a482",
+      "computed_inverted_crc32": "0872a482"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "fp",
+    "path_id_decimal": "2338946350988749627",
+    "evidence_layer": "baseline",
+    "source_record_count": 44
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_pvpcollectitemwaveconfig.bytes.ab",
+    "path_id": 739296911192583856,
+    "name": "PvpCollectItemWaveConfig",
+    "sha256": "82f0d695d3d1030d6c3d3e2f0f6cc603bbf4b8f792b1ce08ff3752cfe354379b",
+    "export": "derived/unity/text/assets_resources_config_resbin_pvpcollectitemwaveconfig.bytes/PvpCollectItemWaveConfig__739296911192583856.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 548,
+      "version": 1,
+      "record_count": 44,
+      "stored_crc32": "0872a482",
+      "computed_inverted_crc32": "0872a482"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "739296911192583856",
+    "evidence_layer": "baseline",
+    "source_record_count": 44
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_fp_pvpitemconfig.bytes.ab",
+    "path_id": -2729643300970900871,
+    "name": "PvpItemConfig",
+    "sha256": "2805c1052734ed204e300df7c6a5417a568e02caf91bfeb9b60b6b087e47a622",
+    "export": "derived/unity/text/assets_resources_config_resbin_fp_pvpitemconfig.bytes/PvpItemConfig__-2729643300970900871.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 524,
+      "version": 1,
+      "record_count": 18,
+      "stored_crc32": "e3f45bb7",
+      "computed_inverted_crc32": "e3f45bb7"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "fp",
+    "path_id_decimal": "-2729643300970900871",
+    "evidence_layer": "baseline",
+    "source_record_count": 18
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_pvpitemconfig.bytes.ab",
+    "path_id": -4922523618038889825,
+    "name": "PvpItemConfig",
+    "sha256": "f7830e241f3d668a4bbdea29450a211486830af65bd7b7510ebc8966edd75366",
+    "export": "derived/unity/text/assets_resources_config_resbin_pvpitemconfig.bytes/PvpItemConfig__-4922523618038889825.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 778,
+      "version": 1,
+      "record_count": 18,
+      "stored_crc32": "0197d903",
+      "computed_inverted_crc32": "0197d903"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "-4922523618038889825",
+    "evidence_layer": "baseline",
+    "source_record_count": 18
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_pvpscorechangeconfig.bytes.ab",
+    "path_id": -6735370289581156263,
+    "name": "PvpScoreChangeConfig",
+    "sha256": "3393e3bcb2574d3774fa353fb6b4ae4ff07e3e784f5a994524dfe20e97f52d81",
+    "export": "derived/unity/text/assets_resources_config_resbin_pvpscorechangeconfig.bytes/PvpScoreChangeConfig__-6735370289581156263.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 1412,
+      "version": 1,
+      "record_count": 48,
+      "stored_crc32": "f09d0754",
+      "computed_inverted_crc32": "f09d0754"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "-6735370289581156263",
+    "evidence_layer": "baseline",
+    "source_record_count": 48
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_recallactactivedegreecfg.bytes.ab",
+    "path_id": -3945830893688143409,
+    "name": "RecallActActiveDegreeCfg",
+    "sha256": "890d083d32e3e70871ada118c488a66fef2003e7931b0c350cf3464537426d85",
+    "export": "derived/unity/text/assets_resources_config_resbin_recallactactivedegreecfg.bytes/RecallActActiveDegreeCfg__-3945830893688143409.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 71,
+      "version": 1,
+      "record_count": 3,
+      "stored_crc32": "b3dd474b",
+      "computed_inverted_crc32": "b3dd474b"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "-3945830893688143409",
+    "evidence_layer": "baseline",
+    "source_record_count": 3
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_recallacteventcfg.bytes.ab",
+    "path_id": -6363205064193953545,
+    "name": "RecallActEventCfg",
+    "sha256": "6c9c2a100bafcac8d729bf54b9438a64c762630048ede8f928138097fe3bb956",
+    "export": "derived/unity/text/assets_resources_config_resbin_recallacteventcfg.bytes/RecallActEventCfg__-6363205064193953545.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 946,
+      "version": 1,
+      "record_count": 10,
+      "stored_crc32": "4cc8bc6c",
+      "computed_inverted_crc32": "4cc8bc6c"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "-6363205064193953545",
+    "evidence_layer": "baseline",
+    "source_record_count": 10
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_recallactloginawardcfg.bytes.ab",
+    "path_id": -7347184605744349352,
+    "name": "RecallActLoginAwardCfg",
+    "sha256": "8af144a3baa797d86162ee27d651748557048d5cd1b9578709960afa82b3ace3",
+    "export": "derived/unity/text/assets_resources_config_resbin_recallactloginawardcfg.bytes/RecallActLoginAwardCfg__-7347184605744349352.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 76,
+      "version": 1,
+      "record_count": 7,
+      "stored_crc32": "1e02f8c2",
+      "computed_inverted_crc32": "1e02f8c2"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "-7347184605744349352",
+    "evidence_layer": "baseline",
+    "source_record_count": 7
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_recallactprivilegecfg.bytes.ab",
+    "path_id": 4487329073397961354,
+    "name": "RecallActPrivilegeCfg",
+    "sha256": "df7e3625c39c3c3f220abe7c746587c808ef201e66ac720866acae5f528b2b86",
+    "export": "derived/unity/text/assets_resources_config_resbin_recallactprivilegecfg.bytes/RecallActPrivilegeCfg__4487329073397961354.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 349,
+      "version": 1,
+      "record_count": 5,
+      "stored_crc32": "bf45a892",
+      "computed_inverted_crc32": "bf45a892"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "4487329073397961354",
+    "evidence_layer": "baseline",
+    "source_record_count": 5
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_reportparamconfig.bytes.ab",
+    "path_id": 4435581002860904744,
+    "name": "ReportParamConfig",
+    "sha256": "08b3e6093c18becda97608b12faf177a225544317fabe289d637dcba94bb156c",
+    "export": "derived/unity/text/assets_resources_config_resbin_reportparamconfig.bytes/ReportParamConfig__4435581002860904744.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 28,
+      "version": 1,
+      "record_count": 1,
+      "stored_crc32": "d7d7fda9",
+      "computed_inverted_crc32": "d7d7fda9"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "4435581002860904744",
+    "evidence_layer": "baseline",
+    "source_record_count": 1
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_taskconfig.bytes.ab",
+    "path_id": -2620416334129514245,
+    "name": "TaskConfig",
+    "sha256": "e8d64d6219b1d781fde9bca4b6769da99da832368737c4aa88379ebe077455ea",
+    "export": "derived/unity/text/assets_resources_config_resbin_taskconfig.bytes/TaskConfig__-2620416334129514245.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 1940,
+      "version": 1,
+      "record_count": 40,
+      "stored_crc32": "57c5499e",
+      "computed_inverted_crc32": "57c5499e"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "-2620416334129514245",
+    "evidence_layer": "baseline",
+    "source_record_count": 40
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_territorysupplylibconfig.bytes.ab",
+    "path_id": -7926017890582397641,
+    "name": "TerritorySupplyLibConfig",
+    "sha256": "d8df20a24319f1598b9964225acca63f1d9ebc5af60c3a70115898b86cf8c9d9",
+    "export": "derived/unity/text/assets_resources_config_resbin_territorysupplylibconfig.bytes/TerritorySupplyLibConfig__-7926017890582397641.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 68,
+      "version": 1,
+      "record_count": 4,
+      "stored_crc32": "ef5d3d70",
+      "computed_inverted_crc32": "ef5d3d70"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "-7926017890582397641",
+    "evidence_layer": "baseline",
+    "source_record_count": 4
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_tianfuparamconfig.bytes.ab",
+    "path_id": 7748488676190036546,
+    "name": "TianFuParamConfig",
+    "sha256": "6be3d23ef48e57b2a0a9034cae263ff3b570a7044b3c39273fe9ed008deeddd9",
+    "export": "derived/unity/text/assets_resources_config_resbin_tianfuparamconfig.bytes/TianFuParamConfig__7748488676190036546.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 46,
+      "version": 1,
+      "record_count": 1,
+      "stored_crc32": "82449a45",
+      "computed_inverted_crc32": "82449a45"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "7748488676190036546",
+    "evidence_layer": "baseline",
+    "source_record_count": 1
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_fp_tiangongtypeconfig.bytes.ab",
+    "path_id": -8709843359075422600,
+    "name": "TianGongTypeConfig",
+    "sha256": "f2596193f63608fdb4943dc9ea9d8e6a7593fa8a77b0980391707dc5bd840b1b",
+    "export": "derived/unity/text/assets_resources_config_resbin_fp_tiangongtypeconfig.bytes/TianGongTypeConfig__-8709843359075422600.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 36,
+      "version": 1,
+      "record_count": 4,
+      "stored_crc32": "a0e9fb60",
+      "computed_inverted_crc32": "a0e9fb60"
+    },
+    "schema_selection": "Unique exact class name across supported namespaces, verified against readers and payload",
+    "schema": "ResDef.TianGongTypeConfig",
+    "reason": "Unsupported arrays/nested/enum fields: uint[] UIEffectID, string[] EffectDummyPoint",
+    "variant": "fp",
+    "path_id_decimal": "-8709843359075422600",
+    "evidence_layer": "baseline",
+    "source_record_count": 4,
+    "additional_rejects": [
+      {
+        "layer": "native-recursive",
+        "reason": "DecodeError: Count * minimum record size exceeds payload"
+      },
+      {
+        "layer": "recursive-variant-candidate",
+        "reason": "DecodeError: Count * minimum record size exceeds payload"
+      }
+    ]
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_fp_waterconfig.bytes.ab",
+    "path_id": -6409938528021714452,
+    "name": "WaterConfig",
+    "sha256": "eeea918fa60ec30f25eb826ae922f23651b8cdcad6a5c7650c5555c38b7f32c8",
+    "export": "derived/unity/text/assets_resources_config_resbin_fp_waterconfig.bytes/WaterConfig__-6409938528021714452.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 708,
+      "version": 1,
+      "record_count": 49,
+      "stored_crc32": "dd20713a",
+      "computed_inverted_crc32": "dd20713a"
+    },
+    "schema_selection": "Unique exact class name across supported namespaces, verified against readers and payload",
+    "schema": "ResDef.WaterConfig",
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1c0c52c",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1c0c570",
+        "target_va": "0x21f6ce8",
+        "opcode": "B-tail",
+        "reader": "readString",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "reason": "ValueError: Truncated string length",
+    "variant": "fp",
+    "path_id_decimal": "-6409938528021714452",
+    "evidence_layer": "baseline",
+    "source_record_count": 49,
+    "additional_rejects": [
+      {
+        "layer": "variant-candidate",
+        "reason": "No unique fully companion-matched layout; matches=0"
+      }
+    ]
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_worldbossbuyfightcntconfig.bytes.ab",
+    "path_id": 4182977496135587084,
+    "name": "WorldBossBuyFightCntConfig",
+    "sha256": "da557700fcd94d98554b19786a5063220d12dc78de236198c8ca79d93550cc65",
+    "export": "derived/unity/text/assets_resources_config_resbin_worldbossbuyfightcntconfig.bytes/WorldBossBuyFightCntConfig__4182977496135587084.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 33,
+      "version": 1,
+      "record_count": 1,
+      "stored_crc32": "465e0d0f",
+      "computed_inverted_crc32": "465e0d0f"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "4182977496135587084",
+    "evidence_layer": "baseline",
+    "source_record_count": 1
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_worldbosshpratioconfig.bytes.ab",
+    "path_id": -6368078653927776493,
+    "name": "WorldBossHpRatioConfig",
+    "sha256": "959e321dfa82dfcf9082a26731a596acdcf3f0662cb153d0d1ea976bccea95c5",
+    "export": "derived/unity/text/assets_resources_config_resbin_worldbosshpratioconfig.bytes/WorldBossHpRatioConfig__-6368078653927776493.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 152,
+      "version": 1,
+      "record_count": 11,
+      "stored_crc32": "0174a01d",
+      "computed_inverted_crc32": "0174a01d"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "-6368078653927776493",
+    "evidence_layer": "baseline",
+    "source_record_count": 11
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_wuxingdungeonawardconfig.bytes.ab",
+    "path_id": -6587489367067977486,
+    "name": "WuXingDungeonAwardConfig",
+    "sha256": "a373de04f013f976939d0a29548e98083e5bed132dcec96cb8e5c8cae5fd3557",
+    "export": "derived/unity/text/assets_resources_config_resbin_wuxingdungeonawardconfig.bytes/WuXingDungeonAwardConfig__-6587489367067977486.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 1016,
+      "version": 1,
+      "record_count": 83,
+      "stored_crc32": "cd120a51",
+      "computed_inverted_crc32": "cd120a51"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "-6587489367067977486",
+    "evidence_layer": "baseline",
+    "source_record_count": 83
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_wuxingdungeonbattleattrcfg.bytes.ab",
+    "path_id": -3555124642951147187,
+    "name": "WuXingDungeonBattleAttrCfg",
+    "sha256": "15edf9a1ce6df05ee9efcddbfb5f9a9f6f75762406334bfdb753f1eae3990425",
+    "export": "derived/unity/text/assets_resources_config_resbin_wuxingdungeonbattleattrcfg.bytes/WuXingDungeonBattleAttrCfg__-3555124642951147187.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 2048,
+      "version": 1,
+      "record_count": 26,
+      "stored_crc32": "f2e97d7a",
+      "computed_inverted_crc32": "f2e97d7a"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "-3555124642951147187",
+    "evidence_layer": "baseline",
+    "source_record_count": 26
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_wuxingdungeonbroadcastconfig.bytes.ab",
+    "path_id": -2007082689373760054,
+    "name": "WuXingDungeonBroadcastConfig",
+    "sha256": "171988e86735aa2a7558c25f6c415e9ad4aed75611498b44bf4b0e028cdb1ed0",
+    "export": "derived/unity/text/assets_resources_config_resbin_wuxingdungeonbroadcastconfig.bytes/WuXingDungeonBroadcastConfig__-2007082689373760054.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 82,
+      "version": 1,
+      "record_count": 1,
+      "stored_crc32": "23713a14",
+      "computed_inverted_crc32": "23713a14"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "-2007082689373760054",
+    "evidence_layer": "baseline",
+    "source_record_count": 1
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_wuxingdungeoneventconfig.bytes.ab",
+    "path_id": 6522836377608123544,
+    "name": "WuXingDungeonEventConfig",
+    "sha256": "7c0303ac26db08473e2bf37003eb1023bdc57c1a5331deba5ed91ab6f3299397",
+    "export": "derived/unity/text/assets_resources_config_resbin_wuxingdungeoneventconfig.bytes/WuXingDungeonEventConfig__6522836377608123544.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 981,
+      "version": 1,
+      "record_count": 20,
+      "stored_crc32": "83505c48",
+      "computed_inverted_crc32": "83505c48"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "6522836377608123544",
+    "evidence_layer": "baseline",
+    "source_record_count": 20
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_xiakexinglevelconfig.bytes.ab",
+    "path_id": -2955771145789224571,
+    "name": "XiaKeXingLevelConfig",
+    "sha256": "3ab704a72896f84fd4ec6c04324df786382e18d7cb4b2fe43c48a637f97cc91e",
+    "export": "derived/unity/text/assets_resources_config_resbin_xiakexinglevelconfig.bytes/XiaKeXingLevelConfig__-2955771145789224571.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 4020,
+      "version": 1,
+      "record_count": 200,
+      "stored_crc32": "b0a4f093",
+      "computed_inverted_crc32": "b0a4f093"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "-2955771145789224571",
+    "evidence_layer": "baseline",
+    "source_record_count": 200
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_xiakexingparamconfig.bytes.ab",
+    "path_id": 431779941525536795,
+    "name": "XiaKeXingParamConfig",
+    "sha256": "20991661cababfdc4aa67e545bf620f44efeb8848ffd775cbe07e00774646465",
+    "export": "derived/unity/text/assets_resources_config_resbin_xiakexingparamconfig.bytes/XiaKeXingParamConfig__431779941525536795.bin",
+    "status": "raw-header-verified",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 45,
+      "version": 1,
+      "record_count": 1,
+      "stored_crc32": "1057a536",
+      "computed_inverted_crc32": "1057a536"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "reason": "No unambiguous matching namespace/name schema",
+    "variant": "nonfp",
+    "path_id_decimal": "431779941525536795",
+    "evidence_layer": "baseline",
+    "source_record_count": 1
+  }
+]

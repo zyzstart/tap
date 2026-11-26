@@ -1,0 +1,239 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_sacredbeastbaseconfig.bytes.ab",
+    "path_id": 1131187141887024997,
+    "name": "SacredBeastBaseConfig",
+    "sha256": "6adac00a6332a4a09b3f794475499b1fb06571b2876c78244198068005090d52",
+    "export": "derived/unity/text/assets_resources_config_resbin_sacredbeastbaseconfig.bytes/SacredBeastBaseConfig__1131187141887024997.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 350,
+      "version": 1,
+      "record_count": 4,
+      "stored_crc32": "e22ec0fb",
+      "computed_inverted_crc32": "e22ec0fb"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "SacredBeastBaseConfig",
+      "fields": [
+        {
+          "type": "int",
+          "name": "ID",
+          "object_offset": 16
+        },
+        {
+          "type": "string",
+          "name": "Name",
+          "object_offset": 24
+        },
+        {
+          "type": "int",
+          "name": "ActiveItemID",
+          "object_offset": 32
+        },
+        {
+          "type": "int",
+          "name": "ActiveItemCnt",
+          "object_offset": 36
+        },
+        {
+          "type": "int",
+          "name": "SoulResType",
+          "object_offset": 40
+        },
+        {
+          "type": "string",
+          "name": "BeastIcon",
+          "object_offset": 48
+        },
+        {
+          "type": "string",
+          "name": "BeastHeadFrame",
+          "object_offset": 56
+        },
+        {
+          "type": "int",
+          "name": "RealmEffectId",
+          "object_offset": 64
+        },
+        {
+          "type": "float",
+          "name": "EffectDurationTime",
+          "object_offset": 68
+        },
+        {
+          "type": "int",
+          "name": "SpineModelID",
+          "object_offset": 72
+        }
+      ],
+      "unpack_va": 32038916,
+      "dump_line": 210505
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1e8e038",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8e060",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8e084",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8e0a8",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 36,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8e0cc",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 40,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8e0f4",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 48,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8e11c",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 56,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8e140",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 64,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8e164",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 68,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8e1a4",
+        "target_va": "0x21f67d0",
+        "opcode": "B-tail",
+        "reader": "readInt32",
+        "destination_object_offset": 72,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 4
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "ID": 1,
+      "Name": "青龙",
+      "ActiveItemID": 209001,
+      "ActiveItemCnt": 1,
+      "SoulResType": 4,
+      "BeastIcon": "sssh_img_qinglong01",
+      "BeastHeadFrame": "sssh_head_qinglong",
+      "RealmEffectId": 130008,
+      "EffectDurationTime": 1.0,
+      "SpineModelID": 6,
+      "_byte_length": 86
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 106,
+      "ID": 2,
+      "Name": "白虎",
+      "ActiveItemID": 209002,
+      "ActiveItemCnt": 1,
+      "SoulResType": 5,
+      "BeastIcon": "sssh_img_baihu01",
+      "BeastHeadFrame": "sssh_head_baihu",
+      "RealmEffectId": 130009,
+      "EffectDurationTime": 1.0,
+      "SpineModelID": 7,
+      "_byte_length": 80
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 186,
+      "ID": 3,
+      "Name": "朱雀",
+      "ActiveItemID": 209003,
+      "ActiveItemCnt": 1,
+      "SoulResType": 6,
+      "BeastIcon": "sssh_img_zhuque01",
+      "BeastHeadFrame": "sssh_head_zhuque",
+      "RealmEffectId": 0,
+      "EffectDurationTime": 1.0,
+      "SpineModelID": 8,
+      "_byte_length": 82
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 268,
+      "ID": 4,
+      "Name": "玄武",
+      "ActiveItemID": 209004,
+      "ActiveItemCnt": 1,
+      "SoulResType": 7,
+      "BeastIcon": "sssh_img_xuanwu01",
+      "BeastHeadFrame": "sssh_head_xuanwu",
+      "RealmEffectId": 0,
+      "EffectDurationTime": 1.0,
+      "SpineModelID": 9,
+      "_byte_length": 82
+    }
+  ]
+}

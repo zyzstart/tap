@@ -1,0 +1,365 @@
+{
+  "namespace": "ResDef",
+  "name": "HeadConfig",
+  "fields": [
+    {
+      "type": "int",
+      "name": "HeadID",
+      "object_offset": 16
+    },
+    {
+      "type": "string",
+      "name": "Name",
+      "object_offset": 24
+    },
+    {
+      "type": "byte",
+      "name": "Sex",
+      "object_offset": 32
+    },
+    {
+      "type": "byte",
+      "name": "ActiveType",
+      "object_offset": 33
+    },
+    {
+      "type": "string",
+      "name": "Icon",
+      "object_offset": 40
+    },
+    {
+      "type": "int",
+      "name": "ValidTime",
+      "object_offset": 48
+    },
+    {
+      "type": "string",
+      "name": "Desc",
+      "object_offset": 56
+    },
+    {
+      "type": "HeadActiveConditionData",
+      "name": "ActiveCondition",
+      "object_offset": 64
+    },
+    {
+      "type": "string",
+      "name": "ActiveDesc",
+      "object_offset": 72
+    },
+    {
+      "type": "int",
+      "name": "FashionID",
+      "object_offset": 80
+    },
+    {
+      "type": "int",
+      "name": "IsFollowFashionActive",
+      "object_offset": 84
+    }
+  ],
+  "unpack_va": 30718432,
+  "dump_line": 204938,
+  "layout": [
+    {
+      "type": "int",
+      "name": "HeadID",
+      "object_offset": 16,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d4ba14",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "type": "string",
+      "name": "Name",
+      "object_offset": 24,
+      "wire_type": "string",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d4ba3c",
+          "target_va": "0x21f6ce8",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readString"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readString",
+          "destination": [
+            "self",
+            24
+          ],
+          "max_string_size": 256
+        }
+      ],
+      "max_string_size": 256
+    },
+    {
+      "type": "byte",
+      "name": "Sex",
+      "object_offset": 32,
+      "wire_type": "byte",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d4ba60",
+          "target_va": "0x21f65e0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt8"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt8",
+          "destination": [
+            "self",
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "type": "byte",
+      "name": "ActiveType",
+      "object_offset": 33,
+      "wire_type": "byte",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d4ba84",
+          "target_va": "0x21f65e0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt8"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt8",
+          "destination": [
+            "self",
+            33
+          ]
+        }
+      ]
+    },
+    {
+      "type": "string",
+      "name": "Icon",
+      "object_offset": 40,
+      "wire_type": "string",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d4baac",
+          "target_va": "0x21f6ce8",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readString"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readString",
+          "destination": [
+            "self",
+            40
+          ],
+          "max_string_size": 128
+        }
+      ],
+      "max_string_size": 128
+    },
+    {
+      "type": "int",
+      "name": "ValidTime",
+      "object_offset": 48,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d4bad0",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "type": "string",
+      "name": "Desc",
+      "object_offset": 56,
+      "wire_type": "string",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d4baf8",
+          "target_va": "0x21f6ce8",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readString"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readString",
+          "destination": [
+            "self",
+            56
+          ],
+          "max_string_size": 1024
+        }
+      ],
+      "max_string_size": 1024
+    },
+    {
+      "type": "HeadActiveConditionData",
+      "name": "ActiveCondition",
+      "object_offset": 64,
+      "wire_type": "HeadActiveConditionData",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d4bb1c",
+          "target_va": "0x1d4b70c",
+          "target_names": [
+            "ResDef.HeadActiveConditionData$$unpack"
+          ],
+          "opcode": "BL",
+          "kind": "nested",
+          "nested_schema": "ResDef.HeadActiveConditionData",
+          "destination": [
+            "field",
+            64
+          ],
+          "cut_version": 1
+        }
+      ],
+      "nested_schema": "ResDef.HeadActiveConditionData"
+    },
+    {
+      "type": "string",
+      "name": "ActiveDesc",
+      "object_offset": 72,
+      "wire_type": "string",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d4bb44",
+          "target_va": "0x21f6ce8",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readString"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readString",
+          "destination": [
+            "self",
+            72
+          ],
+          "max_string_size": 1024
+        }
+      ],
+      "max_string_size": 1024
+    },
+    {
+      "type": "int",
+      "name": "FashionID",
+      "object_offset": 80,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d4bb68",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            80
+          ]
+        }
+      ]
+    },
+    {
+      "type": "int",
+      "name": "IsFollowFashionActive",
+      "object_offset": 84,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d4bba8",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "B",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            84
+          ]
+        }
+      ]
+    }
+  ],
+  "native_evidence": {
+    "method_start_va": "0x1d4b9e0",
+    "instruction_steps": 89,
+    "event_count": 11,
+    "branch_evidence": [],
+    "loops": [],
+    "instruction_sha256": "7574fe70205e0954bb5ded6fd880f7f0c63ecfbab16efa163d05fb3a60864389",
+    "gate": "concrete-success-path; all sequential readers/nested callees; full field/destination/stride matching",
+    "assumptions": [
+      "non-null input buffer and created nested objects/arrays",
+      "managed array bounds valid",
+      "AAPCS64 callee-saved register preservation",
+      "reader and nested call success; version 1 only"
+    ]
+  }
+}

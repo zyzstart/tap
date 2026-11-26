@@ -1,0 +1,85 @@
+{
+  "namespace": "ResDef",
+  "name": "EquipOpenHoleConfig",
+  "fields": [
+    {
+      "type": "int",
+      "name": "OpenLevel",
+      "object_offset": 16
+    },
+    {
+      "type": "int",
+      "name": "StoneType",
+      "object_offset": 20
+    }
+  ],
+  "unpack_va": 31278868,
+  "dump_line": 205975,
+  "layout": [
+    {
+      "type": "int",
+      "name": "OpenLevel",
+      "object_offset": 16,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dd4748",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "type": "int",
+      "name": "StoneType",
+      "object_offset": 20,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dd4788",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "B",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            20
+          ]
+        }
+      ]
+    }
+  ],
+  "native_evidence": {
+    "method_start_va": "0x1dd4714",
+    "instruction_steps": 22,
+    "event_count": 2,
+    "branch_evidence": [],
+    "loops": [],
+    "instruction_sha256": "90f3f9fbd177049358de82d4ad704ca0cf4a2e7fb8f10bb1606b7282348966e3",
+    "gate": "concrete-success-path; all sequential readers/nested callees; full field/destination/stride matching",
+    "assumptions": [
+      "non-null input buffer and created nested objects/arrays",
+      "managed array bounds valid",
+      "AAPCS64 callee-saved register preservation",
+      "reader and nested call success; version 1 only"
+    ]
+  }
+}

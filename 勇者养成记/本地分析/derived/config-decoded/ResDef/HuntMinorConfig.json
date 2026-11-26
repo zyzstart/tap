@@ -1,0 +1,945 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_huntminorconfig.bytes.ab",
+    "path_id": 144948596374584120,
+    "name": "HuntMinorConfig",
+    "sha256": "6897d83fe6ea85babd3e312c60ab9de1f5febcbb125f9f6c2a25b59542f954e2",
+    "export": "derived/unity/text/assets_resources_config_resbin_huntminorconfig.bytes/HuntMinorConfig__144948596374584120.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 1100,
+      "version": 1,
+      "record_count": 108,
+      "stored_crc32": "957cc4b3",
+      "computed_inverted_crc32": "957cc4b3"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "HuntMinorConfig",
+      "fields": [
+        {
+          "type": "short",
+          "name": "Minor",
+          "object_offset": 16
+        },
+        {
+          "type": "int",
+          "name": "Major",
+          "object_offset": 20
+        },
+        {
+          "type": "int",
+          "name": "EffectID",
+          "object_offset": 24
+        }
+      ],
+      "unpack_va": 30732512,
+      "dump_line": 205444
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1d4f114",
+        "target_va": "0x21f6668",
+        "opcode": "BL",
+        "reader": "readInt16",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d4f138",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d4f178",
+        "target_va": "0x21f67d0",
+        "opcode": "B-tail",
+        "reader": "readInt32",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 108
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "Minor": 1,
+      "Major": 1,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 30,
+      "Minor": 2,
+      "Major": 1,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 40,
+      "Minor": 3,
+      "Major": 1,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 50,
+      "Minor": 4,
+      "Major": 2,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 60,
+      "Minor": 5,
+      "Major": 2,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 70,
+      "Minor": 6,
+      "Major": 2,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 80,
+      "Minor": 7,
+      "Major": 3,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 90,
+      "Minor": 8,
+      "Major": 3,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 100,
+      "Minor": 9,
+      "Major": 3,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 110,
+      "Minor": 10,
+      "Major": 4,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 120,
+      "Minor": 11,
+      "Major": 4,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 130,
+      "Minor": 12,
+      "Major": 4,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 140,
+      "Minor": 13,
+      "Major": 5,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 150,
+      "Minor": 14,
+      "Major": 5,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 160,
+      "Minor": 15,
+      "Major": 5,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 170,
+      "Minor": 16,
+      "Major": 6,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 180,
+      "Minor": 17,
+      "Major": 6,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 190,
+      "Minor": 18,
+      "Major": 6,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 200,
+      "Minor": 19,
+      "Major": 7,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 19,
+      "_byte_offset": 210,
+      "Minor": 20,
+      "Major": 7,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 20,
+      "_byte_offset": 220,
+      "Minor": 21,
+      "Major": 7,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 21,
+      "_byte_offset": 230,
+      "Minor": 22,
+      "Major": 8,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 22,
+      "_byte_offset": 240,
+      "Minor": 23,
+      "Major": 8,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 23,
+      "_byte_offset": 250,
+      "Minor": 24,
+      "Major": 8,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 24,
+      "_byte_offset": 260,
+      "Minor": 25,
+      "Major": 9,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 25,
+      "_byte_offset": 270,
+      "Minor": 26,
+      "Major": 9,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 26,
+      "_byte_offset": 280,
+      "Minor": 27,
+      "Major": 9,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 27,
+      "_byte_offset": 290,
+      "Minor": 28,
+      "Major": 10,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 28,
+      "_byte_offset": 300,
+      "Minor": 29,
+      "Major": 10,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 29,
+      "_byte_offset": 310,
+      "Minor": 30,
+      "Major": 10,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 30,
+      "_byte_offset": 320,
+      "Minor": 31,
+      "Major": 11,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 31,
+      "_byte_offset": 330,
+      "Minor": 32,
+      "Major": 11,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 32,
+      "_byte_offset": 340,
+      "Minor": 33,
+      "Major": 11,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 33,
+      "_byte_offset": 350,
+      "Minor": 34,
+      "Major": 12,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 34,
+      "_byte_offset": 360,
+      "Minor": 35,
+      "Major": 12,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 35,
+      "_byte_offset": 370,
+      "Minor": 36,
+      "Major": 12,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 36,
+      "_byte_offset": 380,
+      "Minor": 37,
+      "Major": 13,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 37,
+      "_byte_offset": 390,
+      "Minor": 38,
+      "Major": 13,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 38,
+      "_byte_offset": 400,
+      "Minor": 39,
+      "Major": 13,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 39,
+      "_byte_offset": 410,
+      "Minor": 40,
+      "Major": 14,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 40,
+      "_byte_offset": 420,
+      "Minor": 41,
+      "Major": 14,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 41,
+      "_byte_offset": 430,
+      "Minor": 42,
+      "Major": 14,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 42,
+      "_byte_offset": 440,
+      "Minor": 43,
+      "Major": 15,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 43,
+      "_byte_offset": 450,
+      "Minor": 44,
+      "Major": 15,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 44,
+      "_byte_offset": 460,
+      "Minor": 45,
+      "Major": 15,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 45,
+      "_byte_offset": 470,
+      "Minor": 46,
+      "Major": 16,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 46,
+      "_byte_offset": 480,
+      "Minor": 47,
+      "Major": 16,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 47,
+      "_byte_offset": 490,
+      "Minor": 48,
+      "Major": 16,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 48,
+      "_byte_offset": 500,
+      "Minor": 49,
+      "Major": 17,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 49,
+      "_byte_offset": 510,
+      "Minor": 50,
+      "Major": 17,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 50,
+      "_byte_offset": 520,
+      "Minor": 51,
+      "Major": 17,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 51,
+      "_byte_offset": 530,
+      "Minor": 52,
+      "Major": 18,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 52,
+      "_byte_offset": 540,
+      "Minor": 53,
+      "Major": 18,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 53,
+      "_byte_offset": 550,
+      "Minor": 54,
+      "Major": 18,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 54,
+      "_byte_offset": 560,
+      "Minor": 55,
+      "Major": 19,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 55,
+      "_byte_offset": 570,
+      "Minor": 56,
+      "Major": 19,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 56,
+      "_byte_offset": 580,
+      "Minor": 57,
+      "Major": 19,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 57,
+      "_byte_offset": 590,
+      "Minor": 58,
+      "Major": 20,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 58,
+      "_byte_offset": 600,
+      "Minor": 59,
+      "Major": 20,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 59,
+      "_byte_offset": 610,
+      "Minor": 60,
+      "Major": 20,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 60,
+      "_byte_offset": 620,
+      "Minor": 61,
+      "Major": 21,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 61,
+      "_byte_offset": 630,
+      "Minor": 62,
+      "Major": 21,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 62,
+      "_byte_offset": 640,
+      "Minor": 63,
+      "Major": 21,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 63,
+      "_byte_offset": 650,
+      "Minor": 64,
+      "Major": 22,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 64,
+      "_byte_offset": 660,
+      "Minor": 65,
+      "Major": 22,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 65,
+      "_byte_offset": 670,
+      "Minor": 66,
+      "Major": 22,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 66,
+      "_byte_offset": 680,
+      "Minor": 67,
+      "Major": 23,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 67,
+      "_byte_offset": 690,
+      "Minor": 68,
+      "Major": 23,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 68,
+      "_byte_offset": 700,
+      "Minor": 69,
+      "Major": 23,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 69,
+      "_byte_offset": 710,
+      "Minor": 70,
+      "Major": 24,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 70,
+      "_byte_offset": 720,
+      "Minor": 71,
+      "Major": 24,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 71,
+      "_byte_offset": 730,
+      "Minor": 72,
+      "Major": 24,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 72,
+      "_byte_offset": 740,
+      "Minor": 73,
+      "Major": 25,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 73,
+      "_byte_offset": 750,
+      "Minor": 74,
+      "Major": 25,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 74,
+      "_byte_offset": 760,
+      "Minor": 75,
+      "Major": 25,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 75,
+      "_byte_offset": 770,
+      "Minor": 76,
+      "Major": 26,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 76,
+      "_byte_offset": 780,
+      "Minor": 77,
+      "Major": 26,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 77,
+      "_byte_offset": 790,
+      "Minor": 78,
+      "Major": 26,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 78,
+      "_byte_offset": 800,
+      "Minor": 79,
+      "Major": 27,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 79,
+      "_byte_offset": 810,
+      "Minor": 80,
+      "Major": 27,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 80,
+      "_byte_offset": 820,
+      "Minor": 81,
+      "Major": 27,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 81,
+      "_byte_offset": 830,
+      "Minor": 82,
+      "Major": 28,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 82,
+      "_byte_offset": 840,
+      "Minor": 83,
+      "Major": 28,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 83,
+      "_byte_offset": 850,
+      "Minor": 84,
+      "Major": 28,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 84,
+      "_byte_offset": 860,
+      "Minor": 85,
+      "Major": 29,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 85,
+      "_byte_offset": 870,
+      "Minor": 86,
+      "Major": 29,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 86,
+      "_byte_offset": 880,
+      "Minor": 87,
+      "Major": 29,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 87,
+      "_byte_offset": 890,
+      "Minor": 88,
+      "Major": 30,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 88,
+      "_byte_offset": 900,
+      "Minor": 89,
+      "Major": 30,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 89,
+      "_byte_offset": 910,
+      "Minor": 90,
+      "Major": 30,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 90,
+      "_byte_offset": 920,
+      "Minor": 91,
+      "Major": 31,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 91,
+      "_byte_offset": 930,
+      "Minor": 92,
+      "Major": 31,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 92,
+      "_byte_offset": 940,
+      "Minor": 93,
+      "Major": 31,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 93,
+      "_byte_offset": 950,
+      "Minor": 94,
+      "Major": 32,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 94,
+      "_byte_offset": 960,
+      "Minor": 95,
+      "Major": 32,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 95,
+      "_byte_offset": 970,
+      "Minor": 96,
+      "Major": 32,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 96,
+      "_byte_offset": 980,
+      "Minor": 97,
+      "Major": 33,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 97,
+      "_byte_offset": 990,
+      "Minor": 98,
+      "Major": 33,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 98,
+      "_byte_offset": 1000,
+      "Minor": 99,
+      "Major": 33,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 99,
+      "_byte_offset": 1010,
+      "Minor": 100,
+      "Major": 34,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 100,
+      "_byte_offset": 1020,
+      "Minor": 101,
+      "Major": 34,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 101,
+      "_byte_offset": 1030,
+      "Minor": 102,
+      "Major": 34,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 102,
+      "_byte_offset": 1040,
+      "Minor": 103,
+      "Major": 35,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 103,
+      "_byte_offset": 1050,
+      "Minor": 104,
+      "Major": 35,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 104,
+      "_byte_offset": 1060,
+      "Minor": 105,
+      "Major": 35,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 105,
+      "_byte_offset": 1070,
+      "Minor": 106,
+      "Major": 36,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 106,
+      "_byte_offset": 1080,
+      "Minor": 107,
+      "Major": 36,
+      "EffectID": 0,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 107,
+      "_byte_offset": 1090,
+      "Minor": 108,
+      "Major": 36,
+      "EffectID": 0,
+      "_byte_length": 10
+    }
+  ]
+}

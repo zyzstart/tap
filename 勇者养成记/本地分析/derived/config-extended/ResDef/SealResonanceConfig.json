@@ -1,0 +1,544 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_sealresonanceconfig.bytes.ab",
+    "path_id": -1644916098869678669,
+    "name": "SealResonanceConfig",
+    "sha256": "8b265a845f6c38a1ed1f54cf62f7d72a62f1e8525a65631ebf1c5cec4f9f2ab9",
+    "export": "derived/unity/text/assets_resources_config_resbin_sealresonanceconfig.bytes/SealResonanceConfig__-1644916098869678669.bin",
+    "schema": "ResDef.SealResonanceConfig",
+    "path_id_decimal": "-1644916098869678669",
+    "legacy_status": "raw-header-verified",
+    "legacy_reason": "Unsupported arrays/nested/enum fields: ResAttrImpactData[] AttrList",
+    "status": "decoded-validated-native-recursive",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 2738,
+      "version": 1,
+      "record_count": 15,
+      "stored_crc32": "ab9a6001",
+      "computed_inverted_crc32": "ab9a6001"
+    },
+    "native_layout_verified": true,
+    "schema_file": "derived/config-extended/schemas/ResDef.SealResonanceConfig.json",
+    "minimum_record_size": 55,
+    "min_expected_payload_bytes": 825,
+    "actual_payload_bytes": 2718,
+    "decoded_record_count": 15,
+    "validation": {
+      "header_verified": true,
+      "count_verified": true,
+      "exact_eof": true,
+      "full_reencode_equal": true,
+      "full_reencode_sha256": "8b265a845f6c38a1ed1f54cf62f7d72a62f1e8525a65631ebf1c5cec4f9f2ab9",
+      "decoded_node_count": 330,
+      "payload_bytes": 2718
+    },
+    "arrays": [
+      {
+        "field": "AttrList",
+        "count": 4,
+        "count_encoding": "none-native-fixed"
+      }
+    ],
+    "decoded_json": "derived/config-extended/ResDef/SealResonanceConfig.json",
+    "decoded_csv": "derived/config-extended/ResDef/SealResonanceConfig.csv"
+  },
+  "precision": "Exact JSON integer number tokens, with decimal-string mirrors for every int64/uint64/FP. FP is raw signed int64; no scaling.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "ResonanceID": 10011,
+      "ResonanceName": "共鸣1段",
+      "NeedSealCnt": 2,
+      "NeedSealStage": 3,
+      "NeedDesc": "任意<color=#cb3646>2</color>个纹章的阶级达到<color=#cb3646>2</color>阶",
+      "AdditionDesc": "所有元素属性提高<color=#cb3646>500</color>点",
+      "AttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 500.0
+        },
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 500.0
+        },
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 500.0
+        },
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 500.0
+        }
+      ],
+      "_byte_length": 199
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 219,
+      "ResonanceID": 10012,
+      "ResonanceName": "共鸣2段",
+      "NeedSealCnt": 3,
+      "NeedSealStage": 5,
+      "NeedDesc": "任意<color=#cb3646>3</color>个纹章的阶级达到<color=#cb3646>4</color>阶",
+      "AdditionDesc": "所有元素属性提高<color=#cb3646>1000</color>点",
+      "AttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 1000.0
+        },
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 1000.0
+        },
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 1000.0
+        },
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 1000.0
+        }
+      ],
+      "_byte_length": 200
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 419,
+      "ResonanceID": 10013,
+      "ResonanceName": "共鸣3段",
+      "NeedSealCnt": 3,
+      "NeedSealStage": 7,
+      "NeedDesc": "任意<color=#cb3646>3</color>个纹章的阶级达到<color=#cb3646>6</color>阶",
+      "AdditionDesc": "所有元素属性提高<color=#cb3646>3000</color>点",
+      "AttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 3000.0
+        },
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 3000.0
+        },
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 3000.0
+        },
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 3000.0
+        }
+      ],
+      "_byte_length": 200
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 619,
+      "ResonanceID": 10014,
+      "ResonanceName": "共鸣4段",
+      "NeedSealCnt": 4,
+      "NeedSealStage": 9,
+      "NeedDesc": "全部纹章的阶级达到<color=#cb3646>8</color>阶",
+      "AdditionDesc": "所有元素属性提高<color=#cb3646>4500</color>点",
+      "AttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 4500.0
+        },
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 4500.0
+        },
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 4500.0
+        },
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 4500.0
+        }
+      ],
+      "_byte_length": 173
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 792,
+      "ResonanceID": 10015,
+      "ResonanceName": "共鸣5段",
+      "NeedSealCnt": 4,
+      "NeedSealStage": 11,
+      "NeedDesc": "全部纹章的阶级达到<color=#cb3646>10</color>阶",
+      "AdditionDesc": "所有元素伤害加成提高<color=#cb3646>5</color>%",
+      "AttrList": [
+        {
+          "DataType": 65,
+          "AddType": 1,
+          "Value": 0.05000000074505806
+        },
+        {
+          "DataType": 69,
+          "AddType": 1,
+          "Value": 0.05000000074505806
+        },
+        {
+          "DataType": 73,
+          "AddType": 1,
+          "Value": 0.05000000074505806
+        },
+        {
+          "DataType": 77,
+          "AddType": 1,
+          "Value": 0.05000000074505806
+        }
+      ],
+      "_byte_length": 175
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 967,
+      "ResonanceID": 10016,
+      "ResonanceName": "共鸣6段",
+      "NeedSealCnt": 4,
+      "NeedSealStage": 13,
+      "NeedDesc": "全部纹章的阶级达到<color=#cb3646>12</color>阶",
+      "AdditionDesc": "所有元素触发概率提高<color=#cb3646>0.25</color>%",
+      "AttrList": [
+        {
+          "DataType": 62,
+          "AddType": 1,
+          "Value": 0.0024999999441206455
+        },
+        {
+          "DataType": 66,
+          "AddType": 1,
+          "Value": 0.0024999999441206455
+        },
+        {
+          "DataType": 70,
+          "AddType": 1,
+          "Value": 0.0024999999441206455
+        },
+        {
+          "DataType": 74,
+          "AddType": 1,
+          "Value": 0.0024999999441206455
+        }
+      ],
+      "_byte_length": 178
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 1145,
+      "ResonanceID": 10017,
+      "ResonanceName": "共鸣7段",
+      "NeedSealCnt": 4,
+      "NeedSealStage": 15,
+      "NeedDesc": "全部纹章的阶级达到<color=#cb3646>14</color>阶",
+      "AdditionDesc": "所有元素伤害加成提高<color=#cb3646>6</color>%",
+      "AttrList": [
+        {
+          "DataType": 65,
+          "AddType": 1,
+          "Value": 0.05999999865889549
+        },
+        {
+          "DataType": 69,
+          "AddType": 1,
+          "Value": 0.05999999865889549
+        },
+        {
+          "DataType": 73,
+          "AddType": 1,
+          "Value": 0.05999999865889549
+        },
+        {
+          "DataType": 77,
+          "AddType": 1,
+          "Value": 0.05999999865889549
+        }
+      ],
+      "_byte_length": 175
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 1320,
+      "ResonanceID": 10018,
+      "ResonanceName": "共鸣8段",
+      "NeedSealCnt": 4,
+      "NeedSealStage": 17,
+      "NeedDesc": "全部纹章的阶级达到<color=#cb3646>16</color>阶",
+      "AdditionDesc": "所有元素触发概率提高<color=#cb3646>0.3</color>%",
+      "AttrList": [
+        {
+          "DataType": 62,
+          "AddType": 1,
+          "Value": 0.003000000026077032
+        },
+        {
+          "DataType": 66,
+          "AddType": 1,
+          "Value": 0.003000000026077032
+        },
+        {
+          "DataType": 70,
+          "AddType": 1,
+          "Value": 0.003000000026077032
+        },
+        {
+          "DataType": 74,
+          "AddType": 1,
+          "Value": 0.003000000026077032
+        }
+      ],
+      "_byte_length": 177
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 1497,
+      "ResonanceID": 10019,
+      "ResonanceName": "共鸣9段",
+      "NeedSealCnt": 4,
+      "NeedSealStage": 19,
+      "NeedDesc": "全部纹章的阶级达到<color=#cb3646>18</color>阶",
+      "AdditionDesc": "所有元素伤害加成提高<color=#cb3646>8</color>%",
+      "AttrList": [
+        {
+          "DataType": 65,
+          "AddType": 1,
+          "Value": 0.07999999821186066
+        },
+        {
+          "DataType": 69,
+          "AddType": 1,
+          "Value": 0.07999999821186066
+        },
+        {
+          "DataType": 73,
+          "AddType": 1,
+          "Value": 0.07999999821186066
+        },
+        {
+          "DataType": 77,
+          "AddType": 1,
+          "Value": 0.07999999821186066
+        }
+      ],
+      "_byte_length": 175
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 1672,
+      "ResonanceID": 10020,
+      "ResonanceName": "共鸣10段",
+      "NeedSealCnt": 4,
+      "NeedSealStage": 21,
+      "NeedDesc": "全部纹章的阶级达到<color=#cb3646>20</color>阶",
+      "AdditionDesc": "所有元素触发概率提高<color=#cb3646>0.4</color>%",
+      "AttrList": [
+        {
+          "DataType": 62,
+          "AddType": 1,
+          "Value": 0.004000000189989805
+        },
+        {
+          "DataType": 66,
+          "AddType": 1,
+          "Value": 0.004000000189989805
+        },
+        {
+          "DataType": 70,
+          "AddType": 1,
+          "Value": 0.004000000189989805
+        },
+        {
+          "DataType": 74,
+          "AddType": 1,
+          "Value": 0.004000000189989805
+        }
+      ],
+      "_byte_length": 178
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 1850,
+      "ResonanceID": 10021,
+      "ResonanceName": "共鸣11段",
+      "NeedSealCnt": 4,
+      "NeedSealStage": 23,
+      "NeedDesc": "全部纹章的阶级达到<color=#cb3646>22</color>阶",
+      "AdditionDesc": "所有元素伤害加成提高<color=#cb3646>10</color>%",
+      "AttrList": [
+        {
+          "DataType": 65,
+          "AddType": 1,
+          "Value": 0.10000000149011612
+        },
+        {
+          "DataType": 69,
+          "AddType": 1,
+          "Value": 0.10000000149011612
+        },
+        {
+          "DataType": 73,
+          "AddType": 1,
+          "Value": 0.10000000149011612
+        },
+        {
+          "DataType": 77,
+          "AddType": 1,
+          "Value": 0.10000000149011612
+        }
+      ],
+      "_byte_length": 177
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 2027,
+      "ResonanceID": 10022,
+      "ResonanceName": "共鸣12段",
+      "NeedSealCnt": 4,
+      "NeedSealStage": 25,
+      "NeedDesc": "全部纹章的阶级达到<color=#cb3646>24</color>阶",
+      "AdditionDesc": "所有元素触发概率提高<color=#cb3646>0.5</color>%",
+      "AttrList": [
+        {
+          "DataType": 62,
+          "AddType": 1,
+          "Value": 0.004999999888241291
+        },
+        {
+          "DataType": 66,
+          "AddType": 1,
+          "Value": 0.004999999888241291
+        },
+        {
+          "DataType": 70,
+          "AddType": 1,
+          "Value": 0.004999999888241291
+        },
+        {
+          "DataType": 74,
+          "AddType": 1,
+          "Value": 0.004999999888241291
+        }
+      ],
+      "_byte_length": 178
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 2205,
+      "ResonanceID": 10023,
+      "ResonanceName": "共鸣13段",
+      "NeedSealCnt": 4,
+      "NeedSealStage": 27,
+      "NeedDesc": "全部纹章的阶级达到<color=#cb3646>26</color>阶",
+      "AdditionDesc": "所有元素伤害加成提高<color=#cb3646>12</color>%",
+      "AttrList": [
+        {
+          "DataType": 65,
+          "AddType": 1,
+          "Value": 0.11999999731779099
+        },
+        {
+          "DataType": 69,
+          "AddType": 1,
+          "Value": 0.11999999731779099
+        },
+        {
+          "DataType": 73,
+          "AddType": 1,
+          "Value": 0.11999999731779099
+        },
+        {
+          "DataType": 77,
+          "AddType": 1,
+          "Value": 0.11999999731779099
+        }
+      ],
+      "_byte_length": 177
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 2382,
+      "ResonanceID": 10024,
+      "ResonanceName": "共鸣14段",
+      "NeedSealCnt": 4,
+      "NeedSealStage": 29,
+      "NeedDesc": "全部纹章的阶级达到<color=#cb3646>28</color>阶",
+      "AdditionDesc": "所有元素触发概率提高<color=#cb3646>0.6</color>%",
+      "AttrList": [
+        {
+          "DataType": 62,
+          "AddType": 1,
+          "Value": 0.006000000052154064
+        },
+        {
+          "DataType": 66,
+          "AddType": 1,
+          "Value": 0.006000000052154064
+        },
+        {
+          "DataType": 70,
+          "AddType": 1,
+          "Value": 0.006000000052154064
+        },
+        {
+          "DataType": 74,
+          "AddType": 1,
+          "Value": 0.006000000052154064
+        }
+      ],
+      "_byte_length": 178
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 2560,
+      "ResonanceID": 10025,
+      "ResonanceName": "完美共鸣",
+      "NeedSealCnt": 4,
+      "NeedSealStage": 31,
+      "NeedDesc": "全部纹章的阶级达到<color=#cb3646>30</color>阶",
+      "AdditionDesc": "所有元素伤害加成提高<color=#cb3646>14</color>%",
+      "AttrList": [
+        {
+          "DataType": 65,
+          "AddType": 1,
+          "Value": 0.14000000059604645
+        },
+        {
+          "DataType": 69,
+          "AddType": 1,
+          "Value": 0.14000000059604645
+        },
+        {
+          "DataType": 73,
+          "AddType": 1,
+          "Value": 0.14000000059604645
+        },
+        {
+          "DataType": 77,
+          "AddType": 1,
+          "Value": 0.14000000059604645
+        }
+      ],
+      "_byte_length": 178
+    }
+  ]
+}

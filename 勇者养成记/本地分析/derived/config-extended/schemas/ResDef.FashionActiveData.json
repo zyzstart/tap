@@ -1,0 +1,145 @@
+{
+  "namespace": "ResDef",
+  "name": "FashionActiveData",
+  "fields": [
+    {
+      "type": "byte",
+      "name": "ActiveType",
+      "object_offset": 16
+    },
+    {
+      "type": "int",
+      "name": "ConditionParam1",
+      "object_offset": 20
+    },
+    {
+      "type": "int",
+      "name": "ConditionParam2",
+      "object_offset": 24
+    },
+    {
+      "type": "int",
+      "name": "ConditionParam3",
+      "object_offset": 28
+    }
+  ],
+  "unpack_va": 31303660,
+  "dump_line": 206087,
+  "layout": [
+    {
+      "type": "byte",
+      "name": "ActiveType",
+      "object_offset": 16,
+      "wire_type": "byte",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dda820",
+          "target_va": "0x21f65e0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt8"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt8",
+          "destination": [
+            "self",
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "type": "int",
+      "name": "ConditionParam1",
+      "object_offset": 20,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dda844",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "type": "int",
+      "name": "ConditionParam2",
+      "object_offset": 24,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dda868",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            24
+          ]
+        }
+      ]
+    },
+    {
+      "type": "int",
+      "name": "ConditionParam3",
+      "object_offset": 28,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dda8a8",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "B",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            28
+          ]
+        }
+      ]
+    }
+  ],
+  "native_evidence": {
+    "method_start_va": "0x1dda7ec",
+    "instruction_steps": 36,
+    "event_count": 4,
+    "branch_evidence": [],
+    "loops": [],
+    "instruction_sha256": "a48fd58a0c468929f3eeff44fa69efb0e61366f0deb2cc1489eebbae7d7e5643",
+    "gate": "concrete-success-path; all sequential readers/nested callees; full field/destination/stride matching",
+    "assumptions": [
+      "non-null input buffer and created nested objects/arrays",
+      "managed array bounds valid",
+      "AAPCS64 callee-saved register preservation",
+      "reader and nested call success; version 1 only"
+    ]
+  }
+}

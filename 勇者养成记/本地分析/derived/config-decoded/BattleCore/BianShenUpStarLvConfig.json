@@ -1,0 +1,1201 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_fp_bianshenupstarlvconfig.bytes.ab",
+    "path_id": -7736152894469418955,
+    "name": "BianShenUpStarLvConfig",
+    "sha256": "3aa12f88b74b20be73d0ad091748524a9e76c94c65711dc7112caed803aad37a",
+    "export": "derived/unity/text/assets_resources_config_resbin_fp_bianshenupstarlvconfig.bytes/BianShenUpStarLvConfig__-7736152894469418955.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 2260,
+      "version": 1,
+      "record_count": 140,
+      "stored_crc32": "b434e0ee",
+      "computed_inverted_crc32": "b434e0ee"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "BattleCore",
+      "name": "BianShenUpStarLvConfig",
+      "fields": [
+        {
+          "type": "uint",
+          "name": "BianShenType",
+          "object_offset": 16
+        },
+        {
+          "type": "uint",
+          "name": "StarLv",
+          "object_offset": 20
+        },
+        {
+          "type": "FP",
+          "name": "BianShenAddTime",
+          "object_offset": 24
+        }
+      ],
+      "unpack_va": 23319716,
+      "dump_line": 166101
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x163d4d8",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x163d4fc",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x163d53c",
+        "target_va": "0x21f6938",
+        "opcode": "B-tail",
+        "reader": "readInt64",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 140
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "BianShenType": 1,
+      "StarLv": 1,
+      "BianShenAddTime__raw_int64": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 36,
+      "BianShenType": 1,
+      "StarLv": 2,
+      "BianShenAddTime__raw_int64": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 52,
+      "BianShenType": 1,
+      "StarLv": 3,
+      "BianShenAddTime__raw_int64": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 68,
+      "BianShenType": 1,
+      "StarLv": 4,
+      "BianShenAddTime__raw_int64": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 84,
+      "BianShenType": 1,
+      "StarLv": 5,
+      "BianShenAddTime__raw_int64": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 100,
+      "BianShenType": 1,
+      "StarLv": 6,
+      "BianShenAddTime__raw_int64": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 116,
+      "BianShenType": 1,
+      "StarLv": 7,
+      "BianShenAddTime__raw_int64": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 132,
+      "BianShenType": 1,
+      "StarLv": 8,
+      "BianShenAddTime__raw_int64": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 148,
+      "BianShenType": 1,
+      "StarLv": 9,
+      "BianShenAddTime__raw_int64": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 164,
+      "BianShenType": 1,
+      "StarLv": 10,
+      "BianShenAddTime__raw_int64": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 180,
+      "BianShenType": 2,
+      "StarLv": 1,
+      "BianShenAddTime__raw_int64": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 196,
+      "BianShenType": 2,
+      "StarLv": 2,
+      "BianShenAddTime__raw_int64": 2147483648,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 212,
+      "BianShenType": 2,
+      "StarLv": 3,
+      "BianShenAddTime__raw_int64": 4294967296,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 228,
+      "BianShenType": 2,
+      "StarLv": 4,
+      "BianShenAddTime__raw_int64": 6442450944,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 244,
+      "BianShenType": 2,
+      "StarLv": 5,
+      "BianShenAddTime__raw_int64": 8589934592,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 260,
+      "BianShenType": 2,
+      "StarLv": 6,
+      "BianShenAddTime__raw_int64": 10737418240,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 276,
+      "BianShenType": 2,
+      "StarLv": 7,
+      "BianShenAddTime__raw_int64": 12884901888,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 292,
+      "BianShenType": 2,
+      "StarLv": 8,
+      "BianShenAddTime__raw_int64": 15032385536,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 308,
+      "BianShenType": 2,
+      "StarLv": 9,
+      "BianShenAddTime__raw_int64": 17179869184,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 19,
+      "_byte_offset": 324,
+      "BianShenType": 2,
+      "StarLv": 10,
+      "BianShenAddTime__raw_int64": 21474836480,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 20,
+      "_byte_offset": 340,
+      "BianShenType": 3,
+      "StarLv": 1,
+      "BianShenAddTime__raw_int64": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 21,
+      "_byte_offset": 356,
+      "BianShenType": 3,
+      "StarLv": 2,
+      "BianShenAddTime__raw_int64": 2147483648,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 22,
+      "_byte_offset": 372,
+      "BianShenType": 3,
+      "StarLv": 3,
+      "BianShenAddTime__raw_int64": 4294967296,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 23,
+      "_byte_offset": 388,
+      "BianShenType": 3,
+      "StarLv": 4,
+      "BianShenAddTime__raw_int64": 6442450944,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 24,
+      "_byte_offset": 404,
+      "BianShenType": 3,
+      "StarLv": 5,
+      "BianShenAddTime__raw_int64": 8589934592,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 25,
+      "_byte_offset": 420,
+      "BianShenType": 3,
+      "StarLv": 6,
+      "BianShenAddTime__raw_int64": 10737418240,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 26,
+      "_byte_offset": 436,
+      "BianShenType": 3,
+      "StarLv": 7,
+      "BianShenAddTime__raw_int64": 12884901888,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 27,
+      "_byte_offset": 452,
+      "BianShenType": 3,
+      "StarLv": 8,
+      "BianShenAddTime__raw_int64": 15032385536,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 28,
+      "_byte_offset": 468,
+      "BianShenType": 3,
+      "StarLv": 9,
+      "BianShenAddTime__raw_int64": 17179869184,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 29,
+      "_byte_offset": 484,
+      "BianShenType": 3,
+      "StarLv": 10,
+      "BianShenAddTime__raw_int64": 21474836480,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 30,
+      "_byte_offset": 500,
+      "BianShenType": 4,
+      "StarLv": 1,
+      "BianShenAddTime__raw_int64": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 31,
+      "_byte_offset": 516,
+      "BianShenType": 4,
+      "StarLv": 2,
+      "BianShenAddTime__raw_int64": 2576980377,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 32,
+      "_byte_offset": 532,
+      "BianShenType": 4,
+      "StarLv": 3,
+      "BianShenAddTime__raw_int64": 5153960755,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 33,
+      "_byte_offset": 548,
+      "BianShenType": 4,
+      "StarLv": 4,
+      "BianShenAddTime__raw_int64": 7730941132,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 34,
+      "_byte_offset": 564,
+      "BianShenType": 4,
+      "StarLv": 5,
+      "BianShenAddTime__raw_int64": 10307921510,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 35,
+      "_byte_offset": 580,
+      "BianShenType": 4,
+      "StarLv": 6,
+      "BianShenAddTime__raw_int64": 12884901888,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 36,
+      "_byte_offset": 596,
+      "BianShenType": 4,
+      "StarLv": 7,
+      "BianShenAddTime__raw_int64": 15461882265,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 37,
+      "_byte_offset": 612,
+      "BianShenType": 4,
+      "StarLv": 8,
+      "BianShenAddTime__raw_int64": 18038862643,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 38,
+      "_byte_offset": 628,
+      "BianShenType": 4,
+      "StarLv": 9,
+      "BianShenAddTime__raw_int64": 20615843020,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 39,
+      "_byte_offset": 644,
+      "BianShenType": 4,
+      "StarLv": 10,
+      "BianShenAddTime__raw_int64": 25769803776,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 40,
+      "_byte_offset": 660,
+      "BianShenType": 5,
+      "StarLv": 1,
+      "BianShenAddTime__raw_int64": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 41,
+      "_byte_offset": 676,
+      "BianShenType": 5,
+      "StarLv": 2,
+      "BianShenAddTime__raw_int64": 2576980377,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 42,
+      "_byte_offset": 692,
+      "BianShenType": 5,
+      "StarLv": 3,
+      "BianShenAddTime__raw_int64": 5153960755,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 43,
+      "_byte_offset": 708,
+      "BianShenType": 5,
+      "StarLv": 4,
+      "BianShenAddTime__raw_int64": 7730941132,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 44,
+      "_byte_offset": 724,
+      "BianShenType": 5,
+      "StarLv": 5,
+      "BianShenAddTime__raw_int64": 10307921510,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 45,
+      "_byte_offset": 740,
+      "BianShenType": 5,
+      "StarLv": 6,
+      "BianShenAddTime__raw_int64": 12884901888,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 46,
+      "_byte_offset": 756,
+      "BianShenType": 5,
+      "StarLv": 7,
+      "BianShenAddTime__raw_int64": 15461882265,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 47,
+      "_byte_offset": 772,
+      "BianShenType": 5,
+      "StarLv": 8,
+      "BianShenAddTime__raw_int64": 18038862643,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 48,
+      "_byte_offset": 788,
+      "BianShenType": 5,
+      "StarLv": 9,
+      "BianShenAddTime__raw_int64": 20615843020,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 49,
+      "_byte_offset": 804,
+      "BianShenType": 5,
+      "StarLv": 10,
+      "BianShenAddTime__raw_int64": 25769803776,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 50,
+      "_byte_offset": 820,
+      "BianShenType": 6,
+      "StarLv": 1,
+      "BianShenAddTime__raw_int64": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 51,
+      "_byte_offset": 836,
+      "BianShenType": 6,
+      "StarLv": 2,
+      "BianShenAddTime__raw_int64": 2576980377,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 52,
+      "_byte_offset": 852,
+      "BianShenType": 6,
+      "StarLv": 3,
+      "BianShenAddTime__raw_int64": 5153960755,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 53,
+      "_byte_offset": 868,
+      "BianShenType": 6,
+      "StarLv": 4,
+      "BianShenAddTime__raw_int64": 7730941132,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 54,
+      "_byte_offset": 884,
+      "BianShenType": 6,
+      "StarLv": 5,
+      "BianShenAddTime__raw_int64": 10307921510,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 55,
+      "_byte_offset": 900,
+      "BianShenType": 6,
+      "StarLv": 6,
+      "BianShenAddTime__raw_int64": 12884901888,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 56,
+      "_byte_offset": 916,
+      "BianShenType": 6,
+      "StarLv": 7,
+      "BianShenAddTime__raw_int64": 15461882265,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 57,
+      "_byte_offset": 932,
+      "BianShenType": 6,
+      "StarLv": 8,
+      "BianShenAddTime__raw_int64": 18038862643,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 58,
+      "_byte_offset": 948,
+      "BianShenType": 6,
+      "StarLv": 9,
+      "BianShenAddTime__raw_int64": 20615843020,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 59,
+      "_byte_offset": 964,
+      "BianShenType": 6,
+      "StarLv": 10,
+      "BianShenAddTime__raw_int64": 25769803776,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 60,
+      "_byte_offset": 980,
+      "BianShenType": 7,
+      "StarLv": 1,
+      "BianShenAddTime__raw_int64": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 61,
+      "_byte_offset": 996,
+      "BianShenType": 7,
+      "StarLv": 2,
+      "BianShenAddTime__raw_int64": 2576980377,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 62,
+      "_byte_offset": 1012,
+      "BianShenType": 7,
+      "StarLv": 3,
+      "BianShenAddTime__raw_int64": 5153960755,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 63,
+      "_byte_offset": 1028,
+      "BianShenType": 7,
+      "StarLv": 4,
+      "BianShenAddTime__raw_int64": 7730941132,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 64,
+      "_byte_offset": 1044,
+      "BianShenType": 7,
+      "StarLv": 5,
+      "BianShenAddTime__raw_int64": 10307921510,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 65,
+      "_byte_offset": 1060,
+      "BianShenType": 7,
+      "StarLv": 6,
+      "BianShenAddTime__raw_int64": 12884901888,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 66,
+      "_byte_offset": 1076,
+      "BianShenType": 7,
+      "StarLv": 7,
+      "BianShenAddTime__raw_int64": 15461882265,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 67,
+      "_byte_offset": 1092,
+      "BianShenType": 7,
+      "StarLv": 8,
+      "BianShenAddTime__raw_int64": 18038862643,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 68,
+      "_byte_offset": 1108,
+      "BianShenType": 7,
+      "StarLv": 9,
+      "BianShenAddTime__raw_int64": 20615843020,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 69,
+      "_byte_offset": 1124,
+      "BianShenType": 7,
+      "StarLv": 10,
+      "BianShenAddTime__raw_int64": 25769803776,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 70,
+      "_byte_offset": 1140,
+      "BianShenType": 8,
+      "StarLv": 1,
+      "BianShenAddTime__raw_int64": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 71,
+      "_byte_offset": 1156,
+      "BianShenType": 8,
+      "StarLv": 2,
+      "BianShenAddTime__raw_int64": 2576980377,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 72,
+      "_byte_offset": 1172,
+      "BianShenType": 8,
+      "StarLv": 3,
+      "BianShenAddTime__raw_int64": 5153960755,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 73,
+      "_byte_offset": 1188,
+      "BianShenType": 8,
+      "StarLv": 4,
+      "BianShenAddTime__raw_int64": 7730941132,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 74,
+      "_byte_offset": 1204,
+      "BianShenType": 8,
+      "StarLv": 5,
+      "BianShenAddTime__raw_int64": 10307921510,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 75,
+      "_byte_offset": 1220,
+      "BianShenType": 8,
+      "StarLv": 6,
+      "BianShenAddTime__raw_int64": 12884901888,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 76,
+      "_byte_offset": 1236,
+      "BianShenType": 8,
+      "StarLv": 7,
+      "BianShenAddTime__raw_int64": 15461882265,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 77,
+      "_byte_offset": 1252,
+      "BianShenType": 8,
+      "StarLv": 8,
+      "BianShenAddTime__raw_int64": 18038862643,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 78,
+      "_byte_offset": 1268,
+      "BianShenType": 8,
+      "StarLv": 9,
+      "BianShenAddTime__raw_int64": 20615843020,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 79,
+      "_byte_offset": 1284,
+      "BianShenType": 8,
+      "StarLv": 10,
+      "BianShenAddTime__raw_int64": 25769803776,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 80,
+      "_byte_offset": 1300,
+      "BianShenType": 9,
+      "StarLv": 1,
+      "BianShenAddTime__raw_int64": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 81,
+      "_byte_offset": 1316,
+      "BianShenType": 9,
+      "StarLv": 2,
+      "BianShenAddTime__raw_int64": 2576980377,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 82,
+      "_byte_offset": 1332,
+      "BianShenType": 9,
+      "StarLv": 3,
+      "BianShenAddTime__raw_int64": 5153960755,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 83,
+      "_byte_offset": 1348,
+      "BianShenType": 9,
+      "StarLv": 4,
+      "BianShenAddTime__raw_int64": 7730941132,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 84,
+      "_byte_offset": 1364,
+      "BianShenType": 9,
+      "StarLv": 5,
+      "BianShenAddTime__raw_int64": 10307921510,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 85,
+      "_byte_offset": 1380,
+      "BianShenType": 9,
+      "StarLv": 6,
+      "BianShenAddTime__raw_int64": 12884901888,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 86,
+      "_byte_offset": 1396,
+      "BianShenType": 9,
+      "StarLv": 7,
+      "BianShenAddTime__raw_int64": 15461882265,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 87,
+      "_byte_offset": 1412,
+      "BianShenType": 9,
+      "StarLv": 8,
+      "BianShenAddTime__raw_int64": 18038862643,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 88,
+      "_byte_offset": 1428,
+      "BianShenType": 9,
+      "StarLv": 9,
+      "BianShenAddTime__raw_int64": 20615843020,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 89,
+      "_byte_offset": 1444,
+      "BianShenType": 9,
+      "StarLv": 10,
+      "BianShenAddTime__raw_int64": 25769803776,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 90,
+      "_byte_offset": 1460,
+      "BianShenType": 10,
+      "StarLv": 1,
+      "BianShenAddTime__raw_int64": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 91,
+      "_byte_offset": 1476,
+      "BianShenType": 10,
+      "StarLv": 2,
+      "BianShenAddTime__raw_int64": 2576980377,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 92,
+      "_byte_offset": 1492,
+      "BianShenType": 10,
+      "StarLv": 3,
+      "BianShenAddTime__raw_int64": 5153960755,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 93,
+      "_byte_offset": 1508,
+      "BianShenType": 10,
+      "StarLv": 4,
+      "BianShenAddTime__raw_int64": 7730941132,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 94,
+      "_byte_offset": 1524,
+      "BianShenType": 10,
+      "StarLv": 5,
+      "BianShenAddTime__raw_int64": 10307921510,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 95,
+      "_byte_offset": 1540,
+      "BianShenType": 10,
+      "StarLv": 6,
+      "BianShenAddTime__raw_int64": 12884901888,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 96,
+      "_byte_offset": 1556,
+      "BianShenType": 10,
+      "StarLv": 7,
+      "BianShenAddTime__raw_int64": 15461882265,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 97,
+      "_byte_offset": 1572,
+      "BianShenType": 10,
+      "StarLv": 8,
+      "BianShenAddTime__raw_int64": 18038862643,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 98,
+      "_byte_offset": 1588,
+      "BianShenType": 10,
+      "StarLv": 9,
+      "BianShenAddTime__raw_int64": 20615843020,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 99,
+      "_byte_offset": 1604,
+      "BianShenType": 10,
+      "StarLv": 10,
+      "BianShenAddTime__raw_int64": 25769803776,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 100,
+      "_byte_offset": 1620,
+      "BianShenType": 11,
+      "StarLv": 1,
+      "BianShenAddTime__raw_int64": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 101,
+      "_byte_offset": 1636,
+      "BianShenType": 11,
+      "StarLv": 2,
+      "BianShenAddTime__raw_int64": 3006477107,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 102,
+      "_byte_offset": 1652,
+      "BianShenType": 11,
+      "StarLv": 3,
+      "BianShenAddTime__raw_int64": 6012954214,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 103,
+      "_byte_offset": 1668,
+      "BianShenType": 11,
+      "StarLv": 4,
+      "BianShenAddTime__raw_int64": 9019431321,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 104,
+      "_byte_offset": 1684,
+      "BianShenType": 11,
+      "StarLv": 5,
+      "BianShenAddTime__raw_int64": 12025908428,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 105,
+      "_byte_offset": 1700,
+      "BianShenType": 11,
+      "StarLv": 6,
+      "BianShenAddTime__raw_int64": 15032385536,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 106,
+      "_byte_offset": 1716,
+      "BianShenType": 11,
+      "StarLv": 7,
+      "BianShenAddTime__raw_int64": 18038862643,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 107,
+      "_byte_offset": 1732,
+      "BianShenType": 11,
+      "StarLv": 8,
+      "BianShenAddTime__raw_int64": 21045339750,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 108,
+      "_byte_offset": 1748,
+      "BianShenType": 11,
+      "StarLv": 9,
+      "BianShenAddTime__raw_int64": 24051816857,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 109,
+      "_byte_offset": 1764,
+      "BianShenType": 11,
+      "StarLv": 10,
+      "BianShenAddTime__raw_int64": 30064771072,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 110,
+      "_byte_offset": 1780,
+      "BianShenType": 12,
+      "StarLv": 1,
+      "BianShenAddTime__raw_int64": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 111,
+      "_byte_offset": 1796,
+      "BianShenType": 12,
+      "StarLv": 2,
+      "BianShenAddTime__raw_int64": 3006477107,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 112,
+      "_byte_offset": 1812,
+      "BianShenType": 12,
+      "StarLv": 3,
+      "BianShenAddTime__raw_int64": 6012954214,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 113,
+      "_byte_offset": 1828,
+      "BianShenType": 12,
+      "StarLv": 4,
+      "BianShenAddTime__raw_int64": 9019431321,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 114,
+      "_byte_offset": 1844,
+      "BianShenType": 12,
+      "StarLv": 5,
+      "BianShenAddTime__raw_int64": 12025908428,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 115,
+      "_byte_offset": 1860,
+      "BianShenType": 12,
+      "StarLv": 6,
+      "BianShenAddTime__raw_int64": 15032385536,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 116,
+      "_byte_offset": 1876,
+      "BianShenType": 12,
+      "StarLv": 7,
+      "BianShenAddTime__raw_int64": 18038862643,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 117,
+      "_byte_offset": 1892,
+      "BianShenType": 12,
+      "StarLv": 8,
+      "BianShenAddTime__raw_int64": 21045339750,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 118,
+      "_byte_offset": 1908,
+      "BianShenType": 12,
+      "StarLv": 9,
+      "BianShenAddTime__raw_int64": 24051816857,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 119,
+      "_byte_offset": 1924,
+      "BianShenType": 12,
+      "StarLv": 10,
+      "BianShenAddTime__raw_int64": 30064771072,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 120,
+      "_byte_offset": 1940,
+      "BianShenType": 13,
+      "StarLv": 1,
+      "BianShenAddTime__raw_int64": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 121,
+      "_byte_offset": 1956,
+      "BianShenType": 13,
+      "StarLv": 2,
+      "BianShenAddTime__raw_int64": 3006477107,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 122,
+      "_byte_offset": 1972,
+      "BianShenType": 13,
+      "StarLv": 3,
+      "BianShenAddTime__raw_int64": 6012954214,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 123,
+      "_byte_offset": 1988,
+      "BianShenType": 13,
+      "StarLv": 4,
+      "BianShenAddTime__raw_int64": 9019431321,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 124,
+      "_byte_offset": 2004,
+      "BianShenType": 13,
+      "StarLv": 5,
+      "BianShenAddTime__raw_int64": 12025908428,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 125,
+      "_byte_offset": 2020,
+      "BianShenType": 13,
+      "StarLv": 6,
+      "BianShenAddTime__raw_int64": 15032385536,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 126,
+      "_byte_offset": 2036,
+      "BianShenType": 13,
+      "StarLv": 7,
+      "BianShenAddTime__raw_int64": 18038862643,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 127,
+      "_byte_offset": 2052,
+      "BianShenType": 13,
+      "StarLv": 8,
+      "BianShenAddTime__raw_int64": 21045339750,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 128,
+      "_byte_offset": 2068,
+      "BianShenType": 13,
+      "StarLv": 9,
+      "BianShenAddTime__raw_int64": 24051816857,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 129,
+      "_byte_offset": 2084,
+      "BianShenType": 13,
+      "StarLv": 10,
+      "BianShenAddTime__raw_int64": 30064771072,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 130,
+      "_byte_offset": 2100,
+      "BianShenType": 14,
+      "StarLv": 1,
+      "BianShenAddTime__raw_int64": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 131,
+      "_byte_offset": 2116,
+      "BianShenType": 14,
+      "StarLv": 2,
+      "BianShenAddTime__raw_int64": 3006477107,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 132,
+      "_byte_offset": 2132,
+      "BianShenType": 14,
+      "StarLv": 3,
+      "BianShenAddTime__raw_int64": 6012954214,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 133,
+      "_byte_offset": 2148,
+      "BianShenType": 14,
+      "StarLv": 4,
+      "BianShenAddTime__raw_int64": 9019431321,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 134,
+      "_byte_offset": 2164,
+      "BianShenType": 14,
+      "StarLv": 5,
+      "BianShenAddTime__raw_int64": 12025908428,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 135,
+      "_byte_offset": 2180,
+      "BianShenType": 14,
+      "StarLv": 6,
+      "BianShenAddTime__raw_int64": 15032385536,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 136,
+      "_byte_offset": 2196,
+      "BianShenType": 14,
+      "StarLv": 7,
+      "BianShenAddTime__raw_int64": 18038862643,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 137,
+      "_byte_offset": 2212,
+      "BianShenType": 14,
+      "StarLv": 8,
+      "BianShenAddTime__raw_int64": 21045339750,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 138,
+      "_byte_offset": 2228,
+      "BianShenType": 14,
+      "StarLv": 9,
+      "BianShenAddTime__raw_int64": 24051816857,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 139,
+      "_byte_offset": 2244,
+      "BianShenType": 14,
+      "StarLv": 10,
+      "BianShenAddTime__raw_int64": 30064771072,
+      "_byte_length": 16
+    }
+  ]
+}

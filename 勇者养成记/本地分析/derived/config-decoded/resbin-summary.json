@@ -1,0 +1,18 @@
+{
+  "table_count": 545,
+  "status_counts": {
+    "raw-header-verified": 265,
+    "decoded-validated-static": 280
+  },
+  "decoded_record_count": 108533,
+  "header_verified_count": 545,
+  "limits": [
+    "No arrays, nested objects or enum guesses.",
+    "No game execution and no effective live configuration claim.",
+    "Bounded direct CFG gates are not unpack equivalence proof; unknown callees may mutate the buffer; AAPCS64 preservation is assumed.",
+    "Payload big-endian model is consistent with static reader evidence and string lengths; roundtrip alone does not establish runtime endianness.",
+    "String maxStrSize and embedded-NUL runtime semantics are not recovered; 1 MB is a tool acceptance limit.",
+    "FP remains signed raw int64; no scaling assumption.",
+    "CSV spreadsheet-formula-like string cells are prefixed with an apostrophe; JSON preserves original strings."
+  ]
+}

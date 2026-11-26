@@ -1,0 +1,112 @@
+0x1c0ba38: stp       x24, x23, [sp, #-0x40]!
+0x1c0ba3c: stp       x22, x21, [sp, #0x10]
+0x1c0ba40: stp       x20, x19, [sp, #0x20]
+0x1c0ba44: stp       x29, x30, [sp, #0x30]
+0x1c0ba48: add       x29, sp, #0x30
+0x1c0ba4c: mov       x20, x0
+0x1c0ba50: mov       x19, x1
+0x1c0ba54: add       x21, x20, #0x10
+0x1c0ba58: cbnz      x19, #0x1c0ba64
+0x1c0ba5c: mov       x0, xzr
+0x1c0ba60: bl        #0xd2b72c ; 
+0x1c0ba64: mov       x0, x19
+0x1c0ba68: mov       x1, x21
+0x1c0ba6c: mov       x2, xzr
+0x1c0ba70: bl        #0x21f67d0 ; ProtoBase.PbReadBuf$$readInt32
+0x1c0ba74: cbnz      w0, #0x1c0bbb4
+0x1c0ba78: add       x21, x20, #0x14
+0x1c0ba7c: cbnz      x19, #0x1c0ba88
+0x1c0ba80: mov       x0, xzr
+0x1c0ba84: bl        #0xd2b72c ; 
+0x1c0ba88: mov       x0, x19
+0x1c0ba8c: mov       x1, x21
+0x1c0ba90: mov       x2, xzr
+0x1c0ba94: bl        #0x21f65e0 ; ProtoBase.PbReadBuf$$readUInt8
+0x1c0ba98: cbnz      w0, #0x1c0bbb4
+0x1c0ba9c: add       x21, x20, #0x15
+0x1c0baa0: cbnz      x19, #0x1c0baac
+0x1c0baa4: mov       x0, xzr
+0x1c0baa8: bl        #0xd2b72c ; 
+0x1c0baac: mov       x0, x19
+0x1c0bab0: mov       x1, x21
+0x1c0bab4: mov       x2, xzr
+0x1c0bab8: bl        #0x21f65e0 ; ProtoBase.PbReadBuf$$readUInt8
+0x1c0babc: cbnz      w0, #0x1c0bbb4
+0x1c0bac0: mov       x21, #-1
+0x1c0bac4: mov       w22, #0x20
+0x1c0bac8: ldr       x23, [x20, #0x18]
+0x1c0bacc: cbnz      x23, #0x1c0bad8
+0x1c0bad0: mov       x0, xzr
+0x1c0bad4: bl        #0xd2b72c ; 
+0x1c0bad8: add       x24, x21, #1
+0x1c0badc: cbnz      x19, #0x1c0bae8
+0x1c0bae0: mov       x0, xzr
+0x1c0bae4: bl        #0xd2b72c ; 
+0x1c0bae8: ldr       w8, [x23, #0x18]
+0x1c0baec: cmp       x24, x8
+0x1c0baf0: b.lo      #0x1c0bb04
+0x1c0baf4: bl        #0xd2c410 ; 
+0x1c0baf8: mov       x1, xzr
+0x1c0bafc: mov       x2, xzr
+0x1c0bb00: bl        #0xd2b69c ; 
+0x1c0bb04: add       x1, x23, x22
+0x1c0bb08: mov       x0, x19
+0x1c0bb0c: mov       x2, xzr
+0x1c0bb10: bl        #0x21f6908 ; ProtoBase.PbReadBuf$$readUInt32
+0x1c0bb14: cbnz      w0, #0x1c0bbb4
+0x1c0bb18: add       x21, x21, #1
+0x1c0bb1c: cmp       x21, #3
+0x1c0bb20: add       x22, x22, #4
+0x1c0bb24: b.lt      #0x1c0bac8
+0x1c0bb28: mov       x21, #-1
+0x1c0bb2c: mov       w22, #0x20
+0x1c0bb30: ldr       x23, [x20, #0x20]
+0x1c0bb34: cbnz      x23, #0x1c0bb40
+0x1c0bb38: mov       x0, xzr
+0x1c0bb3c: bl        #0xd2b72c ; 
+0x1c0bb40: add       x24, x21, #1
+0x1c0bb44: cbnz      x19, #0x1c0bb50
+0x1c0bb48: mov       x0, xzr
+0x1c0bb4c: bl        #0xd2b72c ; 
+0x1c0bb50: ldr       w8, [x23, #0x18]
+0x1c0bb54: cmp       x24, x8
+0x1c0bb58: b.lo      #0x1c0bb6c
+0x1c0bb5c: bl        #0xd2c410 ; 
+0x1c0bb60: mov       x1, xzr
+0x1c0bb64: mov       x2, xzr
+0x1c0bb68: bl        #0xd2b69c ; 
+0x1c0bb6c: add       x1, x23, x22
+0x1c0bb70: mov       x0, x19
+0x1c0bb74: mov       x2, xzr
+0x1c0bb78: bl        #0x21f6908 ; ProtoBase.PbReadBuf$$readUInt32
+0x1c0bb7c: cbnz      w0, #0x1c0bbb4
+0x1c0bb80: add       x21, x21, #1
+0x1c0bb84: cmp       x21, #3
+0x1c0bb88: add       x22, x22, #4
+0x1c0bb8c: b.lt      #0x1c0bb30
+0x1c0bb90: add       x21, x20, #0x28
+0x1c0bb94: cbnz      x19, #0x1c0bba0
+0x1c0bb98: mov       x0, xzr
+0x1c0bb9c: bl        #0xd2b72c ; 
+0x1c0bba0: mov       x0, x19
+0x1c0bba4: mov       x1, x21
+0x1c0bba8: mov       x2, xzr
+0x1c0bbac: bl        #0x21f67d0 ; ProtoBase.PbReadBuf$$readInt32
+0x1c0bbb0: cbz       w0, #0x1c0bbc8
+0x1c0bbb4: ldp       x29, x30, [sp, #0x30]
+0x1c0bbb8: ldp       x20, x19, [sp, #0x20]
+0x1c0bbbc: ldp       x22, x21, [sp, #0x10]
+0x1c0bbc0: ldp       x24, x23, [sp], #0x40
+0x1c0bbc4: ret       
+0x1c0bbc8: ldr       x20, [x20, #0x30]
+0x1c0bbcc: cbnz      x20, #0x1c0bbd8
+0x1c0bbd0: mov       x0, xzr
+0x1c0bbd4: bl        #0xd2b72c ; 
+0x1c0bbd8: mov       x0, x20
+0x1c0bbdc: mov       x1, x19
+0x1c0bbe0: ldp       x29, x30, [sp, #0x30]
+0x1c0bbe4: ldp       x20, x19, [sp, #0x20]
+0x1c0bbe8: ldp       x22, x21, [sp, #0x10]
+0x1c0bbec: mov       w2, #1
+0x1c0bbf0: ldp       x24, x23, [sp], #0x40
+0x1c0bbf4: b         #0x1c0bbf8 ; ResDef.ToughnessIcon$$unpack

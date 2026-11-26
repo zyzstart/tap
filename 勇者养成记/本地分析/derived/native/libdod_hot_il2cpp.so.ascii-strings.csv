@@ -1,0 +1,785 @@
+﻿offset,value
+0x4a51,__cxa_finalize
+0x4a60,__cxa_atexit
+0x4a6d,__android_log_print
+0x4a81,__stack_chk_fail
+0x4a92,fclose
+0x4aa5,isspace
+0x4aad,malloc
+0x4ab4,pthread_cond_signal
+0x4ac8,pthread_cond_wait
+0x4ada,pthread_create
+0x4ae9,pthread_join
+0x4af6,pthread_mutex_lock
+0x4b09,pthread_mutex_unlock
+0x4b1e,pthread_self
+0x4b2b,pthread_setname_np
+0x4b3e,regcomp
+0x4b46,regexec
+0x4b4e,regfree
+0x4b56,sigaction
+0x4b60,sigemptyset
+0x4b6c,siglongjmp
+0x4b77,sigsetjmp
+0x4b81,sscanf
+0x4b88,strcmp
+0x4b8f,strdup
+0x4b96,strlen
+0x4b9d,xh_core_clear
+0x4bab,xh_core_enable_debug
+0x4bc0,xh_core_enable_sigsegv_protection
+0x4be2,xh_core_ignore
+0x4bf1,xh_core_refresh
+0x4c01,xh_core_register
+0x4c12,xh_elf_check_elfheader
+0x4c29,xh_elf_hook
+0x4c35,xh_elf_init
+0x4c41,xh_log_priority
+0x4c51,xh_version_str_full
+0x4c65,RELOCATION_GROUPED_BY_ADDEND_FLAG
+0x4c87,RELOCATION_GROUPED_BY_INFO_FLAG
+0x4ca7,RELOCATION_GROUPED_BY_OFFSET_DELTA_FLAG
+0x4ccf,RELOCATION_GROUP_HAS_ADDEND_FLAG
+0x4cf0,xh_util_flush_instruction_cache
+0x4d10,xh_util_get_addr_protect
+0x4d29,xh_util_set_addr_protect
+0x4d42,Java_com_qiyi_xhook_NativeHandler_clear
+0x4d6a,Java_com_qiyi_xhook_NativeHandler_enableDebug
+0x4d98,Java_com_qiyi_xhook_NativeHandler_enableSigSegvProtection
+0x4dd2,Java_com_qiyi_xhook_NativeHandler_refresh
+0x4dfc,xhook_clear
+0x4e08,xhook_enable_debug
+0x4e1b,xhook_enable_sigsegv_protection
+0x4e3b,xhook_refresh
+0x4e49,__clear_cache
+0x4e57,__errno
+0x4e5f,mprotect
+0x4e68,strstr
+0x4e6f,xh_util_get_mem_protect
+0x4e87,xh_version
+0x4e92,xh_version_str
+0x4ea1,xhook_ignore
+0x4eae,xhook_register
+0x4ebd,Java_com_dodjoy_dodlib_DodHotIl2cpp_GetArchAbi
+0x4eec,Java_com_dodjoy_dodlib_DodHotIl2cpp_HotPatchIl2cpp
+0x4f1f,_Unwind_Resume
+0x4f2e,_ZNKSt6__ndk121__basic_string_commonILb1EE20__throw_length_errorEv
+0x4f71,_ZNSt11logic_errorC2EPKc
+0x4f8a,_ZNSt12length_errorD1Ev
+0x4fa2,_ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6assignEPKcm
+0x4ff1,_ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEED2Ev
+0x5038,_ZTISt12length_error
+0x504d,_ZTVSt12length_error
+0x5062,_ZdlPv
+0x506f,__cxa_allocate_exception
+0x5088,__cxa_free_exception
+0x509d,__cxa_throw
+0x50a9,__gxx_personality_v0
+0x50be,dlopen
+0x50c5,hook_lib
+0x50ce,memcpy
+0x50d5,memmove
+0x50dd,liblog.so
+0x50e7,libm.so
+0x50ef,_ZNSt9bad_allocC1Ev
+0x5103,_ZNSt9bad_allocD1Ev
+0x5117,_ZSt15get_new_handlerv
+0x512e,_ZSt17__throw_bad_allocv
+0x5147,_ZSt7nothrow
+0x5154,_ZSt9terminatev
+0x5164,_ZTISt9bad_alloc
+0x5175,_ZdaPv
+0x517c,_ZdaPvRKSt9nothrow_t
+0x5191,_ZdaPvSt11align_val_t
+0x51a7,_ZdaPvSt11align_val_tRKSt9nothrow_t
+0x51cb,_ZdaPvm
+0x51d3,_ZdaPvmSt11align_val_t
+0x51ea,_ZdlPvRKSt9nothrow_t
+0x51ff,_ZdlPvSt11align_val_t
+0x5215,_ZdlPvSt11align_val_tRKSt9nothrow_t
+0x5239,_ZdlPvm
+0x5241,_ZdlPvmSt11align_val_t
+0x525e,_ZnamRKSt9nothrow_t
+0x5272,_ZnamSt11align_val_t
+0x5287,_ZnamSt11align_val_tRKSt9nothrow_t
+0x52aa,_ZnwmRKSt9nothrow_t
+0x52be,_ZnwmSt11align_val_t
+0x52d3,_ZnwmSt11align_val_tRKSt9nothrow_t
+0x52f6,__cxa_begin_catch
+0x5308,__cxa_end_catch
+0x5318,posix_memalign
+0x5327,_ZNSt11logic_errorC1EPKc
+0x5340,_ZNSt11logic_errorC1ERKNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE
+0x539b,_ZNSt11logic_errorC1ERKS_
+0x53b5,_ZNSt11logic_errorC2ERKNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE
+0x5410,_ZNSt11logic_errorC2ERKS_
+0x542a,_ZNSt11logic_erroraSERKS_
+0x5444,_ZNSt13runtime_errorC1EPKc
+0x545f,_ZNSt13runtime_errorC1ERKNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE
+0x54bc,_ZNSt13runtime_errorC1ERKS_
+0x54d8,_ZNSt13runtime_errorC2EPKc
+0x54f3,_ZNSt13runtime_errorC2ERKNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE
+0x5550,_ZNSt13runtime_errorC2ERKS_
+0x556c,_ZNSt13runtime_erroraSERKS_
+0x5588,_ZNSt9exceptionD2Ev
+0x559c,_ZTVSt11logic_error
+0x55b0,_ZTVSt13runtime_error
+0x55c6,_Unwind_DeleteException
+0x55de,_Unwind_RaiseException
+0x55f5,_ZN10__cxxabiv119__getExceptionClassEPK17_Unwind_Exception
+0x5630,_ZN10__cxxabiv119__setExceptionClassEP17_Unwind_Exceptionm
+0x566b,_ZN10__cxxabiv121__isOurExceptionClassEPK17_Unwind_Exception
+0x56a8,_ZSt13get_terminatev
+0x56bd,_ZSt14get_unexpectedv
+0x56d3,__cxa_allocate_dependent_exception
+0x56f6,__cxa_call_unexpected
+0x570c,__cxa_current_exception_type
+0x5729,__cxa_current_primary_exception
+0x5749,__cxa_decrement_exception_refcount
+0x576c,__cxa_free_dependent_exception
+0x578b,__cxa_get_exception_ptr
+0x57a3,__cxa_get_globals
+0x57b5,__cxa_get_globals_fast
+0x57cc,__cxa_increment_exception_refcount
+0x57ef,__cxa_rethrow
+0x57fd,__cxa_rethrow_primary_exception
+0x581d,__cxa_uncaught_exception
+0x5836,__cxa_uncaught_exceptions
+0x5850,memset
+0x5857,pthread_getspecific
+0x586b,pthread_key_create
+0x587e,pthread_once
+0x588b,pthread_setspecific
+0x589f,_ZSt10unexpectedv
+0x58b1,_ZSt15set_new_handlerPFvvE
+0x58cc,__cxa_new_handler
+0x58de,__cxa_terminate_handler
+0x58f6,__cxa_unexpected_handler
+0x590f,_Unwind_GetIP
+0x591d,_Unwind_GetLanguageSpecificData
+0x593d,_Unwind_GetRegionStart
+0x5954,_Unwind_SetGR
+0x5962,_Unwind_SetIP
+0x5970,_ZNSt13bad_exceptionD1Ev
+0x5989,_ZTISt13bad_exception
+0x599f,_ZTVSt13bad_exception
+0x59bb,calloc
+0x59c2,_ZNKSt13bad_exception4whatEv
+0x59df,_ZNKSt20bad_array_new_length4whatEv
+0x5a03,_ZNKSt9bad_alloc4whatEv
+0x5a1b,_ZNKSt9exception4whatEv
+0x5a33,_ZNSt13bad_exceptionD0Ev
+0x5a4c,_ZNSt13bad_exceptionD2Ev
+0x5a65,_ZNSt20bad_array_new_lengthC1Ev
+0x5a85,_ZNSt20bad_array_new_lengthC2Ev
+0x5aa5,_ZNSt20bad_array_new_lengthD0Ev
+0x5ac5,_ZNSt20bad_array_new_lengthD1Ev
+0x5ae5,_ZNSt20bad_array_new_lengthD2Ev
+0x5b05,_ZNSt9bad_allocC2Ev
+0x5b19,_ZNSt9bad_allocD0Ev
+0x5b2d,_ZNSt9bad_allocD2Ev
+0x5b41,_ZNSt9exceptionD0Ev
+0x5b55,_ZNSt9exceptionD1Ev
+0x5b69,_ZTISt20bad_array_new_length
+0x5b86,_ZTISt9exception
+0x5b97,_ZTSSt13bad_exception
+0x5bad,_ZTSSt20bad_array_new_length
+0x5bca,_ZTSSt9bad_alloc
+0x5bdb,_ZTSSt9exception
+0x5bec,_ZTVN10__cxxabiv117__class_type_infoE
+0x5c12,_ZTVN10__cxxabiv120__si_class_type_infoE
+0x5c3b,_ZTVSt20bad_array_new_length
+0x5c58,_ZTVSt9bad_alloc
+0x5c69,_ZTVSt9exception
+0x5c7a,_ZNKSt11logic_error4whatEv
+0x5c95,_ZNKSt13runtime_error4whatEv
+0x5cb2,_ZNSt11logic_errorD0Ev
+0x5cc9,_ZNSt11logic_errorD1Ev
+0x5ce0,_ZNSt11logic_errorD2Ev
+0x5cf7,_ZNSt11range_errorD0Ev
+0x5d0e,_ZNSt11range_errorD1Ev
+0x5d25,_ZNSt11range_errorD2Ev
+0x5d3c,_ZNSt12domain_errorD0Ev
+0x5d54,_ZNSt12domain_errorD1Ev
+0x5d6c,_ZNSt12domain_errorD2Ev
+0x5d84,_ZNSt12length_errorD0Ev
+0x5d9c,_ZNSt12length_errorD2Ev
+0x5db4,_ZNSt12out_of_rangeD0Ev
+0x5dcc,_ZNSt12out_of_rangeD1Ev
+0x5de4,_ZNSt12out_of_rangeD2Ev
+0x5dfc,_ZNSt13runtime_errorD0Ev
+0x5e15,_ZNSt13runtime_errorD1Ev
+0x5e2e,_ZNSt13runtime_errorD2Ev
+0x5e47,_ZNSt14overflow_errorD0Ev
+0x5e61,_ZNSt14overflow_errorD1Ev
+0x5e7b,_ZNSt14overflow_errorD2Ev
+0x5e95,_ZNSt15underflow_errorD0Ev
+0x5eb0,_ZNSt15underflow_errorD1Ev
+0x5ecb,_ZNSt15underflow_errorD2Ev
+0x5ee6,_ZNSt16invalid_argumentD0Ev
+0x5f02,_ZNSt16invalid_argumentD1Ev
+0x5f1e,_ZNSt16invalid_argumentD2Ev
+0x5f3a,_ZTISt11logic_error
+0x5f4e,_ZTISt11range_error
+0x5f62,_ZTISt12domain_error
+0x5f77,_ZTISt12out_of_range
+0x5f8c,_ZTISt13runtime_error
+0x5fa2,_ZTISt14overflow_error
+0x5fb9,_ZTISt15underflow_error
+0x5fd1,_ZTISt16invalid_argument
+0x5fea,_ZTSSt11logic_error
+0x5ffe,_ZTSSt11range_error
+0x6012,_ZTSSt12domain_error
+0x6027,_ZTSSt12length_error
+0x603c,_ZTSSt12out_of_range
+0x6051,_ZTSSt13runtime_error
+0x6067,_ZTSSt14overflow_error
+0x607e,_ZTSSt15underflow_error
+0x6096,_ZTSSt16invalid_argument
+0x60af,_ZTVSt11range_error
+0x60c3,_ZTVSt12domain_error
+0x60d8,_ZTVSt12out_of_range
+0x60ed,_ZTVSt14overflow_error
+0x6104,_ZTVSt15underflow_error
+0x611c,_ZTVSt16invalid_argument
+0x613a,android_set_abort_message
+0x6154,closelog
+0x6163,openlog
+0x616b,syslog
+0x6172,vasprintf
+0x617c,vfprintf
+0x6185,_ZSt13set_terminatePFvvE
+0x619e,_ZSt14set_unexpectedPFvvE
+0x61b8,__cxa_demangle
+0x61c7,islower
+0x61cf,isxdigit
+0x61d8,realloc
+0x61e0,snprintf
+0x61e9,_ZNSt9type_infoD2Ev
+0x61fd,_ZTIDh
+0x6204,_ZTIDi
+0x620b,_ZTIDn
+0x6212,_ZTIDs
+0x6219,_ZTIDu
+0x6220,_ZTIN10__cxxabiv116__enum_type_infoE
+0x6245,_ZTIN10__cxxabiv116__shim_type_infoE
+0x626a,_ZTIN10__cxxabiv117__array_type_infoE
+0x6290,_ZTIN10__cxxabiv117__class_type_infoE
+0x62b6,_ZTIN10__cxxabiv117__pbase_type_infoE
+0x62dc,_ZTIN10__cxxabiv119__pointer_type_infoE
+0x6304,_ZTIN10__cxxabiv120__function_type_infoE
+0x632d,_ZTIN10__cxxabiv120__si_class_type_infoE
+0x6356,_ZTIN10__cxxabiv121__vmi_class_type_infoE
+0x6380,_ZTIN10__cxxabiv123__fundamental_type_infoE
+0x63ac,_ZTIN10__cxxabiv129__pointer_to_member_type_infoE
+0x63de,_ZTIPDh
+0x63e6,_ZTIPDi
+0x63ee,_ZTIPDn
+0x63f6,_ZTIPDs
+0x63fe,_ZTIPDu
+0x6406,_ZTIPKDh
+0x640f,_ZTIPKDi
+0x6418,_ZTIPKDn
+0x6421,_ZTIPKDs
+0x642a,_ZTIPKDu
+0x6433,_ZTIPKa
+0x643b,_ZTIPKb
+0x6443,_ZTIPKc
+0x644b,_ZTIPKd
+0x6453,_ZTIPKe
+0x645b,_ZTIPKf
+0x6463,_ZTIPKg
+0x646b,_ZTIPKh
+0x6473,_ZTIPKi
+0x647b,_ZTIPKj
+0x6483,_ZTIPKl
+0x648b,_ZTIPKm
+0x6493,_ZTIPKn
+0x649b,_ZTIPKo
+0x64a3,_ZTIPKs
+0x64ab,_ZTIPKt
+0x64b3,_ZTIPKv
+0x64bb,_ZTIPKw
+0x64c3,_ZTIPKx
+0x64cb,_ZTIPKy
+0x64d3,_ZTIPa
+0x64da,_ZTIPb
+0x64e1,_ZTIPc
+0x64e8,_ZTIPd
+0x64ef,_ZTIPe
+0x64f6,_ZTIPf
+0x64fd,_ZTIPg
+0x6504,_ZTIPh
+0x650b,_ZTIPi
+0x6512,_ZTIPj
+0x6519,_ZTIPl
+0x6520,_ZTIPm
+0x6527,_ZTIPn
+0x652e,_ZTIPo
+0x6535,_ZTIPs
+0x653c,_ZTIPt
+0x6543,_ZTIPv
+0x654a,_ZTIPw
+0x6551,_ZTIPx
+0x6558,_ZTIPy
+0x655f,_ZTISt9type_info
+0x65e8,_ZTSDh
+0x65ef,_ZTSDi
+0x65f6,_ZTSDn
+0x65fd,_ZTSDs
+0x6604,_ZTSDu
+0x660b,_ZTSN10__cxxabiv116__enum_type_infoE
+0x6630,_ZTSN10__cxxabiv116__shim_type_infoE
+0x6655,_ZTSN10__cxxabiv117__array_type_infoE
+0x667b,_ZTSN10__cxxabiv117__class_type_infoE
+0x66a1,_ZTSN10__cxxabiv117__pbase_type_infoE
+0x66c7,_ZTSN10__cxxabiv119__pointer_type_infoE
+0x66ef,_ZTSN10__cxxabiv120__function_type_infoE
+0x6718,_ZTSN10__cxxabiv120__si_class_type_infoE
+0x6741,_ZTSN10__cxxabiv121__vmi_class_type_infoE
+0x676b,_ZTSN10__cxxabiv123__fundamental_type_infoE
+0x6797,_ZTSN10__cxxabiv129__pointer_to_member_type_infoE
+0x67c9,_ZTSPDh
+0x67d1,_ZTSPDi
+0x67d9,_ZTSPDn
+0x67e1,_ZTSPDs
+0x67e9,_ZTSPDu
+0x67f1,_ZTSPKDh
+0x67fa,_ZTSPKDi
+0x6803,_ZTSPKDn
+0x680c,_ZTSPKDs
+0x6815,_ZTSPKDu
+0x681e,_ZTSPKa
+0x6826,_ZTSPKb
+0x682e,_ZTSPKc
+0x6836,_ZTSPKd
+0x683e,_ZTSPKe
+0x6846,_ZTSPKf
+0x684e,_ZTSPKg
+0x6856,_ZTSPKh
+0x685e,_ZTSPKi
+0x6866,_ZTSPKj
+0x686e,_ZTSPKl
+0x6876,_ZTSPKm
+0x687e,_ZTSPKn
+0x6886,_ZTSPKo
+0x688e,_ZTSPKs
+0x6896,_ZTSPKt
+0x689e,_ZTSPKv
+0x68a6,_ZTSPKw
+0x68ae,_ZTSPKx
+0x68b6,_ZTSPKy
+0x68be,_ZTSPa
+0x68c5,_ZTSPb
+0x68cc,_ZTSPc
+0x68d3,_ZTSPd
+0x68da,_ZTSPe
+0x68e1,_ZTSPf
+0x68e8,_ZTSPg
+0x68ef,_ZTSPh
+0x68f6,_ZTSPi
+0x68fd,_ZTSPj
+0x6904,_ZTSPl
+0x690b,_ZTSPm
+0x6912,_ZTSPn
+0x6919,_ZTSPo
+0x6920,_ZTSPs
+0x6927,_ZTSPt
+0x692e,_ZTSPv
+0x6935,_ZTSPw
+0x693c,_ZTSPx
+0x6943,_ZTSPy
+0x69c2,_ZTVN10__cxxabiv116__enum_type_infoE
+0x69e7,_ZTVN10__cxxabiv116__shim_type_infoE
+0x6a0c,_ZTVN10__cxxabiv117__array_type_infoE
+0x6a32,_ZTVN10__cxxabiv117__pbase_type_infoE
+0x6a58,_ZTVN10__cxxabiv119__pointer_type_infoE
+0x6a80,_ZTVN10__cxxabiv120__function_type_infoE
+0x6aa9,_ZTVN10__cxxabiv121__vmi_class_type_infoE
+0x6ad3,_ZTVN10__cxxabiv123__fundamental_type_infoE
+0x6aff,_ZTVN10__cxxabiv129__pointer_to_member_type_infoE
+0x6b31,__cxa_pure_virtual
+0x6b44,__dynamic_cast
+0x6b53,_ZNKSt10bad_typeid4whatEv
+0x6b6d,_ZNKSt8bad_cast4whatEv
+0x6b84,_ZNSt10bad_typeidC1Ev
+0x6b9a,_ZNSt10bad_typeidC2Ev
+0x6bb0,_ZNSt10bad_typeidD0Ev
+0x6bc6,_ZNSt10bad_typeidD1Ev
+0x6bdc,_ZNSt10bad_typeidD2Ev
+0x6bf2,_ZNSt8bad_castC1Ev
+0x6c05,_ZNSt8bad_castC2Ev
+0x6c18,_ZNSt8bad_castD0Ev
+0x6c2b,_ZNSt8bad_castD1Ev
+0x6c3e,_ZNSt8bad_castD2Ev
+0x6c51,_ZNSt9type_infoD0Ev
+0x6c65,_ZNSt9type_infoD1Ev
+0x6c79,_ZTISt10bad_typeid
+0x6c8c,_ZTISt8bad_cast
+0x6c9c,_ZTSSt10bad_typeid
+0x6caf,_ZTSSt8bad_cast
+0x6cbf,_ZTSSt9type_info
+0x6cd0,_ZTVSt10bad_typeid
+0x6ce3,_ZTVSt8bad_cast
+0x6cf3,_ZTVSt9type_info
+0x6d04,__cxa_deleted_virtual
+0x6d1a,__aarch64_sync_cache_range
+0x6d35,_Unwind_GetGR
+0x6d43,_Unwind_GetCFA
+0x6d52,_Unwind_GetIPInfo
+0x6d64,_Unwind_FindEnclosingFunction
+0x6d82,_Unwind_Find_FDE
+0x6d93,_Unwind_GetDataRelBase
+0x6daa,_Unwind_GetTextRelBase
+0x6dc1,__frame_state_for
+0x6dd3,_Unwind_ForcedUnwind
+0x6de8,_Unwind_Resume_or_Rethrow
+0x6e02,_Unwind_Backtrace
+0x6e14,__register_frame_info_bases
+0x6e30,__register_frame_info
+0x6e46,__register_frame
+0x6e57,__register_frame_info_table_bases
+0x6e79,__register_frame_info_table
+0x6e95,__register_frame_table
+0x6eac,__deregister_frame_info_bases
+0x6eca,__deregister_frame_info
+0x6ee2,__deregister_frame
+0x6ef5,dl_iterate_phdr
+0x6f05,libdl.so
+0x6f0e,libc.so
+0x6f16,_edata
+0x6f1d,__bss_start
+0x6f29,__bss_start__
+0x6f37,__bss_end__
+0x6f43,__end__
+0x6f50,libdod_hot_il2cpp.so
+0x15997,TI!@9?
+0x159a3,TI%@9?
+0x159af,TI)@9?
+0x159bb,TI-@9?
+0x159c7,TI1@9?
+0x15fcf,T*!@9_
+0x15fdb,T*%@9_}
+0x15fe7,T*)@9_
+0x15ff3,T*-@9_
+0x15fff,T*1@9_%
+0x1ac4e,@xj.@9H
+0x1c313,TuBK9(
+0x1fd61,*!NP*a
+0x20853,o6\C) 
+0x299e7,4h2A9(
+0x29edb,4y2A9|6A9
+0x29f2c,h2A9i6A9
+0x29fd0,h2A9i6A9
+0x2aa0b,Ta[axc
+0x2dba6,"do not register hook after refresh(): %s, %s"
+0x2dbd3,"do not ignore hook after refresh(): %s, %s"
+0x2dc02,xh_refresh_loop
+0x2dc12,/proc/self/maps
+0x2dc22,fopen /proc/self/maps failed
+0x2dc3f,%lx-%*lx %4s %lx %*x:%*x %*d%n
+0x2dc5e,map refreshed
+0x2dc6c,catch SIGSEGV when check_elfheader: %s
+0x2dc93,catch SIGSEGV when init or hook: %s
+0x2dcb7,1[3[6EK
+0x2dcc0,[[[[[[[[
+0x2dcfd,Can NOT found the first load segment. %s
+0x2dd26,Can NOT found dynamic segment. %s
+0x2dd48,android rel/rela format error
+0x2dd67,elf init check failed. %s
+0x2dd81,init OK: %s (%s %s PLT:%u DYN:%u ANDROID:%u)
+0x2ddb8,GNU_HASH
+0x2ddc1,ELF_HASH
+0x2ddca,not inited
+0x2ddd6,hooking %s in %s
+0x2dde8,.rela.plt
+0x2ddf2,.rel.plt
+0x2ddfb,.rela.dyn
+0x2de05,.rel.dyn
+0x2de0e,.rela.android
+0x2de1c,.rel.android
+0x2de29,bias_addr == 0
+0x2de39,phdr == NULL
+0x2de47,strtab == NULL
+0x2de57,symtab == NULL
+0x2de67,bucket == NULL
+0x2de77,chain == NULL
+0x2de86,bloom == NULL
+0x2de95,found %s at symidx: %u (GNU_HASH DEF)
+0x2debc,found %s at symidx: %u (GNU_HASH UNDEF)
+0x2dee5,found %s at symidx: %u (ELF_HASH)
+0x2df08,found %s at %s offset: %p
+0x2df23,replace function failed: %s at %s
+0x2df46,get addr prot failed. ret: %d
+0x2df64,set addr prot failed. ret: %d
+0x2df82,restore addr prot failed. ret: %d
+0x2dfa4,XH_HK_OK %p: %p -> %p %s %s
+0x2dfc1,unexpected r_addend in android.rel section
+0x2dfec,%lx-%lx %4s 
+0x2dff9,1.1.12
+0x2e000,libxhook 1.1.12 (aarch64)
+0x2e01a,dlopen
+0x2e021,DodHotIl2cpp
+0x2e02e,hook_lib() failed to find function:%s in %s
+0x2e05a,hook_lib() failed to hook %s
+0x2e077,arm64-v8a
+0x2e081,libil2cpp.so
+0x2e08e,libmain.so
+0x2e099,libunity.so
+0x2e0a6,cannot allocate __cxa_eh_globals
+0x2e0c7,std::__libcpp_tls_set failure in __cxa_get_globals()
+0x2e0fc,execute once failure in __cxa_get_globals_fast()
+0x2e12d,cannot create thread specific key for __cxa_get_globals()
+0x2e167,cannot zero out thread value for __cxa_get_globals()
+0x2e19c,unexpected_handler unexpectedly returned
+0x2e1c5,terminate_handler unexpectedly returned
+0x2e1ed,terminate_handler unexpectedly threw an exception
+0x2e224,EEEE';@
+0x2e2f0,std::exception
+0x2e2ff,std::bad_exception
+0x2e312,std::bad_alloc
+0x2e321,bad_array_new_length
+0x2e336,St9exception
+0x2e343,St13bad_exception
+0x2e355,St9bad_alloc
+0x2e362,St20bad_array_new_length
+0x2e37b,St12domain_error
+0x2e38c,St11logic_error
+0x2e39c,St16invalid_argument
+0x2e3b1,St12length_error
+0x2e3c2,St12out_of_range
+0x2e3d3,St11range_error
+0x2e3e3,St13runtime_error
+0x2e3f5,St14overflow_error
+0x2e408,St15underflow_error
+0x2e41c,libc++abi
+0x2e426,terminating with %s exception of type %s: %s
+0x2e453,terminating with %s exception of type %s
+0x2e47c,terminating with %s foreign exception
+0x2e4a2,terminating
+0x2e4ae,uncaught
+0x2e4b7,unexpected
+0x2e5d3,iiiiiiiii2^
+0x2ec06,invocation function for block in 
+0x2ec28,VTT for 
+0x2ec31,typeinfo for 
+0x2ec3f,typeinfo name for 
+0x2ec52,covariant return thunk to 
+0x2ec6d,thread-local wrapper routine for 
+0x2ec8f,thread-local initialization routine for 
+0x2ecb8,non-virtual thunk to 
+0x2ecce,guard variable for 
+0x2ece2,reference temporary for 
+0x2ecfb,construction vtable for 
+0x2ed1d,decltype(
+0x2ed27,alignof (
+0x2ed31,const_cast
+0x2ed3c,dynamic_cast
+0x2ed4c,noexcept (
+0x2ed57,reinterpret_cast
+0x2ed68,static_cast
+0x2ed74,sizeof (
+0x2ed7d,sizeof... (
+0x2ed89,typeid (
+0x2ed98,wchar_t
+0x2eda0,unsigned char
+0x2edae,unsigned short
+0x2edc6,unsigned __int128
+0x2edf7,(anonymous namespace)
+0x2ee0d,operator&&
+0x2ee18,operator&
+0x2ee22,operator&=
+0x2ee2d,operator=
+0x2ee37,operator()
+0x2ee42,"operator,"
+0x2ee4c,operator~
+0x2ee56,operator delete[]
+0x2ee68,operator*
+0x2ee72,operator delete
+0x2ee82,operator/
+0x2ee8c,operator/=
+0x2ee97,operator^
+0x2eea1,operator^=
+0x2eeac,operator==
+0x2eeb7,operator>=
+0x2eec2,operator>
+0x2eecc,operator[]
+0x2eed7,operator<=
+0x2eee2,operator<<
+0x2eeed,operator<<=
+0x2eef9,operator<
+0x2ef03,operator-
+0x2ef0d,operator-=
+0x2ef18,operator*=
+0x2ef23,operator--
+0x2ef2e,operator new[]
+0x2ef3d,operator!=
+0x2ef48,operator!
+0x2ef52,operator new
+0x2ef5f,operator||
+0x2ef6a,operator|
+0x2ef74,operator|=
+0x2ef7f,operator->*
+0x2ef8b,operator+
+0x2ef95,operator+=
+0x2efa0,operator++
+0x2efab,operator->
+0x2efb6,operator?
+0x2efc0,operator%
+0x2efca,operator%=
+0x2efd5,operator>>
+0x2efe0,operator>>=
+0x2efec,operator<=>
+0x2eff8,"operator"""" "
+0x2f00e,::operator 
+0x2f026,sizeof...(
+0x2f031,throw 
+0x2f038,std::allocator
+0x2f047,std::basic_string
+0x2f059,"std::basic_string<char, std::char_traits<char>, std::allocator<char> >"
+0x2f0a0,"std::basic_istream<char, std::char_traits<char> >"
+0x2f0d2,"std::basic_ostream<char, std::char_traits<char> >"
+0x2f104,"std::basic_iostream<char, std::char_traits<char> >"
+0x2f137,basic_istream
+0x2f145,basic_ostream
+0x2f153,basic_iostream
+0x2f168,'lambda
+0x2f170,string literal
+0x2f17f,std::string
+0x2f18b,std::istream
+0x2f198,std::ostream
+0x2f1a5,std::iostream
+0x2f1b9, [enable_if:
+0x2f1c6, const
+0x2f1cd, volatile
+0x2f1d7, restrict
+0x2f1ef,unsigned int
+0x2f1fc,unsigned long
+0x2f20a,unsigned long long
+0x2f223,long double
+0x2f22f,__float128
+0x2f23a,decimal64
+0x2f244,decimal128
+0x2f24f,decimal32
+0x2f259,decimal16
+0x2f263,char32_t
+0x2f26c,char16_t
+0x2f275,decltype(auto)
+0x2f284,std::nullptr_t
+0x2f293, complex
+0x2f29c, imaginary
+0x2f2a7,noexcept
+0x2f2b0,noexcept(
+0x2f2ba,throw(
+0x2f2c1,pixel vector[
+0x2f2d3,struct
+0x2f2e9,objc_object
+0x2f2f5,N12_GLOBAL__N_116itanium_demangle11SpecialNameE
+0x2f325,N12_GLOBAL__N_116itanium_demangle4NodeE
+0x2f34d,N12_GLOBAL__N_116itanium_demangle21CtorVtableSpecialNameE
+0x2f387,N12_GLOBAL__N_116itanium_demangle8NameTypeE
+0x2f3b3,N12_GLOBAL__N_116itanium_demangle10NestedNameE
+0x2f3e2,N12_GLOBAL__N_116itanium_demangle24ForwardTemplateReferenceE
+0x2f41f,N12_GLOBAL__N_116itanium_demangle14IntegerLiteralE
+0x2f452,N12_GLOBAL__N_116itanium_demangle8BoolExprE
+0x2f47e,N12_GLOBAL__N_116itanium_demangle16FloatLiteralImplIfEE
+0x2f4b6,N12_GLOBAL__N_116itanium_demangle16FloatLiteralImplIdEE
+0x2f4ee,N12_GLOBAL__N_116itanium_demangle16FloatLiteralImplIeEE
+0x2f526,N12_GLOBAL__N_116itanium_demangle15IntegerCastExprE
+0x2f55a,N12_GLOBAL__N_116itanium_demangle13FunctionParamE
+0x2f58c,N12_GLOBAL__N_116itanium_demangle8FoldExprE
+0x2f5b8,N12_GLOBAL__N_116itanium_demangle22ParameterPackExpansionE
+0x2f5f3,N12_GLOBAL__N_116itanium_demangle10BinaryExprE
+0x2f622,N12_GLOBAL__N_116itanium_demangle10PrefixExprE
+0x2f651,N12_GLOBAL__N_116itanium_demangle8CastExprE
+0x2f67d,N12_GLOBAL__N_116itanium_demangle8CallExprE
+0x2f6a9,N12_GLOBAL__N_116itanium_demangle14ConversionExprE
+0x2f6dc,N12_GLOBAL__N_116itanium_demangle10DeleteExprE
+0x2f70b,N12_GLOBAL__N_116itanium_demangle13QualifiedNameE
+0x2f73d,N12_GLOBAL__N_116itanium_demangle8DtorNameE
+0x2f769,N12_GLOBAL__N_116itanium_demangle22ConversionOperatorTypeE
+0x2f7a4,N12_GLOBAL__N_116itanium_demangle15LiteralOperatorE
+0x2f7d8,N12_GLOBAL__N_116itanium_demangle19GlobalQualifiedNameE
+0x2f810,N12_GLOBAL__N_116itanium_demangle10MemberExprE
+0x2f83f,N12_GLOBAL__N_116itanium_demangle18ArraySubscriptExprE
+0x2f876,N12_GLOBAL__N_116itanium_demangle10BracedExprE
+0x2f8a5,N12_GLOBAL__N_116itanium_demangle15BracedRangeExprE
+0x2f8d9,N12_GLOBAL__N_116itanium_demangle12InitListExprE
+0x2f90a,N12_GLOBAL__N_116itanium_demangle11PostfixExprE
+0x2f93a,N12_GLOBAL__N_116itanium_demangle7NewExprE
+0x2f965,N12_GLOBAL__N_116itanium_demangle13EnclosingExprE
+0x2f997,N12_GLOBAL__N_116itanium_demangle15ConditionalExprE
+0x2f9cb,N12_GLOBAL__N_116itanium_demangle19SizeofParamPackExprE
+0x2fa03,N12_GLOBAL__N_116itanium_demangle13NodeArrayNodeE
+0x2fa35,N12_GLOBAL__N_116itanium_demangle9ThrowExprE
+0x2fa62,N12_GLOBAL__N_116itanium_demangle27ExpandedSpecialSubstitutionE
+0x2faa2,N12_GLOBAL__N_116itanium_demangle12CtorDtorNameE
+0x2fad3,N12_GLOBAL__N_116itanium_demangle10AbiTagAttrE
+0x2fb02,N12_GLOBAL__N_116itanium_demangle15UnnamedTypeNameE
+0x2fb36,N12_GLOBAL__N_116itanium_demangle15ClosureTypeNameE
+0x2fb6a,N12_GLOBAL__N_116itanium_demangle21StructuredBindingNameE
+0x2fba4,N12_GLOBAL__N_116itanium_demangle9LocalNameE
+0x2fbd1,N12_GLOBAL__N_116itanium_demangle19SpecialSubstitutionE
+0x2fc09,N12_GLOBAL__N_116itanium_demangle13ParameterPackE
+0x2fc3b,N12_GLOBAL__N_116itanium_demangle12TemplateArgsE
+0x2fc6c,N12_GLOBAL__N_116itanium_demangle20NameWithTemplateArgsE
+0x2fca5,N12_GLOBAL__N_116itanium_demangle16StdQualifiedNameE
+0x2fcda,N12_GLOBAL__N_116itanium_demangle20TemplateArgumentPackE
+0x2fd13,N12_GLOBAL__N_116itanium_demangle12EnableIfAttrE
+0x2fd44,N12_GLOBAL__N_116itanium_demangle16FunctionEncodingE
+0x2fd79,N12_GLOBAL__N_116itanium_demangle9DotSuffixE
+0x2fda6,N12_GLOBAL__N_116itanium_demangle12NoexceptSpecE
+0x2fdd7,N12_GLOBAL__N_116itanium_demangle20DynamicExceptionSpecE
+0x2fe10,N12_GLOBAL__N_116itanium_demangle12FunctionTypeE
+0x2fe41,N12_GLOBAL__N_116itanium_demangle13ObjCProtoNameE
+0x2fe73,N12_GLOBAL__N_116itanium_demangle17VendorExtQualTypeE
+0x2fea9,N12_GLOBAL__N_116itanium_demangle8QualTypeE
+0x2fed5,N12_GLOBAL__N_116itanium_demangle15PixelVectorTypeE
+0x2ff09,N12_GLOBAL__N_116itanium_demangle10VectorTypeE
+0x2ff38,N12_GLOBAL__N_116itanium_demangle9ArrayTypeE
+0x2ff65,N12_GLOBAL__N_116itanium_demangle19PointerToMemberTypeE
+0x2ff9d,N12_GLOBAL__N_116itanium_demangle22ElaboratedTypeSpefTypeE
+0x2ffd8,N12_GLOBAL__N_116itanium_demangle11PointerTypeE
+0x30008,N12_GLOBAL__N_116itanium_demangle13ReferenceTypeE
+0x3003a,N12_GLOBAL__N_116itanium_demangle20PostfixQualifiedTypeE
+0x30073,N10__cxxabiv116__shim_type_infoE
+0x30094,N10__cxxabiv117__class_type_infoE
+0x300b6,N10__cxxabiv117__pbase_type_infoE
+0x300d8,N10__cxxabiv119__pointer_type_infoE
+0x300fc,N10__cxxabiv120__function_type_infoE
+0x30121,N10__cxxabiv129__pointer_to_member_type_infoE
+0x30168,N10__cxxabiv123__fundamental_type_infoE
+0x30280,N10__cxxabiv117__array_type_infoE
+0x302a2,N10__cxxabiv116__enum_type_infoE
+0x302c3,N10__cxxabiv120__si_class_type_infoE
+0x302e8,N10__cxxabiv121__vmi_class_type_infoE
+0x3030e,std::bad_cast
+0x3031c,std::bad_typeid
+0x3032c,St9type_info
+0x30339,St8bad_cast
+0x30345,St10bad_typeid
+0x30354,Pure virtual function called!
+0x30372,Deleted virtual function called!
+0x356a0,Android
+0x356ec,5594570
+0x39058,Android (5220042 based on r346389c) clang version 8.0.7 (https://android.googlesource.com/toolchain/clang b55f2d4ebfd35bf643d27dbca1bb228957008617) (https://android.googlesource.com/toolchain/llvm 3c393fe7a7e13b0fba4ac75a01aa683d7a5b11cd) (based on LLVM 8.0.7svn)
+0x39160,GCC: (GNU) 4.9.x 20150123 (prerelease)
+0x39188,.shstrtab
+0x39192,.note.gnu.build-id
+0x391a5,.gnu.hash
+0x391af,.dynsym
+0x391b7,.dynstr
+0x391bf,.gnu.version
+0x391cc,.gnu.version_r
+0x391db,.rela.dyn
+0x391e5,.rela.plt
+0x391f5,.rodata
+0x391fd,.eh_frame_hdr
+0x3920b,.eh_frame
+0x39215,.gcc_except_table
+0x39227,.note.android.ident
+0x3923b,.init_array
+0x39247,.fini_array
+0x39253,.data.rel.ro
+0x39260,.dynamic
+0x39279,.comment

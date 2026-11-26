@@ -1,0 +1,3242 @@
+// TEXT-ONLY METADATA/SIGNATURE EXCERPT; NOT RECOVERED C# IMPLEMENTATION.
+// Source: derived/il2cpp/armeabi-v7a/dump.cs
+// SHA256: 4b189984f87cc6d586f1c23c3122323a28473ae06384d36ea292e3e13f97e6a1
+// Assembly: DodGameLib.dll; types: 96; original dump lines 149898-153037
+
+// ORIGINAL DUMP LINES 149898-149900; TypeDefIndex 2526
+// Namespace: 
+internal class <Module> // TypeDefIndex: 2526
+{}
+
+// ORIGINAL DUMP LINES 149902-149919; TypeDefIndex 2527
+// Namespace: 
+public static class CommHelper // TypeDefIndex: 2527
+{
+	// Fields
+	private static uint ms_uiGOID; // 0x0
+	private static char[] ms_TempText; // 0x4
+
+	// Methods
+
+	// RVA: 0x11EE714 Offset: 0x11EE714 VA: 0x11EE714
+	public static string FormatResourcePath(string strFileName) { }
+
+	// RVA: 0x11EE910 Offset: 0x11EE910 VA: 0x11EE910
+	public static string NormalFilePath(string path) { }
+
+	// RVA: 0x11EE990 Offset: 0x11EE990 VA: 0x11EE990
+	private static void .cctor() { }
+}
+
+// ORIGINAL DUMP LINES 149921-149934; TypeDefIndex 2528
+// Namespace: 
+public class StringUtility // TypeDefIndex: 2528
+{
+	// Methods
+
+	// RVA: 0x1CD3AC0 Offset: 0x1CD3AC0 VA: 0x1CD3AC0
+	public static int strlen(byte[] str) { }
+
+	// RVA: 0x1CD3B28 Offset: 0x1CD3B28 VA: 0x1CD3B28
+	public static string UTF8BytesToString(byte[] str) { }
+
+	// RVA: 0x1CD3C08 Offset: 0x1CD3C08 VA: 0x1CD3C08
+	public static string RemoveUtf8Bom(string str) { }
+}
+
+// ORIGINAL DUMP LINES 149936-149944; TypeDefIndex 2529
+// Namespace: 
+public enum SocketEventType // TypeDefIndex: 2529
+{
+	// Fields
+	public int value__; // 0x0
+	public const SocketEventType EventConnected = 0;
+	public const SocketEventType EventConnectFail = 1;
+	public const SocketEventType EventDisconnected = 2;
+}
+
+// ORIGINAL DUMP LINES 149946-149956; TypeDefIndex 2530
+// Namespace: 
+public class CSocketEventParam : EventArgs // TypeDefIndex: 2530
+{
+	// Fields
+	public SocketEventType type; // 0x8
+
+	// Methods
+
+	// RVA: 0x11EE688 Offset: 0x11EE688 VA: 0x11EE688
+	public void .ctor(SocketEventType _type) { }
+}
+
+// ORIGINAL DUMP LINES 149958-149968; TypeDefIndex 2531
+// Namespace: 
+public enum SocketState // TypeDefIndex: 2531
+{
+	// Fields
+	public int value__; // 0x0
+	public const SocketState StateInit = 0;
+	public const SocketState StateConnecting = 1;
+	public const SocketState StateConnected = 2;
+	public const SocketState StateShutDown = 3;
+	public const SocketState StateSocketError = 4;
+}
+
+// ORIGINAL DUMP LINES 149970-149986; TypeDefIndex 2532
+// Namespace: 
+public sealed class SockEventDelegate : MulticastDelegate // TypeDefIndex: 2532
+{
+	// Methods
+
+	// RVA: 0x1CD36B8 Offset: 0x1CD36B8 VA: 0x1CD36B8
+	public void .ctor(object object, IntPtr method) { }
+
+	// RVA: 0x1CD36CC Offset: 0x1CD36CC VA: 0x1CD36CC Slot: 11
+	public virtual void Invoke(CSocketEventParam param) { }
+
+	// RVA: 0x1CD3A88 Offset: 0x1CD3A88 VA: 0x1CD3A88 Slot: 12
+	public virtual IAsyncResult BeginInvoke(CSocketEventParam param, AsyncCallback callback, object object) { }
+
+	// RVA: 0x1CD3AB4 Offset: 0x1CD3AB4 VA: 0x1CD3AB4 Slot: 13
+	public virtual void EndInvoke(IAsyncResult result) { }
+}
+
+// ORIGINAL DUMP LINES 149988-150109; TypeDefIndex 2533
+// Namespace: 
+public class TcpSocket // TypeDefIndex: 2533
+{
+	// Fields
+	private List<SockEventDelegate> m_eventHandler; // 0x8
+	private Socket mSocket; // 0xC
+	private string mConnServer; // 0x10
+	private string mConnServerIP; // 0x14
+	private int mConnServerPort; // 0x18
+	protected SocketState m_eState; // 0x1C
+	protected byte[] m_sockSendBuffer; // 0x20
+	protected int m_sockSendLen; // 0x24
+	protected byte[] m_sockRecvBuffer; // 0x28
+	protected int m_sockRecvLen; // 0x2C
+	public bool m_IsSending; // 0x30
+	public bool m_IsRecving; // 0x31
+	protected RingBuffer m_appSendBuff; // 0x34
+	protected RingBuffer m_appRecvBuff; // 0x38
+	protected IAsyncResult m_recvingResult; // 0x3C
+	protected SocketError m_iErrorCode; // 0x40
+	protected string m_sErrorString; // 0x44
+	protected CSocketEventParam m_needNotify; // 0x48
+	protected bool m_lastConnected; // 0x4C
+	protected IAsyncResult m_lastConnectAsyncResult; // 0x50
+	protected float m_lastConnectTime; // 0x54
+	protected int m_currConnectNum; // 0x58
+	protected int m_connectRetryMaxNum; // 0x5C
+	protected int m_connnecTimeout; // 0x60
+	public int m_networkTypeID; // 0x64
+	public float m_currTime; // 0x68
+	public int m_iTotalRecvSize; // 0x6C
+	private static int[] mSendByteCount; // 0x0
+	private static int[] mRecvByteCount; // 0x4
+
+	// Properties
+	public virtual bool Connected { get; }
+	public SocketError LastSockError { get; }
+	public string LastErrDesc { get; }
+
+	// Methods
+
+	// RVA: 0x1CD3CC4 Offset: 0x1CD3CC4 VA: 0x1CD3CC4 Slot: 4
+	public virtual bool get_Connected() { }
+
+	// RVA: 0x1CD3CDC Offset: 0x1CD3CDC VA: 0x1CD3CDC
+	public SocketError get_LastSockError() { }
+
+	// RVA: 0x1CD3CF4 Offset: 0x1CD3CF4 VA: 0x1CD3CF4
+	public string get_LastErrDesc() { }
+
+	// RVA: 0x1CD3CFC Offset: 0x1CD3CFC VA: 0x1CD3CFC
+	public void .ctor(int appSendBuffLen = 102400, int appRecvBuffLen = 102400, bool autoIncreaseBuffSize = False) { }
+
+	// RVA: 0x1CD3FA8 Offset: 0x1CD3FA8 VA: 0x1CD3FA8
+	public void RegEventHandle(SockEventDelegate handler) { }
+
+	// RVA: 0x1CD4028 Offset: 0x1CD4028 VA: 0x1CD4028 Slot: 5
+	public virtual bool ConnectSocket(string server, int port, int iTimeout, int retryNum) { }
+
+	// RVA: 0x1CD4AD0 Offset: 0x1CD4AD0 VA: 0x1CD4AD0
+	public void Close() { }
+
+	// RVA: 0x1CD496C Offset: 0x1CD496C VA: 0x1CD496C
+	protected void NotifyEvent(CSocketEventParam param) { }
+
+	// RVA: 0x1CD4AD4 Offset: 0x1CD4AD4 VA: 0x1CD4AD4
+	private void RetryConnect() { }
+
+	// RVA: 0x1CD50DC Offset: 0x1CD50DC VA: 0x1CD50DC Slot: 6
+	public virtual void Update() { }
+
+	// RVA: 0x1CD547C Offset: 0x1CD547C VA: 0x1CD547C
+	private bool CheckConnectTimeout() { }
+
+	// RVA: 0x1CD3E10 Offset: 0x1CD3E10 VA: 0x1CD3E10
+	private void RefreshCurrTime() { }
+
+	// RVA: 0x1CD50E0 Offset: 0x1CD50E0 VA: 0x1CD50E0
+	private void DoUpdate() { }
+
+	// RVA: 0x1CD61E4 Offset: 0x1CD61E4 VA: 0x1CD61E4
+	public void LateUpdate() { }
+
+	// RVA: 0x1CD3E48 Offset: 0x1CD3E48 VA: 0x1CD3E48
+	protected void Reset() { }
+
+	// RVA: 0x1CD6098 Offset: 0x1CD6098 VA: 0x1CD6098
+	public void Shutdown() { }
+
+	// RVA: 0x1CD5AC0 Offset: 0x1CD5AC0 VA: 0x1CD5AC0
+	public bool IsErrorState() { }
+
+	// RVA: 0x1CD3E2C Offset: 0x1CD3E2C VA: 0x1CD3E2C
+	private void ClearSocketErrorCode() { }
+
+	// RVA: 0x1CD488C Offset: 0x1CD488C VA: 0x1CD488C
+	private void SetErrorState(SocketError errcode, string errString) { }
+
+	// RVA: 0x1CD622C Offset: 0x1CD622C VA: 0x1CD622C Slot: 7
+	public virtual bool Send(byte[] buf, int iOffet, int dataSize) { }
+
+	// RVA: 0x1CD6448 Offset: 0x1CD6448 VA: 0x1CD6448 Slot: 8
+	public virtual int Recv(byte[] buf, int iOffset, int maxSize) { }
+
+	// RVA: 0x1CD5DDC Offset: 0x1CD5DDC VA: 0x1CD5DDC
+	protected void ProcessRecv() { }
+
+	// RVA: 0x1CD5AE4 Offset: 0x1CD5AE4 VA: 0x1CD5AE4
+	protected void ProcessSend() { }
+
+	// RVA: 0x1CD6498 Offset: 0x1CD6498 VA: 0x1CD6498
+	private void RecvCallBack(IAsyncResult ar) { }
+
+	// RVA: 0x1CD67E8 Offset: 0x1CD67E8 VA: 0x1CD67E8
+	private void SendCallBack(IAsyncResult ar) { }
+
+	// RVA: 0x1CD6B60 Offset: 0x1CD6B60 VA: 0x1CD6B60
+	private void ConnectComplete(IAsyncResult ar) { }
+
+	// RVA: 0x1CD6EE8 Offset: 0x1CD6EE8 VA: 0x1CD6EE8
+	private static void .cctor() { }
+}
+
+// ORIGINAL DUMP LINES 150111-150136; TypeDefIndex 2534
+// Namespace: 
+public class FastXXTEA // TypeDefIndex: 2534
+{
+	// Methods
+
+	// RVA: 0x1CD0494 Offset: 0x1CD0494 VA: 0x1CD0494
+	private static void Uint2Byte(uint dwVal, byte[] Result, int index) { }
+
+	// RVA: 0x1CD04F8 Offset: 0x1CD04F8 VA: 0x1CD04F8
+	private static uint Byte2UintV2(byte[] aucData, int iStartPos, int iLength, int index) { }
+
+	// RVA: 0x1CD0560 Offset: 0x1CD0560 VA: 0x1CD0560
+	private static void Uint2ByteV2(uint dwVal, byte[] Result, int iStartPos, int iLength, int index) { }
+
+	// RVA: 0x1CD05C8 Offset: 0x1CD05C8 VA: 0x1CD05C8
+	public static byte[] DoxxV2(byte[] textData, int iStartPos, int iLength, uint[] k) { }
+
+	// RVA: 0x1CD08A4 Offset: 0x1CD08A4 VA: 0x1CD08A4
+	public static byte[] Dexx(byte[] textData, uint[] k) { }
+
+	// RVA: 0x1CD0CF4 Offset: 0x1CD0CF4 VA: 0x1CD0CF4
+	public static byte[] DexxV2(byte[] textData, int iStartPos, int iLength, uint[] k) { }
+
+	// RVA: 0x1CD117C Offset: 0x1CD117C VA: 0x1CD117C
+	public static uint[] ToUInt32Array(byte[] Data, bool IncludeLength) { }
+}
+
+// ORIGINAL DUMP LINES 150138-150148; TypeDefIndex 2535
+// Namespace: MiniJSON
+public static class Json // TypeDefIndex: 2535
+{
+	// Methods
+
+	// RVA: 0x1CD1378 Offset: 0x1CD1378 VA: 0x1CD1378
+	public static object Deserialize(string json) { }
+
+	// RVA: 0x1CD1508 Offset: 0x1CD1508 VA: 0x1CD1508
+	public static string Serialize(object obj) { }
+}
+
+// ORIGINAL DUMP LINES 150150-150208; TypeDefIndex 2536
+// Namespace: 
+private sealed class Json.Parser : IDisposable // TypeDefIndex: 2536
+{
+	// Fields
+	private StringReader json; // 0x8
+
+	// Properties
+	private char PeekChar { get; }
+	private char NextChar { get; }
+	private string NextWord { get; }
+	private Json.Parser.TOKEN NextToken { get; }
+
+	// Methods
+
+	// RVA: 0x1CD15D0 Offset: 0x1CD15D0 VA: 0x1CD15D0
+	public static bool IsWordBreak(char c) { }
+
+	// RVA: 0x1CD16AC Offset: 0x1CD16AC VA: 0x1CD16AC
+	private void .ctor(string jsonString) { }
+
+	// RVA: 0x1CD1388 Offset: 0x1CD1388 VA: 0x1CD1388
+	public static object Parse(string jsonString) { }
+
+	// RVA: 0x1CD1750 Offset: 0x1CD1750 VA: 0x1CD1750 Slot: 4
+	public void Dispose() { }
+
+	// RVA: 0x1CD1788 Offset: 0x1CD1788 VA: 0x1CD1788
+	private Dictionary<string, object> ParseObject() { }
+
+	// RVA: 0x1CD1F40 Offset: 0x1CD1F40 VA: 0x1CD1F40
+	private List<object> ParseArray() { }
+
+	// RVA: 0x1CD1730 Offset: 0x1CD1730 VA: 0x1CD1730
+	private object ParseValue() { }
+
+	// RVA: 0x1CD204C Offset: 0x1CD204C VA: 0x1CD204C
+	private object ParseByToken(Json.Parser.TOKEN token) { }
+
+	// RVA: 0x1CD1BEC Offset: 0x1CD1BEC VA: 0x1CD1BEC
+	private string ParseString() { }
+
+	// RVA: 0x1CD215C Offset: 0x1CD215C VA: 0x1CD215C
+	private object ParseNumber() { }
+
+	// RVA: 0x1CD2408 Offset: 0x1CD2408 VA: 0x1CD2408
+	private void EatWhitespace() { }
+
+	// RVA: 0x1CD24FC Offset: 0x1CD24FC VA: 0x1CD24FC
+	private char get_PeekChar() { }
+
+	// RVA: 0x1CD2258 Offset: 0x1CD2258 VA: 0x1CD2258
+	private char get_NextChar() { }
+
+	// RVA: 0x1CD2308 Offset: 0x1CD2308 VA: 0x1CD2308
+	private string get_NextWord() { }
+
+	// RVA: 0x1CD18EC Offset: 0x1CD18EC VA: 0x1CD18EC
+	private Json.Parser.TOKEN get_NextToken() { }
+}
+
+// ORIGINAL DUMP LINES 150210-150227; TypeDefIndex 2537
+// Namespace: 
+private enum Json.Parser.TOKEN // TypeDefIndex: 2537
+{
+	// Fields
+	public int value__; // 0x0
+	public const Json.Parser.TOKEN NONE = 0;
+	public const Json.Parser.TOKEN CURLY_OPEN = 1;
+	public const Json.Parser.TOKEN CURLY_CLOSE = 2;
+	public const Json.Parser.TOKEN SQUARED_OPEN = 3;
+	public const Json.Parser.TOKEN SQUARED_CLOSE = 4;
+	public const Json.Parser.TOKEN COLON = 5;
+	public const Json.Parser.TOKEN COMMA = 6;
+	public const Json.Parser.TOKEN STRING = 7;
+	public const Json.Parser.TOKEN NUMBER = 8;
+	public const Json.Parser.TOKEN TRUE = 9;
+	public const Json.Parser.TOKEN FALSE = 10;
+	public const Json.Parser.TOKEN NULL = 11;
+}
+
+// ORIGINAL DUMP LINES 150229-150257; TypeDefIndex 2538
+// Namespace: 
+private sealed class Json.Serializer // TypeDefIndex: 2538
+{
+	// Fields
+	private StringBuilder builder; // 0x8
+
+	// Methods
+
+	// RVA: 0x1CD25AC Offset: 0x1CD25AC VA: 0x1CD25AC
+	private void .ctor() { }
+
+	// RVA: 0x1CD150C Offset: 0x1CD150C VA: 0x1CD150C
+	public static string Serialize(object obj) { }
+
+	// RVA: 0x1CD2628 Offset: 0x1CD2628 VA: 0x1CD2628
+	private void SerializeValue(object value) { }
+
+	// RVA: 0x1CD2F0C Offset: 0x1CD2F0C VA: 0x1CD2F0C
+	private void SerializeObject(IDictionary obj) { }
+
+	// RVA: 0x1CD2B78 Offset: 0x1CD2B78 VA: 0x1CD2B78
+	private void SerializeArray(IList anArray) { }
+
+	// RVA: 0x1CD27F8 Offset: 0x1CD27F8 VA: 0x1CD27F8
+	private void SerializeString(string str) { }
+
+	// RVA: 0x1CD3440 Offset: 0x1CD3440 VA: 0x1CD3440
+	private void SerializeOther(object value) { }
+}
+
+// ORIGINAL DUMP LINES 150259-150266; TypeDefIndex 2539
+// Namespace: DodGame
+public class AssetBundleRule // TypeDefIndex: 2539
+{
+	// Methods
+
+	// RVA: 0x1204200 Offset: 0x1204200 VA: 0x1204200
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 150268-150284; TypeDefIndex 2540
+// Namespace: DodGame
+public class AssetBundleRuleMgr : BSingleton<AssetBundleRuleMgr> // TypeDefIndex: 2540
+{
+	// Fields
+	private List<AssetBundleRule> m_listRule; // 0x8
+
+	// Methods
+
+	// RVA: 0x1204208 Offset: 0x1204208 VA: 0x1204208
+	public void Reset() { }
+
+	// RVA: 0x1204280 Offset: 0x1204280 VA: 0x1204280
+	public void AddBundleRule(AssetBundleRule rule) { }
+
+	// RVA: 0x1204300 Offset: 0x1204300 VA: 0x1204300
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 150286-150302; TypeDefIndex 2541
+// Namespace: DodGame
+public sealed class SetFolderNoSave : MulticastDelegate // TypeDefIndex: 2541
+{
+	// Methods
+
+	// RVA: 0x1209E54 Offset: 0x1209E54 VA: 0x1209E54
+	public void .ctor(object object, IntPtr method) { }
+
+	// RVA: 0x1209E68 Offset: 0x1209E68 VA: 0x1209E68 Slot: 11
+	public virtual void Invoke(string folderPath) { }
+
+	// RVA: 0x120A224 Offset: 0x120A224 VA: 0x120A224 Slot: 12
+	public virtual IAsyncResult BeginInvoke(string folderPath, AsyncCallback callback, object object) { }
+
+	// RVA: 0x120A250 Offset: 0x120A250 VA: 0x120A250 Slot: 13
+	public virtual void EndInvoke(IAsyncResult result) { }
+}
+
+// ORIGINAL DUMP LINES 150304-150320; TypeDefIndex 2542
+// Namespace: DodGame
+public sealed class RecordLoadFileFunc : MulticastDelegate // TypeDefIndex: 2542
+{
+	// Methods
+
+	// RVA: 0x1208804 Offset: 0x1208804 VA: 0x1208804
+	public void .ctor(object object, IntPtr method) { }
+
+	// RVA: 0x1208818 Offset: 0x1208818 VA: 0x1208818 Slot: 11
+	public virtual void Invoke(string path) { }
+
+	// RVA: 0x1208BD4 Offset: 0x1208BD4 VA: 0x1208BD4 Slot: 12
+	public virtual IAsyncResult BeginInvoke(string path, AsyncCallback callback, object object) { }
+
+	// RVA: 0x1208C00 Offset: 0x1208C00 VA: 0x1208C00 Slot: 13
+	public virtual void EndInvoke(IAsyncResult result) { }
+}
+
+// ORIGINAL DUMP LINES 150322-150442; TypeDefIndex 2543
+// Namespace: DodGame
+public static class AssetBundleUtil // TypeDefIndex: 2543
+{
+	// Fields
+	public static bool m_abHashMd5; // 0x0
+	public static long m_readAbTotalSize; // 0x8
+	private static string m_externAssetBundleDir; // 0x10
+	private static string m_fileProtocol; // 0x14
+	public static bool traceAssetBundleDebug; // 0x18
+	private static uint[] s_encKey; // 0x1C
+	public static RecordLoadFileFunc RecordLoadFileFunc; // 0x20
+	public static CultureInfo _info; // 0x24
+
+	// Methods
+
+	// RVA: 0x1204398 Offset: 0x1204398 VA: 0x1204398
+	public static string Md5Sum(string strToEncrypt) { }
+
+	// RVA: 0x1204464 Offset: 0x1204464 VA: 0x1204464
+	public static string Md5Sum(byte[] bytes) { }
+
+	// RVA: 0x11F2324 Offset: 0x11F2324 VA: 0x11F2324
+	public static string NormalScenePath(string sceneName) { }
+
+	// RVA: 0x11F1CB0 Offset: 0x11F1CB0 VA: 0x11F1CB0
+	public static string GetPathHash(string path) { }
+
+	// RVA: 0x11F1B7C Offset: 0x11F1B7C VA: 0x11F1B7C
+	public static bool IsShaderFile(string strPath) { }
+
+	// RVA: 0x11FBE3C Offset: 0x11FBE3C VA: 0x11FBE3C
+	public static string GetExternAssetBundleDir() { }
+
+	// RVA: 0x1204620 Offset: 0x1204620 VA: 0x1204620
+	public static void SetExternAssetBundleDir(string abDir) { }
+
+	// RVA: 0x12046B0 Offset: 0x12046B0 VA: 0x12046B0
+	public static void SetFileProtocol(string protocol) { }
+
+	// RVA: 0x1204740 Offset: 0x1204740 VA: 0x1204740
+	public static bool WriteToFile(string dirOut, string fileName, string content) { }
+
+	// RVA: 0x120481C Offset: 0x120481C VA: 0x120481C
+	public static bool WriteToFile(string dirOut, string fileName, byte[] data) { }
+
+	// RVA: 0x1204A3C Offset: 0x1204A3C VA: 0x1204A3C
+	public static bool CreateDir(string dir) { }
+
+	// RVA: 0x1204C4C Offset: 0x1204C4C VA: 0x1204C4C
+	public static void DeleteFile(string path) { }
+
+	// RVA: 0x11F23C8 Offset: 0x11F23C8 VA: 0x11F23C8
+	public static string GetAssetBundleFileName(string md5Path) { }
+
+	// RVA: 0x11F1C54 Offset: 0x11F1C54 VA: 0x11F1C54
+	public static string GetShaderBundlePath() { }
+
+	// RVA: 0x11EF53C Offset: 0x11EF53C VA: 0x11EF53C
+	public static string GetStartupPreloadWebGLGroupName() { }
+
+	// RVA: 0x1204D30 Offset: 0x1204D30 VA: 0x1204D30
+	public static bool IsFileExist(string path) { }
+
+	// RVA: 0x1204E14 Offset: 0x1204E14 VA: 0x1204E14
+	public static int ReadFileLen(string path) { }
+
+	// RVA: 0x1204F7C Offset: 0x1204F7C VA: 0x1204F7C
+	public static byte[] ReadFile(string path) { }
+
+	// RVA: 0x1205054 Offset: 0x1205054 VA: 0x1205054
+	public static byte[] ReadFile(string path, ref string errInfo) { }
+
+	// RVA: 0x11FBEC8 Offset: 0x11FBEC8 VA: 0x11FBEC8
+	public static string ReadTextFile(string path) { }
+
+	// RVA: -1 Offset: -1
+	public static T ReadJsonKey<T>(Dictionary<string, object> json, string key) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x12C0204 Offset: 0x12C0204 VA: 0x12C0204
+	|-AssetBundleUtil.ReadJsonKey<List<object>>
+	|-AssetBundleUtil.ReadJsonKey<object>
+	|-AssetBundleUtil.ReadJsonKey<string>
+	|
+	|-RVA: 0x12C007C Offset: 0x12C007C VA: 0x12C007C
+	|-AssetBundleUtil.ReadJsonKey<long>
+	*/
+
+	// RVA: 0x11F381C Offset: 0x11F381C VA: 0x11F381C
+	public static List<object> ReadJsonList(string url, string content, ref string error) { }
+
+	// RVA: 0x1205774 Offset: 0x1205774 VA: 0x1205774
+	public static AssetRootMetaInfo ParseRootMeta(string content) { }
+
+	// RVA: 0x1205940 Offset: 0x1205940 VA: 0x1205940
+	public static List<AssetMd5FileInfo> ParseAssetMd5List(string url, string content, ref string error) { }
+
+	// RVA: 0x12063F0 Offset: 0x12063F0 VA: 0x12063F0
+	public static List<string> ReadTextStringList(byte[] textBytes) { }
+
+	// RVA: 0x11F0BA0 Offset: 0x11F0BA0 VA: 0x11F0BA0
+	public static List<string> ReadTextStringList(string text) { }
+
+	// RVA: 0x1206578 Offset: 0x1206578 VA: 0x1206578
+	public static bool IsLoadResourceFromAssetBundle(string resPath) { }
+
+	// RVA: 0x1206604 Offset: 0x1206604 VA: 0x1206604
+	public static bool IsLoadSceneFromAssetBundle(string sceneName) { }
+
+	// RVA: 0x1206690 Offset: 0x1206690 VA: 0x1206690
+	public static bool IsLoadShaderFromAssetBundle() { }
+
+	// RVA: 0x120671C Offset: 0x120671C VA: 0x120671C
+	public static uint[] GetEncodeKey() { }
+
+	// RVA: 0x12068A4 Offset: 0x12068A4 VA: 0x12068A4
+	public static byte[] DecodeAb(ref byte[] data) { }
+
+	// RVA: 0x1206934 Offset: 0x1206934 VA: 0x1206934
+	private static void .cctor() { }
+}
+
+// ORIGINAL DUMP LINES 150444-150461; TypeDefIndex 2544
+// Namespace: DodGame
+public class AssetMd5FileInfo // TypeDefIndex: 2544
+{
+	// Fields
+	public string m_md5FilePath; // 0x8
+	public string m_md5Content; // 0xC
+	public int m_contentSize; // 0x10
+	public bool m_compress; // 0x14
+	public bool m_downLoad; // 0x15
+	public uint m_crc; // 0x18
+	public string m_md5ExContent; // 0x1C
+	public string m_abHash128; // 0x20
+
+	// Methods
+
+	// RVA: 0x12063E8 Offset: 0x12063E8 VA: 0x12063E8
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 150463-150475; TypeDefIndex 2545
+// Namespace: DodGame
+public class AssetRootMetaInfo // TypeDefIndex: 2545
+{
+	// Fields
+	public string m_version; // 0x8
+	public string m_platform; // 0xC
+	public bool m_isLua; // 0x10
+
+	// Methods
+
+	// RVA: 0x1205938 Offset: 0x1205938 VA: 0x1205938
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 150477-150509; TypeDefIndex 2546
+// Namespace: DodGame
+public class AsyncTextFileSet // TypeDefIndex: 2546
+{
+	// Fields
+	private Dictionary<string, string> m_allFileData; // 0x8
+	private string m_loadError; // 0xC
+
+	// Properties
+	public string error { get; }
+
+	// Methods
+
+	// RVA: 0x11F3250 Offset: 0x11F3250 VA: 0x11F3250
+	public string get_error() { }
+
+	// RVA: 0x1206DC0 Offset: 0x1206DC0 VA: 0x1206DC0
+	private void SetLoadError(string fileName, string error) { }
+
+	// RVA: 0x11F3190 Offset: 0x11F3190 VA: 0x11F3190
+	public IEnumerator StartLoad(List<string> fileList, List<string> canIgnorFile) { }
+
+	// RVA: 0x11F0DCC Offset: 0x11F0DCC VA: 0x11F0DCC
+	public string GetFileContent(string filePath) { }
+
+	// RVA: 0x1206DE8 Offset: 0x1206DE8 VA: 0x1206DE8
+	private byte[] ReadEncFile(string fileName) { }
+
+	// RVA: 0x1206E7C Offset: 0x1206E7C VA: 0x1206E7C
+	private string ReadEncTextFile(string fileName) { }
+
+	// RVA: 0x11F302C Offset: 0x11F302C VA: 0x11F302C
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 150511-150557; TypeDefIndex 2547
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0x462168 Offset: 0x462168 VA: 0x462168
+private sealed class AsyncTextFileSet.<StartLoad>d__5 : IEnumerator<object>, IDisposable, IEnumerator // TypeDefIndex: 2547
+{
+	// Fields
+	private int <>1__state; // 0x8
+	private object <>2__current; // 0xC
+	public AsyncTextFileSet <>4__this; // 0x10
+	public List<string> fileList; // 0x14
+	public List<string> canIgnorFile; // 0x18
+	private AssetBundleFileMgr <fileMgr>5__2; // 0x1C
+	private int <i>5__3; // 0x20
+	private string <filePath>5__4; // 0x24
+	private WWW <www>5__5; // 0x28
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHiddenAttribute] // RVA: 0x462258 Offset: 0x462258 VA: 0x462258
+	// RVA: 0x1206DC8 Offset: 0x1206DC8 VA: 0x1206DC8
+	public void .ctor(int <>1__state) { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x462268 Offset: 0x462268 VA: 0x462268
+	// RVA: 0x1206F44 Offset: 0x1206F44 VA: 0x1206F44 Slot: 8
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x1207034 Offset: 0x1207034 VA: 0x1207034 Slot: 6
+	private bool MoveNext() { }
+
+	// RVA: 0x1206F5C Offset: 0x1206F5C VA: 0x1206F5C
+	private void <>m__Finally1() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x462278 Offset: 0x462278 VA: 0x462278
+	// RVA: 0x1207520 Offset: 0x1207520 VA: 0x1207520 Slot: 4
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x462288 Offset: 0x462288 VA: 0x462288
+	// RVA: 0x1207528 Offset: 0x1207528 VA: 0x1207528 Slot: 7
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x462298 Offset: 0x462298 VA: 0x462298
+	// RVA: 0x12075B0 Offset: 0x12075B0 VA: 0x12075B0 Slot: 5
+	private object System.Collections.IEnumerator.get_Current() { }
+}
+
+// ORIGINAL DUMP LINES 150559-150566; TypeDefIndex 2548
+// Namespace: DodGame
+public class AbResDepAssetData // TypeDefIndex: 2548
+{
+	// Fields
+	public string m_assetName; // 0x8
+	public string m_ownAbPath; // 0xC
+	public Type m_assetType; // 0x10
+}
+
+// ORIGINAL DUMP LINES 150568-150591; TypeDefIndex 2549
+// Namespace: DodGame
+public class AssetPreloadResWebGLItem // TypeDefIndex: 2549
+{
+	// Fields
+	public AssetBundleLoadFromType m_fromType; // 0x8
+	public string m_resPath; // 0xC
+	public int m_useCount; // 0x10
+	public List<string> m_ownGroupKey; // 0x14
+	public bool m_needLoadPrefab; // 0x18
+
+	// Methods
+
+	// RVA: 0x11EF598 Offset: 0x11EF598 VA: 0x11EF598
+	public void .ctor(string groupKey, string resPath, int useCount, AssetBundleLoadFromType fromType, bool needLoadObject = False) { }
+
+	// RVA: 0x11F66C4 Offset: 0x11F66C4 VA: 0x11F66C4
+	public void AddToGroup(List<string> toAddGroupKey) { }
+
+	// RVA: 0x11F6F54 Offset: 0x11F6F54 VA: 0x11F6F54
+	public void RmvFromGroup(string groupKey) { }
+
+	// RVA: 0x11F6FD4 Offset: 0x11F6FD4 VA: 0x11F6FD4
+	public bool IsInAnyGroup() { }
+}
+
+// ORIGINAL DUMP LINES 150593-150679; TypeDefIndex 2550
+// Namespace: DodGame
+public class AssetBundleDepend : BSingleton<AssetBundleDepend> // TypeDefIndex: 2550
+{
+	// Fields
+	public Dictionary<string, List<string>> m_allDepends; // 0x8
+	private Dictionary<string, List<string>> m_allNestDeps; // 0xC
+	public Dictionary<string, string> m_mapAsset2AbHash; // 0x10
+	public Dictionary<string, List<string>> m_mapResourceDirList; // 0x14
+	private HashSet<string> m_neverExpireAbSet; // 0x18
+	public static AssetBundleDepend.CheckFileExistDelegate CheckFileExist; // 0x0
+	private Dictionary<string, bool> m_fileExistDict; // 0x1C
+	private Dictionary<string, string> m_mapShaderNameInfo; // 0x20
+	private bool m_inited; // 0x24
+	private List<AssetPreloadResWebGLItem> m_listPreloadWebGLItem; // 0x28
+	private AsyncTextFileSet m_fileSet; // 0x2C
+
+	// Properties
+	public bool IsInited { get; }
+
+	// Methods
+
+	// RVA: 0x11EEDD8 Offset: 0x11EEDD8 VA: 0x11EEDD8
+	public void .ctor() { }
+
+	// RVA: 0x11EEF88 Offset: 0x11EEF88 VA: 0x11EEF88
+	public bool get_IsInited() { }
+
+	// RVA: 0x11EEF90 Offset: 0x11EEF90 VA: 0x11EEF90
+	public List<AssetPreloadResWebGLItem> GetWebGLPreloadResouceList() { }
+
+	// RVA: 0x11EEF98 Offset: 0x11EEF98 VA: 0x11EEF98
+	internal IEnumerator Init(MonoBehaviour behaviour) { }
+
+	// RVA: 0x11EF060 Offset: 0x11EF060 VA: 0x11EF060
+	private bool LoadWebGLPreloadList() { }
+
+	// RVA: 0x11EF680 Offset: 0x11EF680 VA: 0x11EF680
+	private void PrintShaderDebug() { }
+
+	// RVA: 0x11EFA14 Offset: 0x11EFA14 VA: 0x11EFA14
+	private bool LoadResourceDir() { }
+
+	// RVA: 0x11F00C0 Offset: 0x11F00C0 VA: 0x11F00C0
+	private bool LoadResources() { }
+
+	// RVA: 0x11F06E8 Offset: 0x11F06E8 VA: 0x11F06E8
+	private bool LoadSimpleDictAsset(string filePath, Dictionary<string, string> asset2AbPath) { }
+
+	// RVA: 0x11F0A3C Offset: 0x11F0A3C VA: 0x11F0A3C
+	private bool LoadNeverExpireMap() { }
+
+	// RVA: 0x11EF50C Offset: 0x11EF50C VA: 0x11EF50C
+	private string ReadTextFile(string fileName) { }
+
+	// RVA: 0x11F0E6C Offset: 0x11F0E6C VA: 0x11F0E6C
+	private bool LoadDeps() { }
+
+	// RVA: 0x11F1448 Offset: 0x11F1448 VA: 0x11F1448
+	private List<string> CalcAssetAllDeps(string assetMd5Path) { }
+
+	// RVA: 0x11F180C Offset: 0x11F180C VA: 0x11F180C
+	public List<string> GetAssetDeps(string md5Path) { }
+
+	// RVA: 0x11F18CC Offset: 0x11F18CC VA: 0x11F18CC
+	public List<string> GetAssetAllDeps(string md5Path) { }
+
+	// RVA: 0x11F19B4 Offset: 0x11F19B4 VA: 0x11F19B4
+	public string GetOwnerAbHashPathFromResourcePath(string resPath) { }
+
+	// RVA: 0x11F1EC0 Offset: 0x11F1EC0 VA: 0x11F1EC0
+	public List<string> GetIncResourceNameListInAb(string abMd5Path) { }
+
+	// RVA: 0x11F1F60 Offset: 0x11F1F60 VA: 0x11F1F60
+	public bool IsNeverExpireAb(string abMd5Path) { }
+
+	// RVA: 0x11F1FE0 Offset: 0x11F1FE0 VA: 0x11F1FE0
+	public bool IsResourceAllDependsExist(string normalPath) { }
+
+	// RVA: 0x11F2268 Offset: 0x11F2268 VA: 0x11F2268
+	public bool IsSceneAllDependsExist(string sceneName) { }
+
+	// RVA: 0x11F2070 Offset: 0x11F2070 VA: 0x11F2070
+	private bool IsAllDependsExist(string assetMd5Path) { }
+
+	// RVA: 0x11F281C Offset: 0x11F281C VA: 0x11F281C
+	public string GetShaderFileName(string shaderName) { }
+}
+
+// ORIGINAL DUMP LINES 150681-150697; TypeDefIndex 2551
+// Namespace: 
+public sealed class AssetBundleDepend.CheckFileExistDelegate : MulticastDelegate // TypeDefIndex: 2551
+{
+	// Methods
+
+	// RVA: 0x11F32F0 Offset: 0x11F32F0 VA: 0x11F32F0
+	public void .ctor(object object, IntPtr method) { }
+
+	// RVA: 0x11F245C Offset: 0x11F245C VA: 0x11F245C Slot: 11
+	public virtual bool Invoke(string filePath) { }
+
+	// RVA: 0x11F3304 Offset: 0x11F3304 VA: 0x11F3304 Slot: 12
+	public virtual IAsyncResult BeginInvoke(string filePath, AsyncCallback callback, object object) { }
+
+	// RVA: 0x11F3330 Offset: 0x11F3330 VA: 0x11F3330 Slot: 13
+	public virtual bool EndInvoke(IAsyncResult result) { }
+}
+
+// ORIGINAL DUMP LINES 150699-150737; TypeDefIndex 2552
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0x462178 Offset: 0x462178 VA: 0x462178
+private sealed class AssetBundleDepend.<Init>d__16 : IEnumerator<object>, IDisposable, IEnumerator // TypeDefIndex: 2552
+{
+	// Fields
+	private int <>1__state; // 0x8
+	private object <>2__current; // 0xC
+	public AssetBundleDepend <>4__this; // 0x10
+	public MonoBehaviour behaviour; // 0x14
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHiddenAttribute] // RVA: 0x4622A8 Offset: 0x4622A8 VA: 0x4622A8
+	// RVA: 0x11EF040 Offset: 0x11EF040 VA: 0x11EF040
+	public void .ctor(int <>1__state) { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x4622B8 Offset: 0x4622B8 VA: 0x4622B8
+	// RVA: 0x11F28DC Offset: 0x11F28DC VA: 0x11F28DC Slot: 8
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x11F28E0 Offset: 0x11F28E0 VA: 0x11F28E0 Slot: 6
+	private bool MoveNext() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x4622C8 Offset: 0x4622C8 VA: 0x4622C8
+	// RVA: 0x11F3258 Offset: 0x11F3258 VA: 0x11F3258 Slot: 4
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x4622D8 Offset: 0x4622D8 VA: 0x4622D8
+	// RVA: 0x11F3260 Offset: 0x11F3260 VA: 0x11F3260 Slot: 7
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x4622E8 Offset: 0x4622E8 VA: 0x4622E8
+	// RVA: 0x11F32E8 Offset: 0x11F32E8 VA: 0x11F32E8 Slot: 5
+	private object System.Collections.IEnumerator.get_Current() { }
+}
+
+// ORIGINAL DUMP LINES 150739-150759; TypeDefIndex 2553
+// Namespace: DodGame
+internal class AssetBundleEncMgr : BSingleton<AssetBundleEncMgr> // TypeDefIndex: 2553
+{
+	// Fields
+	private Dictionary<string, bool> m_cabAbMap; // 0x8
+	private Dictionary<string, bool> m_encAbMap; // 0xC
+
+	// Methods
+
+	// RVA: 0x11F3368 Offset: 0x11F3368 VA: 0x11F3368
+	public void .ctor() { }
+
+	// RVA: 0x11F36F8 Offset: 0x11F36F8 VA: 0x11F36F8
+	public bool IsAbFileEncrypt(string abFilePath) { }
+
+	// RVA: 0x11F3778 Offset: 0x11F3778 VA: 0x11F3778
+	public bool IsAbCompressType(string abFilePath) { }
+
+	// RVA: 0x11F3448 Offset: 0x11F3448 VA: 0x11F3448
+	private bool LoadStringMapList(string srcFilePath, Dictionary<string, bool> dictMap) { }
+}
+
+// ORIGINAL DUMP LINES 150761-150777; TypeDefIndex 2554
+// Namespace: DodGame
+public sealed class VfsCreateSystem : MulticastDelegate // TypeDefIndex: 2554
+{
+	// Methods
+
+	// RVA: 0x120A53C Offset: 0x120A53C VA: 0x120A53C
+	public void .ctor(object object, IntPtr method) { }
+
+	// RVA: 0x11F3A60 Offset: 0x11F3A60 VA: 0x11F3A60 Slot: 11
+	public virtual VfsSystem Invoke() { }
+
+	// RVA: 0x120A550 Offset: 0x120A550 VA: 0x120A550 Slot: 12
+	public virtual IAsyncResult BeginInvoke(AsyncCallback callback, object object) { }
+
+	// RVA: 0x120A57C Offset: 0x120A57C VA: 0x120A57C Slot: 13
+	public virtual VfsSystem EndInvoke(IAsyncResult result) { }
+}
+
+// ORIGINAL DUMP LINES 150779-150820; TypeDefIndex 2555
+// Namespace: DodGame
+public class AssetBundleFileMgr : BSingleton<AssetBundleFileMgr> // TypeDefIndex: 2555
+{
+	// Fields
+	private VfsSystem m_abVfs; // 0x8
+	private VfsCreateSystem m_customCreateSystem; // 0xC
+
+	// Methods
+
+	// RVA: 0x11F39F4 Offset: 0x11F39F4 VA: 0x11F39F4
+	public void RegCustomCreateVfs(VfsCreateSystem createHandler) { }
+
+	// RVA: 0x11F39FC Offset: 0x11F39FC VA: 0x11F39FC
+	public bool Init() { }
+
+	// RVA: 0x11F3A58 Offset: 0x11F3A58 VA: 0x11F3A58
+	public VfsSystem GetVfsSystem() { }
+
+	// RVA: 0x11F3A40 Offset: 0x11F3A40 VA: 0x11F3A40
+	private VfsSystem CreateVfs() { }
+
+	// RVA: 0x11F3C74 Offset: 0x11F3C74 VA: 0x11F3C74
+	public bool IsAbExist(string abMd5Path, ref string errInfo) { }
+
+	// RVA: 0x11F3D74 Offset: 0x11F3D74 VA: 0x11F3D74
+	public void ClearFileExistCache() { }
+
+	// RVA: 0x11F3D30 Offset: 0x11F3D30 VA: 0x11F3D30
+	public bool IsFileExist(string fileName) { }
+
+	// RVA: 0x11F406C Offset: 0x11F406C VA: 0x11F406C
+	public byte[] ReadNormalFile(string fileName, ref string errInfo) { }
+
+	// RVA: 0x11F37F8 Offset: 0x11F37F8 VA: 0x11F37F8
+	public string ReadTextFile(string fileName, ref string errInfo) { }
+
+	// RVA: 0x11F45A0 Offset: 0x11F45A0 VA: 0x11F45A0
+	public void Destroy() { }
+
+	// RVA: 0x11F4798 Offset: 0x11F4798 VA: 0x11F4798
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 150822-150833; TypeDefIndex 2556
+// Namespace: DodGame
+internal enum AsyncLoadNodeState // TypeDefIndex: 2556
+{
+	// Fields
+	public int value__; // 0x0
+	public const AsyncLoadNodeState StateInit = 0;
+	public const AsyncLoadNodeState StateAsyncLoad = 1;
+	public const AsyncLoadNodeState StateWaitConfirmRetry = 2;
+	public const AsyncLoadNodeState StateCancelRetry = 3;
+	public const AsyncLoadNodeState StateConfirmRetry = 4;
+	public const AsyncLoadNodeState StateDestroy = 5;
+}
+
+// ORIGINAL DUMP LINES 150835-150842; TypeDefIndex 2557
+// Namespace: DodGame
+public enum AssetBundleLoadFromType // TypeDefIndex: 2557
+{
+	// Fields
+	public int value__; // 0x0
+	public const AssetBundleLoadFromType FromResource = 0;
+	public const AssetBundleLoadFromType FromScene = 1;
+}
+
+// ORIGINAL DUMP LINES 150844-150881; TypeDefIndex 2558
+// Namespace: DodGame
+internal class AsyncLoadNode // TypeDefIndex: 2558
+{
+	// Fields
+	public AsyncLoadNode m_masterNode; // 0x8
+	public string m_abPath; // 0xC
+	public float m_startTime; // 0x10
+	public string m_debugFrom; // 0x14
+	public bool m_persist; // 0x18
+	private AssetBundleAsyncLoadRequest m_createRequest; // 0x1C
+	public AsyncLoadNodeState m_state; // 0x20
+	public string m_wwwUrl; // 0x24
+	public int m_retryCount; // 0x28
+
+	// Properties
+	public AssetBundleAsyncLoadRequest CreateRequest { get; }
+	public bool IsDestory { get; }
+
+	// Methods
+
+	// RVA: 0x11FB0FC Offset: 0x11FB0FC VA: 0x11FB0FC
+	public AssetBundleAsyncLoadRequest get_CreateRequest() { }
+
+	// RVA: 0x11FACC0 Offset: 0x11FACC0 VA: 0x11FACC0
+	public bool get_IsDestory() { }
+
+	// RVA: 0x11FC77C Offset: 0x11FC77C VA: 0x11FC77C
+	public void .ctor(string abPath) { }
+
+	// RVA: 0x11FC744 Offset: 0x11FC744 VA: 0x11FC744
+	public void .ctor(AsyncLoadNode masterNode) { }
+
+	// RVA: 0x11FB0B8 Offset: 0x11FB0B8 VA: 0x11FB0B8
+	public void SetCreateRequest(AssetBundleAsyncLoadRequest request) { }
+
+	// RVA: 0x11FC868 Offset: 0x11FC868 VA: 0x11FC868
+	public void Dispose() { }
+}
+
+// ORIGINAL DUMP LINES 150883-150892; TypeDefIndex 2559
+// Namespace: DodGame
+public enum AssetBundleFailOperStatus // TypeDefIndex: 2559
+{
+	// Fields
+	public int value__; // 0x0
+	public const AssetBundleFailOperStatus StatuInit = 0;
+	public const AssetBundleFailOperStatus StatuWaitConfirm = 1;
+	public const AssetBundleFailOperStatus StatusConfrimRetry = 2;
+	public const AssetBundleFailOperStatus StatusConfirmCancel = 3;
+}
+
+// ORIGINAL DUMP LINES 150894-150921; TypeDefIndex 2560
+// Namespace: DodGame
+public class AssetBunderLoaderFailOper // TypeDefIndex: 2560
+{
+	// Fields
+	private float m_statusTime; // 0x8
+	private AssetBundleFailOperStatus m_stauts; // 0xC
+
+	// Properties
+	public float StatusTime { get; }
+	public AssetBundleFailOperStatus Status { get; set; }
+
+	// Methods
+
+	// RVA: 0x11EEA94 Offset: 0x11EEA94 VA: 0x11EEA94
+	public float get_StatusTime() { }
+
+	// RVA: 0x11EEA9C Offset: 0x11EEA9C VA: 0x11EEA9C
+	public AssetBundleFailOperStatus get_Status() { }
+
+	// RVA: 0x11EEAA4 Offset: 0x11EEAA4 VA: 0x11EEAA4
+	internal void set_Status(AssetBundleFailOperStatus value) { }
+
+	// RVA: 0x11EEAD0 Offset: 0x11EEAD0 VA: 0x11EEAD0
+	public void .ctor() { }
+
+	// RVA: 0x11EEAF4 Offset: 0x11EEAF4 VA: 0x11EEAF4
+	public void ConfirmRetry(bool retry) { }
+}
+
+// ORIGINAL DUMP LINES 150923-151121; TypeDefIndex 2561
+// Namespace: DodGame
+public class AssetBundleLoader : BBehaviourSingleton<AssetBundleLoader> // TypeDefIndex: 2561
+{
+	// Fields
+	private bool m_bInited; // 0xC
+	private string m_lastErr; // 0x10
+	private Dictionary<string, Shader> m_abShaderMap; // 0x14
+	private bool m_allShaderMapWarmup; // 0x18
+	private Dictionary<string, string> m_md5Map; // 0x1C
+	private HashSet<string> m_syncReadAbMerge; // 0x20
+	private AssetBundleWWWLoader m_wwwLoader; // 0x24
+	private List<AsyncLoadResourceTask> m_listResourceLoadingQueue; // 0x28
+	private HashSet<string> m_resourceLoadingMap; // 0x2C
+	private Dictionary<string, AssetPreloadResWebGLItem> m_dictCurrPreloadResource; // 0x30
+	private Dictionary<string, AssetPreloadResWebGLItem> m_dictCurrPreloadScene; // 0x34
+	private List<AssetPreloadResWebGLItem> m_listTempToDel; // 0x38
+	private Dictionary<string, AsyncLoadNode> m_masterLoadingNode; // 0x3C
+
+	// Properties
+	public int ResourceMaxAsyncLoadNum { get; }
+	public string lastError { get; }
+	public bool haveError { get; }
+	public bool IsInited { get; }
+
+	// Methods
+
+	// RVA: 0x11F5380 Offset: 0x11F5380 VA: 0x11F5380
+	public int get_ResourceMaxAsyncLoadNum() { }
+
+	// RVA: 0x11F540C Offset: 0x11F540C VA: 0x11F540C
+	public string get_lastError() { }
+
+	// RVA: 0x11F5414 Offset: 0x11F5414 VA: 0x11F5414
+	public bool get_haveError() { }
+
+	// RVA: 0x11F54A0 Offset: 0x11F54A0 VA: 0x11F54A0
+	private void ResetErr() { }
+
+	// RVA: 0x11F54AC Offset: 0x11F54AC VA: 0x11F54AC
+	private void OnDestroy() { }
+
+	// RVA: 0x11F5534 Offset: 0x11F5534 VA: 0x11F5534
+	public bool IsHaveLoadingTask() { }
+
+	// RVA: 0x11F55BC Offset: 0x11F55BC VA: 0x11F55BC
+	public bool get_IsInited() { }
+
+	// RVA: 0x11F55C4 Offset: 0x11F55C4 VA: 0x11F55C4
+	public IEnumerator Init(bool traceMd5) { }
+
+	// RVA: 0x11F568C Offset: 0x11F568C VA: 0x11F568C
+	private Dictionary<string, AssetPreloadResWebGLItem> GetCurrPreloadDict(AssetBundleLoadFromType fromType) { }
+
+	// RVA: 0x11F56B8 Offset: 0x11F56B8 VA: 0x11F56B8
+	public IEnumerator PreloadStartupWebGLResList(Action<int, int> process, int maxPreloadCountOnce) { }
+
+	// RVA: 0x11F5798 Offset: 0x11F5798 VA: 0x11F5798
+	private List<AssetPreloadResWebGLItem> CollectAllAssetBundle(AssetBundleLoadStackItem stackItem, List<AssetPreloadResWebGLItem> listItem, List<AsyncLoadNode> loadingQueue) { }
+
+	// RVA: 0x11F612C Offset: 0x11F612C VA: 0x11F612C
+	private void SetAllLoadFailedNodeStatus(List<AsyncLoadNode> listNode, AsyncLoadNodeState state) { }
+
+	// RVA: 0x11F6204 Offset: 0x11F6204 VA: 0x11F6204
+	public IEnumerator PreloadWebGLResList(List<AssetPreloadResWebGLItem> listItem, int maxPreloadCountOnce, Action<int, int> progress, Action<AssetBunderLoaderFailOper, string> onLoadFailed) { }
+
+	// RVA: 0x11F5CFC Offset: 0x11F5CFC VA: 0x11F5CFC
+	private string GetPreloadAssetBundleName(AssetPreloadResWebGLItem configItem) { }
+
+	// RVA: 0x11F631C Offset: 0x11F631C VA: 0x11F631C
+	private AssetPreloadResWebGLItem FindPreloadingItem(AssetPreloadResWebGLItem configItem) { }
+
+	// RVA: 0x11F63FC Offset: 0x11F63FC VA: 0x11F63FC
+	private void AddLoadedPreloadResource(AssetPreloadResWebGLItem configItem) { }
+
+	// RVA: 0x11F69BC Offset: 0x11F69BC VA: 0x11F69BC
+	private void CheckClearLoadedPreload(AssetBundleLoadFromType fromType, string fromSource) { }
+
+	// RVA: 0x11F6C2C Offset: 0x11F6C2C VA: 0x11F6C2C
+	public void ClearWebGLPreload(string groupKey) { }
+
+	// RVA: 0x11F705C Offset: 0x11F705C VA: 0x11F705C
+	public bool IsCurrInPreload(string resPath) { }
+
+	// RVA: 0x11F70DC Offset: 0x11F70DC VA: 0x11F70DC
+	public int GetPreloadResourceCount() { }
+
+	// RVA: 0x11F7188 Offset: 0x11F7188 VA: 0x11F7188
+	public string GetAllPreloadDebugInfo(AssetBundleLoadFromType fromType) { }
+
+	// RVA: 0x11F71B4 Offset: 0x11F71B4 VA: 0x11F71B4
+	private string GetDictPreloadDebugInfo(Dictionary<string, AssetPreloadResWebGLItem> dict) { }
+
+	// RVA: 0x11F75FC Offset: 0x11F75FC VA: 0x11F75FC
+	public void WarmupAllShaders() { }
+
+	// RVA: 0x11F7C44 Offset: 0x11F7C44 VA: 0x11F7C44
+	public string GetResourceFileName(string resPath) { }
+
+	// RVA: 0x11F7CF0 Offset: 0x11F7CF0 VA: 0x11F7CF0
+	public bool IsResourceAbExist(string resPath) { }
+
+	// RVA: 0x11F7ECC Offset: 0x11F7ECC VA: 0x11F7ECC
+	public bool IsSceneAbExist(string sceneName) { }
+
+	// RVA: -1 Offset: -1
+	public T LoadResource<T>(string requestAsset, bool logNotFound = True) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x12BFEDC Offset: 0x12BFEDC VA: 0x12BFEDC
+	|-AssetBundleLoader.LoadResource<object>
+	*/
+
+	// RVA: 0x11F7F58 Offset: 0x11F7F58 VA: 0x11F7F58
+	private bool IsWebGLPreloaded(AssetBundleLoadFromType fromType, string fromSource) { }
+
+	// RVA: 0x11F7FFC Offset: 0x11F7FFC VA: 0x11F7FFC
+	public Object LoadResource(string requestAsset, Type type, bool logNotFound = True) { }
+
+	// RVA: 0x11F87B0 Offset: 0x11F87B0 VA: 0x11F87B0
+	public Object[] LoadAllResource(string requestAsset, Type type) { }
+
+	// RVA: 0x11F7AC4 Offset: 0x11F7AC4 VA: 0x11F7AC4
+	public AssetBundle GetAssetBundle(string assetMd5Path) { }
+
+	// RVA: 0x11F84AC Offset: 0x11F84AC VA: 0x11F84AC
+	public bool SyncLoadAllDependAsset(string assetMd5Path, AssetBundleLoadFromType fromType, string fromSource, bool persist = False) { }
+
+	// RVA: 0x11F8BAC Offset: 0x11F8BAC VA: 0x11F8BAC
+	private bool DoLoadAllDependsAsset(AssetBundleLoadStackItem stackItem, string assetMd5Path, HashSet<string> mapMerge, bool persist, string debugFrom) { }
+
+	// RVA: 0x11F9A84 Offset: 0x11F9A84 VA: 0x11F9A84
+	private void NotifyConfirmRetry(string path, AssetBunderLoaderFailOper onFailOper, Action<AssetBunderLoaderFailOper, string> onLoadFailed) { }
+
+	// RVA: 0x11F9B38 Offset: 0x11F9B38 VA: 0x11F9B38
+	private int CheckLoadNode(AssetBundleLoadStackItem stackItem, AsyncLoadNode loadNode, HashSet<string> newAddAbSet, AssetBunderLoaderFailOper onFailOper, Action<AssetBunderLoaderFailOper, string> onLoadFailed) { }
+
+	// RVA: 0x11F5DDC Offset: 0x11F5DDC VA: 0x11F5DDC
+	public List<string> GetAbAllDependList(string assetMd5Path) { }
+
+	// RVA: 0x11FB104 Offset: 0x11FB104 VA: 0x11FB104
+	public bool IsAllDependAbLoaded(string assetMd5Path) { }
+
+	// RVA: 0x11F7E38 Offset: 0x11F7E38 VA: 0x11F7E38
+	public bool IsAssetBundleExist(string assetMd5Path) { }
+
+	// RVA: 0x11FB290 Offset: 0x11FB290 VA: 0x11FB290
+	protected AssetBundle FastCreateAssetBundle(string assetMd5Path) { }
+
+	// RVA: 0x11F9238 Offset: 0x11F9238 VA: 0x11F9238
+	protected AssetBundle CreateAssetBundle(string assetMd5Path) { }
+
+	// RVA: 0x11FB798 Offset: 0x11FB798 VA: 0x11FB798
+	public bool IsCanFastCreateAb(string abMd5Path) { }
+
+	// RVA: 0x11FB7AC Offset: 0x11FB7AC VA: 0x11FB7AC
+	private bool IsCompressTypeAb(string abMd5Path) { }
+
+	// RVA: 0x11FAF8C Offset: 0x11FAF8C VA: 0x11FAF8C
+	public string MapMd5Name(string md5) { }
+
+	// RVA: 0x11FB864 Offset: 0x11FB864 VA: 0x11FB864
+	private bool LoadMd5Map() { }
+
+	// RVA: 0x11FBFD0 Offset: 0x11FBFD0 VA: 0x11FBFD0
+	public Shader FindShader(string shaderName) { }
+
+	// RVA: 0x11FC23C Offset: 0x11FC23C VA: 0x11FC23C
+	public Coroutine StartLoadAssetBundleAsync(string abPath, Action<float> progress, Action<string, AssetBundle> loadedAction, string debugFrom, bool loadAsFast = False) { }
+
+	// RVA: 0x11FC3B0 Offset: 0x11FC3B0 VA: 0x11FC3B0
+	public Coroutine StartLoadResourceAsync(string resPath, Type type, Action<float> progress, Action<Object> loadedAction, BAsyncOper oper) { }
+
+	// RVA: 0x11FC4FC Offset: 0x11FC4FC VA: 0x11FC4FC
+	private void RemoveResourceLoadingList(string resPath) { }
+
+	// RVA: 0x11FC630 Offset: 0x11FC630 VA: 0x11FC630
+	private void AddResourceLoadingList(string resPath) { }
+
+	// RVA: 0x11FC3EC Offset: 0x11FC3EC VA: 0x11FC3EC
+	private IEnumerator LoadResoruceAsync(string resPath, Type type, Action<float> progress, Action<Object> loadedAction, BAsyncOper oper) { }
+
+	// RVA: 0x11F6004 Offset: 0x11F6004 VA: 0x11F6004
+	private AsyncLoadNode AllocLoadingNode(string abPath, string debugFrom) { }
+
+	// RVA: 0x11FC79C Offset: 0x11FC79C VA: 0x11FC79C
+	private void FreeLoadingNode(AsyncLoadNode node) { }
+
+	// RVA: 0x11FC284 Offset: 0x11FC284 VA: 0x11FC284
+	private IEnumerator LoadAssetBundleAsync(string abPath, Action<float> progress, Action<string, AssetBundle> loadedAction, float intervalDur, string debugFrom, bool loadAsFast = False) { }
+
+	// RVA: 0x11FC8C4 Offset: 0x11FC8C4 VA: 0x11FC8C4
+	private void CheckLoadingQueue(AssetBundleLoadStackItem stackItem, List<AsyncLoadNode> loadingQueue, float maxInterval, HashSet<string> newAddAbSet, bool loadAsFast, int maxCheckLoadingCount = 0, AssetBunderLoaderFailOper onFailOper, Action<AssetBunderLoaderFailOper, string> onLoadFailed) { }
+
+	// RVA: 0x11FCBBC Offset: 0x11FCBBC VA: 0x11FCBBC
+	public int GetAsyncLoadingResourceCount() { }
+
+	// RVA: 0x11FCC34 Offset: 0x11FCC34 VA: 0x11FCC34
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 151123-151134; TypeDefIndex 2562
+// Namespace: 
+private class AssetBundleLoader.AsyncPreloadResourceNode // TypeDefIndex: 2562
+{
+	// Fields
+	public AssetPreloadResWebGLItem m_item; // 0x8
+	public AssetBundleRequest m_request; // 0xC
+
+	// Methods
+
+	// RVA: 0x120004C Offset: 0x120004C VA: 0x120004C
+	public void .ctor(AssetPreloadResWebGLItem item, AssetBundleRequest request) { }
+}
+
+// ORIGINAL DUMP LINES 151136-151150; TypeDefIndex 2563
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0x462188 Offset: 0x462188 VA: 0x462188
+private sealed class AssetBundleLoader.<>c__DisplayClass64_0 // TypeDefIndex: 2563
+{
+	// Fields
+	public string resPath; // 0x8
+
+	// Methods
+
+	// RVA: 0x11FC628 Offset: 0x11FC628 VA: 0x11FC628
+	public void .ctor() { }
+
+	// RVA: 0x11FCE60 Offset: 0x11FCE60 VA: 0x11FCE60
+	internal bool <RemoveResourceLoadingList>b__0(AsyncLoadResourceTask item) { }
+}
+
+// ORIGINAL DUMP LINES 151152-151168; TypeDefIndex 2564
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0x462198 Offset: 0x462198 VA: 0x462198
+private sealed class AssetBundleLoader.<>c__DisplayClass66_0 // TypeDefIndex: 2564
+{
+	// Fields
+	public AssetBundlePool abPoolMgr; // 0x8
+	public string abPath; // 0xC
+	public string addedRefAbPath; // 0x10
+
+	// Methods
+
+	// RVA: 0x11FCEAC Offset: 0x11FCEAC VA: 0x11FCEAC
+	public void .ctor() { }
+
+	// RVA: 0x11FCEB4 Offset: 0x11FCEB4 VA: 0x11FCEB4
+	internal void <LoadResoruceAsync>b__0(string loadedAbPath, AssetBundle loadedAb) { }
+}
+
+// ORIGINAL DUMP LINES 151170-151210; TypeDefIndex 2565
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0x4621A8 Offset: 0x4621A8 VA: 0x4621A8
+private sealed class AssetBundleLoader.<Init>d__20 : IEnumerator<object>, IDisposable, IEnumerator // TypeDefIndex: 2565
+{
+	// Fields
+	private int <>1__state; // 0x8
+	private object <>2__current; // 0xC
+	public AssetBundleLoader <>4__this; // 0x10
+	public bool traceMd5; // 0x14
+	private AssetBundleFileMgr <abFileMgr>5__2; // 0x18
+	private AssetBundleDepend <abDepend>5__3; // 0x1C
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHiddenAttribute] // RVA: 0x4622F8 Offset: 0x4622F8 VA: 0x4622F8
+	// RVA: 0x11F566C Offset: 0x11F566C VA: 0x11F566C
+	public void .ctor(int <>1__state) { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x462308 Offset: 0x462308 VA: 0x462308
+	// RVA: 0x11FCF88 Offset: 0x11FCF88 VA: 0x11FCF88 Slot: 8
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x11FCF8C Offset: 0x11FCF8C VA: 0x11FCF8C Slot: 6
+	private bool MoveNext() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x462318 Offset: 0x462318 VA: 0x462318
+	// RVA: 0x11FD40C Offset: 0x11FD40C VA: 0x11FD40C Slot: 4
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x462328 Offset: 0x462328 VA: 0x462328
+	// RVA: 0x11FD414 Offset: 0x11FD414 VA: 0x11FD414 Slot: 7
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x462338 Offset: 0x462338 VA: 0x462338
+	// RVA: 0x11FD49C Offset: 0x11FD49C VA: 0x11FD49C Slot: 5
+	private object System.Collections.IEnumerator.get_Current() { }
+}
+
+// ORIGINAL DUMP LINES 151212-151260; TypeDefIndex 2566
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0x4621B8 Offset: 0x4621B8 VA: 0x4621B8
+private sealed class AssetBundleLoader.<LoadAssetBundleAsync>d__70 : IEnumerator<object>, IDisposable, IEnumerator // TypeDefIndex: 2566
+{
+	// Fields
+	private int <>1__state; // 0x8
+	private object <>2__current; // 0xC
+	public AssetBundleLoader <>4__this; // 0x10
+	public string abPath; // 0x14
+	public string debugFrom; // 0x18
+	public float intervalDur; // 0x1C
+	public bool loadAsFast; // 0x20
+	public Action<float> progress; // 0x24
+	public Action<string, AssetBundle> loadedAction; // 0x28
+	private AssetBundlePool <abPool>5__2; // 0x2C
+	private AssetBundleLoadStackItem <stackItem>5__3; // 0x30
+	private HashSet<string> <newAddAbSet>5__4; // 0x34
+	private List<AsyncLoadNode> <loadingQueue>5__5; // 0x38
+	private int <totalCount>5__6; // 0x3C
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHiddenAttribute] // RVA: 0x462348 Offset: 0x462348 VA: 0x462348
+	// RVA: 0x11FC8A4 Offset: 0x11FC8A4 VA: 0x11FC8A4
+	public void .ctor(int <>1__state) { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x462358 Offset: 0x462358 VA: 0x462358
+	// RVA: 0x11FD4A4 Offset: 0x11FD4A4 VA: 0x11FD4A4 Slot: 8
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x11FD4A8 Offset: 0x11FD4A8 VA: 0x11FD4A8 Slot: 6
+	private bool MoveNext() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x462368 Offset: 0x462368 VA: 0x462368
+	// RVA: 0x11FDA94 Offset: 0x11FDA94 VA: 0x11FDA94 Slot: 4
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x462378 Offset: 0x462378 VA: 0x462378
+	// RVA: 0x11FDA9C Offset: 0x11FDA9C VA: 0x11FDA9C Slot: 7
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x462388 Offset: 0x462388 VA: 0x462388
+	// RVA: 0x11FDB24 Offset: 0x11FDB24 VA: 0x11FDB24 Slot: 5
+	private object System.Collections.IEnumerator.get_Current() { }
+}
+
+// ORIGINAL DUMP LINES 151262-151312; TypeDefIndex 2567
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0x4621C8 Offset: 0x4621C8 VA: 0x4621C8
+private sealed class AssetBundleLoader.<LoadResoruceAsync>d__66 : IEnumerator<object>, IDisposable, IEnumerator // TypeDefIndex: 2567
+{
+	// Fields
+	private int <>1__state; // 0x8
+	private object <>2__current; // 0xC
+	public string resPath; // 0x10
+	public Action<Object> loadedAction; // 0x14
+	public BAsyncOper oper; // 0x18
+	public AssetBundleLoader <>4__this; // 0x1C
+	private AssetBundleLoader.<>c__DisplayClass66_0 <>8__1; // 0x20
+	public Action<float> progress; // 0x24
+	public Type type; // 0x28
+	private uint <operId>5__2; // 0x2C
+	private XResCacheMgr <resCacheMgr>5__3; // 0x30
+	private Object <resObj>5__4; // 0x34
+	private BTickWatcher <tickWatcher>5__5; // 0x38
+	private int <beforeAbCount>5__6; // 0x3C
+	private AssetBundle <ab>5__7; // 0x40
+	private AssetBundleRequest <request>5__8; // 0x44
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHiddenAttribute] // RVA: 0x462398 Offset: 0x462398 VA: 0x462398
+	// RVA: 0x11FC724 Offset: 0x11FC724 VA: 0x11FC724
+	public void .ctor(int <>1__state) { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x4623A8 Offset: 0x4623A8 VA: 0x4623A8
+	// RVA: 0x11FDB2C Offset: 0x11FDB2C VA: 0x11FDB2C Slot: 8
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x11FDB30 Offset: 0x11FDB30 VA: 0x11FDB30 Slot: 6
+	private bool MoveNext() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x4623B8 Offset: 0x4623B8 VA: 0x4623B8
+	// RVA: 0x11FF0A4 Offset: 0x11FF0A4 VA: 0x11FF0A4 Slot: 4
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x4623C8 Offset: 0x4623C8 VA: 0x4623C8
+	// RVA: 0x11FF0AC Offset: 0x11FF0AC VA: 0x11FF0AC Slot: 7
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x4623D8 Offset: 0x4623D8 VA: 0x4623D8
+	// RVA: 0x11FF134 Offset: 0x11FF134 VA: 0x11FF134 Slot: 5
+	private object System.Collections.IEnumerator.get_Current() { }
+}
+
+// ORIGINAL DUMP LINES 151314-151353; TypeDefIndex 2568
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0x4621D8 Offset: 0x4621D8 VA: 0x4621D8
+private sealed class AssetBundleLoader.<PreloadStartupWebGLResList>d__24 : IEnumerator<object>, IDisposable, IEnumerator // TypeDefIndex: 2568
+{
+	// Fields
+	private int <>1__state; // 0x8
+	private object <>2__current; // 0xC
+	public AssetBundleLoader <>4__this; // 0x10
+	public int maxPreloadCountOnce; // 0x14
+	public Action<int, int> process; // 0x18
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHiddenAttribute] // RVA: 0x4623E8 Offset: 0x4623E8 VA: 0x4623E8
+	// RVA: 0x11F5778 Offset: 0x11F5778 VA: 0x11F5778
+	public void .ctor(int <>1__state) { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x4623F8 Offset: 0x4623F8 VA: 0x4623F8
+	// RVA: 0x11FF13C Offset: 0x11FF13C VA: 0x11FF13C Slot: 8
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x11FF140 Offset: 0x11FF140 VA: 0x11FF140 Slot: 6
+	private bool MoveNext() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x462408 Offset: 0x462408 VA: 0x462408
+	// RVA: 0x11FF270 Offset: 0x11FF270 VA: 0x11FF270 Slot: 4
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x462418 Offset: 0x462418 VA: 0x462418
+	// RVA: 0x11FF278 Offset: 0x11FF278 VA: 0x11FF278 Slot: 7
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x462428 Offset: 0x462428 VA: 0x462428
+	// RVA: 0x11FF300 Offset: 0x11FF300 VA: 0x11FF300 Slot: 5
+	private object System.Collections.IEnumerator.get_Current() { }
+}
+
+// ORIGINAL DUMP LINES 151355-151405; TypeDefIndex 2569
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0x4621E8 Offset: 0x4621E8 VA: 0x4621E8
+private sealed class AssetBundleLoader.<PreloadWebGLResList>d__28 : IEnumerator<object>, IDisposable, IEnumerator // TypeDefIndex: 2569
+{
+	// Fields
+	private int <>1__state; // 0x8
+	private object <>2__current; // 0xC
+	public AssetBundleLoader <>4__this; // 0x10
+	public List<AssetPreloadResWebGLItem> listItem; // 0x14
+	public Action<AssetBunderLoaderFailOper, string> onLoadFailed; // 0x18
+	public int maxPreloadCountOnce; // 0x1C
+	public Action<int, int> progress; // 0x20
+	private AssetBundlePool <abPool>5__2; // 0x24
+	private AssetBundleLoadStackItem <stackItem>5__3; // 0x28
+	private HashSet<string> <newAddAbSet>5__4; // 0x2C
+	private List<AsyncLoadNode> <loadingQueue>5__5; // 0x30
+	private List<AssetPreloadResWebGLItem> <listLoading>5__6; // 0x34
+	private AssetBunderLoaderFailOper <onFailOper>5__7; // 0x38
+	private int <totalCount>5__8; // 0x3C
+	private List<AssetBundleLoader.AsyncPreloadResourceNode> <listLoadResNode>5__9; // 0x40
+	private XResCacheMgr <resCahce>5__10; // 0x44
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHiddenAttribute] // RVA: 0x462438 Offset: 0x462438 VA: 0x462438
+	// RVA: 0x11F62FC Offset: 0x11F62FC VA: 0x11F62FC
+	public void .ctor(int <>1__state) { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x462448 Offset: 0x462448 VA: 0x462448
+	// RVA: 0x11FF308 Offset: 0x11FF308 VA: 0x11FF308 Slot: 8
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x11FF30C Offset: 0x11FF30C VA: 0x11FF30C Slot: 6
+	private bool MoveNext() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x462458 Offset: 0x462458 VA: 0x462458
+	// RVA: 0x1200510 Offset: 0x1200510 VA: 0x1200510 Slot: 4
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x462468 Offset: 0x462468 VA: 0x462468
+	// RVA: 0x1200518 Offset: 0x1200518 VA: 0x1200518 Slot: 7
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x462478 Offset: 0x462478 VA: 0x462478
+	// RVA: 0x12005A0 Offset: 0x12005A0 VA: 0x12005A0 Slot: 5
+	private object System.Collections.IEnumerator.get_Current() { }
+}
+
+// ORIGINAL DUMP LINES 151407-151420; TypeDefIndex 2570
+// Namespace: DodGame
+public class AssetBundlePoolConfig // TypeDefIndex: 2570
+{
+	// Fields
+	public static float AutoCheckFreeAssetBundleInterval; // 0x0
+	public static float AutoFreeAssetBundleExpireTime; // 0x4
+	public static int AutoFreeMaxFreeAssetOnce; // 0x8
+	public static float AutoFreeMaxDurOnce; // 0xC
+
+	// Methods
+
+	// RVA: 0x1204168 Offset: 0x1204168 VA: 0x1204168
+	private static void .cctor() { }
+}
+
+// ORIGINAL DUMP LINES 151422-151438; TypeDefIndex 2571
+// Namespace: DodGame
+public class AssetBundlePoolStat // TypeDefIndex: 2571
+{
+	// Fields
+	public int assetBundleCount; // 0x8
+	public int noClearnAssetBundleCout; // 0xC
+	public int shareAssetBundleCount; // 0x10
+	public int abLoadingStackCount; // 0x14
+	public int abUnusedCount; // 0x18
+	public int prefabCacheCount; // 0x1C
+	public int loadingResourceCount; // 0x20
+
+	// Methods
+
+	// RVA: 0x1203558 Offset: 0x1203558 VA: 0x1203558
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 151440-151481; TypeDefIndex 2572
+// Namespace: DodGame
+public class AssetBundleInfo // TypeDefIndex: 2572
+{
+	// Fields
+	public string m_assetMd5Path; // 0x8
+	public AssetBundle m_assetBundle; // 0xC
+	public bool m_persist; // 0x10
+	public bool m_unloadHot; // 0x11
+	public List<AssetBundleInfo> m_listAddRefer; // 0x14
+	public float m_refreshTime; // 0x18
+	public bool m_persitAndLoadAllDep; // 0x1C
+	public List<AbResDepAssetData> m_needPreloadAsset; // 0x20
+	public string m_debugFrom; // 0x24
+	public List<string> m_referedBy; // 0x28
+	protected int m_refCnt; // 0x2C
+
+	// Properties
+	public int RefCnt { get; }
+
+	// Methods
+
+	// RVA: 0x11F47FC Offset: 0x11F47FC VA: 0x11F47FC
+	public int get_RefCnt() { }
+
+	// RVA: 0x11F4804 Offset: 0x11F4804 VA: 0x11F4804
+	public void AddRef(string fromSource) { }
+
+	// RVA: 0x11F4A88 Offset: 0x11F4A88 VA: 0x11F4A88
+	public void DecRef(string fromSource) { }
+
+	// RVA: 0x11F4ED8 Offset: 0x11F4ED8 VA: 0x11F4ED8
+	public void Refresh() { }
+
+	// RVA: 0x11F4EF4 Offset: 0x11F4EF4 VA: 0x11F4EF4
+	public bool CheckExpire(float expireTime) { }
+
+	// RVA: 0x11F4F34 Offset: 0x11F4F34 VA: 0x11F4F34
+	public void PushPreloadTask(AbResDepAssetData assetData) { }
+
+	// RVA: 0x11F5034 Offset: 0x11F5034 VA: 0x11F5034
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 151483-151500; TypeDefIndex 2573
+// Namespace: DodGame
+internal class AssetBundleLoadStackItem // TypeDefIndex: 2573
+{
+	// Fields
+	public List<string> m_listAbPath; // 0x8
+	private HashSet<string> m_listMerge; // 0xC
+
+	// Methods
+
+	// RVA: 0x11F5128 Offset: 0x11F5128 VA: 0x11F5128
+	public bool PushAssetBundle(string mabMd5Path) { }
+
+	// RVA: 0x11F521C Offset: 0x11F521C VA: 0x11F521C
+	public void Reset() { }
+
+	// RVA: 0x11F52C0 Offset: 0x11F52C0 VA: 0x11F52C0
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 151502-151634; TypeDefIndex 2574
+// Namespace: DodGame
+public class AssetBundlePool : BBehaviourSingleton<AssetBundlePool> // TypeDefIndex: 2574
+{
+	// Fields
+	public Dictionary<string, AssetBundleInfo> m_allAssetBundle; // 0xC
+	public HashSet<string> m_persitAssetBundle; // 0x10
+	private List<string> m_neverExpireAssetBundleList; // 0x14
+	private AssetBundlePoolStat m_stat; // 0x18
+	private List<string> m_mapNeedPersistPath; // 0x1C
+	private List<AssetBundleLoadStackItem> m_listAllocStack; // 0x20
+	private HashSet<string> m_unusedRefAbSet; // 0x24
+	private List<AssetBundleInfo> m_unloadTempList; // 0x28
+	private uint m_currUnloadSeq; // 0x2C
+	private float m_startAutoExpireTime; // 0x30
+	private List<string> m_waitUnloadAbList; // 0x34
+	private int m_unloadWaitLastFrame; // 0x38
+
+	// Methods
+
+	// RVA: 0x12005A8 Offset: 0x12005A8 VA: 0x12005A8
+	public void RegPersistAssetBundlePath(List<string> persistMd5HashList) { }
+
+	// RVA: 0x1200964 Offset: 0x1200964 VA: 0x1200964
+	public bool IsNeedPersistAb(string abMd5HashPath) { }
+
+	// RVA: 0x1200B20 Offset: 0x1200B20 VA: 0x1200B20
+	public void Start() { }
+
+	// RVA: 0x11F5E5C Offset: 0x11F5E5C VA: 0x11F5E5C
+	public AssetBundle TryGetAssetBundle(string assetMd5Path) { }
+
+	// RVA: 0x1200BD0 Offset: 0x1200BD0 VA: 0x1200BD0
+	public void PushAssetBundlePreloadTask(AbResDepAssetData task) { }
+
+	// RVA: 0x11F99B8 Offset: 0x11F99B8 VA: 0x11F99B8
+	public void MarkAssetBundleDependLoad(string assetMd5Path) { }
+
+	// RVA: 0x11F98F8 Offset: 0x11F98F8 VA: 0x11F98F8
+	public bool IsAssetBundleDependLoad(string assetMd5Path) { }
+
+	// RVA: 0x11F94BC Offset: 0x11F94BC VA: 0x11F94BC
+	internal void BindAssetsToPool(AssetBundleLoadStackItem stackItem, string assetMd5Path, AssetBundle ab, bool persist = False, string debugFrom) { }
+
+	// RVA: 0x11FEF78 Offset: 0x11FEF78 VA: 0x11FEF78
+	public int GetAllAssetBundleCount() { }
+
+	// RVA: 0x1200CA0 Offset: 0x1200CA0 VA: 0x1200CA0
+	public AssetBundlePoolStat GetStat() { }
+
+	// RVA: 0x1200F54 Offset: 0x1200F54 VA: 0x1200F54
+	private bool IsUnusedAb(AssetBundleInfo abInfo) { }
+
+	// RVA: 0x1200F94 Offset: 0x1200F94 VA: 0x1200F94
+	public void UnloadAllUnused(bool needClearNeverExpireAb) { }
+
+	// RVA: 0x12018C4 Offset: 0x12018C4 VA: 0x12018C4
+	public void ForceUnloadAll() { }
+
+	// RVA: 0x1201BA4 Offset: 0x1201BA4 VA: 0x1201BA4
+	public void ForceUnloadBinAssetBundle(string abPath) { }
+
+	// RVA: 0x1201C4C Offset: 0x1201C4C VA: 0x1201C4C
+	public void UnloadBinAssetBundle(string abPath) { }
+
+	// RVA: 0x1201D24 Offset: 0x1201D24 VA: 0x1201D24
+	private void RealUnloadBinAssetBundle(string abPath) { }
+
+	// RVA: 0x1201DF8 Offset: 0x1201DF8 VA: 0x1201DF8
+	private void LoadAllForUnload(AssetBundleInfo abInfo) { }
+
+	// RVA: 0x1201F38 Offset: 0x1201F38 VA: 0x1201F38
+	private void DecAllDependRef(AssetBundleInfo abInfo) { }
+
+	// RVA: 0x1201660 Offset: 0x1201660 VA: 0x1201660
+	private void FreeAssetBundle(AssetBundleInfo abInfo) { }
+
+	// RVA: 0x11F5F34 Offset: 0x11F5F34 VA: 0x11F5F34
+	internal void BindAbToStack(AssetBundleLoadStackItem stackItem, string abPath) { }
+
+	// RVA: 0x11F6800 Offset: 0x11F6800 VA: 0x11F6800
+	public bool AddRef(string abPath, string fromSource) { }
+
+	// RVA: 0x1202114 Offset: 0x1202114 VA: 0x1202114
+	private void AddRef(AssetBundleInfo abInfo, string fromSource) { }
+
+	// RVA: 0x11F6B7C Offset: 0x11F6B7C VA: 0x11F6B7C
+	public void DecRef(string abPath, string fromSource) { }
+
+	// RVA: 0x120203C Offset: 0x120203C VA: 0x120203C
+	private void DecRef(AssetBundleInfo abInfo, string fromSource) { }
+
+	// RVA: 0x12021D4 Offset: 0x12021D4 VA: 0x12021D4
+	private AssetBundleLoadStackItem AllocAbStackItem() { }
+
+	// RVA: 0x120223C Offset: 0x120223C VA: 0x120223C
+	private void FreeAbStackItem(AssetBundleLoadStackItem item) { }
+
+	// RVA: 0x11F8B24 Offset: 0x11F8B24 VA: 0x11F8B24
+	internal AssetBundleLoadStackItem PushAbStack() { }
+
+	// RVA: 0x11F8F24 Offset: 0x11F8F24 VA: 0x11F8F24
+	internal void PopAbStatck(AssetBundleLoadStackItem stackItem) { }
+
+	// RVA: 0x12024A8 Offset: 0x12024A8 VA: 0x12024A8
+	public void MarkAssetBundleUnloadHot(string abMd5Path) { }
+
+	// RVA: 0x1202264 Offset: 0x1202264 VA: 0x1202264
+	private void RefToAllDependAb(AssetBundleInfo abInfo) { }
+
+	// RVA: 0x1202560 Offset: 0x1202560 VA: 0x1202560
+	public void StartAutoExpire() { }
+
+	// RVA: 0x120257C Offset: 0x120257C VA: 0x120257C
+	public void StopAutoExpire() { }
+
+	// RVA: 0x1202588 Offset: 0x1202588 VA: 0x1202588
+	public List<string> GetAllPersistAssetBundle() { }
+
+	// RVA: 0x12026DC Offset: 0x12026DC VA: 0x12026DC
+	public List<string> GetAllNoExpireCacheAssetBundle() { }
+
+	// RVA: 0x1202804 Offset: 0x1202804 VA: 0x1202804
+	public string GetAllAssetBundleDebugInfo() { }
+
+	// RVA: 0x12031E4 Offset: 0x12031E4 VA: 0x12031E4
+	private void BatFreeWaitUnloadAb() { }
+
+	// RVA: 0x1200B44 Offset: 0x1200B44 VA: 0x1200B44
+	private IEnumerator CortCheckExpireAb() { }
+
+	// RVA: 0x1203384 Offset: 0x1203384 VA: 0x1203384
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 151636-151673; TypeDefIndex 2575
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0x4621F8 Offset: 0x4621F8 VA: 0x4621F8
+private sealed class AssetBundlePool.<CortCheckExpireAb>d__48 : IEnumerator<object>, IDisposable, IEnumerator // TypeDefIndex: 2575
+{
+	// Fields
+	private int <>1__state; // 0x8
+	private object <>2__current; // 0xC
+	public AssetBundlePool <>4__this; // 0x10
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHiddenAttribute] // RVA: 0x462488 Offset: 0x462488 VA: 0x462488
+	// RVA: 0x1203364 Offset: 0x1203364 VA: 0x1203364
+	public void .ctor(int <>1__state) { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x462498 Offset: 0x462498 VA: 0x462498
+	// RVA: 0x1203560 Offset: 0x1203560 VA: 0x1203560 Slot: 8
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x1203564 Offset: 0x1203564 VA: 0x1203564 Slot: 6
+	private bool MoveNext() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x4624A8 Offset: 0x4624A8 VA: 0x4624A8
+	// RVA: 0x12040D0 Offset: 0x12040D0 VA: 0x12040D0 Slot: 4
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x4624B8 Offset: 0x4624B8 VA: 0x4624B8
+	// RVA: 0x12040D8 Offset: 0x12040D8 VA: 0x12040D8 Slot: 7
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x4624C8 Offset: 0x4624C8 VA: 0x4624C8
+	// RVA: 0x1204160 Offset: 0x1204160 VA: 0x1204160 Slot: 5
+	private object System.Collections.IEnumerator.get_Current() { }
+}
+
+// ORIGINAL DUMP LINES 151675-151699; TypeDefIndex 2576
+// Namespace: DodGame
+internal abstract class AssetBundleAsyncLoadRequest // TypeDefIndex: 2576
+{
+	// Properties
+	public abstract bool isDone { get; }
+	public abstract string error { get; }
+	public abstract AssetBundle assetBundle { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract bool get_isDone();
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract string get_error();
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract AssetBundle get_assetBundle();
+
+	// RVA: -1 Offset: -1 Slot: 7
+	public abstract void Dispose();
+
+	// RVA: 0x11EEB4C Offset: 0x11EEB4C VA: 0x11EEB4C
+	protected void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 151701-151728; TypeDefIndex 2577
+// Namespace: DodGame
+internal class AssetBundleAsyncLoadFsRequest : AssetBundleAsyncLoadRequest // TypeDefIndex: 2577
+{
+	// Fields
+	private AssetBundleCreateRequest m_requst; // 0x8
+
+	// Properties
+	public override bool isDone { get; }
+	public override string error { get; }
+	public override AssetBundle assetBundle { get; }
+
+	// Methods
+
+	// RVA: 0x11EEB2C Offset: 0x11EEB2C VA: 0x11EEB2C
+	public void .ctor(AssetBundleCreateRequest request) { }
+
+	// RVA: 0x11EEB54 Offset: 0x11EEB54 VA: 0x11EEB54 Slot: 4
+	public override bool get_isDone() { }
+
+	// RVA: 0x11EEB80 Offset: 0x11EEB80 VA: 0x11EEB80 Slot: 5
+	public override string get_error() { }
+
+	// RVA: 0x11EEC88 Offset: 0x11EEC88 VA: 0x11EEC88 Slot: 6
+	public override AssetBundle get_assetBundle() { }
+
+	// RVA: 0x11EECB4 Offset: 0x11EECB4 VA: 0x11EECB4 Slot: 7
+	public override void Dispose() { }
+}
+
+// ORIGINAL DUMP LINES 151730-151758; TypeDefIndex 2578
+// Namespace: DodGame
+internal class AssetBundleAsyncLoadWebGLRequest : AssetBundleAsyncLoadRequest // TypeDefIndex: 2578
+{
+	// Fields
+	private string m_url; // 0x8
+	private UnityWebRequest m_requst; // 0xC
+
+	// Properties
+	public override bool isDone { get; }
+	public override AssetBundle assetBundle { get; }
+	public override string error { get; }
+
+	// Methods
+
+	// RVA: 0x11EECB8 Offset: 0x11EECB8 VA: 0x11EECB8
+	public void .ctor(string url, UnityWebRequest request) { }
+
+	// RVA: 0x11EECE0 Offset: 0x11EECE0 VA: 0x11EECE0 Slot: 4
+	public override bool get_isDone() { }
+
+	// RVA: 0x11EED0C Offset: 0x11EED0C VA: 0x11EED0C Slot: 6
+	public override AssetBundle get_assetBundle() { }
+
+	// RVA: 0x11EED80 Offset: 0x11EED80 VA: 0x11EED80 Slot: 5
+	public override string get_error() { }
+
+	// RVA: 0x11EEDAC Offset: 0x11EEDAC VA: 0x11EEDAC Slot: 7
+	public override void Dispose() { }
+}
+
+// ORIGINAL DUMP LINES 151760-151782; TypeDefIndex 2579
+// Namespace: DodGame
+internal class AssetBundleWWWLoader // TypeDefIndex: 2579
+{
+	// Fields
+	private VfsSystem m_vfsSystem; // 0x8
+
+	// Methods
+
+	// RVA: 0x11FD390 Offset: 0x11FD390 VA: 0x11FD390
+	public void Init() { }
+
+	// RVA: 0x11FACD4 Offset: 0x11FACD4 VA: 0x11FACD4
+	internal AssetBundleAsyncLoadRequest StartAsyncLoad(string abPath, out string wwwUrl) { }
+
+	// RVA: 0x11FB2C0 Offset: 0x11FB2C0 VA: 0x11FB2C0
+	public AssetBundle StartSyncLoad(string abPath) { }
+
+	// RVA: 0x1206CD0 Offset: 0x1206CD0 VA: 0x1206CD0
+	private AssetBundle LoadEncAssetBudnle(string fileName) { }
+
+	// RVA: 0x11FCE58 Offset: 0x11FCE58 VA: 0x11FCE58
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 151784-151813; TypeDefIndex 2580
+// Namespace: DodGame
+public class SceneAssetLoader : BSingleton<SceneAssetLoader> // TypeDefIndex: 2580
+{
+	// Fields
+	private string m_errInfo; // 0x8
+
+	// Properties
+	public string lastError { get; }
+	public bool haveError { get; }
+
+	// Methods
+
+	// RVA: 0x12095AC Offset: 0x12095AC VA: 0x12095AC
+	public string get_lastError() { }
+
+	// RVA: 0x12095B4 Offset: 0x12095B4 VA: 0x12095B4
+	public bool get_haveError() { }
+
+	// RVA: 0x1209640 Offset: 0x1209640 VA: 0x1209640
+	private void ResetErr() { }
+
+	// RVA: 0x120964C Offset: 0x120964C VA: 0x120964C
+	public bool LoadSceneAssetBundle(string sceneName, bool persist = False) { }
+
+	// RVA: 0x1209A68 Offset: 0x1209A68 VA: 0x1209A68
+	public IEnumerator LoadSceneAssetBundleAsync(string sceneName, Action<float> progress) { }
+
+	// RVA: 0x1209B48 Offset: 0x1209B48 VA: 0x1209B48
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 151815-151854; TypeDefIndex 2581
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0x462208 Offset: 0x462208 VA: 0x462208
+private sealed class SceneAssetLoader.<LoadSceneAssetBundleAsync>d__7 : IEnumerator<object>, IDisposable, IEnumerator // TypeDefIndex: 2581
+{
+	// Fields
+	private int <>1__state; // 0x8
+	private object <>2__current; // 0xC
+	public SceneAssetLoader <>4__this; // 0x10
+	public string sceneName; // 0x14
+	public Action<float> progress; // 0x18
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHiddenAttribute] // RVA: 0x4624D8 Offset: 0x4624D8 VA: 0x4624D8
+	// RVA: 0x1209B28 Offset: 0x1209B28 VA: 0x1209B28
+	public void .ctor(int <>1__state) { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x4624E8 Offset: 0x4624E8 VA: 0x4624E8
+	// RVA: 0x1209BAC Offset: 0x1209BAC VA: 0x1209BAC Slot: 8
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x1209BB0 Offset: 0x1209BB0 VA: 0x1209BB0 Slot: 6
+	private bool MoveNext() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x4624F8 Offset: 0x4624F8 VA: 0x4624F8
+	// RVA: 0x1209DBC Offset: 0x1209DBC VA: 0x1209DBC Slot: 4
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x462508 Offset: 0x462508 VA: 0x462508
+	// RVA: 0x1209DC4 Offset: 0x1209DC4 VA: 0x1209DC4 Slot: 7
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x462518 Offset: 0x462518 VA: 0x462518
+	// RVA: 0x1209E4C Offset: 0x1209E4C VA: 0x1209E4C Slot: 5
+	private object System.Collections.IEnumerator.get_Current() { }
+}
+
+// ORIGINAL DUMP LINES 151856-151878; TypeDefIndex 2582
+// Namespace: DodGame
+public interface IVfsDriver // TypeDefIndex: 2582
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract IVfsFileReader OpenReader(string fileName, ref string errInfo);
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract void ClearFileExistCache();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract void RemoveFileExistCache(string fileName);
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract bool IsFileExist(string fileName, ref string errInfo);
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract void Destroy();
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract string GetWWWPath(string fileName, out Hash128 hash128);
+}
+
+// ORIGINAL DUMP LINES 151880-151887; TypeDefIndex 2583
+// Namespace: DodGame
+public interface IVfsFileReader : IDisposable // TypeDefIndex: 2583
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract byte[] Read(ref string errInfo);
+}
+
+// ORIGINAL DUMP LINES 151889-151918; TypeDefIndex 2584
+// Namespace: DodGame
+public class VfsLocalFsDriver : IVfsDriver // TypeDefIndex: 2584
+{
+	// Fields
+	private string m_fsFolderPath; // 0x8
+	private Dictionary<string, bool> m_existCache; // 0xC
+
+	// Methods
+
+	// RVA: 0x120A588 Offset: 0x120A588 VA: 0x120A588
+	public void .ctor(string fsFolderPath) { }
+
+	// RVA: 0x120A61C Offset: 0x120A61C VA: 0x120A61C Slot: 5
+	public void ClearFileExistCache() { }
+
+	// RVA: 0x120A694 Offset: 0x120A694 VA: 0x120A694 Slot: 6
+	public void RemoveFileExistCache(string fileName) { }
+
+	// RVA: 0x120A714 Offset: 0x120A714 VA: 0x120A714 Slot: 7
+	public bool IsFileExist(string fileName, ref string errInfo) { }
+
+	// RVA: 0x120A984 Offset: 0x120A984 VA: 0x120A984 Slot: 4
+	public IVfsFileReader OpenReader(string fileName, ref string errInfo) { }
+
+	// RVA: 0x120AC88 Offset: 0x120AC88 VA: 0x120AC88 Slot: 8
+	public void Destroy() { }
+
+	// RVA: 0x120AC8C Offset: 0x120AC8C VA: 0x120AC8C Slot: 9
+	public string GetWWWPath(string fileName, out Hash128 hash128) { }
+}
+
+// ORIGINAL DUMP LINES 151920-151940; TypeDefIndex 2585
+// Namespace: DodGame
+internal class VfsLocalFsFileReader : IVfsFileReader, IDisposable // TypeDefIndex: 2585
+{
+	// Fields
+	private string m_path; // 0x8
+	private FileStream m_fs; // 0xC
+
+	// Methods
+
+	// RVA: 0x120AC60 Offset: 0x120AC60 VA: 0x120AC60
+	public void .ctor(string path, FileStream fs) { }
+
+	// RVA: 0x120AD58 Offset: 0x120AD58 VA: 0x120AD58 Slot: 6
+	public int GetLen() { }
+
+	// RVA: 0x120AD84 Offset: 0x120AD84 VA: 0x120AD84 Slot: 4
+	public byte[] Read(ref string errInfo) { }
+
+	// RVA: 0x120B1F0 Offset: 0x120B1F0 VA: 0x120B1F0 Slot: 5
+	public void Dispose() { }
+}
+
+// ORIGINAL DUMP LINES 151942-151973; TypeDefIndex 2586
+// Namespace: DodGame
+public class VfsSystem // TypeDefIndex: 2586
+{
+	// Fields
+	private List<IVfsDriver> m_vfsDriver; // 0x8
+
+	// Methods
+
+	// RVA: 0x120B21C Offset: 0x120B21C VA: 0x120B21C
+	public void AddVfsDriver(IVfsDriver driver) { }
+
+	// RVA: 0x11F3D9C Offset: 0x11F3D9C VA: 0x11F3D9C
+	public void ClearFileExistCache() { }
+
+	// RVA: 0x120B29C Offset: 0x120B29C VA: 0x120B29C
+	public void RemoveFileExistCache(string fileName) { }
+
+	// RVA: 0x11F3EFC Offset: 0x11F3EFC VA: 0x11F3EFC
+	public bool IsFileExist(string fileName, ref string errInfo) { }
+
+	// RVA: 0x11F41FC Offset: 0x11F41FC VA: 0x11F41FC
+	public IVfsFileReader OpenReader(string fileName, ref string errInfo) { }
+
+	// RVA: 0x11F45C8 Offset: 0x11F45C8 VA: 0x11F45C8
+	public void Destroy() { }
+
+	// RVA: 0x1206A1C Offset: 0x1206A1C VA: 0x1206A1C
+	public string GetWWWPath(string fileName, out Hash128 hash128) { }
+
+	// RVA: 0x120B404 Offset: 0x120B404 VA: 0x120B404
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 151975-152001; TypeDefIndex 2587
+// Namespace: DodGame
+public class VfsWebGLFsDriver : IVfsDriver // TypeDefIndex: 2587
+{
+	// Fields
+	private string m_baseUrl; // 0x8
+	private WebGLAssetFileSet m_fileSet; // 0xC
+
+	// Methods
+
+	// RVA: 0x120B490 Offset: 0x120B490 VA: 0x120B490 Slot: 5
+	public void ClearFileExistCache() { }
+
+	// RVA: 0x120B494 Offset: 0x120B494 VA: 0x120B494 Slot: 6
+	public void RemoveFileExistCache(string fileName) { }
+
+	// RVA: 0x120B498 Offset: 0x120B498 VA: 0x120B498 Slot: 7
+	public bool IsFileExist(string fileName, ref string errInfo) { }
+
+	// RVA: 0x120B570 Offset: 0x120B570 VA: 0x120B570 Slot: 4
+	public IVfsFileReader OpenReader(string fileName, ref string errInfo) { }
+
+	// RVA: 0x120B684 Offset: 0x120B684 VA: 0x120B684 Slot: 8
+	public void Destroy() { }
+
+	// RVA: 0x120B688 Offset: 0x120B688 VA: 0x120B688 Slot: 9
+	public string GetWWWPath(string fileName, out Hash128 hash128) { }
+}
+
+// ORIGINAL DUMP LINES 152003-152011; TypeDefIndex 2588
+// Namespace: DodGame
+public class WebGLAssetFileInfo // TypeDefIndex: 2588
+{
+	// Fields
+	public string m_assetPath; // 0x8
+	public uint m_hash; // 0xC
+	public int m_contentSize; // 0x10
+	public Hash128 m_hash128; // 0x14
+}
+
+// ORIGINAL DUMP LINES 152013-152025; TypeDefIndex 2589
+// Namespace: DodGame
+public class WebGLAssetFileSet // TypeDefIndex: 2589
+{
+	// Fields
+	private List<WebGLAssetFileInfo> m_listFileSet; // 0x8
+	private Dictionary<string, WebGLAssetFileInfo> m_allFileSet; // 0xC
+	private string m_error; // 0x10
+
+	// Methods
+
+	// RVA: 0x120B4D0 Offset: 0x120B4D0 VA: 0x120B4D0
+	public WebGLAssetFileInfo FindFileInfo(string md5Path) { }
+}
+
+// ORIGINAL DUMP LINES 152027-152037; TypeDefIndex 2590
+// Namespace: DodGame
+public class AnimCurveAsset : ScriptableObject // TypeDefIndex: 2590
+{
+	// Fields
+	public AnimationCurve m_curve; // 0xC
+
+	// Methods
+
+	// RVA: 0x11EEA18 Offset: 0x11EEA18 VA: 0x11EEA18
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 152039-152049; TypeDefIndex 2591
+// Namespace: DodGame
+internal class UBehhaviourRoot // TypeDefIndex: 2591
+{
+	// Fields
+	private static Transform m_goRootTrans; // 0x0
+
+	// Methods
+
+	// RVA: 0x120A25C Offset: 0x120A25C VA: 0x120A25C
+	public static Transform GetRootGo() { }
+}
+
+// ORIGINAL DUMP LINES 152051-152133; TypeDefIndex 2592
+// Namespace: DodGame
+public class BBehaviourSingleton<T> : MonoBehaviour // TypeDefIndex: 2592
+{
+	// Fields
+	private static bool sHaveInstanced; // 0x0
+	private static T sInstance; // 0x0
+
+	// Properties
+	public static T Instance { get; }
+	public static bool HasInstance { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public static T get_Instance() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x1A14D98 Offset: 0x1A14D98 VA: 0x1A14D98
+	|-BBehaviourSingleton<AssetBundlePrepare>.get_Instance
+	|-BBehaviourSingleton<AssetUpdater>.get_Instance
+	|-BBehaviourSingleton<CSharpApp>.get_Instance
+	|-BBehaviourSingleton<DodADLib>.get_Instance
+	|-BBehaviourSingleton<DodShareLib>.get_Instance
+	|-BBehaviourSingleton<GameClientFactoryImp>.get_Instance
+	|-BBehaviourSingleton<HttpConnection>.get_Instance
+	|-BBehaviourSingleton<HuatuoApp>.get_Instance
+	|-BBehaviourSingleton<ReleaseSpriteLoader>.get_Instance
+	|-BBehaviourSingleton<SmallPackageMgr>.get_Instance
+	|-BBehaviourSingleton<SpeedHackDetector>.get_Instance
+	|-BBehaviourSingleton<UnityResourceWebGLHelpSimCaller>.get_Instance
+	|-BBehaviourSingleton<WebGLHelperImpCaller>.get_Instance
+	|-BBehaviourSingleton<DynamicBoneMgr>.get_Instance
+	|-BBehaviourSingleton<AssetBundleLoader>.get_Instance
+	|-BBehaviourSingleton<AssetBundlePool>.get_Instance
+	|-BBehaviourSingleton<ResourceInst>.get_Instance
+	|-BBehaviourSingleton<XGoPoolMgr>.get_Instance
+	|-BBehaviourSingleton<XResCacheBehaveCaller>.get_Instance
+	|-BBehaviourSingleton<object>.get_Instance
+	*/
+
+	// RVA: -1 Offset: -1
+	public static bool get_HasInstance() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x1A1524C Offset: 0x1A1524C VA: 0x1A1524C
+	|-BBehaviourSingleton<XGoPoolMgr>.get_HasInstance
+	|-BBehaviourSingleton<object>.get_HasInstance
+	*/
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x1A15310 Offset: 0x1A15310 VA: 0x1A15310
+	|-BBehaviourSingleton<AssetBundlePrepare>..ctor
+	|-BBehaviourSingleton<AssetUpdater>..ctor
+	|-BBehaviourSingleton<CSharpApp>..ctor
+	|-BBehaviourSingleton<DodADLib>..ctor
+	|-BBehaviourSingleton<DodShareLib>..ctor
+	|-BBehaviourSingleton<GameClientFactoryImp>..ctor
+	|-BBehaviourSingleton<HttpConnection>..ctor
+	|-BBehaviourSingleton<HuatuoApp>..ctor
+	|-BBehaviourSingleton<LuaCallProfiler>..ctor
+	|-BBehaviourSingleton<ReleaseSpriteLoader>..ctor
+	|-BBehaviourSingleton<ResourceBehaviour>..ctor
+	|-BBehaviourSingleton<SmallPackageMgr>..ctor
+	|-BBehaviourSingleton<SpeedHackDetector>..ctor
+	|-BBehaviourSingleton<UnityResourceWebGLHelpSimCaller>..ctor
+	|-BBehaviourSingleton<WebGLHelperImpCaller>..ctor
+	|-BBehaviourSingleton<AsyncImageDownloadBehaviour>..ctor
+	|-BBehaviourSingleton<AssetBundleLoader>..ctor
+	|-BBehaviourSingleton<AssetBundlePool>..ctor
+	|-BBehaviourSingleton<DodWebGLFileCache>..ctor
+	|-BBehaviourSingleton<GlobalCoroutine>..ctor
+	|-BBehaviourSingleton<ResourceInst>..ctor
+	|-BBehaviourSingleton<WebGLImagePrepare>..ctor
+	|-BBehaviourSingleton<WebGLPrepare>..ctor
+	|-BBehaviourSingleton<XGoPoolMgr>..ctor
+	|-BBehaviourSingleton<XResCacheBehaveCaller>..ctor
+	|-BBehaviourSingleton<DynamicBoneMgr>..ctor
+	|-BBehaviourSingleton<object>..ctor
+	*/
+}
+
+// ORIGINAL DUMP LINES 152135-152187; TypeDefIndex 2593
+// Namespace: DodGame
+public class BSingleton<T> // TypeDefIndex: 2593
+{
+	// Fields
+	private static T sInstance; // 0x0
+
+	// Properties
+	public static T Instance { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public static T get_Instance() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x1A1533C Offset: 0x1A1533C VA: 0x1A1533C
+	|-BSingleton<ActorLightEditorMgr>.get_Instance
+	|-BSingleton<AssetVersionMgr>.get_Instance
+	|-BSingleton<CSharpTextConfigMgr>.get_Instance
+	|-BSingleton<ObbMgr>.get_Instance
+	|-BSingleton<StartupTextConfigMgr>.get_Instance
+	|-BSingleton<UIWidgetDependMgr>.get_Instance
+	|-BSingleton<UnityLodMgr>.get_Instance
+	|-BSingleton<AssetBundleRuleMgr>.get_Instance
+	|-BSingleton<SceneAssetLoader>.get_Instance
+	|-BSingleton<AssetBundleDepend>.get_Instance
+	|-BSingleton<AssetBundleEncMgr>.get_Instance
+	|-BSingleton<AssetBundleFileMgr>.get_Instance
+	|-BSingleton<XResCacheMgr>.get_Instance
+	|-BSingleton<object>.get_Instance
+	*/
+
+	// RVA: -1 Offset: -1
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x1A15510 Offset: 0x1A15510 VA: 0x1A15510
+	|-BSingleton<ActorLightEditorMgr>..ctor
+	|-BSingleton<AssetVersionMgr>..ctor
+	|-BSingleton<CSharpTextConfigMgr>..ctor
+	|-BSingleton<ObbMgr>..ctor
+	|-BSingleton<StartupTextConfigMgr>..ctor
+	|-BSingleton<UIWidgetDependMgr>..ctor
+	|-BSingleton<UnityLodMgr>..ctor
+	|-BSingleton<AssetBundleDepend>..ctor
+	|-BSingleton<AssetBundleEncMgr>..ctor
+	|-BSingleton<AssetBundleFileMgr>..ctor
+	|-BSingleton<AssetBundleRuleMgr>..ctor
+	|-BSingleton<SceneAssetLoader>..ctor
+	|-BSingleton<XResCacheMgr>..ctor
+	|-BSingleton<object>..ctor
+	*/
+}
+
+// ORIGINAL DUMP LINES 152189-152205; TypeDefIndex 2594
+// Namespace: DodGame
+public class BTickWatcher // TypeDefIndex: 2594
+{
+	// Fields
+	private long m_startTick; // 0x8
+
+	// Methods
+
+	// RVA: 0x11F7B44 Offset: 0x11F7B44 VA: 0x11F7B44
+	public void .ctor() { }
+
+	// RVA: 0x11FEFF0 Offset: 0x11FEFF0 VA: 0x11FEFF0
+	public void Refresh() { }
+
+	// RVA: 0x11F7B64 Offset: 0x11F7B64 VA: 0x11F7B64
+	public float ElapseTime() { }
+}
+
+// ORIGINAL DUMP LINES 152207-152226; TypeDefIndex 2595
+// Namespace: DodGame
+public class BTimerTick // TypeDefIndex: 2595
+{
+	// Fields
+	protected BTimerTick.OnTick m_handle; // 0x8
+	protected float m_lastTime; // 0xC
+	protected float m_interval; // 0x10
+	protected bool m_resetInterval; // 0x14
+
+	// Methods
+
+	// RVA: 0x1207784 Offset: 0x1207784 VA: 0x1207784
+	public void .ctor(float interval, BTimerTick.OnTick tickHandle) { }
+
+	// RVA: 0x12077B8 Offset: 0x12077B8 VA: 0x12077B8
+	private void Init(float interval, bool immeditate, bool resetInterval, BTimerTick.OnTick tickHandle) { }
+
+	// RVA: 0x12077EC Offset: 0x12077EC VA: 0x12077EC
+	public void OnUpdate() { }
+}
+
+// ORIGINAL DUMP LINES 152228-152244; TypeDefIndex 2596
+// Namespace: 
+public sealed class BTimerTick.OnTick : MulticastDelegate // TypeDefIndex: 2596
+{
+	// Methods
+
+	// RVA: 0x1207A6C Offset: 0x1207A6C VA: 0x1207A6C
+	public void .ctor(object object, IntPtr method) { }
+
+	// RVA: 0x120785C Offset: 0x120785C VA: 0x120785C Slot: 11
+	public virtual void Invoke() { }
+
+	// RVA: 0x1207A80 Offset: 0x1207A80 VA: 0x1207A80 Slot: 12
+	public virtual IAsyncResult BeginInvoke(AsyncCallback callback, object object) { }
+
+	// RVA: 0x1207AAC Offset: 0x1207AAC VA: 0x1207AAC Slot: 13
+	public virtual void EndInvoke(IAsyncResult result) { }
+}
+
+// ORIGINAL DUMP LINES 152246-152281; TypeDefIndex 2597
+// Namespace: DodGame
+public class GameCoreConfig // TypeDefIndex: 2597
+{
+	// Fields
+	public static bool UseAssetBundle; // 0x0
+	public static int PersistCachePoolCount; // 0x4
+	public static bool RunLuaMode; // 0x8
+	private static bool s_runWebGLPlatform; // 0x9
+	private static bool s_runInstant; // 0xA
+	public static int WebGLAssetBundleLoadTimeout; // 0xC
+	public static int WebGLAssetBundleRetryCount; // 0x10
+	public static int WebGLAssetBundleFailConfirmTimeout; // 0x14
+	public static int ResourceMaxAsyncLoadNum; // 0x18
+	public static bool EnableResourceAsyncLimit; // 0x1C
+	public static bool DisableWarmupShader; // 0x1D
+	public static bool InitWarmupShader; // 0x1E
+
+	// Properties
+	public static bool RunWebGL { set; }
+	internal static bool RunInstant { get; }
+	public static bool RunWebGLMode { get; }
+
+	// Methods
+
+	// RVA: 0x12081D8 Offset: 0x12081D8 VA: 0x12081D8
+	public static void set_RunWebGL(bool value) { }
+
+	// RVA: 0x1206C44 Offset: 0x1206C44 VA: 0x1206C44
+	internal static bool get_RunInstant() { }
+
+	// RVA: 0x11F30B8 Offset: 0x11F30B8 VA: 0x11F30B8
+	public static bool get_RunWebGLMode() { }
+
+	// RVA: 0x1208268 Offset: 0x1208268 VA: 0x1208268
+	private static void .cctor() { }
+}
+
+// ORIGINAL DUMP LINES 152283-152290; TypeDefIndex 2598
+// Namespace: DodGame
+internal class GlobalCoroutine : BBehaviourSingleton<GlobalCoroutine> // TypeDefIndex: 2598
+{
+	// Methods
+
+	// RVA: 0x1208340 Offset: 0x1208340 VA: 0x1208340
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 152292-152302; TypeDefIndex 2599
+// Namespace: DodGame
+public class UntiyLogHandler : BIDLogHandler // TypeDefIndex: 2599
+{
+	// Methods
+
+	// RVA: 0x120A3B8 Offset: 0x120A3B8 VA: 0x120A3B8 Slot: 4
+	public void Log(BLogEvent dLogEvent) { }
+
+	// RVA: 0x120A534 Offset: 0x120A534 VA: 0x120A534
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 152304-152329; TypeDefIndex 2600
+// Namespace: DodGame
+public class XFileUtil // TypeDefIndex: 2600
+{
+	// Fields
+	private static SetFolderNoSave m_setImpFunc; // 0x0
+
+	// Methods
+
+	// RVA: 0x120B878 Offset: 0x120B878 VA: 0x120B878
+	public static bool WriteToFile(string dirOut, string fileName, byte[] data) { }
+
+	// RVA: 0x120B8BC Offset: 0x120B8BC VA: 0x120B8BC
+	public static bool WriteToFile(string dirOut, string fileName, byte[] data, int length) { }
+
+	// RVA: 0x120BAA8 Offset: 0x120BAA8 VA: 0x120BAA8
+	public static bool IsFileExist(string path) { }
+
+	// RVA: 0x1204A40 Offset: 0x1204A40 VA: 0x1204A40
+	public static bool CreateDir(string dir) { }
+
+	// RVA: 0x1204C50 Offset: 0x1204C50 VA: 0x1204C50
+	public static void DeleteFile(string path) { }
+
+	// RVA: 0x120BB8C Offset: 0x120BB8C VA: 0x120BB8C
+	public static bool DeleteDir(string dir) { }
+}
+
+// ORIGINAL DUMP LINES 152331-152339; TypeDefIndex 2601
+// Namespace: DodGame
+public enum ClientSocketEventType // TypeDefIndex: 2601
+{
+	// Fields
+	public int value__; // 0x0
+	public const ClientSocketEventType EventConnected = 0;
+	public const ClientSocketEventType EventConnectFail = 1;
+	public const ClientSocketEventType EventDisconnected = 2;
+}
+
+// ORIGINAL DUMP LINES 152341-152348; TypeDefIndex 2602
+// Namespace: DodGame
+public class NetUtil // TypeDefIndex: 2602
+{
+	// Methods
+
+	// RVA: 0x12084FC Offset: 0x12084FC VA: 0x12084FC
+	public static bool IsHaveIpV6Address(IPAddress[] IPs, ref IPAddress[] outIPs) { }
+}
+
+// ORIGINAL DUMP LINES 152350-152364; TypeDefIndex 2603
+// Namespace: DodGame
+internal class ResFileHead // TypeDefIndex: 2603
+{
+	// Fields
+	public uint tag; // 0x8
+	public uint len; // 0xC
+	public uint version; // 0x10
+	public uint resnum; // 0x14
+	public uint crc32; // 0x18
+
+	// Methods
+
+	// RVA: 0x120777C Offset: 0x120777C VA: 0x120777C
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 152366-152401; TypeDefIndex 2604
+// Namespace: DodGame
+public class BResBinUtil // TypeDefIndex: 2604
+{
+	// Methods
+
+	// RVA: -1 Offset: -1
+	public static List<T> ReadResBin<T>(string filePath) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x16015A0 Offset: 0x16015A0 VA: 0x16015A0
+	|-BResBinUtil.ReadResBin<CSharpColorConfig>
+	|-BResBinUtil.ReadResBin<CSharpTextConfig>
+	|-BResBinUtil.ReadResBin<object>
+	*/
+
+	// RVA: -1 Offset: -1
+	public static List<T> ReadResBinFromInternelResource<T>(string filePath) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x16016B8 Offset: 0x16016B8 VA: 0x16016B8
+	|-BResBinUtil.ReadResBinFromInternelResource<CSharpTextConfig>
+	|-BResBinUtil.ReadResBinFromInternelResource<object>
+	*/
+
+	// RVA: -1 Offset: -1
+	public static List<T> ReadResListFromData<T>(string filePath, byte[] binData, ref string err) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x160181C Offset: 0x160181C VA: 0x160181C
+	|-BResBinUtil.ReadResListFromData<CSharpTextConfig>
+	|-BResBinUtil.ReadResListFromData<object>
+	*/
+
+	// RVA: 0x12075B8 Offset: 0x12075B8 VA: 0x12075B8
+	private static ResFileHead ParseHead(PbReadBuf readBuf) { }
+}
+
+// ORIGINAL DUMP LINES 152403-152413; TypeDefIndex 2605
+// Namespace: DodGame
+public class AsyncLoadResourceTask // TypeDefIndex: 2605
+{
+	// Fields
+	public string m_resPath; // 0x8
+
+	// Methods
+
+	// RVA: 0x11FC704 Offset: 0x11FC704 VA: 0x11FC704
+	public void .ctor(string resPath) { }
+}
+
+// ORIGINAL DUMP LINES 152415-152438; TypeDefIndex 2606
+// Namespace: DodGame
+public class ResourceInst : BBehaviourSingleton<ResourceInst> // TypeDefIndex: 2606
+{
+	// Fields
+	private List<AsyncLoadResourceTask> m_listResourceLoadingQueue; // 0xC
+	private HashSet<string> m_resourceLoadingMap; // 0x10
+
+	// Methods
+
+	// RVA: 0x1208C30 Offset: 0x1208C30 VA: 0x1208C30
+	public Coroutine StartLoadResourceAsync(string resPath, Type type, Action<Object> loadedAction, BAsyncOper oper) { }
+
+	// RVA: 0x1208D60 Offset: 0x1208D60 VA: 0x1208D60
+	private void RemoveResourceLoadingList(string resPath) { }
+
+	// RVA: 0x1208E94 Offset: 0x1208E94 VA: 0x1208E94
+	private void AddResourceLoadingList(string resPath) { }
+
+	// RVA: 0x1208C68 Offset: 0x1208C68 VA: 0x1208C68
+	private IEnumerator CortLoadResource(string resPath, Type type, Action<Object> loadedAction, BAsyncOper oper) { }
+
+	// RVA: 0x1208F88 Offset: 0x1208F88 VA: 0x1208F88
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 152440-152454; TypeDefIndex 2607
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0x462218 Offset: 0x462218 VA: 0x462218
+private sealed class ResourceInst.<>c__DisplayClass3_0 // TypeDefIndex: 2607
+{
+	// Fields
+	public string resPath; // 0x8
+
+	// Methods
+
+	// RVA: 0x1208E8C Offset: 0x1208E8C VA: 0x1208E8C
+	public void .ctor() { }
+
+	// RVA: 0x1209054 Offset: 0x1209054 VA: 0x1209054
+	internal bool <RemoveResourceLoadingList>b__0(AsyncLoadResourceTask item) { }
+}
+
+// ORIGINAL DUMP LINES 152456-152500; TypeDefIndex 2608
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0x462228 Offset: 0x462228 VA: 0x462228
+private sealed class ResourceInst.<CortLoadResource>d__5 : IEnumerator<object>, IDisposable, IEnumerator // TypeDefIndex: 2608
+{
+	// Fields
+	private int <>1__state; // 0x8
+	private object <>2__current; // 0xC
+	public string resPath; // 0x10
+	public Action<Object> loadedAction; // 0x14
+	public BAsyncOper oper; // 0x18
+	public ResourceInst <>4__this; // 0x1C
+	public Type type; // 0x20
+	private Object <resObj>5__2; // 0x24
+	private uint <operId>5__3; // 0x28
+	private ResourceRequest <request>5__4; // 0x2C
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHiddenAttribute] // RVA: 0x462528 Offset: 0x462528 VA: 0x462528
+	// RVA: 0x1208F68 Offset: 0x1208F68 VA: 0x1208F68
+	public void .ctor(int <>1__state) { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x462538 Offset: 0x462538 VA: 0x462538
+	// RVA: 0x12090A0 Offset: 0x12090A0 VA: 0x12090A0 Slot: 8
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x12090A4 Offset: 0x12090A4 VA: 0x12090A4 Slot: 6
+	private bool MoveNext() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x462548 Offset: 0x462548 VA: 0x462548
+	// RVA: 0x1209514 Offset: 0x1209514 VA: 0x1209514 Slot: 4
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x462558 Offset: 0x462558 VA: 0x462558
+	// RVA: 0x120951C Offset: 0x120951C VA: 0x120951C Slot: 7
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x462568 Offset: 0x462568 VA: 0x462568
+	// RVA: 0x12095A4 Offset: 0x12095A4 VA: 0x12095A4 Slot: 5
+	private object System.Collections.IEnumerator.get_Current() { }
+}
+
+// ORIGINAL DUMP LINES 152502-152511; TypeDefIndex 2609
+// Namespace: DodGame
+internal struct GoProperty // TypeDefIndex: 2609
+{
+	// Fields
+	public string resPath; // 0x0
+	public int layer; // 0x4
+	public uint frameID; // 0x8
+	public float frameTime; // 0xC
+	public Vector3 initScale; // 0x10
+}
+
+// ORIGINAL DUMP LINES 152513-152531; TypeDefIndex 2610
+// Namespace: DodGame
+internal class GoPoolNode // TypeDefIndex: 2610
+{
+	// Fields
+	public List<GameObject> m_listGo; // 0x8
+	public int m_maxCacheCnt; // 0xC
+	public int m_goRefCnt; // 0x10
+	public int m_minCacheCnt; // 0x14
+	public int m_cacheFreeTime; // 0x18
+	public float m_poolGoRefreshTime; // 0x1C
+
+	// Methods
+
+	// RVA: 0x12083A4 Offset: 0x12083A4 VA: 0x12083A4
+	public bool AddCacheGo(GameObject go) { }
+
+	// RVA: 0x1208468 Offset: 0x1208468 VA: 0x1208468
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 152533-152546; TypeDefIndex 2611
+// Namespace: DodGame
+internal class DelayDestroyGo // TypeDefIndex: 2611
+{
+	// Fields
+	public GoProperty m_property; // 0x8
+	public GameObject m_go; // 0x24
+	public int m_goHashId; // 0x28
+	public float m_destroyTime; // 0x2C
+
+	// Methods
+
+	// RVA: 0x12081D0 Offset: 0x12081D0 VA: 0x12081D0
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 152548-152659; TypeDefIndex 2612
+// Namespace: DodGame
+internal class XGoPoolMgr : BBehaviourSingleton<XGoPoolMgr> // TypeDefIndex: 2612
+{
+	// Fields
+	private Dictionary<string, GoPoolNode> m_cacheGo; // 0xC
+	private Dictionary<int, GoProperty> m_goProperty; // 0x10
+	private List<DelayDestroyGo> m_delayDestroyList; // 0x14
+	private List<DelayDestroyGo> m_freeDelayNode; // 0x18
+	private List<string> m_listToDel; // 0x1C
+	private Transform m_poolRootTrans; // 0x20
+	private uint m_frameID; // 0x24
+	private float m_frameTime; // 0x28
+	private float m_tickLogTime; // 0x2C
+	private bool m_pauseGoPool; // 0x30
+	private int m_totalPoolObjectCount; // 0x34
+	public bool LogWhenPoolFull; // 0x38
+
+	// Properties
+	public int TotalPoolObjectCount { get; }
+	public int DelayDestroyCount { get; }
+	public int FreedDestroyCount { get; }
+	public bool PauseGoPool { get; set; }
+
+	// Methods
+
+	// RVA: 0x120BC98 Offset: 0x120BC98 VA: 0x120BC98
+	public int get_TotalPoolObjectCount() { }
+
+	// RVA: 0x120BCA0 Offset: 0x120BCA0 VA: 0x120BCA0
+	public int get_DelayDestroyCount() { }
+
+	// RVA: 0x120BD18 Offset: 0x120BD18 VA: 0x120BD18
+	public int get_FreedDestroyCount() { }
+
+	// RVA: 0x120BD90 Offset: 0x120BD90 VA: 0x120BD90
+	public void set_PauseGoPool(bool value) { }
+
+	// RVA: 0x120BD98 Offset: 0x120BD98 VA: 0x120BD98
+	public bool get_PauseGoPool() { }
+
+	// RVA: 0x120BDA0 Offset: 0x120BDA0 VA: 0x120BDA0
+	private void Awake() { }
+
+	// RVA: 0x120BDA4 Offset: 0x120BDA4 VA: 0x120BDA4
+	private Transform GetRootTrans() { }
+
+	// RVA: 0x120BEE8 Offset: 0x120BEE8 VA: 0x120BEE8
+	private void OnDestroy() { }
+
+	// RVA: 0x120BEF4 Offset: 0x120BEF4 VA: 0x120BEF4
+	public void AddCacheGo(string resPath, GameObject go) { }
+
+	// RVA: 0x120C2F8 Offset: 0x120C2F8 VA: 0x120C2F8
+	private DelayDestroyGo AllocDelayNode() { }
+
+	// RVA: 0x120C434 Offset: 0x120C434 VA: 0x120C434
+	private void FreeDelayNode(DelayDestroyGo node) { }
+
+	// RVA: 0x120C4B4 Offset: 0x120C4B4 VA: 0x120C4B4
+	public void DelayDestroy(GameObject go, GoProperty property, float delayTime) { }
+
+	// RVA: 0x120BFA4 Offset: 0x120BFA4 VA: 0x120BFA4
+	public bool AddCacheGo(string resPath, GameObject go, GoProperty property) { }
+
+	// RVA: 0x120CADC Offset: 0x120CADC VA: 0x120CADC
+	public void AddNewRecycleProperty(GameObject go, string resPath, Vector3 initScale) { }
+
+	// RVA: 0x120CB84 Offset: 0x120CB84 VA: 0x120CB84
+	public GameObject AllocCacheGo(string resPath, Transform parentTrans, bool haveLocalPos, Vector3 localPos, Quaternion localRot, bool initEnable) { }
+
+	// RVA: 0x120D5E0 Offset: 0x120D5E0 VA: 0x120D5E0
+	public void FreeAllCacheGo() { }
+
+	// RVA: 0x120C7EC Offset: 0x120C7EC VA: 0x120C7EC
+	private GoPoolNode GetOrNewResourceNode(string resPath) { }
+
+	// RVA: 0x120C994 Offset: 0x120C994 VA: 0x120C994
+	private void AddGoProperty(int hashCode, GoProperty property) { }
+
+	// RVA: 0x120D4C8 Offset: 0x120D4C8 VA: 0x120D4C8
+	private void RemoveGoProperty(int hashCode) { }
+
+	// RVA: 0x120C734 Offset: 0x120C734 VA: 0x120C734
+	private void DoDestroy(GameObject go) { }
+
+	// RVA: 0x120D924 Offset: 0x120D924 VA: 0x120D924
+	public bool IsNeedAutoFree(string resPath) { }
+
+	// RVA: 0x120DA38 Offset: 0x120DA38 VA: 0x120DA38
+	public void FreeGoByResPath(string resPath) { }
+
+	// RVA: 0x120DCA4 Offset: 0x120DCA4 VA: 0x120DCA4
+	public bool IsExistInCache(string resPath) { }
+
+	// RVA: 0x120DD68 Offset: 0x120DD68 VA: 0x120DD68
+	public bool IsNeedRecycle(GameObject go, out GoProperty property, bool forceNoPool) { }
+
+	// RVA: 0x120DF50 Offset: 0x120DF50 VA: 0x120DF50
+	public void ClearAllDelayDestroy() { }
+
+	// RVA: 0x120E118 Offset: 0x120E118 VA: 0x120E118
+	public void CheckPoolCacheFree() { }
+
+	// RVA: 0x120E610 Offset: 0x120E610 VA: 0x120E610
+	private void Update() { }
+
+	// RVA: 0x120E8E8 Offset: 0x120E8E8 VA: 0x120E8E8
+	private void LateUpdate() { }
+
+	// RVA: 0x120E97C Offset: 0x120E97C VA: 0x120E97C
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 152661-152675; TypeDefIndex 2613
+// Namespace: DodGame
+public class ResCacheData // TypeDefIndex: 2613
+{
+	// Fields
+	public Object obj; // 0x8
+	public float cacheRefreshTime; // 0xC
+	public bool autoExpire; // 0x10
+	public LoadFromType loadFromType; // 0x14
+	public int cacheExpireTime; // 0x18
+
+	// Methods
+
+	// RVA: 0x1208C0C Offset: 0x1208C0C VA: 0x1208C0C
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 152677-152691; TypeDefIndex 2614
+// Namespace: DodGame
+internal struct ResourceCacheConfig // TypeDefIndex: 2614
+{
+	// Fields
+	public string m_resPath; // 0x0
+	public int m_cacheTime; // 0x4
+	public int m_maxPoolCnt; // 0x8
+	public int m_poolGoFreeTime; // 0xC
+	public int m_minPoolCnt; // 0x10
+
+	// Methods
+
+	// RVA: 0x4EC410 Offset: 0x4EC410 VA: 0x4EC410
+	public void .ctor(string resPath, int cacheTime, int maxPoolCnt, int poolGoFreeTime, int minPoolCnt) { }
+}
+
+// ORIGINAL DUMP LINES 152693-152706; TypeDefIndex 2615
+// Namespace: DodGame
+internal class XResCacheBehaveCaller : BBehaviourSingleton<XResCacheBehaveCaller> // TypeDefIndex: 2615
+{
+	// Methods
+
+	// RVA: 0x120EAD4 Offset: 0x120EAD4 VA: 0x120EAD4
+	private void Start() { }
+
+	// RVA: 0x120EC0C Offset: 0x120EC0C VA: 0x120EC0C
+	private void Update() { }
+
+	// RVA: 0x120ECAC Offset: 0x120ECAC VA: 0x120ECAC
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 152708-152801; TypeDefIndex 2616
+// Namespace: DodGame
+internal class XResCacheMgr : BSingleton<XResCacheMgr> // TypeDefIndex: 2616
+{
+	// Fields
+	private Dictionary<string, ResCacheData> m_cachePool; // 0x8
+	private Dictionary<string, ResCacheData> m_persistCachePool; // 0xC
+	private bool m_enableLog; // 0x10
+	private List<ResourceCacheConfig> m_needCacheResList; // 0x14
+	private List<string> m_needPersistResList; // 0x18
+	private BTimerTick m_tickCheckExpire; // 0x1C
+	private List<string> m_listToDel; // 0x20
+	private bool m_pauseCache; // 0x24
+
+	// Properties
+	public bool PauseCache { get; set; }
+	public Dictionary<string, ResCacheData> CachePoolAllData { get; }
+	public Dictionary<string, ResCacheData> PersistPoolAllData { get; }
+	public int CacheCount { get; }
+	public int PersistCount { get; }
+
+	// Methods
+
+	// RVA: 0x120ED10 Offset: 0x120ED10 VA: 0x120ED10
+	public void set_PauseCache(bool value) { }
+
+	// RVA: 0x120ED18 Offset: 0x120ED18 VA: 0x120ED18
+	public bool get_PauseCache() { }
+
+	// RVA: 0x120ED20 Offset: 0x120ED20 VA: 0x120ED20
+	public void .ctor() { }
+
+	// RVA: 0x120EE7C Offset: 0x120EE7C VA: 0x120EE7C
+	public Dictionary<string, ResCacheData> get_CachePoolAllData() { }
+
+	// RVA: 0x120EE84 Offset: 0x120EE84 VA: 0x120EE84
+	public Dictionary<string, ResCacheData> get_PersistPoolAllData() { }
+
+	// RVA: 0x120EE8C Offset: 0x120EE8C VA: 0x120EE8C
+	public int get_CacheCount() { }
+
+	// RVA: 0x120EF04 Offset: 0x120EF04 VA: 0x120EF04
+	public int get_PersistCount() { }
+
+	// RVA: 0x120EF7C Offset: 0x120EF7C VA: 0x120EF7C
+	public void RegPersistResPath(List<string> resList) { }
+
+	// RVA: 0x120EFFC Offset: 0x120EFFC VA: 0x120EFFC
+	public void RegCacheResPath(string resPath, int cacheTime, int maxPoolCnt, int poolGoFreeTime, int minPoolCnt) { }
+
+	// RVA: 0x120DE90 Offset: 0x120DE90 VA: 0x120DE90
+	public bool IsResourceCached(string resPath) { }
+
+	// RVA: 0x11FEE48 Offset: 0x11FEE48 VA: 0x11FEE48
+	public Object GetCacheData(string resPath, out LoadFromType loadFromType) { }
+
+	// RVA: 0x120D8F0 Offset: 0x120D8F0 VA: 0x120D8F0
+	public bool GetCacheCfg(string resPath, out int maxPoolCnt, out int cacheFreeTime, out int minPoolCnt) { }
+
+	// RVA: 0x1200014 Offset: 0x1200014 VA: 0x1200014
+	public bool IsNeedCache(string resPath, out int cacheTime) { }
+
+	// RVA: 0x120F298 Offset: 0x120F298 VA: 0x120F298
+	public bool IsNeedCache(string resPath, out int cacheTime, out int maxPoolCnt) { }
+
+	// RVA: 0x120F0A8 Offset: 0x120F0A8 VA: 0x120F0A8
+	public bool IsNeedCache(string resPath, out int cacheTime, out int maxPoolCnt, out int poolGoFreeTime, out int minPoolCnt) { }
+
+	// RVA: 0x120F2CC Offset: 0x120F2CC VA: 0x120F2CC
+	public bool IsNeedPersist(string resPath) { }
+
+	// RVA: 0x120F3C0 Offset: 0x120F3C0 VA: 0x120F3C0
+	public List<string> GetAllPersistCache() { }
+
+	// RVA: 0x1200074 Offset: 0x1200074 VA: 0x1200074
+	public bool AddCache(string resPath, Object obj, LoadFromType loadFromType, int cacheTime, bool forcePersist = False) { }
+
+	// RVA: 0x120F5C4 Offset: 0x120F5C4 VA: 0x120F5C4
+	public void RemoveAllCache() { }
+
+	// RVA: 0x120F63C Offset: 0x120F63C VA: 0x120F63C
+	public void RemoveCache(string resPath) { }
+
+	// RVA: 0x1200EA8 Offset: 0x1200EA8 VA: 0x1200EA8
+	public int GetCacheCount() { }
+
+	// RVA: 0x120EB4C Offset: 0x120EB4C VA: 0x120EB4C
+	public void Init() { }
+
+	// RVA: 0x120EC84 Offset: 0x120EC84 VA: 0x120EC84
+	public void OnUpdate() { }
+
+	// RVA: 0x120F6F4 Offset: 0x120F6F4 VA: 0x120F6F4
+	private void CheckExpireCache() { }
+}
+
+// ORIGINAL DUMP LINES 152803-152811; TypeDefIndex 2617
+// Namespace: DodGame
+public enum LoadFromType // TypeDefIndex: 2617
+{
+	// Fields
+	public int value__; // 0x0
+	public const LoadFromType FROM_INVALD = 0;
+	public const LoadFromType FROM_ASSETBUNDLE = 1;
+	public const LoadFromType FROM_RESOURCE = 2;
+}
+
+// ORIGINAL DUMP LINES 152813-152950; TypeDefIndex 2618
+// Namespace: DodGame
+public class XResource // TypeDefIndex: 2618
+{
+	// Fields
+	private static bool s_enableGoPoolRecycle; // 0x0
+	private static int s_poolWaitFrameCount; // 0x4
+	public static float PoolWaitReuseTime; // 0x8
+	public static bool PoolCacheFreeEnable; // 0xC
+
+	// Properties
+	public static bool EnableGoPoolRecycle { get; set; }
+	public static bool LogWhenPoolFull { set; }
+
+	// Methods
+
+	// RVA: 0x120FB2C Offset: 0x120FB2C VA: 0x120FB2C
+	public static void set_EnableGoPoolRecycle(bool value) { }
+
+	// RVA: 0x120FBBC Offset: 0x120FBBC VA: 0x120FBBC
+	public static bool get_EnableGoPoolRecycle() { }
+
+	// RVA: 0x120FC48 Offset: 0x120FC48 VA: 0x120FC48
+	public static void set_LogWhenPoolFull(bool value) { }
+
+	// RVA: 0x120FCC0 Offset: 0x120FCC0 VA: 0x120FCC0
+	public static void SetPoolWaitReuseTime(float time) { }
+
+	// RVA: 0x120FD5C Offset: 0x120FD5C VA: 0x120FD5C
+	public static void SetPoolCacheFreeEnable(bool enable) { }
+
+	// RVA: 0x120FDEC Offset: 0x120FDEC VA: 0x120FDEC
+	public static Shader FindShader(string shaderName) { }
+
+	// RVA: -1 Offset: -1
+	public static T LoadAsset<T>(string path) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x12C03EC Offset: 0x12C03EC VA: 0x12C03EC
+	|-XResource.LoadAsset<HitScaleCurveData>
+	|-XResource.LoadAsset<EnvLightData>
+	|-XResource.LoadAsset<object>
+	|-XResource.LoadAsset<GameObject>
+	|-XResource.LoadAsset<TextAsset>
+	*/
+
+	// RVA: -1 Offset: -1
+	public static T LoadAsset<T>(string path, out LoadFromType loadFromType, bool logNotFound) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x12C0494 Offset: 0x12C0494 VA: 0x12C0494
+	|-XResource.LoadAsset<object>
+	|-XResource.LoadAsset<GameObject>
+	*/
+
+	// RVA: 0x120FEFC Offset: 0x120FEFC VA: 0x120FEFC
+	public static Object LoadAsset(string path, Type type, out LoadFromType loadFromType, bool logNotFound) { }
+
+	// RVA: 0x1210374 Offset: 0x1210374 VA: 0x1210374
+	public static byte[] LoadBin(string path, bool logNotFound = True) { }
+
+	// RVA: 0x1210584 Offset: 0x1210584 VA: 0x1210584
+	public static void PauseAllCache() { }
+
+	// RVA: 0x1210628 Offset: 0x1210628 VA: 0x1210628
+	public static void ResumeAllCache() { }
+
+	// RVA: 0x12106CC Offset: 0x12106CC VA: 0x12106CC
+	public static void StartAssetBundleAutoExpire() { }
+
+	// RVA: 0x1210794 Offset: 0x1210794 VA: 0x1210794
+	public static void FreeAllCacheAndGo() { }
+
+	// RVA: 0x1210858 Offset: 0x1210858 VA: 0x1210858
+	public static void ClearAllDelayDestroy() { }
+
+	// RVA: 0x12108D0 Offset: 0x12108D0 VA: 0x12108D0
+	public static void UnloadUnusedAb(bool unloadNeverExpireAb) { }
+
+	// RVA: 0x121099C Offset: 0x121099C VA: 0x121099C
+	public static void UnloadBinAssetBundle(string resPath) { }
+
+	// RVA: 0x1210BCC Offset: 0x1210BCC VA: 0x1210BCC
+	public static void UnloadResource(string resPath) { }
+
+	// RVA: 0x1210C80 Offset: 0x1210C80 VA: 0x1210C80
+	public static Coroutine AllocOrNewInstanceGoAsync(string resPath, Action<GameObject> loadedAction, Transform parentTran, BAsyncOper oper, bool initEnable = True) { }
+
+	// RVA: 0x1210DB4 Offset: 0x1210DB4 VA: 0x1210DB4
+	public static Coroutine AllocOrNewInstanceGoAsync(string resPath, Action<GameObject> loadedAction, Transform parentTran, bool haveLocalPos, Vector3 localPos, Quaternion localRot, BAsyncOper oper, bool initEnable = True) { }
+
+	// RVA: 0x121178C Offset: 0x121178C VA: 0x121178C
+	private static void AddRecycleGoProperty(string resPath, GameObject go, Vector3 initScale) { }
+
+	// RVA: 0x12118FC Offset: 0x12118FC VA: 0x12118FC
+	public static GameObject AllocOrNewInstanceGo(string resPath, Transform parentTran, bool initEnable = True) { }
+
+	// RVA: 0x1211A28 Offset: 0x1211A28 VA: 0x1211A28
+	public static GameObject AllocOrNewInstanceGo(string resPath, Transform parentTran, bool haveLocalPos, Vector3 pos, Quaternion rot, bool initEnable = True) { }
+
+	// RVA: 0x12121C4 Offset: 0x12121C4 VA: 0x12121C4
+	public static void FreeGameObject(GameObject go, bool forceNoPool = False) { }
+
+	// RVA: 0x1212394 Offset: 0x1212394 VA: 0x1212394
+	public static void FreeGameObject(GameObject go, float delayTime, bool forceNoPool = False) { }
+
+	// RVA: 0x1211278 Offset: 0x1211278 VA: 0x1211278
+	public static Coroutine LoadAsync(string resPath, Type type, Action<Object> loadedAction, BAsyncOper oper) { }
+
+	// RVA: 0x120F54C Offset: 0x120F54C VA: 0x120F54C
+	public static void MarkResourceAbHotUnload(string resPath) { }
+
+	// RVA: 0x121257C Offset: 0x121257C VA: 0x121257C
+	public static void StopAutoResourceExpire() { }
+
+	// RVA: 0x1212640 Offset: 0x1212640 VA: 0x1212640
+	public static void SetMaxResourceAsyncLoadNum(int maxResourceAsyncLoadNum) { }
+
+	// RVA: 0x12126D0 Offset: 0x12126D0 VA: 0x12126D0
+	public static int GetGoPoolObjectCount() { }
+
+	// RVA: 0x1212744 Offset: 0x1212744 VA: 0x1212744
+	public static int GetDelayDestroyCount() { }
+
+	// RVA: 0x12127BC Offset: 0x12127BC VA: 0x12127BC
+	public static int GetFreedDelayCount() { }
+
+	// RVA: 0x1212834 Offset: 0x1212834 VA: 0x1212834
+	public static int GetCacheResourceCount() { }
+
+	// RVA: 0x12128D4 Offset: 0x12128D4 VA: 0x12128D4
+	public static void RegPersistResPath(List<string> resList) { }
+
+	// RVA: 0x1212954 Offset: 0x1212954 VA: 0x1212954
+	public static void RegCacheResPath(string resPath, int cacheTime, int maxPoolCnt, int poolGoFreeTime = 0, int minPoolCnt = 0) { }
+
+	// RVA: 0x12129F8 Offset: 0x12129F8 VA: 0x12129F8
+	private static void .cctor() { }
+}
+
+// ORIGINAL DUMP LINES 152952-152975; TypeDefIndex 2619
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0x462238 Offset: 0x462238 VA: 0x462238
+private sealed class XResource.<>c__DisplayClass30_0 // TypeDefIndex: 2619
+{
+	// Fields
+	public string resPath; // 0x8
+	public BTickWatcher tickWatch; // 0xC
+	public bool parentTransValid; // 0x10
+	public Transform parentTran; // 0x14
+	public Action<GameObject> loadedAction; // 0x18
+	public bool haveLocalPos; // 0x1C
+	public Vector3 localPos; // 0x20
+	public Quaternion localRot; // 0x2C
+	public GameObject go; // 0x3C
+	public bool initEnable; // 0x40
+
+	// Methods
+
+	// RVA: 0x1CCF8C8 Offset: 0x1CCF8C8 VA: 0x1CCF8C8
+	public void .ctor() { }
+
+	// RVA: 0x1CCF8D0 Offset: 0x1CCF8D0 VA: 0x1CCF8D0
+	internal void <AllocOrNewInstanceGoAsync>b__0(Object resPrefab) { }
+}
+
+// ORIGINAL DUMP LINES 152977-152999; TypeDefIndex 2620
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0x462248 Offset: 0x462248 VA: 0x462248
+private sealed class XResource.<>c__DisplayClass36_0 // TypeDefIndex: 2620
+{
+	// Fields
+	public XResCacheMgr cacheMgr; // 0x8
+	public string resPath; // 0xC
+	public LoadFromType loadFromType; // 0x10
+	public BAsyncOper oper; // 0x14
+	public uint operId; // 0x18
+	public Action<Object> loadedAction; // 0x1C
+
+	// Methods
+
+	// RVA: 0x1CCFF4C Offset: 0x1CCFF4C VA: 0x1CCFF4C
+	public void .ctor() { }
+
+	// RVA: 0x1CCFF54 Offset: 0x1CCFF54 VA: 0x1CCFF54
+	internal void <LoadAsync>b__0(Object loadedObj) { }
+
+	// RVA: 0x1CD01F4 Offset: 0x1CD01F4 VA: 0x1CD01F4
+	internal void <LoadAsync>b__1(Object loadedObj) { }
+}
+
+// ORIGINAL DUMP LINES 153001-153037; TypeDefIndex 2621
+// Namespace: DodGame
+public class Crc32 // TypeDefIndex: 2621
+{
+	// Fields
+	private uint[] table; // 0x8
+	private uint m_crc; // 0xC
+	private byte[] m_fileCrcBuff; // 0x10
+
+	// Properties
+	public uint crc { get; }
+
+	// Methods
+
+	// RVA: 0x1207AB8 Offset: 0x1207AB8 VA: 0x1207AB8
+	public uint get_crc() { }
+
+	// RVA: 0x1207AC0 Offset: 0x1207AC0 VA: 0x1207AC0
+	public void StartComputed() { }
+
+	// RVA: 0x1207ACC Offset: 0x1207ACC VA: 0x1207ACC
+	public void AppendData(byte[] bytes, int offset, int size) { }
+
+	// RVA: 0x1207B88 Offset: 0x1207B88 VA: 0x1207B88
+	public void Finish() { }
+
+	// RVA: 0x1207B98 Offset: 0x1207B98 VA: 0x1207B98
+	public uint ComputeChecksum(byte[] bytes) { }
+
+	// RVA: 0x1207BEC Offset: 0x1207BEC VA: 0x1207BEC
+	public uint ComputeChecksum(byte[] bytes, int offset, int size) { }
+
+	// RVA: 0x1207CCC Offset: 0x1207CCC VA: 0x1207CCC
+	public uint ComputeFileChecksum(string path) { }
+
+	// RVA: 0x12080C0 Offset: 0x12080C0 VA: 0x12080C0
+	public void .ctor() { }
+}
+

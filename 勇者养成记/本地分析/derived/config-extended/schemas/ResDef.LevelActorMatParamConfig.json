@@ -1,0 +1,609 @@
+{
+  "namespace": "ResDef",
+  "name": "LevelActorMatParamConfig",
+  "fields": [
+    {
+      "type": "int",
+      "name": "ChapterID",
+      "object_offset": 16
+    },
+    {
+      "type": "float",
+      "name": "ShadowON",
+      "object_offset": 20
+    },
+    {
+      "type": "ColorRGB",
+      "name": "BaseColor",
+      "object_offset": 24
+    },
+    {
+      "type": "float",
+      "name": "BasePos",
+      "object_offset": 32
+    },
+    {
+      "type": "float",
+      "name": "BaseSmooth",
+      "object_offset": 36
+    },
+    {
+      "type": "ColorRGB",
+      "name": "ItemColor",
+      "object_offset": 40
+    },
+    {
+      "type": "ColorRGB",
+      "name": "ItemShadow",
+      "object_offset": 48
+    },
+    {
+      "type": "ColorRGB",
+      "name": "SkinColor",
+      "object_offset": 56
+    },
+    {
+      "type": "ColorRGB",
+      "name": "SkinShadow",
+      "object_offset": 64
+    },
+    {
+      "type": "float",
+      "name": "ShadowScale",
+      "object_offset": 72
+    },
+    {
+      "type": "ColorRGB",
+      "name": "HighColor",
+      "object_offset": 80
+    },
+    {
+      "type": "ColorRGB",
+      "name": "RimColor",
+      "object_offset": 88
+    },
+    {
+      "type": "float",
+      "name": "RimPos",
+      "object_offset": 96
+    },
+    {
+      "type": "float",
+      "name": "RimSmooth",
+      "object_offset": 100
+    },
+    {
+      "type": "float",
+      "name": "RimScale",
+      "object_offset": 104
+    },
+    {
+      "type": "float",
+      "name": "RimXPos",
+      "object_offset": 108
+    },
+    {
+      "type": "float",
+      "name": "RimXSmooth",
+      "object_offset": 112
+    },
+    {
+      "type": "float",
+      "name": "RimYPos",
+      "object_offset": 116
+    },
+    {
+      "type": "float",
+      "name": "RimShadowPos",
+      "object_offset": 120
+    }
+  ],
+  "unpack_va": 30751100,
+  "dump_line": 207436,
+  "layout": [
+    {
+      "type": "int",
+      "name": "ChapterID",
+      "object_offset": 16,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d539b4",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "type": "float",
+      "name": "ShadowON",
+      "object_offset": 20,
+      "wire_type": "float",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d539d8",
+          "target_va": "0x21f6b98",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readFloat"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readFloat",
+          "destination": [
+            "self",
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ColorRGB",
+      "name": "BaseColor",
+      "object_offset": 24,
+      "wire_type": "ColorRGB",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d53a04",
+          "target_va": "0x1dced2c",
+          "target_names": [
+            "ResDef.ColorRGB$$unpack"
+          ],
+          "opcode": "BL",
+          "kind": "nested",
+          "nested_schema": "ResDef.ColorRGB",
+          "destination": [
+            "field",
+            24
+          ],
+          "cut_version": 1
+        }
+      ],
+      "nested_schema": "ResDef.ColorRGB"
+    },
+    {
+      "type": "float",
+      "name": "BasePos",
+      "object_offset": 32,
+      "wire_type": "float",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d53a28",
+          "target_va": "0x21f6b98",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readFloat"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readFloat",
+          "destination": [
+            "self",
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "type": "float",
+      "name": "BaseSmooth",
+      "object_offset": 36,
+      "wire_type": "float",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d53a4c",
+          "target_va": "0x21f6b98",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readFloat"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readFloat",
+          "destination": [
+            "self",
+            36
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ColorRGB",
+      "name": "ItemColor",
+      "object_offset": 40,
+      "wire_type": "ColorRGB",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d53a78",
+          "target_va": "0x1dced2c",
+          "target_names": [
+            "ResDef.ColorRGB$$unpack"
+          ],
+          "opcode": "BL",
+          "kind": "nested",
+          "nested_schema": "ResDef.ColorRGB",
+          "destination": [
+            "field",
+            40
+          ],
+          "cut_version": 1
+        }
+      ],
+      "nested_schema": "ResDef.ColorRGB"
+    },
+    {
+      "type": "ColorRGB",
+      "name": "ItemShadow",
+      "object_offset": 48,
+      "wire_type": "ColorRGB",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d53aa4",
+          "target_va": "0x1dced2c",
+          "target_names": [
+            "ResDef.ColorRGB$$unpack"
+          ],
+          "opcode": "BL",
+          "kind": "nested",
+          "nested_schema": "ResDef.ColorRGB",
+          "destination": [
+            "field",
+            48
+          ],
+          "cut_version": 1
+        }
+      ],
+      "nested_schema": "ResDef.ColorRGB"
+    },
+    {
+      "type": "ColorRGB",
+      "name": "SkinColor",
+      "object_offset": 56,
+      "wire_type": "ColorRGB",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d53ad0",
+          "target_va": "0x1dced2c",
+          "target_names": [
+            "ResDef.ColorRGB$$unpack"
+          ],
+          "opcode": "BL",
+          "kind": "nested",
+          "nested_schema": "ResDef.ColorRGB",
+          "destination": [
+            "field",
+            56
+          ],
+          "cut_version": 1
+        }
+      ],
+      "nested_schema": "ResDef.ColorRGB"
+    },
+    {
+      "type": "ColorRGB",
+      "name": "SkinShadow",
+      "object_offset": 64,
+      "wire_type": "ColorRGB",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d53afc",
+          "target_va": "0x1dced2c",
+          "target_names": [
+            "ResDef.ColorRGB$$unpack"
+          ],
+          "opcode": "BL",
+          "kind": "nested",
+          "nested_schema": "ResDef.ColorRGB",
+          "destination": [
+            "field",
+            64
+          ],
+          "cut_version": 1
+        }
+      ],
+      "nested_schema": "ResDef.ColorRGB"
+    },
+    {
+      "type": "float",
+      "name": "ShadowScale",
+      "object_offset": 72,
+      "wire_type": "float",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d53b20",
+          "target_va": "0x21f6b98",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readFloat"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readFloat",
+          "destination": [
+            "self",
+            72
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ColorRGB",
+      "name": "HighColor",
+      "object_offset": 80,
+      "wire_type": "ColorRGB",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d53b4c",
+          "target_va": "0x1dced2c",
+          "target_names": [
+            "ResDef.ColorRGB$$unpack"
+          ],
+          "opcode": "BL",
+          "kind": "nested",
+          "nested_schema": "ResDef.ColorRGB",
+          "destination": [
+            "field",
+            80
+          ],
+          "cut_version": 1
+        }
+      ],
+      "nested_schema": "ResDef.ColorRGB"
+    },
+    {
+      "type": "ColorRGB",
+      "name": "RimColor",
+      "object_offset": 88,
+      "wire_type": "ColorRGB",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d53b78",
+          "target_va": "0x1dced2c",
+          "target_names": [
+            "ResDef.ColorRGB$$unpack"
+          ],
+          "opcode": "BL",
+          "kind": "nested",
+          "nested_schema": "ResDef.ColorRGB",
+          "destination": [
+            "field",
+            88
+          ],
+          "cut_version": 1
+        }
+      ],
+      "nested_schema": "ResDef.ColorRGB"
+    },
+    {
+      "type": "float",
+      "name": "RimPos",
+      "object_offset": 96,
+      "wire_type": "float",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d53b9c",
+          "target_va": "0x21f6b98",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readFloat"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readFloat",
+          "destination": [
+            "self",
+            96
+          ]
+        }
+      ]
+    },
+    {
+      "type": "float",
+      "name": "RimSmooth",
+      "object_offset": 100,
+      "wire_type": "float",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d53bc0",
+          "target_va": "0x21f6b98",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readFloat"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readFloat",
+          "destination": [
+            "self",
+            100
+          ]
+        }
+      ]
+    },
+    {
+      "type": "float",
+      "name": "RimScale",
+      "object_offset": 104,
+      "wire_type": "float",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d53be4",
+          "target_va": "0x21f6b98",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readFloat"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readFloat",
+          "destination": [
+            "self",
+            104
+          ]
+        }
+      ]
+    },
+    {
+      "type": "float",
+      "name": "RimXPos",
+      "object_offset": 108,
+      "wire_type": "float",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d53c08",
+          "target_va": "0x21f6b98",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readFloat"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readFloat",
+          "destination": [
+            "self",
+            108
+          ]
+        }
+      ]
+    },
+    {
+      "type": "float",
+      "name": "RimXSmooth",
+      "object_offset": 112,
+      "wire_type": "float",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d53c2c",
+          "target_va": "0x21f6b98",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readFloat"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readFloat",
+          "destination": [
+            "self",
+            112
+          ]
+        }
+      ]
+    },
+    {
+      "type": "float",
+      "name": "RimYPos",
+      "object_offset": 116,
+      "wire_type": "float",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d53c50",
+          "target_va": "0x21f6b98",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readFloat"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readFloat",
+          "destination": [
+            "self",
+            116
+          ]
+        }
+      ]
+    },
+    {
+      "type": "float",
+      "name": "RimShadowPos",
+      "object_offset": 120,
+      "wire_type": "float",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d53c90",
+          "target_va": "0x21f6b98",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readFloat"
+          ],
+          "opcode": "B",
+          "kind": "reader",
+          "reader": "readFloat",
+          "destination": [
+            "self",
+            120
+          ]
+        }
+      ]
+    }
+  ],
+  "native_evidence": {
+    "method_start_va": "0x1d5397c",
+    "instruction_steps": 156,
+    "event_count": 19,
+    "branch_evidence": [],
+    "loops": [],
+    "instruction_sha256": "82663260386f80fb96fde4625c570aa52090bb706b18cf44af7ab771bb506f68",
+    "gate": "concrete-success-path; all sequential readers/nested callees; full field/destination/stride matching",
+    "assumptions": [
+      "non-null input buffer and created nested objects/arrays",
+      "managed array bounds valid",
+      "AAPCS64 callee-saved register preservation",
+      "reader and nested call success; version 1 only"
+    ]
+  }
+}

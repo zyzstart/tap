@@ -1,0 +1,169 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_leaguebossrankawardconfig.bytes.ab",
+    "path_id": 7090105750069638063,
+    "name": "LeagueBossRankAwardConfig",
+    "sha256": "8e069cc8a574187b94a19ca28f1caa4067422b0aaf2909afc22230338a6c405c",
+    "export": "derived/unity/text/assets_resources_config_resbin_leaguebossrankawardconfig.bytes/LeagueBossRankAwardConfig__7090105750069638063.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 152,
+      "version": 1,
+      "record_count": 11,
+      "stored_crc32": "5c2d5592",
+      "computed_inverted_crc32": "5c2d5592"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "LeagueBossRankAwardConfig",
+      "fields": [
+        {
+          "type": "uint",
+          "name": "MinRank",
+          "object_offset": 16
+        },
+        {
+          "type": "uint",
+          "name": "MaxRank",
+          "object_offset": 20
+        },
+        {
+          "type": "uint",
+          "name": "AwardID",
+          "object_offset": 24
+        }
+      ],
+      "unpack_va": 30745312,
+      "dump_line": 207053
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1d52314",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d52338",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d52378",
+        "target_va": "0x21f6908",
+        "opcode": "B-tail",
+        "reader": "readUInt32",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 11
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "MinRank": 1,
+      "MaxRank": 1,
+      "AwardID": 68500,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 32,
+      "MinRank": 2,
+      "MaxRank": 2,
+      "AwardID": 68501,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 44,
+      "MinRank": 3,
+      "MaxRank": 3,
+      "AwardID": 68502,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 56,
+      "MinRank": 4,
+      "MaxRank": 10,
+      "AwardID": 68503,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 68,
+      "MinRank": 11,
+      "MaxRank": 20,
+      "AwardID": 68504,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 80,
+      "MinRank": 21,
+      "MaxRank": 40,
+      "AwardID": 68505,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 92,
+      "MinRank": 41,
+      "MaxRank": 60,
+      "AwardID": 68506,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 104,
+      "MinRank": 61,
+      "MaxRank": 80,
+      "AwardID": 68507,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 116,
+      "MinRank": 81,
+      "MaxRank": 100,
+      "AwardID": 68508,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 128,
+      "MinRank": 101,
+      "MaxRank": 200,
+      "AwardID": 68509,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 140,
+      "MinRank": 201,
+      "MaxRank": 500,
+      "AwardID": 68510,
+      "_byte_length": 12
+    }
+  ]
+}

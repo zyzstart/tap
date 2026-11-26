@@ -1,0 +1,129 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_xyrankbootyconfig.bytes.ab",
+    "path_id": -7375592522638852492,
+    "name": "XyRankBootyConfig",
+    "sha256": "78a43c57e1df26e1e7e625699f1e2b138a021e211aeec2c6e694a69f2a2d487b",
+    "export": "derived/unity/text/assets_resources_config_resbin_xyrankbootyconfig.bytes/XyRankBootyConfig__-7375592522638852492.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 92,
+      "version": 1,
+      "record_count": 6,
+      "stored_crc32": "c83ca9f2",
+      "computed_inverted_crc32": "c83ca9f2"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "XyRankBootyConfig",
+      "fields": [
+        {
+          "type": "int",
+          "name": "RankMin",
+          "object_offset": 16
+        },
+        {
+          "type": "int",
+          "name": "RankMax",
+          "object_offset": 20
+        },
+        {
+          "type": "int",
+          "name": "BootyID",
+          "object_offset": 24
+        }
+      ],
+      "unpack_va": 29425512,
+      "dump_line": 207393
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1c0ff9c",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1c0ffc0",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1c10000",
+        "target_va": "0x21f67d0",
+        "opcode": "B-tail",
+        "reader": "readInt32",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 6
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "RankMin": 1,
+      "RankMax": 1,
+      "BootyID": 61401,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 32,
+      "RankMin": 2,
+      "RankMax": 2,
+      "BootyID": 61402,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 44,
+      "RankMin": 3,
+      "RankMax": 3,
+      "BootyID": 61403,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 56,
+      "RankMin": 4,
+      "RankMax": 10,
+      "BootyID": 61404,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 68,
+      "RankMin": 11,
+      "RankMax": 99,
+      "BootyID": 61405,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 80,
+      "RankMin": 100,
+      "RankMax": 1000,
+      "BootyID": 61406,
+      "_byte_length": 12
+    }
+  ]
+}

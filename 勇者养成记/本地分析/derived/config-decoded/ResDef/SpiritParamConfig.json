@@ -1,0 +1,81 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_spiritparamconfig.bytes.ab",
+    "path_id": -7210410919308914279,
+    "name": "SpiritParamConfig",
+    "sha256": "6dad851c4d1dbc812a61f3d72c1ef8aa079f48c488fb1413134c53612bea6c6d",
+    "export": "derived/unity/text/assets_resources_config_resbin_spiritparamconfig.bytes/SpiritParamConfig__-7210410919308914279.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 36,
+      "version": 1,
+      "record_count": 2,
+      "stored_crc32": "ec3351d2",
+      "computed_inverted_crc32": "ec3351d2"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "SpiritParamConfig",
+      "fields": [
+        {
+          "type": "int",
+          "name": "SpiritFuncID",
+          "object_offset": 16
+        },
+        {
+          "type": "float",
+          "name": "FuncVal",
+          "object_offset": 20
+        }
+      ],
+      "unpack_va": 32071692,
+      "dump_line": 211529
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1e96040",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e96080",
+        "target_va": "0x21f6b98",
+        "opcode": "B-tail",
+        "reader": "readFloat",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 2
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "SpiritFuncID": 1,
+      "FuncVal": 1.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 28,
+      "SpiritFuncID": 2,
+      "FuncVal": 1.0,
+      "_byte_length": 8
+    }
+  ]
+}

@@ -1,0 +1,265 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_fp_mijingbornposconfig.bytes.ab",
+    "path_id": -8233983785561347999,
+    "name": "MiJingBornPosConfig",
+    "sha256": "2c5b2acb3d403f4f9320b33128a9778b2be32a5bbbb0170851b6f6fe3854941d",
+    "export": "derived/unity/text/assets_resources_config_resbin_fp_mijingbornposconfig.bytes/MiJingBornPosConfig__-8233983785561347999.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 480,
+      "version": 1,
+      "record_count": 23,
+      "stored_crc32": "e1755ce7",
+      "computed_inverted_crc32": "e1755ce7"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "BattleCore",
+      "name": "MiJingBornPosConfig",
+      "fields": [
+        {
+          "type": "int",
+          "name": "PosType",
+          "object_offset": 16
+        },
+        {
+          "type": "FP",
+          "name": "Row",
+          "object_offset": 24
+        },
+        {
+          "type": "FP",
+          "name": "Column",
+          "object_offset": 32
+        }
+      ],
+      "unpack_va": 23346956,
+      "dump_line": 167560
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1643f40",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1643f64",
+        "target_va": "0x21f6938",
+        "opcode": "BL",
+        "reader": "readInt64",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1643fa4",
+        "target_va": "0x21f6938",
+        "opcode": "B-tail",
+        "reader": "readInt64",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 23
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "PosType": 1,
+      "Row__raw_int64": 94489280512,
+      "Column__raw_int64": 73014444032,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 40,
+      "PosType": 2,
+      "Row__raw_int64": 8589934592,
+      "Column__raw_int64": 12884901888,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 60,
+      "PosType": 2,
+      "Row__raw_int64": 8589934592,
+      "Column__raw_int64": 38654705664,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 80,
+      "PosType": 2,
+      "Row__raw_int64": 8589934592,
+      "Column__raw_int64": 73014444032,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 100,
+      "PosType": 2,
+      "Row__raw_int64": 8589934592,
+      "Column__raw_int64": 107374182400,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 120,
+      "PosType": 2,
+      "Row__raw_int64": 30064771072,
+      "Column__raw_int64": 137438953472,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 140,
+      "PosType": 2,
+      "Row__raw_int64": 60129542144,
+      "Column__raw_int64": 137438953472,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 160,
+      "PosType": 2,
+      "Row__raw_int64": 94489280512,
+      "Column__raw_int64": 137438953472,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 180,
+      "PosType": 2,
+      "Row__raw_int64": 128849018880,
+      "Column__raw_int64": 137438953472,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 200,
+      "PosType": 2,
+      "Row__raw_int64": 158913789952,
+      "Column__raw_int64": 137438953472,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 220,
+      "PosType": 2,
+      "Row__raw_int64": 180388626432,
+      "Column__raw_int64": 115964116992,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 240,
+      "PosType": 2,
+      "Row__raw_int64": 180388626432,
+      "Column__raw_int64": 55834574848,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 260,
+      "PosType": 2,
+      "Row__raw_int64": 180388626432,
+      "Column__raw_int64": 25769803776,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 280,
+      "PosType": 2,
+      "Row__raw_int64": 180388626432,
+      "Column__raw_int64": 115964116992,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 300,
+      "PosType": 2,
+      "Row__raw_int64": 158913789952,
+      "Column__raw_int64": 8589934592,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 320,
+      "PosType": 2,
+      "Row__raw_int64": 128849018880,
+      "Column__raw_int64": 8589934592,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 340,
+      "PosType": 2,
+      "Row__raw_int64": 94489280512,
+      "Column__raw_int64": 8589934592,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 360,
+      "PosType": 2,
+      "Row__raw_int64": 60129542144,
+      "Column__raw_int64": 8589934592,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 380,
+      "PosType": 2,
+      "Row__raw_int64": 180388626432,
+      "Column__raw_int64": 115964116992,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 19,
+      "_byte_offset": 400,
+      "PosType": 3,
+      "Row__raw_int64": 94489280512,
+      "Column__raw_int64": 8589934592,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 20,
+      "_byte_offset": 420,
+      "PosType": 3,
+      "Row__raw_int64": 94489280512,
+      "Column__raw_int64": 137438953472,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 21,
+      "_byte_offset": 440,
+      "PosType": 3,
+      "Row__raw_int64": 146028888064,
+      "Column__raw_int64": 73014444032,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 22,
+      "_byte_offset": 460,
+      "PosType": 3,
+      "Row__raw_int64": 47244640256,
+      "Column__raw_int64": 73014444032,
+      "_byte_length": 20
+    }
+  ]
+}

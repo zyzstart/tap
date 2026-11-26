@@ -1,0 +1,129 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_fp_pvpbornposconfig.bytes.ab",
+    "path_id": -220334805406963081,
+    "name": "PvpBornPosConfig",
+    "sha256": "8334624e64ad0faa0578200c164577229049fd89ec4c7ed7c5b397484ca3149c",
+    "export": "derived/unity/text/assets_resources_config_resbin_fp_pvpbornposconfig.bytes/PvpBornPosConfig__-220334805406963081.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 140,
+      "version": 1,
+      "record_count": 6,
+      "stored_crc32": "7b389da2",
+      "computed_inverted_crc32": "7b389da2"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "BattleCore",
+      "name": "PvpBornPosConfig",
+      "fields": [
+        {
+          "type": "uint",
+          "name": "PosId",
+          "object_offset": 16
+        },
+        {
+          "type": "FP",
+          "name": "PosX",
+          "object_offset": 24
+        },
+        {
+          "type": "FP",
+          "name": "PosY",
+          "object_offset": 32
+        }
+      ],
+      "unpack_va": 35216908,
+      "dump_line": 168134
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x2195e40",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x2195e64",
+        "target_va": "0x21f6938",
+        "opcode": "BL",
+        "reader": "readInt64",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x2195ea4",
+        "target_va": "0x21f6938",
+        "opcode": "B-tail",
+        "reader": "readInt64",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 6
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "PosId": 1,
+      "PosX__raw_int64": 12884901888,
+      "PosY__raw_int64": 12884901888,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 40,
+      "PosId": 2,
+      "PosX__raw_int64": 128849018880,
+      "PosY__raw_int64": 17179869184,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 60,
+      "PosId": 3,
+      "PosX__raw_int64": 17179869184,
+      "PosY__raw_int64": 94489280512,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 80,
+      "PosId": 4,
+      "PosX__raw_int64": 128849018880,
+      "PosY__raw_int64": 94489280512,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 100,
+      "PosId": 5,
+      "PosX__raw_int64": 17179869184,
+      "PosY__raw_int64": 171798691840,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 120,
+      "PosId": 6,
+      "PosX__raw_int64": 128849018880,
+      "PosY__raw_int64": 171798691840,
+      "_byte_length": 20
+    }
+  ]
+}

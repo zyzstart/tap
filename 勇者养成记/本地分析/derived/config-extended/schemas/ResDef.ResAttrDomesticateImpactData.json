@@ -1,0 +1,145 @@
+{
+  "namespace": "ResDef",
+  "name": "ResAttrDomesticateImpactData",
+  "fields": [
+    {
+      "type": "short",
+      "name": "DataType",
+      "object_offset": 16
+    },
+    {
+      "type": "byte",
+      "name": "AddType",
+      "object_offset": 18
+    },
+    {
+      "type": "float",
+      "name": "Value",
+      "object_offset": 20
+    },
+    {
+      "type": "uint",
+      "name": "AddToType",
+      "object_offset": 24
+    }
+  ],
+  "unpack_va": 32037336,
+  "dump_line": 209753,
+  "layout": [
+    {
+      "type": "short",
+      "name": "DataType",
+      "object_offset": 16,
+      "wire_type": "short",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e8da0c",
+          "target_va": "0x21f6668",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt16"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt16",
+          "destination": [
+            "self",
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "type": "byte",
+      "name": "AddType",
+      "object_offset": 18,
+      "wire_type": "byte",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e8da30",
+          "target_va": "0x21f65e0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt8"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt8",
+          "destination": [
+            "self",
+            18
+          ]
+        }
+      ]
+    },
+    {
+      "type": "float",
+      "name": "Value",
+      "object_offset": 20,
+      "wire_type": "float",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e8da54",
+          "target_va": "0x21f6b98",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readFloat"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readFloat",
+          "destination": [
+            "self",
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "type": "uint",
+      "name": "AddToType",
+      "object_offset": 24,
+      "wire_type": "uint",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e8da94",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "B",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "self",
+            24
+          ]
+        }
+      ]
+    }
+  ],
+  "native_evidence": {
+    "method_start_va": "0x1e8d9d8",
+    "instruction_steps": 36,
+    "event_count": 4,
+    "branch_evidence": [],
+    "loops": [],
+    "instruction_sha256": "87a3b7ae965b07d27d28d41a5afb90f473d2494118f72e481fc86d6323389614",
+    "gate": "concrete-success-path; all sequential readers/nested callees; full field/destination/stride matching",
+    "assumptions": [
+      "non-null input buffer and created nested objects/arrays",
+      "managed array bounds valid",
+      "AAPCS64 callee-saved register preservation",
+      "reader and nested call success; version 1 only"
+    ]
+  }
+}

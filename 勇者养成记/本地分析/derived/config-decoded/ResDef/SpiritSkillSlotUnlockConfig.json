@@ -1,0 +1,179 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_spiritskillslotunlockconfig.bytes.ab",
+    "path_id": 5980318853834701750,
+    "name": "SpiritSkillSlotUnlockConfig",
+    "sha256": "7126474e5e5e42f4e985c238a664875a123a24b0b97e21d8f488ab3b4c098e5d",
+    "export": "derived/unity/text/assets_resources_config_resbin_spiritskillslotunlockconfig.bytes/SpiritSkillSlotUnlockConfig__5980318853834701750.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 148,
+      "version": 1,
+      "record_count": 16,
+      "stored_crc32": "6eb3d4a8",
+      "computed_inverted_crc32": "6eb3d4a8"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "SpiritSkillSlotUnlockConfig",
+      "fields": [
+        {
+          "type": "uint",
+          "name": "ItemID",
+          "object_offset": 16
+        },
+        {
+          "type": "uint",
+          "name": "Progress",
+          "object_offset": 20
+        }
+      ],
+      "unpack_va": 32073524,
+      "dump_line": 211692
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1e96768",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e967a8",
+        "target_va": "0x21f6908",
+        "opcode": "B-tail",
+        "reader": "readUInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 16
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "ItemID": 500220,
+      "Progress": 10,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 28,
+      "ItemID": 500221,
+      "Progress": 10,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 36,
+      "ItemID": 500222,
+      "Progress": 10,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 44,
+      "ItemID": 500223,
+      "Progress": 10,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 52,
+      "ItemID": 500224,
+      "Progress": 10,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 60,
+      "ItemID": 500225,
+      "Progress": 10,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 68,
+      "ItemID": 500226,
+      "Progress": 30,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 76,
+      "ItemID": 500227,
+      "Progress": 30,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 84,
+      "ItemID": 500228,
+      "Progress": 30,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 92,
+      "ItemID": 500229,
+      "Progress": 30,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 100,
+      "ItemID": 500230,
+      "Progress": 60,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 108,
+      "ItemID": 500231,
+      "Progress": 60,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 116,
+      "ItemID": 500232,
+      "Progress": 60,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 124,
+      "ItemID": 500233,
+      "Progress": 60,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 132,
+      "ItemID": 500234,
+      "Progress": 60,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 140,
+      "ItemID": 500235,
+      "Progress": 60,
+      "_byte_length": 8
+    }
+  ]
+}

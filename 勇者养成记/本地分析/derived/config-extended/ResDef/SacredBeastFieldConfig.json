@@ -1,0 +1,1643 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_sacredbeastfieldconfig.bytes.ab",
+    "path_id": -3661033376372060743,
+    "name": "SacredBeastFieldConfig",
+    "sha256": "77e2463b53065f07d772611c68eab9de328add2cb544119ef34b442ea7662290",
+    "export": "derived/unity/text/assets_resources_config_resbin_sacredbeastfieldconfig.bytes/SacredBeastFieldConfig__-3661033376372060743.bin",
+    "schema": "ResDef.SacredBeastFieldConfig",
+    "path_id_decimal": "-3661033376372060743",
+    "legacy_status": "raw-header-verified",
+    "legacy_reason": "Unsupported arrays/nested/enum fields: ResAttrImpactData AttrList",
+    "status": "decoded-validated-native-recursive",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 55694,
+      "version": 1,
+      "record_count": 80,
+      "stored_crc32": "a19b072d",
+      "computed_inverted_crc32": "a19b072d"
+    },
+    "native_layout_verified": true,
+    "schema_file": "derived/config-extended/schemas/ResDef.SacredBeastFieldConfig.json",
+    "minimum_record_size": 50,
+    "min_expected_payload_bytes": 4000,
+    "actual_payload_bytes": 55674,
+    "decoded_record_count": 80,
+    "validation": {
+      "header_verified": true,
+      "count_verified": true,
+      "exact_eof": true,
+      "full_reencode_equal": true,
+      "full_reencode_sha256": "77e2463b53065f07d772611c68eab9de328add2cb544119ef34b442ea7662290",
+      "decoded_node_count": 1120,
+      "payload_bytes": 55674
+    },
+    "arrays": [],
+    "decoded_json": "derived/config-extended/ResDef/SacredBeastFieldConfig.json",
+    "decoded_csv": "derived/config-extended/ResDef/SacredBeastFieldConfig.csv"
+  },
+  "precision": "Exact JSON integer number tokens, with decimal-string mirrors for every int64/uint64/FP. FP is raw signed int64; no scaling.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "ID": 1,
+      "Level": 1,
+      "MinSacredBeastLevel": 10,
+      "ConsumeItemID": 209001,
+      "ConsumeItemCnt": 1,
+      "SkillTriggerPercent": 20.0,
+      "SkillName": "青龙领域",
+      "SkillID": 80101,
+      "SkillDesc": "进入小怪关卡时，有<color=#02802f>20</color>%概率触发青龙领域，每隔<color=#02802f>10</color>秒释放1次全屏范围的青龙风暴，对所有敌人造成<color=#02802f>60</color>%攻击力附加<color=#02802f>9000</color>点伤害",
+      "NextEffect": "进入小怪关卡时，有<color=#02802f>40</color>%概率触发青龙领域，每隔<color=#02802f>9</color>秒释放1次全屏范围的青龙风暴，对所有敌人造成<color=#02802f>67</color>%攻击力附加<color=#02802f>10000</color>点伤害",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 2000.0
+      },
+      "_byte_length": 566
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 586,
+      "ID": 1,
+      "Level": 2,
+      "MinSacredBeastLevel": 20,
+      "ConsumeItemID": 209001,
+      "ConsumeItemCnt": 3,
+      "SkillTriggerPercent": 40.0,
+      "SkillName": "青龙领域",
+      "SkillID": 80102,
+      "SkillDesc": "进入小怪关卡时，有<color=#02802f>40</color>%概率触发青龙领域，每隔<color=#02802f>9</color>秒释放1次全屏范围的青龙风暴，对所有敌人造成<color=#02802f>67</color>%攻击力附加<color=#02802f>10000</color>点伤害",
+      "NextEffect": "进入小怪关卡时，有<color=#02802f>60</color>%概率触发青龙领域，每隔<color=#02802f>8</color>秒释放1次全屏范围的青龙风暴，对所有敌人造成<color=#02802f>74</color>%攻击力附加<color=#02802f>11000</color>点伤害",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 8000.0
+      },
+      "_byte_length": 566
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 1152,
+      "ID": 1,
+      "Level": 3,
+      "MinSacredBeastLevel": 30,
+      "ConsumeItemID": 209001,
+      "ConsumeItemCnt": 5,
+      "SkillTriggerPercent": 60.0,
+      "SkillName": "青龙领域",
+      "SkillID": 80103,
+      "SkillDesc": "进入小怪关卡时，有<color=#02802f>60</color>%概率触发青龙领域，每隔<color=#02802f>8</color>秒释放1次全屏范围的青龙风暴，对所有敌人造成<color=#02802f>74</color>%攻击力附加<color=#02802f>11000</color>点伤害",
+      "NextEffect": "进入小怪关卡时，有<color=#02802f>80</color>%概率触发青龙领域，每隔<color=#02802f>7</color>秒释放1次全屏范围的青龙风暴，对所有敌人造成<color=#02802f>81</color>%攻击力附加<color=#02802f>12000</color>点伤害",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 18000.0
+      },
+      "_byte_length": 566
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 1718,
+      "ID": 1,
+      "Level": 4,
+      "MinSacredBeastLevel": 40,
+      "ConsumeItemID": 209001,
+      "ConsumeItemCnt": 7,
+      "SkillTriggerPercent": 80.0,
+      "SkillName": "青龙领域",
+      "SkillID": 80104,
+      "SkillDesc": "进入小怪关卡时，有<color=#02802f>80</color>%概率触发青龙领域，每隔<color=#02802f>7</color>秒释放1次全屏范围的青龙风暴，对所有敌人造成<color=#02802f>81</color>%攻击力附加<color=#02802f>12000</color>点伤害",
+      "NextEffect": "进入小怪关卡时，有<color=#02802f>100</color>%概率触发青龙领域，每隔<color=#02802f>5</color>秒释放1次全屏范围的青龙风暴，对所有敌人造成<color=#02802f>88</color>%攻击力附加<color=#02802f>13000</color>点伤害",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 32000.0
+      },
+      "_byte_length": 567
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 2285,
+      "ID": 1,
+      "Level": 5,
+      "MinSacredBeastLevel": 50,
+      "ConsumeItemID": 209001,
+      "ConsumeItemCnt": 9,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "青龙领域",
+      "SkillID": 80105,
+      "SkillDesc": "进入小怪关卡时，有<color=#02802f>100</color>%概率触发青龙领域，每隔<color=#02802f>5</color>秒释放1次全屏范围的青龙风暴，对所有敌人造成<color=#02802f>88</color>%攻击力附加<color=#02802f>13000</color>点伤害",
+      "NextEffect": "进入小怪关卡时，有<color=#02802f>100</color>%概率触发青龙领域，每隔<color=#02802f>5</color>秒释放1次全屏范围的青龙风暴，对所有敌人造成<color=#02802f>95</color>%攻击力附加<color=#02802f>15000</color>点无视防御伤害",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 50000.0
+      },
+      "_byte_length": 580
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 2865,
+      "ID": 1,
+      "Level": 6,
+      "MinSacredBeastLevel": 60,
+      "ConsumeItemID": 209001,
+      "ConsumeItemCnt": 10,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "青龙领域",
+      "SkillID": 80106,
+      "SkillDesc": "进入小怪关卡时，有<color=#02802f>100</color>%概率触发青龙领域，每隔<color=#02802f>5</color>秒释放1次全屏范围的青龙风暴，对所有敌人造成<color=#02802f>95</color>%攻击力附加<color=#02802f>15000</color>点无视防御伤害",
+      "NextEffect": "进入小怪关卡时，有<color=#02802f>100</color>%概率触发青龙领域，每隔<color=#02802f>5</color>秒释放1次全屏范围的青龙风暴，对所有敌人造成<color=#02802f>109</color>%攻击力附加<color=#02802f>17000</color>点无视防御伤害",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 70000.0
+      },
+      "_byte_length": 593
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 3458,
+      "ID": 1,
+      "Level": 7,
+      "MinSacredBeastLevel": 70,
+      "ConsumeItemID": 209001,
+      "ConsumeItemCnt": 10,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "青龙领域",
+      "SkillID": 80107,
+      "SkillDesc": "进入小怪关卡时，有<color=#02802f>100</color>%概率触发青龙领域，每隔<color=#02802f>5</color>秒释放1次全屏范围的青龙风暴，对所有敌人造成<color=#02802f>109</color>%攻击力附加<color=#02802f>17000</color>点无视防御伤害",
+      "NextEffect": "进入小怪关卡时，有<color=#02802f>100</color>%概率触发青龙领域，每隔<color=#02802f>5</color>秒释放1次全屏范围的青龙风暴，对所有敌人造成<color=#02802f>123</color>%攻击力附加<color=#02802f>19000</color>点无视防御伤害",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 90000.0
+      },
+      "_byte_length": 594
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 4052,
+      "ID": 1,
+      "Level": 8,
+      "MinSacredBeastLevel": 80,
+      "ConsumeItemID": 209001,
+      "ConsumeItemCnt": 10,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "青龙领域",
+      "SkillID": 80108,
+      "SkillDesc": "进入小怪关卡时，有<color=#02802f>100</color>%概率触发青龙领域，每隔<color=#02802f>5</color>秒释放1次全屏范围的青龙风暴，对所有敌人造成<color=#02802f>123</color>%攻击力附加<color=#02802f>19000</color>点无视防御伤害",
+      "NextEffect": "进入小怪关卡时，有<color=#02802f>100</color>%概率触发青龙领域，每隔<color=#02802f>5</color>秒释放1次全屏范围的青龙风暴，对所有敌人造成<color=#02802f>137</color>%攻击力附加<color=#02802f>21000</color>点无视防御伤害",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 110000.0
+      },
+      "_byte_length": 594
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 4646,
+      "ID": 1,
+      "Level": 9,
+      "MinSacredBeastLevel": 90,
+      "ConsumeItemID": 209001,
+      "ConsumeItemCnt": 10,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "青龙领域",
+      "SkillID": 80109,
+      "SkillDesc": "进入小怪关卡时，有<color=#02802f>100</color>%概率触发青龙领域，每隔<color=#02802f>5</color>秒释放1次全屏范围的青龙风暴，对所有敌人造成<color=#02802f>137</color>%攻击力附加<color=#02802f>21000</color>点无视防御伤害",
+      "NextEffect": "进入小怪关卡时，有<color=#02802f>100</color>%概率触发青龙领域，每隔<color=#02802f>5</color>秒释放1次全屏范围的青龙风暴，对所有敌人造成<color=#02802f>151</color>%攻击力附加<color=#02802f>23000</color>点无视防御伤害",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 130000.0
+      },
+      "_byte_length": 594
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 5240,
+      "ID": 1,
+      "Level": 10,
+      "MinSacredBeastLevel": 100,
+      "ConsumeItemID": 209001,
+      "ConsumeItemCnt": 10,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "青龙领域",
+      "SkillID": 80110,
+      "SkillDesc": "进入小怪关卡时，有<color=#02802f>100</color>%概率触发青龙领域，每隔<color=#02802f>5</color>秒释放1次全屏范围的青龙风暴，对所有敌人造成<color=#02802f>151</color>%攻击力附加<color=#02802f>23000</color>点无视防御伤害",
+      "NextEffect": "进入小怪关卡时，有<color=#02802f>100</color>%概率触发青龙领域，每隔<color=#02802f>5</color>秒释放1次全屏范围的青龙风暴，对所有敌人造成<color=#02802f>165</color>%攻击力附加<color=#02802f>26000</color>点无视防御伤害，并有<color=#02802f>10</color>%概率沉默敌人<color=#02802f>2</color>秒",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 150000.0
+      },
+      "_byte_length": 674
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 5914,
+      "ID": 1,
+      "Level": 11,
+      "MinSacredBeastLevel": 110,
+      "ConsumeItemID": 209001,
+      "ConsumeItemCnt": 15,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "青龙领域",
+      "SkillID": 80111,
+      "SkillDesc": "进入小怪关卡时，有<color=#02802f>100</color>%概率触发青龙领域，每隔<color=#02802f>5</color>秒释放1次全屏范围的青龙风暴，对所有敌人造成<color=#02802f>165</color>%攻击力附加<color=#02802f>26000</color>点无视防御伤害，并有<color=#02802f>10</color>%概率沉默敌人<color=#02802f>2</color>秒",
+      "NextEffect": "进入小怪关卡时，有<color=#02802f>100</color>%概率触发青龙领域，每隔<color=#02802f>5</color>秒释放1次全屏范围的青龙风暴，对所有敌人造成<color=#02802f>182</color>%攻击力附加<color=#02802f>29000</color>点无视防御伤害，并有<color=#02802f>20</color>%概率沉默敌人<color=#02802f>2.25</color>秒",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 180000.0
+      },
+      "_byte_length": 757
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 6671,
+      "ID": 1,
+      "Level": 12,
+      "MinSacredBeastLevel": 120,
+      "ConsumeItemID": 209001,
+      "ConsumeItemCnt": 15,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "青龙领域",
+      "SkillID": 80112,
+      "SkillDesc": "进入小怪关卡时，有<color=#02802f>100</color>%概率触发青龙领域，每隔<color=#02802f>5</color>秒释放1次全屏范围的青龙风暴，对所有敌人造成<color=#02802f>182</color>%攻击力附加<color=#02802f>29000</color>点无视防御伤害，并有<color=#02802f>20</color>%概率沉默敌人<color=#02802f>2.25</color>秒",
+      "NextEffect": "进入小怪关卡时，有<color=#02802f>100</color>%概率触发青龙领域，每隔<color=#02802f>5</color>秒释放1次全屏范围的青龙风暴，对所有敌人造成<color=#02802f>199</color>%攻击力附加<color=#02802f>32000</color>点无视防御伤害，并有<color=#02802f>30</color>%概率沉默敌人<color=#02802f>2.5</color>秒",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 210000.0
+      },
+      "_byte_length": 759
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 7430,
+      "ID": 1,
+      "Level": 13,
+      "MinSacredBeastLevel": 130,
+      "ConsumeItemID": 209001,
+      "ConsumeItemCnt": 15,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "青龙领域",
+      "SkillID": 80113,
+      "SkillDesc": "进入小怪关卡时，有<color=#02802f>100</color>%概率触发青龙领域，每隔<color=#02802f>5</color>秒释放1次全屏范围的青龙风暴，对所有敌人造成<color=#02802f>199</color>%攻击力附加<color=#02802f>32000</color>点无视防御伤害，并有<color=#02802f>30</color>%概率沉默敌人<color=#02802f>2.5</color>秒",
+      "NextEffect": "进入小怪关卡时，有<color=#02802f>100</color>%概率触发青龙领域，每隔<color=#02802f>5</color>秒释放1次全屏范围的青龙风暴，对所有敌人造成<color=#02802f>216</color>%攻击力附加<color=#02802f>35000</color>点无视防御伤害，并有<color=#02802f>40</color>%概率沉默敌人<color=#02802f>2.75</color>秒",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 240000.0
+      },
+      "_byte_length": 759
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 8189,
+      "ID": 1,
+      "Level": 14,
+      "MinSacredBeastLevel": 140,
+      "ConsumeItemID": 209001,
+      "ConsumeItemCnt": 15,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "青龙领域",
+      "SkillID": 80114,
+      "SkillDesc": "进入小怪关卡时，有<color=#02802f>100</color>%概率触发青龙领域，每隔<color=#02802f>5</color>秒释放1次全屏范围的青龙风暴，对所有敌人造成<color=#02802f>216</color>%攻击力附加<color=#02802f>35000</color>点无视防御伤害，并有<color=#02802f>40</color>%概率沉默敌人<color=#02802f>2.75</color>秒",
+      "NextEffect": "进入小怪关卡时，有<color=#02802f>100</color>%概率触发青龙领域，每隔<color=#02802f>5</color>秒释放1次全屏范围的青龙风暴，对所有敌人造成<color=#02802f>233</color>%攻击力附加<color=#02802f>38000</color>点无视防御伤害，并有<color=#02802f>50</color>%概率沉默敌人<color=#02802f>3</color>秒",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 270000.0
+      },
+      "_byte_length": 757
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 8946,
+      "ID": 1,
+      "Level": 15,
+      "MinSacredBeastLevel": 150,
+      "ConsumeItemID": 209001,
+      "ConsumeItemCnt": 15,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "青龙领域",
+      "SkillID": 80115,
+      "SkillDesc": "进入小怪关卡时，有<color=#02802f>100</color>%概率触发青龙领域，每隔<color=#02802f>5</color>秒释放1次全屏范围的青龙风暴，对所有敌人造成<color=#02802f>233</color>%攻击力附加<color=#02802f>38000</color>点无视防御伤害，并有<color=#02802f>50</color>%概率沉默敌人<color=#02802f>3</color>秒",
+      "NextEffect": "进入小怪关卡时，有<color=#02802f>100</color>%概率触发青龙领域，每隔<color=#02802f>5</color>秒释放1次全屏范围的青龙风暴，有<color=#02802f>30</color>%概率清除全屏子弹，对所有敌人造成<color=#02802f>250</color>%攻击力附加<color=#02802f>42000</color>点无视防御伤害，并有<color=#02802f>50</color>%概率沉默敌人<color=#02802f>3</color>秒",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 300000.0
+      },
+      "_byte_length": 810
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 9756,
+      "ID": 1,
+      "Level": 16,
+      "MinSacredBeastLevel": 160,
+      "ConsumeItemID": 209001,
+      "ConsumeItemCnt": 20,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "青龙领域",
+      "SkillID": 80116,
+      "SkillDesc": "进入小怪关卡时，有<color=#02802f>100</color>%概率触发青龙领域，每隔<color=#02802f>5</color>秒释放1次全屏范围的青龙风暴，有<color=#02802f>30</color>%概率清除全屏子弹，对所有敌人造成<color=#02802f>250</color>%攻击力附加<color=#02802f>42000</color>点无视防御伤害，并有<color=#02802f>50</color>%概率沉默敌人<color=#02802f>3</color>秒",
+      "NextEffect": "进入小怪关卡时，有<color=#02802f>100</color>%概率触发青龙领域，每隔<color=#02802f>5</color>秒释放1次全屏范围的青龙风暴，有<color=#02802f>35</color>%概率清除全屏子弹，对所有敌人造成<color=#02802f>275</color>%攻击力附加<color=#02802f>46000</color>点无视防御伤害，并有<color=#02802f>50</color>%概率沉默敌人<color=#02802f>3</color>秒",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 340000.0
+      },
+      "_byte_length": 866
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 10622,
+      "ID": 1,
+      "Level": 17,
+      "MinSacredBeastLevel": 170,
+      "ConsumeItemID": 209001,
+      "ConsumeItemCnt": 20,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "青龙领域",
+      "SkillID": 80117,
+      "SkillDesc": "进入小怪关卡时，有<color=#02802f>100</color>%概率触发青龙领域，每隔<color=#02802f>5</color>秒释放1次全屏范围的青龙风暴，有<color=#02802f>35</color>%概率清除全屏子弹，对所有敌人造成<color=#02802f>275</color>%攻击力附加<color=#02802f>46000</color>点无视防御伤害，并有<color=#02802f>50</color>%概率沉默敌人<color=#02802f>3</color>秒",
+      "NextEffect": "进入小怪关卡时，有<color=#02802f>100</color>%概率触发青龙领域，每隔<color=#02802f>5</color>秒释放1次全屏范围的青龙风暴，有<color=#02802f>40</color>%概率清除全屏子弹，对所有敌人造成<color=#02802f>300</color>%攻击力附加<color=#02802f>50000</color>点无视防御伤害，并有<color=#02802f>50</color>%概率沉默敌人<color=#02802f>3</color>秒",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 380000.0
+      },
+      "_byte_length": 866
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 11488,
+      "ID": 1,
+      "Level": 18,
+      "MinSacredBeastLevel": 180,
+      "ConsumeItemID": 209001,
+      "ConsumeItemCnt": 20,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "青龙领域",
+      "SkillID": 80118,
+      "SkillDesc": "进入小怪关卡时，有<color=#02802f>100</color>%概率触发青龙领域，每隔<color=#02802f>5</color>秒释放1次全屏范围的青龙风暴，有<color=#02802f>40</color>%概率清除全屏子弹，对所有敌人造成<color=#02802f>300</color>%攻击力附加<color=#02802f>50000</color>点无视防御伤害，并有<color=#02802f>50</color>%概率沉默敌人<color=#02802f>3</color>秒",
+      "NextEffect": "进入小怪关卡时，有<color=#02802f>100</color>%概率触发青龙领域，每隔<color=#02802f>5</color>秒释放1次全屏范围的青龙风暴，有<color=#02802f>45</color>%概率清除全屏子弹，对所有敌人造成<color=#02802f>325</color>%攻击力附加<color=#02802f>54000</color>点无视防御伤害，并有<color=#02802f>50</color>%概率沉默敌人<color=#02802f>3</color>秒",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 420000.0
+      },
+      "_byte_length": 866
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 12354,
+      "ID": 1,
+      "Level": 19,
+      "MinSacredBeastLevel": 190,
+      "ConsumeItemID": 209001,
+      "ConsumeItemCnt": 20,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "青龙领域",
+      "SkillID": 80119,
+      "SkillDesc": "进入小怪关卡时，有<color=#02802f>100</color>%概率触发青龙领域，每隔<color=#02802f>5</color>秒释放1次全屏范围的青龙风暴，有<color=#02802f>45</color>%概率清除全屏子弹，对所有敌人造成<color=#02802f>325</color>%攻击力附加<color=#02802f>54000</color>点无视防御伤害，并有<color=#02802f>50</color>%概率沉默敌人<color=#02802f>3</color>秒",
+      "NextEffect": "进入小怪关卡时，有<color=#02802f>100</color>%概率触发青龙领域，每隔<color=#02802f>5</color>秒释放1次全屏范围的青龙风暴，有<color=#02802f>50</color>%概率清除全屏子弹，对所有敌人造成<color=#02802f>350</color>%攻击力附加<color=#02802f>60000</color>点无视防御伤害，并有<color=#02802f>50</color>%概率沉默敌人<color=#02802f>3</color>秒",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 460000.0
+      },
+      "_byte_length": 866
+    },
+    {
+      "_record_index": 19,
+      "_byte_offset": 13220,
+      "ID": 1,
+      "Level": 20,
+      "MinSacredBeastLevel": 200,
+      "ConsumeItemID": 209001,
+      "ConsumeItemCnt": 20,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "青龙领域",
+      "SkillID": 80120,
+      "SkillDesc": "进入小怪关卡时，有<color=#02802f>100</color>%概率触发青龙领域，每隔<color=#02802f>5</color>秒释放1次全屏范围的青龙风暴，有<color=#02802f>50</color>%概率清除全屏子弹，对所有敌人造成<color=#02802f>350</color>%攻击力附加<color=#02802f>60000</color>点无视防御伤害，并有<color=#02802f>50</color>%概率沉默敌人<color=#02802f>3</color>秒",
+      "NextEffect": "",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 500000.0
+      },
+      "_byte_length": 464
+    },
+    {
+      "_record_index": 20,
+      "_byte_offset": 13684,
+      "ID": 2,
+      "Level": 1,
+      "MinSacredBeastLevel": 10,
+      "ConsumeItemID": 209002,
+      "ConsumeItemCnt": 1,
+      "SkillTriggerPercent": 20.0,
+      "SkillName": "白虎领域",
+      "SkillID": 80201,
+      "SkillDesc": "进入BOSS关卡时，有<color=#02802f>20</color>%概率触发白虎领域，每隔<color=#02802f>7</color>秒对任意敌人释放白虎裂雷，造成<color=#02802f>45</color>%攻击力附加<color=#02802f>6750</color>点伤害",
+      "NextEffect": "进入BOSS关卡时，有<color=#02802f>40</color>%概率触发白虎领域，每隔<color=#02802f>6</color>秒对任意敌人释放白虎裂雷，造成<color=#02802f>50.25</color>%攻击力附加<color=#02802f>7500</color>点伤害",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 2000.0
+      },
+      "_byte_length": 525
+    },
+    {
+      "_record_index": 21,
+      "_byte_offset": 14209,
+      "ID": 2,
+      "Level": 2,
+      "MinSacredBeastLevel": 20,
+      "ConsumeItemID": 209002,
+      "ConsumeItemCnt": 3,
+      "SkillTriggerPercent": 40.0,
+      "SkillName": "白虎领域",
+      "SkillID": 80202,
+      "SkillDesc": "进入BOSS关卡时，有<color=#02802f>40</color>%概率触发白虎领域，每隔<color=#02802f>6</color>秒对任意敌人释放白虎裂雷，造成<color=#02802f>50.25</color>%攻击力附加<color=#02802f>7500</color>点伤害",
+      "NextEffect": "进入BOSS关卡时，有<color=#02802f>60</color>%概率触发白虎领域，每隔<color=#02802f>5</color>秒对任意敌人释放白虎裂雷，造成<color=#02802f>55.5</color>%攻击力附加<color=#02802f>8250</color>点伤害",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 8000.0
+      },
+      "_byte_length": 527
+    },
+    {
+      "_record_index": 22,
+      "_byte_offset": 14736,
+      "ID": 2,
+      "Level": 3,
+      "MinSacredBeastLevel": 30,
+      "ConsumeItemID": 209002,
+      "ConsumeItemCnt": 5,
+      "SkillTriggerPercent": 60.0,
+      "SkillName": "白虎领域",
+      "SkillID": 80203,
+      "SkillDesc": "进入BOSS关卡时，有<color=#02802f>60</color>%概率触发白虎领域，每隔<color=#02802f>5</color>秒对任意敌人释放白虎裂雷，造成<color=#02802f>55.5</color>%攻击力附加<color=#02802f>8250</color>点伤害",
+      "NextEffect": "进入BOSS关卡时，有<color=#02802f>80</color>%概率触发白虎领域，每隔<color=#02802f>4</color>秒对任意敌人释放白虎裂雷，造成<color=#02802f>60.75</color>%攻击力附加<color=#02802f>9000</color>点伤害",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 18000.0
+      },
+      "_byte_length": 527
+    },
+    {
+      "_record_index": 23,
+      "_byte_offset": 15263,
+      "ID": 2,
+      "Level": 4,
+      "MinSacredBeastLevel": 40,
+      "ConsumeItemID": 209002,
+      "ConsumeItemCnt": 7,
+      "SkillTriggerPercent": 80.0,
+      "SkillName": "白虎领域",
+      "SkillID": 80204,
+      "SkillDesc": "进入BOSS关卡时，有<color=#02802f>80</color>%概率触发白虎领域，每隔<color=#02802f>4</color>秒对任意敌人释放白虎裂雷，造成<color=#02802f>60.75</color>%攻击力附加<color=#02802f>9000</color>点伤害",
+      "NextEffect": "进入BOSS关卡时，有<color=#02802f>100</color>%概率触发白虎领域，每隔<color=#02802f>3</color>秒对任意敌人释放白虎裂雷，造成<color=#02802f>66</color>%攻击力附加<color=#02802f>9750</color>点伤害",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 32000.0
+      },
+      "_byte_length": 526
+    },
+    {
+      "_record_index": 24,
+      "_byte_offset": 15789,
+      "ID": 2,
+      "Level": 5,
+      "MinSacredBeastLevel": 50,
+      "ConsumeItemID": 209002,
+      "ConsumeItemCnt": 9,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "白虎领域",
+      "SkillID": 80205,
+      "SkillDesc": "进入BOSS关卡时，有<color=#02802f>100</color>%概率触发白虎领域，每隔<color=#02802f>3</color>秒对任意敌人释放白虎裂雷，造成<color=#02802f>66</color>%攻击力附加<color=#02802f>9750</color>点伤害",
+      "NextEffect": "进入BOSS关卡时，有<color=#02802f>100</color>%概率触发白虎领域，每隔<color=#02802f>3</color>秒对任意敌人释放白虎裂雷，造成<color=#02802f>71.25</color>%攻击力附加<color=#02802f>11250</color>点无视防御的伤害",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 50000.0
+      },
+      "_byte_length": 543
+    },
+    {
+      "_record_index": 25,
+      "_byte_offset": 16332,
+      "ID": 2,
+      "Level": 6,
+      "MinSacredBeastLevel": 60,
+      "ConsumeItemID": 209002,
+      "ConsumeItemCnt": 10,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "白虎领域",
+      "SkillID": 80206,
+      "SkillDesc": "进入BOSS关卡时，有<color=#02802f>100</color>%概率触发白虎领域，每隔<color=#02802f>3</color>秒对任意敌人释放白虎裂雷，造成<color=#02802f>71.25</color>%攻击力附加<color=#02802f>11250</color>点无视防御的伤害",
+      "NextEffect": "进入BOSS关卡时，有<color=#02802f>100</color>%概率触发白虎领域，每隔<color=#02802f>3</color>秒对任意敌人释放白虎裂雷，造成<color=#02802f>81.75</color>%攻击力附加<color=#02802f>12750</color>点无视防御的伤害",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 70000.0
+      },
+      "_byte_length": 562
+    },
+    {
+      "_record_index": 26,
+      "_byte_offset": 16894,
+      "ID": 2,
+      "Level": 7,
+      "MinSacredBeastLevel": 70,
+      "ConsumeItemID": 209002,
+      "ConsumeItemCnt": 10,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "白虎领域",
+      "SkillID": 80207,
+      "SkillDesc": "进入BOSS关卡时，有<color=#02802f>100</color>%概率触发白虎领域，每隔<color=#02802f>3</color>秒对任意敌人释放白虎裂雷，造成<color=#02802f>81.75</color>%攻击力附加<color=#02802f>12750</color>点无视防御的伤害",
+      "NextEffect": "进入BOSS关卡时，有<color=#02802f>100</color>%概率触发白虎领域，每隔<color=#02802f>3</color>秒对任意敌人释放白虎裂雷，造成<color=#02802f>92.25</color>%攻击力附加<color=#02802f>14250</color>点无视防御的伤害",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 90000.0
+      },
+      "_byte_length": 562
+    },
+    {
+      "_record_index": 27,
+      "_byte_offset": 17456,
+      "ID": 2,
+      "Level": 8,
+      "MinSacredBeastLevel": 80,
+      "ConsumeItemID": 209002,
+      "ConsumeItemCnt": 10,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "白虎领域",
+      "SkillID": 80208,
+      "SkillDesc": "进入BOSS关卡时，有<color=#02802f>100</color>%概率触发白虎领域，每隔<color=#02802f>3</color>秒对任意敌人释放白虎裂雷，造成<color=#02802f>92.25</color>%攻击力附加<color=#02802f>14250</color>点无视防御的伤害",
+      "NextEffect": "进入BOSS关卡时，有<color=#02802f>100</color>%概率触发白虎领域，每隔<color=#02802f>3</color>秒对任意敌人释放白虎裂雷，造成<color=#02802f>102.75</color>%攻击力附加<color=#02802f>15750</color>点无视防御的伤害",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 110000.0
+      },
+      "_byte_length": 563
+    },
+    {
+      "_record_index": 28,
+      "_byte_offset": 18019,
+      "ID": 2,
+      "Level": 9,
+      "MinSacredBeastLevel": 90,
+      "ConsumeItemID": 209002,
+      "ConsumeItemCnt": 10,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "白虎领域",
+      "SkillID": 80209,
+      "SkillDesc": "进入BOSS关卡时，有<color=#02802f>100</color>%概率触发白虎领域，每隔<color=#02802f>3</color>秒对任意敌人释放白虎裂雷，造成<color=#02802f>102.75</color>%攻击力附加<color=#02802f>15750</color>点无视防御的伤害",
+      "NextEffect": "进入BOSS关卡时，有<color=#02802f>100</color>%概率触发白虎领域，每隔<color=#02802f>3</color>秒对任意敌人释放白虎裂雷，造成<color=#02802f>113.25</color>%攻击力附加<color=#02802f>17250</color>点无视防御的伤害",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 130000.0
+      },
+      "_byte_length": 564
+    },
+    {
+      "_record_index": 29,
+      "_byte_offset": 18583,
+      "ID": 2,
+      "Level": 10,
+      "MinSacredBeastLevel": 100,
+      "ConsumeItemID": 209002,
+      "ConsumeItemCnt": 10,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "白虎领域",
+      "SkillID": 80210,
+      "SkillDesc": "进入BOSS关卡时，有<color=#02802f>100</color>%概率触发白虎领域，每隔<color=#02802f>3</color>秒对任意敌人释放白虎裂雷，造成<color=#02802f>113.25</color>%攻击力附加<color=#02802f>17250</color>点无视防御的伤害",
+      "NextEffect": "进入BOSS关卡时，有<color=#02802f>100</color>%概率触发白虎领域，每隔<color=#02802f>3</color>秒对任意敌人释放白虎裂雷，造成<color=#02802f>123.75</color>%攻击力附加<color=#02802f>19500</color>点无视防御的伤害，并有<color=#02802f>5</color>%概率眩晕敌人<color=#02802f>0.5</color>秒",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 150000.0
+      },
+      "_byte_length": 645
+    },
+    {
+      "_record_index": 30,
+      "_byte_offset": 19228,
+      "ID": 2,
+      "Level": 11,
+      "MinSacredBeastLevel": 110,
+      "ConsumeItemID": 209002,
+      "ConsumeItemCnt": 15,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "白虎领域",
+      "SkillID": 80211,
+      "SkillDesc": "进入BOSS关卡时，有<color=#02802f>100</color>%概率触发白虎领域，每隔<color=#02802f>3</color>秒对任意敌人释放白虎裂雷，造成<color=#02802f>123.75</color>%攻击力附加<color=#02802f>19500</color>点无视防御的伤害，并有<color=#02802f>5</color>%概率眩晕敌人<color=#02802f>0.5</color>秒",
+      "NextEffect": "进入BOSS关卡时，有<color=#02802f>100</color>%概率触发白虎领域，每隔<color=#02802f>3</color>秒对任意敌人释放白虎裂雷，造成<color=#02802f>136.5</color>%攻击力附加<color=#02802f>21750</color>点无视防御的伤害，并有<color=#02802f>10</color>%概率眩晕敌人<color=#02802f>0.5</color>秒",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 180000.0
+      },
+      "_byte_length": 726
+    },
+    {
+      "_record_index": 31,
+      "_byte_offset": 19954,
+      "ID": 2,
+      "Level": 12,
+      "MinSacredBeastLevel": 120,
+      "ConsumeItemID": 209002,
+      "ConsumeItemCnt": 15,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "白虎领域",
+      "SkillID": 80212,
+      "SkillDesc": "进入BOSS关卡时，有<color=#02802f>100</color>%概率触发白虎领域，每隔<color=#02802f>3</color>秒对任意敌人释放白虎裂雷，造成<color=#02802f>136.5</color>%攻击力附加<color=#02802f>21750</color>点无视防御的伤害，并有<color=#02802f>10</color>%概率眩晕敌人<color=#02802f>0.5</color>秒",
+      "NextEffect": "进入BOSS关卡时，有<color=#02802f>100</color>%概率触发白虎领域，每隔<color=#02802f>3</color>秒对任意敌人释放白虎裂雷，造成<color=#02802f>149.25</color>%攻击力附加<color=#02802f>24000</color>点无视防御的伤害，并有<color=#02802f>10</color>%概率眩晕敌人<color=#02802f>0.5</color>秒",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 210000.0
+      },
+      "_byte_length": 727
+    },
+    {
+      "_record_index": 32,
+      "_byte_offset": 20681,
+      "ID": 2,
+      "Level": 13,
+      "MinSacredBeastLevel": 130,
+      "ConsumeItemID": 209002,
+      "ConsumeItemCnt": 15,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "白虎领域",
+      "SkillID": 80213,
+      "SkillDesc": "进入BOSS关卡时，有<color=#02802f>100</color>%概率触发白虎领域，每隔<color=#02802f>3</color>秒对任意敌人释放白虎裂雷，造成<color=#02802f>149.25</color>%攻击力附加<color=#02802f>24000</color>点无视防御的伤害，并有<color=#02802f>10</color>%概率眩晕敌人<color=#02802f>0.5</color>秒",
+      "NextEffect": "进入BOSS关卡时，有<color=#02802f>100</color>%概率触发白虎领域，每隔<color=#02802f>3</color>秒对任意敌人释放白虎裂雷，造成<color=#02802f>162</color>%攻击力附加<color=#02802f>26250</color>点无视防御的伤害，并有<color=#02802f>15</color>%概率眩晕敌人<color=#02802f>0.5</color>秒",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 240000.0
+      },
+      "_byte_length": 725
+    },
+    {
+      "_record_index": 33,
+      "_byte_offset": 21406,
+      "ID": 2,
+      "Level": 14,
+      "MinSacredBeastLevel": 140,
+      "ConsumeItemID": 209002,
+      "ConsumeItemCnt": 15,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "白虎领域",
+      "SkillID": 80214,
+      "SkillDesc": "进入BOSS关卡时，有<color=#02802f>100</color>%概率触发白虎领域，每隔<color=#02802f>3</color>秒对任意敌人释放白虎裂雷，造成<color=#02802f>162</color>%攻击力附加<color=#02802f>26250</color>点无视防御的伤害，并有<color=#02802f>15</color>%概率眩晕敌人<color=#02802f>0.5</color>秒",
+      "NextEffect": "进入BOSS关卡时，有<color=#02802f>100</color>%概率触发白虎领域，每隔<color=#02802f>3</color>秒对任意敌人释放白虎裂雷，造成<color=#02802f>174.75</color>%攻击力附加<color=#02802f>28500</color>点无视防御的伤害，并有<color=#02802f>20</color>%概率眩晕敌人<color=#02802f>0.5</color>秒",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 270000.0
+      },
+      "_byte_length": 725
+    },
+    {
+      "_record_index": 34,
+      "_byte_offset": 22131,
+      "ID": 2,
+      "Level": 15,
+      "MinSacredBeastLevel": 150,
+      "ConsumeItemID": 209002,
+      "ConsumeItemCnt": 15,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "白虎领域",
+      "SkillID": 80215,
+      "SkillDesc": "进入BOSS关卡时，有<color=#02802f>100</color>%概率触发白虎领域，每隔<color=#02802f>3</color>秒对任意敌人释放白虎裂雷，造成<color=#02802f>174.75</color>%攻击力附加<color=#02802f>28500</color>点无视防御的伤害，并有<color=#02802f>20</color>%概率眩晕敌人<color=#02802f>0.5</color>秒",
+      "NextEffect": "进入BOSS关卡时，有<color=#02802f>100</color>%概率触发白虎领域，提升<color=#02802f>2</color>%攻击力和<color=#02802f>2</color>%的暴击伤害，持续2秒，每隔<color=#02802f>3</color>秒对任意敌人释放白虎裂雷，造成<color=#02802f>187.5</color>%攻击力附加<color=#02802f>31500</color>点无视防御的伤害，并有<color=#02802f>20</color>%概率眩晕敌人<color=#02802f>0.5</color>秒",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 300000.0
+      },
+      "_byte_length": 826
+    },
+    {
+      "_record_index": 35,
+      "_byte_offset": 22957,
+      "ID": 2,
+      "Level": 16,
+      "MinSacredBeastLevel": 160,
+      "ConsumeItemID": 209002,
+      "ConsumeItemCnt": 20,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "白虎领域",
+      "SkillID": 80216,
+      "SkillDesc": "进入BOSS关卡时，有<color=#02802f>100</color>%概率触发白虎领域，提升<color=#02802f>2</color>%攻击力和<color=#02802f>2</color>%的暴击伤害，持续2秒，每隔<color=#02802f>3</color>秒对任意敌人释放白虎裂雷，造成<color=#02802f>187.5</color>%攻击力附加<color=#02802f>31500</color>点无视防御的伤害，并有<color=#02802f>20</color>%概率眩晕敌人<color=#02802f>0.5</color>秒",
+      "NextEffect": "进入BOSS关卡时，有<color=#02802f>100</color>%概率触发白虎领域，提升<color=#02802f>3</color>%攻击力和<color=#02802f>3</color>%的暴击伤害，持续2秒，每隔<color=#02802f>3</color>秒对任意敌人释放白虎裂雷，造成<color=#02802f>205</color>%攻击力附加<color=#02802f>34500</color>点无视防御的伤害，并有<color=#02802f>20</color>%概率眩晕敌人<color=#02802f>0.5</color>秒",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 340000.0
+      },
+      "_byte_length": 922
+    },
+    {
+      "_record_index": 36,
+      "_byte_offset": 23879,
+      "ID": 2,
+      "Level": 17,
+      "MinSacredBeastLevel": 170,
+      "ConsumeItemID": 209002,
+      "ConsumeItemCnt": 20,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "白虎领域",
+      "SkillID": 80217,
+      "SkillDesc": "进入BOSS关卡时，有<color=#02802f>100</color>%概率触发白虎领域，提升<color=#02802f>3</color>%攻击力和<color=#02802f>3</color>%的暴击伤害，持续2秒，每隔<color=#02802f>3</color>秒对任意敌人释放白虎裂雷，造成<color=#02802f>205</color>%攻击力附加<color=#02802f>34500</color>点无视防御的伤害，并有<color=#02802f>20</color>%概率眩晕敌人<color=#02802f>0.5</color>秒",
+      "NextEffect": "进入BOSS关卡时，有<color=#02802f>100</color>%概率触发白虎领域，提升<color=#02802f>4</color>%攻击力和<color=#02802f>4</color>%的暴击伤害，持续2秒，每隔<color=#02802f>3</color>秒对任意敌人释放白虎裂雷，造成<color=#02802f>225</color>%攻击力附加<color=#02802f>37500</color>点无视防御的伤害，并有<color=#02802f>20</color>%概率眩晕敌人<color=#02802f>0.5</color>秒",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 380000.0
+      },
+      "_byte_length": 920
+    },
+    {
+      "_record_index": 37,
+      "_byte_offset": 24799,
+      "ID": 2,
+      "Level": 18,
+      "MinSacredBeastLevel": 180,
+      "ConsumeItemID": 209002,
+      "ConsumeItemCnt": 20,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "白虎领域",
+      "SkillID": 80218,
+      "SkillDesc": "进入BOSS关卡时，有<color=#02802f>100</color>%概率触发白虎领域，提升<color=#02802f>4</color>%攻击力和<color=#02802f>4</color>%的暴击伤害，持续2秒，每隔<color=#02802f>3</color>秒对任意敌人释放白虎裂雷，造成<color=#02802f>225</color>%攻击力附加<color=#02802f>37500</color>点无视防御的伤害，并有<color=#02802f>20</color>%概率眩晕敌人<color=#02802f>0.5</color>秒",
+      "NextEffect": "进入BOSS关卡时，有<color=#02802f>100</color>%概率触发白虎领域，提升<color=#02802f>5</color>%攻击力和<color=#02802f>5</color>%的暴击伤害，持续2秒，每隔<color=#02802f>3</color>秒对任意敌人释放白虎裂雷，造成<color=#02802f>245</color>%攻击力附加<color=#02802f>40500</color>点无视防御的伤害，并有<color=#02802f>20</color>%概率眩晕敌人<color=#02802f>0.5</color>秒",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 420000.0
+      },
+      "_byte_length": 920
+    },
+    {
+      "_record_index": 38,
+      "_byte_offset": 25719,
+      "ID": 2,
+      "Level": 19,
+      "MinSacredBeastLevel": 190,
+      "ConsumeItemID": 209002,
+      "ConsumeItemCnt": 20,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "白虎领域",
+      "SkillID": 80219,
+      "SkillDesc": "进入BOSS关卡时，有<color=#02802f>100</color>%概率触发白虎领域，提升<color=#02802f>5</color>%攻击力和<color=#02802f>5</color>%的暴击伤害，持续2秒，每隔<color=#02802f>3</color>秒对任意敌人释放白虎裂雷，造成<color=#02802f>245</color>%攻击力附加<color=#02802f>40500</color>点无视防御的伤害，并有<color=#02802f>20</color>%概率眩晕敌人<color=#02802f>0.5</color>秒",
+      "NextEffect": "进入BOSS关卡时，有<color=#02802f>100</color>%概率触发白虎领域，提升<color=#02802f>6</color>%攻击力和<color=#02802f>6</color>%的暴击伤害，持续2秒，每隔<color=#02802f>3</color>秒对任意敌人释放白虎裂雷，造成<color=#02802f>265</color>%攻击力附加<color=#02802f>45000</color>点无视防御的伤害，并有<color=#02802f>20</color>%概率眩晕敌人<color=#02802f>0.5</color>秒",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 460000.0
+      },
+      "_byte_length": 920
+    },
+    {
+      "_record_index": 39,
+      "_byte_offset": 26639,
+      "ID": 2,
+      "Level": 20,
+      "MinSacredBeastLevel": 200,
+      "ConsumeItemID": 209002,
+      "ConsumeItemCnt": 20,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "白虎领域",
+      "SkillID": 80220,
+      "SkillDesc": "进入BOSS关卡时，有<color=#02802f>100</color>%概率触发白虎领域，提升<color=#02802f>6</color>%攻击力和<color=#02802f>6</color>%的暴击伤害，持续2秒，每隔<color=#02802f>3</color>秒对任意敌人释放白虎裂雷，造成<color=#02802f>265</color>%攻击力附加<color=#02802f>45000</color>点无视防御的伤害，并有<color=#02802f>20</color>%概率眩晕敌人<color=#02802f>0.5</color>秒",
+      "NextEffect": "",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 500000.0
+      },
+      "_byte_length": 491
+    },
+    {
+      "_record_index": 40,
+      "_byte_offset": 27130,
+      "ID": 3,
+      "Level": 1,
+      "MinSacredBeastLevel": 10,
+      "ConsumeItemID": 209003,
+      "ConsumeItemCnt": 1,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "朱雀领域",
+      "SkillID": 80301,
+      "SkillDesc": "受到致命伤害时，保留1点血量，在10秒内持续回复<color=#02802f>30</color>%最大生命值附加<color=#02802f>10000</color>点的血量，最多可以触发1次。其他保留血量技能不享受此加成",
+      "NextEffect": "受到致命伤害时，保留1点血量，在10秒内持续回复<color=#02802f>35</color>%最大生命值附加<color=#02802f>20000</color>点的血量，最多可以触发1次。其他保留血量技能不享受此加成",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 2000.0
+      },
+      "_byte_length": 508
+    },
+    {
+      "_record_index": 41,
+      "_byte_offset": 27638,
+      "ID": 3,
+      "Level": 2,
+      "MinSacredBeastLevel": 20,
+      "ConsumeItemID": 209003,
+      "ConsumeItemCnt": 3,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "朱雀领域",
+      "SkillID": 80302,
+      "SkillDesc": "受到致命伤害时，保留1点血量，在10秒内持续回复<color=#02802f>35</color>%最大生命值附加<color=#02802f>20000</color>点的血量，最多可以触发1次。其他保留血量技能不享受此加成",
+      "NextEffect": "受到致命伤害时，保留1点血量，在10秒内持续回复<color=#02802f>40</color>%最大生命值附加<color=#02802f>30000</color>点的血量，最多可以触发1次。其他保留血量技能不享受此加成",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 8000.0
+      },
+      "_byte_length": 508
+    },
+    {
+      "_record_index": 42,
+      "_byte_offset": 28146,
+      "ID": 3,
+      "Level": 3,
+      "MinSacredBeastLevel": 30,
+      "ConsumeItemID": 209003,
+      "ConsumeItemCnt": 5,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "朱雀领域",
+      "SkillID": 80303,
+      "SkillDesc": "受到致命伤害时，保留1点血量，在10秒内持续回复<color=#02802f>40</color>%最大生命值附加<color=#02802f>30000</color>点的血量，最多可以触发1次。其他保留血量技能不享受此加成",
+      "NextEffect": "受到致命伤害时，保留1点血量，在10秒内持续回复<color=#02802f>45</color>%最大生命值附加<color=#02802f>40000</color>点的血量，最多可以触发1次。其他保留血量技能不享受此加成",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 18000.0
+      },
+      "_byte_length": 508
+    },
+    {
+      "_record_index": 43,
+      "_byte_offset": 28654,
+      "ID": 3,
+      "Level": 4,
+      "MinSacredBeastLevel": 40,
+      "ConsumeItemID": 209003,
+      "ConsumeItemCnt": 7,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "朱雀领域",
+      "SkillID": 80304,
+      "SkillDesc": "受到致命伤害时，保留1点血量，在10秒内持续回复<color=#02802f>45</color>%最大生命值附加<color=#02802f>40000</color>点的血量，最多可以触发1次。其他保留血量技能不享受此加成",
+      "NextEffect": "受到致命伤害时，保留1点血量，在10秒内持续回复<color=#02802f>50</color>%最大生命值附加<color=#02802f>50000</color>点的血量，最多可以触发1次。其他保留血量技能不享受此加成",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 32000.0
+      },
+      "_byte_length": 508
+    },
+    {
+      "_record_index": 44,
+      "_byte_offset": 29162,
+      "ID": 3,
+      "Level": 5,
+      "MinSacredBeastLevel": 50,
+      "ConsumeItemID": 209003,
+      "ConsumeItemCnt": 9,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "朱雀领域",
+      "SkillID": 80305,
+      "SkillDesc": "受到致命伤害时，保留1点血量，在10秒内持续回复<color=#02802f>50</color>%最大生命值附加<color=#02802f>50000</color>点的血量，最多可以触发1次。其他保留血量技能不享受此加成",
+      "NextEffect": "受到致命伤害时，保留1点血量，在10秒内持续回复<color=#02802f>55</color>%最大生命值附加<color=#02802f>60000</color>点的血量，并获得<color=#02802f>1</color>秒无敌，最多可以触发1次。其他保留血量技能不享受此加成",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 50000.0
+      },
+      "_byte_length": 553
+    },
+    {
+      "_record_index": 45,
+      "_byte_offset": 29715,
+      "ID": 3,
+      "Level": 6,
+      "MinSacredBeastLevel": 60,
+      "ConsumeItemID": 209003,
+      "ConsumeItemCnt": 10,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "朱雀领域",
+      "SkillID": 80306,
+      "SkillDesc": "受到致命伤害时，保留1点血量，在10秒内持续回复<color=#02802f>55</color>%最大生命值附加<color=#02802f>60000</color>点的血量，并获得<color=#02802f>1</color>秒无敌，最多可以触发1次。其他保留血量技能不享受此加成",
+      "NextEffect": "受到致命伤害时，保留1点血量，在10秒内持续回复<color=#02802f>62.5</color>%最大生命值附加<color=#02802f>70000</color>点的血量，并获得<color=#02802f>1.5</color>秒无敌，最多可以触发1次。其他保留血量技能不享受此加成",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 70000.0
+      },
+      "_byte_length": 602
+    },
+    {
+      "_record_index": 46,
+      "_byte_offset": 30317,
+      "ID": 3,
+      "Level": 7,
+      "MinSacredBeastLevel": 70,
+      "ConsumeItemID": 209003,
+      "ConsumeItemCnt": 10,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "朱雀领域",
+      "SkillID": 80307,
+      "SkillDesc": "受到致命伤害时，保留1点血量，在10秒内持续回复<color=#02802f>62.5</color>%最大生命值附加<color=#02802f>70000</color>点的血量，并获得<color=#02802f>1.5</color>秒无敌，最多可以触发1次。其他保留血量技能不享受此加成",
+      "NextEffect": "受到致命伤害时，保留1点血量，在10秒内持续回复<color=#02802f>70</color>%最大生命值附加<color=#02802f>80000</color>点的血量，并获得<color=#02802f>2</color>秒无敌，最多可以触发1次。其他保留血量技能不享受此加成",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 90000.0
+      },
+      "_byte_length": 602
+    },
+    {
+      "_record_index": 47,
+      "_byte_offset": 30919,
+      "ID": 3,
+      "Level": 8,
+      "MinSacredBeastLevel": 80,
+      "ConsumeItemID": 209003,
+      "ConsumeItemCnt": 10,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "朱雀领域",
+      "SkillID": 80308,
+      "SkillDesc": "受到致命伤害时，保留1点血量，在10秒内持续回复<color=#02802f>70</color>%最大生命值附加<color=#02802f>80000</color>点的血量，并获得<color=#02802f>2</color>秒无敌，最多可以触发1次。其他保留血量技能不享受此加成",
+      "NextEffect": "受到致命伤害时，保留1点血量，在10秒内持续回复<color=#02802f>77.5</color>%最大生命值附加<color=#02802f>90000</color>点的血量，并获得<color=#02802f>2.5</color>秒无敌，最多可以触发1次。其他保留血量技能不享受此加成",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 110000.0
+      },
+      "_byte_length": 602
+    },
+    {
+      "_record_index": 48,
+      "_byte_offset": 31521,
+      "ID": 3,
+      "Level": 9,
+      "MinSacredBeastLevel": 90,
+      "ConsumeItemID": 209003,
+      "ConsumeItemCnt": 10,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "朱雀领域",
+      "SkillID": 80309,
+      "SkillDesc": "受到致命伤害时，保留1点血量，在10秒内持续回复<color=#02802f>77.5</color>%最大生命值附加<color=#02802f>90000</color>点的血量，并获得<color=#02802f>2.5</color>秒无敌，最多可以触发1次。其他保留血量技能不享受此加成",
+      "NextEffect": "受到致命伤害时，保留1点血量，在10秒内持续回复<color=#02802f>85</color>%最大生命值附加<color=#02802f>100000</color>点的血量，并获得<color=#02802f>3</color>秒无敌，最多可以触发1次。其他保留血量技能不享受此加成",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 130000.0
+      },
+      "_byte_length": 603
+    },
+    {
+      "_record_index": 49,
+      "_byte_offset": 32124,
+      "ID": 3,
+      "Level": 10,
+      "MinSacredBeastLevel": 100,
+      "ConsumeItemID": 209003,
+      "ConsumeItemCnt": 10,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "朱雀领域",
+      "SkillID": 80310,
+      "SkillDesc": "受到致命伤害时，保留1点血量，在10秒内持续回复<color=#02802f>85</color>%最大生命值附加<color=#02802f>100000</color>点的血量，并获得<color=#02802f>3</color>秒无敌，最多可以触发1次。其他保留血量技能不享受此加成",
+      "NextEffect": "受到致命伤害时，保留1点血量，提升<color=#02802f>20</color>%暴击伤害，持续5秒，在10秒内持续回复<color=#02802f>90</color>%最大生命值附加<color=#02802f>110000</color>点的血量，并获得<color=#02802f>3</color>秒无敌，最多可以触发1次。其他保留血量技能不享受此加成",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 150000.0
+      },
+      "_byte_length": 660
+    },
+    {
+      "_record_index": 50,
+      "_byte_offset": 32784,
+      "ID": 3,
+      "Level": 11,
+      "MinSacredBeastLevel": 110,
+      "ConsumeItemID": 209003,
+      "ConsumeItemCnt": 15,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "朱雀领域",
+      "SkillID": 80311,
+      "SkillDesc": "受到致命伤害时，保留1点血量，提升<color=#02802f>20</color>%暴击伤害，持续5秒，在10秒内持续回复<color=#02802f>90</color>%最大生命值附加<color=#02802f>110000</color>点的血量，并获得<color=#02802f>3</color>秒无敌，最多可以触发1次。其他保留血量技能不享受此加成",
+      "NextEffect": "受到致命伤害时，保留1点血量，提升<color=#02802f>22.5</color>%暴击伤害，持续5秒，在10秒内持续回复<color=#02802f>100</color>%最大生命值附加<color=#02802f>120000</color>点的血量，并获得<color=#02802f>3</color>秒无敌，最多可以触发1次。其他保留血量技能不享受此加成",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 180000.0
+      },
+      "_byte_length": 723
+    },
+    {
+      "_record_index": 51,
+      "_byte_offset": 33507,
+      "ID": 3,
+      "Level": 12,
+      "MinSacredBeastLevel": 120,
+      "ConsumeItemID": 209003,
+      "ConsumeItemCnt": 15,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "朱雀领域",
+      "SkillID": 80312,
+      "SkillDesc": "受到致命伤害时，保留1点血量，提升<color=#02802f>22.5</color>%暴击伤害，持续5秒，在10秒内持续回复<color=#02802f>100</color>%最大生命值附加<color=#02802f>120000</color>点的血量，并获得<color=#02802f>3</color>秒无敌，最多可以触发1次。其他保留血量技能不享受此加成",
+      "NextEffect": "受到致命伤害时，保留1点血量，提升<color=#02802f>25</color>%暴击伤害，持续5秒，在10秒内持续回复<color=#02802f>110</color>%最大生命值附加<color=#02802f>130000</color>点的血量，并获得<color=#02802f>3</color>秒无敌，最多可以触发1次。其他保留血量技能不享受此加成",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 210000.0
+      },
+      "_byte_length": 724
+    },
+    {
+      "_record_index": 52,
+      "_byte_offset": 34231,
+      "ID": 3,
+      "Level": 13,
+      "MinSacredBeastLevel": 130,
+      "ConsumeItemID": 209003,
+      "ConsumeItemCnt": 15,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "朱雀领域",
+      "SkillID": 80313,
+      "SkillDesc": "受到致命伤害时，保留1点血量，提升<color=#02802f>25</color>%暴击伤害，持续5秒，在10秒内持续回复<color=#02802f>110</color>%最大生命值附加<color=#02802f>130000</color>点的血量，并获得<color=#02802f>3</color>秒无敌，最多可以触发1次。其他保留血量技能不享受此加成",
+      "NextEffect": "受到致命伤害时，保留1点血量，提升<color=#02802f>27.5</color>%暴击伤害，持续5秒，在10秒内持续回复<color=#02802f>120</color>%最大生命值附加<color=#02802f>140000</color>点的血量，并获得<color=#02802f>3</color>秒无敌，最多可以触发1次。其他保留血量技能不享受此加成",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 240000.0
+      },
+      "_byte_length": 724
+    },
+    {
+      "_record_index": 53,
+      "_byte_offset": 34955,
+      "ID": 3,
+      "Level": 14,
+      "MinSacredBeastLevel": 140,
+      "ConsumeItemID": 209003,
+      "ConsumeItemCnt": 15,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "朱雀领域",
+      "SkillID": 80314,
+      "SkillDesc": "受到致命伤害时，保留1点血量，提升<color=#02802f>27.5</color>%暴击伤害，持续5秒，在10秒内持续回复<color=#02802f>120</color>%最大生命值附加<color=#02802f>140000</color>点的血量，并获得<color=#02802f>3</color>秒无敌，最多可以触发1次。其他保留血量技能不享受此加成",
+      "NextEffect": "受到致命伤害时，保留1点血量，提升<color=#02802f>30</color>%暴击伤害，持续5秒，在10秒内持续回复<color=#02802f>130</color>%最大生命值附加<color=#02802f>150000</color>点的血量，并获得<color=#02802f>3</color>秒无敌，最多可以触发<color=#02802f>1</color>次。其他保留血量技能不享受此加成",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 270000.0
+      },
+      "_byte_length": 747
+    },
+    {
+      "_record_index": 54,
+      "_byte_offset": 35702,
+      "ID": 3,
+      "Level": 15,
+      "MinSacredBeastLevel": 150,
+      "ConsumeItemID": 209003,
+      "ConsumeItemCnt": 15,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "朱雀领域",
+      "SkillID": 80315,
+      "SkillDesc": "受到致命伤害时，保留1点血量，提升<color=#02802f>30</color>%暴击伤害，持续5秒，在10秒内持续回复<color=#02802f>130</color>%最大生命值附加<color=#02802f>150000</color>点的血量，并获得<color=#02802f>3</color>秒无敌，最多可以触发<color=#02802f>1</color>次。其他保留血量技能不享受此加成",
+      "NextEffect": "受到致命伤害时，保留1点血量，提升<color=#02802f>32.5</color>%暴击伤害，持续5秒，在10秒内持续回复<color=#02802f>140</color>%最大生命值附加<color=#02802f>160000</color>点的血量，并获得<color=#02802f>3</color>秒无敌，最多可以触发<color=#02802f>2</color>次。其他保留血量技能不享受此加成",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 300000.0
+      },
+      "_byte_length": 770
+    },
+    {
+      "_record_index": 55,
+      "_byte_offset": 36472,
+      "ID": 3,
+      "Level": 16,
+      "MinSacredBeastLevel": 160,
+      "ConsumeItemID": 209003,
+      "ConsumeItemCnt": 20,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "朱雀领域",
+      "SkillID": 80316,
+      "SkillDesc": "受到致命伤害时，保留1点血量，提升<color=#02802f>32.5</color>%暴击伤害，持续5秒，在10秒内持续回复<color=#02802f>140</color>%最大生命值附加<color=#02802f>160000</color>点的血量，并获得<color=#02802f>3</color>秒无敌，最多可以触发<color=#02802f>2</color>次。其他保留血量技能不享受此加成",
+      "NextEffect": "受到致命伤害时，保留1点血量，提升<color=#02802f>35</color>%暴击伤害，持续5秒，在10秒内持续回复<color=#02802f>155</color>%最大生命值附加<color=#02802f>170000</color>点的血量，并获得<color=#02802f>3</color>秒无敌，最多可以触发<color=#02802f>2</color>次。其他保留血量技能不享受此加成",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 340000.0
+      },
+      "_byte_length": 770
+    },
+    {
+      "_record_index": 56,
+      "_byte_offset": 37242,
+      "ID": 3,
+      "Level": 17,
+      "MinSacredBeastLevel": 170,
+      "ConsumeItemID": 209003,
+      "ConsumeItemCnt": 20,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "朱雀领域",
+      "SkillID": 80317,
+      "SkillDesc": "受到致命伤害时，保留1点血量，提升<color=#02802f>35</color>%暴击伤害，持续5秒，在10秒内持续回复<color=#02802f>155</color>%最大生命值附加<color=#02802f>170000</color>点的血量，并获得<color=#02802f>3</color>秒无敌，最多可以触发<color=#02802f>2</color>次。其他保留血量技能不享受此加成",
+      "NextEffect": "受到致命伤害时，保留1点血量，提升<color=#02802f>37.5</color>%暴击伤害，持续5秒，在10秒内持续回复<color=#02802f>170</color>%最大生命值附加<color=#02802f>180000</color>点的血量，并获得<color=#02802f>3</color>秒无敌，最多可以触发<color=#02802f>3</color>次。其他保留血量技能不享受此加成",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 380000.0
+      },
+      "_byte_length": 770
+    },
+    {
+      "_record_index": 57,
+      "_byte_offset": 38012,
+      "ID": 3,
+      "Level": 18,
+      "MinSacredBeastLevel": 180,
+      "ConsumeItemID": 209003,
+      "ConsumeItemCnt": 20,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "朱雀领域",
+      "SkillID": 80318,
+      "SkillDesc": "受到致命伤害时，保留1点血量，提升<color=#02802f>37.5</color>%暴击伤害，持续5秒，在10秒内持续回复<color=#02802f>170</color>%最大生命值附加<color=#02802f>180000</color>点的血量，并获得<color=#02802f>3</color>秒无敌，最多可以触发<color=#02802f>3</color>次。其他保留血量技能不享受此加成",
+      "NextEffect": "受到致命伤害时，保留1点血量，提升<color=#02802f>40</color>%暴击伤害，持续5秒，在10秒内持续回复<color=#02802f>185</color>%最大生命值附加<color=#02802f>190000</color>点的血量，并获得<color=#02802f>3</color>秒无敌，最多可以触发<color=#02802f>3</color>次。其他保留血量技能不享受此加成",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 420000.0
+      },
+      "_byte_length": 770
+    },
+    {
+      "_record_index": 58,
+      "_byte_offset": 38782,
+      "ID": 3,
+      "Level": 19,
+      "MinSacredBeastLevel": 190,
+      "ConsumeItemID": 209003,
+      "ConsumeItemCnt": 20,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "朱雀领域",
+      "SkillID": 80319,
+      "SkillDesc": "受到致命伤害时，保留1点血量，提升<color=#02802f>40</color>%暴击伤害，持续5秒，在10秒内持续回复<color=#02802f>185</color>%最大生命值附加<color=#02802f>190000</color>点的血量，并获得<color=#02802f>3</color>秒无敌，最多可以触发<color=#02802f>3</color>次。其他保留血量技能不享受此加成",
+      "NextEffect": "受到致命伤害时，保留1点血量，提升<color=#02802f>45</color>%暴击伤害，持续5秒，在10秒内持续回复<color=#02802f>200</color>%最大生命值附加<color=#02802f>200000</color>点的血量，并获得<color=#02802f>3</color>秒无敌，最多可以触发<color=#02802f>4</color>次。其他保留血量技能不享受此加成",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 460000.0
+      },
+      "_byte_length": 768
+    },
+    {
+      "_record_index": 59,
+      "_byte_offset": 39550,
+      "ID": 3,
+      "Level": 20,
+      "MinSacredBeastLevel": 200,
+      "ConsumeItemID": 209003,
+      "ConsumeItemCnt": 20,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "朱雀领域",
+      "SkillID": 80320,
+      "SkillDesc": "受到致命伤害时，保留1点血量，提升<color=#02802f>45</color>%暴击伤害，持续5秒，在10秒内持续回复<color=#02802f>200</color>%最大生命值附加<color=#02802f>200000</color>点的血量，并获得<color=#02802f>3</color>秒无敌，最多可以触发<color=#02802f>4</color>次。其他保留血量技能不享受此加成",
+      "NextEffect": "",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 500000.0
+      },
+      "_byte_length": 415
+    },
+    {
+      "_record_index": 60,
+      "_byte_offset": 39965,
+      "ID": 4,
+      "Level": 1,
+      "MinSacredBeastLevel": 10,
+      "ConsumeItemID": 209004,
+      "ConsumeItemCnt": 1,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "玄武领域",
+      "SkillID": 80401,
+      "SkillDesc": "进入任意关卡时触发，生成<color=#02802f>30</color>%攻击力附加<color=#02802f>6000</color>点的护盾。此护盾可以叠加，最大不超过自身生命上限的300%",
+      "NextEffect": "进入任意关卡时触发，生成<color=#02802f>33</color>%攻击力附加<color=#02802f>6500</color>点的护盾。此护盾可以叠加，最大不超过自身生命上限的300%",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 2000.0
+      },
+      "_byte_length": 428
+    },
+    {
+      "_record_index": 61,
+      "_byte_offset": 40393,
+      "ID": 4,
+      "Level": 2,
+      "MinSacredBeastLevel": 20,
+      "ConsumeItemID": 209004,
+      "ConsumeItemCnt": 3,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "玄武领域",
+      "SkillID": 80402,
+      "SkillDesc": "进入任意关卡时触发，生成<color=#02802f>33</color>%攻击力附加<color=#02802f>6500</color>点的护盾。此护盾可以叠加，最大不超过自身生命上限的300%",
+      "NextEffect": "进入任意关卡时触发，生成<color=#02802f>36</color>%攻击力附加<color=#02802f>7000</color>点的护盾。此护盾可以叠加，最大不超过自身生命上限的300%",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 8000.0
+      },
+      "_byte_length": 428
+    },
+    {
+      "_record_index": 62,
+      "_byte_offset": 40821,
+      "ID": 4,
+      "Level": 3,
+      "MinSacredBeastLevel": 30,
+      "ConsumeItemID": 209004,
+      "ConsumeItemCnt": 5,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "玄武领域",
+      "SkillID": 80403,
+      "SkillDesc": "进入任意关卡时触发，生成<color=#02802f>36</color>%攻击力附加<color=#02802f>7000</color>点的护盾。此护盾可以叠加，最大不超过自身生命上限的300%",
+      "NextEffect": "进入任意关卡时触发，生成<color=#02802f>39</color>%攻击力附加<color=#02802f>7500</color>点的护盾。此护盾可以叠加，最大不超过自身生命上限的300%",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 18000.0
+      },
+      "_byte_length": 428
+    },
+    {
+      "_record_index": 63,
+      "_byte_offset": 41249,
+      "ID": 4,
+      "Level": 4,
+      "MinSacredBeastLevel": 40,
+      "ConsumeItemID": 209004,
+      "ConsumeItemCnt": 7,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "玄武领域",
+      "SkillID": 80404,
+      "SkillDesc": "进入任意关卡时触发，生成<color=#02802f>39</color>%攻击力附加<color=#02802f>7500</color>点的护盾。此护盾可以叠加，最大不超过自身生命上限的300%",
+      "NextEffect": "进入任意关卡时触发，生成<color=#02802f>42</color>%攻击力附加<color=#02802f>8000</color>点的护盾。此护盾可以叠加，最大不超过自身生命上限的300%",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 32000.0
+      },
+      "_byte_length": 428
+    },
+    {
+      "_record_index": 64,
+      "_byte_offset": 41677,
+      "ID": 4,
+      "Level": 5,
+      "MinSacredBeastLevel": 50,
+      "ConsumeItemID": 209004,
+      "ConsumeItemCnt": 9,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "玄武领域",
+      "SkillID": 80405,
+      "SkillDesc": "进入任意关卡时触发，生成<color=#02802f>42</color>%攻击力附加<color=#02802f>8000</color>点的护盾。此护盾可以叠加，最大不超过自身生命上限的300%",
+      "NextEffect": "进入任意关卡时触发，生成<color=#02802f>45</color>%攻击力附加<color=#02802f>8500</color>点的护盾。此护盾可以叠加，最大不超过自身生命上限的300%\r\n在任意关卡保持原地不动时，会叠加1层【玄武之力】，提升<color=#02802f>2</color>%的暴击伤害，最多叠加<color=#02802f>3</color>层，移动时失去加成",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 50000.0
+      },
+      "_byte_length": 615
+    },
+    {
+      "_record_index": 65,
+      "_byte_offset": 42292,
+      "ID": 4,
+      "Level": 6,
+      "MinSacredBeastLevel": 60,
+      "ConsumeItemID": 209004,
+      "ConsumeItemCnt": 10,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "玄武领域",
+      "SkillID": 80406,
+      "SkillDesc": "进入任意关卡时触发，生成<color=#02802f>45</color>%攻击力附加<color=#02802f>8500</color>点的护盾。此护盾可以叠加，最大不超过自身生命上限的300%\r\n在任意关卡保持原地不动时，会叠加1层【玄武之力】，提升<color=#02802f>2</color>%的暴击伤害，最多叠加<color=#02802f>3</color>层，移动时失去加成",
+      "NextEffect": "进入任意关卡时触发，生成<color=#02802f>50</color>%攻击力附加<color=#02802f>9350</color>点的护盾。此护盾可以叠加，最大不超过自身生命上限的300%\r\n在任意关卡保持原地不动时，会叠加1层【玄武之力】，提升<color=#02802f>3</color>%的暴击伤害，最多叠加<color=#02802f>3</color>层，移动时失去加成",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 70000.0
+      },
+      "_byte_length": 802
+    },
+    {
+      "_record_index": 66,
+      "_byte_offset": 43094,
+      "ID": 4,
+      "Level": 7,
+      "MinSacredBeastLevel": 70,
+      "ConsumeItemID": 209004,
+      "ConsumeItemCnt": 10,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "玄武领域",
+      "SkillID": 80407,
+      "SkillDesc": "进入任意关卡时触发，生成<color=#02802f>50</color>%攻击力附加<color=#02802f>9350</color>点的护盾。此护盾可以叠加，最大不超过自身生命上限的300%\r\n在任意关卡保持原地不动时，会叠加1层【玄武之力】，提升<color=#02802f>3</color>%的暴击伤害，最多叠加<color=#02802f>3</color>层，移动时失去加成",
+      "NextEffect": "进入任意关卡时触发，生成<color=#02802f>55</color>%攻击力附加<color=#02802f>10200</color>点的护盾。此护盾可以叠加，最大不超过自身生命上限的300%\r\n在任意关卡保持原地不动时，会叠加1层【玄武之力】，提升<color=#02802f>3</color>%的暴击伤害，最多叠加<color=#02802f>4</color>层，移动时失去加成",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 90000.0
+      },
+      "_byte_length": 803
+    },
+    {
+      "_record_index": 67,
+      "_byte_offset": 43897,
+      "ID": 4,
+      "Level": 8,
+      "MinSacredBeastLevel": 80,
+      "ConsumeItemID": 209004,
+      "ConsumeItemCnt": 10,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "玄武领域",
+      "SkillID": 80408,
+      "SkillDesc": "进入任意关卡时触发，生成<color=#02802f>55</color>%攻击力附加<color=#02802f>10200</color>点的护盾。此护盾可以叠加，最大不超过自身生命上限的300%\r\n在任意关卡保持原地不动时，会叠加1层【玄武之力】，提升<color=#02802f>3</color>%的暴击伤害，最多叠加<color=#02802f>4</color>层，移动时失去加成",
+      "NextEffect": "进入任意关卡时触发，生成<color=#02802f>60</color>%攻击力附加<color=#02802f>11050</color>点的护盾。此护盾可以叠加，最大不超过自身生命上限的300%\r\n在任意关卡保持原地不动时，会叠加1层【玄武之力】，提升<color=#02802f>4</color>%的暴击伤害，最多叠加<color=#02802f>4</color>层，移动时失去加成",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 110000.0
+      },
+      "_byte_length": 804
+    },
+    {
+      "_record_index": 68,
+      "_byte_offset": 44701,
+      "ID": 4,
+      "Level": 9,
+      "MinSacredBeastLevel": 90,
+      "ConsumeItemID": 209004,
+      "ConsumeItemCnt": 10,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "玄武领域",
+      "SkillID": 80409,
+      "SkillDesc": "进入任意关卡时触发，生成<color=#02802f>60</color>%攻击力附加<color=#02802f>11050</color>点的护盾。此护盾可以叠加，最大不超过自身生命上限的300%\r\n在任意关卡保持原地不动时，会叠加1层【玄武之力】，提升<color=#02802f>4</color>%的暴击伤害，最多叠加<color=#02802f>4</color>层，移动时失去加成",
+      "NextEffect": "进入任意关卡时触发，生成<color=#02802f>65</color>%攻击力附加<color=#02802f>11900</color>点的护盾。此护盾可以叠加，最大不超过自身生命上限的300%\r\n在任意关卡保持原地不动时，会叠加1层【玄武之力】，提升<color=#02802f>5</color>%的暴击伤害，最多叠加<color=#02802f>5</color>层，移动时失去加成",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 130000.0
+      },
+      "_byte_length": 804
+    },
+    {
+      "_record_index": 69,
+      "_byte_offset": 45505,
+      "ID": 4,
+      "Level": 10,
+      "MinSacredBeastLevel": 100,
+      "ConsumeItemID": 209004,
+      "ConsumeItemCnt": 10,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "玄武领域",
+      "SkillID": 80410,
+      "SkillDesc": "进入任意关卡时触发，生成<color=#02802f>65</color>%攻击力附加<color=#02802f>11900</color>点的护盾。此护盾可以叠加，最大不超过自身生命上限的300%\r\n在任意关卡保持原地不动时，会叠加1层【玄武之力】，提升<color=#02802f>5</color>%的暴击伤害，最多叠加<color=#02802f>5</color>层，移动时失去加成",
+      "NextEffect": "进入任意关卡时触发，生成<color=#02802f>70</color>%攻击力附加<color=#02802f>12750</color>点的护盾。此护盾可以叠加，最大不超过自身生命上限的300%\r\n任意护盾状态下，提升<color=#02802f>2</color>%攻击力\r\n在任意关卡保持原地不动时，会叠加1层【玄武之力】，提升<color=#02802f>5</color>%的暴击伤害，最多叠加<color=#02802f>5</color>层，移动时失去加成",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 150000.0
+      },
+      "_byte_length": 870
+    },
+    {
+      "_record_index": 70,
+      "_byte_offset": 46375,
+      "ID": 4,
+      "Level": 11,
+      "MinSacredBeastLevel": 110,
+      "ConsumeItemID": 209004,
+      "ConsumeItemCnt": 15,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "玄武领域",
+      "SkillID": 80411,
+      "SkillDesc": "进入任意关卡时触发，生成<color=#02802f>70</color>%攻击力附加<color=#02802f>12750</color>点的护盾。此护盾可以叠加，最大不超过自身生命上限的300%\r\n任意护盾状态下，提升<color=#02802f>2</color>%攻击力\r\n在任意关卡保持原地不动时，会叠加1层【玄武之力】，提升<color=#02802f>5</color>%的暴击伤害，最多叠加<color=#02802f>5</color>层，移动时失去加成",
+      "NextEffect": "进入任意关卡时触发，生成<color=#02802f>78</color>%攻击力附加<color=#02802f>14000</color>点的护盾。此护盾可以叠加，最大不超过自身生命上限的300%\r\n任意护盾状态下，提升<color=#02802f>3</color>%攻击力\r\n在任意关卡保持原地不动时，会叠加1层【玄武之力】，提升<color=#02802f>5</color>%的暴击伤害，最多叠加<color=#02802f>5</color>层，移动时失去加成",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 180000.0
+      },
+      "_byte_length": 936
+    },
+    {
+      "_record_index": 71,
+      "_byte_offset": 47311,
+      "ID": 4,
+      "Level": 12,
+      "MinSacredBeastLevel": 120,
+      "ConsumeItemID": 209004,
+      "ConsumeItemCnt": 15,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "玄武领域",
+      "SkillID": 80412,
+      "SkillDesc": "进入任意关卡时触发，生成<color=#02802f>78</color>%攻击力附加<color=#02802f>14000</color>点的护盾。此护盾可以叠加，最大不超过自身生命上限的300%\r\n任意护盾状态下，提升<color=#02802f>3</color>%攻击力\r\n在任意关卡保持原地不动时，会叠加1层【玄武之力】，提升<color=#02802f>5</color>%的暴击伤害，最多叠加<color=#02802f>5</color>层，移动时失去加成",
+      "NextEffect": "进入任意关卡时触发，生成<color=#02802f>86</color>%攻击力附加<color=#02802f>15250</color>点的护盾。此护盾可以叠加，最大不超过自身生命上限的300%\r\n任意护盾状态下，提升<color=#02802f>4</color>%攻击力\r\n在任意关卡保持原地不动时，会叠加1层【玄武之力】，提升<color=#02802f>5</color>%的暴击伤害，最多叠加<color=#02802f>5</color>层，移动时失去加成",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 210000.0
+      },
+      "_byte_length": 936
+    },
+    {
+      "_record_index": 72,
+      "_byte_offset": 48247,
+      "ID": 4,
+      "Level": 13,
+      "MinSacredBeastLevel": 130,
+      "ConsumeItemID": 209004,
+      "ConsumeItemCnt": 15,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "玄武领域",
+      "SkillID": 80413,
+      "SkillDesc": "进入任意关卡时触发，生成<color=#02802f>86</color>%攻击力附加<color=#02802f>15250</color>点的护盾。此护盾可以叠加，最大不超过自身生命上限的300%\r\n任意护盾状态下，提升<color=#02802f>4</color>%攻击力\r\n在任意关卡保持原地不动时，会叠加1层【玄武之力】，提升<color=#02802f>5</color>%的暴击伤害，最多叠加<color=#02802f>5</color>层，移动时失去加成",
+      "NextEffect": "进入任意关卡时触发，生成<color=#02802f>94</color>%攻击力附加<color=#02802f>16500</color>点的护盾。此护盾可以叠加，最大不超过自身生命上限的300%\r\n任意护盾状态下，提升<color=#02802f>5</color>%攻击力\r\n在任意关卡保持原地不动时，会叠加1层【玄武之力】，提升<color=#02802f>5</color>%的暴击伤害，最多叠加<color=#02802f>5</color>层，移动时失去加成",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 240000.0
+      },
+      "_byte_length": 936
+    },
+    {
+      "_record_index": 73,
+      "_byte_offset": 49183,
+      "ID": 4,
+      "Level": 14,
+      "MinSacredBeastLevel": 140,
+      "ConsumeItemID": 209004,
+      "ConsumeItemCnt": 15,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "玄武领域",
+      "SkillID": 80414,
+      "SkillDesc": "进入任意关卡时触发，生成<color=#02802f>94</color>%攻击力附加<color=#02802f>16500</color>点的护盾。此护盾可以叠加，最大不超过自身生命上限的300%\r\n任意护盾状态下，提升<color=#02802f>5</color>%攻击力\r\n在任意关卡保持原地不动时，会叠加1层【玄武之力】，提升<color=#02802f>5</color>%的暴击伤害，最多叠加<color=#02802f>5</color>层，移动时失去加成",
+      "NextEffect": "进入任意关卡时触发，生成<color=#02802f>102</color>%攻击力附加<color=#02802f>17750</color>点的护盾。此护盾可以叠加，最大不超过自身生命上限的300%\r\n任意护盾状态下，提升<color=#02802f>6</color>%攻击力\r\n在任意关卡保持原地不动时，会叠加1层【玄武之力】，提升<color=#02802f>5</color>%的暴击伤害，最多叠加<color=#02802f>5</color>层，移动时失去加成",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 270000.0
+      },
+      "_byte_length": 937
+    },
+    {
+      "_record_index": 74,
+      "_byte_offset": 50120,
+      "ID": 4,
+      "Level": 15,
+      "MinSacredBeastLevel": 150,
+      "ConsumeItemID": 209004,
+      "ConsumeItemCnt": 15,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "玄武领域",
+      "SkillID": 80415,
+      "SkillDesc": "进入任意关卡时触发，生成<color=#02802f>102</color>%攻击力附加<color=#02802f>17750</color>点的护盾。此护盾可以叠加，最大不超过自身生命上限的300%\r\n任意护盾状态下，提升<color=#02802f>6</color>%攻击力\r\n在任意关卡保持原地不动时，会叠加1层【玄武之力】，提升<color=#02802f>5</color>%的暴击伤害，最多叠加<color=#02802f>5</color>层，移动时失去加成",
+      "NextEffect": "进入任意关卡时触发，生成<color=#02802f>110</color>%攻击力附加<color=#02802f>19000</color>点的护盾。此护盾可以叠加，最大不超过自身生命上限的300%\r\n任意护盾状态下，提升<color=#02802f>6</color>%攻击力\r\n在任意关卡保持原地不动时，会叠加1层【玄武之力】，提升<color=#02802f>5</color>%的暴击伤害，<color=#02802f>0.25</color>%闪避率，最多叠加<color=#02802f>5</color>层，移动时失去加成",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 300000.0
+      },
+      "_byte_length": 978
+    },
+    {
+      "_record_index": 75,
+      "_byte_offset": 51098,
+      "ID": 4,
+      "Level": 16,
+      "MinSacredBeastLevel": 160,
+      "ConsumeItemID": 209004,
+      "ConsumeItemCnt": 20,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "玄武领域",
+      "SkillID": 80416,
+      "SkillDesc": "进入任意关卡时触发，生成<color=#02802f>110</color>%攻击力附加<color=#02802f>19000</color>点的护盾。此护盾可以叠加，最大不超过自身生命上限的300%\r\n任意护盾状态下，提升<color=#02802f>6</color>%攻击力\r\n在任意关卡保持原地不动时，会叠加1层【玄武之力】，提升<color=#02802f>5</color>%的暴击伤害，<color=#02802f>0.25</color>%闪避率，最多叠加<color=#02802f>5</color>层，移动时失去加成",
+      "NextEffect": "进入任意关卡时触发，生成<color=#02802f>120</color>%攻击力附加<color=#02802f>20500</color>点的护盾。此护盾可以叠加，最大不超过自身生命上限的300%\r\n任意护盾状态下，提升<color=#02802f>6</color>%攻击力\r\n在任意关卡保持原地不动时，会叠加1层【玄武之力】，提升<color=#02802f>5</color>%的暴击伤害，<color=#02802f>0.5</color>%闪避率，最多叠加<color=#02802f>5</color>层，移动时失去加成",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 340000.0
+      },
+      "_byte_length": 1017
+    },
+    {
+      "_record_index": 76,
+      "_byte_offset": 52115,
+      "ID": 4,
+      "Level": 17,
+      "MinSacredBeastLevel": 170,
+      "ConsumeItemID": 209004,
+      "ConsumeItemCnt": 20,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "玄武领域",
+      "SkillID": 80417,
+      "SkillDesc": "进入任意关卡时触发，生成<color=#02802f>120</color>%攻击力附加<color=#02802f>20500</color>点的护盾。此护盾可以叠加，最大不超过自身生命上限的300%\r\n任意护盾状态下，提升<color=#02802f>6</color>%攻击力\r\n在任意关卡保持原地不动时，会叠加1层【玄武之力】，提升<color=#02802f>5</color>%的暴击伤害，<color=#02802f>0.5</color>%闪避率，最多叠加<color=#02802f>5</color>层，移动时失去加成",
+      "NextEffect": "进入任意关卡时触发，生成<color=#02802f>130</color>%攻击力附加<color=#02802f>22000</color>点的护盾。此护盾可以叠加，最大不超过自身生命上限的300%\r\n任意护盾状态下，提升<color=#02802f>6</color>%攻击力\r\n在任意关卡保持原地不动时，会叠加1层【玄武之力】，提升<color=#02802f>5</color>%的暴击伤害，<color=#02802f>1</color>%闪避率，最多叠加<color=#02802f>5</color>层，移动时失去加成",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 380000.0
+      },
+      "_byte_length": 1014
+    },
+    {
+      "_record_index": 77,
+      "_byte_offset": 53129,
+      "ID": 4,
+      "Level": 18,
+      "MinSacredBeastLevel": 180,
+      "ConsumeItemID": 209004,
+      "ConsumeItemCnt": 20,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "玄武领域",
+      "SkillID": 80418,
+      "SkillDesc": "进入任意关卡时触发，生成<color=#02802f>130</color>%攻击力附加<color=#02802f>22000</color>点的护盾。此护盾可以叠加，最大不超过自身生命上限的300%\r\n任意护盾状态下，提升<color=#02802f>6</color>%攻击力\r\n在任意关卡保持原地不动时，会叠加1层【玄武之力】，提升<color=#02802f>5</color>%的暴击伤害，<color=#02802f>1</color>%闪避率，最多叠加<color=#02802f>5</color>层，移动时失去加成",
+      "NextEffect": "进入任意关卡时触发，生成<color=#02802f>140</color>%攻击力附加<color=#02802f>23500</color>点的护盾。此护盾可以叠加，最大不超过自身生命上限的300%\r\n任意护盾状态下，提升<color=#02802f>6</color>%攻击力\r\n在任意关卡保持原地不动时，会叠加1层【玄武之力】，提升<color=#02802f>5</color>%的暴击伤害，<color=#02802f>1.5</color>%闪避率，最多叠加<color=#02802f>5</color>层，移动时失去加成",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 420000.0
+      },
+      "_byte_length": 1014
+    },
+    {
+      "_record_index": 78,
+      "_byte_offset": 54143,
+      "ID": 4,
+      "Level": 19,
+      "MinSacredBeastLevel": 190,
+      "ConsumeItemID": 209004,
+      "ConsumeItemCnt": 20,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "玄武领域",
+      "SkillID": 80419,
+      "SkillDesc": "进入任意关卡时触发，生成<color=#02802f>140</color>%攻击力附加<color=#02802f>23500</color>点的护盾。此护盾可以叠加，最大不超过自身生命上限的300%\r\n任意护盾状态下，提升<color=#02802f>6</color>%攻击力\r\n在任意关卡保持原地不动时，会叠加1层【玄武之力】，提升<color=#02802f>5</color>%的暴击伤害，<color=#02802f>1.5</color>%闪避率，最多叠加<color=#02802f>5</color>层，移动时失去加成",
+      "NextEffect": "进入任意关卡时触发，生成<color=#02802f>150</color>%攻击力附加<color=#02802f>25000</color>点的护盾。此护盾可以叠加，最大不超过自身生命上限的300%\r\n任意护盾状态下，提升<color=#02802f>6</color>%攻击力\r\n在任意关卡保持原地不动时，会叠加1层【玄武之力】，提升<color=#02802f>5</color>%的暴击伤害，<color=#02802f>2</color>%闪避率，最多叠加<color=#02802f>5</color>层，移动时失去加成",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 460000.0
+      },
+      "_byte_length": 1014
+    },
+    {
+      "_record_index": 79,
+      "_byte_offset": 55157,
+      "ID": 4,
+      "Level": 20,
+      "MinSacredBeastLevel": 200,
+      "ConsumeItemID": 209004,
+      "ConsumeItemCnt": 20,
+      "SkillTriggerPercent": 100.0,
+      "SkillName": "玄武领域",
+      "SkillID": 80420,
+      "SkillDesc": "进入任意关卡时触发，生成<color=#02802f>150</color>%攻击力附加<color=#02802f>25000</color>点的护盾。此护盾可以叠加，最大不超过自身生命上限的300%\r\n任意护盾状态下，提升<color=#02802f>6</color>%攻击力\r\n在任意关卡保持原地不动时，会叠加1层【玄武之力】，提升<color=#02802f>5</color>%的暴击伤害，<color=#02802f>2</color>%闪避率，最多叠加<color=#02802f>5</color>层，移动时失去加成",
+      "NextEffect": "",
+      "AttrList": {
+        "DataType": 84,
+        "AddType": 1,
+        "Value": 500000.0
+      },
+      "_byte_length": 537
+    }
+  ]
+}

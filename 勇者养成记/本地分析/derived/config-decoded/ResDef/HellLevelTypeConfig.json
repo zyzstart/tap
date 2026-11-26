@@ -1,0 +1,116 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_hellleveltypeconfig.bytes.ab",
+    "path_id": 161363867299341288,
+    "name": "HellLevelTypeConfig",
+    "sha256": "b5af71d9f20e92f4a4982db9c7d4543e25d0daffc87e98940ff564287d6a9be0",
+    "export": "derived/unity/text/assets_resources_config_resbin_hellleveltypeconfig.bytes/HellLevelTypeConfig__161363867299341288.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 137,
+      "version": 1,
+      "record_count": 7,
+      "stored_crc32": "41672788",
+      "computed_inverted_crc32": "41672788"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "HellLevelTypeConfig",
+      "fields": [
+        {
+          "type": "int",
+          "name": "HellLevelType",
+          "object_offset": 16
+        },
+        {
+          "type": "string",
+          "name": "Icon",
+          "object_offset": 24
+        }
+      ],
+      "unpack_va": 30721556,
+      "dump_line": 205122
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1d4c648",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d4c68c",
+        "target_va": "0x21f6ce8",
+        "opcode": "B-tail",
+        "reader": "readString",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 7
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "HellLevelType": 1,
+      "Icon": "lg_huo",
+      "_byte_length": 15
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 35,
+      "HellLevelType": 2,
+      "Icon": "lg_jin",
+      "_byte_length": 15
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 50,
+      "HellLevelType": 3,
+      "Icon": "lg_mu",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 64,
+      "HellLevelType": 4,
+      "Icon": "lg_shui",
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 80,
+      "HellLevelType": 5,
+      "Icon": "lg_tu",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 94,
+      "HellLevelType": 6,
+      "Icon": "zd_img_syboss",
+      "_byte_length": 22
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 116,
+      "HellLevelType": 7,
+      "Icon": "ios马甲包",
+      "_byte_length": 21
+    }
+  ]
+}

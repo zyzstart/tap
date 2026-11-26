@@ -1,0 +1,233 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_actoreffectconfig.bytes.ab",
+    "path_id": 1400239009352562666,
+    "name": "ActorEffectConfig",
+    "sha256": "f231c7f577337e7e980b34a1d9e53ea07afb933b95a9fef670b0308aab879850",
+    "export": "derived/unity/text/assets_resources_config_resbin_actoreffectconfig.bytes/ActorEffectConfig__1400239009352562666.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 874,
+      "version": 1,
+      "record_count": 10,
+      "stored_crc32": "897eb5dd",
+      "computed_inverted_crc32": "897eb5dd"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "ActorEffectConfig",
+      "fields": [
+        {
+          "type": "uint",
+          "name": "ID",
+          "object_offset": 16
+        },
+        {
+          "type": "string",
+          "name": "Path",
+          "object_offset": 24
+        },
+        {
+          "type": "string",
+          "name": "Dummy",
+          "object_offset": 32
+        },
+        {
+          "type": "float",
+          "name": "EffectGapTime",
+          "object_offset": 40
+        },
+        {
+          "type": "float",
+          "name": "EffectPlayTime",
+          "object_offset": 44
+        },
+        {
+          "type": "string",
+          "name": "IOSVestBag",
+          "object_offset": 48
+        }
+      ],
+      "unpack_va": 31220192,
+      "dump_line": 209058
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1dc6214",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dc623c",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dc6264",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dc6288",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 40,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dc62ac",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 44,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dc62f0",
+        "target_va": "0x21f6ce8",
+        "opcode": "B-tail",
+        "reader": "readString",
+        "destination_object_offset": 48,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 10
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "ID": 1000,
+      "Path": "Effect/Skill/cuilian/eff_feng_03",
+      "Dummy": "DM_ACTOR_S_ROOT",
+      "EffectGapTime": 0.0,
+      "EffectPlayTime": 5.0,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 86
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 106,
+      "ID": 1001,
+      "Path": "Effect/Skill/cuilian/eff_feng_05",
+      "Dummy": "DM_ACTOR_S_ROOT",
+      "EffectGapTime": 0.0,
+      "EffectPlayTime": 5.0,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 86
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 192,
+      "ID": 1002,
+      "Path": "Effect/Skill/cuilian/eff_bing_03",
+      "Dummy": "DM_ACTOR_S_ROOT",
+      "EffectGapTime": 0.0,
+      "EffectPlayTime": 5.0,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 86
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 278,
+      "ID": 1003,
+      "Path": "Effect/Skill/cuilian/eff_bing_05",
+      "Dummy": "DM_ACTOR_S_ROOT",
+      "EffectGapTime": 0.0,
+      "EffectPlayTime": 5.0,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 86
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 364,
+      "ID": 1004,
+      "Path": "Effect/Skill/cuilian/eff_sha_03",
+      "Dummy": "DM_ACTOR_S_ROOT",
+      "EffectGapTime": 0.0,
+      "EffectPlayTime": 5.0,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 85
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 449,
+      "ID": 1005,
+      "Path": "Effect/Skill/cuilian/eff_sha_05",
+      "Dummy": "DM_ACTOR_S_ROOT",
+      "EffectGapTime": 0.0,
+      "EffectPlayTime": 5.0,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 85
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 534,
+      "ID": 1006,
+      "Path": "Effect/Skill/cuilian/eff_yan_03",
+      "Dummy": "DM_ACTOR_S_ROOT",
+      "EffectGapTime": 0.0,
+      "EffectPlayTime": 5.0,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 85
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 619,
+      "ID": 1007,
+      "Path": "Effect/Skill/cuilian/eff_yan_05",
+      "Dummy": "DM_ACTOR_S_ROOT",
+      "EffectGapTime": 0.0,
+      "EffectPlayTime": 5.0,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 85
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 704,
+      "ID": 1008,
+      "Path": "Effect/Skill/cuilian/eff_huo_03",
+      "Dummy": "DM_ACTOR_S_ROOT",
+      "EffectGapTime": 0.0,
+      "EffectPlayTime": 5.0,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 85
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 789,
+      "ID": 1009,
+      "Path": "Effect/Skill/cuilian/eff_huo_05",
+      "Dummy": "DM_ACTOR_S_ROOT",
+      "EffectGapTime": 0.0,
+      "EffectPlayTime": 5.0,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 85
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "namespace": "ResDef",
+  "name": "LingChiLevelUpItemInfo",
+  "fields": [
+    {
+      "type": "uint",
+      "name": "ID",
+      "object_offset": 16
+    },
+    {
+      "type": "uint",
+      "name": "Num",
+      "object_offset": 20
+    }
+  ],
+  "unpack_va": 30754956,
+  "dump_line": 207475,
+  "layout": [
+    {
+      "type": "uint",
+      "name": "ID",
+      "object_offset": 16,
+      "wire_type": "uint",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d548c0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "self",
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "type": "uint",
+      "name": "Num",
+      "object_offset": 20,
+      "wire_type": "uint",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d54900",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "B",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "self",
+            20
+          ]
+        }
+      ]
+    }
+  ],
+  "native_evidence": {
+    "method_start_va": "0x1d5488c",
+    "instruction_steps": 22,
+    "event_count": 2,
+    "branch_evidence": [],
+    "loops": [],
+    "instruction_sha256": "8bdda4ea8b42022b222d1ab141f602b9d011c7815a28ae06fed2d85dbf28b515",
+    "gate": "concrete-success-path; all sequential readers/nested callees; full field/destination/stride matching",
+    "assumptions": [
+      "non-null input buffer and created nested objects/arrays",
+      "managed array bounds valid",
+      "AAPCS64 callee-saved register preservation",
+      "reader and nested call success; version 1 only"
+    ]
+  }
+}

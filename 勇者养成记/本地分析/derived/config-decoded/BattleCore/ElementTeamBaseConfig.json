@@ -1,0 +1,113 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_fp_elementteambaseconfig.bytes.ab",
+    "path_id": 995624879094355810,
+    "name": "ElementTeamBaseConfig",
+    "sha256": "e27880e205f2ed59be1c18c6126449d6e1e31792c4d633c98bda9fba26574d44",
+    "export": "derived/unity/text/assets_resources_config_resbin_fp_elementteambaseconfig.bytes/ElementTeamBaseConfig__995624879094355810.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 68,
+      "version": 1,
+      "record_count": 4,
+      "stored_crc32": "d1a62864",
+      "computed_inverted_crc32": "d1a62864"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "BattleCore",
+      "name": "ElementTeamBaseConfig",
+      "fields": [
+        {
+          "type": "int",
+          "name": "TowerID",
+          "object_offset": 16
+        },
+        {
+          "type": "int",
+          "name": "ChapterID",
+          "object_offset": 20
+        },
+        {
+          "type": "int",
+          "name": "BuffID",
+          "object_offset": 24
+        }
+      ],
+      "unpack_va": 23335540,
+      "dump_line": 166370
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x16412a8",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x16412cc",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x164130c",
+        "target_va": "0x21f67d0",
+        "opcode": "B-tail",
+        "reader": "readInt32",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 4
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "TowerID": 101,
+      "ChapterID": 104,
+      "BuffID": 1200001,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 32,
+      "TowerID": 102,
+      "ChapterID": 105,
+      "BuffID": 1200002,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 44,
+      "TowerID": 103,
+      "ChapterID": 106,
+      "BuffID": 1200003,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 56,
+      "TowerID": 104,
+      "ChapterID": 107,
+      "BuffID": 1200004,
+      "_byte_length": 12
+    }
+  ]
+}

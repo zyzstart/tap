@@ -1,0 +1,359 @@
+{
+  "namespace": "ResDef",
+  "name": "BuffConfig",
+  "fields": [
+    {
+      "type": "byte",
+      "name": "TimeType",
+      "object_offset": 16
+    },
+    {
+      "type": "byte",
+      "name": "ReplaceType",
+      "object_offset": 17
+    },
+    {
+      "type": "byte",
+      "name": "BuffIconQuality",
+      "object_offset": 18
+    },
+    {
+      "type": "byte",
+      "name": "IsShowBuffIcon",
+      "object_offset": 19
+    },
+    {
+      "type": "int",
+      "name": "BuffID",
+      "object_offset": 20
+    },
+    {
+      "type": "int",
+      "name": "BuffVisualID",
+      "object_offset": 24
+    },
+    {
+      "type": "BuffTriggleState",
+      "name": "State",
+      "object_offset": 32
+    },
+    {
+      "type": "string",
+      "name": "BuffIcon",
+      "object_offset": 40
+    },
+    {
+      "type": "int",
+      "name": "TriggerStackNum",
+      "object_offset": 48
+    },
+    {
+      "type": "int",
+      "name": "TriggerState",
+      "object_offset": 52
+    },
+    {
+      "type": "int",
+      "name": "TriggerInternal",
+      "object_offset": 56
+    }
+  ],
+  "unpack_va": 31239804,
+  "dump_line": 202357,
+  "layout": [
+    {
+      "type": "byte",
+      "name": "TimeType",
+      "object_offset": 16,
+      "wire_type": "byte",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcaeb0",
+          "target_va": "0x21f65e0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt8"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt8",
+          "destination": [
+            "self",
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "type": "byte",
+      "name": "ReplaceType",
+      "object_offset": 17,
+      "wire_type": "byte",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcaed4",
+          "target_va": "0x21f65e0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt8"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt8",
+          "destination": [
+            "self",
+            17
+          ]
+        }
+      ]
+    },
+    {
+      "type": "byte",
+      "name": "BuffIconQuality",
+      "object_offset": 18,
+      "wire_type": "byte",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcaef8",
+          "target_va": "0x21f65e0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt8"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt8",
+          "destination": [
+            "self",
+            18
+          ]
+        }
+      ]
+    },
+    {
+      "type": "byte",
+      "name": "IsShowBuffIcon",
+      "object_offset": 19,
+      "wire_type": "byte",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcaf1c",
+          "target_va": "0x21f65e0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt8"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt8",
+          "destination": [
+            "self",
+            19
+          ]
+        }
+      ]
+    },
+    {
+      "type": "int",
+      "name": "BuffID",
+      "object_offset": 20,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcaf40",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "type": "int",
+      "name": "BuffVisualID",
+      "object_offset": 24,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcaf64",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            24
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuffTriggleState",
+      "name": "State",
+      "object_offset": 32,
+      "wire_type": "BuffTriggleState",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcaf88",
+          "target_va": "0x1dcb03c",
+          "target_names": [
+            "ResDef.BuffTriggleState$$unpack"
+          ],
+          "opcode": "BL",
+          "kind": "nested",
+          "nested_schema": "ResDef.BuffTriggleState",
+          "destination": [
+            "field",
+            32
+          ],
+          "cut_version": 1
+        }
+      ],
+      "nested_schema": "ResDef.BuffTriggleState"
+    },
+    {
+      "type": "string",
+      "name": "BuffIcon",
+      "object_offset": 40,
+      "wire_type": "string",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcafb0",
+          "target_va": "0x21f6ce8",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readString"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readString",
+          "destination": [
+            "self",
+            40
+          ],
+          "max_string_size": 64
+        }
+      ],
+      "max_string_size": 64
+    },
+    {
+      "type": "int",
+      "name": "TriggerStackNum",
+      "object_offset": 48,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcafd4",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "type": "int",
+      "name": "TriggerState",
+      "object_offset": 52,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcaff8",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            52
+          ]
+        }
+      ]
+    },
+    {
+      "type": "int",
+      "name": "TriggerInternal",
+      "object_offset": 56,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcb038",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "B",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            56
+          ]
+        }
+      ]
+    }
+  ],
+  "native_evidence": {
+    "method_start_va": "0x1dcae7c",
+    "instruction_steps": 86,
+    "event_count": 11,
+    "branch_evidence": [],
+    "loops": [],
+    "instruction_sha256": "95b7181bb7276faf2069a7087983f127192fc8689b97174a743bd85e5ec4cc9f",
+    "gate": "concrete-success-path; all sequential readers/nested callees; full field/destination/stride matching",
+    "assumptions": [
+      "non-null input buffer and created nested objects/arrays",
+      "managed array bounds valid",
+      "AAPCS64 callee-saved register preservation",
+      "reader and nested call success; version 1 only"
+    ]
+  }
+}

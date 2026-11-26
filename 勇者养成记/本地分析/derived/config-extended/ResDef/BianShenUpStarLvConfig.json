@@ -1,0 +1,5934 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_bianshenupstarlvconfig.bytes.ab",
+    "path_id": -6244814246574496580,
+    "name": "BianShenUpStarLvConfig",
+    "sha256": "85deab6126c43774912b901ea67e8f7dca06a752a79f41dd29c7e40f20b9f388",
+    "export": "derived/unity/text/assets_resources_config_resbin_bianshenupstarlvconfig.bytes/BianShenUpStarLvConfig__-6244814246574496580.bin",
+    "schema": "ResDef.BianShenUpStarLvConfig",
+    "path_id_decimal": "-6244814246574496580",
+    "legacy_status": "raw-header-verified",
+    "legacy_reason": "Unsupported arrays/nested/enum fields: BianShenUpStarCostItemCfg[] UpStarCostList, ResAttrImpactData[] AttrList",
+    "status": "decoded-validated-native-recursive",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 9694,
+      "version": 1,
+      "record_count": 140,
+      "stored_crc32": "c84b39a5",
+      "computed_inverted_crc32": "c84b39a5"
+    },
+    "native_layout_verified": true,
+    "schema_file": "derived/config-extended/schemas/ResDef.BianShenUpStarLvConfig.json",
+    "minimum_record_size": 65,
+    "min_expected_payload_bytes": 9100,
+    "actual_payload_bytes": 9674,
+    "decoded_record_count": 140,
+    "validation": {
+      "header_verified": true,
+      "count_verified": true,
+      "exact_eof": true,
+      "full_reencode_equal": true,
+      "full_reencode_sha256": "85deab6126c43774912b901ea67e8f7dca06a752a79f41dd29c7e40f20b9f388",
+      "decoded_node_count": 3780,
+      "payload_bytes": 9674
+    },
+    "arrays": [
+      {
+        "field": "UpStarCostList",
+        "count": 2,
+        "count_encoding": "none-native-fixed"
+      },
+      {
+        "field": "AttrList",
+        "count": 4,
+        "count_encoding": "none-native-fixed"
+      }
+    ],
+    "decoded_json": "derived/config-extended/ResDef/BianShenUpStarLvConfig.json",
+    "decoded_csv": "derived/config-extended/ResDef/BianShenUpStarLvConfig.csv"
+  },
+  "precision": "Exact JSON integer number tokens, with decimal-string mirrors for every int64/uint64/FP. FP is raw signed int64; no scaling.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "BianShenType": 1,
+      "StarLv": 1,
+      "MinBianShenLv": 1,
+      "StarName": "1阶",
+      "BianShenAddTime": 0.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203101,
+          "ItemCnt": 10
+        },
+        {
+          "ItemID": 203203,
+          "ItemCnt": 10
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 29,
+          "AddType": 1,
+          "Value": 0.0020000000949949026
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 24.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 240.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 89,
+      "BianShenType": 1,
+      "StarLv": 2,
+      "MinBianShenLv": 5,
+      "StarName": "2阶",
+      "BianShenAddTime": 0.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203101,
+          "ItemCnt": 30
+        },
+        {
+          "ItemID": 203203,
+          "ItemCnt": 30
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 29,
+          "AddType": 1,
+          "Value": 0.008999999612569809
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 108.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 1080.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 158,
+      "BianShenType": 1,
+      "StarLv": 3,
+      "MinBianShenLv": 10,
+      "StarName": "3阶",
+      "BianShenAddTime": 0.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203101,
+          "ItemCnt": 60
+        },
+        {
+          "ItemID": 203203,
+          "ItemCnt": 60
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 29,
+          "AddType": 1,
+          "Value": 0.017999999225139618
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 216.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 2160.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 227,
+      "BianShenType": 1,
+      "StarLv": 4,
+      "MinBianShenLv": 15,
+      "StarName": "4阶",
+      "BianShenAddTime": 0.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203101,
+          "ItemCnt": 90
+        },
+        {
+          "ItemID": 203203,
+          "ItemCnt": 90
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 29,
+          "AddType": 1,
+          "Value": 0.02800000086426735
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 336.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 3360.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 296,
+      "BianShenType": 1,
+      "StarLv": 5,
+      "MinBianShenLv": 20,
+      "StarName": "5阶",
+      "BianShenAddTime": 0.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203101,
+          "ItemCnt": 120
+        },
+        {
+          "ItemID": 203203,
+          "ItemCnt": 120
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 29,
+          "AddType": 1,
+          "Value": 0.039000000804662704
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 468.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 4680.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 365,
+      "BianShenType": 1,
+      "StarLv": 6,
+      "MinBianShenLv": 25,
+      "StarName": "6阶",
+      "BianShenAddTime": 0.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203101,
+          "ItemCnt": 150
+        },
+        {
+          "ItemID": 203203,
+          "ItemCnt": 150
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 29,
+          "AddType": 1,
+          "Value": 0.050999999046325684
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 612.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 6120.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 434,
+      "BianShenType": 1,
+      "StarLv": 7,
+      "MinBianShenLv": 30,
+      "StarName": "7阶",
+      "BianShenAddTime": 0.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203101,
+          "ItemCnt": 180
+        },
+        {
+          "ItemID": 203203,
+          "ItemCnt": 180
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 29,
+          "AddType": 1,
+          "Value": 0.06300000101327896
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 756.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 7560.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 503,
+      "BianShenType": 1,
+      "StarLv": 8,
+      "MinBianShenLv": 35,
+      "StarName": "8阶",
+      "BianShenAddTime": 0.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203101,
+          "ItemCnt": 210
+        },
+        {
+          "ItemID": 203203,
+          "ItemCnt": 210
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 29,
+          "AddType": 1,
+          "Value": 0.07500000298023224
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 900.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 9000.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 572,
+      "BianShenType": 1,
+      "StarLv": 9,
+      "MinBianShenLv": 40,
+      "StarName": "9阶",
+      "BianShenAddTime": 0.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203101,
+          "ItemCnt": 240
+        },
+        {
+          "ItemID": 203203,
+          "ItemCnt": 240
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 29,
+          "AddType": 1,
+          "Value": 0.08699999749660492
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 1044.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 10440.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 641,
+      "BianShenType": 1,
+      "StarLv": 10,
+      "MinBianShenLv": 45,
+      "StarName": "10阶",
+      "BianShenAddTime": 0.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203101,
+          "ItemCnt": 240
+        },
+        {
+          "ItemID": 203203,
+          "ItemCnt": 240
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 29,
+          "AddType": 1,
+          "Value": 0.10000000149011612
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 1200.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 12000.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 70
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 711,
+      "BianShenType": 2,
+      "StarLv": 1,
+      "MinBianShenLv": 5,
+      "StarName": "1阶",
+      "BianShenAddTime": 0.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203102,
+          "ItemCnt": 10
+        },
+        {
+          "ItemID": 203204,
+          "ItemCnt": 10
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 28,
+          "AddType": 1,
+          "Value": 0.003000000026077032
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 36.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 360.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 780,
+      "BianShenType": 2,
+      "StarLv": 2,
+      "MinBianShenLv": 10,
+      "StarName": "2阶",
+      "BianShenAddTime": 0.5,
+      "UpStarCostList": [
+        {
+          "ItemID": 203102,
+          "ItemCnt": 30
+        },
+        {
+          "ItemID": 203204,
+          "ItemCnt": 30
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 28,
+          "AddType": 1,
+          "Value": 0.013500000350177288
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 162.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 1620.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 849,
+      "BianShenType": 2,
+      "StarLv": 3,
+      "MinBianShenLv": 15,
+      "StarName": "3阶",
+      "BianShenAddTime": 1.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203102,
+          "ItemCnt": 60
+        },
+        {
+          "ItemID": 203204,
+          "ItemCnt": 60
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 28,
+          "AddType": 1,
+          "Value": 0.027000000700354576
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 324.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 3240.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 918,
+      "BianShenType": 2,
+      "StarLv": 4,
+      "MinBianShenLv": 20,
+      "StarName": "4阶",
+      "BianShenAddTime": 1.5,
+      "UpStarCostList": [
+        {
+          "ItemID": 203102,
+          "ItemCnt": 90
+        },
+        {
+          "ItemID": 203204,
+          "ItemCnt": 90
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 28,
+          "AddType": 1,
+          "Value": 0.041999999433755875
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 504.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 5040.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 987,
+      "BianShenType": 2,
+      "StarLv": 5,
+      "MinBianShenLv": 25,
+      "StarName": "5阶",
+      "BianShenAddTime": 2.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203102,
+          "ItemCnt": 120
+        },
+        {
+          "ItemID": 203204,
+          "ItemCnt": 120
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 28,
+          "AddType": 1,
+          "Value": 0.05849999934434891
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 702.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 7020.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 1056,
+      "BianShenType": 2,
+      "StarLv": 6,
+      "MinBianShenLv": 30,
+      "StarName": "6阶",
+      "BianShenAddTime": 2.5,
+      "UpStarCostList": [
+        {
+          "ItemID": 203102,
+          "ItemCnt": 150
+        },
+        {
+          "ItemID": 203204,
+          "ItemCnt": 150
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 28,
+          "AddType": 1,
+          "Value": 0.07649999856948853
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 918.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 9180.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 1125,
+      "BianShenType": 2,
+      "StarLv": 7,
+      "MinBianShenLv": 35,
+      "StarName": "7阶",
+      "BianShenAddTime": 3.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203102,
+          "ItemCnt": 180
+        },
+        {
+          "ItemID": 203204,
+          "ItemCnt": 180
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 28,
+          "AddType": 1,
+          "Value": 0.09449999779462814
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 1134.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 11340.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 1194,
+      "BianShenType": 2,
+      "StarLv": 8,
+      "MinBianShenLv": 40,
+      "StarName": "8阶",
+      "BianShenAddTime": 3.5,
+      "UpStarCostList": [
+        {
+          "ItemID": 203102,
+          "ItemCnt": 210
+        },
+        {
+          "ItemID": 203204,
+          "ItemCnt": 210
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 28,
+          "AddType": 1,
+          "Value": 0.11249999701976776
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 1350.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 13500.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 1263,
+      "BianShenType": 2,
+      "StarLv": 9,
+      "MinBianShenLv": 45,
+      "StarName": "9阶",
+      "BianShenAddTime": 4.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203102,
+          "ItemCnt": 240
+        },
+        {
+          "ItemID": 203204,
+          "ItemCnt": 240
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 28,
+          "AddType": 1,
+          "Value": 0.13050000369548798
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 1566.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 15660.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 19,
+      "_byte_offset": 1332,
+      "BianShenType": 2,
+      "StarLv": 10,
+      "MinBianShenLv": 50,
+      "StarName": "10阶",
+      "BianShenAddTime": 5.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203102,
+          "ItemCnt": 240
+        },
+        {
+          "ItemID": 203204,
+          "ItemCnt": 240
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 28,
+          "AddType": 1,
+          "Value": 0.15000000596046448
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 1800.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 18000.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 70
+    },
+    {
+      "_record_index": 20,
+      "_byte_offset": 1402,
+      "BianShenType": 3,
+      "StarLv": 1,
+      "MinBianShenLv": 5,
+      "StarName": "1阶",
+      "BianShenAddTime": 0.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203103,
+          "ItemCnt": 10
+        },
+        {
+          "ItemID": 203204,
+          "ItemCnt": 10
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 27,
+          "AddType": 1,
+          "Value": 0.003000000026077032
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 36.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 360.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 21,
+      "_byte_offset": 1471,
+      "BianShenType": 3,
+      "StarLv": 2,
+      "MinBianShenLv": 10,
+      "StarName": "2阶",
+      "BianShenAddTime": 0.5,
+      "UpStarCostList": [
+        {
+          "ItemID": 203103,
+          "ItemCnt": 30
+        },
+        {
+          "ItemID": 203204,
+          "ItemCnt": 30
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 27,
+          "AddType": 1,
+          "Value": 0.013500000350177288
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 162.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 1620.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 22,
+      "_byte_offset": 1540,
+      "BianShenType": 3,
+      "StarLv": 3,
+      "MinBianShenLv": 15,
+      "StarName": "3阶",
+      "BianShenAddTime": 1.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203103,
+          "ItemCnt": 60
+        },
+        {
+          "ItemID": 203204,
+          "ItemCnt": 60
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 27,
+          "AddType": 1,
+          "Value": 0.027000000700354576
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 324.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 3240.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 23,
+      "_byte_offset": 1609,
+      "BianShenType": 3,
+      "StarLv": 4,
+      "MinBianShenLv": 20,
+      "StarName": "4阶",
+      "BianShenAddTime": 1.5,
+      "UpStarCostList": [
+        {
+          "ItemID": 203103,
+          "ItemCnt": 90
+        },
+        {
+          "ItemID": 203204,
+          "ItemCnt": 90
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 27,
+          "AddType": 1,
+          "Value": 0.041999999433755875
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 504.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 5040.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 24,
+      "_byte_offset": 1678,
+      "BianShenType": 3,
+      "StarLv": 5,
+      "MinBianShenLv": 25,
+      "StarName": "5阶",
+      "BianShenAddTime": 2.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203103,
+          "ItemCnt": 120
+        },
+        {
+          "ItemID": 203204,
+          "ItemCnt": 120
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 27,
+          "AddType": 1,
+          "Value": 0.05849999934434891
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 702.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 7020.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 25,
+      "_byte_offset": 1747,
+      "BianShenType": 3,
+      "StarLv": 6,
+      "MinBianShenLv": 30,
+      "StarName": "6阶",
+      "BianShenAddTime": 2.5,
+      "UpStarCostList": [
+        {
+          "ItemID": 203103,
+          "ItemCnt": 150
+        },
+        {
+          "ItemID": 203204,
+          "ItemCnt": 150
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 27,
+          "AddType": 1,
+          "Value": 0.07649999856948853
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 918.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 9180.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 26,
+      "_byte_offset": 1816,
+      "BianShenType": 3,
+      "StarLv": 7,
+      "MinBianShenLv": 35,
+      "StarName": "7阶",
+      "BianShenAddTime": 3.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203103,
+          "ItemCnt": 180
+        },
+        {
+          "ItemID": 203204,
+          "ItemCnt": 180
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 27,
+          "AddType": 1,
+          "Value": 0.09449999779462814
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 1134.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 11340.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 27,
+      "_byte_offset": 1885,
+      "BianShenType": 3,
+      "StarLv": 8,
+      "MinBianShenLv": 40,
+      "StarName": "8阶",
+      "BianShenAddTime": 3.5,
+      "UpStarCostList": [
+        {
+          "ItemID": 203103,
+          "ItemCnt": 210
+        },
+        {
+          "ItemID": 203204,
+          "ItemCnt": 210
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 27,
+          "AddType": 1,
+          "Value": 0.11249999701976776
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 1350.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 13500.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 28,
+      "_byte_offset": 1954,
+      "BianShenType": 3,
+      "StarLv": 9,
+      "MinBianShenLv": 45,
+      "StarName": "9阶",
+      "BianShenAddTime": 4.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203103,
+          "ItemCnt": 240
+        },
+        {
+          "ItemID": 203204,
+          "ItemCnt": 240
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 27,
+          "AddType": 1,
+          "Value": 0.13050000369548798
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 1566.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 15660.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 29,
+      "_byte_offset": 2023,
+      "BianShenType": 3,
+      "StarLv": 10,
+      "MinBianShenLv": 50,
+      "StarName": "10阶",
+      "BianShenAddTime": 5.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203103,
+          "ItemCnt": 240
+        },
+        {
+          "ItemID": 203204,
+          "ItemCnt": 240
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 27,
+          "AddType": 1,
+          "Value": 0.15000000596046448
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 1800.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 18000.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 70
+    },
+    {
+      "_record_index": 30,
+      "_byte_offset": 2093,
+      "BianShenType": 4,
+      "StarLv": 1,
+      "MinBianShenLv": 5,
+      "StarName": "1阶",
+      "BianShenAddTime": 0.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203104,
+          "ItemCnt": 10
+        },
+        {
+          "ItemID": 203205,
+          "ItemCnt": 10
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 27,
+          "AddType": 1,
+          "Value": 0.004000000189989805
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 48.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 480.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 31,
+      "_byte_offset": 2162,
+      "BianShenType": 4,
+      "StarLv": 2,
+      "MinBianShenLv": 10,
+      "StarName": "2阶",
+      "BianShenAddTime": 0.6000000238418579,
+      "UpStarCostList": [
+        {
+          "ItemID": 203104,
+          "ItemCnt": 30
+        },
+        {
+          "ItemID": 203205,
+          "ItemCnt": 30
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 27,
+          "AddType": 1,
+          "Value": 0.017999999225139618
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 216.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 2160.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 32,
+      "_byte_offset": 2231,
+      "BianShenType": 4,
+      "StarLv": 3,
+      "MinBianShenLv": 15,
+      "StarName": "3阶",
+      "BianShenAddTime": 1.2000000476837158,
+      "UpStarCostList": [
+        {
+          "ItemID": 203104,
+          "ItemCnt": 60
+        },
+        {
+          "ItemID": 203205,
+          "ItemCnt": 60
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 27,
+          "AddType": 1,
+          "Value": 0.035999998450279236
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 432.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 4320.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 33,
+      "_byte_offset": 2300,
+      "BianShenType": 4,
+      "StarLv": 4,
+      "MinBianShenLv": 20,
+      "StarName": "4阶",
+      "BianShenAddTime": 1.7999999523162842,
+      "UpStarCostList": [
+        {
+          "ItemID": 203104,
+          "ItemCnt": 90
+        },
+        {
+          "ItemID": 203205,
+          "ItemCnt": 90
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 27,
+          "AddType": 1,
+          "Value": 0.0560000017285347
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 672.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 6720.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 34,
+      "_byte_offset": 2369,
+      "BianShenType": 4,
+      "StarLv": 5,
+      "MinBianShenLv": 25,
+      "StarName": "5阶",
+      "BianShenAddTime": 2.4000000953674316,
+      "UpStarCostList": [
+        {
+          "ItemID": 203104,
+          "ItemCnt": 120
+        },
+        {
+          "ItemID": 203205,
+          "ItemCnt": 120
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 27,
+          "AddType": 1,
+          "Value": 0.07800000160932541
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 936.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 9360.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 35,
+      "_byte_offset": 2438,
+      "BianShenType": 4,
+      "StarLv": 6,
+      "MinBianShenLv": 30,
+      "StarName": "6阶",
+      "BianShenAddTime": 3.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203104,
+          "ItemCnt": 150
+        },
+        {
+          "ItemID": 203205,
+          "ItemCnt": 150
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 27,
+          "AddType": 1,
+          "Value": 0.10199999809265137
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 1224.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 12240.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 36,
+      "_byte_offset": 2507,
+      "BianShenType": 4,
+      "StarLv": 7,
+      "MinBianShenLv": 40,
+      "StarName": "7阶",
+      "BianShenAddTime": 3.5999999046325684,
+      "UpStarCostList": [
+        {
+          "ItemID": 203104,
+          "ItemCnt": 180
+        },
+        {
+          "ItemID": 203205,
+          "ItemCnt": 180
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 27,
+          "AddType": 1,
+          "Value": 0.12600000202655792
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 1512.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 15120.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 37,
+      "_byte_offset": 2576,
+      "BianShenType": 4,
+      "StarLv": 8,
+      "MinBianShenLv": 50,
+      "StarName": "8阶",
+      "BianShenAddTime": 4.199999809265137,
+      "UpStarCostList": [
+        {
+          "ItemID": 203104,
+          "ItemCnt": 210
+        },
+        {
+          "ItemID": 203205,
+          "ItemCnt": 210
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 27,
+          "AddType": 1,
+          "Value": 0.15000000596046448
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 1800.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 18000.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 38,
+      "_byte_offset": 2645,
+      "BianShenType": 4,
+      "StarLv": 9,
+      "MinBianShenLv": 60,
+      "StarName": "9阶",
+      "BianShenAddTime": 4.800000190734863,
+      "UpStarCostList": [
+        {
+          "ItemID": 203104,
+          "ItemCnt": 240
+        },
+        {
+          "ItemID": 203205,
+          "ItemCnt": 240
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 27,
+          "AddType": 1,
+          "Value": 0.17399999499320984
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 2088.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 20880.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 39,
+      "_byte_offset": 2714,
+      "BianShenType": 4,
+      "StarLv": 10,
+      "MinBianShenLv": 70,
+      "StarName": "10阶",
+      "BianShenAddTime": 6.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203104,
+          "ItemCnt": 240
+        },
+        {
+          "ItemID": 203205,
+          "ItemCnt": 240
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 27,
+          "AddType": 1,
+          "Value": 0.20000000298023224
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 2400.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 24000.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 70
+    },
+    {
+      "_record_index": 40,
+      "_byte_offset": 2784,
+      "BianShenType": 5,
+      "StarLv": 1,
+      "MinBianShenLv": 5,
+      "StarName": "1阶",
+      "BianShenAddTime": 0.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203105,
+          "ItemCnt": 10
+        },
+        {
+          "ItemID": 203205,
+          "ItemCnt": 10
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 30,
+          "AddType": 1,
+          "Value": 0.004000000189989805
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 48.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 480.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 41,
+      "_byte_offset": 2853,
+      "BianShenType": 5,
+      "StarLv": 2,
+      "MinBianShenLv": 10,
+      "StarName": "2阶",
+      "BianShenAddTime": 0.6000000238418579,
+      "UpStarCostList": [
+        {
+          "ItemID": 203105,
+          "ItemCnt": 30
+        },
+        {
+          "ItemID": 203205,
+          "ItemCnt": 30
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 30,
+          "AddType": 1,
+          "Value": 0.017999999225139618
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 216.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 2160.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 42,
+      "_byte_offset": 2922,
+      "BianShenType": 5,
+      "StarLv": 3,
+      "MinBianShenLv": 15,
+      "StarName": "3阶",
+      "BianShenAddTime": 1.2000000476837158,
+      "UpStarCostList": [
+        {
+          "ItemID": 203105,
+          "ItemCnt": 60
+        },
+        {
+          "ItemID": 203205,
+          "ItemCnt": 60
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 30,
+          "AddType": 1,
+          "Value": 0.035999998450279236
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 432.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 4320.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 43,
+      "_byte_offset": 2991,
+      "BianShenType": 5,
+      "StarLv": 4,
+      "MinBianShenLv": 20,
+      "StarName": "4阶",
+      "BianShenAddTime": 1.7999999523162842,
+      "UpStarCostList": [
+        {
+          "ItemID": 203105,
+          "ItemCnt": 90
+        },
+        {
+          "ItemID": 203205,
+          "ItemCnt": 90
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 30,
+          "AddType": 1,
+          "Value": 0.0560000017285347
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 672.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 6720.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 44,
+      "_byte_offset": 3060,
+      "BianShenType": 5,
+      "StarLv": 5,
+      "MinBianShenLv": 25,
+      "StarName": "5阶",
+      "BianShenAddTime": 2.4000000953674316,
+      "UpStarCostList": [
+        {
+          "ItemID": 203105,
+          "ItemCnt": 120
+        },
+        {
+          "ItemID": 203205,
+          "ItemCnt": 120
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 30,
+          "AddType": 1,
+          "Value": 0.07800000160932541
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 936.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 9360.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 45,
+      "_byte_offset": 3129,
+      "BianShenType": 5,
+      "StarLv": 6,
+      "MinBianShenLv": 30,
+      "StarName": "6阶",
+      "BianShenAddTime": 3.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203105,
+          "ItemCnt": 150
+        },
+        {
+          "ItemID": 203205,
+          "ItemCnt": 150
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 30,
+          "AddType": 1,
+          "Value": 0.10199999809265137
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 1224.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 12240.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 46,
+      "_byte_offset": 3198,
+      "BianShenType": 5,
+      "StarLv": 7,
+      "MinBianShenLv": 40,
+      "StarName": "7阶",
+      "BianShenAddTime": 3.5999999046325684,
+      "UpStarCostList": [
+        {
+          "ItemID": 203105,
+          "ItemCnt": 180
+        },
+        {
+          "ItemID": 203205,
+          "ItemCnt": 180
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 30,
+          "AddType": 1,
+          "Value": 0.12600000202655792
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 1512.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 15120.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 47,
+      "_byte_offset": 3267,
+      "BianShenType": 5,
+      "StarLv": 8,
+      "MinBianShenLv": 50,
+      "StarName": "8阶",
+      "BianShenAddTime": 4.199999809265137,
+      "UpStarCostList": [
+        {
+          "ItemID": 203105,
+          "ItemCnt": 210
+        },
+        {
+          "ItemID": 203205,
+          "ItemCnt": 210
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 30,
+          "AddType": 1,
+          "Value": 0.15000000596046448
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 1800.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 18000.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 48,
+      "_byte_offset": 3336,
+      "BianShenType": 5,
+      "StarLv": 9,
+      "MinBianShenLv": 60,
+      "StarName": "9阶",
+      "BianShenAddTime": 4.800000190734863,
+      "UpStarCostList": [
+        {
+          "ItemID": 203105,
+          "ItemCnt": 240
+        },
+        {
+          "ItemID": 203205,
+          "ItemCnt": 240
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 30,
+          "AddType": 1,
+          "Value": 0.17399999499320984
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 2088.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 20880.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 49,
+      "_byte_offset": 3405,
+      "BianShenType": 5,
+      "StarLv": 10,
+      "MinBianShenLv": 70,
+      "StarName": "10阶",
+      "BianShenAddTime": 6.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203105,
+          "ItemCnt": 240
+        },
+        {
+          "ItemID": 203205,
+          "ItemCnt": 240
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 30,
+          "AddType": 1,
+          "Value": 0.20000000298023224
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 2400.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 24000.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 70
+    },
+    {
+      "_record_index": 50,
+      "_byte_offset": 3475,
+      "BianShenType": 6,
+      "StarLv": 1,
+      "MinBianShenLv": 5,
+      "StarName": "1阶",
+      "BianShenAddTime": 0.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203106,
+          "ItemCnt": 10
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 10
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 600.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 72.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 720.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 51,
+      "_byte_offset": 3544,
+      "BianShenType": 6,
+      "StarLv": 2,
+      "MinBianShenLv": 10,
+      "StarName": "2阶",
+      "BianShenAddTime": 0.6000000238418579,
+      "UpStarCostList": [
+        {
+          "ItemID": 203106,
+          "ItemCnt": 30
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 30
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 2700.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 324.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 3240.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 52,
+      "_byte_offset": 3613,
+      "BianShenType": 6,
+      "StarLv": 3,
+      "MinBianShenLv": 15,
+      "StarName": "3阶",
+      "BianShenAddTime": 1.2000000476837158,
+      "UpStarCostList": [
+        {
+          "ItemID": 203106,
+          "ItemCnt": 60
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 60
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 5400.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 648.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 6480.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 53,
+      "_byte_offset": 3682,
+      "BianShenType": 6,
+      "StarLv": 4,
+      "MinBianShenLv": 20,
+      "StarName": "4阶",
+      "BianShenAddTime": 1.7999999523162842,
+      "UpStarCostList": [
+        {
+          "ItemID": 203106,
+          "ItemCnt": 90
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 90
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 8400.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 1008.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 10080.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 54,
+      "_byte_offset": 3751,
+      "BianShenType": 6,
+      "StarLv": 5,
+      "MinBianShenLv": 30,
+      "StarName": "5阶",
+      "BianShenAddTime": 2.4000000953674316,
+      "UpStarCostList": [
+        {
+          "ItemID": 203106,
+          "ItemCnt": 120
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 120
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 11700.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 1404.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 14040.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 55,
+      "_byte_offset": 3820,
+      "BianShenType": 6,
+      "StarLv": 6,
+      "MinBianShenLv": 40,
+      "StarName": "6阶",
+      "BianShenAddTime": 3.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203106,
+          "ItemCnt": 150
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 150
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 15300.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 1836.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 18360.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 56,
+      "_byte_offset": 3889,
+      "BianShenType": 6,
+      "StarLv": 7,
+      "MinBianShenLv": 50,
+      "StarName": "7阶",
+      "BianShenAddTime": 3.5999999046325684,
+      "UpStarCostList": [
+        {
+          "ItemID": 203106,
+          "ItemCnt": 180
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 180
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 18900.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 2268.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 22680.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 57,
+      "_byte_offset": 3958,
+      "BianShenType": 6,
+      "StarLv": 8,
+      "MinBianShenLv": 60,
+      "StarName": "8阶",
+      "BianShenAddTime": 4.199999809265137,
+      "UpStarCostList": [
+        {
+          "ItemID": 203106,
+          "ItemCnt": 210
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 210
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 22500.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 2700.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 27000.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 58,
+      "_byte_offset": 4027,
+      "BianShenType": 6,
+      "StarLv": 9,
+      "MinBianShenLv": 70,
+      "StarName": "9阶",
+      "BianShenAddTime": 4.800000190734863,
+      "UpStarCostList": [
+        {
+          "ItemID": 203106,
+          "ItemCnt": 240
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 240
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 26100.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 3132.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 31320.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 59,
+      "_byte_offset": 4096,
+      "BianShenType": 6,
+      "StarLv": 10,
+      "MinBianShenLv": 80,
+      "StarName": "10阶",
+      "BianShenAddTime": 6.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203106,
+          "ItemCnt": 240
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 240
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 30000.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 3600.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 36000.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 70
+    },
+    {
+      "_record_index": 60,
+      "_byte_offset": 4166,
+      "BianShenType": 7,
+      "StarLv": 1,
+      "MinBianShenLv": 5,
+      "StarName": "1阶",
+      "BianShenAddTime": 0.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203107,
+          "ItemCnt": 10
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 10
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 600.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 72.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 720.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 61,
+      "_byte_offset": 4235,
+      "BianShenType": 7,
+      "StarLv": 2,
+      "MinBianShenLv": 10,
+      "StarName": "2阶",
+      "BianShenAddTime": 0.6000000238418579,
+      "UpStarCostList": [
+        {
+          "ItemID": 203107,
+          "ItemCnt": 30
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 30
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 2700.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 324.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 3240.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 62,
+      "_byte_offset": 4304,
+      "BianShenType": 7,
+      "StarLv": 3,
+      "MinBianShenLv": 15,
+      "StarName": "3阶",
+      "BianShenAddTime": 1.2000000476837158,
+      "UpStarCostList": [
+        {
+          "ItemID": 203107,
+          "ItemCnt": 60
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 60
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 5400.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 648.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 6480.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 63,
+      "_byte_offset": 4373,
+      "BianShenType": 7,
+      "StarLv": 4,
+      "MinBianShenLv": 20,
+      "StarName": "4阶",
+      "BianShenAddTime": 1.7999999523162842,
+      "UpStarCostList": [
+        {
+          "ItemID": 203107,
+          "ItemCnt": 90
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 90
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 8400.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 1008.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 10080.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 64,
+      "_byte_offset": 4442,
+      "BianShenType": 7,
+      "StarLv": 5,
+      "MinBianShenLv": 30,
+      "StarName": "5阶",
+      "BianShenAddTime": 2.4000000953674316,
+      "UpStarCostList": [
+        {
+          "ItemID": 203107,
+          "ItemCnt": 120
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 120
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 11700.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 1404.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 14040.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 65,
+      "_byte_offset": 4511,
+      "BianShenType": 7,
+      "StarLv": 6,
+      "MinBianShenLv": 40,
+      "StarName": "6阶",
+      "BianShenAddTime": 3.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203107,
+          "ItemCnt": 150
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 150
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 15300.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 1836.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 18360.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 66,
+      "_byte_offset": 4580,
+      "BianShenType": 7,
+      "StarLv": 7,
+      "MinBianShenLv": 50,
+      "StarName": "7阶",
+      "BianShenAddTime": 3.5999999046325684,
+      "UpStarCostList": [
+        {
+          "ItemID": 203107,
+          "ItemCnt": 180
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 180
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 18900.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 2268.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 22680.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 67,
+      "_byte_offset": 4649,
+      "BianShenType": 7,
+      "StarLv": 8,
+      "MinBianShenLv": 60,
+      "StarName": "8阶",
+      "BianShenAddTime": 4.199999809265137,
+      "UpStarCostList": [
+        {
+          "ItemID": 203107,
+          "ItemCnt": 210
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 210
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 22500.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 2700.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 27000.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 68,
+      "_byte_offset": 4718,
+      "BianShenType": 7,
+      "StarLv": 9,
+      "MinBianShenLv": 70,
+      "StarName": "9阶",
+      "BianShenAddTime": 4.800000190734863,
+      "UpStarCostList": [
+        {
+          "ItemID": 203107,
+          "ItemCnt": 240
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 240
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 26100.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 3132.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 31320.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 69,
+      "_byte_offset": 4787,
+      "BianShenType": 7,
+      "StarLv": 10,
+      "MinBianShenLv": 80,
+      "StarName": "10阶",
+      "BianShenAddTime": 6.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203107,
+          "ItemCnt": 240
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 240
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 30000.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 3600.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 36000.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 70
+    },
+    {
+      "_record_index": 70,
+      "_byte_offset": 4857,
+      "BianShenType": 8,
+      "StarLv": 1,
+      "MinBianShenLv": 5,
+      "StarName": "1阶",
+      "BianShenAddTime": 0.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203108,
+          "ItemCnt": 10
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 10
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 600.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 72.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 720.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 71,
+      "_byte_offset": 4926,
+      "BianShenType": 8,
+      "StarLv": 2,
+      "MinBianShenLv": 10,
+      "StarName": "2阶",
+      "BianShenAddTime": 0.6000000238418579,
+      "UpStarCostList": [
+        {
+          "ItemID": 203108,
+          "ItemCnt": 30
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 30
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 2700.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 324.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 3240.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 72,
+      "_byte_offset": 4995,
+      "BianShenType": 8,
+      "StarLv": 3,
+      "MinBianShenLv": 15,
+      "StarName": "3阶",
+      "BianShenAddTime": 1.2000000476837158,
+      "UpStarCostList": [
+        {
+          "ItemID": 203108,
+          "ItemCnt": 60
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 60
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 5400.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 648.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 6480.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 73,
+      "_byte_offset": 5064,
+      "BianShenType": 8,
+      "StarLv": 4,
+      "MinBianShenLv": 20,
+      "StarName": "4阶",
+      "BianShenAddTime": 1.7999999523162842,
+      "UpStarCostList": [
+        {
+          "ItemID": 203108,
+          "ItemCnt": 90
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 90
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 8400.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 1008.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 10080.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 74,
+      "_byte_offset": 5133,
+      "BianShenType": 8,
+      "StarLv": 5,
+      "MinBianShenLv": 30,
+      "StarName": "5阶",
+      "BianShenAddTime": 2.4000000953674316,
+      "UpStarCostList": [
+        {
+          "ItemID": 203108,
+          "ItemCnt": 120
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 120
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 11700.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 1404.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 14040.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 75,
+      "_byte_offset": 5202,
+      "BianShenType": 8,
+      "StarLv": 6,
+      "MinBianShenLv": 40,
+      "StarName": "6阶",
+      "BianShenAddTime": 3.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203108,
+          "ItemCnt": 150
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 150
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 15300.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 1836.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 18360.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 76,
+      "_byte_offset": 5271,
+      "BianShenType": 8,
+      "StarLv": 7,
+      "MinBianShenLv": 50,
+      "StarName": "7阶",
+      "BianShenAddTime": 3.5999999046325684,
+      "UpStarCostList": [
+        {
+          "ItemID": 203108,
+          "ItemCnt": 180
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 180
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 18900.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 2268.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 22680.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 77,
+      "_byte_offset": 5340,
+      "BianShenType": 8,
+      "StarLv": 8,
+      "MinBianShenLv": 60,
+      "StarName": "8阶",
+      "BianShenAddTime": 4.199999809265137,
+      "UpStarCostList": [
+        {
+          "ItemID": 203108,
+          "ItemCnt": 210
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 210
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 22500.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 2700.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 27000.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 78,
+      "_byte_offset": 5409,
+      "BianShenType": 8,
+      "StarLv": 9,
+      "MinBianShenLv": 70,
+      "StarName": "9阶",
+      "BianShenAddTime": 4.800000190734863,
+      "UpStarCostList": [
+        {
+          "ItemID": 203108,
+          "ItemCnt": 240
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 240
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 26100.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 3132.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 31320.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 79,
+      "_byte_offset": 5478,
+      "BianShenType": 8,
+      "StarLv": 10,
+      "MinBianShenLv": 80,
+      "StarName": "10阶",
+      "BianShenAddTime": 6.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203108,
+          "ItemCnt": 240
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 240
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 30000.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 3600.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 36000.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 70
+    },
+    {
+      "_record_index": 80,
+      "_byte_offset": 5548,
+      "BianShenType": 9,
+      "StarLv": 1,
+      "MinBianShenLv": 5,
+      "StarName": "1阶",
+      "BianShenAddTime": 0.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203109,
+          "ItemCnt": 10
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 10
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 600.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 72.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 720.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 81,
+      "_byte_offset": 5617,
+      "BianShenType": 9,
+      "StarLv": 2,
+      "MinBianShenLv": 10,
+      "StarName": "2阶",
+      "BianShenAddTime": 0.6000000238418579,
+      "UpStarCostList": [
+        {
+          "ItemID": 203109,
+          "ItemCnt": 30
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 30
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 2700.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 324.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 3240.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 82,
+      "_byte_offset": 5686,
+      "BianShenType": 9,
+      "StarLv": 3,
+      "MinBianShenLv": 15,
+      "StarName": "3阶",
+      "BianShenAddTime": 1.2000000476837158,
+      "UpStarCostList": [
+        {
+          "ItemID": 203109,
+          "ItemCnt": 60
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 60
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 5400.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 648.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 6480.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 83,
+      "_byte_offset": 5755,
+      "BianShenType": 9,
+      "StarLv": 4,
+      "MinBianShenLv": 20,
+      "StarName": "4阶",
+      "BianShenAddTime": 1.7999999523162842,
+      "UpStarCostList": [
+        {
+          "ItemID": 203109,
+          "ItemCnt": 90
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 90
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 8400.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 1008.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 10080.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 84,
+      "_byte_offset": 5824,
+      "BianShenType": 9,
+      "StarLv": 5,
+      "MinBianShenLv": 30,
+      "StarName": "5阶",
+      "BianShenAddTime": 2.4000000953674316,
+      "UpStarCostList": [
+        {
+          "ItemID": 203109,
+          "ItemCnt": 120
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 120
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 11700.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 1404.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 14040.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 85,
+      "_byte_offset": 5893,
+      "BianShenType": 9,
+      "StarLv": 6,
+      "MinBianShenLv": 40,
+      "StarName": "6阶",
+      "BianShenAddTime": 3.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203109,
+          "ItemCnt": 150
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 150
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 15300.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 1836.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 18360.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 86,
+      "_byte_offset": 5962,
+      "BianShenType": 9,
+      "StarLv": 7,
+      "MinBianShenLv": 50,
+      "StarName": "7阶",
+      "BianShenAddTime": 3.5999999046325684,
+      "UpStarCostList": [
+        {
+          "ItemID": 203109,
+          "ItemCnt": 180
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 180
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 18900.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 2268.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 22680.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 87,
+      "_byte_offset": 6031,
+      "BianShenType": 9,
+      "StarLv": 8,
+      "MinBianShenLv": 60,
+      "StarName": "8阶",
+      "BianShenAddTime": 4.199999809265137,
+      "UpStarCostList": [
+        {
+          "ItemID": 203109,
+          "ItemCnt": 210
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 210
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 22500.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 2700.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 27000.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 88,
+      "_byte_offset": 6100,
+      "BianShenType": 9,
+      "StarLv": 9,
+      "MinBianShenLv": 70,
+      "StarName": "9阶",
+      "BianShenAddTime": 4.800000190734863,
+      "UpStarCostList": [
+        {
+          "ItemID": 203109,
+          "ItemCnt": 240
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 240
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 26100.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 3132.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 31320.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 89,
+      "_byte_offset": 6169,
+      "BianShenType": 9,
+      "StarLv": 10,
+      "MinBianShenLv": 80,
+      "StarName": "10阶",
+      "BianShenAddTime": 6.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203109,
+          "ItemCnt": 240
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 240
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 30000.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 3600.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 36000.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 70
+    },
+    {
+      "_record_index": 90,
+      "_byte_offset": 6239,
+      "BianShenType": 10,
+      "StarLv": 1,
+      "MinBianShenLv": 5,
+      "StarName": "1阶",
+      "BianShenAddTime": 0.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203110,
+          "ItemCnt": 10
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 10
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 600.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 72.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 720.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 91,
+      "_byte_offset": 6308,
+      "BianShenType": 10,
+      "StarLv": 2,
+      "MinBianShenLv": 10,
+      "StarName": "2阶",
+      "BianShenAddTime": 0.6000000238418579,
+      "UpStarCostList": [
+        {
+          "ItemID": 203110,
+          "ItemCnt": 30
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 30
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 2700.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 324.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 3240.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 92,
+      "_byte_offset": 6377,
+      "BianShenType": 10,
+      "StarLv": 3,
+      "MinBianShenLv": 15,
+      "StarName": "3阶",
+      "BianShenAddTime": 1.2000000476837158,
+      "UpStarCostList": [
+        {
+          "ItemID": 203110,
+          "ItemCnt": 60
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 60
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 5400.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 648.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 6480.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 93,
+      "_byte_offset": 6446,
+      "BianShenType": 10,
+      "StarLv": 4,
+      "MinBianShenLv": 20,
+      "StarName": "4阶",
+      "BianShenAddTime": 1.7999999523162842,
+      "UpStarCostList": [
+        {
+          "ItemID": 203110,
+          "ItemCnt": 90
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 90
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 8400.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 1008.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 10080.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 94,
+      "_byte_offset": 6515,
+      "BianShenType": 10,
+      "StarLv": 5,
+      "MinBianShenLv": 30,
+      "StarName": "5阶",
+      "BianShenAddTime": 2.4000000953674316,
+      "UpStarCostList": [
+        {
+          "ItemID": 203110,
+          "ItemCnt": 120
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 120
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 11700.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 1404.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 14040.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 95,
+      "_byte_offset": 6584,
+      "BianShenType": 10,
+      "StarLv": 6,
+      "MinBianShenLv": 40,
+      "StarName": "6阶",
+      "BianShenAddTime": 3.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203110,
+          "ItemCnt": 150
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 150
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 15300.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 1836.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 18360.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 96,
+      "_byte_offset": 6653,
+      "BianShenType": 10,
+      "StarLv": 7,
+      "MinBianShenLv": 50,
+      "StarName": "7阶",
+      "BianShenAddTime": 3.5999999046325684,
+      "UpStarCostList": [
+        {
+          "ItemID": 203110,
+          "ItemCnt": 180
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 180
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 18900.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 2268.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 22680.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 97,
+      "_byte_offset": 6722,
+      "BianShenType": 10,
+      "StarLv": 8,
+      "MinBianShenLv": 60,
+      "StarName": "8阶",
+      "BianShenAddTime": 4.199999809265137,
+      "UpStarCostList": [
+        {
+          "ItemID": 203110,
+          "ItemCnt": 210
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 210
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 22500.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 2700.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 27000.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 98,
+      "_byte_offset": 6791,
+      "BianShenType": 10,
+      "StarLv": 9,
+      "MinBianShenLv": 70,
+      "StarName": "9阶",
+      "BianShenAddTime": 4.800000190734863,
+      "UpStarCostList": [
+        {
+          "ItemID": 203110,
+          "ItemCnt": 240
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 240
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 26100.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 3132.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 31320.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 99,
+      "_byte_offset": 6860,
+      "BianShenType": 10,
+      "StarLv": 10,
+      "MinBianShenLv": 80,
+      "StarName": "10阶",
+      "BianShenAddTime": 6.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203110,
+          "ItemCnt": 240
+        },
+        {
+          "ItemID": 203206,
+          "ItemCnt": 240
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 30000.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 3600.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 36000.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 70
+    },
+    {
+      "_record_index": 100,
+      "_byte_offset": 6930,
+      "BianShenType": 11,
+      "StarLv": 1,
+      "MinBianShenLv": 5,
+      "StarName": "1阶",
+      "BianShenAddTime": 0.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203111,
+          "ItemCnt": 10
+        },
+        {
+          "ItemID": 203207,
+          "ItemCnt": 10
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 900.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 108.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 1080.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 101,
+      "_byte_offset": 6999,
+      "BianShenType": 11,
+      "StarLv": 2,
+      "MinBianShenLv": 10,
+      "StarName": "2阶",
+      "BianShenAddTime": 0.699999988079071,
+      "UpStarCostList": [
+        {
+          "ItemID": 203111,
+          "ItemCnt": 30
+        },
+        {
+          "ItemID": 203207,
+          "ItemCnt": 30
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 4050.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 486.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 4860.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 102,
+      "_byte_offset": 7068,
+      "BianShenType": 11,
+      "StarLv": 3,
+      "MinBianShenLv": 15,
+      "StarName": "3阶",
+      "BianShenAddTime": 1.399999976158142,
+      "UpStarCostList": [
+        {
+          "ItemID": 203111,
+          "ItemCnt": 60
+        },
+        {
+          "ItemID": 203207,
+          "ItemCnt": 60
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 8100.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 972.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 9720.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 103,
+      "_byte_offset": 7137,
+      "BianShenType": 11,
+      "StarLv": 4,
+      "MinBianShenLv": 20,
+      "StarName": "4阶",
+      "BianShenAddTime": 2.0999999046325684,
+      "UpStarCostList": [
+        {
+          "ItemID": 203111,
+          "ItemCnt": 90
+        },
+        {
+          "ItemID": 203207,
+          "ItemCnt": 90
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 12600.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 1512.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 15120.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 104,
+      "_byte_offset": 7206,
+      "BianShenType": 11,
+      "StarLv": 5,
+      "MinBianShenLv": 30,
+      "StarName": "5阶",
+      "BianShenAddTime": 2.799999952316284,
+      "UpStarCostList": [
+        {
+          "ItemID": 203111,
+          "ItemCnt": 120
+        },
+        {
+          "ItemID": 203207,
+          "ItemCnt": 120
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 17550.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 2106.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 21060.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 105,
+      "_byte_offset": 7275,
+      "BianShenType": 11,
+      "StarLv": 6,
+      "MinBianShenLv": 40,
+      "StarName": "6阶",
+      "BianShenAddTime": 3.5,
+      "UpStarCostList": [
+        {
+          "ItemID": 203111,
+          "ItemCnt": 150
+        },
+        {
+          "ItemID": 203207,
+          "ItemCnt": 150
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 22950.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 2754.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 27540.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 106,
+      "_byte_offset": 7344,
+      "BianShenType": 11,
+      "StarLv": 7,
+      "MinBianShenLv": 50,
+      "StarName": "7阶",
+      "BianShenAddTime": 4.199999809265137,
+      "UpStarCostList": [
+        {
+          "ItemID": 203111,
+          "ItemCnt": 180
+        },
+        {
+          "ItemID": 203207,
+          "ItemCnt": 180
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 28350.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 3402.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 34020.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 107,
+      "_byte_offset": 7413,
+      "BianShenType": 11,
+      "StarLv": 8,
+      "MinBianShenLv": 60,
+      "StarName": "8阶",
+      "BianShenAddTime": 4.900000095367432,
+      "UpStarCostList": [
+        {
+          "ItemID": 203111,
+          "ItemCnt": 210
+        },
+        {
+          "ItemID": 203207,
+          "ItemCnt": 210
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 33750.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 4050.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 40500.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 108,
+      "_byte_offset": 7482,
+      "BianShenType": 11,
+      "StarLv": 9,
+      "MinBianShenLv": 70,
+      "StarName": "9阶",
+      "BianShenAddTime": 5.599999904632568,
+      "UpStarCostList": [
+        {
+          "ItemID": 203111,
+          "ItemCnt": 240
+        },
+        {
+          "ItemID": 203207,
+          "ItemCnt": 240
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 39150.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 4698.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 46980.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 109,
+      "_byte_offset": 7551,
+      "BianShenType": 11,
+      "StarLv": 10,
+      "MinBianShenLv": 80,
+      "StarName": "10阶",
+      "BianShenAddTime": 7.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203111,
+          "ItemCnt": 240
+        },
+        {
+          "ItemID": 203207,
+          "ItemCnt": 240
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 45000.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 5400.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 54000.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 70
+    },
+    {
+      "_record_index": 110,
+      "_byte_offset": 7621,
+      "BianShenType": 12,
+      "StarLv": 1,
+      "MinBianShenLv": 5,
+      "StarName": "1阶",
+      "BianShenAddTime": 0.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203112,
+          "ItemCnt": 10
+        },
+        {
+          "ItemID": 203207,
+          "ItemCnt": 10
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 900.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 108.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 1080.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 111,
+      "_byte_offset": 7690,
+      "BianShenType": 12,
+      "StarLv": 2,
+      "MinBianShenLv": 10,
+      "StarName": "2阶",
+      "BianShenAddTime": 0.699999988079071,
+      "UpStarCostList": [
+        {
+          "ItemID": 203112,
+          "ItemCnt": 30
+        },
+        {
+          "ItemID": 203207,
+          "ItemCnt": 30
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 4050.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 486.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 4860.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 112,
+      "_byte_offset": 7759,
+      "BianShenType": 12,
+      "StarLv": 3,
+      "MinBianShenLv": 15,
+      "StarName": "3阶",
+      "BianShenAddTime": 1.399999976158142,
+      "UpStarCostList": [
+        {
+          "ItemID": 203112,
+          "ItemCnt": 60
+        },
+        {
+          "ItemID": 203207,
+          "ItemCnt": 60
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 8100.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 972.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 9720.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 113,
+      "_byte_offset": 7828,
+      "BianShenType": 12,
+      "StarLv": 4,
+      "MinBianShenLv": 20,
+      "StarName": "4阶",
+      "BianShenAddTime": 2.0999999046325684,
+      "UpStarCostList": [
+        {
+          "ItemID": 203112,
+          "ItemCnt": 90
+        },
+        {
+          "ItemID": 203207,
+          "ItemCnt": 90
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 12600.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 1512.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 15120.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 114,
+      "_byte_offset": 7897,
+      "BianShenType": 12,
+      "StarLv": 5,
+      "MinBianShenLv": 30,
+      "StarName": "5阶",
+      "BianShenAddTime": 2.799999952316284,
+      "UpStarCostList": [
+        {
+          "ItemID": 203112,
+          "ItemCnt": 120
+        },
+        {
+          "ItemID": 203207,
+          "ItemCnt": 120
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 17550.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 2106.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 21060.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 115,
+      "_byte_offset": 7966,
+      "BianShenType": 12,
+      "StarLv": 6,
+      "MinBianShenLv": 40,
+      "StarName": "6阶",
+      "BianShenAddTime": 3.5,
+      "UpStarCostList": [
+        {
+          "ItemID": 203112,
+          "ItemCnt": 150
+        },
+        {
+          "ItemID": 203207,
+          "ItemCnt": 150
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 22950.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 2754.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 27540.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 116,
+      "_byte_offset": 8035,
+      "BianShenType": 12,
+      "StarLv": 7,
+      "MinBianShenLv": 50,
+      "StarName": "7阶",
+      "BianShenAddTime": 4.199999809265137,
+      "UpStarCostList": [
+        {
+          "ItemID": 203112,
+          "ItemCnt": 180
+        },
+        {
+          "ItemID": 203207,
+          "ItemCnt": 180
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 28350.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 3402.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 34020.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 117,
+      "_byte_offset": 8104,
+      "BianShenType": 12,
+      "StarLv": 8,
+      "MinBianShenLv": 60,
+      "StarName": "8阶",
+      "BianShenAddTime": 4.900000095367432,
+      "UpStarCostList": [
+        {
+          "ItemID": 203112,
+          "ItemCnt": 210
+        },
+        {
+          "ItemID": 203207,
+          "ItemCnt": 210
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 33750.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 4050.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 40500.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 118,
+      "_byte_offset": 8173,
+      "BianShenType": 12,
+      "StarLv": 9,
+      "MinBianShenLv": 70,
+      "StarName": "9阶",
+      "BianShenAddTime": 5.599999904632568,
+      "UpStarCostList": [
+        {
+          "ItemID": 203112,
+          "ItemCnt": 240
+        },
+        {
+          "ItemID": 203207,
+          "ItemCnt": 240
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 39150.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 4698.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 46980.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 119,
+      "_byte_offset": 8242,
+      "BianShenType": 12,
+      "StarLv": 10,
+      "MinBianShenLv": 80,
+      "StarName": "10阶",
+      "BianShenAddTime": 7.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203112,
+          "ItemCnt": 240
+        },
+        {
+          "ItemID": 203207,
+          "ItemCnt": 240
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 45000.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 5400.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 54000.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 70
+    },
+    {
+      "_record_index": 120,
+      "_byte_offset": 8312,
+      "BianShenType": 13,
+      "StarLv": 1,
+      "MinBianShenLv": 5,
+      "StarName": "1阶",
+      "BianShenAddTime": 0.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203113,
+          "ItemCnt": 10
+        },
+        {
+          "ItemID": 203207,
+          "ItemCnt": 10
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 900.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 108.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 1080.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 121,
+      "_byte_offset": 8381,
+      "BianShenType": 13,
+      "StarLv": 2,
+      "MinBianShenLv": 10,
+      "StarName": "2阶",
+      "BianShenAddTime": 0.699999988079071,
+      "UpStarCostList": [
+        {
+          "ItemID": 203113,
+          "ItemCnt": 30
+        },
+        {
+          "ItemID": 203207,
+          "ItemCnt": 30
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 4050.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 486.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 4860.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 122,
+      "_byte_offset": 8450,
+      "BianShenType": 13,
+      "StarLv": 3,
+      "MinBianShenLv": 15,
+      "StarName": "3阶",
+      "BianShenAddTime": 1.399999976158142,
+      "UpStarCostList": [
+        {
+          "ItemID": 203113,
+          "ItemCnt": 60
+        },
+        {
+          "ItemID": 203207,
+          "ItemCnt": 60
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 8100.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 972.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 9720.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 123,
+      "_byte_offset": 8519,
+      "BianShenType": 13,
+      "StarLv": 4,
+      "MinBianShenLv": 20,
+      "StarName": "4阶",
+      "BianShenAddTime": 2.0999999046325684,
+      "UpStarCostList": [
+        {
+          "ItemID": 203113,
+          "ItemCnt": 90
+        },
+        {
+          "ItemID": 203207,
+          "ItemCnt": 90
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 12600.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 1512.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 15120.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 124,
+      "_byte_offset": 8588,
+      "BianShenType": 13,
+      "StarLv": 5,
+      "MinBianShenLv": 30,
+      "StarName": "5阶",
+      "BianShenAddTime": 2.799999952316284,
+      "UpStarCostList": [
+        {
+          "ItemID": 203113,
+          "ItemCnt": 120
+        },
+        {
+          "ItemID": 203207,
+          "ItemCnt": 120
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 17550.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 2106.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 21060.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 125,
+      "_byte_offset": 8657,
+      "BianShenType": 13,
+      "StarLv": 6,
+      "MinBianShenLv": 40,
+      "StarName": "6阶",
+      "BianShenAddTime": 3.5,
+      "UpStarCostList": [
+        {
+          "ItemID": 203113,
+          "ItemCnt": 150
+        },
+        {
+          "ItemID": 203207,
+          "ItemCnt": 150
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 22950.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 2754.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 27540.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 126,
+      "_byte_offset": 8726,
+      "BianShenType": 13,
+      "StarLv": 7,
+      "MinBianShenLv": 50,
+      "StarName": "7阶",
+      "BianShenAddTime": 4.199999809265137,
+      "UpStarCostList": [
+        {
+          "ItemID": 203113,
+          "ItemCnt": 180
+        },
+        {
+          "ItemID": 203207,
+          "ItemCnt": 180
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 28350.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 3402.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 34020.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 127,
+      "_byte_offset": 8795,
+      "BianShenType": 13,
+      "StarLv": 8,
+      "MinBianShenLv": 60,
+      "StarName": "8阶",
+      "BianShenAddTime": 4.900000095367432,
+      "UpStarCostList": [
+        {
+          "ItemID": 203113,
+          "ItemCnt": 210
+        },
+        {
+          "ItemID": 203207,
+          "ItemCnt": 210
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 33750.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 4050.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 40500.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 128,
+      "_byte_offset": 8864,
+      "BianShenType": 13,
+      "StarLv": 9,
+      "MinBianShenLv": 70,
+      "StarName": "9阶",
+      "BianShenAddTime": 5.599999904632568,
+      "UpStarCostList": [
+        {
+          "ItemID": 203113,
+          "ItemCnt": 240
+        },
+        {
+          "ItemID": 203207,
+          "ItemCnt": 240
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 39150.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 4698.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 46980.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 129,
+      "_byte_offset": 8933,
+      "BianShenType": 13,
+      "StarLv": 10,
+      "MinBianShenLv": 80,
+      "StarName": "10阶",
+      "BianShenAddTime": 7.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203113,
+          "ItemCnt": 240
+        },
+        {
+          "ItemID": 203207,
+          "ItemCnt": 240
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 45000.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 5400.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 54000.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 70
+    },
+    {
+      "_record_index": 130,
+      "_byte_offset": 9003,
+      "BianShenType": 14,
+      "StarLv": 1,
+      "MinBianShenLv": 5,
+      "StarName": "1阶",
+      "BianShenAddTime": 0.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203114,
+          "ItemCnt": 10
+        },
+        {
+          "ItemID": 203207,
+          "ItemCnt": 10
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 900.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 108.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 1080.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 131,
+      "_byte_offset": 9072,
+      "BianShenType": 14,
+      "StarLv": 2,
+      "MinBianShenLv": 10,
+      "StarName": "2阶",
+      "BianShenAddTime": 0.699999988079071,
+      "UpStarCostList": [
+        {
+          "ItemID": 203114,
+          "ItemCnt": 30
+        },
+        {
+          "ItemID": 203207,
+          "ItemCnt": 30
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 4050.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 486.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 4860.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 132,
+      "_byte_offset": 9141,
+      "BianShenType": 14,
+      "StarLv": 3,
+      "MinBianShenLv": 15,
+      "StarName": "3阶",
+      "BianShenAddTime": 1.399999976158142,
+      "UpStarCostList": [
+        {
+          "ItemID": 203114,
+          "ItemCnt": 60
+        },
+        {
+          "ItemID": 203207,
+          "ItemCnt": 60
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 8100.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 972.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 9720.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 133,
+      "_byte_offset": 9210,
+      "BianShenType": 14,
+      "StarLv": 4,
+      "MinBianShenLv": 20,
+      "StarName": "4阶",
+      "BianShenAddTime": 2.0999999046325684,
+      "UpStarCostList": [
+        {
+          "ItemID": 203114,
+          "ItemCnt": 90
+        },
+        {
+          "ItemID": 203207,
+          "ItemCnt": 90
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 12600.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 1512.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 15120.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 134,
+      "_byte_offset": 9279,
+      "BianShenType": 14,
+      "StarLv": 5,
+      "MinBianShenLv": 30,
+      "StarName": "5阶",
+      "BianShenAddTime": 2.799999952316284,
+      "UpStarCostList": [
+        {
+          "ItemID": 203114,
+          "ItemCnt": 120
+        },
+        {
+          "ItemID": 203207,
+          "ItemCnt": 120
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 17550.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 2106.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 21060.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 135,
+      "_byte_offset": 9348,
+      "BianShenType": 14,
+      "StarLv": 6,
+      "MinBianShenLv": 40,
+      "StarName": "6阶",
+      "BianShenAddTime": 3.5,
+      "UpStarCostList": [
+        {
+          "ItemID": 203114,
+          "ItemCnt": 150
+        },
+        {
+          "ItemID": 203207,
+          "ItemCnt": 150
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 22950.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 2754.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 27540.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 136,
+      "_byte_offset": 9417,
+      "BianShenType": 14,
+      "StarLv": 7,
+      "MinBianShenLv": 50,
+      "StarName": "7阶",
+      "BianShenAddTime": 4.199999809265137,
+      "UpStarCostList": [
+        {
+          "ItemID": 203114,
+          "ItemCnt": 180
+        },
+        {
+          "ItemID": 203207,
+          "ItemCnt": 180
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 28350.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 3402.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 34020.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 137,
+      "_byte_offset": 9486,
+      "BianShenType": 14,
+      "StarLv": 8,
+      "MinBianShenLv": 60,
+      "StarName": "8阶",
+      "BianShenAddTime": 4.900000095367432,
+      "UpStarCostList": [
+        {
+          "ItemID": 203114,
+          "ItemCnt": 210
+        },
+        {
+          "ItemID": 203207,
+          "ItemCnt": 210
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 33750.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 4050.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 40500.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 138,
+      "_byte_offset": 9555,
+      "BianShenType": 14,
+      "StarLv": 9,
+      "MinBianShenLv": 70,
+      "StarName": "9阶",
+      "BianShenAddTime": 5.599999904632568,
+      "UpStarCostList": [
+        {
+          "ItemID": 203114,
+          "ItemCnt": 240
+        },
+        {
+          "ItemID": 203207,
+          "ItemCnt": 240
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 39150.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 4698.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 46980.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 139,
+      "_byte_offset": 9624,
+      "BianShenType": 14,
+      "StarLv": 10,
+      "MinBianShenLv": 80,
+      "StarName": "10阶",
+      "BianShenAddTime": 7.0,
+      "UpStarCostList": [
+        {
+          "ItemID": 203114,
+          "ItemCnt": 240
+        },
+        {
+          "ItemID": 203207,
+          "ItemCnt": 240
+        }
+      ],
+      "AttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 45000.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 5400.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 54000.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 70
+    }
+  ]
+}

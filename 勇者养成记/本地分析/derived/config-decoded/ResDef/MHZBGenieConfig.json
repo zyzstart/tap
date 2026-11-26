@@ -1,0 +1,209 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_mhzbgenieconfig.bytes.ab",
+    "path_id": -2747189708691044281,
+    "name": "MHZBGenieConfig",
+    "sha256": "9a6610280d71ee91fb42e823653145983ca7ed7cf616cdc1a12dc93d1334314f",
+    "export": "derived/unity/text/assets_resources_config_resbin_mhzbgenieconfig.bytes/MHZBGenieConfig__-2747189708691044281.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 4465,
+      "version": 1,
+      "record_count": 10,
+      "stored_crc32": "70265f22",
+      "computed_inverted_crc32": "70265f22"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "MHZBGenieConfig",
+      "fields": [
+        {
+          "type": "uint",
+          "name": "UnitID",
+          "object_offset": 16
+        },
+        {
+          "type": "string",
+          "name": "Name",
+          "object_offset": 24
+        },
+        {
+          "type": "string",
+          "name": "Icon",
+          "object_offset": 32
+        },
+        {
+          "type": "string",
+          "name": "UnitDesc",
+          "object_offset": 40
+        },
+        {
+          "type": "uint",
+          "name": "SkillID",
+          "object_offset": 48
+        }
+      ],
+      "unpack_va": 30771852,
+      "dump_line": 208712
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1d58ac0",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d58ae8",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d58b10",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d58b38",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 40,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d58b78",
+        "target_va": "0x21f6908",
+        "opcode": "B-tail",
+        "reader": "readUInt32",
+        "destination_object_offset": 48,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 10
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "UnitID": 1,
+      "Name": "迅风精灵",
+      "Icon": "jl_jstx_weifeng",
+      "UnitDesc": "<size=25><color=#03802f>精灵领域</color></size>\r\n迅风锁足：减少挑战者20%移动速度\r\n\r\n<size=25><color=#03802f>背景故事</color></size>\r\n迅风精灵盖勒是精灵之森的侦查哨兵，他个性张扬，放荡不羁，常在风中展现自己的舞姿。盖勒作为风魔法的掌控者，能召唤出飓风瞬间摧毁敌人。",
+      "SkillID": 120001,
+      "_byte_length": 400
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 420,
+      "UnitID": 2,
+      "Name": "清霖精灵",
+      "Icon": "jl_jstx_qinglin",
+      "UnitDesc": "<size=25><color=#03802f>精灵领域</color></size>\r\n清霖甘露：每隔5秒，守护兽回复1.5%的最大生命值\r\n\r\n<size=25><color=#03802f>背景故事</color></size>\r\n清霖精灵蕾娜是精灵之森的信仰牧师，一位柔美浪漫的女性精灵。虽然她平日的工作是帮助森林中的植物和动物生长繁衍，但绝对不可小觑她的战斗力。蕾娜作为自然魔法的继承人，她擅长控制青萤攻击敌人。",
+      "SkillID": 120002,
+      "_byte_length": 501
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 921,
+      "UnitID": 3,
+      "Name": "狂雷精灵",
+      "Icon": "jl_jstx_kuanglei",
+      "UnitDesc": "<size=25><color=#03802f>精灵领域</color></size>\r\n狂雷印记：减少挑战者10%暴击率和5%暴击伤害\r\n\r\n<size=25><color=#03802f>背景故事</color></size>\r\n狂雷精灵加尔是精灵之森的守卫战士，他狂浪霸气，浑身散发着金色的雷电，仅凭外型就能吓退一些侵略者。加尔作为狂雷岛屿历练中唯一的成功者，他能够召唤出狂暴的雷电之力打击敌人。",
+      "SkillID": 120003,
+      "_byte_length": 472
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 1393,
+      "UnitID": 4,
+      "Name": "宝石精灵",
+      "Icon": "jl_jstx_baoshi",
+      "UnitDesc": "<size=25><color=#03802f>精灵领域</color></size>\r\n宝石之体：提高守护兽10%伤害减免率\r\n\r\n<size=25><color=#03802f>背景故事</color></size>\r\n宝石精灵爱琳妮是宝石山脉的宝石工匠，一位拥有惊人魔法力量的女性精灵。她的魔法能够控制宝石的属性，如能量、光芒、色彩和硬度。爱琳妮作为当地的守护者，她擅长利用宝石魔法保护她的族人。",
+      "SkillID": 120004,
+      "_byte_length": 474
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 1867,
+      "UnitID": 5,
+      "Name": "暗夜精灵",
+      "Icon": "jl_jstx_anye",
+      "UnitDesc": "<size=25><color=#03802f>精灵领域</color></size>\r\n暗夜杀手：提高守护兽10%攻击力\r\n\r\n<size=25><color=#03802f>背景故事</color></size>\r\n暗夜精灵罗拉是黑暗森林的首席刺客。由于她经常在黑暗中活动，她的视觉和听觉都非常敏锐。罗拉作为暗夜魔法的使用者，她擅长伪装自己并对敌人造成致命一击。",
+      "SkillID": 120005,
+      "_byte_length": 418
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 2285,
+      "UnitID": 6,
+      "Name": "耀阳精灵",
+      "Icon": "jl_jstx_yaoyang",
+      "UnitDesc": "<size=25><color=#03802f>精灵领域</color></size>\r\n烈日当空：减少挑战者10%攻击力\r\n\r\n<size=25><color=#03802f>背景故事</color></size>\r\n耀阳精灵艾斯特斯是日月峡谷的王子。他诞生之时日月同辉，天生便拥有最纯净的耀阳魔力。艾斯特斯作为耀阳魔法的使用者，可以借助太阳的能量摧毁入侵者。",
+      "SkillID": 120006,
+      "_byte_length": 415
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 2700,
+      "UnitID": 7,
+      "Name": "幽月精灵",
+      "Icon": "jl_jstx_youyue",
+      "UnitDesc": "<size=25><color=#03802f>精灵领域</color></size>\r\n玉盘倒悬：减少挑战者10%攻击速度\r\n\r\n<size=25><color=#03802f>背景故事</color></size>\r\n幽月精灵艾斯特尔是日月峡谷的公主。她诞生之时日月同辉，天生便拥有最纯净的幽月魔力。艾斯特尔作为幽月魔法的使用者，可以借助月亮的能量制造出幻象迷惑入侵者。",
+      "SkillID": 120007,
+      "_byte_length": 432
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 3132,
+      "UnitID": 8,
+      "Name": "飞羽精灵",
+      "Icon": "jl_jstx_feiyu",
+      "UnitDesc": "<size=25><color=#03802f>精灵领域</color></size>\r\n翼刃打击：减少挑战者10%伤害减免\r\n\r\n<size=25><color=#03802f>背景故事</color></size>\r\n飞羽精灵戈莱登是日月峡谷的学者。天生便拥有最纯净的飞羽魔力。戈莱登作为飞羽魔法的使用者，可以借助神羽的能量削弱入侵者。",
+      "SkillID": 120008,
+      "_byte_length": 380
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 3512,
+      "UnitID": 9,
+      "Name": "潮汐精灵",
+      "Icon": "jl_jstx_lakesi",
+      "UnitDesc": "<size=25><color=#03802f>精灵领域</color></size>\r\n潮汐领域：减少挑战者10%攻击力和10%移动速度\r\n\r\n<size=25><color=#03802f>背景故事</color></size>\r\n潮汐精灵是海洋深处的神秘居民。它们会在月光的照耀下，集结在一起，共同进行潮汐仪式，祈求海洋的祝福和保护。当海洋面临危险时，潮汐精灵会奋不顾身地前去抵御威胁，用它们的力量和智慧保护海洋的安宁。",
+      "SkillID": 120009,
+      "_byte_length": 504
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 4016,
+      "UnitID": 10,
+      "Name": "山梦精灵",
+      "Icon": "jl_jstx_shanmeng",
+      "UnitDesc": "<size=25><color=#03802f>精灵领域</color></size>\r\n大地春回：挑战开始时，减少挑战者10%攻击力和10%伤害减免\r\n\r\n<size=25><color=#03802f>背景故事</color></size>\r\n山梦精灵在春天的大地上绽放出美丽的花朵，它们轻盈地飘舞在微风中。它们用柔和的光芒唤醒了大地的生机，使山间的草木复苏，用万物的力量阻挡入侵者。",
+      "SkillID": 120010,
+      "_byte_length": 449
+    }
+  ]
+}

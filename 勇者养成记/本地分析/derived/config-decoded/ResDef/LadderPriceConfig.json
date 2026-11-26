@@ -1,0 +1,1346 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_ladderpriceconfig.bytes.ab",
+    "path_id": -4495070860822864141,
+    "name": "LadderPriceConfig",
+    "sha256": "bf9a5b4238df3945279b35c5bb1ab4b5436518b8a7740129db8acddb6dca38b8",
+    "export": "derived/unity/text/assets_resources_config_resbin_ladderpriceconfig.bytes/LadderPriceConfig__-4495070860822864141.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 2244,
+      "version": 1,
+      "record_count": 139,
+      "stored_crc32": "a8f98c3b",
+      "computed_inverted_crc32": "a8f98c3b"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "LadderPriceConfig",
+      "fields": [
+        {
+          "type": "int",
+          "name": "PriceID",
+          "object_offset": 16
+        },
+        {
+          "type": "int",
+          "name": "Num",
+          "object_offset": 20
+        },
+        {
+          "type": "int",
+          "name": "CurrencyType",
+          "object_offset": 24
+        },
+        {
+          "type": "int",
+          "name": "CurrencyNum",
+          "object_offset": 28
+        }
+      ],
+      "unpack_va": 30744392,
+      "dump_line": 206835
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1d51f7c",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d51fa0",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d51fc4",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d52004",
+        "target_va": "0x21f67d0",
+        "opcode": "B-tail",
+        "reader": "readInt32",
+        "destination_object_offset": 28,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 139
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "PriceID": 101,
+      "Num": 1,
+      "CurrencyType": 3,
+      "CurrencyNum": 60,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 36,
+      "PriceID": 101,
+      "Num": 2,
+      "CurrencyType": 3,
+      "CurrencyNum": 55,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 52,
+      "PriceID": 101,
+      "Num": 3,
+      "CurrencyType": 3,
+      "CurrencyNum": 50,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 68,
+      "PriceID": 102,
+      "Num": 1,
+      "CurrencyType": 3,
+      "CurrencyNum": 10,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 84,
+      "PriceID": 102,
+      "Num": 2,
+      "CurrencyType": 3,
+      "CurrencyNum": 15,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 100,
+      "PriceID": 102,
+      "Num": 3,
+      "CurrencyType": 3,
+      "CurrencyNum": 20,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 116,
+      "PriceID": 201,
+      "Num": 1,
+      "CurrencyType": 3,
+      "CurrencyNum": 50,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 132,
+      "PriceID": 201,
+      "Num": 2,
+      "CurrencyType": 3,
+      "CurrencyNum": 45,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 148,
+      "PriceID": 201,
+      "Num": 3,
+      "CurrencyType": 3,
+      "CurrencyNum": 40,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 164,
+      "PriceID": 202,
+      "Num": 1,
+      "CurrencyType": 3,
+      "CurrencyNum": 150,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 180,
+      "PriceID": 202,
+      "Num": 2,
+      "CurrencyType": 3,
+      "CurrencyNum": 145,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 196,
+      "PriceID": 202,
+      "Num": 3,
+      "CurrencyType": 3,
+      "CurrencyNum": 140,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 212,
+      "PriceID": 203,
+      "Num": 1,
+      "CurrencyType": 3,
+      "CurrencyNum": 300,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 228,
+      "PriceID": 203,
+      "Num": 2,
+      "CurrencyType": 3,
+      "CurrencyNum": 285,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 244,
+      "PriceID": 203,
+      "Num": 3,
+      "CurrencyType": 3,
+      "CurrencyNum": 270,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 260,
+      "PriceID": 204,
+      "Num": 1,
+      "CurrencyType": 3,
+      "CurrencyNum": 400,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 276,
+      "PriceID": 204,
+      "Num": 2,
+      "CurrencyType": 3,
+      "CurrencyNum": 380,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 292,
+      "PriceID": 204,
+      "Num": 3,
+      "CurrencyType": 3,
+      "CurrencyNum": 360,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 308,
+      "PriceID": 205,
+      "Num": 1,
+      "CurrencyType": 3,
+      "CurrencyNum": 500,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 19,
+      "_byte_offset": 324,
+      "PriceID": 205,
+      "Num": 2,
+      "CurrencyType": 3,
+      "CurrencyNum": 475,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 20,
+      "_byte_offset": 340,
+      "PriceID": 205,
+      "Num": 3,
+      "CurrencyType": 3,
+      "CurrencyNum": 450,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 21,
+      "_byte_offset": 356,
+      "PriceID": 206,
+      "Num": 1,
+      "CurrencyType": 3,
+      "CurrencyNum": 600,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 22,
+      "_byte_offset": 372,
+      "PriceID": 206,
+      "Num": 2,
+      "CurrencyType": 3,
+      "CurrencyNum": 570,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 23,
+      "_byte_offset": 388,
+      "PriceID": 206,
+      "Num": 3,
+      "CurrencyType": 3,
+      "CurrencyNum": 540,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 24,
+      "_byte_offset": 404,
+      "PriceID": 207,
+      "Num": 1,
+      "CurrencyType": 3,
+      "CurrencyNum": 80,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 25,
+      "_byte_offset": 420,
+      "PriceID": 207,
+      "Num": 2,
+      "CurrencyType": 3,
+      "CurrencyNum": 75,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 26,
+      "_byte_offset": 436,
+      "PriceID": 207,
+      "Num": 3,
+      "CurrencyType": 3,
+      "CurrencyNum": 65,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 27,
+      "_byte_offset": 452,
+      "PriceID": 208,
+      "Num": 1,
+      "CurrencyType": 3,
+      "CurrencyNum": 120,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 28,
+      "_byte_offset": 468,
+      "PriceID": 208,
+      "Num": 2,
+      "CurrencyType": 3,
+      "CurrencyNum": 105,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 29,
+      "_byte_offset": 484,
+      "PriceID": 208,
+      "Num": 3,
+      "CurrencyType": 3,
+      "CurrencyNum": 95,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 30,
+      "_byte_offset": 500,
+      "PriceID": 209,
+      "Num": 1,
+      "CurrencyType": 3,
+      "CurrencyNum": 240,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 31,
+      "_byte_offset": 516,
+      "PriceID": 209,
+      "Num": 2,
+      "CurrencyType": 3,
+      "CurrencyNum": 215,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 32,
+      "_byte_offset": 532,
+      "PriceID": 209,
+      "Num": 3,
+      "CurrencyType": 3,
+      "CurrencyNum": 190,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 33,
+      "_byte_offset": 548,
+      "PriceID": 210,
+      "Num": 1,
+      "CurrencyType": 3,
+      "CurrencyNum": 360,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 34,
+      "_byte_offset": 564,
+      "PriceID": 210,
+      "Num": 2,
+      "CurrencyType": 3,
+      "CurrencyNum": 325,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 35,
+      "_byte_offset": 580,
+      "PriceID": 210,
+      "Num": 3,
+      "CurrencyType": 3,
+      "CurrencyNum": 285,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 36,
+      "_byte_offset": 596,
+      "PriceID": 211,
+      "Num": 1,
+      "CurrencyType": 3,
+      "CurrencyNum": 480,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 37,
+      "_byte_offset": 612,
+      "PriceID": 211,
+      "Num": 2,
+      "CurrencyType": 3,
+      "CurrencyNum": 430,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 38,
+      "_byte_offset": 628,
+      "PriceID": 211,
+      "Num": 3,
+      "CurrencyType": 3,
+      "CurrencyNum": 385,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 39,
+      "_byte_offset": 644,
+      "PriceID": 212,
+      "Num": 1,
+      "CurrencyType": 3,
+      "CurrencyNum": 600,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 40,
+      "_byte_offset": 660,
+      "PriceID": 212,
+      "Num": 2,
+      "CurrencyType": 3,
+      "CurrencyNum": 540,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 41,
+      "_byte_offset": 676,
+      "PriceID": 212,
+      "Num": 3,
+      "CurrencyType": 3,
+      "CurrencyNum": 480,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 42,
+      "_byte_offset": 692,
+      "PriceID": 213,
+      "Num": 1,
+      "CurrencyType": 3,
+      "CurrencyNum": 720,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 43,
+      "_byte_offset": 708,
+      "PriceID": 213,
+      "Num": 2,
+      "CurrencyType": 3,
+      "CurrencyNum": 640,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 44,
+      "_byte_offset": 724,
+      "PriceID": 213,
+      "Num": 3,
+      "CurrencyType": 3,
+      "CurrencyNum": 570,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 45,
+      "_byte_offset": 740,
+      "PriceID": 214,
+      "Num": 1,
+      "CurrencyType": 3,
+      "CurrencyNum": 720,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 46,
+      "_byte_offset": 756,
+      "PriceID": 214,
+      "Num": 2,
+      "CurrencyType": 3,
+      "CurrencyNum": 640,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 47,
+      "_byte_offset": 772,
+      "PriceID": 214,
+      "Num": 3,
+      "CurrencyType": 3,
+      "CurrencyNum": 570,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 48,
+      "_byte_offset": 788,
+      "PriceID": 215,
+      "Num": 1,
+      "CurrencyType": 3,
+      "CurrencyNum": 720,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 49,
+      "_byte_offset": 804,
+      "PriceID": 215,
+      "Num": 2,
+      "CurrencyType": 3,
+      "CurrencyNum": 640,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 50,
+      "_byte_offset": 820,
+      "PriceID": 215,
+      "Num": 3,
+      "CurrencyType": 3,
+      "CurrencyNum": 570,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 51,
+      "_byte_offset": 836,
+      "PriceID": 216,
+      "Num": 1,
+      "CurrencyType": 3,
+      "CurrencyNum": 720,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 52,
+      "_byte_offset": 852,
+      "PriceID": 216,
+      "Num": 2,
+      "CurrencyType": 3,
+      "CurrencyNum": 640,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 53,
+      "_byte_offset": 868,
+      "PriceID": 216,
+      "Num": 3,
+      "CurrencyType": 3,
+      "CurrencyNum": 570,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 54,
+      "_byte_offset": 884,
+      "PriceID": 5,
+      "Num": 1,
+      "CurrencyType": 3,
+      "CurrencyNum": 100,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 55,
+      "_byte_offset": 900,
+      "PriceID": 5,
+      "Num": 2,
+      "CurrencyType": 3,
+      "CurrencyNum": 150,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 56,
+      "_byte_offset": 916,
+      "PriceID": 5,
+      "Num": 3,
+      "CurrencyType": 3,
+      "CurrencyNum": 200,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 57,
+      "_byte_offset": 932,
+      "PriceID": 5,
+      "Num": 4,
+      "CurrencyType": 3,
+      "CurrencyNum": 250,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 58,
+      "_byte_offset": 948,
+      "PriceID": 5,
+      "Num": 5,
+      "CurrencyType": 3,
+      "CurrencyNum": 300,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 59,
+      "_byte_offset": 964,
+      "PriceID": 5,
+      "Num": 6,
+      "CurrencyType": 3,
+      "CurrencyNum": 350,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 60,
+      "_byte_offset": 980,
+      "PriceID": 5,
+      "Num": 7,
+      "CurrencyType": 3,
+      "CurrencyNum": 400,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 61,
+      "_byte_offset": 996,
+      "PriceID": 5,
+      "Num": 8,
+      "CurrencyType": 3,
+      "CurrencyNum": 450,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 62,
+      "_byte_offset": 1012,
+      "PriceID": 5,
+      "Num": 9,
+      "CurrencyType": 3,
+      "CurrencyNum": 500,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 63,
+      "_byte_offset": 1028,
+      "PriceID": 5,
+      "Num": 10,
+      "CurrencyType": 3,
+      "CurrencyNum": 550,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 64,
+      "_byte_offset": 1044,
+      "PriceID": 6,
+      "Num": 1,
+      "CurrencyType": 3,
+      "CurrencyNum": 30,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 65,
+      "_byte_offset": 1060,
+      "PriceID": 6,
+      "Num": 2,
+      "CurrencyType": 3,
+      "CurrencyNum": 50,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 66,
+      "_byte_offset": 1076,
+      "PriceID": 6,
+      "Num": 3,
+      "CurrencyType": 3,
+      "CurrencyNum": 70,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 67,
+      "_byte_offset": 1092,
+      "PriceID": 6,
+      "Num": 4,
+      "CurrencyType": 3,
+      "CurrencyNum": 90,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 68,
+      "_byte_offset": 1108,
+      "PriceID": 7,
+      "Num": 1,
+      "CurrencyType": 3,
+      "CurrencyNum": 30,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 69,
+      "_byte_offset": 1124,
+      "PriceID": 7,
+      "Num": 2,
+      "CurrencyType": 3,
+      "CurrencyNum": 30,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 70,
+      "_byte_offset": 1140,
+      "PriceID": 7,
+      "Num": 3,
+      "CurrencyType": 3,
+      "CurrencyNum": 50,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 71,
+      "_byte_offset": 1156,
+      "PriceID": 7,
+      "Num": 4,
+      "CurrencyType": 3,
+      "CurrencyNum": 50,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 72,
+      "_byte_offset": 1172,
+      "PriceID": 7,
+      "Num": 5,
+      "CurrencyType": 3,
+      "CurrencyNum": 100,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 73,
+      "_byte_offset": 1188,
+      "PriceID": 7,
+      "Num": 6,
+      "CurrencyType": 3,
+      "CurrencyNum": 100,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 74,
+      "_byte_offset": 1204,
+      "PriceID": 7,
+      "Num": 7,
+      "CurrencyType": 3,
+      "CurrencyNum": 150,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 75,
+      "_byte_offset": 1220,
+      "PriceID": 7,
+      "Num": 8,
+      "CurrencyType": 3,
+      "CurrencyNum": 150,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 76,
+      "_byte_offset": 1236,
+      "PriceID": 7,
+      "Num": 9,
+      "CurrencyType": 3,
+      "CurrencyNum": 200,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 77,
+      "_byte_offset": 1252,
+      "PriceID": 995,
+      "Num": 1,
+      "CurrencyType": 3,
+      "CurrencyNum": 30,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 78,
+      "_byte_offset": 1268,
+      "PriceID": 995,
+      "Num": 2,
+      "CurrencyType": 3,
+      "CurrencyNum": 60,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 79,
+      "_byte_offset": 1284,
+      "PriceID": 996,
+      "Num": 1,
+      "CurrencyType": 3,
+      "CurrencyNum": 30,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 80,
+      "_byte_offset": 1300,
+      "PriceID": 997,
+      "Num": 1,
+      "CurrencyType": 3,
+      "CurrencyNum": 20,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 81,
+      "_byte_offset": 1316,
+      "PriceID": 997,
+      "Num": 2,
+      "CurrencyType": 3,
+      "CurrencyNum": 40,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 82,
+      "_byte_offset": 1332,
+      "PriceID": 998,
+      "Num": 1,
+      "CurrencyType": 3,
+      "CurrencyNum": 20,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 83,
+      "_byte_offset": 1348,
+      "PriceID": 998,
+      "Num": 2,
+      "CurrencyType": 3,
+      "CurrencyNum": 20,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 84,
+      "_byte_offset": 1364,
+      "PriceID": 998,
+      "Num": 3,
+      "CurrencyType": 3,
+      "CurrencyNum": 40,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 85,
+      "_byte_offset": 1380,
+      "PriceID": 998,
+      "Num": 4,
+      "CurrencyType": 3,
+      "CurrencyNum": 40,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 86,
+      "_byte_offset": 1396,
+      "PriceID": 998,
+      "Num": 5,
+      "CurrencyType": 3,
+      "CurrencyNum": 60,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 87,
+      "_byte_offset": 1412,
+      "PriceID": 998,
+      "Num": 6,
+      "CurrencyType": 3,
+      "CurrencyNum": 60,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 88,
+      "_byte_offset": 1428,
+      "PriceID": 998,
+      "Num": 7,
+      "CurrencyType": 3,
+      "CurrencyNum": 80,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 89,
+      "_byte_offset": 1444,
+      "PriceID": 998,
+      "Num": 8,
+      "CurrencyType": 3,
+      "CurrencyNum": 80,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 90,
+      "_byte_offset": 1460,
+      "PriceID": 998,
+      "Num": 9,
+      "CurrencyType": 3,
+      "CurrencyNum": 100,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 91,
+      "_byte_offset": 1476,
+      "PriceID": 998,
+      "Num": 10,
+      "CurrencyType": 3,
+      "CurrencyNum": 100,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 92,
+      "_byte_offset": 1492,
+      "PriceID": 999,
+      "Num": 1,
+      "CurrencyType": 3,
+      "CurrencyNum": 20,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 93,
+      "_byte_offset": 1508,
+      "PriceID": 999,
+      "Num": 2,
+      "CurrencyType": 3,
+      "CurrencyNum": 20,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 94,
+      "_byte_offset": 1524,
+      "PriceID": 999,
+      "Num": 3,
+      "CurrencyType": 3,
+      "CurrencyNum": 40,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 95,
+      "_byte_offset": 1540,
+      "PriceID": 999,
+      "Num": 4,
+      "CurrencyType": 3,
+      "CurrencyNum": 40,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 96,
+      "_byte_offset": 1556,
+      "PriceID": 999,
+      "Num": 5,
+      "CurrencyType": 3,
+      "CurrencyNum": 60,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 97,
+      "_byte_offset": 1572,
+      "PriceID": 999,
+      "Num": 6,
+      "CurrencyType": 3,
+      "CurrencyNum": 60,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 98,
+      "_byte_offset": 1588,
+      "PriceID": 999,
+      "Num": 7,
+      "CurrencyType": 3,
+      "CurrencyNum": 80,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 99,
+      "_byte_offset": 1604,
+      "PriceID": 999,
+      "Num": 8,
+      "CurrencyType": 3,
+      "CurrencyNum": 80,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 100,
+      "_byte_offset": 1620,
+      "PriceID": 999,
+      "Num": 9,
+      "CurrencyType": 3,
+      "CurrencyNum": 100,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 101,
+      "_byte_offset": 1636,
+      "PriceID": 999,
+      "Num": 10,
+      "CurrencyType": 3,
+      "CurrencyNum": 100,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 102,
+      "_byte_offset": 1652,
+      "PriceID": 1000,
+      "Num": 1,
+      "CurrencyType": 3,
+      "CurrencyNum": 20,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 103,
+      "_byte_offset": 1668,
+      "PriceID": 1000,
+      "Num": 2,
+      "CurrencyType": 3,
+      "CurrencyNum": 20,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 104,
+      "_byte_offset": 1684,
+      "PriceID": 1000,
+      "Num": 3,
+      "CurrencyType": 3,
+      "CurrencyNum": 40,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 105,
+      "_byte_offset": 1700,
+      "PriceID": 1000,
+      "Num": 4,
+      "CurrencyType": 3,
+      "CurrencyNum": 40,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 106,
+      "_byte_offset": 1716,
+      "PriceID": 1000,
+      "Num": 5,
+      "CurrencyType": 3,
+      "CurrencyNum": 60,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 107,
+      "_byte_offset": 1732,
+      "PriceID": 1000,
+      "Num": 6,
+      "CurrencyType": 3,
+      "CurrencyNum": 60,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 108,
+      "_byte_offset": 1748,
+      "PriceID": 1000,
+      "Num": 7,
+      "CurrencyType": 3,
+      "CurrencyNum": 80,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 109,
+      "_byte_offset": 1764,
+      "PriceID": 1000,
+      "Num": 8,
+      "CurrencyType": 3,
+      "CurrencyNum": 80,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 110,
+      "_byte_offset": 1780,
+      "PriceID": 1000,
+      "Num": 9,
+      "CurrencyType": 3,
+      "CurrencyNum": 100,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 111,
+      "_byte_offset": 1796,
+      "PriceID": 1000,
+      "Num": 10,
+      "CurrencyType": 3,
+      "CurrencyNum": 100,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 112,
+      "_byte_offset": 1812,
+      "PriceID": 117,
+      "Num": 1,
+      "CurrencyType": 3,
+      "CurrencyNum": 20,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 113,
+      "_byte_offset": 1828,
+      "PriceID": 117,
+      "Num": 2,
+      "CurrencyType": 3,
+      "CurrencyNum": 20,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 114,
+      "_byte_offset": 1844,
+      "PriceID": 117,
+      "Num": 3,
+      "CurrencyType": 3,
+      "CurrencyNum": 40,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 115,
+      "_byte_offset": 1860,
+      "PriceID": 117,
+      "Num": 4,
+      "CurrencyType": 3,
+      "CurrencyNum": 40,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 116,
+      "_byte_offset": 1876,
+      "PriceID": 117,
+      "Num": 5,
+      "CurrencyType": 3,
+      "CurrencyNum": 60,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 117,
+      "_byte_offset": 1892,
+      "PriceID": 117,
+      "Num": 6,
+      "CurrencyType": 3,
+      "CurrencyNum": 60,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 118,
+      "_byte_offset": 1908,
+      "PriceID": 117,
+      "Num": 7,
+      "CurrencyType": 3,
+      "CurrencyNum": 80,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 119,
+      "_byte_offset": 1924,
+      "PriceID": 117,
+      "Num": 8,
+      "CurrencyType": 3,
+      "CurrencyNum": 80,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 120,
+      "_byte_offset": 1940,
+      "PriceID": 117,
+      "Num": 9,
+      "CurrencyType": 3,
+      "CurrencyNum": 100,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 121,
+      "_byte_offset": 1956,
+      "PriceID": 117,
+      "Num": 10,
+      "CurrencyType": 3,
+      "CurrencyNum": 100,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 122,
+      "_byte_offset": 1972,
+      "PriceID": 118,
+      "Num": 1,
+      "CurrencyType": 3,
+      "CurrencyNum": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 123,
+      "_byte_offset": 1988,
+      "PriceID": 118,
+      "Num": 2,
+      "CurrencyType": 3,
+      "CurrencyNum": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 124,
+      "_byte_offset": 2004,
+      "PriceID": 118,
+      "Num": 3,
+      "CurrencyType": 3,
+      "CurrencyNum": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 125,
+      "_byte_offset": 2020,
+      "PriceID": 118,
+      "Num": 4,
+      "CurrencyType": 3,
+      "CurrencyNum": 20,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 126,
+      "_byte_offset": 2036,
+      "PriceID": 118,
+      "Num": 5,
+      "CurrencyType": 3,
+      "CurrencyNum": 20,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 127,
+      "_byte_offset": 2052,
+      "PriceID": 118,
+      "Num": 6,
+      "CurrencyType": 3,
+      "CurrencyNum": 40,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 128,
+      "_byte_offset": 2068,
+      "PriceID": 118,
+      "Num": 7,
+      "CurrencyType": 3,
+      "CurrencyNum": 40,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 129,
+      "_byte_offset": 2084,
+      "PriceID": 118,
+      "Num": 8,
+      "CurrencyType": 3,
+      "CurrencyNum": 60,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 130,
+      "_byte_offset": 2100,
+      "PriceID": 118,
+      "Num": 9,
+      "CurrencyType": 3,
+      "CurrencyNum": 60,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 131,
+      "_byte_offset": 2116,
+      "PriceID": 118,
+      "Num": 10,
+      "CurrencyType": 3,
+      "CurrencyNum": 80,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 132,
+      "_byte_offset": 2132,
+      "PriceID": 118,
+      "Num": 11,
+      "CurrencyType": 3,
+      "CurrencyNum": 80,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 133,
+      "_byte_offset": 2148,
+      "PriceID": 118,
+      "Num": 12,
+      "CurrencyType": 3,
+      "CurrencyNum": 100,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 134,
+      "_byte_offset": 2164,
+      "PriceID": 118,
+      "Num": 13,
+      "CurrencyType": 3,
+      "CurrencyNum": 100,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 135,
+      "_byte_offset": 2180,
+      "PriceID": 119,
+      "Num": 1,
+      "CurrencyType": 3,
+      "CurrencyNum": 30,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 136,
+      "_byte_offset": 2196,
+      "PriceID": 119,
+      "Num": 2,
+      "CurrencyType": 3,
+      "CurrencyNum": 50,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 137,
+      "_byte_offset": 2212,
+      "PriceID": 119,
+      "Num": 3,
+      "CurrencyType": 3,
+      "CurrencyNum": 70,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 138,
+      "_byte_offset": 2228,
+      "PriceID": 119,
+      "Num": 4,
+      "CurrencyType": 3,
+      "CurrencyNum": 90,
+      "_byte_length": 16
+    }
+  ]
+}

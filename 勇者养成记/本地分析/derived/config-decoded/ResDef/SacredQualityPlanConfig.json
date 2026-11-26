@@ -1,0 +1,158 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_sacredqualityplanconfig.bytes.ab",
+    "path_id": -2948001825709293219,
+    "name": "SacredQualityPlanConfig",
+    "sha256": "c6c1418a52d07a371715abcd42cac2ad28902737fd027d9a452e791f6a7ac876",
+    "export": "derived/unity/text/assets_resources_config_resbin_sacredqualityplanconfig.bytes/SacredQualityPlanConfig__-2948001825709293219.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 90,
+      "version": 1,
+      "record_count": 7,
+      "stored_crc32": "54cdc9b0",
+      "computed_inverted_crc32": "54cdc9b0"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "SacredQualityPlanConfig",
+      "fields": [
+        {
+          "type": "uint",
+          "name": "QualityPlanID",
+          "object_offset": 16
+        },
+        {
+          "type": "int",
+          "name": "Rate",
+          "object_offset": 20
+        },
+        {
+          "type": "byte",
+          "name": "Quality",
+          "object_offset": 24
+        },
+        {
+          "type": "byte",
+          "name": "Prefix",
+          "object_offset": 25
+        }
+      ],
+      "unpack_va": 32049664,
+      "dump_line": 210893
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1e90a34",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e90a58",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e90a7c",
+        "target_va": "0x21f65e0",
+        "opcode": "BL",
+        "reader": "readUInt8",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e90abc",
+        "target_va": "0x21f65e0",
+        "opcode": "B-tail",
+        "reader": "readUInt8",
+        "destination_object_offset": 25,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 7
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "QualityPlanID": 1,
+      "Rate": 10000,
+      "Quality": 1,
+      "Prefix": 1,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 30,
+      "QualityPlanID": 2,
+      "Rate": 10000,
+      "Quality": 2,
+      "Prefix": 1,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 40,
+      "QualityPlanID": 3,
+      "Rate": 10000,
+      "Quality": 3,
+      "Prefix": 1,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 50,
+      "QualityPlanID": 4,
+      "Rate": 10000,
+      "Quality": 4,
+      "Prefix": 1,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 60,
+      "QualityPlanID": 5,
+      "Rate": 10000,
+      "Quality": 5,
+      "Prefix": 1,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 70,
+      "QualityPlanID": 6,
+      "Rate": 10000,
+      "Quality": 6,
+      "Prefix": 1,
+      "_byte_length": 10
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 80,
+      "QualityPlanID": 7,
+      "Rate": 10000,
+      "Quality": 7,
+      "Prefix": 1,
+      "_byte_length": 10
+    }
+  ]
+}

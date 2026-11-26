@@ -1,0 +1,829 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_menpainpcmodelconfig.bytes.ab",
+    "path_id": 4342150118271467768,
+    "name": "MenPaiNpcModelConfig",
+    "sha256": "2ddf7a6b635a9c46f57929040fe16bd47b36f8e1366d526dac9f800111a8f261",
+    "export": "derived/unity/text/assets_resources_config_resbin_menpainpcmodelconfig.bytes/MenPaiNpcModelConfig__4342150118271467768.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 1460,
+      "version": 1,
+      "record_count": 72,
+      "stored_crc32": "d45ef44e",
+      "computed_inverted_crc32": "d45ef44e"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "MenPaiNpcModelConfig",
+      "fields": [
+        {
+          "type": "uint",
+          "name": "NpcID",
+          "object_offset": 16
+        },
+        {
+          "type": "uint",
+          "name": "Model",
+          "object_offset": 20
+        },
+        {
+          "type": "float",
+          "name": "Scale",
+          "object_offset": 24
+        },
+        {
+          "type": "float",
+          "name": "PosX",
+          "object_offset": 28
+        },
+        {
+          "type": "float",
+          "name": "PosY",
+          "object_offset": 32
+        }
+      ],
+      "unpack_va": 30782596,
+      "dump_line": 208421
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1d5b4b8",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d5b4dc",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d5b500",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d5b524",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 28,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d5b564",
+        "target_va": "0x21f6b98",
+        "opcode": "B-tail",
+        "reader": "readFloat",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 72
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "NpcID": 1014,
+      "Model": 100041,
+      "Scale": 1.0,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 40,
+      "NpcID": 1015,
+      "Model": 100481,
+      "Scale": 1.0,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 60,
+      "NpcID": 1024,
+      "Model": 100232,
+      "Scale": 1.0,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 80,
+      "NpcID": 1025,
+      "Model": 100471,
+      "Scale": 1.0,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 100,
+      "NpcID": 1034,
+      "Model": 100391,
+      "Scale": 1.0,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 120,
+      "NpcID": 1035,
+      "Model": 100401,
+      "Scale": 1.0,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 140,
+      "NpcID": 1044,
+      "Model": 100831,
+      "Scale": 1.0,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 160,
+      "NpcID": 1045,
+      "Model": 100652,
+      "Scale": 1.0,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 180,
+      "NpcID": 1054,
+      "Model": 100671,
+      "Scale": 1.0,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 200,
+      "NpcID": 1055,
+      "Model": 100681,
+      "Scale": 1.0,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 220,
+      "NpcID": 1064,
+      "Model": 100951,
+      "Scale": 1.0,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 240,
+      "NpcID": 1065,
+      "Model": 100941,
+      "Scale": 1.0,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 260,
+      "NpcID": 1074,
+      "Model": 100891,
+      "Scale": 1.0,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 280,
+      "NpcID": 1075,
+      "Model": 100881,
+      "Scale": 1.0,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 300,
+      "NpcID": 1084,
+      "Model": 100731,
+      "Scale": 1.0,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 320,
+      "NpcID": 1085,
+      "Model": 100741,
+      "Scale": 1.0,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 340,
+      "NpcID": 1094,
+      "Model": 101161,
+      "Scale": 1.0,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 360,
+      "NpcID": 1095,
+      "Model": 101171,
+      "Scale": 1.0,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 380,
+      "NpcID": 1104,
+      "Model": 101051,
+      "Scale": 1.0,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 19,
+      "_byte_offset": 400,
+      "NpcID": 1105,
+      "Model": 101041,
+      "Scale": 1.0,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 20,
+      "_byte_offset": 420,
+      "NpcID": 1114,
+      "Model": 101291,
+      "Scale": 1.0,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 21,
+      "_byte_offset": 440,
+      "NpcID": 1115,
+      "Model": 101281,
+      "Scale": 1.0,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 22,
+      "_byte_offset": 460,
+      "NpcID": 1124,
+      "Model": 101341,
+      "Scale": 1.0,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 23,
+      "_byte_offset": 480,
+      "NpcID": 1125,
+      "Model": 101351,
+      "Scale": 0.699999988079071,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 24,
+      "_byte_offset": 500,
+      "NpcID": 1134,
+      "Model": 101471,
+      "Scale": 1.0,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 25,
+      "_byte_offset": 520,
+      "NpcID": 1135,
+      "Model": 101461,
+      "Scale": 1.0,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 26,
+      "_byte_offset": 540,
+      "NpcID": 1144,
+      "Model": 101621,
+      "Scale": 0.699999988079071,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 27,
+      "_byte_offset": 560,
+      "NpcID": 1145,
+      "Model": 101591,
+      "Scale": 1.0,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 28,
+      "_byte_offset": 580,
+      "NpcID": 1154,
+      "Model": 101671,
+      "Scale": 0.800000011920929,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 29,
+      "_byte_offset": 600,
+      "NpcID": 1155,
+      "Model": 101661,
+      "Scale": 0.6000000238418579,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 30,
+      "_byte_offset": 620,
+      "NpcID": 1164,
+      "Model": 101751,
+      "Scale": 1.0,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 31,
+      "_byte_offset": 640,
+      "NpcID": 1165,
+      "Model": 101771,
+      "Scale": 1.0,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 32,
+      "_byte_offset": 660,
+      "NpcID": 1174,
+      "Model": 101851,
+      "Scale": 1.0,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 33,
+      "_byte_offset": 680,
+      "NpcID": 1175,
+      "Model": 101941,
+      "Scale": 0.6000000238418579,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 34,
+      "_byte_offset": 700,
+      "NpcID": 1184,
+      "Model": 102001,
+      "Scale": 0.699999988079071,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 35,
+      "_byte_offset": 720,
+      "NpcID": 1185,
+      "Model": 101991,
+      "Scale": 0.6000000238418579,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 36,
+      "_byte_offset": 740,
+      "NpcID": 1194,
+      "Model": 102201,
+      "Scale": 0.800000011920929,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 37,
+      "_byte_offset": 760,
+      "NpcID": 1195,
+      "Model": 102252,
+      "Scale": 1.0,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 38,
+      "_byte_offset": 780,
+      "NpcID": 1204,
+      "Model": 102361,
+      "Scale": 1.0,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 39,
+      "_byte_offset": 800,
+      "NpcID": 1205,
+      "Model": 100731,
+      "Scale": 0.8999999761581421,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 40,
+      "_byte_offset": 820,
+      "NpcID": 1214,
+      "Model": 101351,
+      "Scale": 0.699999988079071,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 41,
+      "_byte_offset": 840,
+      "NpcID": 1215,
+      "Model": 101941,
+      "Scale": 0.6000000238418579,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 42,
+      "_byte_offset": 860,
+      "NpcID": 1224,
+      "Model": 101591,
+      "Scale": 1.0,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 43,
+      "_byte_offset": 880,
+      "NpcID": 1225,
+      "Model": 102001,
+      "Scale": 0.699999988079071,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 44,
+      "_byte_offset": 900,
+      "NpcID": 1234,
+      "Model": 102801,
+      "Scale": 1.0,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 45,
+      "_byte_offset": 920,
+      "NpcID": 1235,
+      "Model": 102812,
+      "Scale": 1.0,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 46,
+      "_byte_offset": 940,
+      "NpcID": 1244,
+      "Model": 101991,
+      "Scale": 0.6000000238418579,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 47,
+      "_byte_offset": 960,
+      "NpcID": 1245,
+      "Model": 102001,
+      "Scale": 0.699999988079071,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 48,
+      "_byte_offset": 980,
+      "NpcID": 1254,
+      "Model": 100232,
+      "Scale": 1.0,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 49,
+      "_byte_offset": 1000,
+      "NpcID": 1255,
+      "Model": 100471,
+      "Scale": 1.0,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 50,
+      "_byte_offset": 1020,
+      "NpcID": 1264,
+      "Model": 103481,
+      "Scale": 0.6000000238418579,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 51,
+      "_byte_offset": 1040,
+      "NpcID": 1265,
+      "Model": 103472,
+      "Scale": 0.44999998807907104,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 52,
+      "_byte_offset": 1060,
+      "NpcID": 1274,
+      "Model": 100401,
+      "Scale": 1.0,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 53,
+      "_byte_offset": 1080,
+      "NpcID": 1275,
+      "Model": 100391,
+      "Scale": 1.0,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 54,
+      "_byte_offset": 1100,
+      "NpcID": 1284,
+      "Model": 101992,
+      "Scale": 0.6000000238418579,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 55,
+      "_byte_offset": 1120,
+      "NpcID": 1285,
+      "Model": 103812,
+      "Scale": 0.6000000238418579,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 56,
+      "_byte_offset": 1140,
+      "NpcID": 1294,
+      "Model": 102201,
+      "Scale": 0.800000011920929,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 57,
+      "_byte_offset": 1160,
+      "NpcID": 1295,
+      "Model": 102252,
+      "Scale": 1.0,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 58,
+      "_byte_offset": 1180,
+      "NpcID": 1304,
+      "Model": 102361,
+      "Scale": 0.8999999761581421,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 59,
+      "_byte_offset": 1200,
+      "NpcID": 1305,
+      "Model": 100731,
+      "Scale": 0.8999999761581421,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 60,
+      "_byte_offset": 1220,
+      "NpcID": 1314,
+      "Model": 103241,
+      "Scale": 0.800000011920929,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 61,
+      "_byte_offset": 1240,
+      "NpcID": 1315,
+      "Model": 103521,
+      "Scale": 0.699999988079071,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 62,
+      "_byte_offset": 1260,
+      "NpcID": 1324,
+      "Model": 104521,
+      "Scale": 0.699999988079071,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 63,
+      "_byte_offset": 1280,
+      "NpcID": 1325,
+      "Model": 101941,
+      "Scale": 0.800000011920929,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 64,
+      "_byte_offset": 1300,
+      "NpcID": 1334,
+      "Model": 101351,
+      "Scale": 0.699999988079071,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 65,
+      "_byte_offset": 1320,
+      "NpcID": 1335,
+      "Model": 101941,
+      "Scale": 0.6000000238418579,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 66,
+      "_byte_offset": 1340,
+      "NpcID": 1344,
+      "Model": 101991,
+      "Scale": 0.6000000238418579,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 67,
+      "_byte_offset": 1360,
+      "NpcID": 1345,
+      "Model": 102001,
+      "Scale": 0.699999988079071,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 68,
+      "_byte_offset": 1380,
+      "NpcID": 1354,
+      "Model": 100401,
+      "Scale": 1.0,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 69,
+      "_byte_offset": 1400,
+      "NpcID": 1355,
+      "Model": 100391,
+      "Scale": 1.0,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 70,
+      "_byte_offset": 1420,
+      "NpcID": 1364,
+      "Model": 102361,
+      "Scale": 0.8999999761581421,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 71,
+      "_byte_offset": 1440,
+      "NpcID": 1365,
+      "Model": 100731,
+      "Scale": 0.8999999761581421,
+      "PosX": 0.0,
+      "PosY": 0.0,
+      "_byte_length": 20
+    }
+  ]
+}

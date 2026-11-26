@@ -1,0 +1,298 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_beasttideparamconfig.bytes.ab",
+    "path_id": -2506677464179516784,
+    "name": "BeastTideParamConfig",
+    "sha256": "6673d3bebcce099c658ede6cb63b3618a6d69c5b3e5fbf32f3fa13ce74c65dbc",
+    "export": "derived/unity/text/assets_resources_config_resbin_beasttideparamconfig.bytes/BeastTideParamConfig__-2506677464179516784.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 284,
+      "version": 1,
+      "record_count": 33,
+      "stored_crc32": "6b705148",
+      "computed_inverted_crc32": "6b705148"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "BeastTideParamConfig",
+      "fields": [
+        {
+          "type": "uint",
+          "name": "FuncID",
+          "object_offset": 16
+        },
+        {
+          "type": "float",
+          "name": "FuncValue",
+          "object_offset": 20
+        }
+      ],
+      "unpack_va": 31225512,
+      "dump_line": 201635
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1dc76dc",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dc771c",
+        "target_va": "0x21f6b98",
+        "opcode": "B-tail",
+        "reader": "readFloat",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 33
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "FuncID": 1,
+      "FuncValue": 0.5,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 28,
+      "FuncID": 2,
+      "FuncValue": 1.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 36,
+      "FuncID": 3,
+      "FuncValue": 3.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 44,
+      "FuncID": 4,
+      "FuncValue": 0.20000000298023224,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 52,
+      "FuncID": 5,
+      "FuncValue": 2.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 60,
+      "FuncID": 6,
+      "FuncValue": 1001.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 68,
+      "FuncID": 7,
+      "FuncValue": 1002.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 76,
+      "FuncID": 8,
+      "FuncValue": 100.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 84,
+      "FuncID": 9,
+      "FuncValue": 5.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 92,
+      "FuncID": 10,
+      "FuncValue": 0.30000001192092896,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 100,
+      "FuncID": 11,
+      "FuncValue": 4.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 108,
+      "FuncID": 12,
+      "FuncValue": 17.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 116,
+      "FuncID": 13,
+      "FuncValue": 1490001.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 124,
+      "FuncID": 14,
+      "FuncValue": 3070001.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 132,
+      "FuncID": 15,
+      "FuncValue": 3070002.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 140,
+      "FuncID": 16,
+      "FuncValue": 3070003.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 148,
+      "FuncID": 17,
+      "FuncValue": 3070004.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 156,
+      "FuncID": 18,
+      "FuncValue": 10.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 164,
+      "FuncID": 19,
+      "FuncValue": 5.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 19,
+      "_byte_offset": 172,
+      "FuncID": 20,
+      "FuncValue": 10.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 20,
+      "_byte_offset": 180,
+      "FuncID": 21,
+      "FuncValue": 6.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 21,
+      "_byte_offset": 188,
+      "FuncID": 22,
+      "FuncValue": 6.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 22,
+      "_byte_offset": 196,
+      "FuncID": 23,
+      "FuncValue": 5.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 23,
+      "_byte_offset": 204,
+      "FuncID": 24,
+      "FuncValue": 1.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 24,
+      "_byte_offset": 212,
+      "FuncID": 25,
+      "FuncValue": 18.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 25,
+      "_byte_offset": 220,
+      "FuncID": 26,
+      "FuncValue": 3070005.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 26,
+      "_byte_offset": 228,
+      "FuncID": 27,
+      "FuncValue": 5.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 27,
+      "_byte_offset": 236,
+      "FuncID": 28,
+      "FuncValue": 16.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 28,
+      "_byte_offset": 244,
+      "FuncID": 29,
+      "FuncValue": 5.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 29,
+      "_byte_offset": 252,
+      "FuncID": 30,
+      "FuncValue": 3070006.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 30,
+      "_byte_offset": 260,
+      "FuncID": 31,
+      "FuncValue": 3070007.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 31,
+      "_byte_offset": 268,
+      "FuncID": 32,
+      "FuncValue": 3070008.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 32,
+      "_byte_offset": 276,
+      "FuncID": 33,
+      "FuncValue": 3070009.0,
+      "_byte_length": 8
+    }
+  ]
+}

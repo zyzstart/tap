@@ -1,0 +1,279 @@
+{
+  "namespace": "ResDef",
+  "name": "ElfHelpConfig",
+  "fields": [
+    {
+      "type": "int",
+      "name": "HelpID",
+      "object_offset": 16
+    },
+    {
+      "type": "string",
+      "name": "HelpName",
+      "object_offset": 24
+    },
+    {
+      "type": "int",
+      "name": "RequiredCnt",
+      "object_offset": 32
+    },
+    {
+      "type": "int",
+      "name": "RequiredPromotionLevel",
+      "object_offset": 36
+    },
+    {
+      "type": "int",
+      "name": "RequiredQuality",
+      "object_offset": 40
+    },
+    {
+      "type": "string",
+      "name": "ElvesSkillDes",
+      "object_offset": 48
+    },
+    {
+      "type": "ResAttrImpactData[]",
+      "name": "AttrList",
+      "object_offset": 56
+    },
+    {
+      "type": "int",
+      "name": "SpecialElfFuncID",
+      "object_offset": 64
+    }
+  ],
+  "unpack_va": 31271152,
+  "dump_line": 203379,
+  "layout": [
+    {
+      "type": "int",
+      "name": "HelpID",
+      "object_offset": 16,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dd2928",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "type": "string",
+      "name": "HelpName",
+      "object_offset": 24,
+      "wire_type": "string",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dd2950",
+          "target_va": "0x21f6ce8",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readString"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readString",
+          "destination": [
+            "self",
+            24
+          ],
+          "max_string_size": 256
+        }
+      ],
+      "max_string_size": 256
+    },
+    {
+      "type": "int",
+      "name": "RequiredCnt",
+      "object_offset": 32,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dd2974",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "type": "int",
+      "name": "RequiredPromotionLevel",
+      "object_offset": 36,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dd2998",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            36
+          ]
+        }
+      ]
+    },
+    {
+      "type": "int",
+      "name": "RequiredQuality",
+      "object_offset": 40,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dd29bc",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "type": "string",
+      "name": "ElvesSkillDes",
+      "object_offset": 48,
+      "wire_type": "string",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dd29e4",
+          "target_va": "0x21f6ce8",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readString"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readString",
+          "destination": [
+            "self",
+            48
+          ],
+          "max_string_size": 256
+        }
+      ],
+      "max_string_size": 256
+    },
+    {
+      "type": "ResAttrImpactData[]",
+      "name": "AttrList",
+      "object_offset": 56,
+      "wire_type": "ResAttrImpactData",
+      "kind": "array",
+      "count": 1,
+      "count_encoding": "none-native-fixed",
+      "native_calls": [
+        {
+          "instruction_va": "0x1dd2a38",
+          "target_va": "0x1e879c8",
+          "target_names": [
+            "ResDef.ResAttrImpactData$$unpack"
+          ],
+          "opcode": "BL",
+          "kind": "nested",
+          "nested_schema": "ResDef.ResAttrImpactData",
+          "destination": [
+            "element",
+            56,
+            0
+          ],
+          "cut_version": 1
+        }
+      ],
+      "nested_schema": "ResDef.ResAttrImpactData"
+    },
+    {
+      "type": "int",
+      "name": "SpecialElfFuncID",
+      "object_offset": 64,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dd2a78",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "B",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            64
+          ]
+        }
+      ]
+    }
+  ],
+  "native_evidence": {
+    "method_start_va": "0x1dd28f0",
+    "instruction_steps": 73,
+    "event_count": 8,
+    "branch_evidence": [
+      {
+        "instruction_va": "0x1dd2a00",
+        "kind": "managed-array-nonempty-assumption",
+        "array_field_offset": 56,
+        "index": 0
+      }
+    ],
+    "loops": [],
+    "instruction_sha256": "b91ca4d8af909abb1e22369b3038aa80f0fcf4218ce2e10b99604922f22ebb94",
+    "gate": "concrete-success-path; all sequential readers/nested callees; full field/destination/stride matching",
+    "assumptions": [
+      "non-null input buffer and created nested objects/arrays",
+      "managed array bounds valid",
+      "AAPCS64 callee-saved register preservation",
+      "reader and nested call success; version 1 only"
+    ]
+  }
+}

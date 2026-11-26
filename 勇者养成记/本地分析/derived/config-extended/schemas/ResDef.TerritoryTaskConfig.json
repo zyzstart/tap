@@ -1,0 +1,239 @@
+{
+  "namespace": "ResDef",
+  "name": "TerritoryTaskConfig",
+  "fields": [
+    {
+      "type": "uint",
+      "name": "TaskID",
+      "object_offset": 16
+    },
+    {
+      "type": "uint",
+      "name": "Sort",
+      "object_offset": 20
+    },
+    {
+      "type": "string",
+      "name": "Desc",
+      "object_offset": 24
+    },
+    {
+      "type": "uint",
+      "name": "TaskType",
+      "object_offset": 32
+    },
+    {
+      "type": "uint",
+      "name": "BootyID",
+      "object_offset": 36
+    },
+    {
+      "type": "ResBehaviorRule",
+      "name": "Behavior",
+      "object_offset": 40
+    },
+    {
+      "type": "uint",
+      "name": "MaxProgress",
+      "object_offset": 48
+    }
+  ],
+  "unpack_va": 32093644,
+  "dump_line": 212304,
+  "layout": [
+    {
+      "type": "uint",
+      "name": "TaskID",
+      "object_offset": 16,
+      "wire_type": "uint",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e9b600",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "self",
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "type": "uint",
+      "name": "Sort",
+      "object_offset": 20,
+      "wire_type": "uint",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e9b624",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "self",
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "type": "string",
+      "name": "Desc",
+      "object_offset": 24,
+      "wire_type": "string",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e9b64c",
+          "target_va": "0x21f6ce8",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readString"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readString",
+          "destination": [
+            "self",
+            24
+          ],
+          "max_string_size": 1024
+        }
+      ],
+      "max_string_size": 1024
+    },
+    {
+      "type": "uint",
+      "name": "TaskType",
+      "object_offset": 32,
+      "wire_type": "uint",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e9b670",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "self",
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "type": "uint",
+      "name": "BootyID",
+      "object_offset": 36,
+      "wire_type": "uint",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e9b694",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "self",
+            36
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ResBehaviorRule",
+      "name": "Behavior",
+      "object_offset": 40,
+      "wire_type": "ResBehaviorRule",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e9b6b8",
+          "target_va": "0x1e8dbdc",
+          "target_names": [
+            "ResDef.ResBehaviorRule$$unpack"
+          ],
+          "opcode": "BL",
+          "kind": "nested",
+          "nested_schema": "ResDef.ResBehaviorRule",
+          "destination": [
+            "field",
+            40
+          ],
+          "cut_version": 1
+        }
+      ],
+      "nested_schema": "ResDef.ResBehaviorRule"
+    },
+    {
+      "type": "uint",
+      "name": "MaxProgress",
+      "object_offset": 48,
+      "wire_type": "uint",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e9b6f8",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "B",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "self",
+            48
+          ]
+        }
+      ]
+    }
+  ],
+  "native_evidence": {
+    "method_start_va": "0x1e9b5cc",
+    "instruction_steps": 58,
+    "event_count": 7,
+    "branch_evidence": [],
+    "loops": [],
+    "instruction_sha256": "151a0d0398a4616dedb76db0300c9cc4375559d74a720ca37f069cd2be9b858c",
+    "gate": "concrete-success-path; all sequential readers/nested callees; full field/destination/stride matching",
+    "assumptions": [
+      "non-null input buffer and created nested objects/arrays",
+      "managed array bounds valid",
+      "AAPCS64 callee-saved register preservation",
+      "reader and nested call success; version 1 only"
+    ]
+  }
+}

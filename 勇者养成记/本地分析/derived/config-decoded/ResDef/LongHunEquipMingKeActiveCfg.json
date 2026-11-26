@@ -1,0 +1,212 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_longhunequipmingkeactivecfg.bytes.ab",
+    "path_id": 5152642802422322425,
+    "name": "LongHunEquipMingKeActiveCfg",
+    "sha256": "ec1d93a7b629f55d604480ca2a0be938b2ee796f5e7fd91477b2210b0b7cdc90",
+    "export": "derived/unity/text/assets_resources_config_resbin_longhunequipmingkeactivecfg.bytes/LongHunEquipMingKeActiveCfg__5152642802422322425.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 228,
+      "version": 1,
+      "record_count": 13,
+      "stored_crc32": "4f68c726",
+      "computed_inverted_crc32": "4f68c726"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "LongHunEquipMingKeActiveCfg",
+      "fields": [
+        {
+          "type": "uint",
+          "name": "MingKeSuitID",
+          "object_offset": 16
+        },
+        {
+          "type": "uint",
+          "name": "ActiveItemID",
+          "object_offset": 20
+        },
+        {
+          "type": "uint",
+          "name": "ActiveItemCnt",
+          "object_offset": 24
+        },
+        {
+          "type": "uint",
+          "name": "DecomposeFanHuanCnt",
+          "object_offset": 28
+        }
+      ],
+      "unpack_va": 30759820,
+      "dump_line": 207727
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1d55bc0",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d55be4",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d55c08",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d55c48",
+        "target_va": "0x21f6908",
+        "opcode": "B-tail",
+        "reader": "readUInt32",
+        "destination_object_offset": 28,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 13
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "MingKeSuitID": 9,
+      "ActiveItemID": 200026,
+      "ActiveItemCnt": 4,
+      "DecomposeFanHuanCnt": 2,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 36,
+      "MingKeSuitID": 10,
+      "ActiveItemID": 200026,
+      "ActiveItemCnt": 6,
+      "DecomposeFanHuanCnt": 3,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 52,
+      "MingKeSuitID": 11,
+      "ActiveItemID": 200026,
+      "ActiveItemCnt": 8,
+      "DecomposeFanHuanCnt": 4,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 68,
+      "MingKeSuitID": 12,
+      "ActiveItemID": 200026,
+      "ActiveItemCnt": 10,
+      "DecomposeFanHuanCnt": 5,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 84,
+      "MingKeSuitID": 13,
+      "ActiveItemID": 200026,
+      "ActiveItemCnt": 12,
+      "DecomposeFanHuanCnt": 6,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 100,
+      "MingKeSuitID": 14,
+      "ActiveItemID": 200026,
+      "ActiveItemCnt": 14,
+      "DecomposeFanHuanCnt": 7,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 116,
+      "MingKeSuitID": 15,
+      "ActiveItemID": 200026,
+      "ActiveItemCnt": 16,
+      "DecomposeFanHuanCnt": 8,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 132,
+      "MingKeSuitID": 16,
+      "ActiveItemID": 200026,
+      "ActiveItemCnt": 18,
+      "DecomposeFanHuanCnt": 9,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 148,
+      "MingKeSuitID": 17,
+      "ActiveItemID": 200026,
+      "ActiveItemCnt": 20,
+      "DecomposeFanHuanCnt": 10,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 164,
+      "MingKeSuitID": 18,
+      "ActiveItemID": 200026,
+      "ActiveItemCnt": 24,
+      "DecomposeFanHuanCnt": 12,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 180,
+      "MingKeSuitID": 19,
+      "ActiveItemID": 200026,
+      "ActiveItemCnt": 28,
+      "DecomposeFanHuanCnt": 14,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 196,
+      "MingKeSuitID": 20,
+      "ActiveItemID": 200026,
+      "ActiveItemCnt": 32,
+      "DecomposeFanHuanCnt": 16,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 212,
+      "MingKeSuitID": 21,
+      "ActiveItemID": 0,
+      "ActiveItemCnt": 0,
+      "DecomposeFanHuanCnt": 0,
+      "_byte_length": 16
+    }
+  ]
+}

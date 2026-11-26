@@ -1,0 +1,104 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_pvpdiebuffconfig.bytes.ab",
+    "path_id": 6220137626479535454,
+    "name": "PvpDieBuffConfig",
+    "sha256": "c175205bb1ede22a676cb82b05f21fcc38684cad545b1606e1153479272ee008",
+    "export": "derived/unity/text/assets_resources_config_resbin_pvpdiebuffconfig.bytes/PvpDieBuffConfig__6220137626479535454.bin",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 165,
+      "version": 1,
+      "record_count": 5,
+      "stored_crc32": "270f8eb5",
+      "computed_inverted_crc32": "270f8eb5"
+    },
+    "status": "cross-variant-layout-candidate",
+    "legacy_reason": "ValueError: Trailing bytes: 85",
+    "layout_rule": "same-order-plus-unnamed-tail-string",
+    "fields": [
+      {
+        "type": "int",
+        "name": "dieCnt",
+        "object_offset": 16
+      },
+      {
+        "type": "int",
+        "name": "buffID",
+        "object_offset": 20
+      },
+      {
+        "type": "int",
+        "name": "buffStackNum",
+        "object_offset": 24
+      },
+      {
+        "name": "_unmapped_tail_utf8_0",
+        "type": "string"
+      }
+    ],
+    "companion_json": "derived/config-decoded/BattleCore/PvpDieBuffConfig.json",
+    "companion_export": "derived/unity/text/assets_resources_config_resbin_fp_pvpdiebuffconfig.bytes/PvpDieBuffConfig__5018298114250124721.bin",
+    "companion_sha256": "fbb9ac8839f199b33f7b3187a7c2d4504862c03911cec9bb9c0cac9a79559e99",
+    "named_value_checks": {
+      "exact_named_value": 15
+    },
+    "decoded_record_count": 5,
+    "payload_roundtrip_sha256": "2c11f99d4b33dbbf1bdae1dccd01363fe5a7956e66eb86dba5d9e8da8c11ba33",
+    "decoded_json": "derived/config-layout-recovery/nonfp/PvpDieBuffConfig.json",
+    "decoded_csv": "derived/config-layout-recovery/nonfp/PvpDieBuffConfig.csv"
+  },
+  "limits": [
+    "Cross-variant hypothesis constrained by every companion named value, not the exact target unpack function.",
+    "Unnamed cells retain bytes/text only; no claimed gameplay meaning.",
+    "Q32.32 projection is a consistency check, not a statement of field units.",
+    "No sample execution or game-server contact."
+  ],
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "dieCnt": 3,
+      "buffID": 39999,
+      "buffStackNum": 1,
+      "_unmapped_tail_utf8_0": "IOS马甲包",
+      "_byte_length": 29
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 49,
+      "dieCnt": 4,
+      "buffID": 39999,
+      "buffStackNum": 2,
+      "_unmapped_tail_utf8_0": "IOS马甲包",
+      "_byte_length": 29
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 78,
+      "dieCnt": 5,
+      "buffID": 39999,
+      "buffStackNum": 3,
+      "_unmapped_tail_utf8_0": "IOS马甲包",
+      "_byte_length": 29
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 107,
+      "dieCnt": 6,
+      "buffID": 39999,
+      "buffStackNum": 4,
+      "_unmapped_tail_utf8_0": "IOS马甲包",
+      "_byte_length": 29
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 136,
+      "dieCnt": 8,
+      "buffID": 39999,
+      "buffStackNum": 5,
+      "_unmapped_tail_utf8_0": "IOS马甲包",
+      "_byte_length": 29
+    }
+  ]
+}

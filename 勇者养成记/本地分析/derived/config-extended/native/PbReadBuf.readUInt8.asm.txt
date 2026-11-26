@@ -1,0 +1,34 @@
+0x21f65e0: str       x21, [sp, #-0x30]!
+0x21f65e4: stp       x20, x19, [sp, #0x10]
+0x21f65e8: stp       x29, x30, [sp, #0x20]
+0x21f65ec: add       x29, sp, #0x20
+0x21f65f0: ldr       x20, [x0, #0x10]
+0x21f65f4: mov       x19, x1
+0x21f65f8: cbz       x20, #0x21f6640
+0x21f65fc: ldp       w21, w8, [x0, #0x18]
+0x21f6600: sxtw      x21, w21
+0x21f6604: sub       w8, w8, w21
+0x21f6608: cmp       w8, #1
+0x21f660c: b.lt      #0x21f664c
+0x21f6610: add       w8, w21, #1
+0x21f6614: str       w8, [x0, #0x18]
+0x21f6618: ldr       w8, [x20, #0x18]
+0x21f661c: cmp       w21, w8
+0x21f6620: b.lo      #0x21f6634
+0x21f6624: bl        #0xd2c410 ; 
+0x21f6628: mov       x1, xzr
+0x21f662c: mov       x2, xzr
+0x21f6630: bl        #0xd2b69c ; 
+0x21f6634: add       x8, x20, x21
+0x21f6638: ldrb      w8, [x8, #0x20]
+0x21f663c: b         #0x21f6650 ; 
+0x21f6640: mov       w8, wzr
+0x21f6644: mov       w0, #-0x16
+0x21f6648: b         #0x21f6654 ; 
+0x21f664c: mov       w8, wzr
+0x21f6650: mov       w0, wzr
+0x21f6654: strb      w8, [x19]
+0x21f6658: ldp       x29, x30, [sp, #0x20]
+0x21f665c: ldp       x20, x19, [sp, #0x10]
+0x21f6660: ldr       x21, [sp], #0x30
+0x21f6664: ret       

@@ -1,0 +1,774 @@
+
+A3Game.LevelMapCreater$$BuildMapGridInfo
+152bd8c sub sp, sp, #0x70
+152bd90 stp x28, x27, [sp, #0x10]
+152bd94 stp x26, x25, [sp, #0x20]
+152bd98 stp x24, x23, [sp, #0x30]
+152bd9c stp x22, x21, [sp, #0x40]
+152bda0 stp x20, x19, [sp, #0x50]
+152bda4 stp x29, x30, [sp, #0x60]
+152bda8 add x29, sp, #0x60
+152bdac adrp x20, #0x2f3f000
+152bdb0 ldrb w8, [x20, #0x317]
+152bdb4 mov w21, w1
+152bdb8 mov x19, x0
+152bdbc tbnz w8, #0, #0x152bdd8
+152bdc0 adrp x8, #0x2c80000
+152bdc4 ldr x8, [x8, #0x118]
+152bdc8 ldr w0, [x8]
+152bdcc bl #0xd04f28
+152bdd0 mov w8, #1
+152bdd4 strb w8, [x20, #0x317]
+152bdd8 adrp x8, #0x2cd4000
+152bddc ldr x8, [x8, #0xf8]
+152bde0 ldr x0, [x8]
+152bde4 bl #0x17fa038 A3Game.Singleton<UISpriteHelper>$$get_Instance
+152bde8 mov x20, x0
+152bdec cbnz x20, #0x152bdf4
+152bdf0 bl #0xd2b72c
+152bdf4 mov x0, x20
+152bdf8 mov w1, w21
+152bdfc bl #0x152083c A3Game.LevelCfgMgr$$GetMapCfg
+152be00 str x0, [x19, #0x10]
+152be04 cbz x0, #0x152c140
+152be08 ldr x0, [x0, #0x20]
+152be0c bl #0x1521750 A3Game.LevelDataHelper$$LoadLevelData
+152be10 mov x20, x0
+152be14 cbz x20, #0x152c1f4
+152be18 ldr x21, [x19, #0x10]
+152be1c cbnz x21, #0x152be28
+152be20 mov x0, xzr
+152be24 bl #0xd2b72c
+152be28 adrp x8, #0x2c96000
+152be2c ldr x8, [x8, #0x7f0]
+152be30 ldr w1, [x21, #0x30]
+152be34 ldr x0, [x8]
+152be38 bl #0xd3e178
+152be3c str x0, [x19, #0x18]
+152be40 adrp x23, #0x2cbb000
+152be44 ldr x23, [x23, #0xb78]
+152be48 mov w22, wzr
+152be4c b #0x152bf64
+152be50 ldp x21, x26, [x19, #0x10]
+152be54 cbnz x21, #0x152be60
+152be58 mov x0, xzr
+152be5c bl #0xd2b72c
+152be60 ldr x0, [x23]
+152be64 ldr w1, [x21, #0x34]
+152be68 bl #0xd3e178
+152be6c mov x21, x0
+152be70 cbz x26, #0x152be7c
+152be74 cbnz x21, #0x152be88
+152be78 b #0x152beac
+152be7c mov x0, xzr
+152be80 bl #0xd2b72c
+152be84 cbz x21, #0x152beac
+152be88 ldr x8, [x26]
+152be8c mov x0, x21
+152be90 ldr x1, [x8, #0x40]
+152be94 bl #0xd38c14
+152be98 cbnz x0, #0x152beac
+152be9c bl #0xd2ca48
+152bea0 mov x1, xzr
+152bea4 mov x2, xzr
+152bea8 bl #0xd2b69c
+152beac ldr w8, [x26, #0x18]
+152beb0 cmp w22, w8
+152beb4 b.lo #0x152bec8
+152beb8 bl #0xd2c410
+152bebc mov x1, xzr
+152bec0 mov x2, xzr
+152bec4 bl #0xd2b69c
+152bec8 add x8, x26, x24, lsl #3
+152becc mov w25, wzr
+152bed0 str x21, [x8, #0x20]
+152bed4 b #0x152bf40
+152bed8 ldr x26, [x19, #0x18]
+152bedc cbnz x26, #0x152bee8
+152bee0 mov x0, xzr
+152bee4 bl #0xd2b72c
+152bee8 ldr w8, [x26, #0x18]
+152beec cmp w22, w8
+152bef0 b.lo #0x152bf04
+152bef4 bl #0xd2c410
+152bef8 mov x1, xzr
+152befc mov x2, xzr
+152bf00 bl #0xd2b69c
+152bf04 add x8, x26, x24, lsl #3
+152bf08 ldr x26, [x8, #0x20]
+152bf0c cbnz x26, #0x152bf18
+152bf10 mov x0, xzr
+152bf14 bl #0xd2b72c
+152bf18 ldr w8, [x26, #0x18]
+152bf1c cmp w25, w8
+152bf20 b.lo #0x152bf34
+152bf24 bl #0xd2c410
+152bf28 mov x1, xzr
+152bf2c mov x2, xzr
+152bf30 bl #0xd2b69c
+152bf34 add x8, x26, x21, lsl #2
+152bf38 add w25, w25, #1
+152bf3c str wzr, [x8, #0x20]
+152bf40 ldr x21, [x19, #0x10]
+152bf44 cbnz x21, #0x152bf50
+152bf48 mov x0, xzr
+152bf4c bl #0xd2b72c
+152bf50 ldr w8, [x21, #0x34]
+152bf54 sxtw x21, w25
+152bf58 cmp x21, x8
+152bf5c b.lt #0x152bed8
+152bf60 add w22, w22, #1
+152bf64 ldr x21, [x19, #0x10]
+152bf68 cbnz x21, #0x152bf74
+152bf6c mov x0, xzr
+152bf70 bl #0xd2b72c
+152bf74 ldr w8, [x21, #0x30]
+152bf78 sxtw x24, w22
+152bf7c cmp x24, x8
+152bf80 b.lt #0x152be50
+152bf84 adrp x27, #0x2d1a000
+152bf88 ldr x27, [x27, #0xe20]
+152bf8c mov w21, wzr
+152bf90 b #0x152c10c
+152bf94 ldr x22, [x20, #0x20]
+152bf98 cbnz x22, #0x152bfa4
+152bf9c mov x0, xzr
+152bfa0 bl #0xd2b72c
+152bfa4 ldr x2, [x27]
+152bfa8 mov x0, x22
+152bfac mov w1, w21
+152bfb0 bl #0x213de7c System.Collections.Generic.List<object>$$get_Item
+152bfb4 adrp x8, #0x2d25000
+152bfb8 ldr x8, [x8]
+152bfbc mov x23, x0
+152bfc0 ldr x8, [x8]
+152bfc4 mov x0, x8
+152bfc8 bl #0x17fa038 A3Game.Singleton<UISpriteHelper>$$get_Instance
+152bfcc mov x22, x0
+152bfd0 cbnz x23, #0x152bfdc
+152bfd4 mov x0, xzr
+152bfd8 bl #0xd2b72c
+152bfdc ldr w24, [x23, #0x10]
+152bfe0 cbnz x22, #0x152bfec
+152bfe4 mov x0, xzr
+152bfe8 bl #0xd2b72c
+152bfec mov x0, x22
+152bff0 mov w1, w24
+152bff4 mov x2, xzr
+152bff8 bl #0xed92d8 A3Game.MonsterCfgMgr$$GetMapItemCfg
+152bffc mov x22, x0
+152c000 cbz x22, #0x152c108
+152c004 adrp x8, #0x2cbd000
+152c008 ldr x8, [x8, #0xfb8]
+152c00c ldr x24, [x23, #0x18]
+152c010 ldr x0, [x8]
+152c014 ldrb w8, [x0, #0x127]
+152c018 tbz w8, #1, #0x152c028
+152c01c ldr w8, [x0, #0xd8]
+152c020 cbnz w8, #0x152c028
+152c024 bl #0xd14168
+152c028 mov x0, x24
+152c02c mov x1, xzr
+152c030 bl #0x1ed4a34 BattleCore.FP$$op_Explicit
+152c034 ldr x8, [x23, #0x20]
+152c038 sub w24, w0, #1
+152c03c mov x1, xzr
+152c040 mov x0, x8
+152c044 bl #0x1ed4a34 BattleCore.FP$$op_Explicit
+152c048 tbnz w24, #0x1f, #0x152c108
+152c04c ldr x26, [x19, #0x10]
+152c050 sub w23, w0, #1
+152c054 cbnz x26, #0x152c060
+152c058 mov x0, xzr
+152c05c bl #0xd2b72c
+152c060 tbnz w23, #0x1f, #0x152c108
+152c064 ldr w8, [x26, #0x30]
+152c068 sxtw x26, w24
+152c06c cmp x26, x8
+152c070 b.ge #0x152c108
+152c074 mov x25, x27
+152c078 ldr x27, [x19, #0x10]
+152c07c cbnz x27, #0x152c088
+152c080 mov x0, xzr
+152c084 bl #0xd2b72c
+152c088 ldr w8, [x27, #0x34]
+152c08c sxtw x28, w23
+152c090 mov x27, x25
+152c094 cmp x28, x8
+152c098 b.ge #0x152c108
+152c09c ldr x27, [x19, #0x18]
+152c0a0 cbnz x27, #0x152c0ac
+152c0a4 mov x0, xzr
+152c0a8 bl #0xd2b72c
+152c0ac ldr w8, [x27, #0x18]
+152c0b0 cmp w24, w8
+152c0b4 b.lo #0x152c0c8
+152c0b8 bl #0xd2c410
+152c0bc mov x1, xzr
+152c0c0 mov x2, xzr
+152c0c4 bl #0xd2b69c
+152c0c8 add x8, x27, x26, lsl #3
+152c0cc ldr x24, [x8, #0x20]
+152c0d0 ldrb w22, [x22, #0x28]
+152c0d4 cbnz x24, #0x152c0e0
+152c0d8 mov x0, xzr
+152c0dc bl #0xd2b72c
+152c0e0 ldr w8, [x24, #0x18]
+152c0e4 mov x27, x25
+152c0e8 cmp w23, w8
+152c0ec b.lo #0x152c100
+152c0f0 bl #0xd2c410
+152c0f4 mov x1, xzr
+152c0f8 mov x2, xzr
+152c0fc bl #0xd2b69c
+152c100 add x8, x24, x28, lsl #2
+152c104 str w22, [x8, #0x20]
+152c108 add w21, w21, #1
+152c10c ldr x22, [x20, #0x20]
+152c110 cbnz x22, #0x152c11c
+152c114 mov x0, xzr
+152c118 bl #0xd2b72c
+152c11c adrp x8, #0x2d1d000
+152c120 ldr x8, [x8, #0xdd8]
+152c124 mov x0, x22
+152c128 ldr x1, [x8]
+152c12c bl #0x213de74 System.Collections.Generic.List<SummonDsphOccupyEntry>$$get_Count
+152c130 cmp w21, w0
+152c134 b.lt #0x152bf94
+152c138 mov w0, #1
+152c13c b #0x152c310
+152c140 adrp x8, #0x2cec000
+152c144 ldr x8, [x8, #0x808]
+152c148 mov w1, #1
+152c14c ldr x0, [x8]
+152c150 bl #0xd3e178
+152c154 adrp x8, #0x2ca1000
+152c158 ldr x8, [x8, #0x280]
+152c15c mov x19, x0
+152c160 add x1, sp, #0xc
+152c164 str w21, [sp, #0xc]
+152c168 ldr x0, [x8]
+152c16c bl #0xd388dc
+152c170 mov x20, x0
+152c174 cbnz x19, #0x152c180
+152c178 mov x0, xzr
+152c17c bl #0xd2b72c
+152c180 cbz x20, #0x152c1a8
+152c184 ldr x8, [x19]
+152c188 mov x0, x20
+152c18c ldr x1, [x8, #0x40]
+152c190 bl #0xd38c14
+152c194 cbnz x0, #0x152c1a8
+152c198 bl #0xd2ca48
+152c19c mov x1, xzr
+152c1a0 mov x2, xzr
+152c1a4 bl #0xd2b69c
+152c1a8 ldr w8, [x19, #0x18]
+152c1ac cbnz w8, #0x152c1c0
+152c1b0 bl #0xd2c410
+152c1b4 mov x1, xzr
+152c1b8 mov x2, xzr
+152c1bc bl #0xd2b69c
+152c1c0 str x20, [x19, #0x20]
+152c1c4 adrp x8, #0x2c99000
+152c1c8 ldr x8, [x8, #0xb28]
+152c1cc ldr x0, [x8]
+152c1d0 ldrb w8, [x0, #0x127]
+152c1d4 tbz w8, #1, #0x152c1e4
+152c1d8 ldr w8, [x0, #0xd8]
+152c1dc cbnz w8, #0x152c1e4
+152c1e0 bl #0xd14168
+152c1e4 adrp x8, #0x2c6f000
+152c1e8 ldr x8, [x8, #0xb40]
+152c1ec mov x1, x19
+152c1f0 b #0x152c300
+152c1f4 adrp x8, #0x2cec000
+152c1f8 ldr x8, [x8, #0x808]
+152c1fc mov w1, #2
+152c200 ldr x0, [x8]
+152c204 bl #0xd3e178
+152c208 adrp x8, #0x2ca1000
+152c20c ldr x8, [x8, #0x280]
+152c210 mov x20, x0
+152c214 add x1, sp, #8
+152c218 str w21, [sp, #8]
+152c21c ldr x0, [x8]
+152c220 bl #0xd388dc
+152c224 mov x21, x0
+152c228 cbnz x20, #0x152c234
+152c22c mov x0, xzr
+152c230 bl #0xd2b72c
+152c234 cbz x21, #0x152c25c
+152c238 ldr x8, [x20]
+152c23c mov x0, x21
+152c240 ldr x1, [x8, #0x40]
+152c244 bl #0xd38c14
+152c248 cbnz x0, #0x152c25c
+152c24c bl #0xd2ca48
+152c250 mov x1, xzr
+152c254 mov x2, xzr
+152c258 bl #0xd2b69c
+152c25c ldr w8, [x20, #0x18]
+152c260 cbnz w8, #0x152c274
+152c264 bl #0xd2c410
+152c268 mov x1, xzr
+152c26c mov x2, xzr
+152c270 bl #0xd2b69c
+152c274 str x21, [x20, #0x20]
+152c278 ldr x19, [x19, #0x10]
+152c27c cbnz x19, #0x152c288
+152c280 mov x0, xzr
+152c284 bl #0xd2b72c
+152c288 ldr x19, [x19, #0x20]
+152c28c cbz x19, #0x152c2b4
+152c290 ldr x8, [x20]
+152c294 mov x0, x19
+152c298 ldr x1, [x8, #0x40]
+152c29c bl #0xd38c14
+152c2a0 cbnz x0, #0x152c2b4
+152c2a4 bl #0xd2ca48
+152c2a8 mov x1, xzr
+152c2ac mov x2, xzr
+152c2b0 bl #0xd2b69c
+152c2b4 ldr w8, [x20, #0x18]
+152c2b8 cmp w8, #1
+152c2bc b.hi #0x152c2d0
+152c2c0 bl #0xd2c410
+152c2c4 mov x1, xzr
+152c2c8 mov x2, xzr
+152c2cc bl #0xd2b69c
+152c2d0 str x19, [x20, #0x28]
+152c2d4 adrp x8, #0x2c99000
+152c2d8 ldr x8, [x8, #0xb28]
+152c2dc ldr x0, [x8]
+152c2e0 ldrb w8, [x0, #0x127]
+152c2e4 tbz w8, #1, #0x152c2f4
+152c2e8 ldr w8, [x0, #0xd8]
+152c2ec cbnz w8, #0x152c2f4
+152c2f0 bl #0xd14168
+152c2f4 adrp x8, #0x2d1f000
+152c2f8 ldr x8, [x8, #0x988]
+152c2fc mov x1, x20
+152c300 ldr x0, [x8]
+152c304 mov x2, xzr
+152c308 bl #0xe9d254 A3Game.DLogger$$EditorFatal
+152c30c mov w0, wzr
+152c310 ldp x29, x30, [sp, #0x60]
+152c314 ldp x20, x19, [sp, #0x50]
+152c318 ldp x22, x21, [sp, #0x40]
+152c31c ldp x24, x23, [sp, #0x30]
+152c320 ldp x26, x25, [sp, #0x20]
+152c324 ldp x28, x27, [sp, #0x10]
+152c328 add sp, sp, #0x70
+152c32c ret
+
+A3Game.LevelMapCreater$$CreateMapObj
+152c330 str x27, [sp, #-0x60]!
+152c334 stp x26, x25, [sp, #0x10]
+152c338 stp x24, x23, [sp, #0x20]
+152c33c stp x22, x21, [sp, #0x30]
+152c340 stp x20, x19, [sp, #0x40]
+152c344 stp x29, x30, [sp, #0x50]
+152c348 add x29, sp, #0x50
+152c34c adrp x26, #0x2f3f000
+152c350 ldrb w8, [x26, #0x318]
+152c354 mov x21, x6
+152c358 mov w22, w5
+152c35c mov w23, w4
+152c360 mov w24, w3
+152c364 mov x25, x2
+152c368 mov w20, w1
+152c36c mov x19, x0
+152c370 tbnz w8, #0, #0x152c38c
+152c374 adrp x8, #0x2cf5000
+152c378 ldr x8, [x8, #0xfd0]
+152c37c ldr w0, [x8]
+152c380 bl #0xd04f28
+152c384 mov w8, #1
+152c388 strb w8, [x26, #0x318]
+152c38c ldr x8, [x19, #0x10]
+152c390 cbz x8, #0x152c4f4
+152c394 ldr x26, [x8, #0x18]
+152c398 cbnz x26, #0x152c3a4
+152c39c mov x0, xzr
+152c3a0 bl #0xd2b72c
+152c3a4 ldr w8, [x26, #0x18]
+152c3a8 cmp w8, w20
+152c3ac sxtw x20, w20
+152c3b0 b.hi #0x152c3c4
+152c3b4 bl #0xd2c410
+152c3b8 mov x1, xzr
+152c3bc mov x2, xzr
+152c3c0 bl #0xd2b69c
+152c3c4 add x8, x26, x20, lsl #3
+152c3c8 ldr x20, [x8, #0x20]
+152c3cc mov x1, x25
+152c3d0 mov x2, xzr
+152c3d4 mov x0, x20
+152c3d8 bl #0x16f832c A3Game.DResources$$AllocGameObject
+152c3dc mov x25, x0
+152c3e0 str x25, [x19, #0x20]
+152c3e4 adrp x27, #0x2c78000
+152c3e8 ldr x27, [x27, #0x1b8]
+152c3ec ldr x0, [x27]
+152c3f0 ldrb w8, [x0, #0x127]
+152c3f4 tbz w8, #1, #0x152c404
+152c3f8 ldr w8, [x0, #0xd8]
+152c3fc cbnz w8, #0x152c404
+152c400 bl #0xd14168
+152c404 mov x0, x25
+152c408 mov x1, xzr
+152c40c mov x2, xzr
+152c410 bl #0x1bda5e4 UnityEngine.Object$$op_Equality
+152c414 ldr x25, [x19, #0x20]
+152c418 tbz w0, #0, #0x152c550
+152c41c ldr x0, [x27]
+152c420 ldrb w8, [x0, #0x127]
+152c424 tbz w8, #1, #0x152c434
+152c428 ldr w8, [x0, #0xd8]
+152c42c cbnz w8, #0x152c434
+152c430 bl #0xd14168
+152c434 mov x0, x25
+152c438 mov x1, xzr
+152c43c mov x2, xzr
+152c440 bl #0x1bdd4dc UnityEngine.Object$$op_Inequality
+152c444 adrp x8, #0x2cec000
+152c448 ldr x8, [x8, #0x808]
+152c44c mov w19, w0
+152c450 mov w1, #1
+152c454 ldr x8, [x8]
+152c458 mov x0, x8
+152c45c bl #0xd3e178
+152c460 mov x21, x0
+152c464 cbnz x21, #0x152c46c
+152c468 bl #0xd2b72c
+152c46c cbz x20, #0x152c494
+152c470 ldr x8, [x21]
+152c474 mov x0, x20
+152c478 ldr x1, [x8, #0x40]
+152c47c bl #0xd38c14
+152c480 cbnz x0, #0x152c494
+152c484 bl #0xd2ca48
+152c488 mov x1, xzr
+152c48c mov x2, xzr
+152c490 bl #0xd2b69c
+152c494 ldr w8, [x21, #0x18]
+152c498 cbnz w8, #0x152c4ac
+152c49c bl #0xd2c410
+152c4a0 mov x1, xzr
+152c4a4 mov x2, xzr
+152c4a8 bl #0xd2b69c
+152c4ac str x20, [x21, #0x20]
+152c4b0 adrp x8, #0x2c99000
+152c4b4 ldr x8, [x8, #0xb28]
+152c4b8 ldr x0, [x8]
+152c4bc ldrb w8, [x0, #0x127]
+152c4c0 tbz w8, #1, #0x152c4d0
+152c4c4 ldr w8, [x0, #0xd8]
+152c4c8 cbnz w8, #0x152c4d0
+152c4cc bl #0xd14168
+152c4d0 adrp x8, #0x2cf0000
+152c4d4 ldr x8, [x8, #0x4a8]
+152c4d8 and w0, w19, #1
+152c4dc mov x2, x21
+152c4e0 mov x3, xzr
+152c4e4 ldr x1, [x8]
+152c4e8 bl #0xea1d60 A3Game.DLogger$$EditorAssert
+152c4ec mov w0, wzr
+152c4f0 b #0x152c978
+152c4f4 adrp x8, #0x2cec000
+152c4f8 ldr x8, [x8, #0x808]
+152c4fc mov x1, xzr
+152c500 ldr x0, [x8]
+152c504 bl #0xd3e178
+152c508 adrp x8, #0x2c99000
+152c50c ldr x8, [x8, #0xb28]
+152c510 mov x19, x0
+152c514 ldr x8, [x8]
+152c518 ldrb w9, [x8, #0x127]
+152c51c tbz w9, #1, #0x152c530
+152c520 ldr w9, [x8, #0xd8]
+152c524 cbnz w9, #0x152c530
+152c528 mov x0, x8
+152c52c bl #0xd14168
+152c530 adrp x8, #0x2c70000
+152c534 ldr x8, [x8, #0x750]
+152c538 mov x1, x19
+152c53c mov x2, xzr
+152c540 ldr x0, [x8]
+152c544 bl #0xe9d254 A3Game.DLogger$$EditorFatal
+152c548 mov w0, wzr
+152c54c b #0x152c978
+152c550 cbnz x25, #0x152c55c
+152c554 mov x0, xzr
+152c558 bl #0xd2b72c
+152c55c mov x0, x25
+152c560 mov x1, xzr
+152c564 bl #0x1c583a8 UnityEngine.GameObject$$get_transform
+152c568 adrp x8, #0x2ca3000
+152c56c ldr x8, [x8, #0xa18]
+152c570 mov x2, xzr
+152c574 mov x20, x0
+152c578 ldr x1, [x8]
+152c57c bl #0x16fda28 A3Game.DUnityUtil$$FindChildGameObject
+152c580 str x0, [x19, #0x78]
+152c584 adrp x8, #0x2cc9000
+152c588 ldr x8, [x8, #0xef0]
+152c58c mov x0, x20
+152c590 mov x2, xzr
+152c594 ldr x1, [x8]
+152c598 bl #0x16fda28 A3Game.DUnityUtil$$FindChildGameObject
+152c59c str x0, [x19, #0x80]
+152c5a0 adrp x8, #0x2d28000
+152c5a4 ldr x8, [x8, #0x3b0]
+152c5a8 mov x0, x20
+152c5ac mov x2, xzr
+152c5b0 ldr x1, [x8]
+152c5b4 bl #0x16fda28 A3Game.DUnityUtil$$FindChildGameObject
+152c5b8 str x0, [x19, #0x88]
+152c5bc adrp x8, #0x2cd3000
+152c5c0 ldr x8, [x8, #0x528]
+152c5c4 mov x0, x20
+152c5c8 mov x2, xzr
+152c5cc ldr x1, [x8]
+152c5d0 bl #0x16fda28 A3Game.DUnityUtil$$FindChildGameObject
+152c5d4 adrp x8, #0x2cde000
+152c5d8 ldr x8, [x8, #0x198]
+152c5dc mov x26, x0
+152c5e0 mov x0, x20
+152c5e4 mov x2, xzr
+152c5e8 ldr x1, [x8]
+152c5ec bl #0x16fda28 A3Game.DUnityUtil$$FindChildGameObject
+152c5f0 adrp x8, #0x2d13000
+152c5f4 adrp x9, #0x2c97000
+152c5f8 ldr x8, [x8, #0x480]
+152c5fc ldr x9, [x9, #0x540]
+152c600 mov x25, x0
+152c604 mov x0, x20
+152c608 ldr x1, [x8]
+152c60c ldr x2, [x9]
+152c610 bl #0x18e1a64 A3Game.DUnityUtil$$FindChildComponent<object>
+152c614 str x0, [x19, #0xb8]
+152c618 and w1, w24, #1
+152c61c mov x0, x19
+152c620 bl #0x152c994 A3Game.LevelMapCreater$$ShowBossIcon
+152c624 ldr x0, [x27]
+152c628 ldrb w8, [x0, #0x127]
+152c62c tbz w8, #1, #0x152c63c
+152c630 ldr w8, [x0, #0xd8]
+152c634 cbnz w8, #0x152c63c
+152c638 bl #0xd14168
+152c63c mov x0, x26
+152c640 mov x1, xzr
+152c644 mov x2, xzr
+152c648 bl #0x1bdd4dc UnityEngine.Object$$op_Inequality
+152c64c tbz w0, #0, #0x152c66c
+152c650 cbnz x26, #0x152c65c
+152c654 mov x0, xzr
+152c658 bl #0xd2b72c
+152c65c and w1, w23, #1
+152c660 mov x0, x26
+152c664 mov x2, xzr
+152c668 bl #0x1c58560 UnityEngine.GameObject$$SetActive
+152c66c ldr x0, [x27]
+152c670 ldr x24, [x19, #0xb8]
+152c674 ldrb w8, [x0, #0x127]
+152c678 tbz w8, #1, #0x152c688
+152c67c ldr w8, [x0, #0xd8]
+152c680 cbnz w8, #0x152c688
+152c684 bl #0xd14168
+152c688 mov x0, x24
+152c68c mov x1, xzr
+152c690 mov x2, xzr
+152c694 bl #0x1bdd4dc UnityEngine.Object$$op_Inequality
+152c698 tbz w0, #0, #0x152c794
+152c69c tbz w23, #0, #0x152c794
+152c6a0 ldr x0, [x27]
+152c6a4 ldrb w8, [x0, #0x127]
+152c6a8 tbz w8, #1, #0x152c6b8
+152c6ac ldr w8, [x0, #0xd8]
+152c6b0 cbnz w8, #0x152c6b8
+152c6b4 bl #0xd14168
+152c6b8 mov x0, x25
+152c6bc mov x1, xzr
+152c6c0 mov x2, xzr
+152c6c4 bl #0x1bdd4dc UnityEngine.Object$$op_Inequality
+152c6c8 tbz w0, #0, #0x152c73c
+152c6cc cbnz x25, #0x152c6d8
+152c6d0 mov x0, xzr
+152c6d4 bl #0xd2b72c
+152c6d8 and w1, w22, #1
+152c6dc mov x0, x25
+152c6e0 mov x2, xzr
+152c6e4 bl #0x1c58560 UnityEngine.GameObject$$SetActive
+152c6e8 ldr x23, [x19, #0xb8]
+152c6ec cbnz x23, #0x152c6f8
+152c6f0 mov x0, xzr
+152c6f4 bl #0xd2b72c
+152c6f8 mov x0, x23
+152c6fc mov x1, xzr
+152c700 bl #0x1c5124c UnityEngine.Component$$get_gameObject
+152c704 mov x23, x0
+152c708 cbnz x23, #0x152c710
+152c70c bl #0xd2b72c
+152c710 mvn w8, w22
+152c714 and w1, w8, #1
+152c718 mov x0, x23
+152c71c mov x2, xzr
+152c720 bl #0x1c58560 UnityEngine.GameObject$$SetActive
+152c724 ldr x22, [x19, #0xb8]
+152c728 cbnz x22, #0x152c734
+152c72c mov x0, xzr
+152c730 bl #0xd2b72c
+152c734 mov x0, x22
+152c738 b #0x152c788
+152c73c ldr x23, [x19, #0xb8]
+152c740 tbz w22, #0, #0x152c778
+152c744 adrp x8, #0x2c8c000
+152c748 ldr x8, [x8, #0xf90]
+152c74c ldr x0, [x8]
+152c750 bl #0x17fa038 A3Game.Singleton<UISpriteHelper>$$get_Instance
+152c754 mov x21, x0
+152c758 cbnz x21, #0x152c760
+152c75c bl #0xd2b72c
+152c760 mov w1, #0x542c
+152c764 movk w1, #0x131, lsl #16
+152c768 mov x0, x21
+152c76c mov x2, xzr
+152c770 bl #0x140ee48 A3Game.TextConfigMgr$$GetText
+152c774 mov x21, x0
+152c778 cbnz x23, #0x152c784
+152c77c mov x0, xzr
+152c780 bl #0xd2b72c
+152c784 mov x0, x23
+152c788 mov x1, x21
+152c78c mov x2, xzr
+152c790 bl #0x21fa2f8 UnityEngine.TextMesh$$set_text
+152c794 adrp x8, #0x2ccd000
+152c798 ldr x8, [x8, #0xbf8]
+152c79c mov x0, x20
+152c7a0 mov x2, xzr
+152c7a4 ldr x1, [x8]
+152c7a8 bl #0x16fda28 A3Game.DUnityUtil$$FindChildGameObject
+152c7ac str x0, [x19, #0x28]
+152c7b0 adrp x8, #0x2d14000
+152c7b4 ldr x8, [x8, #0x3c0]
+152c7b8 mov x0, x20
+152c7bc mov x2, xzr
+152c7c0 ldr x1, [x8]
+152c7c4 bl #0x16fda28 A3Game.DUnityUtil$$FindChildGameObject
+152c7c8 str x0, [x19, #0x30]
+152c7cc adrp x8, #0x2ca7000
+152c7d0 ldr x8, [x8, #0xc8]
+152c7d4 mov x0, x20
+152c7d8 mov x2, xzr
+152c7dc ldr x1, [x8]
+152c7e0 bl #0x16fda28 A3Game.DUnityUtil$$FindChildGameObject
+152c7e4 str x0, [x19, #0x40]
+152c7e8 adrp x8, #0x2c7c000
+152c7ec ldr x8, [x8, #0x860]
+152c7f0 mov x0, x20
+152c7f4 mov x2, xzr
+152c7f8 ldr x1, [x8]
+152c7fc bl #0x16fda28 A3Game.DUnityUtil$$FindChildGameObject
+152c800 str x0, [x19, #0x38]
+152c804 adrp x8, #0x2d15000
+152c808 ldr x8, [x8, #0xa68]
+152c80c mov x0, x20
+152c810 mov x2, xzr
+152c814 ldr x1, [x8]
+152c818 bl #0x16fd980 A3Game.DUnityUtil$$FindChild
+152c81c mov x21, x0
+152c820 str x21, [x19, #0x48]
+152c824 ldr x0, [x27]
+152c828 ldrb w8, [x0, #0x127]
+152c82c tbz w8, #1, #0x152c83c
+152c830 ldr w8, [x0, #0xd8]
+152c834 cbnz w8, #0x152c83c
+152c838 bl #0xd14168
+152c83c mov x0, x21
+152c840 mov x1, xzr
+152c844 mov x2, xzr
+152c848 bl #0x1bdd4dc UnityEngine.Object$$op_Inequality
+152c84c tbz w0, #0, #0x152c88c
+152c850 ldr x21, [x19, #0x48]
+152c854 cbnz x21, #0x152c860
+152c858 mov x0, xzr
+152c85c bl #0xd2b72c
+152c860 mov x0, x21
+152c864 mov x1, xzr
+152c868 bl #0x1c5124c UnityEngine.Component$$get_gameObject
+152c86c mov x21, x0
+152c870 str x21, [x19, #0x50]
+152c874 cbnz x21, #0x152c87c
+152c878 bl #0xd2b72c
+152c87c mov x0, x21
+152c880 mov w1, wzr
+152c884 mov x2, xzr
+152c888 bl #0x1c58560 UnityEngine.GameObject$$SetActive
+152c88c adrp x8, #0x2c78000
+152c890 ldr x8, [x8, #0x720]
+152c894 mov x0, x20
+152c898 mov x2, xzr
+152c89c ldr x1, [x8]
+152c8a0 bl #0x16fda28 A3Game.DUnityUtil$$FindChildGameObject
+152c8a4 str x0, [x19, #0x60]
+152c8a8 adrp x8, #0x2ceb000
+152c8ac ldr x8, [x8, #0xdb0]
+152c8b0 mov x0, x20
+152c8b4 mov x2, xzr
+152c8b8 ldr x1, [x8]
+152c8bc bl #0x16fda28 A3Game.DUnityUtil$$FindChildGameObject
+152c8c0 str x0, [x19, #0x58]
+152c8c4 adrp x8, #0x2d1a000
+152c8c8 ldr x8, [x8, #0x5b0]
+152c8cc mov x0, x20
+152c8d0 mov x2, xzr
+152c8d4 ldr x1, [x8]
+152c8d8 bl #0x16fda28 A3Game.DUnityUtil$$FindChildGameObject
+152c8dc str x0, [x19, #0x70]
+152c8e0 adrp x8, #0x2cb9000
+152c8e4 ldr x8, [x8, #0x8b0]
+152c8e8 mov x0, x20
+152c8ec mov x2, xzr
+152c8f0 ldr x1, [x8]
+152c8f4 bl #0x16fda28 A3Game.DUnityUtil$$FindChildGameObject
+152c8f8 str x0, [x19, #0x68]
+152c8fc adrp x8, #0x2d07000
+152c900 adrp x21, #0x2d09000
+152c904 ldr x8, [x8, #0x7c0]
+152c908 ldr x21, [x21, #0x848]
+152c90c mov x0, x20
+152c910 ldr x1, [x8]
+152c914 ldr x2, [x21]
+152c918 bl #0x18e1a64 A3Game.DUnityUtil$$FindChildComponent<object>
+152c91c str x0, [x19, #0x90]
+152c920 adrp x8, #0x2cd2000
+152c924 ldr x8, [x8, #0xf18]
+152c928 ldr x2, [x21]
+152c92c mov x0, x20
+152c930 ldr x1, [x8]
+152c934 bl #0x18e1a64 A3Game.DUnityUtil$$FindChildComponent<object>
+152c938 str x0, [x19, #0x98]
+152c93c adrp x8, #0x2cb6000
+152c940 ldr x8, [x8, #0x950]
+152c944 ldr x2, [x21]
+152c948 mov x0, x20
+152c94c ldr x1, [x8]
+152c950 bl #0x18e1a64 A3Game.DUnityUtil$$FindChildComponent<object>
+152c954 str x0, [x19, #0xa0]
+152c958 adrp x8, #0x2c71000
+152c95c ldr x8, [x8, #0xf38]
+152c960 mov x0, x20
+152c964 mov x2, xzr
+152c968 ldr x1, [x8]
+152c96c bl #0x16fda28 A3Game.DUnityUtil$$FindChildGameObject
+152c970 str x0, [x19, #0xa8]
+152c974 mov w0, #1
+152c978 ldp x29, x30, [sp, #0x50]
+152c97c ldp x20, x19, [sp, #0x40]
+152c980 ldp x22, x21, [sp, #0x30]
+152c984 ldp x24, x23, [sp, #0x20]
+152c988 ldp x26, x25, [sp, #0x10]
+152c98c ldr x27, [sp], #0x60
+152c990 ret

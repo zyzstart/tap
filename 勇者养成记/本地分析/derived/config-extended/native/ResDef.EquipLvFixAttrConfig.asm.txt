@@ -1,0 +1,59 @@
+0x1dd4a04: str       x23, [sp, #-0x40]!
+0x1dd4a08: stp       x22, x21, [sp, #0x10]
+0x1dd4a0c: stp       x20, x19, [sp, #0x20]
+0x1dd4a10: stp       x29, x30, [sp, #0x30]
+0x1dd4a14: add       x29, sp, #0x30
+0x1dd4a18: mov       x21, x0
+0x1dd4a1c: mov       x19, x3
+0x1dd4a20: mov       x20, x1
+0x1dd4a24: add       x22, x21, #0x10
+0x1dd4a28: cbnz      x20, #0x1dd4a34
+0x1dd4a2c: mov       x0, xzr
+0x1dd4a30: bl        #0xd2b72c ; 
+0x1dd4a34: mov       x0, x20
+0x1dd4a38: mov       x1, x22
+0x1dd4a3c: mov       x2, xzr
+0x1dd4a40: bl        #0x21f67d0 ; ProtoBase.PbReadBuf$$readInt32
+0x1dd4a44: cbnz      w0, #0x1dd4adc
+0x1dd4a48: add       x22, x21, #0x14
+0x1dd4a4c: cbnz      x20, #0x1dd4a58
+0x1dd4a50: mov       x0, xzr
+0x1dd4a54: bl        #0xd2b72c ; 
+0x1dd4a58: mov       x0, x20
+0x1dd4a5c: mov       x1, x22
+0x1dd4a60: mov       x2, xzr
+0x1dd4a64: bl        #0x21f6908 ; ProtoBase.PbReadBuf$$readUInt32
+0x1dd4a68: cbnz      w0, #0x1dd4adc
+0x1dd4a6c: mov       x23, xzr
+0x1dd4a70: ldr       x22, [x21, #0x18]
+0x1dd4a74: cbnz      x22, #0x1dd4a80
+0x1dd4a78: mov       x0, xzr
+0x1dd4a7c: bl        #0xd2b72c ; 
+0x1dd4a80: ldr       w8, [x22, #0x18]
+0x1dd4a84: cmp       x23, x8
+0x1dd4a88: b.lo      #0x1dd4a9c
+0x1dd4a8c: bl        #0xd2c410 ; 
+0x1dd4a90: mov       x1, xzr
+0x1dd4a94: mov       x2, xzr
+0x1dd4a98: bl        #0xd2b69c ; 
+0x1dd4a9c: add       x8, x22, x23, lsl #3
+0x1dd4aa0: ldr       x22, [x8, #0x20]
+0x1dd4aa4: cbnz      x22, #0x1dd4ab0
+0x1dd4aa8: mov       x0, xzr
+0x1dd4aac: bl        #0xd2b72c ; 
+0x1dd4ab0: mov       w2, #1
+0x1dd4ab4: mov       x0, x22
+0x1dd4ab8: mov       x1, x20
+0x1dd4abc: mov       x3, x19
+0x1dd4ac0: mov       x4, xzr
+0x1dd4ac4: bl        #0x1e879c8 ; ResDef.ResAttrImpactData$$unpack
+0x1dd4ac8: cbnz      w0, #0x1dd4adc
+0x1dd4acc: cmp       x23, #1
+0x1dd4ad0: add       x23, x23, #1
+0x1dd4ad4: b.lt      #0x1dd4a70
+0x1dd4ad8: mov       w0, wzr
+0x1dd4adc: ldp       x29, x30, [sp, #0x30]
+0x1dd4ae0: ldp       x20, x19, [sp, #0x20]
+0x1dd4ae4: ldp       x22, x21, [sp, #0x10]
+0x1dd4ae8: ldr       x23, [sp], #0x40
+0x1dd4aec: ret       

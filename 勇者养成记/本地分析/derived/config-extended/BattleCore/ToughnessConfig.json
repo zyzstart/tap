@@ -1,0 +1,222 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_fp_toughnessconfig.bytes.ab",
+    "path_id": -8375264138825602386,
+    "name": "ToughnessConfig",
+    "sha256": "2249a381b1f173bdfbd64efb0d450c74dca98896396a0b6ff87e2a2e39a343fa",
+    "export": "derived/unity/text/assets_resources_config_resbin_fp_toughnessconfig.bytes/ToughnessConfig__-8375264138825602386.bin",
+    "schema": "BattleCore.ToughnessConfig",
+    "path_id_decimal": "-8375264138825602386",
+    "legacy_status": "raw-header-verified",
+    "legacy_reason": "Unsupported arrays/nested/enum fields: uint[] BeforeBreakUpBuff, uint[] AfterBreakUpBuff",
+    "status": "decoded-validated-native-recursive",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 356,
+      "version": 1,
+      "record_count": 8,
+      "stored_crc32": "5f07e198",
+      "computed_inverted_crc32": "5f07e198"
+    },
+    "native_layout_verified": true,
+    "schema_file": "derived/config-extended/schemas/BattleCore.ToughnessConfig.json",
+    "minimum_record_size": 42,
+    "min_expected_payload_bytes": 336,
+    "actual_payload_bytes": 336,
+    "decoded_record_count": 8,
+    "validation": {
+      "header_verified": true,
+      "count_verified": true,
+      "exact_eof": true,
+      "full_reencode_equal": true,
+      "full_reencode_sha256": "2249a381b1f173bdfbd64efb0d450c74dca98896396a0b6ff87e2a2e39a343fa",
+      "decoded_node_count": 96,
+      "payload_bytes": 336
+    },
+    "arrays": [
+      {
+        "field": "BeforeBreakUpBuff",
+        "count": 4,
+        "count_encoding": "none-native-fixed"
+      },
+      {
+        "field": "AfterBreakUpBuff",
+        "count": 4,
+        "count_encoding": "none-native-fixed"
+      }
+    ],
+    "decoded_json": "derived/config-extended/BattleCore/ToughnessConfig.json",
+    "decoded_csv": "derived/config-extended/BattleCore/ToughnessConfig.csv"
+  },
+  "precision": "Exact JSON integer number tokens, with decimal-string mirrors for every int64/uint64/FP. FP is raw signed int64; no scaling.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "ID": 10001,
+      "ToughnessType": 1,
+      "IsCanRecover": 0,
+      "BeforeBreakUpBuff": [
+        5000001,
+        0,
+        0,
+        0
+      ],
+      "AfterBreakUpBuff": [
+        5000011,
+        0,
+        0,
+        0
+      ],
+      "RecoverTime": 0,
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 62,
+      "ID": 10002,
+      "ToughnessType": 2,
+      "IsCanRecover": 0,
+      "BeforeBreakUpBuff": [
+        5000002,
+        0,
+        0,
+        0
+      ],
+      "AfterBreakUpBuff": [
+        5000012,
+        0,
+        0,
+        0
+      ],
+      "RecoverTime": 0,
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 104,
+      "ID": 10003,
+      "ToughnessType": 3,
+      "IsCanRecover": 0,
+      "BeforeBreakUpBuff": [
+        5000003,
+        0,
+        0,
+        0
+      ],
+      "AfterBreakUpBuff": [
+        5000013,
+        0,
+        0,
+        0
+      ],
+      "RecoverTime": 0,
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 146,
+      "ID": 10004,
+      "ToughnessType": 4,
+      "IsCanRecover": 0,
+      "BeforeBreakUpBuff": [
+        5000004,
+        0,
+        0,
+        0
+      ],
+      "AfterBreakUpBuff": [
+        5000014,
+        0,
+        0,
+        0
+      ],
+      "RecoverTime": 0,
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 188,
+      "ID": 20001,
+      "ToughnessType": 1,
+      "IsCanRecover": 1,
+      "BeforeBreakUpBuff": [
+        5000101,
+        0,
+        0,
+        0
+      ],
+      "AfterBreakUpBuff": [
+        5000111,
+        0,
+        0,
+        0
+      ],
+      "RecoverTime": 10,
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 230,
+      "ID": 20002,
+      "ToughnessType": 2,
+      "IsCanRecover": 1,
+      "BeforeBreakUpBuff": [
+        5000102,
+        0,
+        0,
+        0
+      ],
+      "AfterBreakUpBuff": [
+        5000112,
+        0,
+        0,
+        0
+      ],
+      "RecoverTime": 10,
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 272,
+      "ID": 20003,
+      "ToughnessType": 3,
+      "IsCanRecover": 1,
+      "BeforeBreakUpBuff": [
+        5000103,
+        0,
+        0,
+        0
+      ],
+      "AfterBreakUpBuff": [
+        5000113,
+        0,
+        0,
+        0
+      ],
+      "RecoverTime": 10,
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 314,
+      "ID": 20004,
+      "ToughnessType": 4,
+      "IsCanRecover": 1,
+      "BeforeBreakUpBuff": [
+        5000104,
+        0,
+        0,
+        0
+      ],
+      "AfterBreakUpBuff": [
+        5000114,
+        0,
+        0,
+        0
+      ],
+      "RecoverTime": 10,
+      "_byte_length": 42
+    }
+  ]
+}

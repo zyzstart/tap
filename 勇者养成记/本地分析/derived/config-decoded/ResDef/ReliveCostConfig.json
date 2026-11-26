@@ -1,0 +1,145 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_relivecostconfig.bytes.ab",
+    "path_id": 5737947531911239745,
+    "name": "ReliveCostConfig",
+    "sha256": "394aade03a0eda773f20086cc418495381ce1775739307e7db68a84a446d3111",
+    "export": "derived/unity/text/assets_resources_config_resbin_relivecostconfig.bytes/ReliveCostConfig__5737947531911239745.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 220,
+      "version": 1,
+      "record_count": 8,
+      "stored_crc32": "788ba075",
+      "computed_inverted_crc32": "788ba075"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "ReliveCostConfig",
+      "fields": [
+        {
+          "type": "int",
+          "name": "ReliveCnt",
+          "object_offset": 16
+        },
+        {
+          "type": "int",
+          "name": "Diamond",
+          "object_offset": 20
+        },
+        {
+          "type": "string",
+          "name": "IOSVestBag",
+          "object_offset": 24
+        }
+      ],
+      "unpack_va": 32036700,
+      "dump_line": 207348
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1e8d790",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8d7b4",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8d7f8",
+        "target_va": "0x21f6ce8",
+        "opcode": "B-tail",
+        "reader": "readString",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 8
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "ReliveCnt": 1,
+      "Diamond": 30,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 25
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 45,
+      "ReliveCnt": 2,
+      "Diamond": 60,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 25
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 70,
+      "ReliveCnt": 3,
+      "Diamond": 100,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 25
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 95,
+      "ReliveCnt": 4,
+      "Diamond": 200,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 25
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 120,
+      "ReliveCnt": 5,
+      "Diamond": 400,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 25
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 145,
+      "ReliveCnt": 6,
+      "Diamond": 600,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 25
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 170,
+      "ReliveCnt": 7,
+      "Diamond": 800,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 25
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 195,
+      "ReliveCnt": 8,
+      "Diamond": 1000,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 25
+    }
+  ]
+}

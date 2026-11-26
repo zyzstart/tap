@@ -1,0 +1,455 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_elementteamrankawardconfig.bytes.ab",
+    "path_id": 5409937542953603073,
+    "name": "ElementTeamRankAwardConfig",
+    "sha256": "428541ef6fac767fe833013ff79ecef756f5c31f22670ebb2ebefe61b8060085",
+    "export": "derived/unity/text/assets_resources_config_resbin_elementteamrankawardconfig.bytes/ElementTeamRankAwardConfig__5409937542953603073.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 660,
+      "version": 1,
+      "record_count": 40,
+      "stored_crc32": "57985ad2",
+      "computed_inverted_crc32": "57985ad2"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "ElementTeamRankAwardConfig",
+      "fields": [
+        {
+          "type": "int",
+          "name": "TowerID",
+          "object_offset": 16
+        },
+        {
+          "type": "int",
+          "name": "MinRank",
+          "object_offset": 20
+        },
+        {
+          "type": "int",
+          "name": "MaxRank",
+          "object_offset": 24
+        },
+        {
+          "type": "int",
+          "name": "BootyID",
+          "object_offset": 28
+        }
+      ],
+      "unpack_va": 31267808,
+      "dump_line": 203144
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1dd1c14",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd1c38",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd1c5c",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd1c9c",
+        "target_va": "0x21f67d0",
+        "opcode": "B-tail",
+        "reader": "readInt32",
+        "destination_object_offset": 28,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 40
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "TowerID": 101,
+      "MinRank": 1,
+      "MaxRank": 1,
+      "BootyID": 62120,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 36,
+      "TowerID": 101,
+      "MinRank": 2,
+      "MaxRank": 2,
+      "BootyID": 62121,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 52,
+      "TowerID": 101,
+      "MinRank": 3,
+      "MaxRank": 3,
+      "BootyID": 62122,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 68,
+      "TowerID": 101,
+      "MinRank": 4,
+      "MaxRank": 10,
+      "BootyID": 62123,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 84,
+      "TowerID": 101,
+      "MinRank": 11,
+      "MaxRank": 50,
+      "BootyID": 62124,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 100,
+      "TowerID": 101,
+      "MinRank": 51,
+      "MaxRank": 100,
+      "BootyID": 62125,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 116,
+      "TowerID": 101,
+      "MinRank": 101,
+      "MaxRank": 1000,
+      "BootyID": 62126,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 132,
+      "TowerID": 101,
+      "MinRank": 1001,
+      "MaxRank": 4000,
+      "BootyID": 62127,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 148,
+      "TowerID": 101,
+      "MinRank": 4001,
+      "MaxRank": 7000,
+      "BootyID": 62128,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 164,
+      "TowerID": 101,
+      "MinRank": 7001,
+      "MaxRank": 10000,
+      "BootyID": 62129,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 180,
+      "TowerID": 102,
+      "MinRank": 1,
+      "MaxRank": 1,
+      "BootyID": 62220,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 196,
+      "TowerID": 102,
+      "MinRank": 2,
+      "MaxRank": 2,
+      "BootyID": 62221,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 212,
+      "TowerID": 102,
+      "MinRank": 3,
+      "MaxRank": 3,
+      "BootyID": 62222,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 228,
+      "TowerID": 102,
+      "MinRank": 4,
+      "MaxRank": 10,
+      "BootyID": 62223,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 244,
+      "TowerID": 102,
+      "MinRank": 11,
+      "MaxRank": 50,
+      "BootyID": 62224,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 260,
+      "TowerID": 102,
+      "MinRank": 51,
+      "MaxRank": 100,
+      "BootyID": 62225,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 276,
+      "TowerID": 102,
+      "MinRank": 101,
+      "MaxRank": 1000,
+      "BootyID": 62226,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 292,
+      "TowerID": 102,
+      "MinRank": 1001,
+      "MaxRank": 4000,
+      "BootyID": 62227,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 308,
+      "TowerID": 102,
+      "MinRank": 4001,
+      "MaxRank": 7000,
+      "BootyID": 62228,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 19,
+      "_byte_offset": 324,
+      "TowerID": 102,
+      "MinRank": 7001,
+      "MaxRank": 10000,
+      "BootyID": 62229,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 20,
+      "_byte_offset": 340,
+      "TowerID": 103,
+      "MinRank": 1,
+      "MaxRank": 1,
+      "BootyID": 62320,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 21,
+      "_byte_offset": 356,
+      "TowerID": 103,
+      "MinRank": 2,
+      "MaxRank": 2,
+      "BootyID": 62321,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 22,
+      "_byte_offset": 372,
+      "TowerID": 103,
+      "MinRank": 3,
+      "MaxRank": 3,
+      "BootyID": 62322,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 23,
+      "_byte_offset": 388,
+      "TowerID": 103,
+      "MinRank": 4,
+      "MaxRank": 10,
+      "BootyID": 62323,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 24,
+      "_byte_offset": 404,
+      "TowerID": 103,
+      "MinRank": 11,
+      "MaxRank": 50,
+      "BootyID": 62324,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 25,
+      "_byte_offset": 420,
+      "TowerID": 103,
+      "MinRank": 51,
+      "MaxRank": 100,
+      "BootyID": 62325,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 26,
+      "_byte_offset": 436,
+      "TowerID": 103,
+      "MinRank": 101,
+      "MaxRank": 1000,
+      "BootyID": 62326,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 27,
+      "_byte_offset": 452,
+      "TowerID": 103,
+      "MinRank": 1001,
+      "MaxRank": 4000,
+      "BootyID": 62327,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 28,
+      "_byte_offset": 468,
+      "TowerID": 103,
+      "MinRank": 4001,
+      "MaxRank": 7000,
+      "BootyID": 62328,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 29,
+      "_byte_offset": 484,
+      "TowerID": 103,
+      "MinRank": 7001,
+      "MaxRank": 10000,
+      "BootyID": 62329,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 30,
+      "_byte_offset": 500,
+      "TowerID": 104,
+      "MinRank": 1,
+      "MaxRank": 1,
+      "BootyID": 62420,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 31,
+      "_byte_offset": 516,
+      "TowerID": 104,
+      "MinRank": 2,
+      "MaxRank": 2,
+      "BootyID": 62421,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 32,
+      "_byte_offset": 532,
+      "TowerID": 104,
+      "MinRank": 3,
+      "MaxRank": 3,
+      "BootyID": 62422,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 33,
+      "_byte_offset": 548,
+      "TowerID": 104,
+      "MinRank": 4,
+      "MaxRank": 10,
+      "BootyID": 62423,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 34,
+      "_byte_offset": 564,
+      "TowerID": 104,
+      "MinRank": 11,
+      "MaxRank": 50,
+      "BootyID": 62424,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 35,
+      "_byte_offset": 580,
+      "TowerID": 104,
+      "MinRank": 51,
+      "MaxRank": 100,
+      "BootyID": 62425,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 36,
+      "_byte_offset": 596,
+      "TowerID": 104,
+      "MinRank": 101,
+      "MaxRank": 1000,
+      "BootyID": 62426,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 37,
+      "_byte_offset": 612,
+      "TowerID": 104,
+      "MinRank": 1001,
+      "MaxRank": 4000,
+      "BootyID": 62427,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 38,
+      "_byte_offset": 628,
+      "TowerID": 104,
+      "MinRank": 4001,
+      "MaxRank": 7000,
+      "BootyID": 62428,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 39,
+      "_byte_offset": 644,
+      "TowerID": 104,
+      "MinRank": 7001,
+      "MaxRank": 10000,
+      "BootyID": 62429,
+      "_byte_length": 16
+    }
+  ]
+}

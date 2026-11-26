@@ -1,0 +1,498 @@
+{
+  "namespace": "ResDef",
+  "name": "ForeverAtrEntryConfig",
+  "fields": [
+    {
+      "type": "uint",
+      "name": "LevelID",
+      "object_offset": 16
+    },
+    {
+      "type": "uint",
+      "name": "CloseID",
+      "object_offset": 20
+    },
+    {
+      "type": "ForeverAtrEntry[]",
+      "name": "Atrrs",
+      "object_offset": 24
+    }
+  ],
+  "unpack_va": 30705368,
+  "dump_line": 204070,
+  "layout": [
+    {
+      "type": "uint",
+      "name": "LevelID",
+      "object_offset": 16,
+      "wire_type": "uint",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d4870c",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "self",
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "type": "uint",
+      "name": "CloseID",
+      "object_offset": 20,
+      "wire_type": "uint",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d48730",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "self",
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ForeverAtrEntry[]",
+      "name": "Atrrs",
+      "object_offset": 24,
+      "wire_type": "ForeverAtrEntry",
+      "kind": "array",
+      "count": 5,
+      "count_encoding": "none-native-fixed",
+      "native_calls": [
+        {
+          "instruction_va": "0x1d48788",
+          "target_va": "0x1d48400",
+          "target_names": [
+            "ResDef.ForeverAtrEntry$$unpack"
+          ],
+          "opcode": "BL",
+          "kind": "nested",
+          "nested_schema": "ResDef.ForeverAtrEntry",
+          "destination": [
+            "element",
+            24,
+            0
+          ],
+          "cut_version": 1
+        },
+        {
+          "instruction_va": "0x1d48788",
+          "target_va": "0x1d48400",
+          "target_names": [
+            "ResDef.ForeverAtrEntry$$unpack"
+          ],
+          "opcode": "BL",
+          "kind": "nested",
+          "nested_schema": "ResDef.ForeverAtrEntry",
+          "destination": [
+            "element",
+            24,
+            1
+          ],
+          "cut_version": 1
+        },
+        {
+          "instruction_va": "0x1d48788",
+          "target_va": "0x1d48400",
+          "target_names": [
+            "ResDef.ForeverAtrEntry$$unpack"
+          ],
+          "opcode": "BL",
+          "kind": "nested",
+          "nested_schema": "ResDef.ForeverAtrEntry",
+          "destination": [
+            "element",
+            24,
+            2
+          ],
+          "cut_version": 1
+        },
+        {
+          "instruction_va": "0x1d48788",
+          "target_va": "0x1d48400",
+          "target_names": [
+            "ResDef.ForeverAtrEntry$$unpack"
+          ],
+          "opcode": "BL",
+          "kind": "nested",
+          "nested_schema": "ResDef.ForeverAtrEntry",
+          "destination": [
+            "element",
+            24,
+            3
+          ],
+          "cut_version": 1
+        },
+        {
+          "instruction_va": "0x1d48788",
+          "target_va": "0x1d48400",
+          "target_names": [
+            "ResDef.ForeverAtrEntry$$unpack"
+          ],
+          "opcode": "BL",
+          "kind": "nested",
+          "nested_schema": "ResDef.ForeverAtrEntry",
+          "destination": [
+            "element",
+            24,
+            4
+          ],
+          "cut_version": 1
+        }
+      ],
+      "nested_schema": "ResDef.ForeverAtrEntry"
+    }
+  ],
+  "native_evidence": {
+    "method_start_va": "0x1d486d8",
+    "instruction_steps": 106,
+    "event_count": 7,
+    "branch_evidence": [
+      {
+        "instruction_va": "0x1d48754",
+        "cmp_va": "0x1d48750",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 24,
+        "index": 0
+      },
+      {
+        "instruction_va": "0x1d48798",
+        "target_va": "0x1d4873c",
+        "kind": "concrete-loop-test",
+        "left": 0,
+        "right": 4,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1d48754",
+        "cmp_va": "0x1d48750",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 24,
+        "index": 1
+      },
+      {
+        "instruction_va": "0x1d48798",
+        "target_va": "0x1d4873c",
+        "kind": "concrete-loop-test",
+        "left": 1,
+        "right": 4,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1d48754",
+        "cmp_va": "0x1d48750",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 24,
+        "index": 2
+      },
+      {
+        "instruction_va": "0x1d48798",
+        "target_va": "0x1d4873c",
+        "kind": "concrete-loop-test",
+        "left": 2,
+        "right": 4,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1d48754",
+        "cmp_va": "0x1d48750",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 24,
+        "index": 3
+      },
+      {
+        "instruction_va": "0x1d48798",
+        "target_va": "0x1d4873c",
+        "kind": "concrete-loop-test",
+        "left": 3,
+        "right": 4,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1d48754",
+        "cmp_va": "0x1d48750",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 24,
+        "index": 4
+      },
+      {
+        "instruction_va": "0x1d48798",
+        "target_va": "0x1d4873c",
+        "kind": "concrete-loop-test",
+        "left": 4,
+        "right": 4,
+        "condition": "lt",
+        "taken": false
+      }
+    ],
+    "loops": [
+      {
+        "backedge_va": "0x1d48798",
+        "body_start_va": "0x1d4873c",
+        "body": [
+          {
+            "instruction_va": "0x1d4873c",
+            "bytes": "950e40f9",
+            "mnemonic": "ldr",
+            "operands": "x21, [x20, #0x18]"
+          },
+          {
+            "instruction_va": "0x1d48740",
+            "bytes": "750000b5",
+            "mnemonic": "cbnz",
+            "operands": "x21, #0x1d4874c"
+          },
+          {
+            "instruction_va": "0x1d48744",
+            "bytes": "e0031faa",
+            "mnemonic": "mov",
+            "operands": "x0, xzr"
+          },
+          {
+            "instruction_va": "0x1d48748",
+            "bytes": "f98bbf97",
+            "mnemonic": "bl",
+            "operands": "#0xd2b72c"
+          },
+          {
+            "instruction_va": "0x1d4874c",
+            "bytes": "a81a40b9",
+            "mnemonic": "ldr",
+            "operands": "w8, [x21, #0x18]"
+          },
+          {
+            "instruction_va": "0x1d48750",
+            "bytes": "df0208eb",
+            "mnemonic": "cmp",
+            "operands": "x22, x8"
+          },
+          {
+            "instruction_va": "0x1d48754",
+            "bytes": "a3000054",
+            "mnemonic": "b.lo",
+            "operands": "#0x1d48768"
+          },
+          {
+            "instruction_va": "0x1d48758",
+            "bytes": "2e8fbf97",
+            "mnemonic": "bl",
+            "operands": "#0xd2c410"
+          },
+          {
+            "instruction_va": "0x1d4875c",
+            "bytes": "e1031faa",
+            "mnemonic": "mov",
+            "operands": "x1, xzr"
+          },
+          {
+            "instruction_va": "0x1d48760",
+            "bytes": "e2031faa",
+            "mnemonic": "mov",
+            "operands": "x2, xzr"
+          },
+          {
+            "instruction_va": "0x1d48764",
+            "bytes": "ce8bbf97",
+            "mnemonic": "bl",
+            "operands": "#0xd2b69c"
+          },
+          {
+            "instruction_va": "0x1d48768",
+            "bytes": "a80e168b",
+            "mnemonic": "add",
+            "operands": "x8, x21, x22, lsl #3"
+          },
+          {
+            "instruction_va": "0x1d4876c",
+            "bytes": "151140f9",
+            "mnemonic": "ldr",
+            "operands": "x21, [x8, #0x20]"
+          },
+          {
+            "instruction_va": "0x1d48770",
+            "bytes": "750000b5",
+            "mnemonic": "cbnz",
+            "operands": "x21, #0x1d4877c"
+          },
+          {
+            "instruction_va": "0x1d48774",
+            "bytes": "e0031faa",
+            "mnemonic": "mov",
+            "operands": "x0, xzr"
+          },
+          {
+            "instruction_va": "0x1d48778",
+            "bytes": "ed8bbf97",
+            "mnemonic": "bl",
+            "operands": "#0xd2b72c"
+          },
+          {
+            "instruction_va": "0x1d4877c",
+            "bytes": "e2030032",
+            "mnemonic": "mov",
+            "operands": "w2, #1"
+          },
+          {
+            "instruction_va": "0x1d48780",
+            "bytes": "e00315aa",
+            "mnemonic": "mov",
+            "operands": "x0, x21"
+          },
+          {
+            "instruction_va": "0x1d48784",
+            "bytes": "e10313aa",
+            "mnemonic": "mov",
+            "operands": "x1, x19"
+          },
+          {
+            "instruction_va": "0x1d48788",
+            "bytes": "1effff97",
+            "mnemonic": "bl",
+            "operands": "#0x1d48400"
+          },
+          {
+            "instruction_va": "0x1d4878c",
+            "bytes": "a0000035",
+            "mnemonic": "cbnz",
+            "operands": "w0, #0x1d487a0"
+          },
+          {
+            "instruction_va": "0x1d48790",
+            "bytes": "df1200f1",
+            "mnemonic": "cmp",
+            "operands": "x22, #4"
+          },
+          {
+            "instruction_va": "0x1d48794",
+            "bytes": "d6060091",
+            "mnemonic": "add",
+            "operands": "x22, x22, #1"
+          },
+          {
+            "instruction_va": "0x1d48798",
+            "bytes": "2bfdff54",
+            "mnemonic": "b.lt",
+            "operands": "#0x1d4873c"
+          }
+        ],
+        "preheader_initialization": [
+          {
+            "instruction_va": "0x1d48734",
+            "bytes": "60030035",
+            "mnemonic": "cbnz",
+            "operands": "w0, #0x1d487a0"
+          },
+          {
+            "instruction_va": "0x1d48738",
+            "bytes": "f6031faa",
+            "mnemonic": "mov",
+            "operands": "x22, xzr"
+          }
+        ],
+        "index_stride_updates": [
+          {
+            "instruction_va": "0x1d48794",
+            "bytes": "d6060091",
+            "mnemonic": "add",
+            "operands": "x22, x22, #1"
+          }
+        ],
+        "compare_instructions": [
+          {
+            "instruction_va": "0x1d48750",
+            "bytes": "df0208eb",
+            "mnemonic": "cmp",
+            "operands": "x22, x8"
+          },
+          {
+            "instruction_va": "0x1d48790",
+            "bytes": "df1200f1",
+            "mnemonic": "cmp",
+            "operands": "x22, #4"
+          }
+        ],
+        "concrete_tests_in_order": [
+          {
+            "instruction_va": "0x1d48798",
+            "target_va": "0x1d4873c",
+            "kind": "concrete-loop-test",
+            "left": 0,
+            "right": 4,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1d48798",
+            "target_va": "0x1d4873c",
+            "kind": "concrete-loop-test",
+            "left": 1,
+            "right": 4,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1d48798",
+            "target_va": "0x1d4873c",
+            "kind": "concrete-loop-test",
+            "left": 2,
+            "right": 4,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1d48798",
+            "target_va": "0x1d4873c",
+            "kind": "concrete-loop-test",
+            "left": 3,
+            "right": 4,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1d48798",
+            "target_va": "0x1d4873c",
+            "kind": "concrete-loop-test",
+            "left": 4,
+            "right": 4,
+            "condition": "lt",
+            "taken": false
+          }
+        ],
+        "trip_count": 5
+      }
+    ],
+    "instruction_sha256": "87698c7f98db05f3e276326f91e66314d3b28c529d050b279d58ec5054b4d598",
+    "gate": "concrete-success-path; all sequential readers/nested callees; full field/destination/stride matching",
+    "assumptions": [
+      "non-null input buffer and created nested objects/arrays",
+      "managed array bounds valid",
+      "AAPCS64 callee-saved register preservation",
+      "reader and nested call success; version 1 only"
+    ]
+  }
+}

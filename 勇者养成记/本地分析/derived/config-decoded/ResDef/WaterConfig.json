@@ -1,0 +1,410 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_waterconfig.bytes.ab",
+    "path_id": 4075404911564504539,
+    "name": "WaterConfig",
+    "sha256": "b17afd013b2672a41e147a920cc1ce7eed53fd2e22635aafd399ffec96620a50",
+    "export": "derived/unity/text/assets_resources_config_resbin_waterconfig.bytes/WaterConfig__4075404911564504539.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 1061,
+      "version": 1,
+      "record_count": 49,
+      "stored_crc32": "4606e3cf",
+      "computed_inverted_crc32": "4606e3cf"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "WaterConfig",
+      "fields": [
+        {
+          "type": "string",
+          "name": "WaterKey",
+          "object_offset": 16
+        },
+        {
+          "type": "string",
+          "name": "Res",
+          "object_offset": 24
+        }
+      ],
+      "unpack_va": 29410548,
+      "dump_line": 209301
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1c0c52c",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1c0c570",
+        "target_va": "0x21f6ce8",
+        "opcode": "B-tail",
+        "reader": "readString",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 49
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "WaterKey": "_0_010_0_",
+      "Res": "01",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 41,
+      "WaterKey": "_0_011_11",
+      "Res": "02",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 62,
+      "WaterKey": "_0_111111",
+      "Res": "03",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 83,
+      "WaterKey": "_0_011_0_",
+      "Res": "04",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 104,
+      "WaterKey": "_0_010_1_",
+      "Res": "05",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 125,
+      "WaterKey": "_0_111_0_",
+      "Res": "06",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 146,
+      "WaterKey": "_1_010_0_",
+      "Res": "07",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 167,
+      "WaterKey": "_10011_0_",
+      "Res": "08",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 188,
+      "WaterKey": "_0_011_10",
+      "Res": "09",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 209,
+      "WaterKey": "_0_111010",
+      "Res": "10",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 230,
+      "WaterKey": "_11011_0_",
+      "Res": "11",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 251,
+      "WaterKey": "_11011_11",
+      "Res": "12",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 272,
+      "WaterKey": "111111_0_",
+      "Res": "13",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 293,
+      "WaterKey": "111111111",
+      "Res": "14",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 314,
+      "WaterKey": "_1_010_1_",
+      "Res": "15",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 335,
+      "WaterKey": "11_11001_",
+      "Res": "16",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 356,
+      "WaterKey": "_10011_10",
+      "Res": "17",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 377,
+      "WaterKey": "10111010",
+      "Res": "18",
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 397,
+      "WaterKey": "01_11001_",
+      "Res": "19",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 19,
+      "_byte_offset": 418,
+      "WaterKey": "010111_0_",
+      "Res": "20",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 20,
+      "_byte_offset": 439,
+      "WaterKey": "_11011_10",
+      "Res": "21",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 21,
+      "_byte_offset": 460,
+      "WaterKey": "01_110_0_",
+      "Res": "22",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 22,
+      "_byte_offset": 481,
+      "WaterKey": "_0_11011_",
+      "Res": "23",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 23,
+      "_byte_offset": 502,
+      "WaterKey": "_0_110_0_",
+      "Res": "24",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 24,
+      "_byte_offset": 523,
+      "WaterKey": "11_11011_",
+      "Res": "25",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 25,
+      "_byte_offset": 544,
+      "WaterKey": "_0_11001_",
+      "Res": "26",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 26,
+      "_byte_offset": 565,
+      "WaterKey": "11_110_0_",
+      "Res": "27",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 27,
+      "_byte_offset": 586,
+      "WaterKey": "_10011_11",
+      "Res": "28",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 28,
+      "_byte_offset": 607,
+      "WaterKey": "01_110_1_",
+      "Res": "29",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 29,
+      "_byte_offset": 628,
+      "WaterKey": "110111_0_",
+      "Res": "30",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 30,
+      "_byte_offset": 649,
+      "WaterKey": "111111011",
+      "Res": "31",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 31,
+      "_byte_offset": 670,
+      "WaterKey": "110111111",
+      "Res": "32",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 32,
+      "_byte_offset": 691,
+      "WaterKey": "011111111",
+      "Res": "33",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 33,
+      "_byte_offset": 712,
+      "WaterKey": "111111110",
+      "Res": "34",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 34,
+      "_byte_offset": 733,
+      "WaterKey": "_0_111110",
+      "Res": "35",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 35,
+      "_byte_offset": 754,
+      "WaterKey": "_0_111011",
+      "Res": "36",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 36,
+      "_byte_offset": 775,
+      "WaterKey": "011111011",
+      "Res": "37",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 37,
+      "_byte_offset": 796,
+      "WaterKey": "110111110",
+      "Res": "38",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 38,
+      "_byte_offset": 817,
+      "WaterKey": "110111011",
+      "Res": "39",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 39,
+      "_byte_offset": 838,
+      "WaterKey": "011111110",
+      "Res": "40",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 40,
+      "_byte_offset": 859,
+      "WaterKey": "011111_0_",
+      "Res": "41",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 41,
+      "_byte_offset": 880,
+      "WaterKey": "010111110",
+      "Res": "42",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 42,
+      "_byte_offset": 901,
+      "WaterKey": "010111011",
+      "Res": "43",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 43,
+      "_byte_offset": 922,
+      "WaterKey": "110111010",
+      "Res": "44",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 44,
+      "_byte_offset": 943,
+      "WaterKey": "011111010",
+      "Res": "45",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 45,
+      "_byte_offset": 964,
+      "WaterKey": "010111111",
+      "Res": "46",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 46,
+      "_byte_offset": 985,
+      "WaterKey": "111111010",
+      "Res": "47",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 47,
+      "_byte_offset": 1006,
+      "WaterKey": "010111010",
+      "Res": "18",
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 48,
+      "_byte_offset": 1027,
+      "WaterKey": "IOS马甲包",
+      "Res": "IOS马甲包",
+      "_byte_length": 34
+    }
+  ]
+}

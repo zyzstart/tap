@@ -1,0 +1,1521 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_menpaiwuxueconfig.bytes.ab",
+    "path_id": -964731317165764554,
+    "name": "MenPaiWuXueConfig",
+    "sha256": "0db86a8af2f7e2e8aacda77cf510b99a9fbff4480a58cf1e9a31a2b615db9aad",
+    "export": "derived/unity/text/assets_resources_config_resbin_menpaiwuxueconfig.bytes/MenPaiWuXueConfig__-964731317165764554.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 2180,
+      "version": 1,
+      "record_count": 180,
+      "stored_crc32": "bd065e8b",
+      "computed_inverted_crc32": "bd065e8b"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "MenPaiWuXueConfig",
+      "fields": [
+        {
+          "type": "uint",
+          "name": "WuXueID",
+          "object_offset": 16
+        },
+        {
+          "type": "uint",
+          "name": "MenPaiID",
+          "object_offset": 20
+        },
+        {
+          "type": "uint",
+          "name": "NeedOffice",
+          "object_offset": 24
+        }
+      ],
+      "unpack_va": 30788376,
+      "dump_line": 208446
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1d5cb4c",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d5cb70",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d5cbb0",
+        "target_va": "0x21f6908",
+        "opcode": "B-tail",
+        "reader": "readUInt32",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 180
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "WuXueID": 101,
+      "MenPaiID": 1,
+      "NeedOffice": 1,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 32,
+      "WuXueID": 201,
+      "MenPaiID": 1,
+      "NeedOffice": 2,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 44,
+      "WuXueID": 301,
+      "MenPaiID": 1,
+      "NeedOffice": 3,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 56,
+      "WuXueID": 401,
+      "MenPaiID": 1,
+      "NeedOffice": 4,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 68,
+      "WuXueID": 402,
+      "MenPaiID": 1,
+      "NeedOffice": 5,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 80,
+      "WuXueID": 102,
+      "MenPaiID": 2,
+      "NeedOffice": 1,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 92,
+      "WuXueID": 202,
+      "MenPaiID": 2,
+      "NeedOffice": 2,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 104,
+      "WuXueID": 302,
+      "MenPaiID": 2,
+      "NeedOffice": 3,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 116,
+      "WuXueID": 403,
+      "MenPaiID": 2,
+      "NeedOffice": 4,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 128,
+      "WuXueID": 601,
+      "MenPaiID": 2,
+      "NeedOffice": 5,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 140,
+      "WuXueID": 103,
+      "MenPaiID": 3,
+      "NeedOffice": 1,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 152,
+      "WuXueID": 203,
+      "MenPaiID": 3,
+      "NeedOffice": 2,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 164,
+      "WuXueID": 303,
+      "MenPaiID": 3,
+      "NeedOffice": 3,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 176,
+      "WuXueID": 404,
+      "MenPaiID": 3,
+      "NeedOffice": 4,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 188,
+      "WuXueID": 405,
+      "MenPaiID": 3,
+      "NeedOffice": 5,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 200,
+      "WuXueID": 104,
+      "MenPaiID": 4,
+      "NeedOffice": 1,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 212,
+      "WuXueID": 204,
+      "MenPaiID": 4,
+      "NeedOffice": 2,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 224,
+      "WuXueID": 304,
+      "MenPaiID": 4,
+      "NeedOffice": 3,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 236,
+      "WuXueID": 406,
+      "MenPaiID": 4,
+      "NeedOffice": 4,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 19,
+      "_byte_offset": 248,
+      "WuXueID": 602,
+      "MenPaiID": 4,
+      "NeedOffice": 5,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 20,
+      "_byte_offset": 260,
+      "WuXueID": 105,
+      "MenPaiID": 5,
+      "NeedOffice": 1,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 21,
+      "_byte_offset": 272,
+      "WuXueID": 205,
+      "MenPaiID": 5,
+      "NeedOffice": 2,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 22,
+      "_byte_offset": 284,
+      "WuXueID": 305,
+      "MenPaiID": 5,
+      "NeedOffice": 3,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 23,
+      "_byte_offset": 296,
+      "WuXueID": 407,
+      "MenPaiID": 5,
+      "NeedOffice": 4,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 24,
+      "_byte_offset": 308,
+      "WuXueID": 408,
+      "MenPaiID": 5,
+      "NeedOffice": 5,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 25,
+      "_byte_offset": 320,
+      "WuXueID": 106,
+      "MenPaiID": 6,
+      "NeedOffice": 1,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 26,
+      "_byte_offset": 332,
+      "WuXueID": 206,
+      "MenPaiID": 6,
+      "NeedOffice": 2,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 27,
+      "_byte_offset": 344,
+      "WuXueID": 306,
+      "MenPaiID": 6,
+      "NeedOffice": 3,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 28,
+      "_byte_offset": 356,
+      "WuXueID": 409,
+      "MenPaiID": 6,
+      "NeedOffice": 4,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 29,
+      "_byte_offset": 368,
+      "WuXueID": 603,
+      "MenPaiID": 6,
+      "NeedOffice": 5,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 30,
+      "_byte_offset": 380,
+      "WuXueID": 107,
+      "MenPaiID": 7,
+      "NeedOffice": 1,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 31,
+      "_byte_offset": 392,
+      "WuXueID": 207,
+      "MenPaiID": 7,
+      "NeedOffice": 2,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 32,
+      "_byte_offset": 404,
+      "WuXueID": 307,
+      "MenPaiID": 7,
+      "NeedOffice": 3,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 33,
+      "_byte_offset": 416,
+      "WuXueID": 410,
+      "MenPaiID": 7,
+      "NeedOffice": 4,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 34,
+      "_byte_offset": 428,
+      "WuXueID": 411,
+      "MenPaiID": 7,
+      "NeedOffice": 5,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 35,
+      "_byte_offset": 440,
+      "WuXueID": 108,
+      "MenPaiID": 8,
+      "NeedOffice": 1,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 36,
+      "_byte_offset": 452,
+      "WuXueID": 208,
+      "MenPaiID": 8,
+      "NeedOffice": 2,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 37,
+      "_byte_offset": 464,
+      "WuXueID": 308,
+      "MenPaiID": 8,
+      "NeedOffice": 3,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 38,
+      "_byte_offset": 476,
+      "WuXueID": 412,
+      "MenPaiID": 8,
+      "NeedOffice": 4,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 39,
+      "_byte_offset": 488,
+      "WuXueID": 604,
+      "MenPaiID": 8,
+      "NeedOffice": 5,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 40,
+      "_byte_offset": 500,
+      "WuXueID": 109,
+      "MenPaiID": 9,
+      "NeedOffice": 1,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 41,
+      "_byte_offset": 512,
+      "WuXueID": 209,
+      "MenPaiID": 9,
+      "NeedOffice": 2,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 42,
+      "_byte_offset": 524,
+      "WuXueID": 309,
+      "MenPaiID": 9,
+      "NeedOffice": 3,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 43,
+      "_byte_offset": 536,
+      "WuXueID": 413,
+      "MenPaiID": 9,
+      "NeedOffice": 4,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 44,
+      "_byte_offset": 548,
+      "WuXueID": 414,
+      "MenPaiID": 9,
+      "NeedOffice": 5,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 45,
+      "_byte_offset": 560,
+      "WuXueID": 110,
+      "MenPaiID": 10,
+      "NeedOffice": 1,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 46,
+      "_byte_offset": 572,
+      "WuXueID": 210,
+      "MenPaiID": 10,
+      "NeedOffice": 2,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 47,
+      "_byte_offset": 584,
+      "WuXueID": 310,
+      "MenPaiID": 10,
+      "NeedOffice": 3,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 48,
+      "_byte_offset": 596,
+      "WuXueID": 415,
+      "MenPaiID": 10,
+      "NeedOffice": 4,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 49,
+      "_byte_offset": 608,
+      "WuXueID": 605,
+      "MenPaiID": 10,
+      "NeedOffice": 5,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 50,
+      "_byte_offset": 620,
+      "WuXueID": 111,
+      "MenPaiID": 11,
+      "NeedOffice": 1,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 51,
+      "_byte_offset": 632,
+      "WuXueID": 211,
+      "MenPaiID": 11,
+      "NeedOffice": 2,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 52,
+      "_byte_offset": 644,
+      "WuXueID": 311,
+      "MenPaiID": 11,
+      "NeedOffice": 3,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 53,
+      "_byte_offset": 656,
+      "WuXueID": 416,
+      "MenPaiID": 11,
+      "NeedOffice": 4,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 54,
+      "_byte_offset": 668,
+      "WuXueID": 417,
+      "MenPaiID": 11,
+      "NeedOffice": 5,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 55,
+      "_byte_offset": 680,
+      "WuXueID": 112,
+      "MenPaiID": 12,
+      "NeedOffice": 1,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 56,
+      "_byte_offset": 692,
+      "WuXueID": 212,
+      "MenPaiID": 12,
+      "NeedOffice": 2,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 57,
+      "_byte_offset": 704,
+      "WuXueID": 312,
+      "MenPaiID": 12,
+      "NeedOffice": 3,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 58,
+      "_byte_offset": 716,
+      "WuXueID": 418,
+      "MenPaiID": 12,
+      "NeedOffice": 4,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 59,
+      "_byte_offset": 728,
+      "WuXueID": 606,
+      "MenPaiID": 12,
+      "NeedOffice": 5,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 60,
+      "_byte_offset": 740,
+      "WuXueID": 113,
+      "MenPaiID": 13,
+      "NeedOffice": 1,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 61,
+      "_byte_offset": 752,
+      "WuXueID": 213,
+      "MenPaiID": 13,
+      "NeedOffice": 2,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 62,
+      "_byte_offset": 764,
+      "WuXueID": 313,
+      "MenPaiID": 13,
+      "NeedOffice": 3,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 63,
+      "_byte_offset": 776,
+      "WuXueID": 419,
+      "MenPaiID": 13,
+      "NeedOffice": 4,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 64,
+      "_byte_offset": 788,
+      "WuXueID": 420,
+      "MenPaiID": 13,
+      "NeedOffice": 5,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 65,
+      "_byte_offset": 800,
+      "WuXueID": 114,
+      "MenPaiID": 14,
+      "NeedOffice": 1,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 66,
+      "_byte_offset": 812,
+      "WuXueID": 214,
+      "MenPaiID": 14,
+      "NeedOffice": 2,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 67,
+      "_byte_offset": 824,
+      "WuXueID": 314,
+      "MenPaiID": 14,
+      "NeedOffice": 3,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 68,
+      "_byte_offset": 836,
+      "WuXueID": 421,
+      "MenPaiID": 14,
+      "NeedOffice": 4,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 69,
+      "_byte_offset": 848,
+      "WuXueID": 607,
+      "MenPaiID": 14,
+      "NeedOffice": 5,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 70,
+      "_byte_offset": 860,
+      "WuXueID": 115,
+      "MenPaiID": 15,
+      "NeedOffice": 1,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 71,
+      "_byte_offset": 872,
+      "WuXueID": 215,
+      "MenPaiID": 15,
+      "NeedOffice": 2,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 72,
+      "_byte_offset": 884,
+      "WuXueID": 315,
+      "MenPaiID": 15,
+      "NeedOffice": 3,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 73,
+      "_byte_offset": 896,
+      "WuXueID": 422,
+      "MenPaiID": 15,
+      "NeedOffice": 4,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 74,
+      "_byte_offset": 908,
+      "WuXueID": 423,
+      "MenPaiID": 15,
+      "NeedOffice": 5,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 75,
+      "_byte_offset": 920,
+      "WuXueID": 116,
+      "MenPaiID": 16,
+      "NeedOffice": 1,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 76,
+      "_byte_offset": 932,
+      "WuXueID": 216,
+      "MenPaiID": 16,
+      "NeedOffice": 2,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 77,
+      "_byte_offset": 944,
+      "WuXueID": 316,
+      "MenPaiID": 16,
+      "NeedOffice": 3,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 78,
+      "_byte_offset": 956,
+      "WuXueID": 424,
+      "MenPaiID": 16,
+      "NeedOffice": 4,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 79,
+      "_byte_offset": 968,
+      "WuXueID": 608,
+      "MenPaiID": 16,
+      "NeedOffice": 5,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 80,
+      "_byte_offset": 980,
+      "WuXueID": 117,
+      "MenPaiID": 17,
+      "NeedOffice": 1,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 81,
+      "_byte_offset": 992,
+      "WuXueID": 217,
+      "MenPaiID": 17,
+      "NeedOffice": 2,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 82,
+      "_byte_offset": 1004,
+      "WuXueID": 317,
+      "MenPaiID": 17,
+      "NeedOffice": 3,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 83,
+      "_byte_offset": 1016,
+      "WuXueID": 425,
+      "MenPaiID": 17,
+      "NeedOffice": 4,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 84,
+      "_byte_offset": 1028,
+      "WuXueID": 426,
+      "MenPaiID": 17,
+      "NeedOffice": 5,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 85,
+      "_byte_offset": 1040,
+      "WuXueID": 118,
+      "MenPaiID": 18,
+      "NeedOffice": 1,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 86,
+      "_byte_offset": 1052,
+      "WuXueID": 218,
+      "MenPaiID": 18,
+      "NeedOffice": 2,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 87,
+      "_byte_offset": 1064,
+      "WuXueID": 318,
+      "MenPaiID": 18,
+      "NeedOffice": 3,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 88,
+      "_byte_offset": 1076,
+      "WuXueID": 427,
+      "MenPaiID": 18,
+      "NeedOffice": 4,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 89,
+      "_byte_offset": 1088,
+      "WuXueID": 428,
+      "MenPaiID": 18,
+      "NeedOffice": 5,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 90,
+      "_byte_offset": 1100,
+      "WuXueID": 119,
+      "MenPaiID": 19,
+      "NeedOffice": 1,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 91,
+      "_byte_offset": 1112,
+      "WuXueID": 219,
+      "MenPaiID": 19,
+      "NeedOffice": 2,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 92,
+      "_byte_offset": 1124,
+      "WuXueID": 319,
+      "MenPaiID": 19,
+      "NeedOffice": 3,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 93,
+      "_byte_offset": 1136,
+      "WuXueID": 429,
+      "MenPaiID": 19,
+      "NeedOffice": 4,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 94,
+      "_byte_offset": 1148,
+      "WuXueID": 430,
+      "MenPaiID": 19,
+      "NeedOffice": 5,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 95,
+      "_byte_offset": 1160,
+      "WuXueID": 120,
+      "MenPaiID": 20,
+      "NeedOffice": 1,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 96,
+      "_byte_offset": 1172,
+      "WuXueID": 220,
+      "MenPaiID": 20,
+      "NeedOffice": 2,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 97,
+      "_byte_offset": 1184,
+      "WuXueID": 320,
+      "MenPaiID": 20,
+      "NeedOffice": 3,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 98,
+      "_byte_offset": 1196,
+      "WuXueID": 431,
+      "MenPaiID": 20,
+      "NeedOffice": 4,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 99,
+      "_byte_offset": 1208,
+      "WuXueID": 432,
+      "MenPaiID": 20,
+      "NeedOffice": 5,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 100,
+      "_byte_offset": 1220,
+      "WuXueID": 121,
+      "MenPaiID": 21,
+      "NeedOffice": 1,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 101,
+      "_byte_offset": 1232,
+      "WuXueID": 221,
+      "MenPaiID": 21,
+      "NeedOffice": 2,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 102,
+      "_byte_offset": 1244,
+      "WuXueID": 321,
+      "MenPaiID": 21,
+      "NeedOffice": 3,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 103,
+      "_byte_offset": 1256,
+      "WuXueID": 433,
+      "MenPaiID": 21,
+      "NeedOffice": 4,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 104,
+      "_byte_offset": 1268,
+      "WuXueID": 434,
+      "MenPaiID": 21,
+      "NeedOffice": 5,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 105,
+      "_byte_offset": 1280,
+      "WuXueID": 122,
+      "MenPaiID": 22,
+      "NeedOffice": 1,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 106,
+      "_byte_offset": 1292,
+      "WuXueID": 222,
+      "MenPaiID": 22,
+      "NeedOffice": 2,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 107,
+      "_byte_offset": 1304,
+      "WuXueID": 322,
+      "MenPaiID": 22,
+      "NeedOffice": 3,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 108,
+      "_byte_offset": 1316,
+      "WuXueID": 435,
+      "MenPaiID": 22,
+      "NeedOffice": 4,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 109,
+      "_byte_offset": 1328,
+      "WuXueID": 436,
+      "MenPaiID": 22,
+      "NeedOffice": 5,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 110,
+      "_byte_offset": 1340,
+      "WuXueID": 123,
+      "MenPaiID": 23,
+      "NeedOffice": 1,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 111,
+      "_byte_offset": 1352,
+      "WuXueID": 223,
+      "MenPaiID": 23,
+      "NeedOffice": 2,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 112,
+      "_byte_offset": 1364,
+      "WuXueID": 323,
+      "MenPaiID": 23,
+      "NeedOffice": 3,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 113,
+      "_byte_offset": 1376,
+      "WuXueID": 437,
+      "MenPaiID": 23,
+      "NeedOffice": 4,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 114,
+      "_byte_offset": 1388,
+      "WuXueID": 438,
+      "MenPaiID": 23,
+      "NeedOffice": 5,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 115,
+      "_byte_offset": 1400,
+      "WuXueID": 124,
+      "MenPaiID": 24,
+      "NeedOffice": 1,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 116,
+      "_byte_offset": 1412,
+      "WuXueID": 224,
+      "MenPaiID": 24,
+      "NeedOffice": 2,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 117,
+      "_byte_offset": 1424,
+      "WuXueID": 324,
+      "MenPaiID": 24,
+      "NeedOffice": 3,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 118,
+      "_byte_offset": 1436,
+      "WuXueID": 439,
+      "MenPaiID": 24,
+      "NeedOffice": 4,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 119,
+      "_byte_offset": 1448,
+      "WuXueID": 440,
+      "MenPaiID": 24,
+      "NeedOffice": 5,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 120,
+      "_byte_offset": 1460,
+      "WuXueID": 125,
+      "MenPaiID": 25,
+      "NeedOffice": 1,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 121,
+      "_byte_offset": 1472,
+      "WuXueID": 225,
+      "MenPaiID": 25,
+      "NeedOffice": 2,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 122,
+      "_byte_offset": 1484,
+      "WuXueID": 325,
+      "MenPaiID": 25,
+      "NeedOffice": 3,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 123,
+      "_byte_offset": 1496,
+      "WuXueID": 441,
+      "MenPaiID": 25,
+      "NeedOffice": 4,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 124,
+      "_byte_offset": 1508,
+      "WuXueID": 442,
+      "MenPaiID": 25,
+      "NeedOffice": 5,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 125,
+      "_byte_offset": 1520,
+      "WuXueID": 126,
+      "MenPaiID": 26,
+      "NeedOffice": 1,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 126,
+      "_byte_offset": 1532,
+      "WuXueID": 226,
+      "MenPaiID": 26,
+      "NeedOffice": 2,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 127,
+      "_byte_offset": 1544,
+      "WuXueID": 326,
+      "MenPaiID": 26,
+      "NeedOffice": 3,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 128,
+      "_byte_offset": 1556,
+      "WuXueID": 443,
+      "MenPaiID": 26,
+      "NeedOffice": 4,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 129,
+      "_byte_offset": 1568,
+      "WuXueID": 444,
+      "MenPaiID": 26,
+      "NeedOffice": 5,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 130,
+      "_byte_offset": 1580,
+      "WuXueID": 127,
+      "MenPaiID": 27,
+      "NeedOffice": 1,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 131,
+      "_byte_offset": 1592,
+      "WuXueID": 227,
+      "MenPaiID": 27,
+      "NeedOffice": 2,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 132,
+      "_byte_offset": 1604,
+      "WuXueID": 327,
+      "MenPaiID": 27,
+      "NeedOffice": 3,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 133,
+      "_byte_offset": 1616,
+      "WuXueID": 445,
+      "MenPaiID": 27,
+      "NeedOffice": 4,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 134,
+      "_byte_offset": 1628,
+      "WuXueID": 446,
+      "MenPaiID": 27,
+      "NeedOffice": 5,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 135,
+      "_byte_offset": 1640,
+      "WuXueID": 128,
+      "MenPaiID": 28,
+      "NeedOffice": 1,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 136,
+      "_byte_offset": 1652,
+      "WuXueID": 228,
+      "MenPaiID": 28,
+      "NeedOffice": 2,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 137,
+      "_byte_offset": 1664,
+      "WuXueID": 328,
+      "MenPaiID": 28,
+      "NeedOffice": 3,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 138,
+      "_byte_offset": 1676,
+      "WuXueID": 447,
+      "MenPaiID": 28,
+      "NeedOffice": 4,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 139,
+      "_byte_offset": 1688,
+      "WuXueID": 448,
+      "MenPaiID": 28,
+      "NeedOffice": 5,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 140,
+      "_byte_offset": 1700,
+      "WuXueID": 129,
+      "MenPaiID": 29,
+      "NeedOffice": 1,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 141,
+      "_byte_offset": 1712,
+      "WuXueID": 229,
+      "MenPaiID": 29,
+      "NeedOffice": 2,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 142,
+      "_byte_offset": 1724,
+      "WuXueID": 329,
+      "MenPaiID": 29,
+      "NeedOffice": 3,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 143,
+      "_byte_offset": 1736,
+      "WuXueID": 449,
+      "MenPaiID": 29,
+      "NeedOffice": 4,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 144,
+      "_byte_offset": 1748,
+      "WuXueID": 450,
+      "MenPaiID": 29,
+      "NeedOffice": 5,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 145,
+      "_byte_offset": 1760,
+      "WuXueID": 130,
+      "MenPaiID": 30,
+      "NeedOffice": 1,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 146,
+      "_byte_offset": 1772,
+      "WuXueID": 230,
+      "MenPaiID": 30,
+      "NeedOffice": 2,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 147,
+      "_byte_offset": 1784,
+      "WuXueID": 330,
+      "MenPaiID": 30,
+      "NeedOffice": 3,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 148,
+      "_byte_offset": 1796,
+      "WuXueID": 451,
+      "MenPaiID": 30,
+      "NeedOffice": 4,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 149,
+      "_byte_offset": 1808,
+      "WuXueID": 452,
+      "MenPaiID": 30,
+      "NeedOffice": 5,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 150,
+      "_byte_offset": 1820,
+      "WuXueID": 131,
+      "MenPaiID": 31,
+      "NeedOffice": 1,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 151,
+      "_byte_offset": 1832,
+      "WuXueID": 231,
+      "MenPaiID": 31,
+      "NeedOffice": 2,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 152,
+      "_byte_offset": 1844,
+      "WuXueID": 331,
+      "MenPaiID": 31,
+      "NeedOffice": 3,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 153,
+      "_byte_offset": 1856,
+      "WuXueID": 453,
+      "MenPaiID": 31,
+      "NeedOffice": 4,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 154,
+      "_byte_offset": 1868,
+      "WuXueID": 454,
+      "MenPaiID": 31,
+      "NeedOffice": 5,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 155,
+      "_byte_offset": 1880,
+      "WuXueID": 132,
+      "MenPaiID": 32,
+      "NeedOffice": 1,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 156,
+      "_byte_offset": 1892,
+      "WuXueID": 232,
+      "MenPaiID": 32,
+      "NeedOffice": 2,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 157,
+      "_byte_offset": 1904,
+      "WuXueID": 332,
+      "MenPaiID": 32,
+      "NeedOffice": 3,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 158,
+      "_byte_offset": 1916,
+      "WuXueID": 455,
+      "MenPaiID": 32,
+      "NeedOffice": 4,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 159,
+      "_byte_offset": 1928,
+      "WuXueID": 456,
+      "MenPaiID": 32,
+      "NeedOffice": 5,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 160,
+      "_byte_offset": 1940,
+      "WuXueID": 133,
+      "MenPaiID": 33,
+      "NeedOffice": 1,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 161,
+      "_byte_offset": 1952,
+      "WuXueID": 233,
+      "MenPaiID": 33,
+      "NeedOffice": 2,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 162,
+      "_byte_offset": 1964,
+      "WuXueID": 333,
+      "MenPaiID": 33,
+      "NeedOffice": 3,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 163,
+      "_byte_offset": 1976,
+      "WuXueID": 457,
+      "MenPaiID": 33,
+      "NeedOffice": 4,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 164,
+      "_byte_offset": 1988,
+      "WuXueID": 458,
+      "MenPaiID": 33,
+      "NeedOffice": 5,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 165,
+      "_byte_offset": 2000,
+      "WuXueID": 134,
+      "MenPaiID": 34,
+      "NeedOffice": 1,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 166,
+      "_byte_offset": 2012,
+      "WuXueID": 234,
+      "MenPaiID": 34,
+      "NeedOffice": 2,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 167,
+      "_byte_offset": 2024,
+      "WuXueID": 334,
+      "MenPaiID": 34,
+      "NeedOffice": 3,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 168,
+      "_byte_offset": 2036,
+      "WuXueID": 459,
+      "MenPaiID": 34,
+      "NeedOffice": 4,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 169,
+      "_byte_offset": 2048,
+      "WuXueID": 460,
+      "MenPaiID": 34,
+      "NeedOffice": 5,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 170,
+      "_byte_offset": 2060,
+      "WuXueID": 135,
+      "MenPaiID": 35,
+      "NeedOffice": 1,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 171,
+      "_byte_offset": 2072,
+      "WuXueID": 235,
+      "MenPaiID": 35,
+      "NeedOffice": 2,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 172,
+      "_byte_offset": 2084,
+      "WuXueID": 335,
+      "MenPaiID": 35,
+      "NeedOffice": 3,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 173,
+      "_byte_offset": 2096,
+      "WuXueID": 461,
+      "MenPaiID": 35,
+      "NeedOffice": 4,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 174,
+      "_byte_offset": 2108,
+      "WuXueID": 462,
+      "MenPaiID": 35,
+      "NeedOffice": 5,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 175,
+      "_byte_offset": 2120,
+      "WuXueID": 136,
+      "MenPaiID": 36,
+      "NeedOffice": 1,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 176,
+      "_byte_offset": 2132,
+      "WuXueID": 236,
+      "MenPaiID": 36,
+      "NeedOffice": 2,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 177,
+      "_byte_offset": 2144,
+      "WuXueID": 336,
+      "MenPaiID": 36,
+      "NeedOffice": 3,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 178,
+      "_byte_offset": 2156,
+      "WuXueID": 463,
+      "MenPaiID": 36,
+      "NeedOffice": 4,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 179,
+      "_byte_offset": 2168,
+      "WuXueID": 464,
+      "MenPaiID": 36,
+      "NeedOffice": 5,
+      "_byte_length": 12
+    }
+  ]
+}

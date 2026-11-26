@@ -1,0 +1,473 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_fp_horsefashionexconfig.bytes.ab",
+    "path_id": 8866058115905032588,
+    "name": "HorseFashionExConfig",
+    "sha256": "67590c82af2aeb700263ebddc16b9480800bb9795ccc098303cd88d2bf425a53",
+    "export": "derived/unity/text/assets_resources_config_resbin_fp_horsefashionexconfig.bytes/HorseFashionExConfig__8866058115905032588.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 484,
+      "version": 1,
+      "record_count": 58,
+      "stored_crc32": "a6d689ff",
+      "computed_inverted_crc32": "a6d689ff"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "BattleCore",
+      "name": "HorseFashionExConfig",
+      "fields": [
+        {
+          "type": "uint",
+          "name": "FashionID",
+          "object_offset": 16
+        },
+        {
+          "type": "uint",
+          "name": "ModelID",
+          "object_offset": 20
+        }
+      ],
+      "unpack_va": 23340952,
+      "dump_line": 167054
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x16427cc",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x164280c",
+        "target_va": "0x21f6908",
+        "opcode": "B-tail",
+        "reader": "readUInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 58
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "FashionID": 60000,
+      "ModelID": 60000,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 28,
+      "FashionID": 60001,
+      "ModelID": 60001,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 36,
+      "FashionID": 60002,
+      "ModelID": 60002,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 44,
+      "FashionID": 60003,
+      "ModelID": 60003,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 52,
+      "FashionID": 60004,
+      "ModelID": 60004,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 60,
+      "FashionID": 60005,
+      "ModelID": 60005,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 68,
+      "FashionID": 60006,
+      "ModelID": 60006,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 76,
+      "FashionID": 60007,
+      "ModelID": 60007,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 84,
+      "FashionID": 60008,
+      "ModelID": 60008,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 92,
+      "FashionID": 60009,
+      "ModelID": 60009,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 100,
+      "FashionID": 60010,
+      "ModelID": 60010,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 108,
+      "FashionID": 60011,
+      "ModelID": 60011,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 116,
+      "FashionID": 60012,
+      "ModelID": 60012,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 124,
+      "FashionID": 60013,
+      "ModelID": 60013,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 132,
+      "FashionID": 60014,
+      "ModelID": 60014,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 140,
+      "FashionID": 60015,
+      "ModelID": 60015,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 148,
+      "FashionID": 60016,
+      "ModelID": 60016,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 156,
+      "FashionID": 60101,
+      "ModelID": 60101,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 164,
+      "FashionID": 60102,
+      "ModelID": 60102,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 19,
+      "_byte_offset": 172,
+      "FashionID": 60103,
+      "ModelID": 60103,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 20,
+      "_byte_offset": 180,
+      "FashionID": 60104,
+      "ModelID": 60104,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 21,
+      "_byte_offset": 188,
+      "FashionID": 60105,
+      "ModelID": 60105,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 22,
+      "_byte_offset": 196,
+      "FashionID": 60106,
+      "ModelID": 60106,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 23,
+      "_byte_offset": 204,
+      "FashionID": 60107,
+      "ModelID": 60107,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 24,
+      "_byte_offset": 212,
+      "FashionID": 60108,
+      "ModelID": 60108,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 25,
+      "_byte_offset": 220,
+      "FashionID": 60109,
+      "ModelID": 60109,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 26,
+      "_byte_offset": 228,
+      "FashionID": 60110,
+      "ModelID": 60110,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 27,
+      "_byte_offset": 236,
+      "FashionID": 60111,
+      "ModelID": 60111,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 28,
+      "_byte_offset": 244,
+      "FashionID": 60112,
+      "ModelID": 60112,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 29,
+      "_byte_offset": 252,
+      "FashionID": 60113,
+      "ModelID": 60113,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 30,
+      "_byte_offset": 260,
+      "FashionID": 60114,
+      "ModelID": 60114,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 31,
+      "_byte_offset": 268,
+      "FashionID": 60115,
+      "ModelID": 60115,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 32,
+      "_byte_offset": 276,
+      "FashionID": 60116,
+      "ModelID": 810001,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 33,
+      "_byte_offset": 284,
+      "FashionID": 60117,
+      "ModelID": 60117,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 34,
+      "_byte_offset": 292,
+      "FashionID": 60118,
+      "ModelID": 60118,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 35,
+      "_byte_offset": 300,
+      "FashionID": 60119,
+      "ModelID": 60119,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 36,
+      "_byte_offset": 308,
+      "FashionID": 60120,
+      "ModelID": 60120,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 37,
+      "_byte_offset": 316,
+      "FashionID": 60121,
+      "ModelID": 60121,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 38,
+      "_byte_offset": 324,
+      "FashionID": 60122,
+      "ModelID": 60122,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 39,
+      "_byte_offset": 332,
+      "FashionID": 60123,
+      "ModelID": 60123,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 40,
+      "_byte_offset": 340,
+      "FashionID": 60124,
+      "ModelID": 60124,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 41,
+      "_byte_offset": 348,
+      "FashionID": 60125,
+      "ModelID": 60125,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 42,
+      "_byte_offset": 356,
+      "FashionID": 60126,
+      "ModelID": 60126,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 43,
+      "_byte_offset": 364,
+      "FashionID": 60127,
+      "ModelID": 60127,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 44,
+      "_byte_offset": 372,
+      "FashionID": 60128,
+      "ModelID": 60128,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 45,
+      "_byte_offset": 380,
+      "FashionID": 60129,
+      "ModelID": 60129,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 46,
+      "_byte_offset": 388,
+      "FashionID": 60130,
+      "ModelID": 60130,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 47,
+      "_byte_offset": 396,
+      "FashionID": 60131,
+      "ModelID": 60131,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 48,
+      "_byte_offset": 404,
+      "FashionID": 60132,
+      "ModelID": 60132,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 49,
+      "_byte_offset": 412,
+      "FashionID": 60133,
+      "ModelID": 60133,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 50,
+      "_byte_offset": 420,
+      "FashionID": 60134,
+      "ModelID": 60134,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 51,
+      "_byte_offset": 428,
+      "FashionID": 60135,
+      "ModelID": 60135,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 52,
+      "_byte_offset": 436,
+      "FashionID": 60136,
+      "ModelID": 60136,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 53,
+      "_byte_offset": 444,
+      "FashionID": 60301,
+      "ModelID": 60301,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 54,
+      "_byte_offset": 452,
+      "FashionID": 60302,
+      "ModelID": 60302,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 55,
+      "_byte_offset": 460,
+      "FashionID": 60303,
+      "ModelID": 60303,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 56,
+      "_byte_offset": 468,
+      "FashionID": 60304,
+      "ModelID": 60304,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 57,
+      "_byte_offset": 476,
+      "FashionID": 60305,
+      "ModelID": 60305,
+      "_byte_length": 8
+    }
+  ]
+}

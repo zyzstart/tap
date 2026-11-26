@@ -1,0 +1,185 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_sealbaseconfig.bytes.ab",
+    "path_id": 262674611703783712,
+    "name": "SealBaseConfig",
+    "sha256": "5324dabc7d594ecc6c7673573475b58e43371352ef48f1b2bc272eb906141590",
+    "export": "derived/unity/text/assets_resources_config_resbin_sealbaseconfig.bytes/SealBaseConfig__262674611703783712.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 309,
+      "version": 1,
+      "record_count": 4,
+      "stored_crc32": "a99dec6a",
+      "computed_inverted_crc32": "a99dec6a"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "SealBaseConfig",
+      "fields": [
+        {
+          "type": "uint",
+          "name": "SealID",
+          "object_offset": 16
+        },
+        {
+          "type": "string",
+          "name": "SealName",
+          "object_offset": 24
+        },
+        {
+          "type": "uint",
+          "name": "ActiveItemID",
+          "object_offset": 32
+        },
+        {
+          "type": "string",
+          "name": "SealIcon",
+          "object_offset": 40
+        },
+        {
+          "type": "string",
+          "name": "TextColor",
+          "object_offset": 48
+        },
+        {
+          "type": "string",
+          "name": "OutLineColor",
+          "object_offset": 56
+        },
+        {
+          "type": "uint",
+          "name": "TowerID",
+          "object_offset": 64
+        }
+      ],
+      "unpack_va": 32054656,
+      "dump_line": 210943
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1e91db4",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e91ddc",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e91e00",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e91e28",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 40,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e91e50",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 48,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e91e78",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 56,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e91eb8",
+        "target_va": "0x21f6908",
+        "opcode": "B-tail",
+        "reader": "readUInt32",
+        "destination_object_offset": 64,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 4
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "SealID": 1001,
+      "SealName": "天空纹章",
+      "ActiveItemID": 0,
+      "SealIcon": "wz_icon_tiankong",
+      "TextColor": "#b1dfff",
+      "OutLineColor": "#3c76d7",
+      "TowerID": 101,
+      "_byte_length": 74
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 94,
+      "SealID": 1002,
+      "SealName": "大地纹章",
+      "ActiveItemID": 0,
+      "SealIcon": "wz_icon_dadi",
+      "TextColor": "#e1ac61",
+      "OutLineColor": "#925c27",
+      "TowerID": 102,
+      "_byte_length": 70
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 164,
+      "SealID": 1003,
+      "SealName": "海洋纹章",
+      "ActiveItemID": 0,
+      "SealIcon": "wz_icon_haiyang",
+      "TextColor": "#0cf1ed",
+      "OutLineColor": "#007fa4",
+      "TowerID": 103,
+      "_byte_length": 73
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 237,
+      "SealID": 1004,
+      "SealName": "混沌纹章",
+      "ActiveItemID": 0,
+      "SealIcon": "wz_icon_hundun",
+      "TextColor": "#db9dfc",
+      "OutLineColor": "#793ea2",
+      "TowerID": 104,
+      "_byte_length": 72
+    }
+  ]
+}

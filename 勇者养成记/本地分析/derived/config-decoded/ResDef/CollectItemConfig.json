@@ -1,0 +1,545 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_collectitemconfig.bytes.ab",
+    "path_id": -6903202435206200946,
+    "name": "CollectItemConfig",
+    "sha256": "556c18b82c7f2baa83cc15debcf5428748ddd622358884a08f42c96e8129f504",
+    "export": "derived/unity/text/assets_resources_config_resbin_collectitemconfig.bytes/CollectItemConfig__-6903202435206200946.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 1459,
+      "version": 1,
+      "record_count": 34,
+      "stored_crc32": "13d1fb88",
+      "computed_inverted_crc32": "13d1fb88"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "CollectItemConfig",
+      "fields": [
+        {
+          "type": "uint",
+          "name": "ItemID",
+          "object_offset": 16
+        },
+        {
+          "type": "string",
+          "name": "ResPath",
+          "object_offset": 24
+        },
+        {
+          "type": "uint",
+          "name": "FuncType",
+          "object_offset": 32
+        },
+        {
+          "type": "int",
+          "name": "FuncParam",
+          "object_offset": 36
+        },
+        {
+          "type": "uint",
+          "name": "ExistTime",
+          "object_offset": 40
+        },
+        {
+          "type": "float",
+          "name": "CollectTime",
+          "object_offset": 44
+        },
+        {
+          "type": "uint",
+          "name": "CollectTimesLimit",
+          "object_offset": 48
+        }
+      ],
+      "unpack_va": 31255064,
+      "dump_line": 210089
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1dcea4c",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dcea74",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dcea98",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dceabc",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 36,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dceae0",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 40,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dceb04",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 44,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dceb44",
+        "target_va": "0x21f6908",
+        "opcode": "B-tail",
+        "reader": "readUInt32",
+        "destination_object_offset": 48,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 34
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "ItemID": 101,
+      "ResPath": "Effect/common/eff_longzhu_01",
+      "FuncType": 1,
+      "FuncParam": 1,
+      "ExistTime": 30,
+      "CollectTime": 0.0,
+      "CollectTimesLimit": 0,
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 77,
+      "ItemID": 201,
+      "ResPath": "icon_pvp_001",
+      "FuncType": 2,
+      "FuncParam": 1536,
+      "ExistTime": 30,
+      "CollectTime": 1.0,
+      "CollectTimesLimit": 0,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 118,
+      "ItemID": 202,
+      "ResPath": "icon_pvp_002",
+      "FuncType": 2,
+      "FuncParam": 1533,
+      "ExistTime": 30,
+      "CollectTime": 1.0,
+      "CollectTimesLimit": 4,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 159,
+      "ItemID": 203,
+      "ResPath": "icon_pvp_003",
+      "FuncType": 2,
+      "FuncParam": 1534,
+      "ExistTime": 30,
+      "CollectTime": 1.0,
+      "CollectTimesLimit": 4,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 200,
+      "ItemID": 204,
+      "ResPath": "icon_pvp_004",
+      "FuncType": 2,
+      "FuncParam": 1535,
+      "ExistTime": 30,
+      "CollectTime": 1.0,
+      "CollectTimesLimit": 4,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 241,
+      "ItemID": 401,
+      "ResPath": "icon_fj_hfhy",
+      "FuncType": 4,
+      "FuncParam": 601,
+      "ExistTime": 30,
+      "CollectTime": 1.0,
+      "CollectTimesLimit": 0,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 282,
+      "ItemID": 402,
+      "ResPath": "icon_fj_shty",
+      "FuncType": 4,
+      "FuncParam": 602,
+      "ExistTime": 30,
+      "CollectTime": 1.0,
+      "CollectTimesLimit": 0,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 323,
+      "ItemID": 403,
+      "ResPath": "icon_fj_byjy",
+      "FuncType": 4,
+      "FuncParam": 603,
+      "ExistTime": 30,
+      "CollectTime": 1.0,
+      "CollectTimesLimit": 0,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 364,
+      "ItemID": 404,
+      "ResPath": "icon_fj_fxyf",
+      "FuncType": 4,
+      "FuncParam": 604,
+      "ExistTime": 30,
+      "CollectTime": 1.0,
+      "CollectTimesLimit": 0,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 405,
+      "ItemID": 405,
+      "ResPath": "icon_fj_sbbz",
+      "FuncType": 4,
+      "FuncParam": 605,
+      "ExistTime": 30,
+      "CollectTime": 1.0,
+      "CollectTimesLimit": 0,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 446,
+      "ItemID": 406,
+      "ResPath": "icon_fj_qlbd",
+      "FuncType": 4,
+      "FuncParam": 606,
+      "ExistTime": 30,
+      "CollectTime": 1.0,
+      "CollectTimesLimit": 0,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 487,
+      "ItemID": 407,
+      "ResPath": "icon_fj_qkwl",
+      "FuncType": 4,
+      "FuncParam": 607,
+      "ExistTime": 30,
+      "CollectTime": 1.0,
+      "CollectTimesLimit": 0,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 528,
+      "ItemID": 408,
+      "ResPath": "icon_fj_nyzq",
+      "FuncType": 4,
+      "FuncParam": 701,
+      "ExistTime": 30,
+      "CollectTime": 1.0,
+      "CollectTimesLimit": 0,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 569,
+      "ItemID": 409,
+      "ResPath": "icon_fj_zlzz",
+      "FuncType": 4,
+      "FuncParam": 705,
+      "ExistTime": 30,
+      "CollectTime": 1.0,
+      "CollectTimesLimit": 0,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 610,
+      "ItemID": 410,
+      "ResPath": "icon_fj_zszt",
+      "FuncType": 4,
+      "FuncParam": 706,
+      "ExistTime": 30,
+      "CollectTime": 1.0,
+      "CollectTimesLimit": 0,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 651,
+      "ItemID": 411,
+      "ResPath": "icon_fj_jdsh",
+      "FuncType": 4,
+      "FuncParam": 708,
+      "ExistTime": 30,
+      "CollectTime": 1.0,
+      "CollectTimesLimit": 0,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 692,
+      "ItemID": 412,
+      "ResPath": "icon_fj_qmzy",
+      "FuncType": 4,
+      "FuncParam": 709,
+      "ExistTime": 30,
+      "CollectTime": 1.0,
+      "CollectTimesLimit": 0,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 733,
+      "ItemID": 413,
+      "ResPath": "icon_fj_jzsj",
+      "FuncType": 4,
+      "FuncParam": 710,
+      "ExistTime": 30,
+      "CollectTime": 1.0,
+      "CollectTimesLimit": 0,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 774,
+      "ItemID": 2001,
+      "ResPath": "icon_skill_66",
+      "FuncType": 2,
+      "FuncParam": 1537,
+      "ExistTime": 30,
+      "CollectTime": 0.20000000298023224,
+      "CollectTimesLimit": 0,
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 19,
+      "_byte_offset": 816,
+      "ItemID": 2002,
+      "ResPath": "icon_skill_64",
+      "FuncType": 2,
+      "FuncParam": 1533,
+      "ExistTime": 30,
+      "CollectTime": 0.20000000298023224,
+      "CollectTimesLimit": 0,
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 20,
+      "_byte_offset": 858,
+      "ItemID": 2003,
+      "ResPath": "icon_skill_68",
+      "FuncType": 2,
+      "FuncParam": 1534,
+      "ExistTime": 30,
+      "CollectTime": 0.20000000298023224,
+      "CollectTimesLimit": 0,
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 21,
+      "_byte_offset": 900,
+      "ItemID": 2004,
+      "ResPath": "icon_skill_70",
+      "FuncType": 2,
+      "FuncParam": 1535,
+      "ExistTime": 30,
+      "CollectTime": 0.20000000298023224,
+      "CollectTimesLimit": 0,
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 22,
+      "_byte_offset": 942,
+      "ItemID": 4001,
+      "ResPath": "icon_killskill_01",
+      "FuncType": 4,
+      "FuncParam": 601,
+      "ExistTime": 30,
+      "CollectTime": 0.20000000298023224,
+      "CollectTimesLimit": 0,
+      "_byte_length": 46
+    },
+    {
+      "_record_index": 23,
+      "_byte_offset": 988,
+      "ItemID": 4002,
+      "ResPath": "icon_killskill_02",
+      "FuncType": 4,
+      "FuncParam": 602,
+      "ExistTime": 30,
+      "CollectTime": 0.20000000298023224,
+      "CollectTimesLimit": 0,
+      "_byte_length": 46
+    },
+    {
+      "_record_index": 24,
+      "_byte_offset": 1034,
+      "ItemID": 4003,
+      "ResPath": "icon_killskill_03",
+      "FuncType": 4,
+      "FuncParam": 603,
+      "ExistTime": 30,
+      "CollectTime": 0.20000000298023224,
+      "CollectTimesLimit": 0,
+      "_byte_length": 46
+    },
+    {
+      "_record_index": 25,
+      "_byte_offset": 1080,
+      "ItemID": 4004,
+      "ResPath": "icon_killskill_04",
+      "FuncType": 4,
+      "FuncParam": 604,
+      "ExistTime": 30,
+      "CollectTime": 0.20000000298023224,
+      "CollectTimesLimit": 0,
+      "_byte_length": 46
+    },
+    {
+      "_record_index": 26,
+      "_byte_offset": 1126,
+      "ItemID": 4005,
+      "ResPath": "icon_killskill_05",
+      "FuncType": 4,
+      "FuncParam": 605,
+      "ExistTime": 30,
+      "CollectTime": 0.20000000298023224,
+      "CollectTimesLimit": 0,
+      "_byte_length": 46
+    },
+    {
+      "_record_index": 27,
+      "_byte_offset": 1172,
+      "ItemID": 4006,
+      "ResPath": "icon_zs_hmzg",
+      "FuncType": 4,
+      "FuncParam": 701,
+      "ExistTime": 30,
+      "CollectTime": 0.20000000298023224,
+      "CollectTimesLimit": 0,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 28,
+      "_byte_offset": 1213,
+      "ItemID": 4007,
+      "ResPath": "icon_zs_xspx",
+      "FuncType": 4,
+      "FuncParam": 702,
+      "ExistTime": 30,
+      "CollectTime": 0.20000000298023224,
+      "CollectTimesLimit": 0,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 29,
+      "_byte_offset": 1254,
+      "ItemID": 4008,
+      "ResPath": "icon_zs_hsms",
+      "FuncType": 4,
+      "FuncParam": 703,
+      "ExistTime": 30,
+      "CollectTime": 0.20000000298023224,
+      "CollectTimesLimit": 0,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 30,
+      "_byte_offset": 1295,
+      "ItemID": 4009,
+      "ResPath": "icon_zs_sbdl",
+      "FuncType": 4,
+      "FuncParam": 704,
+      "ExistTime": 30,
+      "CollectTime": 0.20000000298023224,
+      "CollectTimesLimit": 0,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 31,
+      "_byte_offset": 1336,
+      "ItemID": 4010,
+      "ResPath": "icon_zs_hlms",
+      "FuncType": 4,
+      "FuncParam": 706,
+      "ExistTime": 30,
+      "CollectTime": 0.20000000298023224,
+      "CollectTimesLimit": 0,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 32,
+      "_byte_offset": 1377,
+      "ItemID": 4011,
+      "ResPath": "icon_zs_jhzl",
+      "FuncType": 4,
+      "FuncParam": 707,
+      "ExistTime": 30,
+      "CollectTime": 0.20000000298023224,
+      "CollectTimesLimit": 0,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 33,
+      "_byte_offset": 1418,
+      "ItemID": 4012,
+      "ResPath": "icon_zs_hsws",
+      "FuncType": 4,
+      "FuncParam": 709,
+      "ExistTime": 30,
+      "CollectTime": 0.20000000298023224,
+      "CollectTimesLimit": 0,
+      "_byte_length": 41
+    }
+  ]
+}

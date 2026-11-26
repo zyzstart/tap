@@ -1,0 +1,369 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_huntsceneconfig.bytes.ab",
+    "path_id": -7583671520774311226,
+    "name": "HuntSceneConfig",
+    "sha256": "6eb51163009faeed8c844e076a7a8267e638c682bdb0f16ae37cc1c0ef465bd3",
+    "export": "derived/unity/text/assets_resources_config_resbin_huntsceneconfig.bytes/HuntSceneConfig__-7583671520774311226.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 1604,
+      "version": 1,
+      "record_count": 36,
+      "stored_crc32": "24820972",
+      "computed_inverted_crc32": "24820972"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "HuntSceneConfig",
+      "fields": [
+        {
+          "type": "int",
+          "name": "SceneID",
+          "object_offset": 16
+        },
+        {
+          "type": "int",
+          "name": "ChapterID",
+          "object_offset": 20
+        },
+        {
+          "type": "string",
+          "name": "Map",
+          "object_offset": 24
+        }
+      ],
+      "unpack_va": 30733848,
+      "dump_line": 205548
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1d4f64c",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d4f670",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d4f6b4",
+        "target_va": "0x21f6ce8",
+        "opcode": "B-tail",
+        "reader": "readString",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 36
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "SceneID": 101,
+      "ChapterID": 1,
+      "Map": "Level/Map/level_xiongmaocun0301",
+      "_byte_length": 44
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 64,
+      "SceneID": 201,
+      "ChapterID": 2,
+      "Map": "Level/Map/level_xiongmaocun0301",
+      "_byte_length": 44
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 108,
+      "SceneID": 301,
+      "ChapterID": 3,
+      "Map": "Level/Map/level_xiongmaocun0301",
+      "_byte_length": 44
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 152,
+      "SceneID": 401,
+      "ChapterID": 4,
+      "Map": "Level/Map/level_xiongmaocun0301",
+      "_byte_length": 44
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 196,
+      "SceneID": 501,
+      "ChapterID": 5,
+      "Map": "Level/Map/level_xiongmaocun0301",
+      "_byte_length": 44
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 240,
+      "SceneID": 601,
+      "ChapterID": 6,
+      "Map": "Level/Map/level_xiongmaocun0301",
+      "_byte_length": 44
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 284,
+      "SceneID": 701,
+      "ChapterID": 7,
+      "Map": "Level/Map/level_xiongmaocun0301",
+      "_byte_length": 44
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 328,
+      "SceneID": 801,
+      "ChapterID": 8,
+      "Map": "Level/Map/level_xiongmaocun0301",
+      "_byte_length": 44
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 372,
+      "SceneID": 901,
+      "ChapterID": 9,
+      "Map": "Level/Map/level_xiongmaocun0301",
+      "_byte_length": 44
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 416,
+      "SceneID": 1001,
+      "ChapterID": 10,
+      "Map": "Level/Map/level_xiongmaocun0301",
+      "_byte_length": 44
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 460,
+      "SceneID": 1101,
+      "ChapterID": 11,
+      "Map": "Level/Map/level_xiongmaocun0301",
+      "_byte_length": 44
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 504,
+      "SceneID": 1201,
+      "ChapterID": 12,
+      "Map": "Level/Map/level_xiongmaocun0301",
+      "_byte_length": 44
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 548,
+      "SceneID": 1301,
+      "ChapterID": 13,
+      "Map": "Level/Map/level_xiongmaocun0301",
+      "_byte_length": 44
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 592,
+      "SceneID": 1401,
+      "ChapterID": 14,
+      "Map": "Level/Map/level_xiongmaocun0301",
+      "_byte_length": 44
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 636,
+      "SceneID": 1501,
+      "ChapterID": 15,
+      "Map": "Level/Map/level_xiongmaocun0301",
+      "_byte_length": 44
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 680,
+      "SceneID": 1601,
+      "ChapterID": 16,
+      "Map": "Level/Map/level_xiongmaocun0301",
+      "_byte_length": 44
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 724,
+      "SceneID": 1701,
+      "ChapterID": 17,
+      "Map": "Level/Map/level_xiongmaocun0301",
+      "_byte_length": 44
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 768,
+      "SceneID": 1801,
+      "ChapterID": 18,
+      "Map": "Level/Map/level_xiongmaocun0301",
+      "_byte_length": 44
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 812,
+      "SceneID": 1901,
+      "ChapterID": 19,
+      "Map": "Level/Map/level_xiongmaocun0301",
+      "_byte_length": 44
+    },
+    {
+      "_record_index": 19,
+      "_byte_offset": 856,
+      "SceneID": 2001,
+      "ChapterID": 20,
+      "Map": "Level/Map/level_xiongmaocun0301",
+      "_byte_length": 44
+    },
+    {
+      "_record_index": 20,
+      "_byte_offset": 900,
+      "SceneID": 2101,
+      "ChapterID": 21,
+      "Map": "Level/Map/level_xiongmaocun0301",
+      "_byte_length": 44
+    },
+    {
+      "_record_index": 21,
+      "_byte_offset": 944,
+      "SceneID": 2201,
+      "ChapterID": 22,
+      "Map": "Level/Map/level_xiongmaocun0301",
+      "_byte_length": 44
+    },
+    {
+      "_record_index": 22,
+      "_byte_offset": 988,
+      "SceneID": 2301,
+      "ChapterID": 23,
+      "Map": "Level/Map/level_xiongmaocun0301",
+      "_byte_length": 44
+    },
+    {
+      "_record_index": 23,
+      "_byte_offset": 1032,
+      "SceneID": 2401,
+      "ChapterID": 24,
+      "Map": "Level/Map/level_xiongmaocun0301",
+      "_byte_length": 44
+    },
+    {
+      "_record_index": 24,
+      "_byte_offset": 1076,
+      "SceneID": 2501,
+      "ChapterID": 25,
+      "Map": "Level/Map/level_xiongmaocun0301",
+      "_byte_length": 44
+    },
+    {
+      "_record_index": 25,
+      "_byte_offset": 1120,
+      "SceneID": 2601,
+      "ChapterID": 26,
+      "Map": "Level/Map/level_xiongmaocun0301",
+      "_byte_length": 44
+    },
+    {
+      "_record_index": 26,
+      "_byte_offset": 1164,
+      "SceneID": 2701,
+      "ChapterID": 27,
+      "Map": "Level/Map/level_xiongmaocun0301",
+      "_byte_length": 44
+    },
+    {
+      "_record_index": 27,
+      "_byte_offset": 1208,
+      "SceneID": 2801,
+      "ChapterID": 28,
+      "Map": "Level/Map/level_xiongmaocun0301",
+      "_byte_length": 44
+    },
+    {
+      "_record_index": 28,
+      "_byte_offset": 1252,
+      "SceneID": 2901,
+      "ChapterID": 29,
+      "Map": "Level/Map/level_xiongmaocun0301",
+      "_byte_length": 44
+    },
+    {
+      "_record_index": 29,
+      "_byte_offset": 1296,
+      "SceneID": 3001,
+      "ChapterID": 30,
+      "Map": "Level/Map/level_xiongmaocun0301",
+      "_byte_length": 44
+    },
+    {
+      "_record_index": 30,
+      "_byte_offset": 1340,
+      "SceneID": 3101,
+      "ChapterID": 31,
+      "Map": "Level/Map/level_xiongmaocun0301",
+      "_byte_length": 44
+    },
+    {
+      "_record_index": 31,
+      "_byte_offset": 1384,
+      "SceneID": 3201,
+      "ChapterID": 32,
+      "Map": "Level/Map/level_xiongmaocun0301",
+      "_byte_length": 44
+    },
+    {
+      "_record_index": 32,
+      "_byte_offset": 1428,
+      "SceneID": 3301,
+      "ChapterID": 33,
+      "Map": "Level/Map/level_xiongmaocun0301",
+      "_byte_length": 44
+    },
+    {
+      "_record_index": 33,
+      "_byte_offset": 1472,
+      "SceneID": 3401,
+      "ChapterID": 34,
+      "Map": "Level/Map/level_xiongmaocun0301",
+      "_byte_length": 44
+    },
+    {
+      "_record_index": 34,
+      "_byte_offset": 1516,
+      "SceneID": 3501,
+      "ChapterID": 35,
+      "Map": "Level/Map/level_xiongmaocun0301",
+      "_byte_length": 44
+    },
+    {
+      "_record_index": 35,
+      "_byte_offset": 1560,
+      "SceneID": 3601,
+      "ChapterID": 36,
+      "Map": "Level/Map/level_xiongmaocun0301",
+      "_byte_length": 44
+    }
+  ]
+}

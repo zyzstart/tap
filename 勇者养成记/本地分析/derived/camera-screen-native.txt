@@ -1,0 +1,191 @@
+
+A3Game.UISys$$OnInit
+15b1ab8 stp x20, x19, [sp, #-0x20]!
+15b1abc stp x29, x30, [sp, #0x10]
+15b1ac0 add x29, sp, #0x10
+15b1ac4 adrp x20, #0x2f3f000
+15b1ac8 ldrb w8, [x20, #0x6f3]
+15b1acc mov x19, x0
+15b1ad0 tbnz w8, #0, #0x15b1aec
+15b1ad4 adrp x8, #0x2c91000
+15b1ad8 ldr x8, [x8, #0x728]
+15b1adc ldr w0, [x8]
+15b1ae0 bl #0xd04f28
+15b1ae4 mov w8, #1
+15b1ae8 strb w8, [x20, #0x6f3]
+15b1aec mov x0, xzr
+15b1af0 bl #0x1be7acc UnityEngine.Screen$$get_width
+15b1af4 adrp x20, #0x2cd3000
+15b1af8 ldr x20, [x20, #0xf38]
+15b1afc ldr x8, [x20]
+15b1b00 ldr x8, [x8, #0xb8]
+15b1b04 str w0, [x8]
+15b1b08 mov x0, xzr
+15b1b0c bl #0x1be7b24 UnityEngine.Screen$$get_height
+15b1b10 ldr x8, [x20]
+15b1b14 adrp x9, #0x239f000
+15b1b18 ldr s2, [x9, #0x2d4]
+15b1b1c ldr x8, [x8, #0xb8]
+15b1b20 str w0, [x8, #4]
+15b1b24 ldr x8, [x20]
+15b1b28 ldr x8, [x8, #0xb8]
+15b1b2c ldp s0, s1, [x8]
+15b1b30 scvtf s0, s0
+15b1b34 scvtf s1, s1
+15b1b38 fdiv s0, s0, s1
+15b1b3c fdiv s0, s2, s0
+15b1b40 str s0, [x8, #8]
+15b1b44 adrp x8, #0x2cca000
+15b1b48 ldr x8, [x8, #0x150]
+15b1b4c ldr x0, [x8]
+15b1b50 bl #0xd38978
+15b1b54 mov x1, xzr
+15b1b58 mov x20, x0
+15b1b5c bl #0x114b020 UIManager$$.ctor
+15b1b60 str x20, [x19, #0x10]
+15b1b64 cbnz x20, #0x15b1b70
+15b1b68 mov x0, xzr
+15b1b6c bl #0xd2b72c
+15b1b70 mov x0, x20
+15b1b74 mov x1, xzr
+15b1b78 bl #0x11486a8 UIManager$$Create
+15b1b7c mov x0, x19
+15b1b80 bl #0x15b1bac A3Game.UISys$$RegistAllController
+15b1b84 mov x0, xzr
+15b1b88 bl #0x18fecc4 WebGLMiniGame.MiniGameLib$$IsMiniGame
+15b1b8c tbz w0, #0, #0x15b1b9c
+15b1b90 add x0, x19, #0x20
+15b1b94 mov x1, xzr
+15b1b98 bl #0x1900ac4 WebGLMiniGame.MiniGameLib$$GetWXMenuButtonBoundingClientRect
+15b1b9c ldp x29, x30, [sp, #0x10]
+15b1ba0 mov w0, #1
+15b1ba4 ldp x20, x19, [sp], #0x20
+15b1ba8 ret
+
+A3Game.CameraMgr$$SetWidthLimit
+1051790 fmov s1, wzr
+1051794 fmax s0, s0, s1
+1051798 str s0, [x0, #0x48]
+105179c ret
+
+A3Game.CameraMgr$$OnLeaveBattle
+1051904 sub sp, sp, #0x50
+1051908 str d10, [sp, #0x10]
+105190c stp d9, d8, [sp, #0x18]
+1051910 str x21, [sp, #0x28]
+1051914 stp x20, x19, [sp, #0x30]
+1051918 stp x29, x30, [sp, #0x40]
+105191c add x29, sp, #0x40
+1051920 adrp x20, #0x2f3c000
+1051924 ldrb w8, [x20, #0x42b]
+1051928 mov x19, x0
+105192c tbnz w8, #0, #0x1051948
+1051930 adrp x8, #0x2ce5000
+1051934 ldr x8, [x8, #0xbf0]
+1051938 ldr w0, [x8]
+105193c bl #0xd04f28
+1051940 mov w8, #1
+1051944 strb w8, [x20, #0x42b]
+1051948 adrp x21, #0x2c78000
+105194c ldr x21, [x21, #0x1b8]
+1051950 ldr x20, [x19, #0x10]
+1051954 ldr x0, [x21]
+1051958 ldrb w8, [x0, #0x127]
+105195c tbz w8, #1, #0x105196c
+1051960 ldr w8, [x0, #0xd8]
+1051964 cbnz w8, #0x105196c
+1051968 bl #0xd14168
+105196c mov x0, x20
+1051970 mov x1, xzr
+1051974 mov x2, xzr
+1051978 bl #0x1bda5e4 UnityEngine.Object$$op_Equality
+105197c tbnz w0, #0, #0x1051ac8
+1051980 ldr x0, [x21]
+1051984 ldr x20, [x19, #0x30]
+1051988 ldrb w8, [x0, #0x127]
+105198c tbz w8, #1, #0x105199c
+1051990 ldr w8, [x0, #0xd8]
+1051994 cbnz w8, #0x105199c
+1051998 bl #0xd14168
+105199c mov x0, x20
+10519a0 mov x1, xzr
+10519a4 mov x2, xzr
+10519a8 bl #0x1bda5e4 UnityEngine.Object$$op_Equality
+10519ac tbnz w0, #0, #0x1051ac8
+10519b0 ldr x20, [x19, #0x10]
+10519b4 cbnz x20, #0x10519c0
+10519b8 mov x0, xzr
+10519bc bl #0xd2b72c
+10519c0 mov x0, x20
+10519c4 mov w1, wzr
+10519c8 mov x2, xzr
+10519cc bl #0x1c58560 UnityEngine.GameObject$$SetActive
+10519d0 ldr x20, [x19, #0x30]
+10519d4 cbnz x20, #0x10519e0
+10519d8 mov x0, xzr
+10519dc bl #0xd2b72c
+10519e0 mov x0, x20
+10519e4 mov x1, xzr
+10519e8 bl #0x1c511e0 UnityEngine.Component$$get_transform
+10519ec ldr x21, [x19, #0x30]
+10519f0 mov x20, x0
+10519f4 cbnz x21, #0x1051a00
+10519f8 mov x0, xzr
+10519fc bl #0xd2b72c
+1051a00 mov x0, x21
+1051a04 mov x1, xzr
+1051a08 bl #0x1c511e0 UnityEngine.Component$$get_transform
+1051a0c mov x21, x0
+1051a10 cbnz x21, #0x1051a18
+1051a14 bl #0xd2b72c
+1051a18 mov x0, x21
+1051a1c mov x1, xzr
+1051a20 bl #0x21784f4 UnityEngine.Transform$$get_localPosition
+1051a24 ldr x21, [x19, #0x30]
+1051a28 mov v8.16b, v0.16b
+1051a2c cbnz x21, #0x1051a38
+1051a30 mov x0, xzr
+1051a34 bl #0xd2b72c
+1051a38 mov x0, x21
+1051a3c mov x1, xzr
+1051a40 bl #0x1c511e0 UnityEngine.Component$$get_transform
+1051a44 mov x21, x0
+1051a48 cbnz x21, #0x1051a50
+1051a4c bl #0xd2b72c
+1051a50 mov x0, x21
+1051a54 mov x1, xzr
+1051a58 bl #0x21784f4 UnityEngine.Transform$$get_localPosition
+1051a5c fmov s1, #-4.50000000
+1051a60 mov x0, sp
+1051a64 mov v0.16b, v8.16b
+1051a68 mov x1, xzr
+1051a6c str wzr, [sp, #8]
+1051a70 str xzr, [sp]
+1051a74 bl #0x217c0fc
+1051a78 cbnz x20, #0x1051a84
+1051a7c mov x0, xzr
+1051a80 bl #0xd2b72c
+1051a84 ldp s0, s1, [sp]
+1051a88 ldr s2, [sp, #8]
+1051a8c mov x0, x20
+1051a90 mov x1, xzr
+1051a94 bl #0x2178598 UnityEngine.Transform$$set_localPosition
+1051a98 ldr x20, [x19, #0x28]
+1051a9c ldp s8, s9, [x19, #0x18]
+1051aa0 ldr s10, [x19, #0x20]
+1051aa4 cbnz x20, #0x1051ab0
+1051aa8 mov x0, xzr
+1051aac bl #0xd2b72c
+1051ab0 mov x0, x20
+1051ab4 mov v0.16b, v8.16b
+1051ab8 mov v1.16b, v9.16b
+1051abc mov v2.16b, v10.16b
+1051ac0 mov x1, xzr
+1051ac4 bl #0x2178598 UnityEngine.Transform$$set_localPosition
+1051ac8 ldp x29, x30, [sp, #0x40]
+1051acc ldp x20, x19, [sp, #0x30]
+1051ad0 ldr x21, [sp, #0x28]
+1051ad4 ldp d9, d8, [sp, #0x18]
+1051ad8 ldr d10, [sp, #0x10]
+1051adc add sp, sp, #0x50
+1051ae0 ret

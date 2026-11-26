@@ -1,0 +1,130 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_sacredequipbootyconfig.bytes.ab",
+    "path_id": -8552529457925556513,
+    "name": "SacredEquipBootyConfig",
+    "sha256": "e92ae85d38fc16876c0a9ec1a5f83e34e3fd8054ee94c19987ea9480ca39674d",
+    "export": "derived/unity/text/assets_resources_config_resbin_sacredequipbootyconfig.bytes/SacredEquipBootyConfig__-8552529457925556513.bin",
+    "schema": "ResDef.SacredEquipBootyConfig",
+    "path_id_decimal": "-8552529457925556513",
+    "legacy_status": "raw-header-verified",
+    "legacy_reason": "Unsupported arrays/nested/enum fields: ResAttrImpactData[] EquipExtraAttr",
+    "status": "decoded-validated-native-recursive",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 143,
+      "version": 1,
+      "record_count": 3,
+      "stored_crc32": "dc892455",
+      "computed_inverted_crc32": "dc892455"
+    },
+    "native_layout_verified": true,
+    "schema_file": "derived/config-extended/schemas/ResDef.SacredEquipBootyConfig.json",
+    "minimum_record_size": 41,
+    "min_expected_payload_bytes": 123,
+    "actual_payload_bytes": 123,
+    "decoded_record_count": 3,
+    "validation": {
+      "header_verified": true,
+      "count_verified": true,
+      "exact_eof": true,
+      "full_reencode_equal": true,
+      "full_reencode_sha256": "e92ae85d38fc16876c0a9ec1a5f83e34e3fd8054ee94c19987ea9480ca39674d",
+      "decoded_node_count": 51,
+      "payload_bytes": 123
+    },
+    "arrays": [
+      {
+        "field": "EquipExtraAttr",
+        "count": 3,
+        "count_encoding": "none-native-fixed"
+      }
+    ],
+    "decoded_json": "derived/config-extended/ResDef/SacredEquipBootyConfig.json",
+    "decoded_csv": "derived/config-extended/ResDef/SacredEquipBootyConfig.csv"
+  },
+  "precision": "Exact JSON integer number tokens, with decimal-string mirrors for every int64/uint64/FP. FP is raw signed int64; no scaling.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "BootyID": 810002,
+      "EquipID": 810002,
+      "Level": 1,
+      "Quality": 1,
+      "Prefix": 1,
+      "EquipExtraAttr": [
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 61,
+      "BootyID": 810003,
+      "EquipID": 810003,
+      "Level": 1,
+      "Quality": 1,
+      "Prefix": 1,
+      "EquipExtraAttr": [
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 102,
+      "BootyID": 810004,
+      "EquipID": 810004,
+      "Level": 1,
+      "Quality": 1,
+      "Prefix": 1,
+      "EquipExtraAttr": [
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 41
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "generated_utc": "2026-10-31T09:29:57.097362+00:00",
+  "tool": "tools/index_il2cpp.py",
+  "tool_sha256": "0cd419c2a15571cd5bf0dcbc5ba5d1d29450fa19862d4ad74b4dfc4333b2cb07",
+  "mode": "stdlib text parsing only",
+  "abis": {
+    "arm64-v8a": {
+      "abi": "arm64-v8a",
+      "source": "derived/il2cpp/arm64-v8a/dump.cs",
+      "sha256": "aea4266774a2fd2364bf05084439735f82caed6bffefbef1008ad5ecd4081e08",
+      "bytes": 15599218,
+      "lines": 458398,
+      "image_count": 47,
+      "type_count": 11282,
+      "type_kinds": {
+        "class": 9560,
+        "interface": 422,
+        "struct": 442,
+        "enum": 858
+      },
+      "member_count": 136668,
+      "member_kinds": {
+        "method": 70973,
+        "field": 59150,
+        "property": 6545
+      },
+      "parse_warning_count": 0,
+      "method_bodies_recovered": false,
+      "generic_instantiation_comment_blocks": 1378,
+      "generic_instantiation_comment_lines": 81191,
+      "type_indices_contiguous": true,
+      "image_type_counts_match_boundaries": true
+    },
+    "armeabi-v7a": {
+      "abi": "armeabi-v7a",
+      "source": "derived/il2cpp/armeabi-v7a/dump.cs",
+      "sha256": "4b189984f87cc6d586f1c23c3122323a28473ae06384d36ea292e3e13f97e6a1",
+      "bytes": 15507809,
+      "lines": 458398,
+      "image_count": 47,
+      "type_count": 11282,
+      "type_kinds": {
+        "class": 9560,
+        "interface": 422,
+        "struct": 442,
+        "enum": 858
+      },
+      "member_count": 136668,
+      "member_kinds": {
+        "method": 70973,
+        "field": 59150,
+        "property": 6545
+      },
+      "parse_warning_count": 0,
+      "method_bodies_recovered": false,
+      "generic_instantiation_comment_blocks": 1378,
+      "generic_instantiation_comment_lines": 81191,
+      "type_indices_contiguous": true,
+      "image_type_counts_match_boundaries": true
+    }
+  },
+  "abi_comparison": {
+    "abis": [
+      "arm64-v8a",
+      "armeabi-v7a"
+    ],
+    "same_image_headers": true,
+    "same_type_declarations": true,
+    "same_member_signatures": true,
+    "note": "Text declaration equality is not native-code, ABI layout, behavioral, or version compatibility verification."
+  },
+  "focus_assemblies": [
+    "BattleCore.dll",
+    "GameLogic.dll",
+    "GameProto.dll",
+    "GameNative.dll",
+    "DodGameLib.dll",
+    "DodProtoBase.dll",
+    "DodFixLib.dll",
+    "GameBase.dll",
+    "Assembly-CSharp.dll",
+    "Assembly-CSharp-firstpass.dll"
+  ],
+  "limits": [
+    "No C# method bodies recovered",
+    "No DLL/game code execution",
+    "No native disassembly",
+    "No formula/drop-rate/runtime-state inference from names alone"
+  ]
+}

@@ -1,0 +1,767 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_fp_randomskilllibgroupconfig.bytes.ab",
+    "path_id": 6104686022728708026,
+    "name": "RandomSkillLibGroupConfig",
+    "sha256": "27647739c44adb366c7baea6d94969d315b18a91bd97aca4c376effb55463409",
+    "export": "derived/unity/text/assets_resources_config_resbin_fp_randomskilllibgroupconfig.bytes/RandomSkillLibGroupConfig__6104686022728708026.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 820,
+      "version": 1,
+      "record_count": 100,
+      "stored_crc32": "26f4a3a0",
+      "computed_inverted_crc32": "26f4a3a0"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "BattleCore",
+      "name": "RandomSkillLibGroupConfig",
+      "fields": [
+        {
+          "type": "int",
+          "name": "RandomSkillLibGroupID",
+          "object_offset": 16
+        },
+        {
+          "type": "int",
+          "name": "RandomSkillLibID",
+          "object_offset": 20
+        }
+      ],
+      "unpack_va": 35217856,
+      "dump_line": 167015
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x21961f4",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x2196234",
+        "target_va": "0x21f67d0",
+        "opcode": "B-tail",
+        "reader": "readInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 100
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "RandomSkillLibGroupID": 1001,
+      "RandomSkillLibID": 21811,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 28,
+      "RandomSkillLibGroupID": 1001,
+      "RandomSkillLibID": 21821,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 36,
+      "RandomSkillLibGroupID": 1001,
+      "RandomSkillLibID": 21831,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 44,
+      "RandomSkillLibGroupID": 1001,
+      "RandomSkillLibID": 21841,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 52,
+      "RandomSkillLibGroupID": 1001,
+      "RandomSkillLibID": 21851,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 60,
+      "RandomSkillLibGroupID": 1001,
+      "RandomSkillLibID": 21861,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 68,
+      "RandomSkillLibGroupID": 1001,
+      "RandomSkillLibID": 21871,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 76,
+      "RandomSkillLibGroupID": 1001,
+      "RandomSkillLibID": 21881,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 84,
+      "RandomSkillLibGroupID": 1001,
+      "RandomSkillLibID": 21891,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 92,
+      "RandomSkillLibGroupID": 1001,
+      "RandomSkillLibID": 21911,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 100,
+      "RandomSkillLibGroupID": 1002,
+      "RandomSkillLibID": 21812,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 108,
+      "RandomSkillLibGroupID": 1002,
+      "RandomSkillLibID": 21822,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 116,
+      "RandomSkillLibGroupID": 1002,
+      "RandomSkillLibID": 21832,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 124,
+      "RandomSkillLibGroupID": 1002,
+      "RandomSkillLibID": 21842,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 132,
+      "RandomSkillLibGroupID": 1002,
+      "RandomSkillLibID": 21852,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 140,
+      "RandomSkillLibGroupID": 1002,
+      "RandomSkillLibID": 21862,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 148,
+      "RandomSkillLibGroupID": 1002,
+      "RandomSkillLibID": 21872,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 156,
+      "RandomSkillLibGroupID": 1002,
+      "RandomSkillLibID": 21882,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 164,
+      "RandomSkillLibGroupID": 1002,
+      "RandomSkillLibID": 21892,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 19,
+      "_byte_offset": 172,
+      "RandomSkillLibGroupID": 1002,
+      "RandomSkillLibID": 21912,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 20,
+      "_byte_offset": 180,
+      "RandomSkillLibGroupID": 1003,
+      "RandomSkillLibID": 21813,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 21,
+      "_byte_offset": 188,
+      "RandomSkillLibGroupID": 1003,
+      "RandomSkillLibID": 21823,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 22,
+      "_byte_offset": 196,
+      "RandomSkillLibGroupID": 1003,
+      "RandomSkillLibID": 21833,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 23,
+      "_byte_offset": 204,
+      "RandomSkillLibGroupID": 1003,
+      "RandomSkillLibID": 21843,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 24,
+      "_byte_offset": 212,
+      "RandomSkillLibGroupID": 1003,
+      "RandomSkillLibID": 21853,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 25,
+      "_byte_offset": 220,
+      "RandomSkillLibGroupID": 1003,
+      "RandomSkillLibID": 21863,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 26,
+      "_byte_offset": 228,
+      "RandomSkillLibGroupID": 1003,
+      "RandomSkillLibID": 21873,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 27,
+      "_byte_offset": 236,
+      "RandomSkillLibGroupID": 1003,
+      "RandomSkillLibID": 21883,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 28,
+      "_byte_offset": 244,
+      "RandomSkillLibGroupID": 1003,
+      "RandomSkillLibID": 21893,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 29,
+      "_byte_offset": 252,
+      "RandomSkillLibGroupID": 1003,
+      "RandomSkillLibID": 21913,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 30,
+      "_byte_offset": 260,
+      "RandomSkillLibGroupID": 1004,
+      "RandomSkillLibID": 21814,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 31,
+      "_byte_offset": 268,
+      "RandomSkillLibGroupID": 1004,
+      "RandomSkillLibID": 21824,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 32,
+      "_byte_offset": 276,
+      "RandomSkillLibGroupID": 1004,
+      "RandomSkillLibID": 21834,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 33,
+      "_byte_offset": 284,
+      "RandomSkillLibGroupID": 1004,
+      "RandomSkillLibID": 21844,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 34,
+      "_byte_offset": 292,
+      "RandomSkillLibGroupID": 1004,
+      "RandomSkillLibID": 21854,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 35,
+      "_byte_offset": 300,
+      "RandomSkillLibGroupID": 1004,
+      "RandomSkillLibID": 21864,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 36,
+      "_byte_offset": 308,
+      "RandomSkillLibGroupID": 1004,
+      "RandomSkillLibID": 21874,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 37,
+      "_byte_offset": 316,
+      "RandomSkillLibGroupID": 1004,
+      "RandomSkillLibID": 21884,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 38,
+      "_byte_offset": 324,
+      "RandomSkillLibGroupID": 1004,
+      "RandomSkillLibID": 21894,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 39,
+      "_byte_offset": 332,
+      "RandomSkillLibGroupID": 1004,
+      "RandomSkillLibID": 21914,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 40,
+      "_byte_offset": 340,
+      "RandomSkillLibGroupID": 1005,
+      "RandomSkillLibID": 21815,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 41,
+      "_byte_offset": 348,
+      "RandomSkillLibGroupID": 1005,
+      "RandomSkillLibID": 21825,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 42,
+      "_byte_offset": 356,
+      "RandomSkillLibGroupID": 1005,
+      "RandomSkillLibID": 21835,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 43,
+      "_byte_offset": 364,
+      "RandomSkillLibGroupID": 1005,
+      "RandomSkillLibID": 21845,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 44,
+      "_byte_offset": 372,
+      "RandomSkillLibGroupID": 1005,
+      "RandomSkillLibID": 21855,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 45,
+      "_byte_offset": 380,
+      "RandomSkillLibGroupID": 1005,
+      "RandomSkillLibID": 21865,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 46,
+      "_byte_offset": 388,
+      "RandomSkillLibGroupID": 1005,
+      "RandomSkillLibID": 21875,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 47,
+      "_byte_offset": 396,
+      "RandomSkillLibGroupID": 1005,
+      "RandomSkillLibID": 21885,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 48,
+      "_byte_offset": 404,
+      "RandomSkillLibGroupID": 1005,
+      "RandomSkillLibID": 21895,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 49,
+      "_byte_offset": 412,
+      "RandomSkillLibGroupID": 1005,
+      "RandomSkillLibID": 21915,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 50,
+      "_byte_offset": 420,
+      "RandomSkillLibGroupID": 1006,
+      "RandomSkillLibID": 21816,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 51,
+      "_byte_offset": 428,
+      "RandomSkillLibGroupID": 1006,
+      "RandomSkillLibID": 21826,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 52,
+      "_byte_offset": 436,
+      "RandomSkillLibGroupID": 1006,
+      "RandomSkillLibID": 21836,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 53,
+      "_byte_offset": 444,
+      "RandomSkillLibGroupID": 1006,
+      "RandomSkillLibID": 21846,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 54,
+      "_byte_offset": 452,
+      "RandomSkillLibGroupID": 1006,
+      "RandomSkillLibID": 21856,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 55,
+      "_byte_offset": 460,
+      "RandomSkillLibGroupID": 1006,
+      "RandomSkillLibID": 21866,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 56,
+      "_byte_offset": 468,
+      "RandomSkillLibGroupID": 1006,
+      "RandomSkillLibID": 21876,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 57,
+      "_byte_offset": 476,
+      "RandomSkillLibGroupID": 1006,
+      "RandomSkillLibID": 21886,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 58,
+      "_byte_offset": 484,
+      "RandomSkillLibGroupID": 1006,
+      "RandomSkillLibID": 21896,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 59,
+      "_byte_offset": 492,
+      "RandomSkillLibGroupID": 1006,
+      "RandomSkillLibID": 21916,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 60,
+      "_byte_offset": 500,
+      "RandomSkillLibGroupID": 1007,
+      "RandomSkillLibID": 21817,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 61,
+      "_byte_offset": 508,
+      "RandomSkillLibGroupID": 1007,
+      "RandomSkillLibID": 21827,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 62,
+      "_byte_offset": 516,
+      "RandomSkillLibGroupID": 1007,
+      "RandomSkillLibID": 21837,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 63,
+      "_byte_offset": 524,
+      "RandomSkillLibGroupID": 1007,
+      "RandomSkillLibID": 21847,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 64,
+      "_byte_offset": 532,
+      "RandomSkillLibGroupID": 1007,
+      "RandomSkillLibID": 21857,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 65,
+      "_byte_offset": 540,
+      "RandomSkillLibGroupID": 1007,
+      "RandomSkillLibID": 21867,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 66,
+      "_byte_offset": 548,
+      "RandomSkillLibGroupID": 1007,
+      "RandomSkillLibID": 21877,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 67,
+      "_byte_offset": 556,
+      "RandomSkillLibGroupID": 1007,
+      "RandomSkillLibID": 21887,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 68,
+      "_byte_offset": 564,
+      "RandomSkillLibGroupID": 1007,
+      "RandomSkillLibID": 21897,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 69,
+      "_byte_offset": 572,
+      "RandomSkillLibGroupID": 1107,
+      "RandomSkillLibID": 21917,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 70,
+      "_byte_offset": 580,
+      "RandomSkillLibGroupID": 1008,
+      "RandomSkillLibID": 21818,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 71,
+      "_byte_offset": 588,
+      "RandomSkillLibGroupID": 1008,
+      "RandomSkillLibID": 21828,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 72,
+      "_byte_offset": 596,
+      "RandomSkillLibGroupID": 1008,
+      "RandomSkillLibID": 21838,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 73,
+      "_byte_offset": 604,
+      "RandomSkillLibGroupID": 1008,
+      "RandomSkillLibID": 21848,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 74,
+      "_byte_offset": 612,
+      "RandomSkillLibGroupID": 1008,
+      "RandomSkillLibID": 21858,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 75,
+      "_byte_offset": 620,
+      "RandomSkillLibGroupID": 1008,
+      "RandomSkillLibID": 21868,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 76,
+      "_byte_offset": 628,
+      "RandomSkillLibGroupID": 1008,
+      "RandomSkillLibID": 21878,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 77,
+      "_byte_offset": 636,
+      "RandomSkillLibGroupID": 1008,
+      "RandomSkillLibID": 21888,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 78,
+      "_byte_offset": 644,
+      "RandomSkillLibGroupID": 1008,
+      "RandomSkillLibID": 21898,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 79,
+      "_byte_offset": 652,
+      "RandomSkillLibGroupID": 1008,
+      "RandomSkillLibID": 21918,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 80,
+      "_byte_offset": 660,
+      "RandomSkillLibGroupID": 1009,
+      "RandomSkillLibID": 21819,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 81,
+      "_byte_offset": 668,
+      "RandomSkillLibGroupID": 1009,
+      "RandomSkillLibID": 21829,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 82,
+      "_byte_offset": 676,
+      "RandomSkillLibGroupID": 1009,
+      "RandomSkillLibID": 21839,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 83,
+      "_byte_offset": 684,
+      "RandomSkillLibGroupID": 1009,
+      "RandomSkillLibID": 21849,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 84,
+      "_byte_offset": 692,
+      "RandomSkillLibGroupID": 1009,
+      "RandomSkillLibID": 21859,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 85,
+      "_byte_offset": 700,
+      "RandomSkillLibGroupID": 1009,
+      "RandomSkillLibID": 21869,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 86,
+      "_byte_offset": 708,
+      "RandomSkillLibGroupID": 1009,
+      "RandomSkillLibID": 21879,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 87,
+      "_byte_offset": 716,
+      "RandomSkillLibGroupID": 1009,
+      "RandomSkillLibID": 21889,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 88,
+      "_byte_offset": 724,
+      "RandomSkillLibGroupID": 1009,
+      "RandomSkillLibID": 21899,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 89,
+      "_byte_offset": 732,
+      "RandomSkillLibGroupID": 1009,
+      "RandomSkillLibID": 21919,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 90,
+      "_byte_offset": 740,
+      "RandomSkillLibGroupID": 1010,
+      "RandomSkillLibID": 21820,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 91,
+      "_byte_offset": 748,
+      "RandomSkillLibGroupID": 1010,
+      "RandomSkillLibID": 21830,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 92,
+      "_byte_offset": 756,
+      "RandomSkillLibGroupID": 1010,
+      "RandomSkillLibID": 21840,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 93,
+      "_byte_offset": 764,
+      "RandomSkillLibGroupID": 1010,
+      "RandomSkillLibID": 21850,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 94,
+      "_byte_offset": 772,
+      "RandomSkillLibGroupID": 1010,
+      "RandomSkillLibID": 21860,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 95,
+      "_byte_offset": 780,
+      "RandomSkillLibGroupID": 1010,
+      "RandomSkillLibID": 21870,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 96,
+      "_byte_offset": 788,
+      "RandomSkillLibGroupID": 1010,
+      "RandomSkillLibID": 21880,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 97,
+      "_byte_offset": 796,
+      "RandomSkillLibGroupID": 1010,
+      "RandomSkillLibID": 21890,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 98,
+      "_byte_offset": 804,
+      "RandomSkillLibGroupID": 1010,
+      "RandomSkillLibID": 21900,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 99,
+      "_byte_offset": 812,
+      "RandomSkillLibGroupID": 1010,
+      "RandomSkillLibID": 21920,
+      "_byte_length": 8
+    }
+  ]
+}

@@ -1,0 +1,8146 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_menpaiqiyuconfig.bytes.ab",
+    "path_id": 2865830259409490896,
+    "name": "MenPaiQiYuConfig",
+    "sha256": "6e85f9c8434eff131bfdede77723b88866cc3f9e373365dd4cc171d3b26b5715",
+    "export": "derived/unity/text/assets_resources_config_resbin_menpaiqiyuconfig.bytes/MenPaiQiYuConfig__2865830259409490896.bin",
+    "schema": "ResDef.MenPaiQiYuConfig",
+    "path_id_decimal": "2865830259409490896",
+    "legacy_status": "raw-header-verified",
+    "legacy_reason": "Unsupported arrays/nested/enum fields: uint[] ParamList, MenPaiQiYuOption[] Options",
+    "status": "decoded-validated-native-recursive",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 53298,
+      "version": 1,
+      "record_count": 238,
+      "stored_crc32": "683e1c55",
+      "computed_inverted_crc32": "683e1c55"
+    },
+    "native_layout_verified": true,
+    "schema_file": "derived/config-extended/schemas/ResDef.MenPaiQiYuConfig.json",
+    "minimum_record_size": 87,
+    "min_expected_payload_bytes": 20706,
+    "actual_payload_bytes": 53278,
+    "decoded_record_count": 238,
+    "validation": {
+      "header_verified": true,
+      "count_verified": true,
+      "exact_eof": true,
+      "full_reencode_equal": true,
+      "full_reencode_sha256": "6e85f9c8434eff131bfdede77723b88866cc3f9e373365dd4cc171d3b26b5715",
+      "decoded_node_count": 5474,
+      "payload_bytes": 53278
+    },
+    "arrays": [
+      {
+        "field": "ParamList",
+        "count": 2,
+        "count_encoding": "none-native-fixed"
+      },
+      {
+        "field": "Options",
+        "count": 2,
+        "count_encoding": "none-native-fixed"
+      }
+    ],
+    "decoded_json": "derived/config-extended/ResDef/MenPaiQiYuConfig.json",
+    "decoded_csv": "derived/config-extended/ResDef/MenPaiQiYuConfig.csv"
+  },
+  "precision": "Exact JSON integer number tokens, with decimal-string mirrors for every int64/uint64/FP. FP is raw signed int64; no scaling.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "QiYuID": 1001,
+      "ConditionType": 1,
+      "ParamList": [
+        150,
+        1
+      ],
+      "EndTime": 18000,
+      "NpcID": 1013,
+      "Dialogue": "你一个人在外面冒险，一定要小心，这<color=#02802f>金币*4000</color>很有用，你拿去吧。",
+      "Options": [
+        {
+          "Desc": "委婉拒绝",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "开心收下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22001,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 223
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 243,
+      "QiYuID": 1002,
+      "ConditionType": 1,
+      "ParamList": [
+        100,
+        1
+      ],
+      "EndTime": 18000,
+      "NpcID": 1012,
+      "Dialogue": "今天集市赚了一些钱，这<color=#02802f>祭司手记*1</color>便宜卖给你怎么样？",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 3000,
+          "BootyID": 22002,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 208
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 451,
+      "QiYuID": 1003,
+      "ConditionType": 1,
+      "ParamList": [
+        100,
+        1
+      ],
+      "EndTime": 18000,
+      "NpcID": 1013,
+      "Dialogue": "今天心情真不错，这<color=#02802f>部落印章*1~3</color>就便宜些卖给你吧。",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 50,
+          "BootyID": 22003,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 204
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 655,
+      "QiYuID": 1004,
+      "ConditionType": 1,
+      "ParamList": [
+        100,
+        1
+      ],
+      "EndTime": 18000,
+      "NpcID": 1014,
+      "Dialogue": "跟你相处十分愉快，这<color=#02802f>祭司手记*1~3</color>就便宜卖给你吧。",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 10,
+          "BootyID": 22004,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 204
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 859,
+      "QiYuID": 1005,
+      "ConditionType": 1,
+      "ParamList": [
+        150,
+        1
+      ],
+      "EndTime": 18000,
+      "NpcID": 1015,
+      "Dialogue": "看我手上的这<color=#02802f>甜甜浆果*1~2</color>，怎么样，想要吗？想要的话便宜卖给你怎么样？",
+      "Options": [
+        {
+          "Desc": "我没有钱",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 5000,
+          "BootyID": 22005,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 234
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 1093,
+      "QiYuID": 1006,
+      "ConditionType": 1,
+      "ParamList": [
+        180,
+        2
+      ],
+      "EndTime": 18000,
+      "NpcID": 1023,
+      "Dialogue": "在大陆冒险你还有很长的一段路要走，这些<color=#02802f>金币*6000</color>可以帮到你，拿去吧。",
+      "Options": [
+        {
+          "Desc": "委婉拒绝",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "开心收下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22006,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 232
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 1325,
+      "QiYuID": 1007,
+      "ConditionType": 1,
+      "ParamList": [
+        130,
+        2
+      ],
+      "EndTime": 18000,
+      "NpcID": 1022,
+      "Dialogue": "我这有<color=#02802f>部落印章*1~2</color>，你要是想要就便宜卖给你，就当是对你平时帮忙的感谢吧。",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 40,
+          "BootyID": 22007,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 240
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 1565,
+      "QiYuID": 1008,
+      "ConditionType": 1,
+      "ParamList": [
+        130,
+        2
+      ],
+      "EndTime": 18000,
+      "NpcID": 1023,
+      "Dialogue": "这是我从大祭司那拿到的<color=#02802f>祭司手记*1</color>，想要吗？我便宜些卖给你，不要告诉其它人哦！",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 5000,
+          "BootyID": 22008,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 247
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 1812,
+      "QiYuID": 1009,
+      "ConditionType": 1,
+      "ParamList": [
+        130,
+        2
+      ],
+      "EndTime": 18000,
+      "NpcID": 1024,
+      "Dialogue": "想提升实力吗？这<color=#02802f>祭司手记*2~4</color>一定能帮到你的，来几个吗？",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "试试手气",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 15,
+          "BootyID": 22009,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 213
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 2025,
+      "QiYuID": 1010,
+      "ConditionType": 1,
+      "ParamList": [
+        180,
+        2
+      ],
+      "EndTime": 18000,
+      "NpcID": 1025,
+      "Dialogue": "最近集市上有个项链好好看啊，要不把我的<color=#02802f>甜甜浆果*1~2</color>卖给你，我就能买下来了。",
+      "Options": [
+        {
+          "Desc": "我没有钱",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 5000,
+          "BootyID": 22010,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 243
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 2268,
+      "QiYuID": 1011,
+      "ConditionType": 1,
+      "ParamList": [
+        210,
+        3
+      ],
+      "EndTime": 18000,
+      "NpcID": 1035,
+      "Dialogue": "平时的狩猎可不要大意，我这有一些<color=#02802f>金币*8000</color>你拿去买点好装备吧。",
+      "Options": [
+        {
+          "Desc": "委婉拒绝",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "开心收下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22011,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 223
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 2491,
+      "QiYuID": 1012,
+      "ConditionType": 1,
+      "ParamList": [
+        160,
+        3
+      ],
+      "EndTime": 18000,
+      "NpcID": 1032,
+      "Dialogue": "今天完成祭祀仪式之后还多余一些<color=#02802f>甜甜浆果*1~2</color>，你想要？那就卖给你吧。",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 8000,
+          "BootyID": 22012,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 231
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 2722,
+      "QiYuID": 1013,
+      "ConditionType": 1,
+      "ParamList": [
+        160,
+        3
+      ],
+      "EndTime": 18000,
+      "NpcID": 1033,
+      "Dialogue": "刚才去采集，带回来一些<color=#02802f>月神币*1~2</color>，你要吗，卖给你怎么样？",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 40,
+          "BootyID": 22013,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 216
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 2938,
+      "QiYuID": 1014,
+      "ConditionType": 1,
+      "ParamList": [
+        160,
+        3
+      ],
+      "EndTime": 18000,
+      "NpcID": 1034,
+      "Dialogue": "我这袋子里装了一些<color=#02802f>部落印章*1~2</color>，但具体有几个我也不确定，你要猜猜看吗？",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "试试手气",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 30,
+          "BootyID": 22014,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 237
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 3175,
+      "QiYuID": 1015,
+      "ConditionType": 1,
+      "ParamList": [
+        210,
+        3
+      ],
+      "EndTime": 18000,
+      "NpcID": 1035,
+      "Dialogue": "你的身手很不错，我这里有一些用不上的<color=#02802f>祭司手记*1</color>，便宜卖给你怎么样？",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 6000,
+          "BootyID": 22015,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 232
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 3407,
+      "QiYuID": 1016,
+      "ConditionType": 1,
+      "ParamList": [
+        240,
+        4
+      ],
+      "EndTime": 18000,
+      "NpcID": 1042,
+      "Dialogue": "欢迎来到剑虎部落，这些<color=#02802f>金币*10000</color>是首领给你的赏赐，收下吧。",
+      "Options": [
+        {
+          "Desc": "委婉拒绝",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "开心收下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22016,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 218
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 3625,
+      "QiYuID": 1017,
+      "ConditionType": 1,
+      "ParamList": [
+        190,
+        4
+      ],
+      "EndTime": 18000,
+      "NpcID": 1042,
+      "Dialogue": "想要去挑战猛兽，就必须做好完全的准备，<color=#02802f>月神币*1~2</color>可以帮助你。",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 40,
+          "BootyID": 22017,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 222
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 3847,
+      "QiYuID": 1018,
+      "ConditionType": 1,
+      "ParamList": [
+        190,
+        4
+      ],
+      "EndTime": 18000,
+      "NpcID": 1043,
+      "Dialogue": "这是上次首领赏赐给我的<color=#02802f>部落印章*1</color>我留着也没有什么用，你想要的话就卖给你吧。",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 30,
+          "BootyID": 22018,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 244
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 4091,
+      "QiYuID": 1019,
+      "ConditionType": 1,
+      "ParamList": [
+        190,
+        4
+      ],
+      "EndTime": 18000,
+      "NpcID": 1044,
+      "Dialogue": "我参加狩猎比赛得到了一些<color=#02802f>狩猎纹章*1</color>打折卖给你吧。",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 15000,
+          "BootyID": 22019,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 205
+    },
+    {
+      "_record_index": 19,
+      "_byte_offset": 4296,
+      "QiYuID": 1020,
+      "ConditionType": 1,
+      "ParamList": [
+        240,
+        4
+      ],
+      "EndTime": 18000,
+      "NpcID": 1045,
+      "Dialogue": "袋子里有一些<color=#02802f>星星币*1~3</color>，要不要试试手气，看看能拿到几个？",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "试试手气",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 40,
+          "BootyID": 22020,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 216
+    },
+    {
+      "_record_index": 20,
+      "_byte_offset": 4512,
+      "QiYuID": 1021,
+      "ConditionType": 1,
+      "ParamList": [
+        270,
+        5
+      ],
+      "EndTime": 18000,
+      "NpcID": 1054,
+      "Dialogue": "狩猎路上遇到困难了？<color=#02802f>史诗狩猎纹章*1~2</color>或许能帮到你，要买几个吗。",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 20,
+          "BootyID": 22021,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 225
+    },
+    {
+      "_record_index": 21,
+      "_byte_offset": 4737,
+      "QiYuID": 1022,
+      "ConditionType": 1,
+      "ParamList": [
+        220,
+        5
+      ],
+      "EndTime": 18000,
+      "NpcID": 1052,
+      "Dialogue": "你要努力提升狩猎技巧，不要让首领失望，我这<color=#02802f>月神币*1~2</color>很有用，便宜一些卖你吧。",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 25,
+          "BootyID": 22022,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 246
+    },
+    {
+      "_record_index": 22,
+      "_byte_offset": 4983,
+      "QiYuID": 1023,
+      "ConditionType": 1,
+      "ParamList": [
+        220,
+        5
+      ],
+      "EndTime": 18000,
+      "NpcID": 1053,
+      "Dialogue": "我刚采集的<color=#02802f>柠柠果*1~2</color>很不错吧，想要的话就卖给你。",
+      "Options": [
+        {
+          "Desc": "我才不要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 10000,
+          "BootyID": 22023,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 204
+    },
+    {
+      "_record_index": 23,
+      "_byte_offset": 5187,
+      "QiYuID": 1024,
+      "ConditionType": 1,
+      "ParamList": [
+        220,
+        5
+      ],
+      "EndTime": 18000,
+      "NpcID": 1054,
+      "Dialogue": "你最近似乎对宠物很感兴趣？这些<color=#02802f>甜甜浆果*1~2</color>可以帮到你。",
+      "Options": [
+        {
+          "Desc": "委婉拒绝",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 10000,
+          "BootyID": 22024,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 213
+    },
+    {
+      "_record_index": 24,
+      "_byte_offset": 5400,
+      "QiYuID": 1025,
+      "ConditionType": 1,
+      "ParamList": [
+        270,
+        5
+      ],
+      "EndTime": 18000,
+      "NpcID": 1055,
+      "Dialogue": "以后我们就一起努力狩猎吧，<color=#02802f>金币*12000</color>就作为礼物送给你了。",
+      "Options": [
+        {
+          "Desc": "委婉拒绝",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "开心收下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22025,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 215
+    },
+    {
+      "_record_index": 25,
+      "_byte_offset": 5615,
+      "QiYuID": 1026,
+      "ConditionType": 1,
+      "ParamList": [
+        300,
+        6
+      ],
+      "EndTime": 18000,
+      "NpcID": 1063,
+      "Dialogue": "想要在大陆冒险，就必须培养好自己的坐骑，<color=#02802f>柠柠果*1~2</color>十分有用，便宜点卖给你吧。",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 15000,
+          "BootyID": 22026,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 246
+    },
+    {
+      "_record_index": 26,
+      "_byte_offset": 5861,
+      "QiYuID": 1027,
+      "ConditionType": 1,
+      "ParamList": [
+        250,
+        6
+      ],
+      "EndTime": 18000,
+      "NpcID": 1062,
+      "Dialogue": "我这箱子里有一些<color=#02802f>秘灵果*1~2</color>，要试试看能拿到几个吗？",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "试试手气",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 25,
+          "BootyID": 22027,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 207
+    },
+    {
+      "_record_index": 27,
+      "_byte_offset": 6068,
+      "QiYuID": 1028,
+      "ConditionType": 1,
+      "ParamList": [
+        250,
+        6
+      ],
+      "EndTime": 18000,
+      "NpcID": 1063,
+      "Dialogue": "看你最近训练地这么努力，这个<color=#02802f>工匠之锤*1~3</color>就便宜些卖给你吧。",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 30,
+          "BootyID": 22028,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 219
+    },
+    {
+      "_record_index": 28,
+      "_byte_offset": 6287,
+      "QiYuID": 1029,
+      "ConditionType": 1,
+      "ParamList": [
+        250,
+        6
+      ],
+      "EndTime": 18000,
+      "NpcID": 1064,
+      "Dialogue": "想要提升印记等级？那你一定需要<color=#02802f>祭司手记*1</color>吧。",
+      "Options": [
+        {
+          "Desc": "我没有钱",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 12000,
+          "BootyID": 22029,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 199
+    },
+    {
+      "_record_index": 29,
+      "_byte_offset": 6486,
+      "QiYuID": 1030,
+      "ConditionType": 1,
+      "ParamList": [
+        300,
+        6
+      ],
+      "EndTime": 18000,
+      "NpcID": 1065,
+      "Dialogue": "<color=#02802f>铁匠之锤*1</color>送给你，今晚跟我一起锻造装备吧。",
+      "Options": [
+        {
+          "Desc": "委婉拒绝",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "乐意接受",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22030,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 196
+    },
+    {
+      "_record_index": 30,
+      "_byte_offset": 6682,
+      "QiYuID": 1031,
+      "ConditionType": 1,
+      "ParamList": [
+        330,
+        7
+      ],
+      "EndTime": 18000,
+      "NpcID": 1074,
+      "Dialogue": "<color=#02802f>金币*18000</color>送给你，希望你能买些好装备，变得更强。",
+      "Options": [
+        {
+          "Desc": "委婉拒绝",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "开心收下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22031,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 203
+    },
+    {
+      "_record_index": 31,
+      "_byte_offset": 6885,
+      "QiYuID": 1032,
+      "ConditionType": 1,
+      "ParamList": [
+        280,
+        7
+      ],
+      "EndTime": 18000,
+      "NpcID": 1072,
+      "Dialogue": "今天采集收获丰盛，这些<color=#02802f>黄金浆果*1~2</color>卖给你怎么样？",
+      "Options": [
+        {
+          "Desc": "我没有钱",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 30,
+          "BootyID": 22032,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 204
+    },
+    {
+      "_record_index": 32,
+      "_byte_offset": 7089,
+      "QiYuID": 1033,
+      "ConditionType": 1,
+      "ParamList": [
+        280,
+        7
+      ],
+      "EndTime": 18000,
+      "NpcID": 1073,
+      "Dialogue": "最近训练遇到难题了？我这有一些<color=#02802f>血脉结晶*1~2</color>，买一点尝试一下？会有用的。",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 18000,
+          "BootyID": 22033,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 237
+    },
+    {
+      "_record_index": 33,
+      "_byte_offset": 7326,
+      "QiYuID": 1034,
+      "ConditionType": 1,
+      "ParamList": [
+        280,
+        7
+      ],
+      "EndTime": 18000,
+      "NpcID": 1074,
+      "Dialogue": "部落的技艺不是短时间就能学会的，这些<color=#02802f>祭司手记*3~5</color>可以帮你更快变强，感兴趣吗？",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 20,
+          "BootyID": 22034,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 246
+    },
+    {
+      "_record_index": 34,
+      "_byte_offset": 7572,
+      "QiYuID": 1035,
+      "ConditionType": 1,
+      "ParamList": [
+        330,
+        7
+      ],
+      "EndTime": 18000,
+      "NpcID": 1075,
+      "Dialogue": "我昨天外出狩猎的时候在遗迹发现一些<color=#02802f>铁匠之锤*1~2</color>，你用得着吗？用得着就卖给你啦。",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 18000,
+          "BootyID": 22035,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 249
+    },
+    {
+      "_record_index": 35,
+      "_byte_offset": 7821,
+      "QiYuID": 1036,
+      "ConditionType": 1,
+      "ParamList": [
+        360,
+        8
+      ],
+      "EndTime": 18000,
+      "NpcID": 1084,
+      "Dialogue": "你的骨骼惊奇、体质独特，但要想狩猎水平更进一步，<color=#02802f>秘灵果*1~3</color>是必不可少的，想要买几个吗",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 40,
+          "BootyID": 22036,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 258
+    },
+    {
+      "_record_index": 36,
+      "_byte_offset": 8079,
+      "QiYuID": 1037,
+      "ConditionType": 1,
+      "ParamList": [
+        310,
+        8
+      ],
+      "EndTime": 18000,
+      "NpcID": 1082,
+      "Dialogue": "想要进沧元图中狩猎吗，先不要着急，<color=#02802f>森蟒魂石*1~2</color>或许你用得上",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 60,
+          "BootyID": 22037,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 219
+    },
+    {
+      "_record_index": 37,
+      "_byte_offset": 8298,
+      "QiYuID": 1038,
+      "ConditionType": 1,
+      "ParamList": [
+        310,
+        8
+      ],
+      "EndTime": 18000,
+      "NpcID": 1083,
+      "Dialogue": "这是我狩猎途中的时候找到的，想要吗<color=#02802f>血脉结晶*1~2</color>，便宜点卖给你",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 20000,
+          "BootyID": 22038,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 222
+    },
+    {
+      "_record_index": 38,
+      "_byte_offset": 8520,
+      "QiYuID": 1039,
+      "ConditionType": 1,
+      "ParamList": [
+        310,
+        8
+      ],
+      "EndTime": 18000,
+      "NpcID": 1084,
+      "Dialogue": "大祭司给我了<color=#02802f>金币*30000</color>，但我不怎么需要，你想要的话就拿去吧",
+      "Options": [
+        {
+          "Desc": "委婉拒绝",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "谢谢你",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22039,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 215
+    },
+    {
+      "_record_index": 39,
+      "_byte_offset": 8735,
+      "QiYuID": 1040,
+      "ConditionType": 1,
+      "ParamList": [
+        360,
+        8
+      ],
+      "EndTime": 18000,
+      "NpcID": 1085,
+      "Dialogue": "今天帮助别人的时候，收到了<color=#02802f>祭司手记*1</color>的礼物，你需要吗，那我就卖给你吧",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 18000,
+          "BootyID": 22040,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 235
+    },
+    {
+      "_record_index": 40,
+      "_byte_offset": 8970,
+      "QiYuID": 1041,
+      "ConditionType": 1,
+      "ParamList": [
+        390,
+        9
+      ],
+      "EndTime": 18000,
+      "NpcID": 1092,
+      "Dialogue": "加入了我门下，今后一定要加倍努力的狩猎，<color=#02802f>金币*50000</color>就送给你吧",
+      "Options": [
+        {
+          "Desc": "委婉拒绝",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "开心收下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22041,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 221
+    },
+    {
+      "_record_index": 41,
+      "_byte_offset": 9191,
+      "QiYuID": 1042,
+      "ConditionType": 1,
+      "ParamList": [
+        340,
+        9
+      ],
+      "EndTime": 18000,
+      "NpcID": 1092,
+      "Dialogue": "你今天有认真的狩猎吗，没有偷懒吧，这个<color=#02802f>剑虎兽皮*1~2</color>我不用了，你想要吗",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 30000,
+          "BootyID": 22042,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 234
+    },
+    {
+      "_record_index": 42,
+      "_byte_offset": 9425,
+      "QiYuID": 1043,
+      "ConditionType": 1,
+      "ParamList": [
+        340,
+        9
+      ],
+      "EndTime": 18000,
+      "NpcID": 1093,
+      "Dialogue": "小朋友你好呀，这个<color=#02802f>青鸟羽毛*1</color>我用不上了，你需要的话就优惠卖给你吧",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 60,
+          "BootyID": 22043,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 229
+    },
+    {
+      "_record_index": 43,
+      "_byte_offset": 9654,
+      "QiYuID": 1044,
+      "ConditionType": 1,
+      "ParamList": [
+        340,
+        9
+      ],
+      "EndTime": 18000,
+      "NpcID": 1094,
+      "Dialogue": "听说你在狩猎中遇到了问题，<color=#02802f>甜甜浆果*1~2</color>说不定可以帮到你，要试试手气吗",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "谢谢你",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 20000,
+          "BootyID": 22044,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 231
+    },
+    {
+      "_record_index": 44,
+      "_byte_offset": 9885,
+      "QiYuID": 1045,
+      "ConditionType": 1,
+      "ParamList": [
+        390,
+        9
+      ],
+      "EndTime": 18000,
+      "NpcID": 1095,
+      "Dialogue": "如果你来陪我一起狩猎的话，<color=#02802f>祭司圣水*1~2</color>便宜些售于你",
+      "Options": [
+        {
+          "Desc": "我没时间",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "乐意接受",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 30,
+          "BootyID": 22045,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 207
+    },
+    {
+      "_record_index": 45,
+      "_byte_offset": 10092,
+      "QiYuID": 1046,
+      "ConditionType": 1,
+      "ParamList": [
+        420,
+        10
+      ],
+      "EndTime": 18000,
+      "NpcID": 1104,
+      "Dialogue": "你就放心狩猎吧，有什么问题都交给我们，<color=#02802f>祭司手记*1</color>你先拿着吧",
+      "Options": [
+        {
+          "Desc": "委婉拒绝",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "开心收下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22046,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 220
+    },
+    {
+      "_record_index": 46,
+      "_byte_offset": 10312,
+      "QiYuID": 1047,
+      "ConditionType": 1,
+      "ParamList": [
+        370,
+        10
+      ],
+      "EndTime": 18000,
+      "NpcID": 1102,
+      "Dialogue": "你想知道变强的技巧吗？哈哈，买下<color=#02802f>剑虎兽皮*1~3</color>我就告诉你",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 20000,
+          "BootyID": 22047,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 213
+    },
+    {
+      "_record_index": 47,
+      "_byte_offset": 10525,
+      "QiYuID": 1048,
+      "ConditionType": 1,
+      "ParamList": [
+        370,
+        10
+      ],
+      "EndTime": 18000,
+      "NpcID": 1103,
+      "Dialogue": "想要跟我去狩猎吗？也好，但是<color=#02802f>血脉结晶*1~3</color>可是不可缺少的，去买几个再过来吧",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 20000,
+          "BootyID": 22048,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 240
+    },
+    {
+      "_record_index": 48,
+      "_byte_offset": 10765,
+      "QiYuID": 1049,
+      "ConditionType": 1,
+      "ParamList": [
+        370,
+        10
+      ],
+      "EndTime": 18000,
+      "NpcID": 1104,
+      "Dialogue": "今天狩猎辛苦了，去买<color=#02802f>神器碎片*1~3</color>吧，努力一下，说不定可以让自己变得更强哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 25,
+          "BootyID": 22049,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 240
+    },
+    {
+      "_record_index": 49,
+      "_byte_offset": 11005,
+      "QiYuID": 1050,
+      "ConditionType": 1,
+      "ParamList": [
+        420,
+        10
+      ],
+      "EndTime": 18000,
+      "NpcID": 1105,
+      "Dialogue": "你的宠物是不是不听话了，快买点<color=#02802f>黄金浆果*1~3</color>宠物特别喜欢吃的",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 40,
+          "BootyID": 22050,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 219
+    },
+    {
+      "_record_index": 50,
+      "_byte_offset": 11224,
+      "QiYuID": 1051,
+      "ConditionType": 1,
+      "ParamList": [
+        450,
+        11
+      ],
+      "EndTime": 18000,
+      "NpcID": 1114,
+      "Dialogue": "狩猎途中到处都是猛兽，你要买<color=#02802f>祭司手记*1~3</color>来提升一下自己吗",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22051,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 216
+    },
+    {
+      "_record_index": 51,
+      "_byte_offset": 11440,
+      "QiYuID": 1052,
+      "ConditionType": 1,
+      "ParamList": [
+        400,
+        11
+      ],
+      "EndTime": 18000,
+      "NpcID": 1112,
+      "Dialogue": "出去狩猎的时候意外得到了<color=#02802f>柠柠果*1~3</color>，你想要吗，低价卖给你",
+      "Options": [
+        {
+          "Desc": "委婉拒绝",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "开心收下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 22000,
+          "BootyID": 22052,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 216
+    },
+    {
+      "_record_index": 52,
+      "_byte_offset": 11656,
+      "QiYuID": 1053,
+      "ConditionType": 1,
+      "ParamList": [
+        400,
+        11
+      ],
+      "EndTime": 18000,
+      "NpcID": 1113,
+      "Dialogue": "我这里多了几瓶<color=#02802f>祭司圣水*1~3</color>，你想要吗，低价卖给你",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 30,
+          "BootyID": 22053,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 204
+    },
+    {
+      "_record_index": 53,
+      "_byte_offset": 11860,
+      "QiYuID": 1054,
+      "ConditionType": 1,
+      "ParamList": [
+        400,
+        11
+      ],
+      "EndTime": 18000,
+      "NpcID": 1114,
+      "Dialogue": "跟我们一起去狩猎吧，但在此之前为了有所提升，你还是先用一下<color=#02802f>甜甜浆果*1~3</color>吧",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "开心收下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 10,
+          "BootyID": 22054,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 240
+    },
+    {
+      "_record_index": 54,
+      "_byte_offset": 12100,
+      "QiYuID": 1055,
+      "ConditionType": 1,
+      "ParamList": [
+        450,
+        11
+      ],
+      "EndTime": 18000,
+      "NpcID": 1115,
+      "Dialogue": "要跟我一起玩吗？哎，不要吗？那<color=#02802f>血脉结晶*1~3</color>你想要吗，那就破例卖给你好了",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 15000,
+          "BootyID": 22055,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 237
+    },
+    {
+      "_record_index": 55,
+      "_byte_offset": 12337,
+      "QiYuID": 1056,
+      "ConditionType": 1,
+      "ParamList": [
+        480,
+        12
+      ],
+      "EndTime": 18000,
+      "NpcID": 1123,
+      "Dialogue": "现在正是狩猎的好时机，用上<color=#02802f>祭司手记*1</color>吧，或许能让你事半功倍",
+      "Options": [
+        {
+          "Desc": "委婉拒绝",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "开心收下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22056,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 220
+    },
+    {
+      "_record_index": 56,
+      "_byte_offset": 12557,
+      "QiYuID": 1057,
+      "ConditionType": 1,
+      "ParamList": [
+        430,
+        12
+      ],
+      "EndTime": 18000,
+      "NpcID": 1122,
+      "Dialogue": "不要浪费时间了，快去狩猎！要是想要<color=#02802f>祭司手记*1~3</color>，我也可以卖给你",
+      "Options": [
+        {
+          "Desc": "我没有钱",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 22000,
+          "BootyID": 22057,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 225
+    },
+    {
+      "_record_index": 57,
+      "_byte_offset": 12782,
+      "QiYuID": 1058,
+      "ConditionType": 1,
+      "ParamList": [
+        430,
+        12
+      ],
+      "EndTime": 18000,
+      "NpcID": 1123,
+      "Dialogue": "来陪我聊聊天吧，<color=#02802f>角鹿血晶*1~3</color>便宜卖给你",
+      "Options": [
+        {
+          "Desc": "我没时间",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "乐意接受",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 20,
+          "BootyID": 22058,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 189
+    },
+    {
+      "_record_index": 58,
+      "_byte_offset": 12971,
+      "QiYuID": 1059,
+      "ConditionType": 1,
+      "ParamList": [
+        430,
+        12
+      ],
+      "EndTime": 18000,
+      "NpcID": 1124,
+      "Dialogue": "现在你的狩猎经验还是远远比不上我，但总有一天你会超越我吧。<color=#02802f>神器碎片*1~3</color>或许就是关键",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "谢谢你",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 25,
+          "BootyID": 22059,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 252
+    },
+    {
+      "_record_index": 59,
+      "_byte_offset": 13223,
+      "QiYuID": 1060,
+      "ConditionType": 1,
+      "ParamList": [
+        480,
+        12
+      ],
+      "EndTime": 18000,
+      "NpcID": 1125,
+      "Dialogue": "我狩猎的水平还不错吧，都是多亏了<color=#02802f>柠柠果*1~3</color>，你想要试试手气吗",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "开心收下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 22000,
+          "BootyID": 22060,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 222
+    },
+    {
+      "_record_index": 60,
+      "_byte_offset": 13445,
+      "QiYuID": 1061,
+      "ConditionType": 1,
+      "ParamList": [
+        510,
+        13
+      ],
+      "EndTime": 18000,
+      "NpcID": 1134,
+      "Dialogue": "狩猎身体更要狩猎精神，切忌做伤天害理之事。<color=#02802f>祭司手记*1</color>或许能让你的内心平静下来",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22061,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 247
+    },
+    {
+      "_record_index": 61,
+      "_byte_offset": 13692,
+      "QiYuID": 1062,
+      "ConditionType": 1,
+      "ParamList": [
+        460,
+        13
+      ],
+      "EndTime": 18000,
+      "NpcID": 1132,
+      "Dialogue": "<color=#02802f>魔晶原石*1~3</color>在外面很珍贵吧，便宜些卖给你吧",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 90,
+          "BootyID": 22062,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 195
+    },
+    {
+      "_record_index": 62,
+      "_byte_offset": 13887,
+      "QiYuID": 1063,
+      "ConditionType": 1,
+      "ParamList": [
+        460,
+        13
+      ],
+      "EndTime": 18000,
+      "NpcID": 1133,
+      "Dialogue": "别看我老了，但我还是每天横穿原石森林，多亏了<color=#02802f>黄金浆果*1~3</color>我才能坚持下去，卖给你吧",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 40,
+          "BootyID": 22063,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 252
+    },
+    {
+      "_record_index": 63,
+      "_byte_offset": 14139,
+      "QiYuID": 1064,
+      "ConditionType": 1,
+      "ParamList": [
+        460,
+        13
+      ],
+      "EndTime": 18000,
+      "NpcID": 1134,
+      "Dialogue": "把这个<color=#02802f>剑虎兽皮*1~3</color>便宜卖你吧",
+      "Options": [
+        {
+          "Desc": "我没时间",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "乐意接受",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 40,
+          "BootyID": 22064,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 174
+    },
+    {
+      "_record_index": 64,
+      "_byte_offset": 14313,
+      "QiYuID": 1065,
+      "ConditionType": 1,
+      "ParamList": [
+        510,
+        13
+      ],
+      "EndTime": 18000,
+      "NpcID": 1135,
+      "Dialogue": "哇，这是带给我的吗？你真好，我正在卖<color=#02802f>秘灵果*1~3</color>，你想要的话就先卖给你好了",
+      "Options": [
+        {
+          "Desc": "委婉拒绝",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "开心收下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 24000,
+          "BootyID": 22065,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 240
+    },
+    {
+      "_record_index": 65,
+      "_byte_offset": 14553,
+      "QiYuID": 1066,
+      "ConditionType": 1,
+      "ParamList": [
+        540,
+        14
+      ],
+      "EndTime": 18000,
+      "NpcID": 1144,
+      "Dialogue": "作为见面礼，<color=#02802f>祭司手记*2</color>就送给你了，希望你能够不忘初心",
+      "Options": [
+        {
+          "Desc": "委婉拒绝",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "开心收下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22066,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 211
+    },
+    {
+      "_record_index": 66,
+      "_byte_offset": 14764,
+      "QiYuID": 1067,
+      "ConditionType": 1,
+      "ParamList": [
+        490,
+        14
+      ],
+      "EndTime": 18000,
+      "NpcID": 1142,
+      "Dialogue": "狩猎不能投机取巧，要脚踏实地。我这有<color=#02802f>熔炼石*1~3</color>，或许能帮到你，你想要吗",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 25000,
+          "BootyID": 22067,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 237
+    },
+    {
+      "_record_index": 67,
+      "_byte_offset": 15001,
+      "QiYuID": 1068,
+      "ConditionType": 1,
+      "ParamList": [
+        490,
+        14
+      ],
+      "EndTime": 18000,
+      "NpcID": 1143,
+      "Dialogue": "你也想要练习狩猎技巧吗？我这里有<color=#02802f>祭司手记*1~3</color>，对于狩猎有很大的帮助，你要买吗",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 25000,
+          "BootyID": 22068,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 246
+    },
+    {
+      "_record_index": 68,
+      "_byte_offset": 15247,
+      "QiYuID": 1069,
+      "ConditionType": 1,
+      "ParamList": [
+        490,
+        14
+      ],
+      "EndTime": 18000,
+      "NpcID": 1144,
+      "Dialogue": "你好像盯着我的<color=#02802f>神器碎片*1~3</color>看了一会儿了，是很想要吗？那就便宜些卖给你",
+      "Options": [
+        {
+          "Desc": "我不想要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 25,
+          "BootyID": 22069,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 234
+    },
+    {
+      "_record_index": 69,
+      "_byte_offset": 15481,
+      "QiYuID": 1070,
+      "ConditionType": 1,
+      "ParamList": [
+        540,
+        14
+      ],
+      "EndTime": 18000,
+      "NpcID": 1145,
+      "Dialogue": "谢谢你帮我收拾了这些怪物，现在我能更好的狩猎啦。<color=#02802f>恐狼晶石*1~2</color>便宜些卖给你吧",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 20,
+          "BootyID": 22070,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 243
+    },
+    {
+      "_record_index": 70,
+      "_byte_offset": 15724,
+      "QiYuID": 1071,
+      "ConditionType": 1,
+      "ParamList": [
+        570,
+        15
+      ],
+      "EndTime": 18000,
+      "NpcID": 1155,
+      "Dialogue": "你狩猎是想要保护所爱之人吗？<color=#02802f>祭司手记*2</color>给你，希望一切能如你所愿",
+      "Options": [
+        {
+          "Desc": "委婉拒绝",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "开心收下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22071,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 226
+    },
+    {
+      "_record_index": 71,
+      "_byte_offset": 15950,
+      "QiYuID": 1072,
+      "ConditionType": 1,
+      "ParamList": [
+        520,
+        15
+      ],
+      "EndTime": 18000,
+      "NpcID": 1152,
+      "Dialogue": "你对战斗技巧有很高的天赋。我这<color=#02802f>祭司手记*1~3</color>或许很适合你，破例卖给你吧",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 10,
+          "BootyID": 22072,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 234
+    },
+    {
+      "_record_index": 72,
+      "_byte_offset": 16184,
+      "QiYuID": 1073,
+      "ConditionType": 1,
+      "ParamList": [
+        520,
+        15
+      ],
+      "EndTime": 18000,
+      "NpcID": 1153,
+      "Dialogue": "是不是跟威尔切磋时又战败了，去买一点<color=#02802f>神铸之锤*1~3</color>吧，用这个狩猎，下次或许就能成功了",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 70,
+          "BootyID": 22073,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 255
+    },
+    {
+      "_record_index": 73,
+      "_byte_offset": 16439,
+      "QiYuID": 1074,
+      "ConditionType": 1,
+      "ParamList": [
+        520,
+        15
+      ],
+      "EndTime": 18000,
+      "NpcID": 1154,
+      "Dialogue": "你问我为什么变得这么强？当然是因为我用了<color=#02802f>魔晶原石*1~3</color>，要买来试试吗",
+      "Options": [
+        {
+          "Desc": "我不想要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 90,
+          "BootyID": 22074,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 231
+    },
+    {
+      "_record_index": 74,
+      "_byte_offset": 16670,
+      "QiYuID": 1075,
+      "ConditionType": 1,
+      "ParamList": [
+        570,
+        15
+      ],
+      "EndTime": 18000,
+      "NpcID": 1155,
+      "Dialogue": "要跟我出去冒险吗？好处自然不会少的。<color=#02802f>秘灵果*1~3</color>就先送给你把",
+      "Options": [
+        {
+          "Desc": "委婉拒绝",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "乐意接受",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 40,
+          "BootyID": 22075,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 219
+    },
+    {
+      "_record_index": 75,
+      "_byte_offset": 16889,
+      "QiYuID": 1076,
+      "ConditionType": 1,
+      "ParamList": [
+        600,
+        16
+      ],
+      "EndTime": 18000,
+      "NpcID": 1163,
+      "Dialogue": "海神部落都是非常讲义气的。<color=#02802f>祭司手记*2</color>就作为礼物送给你把",
+      "Options": [
+        {
+          "Desc": "委婉拒绝",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "开心收下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22076,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 214
+    },
+    {
+      "_record_index": 76,
+      "_byte_offset": 17103,
+      "QiYuID": 1077,
+      "ConditionType": 1,
+      "ParamList": [
+        550,
+        16
+      ],
+      "EndTime": 18000,
+      "NpcID": 1162,
+      "Dialogue": "提坦让我好好看着<color=#02802f>祭司手记*1~3</color>，但你要是想买的话我也能跟他说便宜卖给你的",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 10,
+          "BootyID": 22077,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 237
+    },
+    {
+      "_record_index": 77,
+      "_byte_offset": 17340,
+      "QiYuID": 1078,
+      "ConditionType": 1,
+      "ParamList": [
+        550,
+        16
+      ],
+      "EndTime": 18000,
+      "NpcID": 1163,
+      "Dialogue": "<color=#02802f>魔晶原石*1~3</color>是不能送给你的，想要的话就拿钱来买吧",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 90,
+          "BootyID": 22078,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 204
+    },
+    {
+      "_record_index": 78,
+      "_byte_offset": 17544,
+      "QiYuID": 1079,
+      "ConditionType": 1,
+      "ParamList": [
+        550,
+        16
+      ],
+      "EndTime": 18000,
+      "NpcID": 1164,
+      "Dialogue": "问我这么强的原因是什么？买下<color=#02802f>剑虎兽皮*1~3</color>我就告诉你",
+      "Options": [
+        {
+          "Desc": "我不想要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 10,
+          "BootyID": 22079,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 207
+    },
+    {
+      "_record_index": 79,
+      "_byte_offset": 17751,
+      "QiYuID": 1080,
+      "ConditionType": 1,
+      "ParamList": [
+        600,
+        16
+      ],
+      "EndTime": 18000,
+      "NpcID": 1165,
+      "Dialogue": "真是有趣的狩猎者，你想要买点<color=#02802f>神铸之锤*1~3</color>吗，我都可以卖给你哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 70,
+          "BootyID": 22080,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 222
+    },
+    {
+      "_record_index": 80,
+      "_byte_offset": 17973,
+      "QiYuID": 1081,
+      "ConditionType": 1,
+      "ParamList": [
+        630,
+        17
+      ],
+      "EndTime": 18000,
+      "NpcID": 1171,
+      "Dialogue": "你好呀，这位勇士，我这里有些亮闪闪的<color=#02802f>金币</color>，请你收下吧",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "欣然接受",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22081,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 212
+    },
+    {
+      "_record_index": 81,
+      "_byte_offset": 18185,
+      "QiYuID": 1082,
+      "ConditionType": 1,
+      "ParamList": [
+        630,
+        17
+      ],
+      "EndTime": 18000,
+      "NpcID": 1172,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>祭司手记</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 27000,
+          "BootyID": 22082,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 82,
+      "_byte_offset": 18391,
+      "QiYuID": 1083,
+      "ConditionType": 1,
+      "ParamList": [
+        630,
+        17
+      ],
+      "EndTime": 18000,
+      "NpcID": 1173,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>祭司手记</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 45000,
+          "BootyID": 22083,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 83,
+      "_byte_offset": 18597,
+      "QiYuID": 1084,
+      "ConditionType": 1,
+      "ParamList": [
+        630,
+        17
+      ],
+      "EndTime": 18000,
+      "NpcID": 1174,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>混沌纹印</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 180,
+          "BootyID": 22084,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 84,
+      "_byte_offset": 18803,
+      "QiYuID": 1085,
+      "ConditionType": 1,
+      "ParamList": [
+        630,
+        17
+      ],
+      "EndTime": 18000,
+      "NpcID": 1175,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>混沌精粹</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 300,
+          "BootyID": 22085,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 85,
+      "_byte_offset": 19009,
+      "QiYuID": 1086,
+      "ConditionType": 1,
+      "ParamList": [
+        660,
+        18
+      ],
+      "EndTime": 18000,
+      "NpcID": 1181,
+      "Dialogue": "你好呀，这位勇士，我这里有些亮闪闪的<color=#02802f>金币</color>，请你收下吧",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "欣然接受",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22086,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 212
+    },
+    {
+      "_record_index": 86,
+      "_byte_offset": 19221,
+      "QiYuID": 1087,
+      "ConditionType": 1,
+      "ParamList": [
+        660,
+        18
+      ],
+      "EndTime": 18000,
+      "NpcID": 1182,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>祭司手记</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 27000,
+          "BootyID": 22087,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 87,
+      "_byte_offset": 19427,
+      "QiYuID": 1088,
+      "ConditionType": 1,
+      "ParamList": [
+        660,
+        18
+      ],
+      "EndTime": 18000,
+      "NpcID": 1183,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>祭司手记</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 45000,
+          "BootyID": 22088,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 88,
+      "_byte_offset": 19633,
+      "QiYuID": 1089,
+      "ConditionType": 1,
+      "ParamList": [
+        660,
+        18
+      ],
+      "EndTime": 18000,
+      "NpcID": 1184,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>天空纹印</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 180,
+          "BootyID": 22089,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 89,
+      "_byte_offset": 19839,
+      "QiYuID": 1090,
+      "ConditionType": 1,
+      "ParamList": [
+        660,
+        18
+      ],
+      "EndTime": 18000,
+      "NpcID": 1185,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>天空精粹</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 300,
+          "BootyID": 22090,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 90,
+      "_byte_offset": 20045,
+      "QiYuID": 1091,
+      "ConditionType": 1,
+      "ParamList": [
+        690,
+        19
+      ],
+      "EndTime": 18000,
+      "NpcID": 1191,
+      "Dialogue": "你好呀，这位勇士，我这里有些亮闪闪的<color=#02802f>金币</color>，请你收下吧",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "欣然接受",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22091,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 212
+    },
+    {
+      "_record_index": 91,
+      "_byte_offset": 20257,
+      "QiYuID": 1092,
+      "ConditionType": 1,
+      "ParamList": [
+        690,
+        19
+      ],
+      "EndTime": 18000,
+      "NpcID": 1192,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>祭司手记</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 27000,
+          "BootyID": 22092,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 92,
+      "_byte_offset": 20463,
+      "QiYuID": 1093,
+      "ConditionType": 1,
+      "ParamList": [
+        690,
+        19
+      ],
+      "EndTime": 18000,
+      "NpcID": 1193,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>祭司手记</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 45000,
+          "BootyID": 22093,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 93,
+      "_byte_offset": 20669,
+      "QiYuID": 1094,
+      "ConditionType": 1,
+      "ParamList": [
+        690,
+        19
+      ],
+      "EndTime": 18000,
+      "NpcID": 1194,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>大地纹印</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 180,
+          "BootyID": 22094,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 94,
+      "_byte_offset": 20875,
+      "QiYuID": 1095,
+      "ConditionType": 1,
+      "ParamList": [
+        690,
+        19
+      ],
+      "EndTime": 18000,
+      "NpcID": 1195,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>大地精粹</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 300,
+          "BootyID": 22095,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 95,
+      "_byte_offset": 21081,
+      "QiYuID": 1096,
+      "ConditionType": 1,
+      "ParamList": [
+        720,
+        20
+      ],
+      "EndTime": 18000,
+      "NpcID": 1201,
+      "Dialogue": "你好呀，这位勇士，我这里有些亮闪闪的<color=#02802f>金币</color>，请你收下吧",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "欣然接受",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22096,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 212
+    },
+    {
+      "_record_index": 96,
+      "_byte_offset": 21293,
+      "QiYuID": 1097,
+      "ConditionType": 1,
+      "ParamList": [
+        720,
+        20
+      ],
+      "EndTime": 18000,
+      "NpcID": 1202,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>祭司手记</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 27000,
+          "BootyID": 22097,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 97,
+      "_byte_offset": 21499,
+      "QiYuID": 1098,
+      "ConditionType": 1,
+      "ParamList": [
+        720,
+        20
+      ],
+      "EndTime": 18000,
+      "NpcID": 1203,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>祭司手记</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 45000,
+          "BootyID": 22098,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 98,
+      "_byte_offset": 21705,
+      "QiYuID": 1099,
+      "ConditionType": 1,
+      "ParamList": [
+        720,
+        20
+      ],
+      "EndTime": 18000,
+      "NpcID": 1204,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>海洋纹印</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 180,
+          "BootyID": 22099,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 99,
+      "_byte_offset": 21911,
+      "QiYuID": 1100,
+      "ConditionType": 1,
+      "ParamList": [
+        720,
+        20
+      ],
+      "EndTime": 18000,
+      "NpcID": 1205,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>海洋精粹</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 300,
+          "BootyID": 22100,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 100,
+      "_byte_offset": 22117,
+      "QiYuID": 1101,
+      "ConditionType": 1,
+      "ParamList": [
+        760,
+        21
+      ],
+      "EndTime": 18000,
+      "NpcID": 1211,
+      "Dialogue": "你好呀，这位勇士，我这里有些亮闪闪的<color=#02802f>金币</color>，请你收下吧",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "欣然接受",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22101,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 212
+    },
+    {
+      "_record_index": 101,
+      "_byte_offset": 22329,
+      "QiYuID": 1102,
+      "ConditionType": 1,
+      "ParamList": [
+        760,
+        21
+      ],
+      "EndTime": 18000,
+      "NpcID": 1212,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>祭司手记</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 27000,
+          "BootyID": 22102,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 102,
+      "_byte_offset": 22535,
+      "QiYuID": 1103,
+      "ConditionType": 1,
+      "ParamList": [
+        760,
+        21
+      ],
+      "EndTime": 18000,
+      "NpcID": 1213,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>祭司手记</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 45000,
+          "BootyID": 22103,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 103,
+      "_byte_offset": 22741,
+      "QiYuID": 1104,
+      "ConditionType": 1,
+      "ParamList": [
+        760,
+        21
+      ],
+      "EndTime": 18000,
+      "NpcID": 1214,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>海洋纹印</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 180,
+          "BootyID": 22104,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 104,
+      "_byte_offset": 22947,
+      "QiYuID": 1105,
+      "ConditionType": 1,
+      "ParamList": [
+        760,
+        21
+      ],
+      "EndTime": 18000,
+      "NpcID": 1215,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>海洋精粹</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 300,
+          "BootyID": 22105,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 105,
+      "_byte_offset": 23153,
+      "QiYuID": 1106,
+      "ConditionType": 1,
+      "ParamList": [
+        800,
+        22
+      ],
+      "EndTime": 18000,
+      "NpcID": 1221,
+      "Dialogue": "你好呀，这位勇士，我这里有些亮闪闪的<color=#02802f>金币</color>，请你收下吧",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "欣然接受",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22106,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 212
+    },
+    {
+      "_record_index": 106,
+      "_byte_offset": 23365,
+      "QiYuID": 1107,
+      "ConditionType": 1,
+      "ParamList": [
+        800,
+        22
+      ],
+      "EndTime": 18000,
+      "NpcID": 1222,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>祭司手记</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 27000,
+          "BootyID": 22107,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 107,
+      "_byte_offset": 23571,
+      "QiYuID": 1108,
+      "ConditionType": 1,
+      "ParamList": [
+        800,
+        22
+      ],
+      "EndTime": 18000,
+      "NpcID": 1223,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>祭司手记</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 45000,
+          "BootyID": 22108,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 108,
+      "_byte_offset": 23777,
+      "QiYuID": 1109,
+      "ConditionType": 1,
+      "ParamList": [
+        800,
+        22
+      ],
+      "EndTime": 18000,
+      "NpcID": 1224,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>混沌纹印</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 180,
+          "BootyID": 22109,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 109,
+      "_byte_offset": 23983,
+      "QiYuID": 1110,
+      "ConditionType": 1,
+      "ParamList": [
+        800,
+        22
+      ],
+      "EndTime": 18000,
+      "NpcID": 1225,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>混沌精粹</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 300,
+          "BootyID": 22110,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 110,
+      "_byte_offset": 24189,
+      "QiYuID": 1111,
+      "ConditionType": 1,
+      "ParamList": [
+        840,
+        23
+      ],
+      "EndTime": 18000,
+      "NpcID": 1231,
+      "Dialogue": "你好呀，这位勇士，我这里有些亮闪闪的<color=#02802f>金币</color>，请你收下吧",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "欣然接受",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22111,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 212
+    },
+    {
+      "_record_index": 111,
+      "_byte_offset": 24401,
+      "QiYuID": 1112,
+      "ConditionType": 1,
+      "ParamList": [
+        840,
+        23
+      ],
+      "EndTime": 18000,
+      "NpcID": 1232,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>祭司手记</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 27000,
+          "BootyID": 22112,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 112,
+      "_byte_offset": 24607,
+      "QiYuID": 1113,
+      "ConditionType": 1,
+      "ParamList": [
+        840,
+        23
+      ],
+      "EndTime": 18000,
+      "NpcID": 1233,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>祭司手记</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 45000,
+          "BootyID": 22113,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 113,
+      "_byte_offset": 24813,
+      "QiYuID": 1114,
+      "ConditionType": 1,
+      "ParamList": [
+        840,
+        23
+      ],
+      "EndTime": 18000,
+      "NpcID": 1234,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>神灵残魂</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 180,
+          "BootyID": 22114,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 114,
+      "_byte_offset": 25019,
+      "QiYuID": 1115,
+      "ConditionType": 1,
+      "ParamList": [
+        840,
+        23
+      ],
+      "EndTime": 18000,
+      "NpcID": 1235,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>神契灵石·史诗</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 300,
+          "BootyID": 22115,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 214
+    },
+    {
+      "_record_index": 115,
+      "_byte_offset": 25233,
+      "QiYuID": 1116,
+      "ConditionType": 1,
+      "ParamList": [
+        880,
+        24
+      ],
+      "EndTime": 18000,
+      "NpcID": 1241,
+      "Dialogue": "你好呀，这位勇士，我这里有些亮闪闪的<color=#02802f>金币</color>，请你收下吧",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "欣然接受",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22116,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 212
+    },
+    {
+      "_record_index": 116,
+      "_byte_offset": 25445,
+      "QiYuID": 1117,
+      "ConditionType": 1,
+      "ParamList": [
+        880,
+        24
+      ],
+      "EndTime": 18000,
+      "NpcID": 1242,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>祭司手记</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 27000,
+          "BootyID": 22117,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 117,
+      "_byte_offset": 25651,
+      "QiYuID": 1118,
+      "ConditionType": 1,
+      "ParamList": [
+        880,
+        24
+      ],
+      "EndTime": 18000,
+      "NpcID": 1243,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>祭司手记</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 45000,
+          "BootyID": 22118,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 118,
+      "_byte_offset": 25857,
+      "QiYuID": 1119,
+      "ConditionType": 1,
+      "ParamList": [
+        880,
+        24
+      ],
+      "EndTime": 18000,
+      "NpcID": 1244,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>圣髓玉</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 180,
+          "BootyID": 22119,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 203
+    },
+    {
+      "_record_index": 119,
+      "_byte_offset": 26060,
+      "QiYuID": 1120,
+      "ConditionType": 1,
+      "ParamList": [
+        880,
+        24
+      ],
+      "EndTime": 18000,
+      "NpcID": 1245,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>先贤古籍</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 300,
+          "BootyID": 22120,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 120,
+      "_byte_offset": 26266,
+      "QiYuID": 1121,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        25
+      ],
+      "EndTime": 18000,
+      "NpcID": 1251,
+      "Dialogue": "你好呀，这位勇士，我这里有些亮闪闪的<color=#02802f>金币</color>，请你收下吧",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "欣然接受",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22121,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 212
+    },
+    {
+      "_record_index": 121,
+      "_byte_offset": 26478,
+      "QiYuID": 1122,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        25
+      ],
+      "EndTime": 18000,
+      "NpcID": 1252,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>祭司手记</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 27000,
+          "BootyID": 22122,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 122,
+      "_byte_offset": 26684,
+      "QiYuID": 1123,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        25
+      ],
+      "EndTime": 18000,
+      "NpcID": 1253,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>祭司手记</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 45000,
+          "BootyID": 22123,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 123,
+      "_byte_offset": 26890,
+      "QiYuID": 1124,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        25
+      ],
+      "EndTime": 18000,
+      "NpcID": 1254,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>星魔石</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 180,
+          "BootyID": 22124,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 203
+    },
+    {
+      "_record_index": 124,
+      "_byte_offset": 27093,
+      "QiYuID": 1125,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        25
+      ],
+      "EndTime": 18000,
+      "NpcID": 1255,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>魔法星仪</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 300,
+          "BootyID": 22125,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 125,
+      "_byte_offset": 27299,
+      "QiYuID": 1126,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        26
+      ],
+      "EndTime": 18000,
+      "NpcID": 1261,
+      "Dialogue": "你好呀，这位勇士，我这里有些亮闪闪的<color=#02802f>金币</color>，请你收下吧",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "欣然接受",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22126,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 212
+    },
+    {
+      "_record_index": 126,
+      "_byte_offset": 27511,
+      "QiYuID": 1127,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        26
+      ],
+      "EndTime": 18000,
+      "NpcID": 1262,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>祭司手记</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 27000,
+          "BootyID": 22127,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 127,
+      "_byte_offset": 27717,
+      "QiYuID": 1128,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        26
+      ],
+      "EndTime": 18000,
+      "NpcID": 1263,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>祭司手记</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 45000,
+          "BootyID": 22128,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 128,
+      "_byte_offset": 27923,
+      "QiYuID": 1129,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        26
+      ],
+      "EndTime": 18000,
+      "NpcID": 1264,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>龙之鳞</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 180,
+          "BootyID": 22129,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 203
+    },
+    {
+      "_record_index": 129,
+      "_byte_offset": 28126,
+      "QiYuID": 1130,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        26
+      ],
+      "EndTime": 18000,
+      "NpcID": 1265,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>初阶青龙神石</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 300,
+          "BootyID": 22130,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 212
+    },
+    {
+      "_record_index": 130,
+      "_byte_offset": 28338,
+      "QiYuID": 1131,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        27
+      ],
+      "EndTime": 18000,
+      "NpcID": 1271,
+      "Dialogue": "你好呀，这位勇士，我这里有些亮闪闪的<color=#02802f>金币</color>，请你收下吧",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "欣然接受",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22131,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 212
+    },
+    {
+      "_record_index": 131,
+      "_byte_offset": 28550,
+      "QiYuID": 1132,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        27
+      ],
+      "EndTime": 18000,
+      "NpcID": 1272,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>祭司手记</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 27000,
+          "BootyID": 22132,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 132,
+      "_byte_offset": 28756,
+      "QiYuID": 1133,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        27
+      ],
+      "EndTime": 18000,
+      "NpcID": 1273,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>祭司手记</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 45000,
+          "BootyID": 22133,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 133,
+      "_byte_offset": 28962,
+      "QiYuID": 1134,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        27
+      ],
+      "EndTime": 18000,
+      "NpcID": 1274,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>虎之牙</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 180,
+          "BootyID": 22134,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 203
+    },
+    {
+      "_record_index": 134,
+      "_byte_offset": 29165,
+      "QiYuID": 1135,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        27
+      ],
+      "EndTime": 18000,
+      "NpcID": 1275,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>初阶白虎神石</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 300,
+          "BootyID": 22135,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 212
+    },
+    {
+      "_record_index": 135,
+      "_byte_offset": 29377,
+      "QiYuID": 1136,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        28
+      ],
+      "EndTime": 18000,
+      "NpcID": 1281,
+      "Dialogue": "你好呀，这位勇士，我这里有些亮闪闪的<color=#02802f>金币</color>，请你收下吧",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "欣然接受",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22136,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 212
+    },
+    {
+      "_record_index": 136,
+      "_byte_offset": 29589,
+      "QiYuID": 1137,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        28
+      ],
+      "EndTime": 18000,
+      "NpcID": 1282,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>祭司手记</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 27000,
+          "BootyID": 22137,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 137,
+      "_byte_offset": 29795,
+      "QiYuID": 1138,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        28
+      ],
+      "EndTime": 18000,
+      "NpcID": 1283,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>祭司手记</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 45000,
+          "BootyID": 22138,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 138,
+      "_byte_offset": 30001,
+      "QiYuID": 1139,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        28
+      ],
+      "EndTime": 18000,
+      "NpcID": 1284,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>凤之羽</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 180,
+          "BootyID": 22139,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 203
+    },
+    {
+      "_record_index": 139,
+      "_byte_offset": 30204,
+      "QiYuID": 1140,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        28
+      ],
+      "EndTime": 18000,
+      "NpcID": 1285,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>初阶朱雀神石</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 300,
+          "BootyID": 22140,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 212
+    },
+    {
+      "_record_index": 140,
+      "_byte_offset": 30416,
+      "QiYuID": 1141,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        29
+      ],
+      "EndTime": 18000,
+      "NpcID": 1291,
+      "Dialogue": "你好呀，这位勇士，我这里有些亮闪闪的<color=#02802f>金币</color>，请你收下吧",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "欣然接受",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22141,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 212
+    },
+    {
+      "_record_index": 141,
+      "_byte_offset": 30628,
+      "QiYuID": 1142,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        29
+      ],
+      "EndTime": 18000,
+      "NpcID": 1292,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>祭司手记</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 27000,
+          "BootyID": 22142,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 142,
+      "_byte_offset": 30834,
+      "QiYuID": 1143,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        29
+      ],
+      "EndTime": 18000,
+      "NpcID": 1293,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>祭司手记</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 45000,
+          "BootyID": 22143,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 143,
+      "_byte_offset": 31040,
+      "QiYuID": 1144,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        29
+      ],
+      "EndTime": 18000,
+      "NpcID": 1294,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>玄龟甲</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 180,
+          "BootyID": 22144,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 203
+    },
+    {
+      "_record_index": 144,
+      "_byte_offset": 31243,
+      "QiYuID": 1145,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        29
+      ],
+      "EndTime": 18000,
+      "NpcID": 1295,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>初阶玄武神石</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 300,
+          "BootyID": 22145,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 212
+    },
+    {
+      "_record_index": 145,
+      "_byte_offset": 31455,
+      "QiYuID": 1146,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        30
+      ],
+      "EndTime": 18000,
+      "NpcID": 1301,
+      "Dialogue": "你好呀，这位勇士，我这里有些亮闪闪的<color=#02802f>金币</color>，请你收下吧",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "欣然接受",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22146,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 212
+    },
+    {
+      "_record_index": 146,
+      "_byte_offset": 31667,
+      "QiYuID": 1147,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        30
+      ],
+      "EndTime": 18000,
+      "NpcID": 1302,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>祭司手记</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 27000,
+          "BootyID": 22147,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 147,
+      "_byte_offset": 31873,
+      "QiYuID": 1148,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        30
+      ],
+      "EndTime": 18000,
+      "NpcID": 1303,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>祭司手记</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 45000,
+          "BootyID": 22148,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 148,
+      "_byte_offset": 32079,
+      "QiYuID": 1149,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        30
+      ],
+      "EndTime": 18000,
+      "NpcID": 1304,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>龙之鳞</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 180,
+          "BootyID": 22149,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 203
+    },
+    {
+      "_record_index": 149,
+      "_byte_offset": 32282,
+      "QiYuID": 1150,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        30
+      ],
+      "EndTime": 18000,
+      "NpcID": 1305,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>初阶青龙神石</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 300,
+          "BootyID": 22150,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 212
+    },
+    {
+      "_record_index": 150,
+      "_byte_offset": 32494,
+      "QiYuID": 1151,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        31
+      ],
+      "EndTime": 18000,
+      "NpcID": 1311,
+      "Dialogue": "你好呀，这位勇士，我这里有些亮闪闪的<color=#02802f>金币</color>，请你收下吧",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "欣然接受",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22151,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 212
+    },
+    {
+      "_record_index": 151,
+      "_byte_offset": 32706,
+      "QiYuID": 1152,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        31
+      ],
+      "EndTime": 18000,
+      "NpcID": 1312,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>祭司手记</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 27000,
+          "BootyID": 22152,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 152,
+      "_byte_offset": 32912,
+      "QiYuID": 1153,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        31
+      ],
+      "EndTime": 18000,
+      "NpcID": 1313,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>祭司手记</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 45000,
+          "BootyID": 22153,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 153,
+      "_byte_offset": 33118,
+      "QiYuID": 1154,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        31
+      ],
+      "EndTime": 18000,
+      "NpcID": 1314,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>虎之牙</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 180,
+          "BootyID": 22154,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 203
+    },
+    {
+      "_record_index": 154,
+      "_byte_offset": 33321,
+      "QiYuID": 1155,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        31
+      ],
+      "EndTime": 18000,
+      "NpcID": 1315,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>初阶白虎神石</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 300,
+          "BootyID": 22155,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 212
+    },
+    {
+      "_record_index": 155,
+      "_byte_offset": 33533,
+      "QiYuID": 1156,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        32
+      ],
+      "EndTime": 18000,
+      "NpcID": 1321,
+      "Dialogue": "你好呀，这位勇士，我这里有些亮闪闪的<color=#02802f>金币</color>，请你收下吧",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "欣然接受",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22156,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 212
+    },
+    {
+      "_record_index": 156,
+      "_byte_offset": 33745,
+      "QiYuID": 1157,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        32
+      ],
+      "EndTime": 18000,
+      "NpcID": 1322,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>祭司手记</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 27000,
+          "BootyID": 22157,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 157,
+      "_byte_offset": 33951,
+      "QiYuID": 1158,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        32
+      ],
+      "EndTime": 18000,
+      "NpcID": 1323,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>祭司手记</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 45000,
+          "BootyID": 22158,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 158,
+      "_byte_offset": 34157,
+      "QiYuID": 1159,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        32
+      ],
+      "EndTime": 18000,
+      "NpcID": 1324,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>凤之羽</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 180,
+          "BootyID": 22159,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 203
+    },
+    {
+      "_record_index": 159,
+      "_byte_offset": 34360,
+      "QiYuID": 1160,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        32
+      ],
+      "EndTime": 18000,
+      "NpcID": 1325,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>初阶朱雀神石</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 300,
+          "BootyID": 22160,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 212
+    },
+    {
+      "_record_index": 160,
+      "_byte_offset": 34572,
+      "QiYuID": 1161,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        33
+      ],
+      "EndTime": 18000,
+      "NpcID": 1331,
+      "Dialogue": "你好呀，这位勇士，我这里有些亮闪闪的<color=#02802f>金币</color>，请你收下吧",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "欣然接受",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22161,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 212
+    },
+    {
+      "_record_index": 161,
+      "_byte_offset": 34784,
+      "QiYuID": 1162,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        33
+      ],
+      "EndTime": 18000,
+      "NpcID": 1332,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>祭司手记</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 27000,
+          "BootyID": 22162,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 162,
+      "_byte_offset": 34990,
+      "QiYuID": 1163,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        33
+      ],
+      "EndTime": 18000,
+      "NpcID": 1333,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>祭司手记</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 45000,
+          "BootyID": 22163,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 163,
+      "_byte_offset": 35196,
+      "QiYuID": 1164,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        33
+      ],
+      "EndTime": 18000,
+      "NpcID": 1334,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>玄龟甲</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 180,
+          "BootyID": 22164,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 203
+    },
+    {
+      "_record_index": 164,
+      "_byte_offset": 35399,
+      "QiYuID": 1165,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        33
+      ],
+      "EndTime": 18000,
+      "NpcID": 1335,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>初阶玄武神石</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 300,
+          "BootyID": 22165,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 212
+    },
+    {
+      "_record_index": 165,
+      "_byte_offset": 35611,
+      "QiYuID": 1166,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        34
+      ],
+      "EndTime": 18000,
+      "NpcID": 1341,
+      "Dialogue": "你好呀，这位勇士，我这里有些亮闪闪的<color=#02802f>金币</color>，请你收下吧",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "欣然接受",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22166,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 212
+    },
+    {
+      "_record_index": 166,
+      "_byte_offset": 35823,
+      "QiYuID": 1167,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        34
+      ],
+      "EndTime": 18000,
+      "NpcID": 1342,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>祭司手记</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 27000,
+          "BootyID": 22167,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 167,
+      "_byte_offset": 36029,
+      "QiYuID": 1168,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        34
+      ],
+      "EndTime": 18000,
+      "NpcID": 1343,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>祭司手记</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 45000,
+          "BootyID": 22168,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 168,
+      "_byte_offset": 36235,
+      "QiYuID": 1169,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        34
+      ],
+      "EndTime": 18000,
+      "NpcID": 1344,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>龙之鳞</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 180,
+          "BootyID": 22169,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 203
+    },
+    {
+      "_record_index": 169,
+      "_byte_offset": 36438,
+      "QiYuID": 1170,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        34
+      ],
+      "EndTime": 18000,
+      "NpcID": 1345,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>初阶青龙神石</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 300,
+          "BootyID": 22170,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 212
+    },
+    {
+      "_record_index": 170,
+      "_byte_offset": 36650,
+      "QiYuID": 1171,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        35
+      ],
+      "EndTime": 18000,
+      "NpcID": 1351,
+      "Dialogue": "你好呀，这位勇士，我这里有些亮闪闪的<color=#02802f>金币</color>，请你收下吧",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "欣然接受",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22171,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 212
+    },
+    {
+      "_record_index": 171,
+      "_byte_offset": 36862,
+      "QiYuID": 1172,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        35
+      ],
+      "EndTime": 18000,
+      "NpcID": 1352,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>祭司手记</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 27000,
+          "BootyID": 22172,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 172,
+      "_byte_offset": 37068,
+      "QiYuID": 1173,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        35
+      ],
+      "EndTime": 18000,
+      "NpcID": 1353,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>祭司手记</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 45000,
+          "BootyID": 22173,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 173,
+      "_byte_offset": 37274,
+      "QiYuID": 1174,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        35
+      ],
+      "EndTime": 18000,
+      "NpcID": 1354,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>虎之牙</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 180,
+          "BootyID": 22174,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 203
+    },
+    {
+      "_record_index": 174,
+      "_byte_offset": 37477,
+      "QiYuID": 1175,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        35
+      ],
+      "EndTime": 18000,
+      "NpcID": 1355,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>初阶白虎神石</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 300,
+          "BootyID": 22175,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 212
+    },
+    {
+      "_record_index": 175,
+      "_byte_offset": 37689,
+      "QiYuID": 1176,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        36
+      ],
+      "EndTime": 18000,
+      "NpcID": 1361,
+      "Dialogue": "你好呀，这位勇士，我这里有些亮闪闪的<color=#02802f>金币</color>，请你收下吧",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "欣然接受",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22176,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 212
+    },
+    {
+      "_record_index": 176,
+      "_byte_offset": 37901,
+      "QiYuID": 1177,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        36
+      ],
+      "EndTime": 18000,
+      "NpcID": 1362,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>祭司手记</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 27000,
+          "BootyID": 22177,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 177,
+      "_byte_offset": 38107,
+      "QiYuID": 1178,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        36
+      ],
+      "EndTime": 18000,
+      "NpcID": 1363,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>祭司手记</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 2,
+          "NeedMoneyCnt": 45000,
+          "BootyID": 22178,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 206
+    },
+    {
+      "_record_index": 178,
+      "_byte_offset": 38313,
+      "QiYuID": 1179,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        36
+      ],
+      "EndTime": 18000,
+      "NpcID": 1364,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>凤之羽</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 180,
+          "BootyID": 22179,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 203
+    },
+    {
+      "_record_index": 179,
+      "_byte_offset": 38516,
+      "QiYuID": 1180,
+      "ConditionType": 1,
+      "ParamList": [
+        920,
+        36
+      ],
+      "EndTime": 18000,
+      "NpcID": 1365,
+      "Dialogue": "你好呀，这位勇士，我这里有些<color=#02802f>初阶朱雀神石</color>，价格优惠哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 300,
+          "BootyID": 22180,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 212
+    },
+    {
+      "_record_index": 180,
+      "_byte_offset": 38728,
+      "QiYuID": 2001,
+      "ConditionType": 2,
+      "ParamList": [
+        10,
+        0
+      ],
+      "EndTime": 18000,
+      "NpcID": 1013,
+      "Dialogue": "恭喜你达到10级，你已经适应这里的生活了啊，<color=#02802f>祭司手记*10</color>，这些道具便宜些给你了",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 20,
+          "BootyID": 23001,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 244
+    },
+    {
+      "_record_index": 181,
+      "_byte_offset": 38972,
+      "QiYuID": 2002,
+      "ConditionType": 2,
+      "ParamList": [
+        20,
+        0
+      ],
+      "EndTime": 18000,
+      "NpcID": 1023,
+      "Dialogue": "恭喜你达到20级，你的努力肯定会得到回报，要像平常一样买<color=#02802f>祭司手记*5、部落印章*2、甜甜浆果*2</color>吗",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 30,
+          "BootyID": 23002,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 265
+    },
+    {
+      "_record_index": 182,
+      "_byte_offset": 39237,
+      "QiYuID": 2003,
+      "ConditionType": 2,
+      "ParamList": [
+        30,
+        0
+      ],
+      "EndTime": 18000,
+      "NpcID": 1032,
+      "Dialogue": "恭喜你达到30级，干得不错嘛，<color=#02802f>祭司手记*5、星星币*2、柠柠果*2</color>想要买些吗，对狩猎会很有帮助的",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 30,
+          "BootyID": 23003,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 262
+    },
+    {
+      "_record_index": 183,
+      "_byte_offset": 39499,
+      "QiYuID": 2004,
+      "ConditionType": 2,
+      "ParamList": [
+        40,
+        0
+      ],
+      "EndTime": 18000,
+      "NpcID": 1045,
+      "Dialogue": "恭喜你达到40级，假以时日你也能追上我的，<color=#02802f>柠柠果*3、秘灵果*3、恐狼魂石*2</color>能极大提高你的狩猎技巧",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 50,
+          "BootyID": 23004,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 268
+    },
+    {
+      "_record_index": 184,
+      "_byte_offset": 39767,
+      "QiYuID": 2005,
+      "ConditionType": 2,
+      "ParamList": [
+        45,
+        0
+      ],
+      "EndTime": 18000,
+      "NpcID": 1054,
+      "Dialogue": "恭喜你达到45级，看来你的努力并没有白费啊，<color=#02802f>剑虎兽皮*2、祭司圣水*1、青鸟羽毛*1</color>在将来你应该会用到",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 100,
+          "BootyID": 23005,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 271
+    },
+    {
+      "_record_index": 185,
+      "_byte_offset": 40038,
+      "QiYuID": 2006,
+      "ConditionType": 2,
+      "ParamList": [
+        50,
+        0
+      ],
+      "EndTime": 18000,
+      "NpcID": 1055,
+      "Dialogue": "恭喜你达到50级，以后也要一起努力呀，把我收藏的<color=#02802f>魔晶原石*2、战神钥匙*2、工匠之锤*2</color>卖给你啦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 50,
+          "BootyID": 23006,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 262
+    },
+    {
+      "_record_index": 186,
+      "_byte_offset": 40300,
+      "QiYuID": 2007,
+      "ConditionType": 2,
+      "ParamList": [
+        55,
+        0
+      ],
+      "EndTime": 18000,
+      "NpcID": 1063,
+      "Dialogue": "恭喜你达到55级，<color=#02802f>血脉结晶*10</color>是之后狩猎必备之物，卖给你一些吧",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 15,
+          "BootyID": 23007,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 220
+    },
+    {
+      "_record_index": 187,
+      "_byte_offset": 40520,
+      "QiYuID": 2008,
+      "ConditionType": 2,
+      "ParamList": [
+        60,
+        0
+      ],
+      "EndTime": 18000,
+      "NpcID": 1064,
+      "Dialogue": "恭喜你达到60级，你已经快追上我了啊，<color=#02802f>剑龙血晶*10、剑虎血晶*10</color>用来提高实力再好不过了",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 60,
+          "BootyID": 23008,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 253
+    },
+    {
+      "_record_index": 188,
+      "_byte_offset": 40773,
+      "QiYuID": 2009,
+      "ConditionType": 2,
+      "ParamList": [
+        65,
+        0
+      ],
+      "EndTime": 18000,
+      "NpcID": 1074,
+      "Dialogue": "恭喜你达到65级，有什么问题尽管来问我，我要去买<color=#02802f>猛犸魂石*2、血鹰魂石*1</color>，你也需要吗",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 180,
+          "BootyID": 23009,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 251
+    },
+    {
+      "_record_index": 189,
+      "_byte_offset": 41024,
+      "QiYuID": 2010,
+      "ConditionType": 2,
+      "ParamList": [
+        70,
+        0
+      ],
+      "EndTime": 18000,
+      "NpcID": 1073,
+      "Dialogue": "恭喜你达到70级，大祭司对你很严格吧，<color=#02802f>灰鸠羽毛*1、青鸟羽毛*1</color>，便宜些给你，不要告诉他哦",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 100,
+          "BootyID": 23010,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 257
+    },
+    {
+      "_record_index": 190,
+      "_byte_offset": 41281,
+      "QiYuID": 2011,
+      "ConditionType": 2,
+      "ParamList": [
+        75,
+        0
+      ],
+      "EndTime": 18000,
+      "NpcID": 1084,
+      "Dialogue": "恭喜你达到75级，狩猎碰到瓶颈了吗？试试<color=#02802f>部落印章*3、工匠之锤*3</color>，或许会有用",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 80,
+          "BootyID": 23011,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 239
+    },
+    {
+      "_record_index": 191,
+      "_byte_offset": 41520,
+      "QiYuID": 2012,
+      "ConditionType": 2,
+      "ParamList": [
+        80,
+        0
+      ],
+      "EndTime": 18000,
+      "NpcID": 1085,
+      "Dialogue": "恭喜你达到80级，你也喜欢音乐吗？买下<color=#02802f>血脉结晶*10、暴龙结晶*1</color>，我就能给你弹奏一曲",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 50,
+          "BootyID": 23012,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 249
+    },
+    {
+      "_record_index": 192,
+      "_byte_offset": 41769,
+      "QiYuID": 2013,
+      "ConditionType": 2,
+      "ParamList": [
+        85,
+        0
+      ],
+      "EndTime": 18000,
+      "NpcID": 1093,
+      "Dialogue": "恭喜你达到85级，想屹立于狩猎场，快买些<color=#02802f>柠柠果*10、秘灵果*10</color>能让你更强",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 50,
+          "BootyID": 23013,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 232
+    },
+    {
+      "_record_index": 193,
+      "_byte_offset": 42001,
+      "QiYuID": 2014,
+      "ConditionType": 2,
+      "ParamList": [
+        90,
+        0
+      ],
+      "EndTime": 18000,
+      "NpcID": 1094,
+      "Dialogue": "恭喜你达到90级，变得很强了嘛，上次狩猎比赛败给我不要灰心，再去买<color=#02802f>血鹰魂石*1、剑龙魂石*1</color>提升一下实力吧",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 150,
+          "BootyID": 23014,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 281
+    },
+    {
+      "_record_index": 194,
+      "_byte_offset": 42282,
+      "QiYuID": 2015,
+      "ConditionType": 2,
+      "ParamList": [
+        95,
+        0
+      ],
+      "EndTime": 18000,
+      "NpcID": 1104,
+      "Dialogue": "恭喜你达到95级，最近外出的时候得到了<color=#02802f>三阶巨龙之魂技能书*1</color>，便宜卖给你吧",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 150,
+          "BootyID": 23015,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 237
+    },
+    {
+      "_record_index": 195,
+      "_byte_offset": 42519,
+      "QiYuID": 2016,
+      "ConditionType": 2,
+      "ParamList": [
+        100,
+        0
+      ],
+      "EndTime": 18000,
+      "NpcID": 1105,
+      "Dialogue": "恭喜你达到100级，但想要追上我还有一段距离呢，要不要来个<color=#02802f>剑虎兽皮*10、祭司圣水*10</color>试试",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 80,
+          "BootyID": 23016,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 254
+    },
+    {
+      "_record_index": 196,
+      "_byte_offset": 42773,
+      "QiYuID": 2017,
+      "ConditionType": 2,
+      "ParamList": [
+        105,
+        0
+      ],
+      "EndTime": 18000,
+      "NpcID": 1112,
+      "Dialogue": "恭喜你达到105级，你的努力确实有目共睹，今天在集市买了<color=#02802f>夜枭羽毛*1、血鹰羽毛*1</color>便宜卖给你吧",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 400,
+          "BootyID": 23017,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 261
+    },
+    {
+      "_record_index": 197,
+      "_byte_offset": 43034,
+      "QiYuID": 2018,
+      "ConditionType": 2,
+      "ParamList": [
+        110,
+        0
+      ],
+      "EndTime": 18000,
+      "NpcID": 1113,
+      "Dialogue": "恭喜你达到110级，但是不能够放松，还要继续努力，平常卖的<color=#02802f>星星币*5、月神币*5</color>就便宜些卖给你吧",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 150,
+          "BootyID": 23018,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 264
+    },
+    {
+      "_record_index": 198,
+      "_byte_offset": 43298,
+      "QiYuID": 2019,
+      "ConditionType": 2,
+      "ParamList": [
+        115,
+        0
+      ],
+      "EndTime": 18000,
+      "NpcID": 1123,
+      "Dialogue": "恭喜你达到115级，我这里有一些助力冒险的稀有道具，便宜卖给你吧。",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 100,
+          "BootyID": 23019,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 204
+    },
+    {
+      "_record_index": 199,
+      "_byte_offset": 43502,
+      "QiYuID": 2020,
+      "ConditionType": 2,
+      "ParamList": [
+        120,
+        0
+      ],
+      "EndTime": 18000,
+      "NpcID": 1122,
+      "Dialogue": "恭喜你达到120级，我这里有一些助力冒险的稀有道具，便宜卖给你吧。",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 250,
+          "BootyID": 23020,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 204
+    },
+    {
+      "_record_index": 200,
+      "_byte_offset": 43706,
+      "QiYuID": 2021,
+      "ConditionType": 2,
+      "ParamList": [
+        125,
+        0
+      ],
+      "EndTime": 18000,
+      "NpcID": 1133,
+      "Dialogue": "恭喜你达到125级，我这里有一些助力冒险的稀有道具，便宜卖给你吧。",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 200,
+          "BootyID": 23021,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 204
+    },
+    {
+      "_record_index": 201,
+      "_byte_offset": 43910,
+      "QiYuID": 2022,
+      "ConditionType": 2,
+      "ParamList": [
+        130,
+        0
+      ],
+      "EndTime": 18000,
+      "NpcID": 1132,
+      "Dialogue": "恭喜你达到130级，我这里有一些助力冒险的稀有道具，便宜卖给你吧。",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 300,
+          "BootyID": 23022,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 204
+    },
+    {
+      "_record_index": 202,
+      "_byte_offset": 44114,
+      "QiYuID": 2023,
+      "ConditionType": 2,
+      "ParamList": [
+        135,
+        0
+      ],
+      "EndTime": 18000,
+      "NpcID": 1143,
+      "Dialogue": "恭喜你达到135级，我这里有一些助力冒险的稀有道具，便宜卖给你吧。",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 200,
+          "BootyID": 23023,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 204
+    },
+    {
+      "_record_index": 203,
+      "_byte_offset": 44318,
+      "QiYuID": 2024,
+      "ConditionType": 2,
+      "ParamList": [
+        140,
+        0
+      ],
+      "EndTime": 18000,
+      "NpcID": 1142,
+      "Dialogue": "恭喜你达到140级，我这里有一些助力冒险的稀有道具，便宜卖给你吧。",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 300,
+          "BootyID": 23024,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 204
+    },
+    {
+      "_record_index": 204,
+      "_byte_offset": 44522,
+      "QiYuID": 3001,
+      "ConditionType": 3,
+      "ParamList": [
+        1,
+        3
+      ],
+      "EndTime": 18000,
+      "NpcID": 1033,
+      "Dialogue": "你竟然通过了深窟部落，太强了，<color=#02802f>狩猎纹章*5</color>这些道具，便宜些卖给你吧",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 30,
+          "BootyID": 24001,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 229
+    },
+    {
+      "_record_index": 205,
+      "_byte_offset": 44751,
+      "QiYuID": 3002,
+      "ConditionType": 3,
+      "ParamList": [
+        1,
+        4
+      ],
+      "EndTime": 18000,
+      "NpcID": 1043,
+      "Dialogue": "恭喜通过了剑虎部落，但别骄傲，还要继续努力，<color=#02802f>甜甜浆果*10</color>喂养宠物必不可少的哦，要买点不",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 20,
+          "BootyID": 24002,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 260
+    },
+    {
+      "_record_index": 206,
+      "_byte_offset": 45011,
+      "QiYuID": 3003,
+      "ConditionType": 3,
+      "ParamList": [
+        1,
+        5
+      ],
+      "EndTime": 18000,
+      "NpcID": 1053,
+      "Dialogue": "恭喜你通过了巨石部落，我卖给你的<color=#02802f>祭司手记*5、月神币*5、甜甜浆果*5</color>有派上用场吗，还要再买一点吗",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 50,
+          "BootyID": 24003,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 269
+    },
+    {
+      "_record_index": 207,
+      "_byte_offset": 45280,
+      "QiYuID": 3004,
+      "ConditionType": 3,
+      "ParamList": [
+        1,
+        6
+      ],
+      "EndTime": 18000,
+      "NpcID": 1062,
+      "Dialogue": "恭喜你通过了猛象部落，前车之鉴后车之师，买些<color=#02802f>祭司手记*10、史诗狩猎纹章*2、战神钥匙*2</color>或许有所帮助",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 50,
+          "BootyID": 24004,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 273
+    },
+    {
+      "_record_index": 208,
+      "_byte_offset": 45553,
+      "QiYuID": 3005,
+      "ConditionType": 3,
+      "ParamList": [
+        1,
+        7
+      ],
+      "EndTime": 18000,
+      "NpcID": 1075,
+      "Dialogue": "没想到你这么快就通过了剑龙部落，刚取到的<color=#02802f>柠柠果*5、秘灵果*5、恐狼魂石*2</color>，要买点吗",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 50,
+          "BootyID": 24005,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 251
+    },
+    {
+      "_record_index": 209,
+      "_byte_offset": 45804,
+      "QiYuID": 3006,
+      "ConditionType": 3,
+      "ParamList": [
+        1,
+        8
+      ],
+      "EndTime": 18000,
+      "NpcID": 1083,
+      "Dialogue": "恭喜通过了灰烬部落，真正的考验还在后面，如果你需要<color=#02802f>血脉结晶*10、剑龙血晶*2、剑虎血晶*2</color>我可以提供一点",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 100,
+          "BootyID": 24006,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 279
+    },
+    {
+      "_record_index": 210,
+      "_byte_offset": 46083,
+      "QiYuID": 3007,
+      "ConditionType": 3,
+      "ParamList": [
+        1,
+        9
+      ],
+      "EndTime": 18000,
+      "NpcID": 1095,
+      "Dialogue": "没想到你既然通过了翼龙部落，<color=#02802f>秘灵果*10、雪鹰魂石*1</color>便宜卖给你算了",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 150,
+          "BootyID": 24007,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 226
+    },
+    {
+      "_record_index": 211,
+      "_byte_offset": 46309,
+      "QiYuID": 3008,
+      "ConditionType": 3,
+      "ParamList": [
+        1,
+        10
+      ],
+      "EndTime": 18000,
+      "NpcID": 1102,
+      "Dialogue": "恭喜你通过了灵语部落，狩猎技巧大有进步，要买个<color=#02802f>祭司圣水*10、夜枭羽毛*1</color>精进实力吗",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 120,
+          "BootyID": 24008,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 250
+    },
+    {
+      "_record_index": 212,
+      "_byte_offset": 46559,
+      "QiYuID": 3009,
+      "ConditionType": 3,
+      "ParamList": [
+        1,
+        11
+      ],
+      "EndTime": 18000,
+      "NpcID": 1114,
+      "Dialogue": "我去了一趟集市没想到你竟然通过了伊始部落，带回来的<color=#02802f>神器碎片*10、熔炼石*1</color>要试试吗",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 50,
+          "BootyID": 24009,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 250
+    },
+    {
+      "_record_index": 213,
+      "_byte_offset": 46809,
+      "QiYuID": 3010,
+      "ConditionType": 3,
+      "ParamList": [
+        1,
+        12
+      ],
+      "EndTime": 18000,
+      "NpcID": 1122,
+      "Dialogue": "恭喜你通过了雷鸣部落，需要我帮你去买<color=#02802f>荒古粉尘*10、五色神石*1</color>助你一臂之力吗",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 100,
+          "BootyID": 24010,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 241
+    },
+    {
+      "_record_index": 214,
+      "_byte_offset": 47050,
+      "QiYuID": 3011,
+      "ConditionType": 3,
+      "ParamList": [
+        1,
+        13
+      ],
+      "EndTime": 18000,
+      "NpcID": 1134,
+      "Dialogue": "通过了云顶部落，恭喜呀，趁着天使长不在，偷偷把<color=#02802f>甜甜浆果*10、黄金浆果*10、祭司手记*10</color>卖给你一些吧，接下来会有大作用的",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 120,
+          "BootyID": 24011,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 302
+    },
+    {
+      "_record_index": 215,
+      "_byte_offset": 47352,
+      "QiYuID": 3012,
+      "ConditionType": 3,
+      "ParamList": [
+        1,
+        14
+      ],
+      "EndTime": 18000,
+      "NpcID": 1142,
+      "Dialogue": "恭喜你通过了日炎部落，看来平时的练习有所帮助嘛，还要买点<color=#02802f>柠柠果*10、秘灵果*10、祭司圣水*10</color>吗",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 160,
+          "BootyID": 24012,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 266
+    },
+    {
+      "_record_index": 216,
+      "_byte_offset": 47618,
+      "QiYuID": 3013,
+      "ConditionType": 3,
+      "ParamList": [
+        1,
+        15
+      ],
+      "EndTime": 18000,
+      "NpcID": 1152,
+      "Dialogue": "通过了自然部落就有向我挑战的资格了，用上<color=#02802f>魔鸟觉醒羽毛*1、皇雀觉醒羽毛*1</color>吧，不然你一定会输的",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 400,
+          "BootyID": 24013,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 267
+    },
+    {
+      "_record_index": 217,
+      "_byte_offset": 47885,
+      "QiYuID": 3014,
+      "ConditionType": 3,
+      "ParamList": [
+        1,
+        16
+      ],
+      "EndTime": 18000,
+      "NpcID": 1164,
+      "Dialogue": "恭喜通过了海神部落，我这里有份海底宝藏，给我一点珍珠，我给你<color=#02802f>秘古灵魄*20、先贤古卷*10</color>如何",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 100,
+          "BootyID": 24014,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 263
+    },
+    {
+      "_record_index": 218,
+      "_byte_offset": 48148,
+      "QiYuID": 3015,
+      "ConditionType": 3,
+      "ParamList": [
+        1,
+        17
+      ],
+      "EndTime": 18000,
+      "NpcID": 1175,
+      "Dialogue": "你终于通过了彩虹部落，看在你潜心狩猎的份上<color=#02802f>暴击提升(小)·技能书*1</color>就便宜给你吧。",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 500,
+          "BootyID": 24015,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 248
+    },
+    {
+      "_record_index": 219,
+      "_byte_offset": 48396,
+      "QiYuID": 3016,
+      "ConditionType": 3,
+      "ParamList": [
+        1,
+        18
+      ],
+      "EndTime": 18000,
+      "NpcID": 1183,
+      "Dialogue": "通过了星月部落就有向我挑战的资格了，用上<color=#02802f>幻影灵珠·红*10、活力药剂*10、神灵残魂*10</color>吧，不然你一定会输的",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 400,
+          "BootyID": 24016,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 280
+    },
+    {
+      "_record_index": 220,
+      "_byte_offset": 48676,
+      "QiYuID": 3017,
+      "ConditionType": 3,
+      "ParamList": [
+        1,
+        19
+      ],
+      "EndTime": 18000,
+      "NpcID": 1193,
+      "Dialogue": "恭喜通过了极光部落，我这里有份宝藏，给我一点珍珠，我给你<color=#02802f>古神灵珠·玉藻前*2、秘古灵魄*10</color>如何",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 500,
+          "BootyID": 24017,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 267
+    },
+    {
+      "_record_index": 221,
+      "_byte_offset": 48943,
+      "QiYuID": 3018,
+      "ConditionType": 3,
+      "ParamList": [
+        1,
+        20
+      ],
+      "EndTime": 18000,
+      "NpcID": 1203,
+      "Dialogue": "恭喜通过了圣火部落，我这里有份宝藏，给我一点珍珠，我给你<color=#02802f>浮塔圣印*1、圣晶石*100</color>如何",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 500,
+          "BootyID": 24018,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 254
+    },
+    {
+      "_record_index": 222,
+      "_byte_offset": 49197,
+      "QiYuID": 3019,
+      "ConditionType": 3,
+      "ParamList": [
+        1,
+        21
+      ],
+      "EndTime": 18000,
+      "NpcID": 1213,
+      "Dialogue": "恭喜通过了智械部落，我这里有份宝藏，给我一点珍珠，我给你<color=#02802f>海晶圣印*1、圣晶石*100</color>如何",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 500,
+          "BootyID": 24019,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 254
+    },
+    {
+      "_record_index": 223,
+      "_byte_offset": 49451,
+      "QiYuID": 3020,
+      "ConditionType": 3,
+      "ParamList": [
+        1,
+        22
+      ],
+      "EndTime": 18000,
+      "NpcID": 1223,
+      "Dialogue": "恭喜通过了禁咒部落，我这里有份宝藏，给我一点珍珠，我给你<color=#02802f>皇盾圣印*1、圣晶石*100</color>如何",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 500,
+          "BootyID": 24020,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 254
+    },
+    {
+      "_record_index": 224,
+      "_byte_offset": 49705,
+      "QiYuID": 3021,
+      "ConditionType": 3,
+      "ParamList": [
+        1,
+        23
+      ],
+      "EndTime": 18000,
+      "NpcID": 1233,
+      "Dialogue": "恭喜通过了暗裔部落，我这里有份宝藏，给我一点珍珠，我给你<color=#02802f>虚空圣印*1、圣晶石*100</color>如何",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 500,
+          "BootyID": 24021,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 254
+    },
+    {
+      "_record_index": 225,
+      "_byte_offset": 49959,
+      "QiYuID": 3022,
+      "ConditionType": 3,
+      "ParamList": [
+        1,
+        24
+      ],
+      "EndTime": 18000,
+      "NpcID": 1243,
+      "Dialogue": "恭喜通过了青藤部落，我这里有份宝藏，给我一点珍珠，我给你<color=#02802f>6级自选星石*1、星魔石*10</color>如何",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 500,
+          "BootyID": 24022,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 257
+    },
+    {
+      "_record_index": 226,
+      "_byte_offset": 50216,
+      "QiYuID": 3023,
+      "ConditionType": 3,
+      "ParamList": [
+        1,
+        25
+      ],
+      "EndTime": 18000,
+      "NpcID": 1253,
+      "Dialogue": "恭喜通过了蛮荒部落，我这里有份宝藏，给我一点珍珠，我给你<color=#02802f>魔法星仪*20、星魔石*50</color>如何",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 500,
+          "BootyID": 24023,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 254
+    },
+    {
+      "_record_index": 227,
+      "_byte_offset": 50470,
+      "QiYuID": 3024,
+      "ConditionType": 3,
+      "ParamList": [
+        1,
+        26
+      ],
+      "EndTime": 18000,
+      "NpcID": 1263,
+      "Dialogue": "恭喜通过了龙侍部落，我这里有份宝藏，给我一点珍珠，我给你<color=#02802f>青龙圣兽珠*1、龙之鳞*50</color>如何",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 500,
+          "BootyID": 24024,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 256
+    },
+    {
+      "_record_index": 228,
+      "_byte_offset": 50726,
+      "QiYuID": 3025,
+      "ConditionType": 3,
+      "ParamList": [
+        1,
+        27
+      ],
+      "EndTime": 18000,
+      "NpcID": 1273,
+      "Dialogue": "恭喜通过了岩渊部落，我这里有份宝藏，给我一点珍珠，我给你<color=#02802f>白虎圣兽珠*1、虎之牙*50</color>如何",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 500,
+          "BootyID": 24025,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 256
+    },
+    {
+      "_record_index": 229,
+      "_byte_offset": 50982,
+      "QiYuID": 3026,
+      "ConditionType": 3,
+      "ParamList": [
+        1,
+        28
+      ],
+      "EndTime": 18000,
+      "NpcID": 1283,
+      "Dialogue": "恭喜通过了暗夜部落，我这里有份宝藏，给我一点珍珠，我给你<color=#02802f>朱雀圣兽珠珠*1、凤之羽*50</color>如何",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 500,
+          "BootyID": 24026,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 259
+    },
+    {
+      "_record_index": 230,
+      "_byte_offset": 51241,
+      "QiYuID": 3027,
+      "ConditionType": 3,
+      "ParamList": [
+        1,
+        29
+      ],
+      "EndTime": 18000,
+      "NpcID": 1293,
+      "Dialogue": "恭喜通过了雪神部落，我这里有份宝藏，给我一点珍珠，我给你<color=#02802f>玄武圣兽珠*1、玄龟甲*50</color>如何",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 500,
+          "BootyID": 24027,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 256
+    },
+    {
+      "_record_index": 231,
+      "_byte_offset": 51497,
+      "QiYuID": 3028,
+      "ConditionType": 3,
+      "ParamList": [
+        1,
+        30
+      ],
+      "EndTime": 18000,
+      "NpcID": 1303,
+      "Dialogue": "恭喜通过了赤焰部落，我这里有份宝藏，给我一点珍珠，我给你<color=#02802f>青龙圣兽珠*1、龙之鳞*50</color>如何",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 500,
+          "BootyID": 24028,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 256
+    },
+    {
+      "_record_index": 232,
+      "_byte_offset": 51753,
+      "QiYuID": 3029,
+      "ConditionType": 3,
+      "ParamList": [
+        1,
+        31
+      ],
+      "EndTime": 18000,
+      "NpcID": 1313,
+      "Dialogue": "恭喜通过了魔沼部落，我这里有份宝藏，给我一点珍珠，我给你<color=#02802f>白虎圣兽珠*1、虎之牙*50</color>如何",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 500,
+          "BootyID": 24029,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 256
+    },
+    {
+      "_record_index": 233,
+      "_byte_offset": 52009,
+      "QiYuID": 3030,
+      "ConditionType": 3,
+      "ParamList": [
+        1,
+        32
+      ],
+      "EndTime": 18000,
+      "NpcID": 1323,
+      "Dialogue": "恭喜通过了亡灵部落，我这里有份宝藏，给我一点珍珠，我给你<color=#02802f>朱雀圣兽珠珠*1、凤之羽*50</color>如何",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 500,
+          "BootyID": 24030,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 259
+    },
+    {
+      "_record_index": 234,
+      "_byte_offset": 52268,
+      "QiYuID": 3031,
+      "ConditionType": 3,
+      "ParamList": [
+        1,
+        33
+      ],
+      "EndTime": 18000,
+      "NpcID": 1333,
+      "Dialogue": "恭喜通过了星渊部落，我这里有份宝藏，给我一点珍珠，我给你<color=#02802f>玄武圣兽珠珠*1、玄龟甲*50</color>如何",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 500,
+          "BootyID": 24031,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 259
+    },
+    {
+      "_record_index": 235,
+      "_byte_offset": 52527,
+      "QiYuID": 3032,
+      "ConditionType": 3,
+      "ParamList": [
+        1,
+        34
+      ],
+      "EndTime": 18000,
+      "NpcID": 1343,
+      "Dialogue": "恭喜通过了赤焰部落，我这里有份宝藏，给我一点珍珠，我给你<color=#02802f>青龙圣兽珠*1、龙之鳞*50</color>如何",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 500,
+          "BootyID": 24032,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 256
+    },
+    {
+      "_record_index": 236,
+      "_byte_offset": 52783,
+      "QiYuID": 3033,
+      "ConditionType": 3,
+      "ParamList": [
+        1,
+        35
+      ],
+      "EndTime": 18000,
+      "NpcID": 1353,
+      "Dialogue": "恭喜通过了魔沼部落，我这里有份宝藏，给我一点珍珠，我给你<color=#02802f>白虎圣兽珠*1、虎之牙*50</color>如何",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 500,
+          "BootyID": 24033,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 256
+    },
+    {
+      "_record_index": 237,
+      "_byte_offset": 53039,
+      "QiYuID": 3034,
+      "ConditionType": 3,
+      "ParamList": [
+        1,
+        36
+      ],
+      "EndTime": 18000,
+      "NpcID": 1363,
+      "Dialogue": "恭喜通过了亡灵部落，我这里有份宝藏，给我一点珍珠，我给你<color=#02802f>朱雀圣兽珠珠*1、凤之羽*50</color>如何",
+      "Options": [
+        {
+          "Desc": "我不需要",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 0,
+          "NeedMoneyCnt": 0,
+          "BootyID": 22000,
+          "HaoGanDu": 5
+        },
+        {
+          "Desc": "出钱买下",
+          "NeedItemID": 0,
+          "NeedItemCnt": 0,
+          "NeedMoneyType": 3,
+          "NeedMoneyCnt": 500,
+          "BootyID": 24034,
+          "HaoGanDu": 10
+        }
+      ],
+      "_byte_length": 259
+    }
+  ]
+}

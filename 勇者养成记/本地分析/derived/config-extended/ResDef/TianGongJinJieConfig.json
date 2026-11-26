@@ -1,0 +1,4002 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_tiangongjinjieconfig.bytes.ab",
+    "path_id": 7215377749499404953,
+    "name": "TianGongJinJieConfig",
+    "sha256": "9d9f38b33ddb257fc732e2509484946c4e17b4e3eff393ec872252a366a3b4dd",
+    "export": "derived/unity/text/assets_resources_config_resbin_tiangongjinjieconfig.bytes/TianGongJinJieConfig__7215377749499404953.bin",
+    "schema": "ResDef.TianGongJinJieConfig",
+    "path_id_decimal": "7215377749499404953",
+    "legacy_status": "raw-header-verified",
+    "legacy_reason": "Unsupported arrays/nested/enum fields: TianGongJueXueData[] NeedJueXueList, ResAttrImpactData[] AddAttrList",
+    "status": "decoded-validated-native-recursive",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 15784,
+      "version": 1,
+      "record_count": 84,
+      "stored_crc32": "bae3d458",
+      "computed_inverted_crc32": "bae3d458"
+    },
+    "native_layout_verified": true,
+    "schema_file": "derived/config-extended/schemas/ResDef.TianGongJinJieConfig.json",
+    "minimum_record_size": 88,
+    "min_expected_payload_bytes": 7392,
+    "actual_payload_bytes": 15764,
+    "decoded_record_count": 84,
+    "validation": {
+      "header_verified": true,
+      "count_verified": true,
+      "exact_eof": true,
+      "full_reencode_equal": true,
+      "full_reencode_sha256": "9d9f38b33ddb257fc732e2509484946c4e17b4e3eff393ec872252a366a3b4dd",
+      "decoded_node_count": 2688,
+      "payload_bytes": 15764
+    },
+    "arrays": [
+      {
+        "field": "NeedJueXueList",
+        "count": 3,
+        "count_encoding": "none-native-fixed"
+      },
+      {
+        "field": "AddAttrList",
+        "count": 3,
+        "count_encoding": "none-native-fixed"
+      }
+    ],
+    "decoded_json": "derived/config-extended/ResDef/TianGongJinJieConfig.json",
+    "decoded_csv": "derived/config-extended/ResDef/TianGongJinJieConfig.csv"
+  },
+  "precision": "Exact JSON integer number tokens, with decimal-string mirrors for every int64/uint64/FP. FP is raw signed int64; no scaling.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "TianGongID": 1,
+      "StarLv": 0,
+      "OpenLv": 1,
+      "JieShuName": "0阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 10,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 1
+        },
+        {
+          "ID": 571,
+          "Lv": 1
+        },
+        {
+          "ID": 572,
+          "Lv": 1
+        }
+      ],
+      "JinJieTarget": 1,
+      "JiejiSkillID": 0,
+      "FuShenSkillID": 0,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术后，咒术CD减少<color=#067a11>8.0</color>秒",
+      "AddAttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 0.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 0.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 153
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 173,
+      "TianGongID": 1,
+      "StarLv": 1,
+      "OpenLv": 3,
+      "JieShuName": "1阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 12,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 2
+        },
+        {
+          "ID": 571,
+          "Lv": 2
+        },
+        {
+          "ID": 572,
+          "Lv": 2
+        }
+      ],
+      "JinJieTarget": 2,
+      "JiejiSkillID": 60101,
+      "FuShenSkillID": 0,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术后，咒术冷却时间减少<color=#067a11>8.0</color>秒（[icon_Com_img_013]8.9）",
+      "AddAttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 1500.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 1200.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 60.0
+        }
+      ],
+      "_byte_length": 190
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 363,
+      "TianGongID": 1,
+      "StarLv": 2,
+      "OpenLv": 6,
+      "JieShuName": "2阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 14,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 3
+        },
+        {
+          "ID": 571,
+          "Lv": 3
+        },
+        {
+          "ID": 572,
+          "Lv": 3
+        }
+      ],
+      "JinJieTarget": 3,
+      "JiejiSkillID": 60102,
+      "FuShenSkillID": 0,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术后，咒术冷却时间减少<color=#067a11>8.9</color>秒（[icon_Com_img_013]9.8）",
+      "AddAttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 3000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 2400.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 120.0
+        }
+      ],
+      "_byte_length": 190
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 553,
+      "TianGongID": 1,
+      "StarLv": 3,
+      "OpenLv": 9,
+      "JieShuName": "3阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 16,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 4
+        },
+        {
+          "ID": 571,
+          "Lv": 4
+        },
+        {
+          "ID": 572,
+          "Lv": 4
+        }
+      ],
+      "JinJieTarget": 4,
+      "JiejiSkillID": 60103,
+      "FuShenSkillID": 0,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术后，咒术冷却时间减少<color=#067a11>9.8</color>秒（[icon_Com_img_013]10.7）",
+      "AddAttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 4500.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 3600.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 180.0
+        }
+      ],
+      "_byte_length": 191
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 744,
+      "TianGongID": 1,
+      "StarLv": 4,
+      "OpenLv": 12,
+      "JieShuName": "4阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 18,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 5
+        },
+        {
+          "ID": 571,
+          "Lv": 5
+        },
+        {
+          "ID": 572,
+          "Lv": 5
+        }
+      ],
+      "JinJieTarget": 5,
+      "JiejiSkillID": 60104,
+      "FuShenSkillID": 0,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术后，咒术冷却时间减少<color=#067a11>10.7</color>秒（[icon_Com_img_013]11.6）",
+      "AddAttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 6000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 4800.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 240.0
+        }
+      ],
+      "_byte_length": 192
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 936,
+      "TianGongID": 1,
+      "StarLv": 5,
+      "OpenLv": 15,
+      "JieShuName": "5阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 20,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 6
+        },
+        {
+          "ID": 571,
+          "Lv": 6
+        },
+        {
+          "ID": 572,
+          "Lv": 6
+        }
+      ],
+      "JinJieTarget": 6,
+      "JiejiSkillID": 60105,
+      "FuShenSkillID": 0,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术后，咒术冷却时间减少<color=#067a11>11.6</color>秒（[icon_Com_img_013]12.5）",
+      "AddAttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 7500.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 6000.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 300.0
+        }
+      ],
+      "_byte_length": 192
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 1128,
+      "TianGongID": 1,
+      "StarLv": 6,
+      "OpenLv": 19,
+      "JieShuName": "6阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 22,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 7
+        },
+        {
+          "ID": 571,
+          "Lv": 7
+        },
+        {
+          "ID": 572,
+          "Lv": 7
+        }
+      ],
+      "JinJieTarget": 7,
+      "JiejiSkillID": 60106,
+      "FuShenSkillID": 0,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术后，咒术冷却时间减少<color=#067a11>12.5</color>秒（[icon_Com_img_013]13.4）",
+      "AddAttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 9000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 7200.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 360.0
+        }
+      ],
+      "_byte_length": 192
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 1320,
+      "TianGongID": 1,
+      "StarLv": 7,
+      "OpenLv": 23,
+      "JieShuName": "7阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 24,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 8
+        },
+        {
+          "ID": 571,
+          "Lv": 8
+        },
+        {
+          "ID": 572,
+          "Lv": 8
+        }
+      ],
+      "JinJieTarget": 8,
+      "JiejiSkillID": 60107,
+      "FuShenSkillID": 0,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术后，咒术冷却时间减少<color=#067a11>13.4</color>秒（[icon_Com_img_013]14.3）",
+      "AddAttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 10500.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 8400.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 420.0
+        }
+      ],
+      "_byte_length": 192
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 1512,
+      "TianGongID": 1,
+      "StarLv": 8,
+      "OpenLv": 27,
+      "JieShuName": "8阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 26,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 9
+        },
+        {
+          "ID": 571,
+          "Lv": 9
+        },
+        {
+          "ID": 572,
+          "Lv": 9
+        }
+      ],
+      "JinJieTarget": 9,
+      "JiejiSkillID": 60108,
+      "FuShenSkillID": 0,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术后，咒术冷却时间减少<color=#067a11>14.3</color>秒（[icon_Com_img_013]15.2）",
+      "AddAttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 12000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 9600.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 480.0
+        }
+      ],
+      "_byte_length": 192
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 1704,
+      "TianGongID": 1,
+      "StarLv": 9,
+      "OpenLv": 31,
+      "JieShuName": "9阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 28,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 10
+        },
+        {
+          "ID": 571,
+          "Lv": 10
+        },
+        {
+          "ID": 572,
+          "Lv": 10
+        }
+      ],
+      "JinJieTarget": 10,
+      "JiejiSkillID": 60109,
+      "FuShenSkillID": 0,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术后，咒术冷却时间减少<color=#067a11>15.2</color>秒（[icon_Com_img_013]16.1）",
+      "AddAttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 13500.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 10800.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 540.0
+        }
+      ],
+      "_byte_length": 192
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 1896,
+      "TianGongID": 1,
+      "StarLv": 10,
+      "OpenLv": 35,
+      "JieShuName": "10阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 30,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 11
+        },
+        {
+          "ID": 571,
+          "Lv": 11
+        },
+        {
+          "ID": 572,
+          "Lv": 11
+        }
+      ],
+      "JinJieTarget": 11,
+      "JiejiSkillID": 60110,
+      "FuShenSkillID": 61101,
+      "IsShowEffect": 1,
+      "SkillDesc": "施放咒术后，咒术冷却时间减少<color=#067a11>16.1</color>秒（[icon_Com_img_013]17.0）",
+      "AddAttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 15000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 12000.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 600.0
+        }
+      ],
+      "_byte_length": 193
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 2089,
+      "TianGongID": 1,
+      "StarLv": 11,
+      "OpenLv": 41,
+      "JieShuName": "11阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 30,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 12
+        },
+        {
+          "ID": 571,
+          "Lv": 12
+        },
+        {
+          "ID": 572,
+          "Lv": 12
+        }
+      ],
+      "JinJieTarget": 12,
+      "JiejiSkillID": 60111,
+      "FuShenSkillID": 61101,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术后，咒术冷却时间减少<color=#067a11>17.0</color>秒（[icon_Com_img_013]17.9）",
+      "AddAttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 16500.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 13200.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 660.0
+        }
+      ],
+      "_byte_length": 193
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 2282,
+      "TianGongID": 1,
+      "StarLv": 12,
+      "OpenLv": 47,
+      "JieShuName": "12阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 30,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 13
+        },
+        {
+          "ID": 571,
+          "Lv": 13
+        },
+        {
+          "ID": 572,
+          "Lv": 13
+        }
+      ],
+      "JinJieTarget": 13,
+      "JiejiSkillID": 60112,
+      "FuShenSkillID": 61101,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术后，咒术冷却时间减少<color=#067a11>17.9</color>秒（[icon_Com_img_013]18.8）",
+      "AddAttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 18000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 14400.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 720.0
+        }
+      ],
+      "_byte_length": 193
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 2475,
+      "TianGongID": 1,
+      "StarLv": 13,
+      "OpenLv": 53,
+      "JieShuName": "13阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 30,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 14
+        },
+        {
+          "ID": 571,
+          "Lv": 14
+        },
+        {
+          "ID": 572,
+          "Lv": 14
+        }
+      ],
+      "JinJieTarget": 14,
+      "JiejiSkillID": 60113,
+      "FuShenSkillID": 61101,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术后，咒术冷却时间减少<color=#067a11>18.8</color>秒（[icon_Com_img_013]19.7）",
+      "AddAttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 19500.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 15600.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 780.0
+        }
+      ],
+      "_byte_length": 193
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 2668,
+      "TianGongID": 1,
+      "StarLv": 14,
+      "OpenLv": 59,
+      "JieShuName": "14阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 30,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 15
+        },
+        {
+          "ID": 571,
+          "Lv": 15
+        },
+        {
+          "ID": 572,
+          "Lv": 15
+        }
+      ],
+      "JinJieTarget": 15,
+      "JiejiSkillID": 60114,
+      "FuShenSkillID": 61101,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术后，咒术冷却时间减少<color=#067a11>19.7</color>秒（[icon_Com_img_013]20.6）",
+      "AddAttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 21000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 16800.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 840.0
+        }
+      ],
+      "_byte_length": 193
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 2861,
+      "TianGongID": 1,
+      "StarLv": 15,
+      "OpenLv": 65,
+      "JieShuName": "15阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 30,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 16
+        },
+        {
+          "ID": 571,
+          "Lv": 16
+        },
+        {
+          "ID": 572,
+          "Lv": 16
+        }
+      ],
+      "JinJieTarget": 16,
+      "JiejiSkillID": 60115,
+      "FuShenSkillID": 61101,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术后，咒术冷却时间减少<color=#067a11>20.6</color>秒（[icon_Com_img_013]21.5）",
+      "AddAttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 22500.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 18000.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 900.0
+        }
+      ],
+      "_byte_length": 193
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 3054,
+      "TianGongID": 1,
+      "StarLv": 16,
+      "OpenLv": 72,
+      "JieShuName": "16阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 30,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 17
+        },
+        {
+          "ID": 571,
+          "Lv": 17
+        },
+        {
+          "ID": 572,
+          "Lv": 17
+        }
+      ],
+      "JinJieTarget": 17,
+      "JiejiSkillID": 60116,
+      "FuShenSkillID": 61101,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术后，咒术冷却时间减少<color=#067a11>21.5</color>秒（[icon_Com_img_013]22.4）",
+      "AddAttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 24000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 19200.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 960.0
+        }
+      ],
+      "_byte_length": 193
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 3247,
+      "TianGongID": 1,
+      "StarLv": 17,
+      "OpenLv": 79,
+      "JieShuName": "17阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 30,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 18
+        },
+        {
+          "ID": 571,
+          "Lv": 18
+        },
+        {
+          "ID": 572,
+          "Lv": 18
+        }
+      ],
+      "JinJieTarget": 18,
+      "JiejiSkillID": 60117,
+      "FuShenSkillID": 61101,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术后，咒术冷却时间减少<color=#067a11>22.4</color>秒（[icon_Com_img_013]23.3）",
+      "AddAttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 25500.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 20400.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 1020.0
+        }
+      ],
+      "_byte_length": 193
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 3440,
+      "TianGongID": 1,
+      "StarLv": 18,
+      "OpenLv": 86,
+      "JieShuName": "18阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 30,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 19
+        },
+        {
+          "ID": 571,
+          "Lv": 19
+        },
+        {
+          "ID": 572,
+          "Lv": 19
+        }
+      ],
+      "JinJieTarget": 19,
+      "JiejiSkillID": 60118,
+      "FuShenSkillID": 61101,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术后，咒术冷却时间减少<color=#067a11>23.3</color>秒（[icon_Com_img_013]24.2）",
+      "AddAttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 27000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 21600.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 1080.0
+        }
+      ],
+      "_byte_length": 193
+    },
+    {
+      "_record_index": 19,
+      "_byte_offset": 3633,
+      "TianGongID": 1,
+      "StarLv": 19,
+      "OpenLv": 93,
+      "JieShuName": "19阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 30,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 20
+        },
+        {
+          "ID": 571,
+          "Lv": 20
+        },
+        {
+          "ID": 572,
+          "Lv": 20
+        }
+      ],
+      "JinJieTarget": 20,
+      "JiejiSkillID": 60119,
+      "FuShenSkillID": 61101,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术后，咒术冷却时间减少<color=#067a11>24.2</color>秒（[icon_Com_img_013]25）",
+      "AddAttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 28500.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 22800.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 1140.0
+        }
+      ],
+      "_byte_length": 191
+    },
+    {
+      "_record_index": 20,
+      "_byte_offset": 3824,
+      "TianGongID": 1,
+      "StarLv": 20,
+      "OpenLv": 100,
+      "JieShuName": "20阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 0,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 0
+        },
+        {
+          "ID": 571,
+          "Lv": 0
+        },
+        {
+          "ID": 572,
+          "Lv": 0
+        }
+      ],
+      "JinJieTarget": 0,
+      "JiejiSkillID": 60120,
+      "FuShenSkillID": 61102,
+      "IsShowEffect": 1,
+      "SkillDesc": "施放咒术后，咒术冷却时间减少25.0秒",
+      "AddAttrList": [
+        {
+          "DataType": 63,
+          "AddType": 1,
+          "Value": 30000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 24000.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 1200.0
+        }
+      ],
+      "_byte_length": 142
+    },
+    {
+      "_record_index": 21,
+      "_byte_offset": 3966,
+      "TianGongID": 2,
+      "StarLv": 0,
+      "OpenLv": 1,
+      "JieShuName": "0阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 10,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 1
+        },
+        {
+          "ID": 571,
+          "Lv": 1
+        },
+        {
+          "ID": 573,
+          "Lv": 1
+        }
+      ],
+      "JinJieTarget": 1,
+      "JiejiSkillID": 0,
+      "FuShenSkillID": 0,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术时，咒术的伤害或恢复值提升<color=#067a11>15%</color>",
+      "AddAttrList": [
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 0.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 0.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 169
+    },
+    {
+      "_record_index": 22,
+      "_byte_offset": 4135,
+      "TianGongID": 2,
+      "StarLv": 1,
+      "OpenLv": 3,
+      "JieShuName": "1阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 12,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 2
+        },
+        {
+          "ID": 571,
+          "Lv": 2
+        },
+        {
+          "ID": 573,
+          "Lv": 2
+        }
+      ],
+      "JinJieTarget": 2,
+      "JiejiSkillID": 60201,
+      "FuShenSkillID": 0,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术时，咒术的伤害或恢复值提升<color=#067a11>15%</color>（[icon_Com_img_013]17%）",
+      "AddAttrList": [
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 1500.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 1200.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 60.0
+        }
+      ],
+      "_byte_length": 196
+    },
+    {
+      "_record_index": 23,
+      "_byte_offset": 4331,
+      "TianGongID": 2,
+      "StarLv": 2,
+      "OpenLv": 6,
+      "JieShuName": "2阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 14,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 3
+        },
+        {
+          "ID": 571,
+          "Lv": 3
+        },
+        {
+          "ID": 573,
+          "Lv": 3
+        }
+      ],
+      "JinJieTarget": 3,
+      "JiejiSkillID": 60202,
+      "FuShenSkillID": 0,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术时，咒术的伤害或恢复值提升<color=#067a11>17%</color>（[icon_Com_img_013]19%）",
+      "AddAttrList": [
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 3000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 2400.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 120.0
+        }
+      ],
+      "_byte_length": 196
+    },
+    {
+      "_record_index": 24,
+      "_byte_offset": 4527,
+      "TianGongID": 2,
+      "StarLv": 3,
+      "OpenLv": 9,
+      "JieShuName": "3阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 16,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 4
+        },
+        {
+          "ID": 571,
+          "Lv": 4
+        },
+        {
+          "ID": 573,
+          "Lv": 4
+        }
+      ],
+      "JinJieTarget": 4,
+      "JiejiSkillID": 60203,
+      "FuShenSkillID": 0,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术时，咒术的伤害或恢复值提升<color=#067a11>19%</color>（[icon_Com_img_013]21%）",
+      "AddAttrList": [
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 4500.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 3600.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 180.0
+        }
+      ],
+      "_byte_length": 196
+    },
+    {
+      "_record_index": 25,
+      "_byte_offset": 4723,
+      "TianGongID": 2,
+      "StarLv": 4,
+      "OpenLv": 12,
+      "JieShuName": "4阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 18,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 5
+        },
+        {
+          "ID": 571,
+          "Lv": 5
+        },
+        {
+          "ID": 573,
+          "Lv": 5
+        }
+      ],
+      "JinJieTarget": 5,
+      "JiejiSkillID": 60204,
+      "FuShenSkillID": 0,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术时，咒术的伤害或恢复值提升<color=#067a11>21%</color>（[icon_Com_img_013]23%）",
+      "AddAttrList": [
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 6000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 4800.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 240.0
+        }
+      ],
+      "_byte_length": 196
+    },
+    {
+      "_record_index": 26,
+      "_byte_offset": 4919,
+      "TianGongID": 2,
+      "StarLv": 5,
+      "OpenLv": 15,
+      "JieShuName": "5阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 20,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 6
+        },
+        {
+          "ID": 571,
+          "Lv": 6
+        },
+        {
+          "ID": 573,
+          "Lv": 6
+        }
+      ],
+      "JinJieTarget": 6,
+      "JiejiSkillID": 60205,
+      "FuShenSkillID": 0,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术时，咒术的伤害或恢复值提升<color=#067a11>23%</color>（[icon_Com_img_013]25%）",
+      "AddAttrList": [
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 7500.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 6000.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 300.0
+        }
+      ],
+      "_byte_length": 196
+    },
+    {
+      "_record_index": 27,
+      "_byte_offset": 5115,
+      "TianGongID": 2,
+      "StarLv": 6,
+      "OpenLv": 19,
+      "JieShuName": "6阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 22,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 7
+        },
+        {
+          "ID": 571,
+          "Lv": 7
+        },
+        {
+          "ID": 573,
+          "Lv": 7
+        }
+      ],
+      "JinJieTarget": 7,
+      "JiejiSkillID": 60206,
+      "FuShenSkillID": 0,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术时，咒术的伤害或恢复值提升<color=#067a11>25%</color>（[icon_Com_img_013]27%）",
+      "AddAttrList": [
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 9000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 7200.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 360.0
+        }
+      ],
+      "_byte_length": 196
+    },
+    {
+      "_record_index": 28,
+      "_byte_offset": 5311,
+      "TianGongID": 2,
+      "StarLv": 7,
+      "OpenLv": 23,
+      "JieShuName": "7阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 24,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 8
+        },
+        {
+          "ID": 571,
+          "Lv": 8
+        },
+        {
+          "ID": 573,
+          "Lv": 8
+        }
+      ],
+      "JinJieTarget": 8,
+      "JiejiSkillID": 60207,
+      "FuShenSkillID": 0,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术时，咒术的伤害或恢复值提升<color=#067a11>27%</color>（[icon_Com_img_013]29%）",
+      "AddAttrList": [
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 10500.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 8400.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 420.0
+        }
+      ],
+      "_byte_length": 196
+    },
+    {
+      "_record_index": 29,
+      "_byte_offset": 5507,
+      "TianGongID": 2,
+      "StarLv": 8,
+      "OpenLv": 27,
+      "JieShuName": "8阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 26,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 9
+        },
+        {
+          "ID": 571,
+          "Lv": 9
+        },
+        {
+          "ID": 573,
+          "Lv": 9
+        }
+      ],
+      "JinJieTarget": 9,
+      "JiejiSkillID": 60208,
+      "FuShenSkillID": 0,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术时，咒术的伤害或恢复值提升<color=#067a11>29%</color>（[icon_Com_img_013]31%）",
+      "AddAttrList": [
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 12000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 9600.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 480.0
+        }
+      ],
+      "_byte_length": 196
+    },
+    {
+      "_record_index": 30,
+      "_byte_offset": 5703,
+      "TianGongID": 2,
+      "StarLv": 9,
+      "OpenLv": 31,
+      "JieShuName": "9阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 28,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 10
+        },
+        {
+          "ID": 571,
+          "Lv": 10
+        },
+        {
+          "ID": 573,
+          "Lv": 10
+        }
+      ],
+      "JinJieTarget": 10,
+      "JiejiSkillID": 60209,
+      "FuShenSkillID": 0,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术时，咒术的伤害或恢复值提升<color=#067a11>31%</color>（[icon_Com_img_013]33%）",
+      "AddAttrList": [
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 13500.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 10800.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 540.0
+        }
+      ],
+      "_byte_length": 196
+    },
+    {
+      "_record_index": 31,
+      "_byte_offset": 5899,
+      "TianGongID": 2,
+      "StarLv": 10,
+      "OpenLv": 35,
+      "JieShuName": "10阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 30,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 11
+        },
+        {
+          "ID": 571,
+          "Lv": 11
+        },
+        {
+          "ID": 573,
+          "Lv": 11
+        }
+      ],
+      "JinJieTarget": 11,
+      "JiejiSkillID": 60210,
+      "FuShenSkillID": 61201,
+      "IsShowEffect": 1,
+      "SkillDesc": "施放咒术时，咒术的伤害或恢复值提升<color=#067a11>33%</color>（[icon_Com_img_013]35%）",
+      "AddAttrList": [
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 15000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 12000.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 600.0
+        }
+      ],
+      "_byte_length": 197
+    },
+    {
+      "_record_index": 32,
+      "_byte_offset": 6096,
+      "TianGongID": 2,
+      "StarLv": 11,
+      "OpenLv": 41,
+      "JieShuName": "11阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 30,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 12
+        },
+        {
+          "ID": 571,
+          "Lv": 12
+        },
+        {
+          "ID": 573,
+          "Lv": 12
+        }
+      ],
+      "JinJieTarget": 12,
+      "JiejiSkillID": 60211,
+      "FuShenSkillID": 61201,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术时，咒术的伤害或恢复值提升<color=#067a11>35%</color>（[icon_Com_img_013]37%）",
+      "AddAttrList": [
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 16500.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 13200.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 660.0
+        }
+      ],
+      "_byte_length": 197
+    },
+    {
+      "_record_index": 33,
+      "_byte_offset": 6293,
+      "TianGongID": 2,
+      "StarLv": 12,
+      "OpenLv": 47,
+      "JieShuName": "12阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 30,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 13
+        },
+        {
+          "ID": 571,
+          "Lv": 13
+        },
+        {
+          "ID": 573,
+          "Lv": 13
+        }
+      ],
+      "JinJieTarget": 13,
+      "JiejiSkillID": 60212,
+      "FuShenSkillID": 61201,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术时，咒术的伤害或恢复值提升<color=#067a11>37%</color>（[icon_Com_img_013]39%）",
+      "AddAttrList": [
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 18000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 14400.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 720.0
+        }
+      ],
+      "_byte_length": 197
+    },
+    {
+      "_record_index": 34,
+      "_byte_offset": 6490,
+      "TianGongID": 2,
+      "StarLv": 13,
+      "OpenLv": 53,
+      "JieShuName": "13阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 30,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 14
+        },
+        {
+          "ID": 571,
+          "Lv": 14
+        },
+        {
+          "ID": 573,
+          "Lv": 14
+        }
+      ],
+      "JinJieTarget": 14,
+      "JiejiSkillID": 60213,
+      "FuShenSkillID": 61201,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术时，咒术的伤害或恢复值提升<color=#067a11>39%</color>（[icon_Com_img_013]41%）",
+      "AddAttrList": [
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 19500.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 15600.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 780.0
+        }
+      ],
+      "_byte_length": 197
+    },
+    {
+      "_record_index": 35,
+      "_byte_offset": 6687,
+      "TianGongID": 2,
+      "StarLv": 14,
+      "OpenLv": 59,
+      "JieShuName": "14阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 30,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 15
+        },
+        {
+          "ID": 571,
+          "Lv": 15
+        },
+        {
+          "ID": 573,
+          "Lv": 15
+        }
+      ],
+      "JinJieTarget": 15,
+      "JiejiSkillID": 60214,
+      "FuShenSkillID": 61201,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术时，咒术的伤害或恢复值提升<color=#067a11>41%</color>（[icon_Com_img_013]43%）",
+      "AddAttrList": [
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 21000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 16800.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 840.0
+        }
+      ],
+      "_byte_length": 197
+    },
+    {
+      "_record_index": 36,
+      "_byte_offset": 6884,
+      "TianGongID": 2,
+      "StarLv": 15,
+      "OpenLv": 65,
+      "JieShuName": "15阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 30,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 16
+        },
+        {
+          "ID": 571,
+          "Lv": 16
+        },
+        {
+          "ID": 573,
+          "Lv": 16
+        }
+      ],
+      "JinJieTarget": 16,
+      "JiejiSkillID": 60215,
+      "FuShenSkillID": 61201,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术时，咒术的伤害或恢复值提升<color=#067a11>43%</color>（[icon_Com_img_013]45%）",
+      "AddAttrList": [
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 22500.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 18000.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 900.0
+        }
+      ],
+      "_byte_length": 197
+    },
+    {
+      "_record_index": 37,
+      "_byte_offset": 7081,
+      "TianGongID": 2,
+      "StarLv": 16,
+      "OpenLv": 72,
+      "JieShuName": "16阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 30,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 17
+        },
+        {
+          "ID": 571,
+          "Lv": 17
+        },
+        {
+          "ID": 573,
+          "Lv": 17
+        }
+      ],
+      "JinJieTarget": 17,
+      "JiejiSkillID": 60216,
+      "FuShenSkillID": 61201,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术时，咒术的伤害或恢复值提升<color=#067a11>45%</color>（[icon_Com_img_013]47%）",
+      "AddAttrList": [
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 24000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 19200.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 960.0
+        }
+      ],
+      "_byte_length": 197
+    },
+    {
+      "_record_index": 38,
+      "_byte_offset": 7278,
+      "TianGongID": 2,
+      "StarLv": 17,
+      "OpenLv": 79,
+      "JieShuName": "17阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 30,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 18
+        },
+        {
+          "ID": 571,
+          "Lv": 18
+        },
+        {
+          "ID": 573,
+          "Lv": 18
+        }
+      ],
+      "JinJieTarget": 18,
+      "JiejiSkillID": 60217,
+      "FuShenSkillID": 61201,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术时，咒术的伤害或恢复值提升<color=#067a11>47%</color>（[icon_Com_img_013]49%）",
+      "AddAttrList": [
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 25500.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 20400.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 1020.0
+        }
+      ],
+      "_byte_length": 197
+    },
+    {
+      "_record_index": 39,
+      "_byte_offset": 7475,
+      "TianGongID": 2,
+      "StarLv": 18,
+      "OpenLv": 86,
+      "JieShuName": "18阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 30,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 19
+        },
+        {
+          "ID": 571,
+          "Lv": 19
+        },
+        {
+          "ID": 573,
+          "Lv": 19
+        }
+      ],
+      "JinJieTarget": 19,
+      "JiejiSkillID": 60218,
+      "FuShenSkillID": 61201,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术时，咒术的伤害或恢复值提升<color=#067a11>49%</color>（[icon_Com_img_013]52%）",
+      "AddAttrList": [
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 27000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 21600.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 1080.0
+        }
+      ],
+      "_byte_length": 197
+    },
+    {
+      "_record_index": 40,
+      "_byte_offset": 7672,
+      "TianGongID": 2,
+      "StarLv": 19,
+      "OpenLv": 93,
+      "JieShuName": "19阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 30,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 20
+        },
+        {
+          "ID": 571,
+          "Lv": 20
+        },
+        {
+          "ID": 573,
+          "Lv": 20
+        }
+      ],
+      "JinJieTarget": 20,
+      "JiejiSkillID": 60219,
+      "FuShenSkillID": 61201,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术时，咒术的伤害或恢复值提升<color=#067a11>52%</color>（[icon_Com_img_013]55%）",
+      "AddAttrList": [
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 28500.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 22800.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 1140.0
+        }
+      ],
+      "_byte_length": 197
+    },
+    {
+      "_record_index": 41,
+      "_byte_offset": 7869,
+      "TianGongID": 2,
+      "StarLv": 20,
+      "OpenLv": 100,
+      "JieShuName": "20阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 0,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 0
+        },
+        {
+          "ID": 571,
+          "Lv": 0
+        },
+        {
+          "ID": 573,
+          "Lv": 0
+        }
+      ],
+      "JinJieTarget": 0,
+      "JiejiSkillID": 60220,
+      "FuShenSkillID": 61202,
+      "IsShowEffect": 1,
+      "SkillDesc": "施放咒术时，咒术的伤害或恢复值提升55%",
+      "AddAttrList": [
+        {
+          "DataType": 71,
+          "AddType": 1,
+          "Value": 30000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 24000.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 1200.0
+        }
+      ],
+      "_byte_length": 147
+    },
+    {
+      "_record_index": 42,
+      "_byte_offset": 8016,
+      "TianGongID": 3,
+      "StarLv": 0,
+      "OpenLv": 1,
+      "JieShuName": "0阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 10,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 1
+        },
+        {
+          "ID": 571,
+          "Lv": 1
+        },
+        {
+          "ID": 574,
+          "Lv": 1
+        }
+      ],
+      "JinJieTarget": 1,
+      "JiejiSkillID": 0,
+      "FuShenSkillID": 0,
+      "IsShowEffect": 0,
+      "SkillDesc": "攻击或施放咒术有10%概率恢复<color=#067a11>0.3%</color>的生命值",
+      "AddAttrList": [
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 0.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 0.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 170
+    },
+    {
+      "_record_index": 43,
+      "_byte_offset": 8186,
+      "TianGongID": 3,
+      "StarLv": 1,
+      "OpenLv": 3,
+      "JieShuName": "1阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 12,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 2
+        },
+        {
+          "ID": 571,
+          "Lv": 2
+        },
+        {
+          "ID": 574,
+          "Lv": 2
+        }
+      ],
+      "JinJieTarget": 2,
+      "JiejiSkillID": 60301,
+      "FuShenSkillID": 0,
+      "IsShowEffect": 0,
+      "SkillDesc": "攻击或施放咒术有10%概率恢复<color=#067a11>0.3%</color>生命值([icon_Com_img_013]0.4%)",
+      "AddAttrList": [
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 1500.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 1200.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 60.0
+        }
+      ],
+      "_byte_length": 191
+    },
+    {
+      "_record_index": 44,
+      "_byte_offset": 8377,
+      "TianGongID": 3,
+      "StarLv": 2,
+      "OpenLv": 6,
+      "JieShuName": "2阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 14,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 3
+        },
+        {
+          "ID": 571,
+          "Lv": 3
+        },
+        {
+          "ID": 574,
+          "Lv": 3
+        }
+      ],
+      "JinJieTarget": 3,
+      "JiejiSkillID": 60302,
+      "FuShenSkillID": 0,
+      "IsShowEffect": 0,
+      "SkillDesc": "攻击或施放咒术有10%概率恢复<color=#067a11>0.4%</color>生命值([icon_Com_img_013]0.5%)",
+      "AddAttrList": [
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 3000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 2400.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 120.0
+        }
+      ],
+      "_byte_length": 191
+    },
+    {
+      "_record_index": 45,
+      "_byte_offset": 8568,
+      "TianGongID": 3,
+      "StarLv": 3,
+      "OpenLv": 9,
+      "JieShuName": "3阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 16,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 4
+        },
+        {
+          "ID": 571,
+          "Lv": 4
+        },
+        {
+          "ID": 574,
+          "Lv": 4
+        }
+      ],
+      "JinJieTarget": 4,
+      "JiejiSkillID": 60303,
+      "FuShenSkillID": 0,
+      "IsShowEffect": 0,
+      "SkillDesc": "攻击或施放咒术有10%概率恢复<color=#067a11>0.5%</color>生命值([icon_Com_img_013]0.6%)",
+      "AddAttrList": [
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 4500.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 3600.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 180.0
+        }
+      ],
+      "_byte_length": 191
+    },
+    {
+      "_record_index": 46,
+      "_byte_offset": 8759,
+      "TianGongID": 3,
+      "StarLv": 4,
+      "OpenLv": 12,
+      "JieShuName": "4阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 18,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 5
+        },
+        {
+          "ID": 571,
+          "Lv": 5
+        },
+        {
+          "ID": 574,
+          "Lv": 5
+        }
+      ],
+      "JinJieTarget": 5,
+      "JiejiSkillID": 60304,
+      "FuShenSkillID": 0,
+      "IsShowEffect": 0,
+      "SkillDesc": "攻击或施放咒术有10%概率恢复<color=#067a11>0.6%</color>生命值([icon_Com_img_013]0.7%)",
+      "AddAttrList": [
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 6000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 4800.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 240.0
+        }
+      ],
+      "_byte_length": 191
+    },
+    {
+      "_record_index": 47,
+      "_byte_offset": 8950,
+      "TianGongID": 3,
+      "StarLv": 5,
+      "OpenLv": 15,
+      "JieShuName": "5阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 20,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 6
+        },
+        {
+          "ID": 571,
+          "Lv": 6
+        },
+        {
+          "ID": 574,
+          "Lv": 6
+        }
+      ],
+      "JinJieTarget": 6,
+      "JiejiSkillID": 60305,
+      "FuShenSkillID": 0,
+      "IsShowEffect": 0,
+      "SkillDesc": "攻击或施放咒术有10%概率恢复<color=#067a11>0.7%</color>生命值([icon_Com_img_013]0.8%)",
+      "AddAttrList": [
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 7500.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 6000.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 300.0
+        }
+      ],
+      "_byte_length": 191
+    },
+    {
+      "_record_index": 48,
+      "_byte_offset": 9141,
+      "TianGongID": 3,
+      "StarLv": 6,
+      "OpenLv": 19,
+      "JieShuName": "6阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 22,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 7
+        },
+        {
+          "ID": 571,
+          "Lv": 7
+        },
+        {
+          "ID": 574,
+          "Lv": 7
+        }
+      ],
+      "JinJieTarget": 7,
+      "JiejiSkillID": 60306,
+      "FuShenSkillID": 0,
+      "IsShowEffect": 0,
+      "SkillDesc": "攻击或施放咒术有10%概率恢复<color=#067a11>0.8%</color>生命值([icon_Com_img_013]0.9%)",
+      "AddAttrList": [
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 9000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 7200.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 360.0
+        }
+      ],
+      "_byte_length": 191
+    },
+    {
+      "_record_index": 49,
+      "_byte_offset": 9332,
+      "TianGongID": 3,
+      "StarLv": 7,
+      "OpenLv": 23,
+      "JieShuName": "7阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 24,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 8
+        },
+        {
+          "ID": 571,
+          "Lv": 8
+        },
+        {
+          "ID": 574,
+          "Lv": 8
+        }
+      ],
+      "JinJieTarget": 8,
+      "JiejiSkillID": 60307,
+      "FuShenSkillID": 0,
+      "IsShowEffect": 0,
+      "SkillDesc": "攻击或施放咒术有10%概率恢复<color=#067a11>0.9%</color>生命值([icon_Com_img_013]1.0%)",
+      "AddAttrList": [
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 10500.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 8400.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 420.0
+        }
+      ],
+      "_byte_length": 191
+    },
+    {
+      "_record_index": 50,
+      "_byte_offset": 9523,
+      "TianGongID": 3,
+      "StarLv": 8,
+      "OpenLv": 27,
+      "JieShuName": "8阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 26,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 9
+        },
+        {
+          "ID": 571,
+          "Lv": 9
+        },
+        {
+          "ID": 574,
+          "Lv": 9
+        }
+      ],
+      "JinJieTarget": 9,
+      "JiejiSkillID": 60308,
+      "FuShenSkillID": 0,
+      "IsShowEffect": 0,
+      "SkillDesc": "攻击或施放咒术有10%概率恢复<color=#067a11>1.0%</color>生命值([icon_Com_img_013]1.1%)",
+      "AddAttrList": [
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 12000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 9600.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 480.0
+        }
+      ],
+      "_byte_length": 191
+    },
+    {
+      "_record_index": 51,
+      "_byte_offset": 9714,
+      "TianGongID": 3,
+      "StarLv": 9,
+      "OpenLv": 31,
+      "JieShuName": "9阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 28,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 10
+        },
+        {
+          "ID": 571,
+          "Lv": 10
+        },
+        {
+          "ID": 574,
+          "Lv": 10
+        }
+      ],
+      "JinJieTarget": 10,
+      "JiejiSkillID": 60309,
+      "FuShenSkillID": 0,
+      "IsShowEffect": 0,
+      "SkillDesc": "攻击或施放咒术有10%概率恢复<color=#067a11>1.1%</color>生命值([icon_Com_img_013]1.2%)",
+      "AddAttrList": [
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 13500.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 10800.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 540.0
+        }
+      ],
+      "_byte_length": 191
+    },
+    {
+      "_record_index": 52,
+      "_byte_offset": 9905,
+      "TianGongID": 3,
+      "StarLv": 10,
+      "OpenLv": 35,
+      "JieShuName": "10阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 30,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 11
+        },
+        {
+          "ID": 571,
+          "Lv": 11
+        },
+        {
+          "ID": 574,
+          "Lv": 11
+        }
+      ],
+      "JinJieTarget": 11,
+      "JiejiSkillID": 60310,
+      "FuShenSkillID": 61301,
+      "IsShowEffect": 1,
+      "SkillDesc": "攻击或施放咒术有10%概率恢复<color=#067a11>1.2%</color>生命值([icon_Com_img_013]1.3%)",
+      "AddAttrList": [
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 15000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 12000.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 600.0
+        }
+      ],
+      "_byte_length": 192
+    },
+    {
+      "_record_index": 53,
+      "_byte_offset": 10097,
+      "TianGongID": 3,
+      "StarLv": 11,
+      "OpenLv": 41,
+      "JieShuName": "11阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 30,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 12
+        },
+        {
+          "ID": 571,
+          "Lv": 12
+        },
+        {
+          "ID": 574,
+          "Lv": 12
+        }
+      ],
+      "JinJieTarget": 12,
+      "JiejiSkillID": 60311,
+      "FuShenSkillID": 61301,
+      "IsShowEffect": 0,
+      "SkillDesc": "攻击或施放咒术有10%概率恢复<color=#067a11>1.3%</color>生命值([icon_Com_img_013]1.4%)",
+      "AddAttrList": [
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 16500.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 13200.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 660.0
+        }
+      ],
+      "_byte_length": 192
+    },
+    {
+      "_record_index": 54,
+      "_byte_offset": 10289,
+      "TianGongID": 3,
+      "StarLv": 12,
+      "OpenLv": 47,
+      "JieShuName": "12阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 30,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 13
+        },
+        {
+          "ID": 571,
+          "Lv": 13
+        },
+        {
+          "ID": 574,
+          "Lv": 13
+        }
+      ],
+      "JinJieTarget": 13,
+      "JiejiSkillID": 60312,
+      "FuShenSkillID": 61301,
+      "IsShowEffect": 0,
+      "SkillDesc": "攻击或施放咒术有10%概率恢复<color=#067a11>1.4%</color>生命值([icon_Com_img_013]1.5%)",
+      "AddAttrList": [
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 18000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 14400.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 720.0
+        }
+      ],
+      "_byte_length": 192
+    },
+    {
+      "_record_index": 55,
+      "_byte_offset": 10481,
+      "TianGongID": 3,
+      "StarLv": 13,
+      "OpenLv": 53,
+      "JieShuName": "13阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 30,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 14
+        },
+        {
+          "ID": 571,
+          "Lv": 14
+        },
+        {
+          "ID": 574,
+          "Lv": 14
+        }
+      ],
+      "JinJieTarget": 14,
+      "JiejiSkillID": 60313,
+      "FuShenSkillID": 61301,
+      "IsShowEffect": 0,
+      "SkillDesc": "攻击或施放咒术有10%概率恢复<color=#067a11>1.5%</color>生命值([icon_Com_img_013]1.6%)",
+      "AddAttrList": [
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 19500.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 15600.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 780.0
+        }
+      ],
+      "_byte_length": 192
+    },
+    {
+      "_record_index": 56,
+      "_byte_offset": 10673,
+      "TianGongID": 3,
+      "StarLv": 14,
+      "OpenLv": 59,
+      "JieShuName": "14阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 30,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 15
+        },
+        {
+          "ID": 571,
+          "Lv": 15
+        },
+        {
+          "ID": 574,
+          "Lv": 15
+        }
+      ],
+      "JinJieTarget": 15,
+      "JiejiSkillID": 60314,
+      "FuShenSkillID": 61301,
+      "IsShowEffect": 0,
+      "SkillDesc": "攻击或施放咒术有10%概率恢复<color=#067a11>1.6%</color>生命值([icon_Com_img_013]1.7%)",
+      "AddAttrList": [
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 21000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 16800.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 840.0
+        }
+      ],
+      "_byte_length": 192
+    },
+    {
+      "_record_index": 57,
+      "_byte_offset": 10865,
+      "TianGongID": 3,
+      "StarLv": 15,
+      "OpenLv": 65,
+      "JieShuName": "15阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 30,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 16
+        },
+        {
+          "ID": 571,
+          "Lv": 16
+        },
+        {
+          "ID": 574,
+          "Lv": 16
+        }
+      ],
+      "JinJieTarget": 16,
+      "JiejiSkillID": 60315,
+      "FuShenSkillID": 61301,
+      "IsShowEffect": 0,
+      "SkillDesc": "攻击或施放咒术有10%概率恢复<color=#067a11>1.7%</color>生命值([icon_Com_img_013]1.8%)",
+      "AddAttrList": [
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 22500.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 18000.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 900.0
+        }
+      ],
+      "_byte_length": 192
+    },
+    {
+      "_record_index": 58,
+      "_byte_offset": 11057,
+      "TianGongID": 3,
+      "StarLv": 16,
+      "OpenLv": 72,
+      "JieShuName": "16阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 30,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 17
+        },
+        {
+          "ID": 571,
+          "Lv": 17
+        },
+        {
+          "ID": 574,
+          "Lv": 17
+        }
+      ],
+      "JinJieTarget": 17,
+      "JiejiSkillID": 60316,
+      "FuShenSkillID": 61301,
+      "IsShowEffect": 0,
+      "SkillDesc": "攻击或施放咒术有10%概率恢复<color=#067a11>1.8%</color>生命值([icon_Com_img_013]1.9%)",
+      "AddAttrList": [
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 24000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 19200.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 960.0
+        }
+      ],
+      "_byte_length": 192
+    },
+    {
+      "_record_index": 59,
+      "_byte_offset": 11249,
+      "TianGongID": 3,
+      "StarLv": 17,
+      "OpenLv": 79,
+      "JieShuName": "17阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 30,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 18
+        },
+        {
+          "ID": 571,
+          "Lv": 18
+        },
+        {
+          "ID": 574,
+          "Lv": 18
+        }
+      ],
+      "JinJieTarget": 18,
+      "JiejiSkillID": 60317,
+      "FuShenSkillID": 61301,
+      "IsShowEffect": 0,
+      "SkillDesc": "攻击或施放咒术有10%概率恢复<color=#067a11>1.9%</color>生命值([icon_Com_img_013]2.0%)",
+      "AddAttrList": [
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 25500.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 20400.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 1020.0
+        }
+      ],
+      "_byte_length": 192
+    },
+    {
+      "_record_index": 60,
+      "_byte_offset": 11441,
+      "TianGongID": 3,
+      "StarLv": 18,
+      "OpenLv": 86,
+      "JieShuName": "18阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 30,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 19
+        },
+        {
+          "ID": 571,
+          "Lv": 19
+        },
+        {
+          "ID": 574,
+          "Lv": 19
+        }
+      ],
+      "JinJieTarget": 19,
+      "JiejiSkillID": 60318,
+      "FuShenSkillID": 61301,
+      "IsShowEffect": 0,
+      "SkillDesc": "攻击或施放咒术有10%概率恢复<color=#067a11>2.0%</color>生命值([icon_Com_img_013]2.1%)",
+      "AddAttrList": [
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 27000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 21600.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 1080.0
+        }
+      ],
+      "_byte_length": 192
+    },
+    {
+      "_record_index": 61,
+      "_byte_offset": 11633,
+      "TianGongID": 3,
+      "StarLv": 19,
+      "OpenLv": 93,
+      "JieShuName": "19阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 30,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 20
+        },
+        {
+          "ID": 571,
+          "Lv": 20
+        },
+        {
+          "ID": 574,
+          "Lv": 20
+        }
+      ],
+      "JinJieTarget": 20,
+      "JiejiSkillID": 60319,
+      "FuShenSkillID": 61301,
+      "IsShowEffect": 0,
+      "SkillDesc": "攻击或施放咒术有10%概率恢复<color=#067a11>2.1%</color>生命值([icon_Com_img_013]2.2%)",
+      "AddAttrList": [
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 28500.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 22800.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 1140.0
+        }
+      ],
+      "_byte_length": 192
+    },
+    {
+      "_record_index": 62,
+      "_byte_offset": 11825,
+      "TianGongID": 3,
+      "StarLv": 20,
+      "OpenLv": 100,
+      "JieShuName": "20阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 0,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 0
+        },
+        {
+          "ID": 571,
+          "Lv": 0
+        },
+        {
+          "ID": 574,
+          "Lv": 0
+        }
+      ],
+      "JinJieTarget": 0,
+      "JiejiSkillID": 60320,
+      "FuShenSkillID": 61302,
+      "IsShowEffect": 1,
+      "SkillDesc": "攻击或施放咒术有10%概率恢复2.2%的生命值",
+      "AddAttrList": [
+        {
+          "DataType": 67,
+          "AddType": 1,
+          "Value": 30000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 24000.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 1200.0
+        }
+      ],
+      "_byte_length": 148
+    },
+    {
+      "_record_index": 63,
+      "_byte_offset": 11973,
+      "TianGongID": 4,
+      "StarLv": 0,
+      "OpenLv": 1,
+      "JieShuName": "0阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 10,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 1
+        },
+        {
+          "ID": 571,
+          "Lv": 1
+        },
+        {
+          "ID": 575,
+          "Lv": 1
+        }
+      ],
+      "JinJieTarget": 1,
+      "JiejiSkillID": 0,
+      "FuShenSkillID": 0,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术后，立即恢复<color=#067a11>5</color>点魔力值",
+      "AddAttrList": [
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 0.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 0.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 158
+    },
+    {
+      "_record_index": 64,
+      "_byte_offset": 12131,
+      "TianGongID": 4,
+      "StarLv": 1,
+      "OpenLv": 3,
+      "JieShuName": "1阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 12,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 2
+        },
+        {
+          "ID": 571,
+          "Lv": 2
+        },
+        {
+          "ID": 575,
+          "Lv": 2
+        }
+      ],
+      "JinJieTarget": 2,
+      "JiejiSkillID": 60401,
+      "FuShenSkillID": 0,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术后，立即恢复<color=#067a11>5</color>点魔力值（[icon_Com_img_013]6）",
+      "AddAttrList": [
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 1500.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 1200.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 60.0
+        }
+      ],
+      "_byte_length": 183
+    },
+    {
+      "_record_index": 65,
+      "_byte_offset": 12314,
+      "TianGongID": 4,
+      "StarLv": 2,
+      "OpenLv": 6,
+      "JieShuName": "2阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 14,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 3
+        },
+        {
+          "ID": 571,
+          "Lv": 3
+        },
+        {
+          "ID": 575,
+          "Lv": 3
+        }
+      ],
+      "JinJieTarget": 3,
+      "JiejiSkillID": 60402,
+      "FuShenSkillID": 0,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术后，立即恢复<color=#067a11>6</color>点魔力值（[icon_Com_img_013]7）",
+      "AddAttrList": [
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 3000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 2400.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 120.0
+        }
+      ],
+      "_byte_length": 183
+    },
+    {
+      "_record_index": 66,
+      "_byte_offset": 12497,
+      "TianGongID": 4,
+      "StarLv": 3,
+      "OpenLv": 9,
+      "JieShuName": "3阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 16,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 4
+        },
+        {
+          "ID": 571,
+          "Lv": 4
+        },
+        {
+          "ID": 575,
+          "Lv": 4
+        }
+      ],
+      "JinJieTarget": 4,
+      "JiejiSkillID": 60403,
+      "FuShenSkillID": 0,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术后，立即恢复<color=#067a11>7</color>点魔力值（[icon_Com_img_013]8）",
+      "AddAttrList": [
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 4500.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 3600.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 180.0
+        }
+      ],
+      "_byte_length": 183
+    },
+    {
+      "_record_index": 67,
+      "_byte_offset": 12680,
+      "TianGongID": 4,
+      "StarLv": 4,
+      "OpenLv": 12,
+      "JieShuName": "4阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 18,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 5
+        },
+        {
+          "ID": 571,
+          "Lv": 5
+        },
+        {
+          "ID": 575,
+          "Lv": 5
+        }
+      ],
+      "JinJieTarget": 5,
+      "JiejiSkillID": 60404,
+      "FuShenSkillID": 0,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术后，立即恢复<color=#067a11>8</color>点魔力值（[icon_Com_img_013]9）",
+      "AddAttrList": [
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 6000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 4800.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 240.0
+        }
+      ],
+      "_byte_length": 183
+    },
+    {
+      "_record_index": 68,
+      "_byte_offset": 12863,
+      "TianGongID": 4,
+      "StarLv": 5,
+      "OpenLv": 15,
+      "JieShuName": "5阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 20,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 6
+        },
+        {
+          "ID": 571,
+          "Lv": 6
+        },
+        {
+          "ID": 575,
+          "Lv": 6
+        }
+      ],
+      "JinJieTarget": 6,
+      "JiejiSkillID": 60405,
+      "FuShenSkillID": 0,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术后，立即恢复<color=#067a11>9</color>点魔力值（[icon_Com_img_013]10）",
+      "AddAttrList": [
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 7500.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 6000.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 300.0
+        }
+      ],
+      "_byte_length": 184
+    },
+    {
+      "_record_index": 69,
+      "_byte_offset": 13047,
+      "TianGongID": 4,
+      "StarLv": 6,
+      "OpenLv": 19,
+      "JieShuName": "6阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 22,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 7
+        },
+        {
+          "ID": 571,
+          "Lv": 7
+        },
+        {
+          "ID": 575,
+          "Lv": 7
+        }
+      ],
+      "JinJieTarget": 7,
+      "JiejiSkillID": 60406,
+      "FuShenSkillID": 0,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术后，立即恢复<color=#067a11>10</color>点魔力值（[icon_Com_img_013]11）",
+      "AddAttrList": [
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 9000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 7200.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 360.0
+        }
+      ],
+      "_byte_length": 185
+    },
+    {
+      "_record_index": 70,
+      "_byte_offset": 13232,
+      "TianGongID": 4,
+      "StarLv": 7,
+      "OpenLv": 23,
+      "JieShuName": "7阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 24,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 8
+        },
+        {
+          "ID": 571,
+          "Lv": 8
+        },
+        {
+          "ID": 575,
+          "Lv": 8
+        }
+      ],
+      "JinJieTarget": 8,
+      "JiejiSkillID": 60407,
+      "FuShenSkillID": 0,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术后，立即恢复<color=#067a11>11</color>点魔力值（[icon_Com_img_013]12）",
+      "AddAttrList": [
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 10500.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 8400.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 420.0
+        }
+      ],
+      "_byte_length": 185
+    },
+    {
+      "_record_index": 71,
+      "_byte_offset": 13417,
+      "TianGongID": 4,
+      "StarLv": 8,
+      "OpenLv": 27,
+      "JieShuName": "8阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 26,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 9
+        },
+        {
+          "ID": 571,
+          "Lv": 9
+        },
+        {
+          "ID": 575,
+          "Lv": 9
+        }
+      ],
+      "JinJieTarget": 9,
+      "JiejiSkillID": 60408,
+      "FuShenSkillID": 0,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术后，立即恢复<color=#067a11>12</color>点魔力值（[icon_Com_img_013]13）",
+      "AddAttrList": [
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 12000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 9600.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 480.0
+        }
+      ],
+      "_byte_length": 185
+    },
+    {
+      "_record_index": 72,
+      "_byte_offset": 13602,
+      "TianGongID": 4,
+      "StarLv": 9,
+      "OpenLv": 31,
+      "JieShuName": "9阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 28,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 10
+        },
+        {
+          "ID": 571,
+          "Lv": 10
+        },
+        {
+          "ID": 575,
+          "Lv": 10
+        }
+      ],
+      "JinJieTarget": 10,
+      "JiejiSkillID": 60409,
+      "FuShenSkillID": 0,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术后，立即恢复<color=#067a11>13</color>点魔力值（[icon_Com_img_013]14）",
+      "AddAttrList": [
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 13500.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 10800.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 540.0
+        }
+      ],
+      "_byte_length": 185
+    },
+    {
+      "_record_index": 73,
+      "_byte_offset": 13787,
+      "TianGongID": 4,
+      "StarLv": 10,
+      "OpenLv": 35,
+      "JieShuName": "10阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 30,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 11
+        },
+        {
+          "ID": 571,
+          "Lv": 11
+        },
+        {
+          "ID": 575,
+          "Lv": 11
+        }
+      ],
+      "JinJieTarget": 11,
+      "JiejiSkillID": 60410,
+      "FuShenSkillID": 61401,
+      "IsShowEffect": 1,
+      "SkillDesc": "施放咒术后，立即恢复<color=#067a11>14</color>点魔力值（[icon_Com_img_013]15）",
+      "AddAttrList": [
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 15000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 12000.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 600.0
+        }
+      ],
+      "_byte_length": 186
+    },
+    {
+      "_record_index": 74,
+      "_byte_offset": 13973,
+      "TianGongID": 4,
+      "StarLv": 11,
+      "OpenLv": 41,
+      "JieShuName": "11阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 30,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 12
+        },
+        {
+          "ID": 571,
+          "Lv": 12
+        },
+        {
+          "ID": 575,
+          "Lv": 12
+        }
+      ],
+      "JinJieTarget": 12,
+      "JiejiSkillID": 60411,
+      "FuShenSkillID": 61401,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术后，立即恢复<color=#067a11>15</color>点魔力值（[icon_Com_img_013]16）",
+      "AddAttrList": [
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 16500.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 13200.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 660.0
+        }
+      ],
+      "_byte_length": 186
+    },
+    {
+      "_record_index": 75,
+      "_byte_offset": 14159,
+      "TianGongID": 4,
+      "StarLv": 12,
+      "OpenLv": 47,
+      "JieShuName": "12阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 30,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 13
+        },
+        {
+          "ID": 571,
+          "Lv": 13
+        },
+        {
+          "ID": 575,
+          "Lv": 13
+        }
+      ],
+      "JinJieTarget": 13,
+      "JiejiSkillID": 60412,
+      "FuShenSkillID": 61401,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术后，立即恢复<color=#067a11>16</color>点魔力值（[icon_Com_img_013]17）",
+      "AddAttrList": [
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 18000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 14400.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 720.0
+        }
+      ],
+      "_byte_length": 186
+    },
+    {
+      "_record_index": 76,
+      "_byte_offset": 14345,
+      "TianGongID": 4,
+      "StarLv": 13,
+      "OpenLv": 53,
+      "JieShuName": "13阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 30,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 14
+        },
+        {
+          "ID": 571,
+          "Lv": 14
+        },
+        {
+          "ID": 575,
+          "Lv": 14
+        }
+      ],
+      "JinJieTarget": 14,
+      "JiejiSkillID": 60413,
+      "FuShenSkillID": 61401,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术后，立即恢复<color=#067a11>17</color>点魔力值（[icon_Com_img_013]18）",
+      "AddAttrList": [
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 19500.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 15600.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 780.0
+        }
+      ],
+      "_byte_length": 186
+    },
+    {
+      "_record_index": 77,
+      "_byte_offset": 14531,
+      "TianGongID": 4,
+      "StarLv": 14,
+      "OpenLv": 59,
+      "JieShuName": "14阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 30,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 15
+        },
+        {
+          "ID": 571,
+          "Lv": 15
+        },
+        {
+          "ID": 575,
+          "Lv": 15
+        }
+      ],
+      "JinJieTarget": 15,
+      "JiejiSkillID": 60414,
+      "FuShenSkillID": 61401,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术后，立即恢复<color=#067a11>18</color>点魔力值（[icon_Com_img_013]19）",
+      "AddAttrList": [
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 21000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 16800.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 840.0
+        }
+      ],
+      "_byte_length": 186
+    },
+    {
+      "_record_index": 78,
+      "_byte_offset": 14717,
+      "TianGongID": 4,
+      "StarLv": 15,
+      "OpenLv": 65,
+      "JieShuName": "15阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 30,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 16
+        },
+        {
+          "ID": 571,
+          "Lv": 16
+        },
+        {
+          "ID": 575,
+          "Lv": 16
+        }
+      ],
+      "JinJieTarget": 16,
+      "JiejiSkillID": 60415,
+      "FuShenSkillID": 61401,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术后，立即恢复<color=#067a11>19</color>点魔力值（[icon_Com_img_013]20）",
+      "AddAttrList": [
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 22500.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 18000.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 900.0
+        }
+      ],
+      "_byte_length": 186
+    },
+    {
+      "_record_index": 79,
+      "_byte_offset": 14903,
+      "TianGongID": 4,
+      "StarLv": 16,
+      "OpenLv": 72,
+      "JieShuName": "16阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 30,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 17
+        },
+        {
+          "ID": 571,
+          "Lv": 17
+        },
+        {
+          "ID": 575,
+          "Lv": 17
+        }
+      ],
+      "JinJieTarget": 17,
+      "JiejiSkillID": 60416,
+      "FuShenSkillID": 61401,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术后，立即恢复<color=#067a11>20</color>点魔力值（[icon_Com_img_013]21）",
+      "AddAttrList": [
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 24000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 19200.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 960.0
+        }
+      ],
+      "_byte_length": 186
+    },
+    {
+      "_record_index": 80,
+      "_byte_offset": 15089,
+      "TianGongID": 4,
+      "StarLv": 17,
+      "OpenLv": 79,
+      "JieShuName": "17阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 30,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 18
+        },
+        {
+          "ID": 571,
+          "Lv": 18
+        },
+        {
+          "ID": 575,
+          "Lv": 18
+        }
+      ],
+      "JinJieTarget": 18,
+      "JiejiSkillID": 60417,
+      "FuShenSkillID": 61401,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术后，立即恢复<color=#067a11>21</color>点魔力值（[icon_Com_img_013]22）",
+      "AddAttrList": [
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 25500.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 20400.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 1020.0
+        }
+      ],
+      "_byte_length": 186
+    },
+    {
+      "_record_index": 81,
+      "_byte_offset": 15275,
+      "TianGongID": 4,
+      "StarLv": 18,
+      "OpenLv": 86,
+      "JieShuName": "18阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 30,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 19
+        },
+        {
+          "ID": 571,
+          "Lv": 19
+        },
+        {
+          "ID": 575,
+          "Lv": 19
+        }
+      ],
+      "JinJieTarget": 19,
+      "JiejiSkillID": 60418,
+      "FuShenSkillID": 61401,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术后，立即恢复<color=#067a11>22</color>点魔力值（[icon_Com_img_013]23）",
+      "AddAttrList": [
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 27000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 21600.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 1080.0
+        }
+      ],
+      "_byte_length": 186
+    },
+    {
+      "_record_index": 82,
+      "_byte_offset": 15461,
+      "TianGongID": 4,
+      "StarLv": 19,
+      "OpenLv": 93,
+      "JieShuName": "19阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 30,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 20
+        },
+        {
+          "ID": 571,
+          "Lv": 20
+        },
+        {
+          "ID": 575,
+          "Lv": 20
+        }
+      ],
+      "JinJieTarget": 20,
+      "JiejiSkillID": 60419,
+      "FuShenSkillID": 61401,
+      "IsShowEffect": 0,
+      "SkillDesc": "施放咒术后，立即恢复<color=#067a11>23</color>点魔力值（[icon_Com_img_013]24）",
+      "AddAttrList": [
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 28500.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 22800.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 1140.0
+        }
+      ],
+      "_byte_length": 186
+    },
+    {
+      "_record_index": 83,
+      "_byte_offset": 15647,
+      "TianGongID": 4,
+      "StarLv": 20,
+      "OpenLv": 100,
+      "JieShuName": "20阶",
+      "NeedItemID": 207003,
+      "NeedItemCnt": 0,
+      "NeedJueXueList": [
+        {
+          "ID": 570,
+          "Lv": 0
+        },
+        {
+          "ID": 571,
+          "Lv": 0
+        },
+        {
+          "ID": 575,
+          "Lv": 0
+        }
+      ],
+      "JinJieTarget": 0,
+      "JiejiSkillID": 60420,
+      "FuShenSkillID": 61402,
+      "IsShowEffect": 1,
+      "SkillDesc": "施放咒术后，立即恢复24点魔力值",
+      "AddAttrList": [
+        {
+          "DataType": 75,
+          "AddType": 1,
+          "Value": 30000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 24000.0
+        },
+        {
+          "DataType": 5,
+          "AddType": 1,
+          "Value": 1200.0
+        }
+      ],
+      "_byte_length": 137
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "application_metadata": {
+    "unity.build-id": "757cd48e-b708-449c-89ab-55d800e3fc6a",
+    "unity.splash-mode": "2",
+    "unity.splash-enable": "true",
+    "HaveDodNative": "false",
+    "HaveHotIl2cpp": "true",
+    "android.max_aspect": "2.100000",
+    "unityplayer.SkipPermissionsDialog": "true",
+    "isSDKVersion": "true",
+    "DOD_PLATFORM_NAME": "hardtime",
+    "ChannelId": "550",
+    "MAIN_ACTIVITY": "com.dodjoy.unityplayer.DodUnityPlayerActivity",
+    "android.support.VERSION": "26.0.2"
+  },
+  "configuration_selection": {
+    "status": "STATIC_ANDROID_BRIDGE_CANDIDATE",
+    "manifest_platform": "hardtime",
+    "selected_candidate": {
+      "file": "本地分析/unpacked/assets/Config_hardtime.bytes",
+      "sha256": "6c9e4ffe0d7a0a7c70ad39cedb030ef0d72405fc9d5e5b586356435c9f1a229f",
+      "channel": "dev_android",
+      "version": "2.10",
+      "version_url": "http://web.ysr.hardtime.cn/ver/check_ver.php",
+      "scheme": "http",
+      "host": "web.ysr.hardtime.cn",
+      "bugly_debug": 0,
+      "disable_bugly": 0,
+      "hide_fps": 1,
+      "stage": 1,
+      "enable_guide": 1,
+      "selected_at_runtime": "NOT_DETERMINED"
+    },
+    "chain": [
+      {
+        "file": "本地分析/derived/android/AndroidManifest.decoded.redacted.xml",
+        "evidence": "Application meta-data DOD_PLATFORM_NAME"
+      },
+      {
+        "file": "本地分析/derived/android/jadx/com_dodjoy_platform_PlatformConfig.java",
+        "evidence": "Init reads ApplicationInfo.metaData"
+      },
+      {
+        "file": "本地分析/derived/android/jadx/com_dodjoy_dodlib_DodLibConfig.java",
+        "evidence": "Init reads DOD_PLATFORM_NAME; GetConfigBytesConfig formats Config_%s.bytes"
+      },
+      {
+        "file": "本地分析/derived/android/jadx/com_dodjoy_dodlib_DodLibMeta.java",
+        "evidence": "DOD_PLATFORM_NAME constant equals DOD_PLATFORM_NAME"
+      }
+    ],
+    "limitations": "Static configured branch only. It does not prove call completion, successful network access, production status, Unity configuration reuse, or absence of later overrides."
+  },
+  "exported_legacy_count": 8,
+  "full_decompilation": {
+    "attempted": true,
+    "status": "nonzero_partial_output_retained",
+    "input": "本地分析/unpacked/classes.dex",
+    "output_directory": "本地分析/derived/android/jadx-full",
+    "log": "本地分析/derived/android/jadx_full.log",
+    "exit_code": 3,
+    "seconds": 43.55,
+    "java_files": 3567,
+    "redacted_lines": 597,
+    "decompilation_error_markers": 1,
+    "limitations": "Full static DEX decompilation, not APK execution. Nonzero exit/warnings retained. Credential-labelled and long-hex string constants redacted; not a secret-discovery guarantee. Outer/nested Java files are not the same count as DEX defined classes.",
+    "methods_not_decompiled_markers": 15,
+    "severe_error_blocks": 1,
+    "issue_inventory": "本地分析/derived/android/java_decompilation_issues.csv"
+  }
+}

@@ -1,0 +1,312 @@
+152e730 sub sp, sp, #0x70
+152e734 stp x28, x27, [sp, #0x10]
+152e738 stp x26, x25, [sp, #0x20]
+152e73c stp x24, x23, [sp, #0x30]
+152e740 stp x22, x21, [sp, #0x40]
+152e744 stp x20, x19, [sp, #0x50]
+152e748 stp x29, x30, [sp, #0x60]
+152e74c add x29, sp, #0x60
+152e750 adrp x21, #0x2f3f000
+152e754 ldrb w8, [x21, #0x330]
+152e758 mov w20, w1
+152e75c mov x19, x0
+152e760 tbnz w8, #0, #0x152e77c
+152e764 adrp x8, #0x2ca1000
+152e768 ldr x8, [x8, #0xb68]
+152e76c ldr w0, [x8]
+152e770 bl #0xd04f28
+152e774 mov w8, #1
+152e778 strb w8, [x21, #0x330]
+152e77c adrp x24, #0x2cc5000
+152e780 ldr x24, [x24, #0x498]
+152e784 str wzr, [sp, #0xc]
+152e788 ldr x0, [x24]
+152e78c bl #0x17ec894 A3Game.BaseLogicSys<object>$$get_Instance
+152e790 mov x21, x0
+152e794 cbnz x21, #0x152e79c
+152e798 bl #0xd2b72c
+152e79c mov x0, x21
+152e7a0 mov x1, xzr
+152e7a4 bl #0xe82c30 A3Game.BattleSys$$IsCurGuideChapter
+152e7a8 mov w21, w0
+152e7ac bl #0x152fcc8 A3Game.LevelMgr$$IsNextBossLevel
+152e7b0 mov w23, w0
+152e7b4 eor w27, w21, #1
+152e7b8 eor w26, w23, #1
+152e7bc bl #0x152fd3c A3Game.LevelMgr$$IsLastLevel
+152e7c0 ldr x8, [x24]
+152e7c4 ldr x22, [x19, #0x28]
+152e7c8 ldr w21, [x19, #0x9c]
+152e7cc mov w24, w0
+152e7d0 mov x0, x8
+152e7d4 bl #0x17ec894 A3Game.BaseLogicSys<object>$$get_Instance
+152e7d8 mov x25, x0
+152e7dc cbnz x25, #0x152e7e4
+152e7e0 bl #0xd2b72c
+152e7e4 and w28, w23, w27
+152e7e8 ldr x23, [x25, #0x48]
+152e7ec add w8, w20, #1
+152e7f0 add x0, sp, #0xc
+152e7f4 mov x1, xzr
+152e7f8 and w26, w27, w26
+152e7fc and w24, w24, w27
+152e800 str w8, [sp, #0xc]
+152e804 bl #0x1d026bc
+152e808 mov x20, x0
+152e80c cbnz x22, #0x152e818
+152e810 mov x0, xzr
+152e814 bl #0xd2b72c
+152e818 and w3, w28, #1
+152e81c and w4, w26, #1
+152e820 and w5, w24, #1
+152e824 mov x0, x22
+152e828 mov w1, w21
+152e82c mov x2, x23
+152e830 mov x6, x20
+152e834 bl #0x152c330 A3Game.LevelMapCreater$$CreateMapObj
+152e838 adrp x23, #0x2cc5000
+152e83c ldr x23, [x23, #0x498]
+152e840 tbz w0, #0, #0x152ebf0
+152e844 adrp x8, #0x2d29000
+152e848 ldr x8, [x8, #0xd90]
+152e84c ldr x0, [x8]
+152e850 ldrb w8, [x0, #0x127]
+152e854 tbz w8, #1, #0x152e864
+152e858 ldr w8, [x0, #0xd8]
+152e85c cbnz w8, #0x152e864
+152e860 bl #0xd14168
+152e864 adrp x8, #0x2d0e000
+152e868 ldr x8, [x8, #0xb10]
+152e86c ldr x0, [x8]
+152e870 bl #0x18e2150 A3Game.GameEvent$$Get<object>
+152e874 mov x20, x0
+152e878 bl #0x152fda8 A3Game.LevelMgr$$IsBossLevel
+152e87c mov w21, w0
+152e880 bl #0x152fda8 A3Game.LevelMgr$$IsBossLevel
+152e884 mov w22, w0
+152e888 cbnz x20, #0x152e894
+152e88c mov x0, xzr
+152e890 bl #0xd2b72c
+152e894 adrp x10, #0x2c71000
+152e898 ldr x8, [x20]
+152e89c ldr x10, [x10, #0x518]
+152e8a0 ldrh w9, [x8, #0x11e]
+152e8a4 ldr x1, [x10]
+152e8a8 cbz x9, #0x152e8d4
+152e8ac ldr x11, [x8, #0xb0]
+152e8b0 mov x10, xzr
+152e8b4 add x11, x11, #8
+152e8b8 ldur x12, [x11, #-8]
+152e8bc cmp x12, x1
+152e8c0 b.eq #0x152e8e4
+152e8c4 add x10, x10, #1
+152e8c8 cmp x10, x9
+152e8cc add x11, x11, #0x10
+152e8d0 b.lo #0x152e8b8
+152e8d4 mov w2, #3
+152e8d8 mov x0, x20
+152e8dc bl #0xcfe050
+152e8e0 b #0x152e8f4
+152e8e4 ldr w9, [x11]
+152e8e8 add w9, w9, #3
+152e8ec add x8, x8, w9, uxtw #4
+152e8f0 add x0, x8, #0x128
+152e8f4 ldp x8, x3, [x0]
+152e8f8 and w1, w21, #1
+152e8fc and w2, w22, #1
+152e900 mov x0, x20
+152e904 blr x8
+152e908 ldr x20, [x19, #0x28]
+152e90c cbnz x20, #0x152e918
+152e910 mov x0, xzr
+152e914 bl #0xd2b72c
+152e918 adrp x22, #0x2c78000
+152e91c ldr x22, [x22, #0x1b8]
+152e920 ldr x20, [x20, #0x38]
+152e924 ldr x0, [x22]
+152e928 ldrb w8, [x0, #0x127]
+152e92c tbz w8, #1, #0x152e93c
+152e930 ldr w8, [x0, #0xd8]
+152e934 cbnz w8, #0x152e93c
+152e938 bl #0xd14168
+152e93c mov x0, x20
+152e940 mov x1, xzr
+152e944 mov x2, xzr
+152e948 bl #0x1bdd4dc UnityEngine.Object$$op_Inequality
+152e94c tbz w0, #0, #0x152e9cc
+152e950 ldr x20, [x19, #0x28]
+152e954 cbnz x20, #0x152e960
+152e958 mov x0, xzr
+152e95c bl #0xd2b72c
+152e960 adrp x8, #0x2cdb000
+152e964 ldr x0, [x20, #0x38]
+152e968 ldr x8, [x8, #0x350]
+152e96c ldr x1, [x8]
+152e970 bl #0x18e198c A3Game.DUnityUtil$$AddMonoBehaviour<Shadow>
+152e974 adrp x8, #0x2c9d000
+152e978 ldr x8, [x8, #0xd78]
+152e97c mov x20, x0
+152e980 ldr x8, [x8]
+152e984 mov x0, x8
+152e988 bl #0xd38978
+152e98c adrp x8, #0x2ce8000
+152e990 adrp x9, #0x2cd9000
+152e994 ldr x8, [x8, #0x798]
+152e998 ldr x9, [x9, #0xaf8]
+152e99c mov x1, x19
+152e9a0 mov x21, x0
+152e9a4 ldr x2, [x8]
+152e9a8 ldr x3, [x9]
+152e9ac bl #0x1f2e238 System.Action<CSXianJunActTurnRes>$$.ctor
+152e9b0 cbnz x20, #0x152e9bc
+152e9b4 mov x0, xzr
+152e9b8 bl #0xd2b72c
+152e9bc mov x0, x20
+152e9c0 mov x1, x21
+152e9c4 mov x2, xzr
+152e9c8 bl #0x1a83cb0 DodGame.BoxColliderTriggerBehaviour$$AddTriggerEnter
+152e9cc ldr x20, [x19, #0x28]
+152e9d0 cbnz x20, #0x152e9dc
+152e9d4 mov x0, xzr
+152e9d8 bl #0xd2b72c
+152e9dc ldr x0, [x22]
+152e9e0 ldr x20, [x20, #0x58]
+152e9e4 ldrb w8, [x0, #0x127]
+152e9e8 tbz w8, #1, #0x152e9f8
+152e9ec ldr w8, [x0, #0xd8]
+152e9f0 cbnz w8, #0x152e9f8
+152e9f4 bl #0xd14168
+152e9f8 mov x0, x20
+152e9fc mov x1, xzr
+152ea00 mov x2, xzr
+152ea04 bl #0x1bdd4dc UnityEngine.Object$$op_Inequality
+152ea08 tbz w0, #0, #0x152ea88
+152ea0c ldr x20, [x19, #0x28]
+152ea10 cbnz x20, #0x152ea1c
+152ea14 mov x0, xzr
+152ea18 bl #0xd2b72c
+152ea1c adrp x8, #0x2cdb000
+152ea20 ldr x0, [x20, #0x58]
+152ea24 ldr x8, [x8, #0x350]
+152ea28 ldr x1, [x8]
+152ea2c bl #0x18e198c A3Game.DUnityUtil$$AddMonoBehaviour<Shadow>
+152ea30 adrp x8, #0x2c9d000
+152ea34 ldr x8, [x8, #0xd78]
+152ea38 mov x20, x0
+152ea3c ldr x8, [x8]
+152ea40 mov x0, x8
+152ea44 bl #0xd38978
+152ea48 adrp x8, #0x2c71000
+152ea4c adrp x9, #0x2cd9000
+152ea50 ldr x8, [x8, #0x1f0]
+152ea54 ldr x9, [x9, #0xaf8]
+152ea58 mov x1, x19
+152ea5c mov x21, x0
+152ea60 ldr x2, [x8]
+152ea64 ldr x3, [x9]
+152ea68 bl #0x1f2e238 System.Action<CSXianJunActTurnRes>$$.ctor
+152ea6c cbnz x20, #0x152ea78
+152ea70 mov x0, xzr
+152ea74 bl #0xd2b72c
+152ea78 mov x0, x20
+152ea7c mov x1, x21
+152ea80 mov x2, xzr
+152ea84 bl #0x1a83cb0 DodGame.BoxColliderTriggerBehaviour$$AddTriggerEnter
+152ea88 ldr x20, [x19, #0x28]
+152ea8c cbnz x20, #0x152ea98
+152ea90 mov x0, xzr
+152ea94 bl #0xd2b72c
+152ea98 ldr x0, [x22]
+152ea9c ldr x20, [x20, #0x68]
+152eaa0 ldrb w8, [x0, #0x127]
+152eaa4 tbz w8, #1, #0x152eab4
+152eaa8 ldr w8, [x0, #0xd8]
+152eaac cbnz w8, #0x152eab4
+152eab0 bl #0xd14168
+152eab4 mov x0, x20
+152eab8 mov x1, xzr
+152eabc mov x2, xzr
+152eac0 bl #0x1bdd4dc UnityEngine.Object$$op_Inequality
+152eac4 tbz w0, #0, #0x152eb44
+152eac8 ldr x20, [x19, #0x28]
+152eacc cbnz x20, #0x152ead8
+152ead0 mov x0, xzr
+152ead4 bl #0xd2b72c
+152ead8 adrp x8, #0x2cdb000
+152eadc ldr x0, [x20, #0x68]
+152eae0 ldr x8, [x8, #0x350]
+152eae4 ldr x1, [x8]
+152eae8 bl #0x18e198c A3Game.DUnityUtil$$AddMonoBehaviour<Shadow>
+152eaec adrp x8, #0x2c9d000
+152eaf0 ldr x8, [x8, #0xd78]
+152eaf4 mov x20, x0
+152eaf8 ldr x8, [x8]
+152eafc mov x0, x8
+152eb00 bl #0xd38978
+152eb04 adrp x8, #0x2cb3000
+152eb08 adrp x9, #0x2cd9000
+152eb0c ldr x8, [x8, #0x5c8]
+152eb10 ldr x9, [x9, #0xaf8]
+152eb14 mov x1, x19
+152eb18 mov x21, x0
+152eb1c ldr x2, [x8]
+152eb20 ldr x3, [x9]
+152eb24 bl #0x1f2e238 System.Action<CSXianJunActTurnRes>$$.ctor
+152eb28 cbnz x20, #0x152eb34
+152eb2c mov x0, xzr
+152eb30 bl #0xd2b72c
+152eb34 mov x0, x20
+152eb38 mov x1, x21
+152eb3c mov x2, xzr
+152eb40 bl #0x1a83cb0 DodGame.BoxColliderTriggerBehaviour$$AddTriggerEnter
+152eb44 ldr x20, [x19, #0x28]
+152eb48 strb wzr, [x19, #0x40]
+152eb4c cbnz x20, #0x152eb58
+152eb50 mov x0, xzr
+152eb54 bl #0xd2b72c
+152eb58 mov x0, x20
+152eb5c mov w1, wzr
+152eb60 bl #0x152ce08 A3Game.LevelMapCreater$$SetGateState
+152eb64 ldr x0, [x23]
+152eb68 ldr x20, [x19, #0x28]
+152eb6c bl #0x17ec894 A3Game.BaseLogicSys<object>$$get_Instance
+152eb70 mov x21, x0
+152eb74 cbnz x21, #0x152eb7c
+152eb78 bl #0xd2b72c
+152eb7c mov x0, x21
+152eb80 mov x1, xzr
+152eb84 bl #0xe83d94 A3Game.BattleSys$$IsGuardBlitz
+152eb88 mov w21, w0
+152eb8c cbnz x20, #0x152eb98
+152eb90 mov x0, xzr
+152eb94 bl #0xd2b72c
+152eb98 and w1, w21, #1
+152eb9c mov x0, x20
+152eba0 bl #0x152d09c A3Game.LevelMapCreater$$SetEndPosState
+152eba4 mov x0, x19
+152eba8 bl #0x15283e0 A3Game.LevelMgr$$GetSceneColor
+152ebac mov w19, w0
+152ebb0 cbz w19, #0x152ebf0
+152ebb4 ldr x0, [x23]
+152ebb8 bl #0x17ec894 A3Game.BaseLogicSys<object>$$get_Instance
+152ebbc mov x20, x0
+152ebc0 cbnz x20, #0x152ebc8
+152ebc4 bl #0xd2b72c
+152ebc8 ldr x20, [x20, #0x48]
+152ebcc cbnz x20, #0x152ebd8
+152ebd0 mov x0, xzr
+152ebd4 bl #0xd2b72c
+152ebd8 mov x0, x20
+152ebdc mov x1, xzr
+152ebe0 bl #0x1c5124c UnityEngine.Component$$get_gameObject
+152ebe4 mov w1, w19
+152ebe8 mov x2, xzr
+152ebec bl #0x16ff34c A3Game.DUnityUtil$$SetSpriteRendererColor
+152ebf0 ldp x29, x30, [sp, #0x60]
+152ebf4 ldp x20, x19, [sp, #0x50]
+152ebf8 ldp x22, x21, [sp, #0x40]
+152ebfc ldp x24, x23, [sp, #0x30]
+152ec00 ldp x26, x25, [sp, #0x20]
+152ec04 ldp x28, x27, [sp, #0x10]
+152ec08 add sp, sp, #0x70
+152ec0c ret

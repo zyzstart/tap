@@ -1,0 +1,355 @@
+{
+  "status": "passed",
+  "native_executed": false,
+  "test_scope": "host-only static-instruction-derived reference models; not native differential execution",
+  "checks": [
+    {
+      "name": "round_2147483648",
+      "passed": true
+    },
+    {
+      "name": "round_6442450944",
+      "passed": true
+    },
+    {
+      "name": "round_-2147483648",
+      "passed": true
+    },
+    {
+      "name": "round_-6442450944",
+      "passed": true
+    },
+    {
+      "name": "round_-2147483649",
+      "passed": true
+    },
+    {
+      "name": "round_9223372036854775807",
+      "passed": true
+    },
+    {
+      "name": "floor_int_-1",
+      "passed": true
+    },
+    {
+      "name": "floor_int_-2147483648",
+      "passed": true
+    },
+    {
+      "name": "floor_int_-4294967297",
+      "passed": true
+    },
+    {
+      "name": "floor_int_4294967295",
+      "passed": true
+    },
+    {
+      "name": "add_wrap",
+      "passed": true
+    },
+    {
+      "name": "multiply_wrap",
+      "passed": true
+    },
+    {
+      "name": "multiply_negative_fraction_floor",
+      "passed": true
+    },
+    {
+      "name": "4096_mul_limb_vs_unbounded_product",
+      "passed": true
+    },
+    {
+      "name": "4096_div_native_shaped_vs_rational_nearest",
+      "passed": true
+    },
+    {
+      "name": "div_1_8589934592",
+      "passed": true
+    },
+    {
+      "name": "div_-1_8589934592",
+      "passed": true
+    },
+    {
+      "name": "div_4294967296_0",
+      "passed": true
+    },
+    {
+      "name": "div_-4294967296_0",
+      "passed": true
+    },
+    {
+      "name": "div_0_0",
+      "passed": true
+    },
+    {
+      "name": "div_9223372036854775807_1",
+      "passed": true
+    },
+    {
+      "name": "MT19937_standard_seed5489_first10",
+      "passed": true
+    },
+    {
+      "name": "MT_twist_cross_3blocks_0",
+      "passed": true
+    },
+    {
+      "name": "MT_twist_cross_3blocks_1",
+      "passed": true
+    },
+    {
+      "name": "MT_twist_cross_3blocks_5489",
+      "passed": true
+    },
+    {
+      "name": "MT_twist_cross_3blocks_-1",
+      "passed": true
+    },
+    {
+      "name": "MT_twist_cross_3blocks_2147483648",
+      "passed": true
+    },
+    {
+      "name": "nextfp_zero",
+      "passed": true
+    },
+    {
+      "name": "nextfp_max",
+      "passed": true
+    },
+    {
+      "name": "range_endpoint_one_plus_precision",
+      "passed": true
+    },
+    {
+      "name": "TestRate_one_endpoint_false",
+      "passed": true
+    },
+    {
+      "name": "TestRate_one_plus_precision_endpoint_false",
+      "passed": true
+    },
+    {
+      "name": "TestRate_above_endpoint_true",
+      "passed": true
+    },
+    {
+      "name": "TestRate_zero_sample_strictly_false",
+      "passed": true
+    },
+    {
+      "name": "fp_equal_returns",
+      "passed": true
+    },
+    {
+      "name": "fp_equal_no_draw",
+      "passed": true
+    },
+    {
+      "name": "int_equal_arm_machine_behavior",
+      "passed": true
+    },
+    {
+      "name": "int_reversed_bounds",
+      "passed": true
+    },
+    {
+      "name": "relative_attr",
+      "passed": true
+    },
+    {
+      "name": "multiply_attr_same_local_operation",
+      "passed": true
+    },
+    {
+      "name": "merge_reject_not_clamp",
+      "passed": true
+    },
+    {
+      "name": "merge_unrestricted_other_attr",
+      "passed": true
+    },
+    {
+      "name": "five_damage_floor",
+      "passed": true
+    },
+    {
+      "name": "five_damage_invulnerable",
+      "passed": true
+    },
+    {
+      "name": "buff_reduction",
+      "passed": true
+    },
+    {
+      "name": "buff_nonnegative_clamp",
+      "passed": true
+    },
+    {
+      "name": "crit_quantizes_before_later_multipliers",
+      "passed": true
+    },
+    {
+      "name": "crit_false_preserves_fraction",
+      "passed": true
+    },
+    {
+      "name": "element_crit_no_early_int_quantization",
+      "passed": true
+    },
+    {
+      "name": "element_flag_before_world_scale",
+      "passed": true
+    },
+    {
+      "name": "element_accumulation_wrap32",
+      "passed": true
+    },
+    {
+      "name": "weapon_tail_minimum",
+      "passed": true
+    },
+    {
+      "name": "weapon_tail_defense_then_block",
+      "passed": true
+    },
+    {
+      "name": "weapon_tail_final_order",
+      "passed": true
+    },
+    {
+      "name": "weapon_tail_stored_integer",
+      "passed": true
+    },
+    {
+      "name": "minimum_precedes_block",
+      "passed": true
+    },
+    {
+      "name": "final_aggregation_has_no_clamp",
+      "passed": true
+    },
+    {
+      "name": "element_sum_wraps_before_FP",
+      "passed": true
+    },
+    {
+      "name": "percent_no_lower_clamp",
+      "passed": true
+    },
+    {
+      "name": "percent_intermediate_integer_floor",
+      "passed": true
+    },
+    {
+      "name": "outer_hurt_add_uses_stored_integer",
+      "passed": true
+    },
+    {
+      "name": "outer_hurt_add_nonpositive_skipped",
+      "passed": true
+    }
+  ],
+  "check_count": 62,
+  "vectors": {
+    "round": [
+      {
+        "raw": 2147483648,
+        "expected_raw": 0
+      },
+      {
+        "raw": 6442450944,
+        "expected_raw": 8589934592
+      },
+      {
+        "raw": -2147483648,
+        "expected_raw": 0
+      },
+      {
+        "raw": -6442450944,
+        "expected_raw": -8589934592
+      },
+      {
+        "raw": -2147483649,
+        "expected_raw": -4294967296
+      },
+      {
+        "raw": 9223372036854775807,
+        "expected_raw": -9223372036854775808
+      }
+    ],
+    "mt_seed5489_first10": [
+      3499211612,
+      581869302,
+      3890346734,
+      3586334585,
+      545404204,
+      4161255391,
+      3922919429,
+      949333985,
+      2715962298,
+      1323567403
+    ],
+    "rng_endpoints": [
+      {
+        "word": 0,
+        "nextfp_raw": 0,
+        "unit_range_raw": 0,
+        "test_rate_one": true
+      },
+      {
+        "word": 1,
+        "nextfp_raw": 0,
+        "unit_range_raw": 0,
+        "test_rate_one": true
+      },
+      {
+        "word": 2,
+        "nextfp_raw": 2,
+        "unit_range_raw": 2,
+        "test_rate_one": true
+      },
+      {
+        "word": 2147483646,
+        "nextfp_raw": 2147483647,
+        "unit_range_raw": 2147483647,
+        "test_rate_one": true
+      },
+      {
+        "word": 4294967292,
+        "nextfp_raw": 4294967294,
+        "unit_range_raw": 4294967294,
+        "test_rate_one": true
+      },
+      {
+        "word": 4294967294,
+        "nextfp_raw": 4294967296,
+        "unit_range_raw": 4294967297,
+        "test_rate_one": false
+      },
+      {
+        "word": 4294967295,
+        "nextfp_raw": 4294967296,
+        "unit_range_raw": 4294967297,
+        "test_rate_one": false
+      }
+    ],
+    "weapon_tail_dyadic_trace": {
+      "minimum_raw": 213943058432,
+      "physical_raw": 559687925760,
+      "five_raw": 21474836480,
+      "five_int": 5,
+      "element_sum_int": 10,
+      "final_raw": 914693816320,
+      "damage_int": 212
+    }
+  },
+  "not_covered": [
+    "full weapon damage dispatcher/business callbacks/configuration (confirmed arithmetic stages only)",
+    "ARMv7 equivalence",
+    "runtime object/null/IL2CPP initialization semantics",
+    "all exceptional FP raw bit patterns"
+  ]
+}

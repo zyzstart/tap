@@ -1,0 +1,5029 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_fp_mijingmonsterlibraryconfig.bytes.ab",
+    "path_id": -2195219415536218489,
+    "name": "MiJingMonsterLibraryConfig",
+    "sha256": "5b8ee8fd32aaed5fadea90c5838ba8f80e9fef98bb145b3e3b769ea184ea6bbb",
+    "export": "derived/unity/text/assets_resources_config_resbin_fp_mijingmonsterlibraryconfig.bytes/MiJingMonsterLibraryConfig__-2195219415536218489.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 8384,
+      "version": 1,
+      "record_count": 492,
+      "stored_crc32": "54a5575d",
+      "computed_inverted_crc32": "54a5575d"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "BattleCore",
+      "name": "MiJingMonsterLibraryConfig",
+      "fields": [
+        {
+          "type": "uint",
+          "name": "MonsterLibraryID",
+          "object_offset": 16
+        },
+        {
+          "type": "uint",
+          "name": "RefreshNum",
+          "object_offset": 20
+        },
+        {
+          "type": "uint",
+          "name": "MonsterID",
+          "object_offset": 24
+        },
+        {
+          "type": "byte",
+          "name": "MonsterType",
+          "object_offset": 28
+        },
+        {
+          "type": "int",
+          "name": "KillScore",
+          "object_offset": 32
+        }
+      ],
+      "unpack_va": 23348156,
+      "dump_line": 167613
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x16443f0",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1644414",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1644438",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x164445c",
+        "target_va": "0x21f65e0",
+        "opcode": "BL",
+        "reader": "readUInt8",
+        "destination_object_offset": 28,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x164449c",
+        "target_va": "0x21f67d0",
+        "opcode": "B-tail",
+        "reader": "readInt32",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 492
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "MonsterLibraryID": 10012,
+      "RefreshNum": 14,
+      "MonsterID": 900001,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 37,
+      "MonsterLibraryID": 10014,
+      "RefreshNum": 10,
+      "MonsterID": 900001,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 54,
+      "MonsterLibraryID": 10017,
+      "RefreshNum": 12,
+      "MonsterID": 900001,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 71,
+      "MonsterLibraryID": 10019,
+      "RefreshNum": 6,
+      "MonsterID": 900001,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 88,
+      "MonsterLibraryID": 10032,
+      "RefreshNum": 20,
+      "MonsterID": 900001,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 105,
+      "MonsterLibraryID": 10034,
+      "RefreshNum": 14,
+      "MonsterID": 900001,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 122,
+      "MonsterLibraryID": 10037,
+      "RefreshNum": 14,
+      "MonsterID": 900001,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 139,
+      "MonsterLibraryID": 10039,
+      "RefreshNum": 6,
+      "MonsterID": 900001,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 156,
+      "MonsterLibraryID": 10052,
+      "RefreshNum": 20,
+      "MonsterID": 900001,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 173,
+      "MonsterLibraryID": 10054,
+      "RefreshNum": 14,
+      "MonsterID": 900001,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 190,
+      "MonsterLibraryID": 10057,
+      "RefreshNum": 14,
+      "MonsterID": 900001,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 207,
+      "MonsterLibraryID": 10059,
+      "RefreshNum": 6,
+      "MonsterID": 900001,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 224,
+      "MonsterLibraryID": 10072,
+      "RefreshNum": 20,
+      "MonsterID": 900001,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 241,
+      "MonsterLibraryID": 10074,
+      "RefreshNum": 14,
+      "MonsterID": 900001,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 258,
+      "MonsterLibraryID": 10077,
+      "RefreshNum": 14,
+      "MonsterID": 900001,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 275,
+      "MonsterLibraryID": 10079,
+      "RefreshNum": 6,
+      "MonsterID": 900001,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 292,
+      "MonsterLibraryID": 10092,
+      "RefreshNum": 20,
+      "MonsterID": 900001,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 309,
+      "MonsterLibraryID": 10094,
+      "RefreshNum": 14,
+      "MonsterID": 900001,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 326,
+      "MonsterLibraryID": 10097,
+      "RefreshNum": 14,
+      "MonsterID": 900001,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 19,
+      "_byte_offset": 343,
+      "MonsterLibraryID": 10099,
+      "RefreshNum": 6,
+      "MonsterID": 900001,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 20,
+      "_byte_offset": 360,
+      "MonsterLibraryID": 10112,
+      "RefreshNum": 20,
+      "MonsterID": 900001,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 21,
+      "_byte_offset": 377,
+      "MonsterLibraryID": 10114,
+      "RefreshNum": 14,
+      "MonsterID": 900001,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 22,
+      "_byte_offset": 394,
+      "MonsterLibraryID": 10117,
+      "RefreshNum": 14,
+      "MonsterID": 900001,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 23,
+      "_byte_offset": 411,
+      "MonsterLibraryID": 10119,
+      "RefreshNum": 6,
+      "MonsterID": 900001,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 24,
+      "_byte_offset": 428,
+      "MonsterLibraryID": 10019,
+      "RefreshNum": 6,
+      "MonsterID": 900002,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 25,
+      "_byte_offset": 445,
+      "MonsterLibraryID": 10025,
+      "RefreshNum": 14,
+      "MonsterID": 900002,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 26,
+      "_byte_offset": 462,
+      "MonsterLibraryID": 10039,
+      "RefreshNum": 6,
+      "MonsterID": 900002,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 27,
+      "_byte_offset": 479,
+      "MonsterLibraryID": 10045,
+      "RefreshNum": 14,
+      "MonsterID": 900002,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 28,
+      "_byte_offset": 496,
+      "MonsterLibraryID": 10059,
+      "RefreshNum": 6,
+      "MonsterID": 900002,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 29,
+      "_byte_offset": 513,
+      "MonsterLibraryID": 10065,
+      "RefreshNum": 14,
+      "MonsterID": 900002,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 30,
+      "_byte_offset": 530,
+      "MonsterLibraryID": 10079,
+      "RefreshNum": 6,
+      "MonsterID": 900002,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 31,
+      "_byte_offset": 547,
+      "MonsterLibraryID": 10085,
+      "RefreshNum": 14,
+      "MonsterID": 900002,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 32,
+      "_byte_offset": 564,
+      "MonsterLibraryID": 10099,
+      "RefreshNum": 6,
+      "MonsterID": 900002,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 33,
+      "_byte_offset": 581,
+      "MonsterLibraryID": 10105,
+      "RefreshNum": 14,
+      "MonsterID": 900002,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 34,
+      "_byte_offset": 598,
+      "MonsterLibraryID": 10119,
+      "RefreshNum": 6,
+      "MonsterID": 900002,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 35,
+      "_byte_offset": 615,
+      "MonsterLibraryID": 10125,
+      "RefreshNum": 14,
+      "MonsterID": 900002,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 36,
+      "_byte_offset": 632,
+      "MonsterLibraryID": 10001,
+      "RefreshNum": 10,
+      "MonsterID": 900003,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 37,
+      "_byte_offset": 649,
+      "MonsterLibraryID": 10003,
+      "RefreshNum": 8,
+      "MonsterID": 900003,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 38,
+      "_byte_offset": 666,
+      "MonsterLibraryID": 10006,
+      "RefreshNum": 8,
+      "MonsterID": 900003,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 39,
+      "_byte_offset": 683,
+      "MonsterLibraryID": 10008,
+      "RefreshNum": 6,
+      "MonsterID": 900003,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 40,
+      "_byte_offset": 700,
+      "MonsterLibraryID": 10021,
+      "RefreshNum": 18,
+      "MonsterID": 900003,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 41,
+      "_byte_offset": 717,
+      "MonsterLibraryID": 10023,
+      "RefreshNum": 14,
+      "MonsterID": 900003,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 42,
+      "_byte_offset": 734,
+      "MonsterLibraryID": 10026,
+      "RefreshNum": 14,
+      "MonsterID": 900003,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 43,
+      "_byte_offset": 751,
+      "MonsterLibraryID": 10028,
+      "RefreshNum": 14,
+      "MonsterID": 900003,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 44,
+      "_byte_offset": 768,
+      "MonsterLibraryID": 10041,
+      "RefreshNum": 20,
+      "MonsterID": 900003,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 45,
+      "_byte_offset": 785,
+      "MonsterLibraryID": 10043,
+      "RefreshNum": 14,
+      "MonsterID": 900003,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 46,
+      "_byte_offset": 802,
+      "MonsterLibraryID": 10046,
+      "RefreshNum": 14,
+      "MonsterID": 900003,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 47,
+      "_byte_offset": 819,
+      "MonsterLibraryID": 10048,
+      "RefreshNum": 14,
+      "MonsterID": 900003,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 48,
+      "_byte_offset": 836,
+      "MonsterLibraryID": 10061,
+      "RefreshNum": 20,
+      "MonsterID": 900003,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 49,
+      "_byte_offset": 853,
+      "MonsterLibraryID": 10063,
+      "RefreshNum": 14,
+      "MonsterID": 900003,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 50,
+      "_byte_offset": 870,
+      "MonsterLibraryID": 10066,
+      "RefreshNum": 14,
+      "MonsterID": 900003,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 51,
+      "_byte_offset": 887,
+      "MonsterLibraryID": 10068,
+      "RefreshNum": 14,
+      "MonsterID": 900003,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 52,
+      "_byte_offset": 904,
+      "MonsterLibraryID": 10081,
+      "RefreshNum": 20,
+      "MonsterID": 900003,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 53,
+      "_byte_offset": 921,
+      "MonsterLibraryID": 10083,
+      "RefreshNum": 14,
+      "MonsterID": 900003,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 54,
+      "_byte_offset": 938,
+      "MonsterLibraryID": 10086,
+      "RefreshNum": 14,
+      "MonsterID": 900003,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 55,
+      "_byte_offset": 955,
+      "MonsterLibraryID": 10088,
+      "RefreshNum": 14,
+      "MonsterID": 900003,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 56,
+      "_byte_offset": 972,
+      "MonsterLibraryID": 10101,
+      "RefreshNum": 20,
+      "MonsterID": 900003,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 57,
+      "_byte_offset": 989,
+      "MonsterLibraryID": 10103,
+      "RefreshNum": 14,
+      "MonsterID": 900003,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 58,
+      "_byte_offset": 1006,
+      "MonsterLibraryID": 10106,
+      "RefreshNum": 14,
+      "MonsterID": 900003,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 59,
+      "_byte_offset": 1023,
+      "MonsterLibraryID": 10108,
+      "RefreshNum": 14,
+      "MonsterID": 900003,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 60,
+      "_byte_offset": 1040,
+      "MonsterLibraryID": 10121,
+      "RefreshNum": 20,
+      "MonsterID": 900003,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 61,
+      "_byte_offset": 1057,
+      "MonsterLibraryID": 10123,
+      "RefreshNum": 14,
+      "MonsterID": 900003,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 62,
+      "_byte_offset": 1074,
+      "MonsterLibraryID": 10126,
+      "RefreshNum": 14,
+      "MonsterID": 900003,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 63,
+      "_byte_offset": 1091,
+      "MonsterLibraryID": 10128,
+      "RefreshNum": 14,
+      "MonsterID": 900003,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 64,
+      "_byte_offset": 1108,
+      "MonsterLibraryID": 10006,
+      "RefreshNum": 4,
+      "MonsterID": 900004,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 65,
+      "_byte_offset": 1125,
+      "MonsterLibraryID": 10026,
+      "RefreshNum": 6,
+      "MonsterID": 900004,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 66,
+      "_byte_offset": 1142,
+      "MonsterLibraryID": 10046,
+      "RefreshNum": 6,
+      "MonsterID": 900004,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 67,
+      "_byte_offset": 1159,
+      "MonsterLibraryID": 10066,
+      "RefreshNum": 6,
+      "MonsterID": 900004,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 68,
+      "_byte_offset": 1176,
+      "MonsterLibraryID": 10086,
+      "RefreshNum": 6,
+      "MonsterID": 900004,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 69,
+      "_byte_offset": 1193,
+      "MonsterLibraryID": 10106,
+      "RefreshNum": 6,
+      "MonsterID": 900004,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 70,
+      "_byte_offset": 1210,
+      "MonsterLibraryID": 10126,
+      "RefreshNum": 6,
+      "MonsterID": 900004,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 71,
+      "_byte_offset": 1227,
+      "MonsterLibraryID": 10005,
+      "RefreshNum": 8,
+      "MonsterID": 900004,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 72,
+      "_byte_offset": 1244,
+      "MonsterLibraryID": 10011,
+      "RefreshNum": 14,
+      "MonsterID": 900004,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 73,
+      "_byte_offset": 1261,
+      "MonsterLibraryID": 10013,
+      "RefreshNum": 10,
+      "MonsterID": 900004,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 74,
+      "_byte_offset": 1278,
+      "MonsterLibraryID": 10016,
+      "RefreshNum": 12,
+      "MonsterID": 900004,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 75,
+      "_byte_offset": 1295,
+      "MonsterLibraryID": 10018,
+      "RefreshNum": 10,
+      "MonsterID": 900004,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 76,
+      "_byte_offset": 1312,
+      "MonsterLibraryID": 10031,
+      "RefreshNum": 20,
+      "MonsterID": 900004,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 77,
+      "_byte_offset": 1329,
+      "MonsterLibraryID": 10033,
+      "RefreshNum": 14,
+      "MonsterID": 900004,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 78,
+      "_byte_offset": 1346,
+      "MonsterLibraryID": 10036,
+      "RefreshNum": 14,
+      "MonsterID": 900004,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 79,
+      "_byte_offset": 1363,
+      "MonsterLibraryID": 10038,
+      "RefreshNum": 14,
+      "MonsterID": 900004,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 80,
+      "_byte_offset": 1380,
+      "MonsterLibraryID": 10051,
+      "RefreshNum": 20,
+      "MonsterID": 900004,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 81,
+      "_byte_offset": 1397,
+      "MonsterLibraryID": 10053,
+      "RefreshNum": 14,
+      "MonsterID": 900004,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 82,
+      "_byte_offset": 1414,
+      "MonsterLibraryID": 10056,
+      "RefreshNum": 14,
+      "MonsterID": 900004,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 83,
+      "_byte_offset": 1431,
+      "MonsterLibraryID": 10058,
+      "RefreshNum": 14,
+      "MonsterID": 900004,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 84,
+      "_byte_offset": 1448,
+      "MonsterLibraryID": 10071,
+      "RefreshNum": 20,
+      "MonsterID": 900004,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 85,
+      "_byte_offset": 1465,
+      "MonsterLibraryID": 10073,
+      "RefreshNum": 14,
+      "MonsterID": 900004,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 86,
+      "_byte_offset": 1482,
+      "MonsterLibraryID": 10076,
+      "RefreshNum": 14,
+      "MonsterID": 900004,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 87,
+      "_byte_offset": 1499,
+      "MonsterLibraryID": 10078,
+      "RefreshNum": 14,
+      "MonsterID": 900004,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 88,
+      "_byte_offset": 1516,
+      "MonsterLibraryID": 10091,
+      "RefreshNum": 20,
+      "MonsterID": 900004,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 89,
+      "_byte_offset": 1533,
+      "MonsterLibraryID": 10093,
+      "RefreshNum": 14,
+      "MonsterID": 900004,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 90,
+      "_byte_offset": 1550,
+      "MonsterLibraryID": 10096,
+      "RefreshNum": 14,
+      "MonsterID": 900004,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 91,
+      "_byte_offset": 1567,
+      "MonsterLibraryID": 10098,
+      "RefreshNum": 14,
+      "MonsterID": 900004,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 92,
+      "_byte_offset": 1584,
+      "MonsterLibraryID": 10111,
+      "RefreshNum": 20,
+      "MonsterID": 900004,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 93,
+      "_byte_offset": 1601,
+      "MonsterLibraryID": 10113,
+      "RefreshNum": 14,
+      "MonsterID": 900004,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 94,
+      "_byte_offset": 1618,
+      "MonsterLibraryID": 10116,
+      "RefreshNum": 14,
+      "MonsterID": 900004,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 95,
+      "_byte_offset": 1635,
+      "MonsterLibraryID": 10118,
+      "RefreshNum": 14,
+      "MonsterID": 900004,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 96,
+      "_byte_offset": 1652,
+      "MonsterLibraryID": 10004,
+      "RefreshNum": 8,
+      "MonsterID": 900007,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 97,
+      "_byte_offset": 1669,
+      "MonsterLibraryID": 10007,
+      "RefreshNum": 6,
+      "MonsterID": 900007,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 98,
+      "_byte_offset": 1686,
+      "MonsterLibraryID": 10009,
+      "RefreshNum": 4,
+      "MonsterID": 900007,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 99,
+      "_byte_offset": 1703,
+      "MonsterLibraryID": 10022,
+      "RefreshNum": 18,
+      "MonsterID": 900007,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 100,
+      "_byte_offset": 1720,
+      "MonsterLibraryID": 10024,
+      "RefreshNum": 14,
+      "MonsterID": 900007,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 101,
+      "_byte_offset": 1737,
+      "MonsterLibraryID": 10027,
+      "RefreshNum": 14,
+      "MonsterID": 900007,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 102,
+      "_byte_offset": 1754,
+      "MonsterLibraryID": 10029,
+      "RefreshNum": 6,
+      "MonsterID": 900007,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 103,
+      "_byte_offset": 1771,
+      "MonsterLibraryID": 10042,
+      "RefreshNum": 20,
+      "MonsterID": 900007,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 104,
+      "_byte_offset": 1788,
+      "MonsterLibraryID": 10044,
+      "RefreshNum": 14,
+      "MonsterID": 900007,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 105,
+      "_byte_offset": 1805,
+      "MonsterLibraryID": 10047,
+      "RefreshNum": 14,
+      "MonsterID": 900007,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 106,
+      "_byte_offset": 1822,
+      "MonsterLibraryID": 10049,
+      "RefreshNum": 6,
+      "MonsterID": 900007,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 107,
+      "_byte_offset": 1839,
+      "MonsterLibraryID": 10062,
+      "RefreshNum": 20,
+      "MonsterID": 900007,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 108,
+      "_byte_offset": 1856,
+      "MonsterLibraryID": 10064,
+      "RefreshNum": 14,
+      "MonsterID": 900007,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 109,
+      "_byte_offset": 1873,
+      "MonsterLibraryID": 10067,
+      "RefreshNum": 14,
+      "MonsterID": 900007,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 110,
+      "_byte_offset": 1890,
+      "MonsterLibraryID": 10069,
+      "RefreshNum": 6,
+      "MonsterID": 900007,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 111,
+      "_byte_offset": 1907,
+      "MonsterLibraryID": 10082,
+      "RefreshNum": 20,
+      "MonsterID": 900007,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 112,
+      "_byte_offset": 1924,
+      "MonsterLibraryID": 10084,
+      "RefreshNum": 14,
+      "MonsterID": 900007,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 113,
+      "_byte_offset": 1941,
+      "MonsterLibraryID": 10087,
+      "RefreshNum": 14,
+      "MonsterID": 900007,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 114,
+      "_byte_offset": 1958,
+      "MonsterLibraryID": 10089,
+      "RefreshNum": 6,
+      "MonsterID": 900007,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 115,
+      "_byte_offset": 1975,
+      "MonsterLibraryID": 10102,
+      "RefreshNum": 20,
+      "MonsterID": 900007,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 116,
+      "_byte_offset": 1992,
+      "MonsterLibraryID": 10104,
+      "RefreshNum": 14,
+      "MonsterID": 900007,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 117,
+      "_byte_offset": 2009,
+      "MonsterLibraryID": 10107,
+      "RefreshNum": 14,
+      "MonsterID": 900007,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 118,
+      "_byte_offset": 2026,
+      "MonsterLibraryID": 10109,
+      "RefreshNum": 6,
+      "MonsterID": 900007,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 119,
+      "_byte_offset": 2043,
+      "MonsterLibraryID": 10122,
+      "RefreshNum": 20,
+      "MonsterID": 900007,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 120,
+      "_byte_offset": 2060,
+      "MonsterLibraryID": 10124,
+      "RefreshNum": 14,
+      "MonsterID": 900007,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 121,
+      "_byte_offset": 2077,
+      "MonsterLibraryID": 10127,
+      "RefreshNum": 14,
+      "MonsterID": 900007,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 122,
+      "_byte_offset": 2094,
+      "MonsterLibraryID": 10129,
+      "RefreshNum": 6,
+      "MonsterID": 900007,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 123,
+      "_byte_offset": 2111,
+      "MonsterLibraryID": 10002,
+      "RefreshNum": 10,
+      "MonsterID": 900008,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 124,
+      "_byte_offset": 2128,
+      "MonsterLibraryID": 10009,
+      "RefreshNum": 4,
+      "MonsterID": 900008,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 125,
+      "_byte_offset": 2145,
+      "MonsterLibraryID": 10016,
+      "RefreshNum": 4,
+      "MonsterID": 900008,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 126,
+      "_byte_offset": 2162,
+      "MonsterLibraryID": 10029,
+      "RefreshNum": 6,
+      "MonsterID": 900008,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 127,
+      "_byte_offset": 2179,
+      "MonsterLibraryID": 10036,
+      "RefreshNum": 6,
+      "MonsterID": 900008,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 128,
+      "_byte_offset": 2196,
+      "MonsterLibraryID": 10049,
+      "RefreshNum": 6,
+      "MonsterID": 900008,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 129,
+      "_byte_offset": 2213,
+      "MonsterLibraryID": 10056,
+      "RefreshNum": 6,
+      "MonsterID": 900008,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 130,
+      "_byte_offset": 2230,
+      "MonsterLibraryID": 10069,
+      "RefreshNum": 6,
+      "MonsterID": 900008,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 131,
+      "_byte_offset": 2247,
+      "MonsterLibraryID": 10076,
+      "RefreshNum": 6,
+      "MonsterID": 900008,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 132,
+      "_byte_offset": 2264,
+      "MonsterLibraryID": 10089,
+      "RefreshNum": 6,
+      "MonsterID": 900008,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 133,
+      "_byte_offset": 2281,
+      "MonsterLibraryID": 10096,
+      "RefreshNum": 6,
+      "MonsterID": 900008,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 134,
+      "_byte_offset": 2298,
+      "MonsterLibraryID": 10109,
+      "RefreshNum": 6,
+      "MonsterID": 900008,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 135,
+      "_byte_offset": 2315,
+      "MonsterLibraryID": 10116,
+      "RefreshNum": 6,
+      "MonsterID": 900008,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 136,
+      "_byte_offset": 2332,
+      "MonsterLibraryID": 10129,
+      "RefreshNum": 6,
+      "MonsterID": 900008,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 137,
+      "_byte_offset": 2349,
+      "MonsterLibraryID": 10004,
+      "RefreshNum": 2,
+      "MonsterID": 900010,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 138,
+      "_byte_offset": 2366,
+      "MonsterLibraryID": 10008,
+      "RefreshNum": 6,
+      "MonsterID": 900010,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 139,
+      "_byte_offset": 2383,
+      "MonsterLibraryID": 10024,
+      "RefreshNum": 4,
+      "MonsterID": 900010,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 140,
+      "_byte_offset": 2400,
+      "MonsterLibraryID": 10028,
+      "RefreshNum": 6,
+      "MonsterID": 900010,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 141,
+      "_byte_offset": 2417,
+      "MonsterLibraryID": 10044,
+      "RefreshNum": 6,
+      "MonsterID": 900010,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 142,
+      "_byte_offset": 2434,
+      "MonsterLibraryID": 10048,
+      "RefreshNum": 6,
+      "MonsterID": 900010,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 143,
+      "_byte_offset": 2451,
+      "MonsterLibraryID": 10064,
+      "RefreshNum": 6,
+      "MonsterID": 900010,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 144,
+      "_byte_offset": 2468,
+      "MonsterLibraryID": 10068,
+      "RefreshNum": 6,
+      "MonsterID": 900010,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 145,
+      "_byte_offset": 2485,
+      "MonsterLibraryID": 10084,
+      "RefreshNum": 6,
+      "MonsterID": 900010,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 146,
+      "_byte_offset": 2502,
+      "MonsterLibraryID": 10088,
+      "RefreshNum": 6,
+      "MonsterID": 900010,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 147,
+      "_byte_offset": 2519,
+      "MonsterLibraryID": 10104,
+      "RefreshNum": 6,
+      "MonsterID": 900010,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 148,
+      "_byte_offset": 2536,
+      "MonsterLibraryID": 10108,
+      "RefreshNum": 6,
+      "MonsterID": 900010,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 149,
+      "_byte_offset": 2553,
+      "MonsterLibraryID": 10124,
+      "RefreshNum": 6,
+      "MonsterID": 900010,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 150,
+      "_byte_offset": 2570,
+      "MonsterLibraryID": 10128,
+      "RefreshNum": 6,
+      "MonsterID": 900010,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 151,
+      "_byte_offset": 2587,
+      "MonsterLibraryID": 10014,
+      "RefreshNum": 4,
+      "MonsterID": 900010,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 152,
+      "_byte_offset": 2604,
+      "MonsterLibraryID": 10018,
+      "RefreshNum": 6,
+      "MonsterID": 900010,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 153,
+      "_byte_offset": 2621,
+      "MonsterLibraryID": 10034,
+      "RefreshNum": 6,
+      "MonsterID": 900010,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 154,
+      "_byte_offset": 2638,
+      "MonsterLibraryID": 10038,
+      "RefreshNum": 6,
+      "MonsterID": 900010,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 155,
+      "_byte_offset": 2655,
+      "MonsterLibraryID": 10054,
+      "RefreshNum": 6,
+      "MonsterID": 900010,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 156,
+      "_byte_offset": 2672,
+      "MonsterLibraryID": 10058,
+      "RefreshNum": 6,
+      "MonsterID": 900010,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 157,
+      "_byte_offset": 2689,
+      "MonsterLibraryID": 10074,
+      "RefreshNum": 6,
+      "MonsterID": 900010,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 158,
+      "_byte_offset": 2706,
+      "MonsterLibraryID": 10078,
+      "RefreshNum": 6,
+      "MonsterID": 900010,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 159,
+      "_byte_offset": 2723,
+      "MonsterLibraryID": 10094,
+      "RefreshNum": 6,
+      "MonsterID": 900010,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 160,
+      "_byte_offset": 2740,
+      "MonsterLibraryID": 10098,
+      "RefreshNum": 6,
+      "MonsterID": 900010,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 161,
+      "_byte_offset": 2757,
+      "MonsterLibraryID": 10114,
+      "RefreshNum": 6,
+      "MonsterID": 900010,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 162,
+      "_byte_offset": 2774,
+      "MonsterLibraryID": 10118,
+      "RefreshNum": 6,
+      "MonsterID": 900010,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 163,
+      "_byte_offset": 2791,
+      "MonsterLibraryID": 10005,
+      "RefreshNum": 2,
+      "MonsterID": 900012,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 164,
+      "_byte_offset": 2808,
+      "MonsterLibraryID": 10013,
+      "RefreshNum": 4,
+      "MonsterID": 900012,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 165,
+      "_byte_offset": 2825,
+      "MonsterLibraryID": 10015,
+      "RefreshNum": 10,
+      "MonsterID": 900012,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 166,
+      "_byte_offset": 2842,
+      "MonsterLibraryID": 10017,
+      "RefreshNum": 4,
+      "MonsterID": 900012,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 167,
+      "_byte_offset": 2859,
+      "MonsterLibraryID": 10033,
+      "RefreshNum": 6,
+      "MonsterID": 900012,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 168,
+      "_byte_offset": 2876,
+      "MonsterLibraryID": 10035,
+      "RefreshNum": 14,
+      "MonsterID": 900012,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 169,
+      "_byte_offset": 2893,
+      "MonsterLibraryID": 10037,
+      "RefreshNum": 6,
+      "MonsterID": 900012,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 170,
+      "_byte_offset": 2910,
+      "MonsterLibraryID": 10053,
+      "RefreshNum": 6,
+      "MonsterID": 900012,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 171,
+      "_byte_offset": 2927,
+      "MonsterLibraryID": 10055,
+      "RefreshNum": 14,
+      "MonsterID": 900012,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 172,
+      "_byte_offset": 2944,
+      "MonsterLibraryID": 10057,
+      "RefreshNum": 6,
+      "MonsterID": 900012,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 173,
+      "_byte_offset": 2961,
+      "MonsterLibraryID": 10073,
+      "RefreshNum": 6,
+      "MonsterID": 900012,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 174,
+      "_byte_offset": 2978,
+      "MonsterLibraryID": 10075,
+      "RefreshNum": 14,
+      "MonsterID": 900012,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 175,
+      "_byte_offset": 2995,
+      "MonsterLibraryID": 10077,
+      "RefreshNum": 6,
+      "MonsterID": 900012,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 176,
+      "_byte_offset": 3012,
+      "MonsterLibraryID": 10093,
+      "RefreshNum": 6,
+      "MonsterID": 900012,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 177,
+      "_byte_offset": 3029,
+      "MonsterLibraryID": 10095,
+      "RefreshNum": 14,
+      "MonsterID": 900012,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 178,
+      "_byte_offset": 3046,
+      "MonsterLibraryID": 10097,
+      "RefreshNum": 6,
+      "MonsterID": 900012,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 179,
+      "_byte_offset": 3063,
+      "MonsterLibraryID": 10113,
+      "RefreshNum": 6,
+      "MonsterID": 900012,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 180,
+      "_byte_offset": 3080,
+      "MonsterLibraryID": 10115,
+      "RefreshNum": 14,
+      "MonsterID": 900012,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 181,
+      "_byte_offset": 3097,
+      "MonsterLibraryID": 10117,
+      "RefreshNum": 6,
+      "MonsterID": 900012,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 182,
+      "_byte_offset": 3114,
+      "MonsterLibraryID": 10009,
+      "RefreshNum": 4,
+      "MonsterID": 900012,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 183,
+      "_byte_offset": 3131,
+      "MonsterLibraryID": 10019,
+      "RefreshNum": 4,
+      "MonsterID": 900012,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 184,
+      "_byte_offset": 3148,
+      "MonsterLibraryID": 10029,
+      "RefreshNum": 8,
+      "MonsterID": 900012,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 185,
+      "_byte_offset": 3165,
+      "MonsterLibraryID": 10039,
+      "RefreshNum": 8,
+      "MonsterID": 900012,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 186,
+      "_byte_offset": 3182,
+      "MonsterLibraryID": 10049,
+      "RefreshNum": 8,
+      "MonsterID": 900012,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 187,
+      "_byte_offset": 3199,
+      "MonsterLibraryID": 10059,
+      "RefreshNum": 8,
+      "MonsterID": 900012,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 188,
+      "_byte_offset": 3216,
+      "MonsterLibraryID": 10069,
+      "RefreshNum": 8,
+      "MonsterID": 900012,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 189,
+      "_byte_offset": 3233,
+      "MonsterLibraryID": 10079,
+      "RefreshNum": 8,
+      "MonsterID": 900012,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 190,
+      "_byte_offset": 3250,
+      "MonsterLibraryID": 10089,
+      "RefreshNum": 8,
+      "MonsterID": 900012,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 191,
+      "_byte_offset": 3267,
+      "MonsterLibraryID": 10099,
+      "RefreshNum": 8,
+      "MonsterID": 900012,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 192,
+      "_byte_offset": 3284,
+      "MonsterLibraryID": 10109,
+      "RefreshNum": 8,
+      "MonsterID": 900012,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 193,
+      "_byte_offset": 3301,
+      "MonsterLibraryID": 10119,
+      "RefreshNum": 8,
+      "MonsterID": 900012,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 194,
+      "_byte_offset": 3318,
+      "MonsterLibraryID": 10129,
+      "RefreshNum": 8,
+      "MonsterID": 900012,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 195,
+      "_byte_offset": 3335,
+      "MonsterLibraryID": 10003,
+      "RefreshNum": 2,
+      "MonsterID": 910002,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 196,
+      "_byte_offset": 3352,
+      "MonsterLibraryID": 10007,
+      "RefreshNum": 6,
+      "MonsterID": 910002,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 197,
+      "_byte_offset": 3369,
+      "MonsterLibraryID": 10023,
+      "RefreshNum": 4,
+      "MonsterID": 910002,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 198,
+      "_byte_offset": 3386,
+      "MonsterLibraryID": 10027,
+      "RefreshNum": 6,
+      "MonsterID": 910002,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 199,
+      "_byte_offset": 3403,
+      "MonsterLibraryID": 10043,
+      "RefreshNum": 6,
+      "MonsterID": 910002,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 200,
+      "_byte_offset": 3420,
+      "MonsterLibraryID": 10047,
+      "RefreshNum": 6,
+      "MonsterID": 910002,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 201,
+      "_byte_offset": 3437,
+      "MonsterLibraryID": 10063,
+      "RefreshNum": 6,
+      "MonsterID": 910002,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 202,
+      "_byte_offset": 3454,
+      "MonsterLibraryID": 10067,
+      "RefreshNum": 6,
+      "MonsterID": 910002,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 203,
+      "_byte_offset": 3471,
+      "MonsterLibraryID": 10083,
+      "RefreshNum": 6,
+      "MonsterID": 910002,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 204,
+      "_byte_offset": 3488,
+      "MonsterLibraryID": 10087,
+      "RefreshNum": 6,
+      "MonsterID": 910002,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 205,
+      "_byte_offset": 3505,
+      "MonsterLibraryID": 10103,
+      "RefreshNum": 6,
+      "MonsterID": 910002,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 206,
+      "_byte_offset": 3522,
+      "MonsterLibraryID": 10107,
+      "RefreshNum": 6,
+      "MonsterID": 910002,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 207,
+      "_byte_offset": 3539,
+      "MonsterLibraryID": 10123,
+      "RefreshNum": 6,
+      "MonsterID": 910002,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 208,
+      "_byte_offset": 3556,
+      "MonsterLibraryID": 10127,
+      "RefreshNum": 6,
+      "MonsterID": 910002,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 209,
+      "_byte_offset": 3573,
+      "MonsterLibraryID": 10015,
+      "RefreshNum": 4,
+      "MonsterID": 910001,
+      "MonsterType": 2,
+      "KillScore": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 210,
+      "_byte_offset": 3590,
+      "MonsterLibraryID": 10025,
+      "RefreshNum": 4,
+      "MonsterID": 910001,
+      "MonsterType": 2,
+      "KillScore": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 211,
+      "_byte_offset": 3607,
+      "MonsterLibraryID": 10035,
+      "RefreshNum": 6,
+      "MonsterID": 910001,
+      "MonsterType": 2,
+      "KillScore": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 212,
+      "_byte_offset": 3624,
+      "MonsterLibraryID": 10045,
+      "RefreshNum": 6,
+      "MonsterID": 910001,
+      "MonsterType": 2,
+      "KillScore": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 213,
+      "_byte_offset": 3641,
+      "MonsterLibraryID": 10055,
+      "RefreshNum": 6,
+      "MonsterID": 910001,
+      "MonsterType": 2,
+      "KillScore": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 214,
+      "_byte_offset": 3658,
+      "MonsterLibraryID": 10065,
+      "RefreshNum": 6,
+      "MonsterID": 910001,
+      "MonsterType": 2,
+      "KillScore": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 215,
+      "_byte_offset": 3675,
+      "MonsterLibraryID": 10075,
+      "RefreshNum": 6,
+      "MonsterID": 910001,
+      "MonsterType": 2,
+      "KillScore": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 216,
+      "_byte_offset": 3692,
+      "MonsterLibraryID": 10085,
+      "RefreshNum": 6,
+      "MonsterID": 910001,
+      "MonsterType": 2,
+      "KillScore": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 217,
+      "_byte_offset": 3709,
+      "MonsterLibraryID": 10095,
+      "RefreshNum": 6,
+      "MonsterID": 910001,
+      "MonsterType": 2,
+      "KillScore": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 218,
+      "_byte_offset": 3726,
+      "MonsterLibraryID": 10105,
+      "RefreshNum": 6,
+      "MonsterID": 910001,
+      "MonsterType": 2,
+      "KillScore": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 219,
+      "_byte_offset": 3743,
+      "MonsterLibraryID": 10115,
+      "RefreshNum": 6,
+      "MonsterID": 910001,
+      "MonsterType": 2,
+      "KillScore": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 220,
+      "_byte_offset": 3760,
+      "MonsterLibraryID": 10125,
+      "RefreshNum": 6,
+      "MonsterID": 910001,
+      "MonsterType": 2,
+      "KillScore": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 221,
+      "_byte_offset": 3777,
+      "MonsterLibraryID": 20001,
+      "RefreshNum": 1,
+      "MonsterID": 920003,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 222,
+      "_byte_offset": 3794,
+      "MonsterLibraryID": 20001,
+      "RefreshNum": 1,
+      "MonsterID": 920003,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 223,
+      "_byte_offset": 3811,
+      "MonsterLibraryID": 20001,
+      "RefreshNum": 1,
+      "MonsterID": 920003,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 224,
+      "_byte_offset": 3828,
+      "MonsterLibraryID": 20001,
+      "RefreshNum": 1,
+      "MonsterID": 920003,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 225,
+      "_byte_offset": 3845,
+      "MonsterLibraryID": 20001,
+      "RefreshNum": 1,
+      "MonsterID": 920004,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 226,
+      "_byte_offset": 3862,
+      "MonsterLibraryID": 20001,
+      "RefreshNum": 1,
+      "MonsterID": 920004,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 227,
+      "_byte_offset": 3879,
+      "MonsterLibraryID": 20001,
+      "RefreshNum": 1,
+      "MonsterID": 920004,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 228,
+      "_byte_offset": 3896,
+      "MonsterLibraryID": 20001,
+      "RefreshNum": 1,
+      "MonsterID": 920005,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 229,
+      "_byte_offset": 3913,
+      "MonsterLibraryID": 20001,
+      "RefreshNum": 1,
+      "MonsterID": 920005,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 230,
+      "_byte_offset": 3930,
+      "MonsterLibraryID": 20001,
+      "RefreshNum": 1,
+      "MonsterID": 920005,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 231,
+      "_byte_offset": 3947,
+      "MonsterLibraryID": 20001,
+      "RefreshNum": 1,
+      "MonsterID": 920006,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 232,
+      "_byte_offset": 3964,
+      "MonsterLibraryID": 20001,
+      "RefreshNum": 1,
+      "MonsterID": 920006,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 233,
+      "_byte_offset": 3981,
+      "MonsterLibraryID": 20001,
+      "RefreshNum": 1,
+      "MonsterID": 920006,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 234,
+      "_byte_offset": 3998,
+      "MonsterLibraryID": 20001,
+      "RefreshNum": 1,
+      "MonsterID": 920006,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 235,
+      "_byte_offset": 4015,
+      "MonsterLibraryID": 20001,
+      "RefreshNum": 1,
+      "MonsterID": 920017,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 236,
+      "_byte_offset": 4032,
+      "MonsterLibraryID": 20001,
+      "RefreshNum": 1,
+      "MonsterID": 920017,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 237,
+      "_byte_offset": 4049,
+      "MonsterLibraryID": 20001,
+      "RefreshNum": 1,
+      "MonsterID": 920017,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 238,
+      "_byte_offset": 4066,
+      "MonsterLibraryID": 20001,
+      "RefreshNum": 1,
+      "MonsterID": 920024,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 239,
+      "_byte_offset": 4083,
+      "MonsterLibraryID": 20001,
+      "RefreshNum": 1,
+      "MonsterID": 920024,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 240,
+      "_byte_offset": 4100,
+      "MonsterLibraryID": 20001,
+      "RefreshNum": 1,
+      "MonsterID": 920024,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 241,
+      "_byte_offset": 4117,
+      "MonsterLibraryID": 20001,
+      "RefreshNum": 1,
+      "MonsterID": 920024,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 242,
+      "_byte_offset": 4134,
+      "MonsterLibraryID": 20001,
+      "RefreshNum": 1,
+      "MonsterID": 920025,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 243,
+      "_byte_offset": 4151,
+      "MonsterLibraryID": 20001,
+      "RefreshNum": 1,
+      "MonsterID": 920025,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 244,
+      "_byte_offset": 4168,
+      "MonsterLibraryID": 20001,
+      "RefreshNum": 1,
+      "MonsterID": 920025,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 245,
+      "_byte_offset": 4185,
+      "MonsterLibraryID": 20001,
+      "RefreshNum": 1,
+      "MonsterID": 920025,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 246,
+      "_byte_offset": 4202,
+      "MonsterLibraryID": 11012,
+      "RefreshNum": 14,
+      "MonsterID": 900101,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 247,
+      "_byte_offset": 4219,
+      "MonsterLibraryID": 11014,
+      "RefreshNum": 10,
+      "MonsterID": 900101,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 248,
+      "_byte_offset": 4236,
+      "MonsterLibraryID": 11017,
+      "RefreshNum": 12,
+      "MonsterID": 900101,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 249,
+      "_byte_offset": 4253,
+      "MonsterLibraryID": 11019,
+      "RefreshNum": 6,
+      "MonsterID": 900101,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 250,
+      "_byte_offset": 4270,
+      "MonsterLibraryID": 11032,
+      "RefreshNum": 20,
+      "MonsterID": 900101,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 251,
+      "_byte_offset": 4287,
+      "MonsterLibraryID": 11034,
+      "RefreshNum": 14,
+      "MonsterID": 900101,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 252,
+      "_byte_offset": 4304,
+      "MonsterLibraryID": 11037,
+      "RefreshNum": 14,
+      "MonsterID": 900101,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 253,
+      "_byte_offset": 4321,
+      "MonsterLibraryID": 11039,
+      "RefreshNum": 6,
+      "MonsterID": 900101,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 254,
+      "_byte_offset": 4338,
+      "MonsterLibraryID": 11052,
+      "RefreshNum": 20,
+      "MonsterID": 900101,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 255,
+      "_byte_offset": 4355,
+      "MonsterLibraryID": 11054,
+      "RefreshNum": 14,
+      "MonsterID": 900101,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 256,
+      "_byte_offset": 4372,
+      "MonsterLibraryID": 11057,
+      "RefreshNum": 14,
+      "MonsterID": 900101,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 257,
+      "_byte_offset": 4389,
+      "MonsterLibraryID": 11059,
+      "RefreshNum": 6,
+      "MonsterID": 900101,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 258,
+      "_byte_offset": 4406,
+      "MonsterLibraryID": 11072,
+      "RefreshNum": 20,
+      "MonsterID": 900101,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 259,
+      "_byte_offset": 4423,
+      "MonsterLibraryID": 11074,
+      "RefreshNum": 14,
+      "MonsterID": 900101,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 260,
+      "_byte_offset": 4440,
+      "MonsterLibraryID": 11077,
+      "RefreshNum": 14,
+      "MonsterID": 900101,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 261,
+      "_byte_offset": 4457,
+      "MonsterLibraryID": 11079,
+      "RefreshNum": 6,
+      "MonsterID": 900101,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 262,
+      "_byte_offset": 4474,
+      "MonsterLibraryID": 11092,
+      "RefreshNum": 20,
+      "MonsterID": 900101,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 263,
+      "_byte_offset": 4491,
+      "MonsterLibraryID": 11094,
+      "RefreshNum": 14,
+      "MonsterID": 900101,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 264,
+      "_byte_offset": 4508,
+      "MonsterLibraryID": 11097,
+      "RefreshNum": 14,
+      "MonsterID": 900101,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 265,
+      "_byte_offset": 4525,
+      "MonsterLibraryID": 11099,
+      "RefreshNum": 6,
+      "MonsterID": 900101,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 266,
+      "_byte_offset": 4542,
+      "MonsterLibraryID": 11112,
+      "RefreshNum": 20,
+      "MonsterID": 900101,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 267,
+      "_byte_offset": 4559,
+      "MonsterLibraryID": 11114,
+      "RefreshNum": 14,
+      "MonsterID": 900101,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 268,
+      "_byte_offset": 4576,
+      "MonsterLibraryID": 11117,
+      "RefreshNum": 14,
+      "MonsterID": 900101,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 269,
+      "_byte_offset": 4593,
+      "MonsterLibraryID": 11119,
+      "RefreshNum": 6,
+      "MonsterID": 900101,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 270,
+      "_byte_offset": 4610,
+      "MonsterLibraryID": 11019,
+      "RefreshNum": 6,
+      "MonsterID": 900102,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 271,
+      "_byte_offset": 4627,
+      "MonsterLibraryID": 11025,
+      "RefreshNum": 14,
+      "MonsterID": 900102,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 272,
+      "_byte_offset": 4644,
+      "MonsterLibraryID": 11039,
+      "RefreshNum": 6,
+      "MonsterID": 900102,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 273,
+      "_byte_offset": 4661,
+      "MonsterLibraryID": 11045,
+      "RefreshNum": 14,
+      "MonsterID": 900102,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 274,
+      "_byte_offset": 4678,
+      "MonsterLibraryID": 11059,
+      "RefreshNum": 6,
+      "MonsterID": 900102,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 275,
+      "_byte_offset": 4695,
+      "MonsterLibraryID": 11065,
+      "RefreshNum": 14,
+      "MonsterID": 900102,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 276,
+      "_byte_offset": 4712,
+      "MonsterLibraryID": 11079,
+      "RefreshNum": 6,
+      "MonsterID": 900102,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 277,
+      "_byte_offset": 4729,
+      "MonsterLibraryID": 11085,
+      "RefreshNum": 14,
+      "MonsterID": 900102,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 278,
+      "_byte_offset": 4746,
+      "MonsterLibraryID": 11099,
+      "RefreshNum": 6,
+      "MonsterID": 900102,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 279,
+      "_byte_offset": 4763,
+      "MonsterLibraryID": 11105,
+      "RefreshNum": 14,
+      "MonsterID": 900102,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 280,
+      "_byte_offset": 4780,
+      "MonsterLibraryID": 11119,
+      "RefreshNum": 6,
+      "MonsterID": 900102,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 281,
+      "_byte_offset": 4797,
+      "MonsterLibraryID": 11125,
+      "RefreshNum": 14,
+      "MonsterID": 900102,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 282,
+      "_byte_offset": 4814,
+      "MonsterLibraryID": 11001,
+      "RefreshNum": 10,
+      "MonsterID": 900103,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 283,
+      "_byte_offset": 4831,
+      "MonsterLibraryID": 11003,
+      "RefreshNum": 8,
+      "MonsterID": 900103,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 284,
+      "_byte_offset": 4848,
+      "MonsterLibraryID": 11006,
+      "RefreshNum": 8,
+      "MonsterID": 900103,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 285,
+      "_byte_offset": 4865,
+      "MonsterLibraryID": 11008,
+      "RefreshNum": 6,
+      "MonsterID": 900103,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 286,
+      "_byte_offset": 4882,
+      "MonsterLibraryID": 11021,
+      "RefreshNum": 18,
+      "MonsterID": 900103,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 287,
+      "_byte_offset": 4899,
+      "MonsterLibraryID": 11023,
+      "RefreshNum": 14,
+      "MonsterID": 900103,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 288,
+      "_byte_offset": 4916,
+      "MonsterLibraryID": 11026,
+      "RefreshNum": 14,
+      "MonsterID": 900103,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 289,
+      "_byte_offset": 4933,
+      "MonsterLibraryID": 11028,
+      "RefreshNum": 14,
+      "MonsterID": 900103,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 290,
+      "_byte_offset": 4950,
+      "MonsterLibraryID": 11041,
+      "RefreshNum": 20,
+      "MonsterID": 900103,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 291,
+      "_byte_offset": 4967,
+      "MonsterLibraryID": 11043,
+      "RefreshNum": 14,
+      "MonsterID": 900103,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 292,
+      "_byte_offset": 4984,
+      "MonsterLibraryID": 11046,
+      "RefreshNum": 14,
+      "MonsterID": 900103,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 293,
+      "_byte_offset": 5001,
+      "MonsterLibraryID": 11048,
+      "RefreshNum": 14,
+      "MonsterID": 900103,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 294,
+      "_byte_offset": 5018,
+      "MonsterLibraryID": 11061,
+      "RefreshNum": 20,
+      "MonsterID": 900103,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 295,
+      "_byte_offset": 5035,
+      "MonsterLibraryID": 11063,
+      "RefreshNum": 14,
+      "MonsterID": 900103,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 296,
+      "_byte_offset": 5052,
+      "MonsterLibraryID": 11066,
+      "RefreshNum": 14,
+      "MonsterID": 900103,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 297,
+      "_byte_offset": 5069,
+      "MonsterLibraryID": 11068,
+      "RefreshNum": 14,
+      "MonsterID": 900103,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 298,
+      "_byte_offset": 5086,
+      "MonsterLibraryID": 11081,
+      "RefreshNum": 20,
+      "MonsterID": 900103,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 299,
+      "_byte_offset": 5103,
+      "MonsterLibraryID": 11083,
+      "RefreshNum": 14,
+      "MonsterID": 900103,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 300,
+      "_byte_offset": 5120,
+      "MonsterLibraryID": 11086,
+      "RefreshNum": 14,
+      "MonsterID": 900103,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 301,
+      "_byte_offset": 5137,
+      "MonsterLibraryID": 11088,
+      "RefreshNum": 14,
+      "MonsterID": 900103,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 302,
+      "_byte_offset": 5154,
+      "MonsterLibraryID": 11101,
+      "RefreshNum": 20,
+      "MonsterID": 900103,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 303,
+      "_byte_offset": 5171,
+      "MonsterLibraryID": 11103,
+      "RefreshNum": 14,
+      "MonsterID": 900103,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 304,
+      "_byte_offset": 5188,
+      "MonsterLibraryID": 11106,
+      "RefreshNum": 14,
+      "MonsterID": 900103,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 305,
+      "_byte_offset": 5205,
+      "MonsterLibraryID": 11108,
+      "RefreshNum": 14,
+      "MonsterID": 900103,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 306,
+      "_byte_offset": 5222,
+      "MonsterLibraryID": 11121,
+      "RefreshNum": 20,
+      "MonsterID": 900103,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 307,
+      "_byte_offset": 5239,
+      "MonsterLibraryID": 11123,
+      "RefreshNum": 14,
+      "MonsterID": 900103,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 308,
+      "_byte_offset": 5256,
+      "MonsterLibraryID": 11126,
+      "RefreshNum": 14,
+      "MonsterID": 900103,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 309,
+      "_byte_offset": 5273,
+      "MonsterLibraryID": 11128,
+      "RefreshNum": 14,
+      "MonsterID": 900103,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 310,
+      "_byte_offset": 5290,
+      "MonsterLibraryID": 11006,
+      "RefreshNum": 4,
+      "MonsterID": 900104,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 311,
+      "_byte_offset": 5307,
+      "MonsterLibraryID": 11026,
+      "RefreshNum": 6,
+      "MonsterID": 900104,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 312,
+      "_byte_offset": 5324,
+      "MonsterLibraryID": 11046,
+      "RefreshNum": 6,
+      "MonsterID": 900104,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 313,
+      "_byte_offset": 5341,
+      "MonsterLibraryID": 11066,
+      "RefreshNum": 6,
+      "MonsterID": 900104,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 314,
+      "_byte_offset": 5358,
+      "MonsterLibraryID": 11086,
+      "RefreshNum": 6,
+      "MonsterID": 900104,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 315,
+      "_byte_offset": 5375,
+      "MonsterLibraryID": 11106,
+      "RefreshNum": 6,
+      "MonsterID": 900104,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 316,
+      "_byte_offset": 5392,
+      "MonsterLibraryID": 11126,
+      "RefreshNum": 6,
+      "MonsterID": 900104,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 317,
+      "_byte_offset": 5409,
+      "MonsterLibraryID": 11005,
+      "RefreshNum": 8,
+      "MonsterID": 900104,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 318,
+      "_byte_offset": 5426,
+      "MonsterLibraryID": 11011,
+      "RefreshNum": 14,
+      "MonsterID": 900104,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 319,
+      "_byte_offset": 5443,
+      "MonsterLibraryID": 11013,
+      "RefreshNum": 10,
+      "MonsterID": 900104,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 320,
+      "_byte_offset": 5460,
+      "MonsterLibraryID": 11016,
+      "RefreshNum": 12,
+      "MonsterID": 900104,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 321,
+      "_byte_offset": 5477,
+      "MonsterLibraryID": 11018,
+      "RefreshNum": 10,
+      "MonsterID": 900104,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 322,
+      "_byte_offset": 5494,
+      "MonsterLibraryID": 11031,
+      "RefreshNum": 20,
+      "MonsterID": 900104,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 323,
+      "_byte_offset": 5511,
+      "MonsterLibraryID": 11033,
+      "RefreshNum": 14,
+      "MonsterID": 900104,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 324,
+      "_byte_offset": 5528,
+      "MonsterLibraryID": 11036,
+      "RefreshNum": 14,
+      "MonsterID": 900104,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 325,
+      "_byte_offset": 5545,
+      "MonsterLibraryID": 11038,
+      "RefreshNum": 14,
+      "MonsterID": 900104,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 326,
+      "_byte_offset": 5562,
+      "MonsterLibraryID": 11051,
+      "RefreshNum": 20,
+      "MonsterID": 900104,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 327,
+      "_byte_offset": 5579,
+      "MonsterLibraryID": 11053,
+      "RefreshNum": 14,
+      "MonsterID": 900104,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 328,
+      "_byte_offset": 5596,
+      "MonsterLibraryID": 11056,
+      "RefreshNum": 14,
+      "MonsterID": 900104,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 329,
+      "_byte_offset": 5613,
+      "MonsterLibraryID": 11058,
+      "RefreshNum": 14,
+      "MonsterID": 900104,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 330,
+      "_byte_offset": 5630,
+      "MonsterLibraryID": 11071,
+      "RefreshNum": 20,
+      "MonsterID": 900104,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 331,
+      "_byte_offset": 5647,
+      "MonsterLibraryID": 11073,
+      "RefreshNum": 14,
+      "MonsterID": 900104,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 332,
+      "_byte_offset": 5664,
+      "MonsterLibraryID": 11076,
+      "RefreshNum": 14,
+      "MonsterID": 900104,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 333,
+      "_byte_offset": 5681,
+      "MonsterLibraryID": 11078,
+      "RefreshNum": 14,
+      "MonsterID": 900104,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 334,
+      "_byte_offset": 5698,
+      "MonsterLibraryID": 11091,
+      "RefreshNum": 20,
+      "MonsterID": 900104,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 335,
+      "_byte_offset": 5715,
+      "MonsterLibraryID": 11093,
+      "RefreshNum": 14,
+      "MonsterID": 900104,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 336,
+      "_byte_offset": 5732,
+      "MonsterLibraryID": 11096,
+      "RefreshNum": 14,
+      "MonsterID": 900104,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 337,
+      "_byte_offset": 5749,
+      "MonsterLibraryID": 11098,
+      "RefreshNum": 14,
+      "MonsterID": 900104,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 338,
+      "_byte_offset": 5766,
+      "MonsterLibraryID": 11111,
+      "RefreshNum": 20,
+      "MonsterID": 900104,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 339,
+      "_byte_offset": 5783,
+      "MonsterLibraryID": 11113,
+      "RefreshNum": 14,
+      "MonsterID": 900104,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 340,
+      "_byte_offset": 5800,
+      "MonsterLibraryID": 11116,
+      "RefreshNum": 14,
+      "MonsterID": 900104,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 341,
+      "_byte_offset": 5817,
+      "MonsterLibraryID": 11118,
+      "RefreshNum": 14,
+      "MonsterID": 900104,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 342,
+      "_byte_offset": 5834,
+      "MonsterLibraryID": 11004,
+      "RefreshNum": 8,
+      "MonsterID": 900107,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 343,
+      "_byte_offset": 5851,
+      "MonsterLibraryID": 11007,
+      "RefreshNum": 6,
+      "MonsterID": 900107,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 344,
+      "_byte_offset": 5868,
+      "MonsterLibraryID": 11009,
+      "RefreshNum": 4,
+      "MonsterID": 900107,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 345,
+      "_byte_offset": 5885,
+      "MonsterLibraryID": 11022,
+      "RefreshNum": 18,
+      "MonsterID": 900107,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 346,
+      "_byte_offset": 5902,
+      "MonsterLibraryID": 11024,
+      "RefreshNum": 14,
+      "MonsterID": 900107,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 347,
+      "_byte_offset": 5919,
+      "MonsterLibraryID": 11027,
+      "RefreshNum": 14,
+      "MonsterID": 900107,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 348,
+      "_byte_offset": 5936,
+      "MonsterLibraryID": 11029,
+      "RefreshNum": 6,
+      "MonsterID": 900107,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 349,
+      "_byte_offset": 5953,
+      "MonsterLibraryID": 11042,
+      "RefreshNum": 20,
+      "MonsterID": 900107,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 350,
+      "_byte_offset": 5970,
+      "MonsterLibraryID": 11044,
+      "RefreshNum": 14,
+      "MonsterID": 900107,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 351,
+      "_byte_offset": 5987,
+      "MonsterLibraryID": 11047,
+      "RefreshNum": 14,
+      "MonsterID": 900107,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 352,
+      "_byte_offset": 6004,
+      "MonsterLibraryID": 11049,
+      "RefreshNum": 6,
+      "MonsterID": 900107,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 353,
+      "_byte_offset": 6021,
+      "MonsterLibraryID": 11062,
+      "RefreshNum": 20,
+      "MonsterID": 900107,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 354,
+      "_byte_offset": 6038,
+      "MonsterLibraryID": 11064,
+      "RefreshNum": 14,
+      "MonsterID": 900107,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 355,
+      "_byte_offset": 6055,
+      "MonsterLibraryID": 11067,
+      "RefreshNum": 14,
+      "MonsterID": 900107,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 356,
+      "_byte_offset": 6072,
+      "MonsterLibraryID": 11069,
+      "RefreshNum": 6,
+      "MonsterID": 900107,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 357,
+      "_byte_offset": 6089,
+      "MonsterLibraryID": 11082,
+      "RefreshNum": 20,
+      "MonsterID": 900107,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 358,
+      "_byte_offset": 6106,
+      "MonsterLibraryID": 11084,
+      "RefreshNum": 14,
+      "MonsterID": 900107,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 359,
+      "_byte_offset": 6123,
+      "MonsterLibraryID": 11087,
+      "RefreshNum": 14,
+      "MonsterID": 900107,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 360,
+      "_byte_offset": 6140,
+      "MonsterLibraryID": 11089,
+      "RefreshNum": 6,
+      "MonsterID": 900107,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 361,
+      "_byte_offset": 6157,
+      "MonsterLibraryID": 11102,
+      "RefreshNum": 20,
+      "MonsterID": 900107,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 362,
+      "_byte_offset": 6174,
+      "MonsterLibraryID": 11104,
+      "RefreshNum": 14,
+      "MonsterID": 900107,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 363,
+      "_byte_offset": 6191,
+      "MonsterLibraryID": 11107,
+      "RefreshNum": 14,
+      "MonsterID": 900107,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 364,
+      "_byte_offset": 6208,
+      "MonsterLibraryID": 11109,
+      "RefreshNum": 6,
+      "MonsterID": 900107,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 365,
+      "_byte_offset": 6225,
+      "MonsterLibraryID": 11122,
+      "RefreshNum": 20,
+      "MonsterID": 900107,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 366,
+      "_byte_offset": 6242,
+      "MonsterLibraryID": 11124,
+      "RefreshNum": 14,
+      "MonsterID": 900107,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 367,
+      "_byte_offset": 6259,
+      "MonsterLibraryID": 11127,
+      "RefreshNum": 14,
+      "MonsterID": 900107,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 368,
+      "_byte_offset": 6276,
+      "MonsterLibraryID": 11129,
+      "RefreshNum": 6,
+      "MonsterID": 900107,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 369,
+      "_byte_offset": 6293,
+      "MonsterLibraryID": 11002,
+      "RefreshNum": 10,
+      "MonsterID": 900108,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 370,
+      "_byte_offset": 6310,
+      "MonsterLibraryID": 11009,
+      "RefreshNum": 4,
+      "MonsterID": 900108,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 371,
+      "_byte_offset": 6327,
+      "MonsterLibraryID": 11016,
+      "RefreshNum": 4,
+      "MonsterID": 900108,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 372,
+      "_byte_offset": 6344,
+      "MonsterLibraryID": 11029,
+      "RefreshNum": 6,
+      "MonsterID": 900108,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 373,
+      "_byte_offset": 6361,
+      "MonsterLibraryID": 11036,
+      "RefreshNum": 6,
+      "MonsterID": 900108,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 374,
+      "_byte_offset": 6378,
+      "MonsterLibraryID": 11049,
+      "RefreshNum": 6,
+      "MonsterID": 900108,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 375,
+      "_byte_offset": 6395,
+      "MonsterLibraryID": 11056,
+      "RefreshNum": 6,
+      "MonsterID": 900108,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 376,
+      "_byte_offset": 6412,
+      "MonsterLibraryID": 11069,
+      "RefreshNum": 6,
+      "MonsterID": 900108,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 377,
+      "_byte_offset": 6429,
+      "MonsterLibraryID": 11076,
+      "RefreshNum": 6,
+      "MonsterID": 900108,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 378,
+      "_byte_offset": 6446,
+      "MonsterLibraryID": 11089,
+      "RefreshNum": 6,
+      "MonsterID": 900108,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 379,
+      "_byte_offset": 6463,
+      "MonsterLibraryID": 11096,
+      "RefreshNum": 6,
+      "MonsterID": 900108,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 380,
+      "_byte_offset": 6480,
+      "MonsterLibraryID": 11109,
+      "RefreshNum": 6,
+      "MonsterID": 900108,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 381,
+      "_byte_offset": 6497,
+      "MonsterLibraryID": 11116,
+      "RefreshNum": 6,
+      "MonsterID": 900108,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 382,
+      "_byte_offset": 6514,
+      "MonsterLibraryID": 11129,
+      "RefreshNum": 6,
+      "MonsterID": 900108,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 383,
+      "_byte_offset": 6531,
+      "MonsterLibraryID": 11004,
+      "RefreshNum": 2,
+      "MonsterID": 900110,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 384,
+      "_byte_offset": 6548,
+      "MonsterLibraryID": 11008,
+      "RefreshNum": 6,
+      "MonsterID": 900110,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 385,
+      "_byte_offset": 6565,
+      "MonsterLibraryID": 11024,
+      "RefreshNum": 4,
+      "MonsterID": 900110,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 386,
+      "_byte_offset": 6582,
+      "MonsterLibraryID": 11028,
+      "RefreshNum": 6,
+      "MonsterID": 900110,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 387,
+      "_byte_offset": 6599,
+      "MonsterLibraryID": 11044,
+      "RefreshNum": 6,
+      "MonsterID": 900110,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 388,
+      "_byte_offset": 6616,
+      "MonsterLibraryID": 11048,
+      "RefreshNum": 6,
+      "MonsterID": 900110,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 389,
+      "_byte_offset": 6633,
+      "MonsterLibraryID": 11064,
+      "RefreshNum": 6,
+      "MonsterID": 900110,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 390,
+      "_byte_offset": 6650,
+      "MonsterLibraryID": 11068,
+      "RefreshNum": 6,
+      "MonsterID": 900110,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 391,
+      "_byte_offset": 6667,
+      "MonsterLibraryID": 11084,
+      "RefreshNum": 6,
+      "MonsterID": 900110,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 392,
+      "_byte_offset": 6684,
+      "MonsterLibraryID": 11088,
+      "RefreshNum": 6,
+      "MonsterID": 900110,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 393,
+      "_byte_offset": 6701,
+      "MonsterLibraryID": 11104,
+      "RefreshNum": 6,
+      "MonsterID": 900110,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 394,
+      "_byte_offset": 6718,
+      "MonsterLibraryID": 11108,
+      "RefreshNum": 6,
+      "MonsterID": 900110,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 395,
+      "_byte_offset": 6735,
+      "MonsterLibraryID": 11124,
+      "RefreshNum": 6,
+      "MonsterID": 900110,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 396,
+      "_byte_offset": 6752,
+      "MonsterLibraryID": 11128,
+      "RefreshNum": 6,
+      "MonsterID": 900110,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 397,
+      "_byte_offset": 6769,
+      "MonsterLibraryID": 11014,
+      "RefreshNum": 4,
+      "MonsterID": 900110,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 398,
+      "_byte_offset": 6786,
+      "MonsterLibraryID": 11018,
+      "RefreshNum": 6,
+      "MonsterID": 900110,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 399,
+      "_byte_offset": 6803,
+      "MonsterLibraryID": 11034,
+      "RefreshNum": 6,
+      "MonsterID": 900110,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 400,
+      "_byte_offset": 6820,
+      "MonsterLibraryID": 11038,
+      "RefreshNum": 6,
+      "MonsterID": 900110,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 401,
+      "_byte_offset": 6837,
+      "MonsterLibraryID": 11054,
+      "RefreshNum": 6,
+      "MonsterID": 900110,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 402,
+      "_byte_offset": 6854,
+      "MonsterLibraryID": 11058,
+      "RefreshNum": 6,
+      "MonsterID": 900110,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 403,
+      "_byte_offset": 6871,
+      "MonsterLibraryID": 11074,
+      "RefreshNum": 6,
+      "MonsterID": 900110,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 404,
+      "_byte_offset": 6888,
+      "MonsterLibraryID": 11078,
+      "RefreshNum": 6,
+      "MonsterID": 900110,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 405,
+      "_byte_offset": 6905,
+      "MonsterLibraryID": 11094,
+      "RefreshNum": 6,
+      "MonsterID": 900110,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 406,
+      "_byte_offset": 6922,
+      "MonsterLibraryID": 11098,
+      "RefreshNum": 6,
+      "MonsterID": 900110,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 407,
+      "_byte_offset": 6939,
+      "MonsterLibraryID": 11114,
+      "RefreshNum": 6,
+      "MonsterID": 900110,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 408,
+      "_byte_offset": 6956,
+      "MonsterLibraryID": 11118,
+      "RefreshNum": 6,
+      "MonsterID": 900110,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 409,
+      "_byte_offset": 6973,
+      "MonsterLibraryID": 11005,
+      "RefreshNum": 2,
+      "MonsterID": 900112,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 410,
+      "_byte_offset": 6990,
+      "MonsterLibraryID": 11013,
+      "RefreshNum": 4,
+      "MonsterID": 900112,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 411,
+      "_byte_offset": 7007,
+      "MonsterLibraryID": 11015,
+      "RefreshNum": 10,
+      "MonsterID": 900112,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 412,
+      "_byte_offset": 7024,
+      "MonsterLibraryID": 11017,
+      "RefreshNum": 4,
+      "MonsterID": 900112,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 413,
+      "_byte_offset": 7041,
+      "MonsterLibraryID": 11033,
+      "RefreshNum": 6,
+      "MonsterID": 900112,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 414,
+      "_byte_offset": 7058,
+      "MonsterLibraryID": 11035,
+      "RefreshNum": 14,
+      "MonsterID": 900112,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 415,
+      "_byte_offset": 7075,
+      "MonsterLibraryID": 11037,
+      "RefreshNum": 6,
+      "MonsterID": 900112,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 416,
+      "_byte_offset": 7092,
+      "MonsterLibraryID": 11053,
+      "RefreshNum": 6,
+      "MonsterID": 900112,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 417,
+      "_byte_offset": 7109,
+      "MonsterLibraryID": 11055,
+      "RefreshNum": 14,
+      "MonsterID": 900112,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 418,
+      "_byte_offset": 7126,
+      "MonsterLibraryID": 11057,
+      "RefreshNum": 6,
+      "MonsterID": 900112,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 419,
+      "_byte_offset": 7143,
+      "MonsterLibraryID": 11073,
+      "RefreshNum": 6,
+      "MonsterID": 900112,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 420,
+      "_byte_offset": 7160,
+      "MonsterLibraryID": 11075,
+      "RefreshNum": 14,
+      "MonsterID": 900112,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 421,
+      "_byte_offset": 7177,
+      "MonsterLibraryID": 11077,
+      "RefreshNum": 6,
+      "MonsterID": 900112,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 422,
+      "_byte_offset": 7194,
+      "MonsterLibraryID": 11093,
+      "RefreshNum": 6,
+      "MonsterID": 900112,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 423,
+      "_byte_offset": 7211,
+      "MonsterLibraryID": 11095,
+      "RefreshNum": 14,
+      "MonsterID": 900112,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 424,
+      "_byte_offset": 7228,
+      "MonsterLibraryID": 11097,
+      "RefreshNum": 6,
+      "MonsterID": 900112,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 425,
+      "_byte_offset": 7245,
+      "MonsterLibraryID": 11113,
+      "RefreshNum": 6,
+      "MonsterID": 900112,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 426,
+      "_byte_offset": 7262,
+      "MonsterLibraryID": 11115,
+      "RefreshNum": 14,
+      "MonsterID": 900112,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 427,
+      "_byte_offset": 7279,
+      "MonsterLibraryID": 11117,
+      "RefreshNum": 6,
+      "MonsterID": 900112,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 428,
+      "_byte_offset": 7296,
+      "MonsterLibraryID": 11009,
+      "RefreshNum": 4,
+      "MonsterID": 900112,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 429,
+      "_byte_offset": 7313,
+      "MonsterLibraryID": 11019,
+      "RefreshNum": 4,
+      "MonsterID": 900112,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 430,
+      "_byte_offset": 7330,
+      "MonsterLibraryID": 11029,
+      "RefreshNum": 8,
+      "MonsterID": 900112,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 431,
+      "_byte_offset": 7347,
+      "MonsterLibraryID": 11039,
+      "RefreshNum": 8,
+      "MonsterID": 900112,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 432,
+      "_byte_offset": 7364,
+      "MonsterLibraryID": 11049,
+      "RefreshNum": 8,
+      "MonsterID": 900112,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 433,
+      "_byte_offset": 7381,
+      "MonsterLibraryID": 11059,
+      "RefreshNum": 8,
+      "MonsterID": 900112,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 434,
+      "_byte_offset": 7398,
+      "MonsterLibraryID": 11069,
+      "RefreshNum": 8,
+      "MonsterID": 900112,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 435,
+      "_byte_offset": 7415,
+      "MonsterLibraryID": 11079,
+      "RefreshNum": 8,
+      "MonsterID": 900112,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 436,
+      "_byte_offset": 7432,
+      "MonsterLibraryID": 11089,
+      "RefreshNum": 8,
+      "MonsterID": 900112,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 437,
+      "_byte_offset": 7449,
+      "MonsterLibraryID": 11099,
+      "RefreshNum": 8,
+      "MonsterID": 900112,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 438,
+      "_byte_offset": 7466,
+      "MonsterLibraryID": 11109,
+      "RefreshNum": 8,
+      "MonsterID": 900112,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 439,
+      "_byte_offset": 7483,
+      "MonsterLibraryID": 11119,
+      "RefreshNum": 8,
+      "MonsterID": 900112,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 440,
+      "_byte_offset": 7500,
+      "MonsterLibraryID": 11129,
+      "RefreshNum": 8,
+      "MonsterID": 900112,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 441,
+      "_byte_offset": 7517,
+      "MonsterLibraryID": 11003,
+      "RefreshNum": 2,
+      "MonsterID": 910102,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 442,
+      "_byte_offset": 7534,
+      "MonsterLibraryID": 11007,
+      "RefreshNum": 6,
+      "MonsterID": 910102,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 443,
+      "_byte_offset": 7551,
+      "MonsterLibraryID": 11023,
+      "RefreshNum": 4,
+      "MonsterID": 910102,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 444,
+      "_byte_offset": 7568,
+      "MonsterLibraryID": 11027,
+      "RefreshNum": 6,
+      "MonsterID": 910102,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 445,
+      "_byte_offset": 7585,
+      "MonsterLibraryID": 11043,
+      "RefreshNum": 6,
+      "MonsterID": 910102,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 446,
+      "_byte_offset": 7602,
+      "MonsterLibraryID": 11047,
+      "RefreshNum": 6,
+      "MonsterID": 910102,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 447,
+      "_byte_offset": 7619,
+      "MonsterLibraryID": 11063,
+      "RefreshNum": 6,
+      "MonsterID": 910102,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 448,
+      "_byte_offset": 7636,
+      "MonsterLibraryID": 11067,
+      "RefreshNum": 6,
+      "MonsterID": 910102,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 449,
+      "_byte_offset": 7653,
+      "MonsterLibraryID": 11083,
+      "RefreshNum": 6,
+      "MonsterID": 910102,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 450,
+      "_byte_offset": 7670,
+      "MonsterLibraryID": 11087,
+      "RefreshNum": 6,
+      "MonsterID": 910102,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 451,
+      "_byte_offset": 7687,
+      "MonsterLibraryID": 11103,
+      "RefreshNum": 6,
+      "MonsterID": 910102,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 452,
+      "_byte_offset": 7704,
+      "MonsterLibraryID": 11107,
+      "RefreshNum": 6,
+      "MonsterID": 910102,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 453,
+      "_byte_offset": 7721,
+      "MonsterLibraryID": 11123,
+      "RefreshNum": 6,
+      "MonsterID": 910102,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 454,
+      "_byte_offset": 7738,
+      "MonsterLibraryID": 11127,
+      "RefreshNum": 6,
+      "MonsterID": 910102,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 455,
+      "_byte_offset": 7755,
+      "MonsterLibraryID": 11015,
+      "RefreshNum": 4,
+      "MonsterID": 910101,
+      "MonsterType": 2,
+      "KillScore": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 456,
+      "_byte_offset": 7772,
+      "MonsterLibraryID": 11025,
+      "RefreshNum": 4,
+      "MonsterID": 910101,
+      "MonsterType": 2,
+      "KillScore": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 457,
+      "_byte_offset": 7789,
+      "MonsterLibraryID": 11035,
+      "RefreshNum": 6,
+      "MonsterID": 910101,
+      "MonsterType": 2,
+      "KillScore": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 458,
+      "_byte_offset": 7806,
+      "MonsterLibraryID": 11045,
+      "RefreshNum": 6,
+      "MonsterID": 910101,
+      "MonsterType": 2,
+      "KillScore": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 459,
+      "_byte_offset": 7823,
+      "MonsterLibraryID": 11055,
+      "RefreshNum": 6,
+      "MonsterID": 910101,
+      "MonsterType": 2,
+      "KillScore": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 460,
+      "_byte_offset": 7840,
+      "MonsterLibraryID": 11065,
+      "RefreshNum": 6,
+      "MonsterID": 910101,
+      "MonsterType": 2,
+      "KillScore": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 461,
+      "_byte_offset": 7857,
+      "MonsterLibraryID": 11075,
+      "RefreshNum": 6,
+      "MonsterID": 910101,
+      "MonsterType": 2,
+      "KillScore": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 462,
+      "_byte_offset": 7874,
+      "MonsterLibraryID": 11085,
+      "RefreshNum": 6,
+      "MonsterID": 910101,
+      "MonsterType": 2,
+      "KillScore": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 463,
+      "_byte_offset": 7891,
+      "MonsterLibraryID": 11095,
+      "RefreshNum": 6,
+      "MonsterID": 910101,
+      "MonsterType": 2,
+      "KillScore": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 464,
+      "_byte_offset": 7908,
+      "MonsterLibraryID": 11105,
+      "RefreshNum": 6,
+      "MonsterID": 910101,
+      "MonsterType": 2,
+      "KillScore": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 465,
+      "_byte_offset": 7925,
+      "MonsterLibraryID": 11115,
+      "RefreshNum": 6,
+      "MonsterID": 910101,
+      "MonsterType": 2,
+      "KillScore": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 466,
+      "_byte_offset": 7942,
+      "MonsterLibraryID": 11125,
+      "RefreshNum": 6,
+      "MonsterID": 910101,
+      "MonsterType": 2,
+      "KillScore": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 467,
+      "_byte_offset": 7959,
+      "MonsterLibraryID": 21001,
+      "RefreshNum": 1,
+      "MonsterID": 920103,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 468,
+      "_byte_offset": 7976,
+      "MonsterLibraryID": 21001,
+      "RefreshNum": 1,
+      "MonsterID": 920103,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 469,
+      "_byte_offset": 7993,
+      "MonsterLibraryID": 21001,
+      "RefreshNum": 1,
+      "MonsterID": 920103,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 470,
+      "_byte_offset": 8010,
+      "MonsterLibraryID": 21001,
+      "RefreshNum": 1,
+      "MonsterID": 920103,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 471,
+      "_byte_offset": 8027,
+      "MonsterLibraryID": 21001,
+      "RefreshNum": 1,
+      "MonsterID": 920104,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 472,
+      "_byte_offset": 8044,
+      "MonsterLibraryID": 21001,
+      "RefreshNum": 1,
+      "MonsterID": 920104,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 473,
+      "_byte_offset": 8061,
+      "MonsterLibraryID": 21001,
+      "RefreshNum": 1,
+      "MonsterID": 920104,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 474,
+      "_byte_offset": 8078,
+      "MonsterLibraryID": 21001,
+      "RefreshNum": 1,
+      "MonsterID": 920105,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 475,
+      "_byte_offset": 8095,
+      "MonsterLibraryID": 21001,
+      "RefreshNum": 1,
+      "MonsterID": 920105,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 476,
+      "_byte_offset": 8112,
+      "MonsterLibraryID": 21001,
+      "RefreshNum": 1,
+      "MonsterID": 920105,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 477,
+      "_byte_offset": 8129,
+      "MonsterLibraryID": 21001,
+      "RefreshNum": 1,
+      "MonsterID": 920106,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 478,
+      "_byte_offset": 8146,
+      "MonsterLibraryID": 21001,
+      "RefreshNum": 1,
+      "MonsterID": 920106,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 479,
+      "_byte_offset": 8163,
+      "MonsterLibraryID": 21001,
+      "RefreshNum": 1,
+      "MonsterID": 920106,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 480,
+      "_byte_offset": 8180,
+      "MonsterLibraryID": 21001,
+      "RefreshNum": 1,
+      "MonsterID": 920106,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 481,
+      "_byte_offset": 8197,
+      "MonsterLibraryID": 21001,
+      "RefreshNum": 1,
+      "MonsterID": 920117,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 482,
+      "_byte_offset": 8214,
+      "MonsterLibraryID": 21001,
+      "RefreshNum": 1,
+      "MonsterID": 920117,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 483,
+      "_byte_offset": 8231,
+      "MonsterLibraryID": 21001,
+      "RefreshNum": 1,
+      "MonsterID": 920117,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 484,
+      "_byte_offset": 8248,
+      "MonsterLibraryID": 21001,
+      "RefreshNum": 1,
+      "MonsterID": 920124,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 485,
+      "_byte_offset": 8265,
+      "MonsterLibraryID": 21001,
+      "RefreshNum": 1,
+      "MonsterID": 920124,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 486,
+      "_byte_offset": 8282,
+      "MonsterLibraryID": 21001,
+      "RefreshNum": 1,
+      "MonsterID": 920124,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 487,
+      "_byte_offset": 8299,
+      "MonsterLibraryID": 21001,
+      "RefreshNum": 1,
+      "MonsterID": 920124,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 488,
+      "_byte_offset": 8316,
+      "MonsterLibraryID": 21001,
+      "RefreshNum": 1,
+      "MonsterID": 920125,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 489,
+      "_byte_offset": 8333,
+      "MonsterLibraryID": 21001,
+      "RefreshNum": 1,
+      "MonsterID": 920125,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 490,
+      "_byte_offset": 8350,
+      "MonsterLibraryID": 21001,
+      "RefreshNum": 1,
+      "MonsterID": 920125,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 491,
+      "_byte_offset": 8367,
+      "MonsterLibraryID": 21001,
+      "RefreshNum": 1,
+      "MonsterID": 920125,
+      "MonsterType": 1,
+      "KillScore": 1,
+      "_byte_length": 17
+    }
+  ]
+}

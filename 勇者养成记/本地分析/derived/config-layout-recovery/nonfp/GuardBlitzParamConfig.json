@@ -1,0 +1,86 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_guardblitzparamconfig.bytes.ab",
+    "path_id": 177032193275457152,
+    "name": "GuardBlitzParamConfig",
+    "sha256": "cee7dc8372921d2c97f5648548a2d8d31855a64f36aa771618ff792388eb5fa7",
+    "export": "derived/unity/text/assets_resources_config_resbin_guardblitzparamconfig.bytes/GuardBlitzParamConfig__177032193275457152.bin",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 60,
+      "version": 1,
+      "record_count": 5,
+      "stored_crc32": "880cf491",
+      "computed_inverted_crc32": "880cf491"
+    },
+    "status": "cross-variant-layout-candidate",
+    "legacy_reason": "ValueError: Truncated field FuncValue",
+    "layout_rule": "same-order-with-float-FP-transfer",
+    "fields": [
+      {
+        "type": "uint",
+        "name": "FuncID",
+        "object_offset": 16
+      },
+      {
+        "type": "float",
+        "name": "FuncValue",
+        "object_offset": 24
+      }
+    ],
+    "companion_json": "derived/config-decoded/BattleCore/GuardBlitzParamConfig.json",
+    "companion_export": "derived/unity/text/assets_resources_config_resbin_fp_guardblitzparamconfig.bytes/GuardBlitzParamConfig__-7316843201151558279.bin",
+    "companion_sha256": "698049165aad317405b81cd0e2e207f41881af1c2d7a9efe0795f205e1cde8ee",
+    "named_value_checks": {
+      "exact_named_value": 5,
+      "FP_to_float32_projection": 5
+    },
+    "decoded_record_count": 5,
+    "payload_roundtrip_sha256": "9032f08aa606336781d5ace5661212451ed1cdd2ea000cf733be163895d28f4b",
+    "decoded_json": "derived/config-layout-recovery/nonfp/GuardBlitzParamConfig.json",
+    "decoded_csv": "derived/config-layout-recovery/nonfp/GuardBlitzParamConfig.csv"
+  },
+  "limits": [
+    "Cross-variant hypothesis constrained by every companion named value, not the exact target unpack function.",
+    "Unnamed cells retain bytes/text only; no claimed gameplay meaning.",
+    "Q32.32 projection is a consistency check, not a statement of field units.",
+    "No sample execution or game-server contact."
+  ],
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "FuncID": 100,
+      "FuncValue": 200001.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 28,
+      "FuncID": 101,
+      "FuncValue": 100027.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 36,
+      "FuncID": 102,
+      "FuncValue": 0.4000000059604645,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 44,
+      "FuncID": 103,
+      "FuncValue": 103.0,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 52,
+      "FuncID": 104,
+      "FuncValue": 1.0,
+      "_byte_length": 8
+    }
+  ]
+}

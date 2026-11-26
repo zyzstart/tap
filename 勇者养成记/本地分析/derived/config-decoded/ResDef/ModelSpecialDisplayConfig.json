@@ -1,0 +1,104 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_modelspecialdisplayconfig.bytes.ab",
+    "path_id": -7273730265364408646,
+    "name": "ModelSpecialDisplayConfig",
+    "sha256": "f6607c0f7d5abbe1b612a2246ae4a192a85cf96d3a5d4922d19b356cb691a482",
+    "export": "derived/unity/text/assets_resources_config_resbin_modelspecialdisplayconfig.bytes/ModelSpecialDisplayConfig__-7273730265364408646.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 49,
+      "version": 1,
+      "record_count": 1,
+      "stored_crc32": "d644b9e1",
+      "computed_inverted_crc32": "d644b9e1"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "ModelSpecialDisplayConfig",
+      "fields": [
+        {
+          "type": "uint",
+          "name": "ModelID",
+          "object_offset": 16
+        },
+        {
+          "type": "uint",
+          "name": "SpiritID",
+          "object_offset": 20
+        },
+        {
+          "type": "uint",
+          "name": "ColorID",
+          "object_offset": 24
+        },
+        {
+          "type": "string",
+          "name": "IOSVestBag",
+          "object_offset": 32
+        }
+      ],
+      "unpack_va": 30793996,
+      "dump_line": 211819
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1d5e140",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d5e164",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d5e188",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d5e1cc",
+        "target_va": "0x21f6ce8",
+        "opcode": "B-tail",
+        "reader": "readString",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 1
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "ModelID": 90018,
+      "SpiritID": 1,
+      "ColorID": 9001801,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 29
+    }
+  ]
+}

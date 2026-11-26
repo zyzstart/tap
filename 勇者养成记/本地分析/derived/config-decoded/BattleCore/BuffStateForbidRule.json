@@ -1,0 +1,417 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_fp_buffstateforbidrule.bytes.ab",
+    "path_id": 725556395563802018,
+    "name": "BuffStateForbidRule",
+    "sha256": "3370b7be7cb5440422f57429009456b0682b9a4a82609e424bd196d839169390",
+    "export": "derived/unity/text/assets_resources_config_resbin_fp_buffstateforbidrule.bytes/BuffStateForbidRule__725556395563802018.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 216,
+      "version": 1,
+      "record_count": 14,
+      "stored_crc32": "8bd0cc3b",
+      "computed_inverted_crc32": "8bd0cc3b"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "BattleCore",
+      "name": "BuffStateForbidRule",
+      "fields": [
+        {
+          "type": "int",
+          "name": "StateID",
+          "object_offset": 16
+        },
+        {
+          "type": "byte",
+          "name": "MoveForbid",
+          "object_offset": 20
+        },
+        {
+          "type": "byte",
+          "name": "SkillForbid",
+          "object_offset": 21
+        },
+        {
+          "type": "byte",
+          "name": "DamageForbid",
+          "object_offset": 22
+        },
+        {
+          "type": "byte",
+          "name": "WalkOnWater",
+          "object_offset": 23
+        },
+        {
+          "type": "byte",
+          "name": "WalkOnBox",
+          "object_offset": 24
+        },
+        {
+          "type": "byte",
+          "name": "NoCollider",
+          "object_offset": 25
+        },
+        {
+          "type": "byte",
+          "name": "ForceCollider",
+          "object_offset": 26
+        },
+        {
+          "type": "byte",
+          "name": "SuperArmor",
+          "object_offset": 27
+        },
+        {
+          "type": "byte",
+          "name": "VirtualSpirit",
+          "object_offset": 28
+        },
+        {
+          "type": "byte",
+          "name": "PressStun",
+          "object_offset": 29
+        }
+      ],
+      "unpack_va": 23322464,
+      "dump_line": 166342
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x163df94",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x163dfb8",
+        "target_va": "0x21f65e0",
+        "opcode": "BL",
+        "reader": "readUInt8",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x163dfdc",
+        "target_va": "0x21f65e0",
+        "opcode": "BL",
+        "reader": "readUInt8",
+        "destination_object_offset": 21,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x163e000",
+        "target_va": "0x21f65e0",
+        "opcode": "BL",
+        "reader": "readUInt8",
+        "destination_object_offset": 22,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x163e024",
+        "target_va": "0x21f65e0",
+        "opcode": "BL",
+        "reader": "readUInt8",
+        "destination_object_offset": 23,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x163e048",
+        "target_va": "0x21f65e0",
+        "opcode": "BL",
+        "reader": "readUInt8",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x163e06c",
+        "target_va": "0x21f65e0",
+        "opcode": "BL",
+        "reader": "readUInt8",
+        "destination_object_offset": 25,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x163e090",
+        "target_va": "0x21f65e0",
+        "opcode": "BL",
+        "reader": "readUInt8",
+        "destination_object_offset": 26,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x163e0b4",
+        "target_va": "0x21f65e0",
+        "opcode": "BL",
+        "reader": "readUInt8",
+        "destination_object_offset": 27,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x163e0d8",
+        "target_va": "0x21f65e0",
+        "opcode": "BL",
+        "reader": "readUInt8",
+        "destination_object_offset": 28,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x163e118",
+        "target_va": "0x21f65e0",
+        "opcode": "B-tail",
+        "reader": "readUInt8",
+        "destination_object_offset": 29,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 14
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "StateID": 1,
+      "MoveForbid": 1,
+      "SkillForbid": 1,
+      "DamageForbid": 0,
+      "WalkOnWater": 0,
+      "WalkOnBox": 0,
+      "NoCollider": 0,
+      "ForceCollider": 0,
+      "SuperArmor": 0,
+      "VirtualSpirit": 0,
+      "PressStun": 0,
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 34,
+      "StateID": 2,
+      "MoveForbid": 0,
+      "SkillForbid": 0,
+      "DamageForbid": 1,
+      "WalkOnWater": 0,
+      "WalkOnBox": 0,
+      "NoCollider": 0,
+      "ForceCollider": 0,
+      "SuperArmor": 0,
+      "VirtualSpirit": 0,
+      "PressStun": 0,
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 48,
+      "StateID": 3,
+      "MoveForbid": 0,
+      "SkillForbid": 0,
+      "DamageForbid": 0,
+      "WalkOnWater": 0,
+      "WalkOnBox": 0,
+      "NoCollider": 1,
+      "ForceCollider": 0,
+      "SuperArmor": 0,
+      "VirtualSpirit": 0,
+      "PressStun": 0,
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 62,
+      "StateID": 5,
+      "MoveForbid": 1,
+      "SkillForbid": 0,
+      "DamageForbid": 0,
+      "WalkOnWater": 0,
+      "WalkOnBox": 0,
+      "NoCollider": 0,
+      "ForceCollider": 0,
+      "SuperArmor": 0,
+      "VirtualSpirit": 0,
+      "PressStun": 0,
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 76,
+      "StateID": 6,
+      "MoveForbid": 0,
+      "SkillForbid": 1,
+      "DamageForbid": 0,
+      "WalkOnWater": 0,
+      "WalkOnBox": 0,
+      "NoCollider": 0,
+      "ForceCollider": 0,
+      "SuperArmor": 0,
+      "VirtualSpirit": 0,
+      "PressStun": 0,
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 90,
+      "StateID": 7,
+      "MoveForbid": 1,
+      "SkillForbid": 1,
+      "DamageForbid": 0,
+      "WalkOnWater": 0,
+      "WalkOnBox": 0,
+      "NoCollider": 0,
+      "ForceCollider": 0,
+      "SuperArmor": 0,
+      "VirtualSpirit": 0,
+      "PressStun": 0,
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 104,
+      "StateID": 8,
+      "MoveForbid": 0,
+      "SkillForbid": 0,
+      "DamageForbid": 0,
+      "WalkOnWater": 1,
+      "WalkOnBox": 0,
+      "NoCollider": 0,
+      "ForceCollider": 0,
+      "SuperArmor": 0,
+      "VirtualSpirit": 0,
+      "PressStun": 0,
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 118,
+      "StateID": 9,
+      "MoveForbid": 0,
+      "SkillForbid": 0,
+      "DamageForbid": 0,
+      "WalkOnWater": 0,
+      "WalkOnBox": 1,
+      "NoCollider": 0,
+      "ForceCollider": 0,
+      "SuperArmor": 0,
+      "VirtualSpirit": 0,
+      "PressStun": 0,
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 132,
+      "StateID": 10,
+      "MoveForbid": 0,
+      "SkillForbid": 0,
+      "DamageForbid": 0,
+      "WalkOnWater": 0,
+      "WalkOnBox": 0,
+      "NoCollider": 0,
+      "ForceCollider": 1,
+      "SuperArmor": 0,
+      "VirtualSpirit": 0,
+      "PressStun": 0,
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 146,
+      "StateID": 14,
+      "MoveForbid": 0,
+      "SkillForbid": 0,
+      "DamageForbid": 1,
+      "WalkOnWater": 1,
+      "WalkOnBox": 1,
+      "NoCollider": 0,
+      "ForceCollider": 0,
+      "SuperArmor": 0,
+      "VirtualSpirit": 0,
+      "PressStun": 0,
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 160,
+      "StateID": 15,
+      "MoveForbid": 0,
+      "SkillForbid": 0,
+      "DamageForbid": 1,
+      "WalkOnWater": 0,
+      "WalkOnBox": 1,
+      "NoCollider": 1,
+      "ForceCollider": 0,
+      "SuperArmor": 0,
+      "VirtualSpirit": 0,
+      "PressStun": 0,
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 174,
+      "StateID": 19,
+      "MoveForbid": 0,
+      "SkillForbid": 0,
+      "DamageForbid": 0,
+      "WalkOnWater": 0,
+      "WalkOnBox": 0,
+      "NoCollider": 0,
+      "ForceCollider": 0,
+      "SuperArmor": 1,
+      "VirtualSpirit": 0,
+      "PressStun": 0,
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 188,
+      "StateID": 20,
+      "MoveForbid": 0,
+      "SkillForbid": 0,
+      "DamageForbid": 0,
+      "WalkOnWater": 0,
+      "WalkOnBox": 0,
+      "NoCollider": 1,
+      "ForceCollider": 0,
+      "SuperArmor": 0,
+      "VirtualSpirit": 1,
+      "PressStun": 0,
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 202,
+      "StateID": 21,
+      "MoveForbid": 1,
+      "SkillForbid": 1,
+      "DamageForbid": 0,
+      "WalkOnWater": 0,
+      "WalkOnBox": 0,
+      "NoCollider": 0,
+      "ForceCollider": 0,
+      "SuperArmor": 0,
+      "VirtualSpirit": 0,
+      "PressStun": 1,
+      "_byte_length": 14
+    }
+  ]
+}

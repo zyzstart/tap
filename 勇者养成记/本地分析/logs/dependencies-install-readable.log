@@ -1,0 +1,184 @@
+Collecting UnityPy
+  Downloading unitypy-1.25.4-cp312-cp312-win_amd64.whl.metadata (22 kB)
+Collecting androguard
+  Downloading androguard-4.1.4-py3-none-any.whl.metadata (5.5 kB)
+Collecting pyelftools
+  Downloading pyelftools-0.33-py3-none-any.whl.metadata (1.0 kB)
+Collecting lz4 (from UnityPy)
+  Downloading lz4-4.4.5-cp312-cp312-win_amd64.whl.metadata (3.9 kB)
+Collecting brotli (from UnityPy)
+  Downloading brotli-1.2.1-cp312-cp312-win_amd64.whl.metadata (6.3 kB)
+Collecting Pillow (from UnityPy)
+  Downloading pillow-13.0.0-cp312-cp312-win_amd64.whl.metadata (9.3 kB)
+Collecting texture2ddecoder>=1.0.5 (from UnityPy)
+  Using cached texture2ddecoder-1.0.6-cp311-abi3-win_amd64.whl.metadata (8.6 kB)
+Collecting etcpak (from UnityPy)
+  Using cached etcpak-0.9.15-cp37-abi3-win_amd64.whl.metadata (6.2 kB)
+Collecting astc-encoder-py>=0.1.12 (from UnityPy)
+  Using cached astc_encoder_py-0.1.12-cp37-abi3-win_amd64.whl.metadata (5.7 kB)
+Collecting fmod_toolkit (from UnityPy)
+  Using cached fmod_toolkit-0.1.3-cp38-abi3.abi3t-win_amd64.whl.metadata (3.7 kB)
+Collecting fsspec (from UnityPy)
+  Using cached fsspec-2026.9.0-py3-none-any.whl.metadata (10 kB)
+Collecting attrs (from UnityPy)
+  Using cached attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+Collecting tpk_ar (from UnityPy)
+  Using cached tpk_ar-0.2.4.tar.gz (10 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting apkInspector>=1.1.7 (from androguard)
+  Downloading apkinspector-1.3.7-py3-none-any.whl.metadata (7.0 kB)
+Collecting asn1crypto>=0.24.0 (from androguard)
+  Downloading asn1crypto-1.5.1-py2.py3-none-any.whl.metadata (13 kB)
+Collecting click>=7.0 (from androguard)
+  Using cached click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting colorama>=0.4.1 (from androguard)
+  Using cached colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+Collecting cryptography>=46.0.6 (from androguard)
+  Downloading cryptography-50.0.2-cp311-abi3-win_amd64.whl.metadata (4.4 kB)
+Collecting dataset (from androguard)
+  Downloading dataset-2.0.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting ipython>=5.0.0 (from androguard)
+  Downloading ipython-9.18.0-py3-none-any.whl.metadata (4.6 kB)
+Collecting loguru (from androguard)
+  Using cached loguru-0.7.3-py3-none-any.whl.metadata (22 kB)
+Collecting lxml>=4.3.0 (from androguard)
+  Downloading lxml-6.1.3-cp312-cp312-win_amd64.whl.metadata (3.4 kB)
+Collecting mutf8 (from androguard)
+  Downloading mutf8-1.1.0-cp312-cp312-win_amd64.whl.metadata (4.6 kB)
+Collecting networkx (from androguard)
+  Downloading networkx-3.7-py3-none-any.whl.metadata (6.7 kB)
+Collecting pydot>=1.4.1 (from androguard)
+  Downloading pydot-4.0.1-py3-none-any.whl.metadata (11 kB)
+Collecting pygments>=2.3.1 (from androguard)
+  Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting pyyaml (from androguard)
+  Using cached pyyaml-6.0.3-cp312-cp312-win_amd64.whl.metadata (2.4 kB)
+Collecting archspec>=0.2 (from astc-encoder-py>=0.1.12->UnityPy)
+  Downloading archspec-0.2.7-py3-none-any.whl.metadata (4.4 kB)
+Collecting cffi>=2.0.0 (from cryptography>=46.0.6->androguard)
+  Using cached cffi-2.1.1-cp312-cp312-win_amd64.whl.metadata (2.6 kB)
+Collecting pycparser (from cffi>=2.0.0->cryptography>=46.0.6->androguard)
+  Downloading pycparser-3.12-py3-none-any.whl.metadata (9.7 kB)
+Collecting ipython-pygments-lexers>=1.0.0 (from ipython>=5.0.0->androguard)
+  Downloading ipython_pygments_lexers-1.1.1-py3-none-any.whl.metadata (1.1 kB)
+Collecting jedi>=0.18.2 (from ipython>=5.0.0->androguard)
+  Downloading jedi-0.20.1-py2.py3-none-any.whl.metadata (23 kB)
+Collecting matplotlib-inline>=0.1.6 (from ipython>=5.0.0->androguard)
+  Downloading matplotlib_inline-0.2.2-py3-none-any.whl.metadata (2.4 kB)
+Collecting prompt_toolkit<3.1.0,>=3.0.41 (from ipython>=5.0.0->androguard)
+  Downloading prompt_toolkit-3.0.53-py3-none-any.whl.metadata (6.4 kB)
+Collecting psutil>=7 (from ipython>=5.0.0->androguard)
+  Downloading psutil-7.2.2-cp37-abi3-win_amd64.whl.metadata (22 kB)
+Collecting stack_data>=0.6.0 (from ipython>=5.0.0->androguard)
+  Downloading stack_data-0.6.3-py3-none-any.whl.metadata (18 kB)
+Collecting traitlets>=5.13.0 (from ipython>=5.0.0->androguard)
+  Downloading traitlets-5.16.1-py3-none-any.whl.metadata (10 kB)
+Collecting wcwidth>=0.1.4 (from prompt_toolkit<3.1.0,>=3.0.41->ipython>=5.0.0->androguard)
+  Downloading wcwidth-0.9.4-cp310-abi3-win_amd64.whl.metadata (24 kB)
+Collecting parso<0.9.0,>=0.8.7 (from jedi>=0.18.2->ipython>=5.0.0->androguard)
+  Downloading parso-0.8.7-py2.py3-none-any.whl.metadata (8.2 kB)
+Collecting pyparsing>=3.1.0 (from pydot>=1.4.1->androguard)
+  Downloading pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+Collecting executing>=1.2.0 (from stack_data>=0.6.0->ipython>=5.0.0->androguard)
+  Downloading executing-2.3.0-py3-none-any.whl.metadata (9.1 kB)
+Collecting asttokens>=2.1.0 (from stack_data>=0.6.0->ipython>=5.0.0->androguard)
+  Downloading asttokens-3.0.2-py3-none-any.whl.metadata (5.7 kB)
+Collecting pure-eval (from stack_data>=0.6.0->ipython>=5.0.0->androguard)
+  Downloading pure_eval-0.2.4-py3-none-any.whl.metadata (6.4 kB)
+Collecting alembic>=0.6.2 (from dataset->androguard)
+  Downloading alembic-1.20.1-py3-none-any.whl.metadata (7.3 kB)
+Collecting sqlalchemy<3.0.0,>=1.4.0 (from dataset->androguard)
+  Downloading sqlalchemy-2.1.6-cp312-cp312-win_amd64.whl.metadata (9.9 kB)
+Collecting typing-extensions>=4.6.0 (from sqlalchemy<3.0.0,>=1.4.0->dataset->androguard)
+  Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting Mako (from alembic>=0.6.2->dataset->androguard)
+  Downloading mako-1.4.3-py3-none-any.whl.metadata (2.9 kB)
+Collecting pyfmodex>=0.7.2 (from fmod_toolkit->UnityPy)
+  Using cached pyfmodex-0.7.2-py3-none-any.whl.metadata (2.6 kB)
+Collecting win32-setctime>=1.0.0 (from loguru->androguard)
+  Downloading win32_setctime-1.2.1-py3-none-any.whl.metadata (2.7 kB)
+Collecting MarkupSafe>=2.0 (from Mako->alembic>=0.6.2->dataset->androguard)
+  Downloading markupsafe-3.0.4-cp312-cp312-win_amd64.whl.metadata (2.8 kB)
+Downloading unitypy-1.25.4-cp312-cp312-win_amd64.whl (438 kB)
+Downloading androguard-4.1.4-py3-none-any.whl (1.0 MB)
+   ---------------------------------------- 1.0/1.0 MB 236.4 kB/s  0:00:07
+Downloading pyelftools-0.33-py3-none-any.whl (201 kB)
+Downloading apkinspector-1.3.7-py3-none-any.whl (31 kB)
+Downloading asn1crypto-1.5.1-py2.py3-none-any.whl (105 kB)
+Using cached astc_encoder_py-0.1.12-cp37-abi3-win_amd64.whl (2.5 MB)
+Downloading archspec-0.2.7-py3-none-any.whl (87 kB)
+Using cached click-8.5.0-py3-none-any.whl (125 kB)
+Using cached colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Downloading cryptography-50.0.2-cp311-abi3-win_amd64.whl (3.8 MB)
+   ---------------------------------------- 3.8/3.8 MB 58.0 kB/s  0:01:03
+Using cached cffi-2.1.1-cp312-cp312-win_amd64.whl (185 kB)
+Downloading ipython-9.18.0-py3-none-any.whl (649 kB)
+   ---------------------------------------- 649.6/649.6 kB 65.8 kB/s  0:00:10
+Downloading prompt_toolkit-3.0.53-py3-none-any.whl (392 kB)
+Downloading ipython_pygments_lexers-1.1.1-py3-none-any.whl (8.1 kB)
+Downloading jedi-0.20.1-py2.py3-none-any.whl (4.9 MB)
+   ---------------------------------------- 4.9/4.9 MB 111.1 kB/s  0:01:00
+Downloading parso-0.8.7-py2.py3-none-any.whl (107 kB)
+Downloading lxml-6.1.3-cp312-cp312-win_amd64.whl (4.0 MB)
+   ---------------------------------------- 4.0/4.0 MB 370.3 kB/s  0:00:11
+Downloading matplotlib_inline-0.2.2-py3-none-any.whl (9.5 kB)
+Downloading psutil-7.2.2-cp37-abi3-win_amd64.whl (137 kB)
+Downloading pydot-4.0.1-py3-none-any.whl (37 kB)
+Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+   ---------------------------------------- 1.3/1.3 MB 357.3 kB/s  0:00:03
+Downloading pyparsing-3.3.3-py3-none-any.whl (126 kB)
+Downloading stack_data-0.6.3-py3-none-any.whl (24 kB)
+Downloading asttokens-3.0.2-py3-none-any.whl (28 kB)
+Downloading executing-2.3.0-py3-none-any.whl (29 kB)
+Using cached texture2ddecoder-1.0.6-cp311-abi3-win_amd64.whl (64 kB)
+Downloading traitlets-5.16.1-py3-none-any.whl (86 kB)
+Downloading wcwidth-0.9.4-cp310-abi3-win_amd64.whl (597 kB)
+   ---------------------------------------- 597.8/597.8 kB 376.7 kB/s  0:00:01
+Using cached attrs-26.1.0-py3-none-any.whl (67 kB)
+Downloading brotli-1.2.1-cp312-cp312-win_amd64.whl (371 kB)
+Downloading dataset-2.0.0-py3-none-any.whl (21 kB)
+Downloading sqlalchemy-2.1.6-cp312-cp312-win_amd64.whl (2.4 MB)
+   ---------------------------------------- 2.4/2.4 MB 638.7 kB/s  0:00:04
+Downloading alembic-1.20.1-py3-none-any.whl (270 kB)
+Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Using cached etcpak-0.9.15-cp37-abi3-win_amd64.whl (1.1 MB)
+Using cached fmod_toolkit-0.1.3-cp38-abi3.abi3t-win_amd64.whl (795 kB)
+Using cached pyfmodex-0.7.2-py3-none-any.whl (126 kB)
+Using cached fsspec-2026.9.0-py3-none-any.whl (221 kB)
+Using cached loguru-0.7.3-py3-none-any.whl (61 kB)
+Downloading win32_setctime-1.2.1-py3-none-any.whl (4.2 kB)
+Downloading lz4-4.4.5-cp312-cp312-win_amd64.whl (99 kB)
+Downloading mako-1.4.3-py3-none-any.whl (80 kB)
+Downloading markupsafe-3.0.4-cp312-cp312-win_amd64.whl (14 kB)
+Downloading mutf8-1.1.0-cp312-cp312-win_amd64.whl (14 kB)
+Downloading networkx-3.7-py3-none-any.whl (2.1 MB)
+   ---------------------------------------- 2.1/2.1 MB 647.0 kB/s  0:00:03
+Downloading pillow-13.0.0-cp312-cp312-win_amd64.whl (7.3 MB)
+   ---------------------------------------- 7.3/7.3 MB 329.2 kB/s  0:00:22
+Downloading pure_eval-0.2.4-py3-none-any.whl (11 kB)
+Downloading pycparser-3.12-py3-none-any.whl (62 kB)
+Using cached pyyaml-6.0.3-cp312-cp312-win_amd64.whl (154 kB)
+Building wheels for collected packages: tpk_ar
+  Building wheel for tpk_ar (pyproject.toml): started
+  Building wheel for tpk_ar (pyproject.toml): finished with status 'done'
+  Created wheel for tpk_ar: filename=tpk_ar-0.2.4-py3-none-any.whl size=11091 sha256=3285ca5d8a36d7542e634efeb1294d656be86ed1096a5d362eee31bea3d7f09c
+  Stored in directory: c:\users\admin\appdata\local\pip\cache\wheels\5c\89\fa\539a2149fe79064aacd8ed6c559cfcc174588d95f088ccde0e
+Successfully built tpk_ar
+Installing collected packages: pure-eval, brotli, asn1crypto, win32-setctime, wcwidth, typing-extensions, traitlets, tpk_ar, texture2ddecoder, pyyaml, pyparsing, pygments, pyfmodex, pyelftools, pycparser, psutil, Pillow, parso, networkx, mutf8, MarkupSafe, lz4, lxml, fsspec, executing, colorama, click, attrs, asttokens, archspec, apkInspector, stack_data, sqlalchemy, pydot, prompt_toolkit, matplotlib-inline, Mako, loguru, jedi, ipython-pygments-lexers, fmod_toolkit, etcpak, cffi, astc-encoder-py, UnityPy, ipython, cryptography, alembic, dataset, androguard
+
+Successfully installed Mako-1.4.3 MarkupSafe-3.0.4 Pillow-13.0.0 UnityPy-1.25.4 alembic-1.20.1 androguard-4.1.4 apkInspector-1.3.7 archspec-0.2.7 asn1crypto-1.5.1 astc-encoder-py-0.1.12 asttokens-3.0.2 attrs-26.1.0 brotli-1.2.1 cffi-2.1.1 click-8.5.0 colorama-0.4.6 cryptography-50.0.2 dataset-2.0.0 etcpak-0.9.15 executing-2.3.0 fmod_toolkit-0.1.3 fsspec-2026.9.0 ipython-9.18.0 ipython-pygments-lexers-1.1.1 jedi-0.20.1 loguru-0.7.3 lxml-6.1.3 lz4-4.4.5 matplotlib-inline-0.2.2 mutf8-1.1.0 networkx-3.7 parso-0.8.7 prompt_toolkit-3.0.53 psutil-7.2.2 pure-eval-0.2.4 pycparser-3.12 pydot-4.0.1 pyelftools-0.33 pyfmodex-0.7.2 pygments-2.21.0 pyparsing-3.3.3 pyyaml-6.0.3 sqlalchemy-2.1.6 stack_data-0.6.3 texture2ddecoder-1.0.6 tpk_ar-0.2.4 traitlets-5.16.1 typing-extensions-4.16.0 wcwidth-0.9.4 win32-setctime-1.2.1
+python.exe : 
+所在位置 行:1 字符: 129
++ ... ew($false); & 'C:\Users\Admin\.dsh\dsh-runtimes\dsh-primary-runtime\d ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[notice] A new release of pip is available: 26.2.1 -> 26.2.2
+[notice] To update, run: C:\Users\Admin\.dsh\dsh-runtimes\dsh-primary-runtime\dependencies\python\python.exe -m pip ins
+tall --upgrade pip

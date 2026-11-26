@@ -1,0 +1,449 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_equipstarlvsuitconfig.bytes.ab",
+    "path_id": 4242662546557169892,
+    "name": "EquipStarLvSuitConfig",
+    "sha256": "831cd8e032904fd19d7165c09f13485fa95fc1dca1e0abf58445f877100a2058",
+    "export": "derived/unity/text/assets_resources_config_resbin_equipstarlvsuitconfig.bytes/EquipStarLvSuitConfig__4242662546557169892.bin",
+    "schema": "ResDef.EquipStarLvSuitConfig",
+    "path_id_decimal": "4242662546557169892",
+    "legacy_status": "raw-header-verified",
+    "legacy_reason": "Unsupported arrays/nested/enum fields: ResAttrImpactData[] ImpactData",
+    "status": "decoded-validated-native-recursive",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 1543,
+      "version": 1,
+      "record_count": 10,
+      "stored_crc32": "9f89471f",
+      "computed_inverted_crc32": "9f89471f"
+    },
+    "native_layout_verified": true,
+    "schema_file": "derived/config-extended/schemas/ResDef.EquipStarLvSuitConfig.json",
+    "minimum_record_size": 70,
+    "min_expected_payload_bytes": 700,
+    "actual_payload_bytes": 1523,
+    "decoded_record_count": 10,
+    "validation": {
+      "header_verified": true,
+      "count_verified": true,
+      "exact_eof": true,
+      "full_reencode_equal": true,
+      "full_reencode_sha256": "831cd8e032904fd19d7165c09f13485fa95fc1dca1e0abf58445f877100a2058",
+      "decoded_node_count": 280,
+      "payload_bytes": 1523
+    },
+    "arrays": [
+      {
+        "field": "ImpactData",
+        "count": 5,
+        "count_encoding": "none-native-fixed"
+      }
+    ],
+    "decoded_json": "derived/config-extended/ResDef/EquipStarLvSuitConfig.json",
+    "decoded_csv": "derived/config-extended/ResDef/EquipStarLvSuitConfig.csv"
+  },
+  "precision": "Exact JSON integer number tokens, with decimal-string mirrors for every int64/uint64/FP. FP is raw signed int64; no scaling.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "SuitStarLv": 4,
+      "SuitName": "疾风祝福",
+      "EffectID": 0,
+      "ImpactData": [
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 640.0
+        },
+        {
+          "DataType": 2,
+          "AddType": 1,
+          "Value": 160.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 2,
+          "Value": 0.004999999888241291
+        },
+        {
+          "DataType": 2,
+          "AddType": 2,
+          "Value": 0.004999999888241291
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "WakeUpStep": 4,
+      "WakeUpLv": 1,
+      "Level": 1,
+      "Icon": "zb_sj_icon_mu",
+      "SuitStarDesc": "【套装升级】再增加0.5%总攻击力及生命上限",
+      "_byte_length": 153
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 173,
+      "SuitStarLv": 8,
+      "SuitName": "暴风祝福",
+      "EffectID": 0,
+      "ImpactData": [
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 1600.0
+        },
+        {
+          "DataType": 2,
+          "AddType": 1,
+          "Value": 400.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 2,
+          "Value": 0.009999999776482582
+        },
+        {
+          "DataType": 2,
+          "AddType": 2,
+          "Value": 0.009999999776482582
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "WakeUpStep": 8,
+      "WakeUpLv": 1,
+      "Level": 2,
+      "Icon": "zb_sj_icon_mu",
+      "SuitStarDesc": "【套装升级】再增加1%总攻击力及生命上限",
+      "_byte_length": 151
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 324,
+      "SuitStarLv": 12,
+      "SuitName": "冰川祝福",
+      "EffectID": 0,
+      "ImpactData": [
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 2800.0
+        },
+        {
+          "DataType": 2,
+          "AddType": 1,
+          "Value": 700.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 2,
+          "Value": 0.014999999664723873
+        },
+        {
+          "DataType": 2,
+          "AddType": 2,
+          "Value": 0.014999999664723873
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "WakeUpStep": 4,
+      "WakeUpLv": 2,
+      "Level": 3,
+      "Icon": "zb_sj_icon_shui",
+      "SuitStarDesc": "【套装升级】再增加1.5%总攻击力及生命上限",
+      "_byte_length": 155
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 479,
+      "SuitStarLv": 16,
+      "SuitName": "寒霜祝福",
+      "EffectID": 0,
+      "ImpactData": [
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 4600.0
+        },
+        {
+          "DataType": 2,
+          "AddType": 1,
+          "Value": 1150.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 2,
+          "Value": 0.019999999552965164
+        },
+        {
+          "DataType": 2,
+          "AddType": 2,
+          "Value": 0.019999999552965164
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "WakeUpStep": 8,
+      "WakeUpLv": 2,
+      "Level": 4,
+      "Icon": "zb_sj_icon_shui",
+      "SuitStarDesc": "【套装升级】再增加2%总攻击力及生命上限",
+      "_byte_length": 153
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 632,
+      "SuitStarLv": 20,
+      "SuitName": "山脉祝福",
+      "EffectID": 0,
+      "ImpactData": [
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 6000.0
+        },
+        {
+          "DataType": 2,
+          "AddType": 1,
+          "Value": 1500.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 2,
+          "Value": 0.029999999329447746
+        },
+        {
+          "DataType": 2,
+          "AddType": 2,
+          "Value": 0.029999999329447746
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "WakeUpStep": 4,
+      "WakeUpLv": 3,
+      "Level": 5,
+      "Icon": "zb_sj_icon_tu",
+      "SuitStarDesc": "【套装升级】再增加3%总攻击力及生命上限",
+      "_byte_length": 151
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 783,
+      "SuitStarLv": 24,
+      "SuitName": "坚石祝福",
+      "EffectID": 0,
+      "ImpactData": [
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 8000.0
+        },
+        {
+          "DataType": 2,
+          "AddType": 1,
+          "Value": 2000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 2,
+          "Value": 0.03999999910593033
+        },
+        {
+          "DataType": 2,
+          "AddType": 2,
+          "Value": 0.03999999910593033
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "WakeUpStep": 8,
+      "WakeUpLv": 3,
+      "Level": 6,
+      "Icon": "zb_sj_icon_tu",
+      "SuitStarDesc": "【套装升级】再增加4%总攻击力及生命上限",
+      "_byte_length": 151
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 934,
+      "SuitStarLv": 28,
+      "SuitName": "苍雷祝福",
+      "EffectID": 0,
+      "ImpactData": [
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 10000.0
+        },
+        {
+          "DataType": 2,
+          "AddType": 1,
+          "Value": 2500.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 2,
+          "Value": 0.05000000074505806
+        },
+        {
+          "DataType": 2,
+          "AddType": 2,
+          "Value": 0.05000000074505806
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "WakeUpStep": 4,
+      "WakeUpLv": 4,
+      "Level": 7,
+      "Icon": "zb_sj_icon_jin",
+      "SuitStarDesc": "【套装升级】再增加5%总攻击力及生命上限",
+      "_byte_length": 152
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 1086,
+      "SuitStarLv": 32,
+      "SuitName": "疾电祝福",
+      "EffectID": 0,
+      "ImpactData": [
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 12800.0
+        },
+        {
+          "DataType": 2,
+          "AddType": 1,
+          "Value": 3200.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 2,
+          "Value": 0.05999999865889549
+        },
+        {
+          "DataType": 2,
+          "AddType": 2,
+          "Value": 0.05999999865889549
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "WakeUpStep": 8,
+      "WakeUpLv": 4,
+      "Level": 8,
+      "Icon": "zb_sj_icon_jin",
+      "SuitStarDesc": "【套装升级】再增加6%总攻击力及生命上限",
+      "_byte_length": 152
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 1238,
+      "SuitStarLv": 36,
+      "SuitName": "赤焰祝福",
+      "EffectID": 0,
+      "ImpactData": [
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 16000.0
+        },
+        {
+          "DataType": 2,
+          "AddType": 1,
+          "Value": 4000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 2,
+          "Value": 0.07999999821186066
+        },
+        {
+          "DataType": 2,
+          "AddType": 2,
+          "Value": 0.07999999821186066
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "WakeUpStep": 4,
+      "WakeUpLv": 5,
+      "Level": 9,
+      "Icon": "zb_sj_icon_huo",
+      "SuitStarDesc": "【套装升级】再增加8%总攻击力及生命上限",
+      "_byte_length": 152
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 1390,
+      "SuitStarLv": 40,
+      "SuitName": "烈日祝福",
+      "EffectID": 0,
+      "ImpactData": [
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 20000.0
+        },
+        {
+          "DataType": 2,
+          "AddType": 1,
+          "Value": 5000.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 2,
+          "Value": 0.10000000149011612
+        },
+        {
+          "DataType": 2,
+          "AddType": 2,
+          "Value": 0.10000000149011612
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "WakeUpStep": 8,
+      "WakeUpLv": 5,
+      "Level": 10,
+      "Icon": "zb_sj_icon_huo",
+      "SuitStarDesc": "【套装升级】再增加10%总攻击力及生命上限",
+      "_byte_length": 153
+    }
+  ]
+}

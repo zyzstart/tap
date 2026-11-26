@@ -1,0 +1,901 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_domesticatetaskconfig.bytes.ab",
+    "path_id": 1635178320874108570,
+    "name": "DomesticateTaskConfig",
+    "sha256": "bc09dd4f810c5a26d483f8e0562351e0b070c99dd249390b021c1f53e492bf09",
+    "export": "derived/unity/text/assets_resources_config_resbin_domesticatetaskconfig.bytes/DomesticateTaskConfig__1635178320874108570.bin",
+    "schema": "ResDef.DomesticateTaskConfig",
+    "path_id_decimal": "1635178320874108570",
+    "legacy_status": "raw-header-verified",
+    "legacy_reason": "Unsupported arrays/nested/enum fields: ResBehaviorRule Behavior",
+    "status": "decoded-validated-native-recursive",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 3560,
+      "version": 1,
+      "record_count": 39,
+      "stored_crc32": "3b43ef2d",
+      "computed_inverted_crc32": "3b43ef2d"
+    },
+    "native_layout_verified": true,
+    "schema_file": "derived/config-extended/schemas/ResDef.DomesticateTaskConfig.json",
+    "minimum_record_size": 51,
+    "min_expected_payload_bytes": 1989,
+    "actual_payload_bytes": 3540,
+    "decoded_record_count": 39,
+    "validation": {
+      "header_verified": true,
+      "count_verified": true,
+      "exact_eof": true,
+      "full_reencode_equal": true,
+      "full_reencode_sha256": "bc09dd4f810c5a26d483f8e0562351e0b070c99dd249390b021c1f53e492bf09",
+      "decoded_node_count": 546,
+      "payload_bytes": 3540
+    },
+    "arrays": [],
+    "decoded_json": "derived/config-extended/ResDef/DomesticateTaskConfig.json",
+    "decoded_csv": "derived/config-extended/ResDef/DomesticateTaskConfig.csv"
+  },
+  "precision": "Exact JSON integer number tokens, with decimal-string mirrors for every int64/uint64/FP. FP is raw signed int64; no scaling.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "DomesticateLevel": 1,
+      "TaskID": 101,
+      "SortNO": 101,
+      "Name": "出战宠物",
+      "Desc": "出战1只蓝色品质宠物",
+      "ShowProgress": 1,
+      "Behavior": {
+        "ID": 69,
+        "Type": 4,
+        "Param": [
+          3,
+          1,
+          1
+        ]
+      },
+      "BootyID": 10000001,
+      "MaxProgress": 1,
+      "_byte_length": 91
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 111,
+      "DomesticateLevel": 1,
+      "TaskID": 102,
+      "SortNO": 102,
+      "Name": "等级提升",
+      "Desc": "将1只宠物等级提升至20级",
+      "ShowProgress": 1,
+      "Behavior": {
+        "ID": 29,
+        "Type": 1,
+        "Param": [
+          20,
+          1,
+          0
+        ]
+      },
+      "BootyID": 10000001,
+      "MaxProgress": 1,
+      "_byte_length": 96
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 207,
+      "DomesticateLevel": 1,
+      "TaskID": 103,
+      "SortNO": 103,
+      "Name": "收服宠物",
+      "Desc": "收服3种宠物",
+      "ShowProgress": 1,
+      "Behavior": {
+        "ID": 68,
+        "Type": 4,
+        "Param": [
+          3,
+          0,
+          0
+        ]
+      },
+      "BootyID": 10000001,
+      "MaxProgress": 3,
+      "_byte_length": 79
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 286,
+      "DomesticateLevel": 2,
+      "TaskID": 104,
+      "SortNO": 104,
+      "Name": "出战宠物",
+      "Desc": "出战1只紫色品质宠物",
+      "ShowProgress": 1,
+      "Behavior": {
+        "ID": 69,
+        "Type": 4,
+        "Param": [
+          4,
+          1,
+          1
+        ]
+      },
+      "BootyID": 10000002,
+      "MaxProgress": 1,
+      "_byte_length": 91
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 377,
+      "DomesticateLevel": 2,
+      "TaskID": 105,
+      "SortNO": 105,
+      "Name": "等级提升",
+      "Desc": "将1只宠物等级提升至30级",
+      "ShowProgress": 1,
+      "Behavior": {
+        "ID": 29,
+        "Type": 1,
+        "Param": [
+          30,
+          1,
+          0
+        ]
+      },
+      "BootyID": 10000002,
+      "MaxProgress": 1,
+      "_byte_length": 96
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 473,
+      "DomesticateLevel": 2,
+      "TaskID": 106,
+      "SortNO": 106,
+      "Name": "收服宠物",
+      "Desc": "收服4种宠物",
+      "ShowProgress": 1,
+      "Behavior": {
+        "ID": 68,
+        "Type": 4,
+        "Param": [
+          4,
+          0,
+          0
+        ]
+      },
+      "BootyID": 10000002,
+      "MaxProgress": 4,
+      "_byte_length": 79
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 552,
+      "DomesticateLevel": 2,
+      "TaskID": 107,
+      "SortNO": 107,
+      "Name": "装备兽印",
+      "Desc": "出战宠物装备至少1个2级兽印",
+      "ShowProgress": 1,
+      "Behavior": {
+        "ID": 77,
+        "Type": 4,
+        "Param": [
+          2,
+          1,
+          0
+        ]
+      },
+      "BootyID": 10000002,
+      "MaxProgress": 1,
+      "_byte_length": 101
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 653,
+      "DomesticateLevel": 3,
+      "TaskID": 108,
+      "SortNO": 108,
+      "Name": "出战宠物",
+      "Desc": "出战1只橙色品质宠物",
+      "ShowProgress": 1,
+      "Behavior": {
+        "ID": 69,
+        "Type": 4,
+        "Param": [
+          5,
+          1,
+          1
+        ]
+      },
+      "BootyID": 10000003,
+      "MaxProgress": 1,
+      "_byte_length": 91
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 744,
+      "DomesticateLevel": 3,
+      "TaskID": 109,
+      "SortNO": 109,
+      "Name": "等级提升",
+      "Desc": "将1只宠物等级提升至40级",
+      "ShowProgress": 1,
+      "Behavior": {
+        "ID": 29,
+        "Type": 1,
+        "Param": [
+          40,
+          1,
+          0
+        ]
+      },
+      "BootyID": 10000003,
+      "MaxProgress": 1,
+      "_byte_length": 96
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 840,
+      "DomesticateLevel": 3,
+      "TaskID": 110,
+      "SortNO": 110,
+      "Name": "装备兽印",
+      "Desc": "出战宠物装备至少1个3级兽印",
+      "ShowProgress": 1,
+      "Behavior": {
+        "ID": 77,
+        "Type": 4,
+        "Param": [
+          3,
+          1,
+          0
+        ]
+      },
+      "BootyID": 10000003,
+      "MaxProgress": 1,
+      "_byte_length": 101
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 941,
+      "DomesticateLevel": 3,
+      "TaskID": 111,
+      "SortNO": 111,
+      "Name": "捕获宠物",
+      "Desc": "累计获得50个宠物",
+      "ShowProgress": 1,
+      "Behavior": {
+        "ID": 73,
+        "Type": 4,
+        "Param": [
+          50,
+          0,
+          0
+        ]
+      },
+      "BootyID": 10000003,
+      "MaxProgress": 50,
+      "_byte_length": 86
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 1027,
+      "DomesticateLevel": 4,
+      "TaskID": 112,
+      "SortNO": 112,
+      "Name": "出战宠物",
+      "Desc": "出战2只橙品质宠物",
+      "ShowProgress": 1,
+      "Behavior": {
+        "ID": 69,
+        "Type": 4,
+        "Param": [
+          5,
+          1,
+          2
+        ]
+      },
+      "BootyID": 10000004,
+      "MaxProgress": 2,
+      "_byte_length": 88
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 1115,
+      "DomesticateLevel": 4,
+      "TaskID": 113,
+      "SortNO": 113,
+      "Name": "等级提升",
+      "Desc": "将1只宠物等级提升至50级",
+      "ShowProgress": 1,
+      "Behavior": {
+        "ID": 29,
+        "Type": 1,
+        "Param": [
+          50,
+          1,
+          0
+        ]
+      },
+      "BootyID": 10000004,
+      "MaxProgress": 1,
+      "_byte_length": 96
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 1211,
+      "DomesticateLevel": 4,
+      "TaskID": 114,
+      "SortNO": 114,
+      "Name": "收服宠物",
+      "Desc": "收服5种宠物",
+      "ShowProgress": 1,
+      "Behavior": {
+        "ID": 68,
+        "Type": 4,
+        "Param": [
+          5,
+          0,
+          0
+        ]
+      },
+      "BootyID": 10000004,
+      "MaxProgress": 5,
+      "_byte_length": 79
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 1290,
+      "DomesticateLevel": 4,
+      "TaskID": 115,
+      "SortNO": 115,
+      "Name": "捕获宠物",
+      "Desc": "累计获得75个宠物",
+      "ShowProgress": 1,
+      "Behavior": {
+        "ID": 73,
+        "Type": 4,
+        "Param": [
+          75,
+          0,
+          0
+        ]
+      },
+      "BootyID": 10000004,
+      "MaxProgress": 75,
+      "_byte_length": 86
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 1376,
+      "DomesticateLevel": 5,
+      "TaskID": 116,
+      "SortNO": 116,
+      "Name": "出战宠物",
+      "Desc": "出战1只红品质宠物",
+      "ShowProgress": 1,
+      "Behavior": {
+        "ID": 69,
+        "Type": 4,
+        "Param": [
+          6,
+          1,
+          1
+        ]
+      },
+      "BootyID": 10000005,
+      "MaxProgress": 1,
+      "_byte_length": 88
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 1464,
+      "DomesticateLevel": 5,
+      "TaskID": 117,
+      "SortNO": 117,
+      "Name": "等级提升",
+      "Desc": "将1只宠物等级提升至60级",
+      "ShowProgress": 1,
+      "Behavior": {
+        "ID": 29,
+        "Type": 1,
+        "Param": [
+          60,
+          1,
+          0
+        ]
+      },
+      "BootyID": 10000005,
+      "MaxProgress": 1,
+      "_byte_length": 96
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 1560,
+      "DomesticateLevel": 5,
+      "TaskID": 118,
+      "SortNO": 118,
+      "Name": "装备兽印",
+      "Desc": "出战宠物装备至少2个4级兽印",
+      "ShowProgress": 1,
+      "Behavior": {
+        "ID": 77,
+        "Type": 4,
+        "Param": [
+          4,
+          2,
+          0
+        ]
+      },
+      "BootyID": 10000005,
+      "MaxProgress": 2,
+      "_byte_length": 101
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 1661,
+      "DomesticateLevel": 5,
+      "TaskID": 119,
+      "SortNO": 119,
+      "Name": "捕获宠物",
+      "Desc": "累计获得100个宠物",
+      "ShowProgress": 1,
+      "Behavior": {
+        "ID": 73,
+        "Type": 4,
+        "Param": [
+          100,
+          0,
+          0
+        ]
+      },
+      "BootyID": 10000005,
+      "MaxProgress": 100,
+      "_byte_length": 87
+    },
+    {
+      "_record_index": 19,
+      "_byte_offset": 1748,
+      "DomesticateLevel": 6,
+      "TaskID": 120,
+      "SortNO": 120,
+      "Name": "出战宠物",
+      "Desc": "出战2只红品质宠物",
+      "ShowProgress": 1,
+      "Behavior": {
+        "ID": 69,
+        "Type": 4,
+        "Param": [
+          6,
+          1,
+          2
+        ]
+      },
+      "BootyID": 10000006,
+      "MaxProgress": 2,
+      "_byte_length": 88
+    },
+    {
+      "_record_index": 20,
+      "_byte_offset": 1836,
+      "DomesticateLevel": 6,
+      "TaskID": 121,
+      "SortNO": 121,
+      "Name": "等级提升",
+      "Desc": "将1只宠物等级提升至70级",
+      "ShowProgress": 1,
+      "Behavior": {
+        "ID": 29,
+        "Type": 1,
+        "Param": [
+          70,
+          1,
+          0
+        ]
+      },
+      "BootyID": 10000006,
+      "MaxProgress": 1,
+      "_byte_length": 96
+    },
+    {
+      "_record_index": 21,
+      "_byte_offset": 1932,
+      "DomesticateLevel": 6,
+      "TaskID": 122,
+      "SortNO": 122,
+      "Name": "收服宠物",
+      "Desc": "收服6种宠物",
+      "ShowProgress": 1,
+      "Behavior": {
+        "ID": 68,
+        "Type": 4,
+        "Param": [
+          6,
+          0,
+          0
+        ]
+      },
+      "BootyID": 10000006,
+      "MaxProgress": 6,
+      "_byte_length": 79
+    },
+    {
+      "_record_index": 22,
+      "_byte_offset": 2011,
+      "DomesticateLevel": 6,
+      "TaskID": 123,
+      "SortNO": 123,
+      "Name": "捕获宠物",
+      "Desc": "累计获得125个宠物",
+      "ShowProgress": 1,
+      "Behavior": {
+        "ID": 73,
+        "Type": 4,
+        "Param": [
+          125,
+          0,
+          0
+        ]
+      },
+      "BootyID": 10000006,
+      "MaxProgress": 125,
+      "_byte_length": 87
+    },
+    {
+      "_record_index": 23,
+      "_byte_offset": 2098,
+      "DomesticateLevel": 7,
+      "TaskID": 124,
+      "SortNO": 124,
+      "Name": "出战宠物",
+      "Desc": "出战1只2阶橙品质宠物",
+      "ShowProgress": 1,
+      "Behavior": {
+        "ID": 69,
+        "Type": 4,
+        "Param": [
+          5,
+          2,
+          1
+        ]
+      },
+      "BootyID": 10000007,
+      "MaxProgress": 1,
+      "_byte_length": 92
+    },
+    {
+      "_record_index": 24,
+      "_byte_offset": 2190,
+      "DomesticateLevel": 7,
+      "TaskID": 125,
+      "SortNO": 125,
+      "Name": "等级提升",
+      "Desc": "将1只宠物等级提升至80级",
+      "ShowProgress": 1,
+      "Behavior": {
+        "ID": 29,
+        "Type": 1,
+        "Param": [
+          80,
+          1,
+          0
+        ]
+      },
+      "BootyID": 10000007,
+      "MaxProgress": 1,
+      "_byte_length": 96
+    },
+    {
+      "_record_index": 25,
+      "_byte_offset": 2286,
+      "DomesticateLevel": 7,
+      "TaskID": 126,
+      "SortNO": 126,
+      "Name": "装备兽印",
+      "Desc": "出战宠物装备至少2个5级兽印",
+      "ShowProgress": 1,
+      "Behavior": {
+        "ID": 77,
+        "Type": 4,
+        "Param": [
+          5,
+          2,
+          0
+        ]
+      },
+      "BootyID": 10000007,
+      "MaxProgress": 2,
+      "_byte_length": 101
+    },
+    {
+      "_record_index": 26,
+      "_byte_offset": 2387,
+      "DomesticateLevel": 7,
+      "TaskID": 127,
+      "SortNO": 127,
+      "Name": "捕获宠物",
+      "Desc": "累计获得150个宠物",
+      "ShowProgress": 1,
+      "Behavior": {
+        "ID": 73,
+        "Type": 4,
+        "Param": [
+          150,
+          0,
+          0
+        ]
+      },
+      "BootyID": 10000007,
+      "MaxProgress": 150,
+      "_byte_length": 87
+    },
+    {
+      "_record_index": 27,
+      "_byte_offset": 2474,
+      "DomesticateLevel": 8,
+      "TaskID": 128,
+      "SortNO": 128,
+      "Name": "出战宠物",
+      "Desc": "出战2只2阶橙品质宠物",
+      "ShowProgress": 1,
+      "Behavior": {
+        "ID": 69,
+        "Type": 4,
+        "Param": [
+          5,
+          2,
+          2
+        ]
+      },
+      "BootyID": 10000008,
+      "MaxProgress": 2,
+      "_byte_length": 92
+    },
+    {
+      "_record_index": 28,
+      "_byte_offset": 2566,
+      "DomesticateLevel": 8,
+      "TaskID": 129,
+      "SortNO": 129,
+      "Name": "等级提升",
+      "Desc": "将1只宠物等级提升至90级",
+      "ShowProgress": 1,
+      "Behavior": {
+        "ID": 29,
+        "Type": 1,
+        "Param": [
+          90,
+          1,
+          0
+        ]
+      },
+      "BootyID": 10000008,
+      "MaxProgress": 1,
+      "_byte_length": 96
+    },
+    {
+      "_record_index": 29,
+      "_byte_offset": 2662,
+      "DomesticateLevel": 8,
+      "TaskID": 130,
+      "SortNO": 130,
+      "Name": "收服宠物",
+      "Desc": "收服7种宠物",
+      "ShowProgress": 1,
+      "Behavior": {
+        "ID": 68,
+        "Type": 4,
+        "Param": [
+          7,
+          0,
+          0
+        ]
+      },
+      "BootyID": 10000008,
+      "MaxProgress": 7,
+      "_byte_length": 79
+    },
+    {
+      "_record_index": 30,
+      "_byte_offset": 2741,
+      "DomesticateLevel": 8,
+      "TaskID": 131,
+      "SortNO": 131,
+      "Name": "捕获宠物",
+      "Desc": "累计获得200个宠物",
+      "ShowProgress": 1,
+      "Behavior": {
+        "ID": 73,
+        "Type": 4,
+        "Param": [
+          200,
+          0,
+          0
+        ]
+      },
+      "BootyID": 10000008,
+      "MaxProgress": 200,
+      "_byte_length": 87
+    },
+    {
+      "_record_index": 31,
+      "_byte_offset": 2828,
+      "DomesticateLevel": 9,
+      "TaskID": 132,
+      "SortNO": 132,
+      "Name": "出战宠物",
+      "Desc": "出战1只2阶红品质宠物",
+      "ShowProgress": 1,
+      "Behavior": {
+        "ID": 69,
+        "Type": 4,
+        "Param": [
+          6,
+          2,
+          1
+        ]
+      },
+      "BootyID": 10000009,
+      "MaxProgress": 1,
+      "_byte_length": 92
+    },
+    {
+      "_record_index": 32,
+      "_byte_offset": 2920,
+      "DomesticateLevel": 9,
+      "TaskID": 133,
+      "SortNO": 133,
+      "Name": "等级提升",
+      "Desc": "将1只宠物等级提升至100级",
+      "ShowProgress": 1,
+      "Behavior": {
+        "ID": 29,
+        "Type": 1,
+        "Param": [
+          100,
+          1,
+          0
+        ]
+      },
+      "BootyID": 10000009,
+      "MaxProgress": 1,
+      "_byte_length": 97
+    },
+    {
+      "_record_index": 33,
+      "_byte_offset": 3017,
+      "DomesticateLevel": 9,
+      "TaskID": 134,
+      "SortNO": 134,
+      "Name": "装备兽印",
+      "Desc": "出战宠物装备至少2个6级兽印",
+      "ShowProgress": 1,
+      "Behavior": {
+        "ID": 77,
+        "Type": 4,
+        "Param": [
+          6,
+          2,
+          0
+        ]
+      },
+      "BootyID": 10000009,
+      "MaxProgress": 2,
+      "_byte_length": 101
+    },
+    {
+      "_record_index": 34,
+      "_byte_offset": 3118,
+      "DomesticateLevel": 9,
+      "TaskID": 135,
+      "SortNO": 135,
+      "Name": "捕获宠物",
+      "Desc": "累计获得300个宠物",
+      "ShowProgress": 1,
+      "Behavior": {
+        "ID": 73,
+        "Type": 4,
+        "Param": [
+          300,
+          0,
+          0
+        ]
+      },
+      "BootyID": 10000009,
+      "MaxProgress": 300,
+      "_byte_length": 87
+    },
+    {
+      "_record_index": 35,
+      "_byte_offset": 3205,
+      "DomesticateLevel": 10,
+      "TaskID": 136,
+      "SortNO": 136,
+      "Name": "出战宠物",
+      "Desc": "出战2只2阶红品质宠物",
+      "ShowProgress": 1,
+      "Behavior": {
+        "ID": 69,
+        "Type": 4,
+        "Param": [
+          6,
+          2,
+          2
+        ]
+      },
+      "BootyID": 10000010,
+      "MaxProgress": 2,
+      "_byte_length": 92
+    },
+    {
+      "_record_index": 36,
+      "_byte_offset": 3297,
+      "DomesticateLevel": 10,
+      "TaskID": 137,
+      "SortNO": 137,
+      "Name": "等级提升",
+      "Desc": "将2只宠物等级提升至100级",
+      "ShowProgress": 1,
+      "Behavior": {
+        "ID": 29,
+        "Type": 1,
+        "Param": [
+          100,
+          2,
+          0
+        ]
+      },
+      "BootyID": 10000010,
+      "MaxProgress": 2,
+      "_byte_length": 97
+    },
+    {
+      "_record_index": 37,
+      "_byte_offset": 3394,
+      "DomesticateLevel": 10,
+      "TaskID": 138,
+      "SortNO": 138,
+      "Name": "收服宠物",
+      "Desc": "收服8种宠物",
+      "ShowProgress": 1,
+      "Behavior": {
+        "ID": 68,
+        "Type": 4,
+        "Param": [
+          8,
+          0,
+          0
+        ]
+      },
+      "BootyID": 10000010,
+      "MaxProgress": 8,
+      "_byte_length": 79
+    },
+    {
+      "_record_index": 38,
+      "_byte_offset": 3473,
+      "DomesticateLevel": 10,
+      "TaskID": 139,
+      "SortNO": 139,
+      "Name": "捕获宠物",
+      "Desc": "累计获得400个宠物",
+      "ShowProgress": 1,
+      "Behavior": {
+        "ID": 73,
+        "Type": 4,
+        "Param": [
+          400,
+          0,
+          0
+        ]
+      },
+      "BootyID": 10000010,
+      "MaxProgress": 400,
+      "_byte_length": 87
+    }
+  ]
+}

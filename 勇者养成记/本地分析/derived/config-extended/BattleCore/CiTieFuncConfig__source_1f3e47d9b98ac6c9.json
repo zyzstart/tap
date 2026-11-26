@@ -1,0 +1,67 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_citiefuncconfig.bytes.ab",
+    "path_id": -4541332847797684586,
+    "name": "CiTieFuncConfig",
+    "sha256": "dd6f3ece8133f2d7d1325a7cb471f73d5c9c290dc5f69a6cc43a5ef8fade0920",
+    "export": "derived/unity/text/assets_resources_config_resbin_citiefuncconfig.bytes/CiTieFuncConfig__-4541332847797684586.bin",
+    "schema": "BattleCore.CiTieFuncConfig",
+    "path_id_decimal": "-4541332847797684586",
+    "legacy_status": "raw-header-verified",
+    "legacy_reason": "Unsupported arrays/nested/enum fields: uint[] TypeList",
+    "status": "decoded-validated-native-recursive",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 64,
+      "version": 1,
+      "record_count": 1,
+      "stored_crc32": "8e166007",
+      "computed_inverted_crc32": "8e166007"
+    },
+    "native_layout_verified": true,
+    "schema_file": "derived/config-extended/schemas/BattleCore.CiTieFuncConfig.json",
+    "minimum_record_size": 44,
+    "min_expected_payload_bytes": 44,
+    "actual_payload_bytes": 44,
+    "decoded_record_count": 1,
+    "validation": {
+      "header_verified": true,
+      "count_verified": true,
+      "exact_eof": true,
+      "full_reencode_equal": true,
+      "full_reencode_sha256": "dd6f3ece8133f2d7d1325a7cb471f73d5c9c290dc5f69a6cc43a5ef8fade0920",
+      "decoded_node_count": 11,
+      "payload_bytes": 44
+    },
+    "arrays": [
+      {
+        "field": "TypeList",
+        "count": 10,
+        "count_encoding": "none-native-fixed"
+      }
+    ],
+    "decoded_json": "derived/config-extended/BattleCore/CiTieFuncConfig__source_1f3e47d9b98ac6c9.json",
+    "decoded_csv": "derived/config-extended/BattleCore/CiTieFuncConfig__source_1f3e47d9b98ac6c9.csv"
+  },
+  "precision": "Exact JSON integer number tokens, with decimal-string mirrors for every int64/uint64/FP. FP is raw signed int64; no scaling.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "GroupID": 701,
+      "TypeList": [
+        1,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "_byte_length": 44
+    }
+  ]
+}

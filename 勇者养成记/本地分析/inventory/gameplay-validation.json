@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "native_schemas_reanalyzed": 223,
+  "extended_tables_roundtripped": 164,
+  "extended_records_roundtripped": 254657,
+  "extended_rejects_reproduced": 10,
+  "companion_candidate_tables_roundtripped": 23,
+  "companion_candidate_records_roundtripped": 14679,
+  "new_csv_records_checked": 269336,
+  "catalog_source_tables": 545,
+  "total_native_backed_tables": 444,
+  "total_native_backed_records": 363190,
+  "current_indexed_outputs_with_unique_paths": 467,
+  "host_unittest_count": 54,
+  "algorithm_entries_redecoded": 115,
+  "algorithm_instructions_redecoded": 10460,
+  "algorithm_call_graph_records": 1739,
+  "algorithm_call_graph_kinds": {
+    "outbound_branch": 43,
+    "direct_call": 1683,
+    "indirect_unresolved": 13
+  },
+  "algorithm_jump_table_entries_checked": 30,
+  "algorithm_host_check_count": 62,
+  "algorithm_emitted_model_check_count": 62,
+  "algorithm_test_scope": "host-only static-instruction-derived reference models; not native differential execution",
+  "elapsed_seconds": 37.188,
+  "errors": [],
+  "sample_executed": false,
+  "game_native_executed": false,
+  "game_server_contacted": false,
+  "limits": [
+    "Static successful-path native layout analysis and host-only reference tests; not full runtime/native equivalence.",
+    "Companion-derived layouts stay candidates even with exact value/byte agreement.",
+    "Baseline flat280-table validation is performed separately by validate_outputs.py."
+  ]
+}

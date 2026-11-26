@@ -1,0 +1,12 @@
+package com.tencent.ysdk.shell.module.antiaddiction.listener;
+
+/* JADX INFO: loaded from: D:\VibeCoding\勇者养成记\本地分析\unpacked\classes.dex */
+public interface LoginAntiAddictCallBack {
+    void onExecuteInstruction(com.tencent.ysdk.module.antiaddiction.model.AntiAddictRet antiAddictRet);
+
+    void onRegisterRealName();
+
+    void onRequestLogin(int i);
+
+    void onVisitorLogin();
+}

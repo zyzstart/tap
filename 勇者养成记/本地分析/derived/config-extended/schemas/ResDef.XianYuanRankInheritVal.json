@@ -1,0 +1,85 @@
+{
+  "namespace": "ResDef",
+  "name": "XianYuanRankInheritVal",
+  "fields": [
+    {
+      "type": "short",
+      "name": "ID",
+      "object_offset": 16
+    },
+    {
+      "type": "float",
+      "name": "percent",
+      "object_offset": 20
+    }
+  ],
+  "unpack_va": 29425112,
+  "dump_line": 213328,
+  "layout": [
+    {
+      "type": "short",
+      "name": "ID",
+      "object_offset": 16,
+      "wire_type": "short",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1c0fe0c",
+          "target_va": "0x21f6668",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt16"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt16",
+          "destination": [
+            "self",
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "type": "float",
+      "name": "percent",
+      "object_offset": 20,
+      "wire_type": "float",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1c0fe4c",
+          "target_va": "0x21f6b98",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readFloat"
+          ],
+          "opcode": "B",
+          "kind": "reader",
+          "reader": "readFloat",
+          "destination": [
+            "self",
+            20
+          ]
+        }
+      ]
+    }
+  ],
+  "native_evidence": {
+    "method_start_va": "0x1c0fdd8",
+    "instruction_steps": 22,
+    "event_count": 2,
+    "branch_evidence": [],
+    "loops": [],
+    "instruction_sha256": "d0937600fe6b8372291d3fa5038c3ddb3f250e48bcc7079ee6600afac1c95ff4",
+    "gate": "concrete-success-path; all sequential readers/nested callees; full field/destination/stride matching",
+    "assumptions": [
+      "non-null input buffer and created nested objects/arrays",
+      "managed array bounds valid",
+      "AAPCS64 callee-saved register preservation",
+      "reader and nested call success; version 1 only"
+    ]
+  }
+}

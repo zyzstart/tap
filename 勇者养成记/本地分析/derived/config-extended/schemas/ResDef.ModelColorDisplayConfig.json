@@ -1,0 +1,241 @@
+{
+  "namespace": "ResDef",
+  "name": "ModelColorDisplayConfig",
+  "fields": [
+    {
+      "type": "uint",
+      "name": "ColorID",
+      "object_offset": 16
+    },
+    {
+      "type": "ColorData",
+      "name": "BaseColor",
+      "object_offset": 24
+    },
+    {
+      "type": "ColorData",
+      "name": "SkinColor",
+      "object_offset": 32
+    },
+    {
+      "type": "ColorData",
+      "name": "SkinShadow",
+      "object_offset": 40
+    },
+    {
+      "type": "float",
+      "name": "RimRange",
+      "object_offset": 48
+    },
+    {
+      "type": "float",
+      "name": "RimScale",
+      "object_offset": 52
+    },
+    {
+      "type": "float",
+      "name": "Alpha",
+      "object_offset": 56
+    }
+  ],
+  "unpack_va": 30789312,
+  "dump_line": 209162,
+  "layout": [
+    {
+      "type": "uint",
+      "name": "ColorID",
+      "object_offset": 16,
+      "wire_type": "uint",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d5cef8",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "self",
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ColorData",
+      "name": "BaseColor",
+      "object_offset": 24,
+      "wire_type": "ColorData",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d5cf24",
+          "target_va": "0x1dcebec",
+          "target_names": [
+            "ResDef.ColorData$$unpack"
+          ],
+          "opcode": "BL",
+          "kind": "nested",
+          "nested_schema": "ResDef.ColorData",
+          "destination": [
+            "field",
+            24
+          ],
+          "cut_version": 1
+        }
+      ],
+      "nested_schema": "ResDef.ColorData"
+    },
+    {
+      "type": "ColorData",
+      "name": "SkinColor",
+      "object_offset": 32,
+      "wire_type": "ColorData",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d5cf50",
+          "target_va": "0x1dcebec",
+          "target_names": [
+            "ResDef.ColorData$$unpack"
+          ],
+          "opcode": "BL",
+          "kind": "nested",
+          "nested_schema": "ResDef.ColorData",
+          "destination": [
+            "field",
+            32
+          ],
+          "cut_version": 1
+        }
+      ],
+      "nested_schema": "ResDef.ColorData"
+    },
+    {
+      "type": "ColorData",
+      "name": "SkinShadow",
+      "object_offset": 40,
+      "wire_type": "ColorData",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d5cf7c",
+          "target_va": "0x1dcebec",
+          "target_names": [
+            "ResDef.ColorData$$unpack"
+          ],
+          "opcode": "BL",
+          "kind": "nested",
+          "nested_schema": "ResDef.ColorData",
+          "destination": [
+            "field",
+            40
+          ],
+          "cut_version": 1
+        }
+      ],
+      "nested_schema": "ResDef.ColorData"
+    },
+    {
+      "type": "float",
+      "name": "RimRange",
+      "object_offset": 48,
+      "wire_type": "float",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d5cfa0",
+          "target_va": "0x21f6b98",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readFloat"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readFloat",
+          "destination": [
+            "self",
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "type": "float",
+      "name": "RimScale",
+      "object_offset": 52,
+      "wire_type": "float",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d5cfc4",
+          "target_va": "0x21f6b98",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readFloat"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readFloat",
+          "destination": [
+            "self",
+            52
+          ]
+        }
+      ]
+    },
+    {
+      "type": "float",
+      "name": "Alpha",
+      "object_offset": 56,
+      "wire_type": "float",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d5d004",
+          "target_va": "0x21f6b98",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readFloat"
+          ],
+          "opcode": "B",
+          "kind": "reader",
+          "reader": "readFloat",
+          "destination": [
+            "self",
+            56
+          ]
+        }
+      ]
+    }
+  ],
+  "native_evidence": {
+    "method_start_va": "0x1d5cec0",
+    "instruction_steps": 64,
+    "event_count": 7,
+    "branch_evidence": [],
+    "loops": [],
+    "instruction_sha256": "c80a920599923432230c7c73a33c84a8d0a5878aa6906e7300b05ca9fd7ac23e",
+    "gate": "concrete-success-path; all sequential readers/nested callees; full field/destination/stride matching",
+    "assumptions": [
+      "non-null input buffer and created nested objects/arrays",
+      "managed array bounds valid",
+      "AAPCS64 callee-saved register preservation",
+      "reader and nested call success; version 1 only"
+    ]
+  }
+}

@@ -1,0 +1,229 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_battleeffectmaskconfig.bytes.ab",
+    "path_id": -5130676869121555700,
+    "name": "BattleEffectMaskConfig",
+    "sha256": "33bf8943448722e22386f3994309919d1e5bb3baedace1dd0cbfac954294456d",
+    "export": "derived/unity/text/assets_resources_config_resbin_battleeffectmaskconfig.bytes/BattleEffectMaskConfig__-5130676869121555700.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 794,
+      "version": 1,
+      "record_count": 12,
+      "stored_crc32": "cae4a1ed",
+      "computed_inverted_crc32": "cae4a1ed"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "BattleEffectMaskConfig",
+      "fields": [
+        {
+          "type": "uint",
+          "name": "MaskTypeID",
+          "object_offset": 16
+        },
+        {
+          "type": "uint",
+          "name": "FuncID",
+          "object_offset": 20
+        },
+        {
+          "type": "string",
+          "name": "FuncName",
+          "object_offset": 24
+        },
+        {
+          "type": "string",
+          "name": "MaskDesc",
+          "object_offset": 32
+        },
+        {
+          "type": "byte",
+          "name": "MaskParam",
+          "object_offset": 40
+        }
+      ],
+      "unpack_va": 31221564,
+      "dump_line": 201502
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1dc6770",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dc6794",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dc67bc",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dc67e4",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dc6824",
+        "target_va": "0x21f65e0",
+        "opcode": "B-tail",
+        "reader": "readUInt8",
+        "destination_object_offset": 40,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 12
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "MaskTypeID": 1,
+      "FuncID": 202,
+      "FuncName": "时装",
+      "MaskDesc": "隐藏时装特效在战斗中的显示",
+      "MaskParam": 1,
+      "_byte_length": 64
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 84,
+      "MaskTypeID": 2,
+      "FuncID": 239,
+      "FuncName": "武器",
+      "MaskDesc": "隐藏武器特效在战斗中的显示",
+      "MaskParam": 1,
+      "_byte_length": 64
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 148,
+      "MaskTypeID": 3,
+      "FuncID": 208,
+      "FuncName": "坐骑",
+      "MaskDesc": "隐藏坐骑特效在战斗中的显示",
+      "MaskParam": 1,
+      "_byte_length": 64
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 212,
+      "MaskTypeID": 4,
+      "FuncID": 217,
+      "FuncName": "背饰",
+      "MaskDesc": "隐藏背饰特效在战斗中的显示",
+      "MaskParam": 1,
+      "_byte_length": 64
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 276,
+      "MaskTypeID": 5,
+      "FuncID": 311,
+      "FuncName": "咒术",
+      "MaskDesc": "隐藏咒术特效在战斗中的显示",
+      "MaskParam": 1,
+      "_byte_length": 64
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 340,
+      "MaskTypeID": 6,
+      "FuncID": 221,
+      "FuncName": "神器",
+      "MaskDesc": "隐藏神器特效在战斗中的显示",
+      "MaskParam": 1,
+      "_byte_length": 64
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 404,
+      "MaskTypeID": 7,
+      "FuncID": 226,
+      "FuncName": "幻神",
+      "MaskDesc": "隐藏幻神特效在战斗中的显示",
+      "MaskParam": 1,
+      "_byte_length": 64
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 468,
+      "MaskTypeID": 8,
+      "FuncID": 229,
+      "FuncName": "幻影",
+      "MaskDesc": "隐藏幻影特效在战斗中的显示",
+      "MaskParam": 1,
+      "_byte_length": 64
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 532,
+      "MaskTypeID": 9,
+      "FuncID": 237,
+      "FuncName": "召唤",
+      "MaskDesc": "隐藏召唤特效在战斗中的显示",
+      "MaskParam": 1,
+      "_byte_length": 64
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 596,
+      "MaskTypeID": 10,
+      "FuncID": 249,
+      "FuncName": "圣兽",
+      "MaskDesc": "隐藏圣兽特效在战斗中的显示",
+      "MaskParam": 1,
+      "_byte_length": 64
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 660,
+      "MaskTypeID": 11,
+      "FuncID": 251,
+      "FuncName": "精灵",
+      "MaskDesc": "隐藏精灵特效在战斗中的显示",
+      "MaskParam": 1,
+      "_byte_length": 64
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 724,
+      "MaskTypeID": 12,
+      "FuncID": 114,
+      "FuncName": "异界兽潮",
+      "MaskDesc": "隐藏异界兽潮局内技能的显示",
+      "MaskParam": 1,
+      "_byte_length": 70
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_territorytaskconfig.bytes.ab",
+    "path_id": 5113346355955362482,
+    "name": "TerritoryTaskConfig",
+    "sha256": "a949b62ec5efcb42d3a1441ff0e6e9764191b64b6a54ab65152af4dcc8d1d03f",
+    "export": "derived/unity/text/assets_resources_config_resbin_territorytaskconfig.bytes/TerritoryTaskConfig__5113346355955362482.bin",
+    "schema": "ResDef.TerritoryTaskConfig",
+    "path_id_decimal": "5113346355955362482",
+    "legacy_status": "raw-header-verified",
+    "legacy_reason": "Unsupported arrays/nested/enum fields: ResBehaviorRule Behavior",
+    "status": "decoded-validated-native-recursive",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 373,
+      "version": 1,
+      "record_count": 4,
+      "stored_crc32": "3e77d4ca",
+      "computed_inverted_crc32": "3e77d4ca"
+    },
+    "native_layout_verified": true,
+    "schema_file": "derived/config-extended/schemas/ResDef.TerritoryTaskConfig.json",
+    "minimum_record_size": 45,
+    "min_expected_payload_bytes": 180,
+    "actual_payload_bytes": 353,
+    "decoded_record_count": 4,
+    "validation": {
+      "header_verified": true,
+      "count_verified": true,
+      "exact_eof": true,
+      "full_reencode_equal": true,
+      "full_reencode_sha256": "a949b62ec5efcb42d3a1441ff0e6e9764191b64b6a54ab65152af4dcc8d1d03f",
+      "decoded_node_count": 48,
+      "payload_bytes": 353
+    },
+    "arrays": [],
+    "decoded_json": "derived/config-extended/ResDef/TerritoryTaskConfig.json",
+    "decoded_csv": "derived/config-extended/ResDef/TerritoryTaskConfig.csv"
+  },
+  "precision": "Exact JSON integer number tokens, with decimal-string mirrors for every int64/uint64/FP. FP is raw signed int64; no scaling.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "TaskID": 1,
+      "Sort": 1,
+      "Desc": "成功运送1次自己领地的物资宝箱",
+      "TaskType": 2,
+      "BootyID": 67300,
+      "Behavior": {
+        "ID": 105,
+        "Type": 0,
+        "Param": [
+          1,
+          0,
+          0
+        ]
+      },
+      "MaxProgress": 1,
+      "_byte_length": 88
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 108,
+      "TaskID": 2,
+      "Sort": 2,
+      "Desc": "成功掠夺1次他人领地的物资宝箱",
+      "TaskType": 2,
+      "BootyID": 67301,
+      "Behavior": {
+        "ID": 105,
+        "Type": 0,
+        "Param": [
+          2,
+          0,
+          0
+        ]
+      },
+      "MaxProgress": 1,
+      "_byte_length": 88
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 196,
+      "TaskID": 3,
+      "Sort": 3,
+      "Desc": "成功运送5次所有领地的物资宝箱",
+      "TaskType": 2,
+      "BootyID": 67302,
+      "Behavior": {
+        "ID": 105,
+        "Type": 0,
+        "Param": [
+          0,
+          0,
+          0
+        ]
+      },
+      "MaxProgress": 5,
+      "_byte_length": 88
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 284,
+      "TaskID": 4,
+      "Sort": 4,
+      "Desc": "成功运送10次所有领地的物资宝箱",
+      "TaskType": 2,
+      "BootyID": 67303,
+      "Behavior": {
+        "ID": 105,
+        "Type": 0,
+        "Param": [
+          0,
+          0,
+          0
+        ]
+      },
+      "MaxProgress": 10,
+      "_byte_length": 89
+    }
+  ]
+}

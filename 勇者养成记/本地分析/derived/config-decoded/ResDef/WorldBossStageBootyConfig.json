@@ -1,0 +1,161 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_worldbossstagebootyconfig.bytes.ab",
+    "path_id": 5427198375291481837,
+    "name": "WorldBossStageBootyConfig",
+    "sha256": "4bc102f5c0eefe7895cf7b58ec38d71322194206f49386d102cb4dc432c26759",
+    "export": "derived/unity/text/assets_resources_config_resbin_worldbossstagebootyconfig.bytes/WorldBossStageBootyConfig__5427198375291481837.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 140,
+      "version": 1,
+      "record_count": 10,
+      "stored_crc32": "3dab3503",
+      "computed_inverted_crc32": "3dab3503"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "WorldBossStageBootyConfig",
+      "fields": [
+        {
+          "type": "int",
+          "name": "Stage",
+          "object_offset": 16
+        },
+        {
+          "type": "int",
+          "name": "BootyID",
+          "object_offset": 20
+        },
+        {
+          "type": "int",
+          "name": "LastAttackBootyID",
+          "object_offset": 24
+        }
+      ],
+      "unpack_va": 29417372,
+      "dump_line": 202250
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1c0dfd0",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1c0dff4",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1c0e034",
+        "target_va": "0x21f67d0",
+        "opcode": "B-tail",
+        "reader": "readInt32",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 10
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "Stage": 1,
+      "BootyID": 61301,
+      "LastAttackBootyID": 61300,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 32,
+      "Stage": 2,
+      "BootyID": 61302,
+      "LastAttackBootyID": 61300,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 44,
+      "Stage": 3,
+      "BootyID": 61303,
+      "LastAttackBootyID": 61300,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 56,
+      "Stage": 4,
+      "BootyID": 61304,
+      "LastAttackBootyID": 61300,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 68,
+      "Stage": 5,
+      "BootyID": 61305,
+      "LastAttackBootyID": 61300,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 80,
+      "Stage": 6,
+      "BootyID": 61306,
+      "LastAttackBootyID": 61300,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 92,
+      "Stage": 7,
+      "BootyID": 61307,
+      "LastAttackBootyID": 61300,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 104,
+      "Stage": 8,
+      "BootyID": 61308,
+      "LastAttackBootyID": 61300,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 116,
+      "Stage": 9,
+      "BootyID": 61309,
+      "LastAttackBootyID": 61300,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 128,
+      "Stage": 10,
+      "BootyID": 61310,
+      "LastAttackBootyID": 61300,
+      "_byte_length": 12
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+0x1641710: stp       x22, x21, [sp, #-0x30]!
+0x1641714: stp       x20, x19, [sp, #0x10]
+0x1641718: stp       x29, x30, [sp, #0x20]
+0x164171c: add       x29, sp, #0x20
+0x1641720: mov       x20, x0
+0x1641724: mov       x19, x1
+0x1641728: add       x21, x20, #0x10
+0x164172c: cbnz      x19, #0x1641738
+0x1641730: mov       x0, xzr
+0x1641734: bl        #0xd2b72c ; 
+0x1641738: mov       x0, x19
+0x164173c: mov       x1, x21
+0x1641740: mov       x2, xzr
+0x1641744: bl        #0x21f6908 ; ProtoBase.PbReadBuf$$readUInt32
+0x1641748: cbnz      w0, #0x16417d8
+0x164174c: add       x21, x20, #0x14
+0x1641750: cbnz      x19, #0x164175c
+0x1641754: mov       x0, xzr
+0x1641758: bl        #0xd2b72c ; 
+0x164175c: mov       x0, x19
+0x1641760: mov       x1, x21
+0x1641764: mov       x2, xzr
+0x1641768: bl        #0x21f6908 ; ProtoBase.PbReadBuf$$readUInt32
+0x164176c: cbnz      w0, #0x16417d8
+0x1641770: mov       x22, xzr
+0x1641774: ldr       x21, [x20, #0x18]
+0x1641778: cbnz      x21, #0x1641784
+0x164177c: mov       x0, xzr
+0x1641780: bl        #0xd2b72c ; 
+0x1641784: ldr       w8, [x21, #0x18]
+0x1641788: cmp       x22, x8
+0x164178c: b.lo      #0x16417a0
+0x1641790: bl        #0xd2c410 ; 
+0x1641794: mov       x1, xzr
+0x1641798: mov       x2, xzr
+0x164179c: bl        #0xd2b69c ; 
+0x16417a0: add       x8, x21, x22, lsl #3
+0x16417a4: ldr       x21, [x8, #0x20]
+0x16417a8: cbnz      x21, #0x16417b4
+0x16417ac: mov       x0, xzr
+0x16417b0: bl        #0xd2b72c ; 
+0x16417b4: mov       w2, #1
+0x16417b8: mov       x0, x21
+0x16417bc: mov       x1, x19
+0x16417c0: bl        #0x1641510 ; BattleCore.ForeverAtrEntry$$unpack
+0x16417c4: cbnz      w0, #0x16417d8
+0x16417c8: cmp       x22, #4
+0x16417cc: add       x22, x22, #1
+0x16417d0: b.lt      #0x1641774
+0x16417d4: mov       w0, wzr
+0x16417d8: ldp       x29, x30, [sp, #0x20]
+0x16417dc: ldp       x20, x19, [sp, #0x10]
+0x16417e0: ldp       x22, x21, [sp], #0x30
+0x16417e4: ret       

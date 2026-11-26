@@ -1,0 +1,104 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_moneyexchangeconfig.bytes.ab",
+    "path_id": -1388318045840206929,
+    "name": "MoneyExchangeConfig",
+    "sha256": "b9e9f304b54ea80bf77947f5dface26113103654ee07ac66e1277110aee74176",
+    "export": "derived/unity/text/assets_resources_config_resbin_moneyexchangeconfig.bytes/MoneyExchangeConfig__-1388318045840206929.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 49,
+      "version": 1,
+      "record_count": 1,
+      "stored_crc32": "0c3c4c97",
+      "computed_inverted_crc32": "0c3c4c97"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "MoneyExchangeConfig",
+      "fields": [
+        {
+          "type": "uint",
+          "name": "GetMoneyType",
+          "object_offset": 16
+        },
+        {
+          "type": "uint",
+          "name": "CostMoneyType",
+          "object_offset": 20
+        },
+        {
+          "type": "float",
+          "name": "Ratio",
+          "object_offset": 24
+        },
+        {
+          "type": "string",
+          "name": "IOSVestBag",
+          "object_offset": 32
+        }
+      ],
+      "unpack_va": 30794412,
+      "dump_line": 206516
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1d5e2e0",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d5e304",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d5e328",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d5e36c",
+        "target_va": "0x21f6ce8",
+        "opcode": "B-tail",
+        "reader": "readString",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 1
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "GetMoneyType": 5,
+      "CostMoneyType": 3,
+      "Ratio": 0.20000000298023224,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 29
+    }
+  ]
+}

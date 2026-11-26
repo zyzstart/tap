@@ -1,0 +1,85 @@
+{
+  "namespace": "ResDef",
+  "name": "ModelReplaceData",
+  "fields": [
+    {
+      "type": "uint",
+      "name": "OriginModelID",
+      "object_offset": 16
+    },
+    {
+      "type": "uint",
+      "name": "LatestModelID",
+      "object_offset": 20
+    }
+  ],
+  "unpack_va": 30792956,
+  "dump_line": 209427,
+  "layout": [
+    {
+      "type": "uint",
+      "name": "OriginModelID",
+      "object_offset": 16,
+      "wire_type": "uint",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d5dd30",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "self",
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "type": "uint",
+      "name": "LatestModelID",
+      "object_offset": 20,
+      "wire_type": "uint",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1d5dd70",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "B",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "self",
+            20
+          ]
+        }
+      ]
+    }
+  ],
+  "native_evidence": {
+    "method_start_va": "0x1d5dcfc",
+    "instruction_steps": 22,
+    "event_count": 2,
+    "branch_evidence": [],
+    "loops": [],
+    "instruction_sha256": "a11cfa4eb9bc0e7ecc556f02a221c7dde990b9a350cd8b0762ac3a4c6ad054a0",
+    "gate": "concrete-success-path; all sequential readers/nested callees; full field/destination/stride matching",
+    "assumptions": [
+      "non-null input buffer and created nested objects/arrays",
+      "managed array bounds valid",
+      "AAPCS64 callee-saved register preservation",
+      "reader and nested call success; version 1 only"
+    ]
+  }
+}

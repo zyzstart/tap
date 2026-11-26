@@ -1,0 +1,122 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_menpainpcgiftconfig.bytes.ab",
+    "path_id": 6017262830106549629,
+    "name": "MenPaiNpcGiftConfig",
+    "sha256": "a302a167a129a4af19d53fac2fa37352c2c002f26be0e006b3daf1f1249bb02f",
+    "export": "derived/unity/text/assets_resources_config_resbin_menpainpcgiftconfig.bytes/MenPaiNpcGiftConfig__6017262830106549629.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 335,
+      "version": 1,
+      "record_count": 3,
+      "stored_crc32": "44c53afb",
+      "computed_inverted_crc32": "44c53afb"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "MenPaiNpcGiftConfig",
+      "fields": [
+        {
+          "type": "uint",
+          "name": "ItemID",
+          "object_offset": 16
+        },
+        {
+          "type": "uint",
+          "name": "HaoGanDu",
+          "object_offset": 20
+        },
+        {
+          "type": "string",
+          "name": "Text",
+          "object_offset": 24
+        },
+        {
+          "type": "uint",
+          "name": "BootyID",
+          "object_offset": 32
+        }
+      ],
+      "unpack_va": 30781504,
+      "dump_line": 208397
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1d5b074",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d5b098",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d5b0c0",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d5b100",
+        "target_va": "0x21f6908",
+        "opcode": "B-tail",
+        "reader": "readUInt32",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 3
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "ItemID": 200001,
+      "HaoGanDu": 10,
+      "Text": "<color=#02802F>{0}</color>十分开心，和你握了握手，同时回送了你{1}。",
+      "BootyID": 20011,
+      "_byte_length": 103
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 123,
+      "ItemID": 200002,
+      "HaoGanDu": 20,
+      "Text": "<color=#02802F>{0}</color>十分开心，将狩猎时获得的{1}赠送给了你。",
+      "BootyID": 20012,
+      "_byte_length": 100
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 223,
+      "ItemID": 200003,
+      "HaoGanDu": 40,
+      "Text": "<color=#02802F>{0}</color>十分开心，给了你一个热情的拥抱，并回送了你{1}。",
+      "BootyID": 20013,
+      "_byte_length": 112
+    }
+  ]
+}

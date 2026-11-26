@@ -1,0 +1,219 @@
+15f5b24 sub sp, sp, #0x80
+15f5b28 str x25, [sp, #0x30]
+15f5b2c stp x24, x23, [sp, #0x40]
+15f5b30 stp x22, x21, [sp, #0x50]
+15f5b34 stp x20, x19, [sp, #0x60]
+15f5b38 stp x29, x30, [sp, #0x70]
+15f5b3c add x29, sp, #0x70
+15f5b40 adrp x22, #0x2f3f000
+15f5b44 ldrb w8, [x22, #0x926]
+15f5b48 mov x19, x2
+15f5b4c mov x20, x1
+15f5b50 mov x21, x0
+15f5b54 tbnz w8, #0, #0x15f5b70
+15f5b58 adrp x8, #0x2caa000
+15f5b5c ldr x8, [x8, #0x720]
+15f5b60 ldr w0, [x8]
+15f5b64 bl #0xd04f28
+15f5b68 mov w8, #1
+15f5b6c strb w8, [x22, #0x926]
+15f5b70 cbnz x20, #0x15f5b7c
+15f5b74 mov x0, xzr
+15f5b78 bl #0xd2b72c
+15f5b7c ldrb w8, [x20, #0x1c]
+15f5b80 sub w8, w8, #4
+15f5b84 cmp w8, #6
+15f5b88 b.hi #0x15f5be8
+15f5b8c adrp x9, #0x239f000
+15f5b90 add x9, x9, #0x5d0
+15f5b94 ldrsw x8, [x9, x8, lsl #2]
+15f5b98 add x8, x8, x9
+15f5b9c br x8
+15f5ba0 ldr x22, [x21, #0x10]!
+15f5ba4 cbnz x22, #0x15f5bb0
+15f5ba8 mov x0, xzr
+15f5bac bl #0xd2b72c
+15f5bb0 mov x0, x22
+15f5bb4 mov x1, xzr
+15f5bb8 bl #0x156e1b8 A3BattleCore.Entity$$get_Context
+15f5bbc adrp x8, #0x2d17000
+15f5bc0 ldr x8, [x8, #0x230]
+15f5bc4 mov x23, x0
+15f5bc8 ldr x8, [x8]
+15f5bcc mov x0, x8
+15f5bd0 bl #0xd38978
+15f5bd4 mov x1, x23
+15f5bd8 mov x2, xzr
+15f5bdc mov x22, x0
+15f5be0 bl #0x15826fc A3BattleCore.JianciTrapEntity$$.ctor
+15f5be4 b #0x15f5d90
+15f5be8 ldr x22, [x21, #0x10]!
+15f5bec cbnz x22, #0x15f5bf8
+15f5bf0 mov x0, xzr
+15f5bf4 bl #0xd2b72c
+15f5bf8 mov x0, x22
+15f5bfc mov x1, xzr
+15f5c00 bl #0x156e1b8 A3BattleCore.Entity$$get_Context
+15f5c04 adrp x8, #0x2d17000
+15f5c08 ldr x8, [x8, #0x7f8]
+15f5c0c mov x23, x0
+15f5c10 ldr x8, [x8]
+15f5c14 mov x0, x8
+15f5c18 bl #0xd38978
+15f5c1c mov x1, x23
+15f5c20 mov x22, x0
+15f5c24 bl #0x15f55a4 A3BattleCore.LevelItemEntity$$.ctor
+15f5c28 b #0x15f5d90
+15f5c2c ldr x22, [x21, #0x10]!
+15f5c30 cbnz x22, #0x15f5c3c
+15f5c34 mov x0, xzr
+15f5c38 bl #0xd2b72c
+15f5c3c mov x0, x22
+15f5c40 mov x1, xzr
+15f5c44 bl #0x156e1b8 A3BattleCore.Entity$$get_Context
+15f5c48 adrp x8, #0x2cf8000
+15f5c4c ldr x8, [x8, #0xd28]
+15f5c50 mov x23, x0
+15f5c54 ldr x8, [x8]
+15f5c58 mov x0, x8
+15f5c5c bl #0xd38978
+15f5c60 mov x1, x23
+15f5c64 mov x2, xzr
+15f5c68 mov x22, x0
+15f5c6c bl #0x16389d4 A3BattleCore.WheelTrapEntity$$.ctor
+15f5c70 b #0x15f5d90
+15f5c74 ldr x22, [x21, #0x10]!
+15f5c78 cbnz x22, #0x15f5c84
+15f5c7c mov x0, xzr
+15f5c80 bl #0xd2b72c
+15f5c84 mov x0, x22
+15f5c88 mov x1, xzr
+15f5c8c bl #0x156e1b8 A3BattleCore.Entity$$get_Context
+15f5c90 adrp x8, #0x2cff000
+15f5c94 ldr x8, [x8, #0x6e0]
+15f5c98 mov x23, x0
+15f5c9c ldr x8, [x8]
+15f5ca0 mov x0, x8
+15f5ca4 bl #0xd38978
+15f5ca8 mov x1, x23
+15f5cac mov x2, xzr
+15f5cb0 mov x22, x0
+15f5cb4 bl #0x15779a0 A3BattleCore.GrassEntity$$.ctor
+15f5cb8 b #0x15f5d90
+15f5cbc ldr x22, [x21, #0x10]!
+15f5cc0 cbnz x22, #0x15f5ccc
+15f5cc4 mov x0, xzr
+15f5cc8 bl #0xd2b72c
+15f5ccc mov x0, x22
+15f5cd0 mov x1, xzr
+15f5cd4 bl #0x156e1b8 A3BattleCore.Entity$$get_Context
+15f5cd8 adrp x8, #0x2cbe000
+15f5cdc ldr x8, [x8, #0xa18]
+15f5ce0 mov x23, x0
+15f5ce4 ldr x8, [x8]
+15f5ce8 mov x0, x8
+15f5cec bl #0xd38978
+15f5cf0 mov x1, x23
+15f5cf4 mov x2, xzr
+15f5cf8 mov x22, x0
+15f5cfc bl #0x157b058 A3BattleCore.IceEntity$$.ctor
+15f5d00 b #0x15f5d90
+15f5d04 ldr x22, [x21, #0x10]!
+15f5d08 cbnz x22, #0x15f5d14
+15f5d0c mov x0, xzr
+15f5d10 bl #0xd2b72c
+15f5d14 mov x0, x22
+15f5d18 mov x1, xzr
+15f5d1c bl #0x156e1b8 A3BattleCore.Entity$$get_Context
+15f5d20 adrp x8, #0x2cc8000
+15f5d24 ldr x8, [x8, #0x8f0]
+15f5d28 mov x23, x0
+15f5d2c ldr x8, [x8]
+15f5d30 mov x0, x8
+15f5d34 bl #0xd38978
+15f5d38 mov x1, x23
+15f5d3c mov x2, xzr
+15f5d40 mov x22, x0
+15f5d44 bl #0x1636e28 A3BattleCore.TrapEntity$$.ctor
+15f5d48 b #0x15f5d90
+15f5d4c ldr x22, [x21, #0x10]!
+15f5d50 cbnz x22, #0x15f5d5c
+15f5d54 mov x0, xzr
+15f5d58 bl #0xd2b72c
+15f5d5c mov x0, x22
+15f5d60 mov x1, xzr
+15f5d64 bl #0x156e1b8 A3BattleCore.Entity$$get_Context
+15f5d68 adrp x8, #0x2d0c000
+15f5d6c ldr x8, [x8, #0xe88]
+15f5d70 mov x23, x0
+15f5d74 ldr x8, [x8]
+15f5d78 mov x0, x8
+15f5d7c bl #0xd38978
+15f5d80 mov x1, x23
+15f5d84 mov x2, xzr
+15f5d88 mov x22, x0
+15f5d8c bl #0x1635a98 A3BattleCore.TeleporterPos$$.ctor
+15f5d90 ldr x23, [x21]
+15f5d94 cbnz x23, #0x15f5da0
+15f5d98 mov x0, xzr
+15f5d9c bl #0xd2b72c
+15f5da0 ldr x8, [x23]
+15f5da4 mov x0, x23
+15f5da8 ldr x9, [x8, #0x268]
+15f5dac ldr x1, [x8, #0x270]
+15f5db0 blr x9
+15f5db4 cbz x0, #0x15f5e54
+15f5db8 cbnz x22, #0x15f5dc4
+15f5dbc mov x0, xzr
+15f5dc0 bl #0xd2b72c
+15f5dc4 ldr x23, [x21]
+15f5dc8 ldr x21, [x22, #0x28]
+15f5dcc cbnz x23, #0x15f5dd8
+15f5dd0 mov x0, xzr
+15f5dd4 bl #0xd2b72c
+15f5dd8 ldr x8, [x23]
+15f5ddc mov x0, x23
+15f5de0 ldr x9, [x8, #0x268]
+15f5de4 ldr x1, [x8, #0x270]
+15f5de8 blr x9
+15f5dec mov x23, x0
+15f5df0 cbnz x19, #0x15f5dfc
+15f5df4 mov x0, xzr
+15f5df8 bl #0xd2b72c
+15f5dfc ldp x24, x25, [x19, #0x18]
+15f5e00 cbnz x23, #0x15f5e0c
+15f5e04 mov x0, xzr
+15f5e08 bl #0xd2b72c
+15f5e0c add x8, sp, #0x18
+15f5e10 mov w3, #1
+15f5e14 mov x0, x23
+15f5e18 mov x1, x24
+15f5e1c mov x2, x25
+15f5e20 bl #0x15f5e90 A3BattleCore.LevelLogicInfo$$ConvGridPosToMapPos
+15f5e24 cbnz x21, #0x15f5e30
+15f5e28 mov x0, xzr
+15f5e2c bl #0xd2b72c
+15f5e30 ldr x8, [sp, #0x28]
+15f5e34 ldur q0, [sp, #0x18]
+15f5e38 mov x1, sp
+15f5e3c mov x0, x21
+15f5e40 mov x2, xzr
+15f5e44 str x8, [sp, #0x10]
+15f5e48 str q0, [sp]
+15f5e4c bl #0x156e5f4 A3BattleCore.EntityTransform$$set_position
+15f5e50 b #0x15f5e60
+15f5e54 cbnz x22, #0x15f5e60
+15f5e58 mov x0, xzr
+15f5e5c bl #0xd2b72c
+15f5e60 mov x0, x22
+15f5e64 mov x1, x20
+15f5e68 mov x2, x19
+15f5e6c bl #0x15f5634 A3BattleCore.LevelItemEntity$$Init
+15f5e70 mov x0, x22
+15f5e74 ldp x29, x30, [sp, #0x70]
+15f5e78 ldp x20, x19, [sp, #0x60]
+15f5e7c ldp x22, x21, [sp, #0x50]
+15f5e80 ldp x24, x23, [sp, #0x40]
+15f5e84 ldr x25, [sp, #0x30]
+15f5e88 add sp, sp, #0x80
+15f5e8c ret

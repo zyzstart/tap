@@ -1,0 +1,258 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_chatchannelconfig.bytes.ab",
+    "path_id": -6450139754870266356,
+    "name": "ChatChannelConfig",
+    "sha256": "6928d3388e385835b30abd5d78ed9f695cf6e8dcc8ba831c1c186fb663900ee9",
+    "export": "derived/unity/text/assets_resources_config_resbin_chatchannelconfig.bytes/ChatChannelConfig__-6450139754870266356.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 473,
+      "version": 1,
+      "record_count": 3,
+      "stored_crc32": "5fdb28ad",
+      "computed_inverted_crc32": "5fdb28ad"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "ChatChannelConfig",
+      "fields": [
+        {
+          "type": "int",
+          "name": "ChannelId",
+          "object_offset": 16
+        },
+        {
+          "type": "string",
+          "name": "ChannelName",
+          "object_offset": 24
+        },
+        {
+          "type": "string",
+          "name": "SampleName",
+          "object_offset": 32
+        },
+        {
+          "type": "string",
+          "name": "ChannelTips",
+          "object_offset": 40
+        },
+        {
+          "type": "int",
+          "name": "paramNum",
+          "object_offset": 48
+        },
+        {
+          "type": "string",
+          "name": "IconColor",
+          "object_offset": 56
+        },
+        {
+          "type": "string",
+          "name": "TextColor",
+          "object_offset": 64
+        },
+        {
+          "type": "int",
+          "name": "OpenLv",
+          "object_offset": 72
+        },
+        {
+          "type": "int",
+          "name": "CostID",
+          "object_offset": 76
+        },
+        {
+          "type": "int",
+          "name": "OpenVip",
+          "object_offset": 80
+        },
+        {
+          "type": "int",
+          "name": "TextId",
+          "object_offset": 84
+        },
+        {
+          "type": "int",
+          "name": "VipLimit",
+          "object_offset": 88
+        }
+      ],
+      "unpack_va": 31251924,
+      "dump_line": 202711
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1dcde08",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dcde30",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dcde58",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dcde80",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 40,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dcdea4",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 48,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dcdecc",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 56,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dcdef4",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 64,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dcdf18",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 72,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dcdf3c",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 76,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dcdf60",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 80,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dcdf84",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 84,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dcdfc4",
+        "target_va": "0x21f67d0",
+        "opcode": "B-tail",
+        "reader": "readInt32",
+        "destination_object_offset": 88,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 3
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "ChannelId": 1,
+      "ChannelName": "系统",
+      "SampleName": "系",
+      "ChannelTips": "<color=#C8C8C8>请输入发言内容</color>",
+      "paramNum": 0,
+      "IconColor": "<color=#AB0C00></color>",
+      "TextColor": "<color=#FFFFFF></color>",
+      "OpenLv": 0,
+      "CostID": 0,
+      "OpenVip": 0,
+      "TextId": 0,
+      "VipLimit": 0,
+      "_byte_length": 152
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 172,
+      "ChannelId": 2,
+      "ChannelName": "世界",
+      "SampleName": "世",
+      "ChannelTips": "<color=#C8C8C8>发言耗费{0}{1}</color>",
+      "paramNum": 2,
+      "IconColor": "<color=#0466eb></color>",
+      "TextColor": "<color=#FFFFFF></color>",
+      "OpenLv": 30,
+      "CostID": 3,
+      "OpenVip": 3,
+      "TextId": 6359,
+      "VipLimit": 0,
+      "_byte_length": 149
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 321,
+      "ChannelId": 6,
+      "ChannelName": "联盟",
+      "SampleName": "盟",
+      "ChannelTips": "<color=#C8C8C8>请输入发言内容</color>",
+      "paramNum": 0,
+      "IconColor": "<color=#AB0C00></color>",
+      "TextColor": "<color=#FFFFFF></color>",
+      "OpenLv": 40,
+      "CostID": 0,
+      "OpenVip": 0,
+      "TextId": 0,
+      "VipLimit": 0,
+      "_byte_length": 152
+    }
+  ]
+}

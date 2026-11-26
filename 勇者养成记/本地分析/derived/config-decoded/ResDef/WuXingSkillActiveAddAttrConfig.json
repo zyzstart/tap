@@ -1,0 +1,209 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_wuxingskillactiveaddattrconfig.bytes.ab",
+    "path_id": 1876031404970643986,
+    "name": "WuXingSkillActiveAddAttrConfig",
+    "sha256": "807368c98ad88429097363501b935307dddc9681a7e8fdd758cf393f5fbb5fc0",
+    "export": "derived/unity/text/assets_resources_config_resbin_wuxingskillactiveaddattrconfig.bytes/WuXingSkillActiveAddAttrConfig__1876031404970643986.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 380,
+      "version": 1,
+      "record_count": 10,
+      "stored_crc32": "0d9535ac",
+      "computed_inverted_crc32": "0d9535ac"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "WuXingSkillActiveAddAttrConfig",
+      "fields": [
+        {
+          "type": "int",
+          "name": "RandomSkillLibGroupID",
+          "object_offset": 16
+        },
+        {
+          "type": "string",
+          "name": "AddSkillDesc",
+          "object_offset": 24
+        },
+        {
+          "type": "uint",
+          "name": "AddSkillLibID",
+          "object_offset": 32
+        },
+        {
+          "type": "int",
+          "name": "ActiveNeedNum",
+          "object_offset": 36
+        },
+        {
+          "type": "int",
+          "name": "HellLevelType",
+          "object_offset": 40
+        }
+      ],
+      "unpack_va": 29418036,
+      "dump_line": 205047
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1c0e268",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1c0e290",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1c0e2b4",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1c0e2d8",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 36,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1c0e318",
+        "target_va": "0x21f67d0",
+        "opcode": "B-tail",
+        "reader": "readInt32",
+        "destination_object_offset": 40,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 10
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "RandomSkillLibGroupID": 1001,
+      "AddSkillDesc": "火伤害 +100%",
+      "AddSkillLibID": 21901,
+      "ActiveNeedNum": 3,
+      "HellLevelType": 1,
+      "_byte_length": 36
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 56,
+      "RandomSkillLibGroupID": 1002,
+      "AddSkillDesc": "火防御 +100%",
+      "AddSkillLibID": 21902,
+      "ActiveNeedNum": 3,
+      "HellLevelType": 1,
+      "_byte_length": 36
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 92,
+      "RandomSkillLibGroupID": 1003,
+      "AddSkillDesc": "金伤害 +100%",
+      "AddSkillLibID": 21903,
+      "ActiveNeedNum": 3,
+      "HellLevelType": 2,
+      "_byte_length": 36
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 128,
+      "RandomSkillLibGroupID": 1004,
+      "AddSkillDesc": "金防御 +100%",
+      "AddSkillLibID": 21904,
+      "ActiveNeedNum": 3,
+      "HellLevelType": 2,
+      "_byte_length": 36
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 164,
+      "RandomSkillLibGroupID": 1005,
+      "AddSkillDesc": "木伤害 +100%",
+      "AddSkillLibID": 21905,
+      "ActiveNeedNum": 3,
+      "HellLevelType": 3,
+      "_byte_length": 36
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 200,
+      "RandomSkillLibGroupID": 1006,
+      "AddSkillDesc": "木防御 +100%",
+      "AddSkillLibID": 21906,
+      "ActiveNeedNum": 3,
+      "HellLevelType": 3,
+      "_byte_length": 36
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 236,
+      "RandomSkillLibGroupID": 1007,
+      "AddSkillDesc": "水伤害 +100%",
+      "AddSkillLibID": 21907,
+      "ActiveNeedNum": 3,
+      "HellLevelType": 4,
+      "_byte_length": 36
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 272,
+      "RandomSkillLibGroupID": 1008,
+      "AddSkillDesc": "水防御 +100%",
+      "AddSkillLibID": 21908,
+      "ActiveNeedNum": 3,
+      "HellLevelType": 4,
+      "_byte_length": 36
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 308,
+      "RandomSkillLibGroupID": 1009,
+      "AddSkillDesc": "土伤害 +100%",
+      "AddSkillLibID": 21909,
+      "ActiveNeedNum": 3,
+      "HellLevelType": 5,
+      "_byte_length": 36
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 344,
+      "RandomSkillLibGroupID": 1010,
+      "AddSkillDesc": "土防御 +100%",
+      "AddSkillLibID": 21910,
+      "ActiveNeedNum": 3,
+      "HellLevelType": 5,
+      "_byte_length": 36
+    }
+  ]
+}

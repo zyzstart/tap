@@ -1,0 +1,1127 @@
+[
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_beasttidespawnposconfig.bytes.ab",
+    "path_id": -5525376040448054269,
+    "name": "BeastTideSpawnPosConfig",
+    "sha256": "0261968f925607565a631d45e448f96d8297f3027289a8a39bd92366f18dc1ce",
+    "export": "derived/unity/text/assets_resources_config_resbin_beasttidespawnposconfig.bytes/BeastTideSpawnPosConfig__-5525376040448054269.bin",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 4516,
+      "version": 1,
+      "record_count": 281,
+      "stored_crc32": "02731682",
+      "computed_inverted_crc32": "02731682"
+    },
+    "status": "cross-variant-layout-candidate",
+    "legacy_reason": "ValueError: Truncated field Row",
+    "layout_rule": "same-order-with-float-FP-transfer",
+    "fields": [
+      {
+        "type": "uint",
+        "name": "SpawnPosLibID",
+        "object_offset": 16
+      },
+      {
+        "type": "float",
+        "name": "Row",
+        "object_offset": 24
+      },
+      {
+        "type": "float",
+        "name": "Column",
+        "object_offset": 32
+      },
+      {
+        "type": "uint",
+        "name": "Weight",
+        "object_offset": 40
+      }
+    ],
+    "companion_json": "derived/config-decoded/BattleCore/BeastTideSpawnPosConfig.json",
+    "companion_export": "derived/unity/text/assets_resources_config_resbin_fp_beasttidespawnposconfig.bytes/BeastTideSpawnPosConfig__3599272220307585861.bin",
+    "companion_sha256": "fbfd4483f5ca9ff849a722a1993dcf21b153a732ea22977868e5516f640d34f5",
+    "named_value_checks": {
+      "exact_named_value": 562,
+      "FP_to_float32_projection": 562
+    },
+    "decoded_record_count": 281,
+    "payload_roundtrip_sha256": "79af4bff9bd29e1a8e5408d1a004e8012ccbc37c01b3b6278a5d6b55ae9ebc27",
+    "decoded_json": "derived/config-layout-recovery/nonfp/BeastTideSpawnPosConfig.json",
+    "decoded_csv": "derived/config-layout-recovery/nonfp/BeastTideSpawnPosConfig.csv"
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_collectitemwaveconfig.bytes.ab",
+    "path_id": 2893843151800838417,
+    "name": "CollectItemWaveConfig",
+    "sha256": "35a4f35ba25c4093ad8012bf03e03fc78125ffa4283d7c926381925a2bf4a8cf",
+    "export": "derived/unity/text/assets_resources_config_resbin_collectitemwaveconfig.bytes/CollectItemWaveConfig__2893843151800838417.bin",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 2690,
+      "version": 1,
+      "record_count": 137,
+      "stored_crc32": "47b9bb65",
+      "computed_inverted_crc32": "47b9bb65"
+    },
+    "status": "cross-variant-layout-candidate",
+    "legacy_reason": "ValueError: Trailing bytes: 889",
+    "layout_rule": "same-order-plus-unnamed-tail-string",
+    "fields": [
+      {
+        "type": "byte",
+        "name": "WaveType",
+        "object_offset": 16
+      },
+      {
+        "type": "uint",
+        "name": "WaveID",
+        "object_offset": 20
+      },
+      {
+        "type": "uint",
+        "name": "triggerTime",
+        "object_offset": 24
+      },
+      {
+        "type": "uint",
+        "name": "BootyID",
+        "object_offset": 28
+      },
+      {
+        "name": "_unmapped_tail_utf8_0",
+        "type": "string"
+      }
+    ],
+    "companion_json": "derived/config-decoded/BattleCore/CollectItemWaveConfig.json",
+    "companion_export": "derived/unity/text/assets_resources_config_resbin_fp_collectitemwaveconfig.bytes/CollectItemWaveConfig__-1290633263845550477.bin",
+    "companion_sha256": "f2180b385f8a25a529df1cd57c82a7929aa946fe81b851dbb90bdbdb8f39e3bf",
+    "named_value_checks": {
+      "exact_named_value": 548
+    },
+    "decoded_record_count": 137,
+    "payload_roundtrip_sha256": "12d38dc9f52a5f3cd0da658a97126474436670337f2f8c9339d12d031ca2a565",
+    "decoded_json": "derived/config-layout-recovery/nonfp/CollectItemWaveConfig.json",
+    "decoded_csv": "derived/config-layout-recovery/nonfp/CollectItemWaveConfig.csv"
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_foreverbornposconfig.bytes.ab",
+    "path_id": 9113405903298711457,
+    "name": "ForeverBornPosConfig",
+    "sha256": "5102f0dad2e946edaab981f6d8db30d480f30cdaa9a49e3adace4d1750960f5b",
+    "export": "derived/unity/text/assets_resources_config_resbin_foreverbornposconfig.bytes/ForeverBornPosConfig__9113405903298711457.bin",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 1876,
+      "version": 1,
+      "record_count": 64,
+      "stored_crc32": "cd3ec7a5",
+      "computed_inverted_crc32": "cd3ec7a5"
+    },
+    "status": "cross-variant-layout-candidate",
+    "legacy_reason": "ValueError: Trailing bytes: 576",
+    "layout_rule": "same-order-plus-unnamed-tail-string",
+    "fields": [
+      {
+        "type": "int",
+        "name": "PosType",
+        "object_offset": 16
+      },
+      {
+        "type": "float",
+        "name": "Row",
+        "object_offset": 24
+      },
+      {
+        "type": "float",
+        "name": "Column",
+        "object_offset": 32
+      },
+      {
+        "name": "_unmapped_tail_utf8_0",
+        "type": "string"
+      }
+    ],
+    "companion_json": "derived/config-decoded/BattleCore/ForeverBornPosConfig.json",
+    "companion_export": "derived/unity/text/assets_resources_config_resbin_fp_foreverbornposconfig.bytes/ForeverBornPosConfig__-5220334766961838617.bin",
+    "companion_sha256": "230cb7b389416f75cb650042b83970741bd265f1e76c3886849b1827110dd5bd",
+    "named_value_checks": {
+      "exact_named_value": 64,
+      "FP_to_float32_projection": 128
+    },
+    "decoded_record_count": 64,
+    "payload_roundtrip_sha256": "ea7ee89c6ce9f84be4720f42d8ddc4c707bfd4bca8390931186653993357eafc",
+    "decoded_json": "derived/config-layout-recovery/nonfp/ForeverBornPosConfig.json",
+    "decoded_csv": "derived/config-layout-recovery/nonfp/ForeverBornPosConfig.csv"
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_fp_attrdataconfig.bytes.ab",
+    "path_id": 8523966994571523292,
+    "name": "AttrDataConfig",
+    "sha256": "6363735833b7df4099ce4d5430cc1974dd5448762d1e3123bd7c89e69ca344a3",
+    "export": "derived/unity/text/assets_resources_config_resbin_fp_attrdataconfig.bytes/AttrDataConfig__8523966994571523292.bin",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 3788,
+      "version": 1,
+      "record_count": 93,
+      "stored_crc32": "ece94fd6",
+      "computed_inverted_crc32": "ece94fd6"
+    },
+    "status": "unresolved-variant-layout",
+    "legacy_reason": "ValueError: Invalid string length -1849826120",
+    "reason": "No unique fully companion-matched layout; matches=0",
+    "candidate_rejections": [
+      {
+        "candidate": "same-order-with-float-FP-transfer",
+        "reason": "string bounds"
+      },
+      {
+        "candidate": "same-order-plus-unnamed-tail-string",
+        "reason": "string bounds"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-0",
+        "reason": "string bounds"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-1",
+        "reason": "string bounds"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-2",
+        "reason": "string bounds"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-3",
+        "reason": "string bounds"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-4",
+        "reason": "string bounds"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-5",
+        "reason": "string bounds"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-6",
+        "reason": "string bounds"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-7",
+        "reason": "string bounds"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-8",
+        "reason": "string bounds"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-9",
+        "reason": "string bounds"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-10",
+        "reason": "string bounds"
+      }
+    ]
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_fp_defaultattconfig.bytes.ab",
+    "path_id": -6386523740053702460,
+    "name": "DefaultAttConfig",
+    "sha256": "5d7060068b823a5aa8d31797a2708156d24322ff447ba93792b31b70b20fa297",
+    "export": "derived/unity/text/assets_resources_config_resbin_fp_defaultattconfig.bytes/DefaultAttConfig__-6386523740053702460.bin",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 104,
+      "version": 1,
+      "record_count": 1,
+      "stored_crc32": "1f0c6422",
+      "computed_inverted_crc32": "1f0c6422"
+    },
+    "status": "unresolved-variant-layout",
+    "legacy_reason": "ValueError: Truncated field SkyCritAtkRatio",
+    "reason": "No unique fully companion-matched layout; matches=0",
+    "candidate_rejections": [
+      {
+        "candidate": "same-order-with-float-FP-transfer",
+        "reason": "truncated SkyHitRatio__raw_int64"
+      },
+      {
+        "candidate": "same-order-plus-unnamed-tail-string",
+        "reason": "truncated SkyHitRatio__raw_int64"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-0",
+        "reason": "truncated BlockDamage__raw_int64"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-1",
+        "reason": "truncated BlockDamage__raw_int64"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-2",
+        "reason": "truncated BlockDamage__raw_int64"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-3",
+        "reason": "truncated BlockDamage__raw_int64"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-4",
+        "reason": "truncated BlockDamage__raw_int64"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-5",
+        "reason": "truncated BlockDamage__raw_int64"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-6",
+        "reason": "truncated BlockDamage__raw_int64"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-7",
+        "reason": "truncated BlockDamage__raw_int64"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-8",
+        "reason": "truncated BlockDamage__raw_int64"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-9",
+        "reason": "truncated BlockDamage__raw_int64"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-10",
+        "reason": "truncated BlockDamage__raw_int64"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-11",
+        "reason": "truncated BlockDamage__raw_int64"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-12",
+        "reason": "truncated opaque field"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-13",
+        "reason": "truncated SkyHitRatio__raw_int64"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-14",
+        "reason": "truncated SkyHitRatio__raw_int64"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-15",
+        "reason": "truncated SkyHitRatio__raw_int64"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-16",
+        "reason": "truncated SkyHitRatio__raw_int64"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-17",
+        "reason": "truncated SkyHitRatio__raw_int64"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-18",
+        "reason": "truncated SkyHitRatio__raw_int64"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-19",
+        "reason": "truncated SkyHitRatio__raw_int64"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-20",
+        "reason": "truncated SkyHitRatio__raw_int64"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-21",
+        "reason": "truncated SkyHitRatio__raw_int64"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-22",
+        "reason": "truncated SkyHitRatio__raw_int64"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-23",
+        "reason": "truncated SkyHitRatio__raw_int64"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-24",
+        "reason": "truncated SkyHitRatio__raw_int64"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-25",
+        "reason": "truncated SkyHitRatio__raw_int64"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-26",
+        "reason": "truncated SkyHitRatio__raw_int64"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-27",
+        "reason": "truncated SkyHitRatio__raw_int64"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-28",
+        "reason": "truncated SkyHitRatio__raw_int64"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-29",
+        "reason": "truncated SkyHitRatio__raw_int64"
+      }
+    ]
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_fp_mhzbguardbeastconfig.bytes.ab",
+    "path_id": 6000627803872089003,
+    "name": "MHZBGuardBeastConfig",
+    "sha256": "acb580d32c3e843caff8e1df8b3527d345c161678f57fd5ae1c73ccbc4bbdea4",
+    "export": "derived/unity/text/assets_resources_config_resbin_fp_mhzbguardbeastconfig.bytes/MHZBGuardBeastConfig__6000627803872089003.bin",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 300,
+      "version": 1,
+      "record_count": 35,
+      "stored_crc32": "fc0ccf50",
+      "computed_inverted_crc32": "fc0ccf50"
+    },
+    "status": "unresolved-variant-layout",
+    "legacy_reason": "ValueError: Invalid string length 101106",
+    "reason": "Companion count differs; no row correspondence assumed"
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_fp_spiritparamconfig.bytes.ab",
+    "path_id": 3560782204511286504,
+    "name": "SpiritParamConfig",
+    "sha256": "603c8cf660e4f93a7b5a2e71badb77b85b066e413c31faa6fa75694cc995787c",
+    "export": "derived/unity/text/assets_resources_config_resbin_fp_spiritparamconfig.bytes/SpiritParamConfig__3560782204511286504.bin",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 44,
+      "version": 1,
+      "record_count": 2,
+      "stored_crc32": "57d47c34",
+      "computed_inverted_crc32": "57d47c34"
+    },
+    "status": "cross-variant-layout-candidate",
+    "legacy_reason": "ValueError: Trailing bytes: 8",
+    "layout_rule": "same-order-with-float-FP-transfer",
+    "fields": [
+      {
+        "type": "int",
+        "name": "SpiritFuncID",
+        "object_offset": 16
+      },
+      {
+        "type": "FP",
+        "name": "FuncVal",
+        "object_offset": 20
+      }
+    ],
+    "companion_json": "derived/config-decoded/ResDef/SpiritParamConfig.json",
+    "companion_export": "derived/unity/text/assets_resources_config_resbin_spiritparamconfig.bytes/SpiritParamConfig__-7210410919308914279.bin",
+    "companion_sha256": "6dad851c4d1dbc812a61f3d72c1ef8aa079f48c488fb1413134c53612bea6c6d",
+    "named_value_checks": {
+      "exact_named_value": 2,
+      "float32_to_FP_projection": 2
+    },
+    "decoded_record_count": 2,
+    "payload_roundtrip_sha256": "a87c116ef05051888033f32cb2c5eefc2fd136e67eb8e2ca21da611e95b0201d",
+    "decoded_json": "derived/config-layout-recovery/fp/SpiritParamConfig.json",
+    "decoded_csv": "derived/config-layout-recovery/fp/SpiritParamConfig.csv"
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_fp_waterconfig.bytes.ab",
+    "path_id": -6409938528021714452,
+    "name": "WaterConfig",
+    "sha256": "eeea918fa60ec30f25eb826ae922f23651b8cdcad6a5c7650c5555c38b7f32c8",
+    "export": "derived/unity/text/assets_resources_config_resbin_fp_waterconfig.bytes/WaterConfig__-6409938528021714452.bin",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 708,
+      "version": 1,
+      "record_count": 49,
+      "stored_crc32": "dd20713a",
+      "computed_inverted_crc32": "dd20713a"
+    },
+    "status": "unresolved-variant-layout",
+    "legacy_reason": "ValueError: Truncated string length",
+    "reason": "No unique fully companion-matched layout; matches=0",
+    "candidate_rejections": [
+      {
+        "candidate": "same-order-with-float-FP-transfer",
+        "reason": "truncated string length"
+      },
+      {
+        "candidate": "same-order-plus-unnamed-tail-string",
+        "reason": "truncated string length"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-0",
+        "reason": "string bounds"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-1",
+        "reason": "string bounds"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-2",
+        "reason": "string bounds"
+      }
+    ]
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_gcdconfig.bytes.ab",
+    "path_id": -5022373594470234178,
+    "name": "GCDConfig",
+    "sha256": "0c56db9293d6ee0018701dafb38d611131589c357955fa153d047f13fe9ed6e4",
+    "export": "derived/unity/text/assets_resources_config_resbin_gcdconfig.bytes/GCDConfig__-5022373594470234178.bin",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 1324,
+      "version": 1,
+      "record_count": 163,
+      "stored_crc32": "2f23c9c3",
+      "computed_inverted_crc32": "2f23c9c3"
+    },
+    "status": "cross-variant-layout-candidate",
+    "legacy_reason": "ValueError: Truncated field CD",
+    "layout_rule": "same-order-with-float-FP-transfer",
+    "fields": [
+      {
+        "type": "uint",
+        "name": "ID",
+        "object_offset": 16
+      },
+      {
+        "type": "float",
+        "name": "CD",
+        "object_offset": 24
+      }
+    ],
+    "companion_json": "derived/config-decoded/BattleCore/GCDConfig.json",
+    "companion_export": "derived/unity/text/assets_resources_config_resbin_fp_gcdconfig.bytes/GCDConfig__-4341878292207316440.bin",
+    "companion_sha256": "93d97af43528e34cab548318c6001c8b893bc6d02f80f7ed15b24a37e18fd190",
+    "named_value_checks": {
+      "exact_named_value": 163,
+      "FP_to_float32_projection": 163
+    },
+    "decoded_record_count": 163,
+    "payload_roundtrip_sha256": "01acecc0bc4548514d8d7cd24e625ebb80adf624f546006970a15155e4eb4f83",
+    "decoded_json": "derived/config-layout-recovery/nonfp/GCDConfig.json",
+    "decoded_csv": "derived/config-layout-recovery/nonfp/GCDConfig.csv"
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_guardblitzlevelupconfig.bytes.ab",
+    "path_id": -2279787749152616981,
+    "name": "GuardBlitzLevelUpConfig",
+    "sha256": "ddd4605568c3bd1c62cd1baaddf14cd6f84d5d53698189e696478184b28a1eaa",
+    "export": "derived/unity/text/assets_resources_config_resbin_guardblitzlevelupconfig.bytes/GuardBlitzLevelUpConfig__-2279787749152616981.bin",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 2582,
+      "version": 1,
+      "record_count": 150,
+      "stored_crc32": "91dc0363",
+      "computed_inverted_crc32": "91dc0363"
+    },
+    "status": "cross-variant-layout-candidate",
+    "legacy_reason": "ValueError: Trailing bytes: 762",
+    "layout_rule": "same-order-plus-unnamed-tail-string",
+    "fields": [
+      {
+        "type": "int",
+        "name": "Difficult",
+        "object_offset": 16
+      },
+      {
+        "type": "int",
+        "name": "Lv",
+        "object_offset": 20
+      },
+      {
+        "type": "int",
+        "name": "Score",
+        "object_offset": 24
+      },
+      {
+        "name": "_unmapped_tail_utf8_0",
+        "type": "string"
+      }
+    ],
+    "companion_json": "derived/config-decoded/BattleCore/GuardBlitzLevelUpConfig.json",
+    "companion_export": "derived/unity/text/assets_resources_config_resbin_fp_guardblitzlevelupconfig.bytes/GuardBlitzLevelUpConfig__-5600575072348730019.bin",
+    "companion_sha256": "f8842c2d4783c0227b66625116f82f23359469f35a14175d638f200c6dd08fc1",
+    "named_value_checks": {
+      "exact_named_value": 450
+    },
+    "decoded_record_count": 150,
+    "payload_roundtrip_sha256": "e7efc9d05f53e820d9bba8727e08723fe4e817687e65bcc247494c4ee5631d5a",
+    "decoded_json": "derived/config-layout-recovery/nonfp/GuardBlitzLevelUpConfig.json",
+    "decoded_csv": "derived/config-layout-recovery/nonfp/GuardBlitzLevelUpConfig.csv"
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_guardblitzparamconfig.bytes.ab",
+    "path_id": 177032193275457152,
+    "name": "GuardBlitzParamConfig",
+    "sha256": "cee7dc8372921d2c97f5648548a2d8d31855a64f36aa771618ff792388eb5fa7",
+    "export": "derived/unity/text/assets_resources_config_resbin_guardblitzparamconfig.bytes/GuardBlitzParamConfig__177032193275457152.bin",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 60,
+      "version": 1,
+      "record_count": 5,
+      "stored_crc32": "880cf491",
+      "computed_inverted_crc32": "880cf491"
+    },
+    "status": "cross-variant-layout-candidate",
+    "legacy_reason": "ValueError: Truncated field FuncValue",
+    "layout_rule": "same-order-with-float-FP-transfer",
+    "fields": [
+      {
+        "type": "uint",
+        "name": "FuncID",
+        "object_offset": 16
+      },
+      {
+        "type": "float",
+        "name": "FuncValue",
+        "object_offset": 24
+      }
+    ],
+    "companion_json": "derived/config-decoded/BattleCore/GuardBlitzParamConfig.json",
+    "companion_export": "derived/unity/text/assets_resources_config_resbin_fp_guardblitzparamconfig.bytes/GuardBlitzParamConfig__-7316843201151558279.bin",
+    "companion_sha256": "698049165aad317405b81cd0e2e207f41881af1c2d7a9efe0795f205e1cde8ee",
+    "named_value_checks": {
+      "exact_named_value": 5,
+      "FP_to_float32_projection": 5
+    },
+    "decoded_record_count": 5,
+    "payload_roundtrip_sha256": "9032f08aa606336781d5ace5661212451ed1cdd2ea000cf733be163895d28f4b",
+    "decoded_json": "derived/config-layout-recovery/nonfp/GuardBlitzParamConfig.json",
+    "decoded_csv": "derived/config-layout-recovery/nonfp/GuardBlitzParamConfig.csv"
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_islandadvitemconfig.bytes.ab",
+    "path_id": 4891713812573650011,
+    "name": "IslandAdvItemConfig",
+    "sha256": "52d819424b2f179e5934fa18a728944831bbe656a906c94f0c195fc2ce8b9fcf",
+    "export": "derived/unity/text/assets_resources_config_resbin_islandadvitemconfig.bytes/IslandAdvItemConfig__4891713812573650011.bin",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 55705,
+      "version": 1,
+      "record_count": 1505,
+      "stored_crc32": "11d146c1",
+      "computed_inverted_crc32": "11d146c1"
+    },
+    "status": "cross-variant-layout-candidate",
+    "legacy_reason": "ValueError: Truncated field Atk",
+    "layout_rule": "same-order-with-float-FP-transfer",
+    "fields": [
+      {
+        "type": "uint",
+        "name": "ItemID",
+        "object_offset": 16
+      },
+      {
+        "type": "uint",
+        "name": "LinkMonsterID",
+        "object_offset": 20
+      },
+      {
+        "type": "byte",
+        "name": "ItemType",
+        "object_offset": 24
+      },
+      {
+        "type": "uint",
+        "name": "LibID",
+        "object_offset": 28
+      },
+      {
+        "type": "uint",
+        "name": "KillScore",
+        "object_offset": 32
+      },
+      {
+        "type": "uint",
+        "name": "Atk",
+        "object_offset": 36
+      },
+      {
+        "type": "uint",
+        "name": "Hp",
+        "object_offset": 40
+      },
+      {
+        "type": "uint",
+        "name": "speed",
+        "object_offset": 44
+      },
+      {
+        "type": "float",
+        "name": "ColliderX",
+        "object_offset": 48
+      },
+      {
+        "type": "float",
+        "name": "ColliderY",
+        "object_offset": 56
+      }
+    ],
+    "companion_json": "derived/config-decoded/BattleCore/IslandAdvItemConfig.json",
+    "companion_export": "derived/unity/text/assets_resources_config_resbin_fp_islandadvitemconfig.bytes/IslandAdvItemConfig__-4743821330822887795.bin",
+    "companion_sha256": "7789b52a5e91dd8e4312943149d02b94c475e7f94bebed2242315e286d32a885",
+    "named_value_checks": {
+      "exact_named_value": 12040,
+      "FP_to_float32_projection": 3010
+    },
+    "decoded_record_count": 1505,
+    "payload_roundtrip_sha256": "88ddd61ad29976bf6bda2f75d242904440f8d315d0aee31f524f542f0546e405",
+    "decoded_json": "derived/config-layout-recovery/nonfp/IslandAdvItemConfig.json",
+    "decoded_csv": "derived/config-layout-recovery/nonfp/IslandAdvItemConfig.csv"
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_islandadvskilllibraryconfig.bytes.ab",
+    "path_id": -4117501397342112578,
+    "name": "IslandAdvSkillLibraryConfig",
+    "sha256": "ae794c1e95193bec360a1fb38bffdf831481f5d0071976f91c0026566eadb3fb",
+    "export": "derived/unity/text/assets_resources_config_resbin_islandadvskilllibraryconfig.bytes/IslandAdvSkillLibraryConfig__-4117501397342112578.bin",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 3540,
+      "version": 1,
+      "record_count": 220,
+      "stored_crc32": "f0f9a1ba",
+      "computed_inverted_crc32": "f0f9a1ba"
+    },
+    "status": "cross-variant-layout-candidate",
+    "legacy_reason": "ValueError: Trailing bytes: 880",
+    "layout_rule": "single-opaque4-insertion-at-2",
+    "fields": [
+      {
+        "type": "uint",
+        "name": "SkillLibID",
+        "object_offset": 16
+      },
+      {
+        "type": "uint",
+        "name": "SkillID",
+        "object_offset": 20
+      },
+      {
+        "name": "_unmapped_4bytes_0",
+        "type": "opaque4"
+      },
+      {
+        "type": "uint",
+        "name": "Weight",
+        "object_offset": 24
+      }
+    ],
+    "companion_json": "derived/config-decoded/BattleCore/IslandAdvSkillLibraryConfig.json",
+    "companion_export": "derived/unity/text/assets_resources_config_resbin_fp_islandadvskilllibraryconfig.bytes/IslandAdvSkillLibraryConfig__1351935833101681008.bin",
+    "companion_sha256": "ca239cbc5c801c860cf76ef720b0a8d6af59bfaf552831f4a77a2e69efbc86d7",
+    "named_value_checks": {
+      "exact_named_value": 660
+    },
+    "decoded_record_count": 220,
+    "payload_roundtrip_sha256": "2715861d151b14124e960d33a84094eb99f9a0fb08692eb4a75b35784f536a4d",
+    "decoded_json": "derived/config-layout-recovery/nonfp/IslandAdvSkillLibraryConfig.json",
+    "decoded_csv": "derived/config-layout-recovery/nonfp/IslandAdvSkillLibraryConfig.csv"
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_islandadvwaveconfig.bytes.ab",
+    "path_id": -665063825993323639,
+    "name": "IslandAdvWaveConfig",
+    "sha256": "6a797fa80cd91a7ea9a9efcb38626f952796347bf31aa2b3f076d4c732723868",
+    "export": "derived/unity/text/assets_resources_config_resbin_islandadvwaveconfig.bytes/IslandAdvWaveConfig__-665063825993323639.bin",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 14260,
+      "version": 1,
+      "record_count": 712,
+      "stored_crc32": "e6db5d13",
+      "computed_inverted_crc32": "e6db5d13"
+    },
+    "status": "cross-variant-layout-candidate",
+    "legacy_reason": "ValueError: Truncated field LibraryID",
+    "layout_rule": "same-order-with-float-FP-transfer",
+    "fields": [
+      {
+        "type": "uint",
+        "name": "ChapterID",
+        "object_offset": 16
+      },
+      {
+        "type": "uint",
+        "name": "WaveID",
+        "object_offset": 20
+      },
+      {
+        "type": "float",
+        "name": "WaveTime",
+        "object_offset": 24
+      },
+      {
+        "type": "uint",
+        "name": "LibraryID",
+        "object_offset": 32
+      },
+      {
+        "type": "float",
+        "name": "KillScoreRate",
+        "object_offset": 40
+      }
+    ],
+    "companion_json": "derived/config-decoded/BattleCore/IslandAdvWaveConfig.json",
+    "companion_export": "derived/unity/text/assets_resources_config_resbin_fp_islandadvwaveconfig.bytes/IslandAdvWaveConfig__-2132973439421162010.bin",
+    "companion_sha256": "bd7213dad931f70850c2b496885eda0096fcb54f9551a59ab8269120991aee14",
+    "named_value_checks": {
+      "exact_named_value": 2136,
+      "FP_to_float32_projection": 1424
+    },
+    "decoded_record_count": 712,
+    "payload_roundtrip_sha256": "22eebd9b56de8b9df65a9fe01c73ef50bf9def5544bcb042a0775a88e21f0f3e",
+    "decoded_json": "derived/config-layout-recovery/nonfp/IslandAdvWaveConfig.json",
+    "decoded_csv": "derived/config-layout-recovery/nonfp/IslandAdvWaveConfig.csv"
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_mijingbornposconfig.bytes.ab",
+    "path_id": -8989557325025040176,
+    "name": "MiJingBornPosConfig",
+    "sha256": "2c6cbb322e77e1ba323d2296928bca4855a5b21c66dc3baddc193c5fac966f72",
+    "export": "derived/unity/text/assets_resources_config_resbin_mijingbornposconfig.bytes/MiJingBornPosConfig__-8989557325025040176.bin",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 687,
+      "version": 1,
+      "record_count": 23,
+      "stored_crc32": "5de96814",
+      "computed_inverted_crc32": "5de96814"
+    },
+    "status": "cross-variant-layout-candidate",
+    "legacy_reason": "ValueError: Trailing bytes: 207",
+    "layout_rule": "same-order-plus-unnamed-tail-string",
+    "fields": [
+      {
+        "type": "int",
+        "name": "PosType",
+        "object_offset": 16
+      },
+      {
+        "type": "float",
+        "name": "Row",
+        "object_offset": 24
+      },
+      {
+        "type": "float",
+        "name": "Column",
+        "object_offset": 32
+      },
+      {
+        "name": "_unmapped_tail_utf8_0",
+        "type": "string"
+      }
+    ],
+    "companion_json": "derived/config-decoded/BattleCore/MiJingBornPosConfig.json",
+    "companion_export": "derived/unity/text/assets_resources_config_resbin_fp_mijingbornposconfig.bytes/MiJingBornPosConfig__-8233983785561347999.bin",
+    "companion_sha256": "2c5b2acb3d403f4f9320b33128a9778b2be32a5bbbb0170851b6f6fe3854941d",
+    "named_value_checks": {
+      "exact_named_value": 23,
+      "FP_to_float32_projection": 46
+    },
+    "decoded_record_count": 23,
+    "payload_roundtrip_sha256": "83a12b20cbd45117b31ff12770cf9fe45f089cb9559a620eb1b286288dcf9d57",
+    "decoded_json": "derived/config-layout-recovery/nonfp/MiJingBornPosConfig.json",
+    "decoded_csv": "derived/config-layout-recovery/nonfp/MiJingBornPosConfig.csv"
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_ppttbornposconfig.bytes.ab",
+    "path_id": 1689278531436890899,
+    "name": "PPTTBornPosConfig",
+    "sha256": "176ad8b335948a016ce952a0731f9966671ddb238d7cbfb3bcb180c194afdb6f",
+    "export": "derived/unity/text/assets_resources_config_resbin_ppttbornposconfig.bytes/PPTTBornPosConfig__1689278531436890899.bin",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 308,
+      "version": 1,
+      "record_count": 12,
+      "stored_crc32": "d2d0036b",
+      "computed_inverted_crc32": "d2d0036b"
+    },
+    "status": "cross-variant-layout-candidate",
+    "legacy_reason": "ValueError: Truncated field PosLibID",
+    "layout_rule": "same-order-with-float-FP-transfer",
+    "fields": [
+      {
+        "type": "uint",
+        "name": "PosLibID",
+        "object_offset": 16
+      },
+      {
+        "type": "int",
+        "name": "PosType",
+        "object_offset": 20
+      },
+      {
+        "type": "float",
+        "name": "Row",
+        "object_offset": 24
+      },
+      {
+        "type": "float",
+        "name": "Column",
+        "object_offset": 32
+      },
+      {
+        "type": "int",
+        "name": "EffectID",
+        "object_offset": 40
+      },
+      {
+        "type": "float",
+        "name": "PosCooling",
+        "object_offset": 48
+      }
+    ],
+    "companion_json": "derived/config-decoded/BattleCore/PPTTBornPosConfig.json",
+    "companion_export": "derived/unity/text/assets_resources_config_resbin_fp_ppttbornposconfig.bytes/PPTTBornPosConfig__3214890751961108325.bin",
+    "companion_sha256": "31b9c4f9ee0d4ed1b4f110d6840e8b17e887ad20feb14f89c1b57ea29b6747ba",
+    "named_value_checks": {
+      "exact_named_value": 36,
+      "FP_to_float32_projection": 36
+    },
+    "decoded_record_count": 12,
+    "payload_roundtrip_sha256": "8bea9c4f3b1ad97d5aa38a5b6784d5632d52545bf397fef9c59bedc66656fef3",
+    "decoded_json": "derived/config-layout-recovery/nonfp/PPTTBornPosConfig.json",
+    "decoded_csv": "derived/config-layout-recovery/nonfp/PPTTBornPosConfig.csv"
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_ppttmonsterlibraryconfig.bytes.ab",
+    "path_id": 4788147470056189076,
+    "name": "PPTTMonsterLibraryConfig",
+    "sha256": "f80351684639fac24ca7c7b5068d914ca663ba32b3228607992bc14c4fc928cd",
+    "export": "derived/unity/text/assets_resources_config_resbin_ppttmonsterlibraryconfig.bytes/PPTTMonsterLibraryConfig__4788147470056189076.bin",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 17600,
+      "version": 1,
+      "record_count": 879,
+      "stored_crc32": "efba8214",
+      "computed_inverted_crc32": "efba8214"
+    },
+    "status": "unresolved-variant-layout",
+    "legacy_reason": "ValueError: Truncated field KillScore",
+    "reason": "No unique fully companion-matched layout; matches=0",
+    "candidate_rejections": [
+      {
+        "candidate": "same-order-with-float-FP-transfer",
+        "reason": "companion value mismatch at row 180 field HeightRate"
+      },
+      {
+        "candidate": "same-order-plus-unnamed-tail-string",
+        "reason": "'utf-8' codec can't decode byte 0xc9 in position 2: invalid continuation byte"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-0",
+        "reason": "truncated RefreshWeight"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-1",
+        "reason": "truncated RefreshWeight"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-2",
+        "reason": "truncated RefreshWeight"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-3",
+        "reason": "truncated opaque field"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-4",
+        "reason": "truncated KillScore"
+      },
+      {
+        "candidate": "single-opaque4-insertion-at-5",
+        "reason": "truncated KillScore"
+      }
+    ]
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_ppttmonsterwaveconfig.bytes.ab",
+    "path_id": -7458888597761617479,
+    "name": "PPTTMonsterWaveConfig",
+    "sha256": "b2c86c9126b85ff3f3f4f46aab9e2aa0c753ee8e904963baf220b3f732f753f0",
+    "export": "derived/unity/text/assets_resources_config_resbin_ppttmonsterwaveconfig.bytes/PPTTMonsterWaveConfig__-7458888597761617479.bin",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 98840,
+      "version": 1,
+      "record_count": 2745,
+      "stored_crc32": "0718547e",
+      "computed_inverted_crc32": "0718547e"
+    },
+    "status": "cross-variant-layout-candidate",
+    "legacy_reason": "ValueError: Truncated field KillScoreRate",
+    "layout_rule": "same-order-with-float-FP-transfer",
+    "fields": [
+      {
+        "type": "uint",
+        "name": "ChapterID",
+        "object_offset": 16
+      },
+      {
+        "type": "uint",
+        "name": "WaveID",
+        "object_offset": 20
+      },
+      {
+        "type": "float",
+        "name": "WaveTime",
+        "object_offset": 24
+      },
+      {
+        "type": "int",
+        "name": "RefreshMoneterNum",
+        "object_offset": 32
+      },
+      {
+        "type": "float",
+        "name": "RefreshGap",
+        "object_offset": 40
+      },
+      {
+        "type": "uint",
+        "name": "MonsterLibraryID",
+        "object_offset": 48
+      },
+      {
+        "type": "uint",
+        "name": "MonsterAttrLibraryID",
+        "object_offset": 52
+      },
+      {
+        "type": "float",
+        "name": "KillScoreRate",
+        "object_offset": 56
+      },
+      {
+        "type": "uint",
+        "name": "RefreshPosLib",
+        "object_offset": 64
+      }
+    ],
+    "companion_json": "derived/config-decoded/BattleCore/PPTTMonsterWaveConfig.json",
+    "companion_export": "derived/unity/text/assets_resources_config_resbin_fp_ppttmonsterwaveconfig.bytes/PPTTMonsterWaveConfig__7931050554057276152.bin",
+    "companion_sha256": "a53e37ec0f652d564541758a7ab94d1e459845e075f9d184ad9cf20c9008c401",
+    "named_value_checks": {
+      "exact_named_value": 16470,
+      "FP_to_float32_projection": 8235
+    },
+    "decoded_record_count": 2745,
+    "payload_roundtrip_sha256": "249de633e5a94ee3557f3572c2b39556deb7a308d0521a20e066dba6d9b47346",
+    "decoded_json": "derived/config-layout-recovery/nonfp/PPTTMonsterWaveConfig.json",
+    "decoded_csv": "derived/config-layout-recovery/nonfp/PPTTMonsterWaveConfig.csv"
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_pvpbornposconfig.bytes.ab",
+    "path_id": 2224257851969128957,
+    "name": "PvpBornPosConfig",
+    "sha256": "81ffbd11c63e358ef65e149788b0a7d800de6762fc017ab85357bbea1fde7105",
+    "export": "derived/unity/text/assets_resources_config_resbin_pvpbornposconfig.bytes/PvpBornPosConfig__2224257851969128957.bin",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 92,
+      "version": 1,
+      "record_count": 6,
+      "stored_crc32": "dde27b2b",
+      "computed_inverted_crc32": "dde27b2b"
+    },
+    "status": "cross-variant-layout-candidate",
+    "legacy_reason": "ValueError: Truncated field PosY",
+    "layout_rule": "same-order-with-float-FP-transfer",
+    "fields": [
+      {
+        "type": "uint",
+        "name": "PosId",
+        "object_offset": 16
+      },
+      {
+        "type": "float",
+        "name": "PosX",
+        "object_offset": 24
+      },
+      {
+        "type": "float",
+        "name": "PosY",
+        "object_offset": 32
+      }
+    ],
+    "companion_json": "derived/config-decoded/BattleCore/PvpBornPosConfig.json",
+    "companion_export": "derived/unity/text/assets_resources_config_resbin_fp_pvpbornposconfig.bytes/PvpBornPosConfig__-220334805406963081.bin",
+    "companion_sha256": "8334624e64ad0faa0578200c164577229049fd89ec4c7ed7c5b397484ca3149c",
+    "named_value_checks": {
+      "exact_named_value": 6,
+      "FP_to_float32_projection": 12
+    },
+    "decoded_record_count": 6,
+    "payload_roundtrip_sha256": "bdac7d7bc00d8ca9f38f707d8e1d8bbd27b6b7ccb1b83d04a2616f568df0cfec",
+    "decoded_json": "derived/config-layout-recovery/nonfp/PvpBornPosConfig.json",
+    "decoded_csv": "derived/config-layout-recovery/nonfp/PvpBornPosConfig.csv"
+  },
+  {
+    "bundle": "assets/ab/assets_resources_config_resbin_pvpdiebuffconfig.bytes.ab",
+    "path_id": 6220137626479535454,
+    "name": "PvpDieBuffConfig",
+    "sha256": "c175205bb1ede22a676cb82b05f21fcc38684cad545b1606e1153479272ee008",
+    "export": "derived/unity/text/assets_resources_config_resbin_pvpdiebuffconfig.bytes/PvpDieBuffConfig__6220137626479535454.bin",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 165,
+      "version": 1,
+      "record_count": 5,
+      "stored_crc32": "270f8eb5",
+      "computed_inverted_crc32": "270f8eb5"
+    },
+    "status": "cross-variant-layout-candidate",
+    "legacy_reason": "ValueError: Trailing bytes: 85",
+    "layout_rule": "same-order-plus-unnamed-tail-string",
+    "fields": [
+      {
+        "type": "int",
+        "name": "dieCnt",
+        "object_offset": 16
+      },
+      {
+        "type": "int",
+        "name": "buffID",
+        "object_offset": 20
+      },
+      {
+        "type": "int",
+        "name": "buffStackNum",
+        "object_offset": 24
+      },
+      {
+        "name": "_unmapped_tail_utf8_0",
+        "type": "string"
+      }
+    ],
+    "companion_json": "derived/config-decoded/BattleCore/PvpDieBuffConfig.json",
+    "companion_export": "derived/unity/text/assets_resources_config_resbin_fp_pvpdiebuffconfig.bytes/PvpDieBuffConfig__5018298114250124721.bin",
+    "companion_sha256": "fbb9ac8839f199b33f7b3187a7c2d4504862c03911cec9bb9c0cac9a79559e99",
+    "named_value_checks": {
+      "exact_named_value": 15
+    },
+    "decoded_record_count": 5,
+    "payload_roundtrip_sha256": "2c11f99d4b33dbbf1bdae1dccd01363fe5a7956e66eb86dba5d9e8da8c11ba33",
+    "decoded_json": "derived/config-layout-recovery/nonfp/PvpDieBuffConfig.json",
+    "decoded_csv": "derived/config-layout-recovery/nonfp/PvpDieBuffConfig.csv"
+  }
+]

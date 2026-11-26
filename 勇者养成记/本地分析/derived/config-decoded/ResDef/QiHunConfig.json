@@ -1,0 +1,254 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_qihunconfig.bytes.ab",
+    "path_id": -2805274663831810115,
+    "name": "QiHunConfig",
+    "sha256": "7c639375f48938c415ec6fe13ad41ded15ef9ffd74c8336e0ca6b60b6f34142e",
+    "export": "derived/unity/text/assets_resources_config_resbin_qihunconfig.bytes/QiHunConfig__-2805274663831810115.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 285,
+      "version": 1,
+      "record_count": 5,
+      "stored_crc32": "222d3bc7",
+      "computed_inverted_crc32": "222d3bc7"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "QiHunConfig",
+      "fields": [
+        {
+          "type": "uint",
+          "name": "QiHunID",
+          "object_offset": 16
+        },
+        {
+          "type": "string",
+          "name": "QiHunName",
+          "object_offset": 24
+        },
+        {
+          "type": "uint",
+          "name": "QiHunItemID",
+          "object_offset": 32
+        },
+        {
+          "type": "uint",
+          "name": "MaxLevel",
+          "object_offset": 36
+        },
+        {
+          "type": "uint",
+          "name": "AddQiYuanAttrCnt",
+          "object_offset": 40
+        },
+        {
+          "type": "uint",
+          "name": "AddQiYuanAttrCeLueIdx",
+          "object_offset": 44
+        },
+        {
+          "type": "uint",
+          "name": "UpLvCostValIdx",
+          "object_offset": 48
+        },
+        {
+          "type": "float",
+          "name": "TiLianBackRate",
+          "object_offset": 52
+        },
+        {
+          "type": "uint",
+          "name": "AttrCfgType",
+          "object_offset": 56
+        },
+        {
+          "type": "float",
+          "name": "AttrQiangHuaRate",
+          "object_offset": 60
+        }
+      ],
+      "unpack_va": 32028860,
+      "dump_line": 212530
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1e8b8f0",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8b918",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8b93c",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8b960",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 36,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8b984",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 40,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8b9a8",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 44,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8b9cc",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 48,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8b9f0",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 52,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8ba14",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 56,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8ba54",
+        "target_va": "0x21f6b98",
+        "opcode": "B-tail",
+        "reader": "readFloat",
+        "destination_object_offset": 60,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 5
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "QiHunID": 101,
+      "QiHunName": "尘蚣丹魂",
+      "QiHunItemID": 211201,
+      "MaxLevel": 180,
+      "AddQiYuanAttrCnt": 1,
+      "AddQiYuanAttrCeLueIdx": 1,
+      "UpLvCostValIdx": 8,
+      "TiLianBackRate": 0.10000000149011612,
+      "AttrCfgType": 11,
+      "AttrQiangHuaRate": 0.30000001192092896,
+      "_byte_length": 53
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 73,
+      "QiHunID": 102,
+      "QiHunName": "四象丹魂",
+      "QiHunItemID": 211202,
+      "MaxLevel": 180,
+      "AddQiYuanAttrCnt": 2,
+      "AddQiYuanAttrCeLueIdx": 2,
+      "UpLvCostValIdx": 9,
+      "TiLianBackRate": 0.20000000298023224,
+      "AttrCfgType": 11,
+      "AttrQiangHuaRate": 0.4000000059604645,
+      "_byte_length": 53
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 126,
+      "QiHunID": 103,
+      "QiHunName": "孤灯丹魂",
+      "QiHunItemID": 211203,
+      "MaxLevel": 180,
+      "AddQiYuanAttrCnt": 3,
+      "AddQiYuanAttrCeLueIdx": 3,
+      "UpLvCostValIdx": 10,
+      "TiLianBackRate": 0.30000001192092896,
+      "AttrCfgType": 11,
+      "AttrQiangHuaRate": 0.6000000238418579,
+      "_byte_length": 53
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 179,
+      "QiHunID": 104,
+      "QiHunName": "钢秘丹魂",
+      "QiHunItemID": 211204,
+      "MaxLevel": 180,
+      "AddQiYuanAttrCnt": 4,
+      "AddQiYuanAttrCeLueIdx": 4,
+      "UpLvCostValIdx": 11,
+      "TiLianBackRate": 0.3499999940395355,
+      "AttrCfgType": 11,
+      "AttrQiangHuaRate": 0.800000011920929,
+      "_byte_length": 53
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 232,
+      "QiHunID": 105,
+      "QiHunName": "霆漂丹魂",
+      "QiHunItemID": 211205,
+      "MaxLevel": 180,
+      "AddQiYuanAttrCnt": 5,
+      "AddQiYuanAttrCeLueIdx": 5,
+      "UpLvCostValIdx": 12,
+      "TiLianBackRate": 0.4000000059604645,
+      "AttrCfgType": 11,
+      "AttrQiangHuaRate": 1.0,
+      "_byte_length": 53
+    }
+  ]
+}

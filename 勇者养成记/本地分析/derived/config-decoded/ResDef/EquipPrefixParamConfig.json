@@ -1,0 +1,431 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_equipprefixparamconfig.bytes.ab",
+    "path_id": -5015205308210107609,
+    "name": "EquipPrefixParamConfig",
+    "sha256": "cf2d8bd6918cc06caefef35df2a3bf625a0788450605b2e45db8fdbde1cc3ba3",
+    "export": "derived/unity/text/assets_resources_config_resbin_equipprefixparamconfig.bytes/EquipPrefixParamConfig__-5015205308210107609.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 888,
+      "version": 1,
+      "record_count": 28,
+      "stored_crc32": "21bf5162",
+      "computed_inverted_crc32": "21bf5162"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "EquipPrefixParamConfig",
+      "fields": [
+        {
+          "type": "int",
+          "name": "Quality",
+          "object_offset": 16
+        },
+        {
+          "type": "int",
+          "name": "Prefix",
+          "object_offset": 20
+        },
+        {
+          "type": "string",
+          "name": "PrefixName",
+          "object_offset": 24
+        },
+        {
+          "type": "int",
+          "name": "ExtraAttrNum",
+          "object_offset": 32
+        },
+        {
+          "type": "float",
+          "name": "LevelParam",
+          "object_offset": 36
+        },
+        {
+          "type": "float",
+          "name": "AttachAttrParam",
+          "object_offset": 40
+        }
+      ],
+      "unpack_va": 31280464,
+      "dump_line": 206316
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1dd4d84",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd4da8",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd4dd0",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd4df4",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd4e18",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 36,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd4e58",
+        "target_va": "0x21f6b98",
+        "opcode": "B-tail",
+        "reader": "readFloat",
+        "destination_object_offset": 40,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 28
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "Quality": 1,
+      "Prefix": 1,
+      "PrefixName": "精良",
+      "ExtraAttrNum": 0,
+      "LevelParam": -0.5,
+      "AttachAttrParam": -0.5,
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 51,
+      "Quality": 1,
+      "Prefix": 2,
+      "PrefixName": "优秀",
+      "ExtraAttrNum": 0,
+      "LevelParam": -0.44999998807907104,
+      "AttachAttrParam": -0.44999998807907104,
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 82,
+      "Quality": 1,
+      "Prefix": 3,
+      "PrefixName": "卓越",
+      "ExtraAttrNum": 0,
+      "LevelParam": -0.4000000059604645,
+      "AttachAttrParam": -0.4000000059604645,
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 113,
+      "Quality": 1,
+      "Prefix": 4,
+      "PrefixName": "完美",
+      "ExtraAttrNum": 0,
+      "LevelParam": -0.3499999940395355,
+      "AttachAttrParam": -0.3499999940395355,
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 144,
+      "Quality": 2,
+      "Prefix": 1,
+      "PrefixName": "精良",
+      "ExtraAttrNum": 1,
+      "LevelParam": -0.30000001192092896,
+      "AttachAttrParam": -0.30000001192092896,
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 175,
+      "Quality": 2,
+      "Prefix": 2,
+      "PrefixName": "优秀",
+      "ExtraAttrNum": 1,
+      "LevelParam": -0.20000000298023224,
+      "AttachAttrParam": -0.20000000298023224,
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 206,
+      "Quality": 2,
+      "Prefix": 3,
+      "PrefixName": "卓越",
+      "ExtraAttrNum": 1,
+      "LevelParam": -0.10000000149011612,
+      "AttachAttrParam": -0.10000000149011612,
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 237,
+      "Quality": 2,
+      "Prefix": 4,
+      "PrefixName": "完美",
+      "ExtraAttrNum": 1,
+      "LevelParam": -0.10000000149011612,
+      "AttachAttrParam": -0.10000000149011612,
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 268,
+      "Quality": 3,
+      "Prefix": 1,
+      "PrefixName": "精良",
+      "ExtraAttrNum": 1,
+      "LevelParam": 0.0,
+      "AttachAttrParam": 0.0,
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 299,
+      "Quality": 3,
+      "Prefix": 2,
+      "PrefixName": "优秀",
+      "ExtraAttrNum": 1,
+      "LevelParam": 0.10000000149011612,
+      "AttachAttrParam": 0.10000000149011612,
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 330,
+      "Quality": 3,
+      "Prefix": 3,
+      "PrefixName": "卓越",
+      "ExtraAttrNum": 1,
+      "LevelParam": 0.20000000298023224,
+      "AttachAttrParam": 0.20000000298023224,
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 361,
+      "Quality": 3,
+      "Prefix": 4,
+      "PrefixName": "完美",
+      "ExtraAttrNum": 1,
+      "LevelParam": 0.30000001192092896,
+      "AttachAttrParam": 0.30000001192092896,
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 392,
+      "Quality": 4,
+      "Prefix": 1,
+      "PrefixName": "精良",
+      "ExtraAttrNum": 2,
+      "LevelParam": 0.5,
+      "AttachAttrParam": 0.5,
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 423,
+      "Quality": 4,
+      "Prefix": 2,
+      "PrefixName": "优秀",
+      "ExtraAttrNum": 2,
+      "LevelParam": 0.6499999761581421,
+      "AttachAttrParam": 0.6499999761581421,
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 454,
+      "Quality": 4,
+      "Prefix": 3,
+      "PrefixName": "卓越",
+      "ExtraAttrNum": 2,
+      "LevelParam": 0.800000011920929,
+      "AttachAttrParam": 0.800000011920929,
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 485,
+      "Quality": 4,
+      "Prefix": 4,
+      "PrefixName": "完美",
+      "ExtraAttrNum": 2,
+      "LevelParam": 0.949999988079071,
+      "AttachAttrParam": 0.949999988079071,
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 516,
+      "Quality": 5,
+      "Prefix": 1,
+      "PrefixName": "精良",
+      "ExtraAttrNum": 2,
+      "LevelParam": 1.2000000476837158,
+      "AttachAttrParam": 1.2000000476837158,
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 547,
+      "Quality": 5,
+      "Prefix": 2,
+      "PrefixName": "优秀",
+      "ExtraAttrNum": 2,
+      "LevelParam": 1.399999976158142,
+      "AttachAttrParam": 1.399999976158142,
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 578,
+      "Quality": 5,
+      "Prefix": 3,
+      "PrefixName": "卓越",
+      "ExtraAttrNum": 2,
+      "LevelParam": 1.600000023841858,
+      "AttachAttrParam": 1.600000023841858,
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 19,
+      "_byte_offset": 609,
+      "Quality": 5,
+      "Prefix": 4,
+      "PrefixName": "完美",
+      "ExtraAttrNum": 2,
+      "LevelParam": 1.7999999523162842,
+      "AttachAttrParam": 1.7999999523162842,
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 20,
+      "_byte_offset": 640,
+      "Quality": 6,
+      "Prefix": 1,
+      "PrefixName": "精良",
+      "ExtraAttrNum": 4,
+      "LevelParam": 2.0,
+      "AttachAttrParam": 2.0,
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 21,
+      "_byte_offset": 671,
+      "Quality": 6,
+      "Prefix": 2,
+      "PrefixName": "优秀",
+      "ExtraAttrNum": 4,
+      "LevelParam": 2.299999952316284,
+      "AttachAttrParam": 2.299999952316284,
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 22,
+      "_byte_offset": 702,
+      "Quality": 6,
+      "Prefix": 3,
+      "PrefixName": "卓越",
+      "ExtraAttrNum": 4,
+      "LevelParam": 2.5999999046325684,
+      "AttachAttrParam": 2.5999999046325684,
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 23,
+      "_byte_offset": 733,
+      "Quality": 6,
+      "Prefix": 4,
+      "PrefixName": "完美",
+      "ExtraAttrNum": 4,
+      "LevelParam": 2.799999952316284,
+      "AttachAttrParam": 2.799999952316284,
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 24,
+      "_byte_offset": 764,
+      "Quality": 7,
+      "Prefix": 1,
+      "PrefixName": "精良",
+      "ExtraAttrNum": 4,
+      "LevelParam": 3.0,
+      "AttachAttrParam": 3.0,
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 25,
+      "_byte_offset": 795,
+      "Quality": 7,
+      "Prefix": 2,
+      "PrefixName": "优秀",
+      "ExtraAttrNum": 4,
+      "LevelParam": 3.5,
+      "AttachAttrParam": 3.5,
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 26,
+      "_byte_offset": 826,
+      "Quality": 7,
+      "Prefix": 3,
+      "PrefixName": "卓越",
+      "ExtraAttrNum": 4,
+      "LevelParam": 4.0,
+      "AttachAttrParam": 4.0,
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 27,
+      "_byte_offset": 857,
+      "Quality": 7,
+      "Prefix": 4,
+      "PrefixName": "完美",
+      "ExtraAttrNum": 4,
+      "LevelParam": 4.5,
+      "AttachAttrParam": 4.5,
+      "_byte_length": 31
+    }
+  ]
+}

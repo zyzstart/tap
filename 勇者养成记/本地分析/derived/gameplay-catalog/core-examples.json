@@ -1,0 +1,722 @@
+[
+  {
+    "schema": "BattleCore.SkillBaseConfg",
+    "variant": "fp",
+    "source": "derived/config-extended/BattleCore/SkillBaseConfg.json",
+    "records": [
+      {
+        "_record_index": 0,
+        "_byte_offset": 20,
+        "SkillID": 1001,
+        "SkillType": 0,
+        "DisableMove": 0,
+        "GCDID": 0,
+        "SkillDispID": 1001,
+        "CostMP": 0,
+        "SkillCD": 0,
+        "AttrDamageData": [
+          {
+            "MagicType": 0,
+            "AttrType": 1,
+            "Param1__raw_int64": 4294967296,
+            "Param1__raw_int64__decimal": "4294967296",
+            "Param2__raw_int64": 0,
+            "Param2__raw_int64__decimal": "0",
+            "Param3__raw_int64": 0,
+            "Param3__raw_int64__decimal": "0"
+          },
+          {
+            "MagicType": 0,
+            "AttrType": 0,
+            "Param1__raw_int64": 0,
+            "Param1__raw_int64__decimal": "0",
+            "Param2__raw_int64": 0,
+            "Param2__raw_int64__decimal": "0",
+            "Param3__raw_int64": 0,
+            "Param3__raw_int64__decimal": "0"
+          }
+        ],
+        "BuffID": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "_byte_length": 102
+      },
+      {
+        "_record_index": 1,
+        "_byte_offset": 122,
+        "SkillID": 1002,
+        "SkillType": 0,
+        "DisableMove": 0,
+        "GCDID": 0,
+        "SkillDispID": 1002,
+        "CostMP": 0,
+        "SkillCD": 0,
+        "AttrDamageData": [
+          {
+            "MagicType": 0,
+            "AttrType": 1,
+            "Param1__raw_int64": 5153960755,
+            "Param1__raw_int64__decimal": "5153960755",
+            "Param2__raw_int64": 0,
+            "Param2__raw_int64__decimal": "0",
+            "Param3__raw_int64": 0,
+            "Param3__raw_int64__decimal": "0"
+          },
+          {
+            "MagicType": 0,
+            "AttrType": 0,
+            "Param1__raw_int64": 0,
+            "Param1__raw_int64__decimal": "0",
+            "Param2__raw_int64": 0,
+            "Param2__raw_int64__decimal": "0",
+            "Param3__raw_int64": 0,
+            "Param3__raw_int64__decimal": "0"
+          }
+        ],
+        "BuffID": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "_byte_length": 102
+      }
+    ]
+  },
+  {
+    "schema": "ResDef.SkillBaseConfg",
+    "variant": "nonfp",
+    "source": "derived/config-extended/ResDef/SkillBaseConfg.json",
+    "records": [
+      {
+        "_record_index": 0,
+        "_byte_offset": 20,
+        "SkillID": 1001,
+        "SkillName": "剑普攻",
+        "SkillDesc": "向正前方发射一颗子弹，攻击频率中等",
+        "SkillType": 0,
+        "DisableMove": 0,
+        "SkillIcon": "icon_skill_01",
+        "GCDID": 0,
+        "SkillDispID": 1001,
+        "CostMP": 0,
+        "SkillCD": 0,
+        "AttrDamageData": [
+          {
+            "MagicType": 0,
+            "AttrType": 1,
+            "Param1": 1.0,
+            "Param2": 0.0,
+            "Param3": 0.0
+          },
+          {
+            "MagicType": 0,
+            "AttrType": 0,
+            "Param1": 0.0,
+            "Param2": 0.0,
+            "Param3": 0.0
+          }
+        ],
+        "BuffID": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "EffectMaskID": 0,
+        "_byte_length": 170
+      },
+      {
+        "_record_index": 1,
+        "_byte_offset": 190,
+        "SkillID": 1002,
+        "SkillName": "弩普攻",
+        "SkillDesc": "向正前方发射一颗子弹，攻击频率较慢",
+        "SkillType": 0,
+        "DisableMove": 0,
+        "SkillIcon": "icon_skill_02",
+        "GCDID": 0,
+        "SkillDispID": 1002,
+        "CostMP": 0,
+        "SkillCD": 0,
+        "AttrDamageData": [
+          {
+            "MagicType": 0,
+            "AttrType": 1,
+            "Param1": 1.2000000476837158,
+            "Param2": 0.0,
+            "Param3": 0.0
+          },
+          {
+            "MagicType": 0,
+            "AttrType": 0,
+            "Param1": 0.0,
+            "Param2": 0.0,
+            "Param3": 0.0
+          }
+        ],
+        "BuffID": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "EffectMaskID": 0,
+        "_byte_length": 170
+      }
+    ]
+  },
+  {
+    "schema": "BattleCore.EquipConfig",
+    "variant": "fp",
+    "source": "derived/config-decoded/BattleCore/EquipConfig.json",
+    "records": [
+      {
+        "_record_index": 0,
+        "_byte_offset": 20,
+        "ItemID": 11101,
+        "EquipModelID": 10001,
+        "WeaponType": 1,
+        "_byte_length": 9
+      },
+      {
+        "_record_index": 1,
+        "_byte_offset": 29,
+        "ItemID": 11102,
+        "EquipModelID": 10002,
+        "WeaponType": 1,
+        "_byte_length": 9
+      }
+    ]
+  },
+  {
+    "schema": "ResDef.EquipConfig",
+    "variant": "nonfp",
+    "source": "derived/config-extended/ResDef/EquipConfig.json",
+    "records": [
+      {
+        "_record_index": 0,
+        "_byte_offset": 20,
+        "ItemID": 11101,
+        "Name": "狼牙长矛",
+        "Icon": "icon_wq_10101",
+        "IconFemale": "",
+        "EquipModelID": 10001,
+        "TendencyDescription": "每次命中目标后均能获得1.5秒的攻速加成，最多可叠加3层，攻击可刷新状态。",
+        "Description": "每次命中目标后均能获得1.5秒的攻速加成，最多可叠加3层，攻击可刷新状态。",
+        "PinJie": 1,
+        "Type": 1,
+        "ItemSort": 0,
+        "WearMinLv": 1,
+        "ImpactData": [
+          {
+            "DataType": 2,
+            "AddType": 1,
+            "Value": 60.0,
+            "LvAddValue": 0.0
+          },
+          {
+            "DataType": 0,
+            "AddType": 0,
+            "Value": 0.0,
+            "LvAddValue": 0.0
+          },
+          {
+            "DataType": 0,
+            "AddType": 0,
+            "Value": 0.0,
+            "LvAddValue": 0.0
+          },
+          {
+            "DataType": 0,
+            "AddType": 0,
+            "Value": 0.0,
+            "LvAddValue": 0.0
+          }
+        ],
+        "BuffID": 0,
+        "WeaponType": 1,
+        "FashionID": 10001,
+        "SuitID": 0,
+        "ExtraAttrLibID": 1,
+        "OpenHoleList": [
+          {
+            "OpenLevel": 0,
+            "StoneType": 1
+          },
+          {
+            "OpenLevel": 0,
+            "StoneType": 0
+          },
+          {
+            "OpenLevel": 0,
+            "StoneType": 0
+          },
+          {
+            "OpenLevel": 0,
+            "StoneType": 0
+          },
+          {
+            "OpenLevel": 0,
+            "StoneType": 0
+          },
+          {
+            "OpenLevel": 0,
+            "StoneType": 0
+          }
+        ],
+        "_byte_length": 389
+      },
+      {
+        "_record_index": 1,
+        "_byte_offset": 409,
+        "ItemID": 11102,
+        "Name": "砂岩长矛",
+        "Icon": "icon_wq_10201",
+        "IconFemale": "",
+        "EquipModelID": 10002,
+        "TendencyDescription": "每次命中目标后均能获得1.5秒的攻速加成，最多可叠加3层，攻击可刷新状态。",
+        "Description": "每次命中目标后均能获得1.5秒的攻速加成，最多可叠加3层，攻击可刷新状态。",
+        "PinJie": 2,
+        "Type": 1,
+        "ItemSort": 0,
+        "WearMinLv": 10,
+        "ImpactData": [
+          {
+            "DataType": 2,
+            "AddType": 1,
+            "Value": 120.0,
+            "LvAddValue": 0.0
+          },
+          {
+            "DataType": 0,
+            "AddType": 0,
+            "Value": 0.0,
+            "LvAddValue": 0.0
+          },
+          {
+            "DataType": 0,
+            "AddType": 0,
+            "Value": 0.0,
+            "LvAddValue": 0.0
+          },
+          {
+            "DataType": 0,
+            "AddType": 0,
+            "Value": 0.0,
+            "LvAddValue": 0.0
+          }
+        ],
+        "BuffID": 0,
+        "WeaponType": 1,
+        "FashionID": 10002,
+        "SuitID": 0,
+        "ExtraAttrLibID": 11,
+        "OpenHoleList": [
+          {
+            "OpenLevel": 0,
+            "StoneType": 1
+          },
+          {
+            "OpenLevel": 0,
+            "StoneType": 0
+          },
+          {
+            "OpenLevel": 0,
+            "StoneType": 0
+          },
+          {
+            "OpenLevel": 0,
+            "StoneType": 0
+          },
+          {
+            "OpenLevel": 0,
+            "StoneType": 0
+          },
+          {
+            "OpenLevel": 0,
+            "StoneType": 0
+          }
+        ],
+        "_byte_length": 389
+      }
+    ]
+  },
+  {
+    "schema": "ResDef.EquipUpLevelConfig",
+    "variant": "nonfp",
+    "source": "derived/config-extended/ResDef/EquipUpLevelConfig.json",
+    "records": [
+      {
+        "_record_index": 0,
+        "_byte_offset": 20,
+        "Type": 1,
+        "Level": 0,
+        "ImpactData": [
+          {
+            "DataType": 2,
+            "AddType": 1,
+            "Value": 0.0
+          },
+          {
+            "DataType": 0,
+            "AddType": 0,
+            "Value": 0.0
+          },
+          {
+            "DataType": 0,
+            "AddType": 0,
+            "Value": 0.0
+          }
+        ],
+        "MoneyType": 2,
+        "MoneyNum": 100,
+        "DecomposeMoneyNum": 0,
+        "_byte_length": 41
+      },
+      {
+        "_record_index": 1,
+        "_byte_offset": 61,
+        "Type": 1,
+        "Level": 1,
+        "ImpactData": [
+          {
+            "DataType": 2,
+            "AddType": 1,
+            "Value": 5.0
+          },
+          {
+            "DataType": 0,
+            "AddType": 0,
+            "Value": 0.0
+          },
+          {
+            "DataType": 0,
+            "AddType": 0,
+            "Value": 0.0
+          }
+        ],
+        "MoneyType": 2,
+        "MoneyNum": 200,
+        "DecomposeMoneyNum": 100,
+        "_byte_length": 41
+      }
+    ]
+  },
+  {
+    "schema": "BattleCore.BootyConfig",
+    "variant": "fp",
+    "source": "derived/config-extended/BattleCore/BootyConfig.json",
+    "records": [
+      {
+        "_record_index": 0,
+        "_byte_offset": 20,
+        "BootyID": 9999,
+        "BootyType": 1,
+        "AwardCnt": 22,
+        "RandParam": 10000,
+        "MinLevel": 0,
+        "MaxLevel": 0,
+        "ItemType": 10,
+        "ItemID": 9999901,
+        "ItemCnt": 1,
+        "ItemParam": [
+          3,
+          0,
+          0
+        ],
+        "BootyQuality": 3,
+        "_byte_length": 52
+      },
+      {
+        "_record_index": 1,
+        "_byte_offset": 72,
+        "BootyID": 9999,
+        "BootyType": 1,
+        "AwardCnt": 22,
+        "RandParam": 10000,
+        "MinLevel": 0,
+        "MaxLevel": 0,
+        "ItemType": 10,
+        "ItemID": 9999902,
+        "ItemCnt": 1,
+        "ItemParam": [
+          3,
+          0,
+          0
+        ],
+        "BootyQuality": 3,
+        "_byte_length": 52
+      }
+    ]
+  },
+  {
+    "schema": "ResDef.BootyConfig",
+    "variant": "nonfp",
+    "source": "derived/config-extended/ResDef/BootyConfig.json",
+    "records": [
+      {
+        "_record_index": 0,
+        "_byte_offset": 20,
+        "BootyID": 9999,
+        "BootyType": 1,
+        "AwardCnt": 22,
+        "RandParam": 10000,
+        "MinLevel": 0,
+        "MaxLevel": 0,
+        "ItemType": 10,
+        "ItemID": 9999901,
+        "ItemCnt": 1,
+        "ItemParam": [
+          3,
+          0,
+          0
+        ],
+        "BootyQuality": 3,
+        "_byte_length": 52
+      },
+      {
+        "_record_index": 1,
+        "_byte_offset": 72,
+        "BootyID": 9999,
+        "BootyType": 1,
+        "AwardCnt": 22,
+        "RandParam": 10000,
+        "MinLevel": 0,
+        "MaxLevel": 0,
+        "ItemType": 10,
+        "ItemID": 9999902,
+        "ItemCnt": 1,
+        "ItemParam": [
+          3,
+          0,
+          0
+        ],
+        "BootyQuality": 3,
+        "_byte_length": 52
+      }
+    ]
+  },
+  {
+    "schema": "ResDef.EquipBootyConfig",
+    "variant": "nonfp",
+    "source": "derived/config-extended/ResDef/EquipBootyConfig.json",
+    "records": [
+      {
+        "_record_index": 0,
+        "_byte_offset": 20,
+        "BootyID": 316001,
+        "EquipID": 16001,
+        "Level": 0,
+        "EquipQuality": 3,
+        "EquipPrefix": 1,
+        "EquipExtraAttr": [
+          {
+            "ZhaoShiID": 0,
+            "DataType": 2,
+            "AddType": 1,
+            "Value": 30.0
+          },
+          {
+            "ZhaoShiID": 0,
+            "DataType": 0,
+            "AddType": 0,
+            "Value": 0.0
+          },
+          {
+            "ZhaoShiID": 0,
+            "DataType": 0,
+            "AddType": 0,
+            "Value": 0.0
+          },
+          {
+            "ZhaoShiID": 0,
+            "DataType": 0,
+            "AddType": 0,
+            "Value": 0.0
+          }
+        ],
+        "_byte_length": 55
+      },
+      {
+        "_record_index": 1,
+        "_byte_offset": 75,
+        "BootyID": 314001,
+        "EquipID": 14001,
+        "Level": 0,
+        "EquipQuality": 3,
+        "EquipPrefix": 1,
+        "EquipExtraAttr": [
+          {
+            "ZhaoShiID": 0,
+            "DataType": 1,
+            "AddType": 1,
+            "Value": 120.0
+          },
+          {
+            "ZhaoShiID": 0,
+            "DataType": 0,
+            "AddType": 0,
+            "Value": 0.0
+          },
+          {
+            "ZhaoShiID": 0,
+            "DataType": 0,
+            "AddType": 0,
+            "Value": 0.0
+          },
+          {
+            "ZhaoShiID": 0,
+            "DataType": 0,
+            "AddType": 0,
+            "Value": 0.0
+          }
+        ],
+        "_byte_length": 55
+      }
+    ]
+  },
+  {
+    "schema": "ResDef.LongHunEquipBootyConfig",
+    "variant": "nonfp",
+    "source": "derived/config-extended/ResDef/LongHunEquipBootyConfig.json",
+    "records": [
+      {
+        "_record_index": 0,
+        "_byte_offset": 20,
+        "BootyID": 810001,
+        "EquipID": 810001,
+        "Level": 1,
+        "EquipQuality": 1,
+        "EquipPrefix": 1,
+        "EquipExtraAttr": [
+          {
+            "ZhaoShiID": 0,
+            "DataType": 0,
+            "AddType": 0,
+            "Value": 0.0
+          },
+          {
+            "ZhaoShiID": 0,
+            "DataType": 0,
+            "AddType": 0,
+            "Value": 0.0
+          },
+          {
+            "ZhaoShiID": 0,
+            "DataType": 0,
+            "AddType": 0,
+            "Value": 0.0
+          },
+          {
+            "ZhaoShiID": 0,
+            "DataType": 0,
+            "AddType": 0,
+            "Value": 0.0
+          }
+        ],
+        "_byte_length": 58
+      },
+      {
+        "_record_index": 1,
+        "_byte_offset": 78,
+        "BootyID": 810002,
+        "EquipID": 810002,
+        "Level": 1,
+        "EquipQuality": 1,
+        "EquipPrefix": 1,
+        "EquipExtraAttr": [
+          {
+            "ZhaoShiID": 0,
+            "DataType": 0,
+            "AddType": 0,
+            "Value": 0.0
+          },
+          {
+            "ZhaoShiID": 0,
+            "DataType": 0,
+            "AddType": 0,
+            "Value": 0.0
+          },
+          {
+            "ZhaoShiID": 0,
+            "DataType": 0,
+            "AddType": 0,
+            "Value": 0.0
+          },
+          {
+            "ZhaoShiID": 0,
+            "DataType": 0,
+            "AddType": 0,
+            "Value": 0.0
+          }
+        ],
+        "_byte_length": 58
+      }
+    ]
+  },
+  {
+    "schema": "ResDef.SacredEquipBootyConfig",
+    "variant": "nonfp",
+    "source": "derived/config-extended/ResDef/SacredEquipBootyConfig.json",
+    "records": [
+      {
+        "_record_index": 0,
+        "_byte_offset": 20,
+        "BootyID": 810002,
+        "EquipID": 810002,
+        "Level": 1,
+        "Quality": 1,
+        "Prefix": 1,
+        "EquipExtraAttr": [
+          {
+            "DataType": 0,
+            "AddType": 0,
+            "Value": 0.0
+          },
+          {
+            "DataType": 0,
+            "AddType": 0,
+            "Value": 0.0
+          },
+          {
+            "DataType": 0,
+            "AddType": 0,
+            "Value": 0.0
+          }
+        ],
+        "_byte_length": 41
+      },
+      {
+        "_record_index": 1,
+        "_byte_offset": 61,
+        "BootyID": 810003,
+        "EquipID": 810003,
+        "Level": 1,
+        "Quality": 1,
+        "Prefix": 1,
+        "EquipExtraAttr": [
+          {
+            "DataType": 0,
+            "AddType": 0,
+            "Value": 0.0
+          },
+          {
+            "DataType": 0,
+            "AddType": 0,
+            "Value": 0.0
+          },
+          {
+            "DataType": 0,
+            "AddType": 0,
+            "Value": 0.0
+          }
+        ],
+        "_byte_length": 41
+      }
+    ]
+  }
+]

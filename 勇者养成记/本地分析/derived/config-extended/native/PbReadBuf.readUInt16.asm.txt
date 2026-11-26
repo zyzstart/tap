@@ -1,0 +1,12 @@
+0x21f67a0: str       x19, [sp, #-0x20]!
+0x21f67a4: stp       x29, x30, [sp, #0x10]
+0x21f67a8: add       x29, sp, #0x10
+0x21f67ac: mov       x19, x1
+0x21f67b0: sub       x1, x29, #4
+0x21f67b4: sturh     wzr, [x29, #-4]
+0x21f67b8: bl        #0x21f6668 ; ProtoBase.PbReadBuf$$readInt16
+0x21f67bc: ldurh     w8, [x29, #-4]
+0x21f67c0: strh      w8, [x19]
+0x21f67c4: ldp       x29, x30, [sp, #0x10]
+0x21f67c8: ldr       x19, [sp], #0x20
+0x21f67cc: ret       

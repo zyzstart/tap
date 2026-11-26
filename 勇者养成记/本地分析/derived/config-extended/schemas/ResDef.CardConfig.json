@@ -1,0 +1,4829 @@
+{
+  "namespace": "ResDef",
+  "name": "CardConfig",
+  "fields": [
+    {
+      "type": "uint",
+      "name": "CardId",
+      "object_offset": 16
+    },
+    {
+      "type": "string",
+      "name": "CardName",
+      "object_offset": 24
+    },
+    {
+      "type": "byte",
+      "name": "Quality",
+      "object_offset": 32
+    },
+    {
+      "type": "string",
+      "name": "CardIcon",
+      "object_offset": 40
+    },
+    {
+      "type": "int",
+      "name": "SortId",
+      "object_offset": 48
+    },
+    {
+      "type": "int",
+      "name": "ResolveGot",
+      "object_offset": 52
+    },
+    {
+      "type": "uint[]",
+      "name": "CardSkillIDList",
+      "object_offset": 56
+    },
+    {
+      "type": "string",
+      "name": "PeomDesc",
+      "object_offset": 64
+    },
+    {
+      "type": "string",
+      "name": "Biography",
+      "object_offset": 72
+    },
+    {
+      "type": "uint[]",
+      "name": "YuanfenIDList",
+      "object_offset": 80
+    }
+  ],
+  "unpack_va": 31245484,
+  "dump_line": 202502,
+  "layout": [
+    {
+      "type": "uint",
+      "name": "CardId",
+      "object_offset": 16,
+      "wire_type": "uint",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcc4e4",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "self",
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "type": "string",
+      "name": "CardName",
+      "object_offset": 24,
+      "wire_type": "string",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcc50c",
+          "target_va": "0x21f6ce8",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readString"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readString",
+          "destination": [
+            "self",
+            24
+          ],
+          "max_string_size": 256
+        }
+      ],
+      "max_string_size": 256
+    },
+    {
+      "type": "byte",
+      "name": "Quality",
+      "object_offset": 32,
+      "wire_type": "byte",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcc530",
+          "target_va": "0x21f65e0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt8"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt8",
+          "destination": [
+            "self",
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "type": "string",
+      "name": "CardIcon",
+      "object_offset": 40,
+      "wire_type": "string",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcc558",
+          "target_va": "0x21f6ce8",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readString"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readString",
+          "destination": [
+            "self",
+            40
+          ],
+          "max_string_size": 128
+        }
+      ],
+      "max_string_size": 128
+    },
+    {
+      "type": "int",
+      "name": "SortId",
+      "object_offset": 48,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcc57c",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "type": "int",
+      "name": "ResolveGot",
+      "object_offset": 52,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcc5a0",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            52
+          ]
+        }
+      ]
+    },
+    {
+      "type": "uint[]",
+      "name": "CardSkillIDList",
+      "object_offset": 56,
+      "wire_type": "uint",
+      "kind": "array",
+      "count": 3,
+      "count_encoding": "none-native-fixed",
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcc5f8",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            56,
+            32
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc5f8",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            56,
+            36
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc5f8",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            56,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "type": "string",
+      "name": "PeomDesc",
+      "object_offset": 64,
+      "wire_type": "string",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcc630",
+          "target_va": "0x21f6ce8",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readString"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readString",
+          "destination": [
+            "self",
+            64
+          ],
+          "max_string_size": 1024
+        }
+      ],
+      "max_string_size": 1024
+    },
+    {
+      "type": "string",
+      "name": "Biography",
+      "object_offset": 72,
+      "wire_type": "string",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcc658",
+          "target_va": "0x21f6ce8",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readString"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readString",
+          "destination": [
+            "self",
+            72
+          ],
+          "max_string_size": 1024
+        }
+      ],
+      "max_string_size": 1024
+    },
+    {
+      "type": "uint[]",
+      "name": "YuanfenIDList",
+      "object_offset": 80,
+      "wire_type": "uint",
+      "kind": "array",
+      "count": 100,
+      "count_encoding": "none-native-fixed",
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            32
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            36
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            40
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            44
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            48
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            52
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            56
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            60
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            64
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            68
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            72
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            76
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            80
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            84
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            88
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            92
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            96
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            100
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            104
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            108
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            112
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            116
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            120
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            124
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            128
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            132
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            136
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            140
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            144
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            148
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            152
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            156
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            160
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            164
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            168
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            172
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            176
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            180
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            184
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            188
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            192
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            196
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            200
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            204
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            208
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            212
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            216
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            220
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            224
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            228
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            232
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            236
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            240
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            244
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            248
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            252
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            256
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            260
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            264
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            268
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            272
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            276
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            280
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            284
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            288
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            292
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            296
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            300
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            304
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            308
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            312
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            316
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            320
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            324
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            328
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            332
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            336
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            340
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            344
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            348
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            352
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            356
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            360
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            364
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            368
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            372
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            376
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            380
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            384
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            388
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            392
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            396
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            400
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            404
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            408
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            412
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            416
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            420
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            424
+          ]
+        },
+        {
+          "instruction_va": "0x1dcc6b0",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "arrayptr",
+            80,
+            428
+          ]
+        }
+      ]
+    }
+  ],
+  "native_evidence": {
+    "method_start_va": "0x1dcc4ac",
+    "instruction_steps": 1724,
+    "event_count": 111,
+    "branch_evidence": [
+      {
+        "instruction_va": "0x1dcc5d8",
+        "cmp_va": "0x1dcc5d4",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 56,
+        "index": 0
+      },
+      {
+        "instruction_va": "0x1dcc60c",
+        "target_va": "0x1dcc5b0",
+        "kind": "concrete-loop-test",
+        "left": 0,
+        "right": 2,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc5d8",
+        "cmp_va": "0x1dcc5d4",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 56,
+        "index": 1
+      },
+      {
+        "instruction_va": "0x1dcc60c",
+        "target_va": "0x1dcc5b0",
+        "kind": "concrete-loop-test",
+        "left": 1,
+        "right": 2,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc5d8",
+        "cmp_va": "0x1dcc5d4",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 56,
+        "index": 2
+      },
+      {
+        "instruction_va": "0x1dcc60c",
+        "target_va": "0x1dcc5b0",
+        "kind": "concrete-loop-test",
+        "left": 2,
+        "right": 2,
+        "condition": "lt",
+        "taken": false
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 0
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 0,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 1
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 1,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 2
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 2,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 3
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 3,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 4
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 4,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 5
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 5,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 6
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 6,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 7
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 7,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 8
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 8,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 9
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 9,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 10
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 10,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 11
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 11,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 12
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 12,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 13
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 13,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 14
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 14,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 15
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 15,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 16
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 16,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 17
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 17,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 18
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 18,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 19
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 19,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 20
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 20,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 21
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 21,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 22
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 22,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 23
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 23,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 24
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 24,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 25
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 25,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 26
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 26,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 27
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 27,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 28
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 28,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 29
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 29,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 30
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 30,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 31
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 31,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 32
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 32,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 33
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 33,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 34
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 34,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 35
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 35,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 36
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 36,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 37
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 37,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 38
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 38,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 39
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 39,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 40
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 40,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 41
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 41,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 42
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 42,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 43
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 43,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 44
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 44,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 45
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 45,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 46
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 46,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 47
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 47,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 48
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 48,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 49
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 49,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 50
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 50,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 51
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 51,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 52
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 52,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 53
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 53,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 54
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 54,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 55
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 55,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 56
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 56,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 57
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 57,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 58
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 58,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 59
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 59,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 60
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 60,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 61
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 61,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 62
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 62,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 63
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 63,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 64
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 64,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 65
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 65,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 66
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 66,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 67
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 67,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 68
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 68,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 69
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 69,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 70
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 70,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 71
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 71,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 72
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 72,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 73
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 73,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 74
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 74,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 75
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 75,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 76
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 76,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 77
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 77,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 78
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 78,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 79
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 79,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 80
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 80,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 81
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 81,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 82
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 82,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 83
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 83,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 84
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 84,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 85
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 85,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 86
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 86,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 87
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 87,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 88
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 88,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 89
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 89,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 90
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 90,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 91
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 91,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 92
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 92,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 93
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 93,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 94
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 94,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 95
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 95,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 96
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 96,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 97
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 97,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 98
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 98,
+        "right": 99,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcc690",
+        "cmp_va": "0x1dcc68c",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 80,
+        "index": 99
+      },
+      {
+        "instruction_va": "0x1dcc6c4",
+        "target_va": "0x1dcc668",
+        "kind": "concrete-loop-test",
+        "left": 99,
+        "right": 99,
+        "condition": "lt",
+        "taken": false
+      }
+    ],
+    "loops": [
+      {
+        "backedge_va": "0x1dcc60c",
+        "body_start_va": "0x1dcc5b0",
+        "body": [
+          {
+            "instruction_va": "0x1dcc5b0",
+            "bytes": "971e40f9",
+            "mnemonic": "ldr",
+            "operands": "x23, [x20, #0x38]"
+          },
+          {
+            "instruction_va": "0x1dcc5b4",
+            "bytes": "770000b5",
+            "mnemonic": "cbnz",
+            "operands": "x23, #0x1dcc5c0"
+          },
+          {
+            "instruction_va": "0x1dcc5b8",
+            "bytes": "e0031faa",
+            "mnemonic": "mov",
+            "operands": "x0, xzr"
+          },
+          {
+            "instruction_va": "0x1dcc5bc",
+            "bytes": "5c7cbd97",
+            "mnemonic": "bl",
+            "operands": "#0xd2b72c"
+          },
+          {
+            "instruction_va": "0x1dcc5c0",
+            "bytes": "b8060091",
+            "mnemonic": "add",
+            "operands": "x24, x21, #1"
+          },
+          {
+            "instruction_va": "0x1dcc5c4",
+            "bytes": "730000b5",
+            "mnemonic": "cbnz",
+            "operands": "x19, #0x1dcc5d0"
+          },
+          {
+            "instruction_va": "0x1dcc5c8",
+            "bytes": "e0031faa",
+            "mnemonic": "mov",
+            "operands": "x0, xzr"
+          },
+          {
+            "instruction_va": "0x1dcc5cc",
+            "bytes": "587cbd97",
+            "mnemonic": "bl",
+            "operands": "#0xd2b72c"
+          },
+          {
+            "instruction_va": "0x1dcc5d0",
+            "bytes": "e81a40b9",
+            "mnemonic": "ldr",
+            "operands": "w8, [x23, #0x18]"
+          },
+          {
+            "instruction_va": "0x1dcc5d4",
+            "bytes": "1f0308eb",
+            "mnemonic": "cmp",
+            "operands": "x24, x8"
+          },
+          {
+            "instruction_va": "0x1dcc5d8",
+            "bytes": "a3000054",
+            "mnemonic": "b.lo",
+            "operands": "#0x1dcc5ec"
+          },
+          {
+            "instruction_va": "0x1dcc5dc",
+            "bytes": "8d7fbd97",
+            "mnemonic": "bl",
+            "operands": "#0xd2c410"
+          },
+          {
+            "instruction_va": "0x1dcc5e0",
+            "bytes": "e1031faa",
+            "mnemonic": "mov",
+            "operands": "x1, xzr"
+          },
+          {
+            "instruction_va": "0x1dcc5e4",
+            "bytes": "e2031faa",
+            "mnemonic": "mov",
+            "operands": "x2, xzr"
+          },
+          {
+            "instruction_va": "0x1dcc5e8",
+            "bytes": "2d7cbd97",
+            "mnemonic": "bl",
+            "operands": "#0xd2b69c"
+          },
+          {
+            "instruction_va": "0x1dcc5ec",
+            "bytes": "e102168b",
+            "mnemonic": "add",
+            "operands": "x1, x23, x22"
+          },
+          {
+            "instruction_va": "0x1dcc5f0",
+            "bytes": "e00313aa",
+            "mnemonic": "mov",
+            "operands": "x0, x19"
+          },
+          {
+            "instruction_va": "0x1dcc5f4",
+            "bytes": "e2031faa",
+            "mnemonic": "mov",
+            "operands": "x2, xzr"
+          },
+          {
+            "instruction_va": "0x1dcc5f8",
+            "bytes": "c4a81094",
+            "mnemonic": "bl",
+            "operands": "#0x21f6908"
+          },
+          {
+            "instruction_va": "0x1dcc5fc",
+            "bytes": "60060035",
+            "mnemonic": "cbnz",
+            "operands": "w0, #0x1dcc6c8"
+          },
+          {
+            "instruction_va": "0x1dcc600",
+            "bytes": "b5060091",
+            "mnemonic": "add",
+            "operands": "x21, x21, #1"
+          },
+          {
+            "instruction_va": "0x1dcc604",
+            "bytes": "bf0a00f1",
+            "mnemonic": "cmp",
+            "operands": "x21, #2"
+          },
+          {
+            "instruction_va": "0x1dcc608",
+            "bytes": "d6120091",
+            "mnemonic": "add",
+            "operands": "x22, x22, #4"
+          },
+          {
+            "instruction_va": "0x1dcc60c",
+            "bytes": "2bfdff54",
+            "mnemonic": "b.lt",
+            "operands": "#0x1dcc5b0"
+          }
+        ],
+        "preheader_initialization": [
+          {
+            "instruction_va": "0x1dcc5a4",
+            "bytes": "20090035",
+            "mnemonic": "cbnz",
+            "operands": "w0, #0x1dcc6c8"
+          },
+          {
+            "instruction_va": "0x1dcc5a8",
+            "bytes": "15008092",
+            "mnemonic": "mov",
+            "operands": "x21, #-1"
+          },
+          {
+            "instruction_va": "0x1dcc5ac",
+            "bytes": "f6031b32",
+            "mnemonic": "mov",
+            "operands": "w22, #0x20"
+          }
+        ],
+        "index_stride_updates": [
+          {
+            "instruction_va": "0x1dcc600",
+            "bytes": "b5060091",
+            "mnemonic": "add",
+            "operands": "x21, x21, #1"
+          },
+          {
+            "instruction_va": "0x1dcc608",
+            "bytes": "d6120091",
+            "mnemonic": "add",
+            "operands": "x22, x22, #4"
+          }
+        ],
+        "compare_instructions": [
+          {
+            "instruction_va": "0x1dcc5d4",
+            "bytes": "1f0308eb",
+            "mnemonic": "cmp",
+            "operands": "x24, x8"
+          },
+          {
+            "instruction_va": "0x1dcc604",
+            "bytes": "bf0a00f1",
+            "mnemonic": "cmp",
+            "operands": "x21, #2"
+          }
+        ],
+        "concrete_tests_in_order": [
+          {
+            "instruction_va": "0x1dcc60c",
+            "target_va": "0x1dcc5b0",
+            "kind": "concrete-loop-test",
+            "left": 0,
+            "right": 2,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc60c",
+            "target_va": "0x1dcc5b0",
+            "kind": "concrete-loop-test",
+            "left": 1,
+            "right": 2,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc60c",
+            "target_va": "0x1dcc5b0",
+            "kind": "concrete-loop-test",
+            "left": 2,
+            "right": 2,
+            "condition": "lt",
+            "taken": false
+          }
+        ],
+        "trip_count": 3
+      },
+      {
+        "backedge_va": "0x1dcc6c4",
+        "body_start_va": "0x1dcc668",
+        "body": [
+          {
+            "instruction_va": "0x1dcc668",
+            "bytes": "972a40f9",
+            "mnemonic": "ldr",
+            "operands": "x23, [x20, #0x50]"
+          },
+          {
+            "instruction_va": "0x1dcc66c",
+            "bytes": "770000b5",
+            "mnemonic": "cbnz",
+            "operands": "x23, #0x1dcc678"
+          },
+          {
+            "instruction_va": "0x1dcc670",
+            "bytes": "e0031faa",
+            "mnemonic": "mov",
+            "operands": "x0, xzr"
+          },
+          {
+            "instruction_va": "0x1dcc674",
+            "bytes": "2e7cbd97",
+            "mnemonic": "bl",
+            "operands": "#0xd2b72c"
+          },
+          {
+            "instruction_va": "0x1dcc678",
+            "bytes": "b8060091",
+            "mnemonic": "add",
+            "operands": "x24, x21, #1"
+          },
+          {
+            "instruction_va": "0x1dcc67c",
+            "bytes": "730000b5",
+            "mnemonic": "cbnz",
+            "operands": "x19, #0x1dcc688"
+          },
+          {
+            "instruction_va": "0x1dcc680",
+            "bytes": "e0031faa",
+            "mnemonic": "mov",
+            "operands": "x0, xzr"
+          },
+          {
+            "instruction_va": "0x1dcc684",
+            "bytes": "2a7cbd97",
+            "mnemonic": "bl",
+            "operands": "#0xd2b72c"
+          },
+          {
+            "instruction_va": "0x1dcc688",
+            "bytes": "e81a40b9",
+            "mnemonic": "ldr",
+            "operands": "w8, [x23, #0x18]"
+          },
+          {
+            "instruction_va": "0x1dcc68c",
+            "bytes": "1f0308eb",
+            "mnemonic": "cmp",
+            "operands": "x24, x8"
+          },
+          {
+            "instruction_va": "0x1dcc690",
+            "bytes": "a3000054",
+            "mnemonic": "b.lo",
+            "operands": "#0x1dcc6a4"
+          },
+          {
+            "instruction_va": "0x1dcc694",
+            "bytes": "5f7fbd97",
+            "mnemonic": "bl",
+            "operands": "#0xd2c410"
+          },
+          {
+            "instruction_va": "0x1dcc698",
+            "bytes": "e1031faa",
+            "mnemonic": "mov",
+            "operands": "x1, xzr"
+          },
+          {
+            "instruction_va": "0x1dcc69c",
+            "bytes": "e2031faa",
+            "mnemonic": "mov",
+            "operands": "x2, xzr"
+          },
+          {
+            "instruction_va": "0x1dcc6a0",
+            "bytes": "ff7bbd97",
+            "mnemonic": "bl",
+            "operands": "#0xd2b69c"
+          },
+          {
+            "instruction_va": "0x1dcc6a4",
+            "bytes": "e102168b",
+            "mnemonic": "add",
+            "operands": "x1, x23, x22"
+          },
+          {
+            "instruction_va": "0x1dcc6a8",
+            "bytes": "e00313aa",
+            "mnemonic": "mov",
+            "operands": "x0, x19"
+          },
+          {
+            "instruction_va": "0x1dcc6ac",
+            "bytes": "e2031faa",
+            "mnemonic": "mov",
+            "operands": "x2, xzr"
+          },
+          {
+            "instruction_va": "0x1dcc6b0",
+            "bytes": "96a81094",
+            "mnemonic": "bl",
+            "operands": "#0x21f6908"
+          },
+          {
+            "instruction_va": "0x1dcc6b4",
+            "bytes": "a0000035",
+            "mnemonic": "cbnz",
+            "operands": "w0, #0x1dcc6c8"
+          },
+          {
+            "instruction_va": "0x1dcc6b8",
+            "bytes": "b5060091",
+            "mnemonic": "add",
+            "operands": "x21, x21, #1"
+          },
+          {
+            "instruction_va": "0x1dcc6bc",
+            "bytes": "bf8e01f1",
+            "mnemonic": "cmp",
+            "operands": "x21, #0x63"
+          },
+          {
+            "instruction_va": "0x1dcc6c0",
+            "bytes": "d6120091",
+            "mnemonic": "add",
+            "operands": "x22, x22, #4"
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "bytes": "2bfdff54",
+            "mnemonic": "b.lt",
+            "operands": "#0x1dcc668"
+          }
+        ],
+        "preheader_initialization": [
+          {
+            "instruction_va": "0x1dcc65c",
+            "bytes": "60030035",
+            "mnemonic": "cbnz",
+            "operands": "w0, #0x1dcc6c8"
+          },
+          {
+            "instruction_va": "0x1dcc660",
+            "bytes": "15008092",
+            "mnemonic": "mov",
+            "operands": "x21, #-1"
+          },
+          {
+            "instruction_va": "0x1dcc664",
+            "bytes": "f6031b32",
+            "mnemonic": "mov",
+            "operands": "w22, #0x20"
+          }
+        ],
+        "index_stride_updates": [
+          {
+            "instruction_va": "0x1dcc6b8",
+            "bytes": "b5060091",
+            "mnemonic": "add",
+            "operands": "x21, x21, #1"
+          },
+          {
+            "instruction_va": "0x1dcc6c0",
+            "bytes": "d6120091",
+            "mnemonic": "add",
+            "operands": "x22, x22, #4"
+          }
+        ],
+        "compare_instructions": [
+          {
+            "instruction_va": "0x1dcc68c",
+            "bytes": "1f0308eb",
+            "mnemonic": "cmp",
+            "operands": "x24, x8"
+          },
+          {
+            "instruction_va": "0x1dcc6bc",
+            "bytes": "bf8e01f1",
+            "mnemonic": "cmp",
+            "operands": "x21, #0x63"
+          }
+        ],
+        "concrete_tests_in_order": [
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 0,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 1,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 2,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 3,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 4,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 5,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 6,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 7,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 8,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 9,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 10,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 11,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 12,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 13,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 14,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 15,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 16,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 17,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 18,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 19,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 20,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 21,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 22,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 23,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 24,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 25,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 26,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 27,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 28,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 29,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 30,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 31,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 32,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 33,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 34,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 35,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 36,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 37,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 38,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 39,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 40,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 41,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 42,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 43,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 44,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 45,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 46,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 47,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 48,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 49,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 50,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 51,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 52,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 53,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 54,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 55,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 56,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 57,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 58,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 59,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 60,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 61,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 62,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 63,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 64,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 65,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 66,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 67,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 68,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 69,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 70,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 71,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 72,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 73,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 74,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 75,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 76,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 77,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 78,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 79,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 80,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 81,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 82,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 83,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 84,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 85,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 86,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 87,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 88,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 89,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 90,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 91,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 92,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 93,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 94,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 95,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 96,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 97,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 98,
+            "right": 99,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcc6c4",
+            "target_va": "0x1dcc668",
+            "kind": "concrete-loop-test",
+            "left": 99,
+            "right": 99,
+            "condition": "lt",
+            "taken": false
+          }
+        ],
+        "trip_count": 100
+      }
+    ],
+    "instruction_sha256": "15b220ca638a5596ea041eb03b4308cfe953381cc33e8718eb9e50c9d118aa2f",
+    "gate": "concrete-success-path; all sequential readers/nested callees; full field/destination/stride matching",
+    "assumptions": [
+      "non-null input buffer and created nested objects/arrays",
+      "managed array bounds valid",
+      "AAPCS64 callee-saved register preservation",
+      "reader and nested call success; version 1 only"
+    ]
+  }
+}

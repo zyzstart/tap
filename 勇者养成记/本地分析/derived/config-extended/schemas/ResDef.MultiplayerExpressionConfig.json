@@ -1,0 +1,457 @@
+{
+  "namespace": "ResDef",
+  "name": "MultiplayerExpressionConfig",
+  "fields": [
+    {
+      "type": "byte",
+      "name": "FrameNo",
+      "object_offset": 16
+    },
+    {
+      "type": "byte",
+      "name": "ActiveType",
+      "object_offset": 17
+    },
+    {
+      "type": "int",
+      "name": "GifID",
+      "object_offset": 20
+    },
+    {
+      "type": "string",
+      "name": "FormatStr",
+      "object_offset": 24
+    },
+    {
+      "type": "string",
+      "name": "AtlasName",
+      "object_offset": 32
+    },
+    {
+      "type": "string",
+      "name": "IconName",
+      "object_offset": 40
+    },
+    {
+      "type": "GifActiveParamData",
+      "name": "ActiveParam",
+      "object_offset": 48
+    },
+    {
+      "type": "string",
+      "name": "ActiveDesc",
+      "object_offset": 56
+    },
+    {
+      "type": "string",
+      "name": "IOSVestBag",
+      "object_offset": 64
+    },
+    {
+      "type": "float",
+      "name": "UIPanelScale",
+      "object_offset": 72
+    },
+    {
+      "type": "float",
+      "name": "UICenterScale",
+      "object_offset": 76
+    },
+    {
+      "type": "float",
+      "name": "UIListScale",
+      "object_offset": 80
+    },
+    {
+      "type": "float",
+      "name": "BattlePanelScale",
+      "object_offset": 84
+    },
+    {
+      "type": "float",
+      "name": "BattleGifScale",
+      "object_offset": 88
+    }
+  ],
+  "unpack_va": 32007356,
+  "dump_line": 202761,
+  "layout": [
+    {
+      "type": "byte",
+      "name": "FrameNo",
+      "object_offset": 16,
+      "wire_type": "byte",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e864f4",
+          "target_va": "0x21f65e0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt8"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt8",
+          "destination": [
+            "self",
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "type": "byte",
+      "name": "ActiveType",
+      "object_offset": 17,
+      "wire_type": "byte",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e86518",
+          "target_va": "0x21f65e0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt8"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt8",
+          "destination": [
+            "self",
+            17
+          ]
+        }
+      ]
+    },
+    {
+      "type": "int",
+      "name": "GifID",
+      "object_offset": 20,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e8653c",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "type": "string",
+      "name": "FormatStr",
+      "object_offset": 24,
+      "wire_type": "string",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e86564",
+          "target_va": "0x21f6ce8",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readString"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readString",
+          "destination": [
+            "self",
+            24
+          ],
+          "max_string_size": 32
+        }
+      ],
+      "max_string_size": 32
+    },
+    {
+      "type": "string",
+      "name": "AtlasName",
+      "object_offset": 32,
+      "wire_type": "string",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e8658c",
+          "target_va": "0x21f6ce8",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readString"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readString",
+          "destination": [
+            "self",
+            32
+          ],
+          "max_string_size": 64
+        }
+      ],
+      "max_string_size": 64
+    },
+    {
+      "type": "string",
+      "name": "IconName",
+      "object_offset": 40,
+      "wire_type": "string",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e865b4",
+          "target_va": "0x21f6ce8",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readString"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readString",
+          "destination": [
+            "self",
+            40
+          ],
+          "max_string_size": 64
+        }
+      ],
+      "max_string_size": 64
+    },
+    {
+      "type": "GifActiveParamData",
+      "name": "ActiveParam",
+      "object_offset": 48,
+      "wire_type": "GifActiveParamData",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e865e0",
+          "target_va": "0x1d4a38c",
+          "target_names": [
+            "ResDef.GifActiveParamData$$unpack"
+          ],
+          "opcode": "BL",
+          "kind": "nested",
+          "nested_schema": "ResDef.GifActiveParamData",
+          "destination": [
+            "field",
+            48
+          ],
+          "cut_version": 1
+        }
+      ],
+      "nested_schema": "ResDef.GifActiveParamData"
+    },
+    {
+      "type": "string",
+      "name": "ActiveDesc",
+      "object_offset": 56,
+      "wire_type": "string",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e86608",
+          "target_va": "0x21f6ce8",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readString"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readString",
+          "destination": [
+            "self",
+            56
+          ],
+          "max_string_size": 1024
+        }
+      ],
+      "max_string_size": 1024
+    },
+    {
+      "type": "string",
+      "name": "IOSVestBag",
+      "object_offset": 64,
+      "wire_type": "string",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e86630",
+          "target_va": "0x21f6ce8",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readString"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readString",
+          "destination": [
+            "self",
+            64
+          ],
+          "max_string_size": 128
+        }
+      ],
+      "max_string_size": 128
+    },
+    {
+      "type": "float",
+      "name": "UIPanelScale",
+      "object_offset": 72,
+      "wire_type": "float",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e86654",
+          "target_va": "0x21f6b98",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readFloat"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readFloat",
+          "destination": [
+            "self",
+            72
+          ]
+        }
+      ]
+    },
+    {
+      "type": "float",
+      "name": "UICenterScale",
+      "object_offset": 76,
+      "wire_type": "float",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e86678",
+          "target_va": "0x21f6b98",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readFloat"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readFloat",
+          "destination": [
+            "self",
+            76
+          ]
+        }
+      ]
+    },
+    {
+      "type": "float",
+      "name": "UIListScale",
+      "object_offset": 80,
+      "wire_type": "float",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e8669c",
+          "target_va": "0x21f6b98",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readFloat"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readFloat",
+          "destination": [
+            "self",
+            80
+          ]
+        }
+      ]
+    },
+    {
+      "type": "float",
+      "name": "BattlePanelScale",
+      "object_offset": 84,
+      "wire_type": "float",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e866c0",
+          "target_va": "0x21f6b98",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readFloat"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readFloat",
+          "destination": [
+            "self",
+            84
+          ]
+        }
+      ]
+    },
+    {
+      "type": "float",
+      "name": "BattleGifScale",
+      "object_offset": 88,
+      "wire_type": "float",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e86700",
+          "target_va": "0x21f6b98",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readFloat"
+          ],
+          "opcode": "B",
+          "kind": "reader",
+          "reader": "readFloat",
+          "destination": [
+            "self",
+            88
+          ]
+        }
+      ]
+    }
+  ],
+  "native_evidence": {
+    "method_start_va": "0x1e864bc",
+    "instruction_steps": 114,
+    "event_count": 14,
+    "branch_evidence": [],
+    "loops": [],
+    "instruction_sha256": "630264976e5d264863f2e627c6745e0642ec597f772e092271f84121906c3797",
+    "gate": "concrete-success-path; all sequential readers/nested callees; full field/destination/stride matching",
+    "assumptions": [
+      "non-null input buffer and created nested objects/arrays",
+      "managed array bounds valid",
+      "AAPCS64 callee-saved register preservation",
+      "reader and nested call success; version 1 only"
+    ]
+  }
+}

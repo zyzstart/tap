@@ -1,0 +1,85 @@
+{
+  "namespace": "ResDef",
+  "name": "TalentCoordinateEntry",
+  "fields": [
+    {
+      "type": "float",
+      "name": "X",
+      "object_offset": 16
+    },
+    {
+      "type": "float",
+      "name": "Y",
+      "object_offset": 20
+    }
+  ],
+  "unpack_va": 32054216,
+  "dump_line": 211027,
+  "layout": [
+    {
+      "type": "float",
+      "name": "X",
+      "object_offset": 16,
+      "wire_type": "float",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e91bfc",
+          "target_va": "0x21f6b98",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readFloat"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readFloat",
+          "destination": [
+            "self",
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "type": "float",
+      "name": "Y",
+      "object_offset": 20,
+      "wire_type": "float",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e91c3c",
+          "target_va": "0x21f6b98",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readFloat"
+          ],
+          "opcode": "B",
+          "kind": "reader",
+          "reader": "readFloat",
+          "destination": [
+            "self",
+            20
+          ]
+        }
+      ]
+    }
+  ],
+  "native_evidence": {
+    "method_start_va": "0x1e91bc8",
+    "instruction_steps": 22,
+    "event_count": 2,
+    "branch_evidence": [],
+    "loops": [],
+    "instruction_sha256": "fac4aa66d963cafd36b93f95fb62ea4c773f0e9a32f590a26bdf306f2a81292b",
+    "gate": "concrete-success-path; all sequential readers/nested callees; full field/destination/stride matching",
+    "assumptions": [
+      "non-null input buffer and created nested objects/arrays",
+      "managed array bounds valid",
+      "AAPCS64 callee-saved register preservation",
+      "reader and nested call success; version 1 only"
+    ]
+  }
+}

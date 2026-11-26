@@ -1,0 +1,169 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_xiakexingprivilegeconfig.bytes.ab",
+    "path_id": 3101955625228108745,
+    "name": "XiaKeXingPrivilegeConfig",
+    "sha256": "77f447180fb70782a0e56b69f8f588240942b1d4d44674740545881ab7893e15",
+    "export": "derived/unity/text/assets_resources_config_resbin_xiakexingprivilegeconfig.bytes/XiaKeXingPrivilegeConfig__3101955625228108745.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 383,
+      "version": 1,
+      "record_count": 6,
+      "stored_crc32": "832bb707",
+      "computed_inverted_crc32": "832bb707"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "XiaKeXingPrivilegeConfig",
+      "fields": [
+        {
+          "type": "byte",
+          "name": "Type",
+          "object_offset": 16
+        },
+        {
+          "type": "string",
+          "name": "Desc",
+          "object_offset": 24
+        },
+        {
+          "type": "float",
+          "name": "Param",
+          "object_offset": 32
+        },
+        {
+          "type": "string",
+          "name": "Icon",
+          "object_offset": 40
+        },
+        {
+          "type": "uint",
+          "name": "sortId",
+          "object_offset": 48
+        }
+      ],
+      "unpack_va": 29421660,
+      "dump_line": 213261
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1c0f090",
+        "target_va": "0x21f65e0",
+        "opcode": "BL",
+        "reader": "readUInt8",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1c0f0b8",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1c0f0dc",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1c0f104",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 40,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1c0f144",
+        "target_va": "0x21f6908",
+        "opcode": "B-tail",
+        "reader": "readUInt32",
+        "destination_object_offset": 48,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 6
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "Type": 1,
+      "Desc": "扫荡所需珍珠数量减半",
+      "Param": 0.5,
+      "Icon": "yj_icon_sd",
+      "sortId": 1,
+      "_byte_length": 59
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 79,
+      "Type": 2,
+      "Desc": "部落使命任务奖励提升20%",
+      "Param": 0.20000000298023224,
+      "Icon": "yj_icon_rw",
+      "sortId": 2,
+      "_byte_length": 62
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 141,
+      "Type": 3,
+      "Desc": "部落捐献次数各加1",
+      "Param": 1.0,
+      "Icon": "yj_icon_js",
+      "sortId": 3,
+      "_byte_length": 54
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 195,
+      "Type": 4,
+      "Desc": "退出部落消耗贡献减半",
+      "Param": 0.5,
+      "Icon": "yj_icon_tc",
+      "sortId": 4,
+      "_byte_length": 59
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 254,
+      "Type": 6,
+      "Desc": "部落羁绊内可与伙伴提前结识",
+      "Param": 50.0,
+      "Icon": "yj_icon_jb",
+      "sortId": 5,
+      "_byte_length": 68
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 322,
+      "Type": 8,
+      "Desc": "领地掠夺每日行动次数+1",
+      "Param": 1.0,
+      "Icon": "yj_icon_cw",
+      "sortId": 6,
+      "_byte_length": 61
+    }
+  ]
+}

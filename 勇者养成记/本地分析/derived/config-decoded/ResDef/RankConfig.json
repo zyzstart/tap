@@ -1,0 +1,501 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_rankconfig.bytes.ab",
+    "path_id": 5171447189117268944,
+    "name": "RankConfig",
+    "sha256": "489de8f17b03abcb515022b9acf1a6e6bc5c5e9ace655fe7279f6b0982e5e6ef",
+    "export": "derived/unity/text/assets_resources_config_resbin_rankconfig.bytes/RankConfig__5171447189117268944.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 1218,
+      "version": 1,
+      "record_count": 24,
+      "stored_crc32": "f28107fb",
+      "computed_inverted_crc32": "f28107fb"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "RankConfig",
+      "fields": [
+        {
+          "type": "uint",
+          "name": "RankID",
+          "object_offset": 16
+        },
+        {
+          "type": "uint",
+          "name": "RankSort",
+          "object_offset": 20
+        },
+        {
+          "type": "string",
+          "name": "RankName",
+          "object_offset": 24
+        },
+        {
+          "type": "uint",
+          "name": "Group",
+          "object_offset": 32
+        },
+        {
+          "type": "int",
+          "name": "MaxRecord",
+          "object_offset": 36
+        },
+        {
+          "type": "int",
+          "name": "MaxShow",
+          "object_offset": 40
+        },
+        {
+          "type": "int",
+          "name": "MinLevel",
+          "object_offset": 44
+        },
+        {
+          "type": "int",
+          "name": "MinValue",
+          "object_offset": 48
+        },
+        {
+          "type": "byte",
+          "name": "IsHide",
+          "object_offset": 52
+        }
+      ],
+      "unpack_va": 32035448,
+      "dump_line": 210285
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1e8d2ac",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8d2d0",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8d2f8",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8d31c",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8d340",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 36,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8d364",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 40,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8d388",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 44,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8d3ac",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 48,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8d3ec",
+        "target_va": "0x21f65e0",
+        "opcode": "B-tail",
+        "reader": "readUInt8",
+        "destination_object_offset": 52,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 24
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "RankID": 101,
+      "RankSort": 1,
+      "RankName": "等级排行",
+      "Group": 0,
+      "MaxRecord": 100,
+      "MaxShow": 50,
+      "MinLevel": 15,
+      "MinValue": 15,
+      "IsHide": 0,
+      "_byte_length": 46
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 66,
+      "RankID": 102,
+      "RankSort": 2,
+      "RankName": "战力排行",
+      "Group": 0,
+      "MaxRecord": 100,
+      "MaxShow": 50,
+      "MinLevel": 15,
+      "MinValue": 2000,
+      "IsHide": 0,
+      "_byte_length": 46
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 112,
+      "RankID": 103,
+      "RankSort": 3,
+      "RankName": "狩猎等级排行",
+      "Group": 0,
+      "MaxRecord": 100,
+      "MaxShow": 50,
+      "MinLevel": 15,
+      "MinValue": 0,
+      "IsHide": 0,
+      "_byte_length": 52
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 164,
+      "RankID": 104,
+      "RankSort": 4,
+      "RankName": "普通关卡",
+      "Group": 0,
+      "MaxRecord": 100,
+      "MaxShow": 50,
+      "MinLevel": 15,
+      "MinValue": 0,
+      "IsHide": 0,
+      "_byte_length": 46
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 210,
+      "RankID": 105,
+      "RankSort": 5,
+      "RankName": "困难关卡",
+      "Group": 0,
+      "MaxRecord": 100,
+      "MaxShow": 50,
+      "MinLevel": 15,
+      "MinValue": 0,
+      "IsHide": 0,
+      "_byte_length": 46
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 256,
+      "RankID": 106,
+      "RankSort": 9,
+      "RankName": "斗兽场排行",
+      "Group": 0,
+      "MaxRecord": 100,
+      "MaxShow": 50,
+      "MinLevel": 50,
+      "MinValue": 1,
+      "IsHide": 0,
+      "_byte_length": 49
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 305,
+      "RankID": 107,
+      "RankSort": 6,
+      "RankName": "卡牌排行榜",
+      "Group": 0,
+      "MaxRecord": 100,
+      "MaxShow": 50,
+      "MinLevel": 15,
+      "MinValue": 1,
+      "IsHide": 0,
+      "_byte_length": 49
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 354,
+      "RankID": 108,
+      "RankSort": 8,
+      "RankName": "世界巨兽排行",
+      "Group": 0,
+      "MaxRecord": 100,
+      "MaxShow": 50,
+      "MinLevel": 40,
+      "MinValue": 1,
+      "IsHide": 0,
+      "_byte_length": 52
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 406,
+      "RankID": 109,
+      "RankSort": 7,
+      "RankName": "坐骑排行",
+      "Group": 0,
+      "MaxRecord": 100,
+      "MaxShow": 50,
+      "MinLevel": 40,
+      "MinValue": 1,
+      "IsHide": 0,
+      "_byte_length": 46
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 452,
+      "RankID": 110,
+      "RankSort": 10,
+      "RankName": "PVP积分排行",
+      "Group": 0,
+      "MaxRecord": 100,
+      "MaxShow": 50,
+      "MinLevel": 1,
+      "MinValue": 1,
+      "IsHide": 1,
+      "_byte_length": 49
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 501,
+      "RankID": 111,
+      "RankSort": 11,
+      "RankName": "消费排行榜",
+      "Group": 0,
+      "MaxRecord": 512,
+      "MaxShow": 100,
+      "MinLevel": 1,
+      "MinValue": 1,
+      "IsHide": 1,
+      "_byte_length": 49
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 550,
+      "RankID": 112,
+      "RankSort": 12,
+      "RankName": "秘境排行榜",
+      "Group": 0,
+      "MaxRecord": 512,
+      "MaxShow": 100,
+      "MinLevel": 1,
+      "MinValue": 1,
+      "IsHide": 0,
+      "_byte_length": 49
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 599,
+      "RankID": 113,
+      "RankSort": 13,
+      "RankName": "全服消费排行榜",
+      "Group": 0,
+      "MaxRecord": 512,
+      "MaxShow": 100,
+      "MinLevel": 1,
+      "MinValue": 1,
+      "IsHide": 1,
+      "_byte_length": 55
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 654,
+      "RankID": 115,
+      "RankSort": 15,
+      "RankName": "守卫闪击排行榜",
+      "Group": 0,
+      "MaxRecord": 100,
+      "MaxShow": 100,
+      "MinLevel": 1,
+      "MinValue": 1,
+      "IsHide": 1,
+      "_byte_length": 55
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 709,
+      "RankID": 116,
+      "RankSort": 16,
+      "RankName": "充值排行榜",
+      "Group": 0,
+      "MaxRecord": 512,
+      "MaxShow": 100,
+      "MinLevel": 1,
+      "MinValue": 1,
+      "IsHide": 1,
+      "_byte_length": 49
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 758,
+      "RankID": 117,
+      "RankSort": 17,
+      "RankName": "跨服充值排行榜",
+      "Group": 0,
+      "MaxRecord": 512,
+      "MaxShow": 100,
+      "MinLevel": 1,
+      "MinValue": 1,
+      "IsHide": 1,
+      "_byte_length": 55
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 813,
+      "RankID": 119,
+      "RankSort": 19,
+      "RankName": "砰砰图腾排行榜",
+      "Group": 0,
+      "MaxRecord": 100,
+      "MaxShow": 100,
+      "MinLevel": 1,
+      "MinValue": 1,
+      "IsHide": 1,
+      "_byte_length": 55
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 868,
+      "RankID": 120,
+      "RankSort": 20,
+      "RankName": "天空塔排行",
+      "Group": 0,
+      "MaxRecord": 100,
+      "MaxShow": 50,
+      "MinLevel": 65,
+      "MinValue": 1,
+      "IsHide": 0,
+      "_byte_length": 49
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 917,
+      "RankID": 121,
+      "RankSort": 21,
+      "RankName": "混沌塔排行",
+      "Group": 0,
+      "MaxRecord": 100,
+      "MaxShow": 50,
+      "MinLevel": 65,
+      "MinValue": 1,
+      "IsHide": 0,
+      "_byte_length": 49
+    },
+    {
+      "_record_index": 19,
+      "_byte_offset": 966,
+      "RankID": 122,
+      "RankSort": 22,
+      "RankName": "大地塔排行",
+      "Group": 0,
+      "MaxRecord": 100,
+      "MaxShow": 50,
+      "MinLevel": 65,
+      "MinValue": 1,
+      "IsHide": 0,
+      "_byte_length": 49
+    },
+    {
+      "_record_index": 20,
+      "_byte_offset": 1015,
+      "RankID": 123,
+      "RankSort": 23,
+      "RankName": "海洋塔排行",
+      "Group": 0,
+      "MaxRecord": 100,
+      "MaxShow": 50,
+      "MinLevel": 65,
+      "MinValue": 1,
+      "IsHide": 0,
+      "_byte_length": 49
+    },
+    {
+      "_record_index": 21,
+      "_byte_offset": 1064,
+      "RankID": 124,
+      "RankSort": 24,
+      "RankName": "蛮荒争霸排行",
+      "Group": 0,
+      "MaxRecord": 100,
+      "MaxShow": 50,
+      "MinLevel": 105,
+      "MinValue": 1,
+      "IsHide": 0,
+      "_byte_length": 52
+    },
+    {
+      "_record_index": 22,
+      "_byte_offset": 1116,
+      "RankID": 125,
+      "RankSort": 25,
+      "RankName": "联盟BOSS排行",
+      "Group": 0,
+      "MaxRecord": 512,
+      "MaxShow": 50,
+      "MinLevel": 1,
+      "MinValue": 1,
+      "IsHide": 0,
+      "_byte_length": 50
+    },
+    {
+      "_record_index": 23,
+      "_byte_offset": 1166,
+      "RankID": 126,
+      "RankSort": 26,
+      "RankName": "联盟战力排行",
+      "Group": 0,
+      "MaxRecord": 512,
+      "MaxShow": 50,
+      "MinLevel": 1,
+      "MinValue": 1,
+      "IsHide": 0,
+      "_byte_length": 52
+    }
+  ]
+}

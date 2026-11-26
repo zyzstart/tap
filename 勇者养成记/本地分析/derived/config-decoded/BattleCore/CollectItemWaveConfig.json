@@ -1,0 +1,1328 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_fp_collectitemwaveconfig.bytes.ab",
+    "path_id": -1290633263845550477,
+    "name": "CollectItemWaveConfig",
+    "sha256": "f2180b385f8a25a529df1cd57c82a7929aa946fe81b851dbb90bdbdb8f39e3bf",
+    "export": "derived/unity/text/assets_resources_config_resbin_fp_collectitemwaveconfig.bytes/CollectItemWaveConfig__-1290633263845550477.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 1801,
+      "version": 1,
+      "record_count": 137,
+      "stored_crc32": "2e2ffc9a",
+      "computed_inverted_crc32": "2e2ffc9a"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "BattleCore",
+      "name": "CollectItemWaveConfig",
+      "fields": [
+        {
+          "type": "byte",
+          "name": "WaveType",
+          "object_offset": 16
+        },
+        {
+          "type": "uint",
+          "name": "WaveID",
+          "object_offset": 20
+        },
+        {
+          "type": "uint",
+          "name": "triggerTime",
+          "object_offset": 24
+        },
+        {
+          "type": "uint",
+          "name": "BootyID",
+          "object_offset": 28
+        }
+      ],
+      "unpack_va": 23335336,
+      "dump_line": 168154
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x16411dc",
+        "target_va": "0x21f65e0",
+        "opcode": "BL",
+        "reader": "readUInt8",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1641200",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1641224",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1641264",
+        "target_va": "0x21f6908",
+        "opcode": "B-tail",
+        "reader": "readUInt32",
+        "destination_object_offset": 28,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 137
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "WaveType": 1,
+      "WaveID": 101,
+      "triggerTime": 5,
+      "BootyID": 101,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 33,
+      "WaveType": 1,
+      "WaveID": 102,
+      "triggerTime": 5,
+      "BootyID": 102,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 46,
+      "WaveType": 1,
+      "WaveID": 103,
+      "triggerTime": 5,
+      "BootyID": 103,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 59,
+      "WaveType": 1,
+      "WaveID": 104,
+      "triggerTime": 5,
+      "BootyID": 104,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 72,
+      "WaveType": 1,
+      "WaveID": 201,
+      "triggerTime": 20,
+      "BootyID": 111,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 85,
+      "WaveType": 1,
+      "WaveID": 202,
+      "triggerTime": 20,
+      "BootyID": 112,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 98,
+      "WaveType": 1,
+      "WaveID": 203,
+      "triggerTime": 20,
+      "BootyID": 113,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 111,
+      "WaveType": 1,
+      "WaveID": 204,
+      "triggerTime": 20,
+      "BootyID": 114,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 124,
+      "WaveType": 1,
+      "WaveID": 301,
+      "triggerTime": 36,
+      "BootyID": 121,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 137,
+      "WaveType": 1,
+      "WaveID": 302,
+      "triggerTime": 36,
+      "BootyID": 122,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 150,
+      "WaveType": 1,
+      "WaveID": 303,
+      "triggerTime": 36,
+      "BootyID": 123,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 163,
+      "WaveType": 1,
+      "WaveID": 304,
+      "triggerTime": 36,
+      "BootyID": 124,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 176,
+      "WaveType": 1,
+      "WaveID": 401,
+      "triggerTime": 52,
+      "BootyID": 131,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 189,
+      "WaveType": 1,
+      "WaveID": 402,
+      "triggerTime": 52,
+      "BootyID": 132,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 202,
+      "WaveType": 1,
+      "WaveID": 403,
+      "triggerTime": 52,
+      "BootyID": 133,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 215,
+      "WaveType": 1,
+      "WaveID": 404,
+      "triggerTime": 52,
+      "BootyID": 134,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 228,
+      "WaveType": 1,
+      "WaveID": 501,
+      "triggerTime": 68,
+      "BootyID": 141,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 241,
+      "WaveType": 1,
+      "WaveID": 502,
+      "triggerTime": 68,
+      "BootyID": 142,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 254,
+      "WaveType": 1,
+      "WaveID": 503,
+      "triggerTime": 68,
+      "BootyID": 143,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 19,
+      "_byte_offset": 267,
+      "WaveType": 1,
+      "WaveID": 504,
+      "triggerTime": 68,
+      "BootyID": 144,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 20,
+      "_byte_offset": 280,
+      "WaveType": 1,
+      "WaveID": 601,
+      "triggerTime": 84,
+      "BootyID": 151,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 21,
+      "_byte_offset": 293,
+      "WaveType": 1,
+      "WaveID": 602,
+      "triggerTime": 84,
+      "BootyID": 152,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 22,
+      "_byte_offset": 306,
+      "WaveType": 1,
+      "WaveID": 603,
+      "triggerTime": 84,
+      "BootyID": 153,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 23,
+      "_byte_offset": 319,
+      "WaveType": 1,
+      "WaveID": 604,
+      "triggerTime": 84,
+      "BootyID": 154,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 24,
+      "_byte_offset": 332,
+      "WaveType": 1,
+      "WaveID": 701,
+      "triggerTime": 100,
+      "BootyID": 161,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 25,
+      "_byte_offset": 345,
+      "WaveType": 1,
+      "WaveID": 702,
+      "triggerTime": 100,
+      "BootyID": 162,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 26,
+      "_byte_offset": 358,
+      "WaveType": 1,
+      "WaveID": 703,
+      "triggerTime": 100,
+      "BootyID": 163,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 27,
+      "_byte_offset": 371,
+      "WaveType": 1,
+      "WaveID": 704,
+      "triggerTime": 100,
+      "BootyID": 164,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 28,
+      "_byte_offset": 384,
+      "WaveType": 1,
+      "WaveID": 801,
+      "triggerTime": 116,
+      "BootyID": 171,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 29,
+      "_byte_offset": 397,
+      "WaveType": 1,
+      "WaveID": 802,
+      "triggerTime": 116,
+      "BootyID": 172,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 30,
+      "_byte_offset": 410,
+      "WaveType": 1,
+      "WaveID": 803,
+      "triggerTime": 116,
+      "BootyID": 173,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 31,
+      "_byte_offset": 423,
+      "WaveType": 1,
+      "WaveID": 804,
+      "triggerTime": 116,
+      "BootyID": 174,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 32,
+      "_byte_offset": 436,
+      "WaveType": 1,
+      "WaveID": 901,
+      "triggerTime": 132,
+      "BootyID": 181,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 33,
+      "_byte_offset": 449,
+      "WaveType": 1,
+      "WaveID": 902,
+      "triggerTime": 132,
+      "BootyID": 182,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 34,
+      "_byte_offset": 462,
+      "WaveType": 1,
+      "WaveID": 903,
+      "triggerTime": 132,
+      "BootyID": 183,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 35,
+      "_byte_offset": 475,
+      "WaveType": 1,
+      "WaveID": 904,
+      "triggerTime": 132,
+      "BootyID": 184,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 36,
+      "_byte_offset": 488,
+      "WaveType": 1,
+      "WaveID": 1001,
+      "triggerTime": 148,
+      "BootyID": 191,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 37,
+      "_byte_offset": 501,
+      "WaveType": 1,
+      "WaveID": 1002,
+      "triggerTime": 148,
+      "BootyID": 192,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 38,
+      "_byte_offset": 514,
+      "WaveType": 1,
+      "WaveID": 1003,
+      "triggerTime": 148,
+      "BootyID": 193,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 39,
+      "_byte_offset": 527,
+      "WaveType": 1,
+      "WaveID": 1004,
+      "triggerTime": 148,
+      "BootyID": 194,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 40,
+      "_byte_offset": 540,
+      "WaveType": 1,
+      "WaveID": 1101,
+      "triggerTime": 164,
+      "BootyID": 201,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 41,
+      "_byte_offset": 553,
+      "WaveType": 1,
+      "WaveID": 1102,
+      "triggerTime": 164,
+      "BootyID": 202,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 42,
+      "_byte_offset": 566,
+      "WaveType": 1,
+      "WaveID": 1103,
+      "triggerTime": 164,
+      "BootyID": 203,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 43,
+      "_byte_offset": 579,
+      "WaveType": 1,
+      "WaveID": 1104,
+      "triggerTime": 164,
+      "BootyID": 204,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 44,
+      "_byte_offset": 592,
+      "WaveType": 2,
+      "WaveID": 101,
+      "triggerTime": 30,
+      "BootyID": 501,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 45,
+      "_byte_offset": 605,
+      "WaveType": 2,
+      "WaveID": 102,
+      "triggerTime": 30,
+      "BootyID": 502,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 46,
+      "_byte_offset": 618,
+      "WaveType": 2,
+      "WaveID": 103,
+      "triggerTime": 30,
+      "BootyID": 503,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 47,
+      "_byte_offset": 631,
+      "WaveType": 2,
+      "WaveID": 201,
+      "triggerTime": 60,
+      "BootyID": 501,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 48,
+      "_byte_offset": 644,
+      "WaveType": 2,
+      "WaveID": 202,
+      "triggerTime": 60,
+      "BootyID": 502,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 49,
+      "_byte_offset": 657,
+      "WaveType": 2,
+      "WaveID": 203,
+      "triggerTime": 60,
+      "BootyID": 503,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 50,
+      "_byte_offset": 670,
+      "WaveType": 2,
+      "WaveID": 301,
+      "triggerTime": 100,
+      "BootyID": 501,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 51,
+      "_byte_offset": 683,
+      "WaveType": 2,
+      "WaveID": 302,
+      "triggerTime": 100,
+      "BootyID": 502,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 52,
+      "_byte_offset": 696,
+      "WaveType": 2,
+      "WaveID": 303,
+      "triggerTime": 100,
+      "BootyID": 503,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 53,
+      "_byte_offset": 709,
+      "WaveType": 2,
+      "WaveID": 401,
+      "triggerTime": 150,
+      "BootyID": 501,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 54,
+      "_byte_offset": 722,
+      "WaveType": 2,
+      "WaveID": 402,
+      "triggerTime": 150,
+      "BootyID": 502,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 55,
+      "_byte_offset": 735,
+      "WaveType": 2,
+      "WaveID": 403,
+      "triggerTime": 150,
+      "BootyID": 503,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 56,
+      "_byte_offset": 748,
+      "WaveType": 2,
+      "WaveID": 501,
+      "triggerTime": 210,
+      "BootyID": 501,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 57,
+      "_byte_offset": 761,
+      "WaveType": 2,
+      "WaveID": 502,
+      "triggerTime": 210,
+      "BootyID": 502,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 58,
+      "_byte_offset": 774,
+      "WaveType": 2,
+      "WaveID": 503,
+      "triggerTime": 210,
+      "BootyID": 503,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 59,
+      "_byte_offset": 787,
+      "WaveType": 2,
+      "WaveID": 601,
+      "triggerTime": 270,
+      "BootyID": 501,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 60,
+      "_byte_offset": 800,
+      "WaveType": 2,
+      "WaveID": 602,
+      "triggerTime": 270,
+      "BootyID": 502,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 61,
+      "_byte_offset": 813,
+      "WaveType": 2,
+      "WaveID": 603,
+      "triggerTime": 270,
+      "BootyID": 503,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 62,
+      "_byte_offset": 826,
+      "WaveType": 2,
+      "WaveID": 701,
+      "triggerTime": 330,
+      "BootyID": 501,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 63,
+      "_byte_offset": 839,
+      "WaveType": 2,
+      "WaveID": 702,
+      "triggerTime": 330,
+      "BootyID": 502,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 64,
+      "_byte_offset": 852,
+      "WaveType": 2,
+      "WaveID": 703,
+      "triggerTime": 330,
+      "BootyID": 503,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 65,
+      "_byte_offset": 865,
+      "WaveType": 2,
+      "WaveID": 801,
+      "triggerTime": 390,
+      "BootyID": 501,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 66,
+      "_byte_offset": 878,
+      "WaveType": 2,
+      "WaveID": 802,
+      "triggerTime": 390,
+      "BootyID": 502,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 67,
+      "_byte_offset": 891,
+      "WaveType": 2,
+      "WaveID": 803,
+      "triggerTime": 390,
+      "BootyID": 503,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 68,
+      "_byte_offset": 904,
+      "WaveType": 2,
+      "WaveID": 901,
+      "triggerTime": 450,
+      "BootyID": 501,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 69,
+      "_byte_offset": 917,
+      "WaveType": 2,
+      "WaveID": 902,
+      "triggerTime": 450,
+      "BootyID": 502,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 70,
+      "_byte_offset": 930,
+      "WaveType": 2,
+      "WaveID": 903,
+      "triggerTime": 450,
+      "BootyID": 503,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 71,
+      "_byte_offset": 943,
+      "WaveType": 2,
+      "WaveID": 1001,
+      "triggerTime": 510,
+      "BootyID": 501,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 72,
+      "_byte_offset": 956,
+      "WaveType": 2,
+      "WaveID": 1002,
+      "triggerTime": 510,
+      "BootyID": 502,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 73,
+      "_byte_offset": 969,
+      "WaveType": 2,
+      "WaveID": 1003,
+      "triggerTime": 510,
+      "BootyID": 503,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 74,
+      "_byte_offset": 982,
+      "WaveType": 2,
+      "WaveID": 1101,
+      "triggerTime": 570,
+      "BootyID": 501,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 75,
+      "_byte_offset": 995,
+      "WaveType": 2,
+      "WaveID": 1102,
+      "triggerTime": 570,
+      "BootyID": 502,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 76,
+      "_byte_offset": 1008,
+      "WaveType": 2,
+      "WaveID": 1103,
+      "triggerTime": 570,
+      "BootyID": 503,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 77,
+      "_byte_offset": 1021,
+      "WaveType": 2,
+      "WaveID": 1201,
+      "triggerTime": 630,
+      "BootyID": 501,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 78,
+      "_byte_offset": 1034,
+      "WaveType": 2,
+      "WaveID": 1202,
+      "triggerTime": 630,
+      "BootyID": 502,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 79,
+      "_byte_offset": 1047,
+      "WaveType": 2,
+      "WaveID": 1203,
+      "triggerTime": 630,
+      "BootyID": 503,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 80,
+      "_byte_offset": 1060,
+      "WaveType": 2,
+      "WaveID": 1301,
+      "triggerTime": 690,
+      "BootyID": 501,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 81,
+      "_byte_offset": 1073,
+      "WaveType": 2,
+      "WaveID": 1302,
+      "triggerTime": 690,
+      "BootyID": 502,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 82,
+      "_byte_offset": 1086,
+      "WaveType": 2,
+      "WaveID": 1303,
+      "triggerTime": 690,
+      "BootyID": 503,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 83,
+      "_byte_offset": 1099,
+      "WaveType": 2,
+      "WaveID": 1401,
+      "triggerTime": 750,
+      "BootyID": 501,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 84,
+      "_byte_offset": 1112,
+      "WaveType": 2,
+      "WaveID": 1402,
+      "triggerTime": 750,
+      "BootyID": 502,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 85,
+      "_byte_offset": 1125,
+      "WaveType": 2,
+      "WaveID": 1403,
+      "triggerTime": 750,
+      "BootyID": 503,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 86,
+      "_byte_offset": 1138,
+      "WaveType": 2,
+      "WaveID": 1501,
+      "triggerTime": 810,
+      "BootyID": 501,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 87,
+      "_byte_offset": 1151,
+      "WaveType": 2,
+      "WaveID": 1502,
+      "triggerTime": 810,
+      "BootyID": 502,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 88,
+      "_byte_offset": 1164,
+      "WaveType": 2,
+      "WaveID": 1503,
+      "triggerTime": 810,
+      "BootyID": 503,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 89,
+      "_byte_offset": 1177,
+      "WaveType": 2,
+      "WaveID": 1601,
+      "triggerTime": 870,
+      "BootyID": 501,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 90,
+      "_byte_offset": 1190,
+      "WaveType": 2,
+      "WaveID": 1602,
+      "triggerTime": 870,
+      "BootyID": 502,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 91,
+      "_byte_offset": 1203,
+      "WaveType": 2,
+      "WaveID": 1603,
+      "triggerTime": 870,
+      "BootyID": 503,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 92,
+      "_byte_offset": 1216,
+      "WaveType": 2,
+      "WaveID": 1701,
+      "triggerTime": 930,
+      "BootyID": 501,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 93,
+      "_byte_offset": 1229,
+      "WaveType": 2,
+      "WaveID": 1702,
+      "triggerTime": 930,
+      "BootyID": 502,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 94,
+      "_byte_offset": 1242,
+      "WaveType": 2,
+      "WaveID": 1703,
+      "triggerTime": 930,
+      "BootyID": 503,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 95,
+      "_byte_offset": 1255,
+      "WaveType": 2,
+      "WaveID": 1801,
+      "triggerTime": 990,
+      "BootyID": 501,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 96,
+      "_byte_offset": 1268,
+      "WaveType": 2,
+      "WaveID": 1802,
+      "triggerTime": 990,
+      "BootyID": 502,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 97,
+      "_byte_offset": 1281,
+      "WaveType": 2,
+      "WaveID": 1803,
+      "triggerTime": 990,
+      "BootyID": 503,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 98,
+      "_byte_offset": 1294,
+      "WaveType": 2,
+      "WaveID": 1901,
+      "triggerTime": 1050,
+      "BootyID": 501,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 99,
+      "_byte_offset": 1307,
+      "WaveType": 2,
+      "WaveID": 1902,
+      "triggerTime": 1050,
+      "BootyID": 502,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 100,
+      "_byte_offset": 1320,
+      "WaveType": 2,
+      "WaveID": 1903,
+      "triggerTime": 1050,
+      "BootyID": 503,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 101,
+      "_byte_offset": 1333,
+      "WaveType": 2,
+      "WaveID": 2001,
+      "triggerTime": 1110,
+      "BootyID": 501,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 102,
+      "_byte_offset": 1346,
+      "WaveType": 2,
+      "WaveID": 2002,
+      "triggerTime": 1110,
+      "BootyID": 502,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 103,
+      "_byte_offset": 1359,
+      "WaveType": 2,
+      "WaveID": 2003,
+      "triggerTime": 1110,
+      "BootyID": 503,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 104,
+      "_byte_offset": 1372,
+      "WaveType": 2,
+      "WaveID": 2101,
+      "triggerTime": 1170,
+      "BootyID": 501,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 105,
+      "_byte_offset": 1385,
+      "WaveType": 2,
+      "WaveID": 2102,
+      "triggerTime": 1170,
+      "BootyID": 502,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 106,
+      "_byte_offset": 1398,
+      "WaveType": 2,
+      "WaveID": 2103,
+      "triggerTime": 1170,
+      "BootyID": 503,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 107,
+      "_byte_offset": 1411,
+      "WaveType": 2,
+      "WaveID": 2201,
+      "triggerTime": 1230,
+      "BootyID": 501,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 108,
+      "_byte_offset": 1424,
+      "WaveType": 2,
+      "WaveID": 2202,
+      "triggerTime": 1230,
+      "BootyID": 502,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 109,
+      "_byte_offset": 1437,
+      "WaveType": 2,
+      "WaveID": 2203,
+      "triggerTime": 1230,
+      "BootyID": 503,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 110,
+      "_byte_offset": 1450,
+      "WaveType": 2,
+      "WaveID": 2301,
+      "triggerTime": 1290,
+      "BootyID": 501,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 111,
+      "_byte_offset": 1463,
+      "WaveType": 2,
+      "WaveID": 2302,
+      "triggerTime": 1290,
+      "BootyID": 502,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 112,
+      "_byte_offset": 1476,
+      "WaveType": 2,
+      "WaveID": 2303,
+      "triggerTime": 1290,
+      "BootyID": 503,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 113,
+      "_byte_offset": 1489,
+      "WaveType": 2,
+      "WaveID": 2401,
+      "triggerTime": 1350,
+      "BootyID": 501,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 114,
+      "_byte_offset": 1502,
+      "WaveType": 2,
+      "WaveID": 2402,
+      "triggerTime": 1350,
+      "BootyID": 502,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 115,
+      "_byte_offset": 1515,
+      "WaveType": 2,
+      "WaveID": 2403,
+      "triggerTime": 1350,
+      "BootyID": 503,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 116,
+      "_byte_offset": 1528,
+      "WaveType": 2,
+      "WaveID": 2501,
+      "triggerTime": 1410,
+      "BootyID": 501,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 117,
+      "_byte_offset": 1541,
+      "WaveType": 2,
+      "WaveID": 2502,
+      "triggerTime": 1410,
+      "BootyID": 502,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 118,
+      "_byte_offset": 1554,
+      "WaveType": 2,
+      "WaveID": 2503,
+      "triggerTime": 1410,
+      "BootyID": 503,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 119,
+      "_byte_offset": 1567,
+      "WaveType": 2,
+      "WaveID": 2601,
+      "triggerTime": 1470,
+      "BootyID": 501,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 120,
+      "_byte_offset": 1580,
+      "WaveType": 2,
+      "WaveID": 2602,
+      "triggerTime": 1470,
+      "BootyID": 502,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 121,
+      "_byte_offset": 1593,
+      "WaveType": 2,
+      "WaveID": 2603,
+      "triggerTime": 1470,
+      "BootyID": 503,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 122,
+      "_byte_offset": 1606,
+      "WaveType": 2,
+      "WaveID": 2701,
+      "triggerTime": 1530,
+      "BootyID": 501,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 123,
+      "_byte_offset": 1619,
+      "WaveType": 2,
+      "WaveID": 2702,
+      "triggerTime": 1530,
+      "BootyID": 502,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 124,
+      "_byte_offset": 1632,
+      "WaveType": 2,
+      "WaveID": 2703,
+      "triggerTime": 1530,
+      "BootyID": 503,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 125,
+      "_byte_offset": 1645,
+      "WaveType": 2,
+      "WaveID": 2801,
+      "triggerTime": 1590,
+      "BootyID": 501,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 126,
+      "_byte_offset": 1658,
+      "WaveType": 2,
+      "WaveID": 2802,
+      "triggerTime": 1590,
+      "BootyID": 502,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 127,
+      "_byte_offset": 1671,
+      "WaveType": 2,
+      "WaveID": 2803,
+      "triggerTime": 1590,
+      "BootyID": 503,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 128,
+      "_byte_offset": 1684,
+      "WaveType": 2,
+      "WaveID": 2901,
+      "triggerTime": 1650,
+      "BootyID": 501,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 129,
+      "_byte_offset": 1697,
+      "WaveType": 2,
+      "WaveID": 2902,
+      "triggerTime": 1650,
+      "BootyID": 502,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 130,
+      "_byte_offset": 1710,
+      "WaveType": 2,
+      "WaveID": 2903,
+      "triggerTime": 1650,
+      "BootyID": 503,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 131,
+      "_byte_offset": 1723,
+      "WaveType": 2,
+      "WaveID": 3001,
+      "triggerTime": 1710,
+      "BootyID": 501,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 132,
+      "_byte_offset": 1736,
+      "WaveType": 2,
+      "WaveID": 3002,
+      "triggerTime": 1710,
+      "BootyID": 502,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 133,
+      "_byte_offset": 1749,
+      "WaveType": 2,
+      "WaveID": 3003,
+      "triggerTime": 1710,
+      "BootyID": 503,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 134,
+      "_byte_offset": 1762,
+      "WaveType": 2,
+      "WaveID": 3101,
+      "triggerTime": 1770,
+      "BootyID": 501,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 135,
+      "_byte_offset": 1775,
+      "WaveType": 2,
+      "WaveID": 3102,
+      "triggerTime": 1770,
+      "BootyID": 502,
+      "_byte_length": 13
+    },
+    {
+      "_record_index": 136,
+      "_byte_offset": 1788,
+      "WaveType": 2,
+      "WaveID": 3103,
+      "triggerTime": 1770,
+      "BootyID": 503,
+      "_byte_length": 13
+    }
+  ]
+}

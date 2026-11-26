@@ -1,0 +1,2889 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_fp_islandadvcalclibraryconfig.bytes.ab",
+    "path_id": -7607027139408091755,
+    "name": "IslandAdvCalcLibraryConfig",
+    "sha256": "bcab763a1677d07ee43551d9ab4d8712e586e6c506d7ec73b57bfe30f36d9e68",
+    "export": "derived/unity/text/assets_resources_config_resbin_fp_islandadvcalclibraryconfig.bytes/IslandAdvCalcLibraryConfig__-7607027139408091755.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 4746,
+      "version": 1,
+      "record_count": 278,
+      "stored_crc32": "21fbe592",
+      "computed_inverted_crc32": "21fbe592"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "BattleCore",
+      "name": "IslandAdvCalcLibraryConfig",
+      "fields": [
+        {
+          "type": "uint",
+          "name": "CalcLibID",
+          "object_offset": 16
+        },
+        {
+          "type": "uint",
+          "name": "CalcID",
+          "object_offset": 20
+        },
+        {
+          "type": "uint",
+          "name": "Weight",
+          "object_offset": 24
+        },
+        {
+          "type": "byte",
+          "name": "CalcType",
+          "object_offset": 28
+        },
+        {
+          "type": "int",
+          "name": "CalcValue",
+          "object_offset": 32
+        }
+      ],
+      "unpack_va": 23342856,
+      "dump_line": 167275
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1642f3c",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1642f60",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1642f84",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1642fa8",
+        "target_va": "0x21f65e0",
+        "opcode": "BL",
+        "reader": "readUInt8",
+        "destination_object_offset": 28,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1642fe8",
+        "target_va": "0x21f67d0",
+        "opcode": "B-tail",
+        "reader": "readInt32",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 278
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "CalcLibID": 30001,
+      "CalcID": 70001,
+      "Weight": 10,
+      "CalcType": 1,
+      "CalcValue": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 37,
+      "CalcLibID": 30001,
+      "CalcID": 70002,
+      "Weight": 30,
+      "CalcType": 1,
+      "CalcValue": 2,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 54,
+      "CalcLibID": 30001,
+      "CalcID": 70003,
+      "Weight": 30,
+      "CalcType": 1,
+      "CalcValue": 3,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 71,
+      "CalcLibID": 30001,
+      "CalcID": 70004,
+      "Weight": 30,
+      "CalcType": 1,
+      "CalcValue": 4,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 88,
+      "CalcLibID": 30001,
+      "CalcID": 70005,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 105,
+      "CalcLibID": 30001,
+      "CalcID": 70006,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 6,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 122,
+      "CalcLibID": 30001,
+      "CalcID": 70007,
+      "Weight": 30,
+      "CalcType": 1,
+      "CalcValue": 7,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 139,
+      "CalcLibID": 30001,
+      "CalcID": 70008,
+      "Weight": 30,
+      "CalcType": 1,
+      "CalcValue": 8,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 156,
+      "CalcLibID": 30001,
+      "CalcID": 70009,
+      "Weight": 30,
+      "CalcType": 1,
+      "CalcValue": 9,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 173,
+      "CalcLibID": 30001,
+      "CalcID": 70010,
+      "Weight": 10,
+      "CalcType": 1,
+      "CalcValue": 10,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 190,
+      "CalcLibID": 30002,
+      "CalcID": 70011,
+      "Weight": 10,
+      "CalcType": 2,
+      "CalcValue": 2,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 207,
+      "CalcLibID": 30002,
+      "CalcID": 70012,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 4,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 224,
+      "CalcLibID": 30002,
+      "CalcID": 70013,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 6,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 241,
+      "CalcLibID": 30002,
+      "CalcID": 70014,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 8,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 258,
+      "CalcLibID": 30002,
+      "CalcID": 70015,
+      "Weight": 10,
+      "CalcType": 2,
+      "CalcValue": 10,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 275,
+      "CalcLibID": 30003,
+      "CalcID": 70016,
+      "Weight": 50,
+      "CalcType": 3,
+      "CalcValue": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 292,
+      "CalcLibID": 30003,
+      "CalcID": 70017,
+      "Weight": 50,
+      "CalcType": 3,
+      "CalcValue": 2,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 309,
+      "CalcLibID": 30003,
+      "CalcID": 70018,
+      "Weight": 50,
+      "CalcType": 3,
+      "CalcValue": 3,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 326,
+      "CalcLibID": 30003,
+      "CalcID": 70019,
+      "Weight": 50,
+      "CalcType": 3,
+      "CalcValue": 4,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 19,
+      "_byte_offset": 343,
+      "CalcLibID": 30003,
+      "CalcID": 70020,
+      "Weight": 50,
+      "CalcType": 3,
+      "CalcValue": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 20,
+      "_byte_offset": 360,
+      "CalcLibID": 30004,
+      "CalcID": 70021,
+      "Weight": 50,
+      "CalcType": 4,
+      "CalcValue": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 21,
+      "_byte_offset": 377,
+      "CalcLibID": 30004,
+      "CalcID": 70022,
+      "Weight": 50,
+      "CalcType": 4,
+      "CalcValue": 2,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 22,
+      "_byte_offset": 394,
+      "CalcLibID": 30004,
+      "CalcID": 70023,
+      "Weight": 50,
+      "CalcType": 4,
+      "CalcValue": 3,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 23,
+      "_byte_offset": 411,
+      "CalcLibID": 30004,
+      "CalcID": 70024,
+      "Weight": 50,
+      "CalcType": 4,
+      "CalcValue": 4,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 24,
+      "_byte_offset": 428,
+      "CalcLibID": 30004,
+      "CalcID": 70025,
+      "Weight": 50,
+      "CalcType": 4,
+      "CalcValue": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 25,
+      "_byte_offset": 445,
+      "CalcLibID": 30005,
+      "CalcID": 70026,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 8,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 26,
+      "_byte_offset": 462,
+      "CalcLibID": 30005,
+      "CalcID": 70027,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 10,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 27,
+      "_byte_offset": 479,
+      "CalcLibID": 30005,
+      "CalcID": 70028,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 12,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 28,
+      "_byte_offset": 496,
+      "CalcLibID": 30005,
+      "CalcID": 70029,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 15,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 29,
+      "_byte_offset": 513,
+      "CalcLibID": 30006,
+      "CalcID": 70030,
+      "Weight": 100,
+      "CalcType": 3,
+      "CalcValue": 2,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 30,
+      "_byte_offset": 530,
+      "CalcLibID": 30007,
+      "CalcID": 70031,
+      "Weight": 100,
+      "CalcType": 4,
+      "CalcValue": 2,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 31,
+      "_byte_offset": 547,
+      "CalcLibID": 30008,
+      "CalcID": 70032,
+      "Weight": 100,
+      "CalcType": 2,
+      "CalcValue": 0,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 32,
+      "_byte_offset": 564,
+      "CalcLibID": 30009,
+      "CalcID": 70033,
+      "Weight": 100,
+      "CalcType": 1,
+      "CalcValue": 7,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 33,
+      "_byte_offset": 581,
+      "CalcLibID": 30010,
+      "CalcID": 70034,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 34,
+      "_byte_offset": 598,
+      "CalcLibID": 30010,
+      "CalcID": 70035,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 2,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 35,
+      "_byte_offset": 615,
+      "CalcLibID": 30010,
+      "CalcID": 70036,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 3,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 36,
+      "_byte_offset": 632,
+      "CalcLibID": 30011,
+      "CalcID": 70037,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 2,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 37,
+      "_byte_offset": 649,
+      "CalcLibID": 30011,
+      "CalcID": 70038,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 3,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 38,
+      "_byte_offset": 666,
+      "CalcLibID": 30011,
+      "CalcID": 70039,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 4,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 39,
+      "_byte_offset": 683,
+      "CalcLibID": 30012,
+      "CalcID": 70040,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 3,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 40,
+      "_byte_offset": 700,
+      "CalcLibID": 30012,
+      "CalcID": 70041,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 4,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 41,
+      "_byte_offset": 717,
+      "CalcLibID": 30012,
+      "CalcID": 70042,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 42,
+      "_byte_offset": 734,
+      "CalcLibID": 300101,
+      "CalcID": 70043,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 4,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 43,
+      "_byte_offset": 751,
+      "CalcLibID": 300101,
+      "CalcID": 70044,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 44,
+      "_byte_offset": 768,
+      "CalcLibID": 300101,
+      "CalcID": 70045,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 6,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 45,
+      "_byte_offset": 785,
+      "CalcLibID": 300101,
+      "CalcID": 70046,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 7,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 46,
+      "_byte_offset": 802,
+      "CalcLibID": 300102,
+      "CalcID": 70047,
+      "Weight": 10,
+      "CalcType": 2,
+      "CalcValue": 2,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 47,
+      "_byte_offset": 819,
+      "CalcLibID": 300102,
+      "CalcID": 70048,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 4,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 48,
+      "_byte_offset": 836,
+      "CalcLibID": 300102,
+      "CalcID": 70049,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 6,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 49,
+      "_byte_offset": 853,
+      "CalcLibID": 300102,
+      "CalcID": 70050,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 8,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 50,
+      "_byte_offset": 870,
+      "CalcLibID": 300102,
+      "CalcID": 70051,
+      "Weight": 10,
+      "CalcType": 2,
+      "CalcValue": 10,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 51,
+      "_byte_offset": 887,
+      "CalcLibID": 300201,
+      "CalcID": 70052,
+      "Weight": 100,
+      "CalcType": 1,
+      "CalcValue": 3,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 52,
+      "_byte_offset": 904,
+      "CalcLibID": 300202,
+      "CalcID": 70053,
+      "Weight": 10,
+      "CalcType": 2,
+      "CalcValue": 2,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 53,
+      "_byte_offset": 921,
+      "CalcLibID": 300202,
+      "CalcID": 70054,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 4,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 54,
+      "_byte_offset": 938,
+      "CalcLibID": 300202,
+      "CalcID": 70055,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 6,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 55,
+      "_byte_offset": 955,
+      "CalcLibID": 300202,
+      "CalcID": 70056,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 8,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 56,
+      "_byte_offset": 972,
+      "CalcLibID": 300202,
+      "CalcID": 70057,
+      "Weight": 10,
+      "CalcType": 2,
+      "CalcValue": 10,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 57,
+      "_byte_offset": 989,
+      "CalcLibID": 300203,
+      "CalcID": 70058,
+      "Weight": 100,
+      "CalcType": 3,
+      "CalcValue": 2,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 58,
+      "_byte_offset": 1006,
+      "CalcLibID": 300204,
+      "CalcID": 70059,
+      "Weight": 100,
+      "CalcType": 4,
+      "CalcValue": 2,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 59,
+      "_byte_offset": 1023,
+      "CalcLibID": 300301,
+      "CalcID": 70060,
+      "Weight": 0,
+      "CalcType": 1,
+      "CalcValue": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 60,
+      "_byte_offset": 1040,
+      "CalcLibID": 300301,
+      "CalcID": 70061,
+      "Weight": 0,
+      "CalcType": 1,
+      "CalcValue": 2,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 61,
+      "_byte_offset": 1057,
+      "CalcLibID": 300301,
+      "CalcID": 70062,
+      "Weight": 0,
+      "CalcType": 1,
+      "CalcValue": 3,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 62,
+      "_byte_offset": 1074,
+      "CalcLibID": 300301,
+      "CalcID": 70063,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 4,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 63,
+      "_byte_offset": 1091,
+      "CalcLibID": 300301,
+      "CalcID": 70064,
+      "Weight": 100,
+      "CalcType": 1,
+      "CalcValue": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 64,
+      "_byte_offset": 1108,
+      "CalcLibID": 300301,
+      "CalcID": 70065,
+      "Weight": 100,
+      "CalcType": 1,
+      "CalcValue": 6,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 65,
+      "_byte_offset": 1125,
+      "CalcLibID": 300301,
+      "CalcID": 70066,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 7,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 66,
+      "_byte_offset": 1142,
+      "CalcLibID": 300301,
+      "CalcID": 70067,
+      "Weight": 1,
+      "CalcType": 1,
+      "CalcValue": 8,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 67,
+      "_byte_offset": 1159,
+      "CalcLibID": 300301,
+      "CalcID": 70068,
+      "Weight": 1,
+      "CalcType": 1,
+      "CalcValue": 9,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 68,
+      "_byte_offset": 1176,
+      "CalcLibID": 300301,
+      "CalcID": 70069,
+      "Weight": 1,
+      "CalcType": 1,
+      "CalcValue": 10,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 69,
+      "_byte_offset": 1193,
+      "CalcLibID": 300302,
+      "CalcID": 70070,
+      "Weight": 10,
+      "CalcType": 2,
+      "CalcValue": 2,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 70,
+      "_byte_offset": 1210,
+      "CalcLibID": 300302,
+      "CalcID": 70071,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 4,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 71,
+      "_byte_offset": 1227,
+      "CalcLibID": 300302,
+      "CalcID": 70072,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 6,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 72,
+      "_byte_offset": 1244,
+      "CalcLibID": 300302,
+      "CalcID": 70073,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 8,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 73,
+      "_byte_offset": 1261,
+      "CalcLibID": 300302,
+      "CalcID": 70074,
+      "Weight": 10,
+      "CalcType": 2,
+      "CalcValue": 10,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 74,
+      "_byte_offset": 1278,
+      "CalcLibID": 300401,
+      "CalcID": 70075,
+      "Weight": 0,
+      "CalcType": 1,
+      "CalcValue": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 75,
+      "_byte_offset": 1295,
+      "CalcLibID": 300401,
+      "CalcID": 70076,
+      "Weight": 0,
+      "CalcType": 1,
+      "CalcValue": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 76,
+      "_byte_offset": 1312,
+      "CalcLibID": 300401,
+      "CalcID": 70077,
+      "Weight": 0,
+      "CalcType": 1,
+      "CalcValue": 2,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 77,
+      "_byte_offset": 1329,
+      "CalcLibID": 300401,
+      "CalcID": 70078,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 3,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 78,
+      "_byte_offset": 1346,
+      "CalcLibID": 300401,
+      "CalcID": 70079,
+      "Weight": 100,
+      "CalcType": 1,
+      "CalcValue": 4,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 79,
+      "_byte_offset": 1363,
+      "CalcLibID": 300401,
+      "CalcID": 70080,
+      "Weight": 100,
+      "CalcType": 1,
+      "CalcValue": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 80,
+      "_byte_offset": 1380,
+      "CalcLibID": 300401,
+      "CalcID": 70081,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 6,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 81,
+      "_byte_offset": 1397,
+      "CalcLibID": 300401,
+      "CalcID": 70082,
+      "Weight": 1,
+      "CalcType": 1,
+      "CalcValue": 7,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 82,
+      "_byte_offset": 1414,
+      "CalcLibID": 300401,
+      "CalcID": 70083,
+      "Weight": 1,
+      "CalcType": 1,
+      "CalcValue": 8,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 83,
+      "_byte_offset": 1431,
+      "CalcLibID": 300401,
+      "CalcID": 70084,
+      "Weight": 1,
+      "CalcType": 1,
+      "CalcValue": 9,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 84,
+      "_byte_offset": 1448,
+      "CalcLibID": 300401,
+      "CalcID": 70085,
+      "Weight": 10,
+      "CalcType": 1,
+      "CalcValue": 10,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 85,
+      "_byte_offset": 1465,
+      "CalcLibID": 300402,
+      "CalcID": 70086,
+      "Weight": 10,
+      "CalcType": 2,
+      "CalcValue": 2,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 86,
+      "_byte_offset": 1482,
+      "CalcLibID": 300402,
+      "CalcID": 70087,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 4,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 87,
+      "_byte_offset": 1499,
+      "CalcLibID": 300402,
+      "CalcID": 70088,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 6,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 88,
+      "_byte_offset": 1516,
+      "CalcLibID": 300402,
+      "CalcID": 70089,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 8,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 89,
+      "_byte_offset": 1533,
+      "CalcLibID": 300402,
+      "CalcID": 70090,
+      "Weight": 10,
+      "CalcType": 2,
+      "CalcValue": 10,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 90,
+      "_byte_offset": 1550,
+      "CalcLibID": 300501,
+      "CalcID": 70091,
+      "Weight": 0,
+      "CalcType": 1,
+      "CalcValue": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 91,
+      "_byte_offset": 1567,
+      "CalcLibID": 300501,
+      "CalcID": 70092,
+      "Weight": 0,
+      "CalcType": 1,
+      "CalcValue": 2,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 92,
+      "_byte_offset": 1584,
+      "CalcLibID": 300501,
+      "CalcID": 70093,
+      "Weight": 0,
+      "CalcType": 1,
+      "CalcValue": 3,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 93,
+      "_byte_offset": 1601,
+      "CalcLibID": 300501,
+      "CalcID": 70094,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 4,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 94,
+      "_byte_offset": 1618,
+      "CalcLibID": 300501,
+      "CalcID": 70095,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 95,
+      "_byte_offset": 1635,
+      "CalcLibID": 300501,
+      "CalcID": 70096,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 6,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 96,
+      "_byte_offset": 1652,
+      "CalcLibID": 300501,
+      "CalcID": 70097,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 7,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 97,
+      "_byte_offset": 1669,
+      "CalcLibID": 300501,
+      "CalcID": 70098,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 8,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 98,
+      "_byte_offset": 1686,
+      "CalcLibID": 300501,
+      "CalcID": 70099,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 9,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 99,
+      "_byte_offset": 1703,
+      "CalcLibID": 300501,
+      "CalcID": 70100,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 10,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 100,
+      "_byte_offset": 1720,
+      "CalcLibID": 300502,
+      "CalcID": 70101,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 2,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 101,
+      "_byte_offset": 1737,
+      "CalcLibID": 300502,
+      "CalcID": 70102,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 4,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 102,
+      "_byte_offset": 1754,
+      "CalcLibID": 300502,
+      "CalcID": 70103,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 6,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 103,
+      "_byte_offset": 1771,
+      "CalcLibID": 300502,
+      "CalcID": 70104,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 8,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 104,
+      "_byte_offset": 1788,
+      "CalcLibID": 300502,
+      "CalcID": 70105,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 10,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 105,
+      "_byte_offset": 1805,
+      "CalcLibID": 310101,
+      "CalcID": 70106,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 106,
+      "_byte_offset": 1822,
+      "CalcLibID": 310101,
+      "CalcID": 70107,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 2,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 107,
+      "_byte_offset": 1839,
+      "CalcLibID": 310101,
+      "CalcID": 70108,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 3,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 108,
+      "_byte_offset": 1856,
+      "CalcLibID": 310102,
+      "CalcID": 70109,
+      "Weight": 10,
+      "CalcType": 2,
+      "CalcValue": 2,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 109,
+      "_byte_offset": 1873,
+      "CalcLibID": 310102,
+      "CalcID": 70110,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 4,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 110,
+      "_byte_offset": 1890,
+      "CalcLibID": 310102,
+      "CalcID": 70111,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 6,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 111,
+      "_byte_offset": 1907,
+      "CalcLibID": 310102,
+      "CalcID": 70112,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 8,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 112,
+      "_byte_offset": 1924,
+      "CalcLibID": 310102,
+      "CalcID": 70113,
+      "Weight": 10,
+      "CalcType": 2,
+      "CalcValue": 10,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 113,
+      "_byte_offset": 1941,
+      "CalcLibID": 300601,
+      "CalcID": 70114,
+      "Weight": 10,
+      "CalcType": 1,
+      "CalcValue": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 114,
+      "_byte_offset": 1958,
+      "CalcLibID": 300601,
+      "CalcID": 70115,
+      "Weight": 20,
+      "CalcType": 1,
+      "CalcValue": 2,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 115,
+      "_byte_offset": 1975,
+      "CalcLibID": 300601,
+      "CalcID": 70116,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 3,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 116,
+      "_byte_offset": 1992,
+      "CalcLibID": 300601,
+      "CalcID": 70117,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 4,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 117,
+      "_byte_offset": 2009,
+      "CalcLibID": 300601,
+      "CalcID": 70118,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 118,
+      "_byte_offset": 2026,
+      "CalcLibID": 300601,
+      "CalcID": 70119,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 6,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 119,
+      "_byte_offset": 2043,
+      "CalcLibID": 300601,
+      "CalcID": 70120,
+      "Weight": 5,
+      "CalcType": 1,
+      "CalcValue": 7,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 120,
+      "_byte_offset": 2060,
+      "CalcLibID": 300601,
+      "CalcID": 70121,
+      "Weight": 1,
+      "CalcType": 1,
+      "CalcValue": 8,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 121,
+      "_byte_offset": 2077,
+      "CalcLibID": 300601,
+      "CalcID": 70122,
+      "Weight": 1,
+      "CalcType": 1,
+      "CalcValue": 9,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 122,
+      "_byte_offset": 2094,
+      "CalcLibID": 300601,
+      "CalcID": 70123,
+      "Weight": 1,
+      "CalcType": 1,
+      "CalcValue": 10,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 123,
+      "_byte_offset": 2111,
+      "CalcLibID": 300602,
+      "CalcID": 70124,
+      "Weight": 10,
+      "CalcType": 2,
+      "CalcValue": 2,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 124,
+      "_byte_offset": 2128,
+      "CalcLibID": 300602,
+      "CalcID": 70125,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 4,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 125,
+      "_byte_offset": 2145,
+      "CalcLibID": 300602,
+      "CalcID": 70126,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 6,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 126,
+      "_byte_offset": 2162,
+      "CalcLibID": 300602,
+      "CalcID": 70127,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 8,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 127,
+      "_byte_offset": 2179,
+      "CalcLibID": 300602,
+      "CalcID": 70128,
+      "Weight": 10,
+      "CalcType": 2,
+      "CalcValue": 10,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 128,
+      "_byte_offset": 2196,
+      "CalcLibID": 300701,
+      "CalcID": 70129,
+      "Weight": 10,
+      "CalcType": 1,
+      "CalcValue": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 129,
+      "_byte_offset": 2213,
+      "CalcLibID": 300701,
+      "CalcID": 70130,
+      "Weight": 20,
+      "CalcType": 1,
+      "CalcValue": 2,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 130,
+      "_byte_offset": 2230,
+      "CalcLibID": 300701,
+      "CalcID": 70131,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 3,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 131,
+      "_byte_offset": 2247,
+      "CalcLibID": 300701,
+      "CalcID": 70132,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 4,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 132,
+      "_byte_offset": 2264,
+      "CalcLibID": 300701,
+      "CalcID": 70133,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 133,
+      "_byte_offset": 2281,
+      "CalcLibID": 300701,
+      "CalcID": 70134,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 6,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 134,
+      "_byte_offset": 2298,
+      "CalcLibID": 300701,
+      "CalcID": 70135,
+      "Weight": 5,
+      "CalcType": 1,
+      "CalcValue": 7,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 135,
+      "_byte_offset": 2315,
+      "CalcLibID": 300701,
+      "CalcID": 70136,
+      "Weight": 1,
+      "CalcType": 1,
+      "CalcValue": 8,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 136,
+      "_byte_offset": 2332,
+      "CalcLibID": 300701,
+      "CalcID": 70137,
+      "Weight": 1,
+      "CalcType": 1,
+      "CalcValue": 9,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 137,
+      "_byte_offset": 2349,
+      "CalcLibID": 300701,
+      "CalcID": 70138,
+      "Weight": 1,
+      "CalcType": 1,
+      "CalcValue": 10,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 138,
+      "_byte_offset": 2366,
+      "CalcLibID": 300702,
+      "CalcID": 70139,
+      "Weight": 10,
+      "CalcType": 2,
+      "CalcValue": 2,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 139,
+      "_byte_offset": 2383,
+      "CalcLibID": 300702,
+      "CalcID": 70140,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 4,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 140,
+      "_byte_offset": 2400,
+      "CalcLibID": 300702,
+      "CalcID": 70141,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 6,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 141,
+      "_byte_offset": 2417,
+      "CalcLibID": 300702,
+      "CalcID": 70142,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 8,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 142,
+      "_byte_offset": 2434,
+      "CalcLibID": 300702,
+      "CalcID": 70143,
+      "Weight": 10,
+      "CalcType": 2,
+      "CalcValue": 10,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 143,
+      "_byte_offset": 2451,
+      "CalcLibID": 300801,
+      "CalcID": 70144,
+      "Weight": 0,
+      "CalcType": 1,
+      "CalcValue": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 144,
+      "_byte_offset": 2468,
+      "CalcLibID": 300801,
+      "CalcID": 70145,
+      "Weight": 0,
+      "CalcType": 1,
+      "CalcValue": 2,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 145,
+      "_byte_offset": 2485,
+      "CalcLibID": 300801,
+      "CalcID": 70146,
+      "Weight": 30,
+      "CalcType": 1,
+      "CalcValue": 3,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 146,
+      "_byte_offset": 2502,
+      "CalcLibID": 300801,
+      "CalcID": 70147,
+      "Weight": 40,
+      "CalcType": 1,
+      "CalcValue": 4,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 147,
+      "_byte_offset": 2519,
+      "CalcLibID": 300801,
+      "CalcID": 70148,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 148,
+      "_byte_offset": 2536,
+      "CalcLibID": 300801,
+      "CalcID": 70149,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 6,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 149,
+      "_byte_offset": 2553,
+      "CalcLibID": 300801,
+      "CalcID": 70150,
+      "Weight": 30,
+      "CalcType": 1,
+      "CalcValue": 7,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 150,
+      "_byte_offset": 2570,
+      "CalcLibID": 300801,
+      "CalcID": 70151,
+      "Weight": 1,
+      "CalcType": 1,
+      "CalcValue": 8,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 151,
+      "_byte_offset": 2587,
+      "CalcLibID": 300801,
+      "CalcID": 70152,
+      "Weight": 1,
+      "CalcType": 1,
+      "CalcValue": 9,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 152,
+      "_byte_offset": 2604,
+      "CalcLibID": 300801,
+      "CalcID": 70153,
+      "Weight": 1,
+      "CalcType": 1,
+      "CalcValue": 10,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 153,
+      "_byte_offset": 2621,
+      "CalcLibID": 300802,
+      "CalcID": 70154,
+      "Weight": 10,
+      "CalcType": 2,
+      "CalcValue": 2,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 154,
+      "_byte_offset": 2638,
+      "CalcLibID": 300802,
+      "CalcID": 70155,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 4,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 155,
+      "_byte_offset": 2655,
+      "CalcLibID": 300802,
+      "CalcID": 70156,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 6,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 156,
+      "_byte_offset": 2672,
+      "CalcLibID": 300802,
+      "CalcID": 70157,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 8,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 157,
+      "_byte_offset": 2689,
+      "CalcLibID": 300802,
+      "CalcID": 70158,
+      "Weight": 10,
+      "CalcType": 2,
+      "CalcValue": 10,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 158,
+      "_byte_offset": 2706,
+      "CalcLibID": 300901,
+      "CalcID": 70159,
+      "Weight": 0,
+      "CalcType": 1,
+      "CalcValue": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 159,
+      "_byte_offset": 2723,
+      "CalcLibID": 300901,
+      "CalcID": 70160,
+      "Weight": 0,
+      "CalcType": 1,
+      "CalcValue": 2,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 160,
+      "_byte_offset": 2740,
+      "CalcLibID": 300901,
+      "CalcID": 70161,
+      "Weight": 30,
+      "CalcType": 1,
+      "CalcValue": 3,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 161,
+      "_byte_offset": 2757,
+      "CalcLibID": 300901,
+      "CalcID": 70162,
+      "Weight": 40,
+      "CalcType": 1,
+      "CalcValue": 4,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 162,
+      "_byte_offset": 2774,
+      "CalcLibID": 300901,
+      "CalcID": 70163,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 163,
+      "_byte_offset": 2791,
+      "CalcLibID": 300901,
+      "CalcID": 70164,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 6,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 164,
+      "_byte_offset": 2808,
+      "CalcLibID": 300901,
+      "CalcID": 70165,
+      "Weight": 30,
+      "CalcType": 1,
+      "CalcValue": 7,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 165,
+      "_byte_offset": 2825,
+      "CalcLibID": 300901,
+      "CalcID": 70166,
+      "Weight": 1,
+      "CalcType": 1,
+      "CalcValue": 8,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 166,
+      "_byte_offset": 2842,
+      "CalcLibID": 300901,
+      "CalcID": 70167,
+      "Weight": 1,
+      "CalcType": 1,
+      "CalcValue": 9,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 167,
+      "_byte_offset": 2859,
+      "CalcLibID": 300901,
+      "CalcID": 70168,
+      "Weight": 1,
+      "CalcType": 1,
+      "CalcValue": 10,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 168,
+      "_byte_offset": 2876,
+      "CalcLibID": 300902,
+      "CalcID": 70169,
+      "Weight": 10,
+      "CalcType": 2,
+      "CalcValue": 2,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 169,
+      "_byte_offset": 2893,
+      "CalcLibID": 300902,
+      "CalcID": 70170,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 4,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 170,
+      "_byte_offset": 2910,
+      "CalcLibID": 300902,
+      "CalcID": 70171,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 6,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 171,
+      "_byte_offset": 2927,
+      "CalcLibID": 300902,
+      "CalcID": 70172,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 8,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 172,
+      "_byte_offset": 2944,
+      "CalcLibID": 300902,
+      "CalcID": 70173,
+      "Weight": 10,
+      "CalcType": 2,
+      "CalcValue": 10,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 173,
+      "_byte_offset": 2961,
+      "CalcLibID": 301001,
+      "CalcID": 70174,
+      "Weight": 0,
+      "CalcType": 1,
+      "CalcValue": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 174,
+      "_byte_offset": 2978,
+      "CalcLibID": 301001,
+      "CalcID": 70175,
+      "Weight": 0,
+      "CalcType": 1,
+      "CalcValue": 2,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 175,
+      "_byte_offset": 2995,
+      "CalcLibID": 301001,
+      "CalcID": 70176,
+      "Weight": 30,
+      "CalcType": 1,
+      "CalcValue": 3,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 176,
+      "_byte_offset": 3012,
+      "CalcLibID": 301001,
+      "CalcID": 70177,
+      "Weight": 40,
+      "CalcType": 1,
+      "CalcValue": 4,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 177,
+      "_byte_offset": 3029,
+      "CalcLibID": 301001,
+      "CalcID": 70178,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 178,
+      "_byte_offset": 3046,
+      "CalcLibID": 301001,
+      "CalcID": 70179,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 6,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 179,
+      "_byte_offset": 3063,
+      "CalcLibID": 301001,
+      "CalcID": 70180,
+      "Weight": 30,
+      "CalcType": 1,
+      "CalcValue": 7,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 180,
+      "_byte_offset": 3080,
+      "CalcLibID": 301001,
+      "CalcID": 70181,
+      "Weight": 1,
+      "CalcType": 1,
+      "CalcValue": 8,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 181,
+      "_byte_offset": 3097,
+      "CalcLibID": 301001,
+      "CalcID": 70182,
+      "Weight": 1,
+      "CalcType": 1,
+      "CalcValue": 9,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 182,
+      "_byte_offset": 3114,
+      "CalcLibID": 301001,
+      "CalcID": 70183,
+      "Weight": 1,
+      "CalcType": 1,
+      "CalcValue": 10,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 183,
+      "_byte_offset": 3131,
+      "CalcLibID": 301002,
+      "CalcID": 70184,
+      "Weight": 10,
+      "CalcType": 2,
+      "CalcValue": 2,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 184,
+      "_byte_offset": 3148,
+      "CalcLibID": 301002,
+      "CalcID": 70185,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 4,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 185,
+      "_byte_offset": 3165,
+      "CalcLibID": 301002,
+      "CalcID": 70186,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 6,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 186,
+      "_byte_offset": 3182,
+      "CalcLibID": 301002,
+      "CalcID": 70187,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 8,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 187,
+      "_byte_offset": 3199,
+      "CalcLibID": 301002,
+      "CalcID": 70188,
+      "Weight": 10,
+      "CalcType": 2,
+      "CalcValue": 10,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 188,
+      "_byte_offset": 3216,
+      "CalcLibID": 301101,
+      "CalcID": 70189,
+      "Weight": 0,
+      "CalcType": 1,
+      "CalcValue": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 189,
+      "_byte_offset": 3233,
+      "CalcLibID": 301101,
+      "CalcID": 70190,
+      "Weight": 0,
+      "CalcType": 1,
+      "CalcValue": 2,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 190,
+      "_byte_offset": 3250,
+      "CalcLibID": 301101,
+      "CalcID": 70191,
+      "Weight": 30,
+      "CalcType": 1,
+      "CalcValue": 3,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 191,
+      "_byte_offset": 3267,
+      "CalcLibID": 301101,
+      "CalcID": 70192,
+      "Weight": 40,
+      "CalcType": 1,
+      "CalcValue": 4,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 192,
+      "_byte_offset": 3284,
+      "CalcLibID": 301101,
+      "CalcID": 70193,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 193,
+      "_byte_offset": 3301,
+      "CalcLibID": 301101,
+      "CalcID": 70194,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 6,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 194,
+      "_byte_offset": 3318,
+      "CalcLibID": 301101,
+      "CalcID": 70195,
+      "Weight": 30,
+      "CalcType": 1,
+      "CalcValue": 7,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 195,
+      "_byte_offset": 3335,
+      "CalcLibID": 301101,
+      "CalcID": 70196,
+      "Weight": 1,
+      "CalcType": 1,
+      "CalcValue": 8,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 196,
+      "_byte_offset": 3352,
+      "CalcLibID": 301101,
+      "CalcID": 70197,
+      "Weight": 1,
+      "CalcType": 1,
+      "CalcValue": 9,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 197,
+      "_byte_offset": 3369,
+      "CalcLibID": 301101,
+      "CalcID": 70198,
+      "Weight": 1,
+      "CalcType": 1,
+      "CalcValue": 10,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 198,
+      "_byte_offset": 3386,
+      "CalcLibID": 301102,
+      "CalcID": 70199,
+      "Weight": 10,
+      "CalcType": 2,
+      "CalcValue": 2,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 199,
+      "_byte_offset": 3403,
+      "CalcLibID": 301102,
+      "CalcID": 70200,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 4,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 200,
+      "_byte_offset": 3420,
+      "CalcLibID": 301102,
+      "CalcID": 70201,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 6,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 201,
+      "_byte_offset": 3437,
+      "CalcLibID": 301102,
+      "CalcID": 70202,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 8,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 202,
+      "_byte_offset": 3454,
+      "CalcLibID": 301102,
+      "CalcID": 70203,
+      "Weight": 10,
+      "CalcType": 2,
+      "CalcValue": 10,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 203,
+      "_byte_offset": 3471,
+      "CalcLibID": 301201,
+      "CalcID": 70204,
+      "Weight": 0,
+      "CalcType": 1,
+      "CalcValue": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 204,
+      "_byte_offset": 3488,
+      "CalcLibID": 301201,
+      "CalcID": 70205,
+      "Weight": 0,
+      "CalcType": 1,
+      "CalcValue": 2,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 205,
+      "_byte_offset": 3505,
+      "CalcLibID": 301201,
+      "CalcID": 70206,
+      "Weight": 30,
+      "CalcType": 1,
+      "CalcValue": 3,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 206,
+      "_byte_offset": 3522,
+      "CalcLibID": 301201,
+      "CalcID": 70207,
+      "Weight": 40,
+      "CalcType": 1,
+      "CalcValue": 4,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 207,
+      "_byte_offset": 3539,
+      "CalcLibID": 301201,
+      "CalcID": 70208,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 208,
+      "_byte_offset": 3556,
+      "CalcLibID": 301201,
+      "CalcID": 70209,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 6,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 209,
+      "_byte_offset": 3573,
+      "CalcLibID": 301201,
+      "CalcID": 70210,
+      "Weight": 30,
+      "CalcType": 1,
+      "CalcValue": 7,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 210,
+      "_byte_offset": 3590,
+      "CalcLibID": 301201,
+      "CalcID": 70211,
+      "Weight": 1,
+      "CalcType": 1,
+      "CalcValue": 8,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 211,
+      "_byte_offset": 3607,
+      "CalcLibID": 301201,
+      "CalcID": 70212,
+      "Weight": 1,
+      "CalcType": 1,
+      "CalcValue": 9,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 212,
+      "_byte_offset": 3624,
+      "CalcLibID": 301201,
+      "CalcID": 70213,
+      "Weight": 1,
+      "CalcType": 1,
+      "CalcValue": 10,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 213,
+      "_byte_offset": 3641,
+      "CalcLibID": 301202,
+      "CalcID": 70214,
+      "Weight": 10,
+      "CalcType": 2,
+      "CalcValue": 2,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 214,
+      "_byte_offset": 3658,
+      "CalcLibID": 301202,
+      "CalcID": 70215,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 4,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 215,
+      "_byte_offset": 3675,
+      "CalcLibID": 301202,
+      "CalcID": 70216,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 6,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 216,
+      "_byte_offset": 3692,
+      "CalcLibID": 301202,
+      "CalcID": 70217,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 8,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 217,
+      "_byte_offset": 3709,
+      "CalcLibID": 301202,
+      "CalcID": 70218,
+      "Weight": 10,
+      "CalcType": 2,
+      "CalcValue": 10,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 218,
+      "_byte_offset": 3726,
+      "CalcLibID": 301301,
+      "CalcID": 70219,
+      "Weight": 0,
+      "CalcType": 1,
+      "CalcValue": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 219,
+      "_byte_offset": 3743,
+      "CalcLibID": 301301,
+      "CalcID": 70220,
+      "Weight": 0,
+      "CalcType": 1,
+      "CalcValue": 2,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 220,
+      "_byte_offset": 3760,
+      "CalcLibID": 301301,
+      "CalcID": 70221,
+      "Weight": 30,
+      "CalcType": 1,
+      "CalcValue": 3,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 221,
+      "_byte_offset": 3777,
+      "CalcLibID": 301301,
+      "CalcID": 70222,
+      "Weight": 40,
+      "CalcType": 1,
+      "CalcValue": 4,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 222,
+      "_byte_offset": 3794,
+      "CalcLibID": 301301,
+      "CalcID": 70223,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 223,
+      "_byte_offset": 3811,
+      "CalcLibID": 301301,
+      "CalcID": 70224,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 6,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 224,
+      "_byte_offset": 3828,
+      "CalcLibID": 301301,
+      "CalcID": 70225,
+      "Weight": 30,
+      "CalcType": 1,
+      "CalcValue": 7,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 225,
+      "_byte_offset": 3845,
+      "CalcLibID": 301301,
+      "CalcID": 70226,
+      "Weight": 1,
+      "CalcType": 1,
+      "CalcValue": 8,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 226,
+      "_byte_offset": 3862,
+      "CalcLibID": 301301,
+      "CalcID": 70227,
+      "Weight": 1,
+      "CalcType": 1,
+      "CalcValue": 9,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 227,
+      "_byte_offset": 3879,
+      "CalcLibID": 301301,
+      "CalcID": 70228,
+      "Weight": 1,
+      "CalcType": 1,
+      "CalcValue": 10,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 228,
+      "_byte_offset": 3896,
+      "CalcLibID": 301302,
+      "CalcID": 70229,
+      "Weight": 10,
+      "CalcType": 2,
+      "CalcValue": 2,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 229,
+      "_byte_offset": 3913,
+      "CalcLibID": 301302,
+      "CalcID": 70230,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 4,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 230,
+      "_byte_offset": 3930,
+      "CalcLibID": 301302,
+      "CalcID": 70231,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 6,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 231,
+      "_byte_offset": 3947,
+      "CalcLibID": 301302,
+      "CalcID": 70232,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 8,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 232,
+      "_byte_offset": 3964,
+      "CalcLibID": 301302,
+      "CalcID": 70233,
+      "Weight": 10,
+      "CalcType": 2,
+      "CalcValue": 10,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 233,
+      "_byte_offset": 3981,
+      "CalcLibID": 301401,
+      "CalcID": 70234,
+      "Weight": 0,
+      "CalcType": 1,
+      "CalcValue": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 234,
+      "_byte_offset": 3998,
+      "CalcLibID": 301401,
+      "CalcID": 70235,
+      "Weight": 0,
+      "CalcType": 1,
+      "CalcValue": 2,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 235,
+      "_byte_offset": 4015,
+      "CalcLibID": 301401,
+      "CalcID": 70236,
+      "Weight": 30,
+      "CalcType": 1,
+      "CalcValue": 3,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 236,
+      "_byte_offset": 4032,
+      "CalcLibID": 301401,
+      "CalcID": 70237,
+      "Weight": 40,
+      "CalcType": 1,
+      "CalcValue": 4,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 237,
+      "_byte_offset": 4049,
+      "CalcLibID": 301401,
+      "CalcID": 70238,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 238,
+      "_byte_offset": 4066,
+      "CalcLibID": 301401,
+      "CalcID": 70239,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 6,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 239,
+      "_byte_offset": 4083,
+      "CalcLibID": 301401,
+      "CalcID": 70240,
+      "Weight": 30,
+      "CalcType": 1,
+      "CalcValue": 7,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 240,
+      "_byte_offset": 4100,
+      "CalcLibID": 301401,
+      "CalcID": 70241,
+      "Weight": 1,
+      "CalcType": 1,
+      "CalcValue": 8,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 241,
+      "_byte_offset": 4117,
+      "CalcLibID": 301401,
+      "CalcID": 70242,
+      "Weight": 1,
+      "CalcType": 1,
+      "CalcValue": 9,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 242,
+      "_byte_offset": 4134,
+      "CalcLibID": 301401,
+      "CalcID": 70243,
+      "Weight": 1,
+      "CalcType": 1,
+      "CalcValue": 10,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 243,
+      "_byte_offset": 4151,
+      "CalcLibID": 301402,
+      "CalcID": 70244,
+      "Weight": 10,
+      "CalcType": 2,
+      "CalcValue": 2,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 244,
+      "_byte_offset": 4168,
+      "CalcLibID": 301402,
+      "CalcID": 70245,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 4,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 245,
+      "_byte_offset": 4185,
+      "CalcLibID": 301402,
+      "CalcID": 70246,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 6,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 246,
+      "_byte_offset": 4202,
+      "CalcLibID": 301402,
+      "CalcID": 70247,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 8,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 247,
+      "_byte_offset": 4219,
+      "CalcLibID": 301402,
+      "CalcID": 70248,
+      "Weight": 10,
+      "CalcType": 2,
+      "CalcValue": 10,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 248,
+      "_byte_offset": 4236,
+      "CalcLibID": 301501,
+      "CalcID": 70249,
+      "Weight": 0,
+      "CalcType": 1,
+      "CalcValue": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 249,
+      "_byte_offset": 4253,
+      "CalcLibID": 301501,
+      "CalcID": 70250,
+      "Weight": 0,
+      "CalcType": 1,
+      "CalcValue": 2,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 250,
+      "_byte_offset": 4270,
+      "CalcLibID": 301501,
+      "CalcID": 70251,
+      "Weight": 30,
+      "CalcType": 1,
+      "CalcValue": 3,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 251,
+      "_byte_offset": 4287,
+      "CalcLibID": 301501,
+      "CalcID": 70252,
+      "Weight": 40,
+      "CalcType": 1,
+      "CalcValue": 4,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 252,
+      "_byte_offset": 4304,
+      "CalcLibID": 301501,
+      "CalcID": 70253,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 253,
+      "_byte_offset": 4321,
+      "CalcLibID": 301501,
+      "CalcID": 70254,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 6,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 254,
+      "_byte_offset": 4338,
+      "CalcLibID": 301501,
+      "CalcID": 70255,
+      "Weight": 30,
+      "CalcType": 1,
+      "CalcValue": 7,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 255,
+      "_byte_offset": 4355,
+      "CalcLibID": 301501,
+      "CalcID": 70256,
+      "Weight": 1,
+      "CalcType": 1,
+      "CalcValue": 8,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 256,
+      "_byte_offset": 4372,
+      "CalcLibID": 301501,
+      "CalcID": 70257,
+      "Weight": 1,
+      "CalcType": 1,
+      "CalcValue": 9,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 257,
+      "_byte_offset": 4389,
+      "CalcLibID": 301501,
+      "CalcID": 70258,
+      "Weight": 1,
+      "CalcType": 1,
+      "CalcValue": 10,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 258,
+      "_byte_offset": 4406,
+      "CalcLibID": 301502,
+      "CalcID": 70259,
+      "Weight": 10,
+      "CalcType": 2,
+      "CalcValue": 2,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 259,
+      "_byte_offset": 4423,
+      "CalcLibID": 301502,
+      "CalcID": 70260,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 4,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 260,
+      "_byte_offset": 4440,
+      "CalcLibID": 301502,
+      "CalcID": 70261,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 6,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 261,
+      "_byte_offset": 4457,
+      "CalcLibID": 301502,
+      "CalcID": 70262,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 8,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 262,
+      "_byte_offset": 4474,
+      "CalcLibID": 301502,
+      "CalcID": 70263,
+      "Weight": 10,
+      "CalcType": 2,
+      "CalcValue": 10,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 263,
+      "_byte_offset": 4491,
+      "CalcLibID": 301601,
+      "CalcID": 70264,
+      "Weight": 0,
+      "CalcType": 1,
+      "CalcValue": 1,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 264,
+      "_byte_offset": 4508,
+      "CalcLibID": 301601,
+      "CalcID": 70265,
+      "Weight": 0,
+      "CalcType": 1,
+      "CalcValue": 2,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 265,
+      "_byte_offset": 4525,
+      "CalcLibID": 301601,
+      "CalcID": 70266,
+      "Weight": 30,
+      "CalcType": 1,
+      "CalcValue": 3,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 266,
+      "_byte_offset": 4542,
+      "CalcLibID": 301601,
+      "CalcID": 70267,
+      "Weight": 40,
+      "CalcType": 1,
+      "CalcValue": 4,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 267,
+      "_byte_offset": 4559,
+      "CalcLibID": 301601,
+      "CalcID": 70268,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 5,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 268,
+      "_byte_offset": 4576,
+      "CalcLibID": 301601,
+      "CalcID": 70269,
+      "Weight": 50,
+      "CalcType": 1,
+      "CalcValue": 6,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 269,
+      "_byte_offset": 4593,
+      "CalcLibID": 301601,
+      "CalcID": 70270,
+      "Weight": 30,
+      "CalcType": 1,
+      "CalcValue": 7,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 270,
+      "_byte_offset": 4610,
+      "CalcLibID": 301601,
+      "CalcID": 70271,
+      "Weight": 1,
+      "CalcType": 1,
+      "CalcValue": 8,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 271,
+      "_byte_offset": 4627,
+      "CalcLibID": 301601,
+      "CalcID": 70272,
+      "Weight": 1,
+      "CalcType": 1,
+      "CalcValue": 9,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 272,
+      "_byte_offset": 4644,
+      "CalcLibID": 301601,
+      "CalcID": 70273,
+      "Weight": 1,
+      "CalcType": 1,
+      "CalcValue": 10,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 273,
+      "_byte_offset": 4661,
+      "CalcLibID": 301602,
+      "CalcID": 70274,
+      "Weight": 10,
+      "CalcType": 2,
+      "CalcValue": 2,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 274,
+      "_byte_offset": 4678,
+      "CalcLibID": 301602,
+      "CalcID": 70275,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 4,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 275,
+      "_byte_offset": 4695,
+      "CalcLibID": 301602,
+      "CalcID": 70276,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 6,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 276,
+      "_byte_offset": 4712,
+      "CalcLibID": 301602,
+      "CalcID": 70277,
+      "Weight": 50,
+      "CalcType": 2,
+      "CalcValue": 8,
+      "_byte_length": 17
+    },
+    {
+      "_record_index": 277,
+      "_byte_offset": 4729,
+      "CalcLibID": 301602,
+      "CalcID": 70278,
+      "Weight": 10,
+      "CalcType": 2,
+      "CalcValue": 10,
+      "_byte_length": 17
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+0x1d566a8: str       x23, [sp, #-0x40]!
+0x1d566ac: stp       x22, x21, [sp, #0x10]
+0x1d566b0: stp       x20, x19, [sp, #0x20]
+0x1d566b4: stp       x29, x30, [sp, #0x30]
+0x1d566b8: add       x29, sp, #0x30
+0x1d566bc: mov       x21, x0
+0x1d566c0: mov       x19, x3
+0x1d566c4: mov       x20, x1
+0x1d566c8: add       x22, x21, #0x10
+0x1d566cc: cbnz      x20, #0x1d566d8
+0x1d566d0: mov       x0, xzr
+0x1d566d4: bl        #0xd2b72c ; 
+0x1d566d8: mov       x0, x20
+0x1d566dc: mov       x1, x22
+0x1d566e0: mov       x2, xzr
+0x1d566e4: bl        #0x21f67d0 ; ProtoBase.PbReadBuf$$readInt32
+0x1d566e8: cbnz      w0, #0x1d56780
+0x1d566ec: add       x22, x21, #0x14
+0x1d566f0: cbnz      x20, #0x1d566fc
+0x1d566f4: mov       x0, xzr
+0x1d566f8: bl        #0xd2b72c ; 
+0x1d566fc: mov       x0, x20
+0x1d56700: mov       x1, x22
+0x1d56704: mov       x2, xzr
+0x1d56708: bl        #0x21f67d0 ; ProtoBase.PbReadBuf$$readInt32
+0x1d5670c: cbnz      w0, #0x1d56780
+0x1d56710: mov       x23, xzr
+0x1d56714: ldr       x22, [x21, #0x18]
+0x1d56718: cbnz      x22, #0x1d56724
+0x1d5671c: mov       x0, xzr
+0x1d56720: bl        #0xd2b72c ; 
+0x1d56724: ldr       w8, [x22, #0x18]
+0x1d56728: cmp       x23, x8
+0x1d5672c: b.lo      #0x1d56740
+0x1d56730: bl        #0xd2c410 ; 
+0x1d56734: mov       x1, xzr
+0x1d56738: mov       x2, xzr
+0x1d5673c: bl        #0xd2b69c ; 
+0x1d56740: add       x8, x22, x23, lsl #3
+0x1d56744: ldr       x22, [x8, #0x20]
+0x1d56748: cbnz      x22, #0x1d56754
+0x1d5674c: mov       x0, xzr
+0x1d56750: bl        #0xd2b72c ; 
+0x1d56754: mov       w2, #1
+0x1d56758: mov       x0, x22
+0x1d5675c: mov       x1, x20
+0x1d56760: mov       x3, x19
+0x1d56764: mov       x4, xzr
+0x1d56768: bl        #0x1e879c8 ; ResDef.ResAttrImpactData$$unpack
+0x1d5676c: cbnz      w0, #0x1d56780
+0x1d56770: cmp       x23, #3
+0x1d56774: add       x23, x23, #1
+0x1d56778: b.lt      #0x1d56714
+0x1d5677c: mov       w0, wzr
+0x1d56780: ldp       x29, x30, [sp, #0x30]
+0x1d56784: ldp       x20, x19, [sp, #0x20]
+0x1d56788: ldp       x22, x21, [sp, #0x10]
+0x1d5678c: ldr       x23, [sp], #0x40
+0x1d56790: ret       

@@ -1,0 +1,1535 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_fp_spiritupstarlvconfig.bytes.ab",
+    "path_id": 3903539232233702611,
+    "name": "SpiritUpStarLvConfig",
+    "sha256": "63c312a48ddf4089fb8f73997d45717716dbeff97faa8290148c8ab29803689e",
+    "export": "derived/unity/text/assets_resources_config_resbin_fp_spiritupstarlvconfig.bytes/SpiritUpStarLvConfig__3903539232233702611.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 2580,
+      "version": 1,
+      "record_count": 160,
+      "stored_crc32": "86335497",
+      "computed_inverted_crc32": "86335497"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "BattleCore",
+      "name": "SpiritUpStarLvConfig",
+      "fields": [
+        {
+          "type": "uint",
+          "name": "SpiritID",
+          "object_offset": 16
+        },
+        {
+          "type": "uint",
+          "name": "StarLv",
+          "object_offset": 20
+        },
+        {
+          "type": "int",
+          "name": "SkillID",
+          "object_offset": 24
+        },
+        {
+          "type": "int",
+          "name": "SpecialBuffID",
+          "object_offset": 28
+        }
+      ],
+      "unpack_va": 35220508,
+      "dump_line": 168518
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x2196c50",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x2196c74",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x2196c98",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x2196cd8",
+        "target_va": "0x21f67d0",
+        "opcode": "B-tail",
+        "reader": "readInt32",
+        "destination_object_offset": 28,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 160
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "SpiritID": 1,
+      "StarLv": 1,
+      "SkillID": 1001,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 36,
+      "SpiritID": 1,
+      "StarLv": 2,
+      "SkillID": 1002,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 52,
+      "SpiritID": 1,
+      "StarLv": 3,
+      "SkillID": 1003,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 68,
+      "SpiritID": 1,
+      "StarLv": 4,
+      "SkillID": 1004,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 84,
+      "SpiritID": 1,
+      "StarLv": 5,
+      "SkillID": 1005,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 100,
+      "SpiritID": 1,
+      "StarLv": 6,
+      "SkillID": 1006,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 116,
+      "SpiritID": 1,
+      "StarLv": 7,
+      "SkillID": 1007,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 132,
+      "SpiritID": 1,
+      "StarLv": 8,
+      "SkillID": 1008,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 148,
+      "SpiritID": 1,
+      "StarLv": 9,
+      "SkillID": 1009,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 164,
+      "SpiritID": 1,
+      "StarLv": 10,
+      "SkillID": 1010,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 180,
+      "SpiritID": 2,
+      "StarLv": 1,
+      "SkillID": 2001,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 196,
+      "SpiritID": 2,
+      "StarLv": 2,
+      "SkillID": 2002,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 212,
+      "SpiritID": 2,
+      "StarLv": 3,
+      "SkillID": 2003,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 228,
+      "SpiritID": 2,
+      "StarLv": 4,
+      "SkillID": 2004,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 244,
+      "SpiritID": 2,
+      "StarLv": 5,
+      "SkillID": 2005,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 260,
+      "SpiritID": 2,
+      "StarLv": 6,
+      "SkillID": 2006,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 276,
+      "SpiritID": 2,
+      "StarLv": 7,
+      "SkillID": 2007,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 292,
+      "SpiritID": 2,
+      "StarLv": 8,
+      "SkillID": 2008,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 308,
+      "SpiritID": 2,
+      "StarLv": 9,
+      "SkillID": 2009,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 19,
+      "_byte_offset": 324,
+      "SpiritID": 2,
+      "StarLv": 10,
+      "SkillID": 2010,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 20,
+      "_byte_offset": 340,
+      "SpiritID": 3,
+      "StarLv": 1,
+      "SkillID": 3001,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 21,
+      "_byte_offset": 356,
+      "SpiritID": 3,
+      "StarLv": 2,
+      "SkillID": 3002,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 22,
+      "_byte_offset": 372,
+      "SpiritID": 3,
+      "StarLv": 3,
+      "SkillID": 3003,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 23,
+      "_byte_offset": 388,
+      "SpiritID": 3,
+      "StarLv": 4,
+      "SkillID": 3004,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 24,
+      "_byte_offset": 404,
+      "SpiritID": 3,
+      "StarLv": 5,
+      "SkillID": 3005,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 25,
+      "_byte_offset": 420,
+      "SpiritID": 3,
+      "StarLv": 6,
+      "SkillID": 3006,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 26,
+      "_byte_offset": 436,
+      "SpiritID": 3,
+      "StarLv": 7,
+      "SkillID": 3007,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 27,
+      "_byte_offset": 452,
+      "SpiritID": 3,
+      "StarLv": 8,
+      "SkillID": 3008,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 28,
+      "_byte_offset": 468,
+      "SpiritID": 3,
+      "StarLv": 9,
+      "SkillID": 3009,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 29,
+      "_byte_offset": 484,
+      "SpiritID": 3,
+      "StarLv": 10,
+      "SkillID": 3010,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 30,
+      "_byte_offset": 500,
+      "SpiritID": 4,
+      "StarLv": 1,
+      "SkillID": 4001,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 31,
+      "_byte_offset": 516,
+      "SpiritID": 4,
+      "StarLv": 2,
+      "SkillID": 4002,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 32,
+      "_byte_offset": 532,
+      "SpiritID": 4,
+      "StarLv": 3,
+      "SkillID": 4003,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 33,
+      "_byte_offset": 548,
+      "SpiritID": 4,
+      "StarLv": 4,
+      "SkillID": 4004,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 34,
+      "_byte_offset": 564,
+      "SpiritID": 4,
+      "StarLv": 5,
+      "SkillID": 4005,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 35,
+      "_byte_offset": 580,
+      "SpiritID": 4,
+      "StarLv": 6,
+      "SkillID": 4006,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 36,
+      "_byte_offset": 596,
+      "SpiritID": 4,
+      "StarLv": 7,
+      "SkillID": 4007,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 37,
+      "_byte_offset": 612,
+      "SpiritID": 4,
+      "StarLv": 8,
+      "SkillID": 4008,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 38,
+      "_byte_offset": 628,
+      "SpiritID": 4,
+      "StarLv": 9,
+      "SkillID": 4009,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 39,
+      "_byte_offset": 644,
+      "SpiritID": 4,
+      "StarLv": 10,
+      "SkillID": 4010,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 40,
+      "_byte_offset": 660,
+      "SpiritID": 5,
+      "StarLv": 1,
+      "SkillID": 5001,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 41,
+      "_byte_offset": 676,
+      "SpiritID": 5,
+      "StarLv": 2,
+      "SkillID": 5002,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 42,
+      "_byte_offset": 692,
+      "SpiritID": 5,
+      "StarLv": 3,
+      "SkillID": 5003,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 43,
+      "_byte_offset": 708,
+      "SpiritID": 5,
+      "StarLv": 4,
+      "SkillID": 5004,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 44,
+      "_byte_offset": 724,
+      "SpiritID": 5,
+      "StarLv": 5,
+      "SkillID": 5005,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 45,
+      "_byte_offset": 740,
+      "SpiritID": 5,
+      "StarLv": 6,
+      "SkillID": 5006,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 46,
+      "_byte_offset": 756,
+      "SpiritID": 5,
+      "StarLv": 7,
+      "SkillID": 5007,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 47,
+      "_byte_offset": 772,
+      "SpiritID": 5,
+      "StarLv": 8,
+      "SkillID": 5008,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 48,
+      "_byte_offset": 788,
+      "SpiritID": 5,
+      "StarLv": 9,
+      "SkillID": 5009,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 49,
+      "_byte_offset": 804,
+      "SpiritID": 5,
+      "StarLv": 10,
+      "SkillID": 5010,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 50,
+      "_byte_offset": 820,
+      "SpiritID": 6,
+      "StarLv": 1,
+      "SkillID": 6001,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 51,
+      "_byte_offset": 836,
+      "SpiritID": 6,
+      "StarLv": 2,
+      "SkillID": 6002,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 52,
+      "_byte_offset": 852,
+      "SpiritID": 6,
+      "StarLv": 3,
+      "SkillID": 6003,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 53,
+      "_byte_offset": 868,
+      "SpiritID": 6,
+      "StarLv": 4,
+      "SkillID": 6004,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 54,
+      "_byte_offset": 884,
+      "SpiritID": 6,
+      "StarLv": 5,
+      "SkillID": 6005,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 55,
+      "_byte_offset": 900,
+      "SpiritID": 6,
+      "StarLv": 6,
+      "SkillID": 6006,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 56,
+      "_byte_offset": 916,
+      "SpiritID": 6,
+      "StarLv": 7,
+      "SkillID": 6007,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 57,
+      "_byte_offset": 932,
+      "SpiritID": 6,
+      "StarLv": 8,
+      "SkillID": 6008,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 58,
+      "_byte_offset": 948,
+      "SpiritID": 6,
+      "StarLv": 9,
+      "SkillID": 6009,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 59,
+      "_byte_offset": 964,
+      "SpiritID": 6,
+      "StarLv": 10,
+      "SkillID": 6010,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 60,
+      "_byte_offset": 980,
+      "SpiritID": 7,
+      "StarLv": 1,
+      "SkillID": 7001,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 61,
+      "_byte_offset": 996,
+      "SpiritID": 7,
+      "StarLv": 2,
+      "SkillID": 7002,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 62,
+      "_byte_offset": 1012,
+      "SpiritID": 7,
+      "StarLv": 3,
+      "SkillID": 7003,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 63,
+      "_byte_offset": 1028,
+      "SpiritID": 7,
+      "StarLv": 4,
+      "SkillID": 7004,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 64,
+      "_byte_offset": 1044,
+      "SpiritID": 7,
+      "StarLv": 5,
+      "SkillID": 7005,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 65,
+      "_byte_offset": 1060,
+      "SpiritID": 7,
+      "StarLv": 6,
+      "SkillID": 7006,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 66,
+      "_byte_offset": 1076,
+      "SpiritID": 7,
+      "StarLv": 7,
+      "SkillID": 7007,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 67,
+      "_byte_offset": 1092,
+      "SpiritID": 7,
+      "StarLv": 8,
+      "SkillID": 7008,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 68,
+      "_byte_offset": 1108,
+      "SpiritID": 7,
+      "StarLv": 9,
+      "SkillID": 7009,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 69,
+      "_byte_offset": 1124,
+      "SpiritID": 7,
+      "StarLv": 10,
+      "SkillID": 7010,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 70,
+      "_byte_offset": 1140,
+      "SpiritID": 8,
+      "StarLv": 1,
+      "SkillID": 8001,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 71,
+      "_byte_offset": 1156,
+      "SpiritID": 8,
+      "StarLv": 2,
+      "SkillID": 8002,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 72,
+      "_byte_offset": 1172,
+      "SpiritID": 8,
+      "StarLv": 3,
+      "SkillID": 8003,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 73,
+      "_byte_offset": 1188,
+      "SpiritID": 8,
+      "StarLv": 4,
+      "SkillID": 8004,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 74,
+      "_byte_offset": 1204,
+      "SpiritID": 8,
+      "StarLv": 5,
+      "SkillID": 8005,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 75,
+      "_byte_offset": 1220,
+      "SpiritID": 8,
+      "StarLv": 6,
+      "SkillID": 8006,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 76,
+      "_byte_offset": 1236,
+      "SpiritID": 8,
+      "StarLv": 7,
+      "SkillID": 8007,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 77,
+      "_byte_offset": 1252,
+      "SpiritID": 8,
+      "StarLv": 8,
+      "SkillID": 8008,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 78,
+      "_byte_offset": 1268,
+      "SpiritID": 8,
+      "StarLv": 9,
+      "SkillID": 8009,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 79,
+      "_byte_offset": 1284,
+      "SpiritID": 8,
+      "StarLv": 10,
+      "SkillID": 8010,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 80,
+      "_byte_offset": 1300,
+      "SpiritID": 9,
+      "StarLv": 1,
+      "SkillID": 9001,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 81,
+      "_byte_offset": 1316,
+      "SpiritID": 9,
+      "StarLv": 2,
+      "SkillID": 9002,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 82,
+      "_byte_offset": 1332,
+      "SpiritID": 9,
+      "StarLv": 3,
+      "SkillID": 9003,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 83,
+      "_byte_offset": 1348,
+      "SpiritID": 9,
+      "StarLv": 4,
+      "SkillID": 9004,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 84,
+      "_byte_offset": 1364,
+      "SpiritID": 9,
+      "StarLv": 5,
+      "SkillID": 9005,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 85,
+      "_byte_offset": 1380,
+      "SpiritID": 9,
+      "StarLv": 6,
+      "SkillID": 9006,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 86,
+      "_byte_offset": 1396,
+      "SpiritID": 9,
+      "StarLv": 7,
+      "SkillID": 9007,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 87,
+      "_byte_offset": 1412,
+      "SpiritID": 9,
+      "StarLv": 8,
+      "SkillID": 9008,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 88,
+      "_byte_offset": 1428,
+      "SpiritID": 9,
+      "StarLv": 9,
+      "SkillID": 9009,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 89,
+      "_byte_offset": 1444,
+      "SpiritID": 9,
+      "StarLv": 10,
+      "SkillID": 9010,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 90,
+      "_byte_offset": 1460,
+      "SpiritID": 10,
+      "StarLv": 1,
+      "SkillID": 10001,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 91,
+      "_byte_offset": 1476,
+      "SpiritID": 10,
+      "StarLv": 2,
+      "SkillID": 10002,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 92,
+      "_byte_offset": 1492,
+      "SpiritID": 10,
+      "StarLv": 3,
+      "SkillID": 10003,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 93,
+      "_byte_offset": 1508,
+      "SpiritID": 10,
+      "StarLv": 4,
+      "SkillID": 10004,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 94,
+      "_byte_offset": 1524,
+      "SpiritID": 10,
+      "StarLv": 5,
+      "SkillID": 10005,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 95,
+      "_byte_offset": 1540,
+      "SpiritID": 10,
+      "StarLv": 6,
+      "SkillID": 10006,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 96,
+      "_byte_offset": 1556,
+      "SpiritID": 10,
+      "StarLv": 7,
+      "SkillID": 10007,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 97,
+      "_byte_offset": 1572,
+      "SpiritID": 10,
+      "StarLv": 8,
+      "SkillID": 10008,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 98,
+      "_byte_offset": 1588,
+      "SpiritID": 10,
+      "StarLv": 9,
+      "SkillID": 10009,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 99,
+      "_byte_offset": 1604,
+      "SpiritID": 10,
+      "StarLv": 10,
+      "SkillID": 10010,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 100,
+      "_byte_offset": 1620,
+      "SpiritID": 11,
+      "StarLv": 1,
+      "SkillID": 11001,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 101,
+      "_byte_offset": 1636,
+      "SpiritID": 11,
+      "StarLv": 2,
+      "SkillID": 11002,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 102,
+      "_byte_offset": 1652,
+      "SpiritID": 11,
+      "StarLv": 3,
+      "SkillID": 11003,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 103,
+      "_byte_offset": 1668,
+      "SpiritID": 11,
+      "StarLv": 4,
+      "SkillID": 11004,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 104,
+      "_byte_offset": 1684,
+      "SpiritID": 11,
+      "StarLv": 5,
+      "SkillID": 11005,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 105,
+      "_byte_offset": 1700,
+      "SpiritID": 11,
+      "StarLv": 6,
+      "SkillID": 11006,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 106,
+      "_byte_offset": 1716,
+      "SpiritID": 11,
+      "StarLv": 7,
+      "SkillID": 11007,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 107,
+      "_byte_offset": 1732,
+      "SpiritID": 11,
+      "StarLv": 8,
+      "SkillID": 11008,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 108,
+      "_byte_offset": 1748,
+      "SpiritID": 11,
+      "StarLv": 9,
+      "SkillID": 11009,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 109,
+      "_byte_offset": 1764,
+      "SpiritID": 11,
+      "StarLv": 10,
+      "SkillID": 11010,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 110,
+      "_byte_offset": 1780,
+      "SpiritID": 12,
+      "StarLv": 1,
+      "SkillID": 12001,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 111,
+      "_byte_offset": 1796,
+      "SpiritID": 12,
+      "StarLv": 2,
+      "SkillID": 12002,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 112,
+      "_byte_offset": 1812,
+      "SpiritID": 12,
+      "StarLv": 3,
+      "SkillID": 12003,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 113,
+      "_byte_offset": 1828,
+      "SpiritID": 12,
+      "StarLv": 4,
+      "SkillID": 12004,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 114,
+      "_byte_offset": 1844,
+      "SpiritID": 12,
+      "StarLv": 5,
+      "SkillID": 12005,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 115,
+      "_byte_offset": 1860,
+      "SpiritID": 12,
+      "StarLv": 6,
+      "SkillID": 12006,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 116,
+      "_byte_offset": 1876,
+      "SpiritID": 12,
+      "StarLv": 7,
+      "SkillID": 12007,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 117,
+      "_byte_offset": 1892,
+      "SpiritID": 12,
+      "StarLv": 8,
+      "SkillID": 12008,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 118,
+      "_byte_offset": 1908,
+      "SpiritID": 12,
+      "StarLv": 9,
+      "SkillID": 12009,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 119,
+      "_byte_offset": 1924,
+      "SpiritID": 12,
+      "StarLv": 10,
+      "SkillID": 12010,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 120,
+      "_byte_offset": 1940,
+      "SpiritID": 13,
+      "StarLv": 1,
+      "SkillID": 13001,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 121,
+      "_byte_offset": 1956,
+      "SpiritID": 13,
+      "StarLv": 2,
+      "SkillID": 13002,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 122,
+      "_byte_offset": 1972,
+      "SpiritID": 13,
+      "StarLv": 3,
+      "SkillID": 13003,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 123,
+      "_byte_offset": 1988,
+      "SpiritID": 13,
+      "StarLv": 4,
+      "SkillID": 13004,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 124,
+      "_byte_offset": 2004,
+      "SpiritID": 13,
+      "StarLv": 5,
+      "SkillID": 13005,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 125,
+      "_byte_offset": 2020,
+      "SpiritID": 13,
+      "StarLv": 6,
+      "SkillID": 13006,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 126,
+      "_byte_offset": 2036,
+      "SpiritID": 13,
+      "StarLv": 7,
+      "SkillID": 13007,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 127,
+      "_byte_offset": 2052,
+      "SpiritID": 13,
+      "StarLv": 8,
+      "SkillID": 13008,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 128,
+      "_byte_offset": 2068,
+      "SpiritID": 13,
+      "StarLv": 9,
+      "SkillID": 13009,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 129,
+      "_byte_offset": 2084,
+      "SpiritID": 13,
+      "StarLv": 10,
+      "SkillID": 13010,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 130,
+      "_byte_offset": 2100,
+      "SpiritID": 14,
+      "StarLv": 1,
+      "SkillID": 14001,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 131,
+      "_byte_offset": 2116,
+      "SpiritID": 14,
+      "StarLv": 2,
+      "SkillID": 14002,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 132,
+      "_byte_offset": 2132,
+      "SpiritID": 14,
+      "StarLv": 3,
+      "SkillID": 14003,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 133,
+      "_byte_offset": 2148,
+      "SpiritID": 14,
+      "StarLv": 4,
+      "SkillID": 14004,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 134,
+      "_byte_offset": 2164,
+      "SpiritID": 14,
+      "StarLv": 5,
+      "SkillID": 14005,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 135,
+      "_byte_offset": 2180,
+      "SpiritID": 14,
+      "StarLv": 6,
+      "SkillID": 14006,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 136,
+      "_byte_offset": 2196,
+      "SpiritID": 14,
+      "StarLv": 7,
+      "SkillID": 14007,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 137,
+      "_byte_offset": 2212,
+      "SpiritID": 14,
+      "StarLv": 8,
+      "SkillID": 14008,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 138,
+      "_byte_offset": 2228,
+      "SpiritID": 14,
+      "StarLv": 9,
+      "SkillID": 14009,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 139,
+      "_byte_offset": 2244,
+      "SpiritID": 14,
+      "StarLv": 10,
+      "SkillID": 14010,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 140,
+      "_byte_offset": 2260,
+      "SpiritID": 15,
+      "StarLv": 1,
+      "SkillID": 15001,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 141,
+      "_byte_offset": 2276,
+      "SpiritID": 15,
+      "StarLv": 2,
+      "SkillID": 15002,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 142,
+      "_byte_offset": 2292,
+      "SpiritID": 15,
+      "StarLv": 3,
+      "SkillID": 15003,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 143,
+      "_byte_offset": 2308,
+      "SpiritID": 15,
+      "StarLv": 4,
+      "SkillID": 15004,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 144,
+      "_byte_offset": 2324,
+      "SpiritID": 15,
+      "StarLv": 5,
+      "SkillID": 15005,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 145,
+      "_byte_offset": 2340,
+      "SpiritID": 15,
+      "StarLv": 6,
+      "SkillID": 15006,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 146,
+      "_byte_offset": 2356,
+      "SpiritID": 15,
+      "StarLv": 7,
+      "SkillID": 15007,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 147,
+      "_byte_offset": 2372,
+      "SpiritID": 15,
+      "StarLv": 8,
+      "SkillID": 15008,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 148,
+      "_byte_offset": 2388,
+      "SpiritID": 15,
+      "StarLv": 9,
+      "SkillID": 15009,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 149,
+      "_byte_offset": 2404,
+      "SpiritID": 15,
+      "StarLv": 10,
+      "SkillID": 15010,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 150,
+      "_byte_offset": 2420,
+      "SpiritID": 16,
+      "StarLv": 1,
+      "SkillID": 16001,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 151,
+      "_byte_offset": 2436,
+      "SpiritID": 16,
+      "StarLv": 2,
+      "SkillID": 16002,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 152,
+      "_byte_offset": 2452,
+      "SpiritID": 16,
+      "StarLv": 3,
+      "SkillID": 16003,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 153,
+      "_byte_offset": 2468,
+      "SpiritID": 16,
+      "StarLv": 4,
+      "SkillID": 16004,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 154,
+      "_byte_offset": 2484,
+      "SpiritID": 16,
+      "StarLv": 5,
+      "SkillID": 16005,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 155,
+      "_byte_offset": 2500,
+      "SpiritID": 16,
+      "StarLv": 6,
+      "SkillID": 16006,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 156,
+      "_byte_offset": 2516,
+      "SpiritID": 16,
+      "StarLv": 7,
+      "SkillID": 16007,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 157,
+      "_byte_offset": 2532,
+      "SpiritID": 16,
+      "StarLv": 8,
+      "SkillID": 16008,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 158,
+      "_byte_offset": 2548,
+      "SpiritID": 16,
+      "StarLv": 9,
+      "SkillID": 16009,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 159,
+      "_byte_offset": 2564,
+      "SpiritID": 16,
+      "StarLv": 10,
+      "SkillID": 16010,
+      "SpecialBuffID": 0,
+      "_byte_length": 16
+    }
+  ]
+}

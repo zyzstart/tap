@@ -1,0 +1,84 @@
+0x21f6b98: str       x23, [sp, #-0x40]!
+0x21f6b9c: stp       x22, x21, [sp, #0x10]
+0x21f6ba0: stp       x20, x19, [sp, #0x20]
+0x21f6ba4: stp       x29, x30, [sp, #0x30]
+0x21f6ba8: add       x29, sp, #0x30
+0x21f6bac: adrp      x21, #0x2f47000
+0x21f6bb0: ldrb      w8, [x21, #0xb6]
+0x21f6bb4: mov       x20, x1
+0x21f6bb8: mov       x19, x0
+0x21f6bbc: tbnz      w8, #0, #0x21f6bd8
+0x21f6bc0: adrp      x8, #0x2cda000
+0x21f6bc4: ldr       x8, [x8, #0xb78]
+0x21f6bc8: ldr       w0, [x8]
+0x21f6bcc: bl        #0xd04f28 ; 
+0x21f6bd0: mov       w8, #1
+0x21f6bd4: strb      w8, [x21, #0xb6]
+0x21f6bd8: ldr       x8, [x19, #0x10]
+0x21f6bdc: cbz       x8, #0x21f6bfc
+0x21f6be0: ldp       w8, w9, [x19, #0x18]
+0x21f6be4: sub       w8, w9, w8
+0x21f6be8: cmp       w8, #3
+0x21f6bec: b.gt      #0x21f6c08
+0x21f6bf0: mov       w0, wzr
+0x21f6bf4: str       wzr, [x20]
+0x21f6bf8: b         #0x21f6cd4 ; 
+0x21f6bfc: str       wzr, [x20]
+0x21f6c00: mov       w0, #-0x16
+0x21f6c04: b         #0x21f6cd4 ; 
+0x21f6c08: ldrb      w8, [x19, #0x20]
+0x21f6c0c: cbz       w8, #0x21f6c4c
+0x21f6c10: adrp      x21, #0x2c99000
+0x21f6c14: ldr       x21, [x21, #0x490]
+0x21f6c18: ldr       x0, [x21]
+0x21f6c1c: ldrb      w8, [x0, #0x127]
+0x21f6c20: tbz       w8, #1, #0x21f6c34
+0x21f6c24: ldr       w8, [x0, #0xd8]
+0x21f6c28: cbnz      w8, #0x21f6c34
+0x21f6c2c: bl        #0xd14168 ; 
+0x21f6c30: ldr       x0, [x21]
+0x21f6c34: ldr       x8, [x0, #0xb8]
+0x21f6c38: ldrb      w8, [x8, #1]
+0x21f6c3c: cbz       w8, #0x21f6c4c
+0x21f6c40: ldr       x1, [x19, #0x10]
+0x21f6c44: ldr       w2, [x19, #0x18]
+0x21f6c48: bl        #0x21f6aa0 ; ProtoBase.PbReadBuf$$ConvertBytesEndian
+0x21f6c4c: adrp      x23, #0x2c99000
+0x21f6c50: ldr       x23, [x23, #0x490]
+0x21f6c54: ldr       x21, [x19, #0x10]
+0x21f6c58: ldr       w22, [x19, #0x18]
+0x21f6c5c: ldr       x0, [x23]
+0x21f6c60: ldrb      w8, [x0, #0x127]
+0x21f6c64: tbz       w8, #1, #0x21f6c74
+0x21f6c68: ldr       w8, [x0, #0xd8]
+0x21f6c6c: cbnz      w8, #0x21f6c74
+0x21f6c70: bl        #0xd14168 ; 
+0x21f6c74: mov       x0, x21
+0x21f6c78: mov       w1, w22
+0x21f6c7c: mov       x2, xzr
+0x21f6c80: bl        #0x1c21910 ; System.BitConverter$$ToSingle
+0x21f6c84: str       s0, [x20]
+0x21f6c88: ldrb      w8, [x19, #0x20]
+0x21f6c8c: cbz       w8, #0x21f6cc4
+0x21f6c90: ldr       x0, [x23]
+0x21f6c94: ldrb      w8, [x0, #0x127]
+0x21f6c98: tbz       w8, #1, #0x21f6cac
+0x21f6c9c: ldr       w8, [x0, #0xd8]
+0x21f6ca0: cbnz      w8, #0x21f6cac
+0x21f6ca4: bl        #0xd14168 ; 
+0x21f6ca8: ldr       x0, [x23]
+0x21f6cac: ldr       x8, [x0, #0xb8]
+0x21f6cb0: ldrb      w8, [x8, #1]
+0x21f6cb4: cbz       w8, #0x21f6cc4
+0x21f6cb8: ldr       x1, [x19, #0x10]
+0x21f6cbc: ldr       w2, [x19, #0x18]
+0x21f6cc0: bl        #0x21f6aa0 ; ProtoBase.PbReadBuf$$ConvertBytesEndian
+0x21f6cc4: ldr       w8, [x19, #0x18]
+0x21f6cc8: mov       w0, wzr
+0x21f6ccc: add       w8, w8, #4
+0x21f6cd0: str       w8, [x19, #0x18]
+0x21f6cd4: ldp       x29, x30, [sp, #0x30]
+0x21f6cd8: ldp       x20, x19, [sp, #0x20]
+0x21f6cdc: ldp       x22, x21, [sp, #0x10]
+0x21f6ce0: ldr       x23, [sp], #0x40
+0x21f6ce4: ret       

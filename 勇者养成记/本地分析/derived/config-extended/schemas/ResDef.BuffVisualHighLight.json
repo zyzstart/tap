@@ -1,0 +1,145 @@
+{
+  "namespace": "ResDef",
+  "name": "BuffVisualHighLight",
+  "fields": [
+    {
+      "type": "float",
+      "name": "HitFlashColorR",
+      "object_offset": 16
+    },
+    {
+      "type": "float",
+      "name": "HitFlashColorG",
+      "object_offset": 20
+    },
+    {
+      "type": "float",
+      "name": "HitFlashColorB",
+      "object_offset": 24
+    },
+    {
+      "type": "float",
+      "name": "HitFlashBias",
+      "object_offset": 28
+    }
+  ],
+  "unpack_va": 31242476,
+  "dump_line": 202444,
+  "layout": [
+    {
+      "type": "float",
+      "name": "HitFlashColorR",
+      "object_offset": 16,
+      "wire_type": "float",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcb920",
+          "target_va": "0x21f6b98",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readFloat"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readFloat",
+          "destination": [
+            "self",
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "type": "float",
+      "name": "HitFlashColorG",
+      "object_offset": 20,
+      "wire_type": "float",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcb944",
+          "target_va": "0x21f6b98",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readFloat"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readFloat",
+          "destination": [
+            "self",
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "type": "float",
+      "name": "HitFlashColorB",
+      "object_offset": 24,
+      "wire_type": "float",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcb968",
+          "target_va": "0x21f6b98",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readFloat"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readFloat",
+          "destination": [
+            "self",
+            24
+          ]
+        }
+      ]
+    },
+    {
+      "type": "float",
+      "name": "HitFlashBias",
+      "object_offset": 28,
+      "wire_type": "float",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcb9a8",
+          "target_va": "0x21f6b98",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readFloat"
+          ],
+          "opcode": "B",
+          "kind": "reader",
+          "reader": "readFloat",
+          "destination": [
+            "self",
+            28
+          ]
+        }
+      ]
+    }
+  ],
+  "native_evidence": {
+    "method_start_va": "0x1dcb8ec",
+    "instruction_steps": 36,
+    "event_count": 4,
+    "branch_evidence": [],
+    "loops": [],
+    "instruction_sha256": "bc2eda0abc90fd1ba01441811cebd07790cbabb8d1de54339655d8bd8983a3dd",
+    "gate": "concrete-success-path; all sequential readers/nested callees; full field/destination/stride matching",
+    "assumptions": [
+      "non-null input buffer and created nested objects/arrays",
+      "managed array bounds valid",
+      "AAPCS64 callee-saved register preservation",
+      "reader and nested call success; version 1 only"
+    ]
+  }
+}

@@ -1,0 +1,288 @@
+e7e9b4 sub sp, sp, #0x60
+e7e9b8 str d10, [sp, #0x10]
+e7e9bc stp d9, d8, [sp, #0x20]
+e7e9c0 stp x22, x21, [sp, #0x30]
+e7e9c4 stp x20, x19, [sp, #0x40]
+e7e9c8 stp x29, x30, [sp, #0x50]
+e7e9cc add x29, sp, #0x50
+e7e9d0 adrp x20, #0x2f3b000
+e7e9d4 ldrb w8, [x20, #0x288]
+e7e9d8 mov x19, x0
+e7e9dc tbnz w8, #0, #0xe7e9f8
+e7e9e0 adrp x8, #0x2c82000
+e7e9e4 ldr x8, [x8, #0x808]
+e7e9e8 ldr w0, [x8]
+e7e9ec bl #0xd04f28
+e7e9f0 mov w8, #1
+e7e9f4 strb w8, [x20, #0x288]
+e7e9f8 ldr x20, [x19, #0xf8]
+e7e9fc cbnz x20, #0xe7ea08
+e7ea00 mov x0, xzr
+e7ea04 bl #0xd2b72c
+e7ea08 str wzr, [x20, #0x1c]
+e7ea0c ldr x20, [x19, #0x108]
+e7ea10 cbnz x20, #0xe7ea1c
+e7ea14 mov x0, xzr
+e7ea18 bl #0xd2b72c
+e7ea1c str wzr, [x20, #0x34]
+e7ea20 adrp x8, #0x2cee000
+e7ea24 ldr x8, [x8, #0xa28]
+e7ea28 ldr x0, [x8]
+e7ea2c ldrb w8, [x0, #0x127]
+e7ea30 tbz w8, #1, #0xe7ea40
+e7ea34 ldr w8, [x0, #0xd8]
+e7ea38 cbnz w8, #0xe7ea40
+e7ea3c bl #0xd14168
+e7ea40 mov x0, xzr
+e7ea44 bl #0xdff278 A3Game.GameRuntime$$get_IsSkillEditor
+e7ea48 tbnz w0, #0, #0xe7ea54
+e7ea4c mov x0, x19
+e7ea50 bl #0xe7ee34 A3Game.BattleSys$$InitCameraMgr
+e7ea54 adrp x22, #0x2cdc000
+e7ea58 ldr x22, [x22, #0x9a0]
+e7ea5c ldr x0, [x22]
+e7ea60 bl #0xd38978
+e7ea64 adrp x8, #0x2cb5000
+e7ea68 ldr x8, [x8, #0x420]
+e7ea6c mov x2, xzr
+e7ea70 mov x20, x0
+e7ea74 ldr x1, [x8]
+e7ea78 bl #0x1c57fb8 UnityEngine.GameObject$$.ctor
+e7ea7c str x20, [x19, #0x28]
+e7ea80 cbnz x20, #0xe7ea8c
+e7ea84 mov x0, xzr
+e7ea88 bl #0xd2b72c
+e7ea8c mov x0, x20
+e7ea90 mov x1, xzr
+e7ea94 bl #0x1c583a8 UnityEngine.GameObject$$get_transform
+e7ea98 str x0, [x19, #0x30]
+e7ea9c ldr x0, [x22]
+e7eaa0 bl #0xd38978
+e7eaa4 adrp x8, #0x2cc5000
+e7eaa8 ldr x8, [x8, #0x1d0]
+e7eaac mov x2, xzr
+e7eab0 mov x20, x0
+e7eab4 ldr x1, [x8]
+e7eab8 bl #0x1c57fb8 UnityEngine.GameObject$$.ctor
+e7eabc str x20, [x19, #0x38]
+e7eac0 cbnz x20, #0xe7eacc
+e7eac4 mov x0, xzr
+e7eac8 bl #0xd2b72c
+e7eacc mov x0, x20
+e7ead0 mov x1, xzr
+e7ead4 bl #0x1c583a8 UnityEngine.GameObject$$get_transform
+e7ead8 ldr x20, [x19, #0x30]
+e7eadc mov x21, x0
+e7eae0 str x21, [x19, #0x40]
+e7eae4 cbnz x21, #0xe7eaec
+e7eae8 bl #0xd2b72c
+e7eaec mov x0, x21
+e7eaf0 mov x1, x20
+e7eaf4 mov x2, xzr
+e7eaf8 bl #0x21791a8 UnityEngine.Transform$$SetParent
+e7eafc ldr x0, [x22]
+e7eb00 bl #0xd38978
+e7eb04 adrp x8, #0x2ca7000
+e7eb08 ldr x8, [x8, #0x4f0]
+e7eb0c mov x2, xzr
+e7eb10 mov x20, x0
+e7eb14 ldr x1, [x8]
+e7eb18 bl #0x1c57fb8 UnityEngine.GameObject$$.ctor
+e7eb1c cbnz x20, #0xe7eb28
+e7eb20 mov x0, xzr
+e7eb24 bl #0xd2b72c
+e7eb28 mov x0, x20
+e7eb2c mov x1, xzr
+e7eb30 bl #0x1c583a8 UnityEngine.GameObject$$get_transform
+e7eb34 ldr x20, [x19, #0x30]
+e7eb38 mov x21, x0
+e7eb3c str x21, [x19, #0x48]
+e7eb40 cbnz x21, #0xe7eb48
+e7eb44 bl #0xd2b72c
+e7eb48 mov x0, x21
+e7eb4c mov x1, x20
+e7eb50 mov x2, xzr
+e7eb54 bl #0x21791a8 UnityEngine.Transform$$SetParent
+e7eb58 adrp x8, #0x22c3000
+e7eb5c ldr s2, [x8, #0x260]
+e7eb60 ldr x20, [x19, #0x48]
+e7eb64 fmov s0, #1.00000000
+e7eb68 mov x0, sp
+e7eb6c mov v1.16b, v0.16b
+e7eb70 mov x1, xzr
+e7eb74 str wzr, [sp, #8]
+e7eb78 str xzr, [sp]
+e7eb7c bl #0x217c0fc
+e7eb80 cbnz x20, #0xe7eb8c
+e7eb84 mov x0, xzr
+e7eb88 bl #0xd2b72c
+e7eb8c ldp s0, s1, [sp]
+e7eb90 ldr s2, [sp, #8]
+e7eb94 mov x0, x20
+e7eb98 mov x1, xzr
+e7eb9c bl #0x2178fe4 UnityEngine.Transform$$set_localScale
+e7eba0 ldr x0, [x22]
+e7eba4 bl #0xd38978
+e7eba8 adrp x8, #0x2d08000
+e7ebac ldr x8, [x8, #0x4b0]
+e7ebb0 mov x2, xzr
+e7ebb4 mov x20, x0
+e7ebb8 ldr x1, [x8]
+e7ebbc bl #0x1c57fb8 UnityEngine.GameObject$$.ctor
+e7ebc0 cbnz x20, #0xe7ebcc
+e7ebc4 mov x0, xzr
+e7ebc8 bl #0xd2b72c
+e7ebcc mov x0, x20
+e7ebd0 mov x1, xzr
+e7ebd4 bl #0x1c583a8 UnityEngine.GameObject$$get_transform
+e7ebd8 ldr x20, [x19, #0x30]
+e7ebdc mov x21, x0
+e7ebe0 str x21, [x19, #0x50]
+e7ebe4 cbnz x21, #0xe7ebec
+e7ebe8 bl #0xd2b72c
+e7ebec mov x0, x21
+e7ebf0 mov x1, x20
+e7ebf4 mov x2, xzr
+e7ebf8 bl #0x21791a8 UnityEngine.Transform$$SetParent
+e7ebfc adrp x8, #0x2cd8000
+e7ec00 ldr x8, [x8, #0x720]
+e7ec04 ldr x20, [x19, #0x30]
+e7ec08 ldr x0, [x8]
+e7ec0c ldrb w8, [x0, #0x127]
+e7ec10 tbz w8, #1, #0xe7ec20
+e7ec14 ldr w8, [x0, #0xd8]
+e7ec18 cbnz w8, #0xe7ec20
+e7ec1c bl #0xd14168
+e7ec20 mov x0, xzr
+e7ec24 bl #0x217cc64 UnityEngine.Vector3$$get_zero
+e7ec28 adrp x8, #0x2ca7000
+e7ec2c ldr x8, [x8, #0x4a8]
+e7ec30 mov v8.16b, v0.16b
+e7ec34 mov v9.16b, v1.16b
+e7ec38 mov v10.16b, v2.16b
+e7ec3c ldr x0, [x8]
+e7ec40 ldrb w8, [x0, #0x127]
+e7ec44 tbz w8, #1, #0xe7ec54
+e7ec48 ldr w8, [x0, #0xd8]
+e7ec4c cbnz w8, #0xe7ec54
+e7ec50 bl #0xd14168
+e7ec54 mov x0, xzr
+e7ec58 bl #0x1bdfa6c UnityEngine.Quaternion$$get_identity
+e7ec5c adrp x8, #0x2cf4000
+e7ec60 ldr x8, [x8, #0x3c8]
+e7ec64 mov v4.16b, v0.16b
+e7ec68 mov v5.16b, v1.16b
+e7ec6c mov v6.16b, v2.16b
+e7ec70 ldr x0, [x8]
+e7ec74 mov v7.16b, v3.16b
+e7ec78 mov x1, x20
+e7ec7c mov v0.16b, v8.16b
+e7ec80 mov v1.16b, v9.16b
+e7ec84 mov v2.16b, v10.16b
+e7ec88 mov v3.16b, v4.16b
+e7ec8c mov v4.16b, v5.16b
+e7ec90 mov v5.16b, v6.16b
+e7ec94 mov v6.16b, v7.16b
+e7ec98 mov x2, xzr
+e7ec9c bl #0x16f843c A3Game.DResources$$AllocGameObject
+e7eca0 ldr x20, [x19, #0x18]
+e7eca4 cbnz x20, #0xe7ecb0
+e7eca8 mov x0, xzr
+e7ecac bl #0xd2b72c
+e7ecb0 mov x0, x20
+e7ecb4 mov x1, xzr
+e7ecb8 bl #0x152daf0 A3Game.LevelMgr$$Init
+e7ecbc adrp x22, #0x2cfd000
+e7ecc0 ldr x22, [x22, #0xf48]
+e7ecc4 ldr x0, [x22]
+e7ecc8 ldrb w8, [x0, #0x127]
+e7eccc tbz w8, #1, #0xe7ece0
+e7ecd0 ldr w8, [x0, #0xd8]
+e7ecd4 cbnz w8, #0xe7ece0
+e7ecd8 bl #0xd14168
+e7ecdc ldr x0, [x22]
+e7ece0 ldr x8, [x0, #0xb8]
+e7ece4 ldr x20, [x8, #8]
+e7ece8 cbnz x20, #0xe7ed44
+e7ecec ldrb w9, [x0, #0x127]
+e7ecf0 tbz w9, #1, #0xe7ed08
+e7ecf4 ldr w9, [x0, #0xd8]
+e7ecf8 cbnz w9, #0xe7ed08
+e7ecfc bl #0xd14168
+e7ed00 ldr x8, [x22]
+e7ed04 ldr x8, [x8, #0xb8]
+e7ed08 ldr x21, [x8]
+e7ed0c adrp x8, #0x2d29000
+e7ed10 ldr x8, [x8, #0xd28]
+e7ed14 ldr x0, [x8]
+e7ed18 bl #0xd38978
+e7ed1c adrp x8, #0x2cb5000
+e7ed20 ldr x8, [x8, #0x908]
+e7ed24 mov x1, x21
+e7ed28 mov x3, xzr
+e7ed2c mov x20, x0
+e7ed30 ldr x2, [x8]
+e7ed34 bl #0x21c4420 System.Action$$.ctor
+e7ed38 ldr x8, [x22]
+e7ed3c ldr x8, [x8, #0xb8]
+e7ed40 str x20, [x8, #8]
+e7ed44 mov x0, x20
+e7ed48 mov x1, xzr
+e7ed4c bl #0x1a828a4 A3Game.SpeedHackHelper$$StartDetection
+e7ed50 mov x0, xzr
+e7ed54 bl #0xea06f8 A3Game.DBattleSocket$$GetBattleSocketCreateFunc
+e7ed58 mov x1, xzr
+e7ed5c bl #0x165883c A3BattleCore.BattleSockectFactory$$SetCreateFunc
+e7ed60 adrp x8, #0x2c8a000
+e7ed64 ldr x8, [x8, #0x3e0]
+e7ed68 ldr x0, [x8]
+e7ed6c bl #0x17fa038 A3Game.Singleton<UISpriteHelper>$$get_Instance
+e7ed70 mov x20, x0
+e7ed74 cbnz x20, #0xe7ed7c
+e7ed78 bl #0xd2b72c
+e7ed7c adrp x8, #0x2c83000
+e7ed80 ldr x8, [x8, #0x608]
+e7ed84 mov x0, x20
+e7ed88 ldr x1, [x8]
+e7ed8c bl #0x18e0c54 A3Game.ClientSaveData$$GetSaveData<object>
+e7ed90 mov x20, x0
+e7ed94 cbnz x20, #0xe7ed9c
+e7ed98 bl #0xd2b72c
+e7ed9c ldr x21, [x20, #0x18]
+e7eda0 cbnz x21, #0xe7edac
+e7eda4 mov x0, xzr
+e7eda8 bl #0xd2b72c
+e7edac ldr w8, [x21, #0x18]
+e7edb0 cmp w8, #6
+e7edb4 b.hi #0xe7edc8
+e7edb8 bl #0xd2c410
+e7edbc mov x1, xzr
+e7edc0 mov x2, xzr
+e7edc4 bl #0xd2b69c
+e7edc8 ldr w8, [x21, #0x38]
+e7edcc cmp w8, #1
+e7edd0 cset w8, lt
+e7edd4 strb w8, [x19, #0xc9]
+e7edd8 ldr x20, [x20, #0x18]
+e7eddc cbnz x20, #0xe7ede8
+e7ede0 mov x0, xzr
+e7ede4 bl #0xd2b72c
+e7ede8 ldr w8, [x20, #0x18]
+e7edec cmp w8, #7
+e7edf0 b.hi #0xe7ee04
+e7edf4 bl #0xd2c410
+e7edf8 mov x1, xzr
+e7edfc mov x2, xzr
+e7ee00 bl #0xd2b69c
+e7ee04 ldr w8, [x20, #0x3c]
+e7ee08 mov w0, #1
+e7ee0c cmp w8, #1
+e7ee10 cset w8, lt
+e7ee14 strb w8, [x19, #0xca]
+e7ee18 ldp x29, x30, [sp, #0x50]
+e7ee1c ldp x20, x19, [sp, #0x40]
+e7ee20 ldp x22, x21, [sp, #0x30]
+e7ee24 ldp d9, d8, [sp, #0x20]
+e7ee28 ldr d10, [sp, #0x10]
+e7ee2c add sp, sp, #0x60
+e7ee30 ret

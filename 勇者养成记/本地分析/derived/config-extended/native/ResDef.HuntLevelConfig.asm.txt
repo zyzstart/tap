@@ -1,0 +1,86 @@
+0x1d4ed54: str       x23, [sp, #-0x40]!
+0x1d4ed58: stp       x22, x21, [sp, #0x10]
+0x1d4ed5c: stp       x20, x19, [sp, #0x20]
+0x1d4ed60: stp       x29, x30, [sp, #0x30]
+0x1d4ed64: add       x29, sp, #0x30
+0x1d4ed68: mov       x21, x0
+0x1d4ed6c: mov       x19, x3
+0x1d4ed70: mov       x20, x1
+0x1d4ed74: add       x22, x21, #0x10
+0x1d4ed78: cbnz      x20, #0x1d4ed84
+0x1d4ed7c: mov       x0, xzr
+0x1d4ed80: bl        #0xd2b72c ; 
+0x1d4ed84: mov       x0, x20
+0x1d4ed88: mov       x1, x22
+0x1d4ed8c: mov       x2, xzr
+0x1d4ed90: bl        #0x21f67d0 ; ProtoBase.PbReadBuf$$readInt32
+0x1d4ed94: cbnz      w0, #0x1d4ee98
+0x1d4ed98: add       x22, x21, #0x14
+0x1d4ed9c: cbnz      x20, #0x1d4eda8
+0x1d4eda0: mov       x0, xzr
+0x1d4eda4: bl        #0xd2b72c ; 
+0x1d4eda8: mov       x0, x20
+0x1d4edac: mov       x1, x22
+0x1d4edb0: mov       x2, xzr
+0x1d4edb4: bl        #0x21f6668 ; ProtoBase.PbReadBuf$$readInt16
+0x1d4edb8: cbnz      w0, #0x1d4ee98
+0x1d4edbc: add       x22, x21, #0x18
+0x1d4edc0: cbnz      x20, #0x1d4edcc
+0x1d4edc4: mov       x0, xzr
+0x1d4edc8: bl        #0xd2b72c ; 
+0x1d4edcc: mov       w2, #0x80
+0x1d4edd0: mov       x0, x20
+0x1d4edd4: mov       x1, x22
+0x1d4edd8: mov       x3, xzr
+0x1d4eddc: bl        #0x21f6ce8 ; ProtoBase.PbReadBuf$$readString
+0x1d4ede0: cbnz      w0, #0x1d4ee98
+0x1d4ede4: add       x22, x21, #0x20
+0x1d4ede8: cbnz      x20, #0x1d4edf4
+0x1d4edec: mov       x0, xzr
+0x1d4edf0: bl        #0xd2b72c ; 
+0x1d4edf4: mov       x0, x20
+0x1d4edf8: mov       x1, x22
+0x1d4edfc: mov       x2, xzr
+0x1d4ee00: bl        #0x21f6908 ; ProtoBase.PbReadBuf$$readUInt32
+0x1d4ee04: cbnz      w0, #0x1d4ee98
+0x1d4ee08: add       x22, x21, #0x24
+0x1d4ee0c: cbnz      x20, #0x1d4ee18
+0x1d4ee10: mov       x0, xzr
+0x1d4ee14: bl        #0xd2b72c ; 
+0x1d4ee18: mov       x0, x20
+0x1d4ee1c: mov       x1, x22
+0x1d4ee20: mov       x2, xzr
+0x1d4ee24: bl        #0x21f6668 ; ProtoBase.PbReadBuf$$readInt16
+0x1d4ee28: cbnz      w0, #0x1d4ee98
+0x1d4ee2c: mov       x23, xzr
+0x1d4ee30: ldr       x22, [x21, #0x28]
+0x1d4ee34: cbnz      x22, #0x1d4ee40
+0x1d4ee38: mov       x0, xzr
+0x1d4ee3c: bl        #0xd2b72c ; 
+0x1d4ee40: ldr       w8, [x22, #0x18]
+0x1d4ee44: cmp       x23, x8
+0x1d4ee48: b.lo      #0x1d4ee5c
+0x1d4ee4c: bl        #0xd2c410 ; 
+0x1d4ee50: mov       x1, xzr
+0x1d4ee54: mov       x2, xzr
+0x1d4ee58: bl        #0xd2b69c ; 
+0x1d4ee5c: add       x8, x22, x23, lsl #3
+0x1d4ee60: ldr       x22, [x8, #0x20]
+0x1d4ee64: cbnz      x22, #0x1d4ee70
+0x1d4ee68: mov       x0, xzr
+0x1d4ee6c: bl        #0xd2b72c ; 
+0x1d4ee70: mov       w2, #1
+0x1d4ee74: mov       x0, x22
+0x1d4ee78: mov       x1, x20
+0x1d4ee7c: mov       x3, x19
+0x1d4ee80: mov       x4, xzr
+0x1d4ee84: bl        #0x1e879c8 ; ResDef.ResAttrImpactData$$unpack
+0x1d4ee88: cbnz      w0, #0x1d4ee98
+0x1d4ee8c: cmp       x23, #4
+0x1d4ee90: add       x23, x23, #1
+0x1d4ee94: b.lt      #0x1d4ee30
+0x1d4ee98: ldp       x29, x30, [sp, #0x30]
+0x1d4ee9c: ldp       x20, x19, [sp, #0x20]
+0x1d4eea0: ldp       x22, x21, [sp, #0x10]
+0x1d4eea4: ldr       x23, [sp], #0x40
+0x1d4eea8: ret       

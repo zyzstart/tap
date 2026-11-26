@@ -1,0 +1,57 @@
+0x1643200: stp       x24, x23, [sp, #-0x40]!
+0x1643204: stp       x22, x21, [sp, #0x10]
+0x1643208: stp       x20, x19, [sp, #0x20]
+0x164320c: stp       x29, x30, [sp, #0x30]
+0x1643210: add       x29, sp, #0x30
+0x1643214: mov       x20, x0
+0x1643218: mov       x19, x1
+0x164321c: add       x21, x20, #0x10
+0x1643220: cbnz      x19, #0x164322c
+0x1643224: mov       x0, xzr
+0x1643228: bl        #0xd2b72c ; 
+0x164322c: mov       x0, x19
+0x1643230: mov       x1, x21
+0x1643234: mov       x2, xzr
+0x1643238: bl        #0x21f6908 ; ProtoBase.PbReadBuf$$readUInt32
+0x164323c: cbnz      w0, #0x16432d0
+0x1643240: add       x21, x20, #0x14
+0x1643244: cbnz      x19, #0x1643250
+0x1643248: mov       x0, xzr
+0x164324c: bl        #0xd2b72c ; 
+0x1643250: mov       x0, x19
+0x1643254: mov       x1, x21
+0x1643258: mov       x2, xzr
+0x164325c: bl        #0x21f6908 ; ProtoBase.PbReadBuf$$readUInt32
+0x1643260: cbnz      w0, #0x16432d0
+0x1643264: mov       x21, #-1
+0x1643268: mov       w22, #0x20
+0x164326c: ldr       x23, [x20, #0x18]
+0x1643270: cbnz      x23, #0x164327c
+0x1643274: mov       x0, xzr
+0x1643278: bl        #0xd2b72c ; 
+0x164327c: add       x24, x21, #1
+0x1643280: cbnz      x19, #0x164328c
+0x1643284: mov       x0, xzr
+0x1643288: bl        #0xd2b72c ; 
+0x164328c: ldr       w8, [x23, #0x18]
+0x1643290: cmp       x24, x8
+0x1643294: b.lo      #0x16432a8
+0x1643298: bl        #0xd2c410 ; 
+0x164329c: mov       x1, xzr
+0x16432a0: mov       x2, xzr
+0x16432a4: bl        #0xd2b69c ; 
+0x16432a8: add       x1, x23, x22
+0x16432ac: mov       x0, x19
+0x16432b0: mov       x2, xzr
+0x16432b4: bl        #0x21f6908 ; ProtoBase.PbReadBuf$$readUInt32
+0x16432b8: cbnz      w0, #0x16432d0
+0x16432bc: add       x21, x21, #1
+0x16432c0: cmp       x21, #5
+0x16432c4: add       x22, x22, #4
+0x16432c8: b.lt      #0x164326c
+0x16432cc: mov       w0, wzr
+0x16432d0: ldp       x29, x30, [sp, #0x30]
+0x16432d4: ldp       x20, x19, [sp, #0x20]
+0x16432d8: ldp       x22, x21, [sp, #0x10]
+0x16432dc: ldp       x24, x23, [sp], #0x40
+0x16432e0: ret       

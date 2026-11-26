@@ -1,0 +1,545 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_summondispointposconfig.bytes.ab",
+    "path_id": 7097850888904847306,
+    "name": "SummonDisPointPosConfig",
+    "sha256": "6d823a31cf6d973f20f061b27be003d0c683ee241d198906aefc19613362c233",
+    "export": "derived/unity/text/assets_resources_config_resbin_summondispointposconfig.bytes/SummonDisPointPosConfig__7097850888904847306.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 820,
+      "version": 1,
+      "record_count": 50,
+      "stored_crc32": "b4aec91d",
+      "computed_inverted_crc32": "b4aec91d"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "SummonDisPointPosConfig",
+      "fields": [
+        {
+          "type": "uint",
+          "name": "DisPointId",
+          "object_offset": 16
+        },
+        {
+          "type": "uint",
+          "name": "DisPointY",
+          "object_offset": 20
+        },
+        {
+          "type": "uint",
+          "name": "DisPointX",
+          "object_offset": 24
+        },
+        {
+          "type": "uint",
+          "name": "DisPointLv",
+          "object_offset": 28
+        }
+      ],
+      "unpack_va": 32083656,
+      "dump_line": 212063
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1e98efc",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e98f20",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e98f44",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e98f84",
+        "target_va": "0x21f6908",
+        "opcode": "B-tail",
+        "reader": "readUInt32",
+        "destination_object_offset": 28,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 50
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "DisPointId": 1,
+      "DisPointY": 1,
+      "DisPointX": 1,
+      "DisPointLv": 9,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 36,
+      "DisPointId": 2,
+      "DisPointY": 1,
+      "DisPointX": 2,
+      "DisPointLv": 9,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 52,
+      "DisPointId": 3,
+      "DisPointY": 2,
+      "DisPointX": 1,
+      "DisPointLv": 8,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 68,
+      "DisPointId": 4,
+      "DisPointY": 2,
+      "DisPointX": 2,
+      "DisPointLv": 8,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 84,
+      "DisPointId": 5,
+      "DisPointY": 2,
+      "DisPointX": 3,
+      "DisPointLv": 8,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 100,
+      "DisPointId": 6,
+      "DisPointY": 3,
+      "DisPointX": 1,
+      "DisPointLv": 7,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 116,
+      "DisPointId": 7,
+      "DisPointY": 3,
+      "DisPointX": 2,
+      "DisPointLv": 7,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 132,
+      "DisPointId": 8,
+      "DisPointY": 3,
+      "DisPointX": 3,
+      "DisPointLv": 7,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 148,
+      "DisPointId": 9,
+      "DisPointY": 4,
+      "DisPointX": 1,
+      "DisPointLv": 7,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 164,
+      "DisPointId": 10,
+      "DisPointY": 4,
+      "DisPointX": 2,
+      "DisPointLv": 7,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 180,
+      "DisPointId": 11,
+      "DisPointY": 4,
+      "DisPointX": 3,
+      "DisPointLv": 7,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 196,
+      "DisPointId": 12,
+      "DisPointY": 5,
+      "DisPointX": 1,
+      "DisPointLv": 6,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 212,
+      "DisPointId": 13,
+      "DisPointY": 5,
+      "DisPointX": 2,
+      "DisPointLv": 6,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 228,
+      "DisPointId": 14,
+      "DisPointY": 5,
+      "DisPointX": 3,
+      "DisPointLv": 6,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 244,
+      "DisPointId": 15,
+      "DisPointY": 6,
+      "DisPointX": 1,
+      "DisPointLv": 6,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 260,
+      "DisPointId": 16,
+      "DisPointY": 6,
+      "DisPointX": 2,
+      "DisPointLv": 6,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 276,
+      "DisPointId": 17,
+      "DisPointY": 6,
+      "DisPointX": 3,
+      "DisPointLv": 6,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 292,
+      "DisPointId": 18,
+      "DisPointY": 7,
+      "DisPointX": 1,
+      "DisPointLv": 5,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 308,
+      "DisPointId": 19,
+      "DisPointY": 7,
+      "DisPointX": 2,
+      "DisPointLv": 5,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 19,
+      "_byte_offset": 324,
+      "DisPointId": 20,
+      "DisPointY": 7,
+      "DisPointX": 3,
+      "DisPointLv": 5,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 20,
+      "_byte_offset": 340,
+      "DisPointId": 21,
+      "DisPointY": 8,
+      "DisPointX": 1,
+      "DisPointLv": 5,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 21,
+      "_byte_offset": 356,
+      "DisPointId": 22,
+      "DisPointY": 8,
+      "DisPointX": 2,
+      "DisPointLv": 5,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 22,
+      "_byte_offset": 372,
+      "DisPointId": 23,
+      "DisPointY": 8,
+      "DisPointX": 3,
+      "DisPointLv": 5,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 23,
+      "_byte_offset": 388,
+      "DisPointId": 24,
+      "DisPointY": 9,
+      "DisPointX": 1,
+      "DisPointLv": 4,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 24,
+      "_byte_offset": 404,
+      "DisPointId": 25,
+      "DisPointY": 9,
+      "DisPointX": 2,
+      "DisPointLv": 4,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 25,
+      "_byte_offset": 420,
+      "DisPointId": 26,
+      "DisPointY": 9,
+      "DisPointX": 3,
+      "DisPointLv": 4,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 26,
+      "_byte_offset": 436,
+      "DisPointId": 27,
+      "DisPointY": 10,
+      "DisPointX": 1,
+      "DisPointLv": 4,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 27,
+      "_byte_offset": 452,
+      "DisPointId": 28,
+      "DisPointY": 10,
+      "DisPointX": 2,
+      "DisPointLv": 4,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 28,
+      "_byte_offset": 468,
+      "DisPointId": 29,
+      "DisPointY": 10,
+      "DisPointX": 3,
+      "DisPointLv": 4,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 29,
+      "_byte_offset": 484,
+      "DisPointId": 30,
+      "DisPointY": 11,
+      "DisPointX": 1,
+      "DisPointLv": 3,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 30,
+      "_byte_offset": 500,
+      "DisPointId": 31,
+      "DisPointY": 11,
+      "DisPointX": 2,
+      "DisPointLv": 3,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 31,
+      "_byte_offset": 516,
+      "DisPointId": 32,
+      "DisPointY": 11,
+      "DisPointX": 3,
+      "DisPointLv": 3,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 32,
+      "_byte_offset": 532,
+      "DisPointId": 33,
+      "DisPointY": 12,
+      "DisPointX": 1,
+      "DisPointLv": 3,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 33,
+      "_byte_offset": 548,
+      "DisPointId": 34,
+      "DisPointY": 12,
+      "DisPointX": 2,
+      "DisPointLv": 3,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 34,
+      "_byte_offset": 564,
+      "DisPointId": 35,
+      "DisPointY": 12,
+      "DisPointX": 3,
+      "DisPointLv": 3,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 35,
+      "_byte_offset": 580,
+      "DisPointId": 36,
+      "DisPointY": 13,
+      "DisPointX": 1,
+      "DisPointLv": 2,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 36,
+      "_byte_offset": 596,
+      "DisPointId": 37,
+      "DisPointY": 13,
+      "DisPointX": 2,
+      "DisPointLv": 2,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 37,
+      "_byte_offset": 612,
+      "DisPointId": 38,
+      "DisPointY": 13,
+      "DisPointX": 3,
+      "DisPointLv": 2,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 38,
+      "_byte_offset": 628,
+      "DisPointId": 39,
+      "DisPointY": 14,
+      "DisPointX": 1,
+      "DisPointLv": 2,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 39,
+      "_byte_offset": 644,
+      "DisPointId": 40,
+      "DisPointY": 14,
+      "DisPointX": 2,
+      "DisPointLv": 2,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 40,
+      "_byte_offset": 660,
+      "DisPointId": 41,
+      "DisPointY": 14,
+      "DisPointX": 3,
+      "DisPointLv": 2,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 41,
+      "_byte_offset": 676,
+      "DisPointId": 42,
+      "DisPointY": 15,
+      "DisPointX": 1,
+      "DisPointLv": 1,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 42,
+      "_byte_offset": 692,
+      "DisPointId": 43,
+      "DisPointY": 15,
+      "DisPointX": 2,
+      "DisPointLv": 1,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 43,
+      "_byte_offset": 708,
+      "DisPointId": 44,
+      "DisPointY": 15,
+      "DisPointX": 3,
+      "DisPointLv": 1,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 44,
+      "_byte_offset": 724,
+      "DisPointId": 45,
+      "DisPointY": 16,
+      "DisPointX": 1,
+      "DisPointLv": 1,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 45,
+      "_byte_offset": 740,
+      "DisPointId": 46,
+      "DisPointY": 16,
+      "DisPointX": 2,
+      "DisPointLv": 1,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 46,
+      "_byte_offset": 756,
+      "DisPointId": 47,
+      "DisPointY": 16,
+      "DisPointX": 3,
+      "DisPointLv": 1,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 47,
+      "_byte_offset": 772,
+      "DisPointId": 48,
+      "DisPointY": 17,
+      "DisPointX": 1,
+      "DisPointLv": 1,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 48,
+      "_byte_offset": 788,
+      "DisPointId": 49,
+      "DisPointY": 17,
+      "DisPointX": 2,
+      "DisPointLv": 1,
+      "_byte_length": 16
+    },
+    {
+      "_record_index": 49,
+      "_byte_offset": 804,
+      "DisPointId": 50,
+      "DisPointY": 17,
+      "DisPointX": 3,
+      "DisPointLv": 1,
+      "_byte_length": 16
+    }
+  ]
+}

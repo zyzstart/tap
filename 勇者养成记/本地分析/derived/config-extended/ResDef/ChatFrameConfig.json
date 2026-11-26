@@ -1,0 +1,378 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_chatframeconfig.bytes.ab",
+    "path_id": 305607098050290695,
+    "name": "ChatFrameConfig",
+    "sha256": "d90de1b1ae9f8e4be8812fb9c5be8b6928d820e1e1c74a9be0d9ac88b841dfbe",
+    "export": "derived/unity/text/assets_resources_config_resbin_chatframeconfig.bytes/ChatFrameConfig__305607098050290695.bin",
+    "schema": "ResDef.ChatFrameConfig",
+    "path_id_decimal": "305607098050290695",
+    "legacy_status": "raw-header-verified",
+    "legacy_reason": "Unsupported arrays/nested/enum fields: HeadActiveConditionData ActiveCondition, ResAttrImpactData[] ImpactData",
+    "status": "decoded-validated-native-recursive",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 983,
+      "version": 1,
+      "record_count": 7,
+      "stored_crc32": "c3aedbaa",
+      "computed_inverted_crc32": "c3aedbaa"
+    },
+    "native_layout_verified": true,
+    "schema_file": "derived/config-extended/schemas/ResDef.ChatFrameConfig.json",
+    "minimum_record_size": 88,
+    "min_expected_payload_bytes": 616,
+    "actual_payload_bytes": 963,
+    "decoded_record_count": 7,
+    "validation": {
+      "header_verified": true,
+      "count_verified": true,
+      "exact_eof": true,
+      "full_reencode_equal": true,
+      "full_reencode_sha256": "d90de1b1ae9f8e4be8812fb9c5be8b6928d820e1e1c74a9be0d9ac88b841dfbe",
+      "decoded_node_count": 231,
+      "payload_bytes": 963
+    },
+    "arrays": [
+      {
+        "field": "ImpactData",
+        "count": 4,
+        "count_encoding": "none-native-fixed"
+      }
+    ],
+    "decoded_json": "derived/config-extended/ResDef/ChatFrameConfig.json",
+    "decoded_csv": "derived/config-extended/ResDef/ChatFrameConfig.csv"
+  },
+  "precision": "Exact JSON integer number tokens, with decimal-string mirrors for every int64/uint64/FP. FP is raw signed int64; no scaling.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "ChatFrameID": 3001,
+      "Name": "默认",
+      "Icon": "liaotian_img_001",
+      "TextColor": "665A4A",
+      "IconLeftOffset": 0.0,
+      "IconRightOffset": 0.0,
+      "IconTopOffset": 0.0,
+      "IconBottomOffset": 0.0,
+      "ValidTime": 0,
+      "Desc": "",
+      "ActiveType": 0,
+      "ShowType": 0,
+      "SelfDefaultFrame": 0,
+      "ActiveCondition": {
+        "ArrConditionParam": [
+          0,
+          0
+        ]
+      },
+      "ActiveDesc": "默认解锁",
+      "ImpactData": [
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 128
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 148,
+      "ChatFrameID": 3002,
+      "Name": "默认",
+      "Icon": "liaotian_img_001",
+      "TextColor": "665A4A",
+      "IconLeftOffset": 0.0,
+      "IconRightOffset": 0.0,
+      "IconTopOffset": 0.0,
+      "IconBottomOffset": 0.0,
+      "ValidTime": 0,
+      "Desc": "",
+      "ActiveType": 0,
+      "ShowType": 0,
+      "SelfDefaultFrame": 1,
+      "ActiveCondition": {
+        "ArrConditionParam": [
+          0,
+          0
+        ]
+      },
+      "ActiveDesc": "默认解锁",
+      "ImpactData": [
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 128
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 276,
+      "ChatFrameID": 3003,
+      "Name": "烈焰暴龙",
+      "Icon": "head_frame_lybl02",
+      "TextColor": "febf58",
+      "IconLeftOffset": -10.0,
+      "IconRightOffset": -45.0,
+      "IconTopOffset": 0.0,
+      "IconBottomOffset": 0.0,
+      "ValidTime": 0,
+      "Desc": "",
+      "ActiveType": 2,
+      "ShowType": 0,
+      "SelfDefaultFrame": 0,
+      "ActiveCondition": {
+        "ArrConditionParam": [
+          548001,
+          1
+        ]
+      },
+      "ActiveDesc": "通过活动获得",
+      "ImpactData": [
+        {
+          "DataType": 2,
+          "AddType": 1,
+          "Value": 45.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 190.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 10.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 141
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 417,
+      "ChatFrameID": 3004,
+      "Name": "愚你同乐",
+      "Icon": "head_frame_yntl02",
+      "TextColor": "f5e6ff",
+      "IconLeftOffset": -10.0,
+      "IconRightOffset": -45.0,
+      "IconTopOffset": 0.0,
+      "IconBottomOffset": 0.0,
+      "ValidTime": 0,
+      "Desc": "",
+      "ActiveType": 2,
+      "ShowType": 0,
+      "SelfDefaultFrame": 0,
+      "ActiveCondition": {
+        "ArrConditionParam": [
+          548002,
+          1
+        ]
+      },
+      "ActiveDesc": "通过活动获得",
+      "ImpactData": [
+        {
+          "DataType": 2,
+          "AddType": 1,
+          "Value": 45.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 190.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 10.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 141
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 558,
+      "ChatFrameID": 3005,
+      "Name": "花好月圆",
+      "Icon": "head_frame_hhyy02",
+      "TextColor": "f5e6ff",
+      "IconLeftOffset": -10.0,
+      "IconRightOffset": -45.0,
+      "IconTopOffset": 0.0,
+      "IconBottomOffset": 0.0,
+      "ValidTime": 0,
+      "Desc": "",
+      "ActiveType": 2,
+      "ShowType": 0,
+      "SelfDefaultFrame": 0,
+      "ActiveCondition": {
+        "ArrConditionParam": [
+          548003,
+          1
+        ]
+      },
+      "ActiveDesc": "通过活动获得",
+      "ImpactData": [
+        {
+          "DataType": 2,
+          "AddType": 1,
+          "Value": 45.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 190.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 10.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 141
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 699,
+      "ChatFrameID": 3006,
+      "Name": "浴火凤凰",
+      "Icon": "head_frame_yhfh_02",
+      "TextColor": "f5e6ff",
+      "IconLeftOffset": -10.0,
+      "IconRightOffset": -45.0,
+      "IconTopOffset": 0.0,
+      "IconBottomOffset": 0.0,
+      "ValidTime": 0,
+      "Desc": "",
+      "ActiveType": 2,
+      "ShowType": 0,
+      "SelfDefaultFrame": 0,
+      "ActiveCondition": {
+        "ArrConditionParam": [
+          548004,
+          1
+        ]
+      },
+      "ActiveDesc": "通过活动获得",
+      "ImpactData": [
+        {
+          "DataType": 2,
+          "AddType": 1,
+          "Value": 45.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 190.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 10.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 142
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 841,
+      "ChatFrameID": 3007,
+      "Name": "万圣之夜",
+      "Icon": "head_frame_wszy_02",
+      "TextColor": "f5e6ff",
+      "IconLeftOffset": -10.0,
+      "IconRightOffset": -45.0,
+      "IconTopOffset": 0.0,
+      "IconBottomOffset": 0.0,
+      "ValidTime": 0,
+      "Desc": "",
+      "ActiveType": 2,
+      "ShowType": 0,
+      "SelfDefaultFrame": 0,
+      "ActiveCondition": {
+        "ArrConditionParam": [
+          548005,
+          1
+        ]
+      },
+      "ActiveDesc": "通过活动获得",
+      "ImpactData": [
+        {
+          "DataType": 2,
+          "AddType": 1,
+          "Value": 45.0
+        },
+        {
+          "DataType": 1,
+          "AddType": 1,
+          "Value": 190.0
+        },
+        {
+          "DataType": 32,
+          "AddType": 1,
+          "Value": 10.0
+        },
+        {
+          "DataType": 0,
+          "AddType": 0,
+          "Value": 0.0
+        }
+      ],
+      "_byte_length": 142
+    }
+  ]
+}

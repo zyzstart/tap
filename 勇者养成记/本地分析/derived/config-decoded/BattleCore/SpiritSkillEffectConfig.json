@@ -1,0 +1,2321 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_fp_spiritskilleffectconfig.bytes.ab",
+    "path_id": -4824432305761263056,
+    "name": "SpiritSkillEffectConfig",
+    "sha256": "5424f4b319935781416349b3820c2c7eef1023b0c407419035b2da02d5583df2",
+    "export": "derived/unity/text/assets_resources_config_resbin_fp_spiritskilleffectconfig.bytes/SpiritSkillEffectConfig__-4824432305761263056.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 3380,
+      "version": 1,
+      "record_count": 280,
+      "stored_crc32": "340f9fda",
+      "computed_inverted_crc32": "340f9fda"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "BattleCore",
+      "name": "SpiritSkillEffectConfig",
+      "fields": [
+        {
+          "type": "int",
+          "name": "EffectID",
+          "object_offset": 16
+        },
+        {
+          "type": "uint",
+          "name": "SkillLibraryID",
+          "object_offset": 20
+        },
+        {
+          "type": "uint",
+          "name": "BuffID",
+          "object_offset": 24
+        }
+      ],
+      "unpack_va": 35220136,
+      "dump_line": 168560
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x2196adc",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x2196b00",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x2196b40",
+        "target_va": "0x21f6908",
+        "opcode": "B-tail",
+        "reader": "readUInt32",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 280
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "EffectID": 101,
+      "SkillLibraryID": 20101,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 32,
+      "EffectID": 102,
+      "SkillLibraryID": 20102,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 44,
+      "EffectID": 103,
+      "SkillLibraryID": 20103,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 56,
+      "EffectID": 104,
+      "SkillLibraryID": 20104,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 68,
+      "EffectID": 105,
+      "SkillLibraryID": 20105,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 80,
+      "EffectID": 106,
+      "SkillLibraryID": 20106,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 92,
+      "EffectID": 107,
+      "SkillLibraryID": 20107,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 104,
+      "EffectID": 108,
+      "SkillLibraryID": 20108,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 116,
+      "EffectID": 109,
+      "SkillLibraryID": 20109,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 128,
+      "EffectID": 110,
+      "SkillLibraryID": 20110,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 140,
+      "EffectID": 111,
+      "SkillLibraryID": 20111,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 152,
+      "EffectID": 112,
+      "SkillLibraryID": 20112,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 164,
+      "EffectID": 113,
+      "SkillLibraryID": 20113,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 176,
+      "EffectID": 114,
+      "SkillLibraryID": 20114,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 188,
+      "EffectID": 115,
+      "SkillLibraryID": 20115,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 200,
+      "EffectID": 116,
+      "SkillLibraryID": 20116,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 212,
+      "EffectID": 117,
+      "SkillLibraryID": 20117,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 224,
+      "EffectID": 118,
+      "SkillLibraryID": 20118,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 236,
+      "EffectID": 119,
+      "SkillLibraryID": 20119,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 19,
+      "_byte_offset": 248,
+      "EffectID": 120,
+      "SkillLibraryID": 20120,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 20,
+      "_byte_offset": 260,
+      "EffectID": 121,
+      "SkillLibraryID": 20121,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 21,
+      "_byte_offset": 272,
+      "EffectID": 122,
+      "SkillLibraryID": 20122,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 22,
+      "_byte_offset": 284,
+      "EffectID": 123,
+      "SkillLibraryID": 20123,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 23,
+      "_byte_offset": 296,
+      "EffectID": 124,
+      "SkillLibraryID": 20124,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 24,
+      "_byte_offset": 308,
+      "EffectID": 125,
+      "SkillLibraryID": 20125,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 25,
+      "_byte_offset": 320,
+      "EffectID": 126,
+      "SkillLibraryID": 20126,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 26,
+      "_byte_offset": 332,
+      "EffectID": 127,
+      "SkillLibraryID": 20127,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 27,
+      "_byte_offset": 344,
+      "EffectID": 128,
+      "SkillLibraryID": 20128,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 28,
+      "_byte_offset": 356,
+      "EffectID": 129,
+      "SkillLibraryID": 20129,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 29,
+      "_byte_offset": 368,
+      "EffectID": 130,
+      "SkillLibraryID": 20130,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 30,
+      "_byte_offset": 380,
+      "EffectID": 131,
+      "SkillLibraryID": 20131,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 31,
+      "_byte_offset": 392,
+      "EffectID": 132,
+      "SkillLibraryID": 20132,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 32,
+      "_byte_offset": 404,
+      "EffectID": 133,
+      "SkillLibraryID": 20133,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 33,
+      "_byte_offset": 416,
+      "EffectID": 134,
+      "SkillLibraryID": 20134,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 34,
+      "_byte_offset": 428,
+      "EffectID": 135,
+      "SkillLibraryID": 20135,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 35,
+      "_byte_offset": 440,
+      "EffectID": 136,
+      "SkillLibraryID": 20136,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 36,
+      "_byte_offset": 452,
+      "EffectID": 137,
+      "SkillLibraryID": 20137,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 37,
+      "_byte_offset": 464,
+      "EffectID": 138,
+      "SkillLibraryID": 20138,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 38,
+      "_byte_offset": 476,
+      "EffectID": 139,
+      "SkillLibraryID": 20139,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 39,
+      "_byte_offset": 488,
+      "EffectID": 140,
+      "SkillLibraryID": 20140,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 40,
+      "_byte_offset": 500,
+      "EffectID": 141,
+      "SkillLibraryID": 20141,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 41,
+      "_byte_offset": 512,
+      "EffectID": 142,
+      "SkillLibraryID": 20142,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 42,
+      "_byte_offset": 524,
+      "EffectID": 143,
+      "SkillLibraryID": 20143,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 43,
+      "_byte_offset": 536,
+      "EffectID": 144,
+      "SkillLibraryID": 20144,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 44,
+      "_byte_offset": 548,
+      "EffectID": 145,
+      "SkillLibraryID": 20145,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 45,
+      "_byte_offset": 560,
+      "EffectID": 146,
+      "SkillLibraryID": 20146,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 46,
+      "_byte_offset": 572,
+      "EffectID": 147,
+      "SkillLibraryID": 20147,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 47,
+      "_byte_offset": 584,
+      "EffectID": 148,
+      "SkillLibraryID": 20148,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 48,
+      "_byte_offset": 596,
+      "EffectID": 149,
+      "SkillLibraryID": 20149,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 49,
+      "_byte_offset": 608,
+      "EffectID": 150,
+      "SkillLibraryID": 20150,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 50,
+      "_byte_offset": 620,
+      "EffectID": 151,
+      "SkillLibraryID": 20151,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 51,
+      "_byte_offset": 632,
+      "EffectID": 152,
+      "SkillLibraryID": 20152,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 52,
+      "_byte_offset": 644,
+      "EffectID": 153,
+      "SkillLibraryID": 20153,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 53,
+      "_byte_offset": 656,
+      "EffectID": 154,
+      "SkillLibraryID": 20154,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 54,
+      "_byte_offset": 668,
+      "EffectID": 155,
+      "SkillLibraryID": 20155,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 55,
+      "_byte_offset": 680,
+      "EffectID": 156,
+      "SkillLibraryID": 20156,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 56,
+      "_byte_offset": 692,
+      "EffectID": 157,
+      "SkillLibraryID": 20157,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 57,
+      "_byte_offset": 704,
+      "EffectID": 158,
+      "SkillLibraryID": 20158,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 58,
+      "_byte_offset": 716,
+      "EffectID": 159,
+      "SkillLibraryID": 20159,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 59,
+      "_byte_offset": 728,
+      "EffectID": 160,
+      "SkillLibraryID": 20160,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 60,
+      "_byte_offset": 740,
+      "EffectID": 161,
+      "SkillLibraryID": 20161,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 61,
+      "_byte_offset": 752,
+      "EffectID": 162,
+      "SkillLibraryID": 20162,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 62,
+      "_byte_offset": 764,
+      "EffectID": 163,
+      "SkillLibraryID": 20163,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 63,
+      "_byte_offset": 776,
+      "EffectID": 164,
+      "SkillLibraryID": 20164,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 64,
+      "_byte_offset": 788,
+      "EffectID": 165,
+      "SkillLibraryID": 20165,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 65,
+      "_byte_offset": 800,
+      "EffectID": 166,
+      "SkillLibraryID": 20166,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 66,
+      "_byte_offset": 812,
+      "EffectID": 167,
+      "SkillLibraryID": 20167,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 67,
+      "_byte_offset": 824,
+      "EffectID": 168,
+      "SkillLibraryID": 20168,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 68,
+      "_byte_offset": 836,
+      "EffectID": 169,
+      "SkillLibraryID": 20169,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 69,
+      "_byte_offset": 848,
+      "EffectID": 170,
+      "SkillLibraryID": 20170,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 70,
+      "_byte_offset": 860,
+      "EffectID": 171,
+      "SkillLibraryID": 20171,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 71,
+      "_byte_offset": 872,
+      "EffectID": 172,
+      "SkillLibraryID": 20172,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 72,
+      "_byte_offset": 884,
+      "EffectID": 173,
+      "SkillLibraryID": 20173,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 73,
+      "_byte_offset": 896,
+      "EffectID": 174,
+      "SkillLibraryID": 20174,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 74,
+      "_byte_offset": 908,
+      "EffectID": 175,
+      "SkillLibraryID": 20175,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 75,
+      "_byte_offset": 920,
+      "EffectID": 176,
+      "SkillLibraryID": 20176,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 76,
+      "_byte_offset": 932,
+      "EffectID": 177,
+      "SkillLibraryID": 20177,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 77,
+      "_byte_offset": 944,
+      "EffectID": 178,
+      "SkillLibraryID": 20178,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 78,
+      "_byte_offset": 956,
+      "EffectID": 179,
+      "SkillLibraryID": 20179,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 79,
+      "_byte_offset": 968,
+      "EffectID": 180,
+      "SkillLibraryID": 20180,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 80,
+      "_byte_offset": 980,
+      "EffectID": 181,
+      "SkillLibraryID": 20181,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 81,
+      "_byte_offset": 992,
+      "EffectID": 182,
+      "SkillLibraryID": 20182,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 82,
+      "_byte_offset": 1004,
+      "EffectID": 183,
+      "SkillLibraryID": 20183,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 83,
+      "_byte_offset": 1016,
+      "EffectID": 184,
+      "SkillLibraryID": 20184,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 84,
+      "_byte_offset": 1028,
+      "EffectID": 185,
+      "SkillLibraryID": 20185,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 85,
+      "_byte_offset": 1040,
+      "EffectID": 186,
+      "SkillLibraryID": 20186,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 86,
+      "_byte_offset": 1052,
+      "EffectID": 187,
+      "SkillLibraryID": 20187,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 87,
+      "_byte_offset": 1064,
+      "EffectID": 188,
+      "SkillLibraryID": 20188,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 88,
+      "_byte_offset": 1076,
+      "EffectID": 189,
+      "SkillLibraryID": 20189,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 89,
+      "_byte_offset": 1088,
+      "EffectID": 190,
+      "SkillLibraryID": 20190,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 90,
+      "_byte_offset": 1100,
+      "EffectID": 191,
+      "SkillLibraryID": 20191,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 91,
+      "_byte_offset": 1112,
+      "EffectID": 192,
+      "SkillLibraryID": 20192,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 92,
+      "_byte_offset": 1124,
+      "EffectID": 193,
+      "SkillLibraryID": 20193,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 93,
+      "_byte_offset": 1136,
+      "EffectID": 194,
+      "SkillLibraryID": 20194,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 94,
+      "_byte_offset": 1148,
+      "EffectID": 195,
+      "SkillLibraryID": 20195,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 95,
+      "_byte_offset": 1160,
+      "EffectID": 196,
+      "SkillLibraryID": 20196,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 96,
+      "_byte_offset": 1172,
+      "EffectID": 197,
+      "SkillLibraryID": 20197,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 97,
+      "_byte_offset": 1184,
+      "EffectID": 198,
+      "SkillLibraryID": 20198,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 98,
+      "_byte_offset": 1196,
+      "EffectID": 199,
+      "SkillLibraryID": 20199,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 99,
+      "_byte_offset": 1208,
+      "EffectID": 200,
+      "SkillLibraryID": 20200,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 100,
+      "_byte_offset": 1220,
+      "EffectID": 201,
+      "SkillLibraryID": 20201,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 101,
+      "_byte_offset": 1232,
+      "EffectID": 202,
+      "SkillLibraryID": 20202,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 102,
+      "_byte_offset": 1244,
+      "EffectID": 203,
+      "SkillLibraryID": 20203,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 103,
+      "_byte_offset": 1256,
+      "EffectID": 204,
+      "SkillLibraryID": 20204,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 104,
+      "_byte_offset": 1268,
+      "EffectID": 205,
+      "SkillLibraryID": 20205,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 105,
+      "_byte_offset": 1280,
+      "EffectID": 206,
+      "SkillLibraryID": 20206,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 106,
+      "_byte_offset": 1292,
+      "EffectID": 207,
+      "SkillLibraryID": 20207,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 107,
+      "_byte_offset": 1304,
+      "EffectID": 208,
+      "SkillLibraryID": 20208,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 108,
+      "_byte_offset": 1316,
+      "EffectID": 209,
+      "SkillLibraryID": 20209,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 109,
+      "_byte_offset": 1328,
+      "EffectID": 210,
+      "SkillLibraryID": 20210,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 110,
+      "_byte_offset": 1340,
+      "EffectID": 211,
+      "SkillLibraryID": 20211,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 111,
+      "_byte_offset": 1352,
+      "EffectID": 212,
+      "SkillLibraryID": 20212,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 112,
+      "_byte_offset": 1364,
+      "EffectID": 213,
+      "SkillLibraryID": 20213,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 113,
+      "_byte_offset": 1376,
+      "EffectID": 214,
+      "SkillLibraryID": 20214,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 114,
+      "_byte_offset": 1388,
+      "EffectID": 215,
+      "SkillLibraryID": 20215,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 115,
+      "_byte_offset": 1400,
+      "EffectID": 216,
+      "SkillLibraryID": 20216,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 116,
+      "_byte_offset": 1412,
+      "EffectID": 217,
+      "SkillLibraryID": 20217,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 117,
+      "_byte_offset": 1424,
+      "EffectID": 218,
+      "SkillLibraryID": 20218,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 118,
+      "_byte_offset": 1436,
+      "EffectID": 219,
+      "SkillLibraryID": 20219,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 119,
+      "_byte_offset": 1448,
+      "EffectID": 220,
+      "SkillLibraryID": 20220,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 120,
+      "_byte_offset": 1460,
+      "EffectID": 301,
+      "SkillLibraryID": 20301,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 121,
+      "_byte_offset": 1472,
+      "EffectID": 302,
+      "SkillLibraryID": 20302,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 122,
+      "_byte_offset": 1484,
+      "EffectID": 303,
+      "SkillLibraryID": 20303,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 123,
+      "_byte_offset": 1496,
+      "EffectID": 304,
+      "SkillLibraryID": 20304,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 124,
+      "_byte_offset": 1508,
+      "EffectID": 305,
+      "SkillLibraryID": 20305,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 125,
+      "_byte_offset": 1520,
+      "EffectID": 306,
+      "SkillLibraryID": 20306,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 126,
+      "_byte_offset": 1532,
+      "EffectID": 307,
+      "SkillLibraryID": 20307,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 127,
+      "_byte_offset": 1544,
+      "EffectID": 308,
+      "SkillLibraryID": 20308,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 128,
+      "_byte_offset": 1556,
+      "EffectID": 309,
+      "SkillLibraryID": 20309,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 129,
+      "_byte_offset": 1568,
+      "EffectID": 310,
+      "SkillLibraryID": 20310,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 130,
+      "_byte_offset": 1580,
+      "EffectID": 401,
+      "SkillLibraryID": 20401,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 131,
+      "_byte_offset": 1592,
+      "EffectID": 402,
+      "SkillLibraryID": 20402,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 132,
+      "_byte_offset": 1604,
+      "EffectID": 403,
+      "SkillLibraryID": 20403,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 133,
+      "_byte_offset": 1616,
+      "EffectID": 404,
+      "SkillLibraryID": 20404,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 134,
+      "_byte_offset": 1628,
+      "EffectID": 405,
+      "SkillLibraryID": 20405,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 135,
+      "_byte_offset": 1640,
+      "EffectID": 406,
+      "SkillLibraryID": 20406,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 136,
+      "_byte_offset": 1652,
+      "EffectID": 407,
+      "SkillLibraryID": 20407,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 137,
+      "_byte_offset": 1664,
+      "EffectID": 408,
+      "SkillLibraryID": 20408,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 138,
+      "_byte_offset": 1676,
+      "EffectID": 409,
+      "SkillLibraryID": 20409,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 139,
+      "_byte_offset": 1688,
+      "EffectID": 410,
+      "SkillLibraryID": 20410,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 140,
+      "_byte_offset": 1700,
+      "EffectID": 501,
+      "SkillLibraryID": 20501,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 141,
+      "_byte_offset": 1712,
+      "EffectID": 502,
+      "SkillLibraryID": 20502,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 142,
+      "_byte_offset": 1724,
+      "EffectID": 503,
+      "SkillLibraryID": 20503,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 143,
+      "_byte_offset": 1736,
+      "EffectID": 504,
+      "SkillLibraryID": 20504,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 144,
+      "_byte_offset": 1748,
+      "EffectID": 505,
+      "SkillLibraryID": 20505,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 145,
+      "_byte_offset": 1760,
+      "EffectID": 506,
+      "SkillLibraryID": 20506,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 146,
+      "_byte_offset": 1772,
+      "EffectID": 507,
+      "SkillLibraryID": 20507,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 147,
+      "_byte_offset": 1784,
+      "EffectID": 508,
+      "SkillLibraryID": 20508,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 148,
+      "_byte_offset": 1796,
+      "EffectID": 509,
+      "SkillLibraryID": 20509,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 149,
+      "_byte_offset": 1808,
+      "EffectID": 510,
+      "SkillLibraryID": 20510,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 150,
+      "_byte_offset": 1820,
+      "EffectID": 601,
+      "SkillLibraryID": 20601,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 151,
+      "_byte_offset": 1832,
+      "EffectID": 602,
+      "SkillLibraryID": 20602,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 152,
+      "_byte_offset": 1844,
+      "EffectID": 603,
+      "SkillLibraryID": 20603,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 153,
+      "_byte_offset": 1856,
+      "EffectID": 604,
+      "SkillLibraryID": 20604,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 154,
+      "_byte_offset": 1868,
+      "EffectID": 605,
+      "SkillLibraryID": 20605,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 155,
+      "_byte_offset": 1880,
+      "EffectID": 606,
+      "SkillLibraryID": 20606,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 156,
+      "_byte_offset": 1892,
+      "EffectID": 607,
+      "SkillLibraryID": 20607,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 157,
+      "_byte_offset": 1904,
+      "EffectID": 608,
+      "SkillLibraryID": 20608,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 158,
+      "_byte_offset": 1916,
+      "EffectID": 609,
+      "SkillLibraryID": 20609,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 159,
+      "_byte_offset": 1928,
+      "EffectID": 610,
+      "SkillLibraryID": 20610,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 160,
+      "_byte_offset": 1940,
+      "EffectID": 701,
+      "SkillLibraryID": 20701,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 161,
+      "_byte_offset": 1952,
+      "EffectID": 702,
+      "SkillLibraryID": 20702,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 162,
+      "_byte_offset": 1964,
+      "EffectID": 703,
+      "SkillLibraryID": 20703,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 163,
+      "_byte_offset": 1976,
+      "EffectID": 704,
+      "SkillLibraryID": 20704,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 164,
+      "_byte_offset": 1988,
+      "EffectID": 705,
+      "SkillLibraryID": 20705,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 165,
+      "_byte_offset": 2000,
+      "EffectID": 706,
+      "SkillLibraryID": 20706,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 166,
+      "_byte_offset": 2012,
+      "EffectID": 707,
+      "SkillLibraryID": 20707,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 167,
+      "_byte_offset": 2024,
+      "EffectID": 708,
+      "SkillLibraryID": 20708,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 168,
+      "_byte_offset": 2036,
+      "EffectID": 709,
+      "SkillLibraryID": 20709,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 169,
+      "_byte_offset": 2048,
+      "EffectID": 710,
+      "SkillLibraryID": 20710,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 170,
+      "_byte_offset": 2060,
+      "EffectID": 801,
+      "SkillLibraryID": 20801,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 171,
+      "_byte_offset": 2072,
+      "EffectID": 802,
+      "SkillLibraryID": 20802,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 172,
+      "_byte_offset": 2084,
+      "EffectID": 803,
+      "SkillLibraryID": 20803,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 173,
+      "_byte_offset": 2096,
+      "EffectID": 804,
+      "SkillLibraryID": 20804,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 174,
+      "_byte_offset": 2108,
+      "EffectID": 805,
+      "SkillLibraryID": 20805,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 175,
+      "_byte_offset": 2120,
+      "EffectID": 806,
+      "SkillLibraryID": 20806,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 176,
+      "_byte_offset": 2132,
+      "EffectID": 807,
+      "SkillLibraryID": 20807,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 177,
+      "_byte_offset": 2144,
+      "EffectID": 808,
+      "SkillLibraryID": 20808,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 178,
+      "_byte_offset": 2156,
+      "EffectID": 809,
+      "SkillLibraryID": 20809,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 179,
+      "_byte_offset": 2168,
+      "EffectID": 810,
+      "SkillLibraryID": 20810,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 180,
+      "_byte_offset": 2180,
+      "EffectID": 901,
+      "SkillLibraryID": 20901,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 181,
+      "_byte_offset": 2192,
+      "EffectID": 902,
+      "SkillLibraryID": 20902,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 182,
+      "_byte_offset": 2204,
+      "EffectID": 903,
+      "SkillLibraryID": 20903,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 183,
+      "_byte_offset": 2216,
+      "EffectID": 904,
+      "SkillLibraryID": 20904,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 184,
+      "_byte_offset": 2228,
+      "EffectID": 905,
+      "SkillLibraryID": 20905,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 185,
+      "_byte_offset": 2240,
+      "EffectID": 906,
+      "SkillLibraryID": 20906,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 186,
+      "_byte_offset": 2252,
+      "EffectID": 907,
+      "SkillLibraryID": 20907,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 187,
+      "_byte_offset": 2264,
+      "EffectID": 908,
+      "SkillLibraryID": 20908,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 188,
+      "_byte_offset": 2276,
+      "EffectID": 909,
+      "SkillLibraryID": 20909,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 189,
+      "_byte_offset": 2288,
+      "EffectID": 910,
+      "SkillLibraryID": 20910,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 190,
+      "_byte_offset": 2300,
+      "EffectID": 1001,
+      "SkillLibraryID": 21001,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 191,
+      "_byte_offset": 2312,
+      "EffectID": 1002,
+      "SkillLibraryID": 21002,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 192,
+      "_byte_offset": 2324,
+      "EffectID": 1003,
+      "SkillLibraryID": 21003,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 193,
+      "_byte_offset": 2336,
+      "EffectID": 1004,
+      "SkillLibraryID": 21004,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 194,
+      "_byte_offset": 2348,
+      "EffectID": 1005,
+      "SkillLibraryID": 21005,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 195,
+      "_byte_offset": 2360,
+      "EffectID": 1006,
+      "SkillLibraryID": 21006,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 196,
+      "_byte_offset": 2372,
+      "EffectID": 1007,
+      "SkillLibraryID": 21007,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 197,
+      "_byte_offset": 2384,
+      "EffectID": 1008,
+      "SkillLibraryID": 21008,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 198,
+      "_byte_offset": 2396,
+      "EffectID": 1009,
+      "SkillLibraryID": 21009,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 199,
+      "_byte_offset": 2408,
+      "EffectID": 1010,
+      "SkillLibraryID": 21010,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 200,
+      "_byte_offset": 2420,
+      "EffectID": 1101,
+      "SkillLibraryID": 21101,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 201,
+      "_byte_offset": 2432,
+      "EffectID": 1102,
+      "SkillLibraryID": 21102,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 202,
+      "_byte_offset": 2444,
+      "EffectID": 1103,
+      "SkillLibraryID": 21103,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 203,
+      "_byte_offset": 2456,
+      "EffectID": 1104,
+      "SkillLibraryID": 21104,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 204,
+      "_byte_offset": 2468,
+      "EffectID": 1105,
+      "SkillLibraryID": 21105,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 205,
+      "_byte_offset": 2480,
+      "EffectID": 1106,
+      "SkillLibraryID": 21106,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 206,
+      "_byte_offset": 2492,
+      "EffectID": 1107,
+      "SkillLibraryID": 21107,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 207,
+      "_byte_offset": 2504,
+      "EffectID": 1108,
+      "SkillLibraryID": 21108,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 208,
+      "_byte_offset": 2516,
+      "EffectID": 1109,
+      "SkillLibraryID": 21109,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 209,
+      "_byte_offset": 2528,
+      "EffectID": 1110,
+      "SkillLibraryID": 21110,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 210,
+      "_byte_offset": 2540,
+      "EffectID": 1201,
+      "SkillLibraryID": 21201,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 211,
+      "_byte_offset": 2552,
+      "EffectID": 1202,
+      "SkillLibraryID": 21202,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 212,
+      "_byte_offset": 2564,
+      "EffectID": 1203,
+      "SkillLibraryID": 21203,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 213,
+      "_byte_offset": 2576,
+      "EffectID": 1204,
+      "SkillLibraryID": 21204,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 214,
+      "_byte_offset": 2588,
+      "EffectID": 1205,
+      "SkillLibraryID": 21205,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 215,
+      "_byte_offset": 2600,
+      "EffectID": 1206,
+      "SkillLibraryID": 21206,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 216,
+      "_byte_offset": 2612,
+      "EffectID": 1207,
+      "SkillLibraryID": 21207,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 217,
+      "_byte_offset": 2624,
+      "EffectID": 1208,
+      "SkillLibraryID": 21208,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 218,
+      "_byte_offset": 2636,
+      "EffectID": 1209,
+      "SkillLibraryID": 21209,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 219,
+      "_byte_offset": 2648,
+      "EffectID": 1210,
+      "SkillLibraryID": 21210,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 220,
+      "_byte_offset": 2660,
+      "EffectID": 1301,
+      "SkillLibraryID": 21301,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 221,
+      "_byte_offset": 2672,
+      "EffectID": 1302,
+      "SkillLibraryID": 21302,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 222,
+      "_byte_offset": 2684,
+      "EffectID": 1303,
+      "SkillLibraryID": 21303,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 223,
+      "_byte_offset": 2696,
+      "EffectID": 1304,
+      "SkillLibraryID": 21304,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 224,
+      "_byte_offset": 2708,
+      "EffectID": 1305,
+      "SkillLibraryID": 21305,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 225,
+      "_byte_offset": 2720,
+      "EffectID": 1306,
+      "SkillLibraryID": 21306,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 226,
+      "_byte_offset": 2732,
+      "EffectID": 1307,
+      "SkillLibraryID": 21307,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 227,
+      "_byte_offset": 2744,
+      "EffectID": 1308,
+      "SkillLibraryID": 21308,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 228,
+      "_byte_offset": 2756,
+      "EffectID": 1309,
+      "SkillLibraryID": 21309,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 229,
+      "_byte_offset": 2768,
+      "EffectID": 1310,
+      "SkillLibraryID": 21310,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 230,
+      "_byte_offset": 2780,
+      "EffectID": 1401,
+      "SkillLibraryID": 21401,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 231,
+      "_byte_offset": 2792,
+      "EffectID": 1402,
+      "SkillLibraryID": 21402,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 232,
+      "_byte_offset": 2804,
+      "EffectID": 1403,
+      "SkillLibraryID": 21403,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 233,
+      "_byte_offset": 2816,
+      "EffectID": 1404,
+      "SkillLibraryID": 21404,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 234,
+      "_byte_offset": 2828,
+      "EffectID": 1405,
+      "SkillLibraryID": 21405,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 235,
+      "_byte_offset": 2840,
+      "EffectID": 1406,
+      "SkillLibraryID": 21406,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 236,
+      "_byte_offset": 2852,
+      "EffectID": 1407,
+      "SkillLibraryID": 21407,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 237,
+      "_byte_offset": 2864,
+      "EffectID": 1408,
+      "SkillLibraryID": 21408,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 238,
+      "_byte_offset": 2876,
+      "EffectID": 1409,
+      "SkillLibraryID": 21409,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 239,
+      "_byte_offset": 2888,
+      "EffectID": 1410,
+      "SkillLibraryID": 21410,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 240,
+      "_byte_offset": 2900,
+      "EffectID": 1501,
+      "SkillLibraryID": 21501,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 241,
+      "_byte_offset": 2912,
+      "EffectID": 1502,
+      "SkillLibraryID": 21502,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 242,
+      "_byte_offset": 2924,
+      "EffectID": 1503,
+      "SkillLibraryID": 21503,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 243,
+      "_byte_offset": 2936,
+      "EffectID": 1504,
+      "SkillLibraryID": 21504,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 244,
+      "_byte_offset": 2948,
+      "EffectID": 1505,
+      "SkillLibraryID": 21505,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 245,
+      "_byte_offset": 2960,
+      "EffectID": 1506,
+      "SkillLibraryID": 21506,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 246,
+      "_byte_offset": 2972,
+      "EffectID": 1507,
+      "SkillLibraryID": 21507,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 247,
+      "_byte_offset": 2984,
+      "EffectID": 1508,
+      "SkillLibraryID": 21508,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 248,
+      "_byte_offset": 2996,
+      "EffectID": 1509,
+      "SkillLibraryID": 21509,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 249,
+      "_byte_offset": 3008,
+      "EffectID": 1510,
+      "SkillLibraryID": 21510,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 250,
+      "_byte_offset": 3020,
+      "EffectID": 1601,
+      "SkillLibraryID": 21601,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 251,
+      "_byte_offset": 3032,
+      "EffectID": 1602,
+      "SkillLibraryID": 21602,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 252,
+      "_byte_offset": 3044,
+      "EffectID": 1603,
+      "SkillLibraryID": 21603,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 253,
+      "_byte_offset": 3056,
+      "EffectID": 1604,
+      "SkillLibraryID": 21604,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 254,
+      "_byte_offset": 3068,
+      "EffectID": 1605,
+      "SkillLibraryID": 21605,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 255,
+      "_byte_offset": 3080,
+      "EffectID": 1606,
+      "SkillLibraryID": 21606,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 256,
+      "_byte_offset": 3092,
+      "EffectID": 1607,
+      "SkillLibraryID": 21607,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 257,
+      "_byte_offset": 3104,
+      "EffectID": 1608,
+      "SkillLibraryID": 21608,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 258,
+      "_byte_offset": 3116,
+      "EffectID": 1609,
+      "SkillLibraryID": 21609,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 259,
+      "_byte_offset": 3128,
+      "EffectID": 1610,
+      "SkillLibraryID": 21610,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 260,
+      "_byte_offset": 3140,
+      "EffectID": 1701,
+      "SkillLibraryID": 21701,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 261,
+      "_byte_offset": 3152,
+      "EffectID": 1702,
+      "SkillLibraryID": 21702,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 262,
+      "_byte_offset": 3164,
+      "EffectID": 1703,
+      "SkillLibraryID": 21703,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 263,
+      "_byte_offset": 3176,
+      "EffectID": 1704,
+      "SkillLibraryID": 21704,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 264,
+      "_byte_offset": 3188,
+      "EffectID": 1705,
+      "SkillLibraryID": 21705,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 265,
+      "_byte_offset": 3200,
+      "EffectID": 1706,
+      "SkillLibraryID": 21706,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 266,
+      "_byte_offset": 3212,
+      "EffectID": 1707,
+      "SkillLibraryID": 21707,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 267,
+      "_byte_offset": 3224,
+      "EffectID": 1708,
+      "SkillLibraryID": 21708,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 268,
+      "_byte_offset": 3236,
+      "EffectID": 1709,
+      "SkillLibraryID": 21709,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 269,
+      "_byte_offset": 3248,
+      "EffectID": 1710,
+      "SkillLibraryID": 21710,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 270,
+      "_byte_offset": 3260,
+      "EffectID": 1801,
+      "SkillLibraryID": 21801,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 271,
+      "_byte_offset": 3272,
+      "EffectID": 1802,
+      "SkillLibraryID": 21802,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 272,
+      "_byte_offset": 3284,
+      "EffectID": 1803,
+      "SkillLibraryID": 21803,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 273,
+      "_byte_offset": 3296,
+      "EffectID": 1804,
+      "SkillLibraryID": 21804,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 274,
+      "_byte_offset": 3308,
+      "EffectID": 1805,
+      "SkillLibraryID": 21805,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 275,
+      "_byte_offset": 3320,
+      "EffectID": 1806,
+      "SkillLibraryID": 21806,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 276,
+      "_byte_offset": 3332,
+      "EffectID": 1807,
+      "SkillLibraryID": 21807,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 277,
+      "_byte_offset": 3344,
+      "EffectID": 1808,
+      "SkillLibraryID": 21808,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 278,
+      "_byte_offset": 3356,
+      "EffectID": 1809,
+      "SkillLibraryID": 21809,
+      "BuffID": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 279,
+      "_byte_offset": 3368,
+      "EffectID": 1810,
+      "SkillLibraryID": 21810,
+      "BuffID": 0,
+      "_byte_length": 12
+    }
+  ]
+}

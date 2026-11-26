@@ -1,0 +1,1599 @@
+{
+  "namespace": "ResDef",
+  "name": "ChapterConfig",
+  "fields": [
+    {
+      "type": "int",
+      "name": "ChapterID",
+      "object_offset": 16
+    },
+    {
+      "type": "int",
+      "name": "Difficult",
+      "object_offset": 20
+    },
+    {
+      "type": "int",
+      "name": "ChapterType",
+      "object_offset": 24
+    },
+    {
+      "type": "string",
+      "name": "Name",
+      "object_offset": 32
+    },
+    {
+      "type": "string",
+      "name": "IconName",
+      "object_offset": 40
+    },
+    {
+      "type": "string",
+      "name": "Desc",
+      "object_offset": 48
+    },
+    {
+      "type": "int",
+      "name": "StageCount",
+      "object_offset": 56
+    },
+    {
+      "type": "int",
+      "name": "MaxReliveCount",
+      "object_offset": 60
+    },
+    {
+      "type": "int",
+      "name": "StartCostStma",
+      "object_offset": 64
+    },
+    {
+      "type": "int",
+      "name": "SaoDangCostDiamond",
+      "object_offset": 68
+    },
+    {
+      "type": "int",
+      "name": "SaoDangCostItemID",
+      "object_offset": 72
+    },
+    {
+      "type": "int",
+      "name": "BaseExp",
+      "object_offset": 76
+    },
+    {
+      "type": "int",
+      "name": "ExtraExp",
+      "object_offset": 80
+    },
+    {
+      "type": "int",
+      "name": "GuaJiGoldValue",
+      "object_offset": 84
+    },
+    {
+      "type": "int",
+      "name": "GuaJiItemBooty",
+      "object_offset": 88
+    },
+    {
+      "type": "int[]",
+      "name": "UnlockSkillId",
+      "object_offset": 96
+    },
+    {
+      "type": "int",
+      "name": "BootyID",
+      "object_offset": 104
+    },
+    {
+      "type": "int[]",
+      "name": "EffectId",
+      "object_offset": 112
+    },
+    {
+      "type": "int",
+      "name": "FinMaxDiamond",
+      "object_offset": 120
+    },
+    {
+      "type": "int",
+      "name": "FinMaxGold",
+      "object_offset": 124
+    },
+    {
+      "type": "int",
+      "name": "DailyMaxBattleCount",
+      "object_offset": 128
+    },
+    {
+      "type": "byte",
+      "name": "CanMultiPlayer",
+      "object_offset": 132
+    },
+    {
+      "type": "byte",
+      "name": "IsCanSaoDang",
+      "object_offset": 133
+    },
+    {
+      "type": "int",
+      "name": "SaoDangBootyListID",
+      "object_offset": 136
+    },
+    {
+      "type": "string",
+      "name": "UnlockDesc",
+      "object_offset": 144
+    },
+    {
+      "type": "int",
+      "name": "IsLocked",
+      "object_offset": 152
+    },
+    {
+      "type": "int",
+      "name": "IdOfOpenGateEff",
+      "object_offset": 156
+    },
+    {
+      "type": "int",
+      "name": "SoundID",
+      "object_offset": 160
+    },
+    {
+      "type": "int",
+      "name": "UnlockCondition",
+      "object_offset": 164
+    }
+  ],
+  "unpack_va": 31250164,
+  "dump_line": 207207,
+  "layout": [
+    {
+      "type": "int",
+      "name": "ChapterID",
+      "object_offset": 16,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcd72c",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "type": "int",
+      "name": "Difficult",
+      "object_offset": 20,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcd750",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "type": "int",
+      "name": "ChapterType",
+      "object_offset": 24,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcd774",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            24
+          ]
+        }
+      ]
+    },
+    {
+      "type": "string",
+      "name": "Name",
+      "object_offset": 32,
+      "wire_type": "string",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcd79c",
+          "target_va": "0x21f6ce8",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readString"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readString",
+          "destination": [
+            "self",
+            32
+          ],
+          "max_string_size": 64
+        }
+      ],
+      "max_string_size": 64
+    },
+    {
+      "type": "string",
+      "name": "IconName",
+      "object_offset": 40,
+      "wire_type": "string",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcd7c4",
+          "target_va": "0x21f6ce8",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readString"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readString",
+          "destination": [
+            "self",
+            40
+          ],
+          "max_string_size": 128
+        }
+      ],
+      "max_string_size": 128
+    },
+    {
+      "type": "string",
+      "name": "Desc",
+      "object_offset": 48,
+      "wire_type": "string",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcd7ec",
+          "target_va": "0x21f6ce8",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readString"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readString",
+          "destination": [
+            "self",
+            48
+          ],
+          "max_string_size": 1024
+        }
+      ],
+      "max_string_size": 1024
+    },
+    {
+      "type": "int",
+      "name": "StageCount",
+      "object_offset": 56,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcd810",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            56
+          ]
+        }
+      ]
+    },
+    {
+      "type": "int",
+      "name": "MaxReliveCount",
+      "object_offset": 60,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcd834",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            60
+          ]
+        }
+      ]
+    },
+    {
+      "type": "int",
+      "name": "StartCostStma",
+      "object_offset": 64,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcd858",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            64
+          ]
+        }
+      ]
+    },
+    {
+      "type": "int",
+      "name": "SaoDangCostDiamond",
+      "object_offset": 68,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcd87c",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            68
+          ]
+        }
+      ]
+    },
+    {
+      "type": "int",
+      "name": "SaoDangCostItemID",
+      "object_offset": 72,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcd8a0",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            72
+          ]
+        }
+      ]
+    },
+    {
+      "type": "int",
+      "name": "BaseExp",
+      "object_offset": 76,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcd8c4",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            76
+          ]
+        }
+      ]
+    },
+    {
+      "type": "int",
+      "name": "ExtraExp",
+      "object_offset": 80,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcd8e8",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            80
+          ]
+        }
+      ]
+    },
+    {
+      "type": "int",
+      "name": "GuaJiGoldValue",
+      "object_offset": 84,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcd90c",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            84
+          ]
+        }
+      ]
+    },
+    {
+      "type": "int",
+      "name": "GuaJiItemBooty",
+      "object_offset": 88,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcd930",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            88
+          ]
+        }
+      ]
+    },
+    {
+      "type": "int[]",
+      "name": "UnlockSkillId",
+      "object_offset": 96,
+      "wire_type": "int",
+      "kind": "array",
+      "count": 4,
+      "count_encoding": "none-native-fixed",
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcd988",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "arrayptr",
+            96,
+            32
+          ]
+        },
+        {
+          "instruction_va": "0x1dcd988",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "arrayptr",
+            96,
+            36
+          ]
+        },
+        {
+          "instruction_va": "0x1dcd988",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "arrayptr",
+            96,
+            40
+          ]
+        },
+        {
+          "instruction_va": "0x1dcd988",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "arrayptr",
+            96,
+            44
+          ]
+        }
+      ]
+    },
+    {
+      "type": "int",
+      "name": "BootyID",
+      "object_offset": 104,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcd9bc",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            104
+          ]
+        }
+      ]
+    },
+    {
+      "type": "int[]",
+      "name": "EffectId",
+      "object_offset": 112,
+      "wire_type": "int",
+      "kind": "array",
+      "count": 4,
+      "count_encoding": "none-native-fixed",
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcda14",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "arrayptr",
+            112,
+            32
+          ]
+        },
+        {
+          "instruction_va": "0x1dcda14",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "arrayptr",
+            112,
+            36
+          ]
+        },
+        {
+          "instruction_va": "0x1dcda14",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "arrayptr",
+            112,
+            40
+          ]
+        },
+        {
+          "instruction_va": "0x1dcda14",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "arrayptr",
+            112,
+            44
+          ]
+        }
+      ]
+    },
+    {
+      "type": "int",
+      "name": "FinMaxDiamond",
+      "object_offset": 120,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcda48",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            120
+          ]
+        }
+      ]
+    },
+    {
+      "type": "int",
+      "name": "FinMaxGold",
+      "object_offset": 124,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcda6c",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            124
+          ]
+        }
+      ]
+    },
+    {
+      "type": "int",
+      "name": "DailyMaxBattleCount",
+      "object_offset": 128,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcda90",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            128
+          ]
+        }
+      ]
+    },
+    {
+      "type": "byte",
+      "name": "CanMultiPlayer",
+      "object_offset": 132,
+      "wire_type": "byte",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcdab4",
+          "target_va": "0x21f65e0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt8"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt8",
+          "destination": [
+            "self",
+            132
+          ]
+        }
+      ]
+    },
+    {
+      "type": "byte",
+      "name": "IsCanSaoDang",
+      "object_offset": 133,
+      "wire_type": "byte",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcdad8",
+          "target_va": "0x21f65e0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt8"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt8",
+          "destination": [
+            "self",
+            133
+          ]
+        }
+      ]
+    },
+    {
+      "type": "int",
+      "name": "SaoDangBootyListID",
+      "object_offset": 136,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcdafc",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            136
+          ]
+        }
+      ]
+    },
+    {
+      "type": "string",
+      "name": "UnlockDesc",
+      "object_offset": 144,
+      "wire_type": "string",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcdb24",
+          "target_va": "0x21f6ce8",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readString"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readString",
+          "destination": [
+            "self",
+            144
+          ],
+          "max_string_size": 512
+        }
+      ],
+      "max_string_size": 512
+    },
+    {
+      "type": "int",
+      "name": "IsLocked",
+      "object_offset": 152,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcdb48",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            152
+          ]
+        }
+      ]
+    },
+    {
+      "type": "int",
+      "name": "IdOfOpenGateEff",
+      "object_offset": 156,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcdb6c",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            156
+          ]
+        }
+      ]
+    },
+    {
+      "type": "int",
+      "name": "SoundID",
+      "object_offset": 160,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcdb90",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            160
+          ]
+        }
+      ]
+    },
+    {
+      "type": "int",
+      "name": "UnlockCondition",
+      "object_offset": 164,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dcdbd8",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "B",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            164
+          ]
+        }
+      ]
+    }
+  ],
+  "native_evidence": {
+    "method_start_va": "0x1dcd6f4",
+    "instruction_steps": 335,
+    "event_count": 35,
+    "branch_evidence": [
+      {
+        "instruction_va": "0x1dcd968",
+        "cmp_va": "0x1dcd964",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 96,
+        "index": 0
+      },
+      {
+        "instruction_va": "0x1dcd99c",
+        "target_va": "0x1dcd940",
+        "kind": "concrete-loop-test",
+        "left": 0,
+        "right": 3,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcd968",
+        "cmp_va": "0x1dcd964",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 96,
+        "index": 1
+      },
+      {
+        "instruction_va": "0x1dcd99c",
+        "target_va": "0x1dcd940",
+        "kind": "concrete-loop-test",
+        "left": 1,
+        "right": 3,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcd968",
+        "cmp_va": "0x1dcd964",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 96,
+        "index": 2
+      },
+      {
+        "instruction_va": "0x1dcd99c",
+        "target_va": "0x1dcd940",
+        "kind": "concrete-loop-test",
+        "left": 2,
+        "right": 3,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcd968",
+        "cmp_va": "0x1dcd964",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 96,
+        "index": 3
+      },
+      {
+        "instruction_va": "0x1dcd99c",
+        "target_va": "0x1dcd940",
+        "kind": "concrete-loop-test",
+        "left": 3,
+        "right": 3,
+        "condition": "lt",
+        "taken": false
+      },
+      {
+        "instruction_va": "0x1dcd9f4",
+        "cmp_va": "0x1dcd9f0",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 112,
+        "index": 0
+      },
+      {
+        "instruction_va": "0x1dcda28",
+        "target_va": "0x1dcd9cc",
+        "kind": "concrete-loop-test",
+        "left": 0,
+        "right": 3,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcd9f4",
+        "cmp_va": "0x1dcd9f0",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 112,
+        "index": 1
+      },
+      {
+        "instruction_va": "0x1dcda28",
+        "target_va": "0x1dcd9cc",
+        "kind": "concrete-loop-test",
+        "left": 1,
+        "right": 3,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcd9f4",
+        "cmp_va": "0x1dcd9f0",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 112,
+        "index": 2
+      },
+      {
+        "instruction_va": "0x1dcda28",
+        "target_va": "0x1dcd9cc",
+        "kind": "concrete-loop-test",
+        "left": 2,
+        "right": 3,
+        "condition": "lt",
+        "taken": true
+      },
+      {
+        "instruction_va": "0x1dcd9f4",
+        "cmp_va": "0x1dcd9f0",
+        "kind": "managed-array-valid-bounds-assumption",
+        "array_field_offset": 112,
+        "index": 3
+      },
+      {
+        "instruction_va": "0x1dcda28",
+        "target_va": "0x1dcd9cc",
+        "kind": "concrete-loop-test",
+        "left": 3,
+        "right": 3,
+        "condition": "lt",
+        "taken": false
+      }
+    ],
+    "loops": [
+      {
+        "backedge_va": "0x1dcd99c",
+        "body_start_va": "0x1dcd940",
+        "body": [
+          {
+            "instruction_va": "0x1dcd940",
+            "bytes": "973240f9",
+            "mnemonic": "ldr",
+            "operands": "x23, [x20, #0x60]"
+          },
+          {
+            "instruction_va": "0x1dcd944",
+            "bytes": "770000b5",
+            "mnemonic": "cbnz",
+            "operands": "x23, #0x1dcd950"
+          },
+          {
+            "instruction_va": "0x1dcd948",
+            "bytes": "e0031faa",
+            "mnemonic": "mov",
+            "operands": "x0, xzr"
+          },
+          {
+            "instruction_va": "0x1dcd94c",
+            "bytes": "7877bd97",
+            "mnemonic": "bl",
+            "operands": "#0xd2b72c"
+          },
+          {
+            "instruction_va": "0x1dcd950",
+            "bytes": "b8060091",
+            "mnemonic": "add",
+            "operands": "x24, x21, #1"
+          },
+          {
+            "instruction_va": "0x1dcd954",
+            "bytes": "730000b5",
+            "mnemonic": "cbnz",
+            "operands": "x19, #0x1dcd960"
+          },
+          {
+            "instruction_va": "0x1dcd958",
+            "bytes": "e0031faa",
+            "mnemonic": "mov",
+            "operands": "x0, xzr"
+          },
+          {
+            "instruction_va": "0x1dcd95c",
+            "bytes": "7477bd97",
+            "mnemonic": "bl",
+            "operands": "#0xd2b72c"
+          },
+          {
+            "instruction_va": "0x1dcd960",
+            "bytes": "e81a40b9",
+            "mnemonic": "ldr",
+            "operands": "w8, [x23, #0x18]"
+          },
+          {
+            "instruction_va": "0x1dcd964",
+            "bytes": "1f0308eb",
+            "mnemonic": "cmp",
+            "operands": "x24, x8"
+          },
+          {
+            "instruction_va": "0x1dcd968",
+            "bytes": "a3000054",
+            "mnemonic": "b.lo",
+            "operands": "#0x1dcd97c"
+          },
+          {
+            "instruction_va": "0x1dcd96c",
+            "bytes": "a97abd97",
+            "mnemonic": "bl",
+            "operands": "#0xd2c410"
+          },
+          {
+            "instruction_va": "0x1dcd970",
+            "bytes": "e1031faa",
+            "mnemonic": "mov",
+            "operands": "x1, xzr"
+          },
+          {
+            "instruction_va": "0x1dcd974",
+            "bytes": "e2031faa",
+            "mnemonic": "mov",
+            "operands": "x2, xzr"
+          },
+          {
+            "instruction_va": "0x1dcd978",
+            "bytes": "4977bd97",
+            "mnemonic": "bl",
+            "operands": "#0xd2b69c"
+          },
+          {
+            "instruction_va": "0x1dcd97c",
+            "bytes": "e102168b",
+            "mnemonic": "add",
+            "operands": "x1, x23, x22"
+          },
+          {
+            "instruction_va": "0x1dcd980",
+            "bytes": "e00313aa",
+            "mnemonic": "mov",
+            "operands": "x0, x19"
+          },
+          {
+            "instruction_va": "0x1dcd984",
+            "bytes": "e2031faa",
+            "mnemonic": "mov",
+            "operands": "x2, xzr"
+          },
+          {
+            "instruction_va": "0x1dcd988",
+            "bytes": "92a31094",
+            "mnemonic": "bl",
+            "operands": "#0x21f67d0"
+          },
+          {
+            "instruction_va": "0x1dcd98c",
+            "bytes": "60100035",
+            "mnemonic": "cbnz",
+            "operands": "w0, #0x1dcdb98"
+          },
+          {
+            "instruction_va": "0x1dcd990",
+            "bytes": "b5060091",
+            "mnemonic": "add",
+            "operands": "x21, x21, #1"
+          },
+          {
+            "instruction_va": "0x1dcd994",
+            "bytes": "bf0e00f1",
+            "mnemonic": "cmp",
+            "operands": "x21, #3"
+          },
+          {
+            "instruction_va": "0x1dcd998",
+            "bytes": "d6120091",
+            "mnemonic": "add",
+            "operands": "x22, x22, #4"
+          },
+          {
+            "instruction_va": "0x1dcd99c",
+            "bytes": "2bfdff54",
+            "mnemonic": "b.lt",
+            "operands": "#0x1dcd940"
+          }
+        ],
+        "preheader_initialization": [
+          {
+            "instruction_va": "0x1dcd934",
+            "bytes": "20130035",
+            "mnemonic": "cbnz",
+            "operands": "w0, #0x1dcdb98"
+          },
+          {
+            "instruction_va": "0x1dcd938",
+            "bytes": "15008092",
+            "mnemonic": "mov",
+            "operands": "x21, #-1"
+          },
+          {
+            "instruction_va": "0x1dcd93c",
+            "bytes": "f6031b32",
+            "mnemonic": "mov",
+            "operands": "w22, #0x20"
+          }
+        ],
+        "index_stride_updates": [
+          {
+            "instruction_va": "0x1dcd990",
+            "bytes": "b5060091",
+            "mnemonic": "add",
+            "operands": "x21, x21, #1"
+          },
+          {
+            "instruction_va": "0x1dcd998",
+            "bytes": "d6120091",
+            "mnemonic": "add",
+            "operands": "x22, x22, #4"
+          }
+        ],
+        "compare_instructions": [
+          {
+            "instruction_va": "0x1dcd964",
+            "bytes": "1f0308eb",
+            "mnemonic": "cmp",
+            "operands": "x24, x8"
+          },
+          {
+            "instruction_va": "0x1dcd994",
+            "bytes": "bf0e00f1",
+            "mnemonic": "cmp",
+            "operands": "x21, #3"
+          }
+        ],
+        "concrete_tests_in_order": [
+          {
+            "instruction_va": "0x1dcd99c",
+            "target_va": "0x1dcd940",
+            "kind": "concrete-loop-test",
+            "left": 0,
+            "right": 3,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcd99c",
+            "target_va": "0x1dcd940",
+            "kind": "concrete-loop-test",
+            "left": 1,
+            "right": 3,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcd99c",
+            "target_va": "0x1dcd940",
+            "kind": "concrete-loop-test",
+            "left": 2,
+            "right": 3,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcd99c",
+            "target_va": "0x1dcd940",
+            "kind": "concrete-loop-test",
+            "left": 3,
+            "right": 3,
+            "condition": "lt",
+            "taken": false
+          }
+        ],
+        "trip_count": 4
+      },
+      {
+        "backedge_va": "0x1dcda28",
+        "body_start_va": "0x1dcd9cc",
+        "body": [
+          {
+            "instruction_va": "0x1dcd9cc",
+            "bytes": "973a40f9",
+            "mnemonic": "ldr",
+            "operands": "x23, [x20, #0x70]"
+          },
+          {
+            "instruction_va": "0x1dcd9d0",
+            "bytes": "770000b5",
+            "mnemonic": "cbnz",
+            "operands": "x23, #0x1dcd9dc"
+          },
+          {
+            "instruction_va": "0x1dcd9d4",
+            "bytes": "e0031faa",
+            "mnemonic": "mov",
+            "operands": "x0, xzr"
+          },
+          {
+            "instruction_va": "0x1dcd9d8",
+            "bytes": "5577bd97",
+            "mnemonic": "bl",
+            "operands": "#0xd2b72c"
+          },
+          {
+            "instruction_va": "0x1dcd9dc",
+            "bytes": "b8060091",
+            "mnemonic": "add",
+            "operands": "x24, x21, #1"
+          },
+          {
+            "instruction_va": "0x1dcd9e0",
+            "bytes": "730000b5",
+            "mnemonic": "cbnz",
+            "operands": "x19, #0x1dcd9ec"
+          },
+          {
+            "instruction_va": "0x1dcd9e4",
+            "bytes": "e0031faa",
+            "mnemonic": "mov",
+            "operands": "x0, xzr"
+          },
+          {
+            "instruction_va": "0x1dcd9e8",
+            "bytes": "5177bd97",
+            "mnemonic": "bl",
+            "operands": "#0xd2b72c"
+          },
+          {
+            "instruction_va": "0x1dcd9ec",
+            "bytes": "e81a40b9",
+            "mnemonic": "ldr",
+            "operands": "w8, [x23, #0x18]"
+          },
+          {
+            "instruction_va": "0x1dcd9f0",
+            "bytes": "1f0308eb",
+            "mnemonic": "cmp",
+            "operands": "x24, x8"
+          },
+          {
+            "instruction_va": "0x1dcd9f4",
+            "bytes": "a3000054",
+            "mnemonic": "b.lo",
+            "operands": "#0x1dcda08"
+          },
+          {
+            "instruction_va": "0x1dcd9f8",
+            "bytes": "867abd97",
+            "mnemonic": "bl",
+            "operands": "#0xd2c410"
+          },
+          {
+            "instruction_va": "0x1dcd9fc",
+            "bytes": "e1031faa",
+            "mnemonic": "mov",
+            "operands": "x1, xzr"
+          },
+          {
+            "instruction_va": "0x1dcda00",
+            "bytes": "e2031faa",
+            "mnemonic": "mov",
+            "operands": "x2, xzr"
+          },
+          {
+            "instruction_va": "0x1dcda04",
+            "bytes": "2677bd97",
+            "mnemonic": "bl",
+            "operands": "#0xd2b69c"
+          },
+          {
+            "instruction_va": "0x1dcda08",
+            "bytes": "e102168b",
+            "mnemonic": "add",
+            "operands": "x1, x23, x22"
+          },
+          {
+            "instruction_va": "0x1dcda0c",
+            "bytes": "e00313aa",
+            "mnemonic": "mov",
+            "operands": "x0, x19"
+          },
+          {
+            "instruction_va": "0x1dcda10",
+            "bytes": "e2031faa",
+            "mnemonic": "mov",
+            "operands": "x2, xzr"
+          },
+          {
+            "instruction_va": "0x1dcda14",
+            "bytes": "6fa31094",
+            "mnemonic": "bl",
+            "operands": "#0x21f67d0"
+          },
+          {
+            "instruction_va": "0x1dcda18",
+            "bytes": "000c0035",
+            "mnemonic": "cbnz",
+            "operands": "w0, #0x1dcdb98"
+          },
+          {
+            "instruction_va": "0x1dcda1c",
+            "bytes": "b5060091",
+            "mnemonic": "add",
+            "operands": "x21, x21, #1"
+          },
+          {
+            "instruction_va": "0x1dcda20",
+            "bytes": "bf0e00f1",
+            "mnemonic": "cmp",
+            "operands": "x21, #3"
+          },
+          {
+            "instruction_va": "0x1dcda24",
+            "bytes": "d6120091",
+            "mnemonic": "add",
+            "operands": "x22, x22, #4"
+          },
+          {
+            "instruction_va": "0x1dcda28",
+            "bytes": "2bfdff54",
+            "mnemonic": "b.lt",
+            "operands": "#0x1dcd9cc"
+          }
+        ],
+        "preheader_initialization": [
+          {
+            "instruction_va": "0x1dcd9c0",
+            "bytes": "c00e0035",
+            "mnemonic": "cbnz",
+            "operands": "w0, #0x1dcdb98"
+          },
+          {
+            "instruction_va": "0x1dcd9c4",
+            "bytes": "15008092",
+            "mnemonic": "mov",
+            "operands": "x21, #-1"
+          },
+          {
+            "instruction_va": "0x1dcd9c8",
+            "bytes": "f6031b32",
+            "mnemonic": "mov",
+            "operands": "w22, #0x20"
+          }
+        ],
+        "index_stride_updates": [
+          {
+            "instruction_va": "0x1dcda1c",
+            "bytes": "b5060091",
+            "mnemonic": "add",
+            "operands": "x21, x21, #1"
+          },
+          {
+            "instruction_va": "0x1dcda24",
+            "bytes": "d6120091",
+            "mnemonic": "add",
+            "operands": "x22, x22, #4"
+          }
+        ],
+        "compare_instructions": [
+          {
+            "instruction_va": "0x1dcd9f0",
+            "bytes": "1f0308eb",
+            "mnemonic": "cmp",
+            "operands": "x24, x8"
+          },
+          {
+            "instruction_va": "0x1dcda20",
+            "bytes": "bf0e00f1",
+            "mnemonic": "cmp",
+            "operands": "x21, #3"
+          }
+        ],
+        "concrete_tests_in_order": [
+          {
+            "instruction_va": "0x1dcda28",
+            "target_va": "0x1dcd9cc",
+            "kind": "concrete-loop-test",
+            "left": 0,
+            "right": 3,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcda28",
+            "target_va": "0x1dcd9cc",
+            "kind": "concrete-loop-test",
+            "left": 1,
+            "right": 3,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcda28",
+            "target_va": "0x1dcd9cc",
+            "kind": "concrete-loop-test",
+            "left": 2,
+            "right": 3,
+            "condition": "lt",
+            "taken": true
+          },
+          {
+            "instruction_va": "0x1dcda28",
+            "target_va": "0x1dcd9cc",
+            "kind": "concrete-loop-test",
+            "left": 3,
+            "right": 3,
+            "condition": "lt",
+            "taken": false
+          }
+        ],
+        "trip_count": 4
+      }
+    ],
+    "instruction_sha256": "215d830f9b836f2972e5a5739d59f5242dc8eccecdb4baaadbae091af5787d89",
+    "gate": "concrete-success-path; all sequential readers/nested callees; full field/destination/stride matching",
+    "assumptions": [
+      "non-null input buffer and created nested objects/arrays",
+      "managed array bounds valid",
+      "AAPCS64 callee-saved register preservation",
+      "reader and nested call success; version 1 only"
+    ]
+  }
+}

@@ -1,0 +1,509 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_fabaoskillactivateconfig.bytes.ab",
+    "path_id": -8318092543875313297,
+    "name": "FaBaoSkillActivateConfig",
+    "sha256": "8c31b05a464e834e367c64e5c0da205c9533d631e3ce529ffa52e637abd03e3c",
+    "export": "derived/unity/text/assets_resources_config_resbin_fabaoskillactivateconfig.bytes/FaBaoSkillActivateConfig__-8318092543875313297.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 820,
+      "version": 1,
+      "record_count": 40,
+      "stored_crc32": "601329b1",
+      "computed_inverted_crc32": "601329b1"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "FaBaoSkillActivateConfig",
+      "fields": [
+        {
+          "type": "uint",
+          "name": "FaBaoType",
+          "object_offset": 16
+        },
+        {
+          "type": "uint",
+          "name": "SkillPos",
+          "object_offset": 20
+        },
+        {
+          "type": "uint",
+          "name": "NeedFaBaoLv",
+          "object_offset": 24
+        },
+        {
+          "type": "uint",
+          "name": "NeedItemID",
+          "object_offset": 28
+        },
+        {
+          "type": "uint",
+          "name": "NeedItemCnt",
+          "object_offset": 32
+        }
+      ],
+      "unpack_va": 31293800,
+      "dump_line": 203578
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1dd819c",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd81c0",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd81e4",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd8208",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 28,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd8248",
+        "target_va": "0x21f6908",
+        "opcode": "B-tail",
+        "reader": "readUInt32",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 40
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "FaBaoType": 1,
+      "SkillPos": 1,
+      "NeedFaBaoLv": 10,
+      "NeedItemID": 202104,
+      "NeedItemCnt": 4,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 40,
+      "FaBaoType": 1,
+      "SkillPos": 2,
+      "NeedFaBaoLv": 20,
+      "NeedItemID": 202104,
+      "NeedItemCnt": 8,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 60,
+      "FaBaoType": 2,
+      "SkillPos": 1,
+      "NeedFaBaoLv": 10,
+      "NeedItemID": 202104,
+      "NeedItemCnt": 6,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 80,
+      "FaBaoType": 2,
+      "SkillPos": 2,
+      "NeedFaBaoLv": 20,
+      "NeedItemID": 202104,
+      "NeedItemCnt": 12,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 100,
+      "FaBaoType": 3,
+      "SkillPos": 1,
+      "NeedFaBaoLv": 10,
+      "NeedItemID": 202104,
+      "NeedItemCnt": 6,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 120,
+      "FaBaoType": 3,
+      "SkillPos": 2,
+      "NeedFaBaoLv": 20,
+      "NeedItemID": 202104,
+      "NeedItemCnt": 12,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 140,
+      "FaBaoType": 4,
+      "SkillPos": 1,
+      "NeedFaBaoLv": 10,
+      "NeedItemID": 202104,
+      "NeedItemCnt": 8,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 160,
+      "FaBaoType": 4,
+      "SkillPos": 2,
+      "NeedFaBaoLv": 20,
+      "NeedItemID": 202104,
+      "NeedItemCnt": 16,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 180,
+      "FaBaoType": 5,
+      "SkillPos": 1,
+      "NeedFaBaoLv": 10,
+      "NeedItemID": 202104,
+      "NeedItemCnt": 8,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 200,
+      "FaBaoType": 5,
+      "SkillPos": 2,
+      "NeedFaBaoLv": 20,
+      "NeedItemID": 202104,
+      "NeedItemCnt": 16,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 220,
+      "FaBaoType": 6,
+      "SkillPos": 1,
+      "NeedFaBaoLv": 10,
+      "NeedItemID": 202104,
+      "NeedItemCnt": 8,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 240,
+      "FaBaoType": 6,
+      "SkillPos": 2,
+      "NeedFaBaoLv": 20,
+      "NeedItemID": 202104,
+      "NeedItemCnt": 16,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 260,
+      "FaBaoType": 7,
+      "SkillPos": 1,
+      "NeedFaBaoLv": 10,
+      "NeedItemID": 202104,
+      "NeedItemCnt": 8,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 280,
+      "FaBaoType": 7,
+      "SkillPos": 2,
+      "NeedFaBaoLv": 20,
+      "NeedItemID": 202104,
+      "NeedItemCnt": 16,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 300,
+      "FaBaoType": 8,
+      "SkillPos": 1,
+      "NeedFaBaoLv": 10,
+      "NeedItemID": 202104,
+      "NeedItemCnt": 12,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 320,
+      "FaBaoType": 8,
+      "SkillPos": 2,
+      "NeedFaBaoLv": 20,
+      "NeedItemID": 202104,
+      "NeedItemCnt": 24,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 340,
+      "FaBaoType": 9,
+      "SkillPos": 1,
+      "NeedFaBaoLv": 10,
+      "NeedItemID": 202104,
+      "NeedItemCnt": 12,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 360,
+      "FaBaoType": 9,
+      "SkillPos": 2,
+      "NeedFaBaoLv": 20,
+      "NeedItemID": 202104,
+      "NeedItemCnt": 24,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 380,
+      "FaBaoType": 10,
+      "SkillPos": 1,
+      "NeedFaBaoLv": 10,
+      "NeedItemID": 202104,
+      "NeedItemCnt": 12,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 19,
+      "_byte_offset": 400,
+      "FaBaoType": 10,
+      "SkillPos": 2,
+      "NeedFaBaoLv": 20,
+      "NeedItemID": 202104,
+      "NeedItemCnt": 24,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 20,
+      "_byte_offset": 420,
+      "FaBaoType": 11,
+      "SkillPos": 1,
+      "NeedFaBaoLv": 10,
+      "NeedItemID": 202104,
+      "NeedItemCnt": 12,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 21,
+      "_byte_offset": 440,
+      "FaBaoType": 11,
+      "SkillPos": 2,
+      "NeedFaBaoLv": 20,
+      "NeedItemID": 202104,
+      "NeedItemCnt": 24,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 22,
+      "_byte_offset": 460,
+      "FaBaoType": 12,
+      "SkillPos": 1,
+      "NeedFaBaoLv": 10,
+      "NeedItemID": 202104,
+      "NeedItemCnt": 12,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 23,
+      "_byte_offset": 480,
+      "FaBaoType": 12,
+      "SkillPos": 2,
+      "NeedFaBaoLv": 20,
+      "NeedItemID": 202104,
+      "NeedItemCnt": 24,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 24,
+      "_byte_offset": 500,
+      "FaBaoType": 101,
+      "SkillPos": 1,
+      "NeedFaBaoLv": 10,
+      "NeedItemID": 202104,
+      "NeedItemCnt": 20,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 25,
+      "_byte_offset": 520,
+      "FaBaoType": 101,
+      "SkillPos": 2,
+      "NeedFaBaoLv": 20,
+      "NeedItemID": 202104,
+      "NeedItemCnt": 40,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 26,
+      "_byte_offset": 540,
+      "FaBaoType": 13,
+      "SkillPos": 1,
+      "NeedFaBaoLv": 10,
+      "NeedItemID": 202104,
+      "NeedItemCnt": 12,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 27,
+      "_byte_offset": 560,
+      "FaBaoType": 13,
+      "SkillPos": 2,
+      "NeedFaBaoLv": 20,
+      "NeedItemID": 202104,
+      "NeedItemCnt": 24,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 28,
+      "_byte_offset": 580,
+      "FaBaoType": 102,
+      "SkillPos": 1,
+      "NeedFaBaoLv": 10,
+      "NeedItemID": 202104,
+      "NeedItemCnt": 20,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 29,
+      "_byte_offset": 600,
+      "FaBaoType": 102,
+      "SkillPos": 2,
+      "NeedFaBaoLv": 20,
+      "NeedItemID": 202104,
+      "NeedItemCnt": 40,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 30,
+      "_byte_offset": 620,
+      "FaBaoType": 103,
+      "SkillPos": 1,
+      "NeedFaBaoLv": 10,
+      "NeedItemID": 202104,
+      "NeedItemCnt": 20,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 31,
+      "_byte_offset": 640,
+      "FaBaoType": 103,
+      "SkillPos": 2,
+      "NeedFaBaoLv": 20,
+      "NeedItemID": 202104,
+      "NeedItemCnt": 40,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 32,
+      "_byte_offset": 660,
+      "FaBaoType": 14,
+      "SkillPos": 1,
+      "NeedFaBaoLv": 10,
+      "NeedItemID": 202104,
+      "NeedItemCnt": 12,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 33,
+      "_byte_offset": 680,
+      "FaBaoType": 14,
+      "SkillPos": 2,
+      "NeedFaBaoLv": 20,
+      "NeedItemID": 202104,
+      "NeedItemCnt": 24,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 34,
+      "_byte_offset": 700,
+      "FaBaoType": 15,
+      "SkillPos": 1,
+      "NeedFaBaoLv": 10,
+      "NeedItemID": 202104,
+      "NeedItemCnt": 12,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 35,
+      "_byte_offset": 720,
+      "FaBaoType": 15,
+      "SkillPos": 2,
+      "NeedFaBaoLv": 20,
+      "NeedItemID": 202104,
+      "NeedItemCnt": 24,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 36,
+      "_byte_offset": 740,
+      "FaBaoType": 16,
+      "SkillPos": 1,
+      "NeedFaBaoLv": 10,
+      "NeedItemID": 202104,
+      "NeedItemCnt": 12,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 37,
+      "_byte_offset": 760,
+      "FaBaoType": 16,
+      "SkillPos": 2,
+      "NeedFaBaoLv": 20,
+      "NeedItemID": 202104,
+      "NeedItemCnt": 24,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 38,
+      "_byte_offset": 780,
+      "FaBaoType": 17,
+      "SkillPos": 1,
+      "NeedFaBaoLv": 10,
+      "NeedItemID": 202104,
+      "NeedItemCnt": 12,
+      "_byte_length": 20
+    },
+    {
+      "_record_index": 39,
+      "_byte_offset": 800,
+      "FaBaoType": 17,
+      "SkillPos": 2,
+      "NeedFaBaoLv": 20,
+      "NeedItemID": 202104,
+      "NeedItemCnt": 24,
+      "_byte_length": 20
+    }
+  ]
+}

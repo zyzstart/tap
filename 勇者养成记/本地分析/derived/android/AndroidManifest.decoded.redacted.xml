@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='utf-8'?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="227" android:versionName="1.227" android:installLocation="0" package="com.tencent.tmgp.yzycj" platformBuildVersionCode="227" platformBuildVersionName="1.227000">
+  <uses-sdk android:minSdkVersion="18" android:targetSdkVersion="28"/>
+  <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true"/>
+  <uses-feature android:glEsVersion="0x00020000"/>
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.WAKE_LOCK"/>
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+  <uses-permission android:name="android.permission.VIBRATE"/>
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+  <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+  <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+  <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+  <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+  <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+  <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+  <uses-feature android:name="android.hardware.touchscreen.multitouch" android:required="false"/>
+  <uses-feature android:name="android.hardware.touchscreen.multitouch.distinct" android:required="false"/>
+  <uses-permission android:name="android.permission.GET_TASKS"/>
+  <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+  <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+  <uses-permission android:name="android.permission.READ_LOGS"/>
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+  <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+  <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+  <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+  <uses-permission android:name="android.permission.READ_SMS"/>
+  <uses-permission android:name="android.permission.SEND_SMS"/>
+  <uses-permission android:name="com.asus.msa.SupplementaryDID.ACCESS"/>
+  <application android:theme="@7F0D012D" android:label="@7F0C0020" android:icon="@7F0B0000" android:allowBackup="false" android:usesCleartextTraffic="true">
+    <activity android:label="@7F0C0020" android:name="com.dodjoy.unityplayer.DodUnityPlayerActivity" android:exported="true" android:launchMode="1" android:screenOrientation="7" android:configChanges="0x40002FFF" android:hardwareAccelerated="false">
+      <meta-data android:name="unityplayer.UnityActivity" android:value="true"/>
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <meta-data android:name="unity.build-id" android:value="757cd48e-b708-449c-89ab-55d800e3fc6a"/>
+    <meta-data android:name="unity.splash-mode" android:value="2"/>
+    <meta-data android:name="unity.splash-enable" android:value="true"/>
+    <meta-data android:name="HaveDodNative" android:value="false"/>
+    <meta-data android:name="HaveHotIl2cpp" android:value="true"/>
+    <activity android:name="com.dodjoy.unitywebview.DodWebView" android:launchMode="2" android:screenOrientation="7" android:configChanges="0x40000FFF"/>
+    <meta-data android:name="android.max_aspect" android:value="2.100000"/>
+    <meta-data android:name="unityplayer.SkipPermissionsDialog" android:value="true"/>
+    <meta-data android:name="isSDKVersion" android:value="true"/>
+    <activity android:name="com.soundcloud.android.crop.CropImageActivity"/>
+    <receiver android:label="NetworkConnection" android:name="com.youme.im.NetworkStatusReceiver">
+      <intent-filter>
+        <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+      </intent-filter>
+    </receiver>
+    <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+    <meta-data android:name="DOD_PLATFORM_NAME" android:value="hardtime"/>
+    <meta-data android:name="ChannelId" android:value="550"/>
+    <activity android:theme="@android:01030010" android:name="com.dodjoy.thirdPlatform.DodYSDKLoginActivity"/>
+    <activity android:theme="@android:01030010" android:name="com.tencent.ysdk.module.realName.impl.RegisterRealNameActivity" android:screenOrientation="0" android:configChanges="0x000004A0"/>
+    <activity android:name="com.tencent.tauth.AuthActivity" android:launchMode="2" android:noHistory="true">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <data android:scheme="tencent1112071649"/>
+      </intent-filter>
+    </activity>
+    <activity android:theme="@android:01030010" android:name="com.tencent.connect.common.AssistActivity" android:configChanges="0x000004A0"/>
+    <activity android:theme="@android:01030010" android:label="WXEntryActivity" android:name="com.tencent.tmgp.yzycj.wxapi.WXEntryActivity" android:exported="true" android:taskAffinity="com.tencent.tmgp.yzycj.diff" android:excludeFromRecents="true" android:launchMode="1" android:configChanges="0x000004A0">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <data android:scheme="wx5852b7d56b37c701"/>
+      </intent-filter>
+    </activity>
+    <activity android:name="com.tencent.ysdk.module.user.impl.wx.qrcode.QRActivity"/>
+    <activity android:theme="@android:01030010" android:name="com.tencent.ysdk.module.user.impl.freelogin.FreeLoginInfoActivity" android:exported="true" android:configChanges="0x000004A0">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <data android:scheme="tencentysdk1112071649"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <data android:scheme="tencentysdkcom.tencent.tmgp.yzycj"/>
+      </intent-filter>
+    </activity>
+    <activity android:theme="@android:01030010" android:name="com.tencent.midas.proxyactivity.APMidasPayProxyActivity" android:screenOrientation="1" android:configChanges="0x000004A0"/>
+    <activity android:theme="@android:01030010" android:name="com.tencent.midas.wx.APMidasWXPayActivity" android:exported="true"/>
+    <activity android:theme="@android:01030010" android:name="com.tencent.midas.qq.APMidasQQWalletActivity" android:exported="true" android:launchMode="1" android:configChanges="0x000004A0">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <data android:scheme="qwallet100703379"/>
+      </intent-filter>
+    </activity>
+    <activity android:theme="@android:01030010" android:name="com.tencent.midas.jsbridge.APWebJSBridgeActivity" android:windowSoftInputMode="0x00000003"/>
+    <service android:name="com.tencent.tmdownloader.TMAssistantDownloadService" android:exported="false" android:process=":TMAssistantDownloadSDKService"/>
+    <activity android:name="com.tencent.tmgp.yzycj.module.submodule.inner.WebActivity"/>
+    <service android:name="com.tencent.ysdk.module.sandbox.pipe.PipeService">
+      <intent-filter>
+        <action android:name="com.tencent.ysdk.framework.communicate.PipeService"/>
+      </intent-filter>
+    </service>
+    <meta-data android:name="MAIN_ACTIVITY" android:value="com.dodjoy.unityplayer.DodUnityPlayerActivity"/>
+    <meta-data android:name="android.support.VERSION" android:value="26.0.2"/>
+    <activity android:theme="@android:01030010" android:name="com.jakewharton.processphoenix.ProcessPhoenix" android:exported="false" android:process=":phoenix"/>
+    <provider android:name="com.tencent.ysdk.framework.YSDKInitProvider" android:exported="false" android:authorities="com.tencent.tmgp.yzycj.ysdk.ysdkinitprovider"/>
+  </application>
+</manifest>

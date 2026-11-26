@@ -1,0 +1,112 @@
+0x1dd7d2c: str       x23, [sp, #-0x40]!
+0x1dd7d30: stp       x22, x21, [sp, #0x10]
+0x1dd7d34: stp       x20, x19, [sp, #0x20]
+0x1dd7d38: stp       x29, x30, [sp, #0x30]
+0x1dd7d3c: add       x29, sp, #0x30
+0x1dd7d40: mov       x21, x0
+0x1dd7d44: mov       x19, x3
+0x1dd7d48: mov       x20, x1
+0x1dd7d4c: add       x22, x21, #0x10
+0x1dd7d50: cbnz      x20, #0x1dd7d5c
+0x1dd7d54: mov       x0, xzr
+0x1dd7d58: bl        #0xd2b72c ; 
+0x1dd7d5c: mov       x0, x20
+0x1dd7d60: mov       x1, x22
+0x1dd7d64: mov       x2, xzr
+0x1dd7d68: bl        #0x21f6908 ; ProtoBase.PbReadBuf$$readUInt32
+0x1dd7d6c: cbnz      w0, #0x1dd7ed8
+0x1dd7d70: add       x22, x21, #0x14
+0x1dd7d74: cbnz      x20, #0x1dd7d80
+0x1dd7d78: mov       x0, xzr
+0x1dd7d7c: bl        #0xd2b72c ; 
+0x1dd7d80: mov       x0, x20
+0x1dd7d84: mov       x1, x22
+0x1dd7d88: mov       x2, xzr
+0x1dd7d8c: bl        #0x21f6908 ; ProtoBase.PbReadBuf$$readUInt32
+0x1dd7d90: cbnz      w0, #0x1dd7ed8
+0x1dd7d94: add       x22, x21, #0x18
+0x1dd7d98: cbnz      x20, #0x1dd7da4
+0x1dd7d9c: mov       x0, xzr
+0x1dd7da0: bl        #0xd2b72c ; 
+0x1dd7da4: mov       x0, x20
+0x1dd7da8: mov       x1, x22
+0x1dd7dac: mov       x2, xzr
+0x1dd7db0: bl        #0x21f6908 ; ProtoBase.PbReadBuf$$readUInt32
+0x1dd7db4: cbnz      w0, #0x1dd7ed8
+0x1dd7db8: add       x22, x21, #0x1c
+0x1dd7dbc: cbnz      x20, #0x1dd7dc8
+0x1dd7dc0: mov       x0, xzr
+0x1dd7dc4: bl        #0xd2b72c ; 
+0x1dd7dc8: mov       x0, x20
+0x1dd7dcc: mov       x1, x22
+0x1dd7dd0: mov       x2, xzr
+0x1dd7dd4: bl        #0x21f6908 ; ProtoBase.PbReadBuf$$readUInt32
+0x1dd7dd8: cbnz      w0, #0x1dd7ed8
+0x1dd7ddc: add       x22, x21, #0x20
+0x1dd7de0: cbnz      x20, #0x1dd7dec
+0x1dd7de4: mov       x0, xzr
+0x1dd7de8: bl        #0xd2b72c ; 
+0x1dd7dec: mov       x0, x20
+0x1dd7df0: mov       x1, x22
+0x1dd7df4: mov       x2, xzr
+0x1dd7df8: bl        #0x21f6908 ; ProtoBase.PbReadBuf$$readUInt32
+0x1dd7dfc: cbnz      w0, #0x1dd7ed8
+0x1dd7e00: add       x22, x21, #0x24
+0x1dd7e04: cbnz      x20, #0x1dd7e10
+0x1dd7e08: mov       x0, xzr
+0x1dd7e0c: bl        #0xd2b72c ; 
+0x1dd7e10: mov       x0, x20
+0x1dd7e14: mov       x1, x22
+0x1dd7e18: mov       x2, xzr
+0x1dd7e1c: bl        #0x21f6908 ; ProtoBase.PbReadBuf$$readUInt32
+0x1dd7e20: cbnz      w0, #0x1dd7ed8
+0x1dd7e24: add       x22, x21, #0x28
+0x1dd7e28: cbnz      x20, #0x1dd7e34
+0x1dd7e2c: mov       x0, xzr
+0x1dd7e30: bl        #0xd2b72c ; 
+0x1dd7e34: mov       x0, x20
+0x1dd7e38: mov       x1, x22
+0x1dd7e3c: mov       x2, xzr
+0x1dd7e40: bl        #0x21f6908 ; ProtoBase.PbReadBuf$$readUInt32
+0x1dd7e44: cbnz      w0, #0x1dd7ed8
+0x1dd7e48: add       x22, x21, #0x2c
+0x1dd7e4c: cbnz      x20, #0x1dd7e58
+0x1dd7e50: mov       x0, xzr
+0x1dd7e54: bl        #0xd2b72c ; 
+0x1dd7e58: mov       x0, x20
+0x1dd7e5c: mov       x1, x22
+0x1dd7e60: mov       x2, xzr
+0x1dd7e64: bl        #0x21f6908 ; ProtoBase.PbReadBuf$$readUInt32
+0x1dd7e68: cbnz      w0, #0x1dd7ed8
+0x1dd7e6c: mov       x23, xzr
+0x1dd7e70: ldr       x22, [x21, #0x30]
+0x1dd7e74: cbnz      x22, #0x1dd7e80
+0x1dd7e78: mov       x0, xzr
+0x1dd7e7c: bl        #0xd2b72c ; 
+0x1dd7e80: ldr       w8, [x22, #0x18]
+0x1dd7e84: cmp       x23, x8
+0x1dd7e88: b.lo      #0x1dd7e9c
+0x1dd7e8c: bl        #0xd2c410 ; 
+0x1dd7e90: mov       x1, xzr
+0x1dd7e94: mov       x2, xzr
+0x1dd7e98: bl        #0xd2b69c ; 
+0x1dd7e9c: add       x8, x22, x23, lsl #3
+0x1dd7ea0: ldr       x22, [x8, #0x20]
+0x1dd7ea4: cbnz      x22, #0x1dd7eb0
+0x1dd7ea8: mov       x0, xzr
+0x1dd7eac: bl        #0xd2b72c ; 
+0x1dd7eb0: mov       w2, #1
+0x1dd7eb4: mov       x0, x22
+0x1dd7eb8: mov       x1, x20
+0x1dd7ebc: mov       x3, x19
+0x1dd7ec0: mov       x4, xzr
+0x1dd7ec4: bl        #0x1e879c8 ; ResDef.ResAttrImpactData$$unpack
+0x1dd7ec8: cbnz      w0, #0x1dd7ed8
+0x1dd7ecc: cmp       x23, #3
+0x1dd7ed0: add       x23, x23, #1
+0x1dd7ed4: b.lt      #0x1dd7e70
+0x1dd7ed8: ldp       x29, x30, [sp, #0x30]
+0x1dd7edc: ldp       x20, x19, [sp, #0x20]
+0x1dd7ee0: ldp       x22, x21, [sp, #0x10]
+0x1dd7ee4: ldr       x23, [sp], #0x40
+0x1dd7ee8: ret       

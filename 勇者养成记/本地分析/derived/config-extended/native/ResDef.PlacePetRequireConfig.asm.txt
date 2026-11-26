@@ -1,0 +1,30 @@
+0x1e87950: str       x21, [sp, #-0x30]!
+0x1e87954: stp       x20, x19, [sp, #0x10]
+0x1e87958: stp       x29, x30, [sp, #0x20]
+0x1e8795c: add       x29, sp, #0x20
+0x1e87960: mov       x20, x0
+0x1e87964: mov       x19, x1
+0x1e87968: add       x21, x20, #0x10
+0x1e8796c: cbnz      x19, #0x1e87978
+0x1e87970: mov       x0, xzr
+0x1e87974: bl        #0xd2b72c ; 
+0x1e87978: mov       x0, x19
+0x1e8797c: mov       x1, x21
+0x1e87980: mov       x2, xzr
+0x1e87984: bl        #0x21f6908 ; ProtoBase.PbReadBuf$$readUInt32
+0x1e87988: cbz       w0, #0x1e8799c
+0x1e8798c: ldp       x29, x30, [sp, #0x20]
+0x1e87990: ldp       x20, x19, [sp, #0x10]
+0x1e87994: ldr       x21, [sp], #0x30
+0x1e87998: ret       
+0x1e8799c: add       x20, x20, #0x14
+0x1e879a0: cbnz      x19, #0x1e879ac
+0x1e879a4: mov       x0, xzr
+0x1e879a8: bl        #0xd2b72c ; 
+0x1e879ac: mov       x0, x19
+0x1e879b0: mov       x1, x20
+0x1e879b4: ldp       x29, x30, [sp, #0x20]
+0x1e879b8: ldp       x20, x19, [sp, #0x10]
+0x1e879bc: mov       x2, xzr
+0x1e879c0: ldr       x21, [sp], #0x30
+0x1e879c4: b         #0x21f65e0 ; ProtoBase.PbReadBuf$$readUInt8

@@ -1,0 +1,104 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_pvpbornposconfig.bytes.ab",
+    "path_id": 2224257851969128957,
+    "name": "PvpBornPosConfig",
+    "sha256": "81ffbd11c63e358ef65e149788b0a7d800de6762fc017ab85357bbea1fde7105",
+    "export": "derived/unity/text/assets_resources_config_resbin_pvpbornposconfig.bytes/PvpBornPosConfig__2224257851969128957.bin",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 92,
+      "version": 1,
+      "record_count": 6,
+      "stored_crc32": "dde27b2b",
+      "computed_inverted_crc32": "dde27b2b"
+    },
+    "status": "cross-variant-layout-candidate",
+    "legacy_reason": "ValueError: Truncated field PosY",
+    "layout_rule": "same-order-with-float-FP-transfer",
+    "fields": [
+      {
+        "type": "uint",
+        "name": "PosId",
+        "object_offset": 16
+      },
+      {
+        "type": "float",
+        "name": "PosX",
+        "object_offset": 24
+      },
+      {
+        "type": "float",
+        "name": "PosY",
+        "object_offset": 32
+      }
+    ],
+    "companion_json": "derived/config-decoded/BattleCore/PvpBornPosConfig.json",
+    "companion_export": "derived/unity/text/assets_resources_config_resbin_fp_pvpbornposconfig.bytes/PvpBornPosConfig__-220334805406963081.bin",
+    "companion_sha256": "8334624e64ad0faa0578200c164577229049fd89ec4c7ed7c5b397484ca3149c",
+    "named_value_checks": {
+      "exact_named_value": 6,
+      "FP_to_float32_projection": 12
+    },
+    "decoded_record_count": 6,
+    "payload_roundtrip_sha256": "bdac7d7bc00d8ca9f38f707d8e1d8bbd27b6b7ccb1b83d04a2616f568df0cfec",
+    "decoded_json": "derived/config-layout-recovery/nonfp/PvpBornPosConfig.json",
+    "decoded_csv": "derived/config-layout-recovery/nonfp/PvpBornPosConfig.csv"
+  },
+  "limits": [
+    "Cross-variant hypothesis constrained by every companion named value, not the exact target unpack function.",
+    "Unnamed cells retain bytes/text only; no claimed gameplay meaning.",
+    "Q32.32 projection is a consistency check, not a statement of field units.",
+    "No sample execution or game-server contact."
+  ],
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "PosId": 1,
+      "PosX": 3.0,
+      "PosY": 3.0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 32,
+      "PosId": 2,
+      "PosX": 30.0,
+      "PosY": 4.0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 44,
+      "PosId": 3,
+      "PosX": 4.0,
+      "PosY": 22.0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 56,
+      "PosId": 4,
+      "PosX": 30.0,
+      "PosY": 22.0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 68,
+      "PosId": 5,
+      "PosX": 4.0,
+      "PosY": 40.0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 80,
+      "PosId": 6,
+      "PosX": 30.0,
+      "PosY": 40.0,
+      "_byte_length": 12
+    }
+  ]
+}

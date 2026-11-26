@@ -1,0 +1,245 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_jingmaichenghaoconfig.bytes.ab",
+    "path_id": 2118619088240572870,
+    "name": "JingMaiChengHaoConfig",
+    "sha256": "2bdc034cdf0b2d5f94f877edeabea997474c75dd2f4629ff8820b854f91c94d5",
+    "export": "derived/unity/text/assets_resources_config_resbin_jingmaichenghaoconfig.bytes/JingMaiChengHaoConfig__2118619088240572870.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 695,
+      "version": 1,
+      "record_count": 9,
+      "stored_crc32": "7e85d1dc",
+      "computed_inverted_crc32": "7e85d1dc"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "JingMaiChengHaoConfig",
+      "fields": [
+        {
+          "type": "uint",
+          "name": "MinScore",
+          "object_offset": 16
+        },
+        {
+          "type": "uint",
+          "name": "MaxScore",
+          "object_offset": 20
+        },
+        {
+          "type": "string",
+          "name": "ChengHaoName",
+          "object_offset": 24
+        },
+        {
+          "type": "string",
+          "name": "TopColor",
+          "object_offset": 32
+        },
+        {
+          "type": "string",
+          "name": "IconName",
+          "object_offset": 40
+        },
+        {
+          "type": "string",
+          "name": "BottomColor",
+          "object_offset": 48
+        },
+        {
+          "type": "string",
+          "name": "OutLineColor",
+          "object_offset": 56
+        }
+      ],
+      "unpack_va": 30738656,
+      "dump_line": 206808
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1d50914",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d50938",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d50960",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d50988",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d509b0",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 40,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d509d8",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 48,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d50a1c",
+        "target_va": "0x21f6ce8",
+        "opcode": "B-tail",
+        "reader": "readString",
+        "destination_object_offset": 56,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 9
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "MinScore": 0,
+      "MaxScore": 1,
+      "ChengHaoName": "凡人之躯",
+      "TopColor": "57986A",
+      "IconName": "icon_zj_psjf",
+      "BottomColor": "57986A",
+      "OutLineColor": "FFFFFF",
+      "_byte_length": 75
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 95,
+      "MinScore": 2,
+      "MaxScore": 3,
+      "ChengHaoName": "铜骨之躯",
+      "TopColor": "5989B2",
+      "IconName": "icon_zj_psjf",
+      "BottomColor": "5989B2",
+      "OutLineColor": "FFFFFF",
+      "_byte_length": 75
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 170,
+      "MinScore": 4,
+      "MaxScore": 6,
+      "ChengHaoName": "银骨之躯",
+      "TopColor": "6659B2",
+      "IconName": "icon_zj_psjf",
+      "BottomColor": "6659B2",
+      "OutLineColor": "FFFFFF",
+      "_byte_length": 75
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 245,
+      "MinScore": 7,
+      "MaxScore": 9,
+      "ChengHaoName": "金身之躯",
+      "TopColor": "B259AF",
+      "IconName": "icon_zj_psjf",
+      "BottomColor": "B259AF",
+      "OutLineColor": "FFFFFF",
+      "_byte_length": 75
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 320,
+      "MinScore": 10,
+      "MaxScore": 12,
+      "ChengHaoName": "万象之躯",
+      "TopColor": "3CB409",
+      "IconName": "icon_zj_psjf",
+      "BottomColor": "217C65",
+      "OutLineColor": "FFFFFF",
+      "_byte_length": 75
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 395,
+      "MinScore": 13,
+      "MaxScore": 15,
+      "ChengHaoName": "散仙之躯",
+      "TopColor": "49A87E",
+      "IconName": "icon_zj_psjf",
+      "BottomColor": "2647AB",
+      "OutLineColor": "FFFFFF",
+      "_byte_length": 75
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 470,
+      "MinScore": 16,
+      "MaxScore": 18,
+      "ChengHaoName": "地仙之躯",
+      "TopColor": "F75956",
+      "IconName": "icon_zj_psjf",
+      "BottomColor": "AD2C2A",
+      "OutLineColor": "FFFFFF",
+      "_byte_length": 75
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 545,
+      "MinScore": 19,
+      "MaxScore": 21,
+      "ChengHaoName": "真仙之躯",
+      "TopColor": "EAB64C",
+      "IconName": "icon_zj_psjf",
+      "BottomColor": "DE7228",
+      "OutLineColor": "FFFFFF",
+      "_byte_length": 75
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 620,
+      "MinScore": 22,
+      "MaxScore": 24,
+      "ChengHaoName": "玄仙之躯",
+      "TopColor": "F26288",
+      "IconName": "icon_zj_psjf",
+      "BottomColor": "68319F",
+      "OutLineColor": "FFFFFF",
+      "_byte_length": 75
+    }
+  ]
+}

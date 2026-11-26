@@ -1,0 +1,49 @@
+0x1641fc0: str       x21, [sp, #-0x30]!
+0x1641fc4: stp       x20, x19, [sp, #0x10]
+0x1641fc8: stp       x29, x30, [sp, #0x20]
+0x1641fcc: add       x29, sp, #0x20
+0x1641fd0: mov       x20, x0
+0x1641fd4: mov       x19, x1
+0x1641fd8: add       x21, x20, #0x10
+0x1641fdc: cbnz      x19, #0x1641fe8
+0x1641fe0: mov       x0, xzr
+0x1641fe4: bl        #0xd2b72c ; 
+0x1641fe8: mov       x0, x19
+0x1641fec: mov       x1, x21
+0x1641ff0: mov       x2, xzr
+0x1641ff4: bl        #0x21f6908 ; ProtoBase.PbReadBuf$$readUInt32
+0x1641ff8: cbnz      w0, #0x1642048
+0x1641ffc: add       x21, x20, #0x14
+0x1642000: cbnz      x19, #0x164200c
+0x1642004: mov       x0, xzr
+0x1642008: bl        #0xd2b72c ; 
+0x164200c: mov       x0, x19
+0x1642010: mov       x1, x21
+0x1642014: mov       x2, xzr
+0x1642018: bl        #0x21f6908 ; ProtoBase.PbReadBuf$$readUInt32
+0x164201c: cbnz      w0, #0x1642048
+0x1642020: add       x21, x20, #0x18
+0x1642024: cbnz      x19, #0x1642030
+0x1642028: mov       x0, xzr
+0x164202c: bl        #0xd2b72c ; 
+0x1642030: mov       w2, #0x40
+0x1642034: mov       x0, x19
+0x1642038: mov       x1, x21
+0x164203c: mov       x3, xzr
+0x1642040: bl        #0x21f6ce8 ; ProtoBase.PbReadBuf$$readString
+0x1642044: cbz       w0, #0x1642058
+0x1642048: ldp       x29, x30, [sp, #0x20]
+0x164204c: ldp       x20, x19, [sp, #0x10]
+0x1642050: ldr       x21, [sp], #0x30
+0x1642054: ret       
+0x1642058: ldr       x20, [x20, #0x20]
+0x164205c: cbnz      x20, #0x1642068
+0x1642060: mov       x0, xzr
+0x1642064: bl        #0xd2b72c ; 
+0x1642068: mov       x0, x20
+0x164206c: mov       x1, x19
+0x1642070: ldp       x29, x30, [sp, #0x20]
+0x1642074: ldp       x20, x19, [sp, #0x10]
+0x1642078: mov       w2, #1
+0x164207c: ldr       x21, [sp], #0x30
+0x1642080: b         #0x1642084 ; BattleCore.ItemFuncData$$unpack

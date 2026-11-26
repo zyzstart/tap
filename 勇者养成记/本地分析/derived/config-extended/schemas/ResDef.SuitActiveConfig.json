@@ -1,0 +1,87 @@
+{
+  "namespace": "ResDef",
+  "name": "SuitActiveConfig",
+  "fields": [
+    {
+      "type": "int",
+      "name": "Num",
+      "object_offset": 16
+    },
+    {
+      "type": "ResAttrImpactData",
+      "name": "ImpactData",
+      "object_offset": 24
+    }
+  ],
+  "unpack_va": 32078692,
+  "dump_line": 206423,
+  "layout": [
+    {
+      "type": "int",
+      "name": "Num",
+      "object_offset": 16,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e97b98",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ResAttrImpactData",
+      "name": "ImpactData",
+      "object_offset": 24,
+      "wire_type": "ResAttrImpactData",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e97bd8",
+          "target_va": "0x1e879c8",
+          "target_names": [
+            "ResDef.ResAttrImpactData$$unpack"
+          ],
+          "opcode": "B",
+          "kind": "nested",
+          "nested_schema": "ResDef.ResAttrImpactData",
+          "destination": [
+            "field",
+            24
+          ],
+          "cut_version": 1
+        }
+      ],
+      "nested_schema": "ResDef.ResAttrImpactData"
+    }
+  ],
+  "native_evidence": {
+    "method_start_va": "0x1e97b64",
+    "instruction_steps": 22,
+    "event_count": 2,
+    "branch_evidence": [],
+    "loops": [],
+    "instruction_sha256": "7b7738472ebfe3ada115b09724255a54e2fdf142d289723eb9f04e00dd9c34ef",
+    "gate": "concrete-success-path; all sequential readers/nested callees; full field/destination/stride matching",
+    "assumptions": [
+      "non-null input buffer and created nested objects/arrays",
+      "managed array bounds valid",
+      "AAPCS64 callee-saved register preservation",
+      "reader and nested call success; version 1 only"
+    ]
+  }
+}

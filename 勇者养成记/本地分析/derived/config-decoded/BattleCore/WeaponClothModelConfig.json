@@ -1,0 +1,3777 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_fp_weaponclothmodelconfig.bytes.ab",
+    "path_id": -5312538227080648987,
+    "name": "WeaponClothModelConfig",
+    "sha256": "13908e4290d304b2da340ab5eb7fa71157559f47ff09059278c488083c0fc3e9",
+    "export": "derived/unity/text/assets_resources_config_resbin_fp_weaponclothmodelconfig.bytes/WeaponClothModelConfig__-5312538227080648987.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 27834,
+      "version": 1,
+      "record_count": 462,
+      "stored_crc32": "5fdffb71",
+      "computed_inverted_crc32": "5fdffb71"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "BattleCore",
+      "name": "WeaponClothModelConfig",
+      "fields": [
+        {
+          "type": "uint",
+          "name": "ModelID",
+          "object_offset": 16
+        },
+        {
+          "type": "string",
+          "name": "WeaponBullet",
+          "object_offset": 24
+        },
+        {
+          "type": "string",
+          "name": "WeaponHitPath",
+          "object_offset": 32
+        }
+      ],
+      "unpack_va": 35223212,
+      "dump_line": 167698
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x21976e0",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x2197708",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x219774c",
+        "target_va": "0x21f6ce8",
+        "opcode": "B-tail",
+        "reader": "readString",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 462
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "ModelID": 10001,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 76,
+      "ModelID": 10002,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 132,
+      "ModelID": 10003,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 188,
+      "ModelID": 10004,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 244,
+      "ModelID": 10005,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 300,
+      "ModelID": 10006,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 356,
+      "ModelID": 10007,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 412,
+      "ModelID": 10008,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 468,
+      "ModelID": 10009,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 524,
+      "ModelID": 10010,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 580,
+      "ModelID": 10011,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 636,
+      "ModelID": 10012,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 692,
+      "ModelID": 10013,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 748,
+      "ModelID": 10014,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 804,
+      "ModelID": 10015,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 860,
+      "ModelID": 10016,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 916,
+      "ModelID": 10017,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 972,
+      "ModelID": 10018,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 1028,
+      "ModelID": 10019,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 19,
+      "_byte_offset": 1084,
+      "ModelID": 10020,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 20,
+      "_byte_offset": 1140,
+      "ModelID": 10021,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 21,
+      "_byte_offset": 1196,
+      "ModelID": 10022,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 22,
+      "_byte_offset": 1252,
+      "ModelID": 10023,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 23,
+      "_byte_offset": 1308,
+      "ModelID": 10024,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 24,
+      "_byte_offset": 1364,
+      "ModelID": 10025,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 25,
+      "_byte_offset": 1420,
+      "ModelID": 10026,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 26,
+      "_byte_offset": 1476,
+      "ModelID": 10027,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 27,
+      "_byte_offset": 1532,
+      "ModelID": 10028,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 28,
+      "_byte_offset": 1588,
+      "ModelID": 10029,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 29,
+      "_byte_offset": 1644,
+      "ModelID": 10030,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 30,
+      "_byte_offset": 1700,
+      "ModelID": 10031,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 31,
+      "_byte_offset": 1756,
+      "ModelID": 10032,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 32,
+      "_byte_offset": 1812,
+      "ModelID": 10033,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 33,
+      "_byte_offset": 1868,
+      "ModelID": 10034,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 34,
+      "_byte_offset": 1924,
+      "ModelID": 10101,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 35,
+      "_byte_offset": 1981,
+      "ModelID": 10102,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 36,
+      "_byte_offset": 2038,
+      "ModelID": 10103,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 37,
+      "_byte_offset": 2095,
+      "ModelID": 10104,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 38,
+      "_byte_offset": 2152,
+      "ModelID": 10105,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 39,
+      "_byte_offset": 2209,
+      "ModelID": 10106,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 40,
+      "_byte_offset": 2266,
+      "ModelID": 10107,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 41,
+      "_byte_offset": 2323,
+      "ModelID": 10108,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 42,
+      "_byte_offset": 2380,
+      "ModelID": 10109,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 43,
+      "_byte_offset": 2437,
+      "ModelID": 10110,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 44,
+      "_byte_offset": 2494,
+      "ModelID": 10111,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 45,
+      "_byte_offset": 2551,
+      "ModelID": 10112,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 46,
+      "_byte_offset": 2608,
+      "ModelID": 10113,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 47,
+      "_byte_offset": 2665,
+      "ModelID": 10114,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 48,
+      "_byte_offset": 2722,
+      "ModelID": 10115,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 49,
+      "_byte_offset": 2779,
+      "ModelID": 10116,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 50,
+      "_byte_offset": 2836,
+      "ModelID": 10117,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 51,
+      "_byte_offset": 2893,
+      "ModelID": 10118,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 52,
+      "_byte_offset": 2950,
+      "ModelID": 10119,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 53,
+      "_byte_offset": 3007,
+      "ModelID": 10120,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 54,
+      "_byte_offset": 3064,
+      "ModelID": 10121,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 55,
+      "_byte_offset": 3121,
+      "ModelID": 10122,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 56,
+      "_byte_offset": 3178,
+      "ModelID": 10123,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 57,
+      "_byte_offset": 3235,
+      "ModelID": 10124,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 58,
+      "_byte_offset": 3292,
+      "ModelID": 10125,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 59,
+      "_byte_offset": 3349,
+      "ModelID": 10126,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 60,
+      "_byte_offset": 3406,
+      "ModelID": 10127,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 61,
+      "_byte_offset": 3463,
+      "ModelID": 10128,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 62,
+      "_byte_offset": 3520,
+      "ModelID": 10129,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 63,
+      "_byte_offset": 3577,
+      "ModelID": 10130,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 64,
+      "_byte_offset": 3634,
+      "ModelID": 10131,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 65,
+      "_byte_offset": 3691,
+      "ModelID": 10132,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 66,
+      "_byte_offset": 3748,
+      "ModelID": 10133,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 67,
+      "_byte_offset": 3805,
+      "ModelID": 10134,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 68,
+      "_byte_offset": 3862,
+      "ModelID": 10201,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 69,
+      "_byte_offset": 3919,
+      "ModelID": 10202,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 70,
+      "_byte_offset": 3976,
+      "ModelID": 10203,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 71,
+      "_byte_offset": 4033,
+      "ModelID": 10204,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 72,
+      "_byte_offset": 4090,
+      "ModelID": 10205,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 73,
+      "_byte_offset": 4147,
+      "ModelID": 10206,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 74,
+      "_byte_offset": 4204,
+      "ModelID": 10207,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 75,
+      "_byte_offset": 4261,
+      "ModelID": 10208,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 76,
+      "_byte_offset": 4318,
+      "ModelID": 10209,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 77,
+      "_byte_offset": 4375,
+      "ModelID": 10210,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 78,
+      "_byte_offset": 4432,
+      "ModelID": 10211,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 79,
+      "_byte_offset": 4489,
+      "ModelID": 10212,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 80,
+      "_byte_offset": 4546,
+      "ModelID": 10213,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 81,
+      "_byte_offset": 4603,
+      "ModelID": 10214,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 82,
+      "_byte_offset": 4660,
+      "ModelID": 10215,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 83,
+      "_byte_offset": 4717,
+      "ModelID": 10216,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 84,
+      "_byte_offset": 4774,
+      "ModelID": 10217,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 85,
+      "_byte_offset": 4831,
+      "ModelID": 10218,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 86,
+      "_byte_offset": 4888,
+      "ModelID": 10219,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 87,
+      "_byte_offset": 4945,
+      "ModelID": 10220,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 88,
+      "_byte_offset": 5002,
+      "ModelID": 10221,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 89,
+      "_byte_offset": 5059,
+      "ModelID": 10222,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 90,
+      "_byte_offset": 5116,
+      "ModelID": 10223,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 91,
+      "_byte_offset": 5173,
+      "ModelID": 10224,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 92,
+      "_byte_offset": 5230,
+      "ModelID": 10225,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 93,
+      "_byte_offset": 5287,
+      "ModelID": 10226,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 94,
+      "_byte_offset": 5344,
+      "ModelID": 10227,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 95,
+      "_byte_offset": 5401,
+      "ModelID": 10228,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 96,
+      "_byte_offset": 5458,
+      "ModelID": 10229,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 97,
+      "_byte_offset": 5515,
+      "ModelID": 10230,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 98,
+      "_byte_offset": 5572,
+      "ModelID": 10231,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 99,
+      "_byte_offset": 5629,
+      "ModelID": 10232,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 100,
+      "_byte_offset": 5686,
+      "ModelID": 10233,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 101,
+      "_byte_offset": 5743,
+      "ModelID": 10234,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 102,
+      "_byte_offset": 5800,
+      "ModelID": 10301,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 103,
+      "_byte_offset": 5858,
+      "ModelID": 10302,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 104,
+      "_byte_offset": 5916,
+      "ModelID": 10303,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 105,
+      "_byte_offset": 5974,
+      "ModelID": 10304,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 106,
+      "_byte_offset": 6032,
+      "ModelID": 10305,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 107,
+      "_byte_offset": 6090,
+      "ModelID": 10306,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 108,
+      "_byte_offset": 6148,
+      "ModelID": 10307,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 109,
+      "_byte_offset": 6206,
+      "ModelID": 10308,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 110,
+      "_byte_offset": 6264,
+      "ModelID": 10309,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 111,
+      "_byte_offset": 6322,
+      "ModelID": 10310,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 112,
+      "_byte_offset": 6380,
+      "ModelID": 10311,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 113,
+      "_byte_offset": 6438,
+      "ModelID": 10312,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 114,
+      "_byte_offset": 6496,
+      "ModelID": 10313,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 115,
+      "_byte_offset": 6554,
+      "ModelID": 10314,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 116,
+      "_byte_offset": 6612,
+      "ModelID": 10315,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 117,
+      "_byte_offset": 6670,
+      "ModelID": 10316,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 118,
+      "_byte_offset": 6728,
+      "ModelID": 10317,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 119,
+      "_byte_offset": 6786,
+      "ModelID": 10318,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 120,
+      "_byte_offset": 6844,
+      "ModelID": 10319,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 121,
+      "_byte_offset": 6902,
+      "ModelID": 10320,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 122,
+      "_byte_offset": 6960,
+      "ModelID": 10321,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 123,
+      "_byte_offset": 7018,
+      "ModelID": 10322,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 124,
+      "_byte_offset": 7076,
+      "ModelID": 10323,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 125,
+      "_byte_offset": 7134,
+      "ModelID": 10324,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 126,
+      "_byte_offset": 7192,
+      "ModelID": 10325,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 127,
+      "_byte_offset": 7250,
+      "ModelID": 10326,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 128,
+      "_byte_offset": 7308,
+      "ModelID": 10327,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 129,
+      "_byte_offset": 7366,
+      "ModelID": 10328,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 130,
+      "_byte_offset": 7424,
+      "ModelID": 10329,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 131,
+      "_byte_offset": 7482,
+      "ModelID": 10330,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 132,
+      "_byte_offset": 7540,
+      "ModelID": 10331,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 133,
+      "_byte_offset": 7598,
+      "ModelID": 10332,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 134,
+      "_byte_offset": 7656,
+      "ModelID": 10333,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 135,
+      "_byte_offset": 7714,
+      "ModelID": 10334,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 136,
+      "_byte_offset": 7772,
+      "ModelID": 70001,
+      "WeaponBullet": "Effect/Skill/jian_pd/jianqi01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 54
+    },
+    {
+      "_record_index": 137,
+      "_byte_offset": 7826,
+      "ModelID": 70002,
+      "WeaponBullet": "Effect/Skill/nu_pd/nu01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 48
+    },
+    {
+      "_record_index": 138,
+      "_byte_offset": 7874,
+      "ModelID": 70003,
+      "WeaponBullet": "Effect/Skill/huan/huan01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 49
+    },
+    {
+      "_record_index": 139,
+      "_byte_offset": 7923,
+      "ModelID": 70004,
+      "WeaponBullet": "Effect/Skill/qin/qin01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 140,
+      "_byte_offset": 7970,
+      "ModelID": 70101,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 141,
+      "_byte_offset": 8026,
+      "ModelID": 70102,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 142,
+      "_byte_offset": 8083,
+      "ModelID": 70103,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 143,
+      "_byte_offset": 8140,
+      "ModelID": 70104,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 144,
+      "_byte_offset": 8198,
+      "ModelID": 70201,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 145,
+      "_byte_offset": 8254,
+      "ModelID": 70202,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 146,
+      "_byte_offset": 8311,
+      "ModelID": 70203,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 147,
+      "_byte_offset": 8368,
+      "ModelID": 70204,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 148,
+      "_byte_offset": 8426,
+      "ModelID": 70301,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 149,
+      "_byte_offset": 8482,
+      "ModelID": 70302,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 150,
+      "_byte_offset": 8539,
+      "ModelID": 70303,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 151,
+      "_byte_offset": 8596,
+      "ModelID": 70304,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 152,
+      "_byte_offset": 8654,
+      "ModelID": 70401,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 153,
+      "_byte_offset": 8710,
+      "ModelID": 70402,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 154,
+      "_byte_offset": 8767,
+      "ModelID": 70403,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 155,
+      "_byte_offset": 8824,
+      "ModelID": 70404,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 156,
+      "_byte_offset": 8882,
+      "ModelID": 70501,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 157,
+      "_byte_offset": 8938,
+      "ModelID": 70502,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 158,
+      "_byte_offset": 8995,
+      "ModelID": 70503,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 159,
+      "_byte_offset": 9052,
+      "ModelID": 70504,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 160,
+      "_byte_offset": 9110,
+      "ModelID": 70601,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 161,
+      "_byte_offset": 9166,
+      "ModelID": 70602,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 162,
+      "_byte_offset": 9223,
+      "ModelID": 70603,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 163,
+      "_byte_offset": 9280,
+      "ModelID": 70604,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 164,
+      "_byte_offset": 9338,
+      "ModelID": 70701,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 165,
+      "_byte_offset": 9394,
+      "ModelID": 70702,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 166,
+      "_byte_offset": 9451,
+      "ModelID": 70703,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 167,
+      "_byte_offset": 9508,
+      "ModelID": 70704,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 168,
+      "_byte_offset": 9566,
+      "ModelID": 70801,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 169,
+      "_byte_offset": 9622,
+      "ModelID": 70802,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 170,
+      "_byte_offset": 9679,
+      "ModelID": 70803,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 171,
+      "_byte_offset": 9736,
+      "ModelID": 70804,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 172,
+      "_byte_offset": 9794,
+      "ModelID": 70901,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 173,
+      "_byte_offset": 9850,
+      "ModelID": 70902,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 174,
+      "_byte_offset": 9907,
+      "ModelID": 70903,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 175,
+      "_byte_offset": 9964,
+      "ModelID": 70904,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 176,
+      "_byte_offset": 10022,
+      "ModelID": 71001,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 177,
+      "_byte_offset": 10078,
+      "ModelID": 71002,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 178,
+      "_byte_offset": 10135,
+      "ModelID": 71003,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 179,
+      "_byte_offset": 10192,
+      "ModelID": 71004,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 180,
+      "_byte_offset": 10250,
+      "ModelID": 71101,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 181,
+      "_byte_offset": 10306,
+      "ModelID": 71102,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 182,
+      "_byte_offset": 10363,
+      "ModelID": 71103,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 183,
+      "_byte_offset": 10420,
+      "ModelID": 71104,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 184,
+      "_byte_offset": 10478,
+      "ModelID": 71201,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 185,
+      "_byte_offset": 10534,
+      "ModelID": 71202,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 186,
+      "_byte_offset": 10591,
+      "ModelID": 71203,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 187,
+      "_byte_offset": 10648,
+      "ModelID": 71204,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 188,
+      "_byte_offset": 10706,
+      "ModelID": 71301,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 189,
+      "_byte_offset": 10762,
+      "ModelID": 71302,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 190,
+      "_byte_offset": 10819,
+      "ModelID": 71303,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 191,
+      "_byte_offset": 10876,
+      "ModelID": 71304,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 192,
+      "_byte_offset": 10934,
+      "ModelID": 71401,
+      "WeaponBullet": "Effect/Common/zidan/mao_wanxinbugai_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/mao_wanxinbugai_attack_hit",
+      "_byte_length": 106
+    },
+    {
+      "_record_index": 193,
+      "_byte_offset": 11040,
+      "ModelID": 71402,
+      "WeaponBullet": "Effect/Common/zidan/gong_wanxinbugai_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/mao_wanxinbugai_attack_hit",
+      "_byte_length": 107
+    },
+    {
+      "_record_index": 194,
+      "_byte_offset": 11147,
+      "ModelID": 71403,
+      "WeaponBullet": "Effect/Common/zidan/biao_wanxinbugai_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/mao_wanxinbugai_attack_hit",
+      "_byte_length": 107
+    },
+    {
+      "_record_index": 195,
+      "_byte_offset": 11254,
+      "ModelID": 71404,
+      "WeaponBullet": "Effect/Common/zidan/zhang_wanxinbugai_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/zhang_wanxinbugai_attack_hit",
+      "_byte_length": 110
+    },
+    {
+      "_record_index": 196,
+      "_byte_offset": 11364,
+      "ModelID": 71501,
+      "WeaponBullet": "Effect/Common/zidan/xiaochou/mao_xiaochou_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/xiaochou/mao_xiaochou_attack_hit",
+      "_byte_length": 118
+    },
+    {
+      "_record_index": 197,
+      "_byte_offset": 11482,
+      "ModelID": 71502,
+      "WeaponBullet": "Effect/Common/zidan/xiaochou/gong_xiaochou_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/xiaochou/gong_xiaochou_attack_hit",
+      "_byte_length": 120
+    },
+    {
+      "_record_index": 198,
+      "_byte_offset": 11602,
+      "ModelID": 71503,
+      "WeaponBullet": "Effect/Common/zidan/xiaochou/biao_xiaochou_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/xiaochou/biao_xiaochou_attack_hit",
+      "_byte_length": 120
+    },
+    {
+      "_record_index": 199,
+      "_byte_offset": 11722,
+      "ModelID": 71504,
+      "WeaponBullet": "Effect/Common/zidan/xiaochou/zhang_xiaochou_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/xiaochou/zhang_xiaochou_attack_hit",
+      "_byte_length": 122
+    },
+    {
+      "_record_index": 200,
+      "_byte_offset": 11844,
+      "ModelID": 71601,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 201,
+      "_byte_offset": 11900,
+      "ModelID": 71602,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 202,
+      "_byte_offset": 11957,
+      "ModelID": 71603,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 203,
+      "_byte_offset": 12014,
+      "ModelID": 71604,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 204,
+      "_byte_offset": 12072,
+      "ModelID": 71701,
+      "WeaponBullet": "Effect/Common/zidan/qitiandasheng/mao_qitiandasheng_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/qitiandasheng/mao_qitiandasheng_attack_hit",
+      "_byte_length": 138
+    },
+    {
+      "_record_index": 205,
+      "_byte_offset": 12210,
+      "ModelID": 71702,
+      "WeaponBullet": "Effect/Common/zidan/qitiandasheng/gong_qitiandasheng_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/qitiandasheng/gong_qitiandasheng_attack_hit",
+      "_byte_length": 140
+    },
+    {
+      "_record_index": 206,
+      "_byte_offset": 12350,
+      "ModelID": 71703,
+      "WeaponBullet": "Effect/Common/zidan/qitiandasheng/biao_qitiandasheng_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/qitiandasheng/biao_qitiandasheng_attack_hit",
+      "_byte_length": 140
+    },
+    {
+      "_record_index": 207,
+      "_byte_offset": 12490,
+      "ModelID": 71704,
+      "WeaponBullet": "Effect/Common/zidan/qitiandasheng/zhang_qitiandasheng_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/qitiandasheng/zhang_qitiandasheng_attack_hit",
+      "_byte_length": 142
+    },
+    {
+      "_record_index": 208,
+      "_byte_offset": 12632,
+      "ModelID": 71801,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 209,
+      "_byte_offset": 12688,
+      "ModelID": 71802,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 210,
+      "_byte_offset": 12745,
+      "ModelID": 71803,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 211,
+      "_byte_offset": 12802,
+      "ModelID": 71804,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 212,
+      "_byte_offset": 12860,
+      "ModelID": 71901,
+      "WeaponBullet": "Effect/Common/zidan/qishichuanshuo/mao_qishichuanshuo_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/qishichuanshuo/mao_qishichuanshuo_attack_hit",
+      "_byte_length": 142
+    },
+    {
+      "_record_index": 213,
+      "_byte_offset": 13002,
+      "ModelID": 71902,
+      "WeaponBullet": "Effect/Common/zidan/qishichuanshuo/gong_qishichuanshuo_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/qishichuanshuo/gong_qishichuanshuo_attack_hit",
+      "_byte_length": 144
+    },
+    {
+      "_record_index": 214,
+      "_byte_offset": 13146,
+      "ModelID": 71903,
+      "WeaponBullet": "Effect/Common/zidan/qishichuanshuo/biao_qishichuanshuo_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/qishichuanshuo/biao_qishichuanshuo_attack_hit",
+      "_byte_length": 144
+    },
+    {
+      "_record_index": 215,
+      "_byte_offset": 13290,
+      "ModelID": 71904,
+      "WeaponBullet": "Effect/Common/zidan/qishichuanshuo/zhang_qishichuanshuo_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/qishichuanshuo/zhang_qishichuanshuo_attack_hit",
+      "_byte_length": 146
+    },
+    {
+      "_record_index": 216,
+      "_byte_offset": 13436,
+      "ModelID": 72001,
+      "WeaponBullet": "Effect/Common/zidan/guanghan/mao_guanghan_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/guanghan/mao_guanghan_attack_hit",
+      "_byte_length": 118
+    },
+    {
+      "_record_index": 217,
+      "_byte_offset": 13554,
+      "ModelID": 72002,
+      "WeaponBullet": "Effect/Common/zidan/guanghan/gong_guanghan_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/guanghan/mao_guanghan_attack_hit",
+      "_byte_length": 119
+    },
+    {
+      "_record_index": 218,
+      "_byte_offset": 13673,
+      "ModelID": 72003,
+      "WeaponBullet": "Effect/Common/zidan/guanghan/biao_guanghan_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/guanghan/mao_guanghan_attack_hit",
+      "_byte_length": 119
+    },
+    {
+      "_record_index": 219,
+      "_byte_offset": 13792,
+      "ModelID": 72004,
+      "WeaponBullet": "Effect/Common/zidan/guanghan/zhang_guanghan_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/guanghan/zhang_guanghan_attack_hit",
+      "_byte_length": 122
+    },
+    {
+      "_record_index": 220,
+      "_byte_offset": 13914,
+      "ModelID": 72101,
+      "WeaponBullet": "Effect/Common/zidan/xiariyongzhaung/mao_xiariyongzhuang_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/xiariyongzhaung/mao_xiariyongzhuang_attack_hit",
+      "_byte_length": 146
+    },
+    {
+      "_record_index": 221,
+      "_byte_offset": 14060,
+      "ModelID": 72102,
+      "WeaponBullet": "Effect/Common/zidan/xiariyongzhaung/gong_xiariyongzhuang_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/xiariyongzhaung/gong_xiariyongzhuang_attack_hit",
+      "_byte_length": 148
+    },
+    {
+      "_record_index": 222,
+      "_byte_offset": 14208,
+      "ModelID": 72103,
+      "WeaponBullet": "Effect/Common/zidan/xiariyongzhaung/biao_xiariyongzhuang_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/xiariyongzhaung/biao_xiariyongzhuang_attack_hit",
+      "_byte_length": 148
+    },
+    {
+      "_record_index": 223,
+      "_byte_offset": 14356,
+      "ModelID": 72104,
+      "WeaponBullet": "Effect/Common/zidan/xiariyongzhaung/zhang_xiariyongzhuang_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/xiariyongzhaung/zhang_xiariyongzhuang_attack_hit",
+      "_byte_length": 150
+    },
+    {
+      "_record_index": 224,
+      "_byte_offset": 14506,
+      "ModelID": 72201,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/mao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 225,
+      "_byte_offset": 14562,
+      "ModelID": 72202,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/gong01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 226,
+      "_byte_offset": 14619,
+      "ModelID": 72203,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/biao01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 227,
+      "_byte_offset": 14676,
+      "ModelID": 72204,
+      "WeaponBullet": "Effect/Common/wuqi/chushi/zhang01_attack_fly",
+      "WeaponHitPath": "",
+      "_byte_length": 58
+    },
+    {
+      "_record_index": 228,
+      "_byte_offset": 14734,
+      "ModelID": 72301,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 229,
+      "_byte_offset": 14748,
+      "ModelID": 72302,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 230,
+      "_byte_offset": 14762,
+      "ModelID": 72303,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 231,
+      "_byte_offset": 14776,
+      "ModelID": 72304,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 232,
+      "_byte_offset": 14790,
+      "ModelID": 72401,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 233,
+      "_byte_offset": 14804,
+      "ModelID": 72402,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 234,
+      "_byte_offset": 14818,
+      "ModelID": 72403,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 235,
+      "_byte_offset": 14832,
+      "ModelID": 72404,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 236,
+      "_byte_offset": 14846,
+      "ModelID": 72501,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 237,
+      "_byte_offset": 14860,
+      "ModelID": 72502,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 238,
+      "_byte_offset": 14874,
+      "ModelID": 72503,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 239,
+      "_byte_offset": 14888,
+      "ModelID": 72504,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 240,
+      "_byte_offset": 14902,
+      "ModelID": 72601,
+      "WeaponBullet": "Effect/Common/zidan/wushenghuadan/mao_wushenghuadan_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/wushenghuadan/mao_wushenghuadan_attack_hit",
+      "_byte_length": 138
+    },
+    {
+      "_record_index": 241,
+      "_byte_offset": 15040,
+      "ModelID": 72602,
+      "WeaponBullet": "Effect/Common/zidan/wushenghuadan/gong_wushenghuadan_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/wushenghuadan/gong_wushenghuadan_attack_hit",
+      "_byte_length": 140
+    },
+    {
+      "_record_index": 242,
+      "_byte_offset": 15180,
+      "ModelID": 72603,
+      "WeaponBullet": "Effect/Common/zidan/wushenghuadan/biao_wushenghuadan_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/wushenghuadan/biao_wushenghuadan_attack_hit",
+      "_byte_length": 140
+    },
+    {
+      "_record_index": 243,
+      "_byte_offset": 15320,
+      "ModelID": 72604,
+      "WeaponBullet": "Effect/Common/zidan/wushenghuadan/zhang_wushenghuadan_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/wushenghuadan/zhang_wushenghuadan_attack_hit",
+      "_byte_length": 142
+    },
+    {
+      "_record_index": 244,
+      "_byte_offset": 15462,
+      "ModelID": 72701,
+      "WeaponBullet": "Effect/Common/zidan/getemeiying/mao_getemeiying_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/getemeiying/mao_getemeiying_attack_hit",
+      "_byte_length": 130
+    },
+    {
+      "_record_index": 245,
+      "_byte_offset": 15592,
+      "ModelID": 72702,
+      "WeaponBullet": "Effect/Common/zidan/getemeiying/gong_getemeiying_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/getemeiying/gong_getemeiying_attack_hit",
+      "_byte_length": 132
+    },
+    {
+      "_record_index": 246,
+      "_byte_offset": 15724,
+      "ModelID": 72703,
+      "WeaponBullet": "Effect/Common/zidan/getemeiying/biao_getemeiying_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/getemeiying/biao_getemeiying_attack_hit",
+      "_byte_length": 132
+    },
+    {
+      "_record_index": 247,
+      "_byte_offset": 15856,
+      "ModelID": 72704,
+      "WeaponBullet": "Effect/Common/zidan/getemeiying/zhang_getemeiying_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/getemeiying/zhang_getemeiying_attack_hit",
+      "_byte_length": 134
+    },
+    {
+      "_record_index": 248,
+      "_byte_offset": 15990,
+      "ModelID": 72801,
+      "WeaponBullet": "Effect/Common/zidan/mixinlieshou/mao_mixinlieshou_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/mixinlieshou/mao_mixinlieshou_attack_hit",
+      "_byte_length": 134
+    },
+    {
+      "_record_index": 249,
+      "_byte_offset": 16124,
+      "ModelID": 72802,
+      "WeaponBullet": "Effect/Common/zidan/mixinlieshou/gong_mixinlieshou_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/mixinlieshou/gong_mixinlieshou_attack_hit",
+      "_byte_length": 136
+    },
+    {
+      "_record_index": 250,
+      "_byte_offset": 16260,
+      "ModelID": 72803,
+      "WeaponBullet": "Effect/Common/zidan/mixinlieshou/biao_mixinlieshou_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/mixinlieshou/biao_mixinlieshou_attack_hit",
+      "_byte_length": 136
+    },
+    {
+      "_record_index": 251,
+      "_byte_offset": 16396,
+      "ModelID": 72804,
+      "WeaponBullet": "Effect/Common/zidan/mixinlieshou/zhang_mixinlieshou_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/mixinlieshou/zhang_mixinlieshou_attack_hit",
+      "_byte_length": 138
+    },
+    {
+      "_record_index": 252,
+      "_byte_offset": 16534,
+      "ModelID": 72901,
+      "WeaponBullet": "Effect/Common/zidan/nezhasantaizi/mao_nezhasantaizi_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/nezhasantaizi/mao_nezhasantaizi_attack_hit",
+      "_byte_length": 138
+    },
+    {
+      "_record_index": 253,
+      "_byte_offset": 16672,
+      "ModelID": 72902,
+      "WeaponBullet": "Effect/Common/zidan/nezhasantaizi/gong_nezhasantaizi_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/nezhasantaizi/mao_nezhasantaizi_attack_hit",
+      "_byte_length": 139
+    },
+    {
+      "_record_index": 254,
+      "_byte_offset": 16811,
+      "ModelID": 72903,
+      "WeaponBullet": "Effect/Common/zidan/nezhasantaizi/biao_nezhasantaizi_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/nezhasantaizi/mao_nezhasantaizi_attack_hit",
+      "_byte_length": 139
+    },
+    {
+      "_record_index": 255,
+      "_byte_offset": 16950,
+      "ModelID": 72904,
+      "WeaponBullet": "Effect/Common/zidan/nezhasantaizi/zhang_nezhasantaizi_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/nezhasantaizi/zhang_nezhasantaizi_attack_hit",
+      "_byte_length": 142
+    },
+    {
+      "_record_index": 256,
+      "_byte_offset": 17092,
+      "ModelID": 73001,
+      "WeaponBullet": "Effect/Common/zidan/taikongqiyu/mao_taikongqiyu_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/taikongqiyu/mao_taikongqiyu_attack_hit",
+      "_byte_length": 130
+    },
+    {
+      "_record_index": 257,
+      "_byte_offset": 17222,
+      "ModelID": 73002,
+      "WeaponBullet": "Effect/Common/zidan/taikongqiyu/gong_taikongqiyu_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/taikongqiyu/gong_taikongqiyu_attack_hit",
+      "_byte_length": 132
+    },
+    {
+      "_record_index": 258,
+      "_byte_offset": 17354,
+      "ModelID": 73003,
+      "WeaponBullet": "Effect/Common/zidan/taikongqiyu/biao_taikongqiyu_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/taikongqiyu/gong_taikongqiyu_attack_hit",
+      "_byte_length": 132
+    },
+    {
+      "_record_index": 259,
+      "_byte_offset": 17486,
+      "ModelID": 73004,
+      "WeaponBullet": "Effect/Common/zidan/taikongqiyu/zhang_taikongqiyu_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/taikongqiyu/zhang_taikongqiyu_attack_hit",
+      "_byte_length": 134
+    },
+    {
+      "_record_index": 260,
+      "_byte_offset": 17620,
+      "ModelID": 73101,
+      "WeaponBullet": "Effect/Common/zidan/wanshengwuhui/mao_wanshengwuhui_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/wanshengwuhui/mao_wanshengwuhui_attack_hit",
+      "_byte_length": 138
+    },
+    {
+      "_record_index": 261,
+      "_byte_offset": 17758,
+      "ModelID": 73102,
+      "WeaponBullet": "Effect/Common/zidan/wanshengwuhui/gong_wanshengwuhui_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/wanshengwuhui/mao_wanshengwuhui_attack_hit",
+      "_byte_length": 139
+    },
+    {
+      "_record_index": 262,
+      "_byte_offset": 17897,
+      "ModelID": 73103,
+      "WeaponBullet": "Effect/Common/zidan/wanshengwuhui/biao_wanshengwuhui_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/wanshengwuhui/mao_wanshengwuhui_attack_hit",
+      "_byte_length": 139
+    },
+    {
+      "_record_index": 263,
+      "_byte_offset": 18036,
+      "ModelID": 73104,
+      "WeaponBullet": "Effect/Common/zidan/wanshengwuhui/zhang_wanshengwuhui_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/wanshengwuhui/zhang_wanshengwuhui_attack_hit",
+      "_byte_length": 142
+    },
+    {
+      "_record_index": 264,
+      "_byte_offset": 18178,
+      "ModelID": 73201,
+      "WeaponBullet": "Effect/Common/zidan/liuyitianshi/mao_liuyitianshi_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/liuyitianshi/mao_liuyitianshi_attack_hit",
+      "_byte_length": 134
+    },
+    {
+      "_record_index": 265,
+      "_byte_offset": 18312,
+      "ModelID": 73202,
+      "WeaponBullet": "Effect/Common/zidan/liuyitianshi/gong_liuyitianshi_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/liuyitianshi/mao_liuyitianshi_attack_hit",
+      "_byte_length": 135
+    },
+    {
+      "_record_index": 266,
+      "_byte_offset": 18447,
+      "ModelID": 73203,
+      "WeaponBullet": "Effect/Common/zidan/liuyitianshi/biao_liuyitianshi_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/liuyitianshi/mao_liuyitianshi_attack_hit",
+      "_byte_length": 135
+    },
+    {
+      "_record_index": 267,
+      "_byte_offset": 18582,
+      "ModelID": 73204,
+      "WeaponBullet": "Effect/Common/zidan/liuyitianshi/zhang_liuyitianshi_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/liuyitianshi/zhang_liuyitianshi_attack_hit",
+      "_byte_length": 138
+    },
+    {
+      "_record_index": 268,
+      "_byte_offset": 18720,
+      "ModelID": 73301,
+      "WeaponBullet": "Effect/Common/zidan/shengdan/mao_shengdan_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/shengdan/mao_shengdan_attack_hit",
+      "_byte_length": 118
+    },
+    {
+      "_record_index": 269,
+      "_byte_offset": 18838,
+      "ModelID": 73302,
+      "WeaponBullet": "Effect/Common/zidan/shengdan/gong_shengdan_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/shengdan/mao_shengdan_attack_hit",
+      "_byte_length": 119
+    },
+    {
+      "_record_index": 270,
+      "_byte_offset": 18957,
+      "ModelID": 73303,
+      "WeaponBullet": "Effect/Common/zidan/shengdan/biao_shengdan_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/shengdan/mao_shengdan_attack_hit",
+      "_byte_length": 119
+    },
+    {
+      "_record_index": 271,
+      "_byte_offset": 19076,
+      "ModelID": 73304,
+      "WeaponBullet": "Effect/Common/zidan/shengdan/zhang_shengdan_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/shengdan/zhang_shengdan_attack_hit",
+      "_byte_length": 122
+    },
+    {
+      "_record_index": 272,
+      "_byte_offset": 19198,
+      "ModelID": 73401,
+      "WeaponBullet": "Effect/Common/waibao/jixiekuangchao/zidan/mao_jixiekuangchao_attack_fly",
+      "WeaponHitPath": "Effect/Common/waibao/jixiekuangchao/zidan/mao_jixiekuangchao_attack_hit",
+      "_byte_length": 156
+    },
+    {
+      "_record_index": 273,
+      "_byte_offset": 19354,
+      "ModelID": 73402,
+      "WeaponBullet": "Effect/Common/waibao/jixiekuangchao/zidan/gong_jixiekuangchao_attack_fly",
+      "WeaponHitPath": "Effect/Common/waibao/jixiekuangchao/zidan/mao_jixiekuangchao_attack_hit",
+      "_byte_length": 157
+    },
+    {
+      "_record_index": 274,
+      "_byte_offset": 19511,
+      "ModelID": 73403,
+      "WeaponBullet": "Effect/Common/waibao/jixiekuangchao/zidan/biao_jixiekuangchao_attack_fly",
+      "WeaponHitPath": "Effect/Common/waibao/jixiekuangchao/zidan/mao_jixiekuangchao_attack_hit",
+      "_byte_length": 157
+    },
+    {
+      "_record_index": 275,
+      "_byte_offset": 19668,
+      "ModelID": 73404,
+      "WeaponBullet": "Effect/Common/waibao/jixiekuangchao/zidan/zhang_jixiekuangchao_attack_fly",
+      "WeaponHitPath": "Effect/Common/waibao/jixiekuangchao/zidan/zhang_jixiekuangchao_attack_hit",
+      "_byte_length": 160
+    },
+    {
+      "_record_index": 276,
+      "_byte_offset": 19828,
+      "ModelID": 73501,
+      "WeaponBullet": "Effect/Common/zidan/erlangshen/mao_erlangshen_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/erlangshen/mao_erlangshen_attack_hit",
+      "_byte_length": 126
+    },
+    {
+      "_record_index": 277,
+      "_byte_offset": 19954,
+      "ModelID": 73502,
+      "WeaponBullet": "Effect/Common/zidan/erlangshen/gong_erlangshen_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/erlangshen/mao_erlangshen_attack_hit",
+      "_byte_length": 127
+    },
+    {
+      "_record_index": 278,
+      "_byte_offset": 20081,
+      "ModelID": 73503,
+      "WeaponBullet": "Effect/Common/zidan/erlangshen/biao_erlangshen_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/erlangshen/mao_erlangshen_attack_hit",
+      "_byte_length": 127
+    },
+    {
+      "_record_index": 279,
+      "_byte_offset": 20208,
+      "ModelID": 73504,
+      "WeaponBullet": "Effect/Common/zidan/erlangshen/zhang_erlangshen_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/erlangshen/zhang_erlangshen_attack_hit",
+      "_byte_length": 130
+    },
+    {
+      "_record_index": 280,
+      "_byte_offset": 20338,
+      "ModelID": 73601,
+      "WeaponBullet": "Effect/Common/zidan/mingyunzhixin/mao_mingyunzhixin_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/mingyunzhixin/mao_mingyunzhixin_attack_hit",
+      "_byte_length": 138
+    },
+    {
+      "_record_index": 281,
+      "_byte_offset": 20476,
+      "ModelID": 73602,
+      "WeaponBullet": "Effect/Common/zidan/mingyunzhixin/gong_mingyunzhixin_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/mingyunzhixin/mao_mingyunzhixin_attack_hit",
+      "_byte_length": 139
+    },
+    {
+      "_record_index": 282,
+      "_byte_offset": 20615,
+      "ModelID": 73603,
+      "WeaponBullet": "Effect/Common/zidan/mingyunzhixin/biao_mingyunzhixin_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/mingyunzhixin/mao_mingyunzhixin_attack_hit",
+      "_byte_length": 139
+    },
+    {
+      "_record_index": 283,
+      "_byte_offset": 20754,
+      "ModelID": 73604,
+      "WeaponBullet": "Effect/Common/zidan/mingyunzhixin/zhang_mingyunzhixin_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/mingyunzhixin/zhang_mingyunzhixin_attack_hit",
+      "_byte_length": 142
+    },
+    {
+      "_record_index": 284,
+      "_byte_offset": 20896,
+      "ModelID": 73701,
+      "WeaponBullet": "Effect/Common/waibao/gaodianshi/zidan/mao_gaodianshi_attack_fly",
+      "WeaponHitPath": "Effect/Common/waibao/gaodianshi/zidan/mao_gaodianshi_attack_hit",
+      "_byte_length": 140
+    },
+    {
+      "_record_index": 285,
+      "_byte_offset": 21036,
+      "ModelID": 73702,
+      "WeaponBullet": "Effect/Common/waibao/gaodianshi/zidan/gong_gaodianshi_attack_fly",
+      "WeaponHitPath": "Effect/Common/waibao/gaodianshi/zidan/mao_gaodianshi_attack_hit",
+      "_byte_length": 141
+    },
+    {
+      "_record_index": 286,
+      "_byte_offset": 21177,
+      "ModelID": 73703,
+      "WeaponBullet": "Effect/Common/waibao/gaodianshi/zidan/biao_gaodianshi_attack_fly",
+      "WeaponHitPath": "Effect/Common/waibao/gaodianshi/zidan/mao_gaodianshi_attack_hit",
+      "_byte_length": 141
+    },
+    {
+      "_record_index": 287,
+      "_byte_offset": 21318,
+      "ModelID": 73704,
+      "WeaponBullet": "Effect/Common/waibao/gaodianshi/zidan/zhang_gaodianshi_attack_fly",
+      "WeaponHitPath": "Effect/Common/waibao/gaodianshi/zidan/zhang_gaodianshi_attack_hit",
+      "_byte_length": 144
+    },
+    {
+      "_record_index": 288,
+      "_byte_offset": 21462,
+      "ModelID": 73801,
+      "WeaponBullet": "Effect/Common/zidan/niluoheshenshi/mao_niluoheshenshi_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/niluoheshenshi/mao_niluoheshenshi_attack_hit",
+      "_byte_length": 142
+    },
+    {
+      "_record_index": 289,
+      "_byte_offset": 21604,
+      "ModelID": 73802,
+      "WeaponBullet": "Effect/Common/zidan/niluoheshenshi/gong_niluoheshenshi_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/niluoheshenshi/mao_niluoheshenshi_attack_hit",
+      "_byte_length": 143
+    },
+    {
+      "_record_index": 290,
+      "_byte_offset": 21747,
+      "ModelID": 73803,
+      "WeaponBullet": "Effect/Common/zidan/niluoheshenshi/biao_niluoheshenshi_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/niluoheshenshi/mao_niluoheshenshi_attack_hit",
+      "_byte_length": 143
+    },
+    {
+      "_record_index": 291,
+      "_byte_offset": 21890,
+      "ModelID": 73804,
+      "WeaponBullet": "Effect/Common/zidan/niluoheshenshi/zhang_niluoheshenshi_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/niluoheshenshi/zhang_niluoheshenshi_attack_hit",
+      "_byte_length": 146
+    },
+    {
+      "_record_index": 292,
+      "_byte_offset": 22036,
+      "ModelID": 73901,
+      "WeaponBullet": "Effect/Common/zidan/bihai/mao_bihai_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/bihai/mao_bihai_attack_hit",
+      "_byte_length": 106
+    },
+    {
+      "_record_index": 293,
+      "_byte_offset": 22142,
+      "ModelID": 73902,
+      "WeaponBullet": "Effect/Common/zidan/bihai/gong_bihai_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/bihai/mao_bihai_attack_hit",
+      "_byte_length": 107
+    },
+    {
+      "_record_index": 294,
+      "_byte_offset": 22249,
+      "ModelID": 73903,
+      "WeaponBullet": "Effect/Common/zidan/bihai/biao_bihai_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/bihai/mao_bihai_attack_hit",
+      "_byte_length": 107
+    },
+    {
+      "_record_index": 295,
+      "_byte_offset": 22356,
+      "ModelID": 73904,
+      "WeaponBullet": "Effect/Common/zidan/bihai/zhang_bihai_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/bihai/zhang_bihai_attack_hit",
+      "_byte_length": 110
+    },
+    {
+      "_record_index": 296,
+      "_byte_offset": 22466,
+      "ModelID": 74001,
+      "WeaponBullet": "Effect/Common/zidan/gaoshanliushui/mao_gaoshanliushui_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/gaoshanliushui/mao_gaoshanliushui_attack_hit",
+      "_byte_length": 142
+    },
+    {
+      "_record_index": 297,
+      "_byte_offset": 22608,
+      "ModelID": 74002,
+      "WeaponBullet": "Effect/Common/zidan/gaoshanliushui/gong_gaoshanliushui_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/gaoshanliushui/mao_gaoshanliushui_attack_hit",
+      "_byte_length": 143
+    },
+    {
+      "_record_index": 298,
+      "_byte_offset": 22751,
+      "ModelID": 74003,
+      "WeaponBullet": "Effect/Common/zidan/gaoshanliushui/biao_gaoshanliushui_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/gaoshanliushui/mao_gaoshanliushui_attack_hit",
+      "_byte_length": 143
+    },
+    {
+      "_record_index": 299,
+      "_byte_offset": 22894,
+      "ModelID": 74004,
+      "WeaponBullet": "Effect/Common/zidan/gaoshanliushui/zhang_gaoshanliushui_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/gaoshanliushui/zhang_gaoshanliushui_attack_hit",
+      "_byte_length": 146
+    },
+    {
+      "_record_index": 300,
+      "_byte_offset": 23040,
+      "ModelID": 74101,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 301,
+      "_byte_offset": 23054,
+      "ModelID": 74102,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 302,
+      "_byte_offset": 23068,
+      "ModelID": 74103,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 303,
+      "_byte_offset": 23082,
+      "ModelID": 74104,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 304,
+      "_byte_offset": 23096,
+      "ModelID": 74201,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 305,
+      "_byte_offset": 23110,
+      "ModelID": 74202,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 306,
+      "_byte_offset": 23124,
+      "ModelID": 74203,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 307,
+      "_byte_offset": 23138,
+      "ModelID": 74204,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 308,
+      "_byte_offset": 23152,
+      "ModelID": 74301,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 309,
+      "_byte_offset": 23166,
+      "ModelID": 74302,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 310,
+      "_byte_offset": 23180,
+      "ModelID": 74303,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 311,
+      "_byte_offset": 23194,
+      "ModelID": 74304,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 312,
+      "_byte_offset": 23208,
+      "ModelID": 74401,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 313,
+      "_byte_offset": 23222,
+      "ModelID": 74402,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 314,
+      "_byte_offset": 23236,
+      "ModelID": 74403,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 315,
+      "_byte_offset": 23250,
+      "ModelID": 74404,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 316,
+      "_byte_offset": 23264,
+      "ModelID": 74501,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 317,
+      "_byte_offset": 23278,
+      "ModelID": 74502,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 318,
+      "_byte_offset": 23292,
+      "ModelID": 74503,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 319,
+      "_byte_offset": 23306,
+      "ModelID": 74504,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 320,
+      "_byte_offset": 23320,
+      "ModelID": 74601,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 321,
+      "_byte_offset": 23334,
+      "ModelID": 74602,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 322,
+      "_byte_offset": 23348,
+      "ModelID": 74603,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 323,
+      "_byte_offset": 23362,
+      "ModelID": 74604,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 324,
+      "_byte_offset": 23376,
+      "ModelID": 74701,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 325,
+      "_byte_offset": 23390,
+      "ModelID": 74702,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 326,
+      "_byte_offset": 23404,
+      "ModelID": 74703,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 327,
+      "_byte_offset": 23418,
+      "ModelID": 74704,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 328,
+      "_byte_offset": 23432,
+      "ModelID": 74801,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 329,
+      "_byte_offset": 23446,
+      "ModelID": 74802,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 330,
+      "_byte_offset": 23460,
+      "ModelID": 74803,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 331,
+      "_byte_offset": 23474,
+      "ModelID": 74804,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 332,
+      "_byte_offset": 23488,
+      "ModelID": 75001,
+      "WeaponBullet": "Effect/Common/zidan/huanwuqinglong/mao_huanwuqinglong_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/huanwuqinglong/mao_huanwuqinglong_attack_hit",
+      "_byte_length": 142
+    },
+    {
+      "_record_index": 333,
+      "_byte_offset": 23630,
+      "ModelID": 75002,
+      "WeaponBullet": "Effect/Common/zidan/huanwuqinglong/gong_huanwuqinglong_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/huanwuqinglong/mao_huanwuqinglong_attack_hit",
+      "_byte_length": 143
+    },
+    {
+      "_record_index": 334,
+      "_byte_offset": 23773,
+      "ModelID": 75003,
+      "WeaponBullet": "Effect/Common/zidan/huanwuqinglong/biao_huanwuqinglong_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/huanwuqinglong/mao_huanwuqinglong_attack_hit",
+      "_byte_length": 143
+    },
+    {
+      "_record_index": 335,
+      "_byte_offset": 23916,
+      "ModelID": 75004,
+      "WeaponBullet": "Effect/Common/zidan/huanwuqinglong/zhang_huanwuqinglong_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/huanwuqinglong/zhang_huanwuqinglong_attack_hit",
+      "_byte_length": 146
+    },
+    {
+      "_record_index": 336,
+      "_byte_offset": 24062,
+      "ModelID": 75101,
+      "WeaponBullet": "Effect/Common/zidan/moshenwushuang/mao_moshenwushuang_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/moshenwushuang/mao_moshenwushuang_attack_hit",
+      "_byte_length": 142
+    },
+    {
+      "_record_index": 337,
+      "_byte_offset": 24204,
+      "ModelID": 75102,
+      "WeaponBullet": "Effect/Common/zidan/moshenwushuang/gong_moshenwushuang_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/moshenwushuang/mao_moshenwushuang_attack_hit",
+      "_byte_length": 143
+    },
+    {
+      "_record_index": 338,
+      "_byte_offset": 24347,
+      "ModelID": 75103,
+      "WeaponBullet": "Effect/Common/zidan/moshenwushuang/biao_moshenwushuang_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/moshenwushuang/mao_moshenwushuang_attack_hit",
+      "_byte_length": 143
+    },
+    {
+      "_record_index": 339,
+      "_byte_offset": 24490,
+      "ModelID": 75104,
+      "WeaponBullet": "Effect/Common/zidan/moshenwushuang/zhang_moshenwushuang_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/moshenwushuang/zhang_moshenwushuang_attack_hit",
+      "_byte_length": 146
+    },
+    {
+      "_record_index": 340,
+      "_byte_offset": 24636,
+      "ModelID": 75201,
+      "WeaponBullet": "Effect/Common/zidan/yongzhewuwei/mao_yongzhewuwei_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/yongzhewuwei/mao_yongzhewuwei_attack_hit",
+      "_byte_length": 134
+    },
+    {
+      "_record_index": 341,
+      "_byte_offset": 24770,
+      "ModelID": 75202,
+      "WeaponBullet": "Effect/Common/zidan/yongzhewuwei/gong_yongzhewuwei_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/yongzhewuwei/mao_yongzhewuwei_attack_hit",
+      "_byte_length": 135
+    },
+    {
+      "_record_index": 342,
+      "_byte_offset": 24905,
+      "ModelID": 75203,
+      "WeaponBullet": "Effect/Common/zidan/yongzhewuwei/biao_yongzhewuwei_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/yongzhewuwei/mao_yongzhewuwei_attack_hit",
+      "_byte_length": 135
+    },
+    {
+      "_record_index": 343,
+      "_byte_offset": 25040,
+      "ModelID": 75204,
+      "WeaponBullet": "Effect/Common/zidan/yongzhewuwei/zhang_yongzhewuwei_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/yongzhewuwei/zhang_yongzhewuwei_attack_hit",
+      "_byte_length": 138
+    },
+    {
+      "_record_index": 344,
+      "_byte_offset": 25178,
+      "ModelID": 75301,
+      "WeaponBullet": "Effect/Common/zidan/xihatianwang/mao_xihatianwang_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/xihatianwang/mao_xihatianwang_attack_hit",
+      "_byte_length": 134
+    },
+    {
+      "_record_index": 345,
+      "_byte_offset": 25312,
+      "ModelID": 75302,
+      "WeaponBullet": "Effect/Common/zidan/xihatianwang/gong_xihatianwang_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/xihatianwang/mao_xihatianwang_attack_hit",
+      "_byte_length": 135
+    },
+    {
+      "_record_index": 346,
+      "_byte_offset": 25447,
+      "ModelID": 75303,
+      "WeaponBullet": "Effect/Common/zidan/xihatianwang/biao_xihatianwang_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/xihatianwang/mao_xihatianwang_attack_hit",
+      "_byte_length": 135
+    },
+    {
+      "_record_index": 347,
+      "_byte_offset": 25582,
+      "ModelID": 75304,
+      "WeaponBullet": "Effect/Common/zidan/xihatianwang/zhang_xihatianwang_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/xihatianwang/zhang_xihatianwang_attack_hit",
+      "_byte_length": 138
+    },
+    {
+      "_record_index": 348,
+      "_byte_offset": 25720,
+      "ModelID": 75401,
+      "WeaponBullet": "Effect/Common/zidan/qinglongyanyue/mao_qinglongyanyue_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/qinglongyanyue/mao_qinglongyanyue_attack_hit",
+      "_byte_length": 142
+    },
+    {
+      "_record_index": 349,
+      "_byte_offset": 25862,
+      "ModelID": 75402,
+      "WeaponBullet": "Effect/Common/zidan/qinglongyanyue/gong_qinglongyanyue_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/qinglongyanyue/mao_qinglongyanyue_attack_hit",
+      "_byte_length": 143
+    },
+    {
+      "_record_index": 350,
+      "_byte_offset": 26005,
+      "ModelID": 75403,
+      "WeaponBullet": "Effect/Common/zidan/qinglongyanyue/biao_qinglongyanyue_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/qinglongyanyue/mao_qinglongyanyue_attack_hit",
+      "_byte_length": 143
+    },
+    {
+      "_record_index": 351,
+      "_byte_offset": 26148,
+      "ModelID": 75404,
+      "WeaponBullet": "Effect/Common/zidan/qinglongyanyue/zhang_qinglongyanyue_attack_fly",
+      "WeaponHitPath": "Effect/Common/zidan/qinglongyanyue/zhang_qinglongyanyue_attack_hit",
+      "_byte_length": 146
+    },
+    {
+      "_record_index": 352,
+      "_byte_offset": 26294,
+      "ModelID": 11001,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 353,
+      "_byte_offset": 26308,
+      "ModelID": 11002,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 354,
+      "_byte_offset": 26322,
+      "ModelID": 11003,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 355,
+      "_byte_offset": 26336,
+      "ModelID": 11004,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 356,
+      "_byte_offset": 26350,
+      "ModelID": 11005,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 357,
+      "_byte_offset": 26364,
+      "ModelID": 11006,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 358,
+      "_byte_offset": 26378,
+      "ModelID": 11007,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 359,
+      "_byte_offset": 26392,
+      "ModelID": 11008,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 360,
+      "_byte_offset": 26406,
+      "ModelID": 11009,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 361,
+      "_byte_offset": 26420,
+      "ModelID": 11010,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 362,
+      "_byte_offset": 26434,
+      "ModelID": 11011,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 363,
+      "_byte_offset": 26448,
+      "ModelID": 11012,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 364,
+      "_byte_offset": 26462,
+      "ModelID": 11013,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 365,
+      "_byte_offset": 26476,
+      "ModelID": 11014,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 366,
+      "_byte_offset": 26490,
+      "ModelID": 11015,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 367,
+      "_byte_offset": 26504,
+      "ModelID": 11016,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 368,
+      "_byte_offset": 26518,
+      "ModelID": 11017,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 369,
+      "_byte_offset": 26532,
+      "ModelID": 11018,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 370,
+      "_byte_offset": 26546,
+      "ModelID": 11019,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 371,
+      "_byte_offset": 26560,
+      "ModelID": 11020,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 372,
+      "_byte_offset": 26574,
+      "ModelID": 11021,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 373,
+      "_byte_offset": 26588,
+      "ModelID": 11022,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 374,
+      "_byte_offset": 26602,
+      "ModelID": 11023,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 375,
+      "_byte_offset": 26616,
+      "ModelID": 11099,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 376,
+      "_byte_offset": 26630,
+      "ModelID": 11101,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 377,
+      "_byte_offset": 26644,
+      "ModelID": 11102,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 378,
+      "_byte_offset": 26658,
+      "ModelID": 11103,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 379,
+      "_byte_offset": 26672,
+      "ModelID": 11104,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 380,
+      "_byte_offset": 26686,
+      "ModelID": 11105,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 381,
+      "_byte_offset": 26700,
+      "ModelID": 11106,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 382,
+      "_byte_offset": 26714,
+      "ModelID": 11107,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 383,
+      "_byte_offset": 26728,
+      "ModelID": 11108,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 384,
+      "_byte_offset": 26742,
+      "ModelID": 11109,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 385,
+      "_byte_offset": 26756,
+      "ModelID": 11110,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 386,
+      "_byte_offset": 26770,
+      "ModelID": 11111,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 387,
+      "_byte_offset": 26784,
+      "ModelID": 11112,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 388,
+      "_byte_offset": 26798,
+      "ModelID": 11113,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 389,
+      "_byte_offset": 26812,
+      "ModelID": 11114,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 390,
+      "_byte_offset": 26826,
+      "ModelID": 11115,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 391,
+      "_byte_offset": 26840,
+      "ModelID": 11116,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 392,
+      "_byte_offset": 26854,
+      "ModelID": 11117,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 393,
+      "_byte_offset": 26868,
+      "ModelID": 11118,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 394,
+      "_byte_offset": 26882,
+      "ModelID": 11119,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 395,
+      "_byte_offset": 26896,
+      "ModelID": 11120,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 396,
+      "_byte_offset": 26910,
+      "ModelID": 11121,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 397,
+      "_byte_offset": 26924,
+      "ModelID": 11122,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 398,
+      "_byte_offset": 26938,
+      "ModelID": 11123,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 399,
+      "_byte_offset": 26952,
+      "ModelID": 11124,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 400,
+      "_byte_offset": 26966,
+      "ModelID": 11125,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 401,
+      "_byte_offset": 26980,
+      "ModelID": 11134,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 402,
+      "_byte_offset": 26994,
+      "ModelID": 11201,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 403,
+      "_byte_offset": 27008,
+      "ModelID": 11202,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 404,
+      "_byte_offset": 27022,
+      "ModelID": 11203,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 405,
+      "_byte_offset": 27036,
+      "ModelID": 11204,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 406,
+      "_byte_offset": 27050,
+      "ModelID": 11205,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 407,
+      "_byte_offset": 27064,
+      "ModelID": 21001,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 408,
+      "_byte_offset": 27078,
+      "ModelID": 21002,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 409,
+      "_byte_offset": 27092,
+      "ModelID": 21003,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 410,
+      "_byte_offset": 27106,
+      "ModelID": 21004,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 411,
+      "_byte_offset": 27120,
+      "ModelID": 21005,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 412,
+      "_byte_offset": 27134,
+      "ModelID": 21006,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 413,
+      "_byte_offset": 27148,
+      "ModelID": 21007,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 414,
+      "_byte_offset": 27162,
+      "ModelID": 21008,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 415,
+      "_byte_offset": 27176,
+      "ModelID": 21009,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 416,
+      "_byte_offset": 27190,
+      "ModelID": 21010,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 417,
+      "_byte_offset": 27204,
+      "ModelID": 21011,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 418,
+      "_byte_offset": 27218,
+      "ModelID": 21012,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 419,
+      "_byte_offset": 27232,
+      "ModelID": 21013,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 420,
+      "_byte_offset": 27246,
+      "ModelID": 21014,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 421,
+      "_byte_offset": 27260,
+      "ModelID": 21015,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 422,
+      "_byte_offset": 27274,
+      "ModelID": 21016,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 423,
+      "_byte_offset": 27288,
+      "ModelID": 21017,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 424,
+      "_byte_offset": 27302,
+      "ModelID": 21018,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 425,
+      "_byte_offset": 27316,
+      "ModelID": 21019,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 426,
+      "_byte_offset": 27330,
+      "ModelID": 21020,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 427,
+      "_byte_offset": 27344,
+      "ModelID": 21021,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 428,
+      "_byte_offset": 27358,
+      "ModelID": 21022,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 429,
+      "_byte_offset": 27372,
+      "ModelID": 21023,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 430,
+      "_byte_offset": 27386,
+      "ModelID": 21099,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 431,
+      "_byte_offset": 27400,
+      "ModelID": 21101,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 432,
+      "_byte_offset": 27414,
+      "ModelID": 21102,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 433,
+      "_byte_offset": 27428,
+      "ModelID": 21103,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 434,
+      "_byte_offset": 27442,
+      "ModelID": 21104,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 435,
+      "_byte_offset": 27456,
+      "ModelID": 21105,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 436,
+      "_byte_offset": 27470,
+      "ModelID": 21106,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 437,
+      "_byte_offset": 27484,
+      "ModelID": 21107,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 438,
+      "_byte_offset": 27498,
+      "ModelID": 21108,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 439,
+      "_byte_offset": 27512,
+      "ModelID": 21109,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 440,
+      "_byte_offset": 27526,
+      "ModelID": 21110,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 441,
+      "_byte_offset": 27540,
+      "ModelID": 21111,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 442,
+      "_byte_offset": 27554,
+      "ModelID": 21112,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 443,
+      "_byte_offset": 27568,
+      "ModelID": 21113,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 444,
+      "_byte_offset": 27582,
+      "ModelID": 21114,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 445,
+      "_byte_offset": 27596,
+      "ModelID": 21115,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 446,
+      "_byte_offset": 27610,
+      "ModelID": 21116,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 447,
+      "_byte_offset": 27624,
+      "ModelID": 21117,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 448,
+      "_byte_offset": 27638,
+      "ModelID": 21118,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 449,
+      "_byte_offset": 27652,
+      "ModelID": 21119,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 450,
+      "_byte_offset": 27666,
+      "ModelID": 21120,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 451,
+      "_byte_offset": 27680,
+      "ModelID": 21121,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 452,
+      "_byte_offset": 27694,
+      "ModelID": 21122,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 453,
+      "_byte_offset": 27708,
+      "ModelID": 21123,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 454,
+      "_byte_offset": 27722,
+      "ModelID": 21124,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 455,
+      "_byte_offset": 27736,
+      "ModelID": 21125,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 456,
+      "_byte_offset": 27750,
+      "ModelID": 21134,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 457,
+      "_byte_offset": 27764,
+      "ModelID": 21201,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 458,
+      "_byte_offset": 27778,
+      "ModelID": 21202,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 459,
+      "_byte_offset": 27792,
+      "ModelID": 21203,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 460,
+      "_byte_offset": 27806,
+      "ModelID": 21204,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    },
+    {
+      "_record_index": 461,
+      "_byte_offset": 27820,
+      "ModelID": 21205,
+      "WeaponBullet": "",
+      "WeaponHitPath": "",
+      "_byte_length": 14
+    }
+  ]
+}

@@ -1,0 +1,387 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_petcomposeconfig.bytes.ab",
+    "path_id": 7303227947771660797,
+    "name": "PetComposeConfig",
+    "sha256": "7e4131b245a256c143c764e2e0dfa3b240c68665ff62f288baa0862cc43fb10e",
+    "export": "derived/unity/text/assets_resources_config_resbin_petcomposeconfig.bytes/PetComposeConfig__7303227947771660797.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 764,
+      "version": 1,
+      "record_count": 24,
+      "stored_crc32": "ff9d135b",
+      "computed_inverted_crc32": "ff9d135b"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "PetComposeConfig",
+      "fields": [
+        {
+          "type": "byte",
+          "name": "Quality",
+          "object_offset": 16
+        },
+        {
+          "type": "byte",
+          "name": "Prefix",
+          "object_offset": 17
+        },
+        {
+          "type": "uint",
+          "name": "ProvideScore",
+          "object_offset": 20
+        },
+        {
+          "type": "uint",
+          "name": "QualityUpNeedScore",
+          "object_offset": 24
+        },
+        {
+          "type": "uint",
+          "name": "SuccRate",
+          "object_offset": 28
+        },
+        {
+          "type": "string",
+          "name": "IOSVestBag",
+          "object_offset": 32
+        }
+      ],
+      "unpack_va": 32016824,
+      "dump_line": 209699
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1e889ec",
+        "target_va": "0x21f65e0",
+        "opcode": "BL",
+        "reader": "readUInt8",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e88a10",
+        "target_va": "0x21f65e0",
+        "opcode": "BL",
+        "reader": "readUInt8",
+        "destination_object_offset": 17,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e88a34",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e88a58",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e88a7c",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 28,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e88ac0",
+        "target_va": "0x21f6ce8",
+        "opcode": "B-tail",
+        "reader": "readString",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 24
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "Quality": 1,
+      "Prefix": 1,
+      "ProvideScore": 2,
+      "QualityUpNeedScore": 2,
+      "SuccRate": 0,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 51,
+      "Quality": 1,
+      "Prefix": 2,
+      "ProvideScore": 4,
+      "QualityUpNeedScore": 5,
+      "SuccRate": 0,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 82,
+      "Quality": 1,
+      "Prefix": 3,
+      "ProvideScore": 6,
+      "QualityUpNeedScore": 10,
+      "SuccRate": 0,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 113,
+      "Quality": 1,
+      "Prefix": 4,
+      "ProvideScore": 8,
+      "QualityUpNeedScore": 15,
+      "SuccRate": 0,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 144,
+      "Quality": 2,
+      "Prefix": 1,
+      "ProvideScore": 10,
+      "QualityUpNeedScore": 20,
+      "SuccRate": 0,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 175,
+      "Quality": 2,
+      "Prefix": 2,
+      "ProvideScore": 20,
+      "QualityUpNeedScore": 40,
+      "SuccRate": 0,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 206,
+      "Quality": 2,
+      "Prefix": 3,
+      "ProvideScore": 30,
+      "QualityUpNeedScore": 70,
+      "SuccRate": 0,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 237,
+      "Quality": 2,
+      "Prefix": 4,
+      "ProvideScore": 40,
+      "QualityUpNeedScore": 100,
+      "SuccRate": 0,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 268,
+      "Quality": 3,
+      "Prefix": 1,
+      "ProvideScore": 50,
+      "QualityUpNeedScore": 200,
+      "SuccRate": 0,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 299,
+      "Quality": 3,
+      "Prefix": 2,
+      "ProvideScore": 60,
+      "QualityUpNeedScore": 400,
+      "SuccRate": 0,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 330,
+      "Quality": 3,
+      "Prefix": 3,
+      "ProvideScore": 80,
+      "QualityUpNeedScore": 700,
+      "SuccRate": 0,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 361,
+      "Quality": 3,
+      "Prefix": 4,
+      "ProvideScore": 100,
+      "QualityUpNeedScore": 1000,
+      "SuccRate": 0,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 392,
+      "Quality": 4,
+      "Prefix": 1,
+      "ProvideScore": 200,
+      "QualityUpNeedScore": 2000,
+      "SuccRate": 0,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 423,
+      "Quality": 4,
+      "Prefix": 2,
+      "ProvideScore": 300,
+      "QualityUpNeedScore": 4000,
+      "SuccRate": 0,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 454,
+      "Quality": 4,
+      "Prefix": 3,
+      "ProvideScore": 400,
+      "QualityUpNeedScore": 6000,
+      "SuccRate": 0,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 485,
+      "Quality": 4,
+      "Prefix": 4,
+      "ProvideScore": 500,
+      "QualityUpNeedScore": 8000,
+      "SuccRate": 0,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 516,
+      "Quality": 5,
+      "Prefix": 1,
+      "ProvideScore": 600,
+      "QualityUpNeedScore": 10000,
+      "SuccRate": 0,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 547,
+      "Quality": 5,
+      "Prefix": 2,
+      "ProvideScore": 800,
+      "QualityUpNeedScore": 12000,
+      "SuccRate": 0,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 578,
+      "Quality": 5,
+      "Prefix": 3,
+      "ProvideScore": 1000,
+      "QualityUpNeedScore": 14000,
+      "SuccRate": 0,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 19,
+      "_byte_offset": 609,
+      "Quality": 5,
+      "Prefix": 4,
+      "ProvideScore": 1500,
+      "QualityUpNeedScore": 18000,
+      "SuccRate": 0,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 20,
+      "_byte_offset": 640,
+      "Quality": 6,
+      "Prefix": 1,
+      "ProvideScore": 2000,
+      "QualityUpNeedScore": 20000,
+      "SuccRate": 0,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 21,
+      "_byte_offset": 671,
+      "Quality": 6,
+      "Prefix": 2,
+      "ProvideScore": 3000,
+      "QualityUpNeedScore": 30000,
+      "SuccRate": 0,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 22,
+      "_byte_offset": 702,
+      "Quality": 6,
+      "Prefix": 3,
+      "ProvideScore": 4000,
+      "QualityUpNeedScore": 40000,
+      "SuccRate": 0,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 31
+    },
+    {
+      "_record_index": 23,
+      "_byte_offset": 733,
+      "Quality": 6,
+      "Prefix": 4,
+      "ProvideScore": 5000,
+      "QualityUpNeedScore": 50000,
+      "SuccRate": 0,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 31
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "source_tables": 545,
+  "source_unique_table_names": 439,
+  "status_counts": {
+    "decoded-validated-native-recursive": 164,
+    "cross-variant-layout-candidate": 23,
+    "decoded-validated-static": 280,
+    "raw-header-verified": 78
+  },
+  "native_backed_tables": 444,
+  "native_backed_records": 363190,
+  "native_backed_unique_table_names": 372,
+  "companion_candidate_tables": 23,
+  "companion_candidate_records": 14679,
+  "unresolved_tables": 78,
+  "enum_types": 120,
+  "limits": [
+    "Source-table totals include fp/nonfp variants; records are not deduplicated unique game entities.",
+    "Native-backed means static native-reader/layout evidence plus byte roundtrip, not native/game execution proof.",
+    "Cross-variant candidates remain separate and are never promoted to native-backed totals.",
+    "Table values, enum names and described text are not a recovered runtime formula."
+  ]
+}

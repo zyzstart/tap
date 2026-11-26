@@ -1,0 +1,130 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_pvpcontinuekilltipconfig.bytes.ab",
+    "path_id": 5644557209336245100,
+    "name": "PvpContinueKillTipConfig",
+    "sha256": "8d7885bb4a51a59da99959dcf081dfe70305f8f19f48ff71b42669aedcbd3914",
+    "export": "derived/unity/text/assets_resources_config_resbin_pvpcontinuekilltipconfig.bytes/PvpContinueKillTipConfig__5644557209336245100.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 260,
+      "version": 1,
+      "record_count": 9,
+      "stored_crc32": "deea52aa",
+      "computed_inverted_crc32": "deea52aa"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "PvpContinueKillTipConfig",
+      "fields": [
+        {
+          "type": "int",
+          "name": "KillCnt",
+          "object_offset": 16
+        },
+        {
+          "type": "string",
+          "name": "TipText",
+          "object_offset": 24
+        }
+      ],
+      "unpack_va": 32026932,
+      "dump_line": 210139
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1e8b168",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8b1ac",
+        "target_va": "0x21f6ce8",
+        "opcode": "B-tail",
+        "reader": "readString",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 9
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "KillCnt": 2,
+      "TipText": "达成两连杀",
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 44,
+      "KillCnt": 3,
+      "TipText": "开始大杀特杀",
+      "_byte_length": 27
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 71,
+      "KillCnt": 4,
+      "TipText": "已经杀人如麻",
+      "_byte_length": 27
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 98,
+      "KillCnt": 5,
+      "TipText": "已经主宰比赛",
+      "_byte_length": 27
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 125,
+      "KillCnt": 6,
+      "TipText": "已经无人能挡",
+      "_byte_length": 27
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 152,
+      "KillCnt": 7,
+      "TipText": "正在变态杀戮",
+      "_byte_length": 27
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 179,
+      "KillCnt": 8,
+      "TipText": "如同战神一般",
+      "_byte_length": 27
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 206,
+      "KillCnt": 9,
+      "TipText": "正在横扫千军",
+      "_byte_length": 27
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 233,
+      "KillCnt": 10,
+      "TipText": "已经三界无敌",
+      "_byte_length": 27
+    }
+  ]
+}

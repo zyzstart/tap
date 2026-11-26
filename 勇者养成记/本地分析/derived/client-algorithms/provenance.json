@@ -1,0 +1,43 @@
+{
+  "script_sha256": "0ad402ed6784304a1dc2156328056ac817b2c0e16d4c75aabf56e75877b3f0d5",
+  "inputs": [
+    {
+      "path": "unpacked\\lib\\arm64-v8a\\libil2cpp.so",
+      "sha256": "1985e959848ae18321d89daa7119b46addcccc9ffa89f14b023906572e0a018c",
+      "bytes": 48996504
+    },
+    {
+      "path": "derived\\il2cpp\\arm64-v8a\\dump.cs",
+      "sha256": "aea4266774a2fd2364bf05084439735f82caed6bffefbef1008ad5ecd4081e08",
+      "bytes": 15599218
+    },
+    {
+      "path": "derived\\il2cpp\\arm64-v8a\\script.json",
+      "sha256": "f6604c71e0ecbf81313d6e6487074e37e67ff00bf658e547721aa1457e2accac",
+      "bytes": 44340767
+    }
+  ],
+  "capstone_version": "5.0.6",
+  "elf_load_segments": [
+    {
+      "type": 1,
+      "flags": 5,
+      "offset": 0,
+      "vaddr": 0,
+      "filesz": 43246660,
+      "memsz": 43246660
+    },
+    {
+      "type": 1,
+      "flags": 6,
+      "offset": 43246664,
+      "vaddr": 43312200,
+      "filesz": 5747648,
+      "memsz": 8524616
+    }
+  ],
+  "selected_unique_entries": 115,
+  "alias_entries": 0,
+  "bound_method": "next distinct known executable entry from script.json / dump.cs / resolved adjustor targets within PT_LOAD; segment end / 64 KiB cap; NO claimed exact function sizes",
+  "execution": "host Python only; native input read as data"
+}

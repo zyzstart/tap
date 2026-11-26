@@ -1,0 +1,599 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_currencytypeconfig.bytes.ab",
+    "path_id": -2638828825099524038,
+    "name": "CurrencyTypeConfig",
+    "sha256": "fe766f2f07e4251f09700615ceebbbfacfe91da377a29c415d41bcc13f334104",
+    "export": "derived/unity/text/assets_resources_config_resbin_currencytypeconfig.bytes/CurrencyTypeConfig__-2638828825099524038.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 2204,
+      "version": 1,
+      "record_count": 49,
+      "stored_crc32": "9b9d51f4",
+      "computed_inverted_crc32": "9b9d51f4"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "CurrencyTypeConfig",
+      "fields": [
+        {
+          "type": "uint",
+          "name": "CurrencyType",
+          "object_offset": 16
+        },
+        {
+          "type": "uint",
+          "name": "BootyType",
+          "object_offset": 20
+        },
+        {
+          "type": "string",
+          "name": "CurrencyName",
+          "object_offset": 24
+        },
+        {
+          "type": "uint",
+          "name": "ItemId",
+          "object_offset": 32
+        },
+        {
+          "type": "string",
+          "name": "Icon",
+          "object_offset": 40
+        }
+      ],
+      "unpack_va": 31256824,
+      "dump_line": 206540
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1dcf12c",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dcf150",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dcf178",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dcf19c",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dcf1e0",
+        "target_va": "0x21f6ce8",
+        "opcode": "B-tail",
+        "reader": "readString",
+        "destination_object_offset": 40,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 49
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "CurrencyType": 1,
+      "BootyType": 5,
+      "CurrencyName": "体力",
+      "ItemId": 99001,
+      "Icon": "icon_power",
+      "_byte_length": 38
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 58,
+      "CurrencyType": 2,
+      "BootyType": 4,
+      "CurrencyName": "金币",
+      "ItemId": 99002,
+      "Icon": "icon_gold",
+      "_byte_length": 37
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 95,
+      "CurrencyType": 3,
+      "BootyType": 3,
+      "CurrencyName": "珍珠",
+      "ItemId": 99003,
+      "Icon": "icon_green",
+      "_byte_length": 38
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 133,
+      "CurrencyType": 4,
+      "BootyType": 6,
+      "CurrencyName": "免费轮回",
+      "ItemId": 99004,
+      "Icon": "icon_fuhuo",
+      "_byte_length": 44
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 177,
+      "CurrencyType": 5,
+      "BootyType": 13,
+      "CurrencyName": "部落贡献",
+      "ItemId": 99005,
+      "Icon": "icon_mpgx",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 220,
+      "CurrencyType": 6,
+      "BootyType": 7,
+      "CurrencyName": "狩猎经验",
+      "ItemId": 99006,
+      "Icon": "Com_icon_huobi002",
+      "_byte_length": 51
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 271,
+      "CurrencyType": 7,
+      "BootyType": 9,
+      "CurrencyName": "奇遇水晶",
+      "ItemId": 99007,
+      "Icon": "icon_zxb",
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 313,
+      "CurrencyType": 8,
+      "BootyType": 12,
+      "CurrencyName": "工匠之石",
+      "ItemId": 99008,
+      "Icon": "icon_twyt",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 356,
+      "CurrencyType": 9,
+      "BootyType": 0,
+      "CurrencyName": "囤积体力",
+      "ItemId": 99009,
+      "Icon": "icon_power",
+      "_byte_length": 44
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 400,
+      "CurrencyType": 10,
+      "BootyType": 2,
+      "CurrencyName": "经验",
+      "ItemId": 99010,
+      "Icon": "icon_herolevel",
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 442,
+      "CurrencyType": 11,
+      "BootyType": 15,
+      "CurrencyName": "狩猎声望",
+      "ItemId": 99011,
+      "Icon": "icon_gx",
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 483,
+      "CurrencyType": 12,
+      "BootyType": 16,
+      "CurrencyName": "岩晶",
+      "ItemId": 99012,
+      "Icon": "icon_suiyin",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 522,
+      "CurrencyType": 14,
+      "BootyType": 18,
+      "CurrencyName": "内丹丹气",
+      "ItemId": 99014,
+      "Icon": "icon_nddq",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 565,
+      "CurrencyType": 15,
+      "BootyType": 19,
+      "CurrencyName": "丹魂丹气",
+      "ItemId": 99015,
+      "Icon": "icon_dhdq",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 608,
+      "CurrencyType": 16,
+      "BootyType": 23,
+      "CurrencyName": "灵气",
+      "ItemId": 99016,
+      "Icon": "icon_lg_lq",
+      "_byte_length": 38
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 646,
+      "CurrencyType": 17,
+      "BootyType": 24,
+      "CurrencyName": "气血值",
+      "ItemId": 99017,
+      "Icon": "icon_lt_qxz",
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 688,
+      "CurrencyType": 18,
+      "BootyType": 27,
+      "CurrencyName": "夺宝券",
+      "ItemId": 99018,
+      "Icon": "icon_dbq",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 727,
+      "CurrencyType": 19,
+      "BootyType": 28,
+      "CurrencyName": "夺宝积分",
+      "ItemId": 99019,
+      "Icon": "icon_dbjf",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 770,
+      "CurrencyType": 20,
+      "BootyType": 30,
+      "CurrencyName": "神元晶石",
+      "ItemId": 99020,
+      "Icon": "icon_yuanshen_ys",
+      "_byte_length": 50
+    },
+    {
+      "_record_index": 19,
+      "_byte_offset": 820,
+      "CurrencyType": 21,
+      "BootyType": 31,
+      "CurrencyName": "狩猎积分",
+      "ItemId": 99021,
+      "Icon": "icon_xy_lp",
+      "_byte_length": 44
+    },
+    {
+      "_record_index": 20,
+      "_byte_offset": 864,
+      "CurrencyType": 22,
+      "BootyType": 32,
+      "CurrencyName": "龙窟水晶",
+      "ItemId": 99022,
+      "Icon": "icon_huobi_sj",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 21,
+      "_byte_offset": 911,
+      "CurrencyType": 23,
+      "BootyType": 34,
+      "CurrencyName": "灵箭积分",
+      "ItemId": 99023,
+      "Icon": "icon_hd_jifen",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 22,
+      "_byte_offset": 958,
+      "CurrencyType": 24,
+      "BootyType": 35,
+      "CurrencyName": "地窟之镐",
+      "ItemId": 99024,
+      "Icon": "icon_dkct",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 23,
+      "_byte_offset": 1001,
+      "CurrencyType": 25,
+      "BootyType": 36,
+      "CurrencyName": "回馈礼券",
+      "ItemId": 99025,
+      "Icon": "icon_hklj",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 24,
+      "_byte_offset": 1044,
+      "CurrencyType": 26,
+      "BootyType": 37,
+      "CurrencyName": "翡翠令",
+      "ItemId": 99026,
+      "Icon": "icon_lingpai",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 25,
+      "_byte_offset": 1087,
+      "CurrencyType": 27,
+      "BootyType": 38,
+      "CurrencyName": "积分令牌",
+      "ItemId": 99027,
+      "Icon": "icon_jifen",
+      "_byte_length": 44
+    },
+    {
+      "_record_index": 26,
+      "_byte_offset": 1131,
+      "CurrencyType": 28,
+      "BootyType": 39,
+      "CurrencyName": "秘宝积分",
+      "ItemId": 99028,
+      "Icon": "icon_mbjf",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 27,
+      "_byte_offset": 1174,
+      "CurrencyType": 30,
+      "BootyType": 42,
+      "CurrencyName": "古神之炎",
+      "ItemId": 99030,
+      "Icon": "icon_zh_gszy",
+      "_byte_length": 46
+    },
+    {
+      "_record_index": 28,
+      "_byte_offset": 1220,
+      "CurrencyType": 29,
+      "BootyType": 40,
+      "CurrencyName": "魂灵结晶",
+      "ItemId": 99029,
+      "Icon": "icon_hl_lhjj",
+      "_byte_length": 46
+    },
+    {
+      "_record_index": 29,
+      "_byte_offset": 1266,
+      "CurrencyType": 31,
+      "BootyType": 43,
+      "CurrencyName": "驯养值",
+      "ItemId": 99031,
+      "Icon": "icon_hl_lhjj",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 30,
+      "_byte_offset": 1309,
+      "CurrencyType": 32,
+      "BootyType": 48,
+      "CurrencyName": "占星法器",
+      "ItemId": 100025,
+      "Icon": "icon_zxgy_zxfq",
+      "_byte_length": 48
+    },
+    {
+      "_record_index": 31,
+      "_byte_offset": 1357,
+      "CurrencyType": 33,
+      "BootyType": 45,
+      "CurrencyName": "秘境积分",
+      "ItemId": 99032,
+      "Icon": "icon_hl_lhjj",
+      "_byte_length": 46
+    },
+    {
+      "_record_index": 32,
+      "_byte_offset": 1403,
+      "CurrencyType": 34,
+      "BootyType": 46,
+      "CurrencyName": "部落卷轴",
+      "ItemId": 99034,
+      "Icon": "icon_bljz",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 33,
+      "_byte_offset": 1446,
+      "CurrencyType": 35,
+      "BootyType": 47,
+      "CurrencyName": "部落积分",
+      "ItemId": 99035,
+      "Icon": "icon_hl_lhjj",
+      "_byte_length": 46
+    },
+    {
+      "_record_index": 34,
+      "_byte_offset": 1492,
+      "CurrencyType": 39,
+      "BootyType": 51,
+      "CurrencyName": "羁绊积分",
+      "ItemId": 99036,
+      "Icon": "icon_jifen_jb",
+      "_byte_length": 47
+    },
+    {
+      "_record_index": 35,
+      "_byte_offset": 1539,
+      "CurrencyType": 41,
+      "BootyType": 54,
+      "CurrencyName": "异界矿石",
+      "ItemId": 99037,
+      "Icon": "icon_syzb_huobi",
+      "_byte_length": 49
+    },
+    {
+      "_record_index": 36,
+      "_byte_offset": 1588,
+      "CurrencyType": 42,
+      "BootyType": 55,
+      "CurrencyName": "头盔强化卷轴",
+      "ItemId": 99038,
+      "Icon": "icon_syzb_toukui",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 37,
+      "_byte_offset": 1644,
+      "CurrencyType": 43,
+      "BootyType": 56,
+      "CurrencyName": "耳环强化卷轴",
+      "ItemId": 99039,
+      "Icon": "icon_syzb_erhuan",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 38,
+      "_byte_offset": 1700,
+      "CurrencyType": 44,
+      "BootyType": 57,
+      "CurrencyName": "拳套强化卷轴",
+      "ItemId": 99040,
+      "Icon": "icon_syzb_shoutao",
+      "_byte_length": 57
+    },
+    {
+      "_record_index": 39,
+      "_byte_offset": 1757,
+      "CurrencyType": 45,
+      "BootyType": 58,
+      "CurrencyName": "腰带强化卷轴",
+      "ItemId": 99041,
+      "Icon": "icon_syzb_yaodai",
+      "_byte_length": 56
+    },
+    {
+      "_record_index": 40,
+      "_byte_offset": 1813,
+      "CurrencyType": 46,
+      "BootyType": 59,
+      "CurrencyName": "蛮荒币",
+      "ItemId": 99042,
+      "Icon": "icon_mhb",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 41,
+      "_byte_offset": 1852,
+      "CurrencyType": 47,
+      "BootyType": 60,
+      "CurrencyName": "每日活跃度",
+      "ItemId": 99043,
+      "Icon": "icon_mrhy",
+      "_byte_length": 46
+    },
+    {
+      "_record_index": 42,
+      "_byte_offset": 1898,
+      "CurrencyType": 48,
+      "BootyType": 61,
+      "CurrencyName": "领地经验",
+      "ItemId": 99044,
+      "Icon": "icon_ldjy",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 43,
+      "_byte_offset": 1941,
+      "CurrencyType": 49,
+      "BootyType": 65,
+      "CurrencyName": "联盟货币",
+      "ItemId": 99045,
+      "Icon": "icon_bllm_hb",
+      "_byte_length": 46
+    },
+    {
+      "_record_index": 44,
+      "_byte_offset": 1987,
+      "CurrencyType": 50,
+      "BootyType": 62,
+      "CurrencyName": "化石币",
+      "ItemId": 99046,
+      "Icon": "icon_hsb",
+      "_byte_length": 39
+    },
+    {
+      "_record_index": 45,
+      "_byte_offset": 2026,
+      "CurrencyType": 51,
+      "BootyType": 63,
+      "CurrencyName": "联盟贡献",
+      "ItemId": 99047,
+      "Icon": "icon_ldjy",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 46,
+      "_byte_offset": 2069,
+      "CurrencyType": 52,
+      "BootyType": 64,
+      "CurrencyName": "联盟经验",
+      "ItemId": 99048,
+      "Icon": "icon_ghjy",
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 47,
+      "_byte_offset": 2112,
+      "CurrencyType": 53,
+      "BootyType": 68,
+      "CurrencyName": "派遣结晶",
+      "ItemId": 99051,
+      "Icon": "icon_bllm_hb",
+      "_byte_length": 46
+    },
+    {
+      "_record_index": 48,
+      "_byte_offset": 2158,
+      "CurrencyType": 54,
+      "BootyType": 69,
+      "CurrencyName": "重铸材料",
+      "ItemId": 99050,
+      "Icon": "icon_sy_czcl",
+      "_byte_length": 46
+    }
+  ]
+}

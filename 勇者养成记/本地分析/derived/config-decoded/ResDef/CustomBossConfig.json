@@ -1,0 +1,404 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_custombossconfig.bytes.ab",
+    "path_id": 6508361425077728333,
+    "name": "CustomBossConfig",
+    "sha256": "2578de0d427e0d2403ed7077c170aa6e69ebae14ead5d9d40104520d0aa0e6f2",
+    "export": "derived/unity/text/assets_resources_config_resbin_custombossconfig.bytes/CustomBossConfig__6508361425077728333.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 815,
+      "version": 1,
+      "record_count": 15,
+      "stored_crc32": "4c996fb7",
+      "computed_inverted_crc32": "4c996fb7"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "CustomBossConfig",
+      "fields": [
+        {
+          "type": "int",
+          "name": "BossID",
+          "object_offset": 16
+        },
+        {
+          "type": "string",
+          "name": "BossName",
+          "object_offset": 24
+        },
+        {
+          "type": "int",
+          "name": "BossLevel",
+          "object_offset": 32
+        },
+        {
+          "type": "int",
+          "name": "HardPoint",
+          "object_offset": 36
+        },
+        {
+          "type": "uint",
+          "name": "MonsterID",
+          "object_offset": 40
+        },
+        {
+          "type": "uint",
+          "name": "BuffCount",
+          "object_offset": 44
+        },
+        {
+          "type": "uint",
+          "name": "RecommendFightVal",
+          "object_offset": 48
+        },
+        {
+          "type": "float",
+          "name": "ModelPosX",
+          "object_offset": 52
+        },
+        {
+          "type": "float",
+          "name": "ModelPosY",
+          "object_offset": 56
+        },
+        {
+          "type": "float",
+          "name": "ModelPosZ",
+          "object_offset": 60
+        }
+      ],
+      "unpack_va": 31258384,
+      "dump_line": 202892
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1dcf744",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dcf76c",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dcf790",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dcf7b4",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 36,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dcf7d8",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 40,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dcf7fc",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 44,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dcf820",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 48,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dcf844",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 52,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dcf868",
+        "target_va": "0x21f6b98",
+        "opcode": "BL",
+        "reader": "readFloat",
+        "destination_object_offset": 56,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dcf8a8",
+        "target_va": "0x21f6b98",
+        "opcode": "B-tail",
+        "reader": "readFloat",
+        "destination_object_offset": 60,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 15
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "BossID": 1,
+      "BossName": "简单强敌",
+      "BossLevel": 10,
+      "HardPoint": 1000,
+      "MonsterID": 1011001,
+      "BuffCount": 10,
+      "RecommendFightVal": 90000,
+      "ModelPosX": 90.0,
+      "ModelPosY": 755.0,
+      "ModelPosZ": 200.0,
+      "_byte_length": 53
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 73,
+      "BossID": 2,
+      "BossName": "简单强敌",
+      "BossLevel": 20,
+      "HardPoint": 3000,
+      "MonsterID": 1011002,
+      "BuffCount": 10,
+      "RecommendFightVal": 150000,
+      "ModelPosX": 90.0,
+      "ModelPosY": 755.0,
+      "ModelPosZ": 200.0,
+      "_byte_length": 53
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 126,
+      "BossID": 3,
+      "BossName": "普通强敌",
+      "BossLevel": 30,
+      "HardPoint": 5000,
+      "MonsterID": 1011003,
+      "BuffCount": 10,
+      "RecommendFightVal": 250000,
+      "ModelPosX": 90.0,
+      "ModelPosY": 755.0,
+      "ModelPosZ": 200.0,
+      "_byte_length": 53
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 179,
+      "BossID": 4,
+      "BossName": "普通强敌",
+      "BossLevel": 40,
+      "HardPoint": 7000,
+      "MonsterID": 1011004,
+      "BuffCount": 10,
+      "RecommendFightVal": 350000,
+      "ModelPosX": 90.0,
+      "ModelPosY": 755.0,
+      "ModelPosZ": 200.0,
+      "_byte_length": 53
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 232,
+      "BossID": 5,
+      "BossName": "精英强敌",
+      "BossLevel": 50,
+      "HardPoint": 10000,
+      "MonsterID": 1011005,
+      "BuffCount": 10,
+      "RecommendFightVal": 700000,
+      "ModelPosX": 90.0,
+      "ModelPosY": 755.0,
+      "ModelPosZ": 200.0,
+      "_byte_length": 53
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 285,
+      "BossID": 6,
+      "BossName": "精英强敌",
+      "BossLevel": 60,
+      "HardPoint": 25000,
+      "MonsterID": 1011006,
+      "BuffCount": 10,
+      "RecommendFightVal": 1100000,
+      "ModelPosX": 90.0,
+      "ModelPosY": 755.0,
+      "ModelPosZ": 200.0,
+      "_byte_length": 53
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 338,
+      "BossID": 7,
+      "BossName": "困难强敌",
+      "BossLevel": 70,
+      "HardPoint": 40000,
+      "MonsterID": 1011007,
+      "BuffCount": 10,
+      "RecommendFightVal": 1600000,
+      "ModelPosX": 90.0,
+      "ModelPosY": 755.0,
+      "ModelPosZ": 200.0,
+      "_byte_length": 53
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 391,
+      "BossID": 8,
+      "BossName": "极难强敌",
+      "BossLevel": 80,
+      "HardPoint": 60000,
+      "MonsterID": 1011008,
+      "BuffCount": 10,
+      "RecommendFightVal": 2500000,
+      "ModelPosX": 90.0,
+      "ModelPosY": 755.0,
+      "ModelPosZ": 200.0,
+      "_byte_length": 53
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 444,
+      "BossID": 9,
+      "BossName": "极难强敌",
+      "BossLevel": 90,
+      "HardPoint": 80000,
+      "MonsterID": 1011009,
+      "BuffCount": 10,
+      "RecommendFightVal": 3500000,
+      "ModelPosX": 155.0,
+      "ModelPosY": 400.0,
+      "ModelPosZ": 2000.0,
+      "_byte_length": 53
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 497,
+      "BossID": 10,
+      "BossName": "深渊强敌",
+      "BossLevel": 100,
+      "HardPoint": 100000,
+      "MonsterID": 1011010,
+      "BuffCount": 10,
+      "RecommendFightVal": 5000000,
+      "ModelPosX": 90.0,
+      "ModelPosY": 755.0,
+      "ModelPosZ": 200.0,
+      "_byte_length": 53
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 550,
+      "BossID": 11,
+      "BossName": "深渊强敌",
+      "BossLevel": 110,
+      "HardPoint": 120000,
+      "MonsterID": 1011011,
+      "BuffCount": 10,
+      "RecommendFightVal": 7000000,
+      "ModelPosX": 90.0,
+      "ModelPosY": 755.0,
+      "ModelPosZ": 200.0,
+      "_byte_length": 53
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 603,
+      "BossID": 12,
+      "BossName": "深渊强敌",
+      "BossLevel": 120,
+      "HardPoint": 240000,
+      "MonsterID": 1011012,
+      "BuffCount": 10,
+      "RecommendFightVal": 9500000,
+      "ModelPosX": 90.0,
+      "ModelPosY": 755.0,
+      "ModelPosZ": 200.0,
+      "_byte_length": 53
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 656,
+      "BossID": 13,
+      "BossName": "深渊强敌",
+      "BossLevel": 130,
+      "HardPoint": 360000,
+      "MonsterID": 1011013,
+      "BuffCount": 10,
+      "RecommendFightVal": 12500000,
+      "ModelPosX": 90.0,
+      "ModelPosY": 755.0,
+      "ModelPosZ": 200.0,
+      "_byte_length": 53
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 709,
+      "BossID": 14,
+      "BossName": "深渊强敌",
+      "BossLevel": 140,
+      "HardPoint": 480000,
+      "MonsterID": 1011014,
+      "BuffCount": 10,
+      "RecommendFightVal": 16000000,
+      "ModelPosX": 90.0,
+      "ModelPosY": 755.0,
+      "ModelPosZ": 200.0,
+      "_byte_length": 53
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 762,
+      "BossID": 15,
+      "BossName": "深渊强敌",
+      "BossLevel": 150,
+      "HardPoint": 600000,
+      "MonsterID": 1011015,
+      "BuffCount": 10,
+      "RecommendFightVal": 20000000,
+      "ModelPosX": 90.0,
+      "ModelPosY": 755.0,
+      "ModelPosZ": 200.0,
+      "_byte_length": 53
+    }
+  ]
+}

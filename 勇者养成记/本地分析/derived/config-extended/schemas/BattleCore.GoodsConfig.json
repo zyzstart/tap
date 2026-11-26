@@ -1,0 +1,149 @@
+{
+  "namespace": "BattleCore",
+  "name": "GoodsConfig",
+  "fields": [
+    {
+      "type": "uint",
+      "name": "ItemID",
+      "object_offset": 16
+    },
+    {
+      "type": "uint",
+      "name": "UseLevel",
+      "object_offset": 20
+    },
+    {
+      "type": "string",
+      "name": "CanotUseTip",
+      "object_offset": 24
+    },
+    {
+      "type": "ItemFuncData",
+      "name": "Func",
+      "object_offset": 32
+    }
+  ],
+  "unpack_va": 23338944,
+  "dump_line": 167329,
+  "layout": [
+    {
+      "type": "uint",
+      "name": "ItemID",
+      "object_offset": 16,
+      "wire_type": "uint",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1641ff4",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "self",
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "type": "uint",
+      "name": "UseLevel",
+      "object_offset": 20,
+      "wire_type": "uint",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1642018",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "self",
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "type": "string",
+      "name": "CanotUseTip",
+      "object_offset": 24,
+      "wire_type": "string",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1642040",
+          "target_va": "0x21f6ce8",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readString"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readString",
+          "destination": [
+            "self",
+            24
+          ],
+          "max_string_size": 64
+        }
+      ],
+      "max_string_size": 64
+    },
+    {
+      "type": "ItemFuncData",
+      "name": "Func",
+      "object_offset": 32,
+      "wire_type": "ItemFuncData",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1642080",
+          "target_va": "0x1642084",
+          "target_names": [
+            "BattleCore.ItemFuncData$$unpack"
+          ],
+          "opcode": "B",
+          "kind": "nested",
+          "nested_schema": "BattleCore.ItemFuncData",
+          "destination": [
+            "field",
+            32
+          ],
+          "cut_version": 1
+        }
+      ],
+      "nested_schema": "BattleCore.ItemFuncData"
+    }
+  ],
+  "native_evidence": {
+    "method_start_va": "0x1641fc0",
+    "instruction_steps": 37,
+    "event_count": 4,
+    "branch_evidence": [],
+    "loops": [],
+    "instruction_sha256": "55d59921532c1bfa9c247e346075903e51d6aa0b46340aa92cc7f7ba19d3686b",
+    "gate": "concrete-success-path; all sequential readers/nested callees; full field/destination/stride matching",
+    "assumptions": [
+      "non-null input buffer and created nested objects/arrays",
+      "managed array bounds valid",
+      "AAPCS64 callee-saved register preservation",
+      "reader and nested call success; version 1 only"
+    ]
+  }
+}

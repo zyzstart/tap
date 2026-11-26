@@ -1,0 +1,4883 @@
+// TEXT-ONLY METADATA/SIGNATURE EXCERPT; NOT RECOVERED C# IMPLEMENTATION.
+// Source: derived/il2cpp/armeabi-v7a/dump.cs
+// SHA256: 4b189984f87cc6d586f1c23c3122323a28473ae06384d36ea292e3e13f97e6a1
+// Assembly: Assembly-CSharp-firstpass.dll; types: 151; original dump lines 428423-433148
+
+// ORIGINAL DUMP LINES 428423-428425; TypeDefIndex 10600
+// Namespace: 
+internal class <Module> // TypeDefIndex: 10600
+{}
+
+// ORIGINAL DUMP LINES 428427-428439; TypeDefIndex 10601
+// Namespace: 
+public enum LogSeverity // TypeDefIndex: 10601
+{
+	// Fields
+	public int value__; // 0x0
+	public const LogSeverity Log = 0;
+	public const LogSeverity LogDebug = 1;
+	public const LogSeverity LogInfo = 2;
+	public const LogSeverity LogWarning = 3;
+	public const LogSeverity LogAssert = 4;
+	public const LogSeverity LogError = 5;
+	public const LogSeverity LogException = 6;
+}
+
+// ORIGINAL DUMP LINES 428441-428618; TypeDefIndex 10602
+// Namespace: 
+public sealed class BuglyAgent // TypeDefIndex: 10602
+{
+	// Fields
+	private static readonly string GAME_AGENT_CLASS; // 0x0
+	private static readonly int TYPE_U3D_CRASH; // 0x4
+	private static readonly int GAME_TYPE_UNITY; // 0x8
+	private static bool hasSetGameType; // 0xC
+	private static AndroidJavaClass _gameAgentClass; // 0x10
+	private static string _configChannel; // 0x14
+	private static string _configVersion; // 0x18
+	private static string _configUser; // 0x1C
+	private static long _configDelayTime; // 0x20
+	private static bool _configCrashReporterPackage; // 0x28
+	[CompilerGeneratedAttribute] // RVA: 0x483518 Offset: 0x483518 VA: 0x483518
+	[DebuggerBrowsableAttribute] // RVA: 0x483518 Offset: 0x483518 VA: 0x483518
+	private static BuglyAgent.LogCallbackDelegate _LogCallbackEventHandler; // 0x2C
+	private static bool _isInitialized; // 0x30
+	private static LogSeverity _autoReportLogLevel; // 0x34
+	private static int _crashReporterType; // 0x38
+	private static string _crashReporterPackage; // 0x3C
+	private static bool _debugMode; // 0x40
+	private static bool _autoQuitApplicationAfterReport; // 0x41
+	private static readonly int EXCEPTION_TYPE_UNCAUGHT; // 0x44
+	private static readonly int EXCEPTION_TYPE_CAUGHT; // 0x48
+	private static readonly string _pluginVersion; // 0x4C
+	private static Func<Dictionary<string, string>> _LogCallbackExtrasHandler; // 0x50
+	private static bool _uncaughtAutoReportOnce; // 0x54
+	[CompilerGeneratedAttribute] // RVA: 0x48354C Offset: 0x48354C VA: 0x48354C
+	private static Application.LogCallback <>f__mg$cache0; // 0x58
+	[CompilerGeneratedAttribute] // RVA: 0x48355C Offset: 0x48355C VA: 0x48355C
+	private static UnhandledExceptionEventHandler <>f__mg$cache1; // 0x5C
+	[CompilerGeneratedAttribute] // RVA: 0x48356C Offset: 0x48356C VA: 0x48356C
+	private static UnhandledExceptionEventHandler <>f__mg$cache2; // 0x60
+
+	// Properties
+	public static AndroidJavaClass GameAgent { get; }
+	public static string PluginVersion { get; }
+	public static bool IsInitialized { get; }
+	public static bool AutoQuitApplicationAfterReport { get; }
+
+	// Methods
+
+	// RVA: 0x13D043C Offset: 0x13D043C VA: 0x13D043C
+	public void .ctor() { }
+
+	// RVA: 0x13D0444 Offset: 0x13D0444 VA: 0x13D0444
+	public static void ConfigCrashReporter(int type, int logLevel) { }
+
+	// RVA: 0x13D05AC Offset: 0x13D05AC VA: 0x13D05AC
+	public static void InitWithAppId(string appId) { }
+
+	// RVA: 0x13D1198 Offset: 0x13D1198 VA: 0x13D1198
+	public static void EnableExceptionHandler() { }
+
+	// RVA: 0x13D12C0 Offset: 0x13D12C0 VA: 0x13D12C0
+	public static void RegisterLogCallback(BuglyAgent.LogCallbackDelegate handler) { }
+
+	// RVA: 0x13D1558 Offset: 0x13D1558 VA: 0x13D1558
+	public static void SetLogCallbackExtrasHandler(Func<Dictionary<string, string>> handler) { }
+
+	// RVA: 0x13D1680 Offset: 0x13D1680 VA: 0x13D1680
+	public static void ReportException(Exception e, string message) { }
+
+	// RVA: 0x13D20F8 Offset: 0x13D20F8 VA: 0x13D20F8
+	public static void ReportException(string name, string message, string stackTrace) { }
+
+	// RVA: 0x13D3130 Offset: 0x13D3130 VA: 0x13D3130
+	public static void UnregisterLogCallback(BuglyAgent.LogCallbackDelegate handler) { }
+
+	// RVA: 0x13D3370 Offset: 0x13D3370 VA: 0x13D3370
+	public static void SetUserId(string userId) { }
+
+	// RVA: 0x13D36AC Offset: 0x13D36AC VA: 0x13D36AC
+	public static void SetScene(int sceneId) { }
+
+	// RVA: 0x13D3A3C Offset: 0x13D3A3C VA: 0x13D3A3C
+	public static void AddSceneData(string key, string value) { }
+
+	// RVA: 0x13D3E28 Offset: 0x13D3E28 VA: 0x13D3E28
+	public static void ConfigDebugMode(bool enable) { }
+
+	// RVA: 0x13D41C0 Offset: 0x13D41C0 VA: 0x13D41C0
+	public static void ConfigAutoQuitApplication(bool autoQuit) { }
+
+	// RVA: 0x13D4250 Offset: 0x13D4250 VA: 0x13D4250
+	public static void ConfigAutoReportLogLevel(LogSeverity level) { }
+
+	// RVA: 0x13D42E0 Offset: 0x13D42E0 VA: 0x13D42E0
+	public static void ConfigDefault(string channel, string version, string user, long delay) { }
+
+	// RVA: 0x13D0834 Offset: 0x13D0834 VA: 0x13D0834
+	public static void DebugLog(string tag, string format, object[] args) { }
+
+	// RVA: 0x13D45F0 Offset: 0x13D45F0 VA: 0x13D45F0
+	public static void PrintLog(LogSeverity level, string format, object[] args) { }
+
+	// RVA: 0x13D4A74 Offset: 0x13D4A74 VA: 0x13D4A74
+	public static AndroidJavaClass get_GameAgent() { }
+
+	// RVA: 0x13D4534 Offset: 0x13D4534 VA: 0x13D4534
+	private static void ConfigDefaultBeforeInit(string channel, string version, string user, long delay) { }
+
+	// RVA: 0x13D4D24 Offset: 0x13D4D24 VA: 0x13D4D24
+	private static void ConfigCrashReporterPackage() { }
+
+	// RVA: 0x13D09A4 Offset: 0x13D09A4 VA: 0x13D09A4
+	private static void InitBuglyAgent(string appId) { }
+
+	// RVA: 0x13D3F90 Offset: 0x13D3F90 VA: 0x13D3F90
+	private static void EnableDebugMode(bool enable) { }
+
+	// RVA: 0x13D34C0 Offset: 0x13D34C0 VA: 0x13D34C0
+	private static void SetUserInfo(string userInfo) { }
+
+	// RVA: 0x13D4F4C Offset: 0x13D4F4C VA: 0x13D4F4C
+	private static void ReportException(int type, string name, string reason, string stackTrace, bool quitProgram) { }
+
+	// RVA: 0x13D3824 Offset: 0x13D3824 VA: 0x13D3824
+	private static void SetCurrentScene(int sceneId) { }
+
+	// RVA: 0x13D52FC Offset: 0x13D52FC VA: 0x13D52FC
+	private static void SetUnityVersion() { }
+
+	// RVA: 0x13D3BE4 Offset: 0x13D3BE4 VA: 0x13D3BE4
+	private static void AddKeyAndValueInScene(string key, string value) { }
+
+	// RVA: 0x13D5564 Offset: 0x13D5564 VA: 0x13D5564
+	private static void AddExtraDataWithException(string key, string value) { }
+
+	// RVA: 0x13D46FC Offset: 0x13D46FC VA: 0x13D46FC
+	private static void LogRecord(LogSeverity level, string message) { }
+
+	// RVA: 0x13D13D8 Offset: 0x13D13D8 VA: 0x13D13D8
+	private static void add__LogCallbackEventHandler(BuglyAgent.LogCallbackDelegate value) { }
+
+	// RVA: 0x13D31F0 Offset: 0x13D31F0 VA: 0x13D31F0
+	private static void remove__LogCallbackEventHandler(BuglyAgent.LogCallbackDelegate value) { }
+
+	// RVA: 0x13D5568 Offset: 0x13D5568 VA: 0x13D5568
+	public static string get_PluginVersion() { }
+
+	// RVA: 0x13D07A8 Offset: 0x13D07A8 VA: 0x13D07A8
+	public static bool get_IsInitialized() { }
+
+	// RVA: 0x13D55F4 Offset: 0x13D55F4 VA: 0x13D55F4
+	public static bool get_AutoQuitApplicationAfterReport() { }
+
+	// RVA: 0x13D04C4 Offset: 0x13D04C4 VA: 0x13D04C4
+	private static void _SetCrashReporterType(int type) { }
+
+	// RVA: 0x13D05A8 Offset: 0x13D05A8 VA: 0x13D05A8
+	private static void _SetCrashReporterLogLevel(int logLevel) { }
+
+	// RVA: 0x13D0DC0 Offset: 0x13D0DC0 VA: 0x13D0DC0
+	private static void _RegisterExceptionHandler() { }
+
+	// RVA: 0x13D5680 Offset: 0x13D5680 VA: 0x13D5680
+	private static void _UnregisterExceptionHandler() { }
+
+	// RVA: 0x13D593C Offset: 0x13D593C VA: 0x13D593C
+	private static void _OnLogCallbackHandler(string condition, string stackTrace, LogType type) { }
+
+	// RVA: 0x13D5FCC Offset: 0x13D5FCC VA: 0x13D5FCC
+	private static void _OnUncaughtExceptionHandler(object sender, UnhandledExceptionEventArgs args) { }
+
+	// RVA: 0x13D182C Offset: 0x13D182C VA: 0x13D182C
+	private static void _HandleException(Exception e, string message, bool uncaught) { }
+
+	// RVA: 0x13D6330 Offset: 0x13D6330 VA: 0x13D6330
+	private static void _reportException(bool uncaught, string name, string reason, string stackTrace) { }
+
+	// RVA: 0x13D230C Offset: 0x13D230C VA: 0x13D230C
+	private static void _HandleException(LogSeverity logLevel, string name, string message, string stackTrace, bool uncaught) { }
+
+	// RVA: 0x13D6E68 Offset: 0x13D6E68 VA: 0x13D6E68
+	private static void .cctor() { }
+}
+
+// ORIGINAL DUMP LINES 428620-428636; TypeDefIndex 10603
+// Namespace: 
+public sealed class BuglyAgent.LogCallbackDelegate : MulticastDelegate // TypeDefIndex: 10603
+{
+	// Methods
+
+	// RVA: 0x13D6F4C Offset: 0x13D6F4C VA: 0x13D6F4C
+	public void .ctor(object object, IntPtr method) { }
+
+	// RVA: 0x13D5BA4 Offset: 0x13D5BA4 VA: 0x13D5BA4 Slot: 11
+	public virtual void Invoke(string condition, string stackTrace, LogType type) { }
+
+	// RVA: 0x13D6F60 Offset: 0x13D6F60 VA: 0x13D6F60 Slot: 12
+	public virtual IAsyncResult BeginInvoke(string condition, string stackTrace, LogType type, AsyncCallback callback, object object) { }
+
+	// RVA: 0x13D7008 Offset: 0x13D7008 VA: 0x13D7008 Slot: 13
+	public virtual void EndInvoke(IAsyncResult result) { }
+}
+
+// ORIGINAL DUMP LINES 428638-428648; TypeDefIndex 10604
+// Namespace: 
+public abstract class BuglyCallback // TypeDefIndex: 10604
+{
+	// Methods
+
+	// RVA: 0x13D7014 Offset: 0x13D7014 VA: 0x13D7014
+	protected void .ctor() { }
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract void OnApplicationLogCallbackHandler(string condition, string stackTrace, LogType type);
+}
+
+// ORIGINAL DUMP LINES 428650-428747; TypeDefIndex 10605
+// Namespace: 
+public class lzma // TypeDefIndex: 10605
+{
+	// Fields
+	public static string persitentDataPath; // 0x0
+	internal static int[] props; // 0x4
+	internal static bool defaultsSet; // 0x8
+	private const string libname = "lzma";
+	public static int trueTotalFiles; // 0xC
+	public static List<string> ninfo; // 0x10
+	public static List<long> sinfo; // 0x14
+
+	// Methods
+
+	// RVA: 0x1CC46EC Offset: 0x1CC46EC VA: 0x1CC46EC
+	public void .ctor() { }
+
+	// RVA: 0x1CC46F4 Offset: 0x1CC46F4 VA: 0x1CC46F4
+	public static void setProps(int level = 5, int dictSize = 16777216, int lc = 3, int lp = 0, int pb = 2, int fb = 32, int numThreads = 2) { }
+
+	// RVA: 0x1CC4988 Offset: 0x1CC4988 VA: 0x1CC4988
+	internal static extern int lsetPermissions(string filePath, string _user, string _group, string _other) { }
+
+	// RVA: 0x1CC4B00 Offset: 0x1CC4B00 VA: 0x1CC4B00
+	internal static extern int decompress7zip(string filePath, string exctractionPath, bool fullPaths, string entry, IntPtr progress, IntPtr FileBuffer, int FileBufferLength) { }
+
+	// RVA: 0x1CC4C80 Offset: 0x1CC4C80 VA: 0x1CC4C80
+	internal static extern int decompress7zip2(string filePath, string exctractionPath, bool fullPaths, string entry, IntPtr progress, IntPtr FileBuffer, int FileBufferLength) { }
+
+	// RVA: 0x1CC4E00 Offset: 0x1CC4E00 VA: 0x1CC4E00
+	internal static extern int _getSize(string filePath, string tempPath, IntPtr FileBuffer, int FileBufferLength) { }
+
+	// RVA: 0x1CC4F48 Offset: 0x1CC4F48 VA: 0x1CC4F48
+	internal static extern int lzmaUtil(bool encode, string inPath, string outPath, IntPtr Props) { }
+
+	// RVA: 0x1CC5090 Offset: 0x1CC5090 VA: 0x1CC5090
+	internal static extern int decode2Buf(string filePath, string entry, IntPtr buffer, IntPtr FileBuffer, int FileBufferLength) { }
+
+	// RVA: 0x1CC51E0 Offset: 0x1CC51E0 VA: 0x1CC51E0
+	internal static extern void _releaseBuffer(IntPtr buffer) { }
+
+	// RVA: 0x1CC52E8 Offset: 0x1CC52E8 VA: 0x1CC52E8
+	internal static extern IntPtr Lzma_Compress(IntPtr buffer, int bufferLength, bool makeHeader, ref int v, IntPtr Props) { }
+
+	// RVA: 0x1CC5408 Offset: 0x1CC5408 VA: 0x1CC5408
+	internal static extern int Lzma_Uncompress(IntPtr buffer, int bufferLength, int uncompressedSize, IntPtr outbuffer, bool useHeader) { }
+
+	// RVA: 0x1CC552C Offset: 0x1CC552C VA: 0x1CC552C
+	public static int setFilePermissions(string filePath, string _user, string _group, string _other) { }
+
+	// RVA: 0x1CC55CC Offset: 0x1CC55CC VA: 0x1CC55CC
+	public static int doDecompress7zip(string filePath, string exctractionPath, int[] progress, bool largeFiles = False, bool fullPaths = False, string entry, byte[] FileBuffer) { }
+
+	// RVA: 0x1CC58F8 Offset: 0x1CC58F8 VA: 0x1CC58F8
+	public static int doDecompress7zip(string filePath, string exctractionPath, bool largeFiles = False, bool fullPaths = False, string entry, byte[] FileBuffer) { }
+
+	// RVA: 0x1CC5C2C Offset: 0x1CC5C2C VA: 0x1CC5C2C
+	public static int LzmaUtilEncode(string inPath, string outPath) { }
+
+	// RVA: 0x1CC5DA4 Offset: 0x1CC5DA4 VA: 0x1CC5DA4
+	public static int LzmaUtilDecode(string inPath, string outPath) { }
+
+	// RVA: 0x1CC5E3C Offset: 0x1CC5E3C VA: 0x1CC5E3C
+	public static long get7zInfo(string filePath, string tempPath, byte[] FileBuffer) { }
+
+	// RVA: 0x1CC65FC Offset: 0x1CC65FC VA: 0x1CC65FC
+	public static long get7zSize(string filePath, string fileName, string tempPath, byte[] FileBuffer) { }
+
+	// RVA: 0x1CC6A88 Offset: 0x1CC6A88 VA: 0x1CC6A88
+	public static byte[] decode2Buffer(string filePath, string entry, string tempPath, byte[] FileBuffer) { }
+
+	// RVA: 0x1CC6C74 Offset: 0x1CC6C74 VA: 0x1CC6C74
+	public static bool compressBuffer(byte[] inBuffer, ref byte[] outBuffer, bool makeHeader = True) { }
+
+	// RVA: 0x1CC6F44 Offset: 0x1CC6F44 VA: 0x1CC6F44
+	public static bool compressBufferPartial(byte[] inBuffer, int inBufferPartialIndex, int inBufferPartialLength, ref byte[] outBuffer, bool makeHeader = True) { }
+
+	// RVA: 0x1CC7250 Offset: 0x1CC7250 VA: 0x1CC7250
+	public static int compressBufferPartialFixed(byte[] inBuffer, int inBufferPartialIndex, int inBufferPartialLength, ref byte[] outBuffer, bool safe = True, bool makeHeader = True) { }
+
+	// RVA: 0x1CC75A0 Offset: 0x1CC75A0 VA: 0x1CC75A0
+	public static int compressBufferFixed(byte[] inBuffer, ref byte[] outBuffer, bool safe = True, bool makeHeader = True) { }
+
+	// RVA: 0x1CC78B4 Offset: 0x1CC78B4 VA: 0x1CC78B4
+	public static int decompressAssetBundle(byte[] inBuffer, ref byte[] outbuffer) { }
+
+	// RVA: 0x1CC7B48 Offset: 0x1CC7B48 VA: 0x1CC7B48
+	public static int decompressBuffer(byte[] inBuffer, ref byte[] outbuffer, bool useHeader = True, int customLength = 0) { }
+
+	// RVA: 0x1CC7CD0 Offset: 0x1CC7CD0 VA: 0x1CC7CD0
+	public static byte[] decompressBuffer(byte[] inBuffer, bool useHeader = True, int customLength = 0) { }
+
+	// RVA: 0x1CC7E5C Offset: 0x1CC7E5C VA: 0x1CC7E5C
+	public static int decompressBufferFixed(byte[] inBuffer, ref byte[] outbuffer, bool safe = True, bool useHeader = True, int customLength = 0) { }
+
+	// RVA: 0x1CC8020 Offset: 0x1CC8020 VA: 0x1CC8020
+	private static void .cctor() { }
+}
+
+// ORIGINAL DUMP LINES 428749-428791; TypeDefIndex 10606
+// Namespace: 
+public class CgSdkDemo : MonoBehaviour // TypeDefIndex: 10606
+{
+	// Fields
+	public static string output; // 0x0
+	public Text textOutput; // 0xC
+	public static bool initFinishFlag; // 0x4
+
+	// Methods
+
+	// RVA: 0x13D701C Offset: 0x13D701C VA: 0x13D701C
+	public void .ctor() { }
+
+	// RVA: 0x13D7024 Offset: 0x13D7024 VA: 0x13D7024
+	public static void InitSDK() { }
+
+	// RVA: 0x13D7100 Offset: 0x13D7100 VA: 0x13D7100
+	public static bool IsCloudGameEnv() { }
+
+	// RVA: 0x13D717C Offset: 0x13D717C VA: 0x13D717C
+	private void Start() { }
+
+	// RVA: 0x13D7484 Offset: 0x13D7484 VA: 0x13D7484
+	private void OnDeviceInfo(DeviceInfo info) { }
+
+	// RVA: 0x13D7A64 Offset: 0x13D7A64 VA: 0x13D7A64
+	private void OnDumpInteractiveItemsReq(DumpInterativeItemsReq req) { }
+
+	// RVA: 0x13D7B34 Offset: 0x13D7B34 VA: 0x13D7B34
+	private void OnInterativeItemsResult(IterativeItemList itemList) { }
+
+	// RVA: 0x13D7DB0 Offset: 0x13D7DB0 VA: 0x13D7DB0
+	private void OnReceiveClientEvent(object data) { }
+
+	// RVA: 0x13D7E80 Offset: 0x13D7E80 VA: 0x13D7E80
+	private void OnReceiveCloudInfo(CloudInfo data) { }
+
+	// RVA: 0x13D8088 Offset: 0x13D8088 VA: 0x13D8088
+	private void OnDestroy() { }
+
+	// RVA: 0x13D8200 Offset: 0x13D8200 VA: 0x13D8200
+	private static void .cctor() { }
+}
+
+// ORIGINAL DUMP LINES 428793-428827; TypeDefIndex 10607
+// Namespace: TVGameMatrix.UGUI
+public class TestClick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IEventSystemHandler // TypeDefIndex: 10607
+{
+	// Fields
+	private Color orgColor; // 0xC
+	[CompilerGeneratedAttribute] // RVA: 0x48357C Offset: 0x48357C VA: 0x48357C
+	[DebuggerBrowsableAttribute] // RVA: 0x48357C Offset: 0x48357C VA: 0x48357C
+	private TestClick.OnBtnClick OnBtnClickEvent; // 0x1C
+
+	// Methods
+
+	// RVA: 0x14AB080 Offset: 0x14AB080 VA: 0x14AB080
+	public void .ctor() { }
+
+	// RVA: 0x14AB088 Offset: 0x14AB088 VA: 0x14AB088
+	public void add_OnBtnClickEvent(TestClick.OnBtnClick value) { }
+
+	// RVA: 0x14AB194 Offset: 0x14AB194 VA: 0x14AB194
+	public void remove_OnBtnClickEvent(TestClick.OnBtnClick value) { }
+
+	// RVA: 0x14AB2A0 Offset: 0x14AB2A0 VA: 0x14AB2A0
+	private void Start() { }
+
+	// RVA: 0x14AB3E0 Offset: 0x14AB3E0 VA: 0x14AB3E0
+	private void OnItemClick() { }
+
+	// RVA: 0x14AB8C4 Offset: 0x14AB8C4 VA: 0x14AB8C4
+	private void OnDrop(GameObject go) { }
+
+	// RVA: 0x14AB9B4 Offset: 0x14AB9B4 VA: 0x14AB9B4 Slot: 4
+	private void UnityEngine.EventSystems.IPointerDownHandler.OnPointerDown(PointerEventData eventData) { }
+
+	// RVA: 0x14ABA1C Offset: 0x14ABA1C VA: 0x14ABA1C Slot: 5
+	private void UnityEngine.EventSystems.IPointerUpHandler.OnPointerUp(PointerEventData eventData) { }
+}
+
+// ORIGINAL DUMP LINES 428829-428845; TypeDefIndex 10608
+// Namespace: 
+public sealed class TestClick.OnBtnClick : MulticastDelegate // TypeDefIndex: 10608
+{
+	// Methods
+
+	// RVA: 0x14ABA5C Offset: 0x14ABA5C VA: 0x14ABA5C
+	public void .ctor(object object, IntPtr method) { }
+
+	// RVA: 0x14AB508 Offset: 0x14AB508 VA: 0x14AB508 Slot: 11
+	public virtual void Invoke(GameObject go) { }
+
+	// RVA: 0x14ABA70 Offset: 0x14ABA70 VA: 0x14ABA70 Slot: 12
+	public virtual IAsyncResult BeginInvoke(GameObject go, AsyncCallback callback, object object) { }
+
+	// RVA: 0x14ABA9C Offset: 0x14ABA9C VA: 0x14ABA9C Slot: 13
+	public virtual void EndInvoke(IAsyncResult result) { }
+}
+
+// ORIGINAL DUMP LINES 428847-428886; TypeDefIndex 10609
+// Namespace: TVGameMatrix
+public class TVInput : MonoBehaviour // TypeDefIndex: 10609
+{
+	// Fields
+	private static bool isInited; // 0x0
+	private static bool isTVEnv; // 0x1
+	private static bool isJoystickCtrl; // 0x2
+
+	// Methods
+
+	// RVA: 0x13DF268 Offset: 0x13DF268 VA: 0x13DF268
+	public void .ctor() { }
+
+	// RVA: 0x13DF270 Offset: 0x13DF270 VA: 0x13DF270
+	public static bool CheckEnvConfig() { }
+
+	// RVA: 0x13DF468 Offset: 0x13DF468 VA: 0x13DF468
+	public static bool IsTVGameEnv() { }
+
+	// RVA: 0x13DFDE4 Offset: 0x13DFDE4 VA: 0x13DFDE4
+	public static bool IsJoystickControl() { }
+
+	// RVA: 0x13D7928 Offset: 0x13D7928 VA: 0x13D7928
+	public static void SetTVGameEnv(bool isTV) { }
+
+	// RVA: 0x13DF564 Offset: 0x13DF564 VA: 0x13DF564
+	public static void Init(bool isDebug = False) { }
+
+	// RVA: 0x13E025C Offset: 0x13E025C VA: 0x13E025C
+	public static void SetSelectBox(GameObject box) { }
+
+	// RVA: 0x13E04A8 Offset: 0x13E04A8 VA: 0x13E04A8
+	public static int LoadItemConfig(string key, int defautValue) { }
+
+	// RVA: 0x13E0534 Offset: 0x13E0534 VA: 0x13E0534
+	public static string LoadItemText(string key, string defautValue) { }
+
+	// RVA: 0x13E05C0 Offset: 0x13E05C0 VA: 0x13E05C0
+	private static void .cctor() { }
+}
+
+// ORIGINAL DUMP LINES 428888-428926; TypeDefIndex 10610
+// Namespace: TVGameMatrix
+[Serializable]
+public class TVComponentConfig // TypeDefIndex: 10610
+{
+	// Fields
+	public int localId; // 0x8
+	public string nodePath; // 0xC
+	public string type; // 0x10
+	public int depth; // 0x14
+	public float x; // 0x18
+	public float y; // 0x1C
+	public float z; // 0x20
+	public float w; // 0x24
+	public float h; // 0x28
+	public string axis; // 0x2C
+	public int axisDirection; // 0x30
+	public int keyCode; // 0x34
+	public string keyTarget; // 0x38
+	public string src; // 0x3C
+	public string dst; // 0x40
+	public float delay; // 0x44
+	public bool regex; // 0x48
+	public KeyValue[] arrParams; // 0x4C
+	public Hashtable paramHashtable; // 0x50
+
+	// Methods
+
+	// RVA: 0x13DDCBC Offset: 0x13DDCBC VA: 0x13DDCBC
+	public void .ctor() { }
+
+	// RVA: 0x13DDCC4 Offset: 0x13DDCC4 VA: 0x13DDCC4
+	public static TVComponentConfig Parse(string strJson) { }
+
+	// RVA: 0x13DDE3C Offset: 0x13DDE3C VA: 0x13DDE3C
+	public static TVComponentConfig Create(TVNavigUIConfig com) { }
+
+	// RVA: 0x13DE28C Offset: 0x13DE28C VA: 0x13DE28C
+	public string GetSimpleJson() { }
+}
+
+// ORIGINAL DUMP LINES 428928-428943; TypeDefIndex 10611
+// Namespace: TVGameMatrix
+[Serializable]
+public class KeyValue // TypeDefIndex: 10611
+{
+	// Fields
+	public string name; // 0x8
+	public string str; // 0xC
+	public float f; // 0x10
+	public int i; // 0x14
+	public bool b; // 0x18
+
+	// Methods
+
+	// RVA: 0x13DBFDC Offset: 0x13DBFDC VA: 0x13DBFDC
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 428945-428958; TypeDefIndex 10612
+// Namespace: TVGameMatrix
+[Serializable]
+public class TVAppItemConfig // TypeDefIndex: 10612
+{
+	// Fields
+	public string key; // 0x8
+	public int value; // 0xC
+	public string text; // 0x10
+
+	// Methods
+
+	// RVA: 0x13DBFE4 Offset: 0x13DBFE4 VA: 0x13DBFE4
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 428960-428980; TypeDefIndex 10613
+// Namespace: TVGameMatrix
+public class TVNavigAppConfig // TypeDefIndex: 10613
+{
+	// Fields
+	private Hashtable resHashtable; // 0x8
+	private Hashtable textHashtable; // 0xC
+
+	// Methods
+
+	// RVA: 0x13E3D3C Offset: 0x13E3D3C VA: 0x13E3D3C
+	public void .ctor() { }
+
+	// RVA: 0x13E3DD8 Offset: 0x13E3DD8 VA: 0x13E3DD8
+	public void LoadConfig() { }
+
+	// RVA: 0x13E45E8 Offset: 0x13E45E8 VA: 0x13E45E8
+	public int LoadItemConfig(string key, int defautValue) { }
+
+	// RVA: 0x13E44A8 Offset: 0x13E44A8 VA: 0x13E44A8
+	public string LoadItemText(string key, string defautValue) { }
+}
+
+// ORIGINAL DUMP LINES 428982-428997; TypeDefIndex 10614
+// Namespace: TVGameMatrix
+public class TVConfig // TypeDefIndex: 10614
+{
+	// Fields
+	public static readonly string NAVIG_ASSET_BUNDLE; // 0x0
+	public static readonly string NAVIG_UI_CONFIG_FORDER; // 0x4
+	public static readonly string VERSION; // 0x8
+
+	// Methods
+
+	// RVA: 0x13DE778 Offset: 0x13DE778 VA: 0x13DE778
+	public void .ctor() { }
+
+	// RVA: 0x13DE780 Offset: 0x13DE780 VA: 0x13DE780
+	private static void .cctor() { }
+}
+
+// ORIGINAL DUMP LINES 428999-429019; TypeDefIndex 10615
+// Namespace: TVGameMatrix
+public class TVAxis // TypeDefIndex: 10615
+{
+	// Fields
+	public static readonly string LEFT_STICK_X; // 0x0
+	public static readonly string LEFT_STICK_Y; // 0x4
+	public static readonly string D_PAD_X; // 0x8
+	public static readonly string D_PAD_Y; // 0xC
+	public static readonly string RIGHT_STICK_X; // 0x10
+	public static readonly string RIGHT_STICK_Y; // 0x14
+	public static readonly string LEFT_TRIGGER; // 0x18
+	public static readonly string RIGHT_TRIGGER; // 0x1C
+
+	// Methods
+
+	// RVA: 0x13DBFEC Offset: 0x13DBFEC VA: 0x13DBFEC
+	public void .ctor() { }
+
+	// RVA: 0x13DBFF4 Offset: 0x13DBFF4 VA: 0x13DBFF4
+	private static void .cctor() { }
+}
+
+// ORIGINAL DUMP LINES 429021-429036; TypeDefIndex 10616
+// Namespace: TVGameMatrix
+public enum TVButton // TypeDefIndex: 10616
+{
+	// Fields
+	public int value__; // 0x0
+	public const TVButton A = 330;
+	public const TVButton B = 331;
+	public const TVButton X = 332;
+	public const TVButton Y = 333;
+	public const TVButton LEFT_BUMPER = 334;
+	public const TVButton RIGHT_BUMPER = 335;
+	public const TVButton LEFT_TRIGGER = 336;
+	public const TVButton RIGHT_TRIGGER = 337;
+	public const TVButton SELECT = 341;
+	public const TVButton START = 340;
+}
+
+// ORIGINAL DUMP LINES 429038-429052; TypeDefIndex 10617
+// Namespace: TVGameMatrix
+public enum TVKeyArrow // TypeDefIndex: 10617
+{
+	// Fields
+	public int value__; // 0x0
+	public const TVKeyArrow INVALID = -1;
+	public const TVKeyArrow LEFT_UP = 0;
+	public const TVKeyArrow LEFT_DOWN = 1;
+	public const TVKeyArrow RIGHT_UP = 2;
+	public const TVKeyArrow RIGHT_DOWN = 3;
+	public const TVKeyArrow UP = 4;
+	public const TVKeyArrow DOWN = 5;
+	public const TVKeyArrow LEFT = 6;
+	public const TVKeyArrow RIGHT = 7;
+}
+
+// ORIGINAL DUMP LINES 429054-429070; TypeDefIndex 10618
+// Namespace: TVGameMatrix
+public class TVNavigUIConfig : TVComponent // TypeDefIndex: 10618
+{
+	// Methods
+
+	// RVA: 0x13DC118 Offset: 0x13DC118 VA: 0x13DC118
+	public void .ctor() { }
+
+	// RVA: 0x13EFA18 Offset: 0x13EFA18 VA: 0x13EFA18 Slot: 5
+	public virtual void InitWithConfig(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x13EFA1C Offset: 0x13EFA1C VA: 0x13EFA1C Slot: 6
+	public virtual TVComponentConfig SaveToConfig(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x13EFA24 Offset: 0x13EFA24 VA: 0x13EFA24 Slot: 7
+	public virtual bool IsCreateBy(TVComponentConfig itemConfig) { }
+}
+
+// ORIGINAL DUMP LINES 429072-429131; TypeDefIndex 10619
+// Namespace: TVGameMatrix
+public class TVTransformConfig // TypeDefIndex: 10619
+{
+	// Fields
+	public TVComponentConfig node; // 0x8
+	public TVTransformConfig next; // 0xC
+	[CompilerGeneratedAttribute] // RVA: 0x4835B0 Offset: 0x4835B0 VA: 0x4835B0
+	private static Dictionary<string, int> <>f__switch$map0; // 0x0
+
+	// Methods
+
+	// RVA: 0x13ED350 Offset: 0x13ED350 VA: 0x13ED350
+	public void .ctor() { }
+
+	// RVA: 0x13ED358 Offset: 0x13ED358 VA: 0x13ED358
+	public static void Restore(GameObject obj, TVTransformConfig config) { }
+
+	// RVA: 0x13F0F40 Offset: 0x13F0F40 VA: 0x13F0F40
+	public static void ClearTVComponent(GameObject go, TVComponentConfig record) { }
+
+	// RVA: -1 Offset: -1
+	public static void RestoreTVComponent<T>(GameObject obj, TVComponentConfig record, bool isRepeat = False) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x12B6A54 Offset: 0x12B6A54 VA: 0x12B6A54
+	|-TVTransformConfig.RestoreTVComponent<object>
+	|-TVTransformConfig.RestoreTVComponent<TVAxisBinding>
+	|-TVTransformConfig.RestoreTVComponent<TVGameEvent>
+	|-TVTransformConfig.RestoreTVComponent<TVKeyBinding>
+	|-TVTransformConfig.RestoreTVComponent<TVNavigBox>
+	|-TVTransformConfig.RestoreTVComponent<TVNavigBoxInvalid>
+	|-TVTransformConfig.RestoreTVComponent<TVNavigChild>
+	|-TVTransformConfig.RestoreTVComponent<TVNavigContainer>
+	|-TVTransformConfig.RestoreTVComponent<TVNavigDelay>
+	|-TVTransformConfig.RestoreTVComponent<TVNavigDown>
+	|-TVTransformConfig.RestoreTVComponent<TVNavigDragBox>
+	|-TVTransformConfig.RestoreTVComponent<TVNavigLeft>
+	|-TVTransformConfig.RestoreTVComponent<TVNavigPanBox>
+	|-TVTransformConfig.RestoreTVComponent<TVNavigPanel>
+	|-TVTransformConfig.RestoreTVComponent<TVNavigRight>
+	|-TVTransformConfig.RestoreTVComponent<TVNavigTipsStyle>
+	|-TVTransformConfig.RestoreTVComponent<TVNavigTouchOffset>
+	|-TVTransformConfig.RestoreTVComponent<TVNavigUp>
+	|-TVTransformConfig.RestoreTVComponent<TVPanelContainer>
+	|-TVTransformConfig.RestoreTVComponent<TVPlayBinding>
+	|-TVTransformConfig.RestoreTVComponent<TVScreenTouchPos>
+	|-TVTransformConfig.RestoreTVComponent<TVTutorialKey>
+	|-TVTransformConfig.RestoreTVComponent<TVTutorialMode>
+	|-TVTransformConfig.RestoreTVComponent<TVGameKeyTips>
+	|-TVTransformConfig.RestoreTVComponent<TVImageOffset>
+	|-TVTransformConfig.RestoreTVComponent<TVImageRes>
+	|-TVTransformConfig.RestoreTVComponent<TVImageSize>
+	|-TVTransformConfig.RestoreTVComponent<TVNavigAutoScroller>
+	|-TVTransformConfig.RestoreTVComponent<TVNavigHorizList>
+	|-TVTransformConfig.RestoreTVComponent<TVNavigKeyTips>
+	|-TVTransformConfig.RestoreTVComponent<TVNavigVertList>
+	|-TVTransformConfig.RestoreTVComponent<TVPanelUpdate>
+	|-TVTransformConfig.RestoreTVComponent<TVMicGame>
+	*/
+}
+
+// ORIGINAL DUMP LINES 429133-429146; TypeDefIndex 10620
+// Namespace: TVGameMatrix
+public class TVComponent : MonoBehaviour // TypeDefIndex: 10620
+{
+	// Methods
+
+	// RVA: 0x13DDC28 Offset: 0x13DDC28 VA: 0x13DDC28
+	public void .ctor() { }
+
+	// RVA: 0x13DDC30 Offset: 0x13DDC30 VA: 0x13DDC30
+	private void Start() { }
+
+	// RVA: 0x13DDC34 Offset: 0x13DDC34 VA: 0x13DDC34 Slot: 4
+	public virtual void Clear() { }
+}
+
+// ORIGINAL DUMP LINES 429148-429170; TypeDefIndex 10621
+// Namespace: TVGameMatrix
+public interface IHitTestHandler // TypeDefIndex: 10621
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract bool IsHitVisible(GameObject go);
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract bool IsHitBoxRect(GameObject go);
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract Camera FindCamera(GameObject go);
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract Vector3 GetCenterOnScreen(GameObject go);
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract Vector3 GetSizeOnScreen(GameObject go);
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract Vector3 GetTouchPosOnScreen(GameObject go);
+}
+
+// ORIGINAL DUMP LINES 429172-429203; TypeDefIndex 10622
+// Namespace: TVGameMatrix
+public class TVHitTester : MonoBehaviour // TypeDefIndex: 10622
+{
+	// Fields
+	public static IHitTestHandler hitTester; // 0x0
+
+	// Methods
+
+	// RVA: 0x13DEDC4 Offset: 0x13DEDC4 VA: 0x13DEDC4
+	public void .ctor() { }
+
+	// RVA: 0x13DEDCC Offset: 0x13DEDCC VA: 0x13DEDCC
+	public static void SetHitTester(IHitTestHandler tester) { }
+
+	// RVA: 0x13DC708 Offset: 0x13DC708 VA: 0x13DC708
+	public static bool IsHitVisible(GameObject go) { }
+
+	// RVA: 0x13DEE30 Offset: 0x13DEE30 VA: 0x13DEE30
+	public static Camera FindCamera(GameObject go) { }
+
+	// RVA: 0x13DEF20 Offset: 0x13DEF20 VA: 0x13DEF20
+	public static Vector3 GetCenterOnScreen(GameObject go) { }
+
+	// RVA: 0x13DF04C Offset: 0x13DF04C VA: 0x13DF04C
+	public static Vector3 GetSizeOnScreen(GameObject go) { }
+
+	// RVA: 0x13DD0A4 Offset: 0x13DD0A4 VA: 0x13DD0A4
+	public static Vector3 GetTouchPosOnScreen(GameObject go) { }
+
+	// RVA: 0x13DF178 Offset: 0x13DF178 VA: 0x13DF178
+	public static bool IsHitBoxRect(GameObject go) { }
+}
+
+// ORIGINAL DUMP LINES 429205-429236; TypeDefIndex 10623
+// Namespace: TVGameMatrix
+public class TVNavigAlgo : TVComponent // TypeDefIndex: 10623
+{
+	// Methods
+
+	// RVA: 0x13E2C80 Offset: 0x13E2C80 VA: 0x13E2C80
+	public void .ctor() { }
+
+	// RVA: 0x13E2C88 Offset: 0x13E2C88 VA: 0x13E2C88
+	public GameObject FindFirstBox() { }
+
+	// RVA: 0x13E2EA0 Offset: 0x13E2EA0 VA: 0x13E2EA0
+	public GameObject FindNextBox(TVNavigBox box, KeyCode keyCode) { }
+
+	// RVA: 0x13E3668 Offset: 0x13E3668 VA: 0x13E3668
+	public GameObject FindNextBox(GameObject go, KeyCode keyCode) { }
+
+	// RVA: 0x13E3008 Offset: 0x13E3008 VA: 0x13E3008
+	public GameObject GetLeft(TVNavigBox box) { }
+
+	// RVA: 0x13E31A0 Offset: 0x13E31A0 VA: 0x13E31A0
+	public GameObject GetRight(TVNavigBox box) { }
+
+	// RVA: 0x13E3338 Offset: 0x13E3338 VA: 0x13E3338
+	public GameObject GetUp(TVNavigBox box) { }
+
+	// RVA: 0x13E34D0 Offset: 0x13E34D0 VA: 0x13E34D0
+	public GameObject GetDown(TVNavigBox box) { }
+
+	// RVA: 0x13E38C4 Offset: 0x13E38C4 VA: 0x13E38C4
+	public GameObject Get(TVNavigBox box, Vector3 myDir, float x = 1, float y = 1) { }
+}
+
+// ORIGINAL DUMP LINES 429238-429292; TypeDefIndex 10624
+// Namespace: TVGameMatrix
+public class TVNavigBox : TVNavigUIConfig // TypeDefIndex: 10624
+{
+	// Fields
+	[CompilerGeneratedAttribute] // RVA: 0x4835C0 Offset: 0x4835C0 VA: 0x4835C0
+	[DebuggerBrowsableAttribute] // RVA: 0x4835C0 Offset: 0x4835C0 VA: 0x4835C0
+	private static TVNavigBox.BoxAwakeHandler OnBoxAwake; // 0x0
+	public Vector3 pos; // 0xC
+	public Vector3 rect; // 0x18
+	public Vector3 touch; // 0x24
+	[HideInInspector] // RVA: 0x4835F4 Offset: 0x4835F4 VA: 0x4835F4
+	public bool isCustom; // 0x30
+	[HideInInspector] // RVA: 0x483604 Offset: 0x483604 VA: 0x483604
+	public bool isStartFinish; // 0x31
+	public string tvtag; // 0x34
+	private HashSet<string> boxTagSet; // 0x38
+
+	// Methods
+
+	// RVA: 0x13E4798 Offset: 0x13E4798 VA: 0x13E4798
+	public void .ctor() { }
+
+	// RVA: 0x13E4824 Offset: 0x13E4824 VA: 0x13E4824
+	public static void add_OnBoxAwake(TVNavigBox.BoxAwakeHandler value) { }
+
+	// RVA: 0x13E4954 Offset: 0x13E4954 VA: 0x13E4954
+	public static void remove_OnBoxAwake(TVNavigBox.BoxAwakeHandler value) { }
+
+	// RVA: 0x13E4A84 Offset: 0x13E4A84 VA: 0x13E4A84 Slot: 7
+	public override bool IsCreateBy(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x13E4B28 Offset: 0x13E4B28 VA: 0x13E4B28 Slot: 5
+	public override void InitWithConfig(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x13E57E0 Offset: 0x13E57E0 VA: 0x13E57E0 Slot: 6
+	public override TVComponentConfig SaveToConfig(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x13E12CC Offset: 0x13E12CC VA: 0x13E12CC
+	public bool IsContainAcitveTag(string boxTag) { }
+
+	// RVA: 0x13E58A0 Offset: 0x13E58A0 VA: 0x13E58A0
+	public void RemoveBoxTag(string boxTag) { }
+
+	// RVA: 0x13E53A4 Offset: 0x13E53A4 VA: 0x13E53A4
+	public void AddBoxTag(string boxTag) { }
+
+	// RVA: 0x13E5920 Offset: 0x13E5920 VA: 0x13E5920
+	private void Start() { }
+
+	// RVA: 0x13E5AB8 Offset: 0x13E5AB8 VA: 0x13E5AB8
+	protected void OnEnable() { }
+
+	// RVA: 0x13E5D88 Offset: 0x13E5D88 VA: 0x13E5D88
+	protected void OnDisable() { }
+}
+
+// ORIGINAL DUMP LINES 429294-429310; TypeDefIndex 10625
+// Namespace: 
+public sealed class TVNavigBox.BoxAwakeHandler : MulticastDelegate // TypeDefIndex: 10625
+{
+	// Methods
+
+	// RVA: 0x13E6324 Offset: 0x13E6324 VA: 0x13E6324
+	public void .ctor(object object, IntPtr method) { }
+
+	// RVA: 0x13E5424 Offset: 0x13E5424 VA: 0x13E5424 Slot: 11
+	public virtual void Invoke(GameObject go) { }
+
+	// RVA: 0x13E6338 Offset: 0x13E6338 VA: 0x13E6338 Slot: 12
+	public virtual IAsyncResult BeginInvoke(GameObject go, AsyncCallback callback, object object) { }
+
+	// RVA: 0x13E6364 Offset: 0x13E6364 VA: 0x13E6364 Slot: 13
+	public virtual void EndInvoke(IAsyncResult result) { }
+}
+
+// ORIGINAL DUMP LINES 429312-429322; TypeDefIndex 10626
+// Namespace: TVGameMatrix
+public class TVNavigBoxInvalid : TVNavigUIConfig // TypeDefIndex: 10626
+{
+	// Methods
+
+	// RVA: 0x13E6370 Offset: 0x13E6370 VA: 0x13E6370
+	public void .ctor() { }
+
+	// RVA: 0x13E6378 Offset: 0x13E6378 VA: 0x13E6378
+	public void Start() { }
+}
+
+// ORIGINAL DUMP LINES 429324-429338; TypeDefIndex 10627
+// Namespace: TVGameMatrix
+public class TVNavigBoxScanner : MonoBehaviour // TypeDefIndex: 10627
+{
+	// Methods
+
+	// RVA: 0x13E6604 Offset: 0x13E6604 VA: 0x13E6604
+	public void .ctor() { }
+
+	// RVA: 0x13E660C Offset: 0x13E660C VA: 0x13E660C
+	private void Start() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x483C9C Offset: 0x483C9C VA: 0x483C9C
+	// RVA: 0x13E6630 Offset: 0x13E6630 VA: 0x13E6630
+	private IEnumerator ScanBoxCollider() { }
+}
+
+// ORIGINAL DUMP LINES 429340-429381; TypeDefIndex 10628
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0x483418 Offset: 0x483418 VA: 0x483418
+private sealed class TVNavigBoxScanner.<ScanBoxCollider>c__Iterator0 : IEnumerator, IDisposable, IEnumerator<object> // TypeDefIndex: 10628
+{
+	// Fields
+	internal IEventSystemHandler[] <arrImage>__0; // 0x8
+	internal IEventSystemHandler[] $locvar0; // 0xC
+	internal int $locvar1; // 0x10
+	internal TVNavigBoxScanner $this; // 0x14
+	internal object $current; // 0x18
+	internal bool $disposing; // 0x1C
+	internal int $PC; // 0x20
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHiddenAttribute] // RVA: 0x484224 Offset: 0x484224 VA: 0x484224
+	// RVA: 0x13E66B4 Offset: 0x13E66B4 VA: 0x13E66B4
+	public void .ctor() { }
+
+	// RVA: 0x13E66BC Offset: 0x13E66BC VA: 0x13E66BC Slot: 5
+	public bool MoveNext() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x484234 Offset: 0x484234 VA: 0x484234
+	// RVA: 0x13E6AE0 Offset: 0x13E6AE0 VA: 0x13E6AE0 Slot: 8
+	private object System.Collections.Generic.IEnumerator<object>.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x484244 Offset: 0x484244 VA: 0x484244
+	// RVA: 0x13E6AE8 Offset: 0x13E6AE8 VA: 0x13E6AE8 Slot: 4
+	private object System.Collections.IEnumerator.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x484254 Offset: 0x484254 VA: 0x484254
+	// RVA: 0x13E6AF0 Offset: 0x13E6AF0 VA: 0x13E6AF0 Slot: 7
+	public void Dispose() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x484264 Offset: 0x484264 VA: 0x484264
+	// RVA: 0x13E6B04 Offset: 0x13E6B04 VA: 0x13E6B04 Slot: 6
+	public void Reset() { }
+}
+
+// ORIGINAL DUMP LINES 429383-429405; TypeDefIndex 10629
+// Namespace: TVGameMatrix
+public class TVNavigChild : TVNavigUIConfig // TypeDefIndex: 10629
+{
+	// Fields
+	public string nodePath; // 0xC
+
+	// Methods
+
+	// RVA: 0x13E6B8C Offset: 0x13E6B8C VA: 0x13E6B8C
+	public void .ctor() { }
+
+	// RVA: 0x13E6B94 Offset: 0x13E6B94 VA: 0x13E6B94 Slot: 7
+	public override bool IsCreateBy(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x13E6B9C Offset: 0x13E6B9C VA: 0x13E6B9C Slot: 5
+	public override void InitWithConfig(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x13E6BC8 Offset: 0x13E6BC8 VA: 0x13E6BC8 Slot: 6
+	public override TVComponentConfig SaveToConfig(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x13E6BF4 Offset: 0x13E6BF4 VA: 0x13E6BF4
+	private void Start() { }
+}
+
+// ORIGINAL DUMP LINES 429407-429421; TypeDefIndex 10630
+// Namespace: TVGameMatrix
+public class TVNavigChildBox : MonoBehaviour // TypeDefIndex: 10630
+{
+	// Fields
+	public string nodePath; // 0xC
+	public TVNavigPanel navigPanel; // 0x10
+
+	// Methods
+
+	// RVA: 0x13E6E30 Offset: 0x13E6E30 VA: 0x13E6E30
+	public void .ctor() { }
+
+	// RVA: 0x13E6E38 Offset: 0x13E6E38 VA: 0x13E6E38
+	private void Start() { }
+}
+
+// ORIGINAL DUMP LINES 429423-429440; TypeDefIndex 10631
+// Namespace: TVGameMatrix
+public class TVNavigContainer : TVNavigUIConfig // TypeDefIndex: 10631
+{
+	// Methods
+
+	// RVA: 0x13E80F4 Offset: 0x13E80F4 VA: 0x13E80F4
+	public void .ctor() { }
+
+	// RVA: 0x13E80FC Offset: 0x13E80FC VA: 0x13E80FC
+	private void Start() { }
+
+	// RVA: 0x13E8100 Offset: 0x13E8100 VA: 0x13E8100
+	public void OnTransformChildrenChanged() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x483CAC Offset: 0x483CAC VA: 0x483CAC
+	// RVA: 0x13E856C Offset: 0x13E856C VA: 0x13E856C
+	private IEnumerator ScanBoxCollider(GameObject go) { }
+}
+
+// ORIGINAL DUMP LINES 429442-429483; TypeDefIndex 10632
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0x483428 Offset: 0x483428 VA: 0x483428
+private sealed class TVNavigContainer.<ScanBoxCollider>c__Iterator0 : IEnumerator, IDisposable, IEnumerator<object> // TypeDefIndex: 10632
+{
+	// Fields
+	internal GameObject go; // 0x8
+	internal IEventSystemHandler[] <arrImage>__0; // 0xC
+	internal IEventSystemHandler[] $locvar0; // 0x10
+	internal int $locvar1; // 0x14
+	internal object $current; // 0x18
+	internal bool $disposing; // 0x1C
+	internal int $PC; // 0x20
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHiddenAttribute] // RVA: 0x484274 Offset: 0x484274 VA: 0x484274
+	// RVA: 0x13E85F0 Offset: 0x13E85F0 VA: 0x13E85F0
+	public void .ctor() { }
+
+	// RVA: 0x13E85F8 Offset: 0x13E85F8 VA: 0x13E85F8 Slot: 5
+	public bool MoveNext() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x484284 Offset: 0x484284 VA: 0x484284
+	// RVA: 0x13E899C Offset: 0x13E899C VA: 0x13E899C Slot: 8
+	private object System.Collections.Generic.IEnumerator<object>.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x484294 Offset: 0x484294 VA: 0x484294
+	// RVA: 0x13E89A4 Offset: 0x13E89A4 VA: 0x13E89A4 Slot: 4
+	private object System.Collections.IEnumerator.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x4842A4 Offset: 0x4842A4 VA: 0x4842A4
+	// RVA: 0x13E89AC Offset: 0x13E89AC VA: 0x13E89AC Slot: 7
+	public void Dispose() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x4842B4 Offset: 0x4842B4 VA: 0x4842B4
+	// RVA: 0x13E89C0 Offset: 0x13E89C0 VA: 0x13E89C0 Slot: 6
+	public void Reset() { }
+}
+
+// ORIGINAL DUMP LINES 429485-429498; TypeDefIndex 10633
+// Namespace: TVGameMatrix
+public class TVNavigDragBox : TVNavigUIConfig // TypeDefIndex: 10633
+{
+	// Methods
+
+	// RVA: 0x13E8F94 Offset: 0x13E8F94 VA: 0x13E8F94
+	public void .ctor() { }
+
+	// RVA: 0x13E8F9C Offset: 0x13E8F9C VA: 0x13E8F9C
+	public void OnEnable() { }
+
+	// RVA: 0x13E8FA0 Offset: 0x13E8FA0 VA: 0x13E8FA0
+	public void OnDrag(Vector2 delta) { }
+}
+
+// ORIGINAL DUMP LINES 429500-429565; TypeDefIndex 10634
+// Namespace: TVGameMatrix
+public class TVNavigFocus : MonoBehaviour // TypeDefIndex: 10634
+{
+	// Fields
+	public static TVNavigFocus.PanelShowHandler OnPanelShowEvent; // 0x0
+	public static TVNavigFocus.PanelHideHandler OnPanelHideEvent; // 0x4
+	public static TVNavigFocus.BoxHideHandler OnBoxHideEvent; // 0x8
+	[CompilerGeneratedAttribute] // RVA: 0x483614 Offset: 0x483614 VA: 0x483614
+	[DebuggerBrowsableAttribute] // RVA: 0x483614 Offset: 0x483614 VA: 0x483614
+	private static TVNavigFocus.BoxSelectHandler OnBoxSelectEvent; // 0xC
+	private static TVNavigFocus sInstance; // 0x10
+	public GameObject curBox; // 0xC
+	private TVNavigAlgo navigAlgo; // 0x10
+
+	// Methods
+
+	// RVA: 0x13E8FA4 Offset: 0x13E8FA4 VA: 0x13E8FA4
+	public void .ctor() { }
+
+	// RVA: 0x13E8FAC Offset: 0x13E8FAC VA: 0x13E8FAC
+	public static void add_OnBoxSelectEvent(TVNavigFocus.BoxSelectHandler value) { }
+
+	// RVA: 0x13E90DC Offset: 0x13E90DC VA: 0x13E90DC
+	public static void remove_OnBoxSelectEvent(TVNavigFocus.BoxSelectHandler value) { }
+
+	// RVA: 0x13E920C Offset: 0x13E920C VA: 0x13E920C
+	private void Awake() { }
+
+	// RVA: 0x13E94DC Offset: 0x13E94DC VA: 0x13E94DC
+	public static GameObject GetSelectBox() { }
+
+	// RVA: 0x13E9550 Offset: 0x13E9550 VA: 0x13E9550
+	public static void OnNavigate(KeyCode key) { }
+
+	// RVA: 0x13E9618 Offset: 0x13E9618 VA: 0x13E9618
+	public static void HideSelectBox() { }
+
+	// RVA: 0x13E97CC Offset: 0x13E97CC VA: 0x13E97CC
+	public static GameObject FindNextBox(KeyCode key) { }
+
+	// RVA: 0x13E0828 Offset: 0x13E0828 VA: 0x13E0828
+	public void SetSelectBox(GameObject box) { }
+
+	// RVA: 0x13E9CB8 Offset: 0x13E9CB8 VA: 0x13E9CB8
+	public void OnNavigPanelShow(GameObject go) { }
+
+	// RVA: 0x13EA038 Offset: 0x13EA038 VA: 0x13EA038
+	public void OnNavigPanelHide(GameObject go) { }
+
+	// RVA: 0x13EA350 Offset: 0x13EA350 VA: 0x13EA350
+	public void OnNavigBoxHide(GameObject go, string nextBoxPath = "") { }
+
+	// RVA: 0x13E95D0 Offset: 0x13E95D0 VA: 0x13E95D0
+	public void OnNavigKeyPress(KeyCode key) { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x483CBC Offset: 0x483CBC VA: 0x483CBC
+	// RVA: 0x13EA5D8 Offset: 0x13EA5D8 VA: 0x13EA5D8
+	public IEnumerator SelectNextBox(string nextBoxPath = "") { }
+
+	// RVA: 0x13EA680 Offset: 0x13EA680 VA: 0x13EA680
+	public void AutoSelectNextBox() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x483CCC Offset: 0x483CCC VA: 0x483CCC
+	// RVA: 0x13E9F8C Offset: 0x13E9F8C VA: 0x13E9F8C
+	public IEnumerator CheckSeletBox(float delay) { }
+}
+
+// ORIGINAL DUMP LINES 429567-429583; TypeDefIndex 10635
+// Namespace: 
+public sealed class TVNavigFocus.PanelShowHandler : MulticastDelegate // TypeDefIndex: 10635
+{
+	// Methods
+
+	// RVA: 0x13E94C8 Offset: 0x13E94C8 VA: 0x13E94C8
+	public void .ctor(object object, IntPtr method) { }
+
+	// RVA: 0x13EB084 Offset: 0x13EB084 VA: 0x13EB084 Slot: 11
+	public virtual void Invoke(GameObject go) { }
+
+	// RVA: 0x13EB440 Offset: 0x13EB440 VA: 0x13EB440 Slot: 12
+	public virtual IAsyncResult BeginInvoke(GameObject go, AsyncCallback callback, object object) { }
+
+	// RVA: 0x13EB46C Offset: 0x13EB46C VA: 0x13EB46C Slot: 13
+	public virtual void EndInvoke(IAsyncResult result) { }
+}
+
+// ORIGINAL DUMP LINES 429585-429601; TypeDefIndex 10636
+// Namespace: 
+public sealed class TVNavigFocus.PanelHideHandler : MulticastDelegate // TypeDefIndex: 10636
+{
+	// Methods
+
+	// RVA: 0x13E94B4 Offset: 0x13E94B4 VA: 0x13E94B4
+	public void .ctor(object object, IntPtr method) { }
+
+	// RVA: 0x13EAC90 Offset: 0x13EAC90 VA: 0x13EAC90 Slot: 11
+	public virtual void Invoke(GameObject go) { }
+
+	// RVA: 0x13EB04C Offset: 0x13EB04C VA: 0x13EB04C Slot: 12
+	public virtual IAsyncResult BeginInvoke(GameObject go, AsyncCallback callback, object object) { }
+
+	// RVA: 0x13EB078 Offset: 0x13EB078 VA: 0x13EB078 Slot: 13
+	public virtual void EndInvoke(IAsyncResult result) { }
+}
+
+// ORIGINAL DUMP LINES 429603-429619; TypeDefIndex 10637
+// Namespace: 
+public sealed class TVNavigFocus.BoxHideHandler : MulticastDelegate // TypeDefIndex: 10637
+{
+	// Methods
+
+	// RVA: 0x13E94A0 Offset: 0x13E94A0 VA: 0x13E94A0
+	public void .ctor(object object, IntPtr method) { }
+
+	// RVA: 0x13E5F48 Offset: 0x13E5F48 VA: 0x13E5F48 Slot: 11
+	public virtual void Invoke(GameObject go, string nextBoxPath = "") { }
+
+	// RVA: 0x13EAC00 Offset: 0x13EAC00 VA: 0x13EAC00 Slot: 12
+	public virtual IAsyncResult BeginInvoke(GameObject go, string nextBoxPath, AsyncCallback callback, object object) { }
+
+	// RVA: 0x13EAC38 Offset: 0x13EAC38 VA: 0x13EAC38 Slot: 13
+	public virtual void EndInvoke(IAsyncResult result) { }
+}
+
+// ORIGINAL DUMP LINES 429621-429637; TypeDefIndex 10638
+// Namespace: 
+public sealed class TVNavigFocus.BoxSelectHandler : MulticastDelegate // TypeDefIndex: 10638
+{
+	// Methods
+
+	// RVA: 0x13EAC44 Offset: 0x13EAC44 VA: 0x13EAC44
+	public void .ctor(object object, IntPtr method) { }
+
+	// RVA: 0x13E98FC Offset: 0x13E98FC VA: 0x13E98FC Slot: 11
+	public virtual void Invoke(GameObject go) { }
+
+	// RVA: 0x13EAC58 Offset: 0x13EAC58 VA: 0x13EAC58 Slot: 12
+	public virtual IAsyncResult BeginInvoke(GameObject go, AsyncCallback callback, object object) { }
+
+	// RVA: 0x13EAC84 Offset: 0x13EAC84 VA: 0x13EAC84 Slot: 13
+	public virtual void EndInvoke(IAsyncResult result) { }
+}
+
+// ORIGINAL DUMP LINES 429639-429679; TypeDefIndex 10639
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0x483438 Offset: 0x483438 VA: 0x483438
+private sealed class TVNavigFocus.<SelectNextBox>c__Iterator0 : IEnumerator, IDisposable, IEnumerator<object> // TypeDefIndex: 10639
+{
+	// Fields
+	internal GameObject <nextBox>__0; // 0x8
+	internal string nextBoxPath; // 0xC
+	internal TVNavigFocus $this; // 0x10
+	internal object $current; // 0x14
+	internal bool $disposing; // 0x18
+	internal int $PC; // 0x1C
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHiddenAttribute] // RVA: 0x4842C4 Offset: 0x4842C4 VA: 0x4842C4
+	// RVA: 0x13EA678 Offset: 0x13EA678 VA: 0x13EA678
+	public void .ctor() { }
+
+	// RVA: 0x13EA954 Offset: 0x13EA954 VA: 0x13EA954 Slot: 5
+	public bool MoveNext() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x4842D4 Offset: 0x4842D4 VA: 0x4842D4
+	// RVA: 0x13EAB54 Offset: 0x13EAB54 VA: 0x13EAB54 Slot: 8
+	private object System.Collections.Generic.IEnumerator<object>.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x4842E4 Offset: 0x4842E4 VA: 0x4842E4
+	// RVA: 0x13EAB5C Offset: 0x13EAB5C VA: 0x13EAB5C Slot: 4
+	private object System.Collections.IEnumerator.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x4842F4 Offset: 0x4842F4 VA: 0x4842F4
+	// RVA: 0x13EAB64 Offset: 0x13EAB64 VA: 0x13EAB64 Slot: 7
+	public void Dispose() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x484304 Offset: 0x484304 VA: 0x484304
+	// RVA: 0x13EAB78 Offset: 0x13EAB78 VA: 0x13EAB78 Slot: 6
+	public void Reset() { }
+}
+
+// ORIGINAL DUMP LINES 429681-429720; TypeDefIndex 10640
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0x483448 Offset: 0x483448 VA: 0x483448
+private sealed class TVNavigFocus.<CheckSeletBox>c__Iterator1 : IEnumerator, IDisposable, IEnumerator<object> // TypeDefIndex: 10640
+{
+	// Fields
+	internal float delay; // 0x8
+	internal TVNavigFocus $this; // 0xC
+	internal object $current; // 0x10
+	internal bool $disposing; // 0x14
+	internal int $PC; // 0x18
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHiddenAttribute] // RVA: 0x484314 Offset: 0x484314 VA: 0x484314
+	// RVA: 0x13EA6B4 Offset: 0x13EA6B4 VA: 0x13EA6B4
+	public void .ctor() { }
+
+	// RVA: 0x13EA6BC Offset: 0x13EA6BC VA: 0x13EA6BC Slot: 5
+	public bool MoveNext() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x484324 Offset: 0x484324 VA: 0x484324
+	// RVA: 0x13EA8A8 Offset: 0x13EA8A8 VA: 0x13EA8A8 Slot: 8
+	private object System.Collections.Generic.IEnumerator<object>.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x484334 Offset: 0x484334 VA: 0x484334
+	// RVA: 0x13EA8B0 Offset: 0x13EA8B0 VA: 0x13EA8B0 Slot: 4
+	private object System.Collections.IEnumerator.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x484344 Offset: 0x484344 VA: 0x484344
+	// RVA: 0x13EA8B8 Offset: 0x13EA8B8 VA: 0x13EA8B8 Slot: 7
+	public void Dispose() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x484354 Offset: 0x484354 VA: 0x484354
+	// RVA: 0x13EA8CC Offset: 0x13EA8CC VA: 0x13EA8CC Slot: 6
+	public void Reset() { }
+}
+
+// ORIGINAL DUMP LINES 429722-429735; TypeDefIndex 10641
+// Namespace: TVGameMatrix
+public class TVNavigPanBox : TVNavigUIConfig // TypeDefIndex: 10641
+{
+	// Methods
+
+	// RVA: 0x13EB64C Offset: 0x13EB64C VA: 0x13EB64C
+	public void .ctor() { }
+
+	// RVA: 0x13EB654 Offset: 0x13EB654 VA: 0x13EB654
+	public void OnEnable() { }
+
+	// RVA: 0x13EB658 Offset: 0x13EB658 VA: 0x13EB658
+	public void OnBoxPan(Vector2 delta) { }
+}
+
+// ORIGINAL DUMP LINES 429737-429777; TypeDefIndex 10642
+// Namespace: TVGameMatrix
+public class TVNavigPanel : TVNavigUIConfig // TypeDefIndex: 10642
+{
+	// Fields
+	public bool isConfigExist; // 0xC
+	private bool isFinishStart; // 0xD
+	public Hashtable boxPathTable; // 0x10
+	public List<string> regexPathList; // 0x14
+
+	// Methods
+
+	// RVA: 0x13EB65C Offset: 0x13EB65C VA: 0x13EB65C
+	public void .ctor() { }
+
+	// RVA: 0x13EB664 Offset: 0x13EB664 VA: 0x13EB664
+	private void Start() { }
+
+	// RVA: 0x13EC328 Offset: 0x13EC328 VA: 0x13EC328
+	private void OnEnable() { }
+
+	// RVA: 0x13EC504 Offset: 0x13EC504 VA: 0x13EC504
+	private void OnDisable() { }
+
+	// RVA: 0x13EC6D4 Offset: 0x13EC6D4 VA: 0x13EC6D4
+	public bool IsExitConfigFile() { }
+
+	// RVA: 0x13EB89C Offset: 0x13EB89C VA: 0x13EB89C
+	public void InitBoxTable(string panelName) { }
+
+	// RVA: 0x13ECE28 Offset: 0x13ECE28 VA: 0x13ECE28
+	public void ReloadCacheConfig() { }
+
+	// RVA: 0x13ECAF4 Offset: 0x13ECAF4 VA: 0x13ECAF4
+	public void AddTransConfig(string panelPath, TVComponentConfig boxCfg) { }
+
+	// RVA: 0x13EBD90 Offset: 0x13EBD90 VA: 0x13EBD90
+	public void InitChild() { }
+
+	// RVA: 0x13E75B8 Offset: 0x13E75B8 VA: 0x13E75B8
+	public void OnNavigChildChanged(GameObject go) { }
+}
+
+// ORIGINAL DUMP LINES 429779-429793; TypeDefIndex 10643
+// Namespace: TVGameMatrix
+public class TVNavigPanelLoader : MonoBehaviour // TypeDefIndex: 10643
+{
+	// Methods
+
+	// RVA: 0x13EE824 Offset: 0x13EE824 VA: 0x13EE824
+	public void .ctor() { }
+
+	// RVA: 0x13EE82C Offset: 0x13EE82C VA: 0x13EE82C
+	private void Start() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x483CDC Offset: 0x483CDC VA: 0x483CDC
+	// RVA: 0x13EE850 Offset: 0x13EE850 VA: 0x13EE850
+	private IEnumerator DelayPanelLoader() { }
+}
+
+// ORIGINAL DUMP LINES 429795-429835; TypeDefIndex 10644
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0x483458 Offset: 0x483458 VA: 0x483458
+private sealed class TVNavigPanelLoader.<DelayPanelLoader>c__Iterator0 : IEnumerator, IDisposable, IEnumerator<object> // TypeDefIndex: 10644
+{
+	// Fields
+	internal float <delayTime>__0; // 0x8
+	internal TVNavigPanel <panel>__0; // 0xC
+	internal TVNavigPanelLoader $this; // 0x10
+	internal object $current; // 0x14
+	internal bool $disposing; // 0x18
+	internal int $PC; // 0x1C
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHiddenAttribute] // RVA: 0x484364 Offset: 0x484364 VA: 0x484364
+	// RVA: 0x13EE8D4 Offset: 0x13EE8D4 VA: 0x13EE8D4
+	public void .ctor() { }
+
+	// RVA: 0x13EE8DC Offset: 0x13EE8DC VA: 0x13EE8DC Slot: 5
+	public bool MoveNext() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x484374 Offset: 0x484374 VA: 0x484374
+	// RVA: 0x13EEB34 Offset: 0x13EEB34 VA: 0x13EEB34 Slot: 8
+	private object System.Collections.Generic.IEnumerator<object>.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x484384 Offset: 0x484384 VA: 0x484384
+	// RVA: 0x13EEB3C Offset: 0x13EEB3C VA: 0x13EEB3C Slot: 4
+	private object System.Collections.IEnumerator.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x484394 Offset: 0x484394 VA: 0x484394
+	// RVA: 0x13EEB44 Offset: 0x13EEB44 VA: 0x13EEB44 Slot: 7
+	public void Dispose() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x4843A4 Offset: 0x4843A4 VA: 0x4843A4
+	// RVA: 0x13EEB58 Offset: 0x13EEB58 VA: 0x13EEB58 Slot: 6
+	public void Reset() { }
+}
+
+// ORIGINAL DUMP LINES 429837-429863; TypeDefIndex 10645
+// Namespace: TVGameMatrix
+public class TVNavigRoot : TVComponent // TypeDefIndex: 10645
+{
+	// Fields
+	public Hashtable boxPathTable; // 0xC
+	public List<string> regexPathList; // 0x10
+
+	// Methods
+
+	// RVA: 0x13EEBE8 Offset: 0x13EEBE8 VA: 0x13EEBE8
+	public void .ctor() { }
+
+	// RVA: 0x13EEBF0 Offset: 0x13EEBF0 VA: 0x13EEBF0
+	private void Start() { }
+
+	// RVA: 0x13EEC58 Offset: 0x13EEC58 VA: 0x13EEC58
+	public void InitBoxTable(string sceneName) { }
+
+	// RVA: 0x13EF0F4 Offset: 0x13EF0F4 VA: 0x13EF0F4
+	public void AddTransConfig(TVComponentConfig boxCfg) { }
+
+	// RVA: 0x13EF290 Offset: 0x13EF290 VA: 0x13EF290
+	public void InitChild() { }
+
+	// RVA: 0x13EE30C Offset: 0x13EE30C VA: 0x13EE30C
+	public void OnNavigChildChanged(GameObject go) { }
+}
+
+// ORIGINAL DUMP LINES 429865-429882; TypeDefIndex 10646
+// Namespace: TVGameMatrix
+public class TVPanelContainer : TVNavigUIConfig // TypeDefIndex: 10646
+{
+	// Methods
+
+	// RVA: 0x13EFA34 Offset: 0x13EFA34 VA: 0x13EFA34
+	public void .ctor() { }
+
+	// RVA: 0x13EFA3C Offset: 0x13EFA3C VA: 0x13EFA3C
+	public void Start() { }
+
+	// RVA: 0x13EFA60 Offset: 0x13EFA60 VA: 0x13EFA60
+	public void OnTransformChildrenChanged() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x483CEC Offset: 0x483CEC VA: 0x483CEC
+	// RVA: 0x13EFA84 Offset: 0x13EFA84 VA: 0x13EFA84
+	private IEnumerator DelayCheckNavigPanel() { }
+}
+
+// ORIGINAL DUMP LINES 429884-429926; TypeDefIndex 10647
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0x483468 Offset: 0x483468 VA: 0x483468
+private sealed class TVPanelContainer.<DelayCheckNavigPanel>c__Iterator0 : IEnumerator, IDisposable, IEnumerator<object> // TypeDefIndex: 10647
+{
+	// Fields
+	internal List<GameObject> <list>__0; // 0x8
+	internal IEnumerator $locvar0; // 0xC
+	internal IDisposable $locvar1; // 0x10
+	internal List.Enumerator<GameObject> $locvar2; // 0x14
+	internal TVPanelContainer $this; // 0x24
+	internal object $current; // 0x28
+	internal bool $disposing; // 0x2C
+	internal int $PC; // 0x30
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHiddenAttribute] // RVA: 0x4843B4 Offset: 0x4843B4 VA: 0x4843B4
+	// RVA: 0x13EFB08 Offset: 0x13EFB08 VA: 0x13EFB08
+	public void .ctor() { }
+
+	// RVA: 0x13EFB10 Offset: 0x13EFB10 VA: 0x13EFB10 Slot: 5
+	public bool MoveNext() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x4843C4 Offset: 0x4843C4 VA: 0x4843C4
+	// RVA: 0x13F0284 Offset: 0x13F0284 VA: 0x13F0284 Slot: 8
+	private object System.Collections.Generic.IEnumerator<object>.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x4843D4 Offset: 0x4843D4 VA: 0x4843D4
+	// RVA: 0x13F028C Offset: 0x13F028C VA: 0x13F028C Slot: 4
+	private object System.Collections.IEnumerator.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x4843E4 Offset: 0x4843E4 VA: 0x4843E4
+	// RVA: 0x13F0294 Offset: 0x13F0294 VA: 0x13F0294 Slot: 7
+	public void Dispose() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x4843F4 Offset: 0x4843F4 VA: 0x4843F4
+	// RVA: 0x13F02A8 Offset: 0x13F02A8 VA: 0x13F02A8 Slot: 6
+	public void Reset() { }
+}
+
+// ORIGINAL DUMP LINES 429928-429938; TypeDefIndex 10648
+// Namespace: TVGameMatrix
+public class TVCompClearer : MonoBehaviour // TypeDefIndex: 10648
+{
+	// Methods
+
+	// RVA: 0x13DDA74 Offset: 0x13DDA74 VA: 0x13DDA74
+	public void .ctor() { }
+
+	// RVA: 0x13DDA7C Offset: 0x13DDA7C VA: 0x13DDA7C
+	public static void ClearTVComp(GameObject go, string childPath) { }
+}
+
+// ORIGINAL DUMP LINES 429940-429961; TypeDefIndex 10649
+// Namespace: TVGameMatrix
+[Serializable]
+public class TVGameEventMsg // TypeDefIndex: 10649
+{
+	// Fields
+	public static string TV_APP_ID; // 0x0
+	public string gameEvent; // 0x8
+	public string timestamp; // 0xC
+	public string game; // 0x10
+	public int scene; // 0x14
+
+	// Methods
+
+	// RVA: 0x13DEAB8 Offset: 0x13DEAB8 VA: 0x13DEAB8
+	public void .ctor(string panelName, int sceneId) { }
+
+	// RVA: 0x13DECB8 Offset: 0x13DECB8 VA: 0x13DECB8 Slot: 3
+	public override string ToString() { }
+
+	// RVA: 0x13DED50 Offset: 0x13DED50 VA: 0x13DED50
+	private static void .cctor() { }
+}
+
+// ORIGINAL DUMP LINES 429963-429990; TypeDefIndex 10650
+// Namespace: TVGameMatrix
+public class TVGameEvent : TVNavigUIConfig // TypeDefIndex: 10650
+{
+	// Fields
+	public string eventName; // 0xC
+	public int eventId; // 0x10
+	private bool isFinishStart; // 0x14
+
+	// Methods
+
+	// RVA: 0x13DE828 Offset: 0x13DE828 VA: 0x13DE828
+	public void .ctor() { }
+
+	// RVA: 0x13DE830 Offset: 0x13DE830 VA: 0x13DE830 Slot: 5
+	public override void InitWithConfig(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x13DE87C Offset: 0x13DE87C VA: 0x13DE87C Slot: 6
+	public override TVComponentConfig SaveToConfig(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x13DE8CC Offset: 0x13DE8CC VA: 0x13DE8CC Slot: 8
+	protected virtual void OnEnable() { }
+
+	// RVA: 0x13DEA9C Offset: 0x13DEA9C VA: 0x13DEA9C
+	protected void Start() { }
+
+	// RVA: 0x13DE8F0 Offset: 0x13DE8F0 VA: 0x13DE8F0
+	public void SendGameEvent(string ename, int eId) { }
+}
+
+// ORIGINAL DUMP LINES 429992-430011; TypeDefIndex 10651
+// Namespace: TVGameMatrix
+public class TVNavigArrowBase : TVNavigUIConfig // TypeDefIndex: 10651
+{
+	// Fields
+	public string nextNodePath; // 0xC
+
+	// Methods
+
+	// RVA: 0x13E4738 Offset: 0x13E4738 VA: 0x13E4738
+	public void .ctor() { }
+
+	// RVA: 0x13E4740 Offset: 0x13E4740 VA: 0x13E4740 Slot: 5
+	public override void InitWithConfig(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x13E476C Offset: 0x13E476C VA: 0x13E476C Slot: 6
+	public override TVComponentConfig SaveToConfig(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x13E3788 Offset: 0x13E3788 VA: 0x13E3788
+	public GameObject Next() { }
+}
+
+// ORIGINAL DUMP LINES 430013-430030; TypeDefIndex 10652
+// Namespace: 
+public class TVNavigDefaultManager : MonoBehaviour // TypeDefIndex: 10652
+{
+	// Methods
+
+	// RVA: 0x14BD0AC Offset: 0x14BD0AC VA: 0x14BD0AC
+	public void .ctor() { }
+
+	// RVA: 0x14BD0B4 Offset: 0x14BD0B4 VA: 0x14BD0B4
+	public void CheckSelectBox() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x483CFC Offset: 0x483CFC VA: 0x483CFC
+	// RVA: 0x14BD0C0 Offset: 0x14BD0C0 VA: 0x14BD0C0
+	public IEnumerator CheckSeletBox(float delay) { }
+
+	// RVA: 0x14BD174 Offset: 0x14BD174 VA: 0x14BD174
+	public void AutoSelectNextBox() { }
+}
+
+// ORIGINAL DUMP LINES 430032-430072; TypeDefIndex 10653
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0x483478 Offset: 0x483478 VA: 0x483478
+private sealed class TVNavigDefaultManager.<CheckSeletBox>c__Iterator0 : IEnumerator, IDisposable, IEnumerator<object> // TypeDefIndex: 10653
+{
+	// Fields
+	internal float delay; // 0x8
+	internal GameObject <nowFocus>__0; // 0xC
+	internal TVNavigDefaultManager $this; // 0x10
+	internal object $current; // 0x14
+	internal bool $disposing; // 0x18
+	internal int $PC; // 0x1C
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHiddenAttribute] // RVA: 0x484404 Offset: 0x484404 VA: 0x484404
+	// RVA: 0x14BD16C Offset: 0x14BD16C VA: 0x14BD16C
+	public void .ctor() { }
+
+	// RVA: 0x14BD200 Offset: 0x14BD200 VA: 0x14BD200 Slot: 5
+	public bool MoveNext() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x484414 Offset: 0x484414 VA: 0x484414
+	// RVA: 0x14BD3C4 Offset: 0x14BD3C4 VA: 0x14BD3C4 Slot: 8
+	private object System.Collections.Generic.IEnumerator<object>.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x484424 Offset: 0x484424 VA: 0x484424
+	// RVA: 0x14BD3CC Offset: 0x14BD3CC VA: 0x14BD3CC Slot: 4
+	private object System.Collections.IEnumerator.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x484434 Offset: 0x484434 VA: 0x484434
+	// RVA: 0x14BD3D4 Offset: 0x14BD3D4 VA: 0x14BD3D4 Slot: 7
+	public void Dispose() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x484444 Offset: 0x484444 VA: 0x484444
+	// RVA: 0x14BD3E8 Offset: 0x14BD3E8 VA: 0x14BD3E8 Slot: 6
+	public void Reset() { }
+}
+
+// ORIGINAL DUMP LINES 430074-430103; TypeDefIndex 10654
+// Namespace: TVGameMatrix
+public class TVNavigDelay : TVNavigUIConfig // TypeDefIndex: 10654
+{
+	// Fields
+	public int priority; // 0xC
+	public float delayTime; // 0x10
+	private bool isFinishStart; // 0x14
+	private bool isIgnoreHitTest; // 0x15
+
+	// Methods
+
+	// RVA: 0x13E8A48 Offset: 0x13E8A48 VA: 0x13E8A48
+	public void .ctor() { }
+
+	// RVA: 0x13E8A50 Offset: 0x13E8A50 VA: 0x13E8A50 Slot: 5
+	public override void InitWithConfig(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x13E8B14 Offset: 0x13E8B14 VA: 0x13E8B14 Slot: 6
+	public override TVComponentConfig SaveToConfig(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x13E8B60 Offset: 0x13E8B60 VA: 0x13E8B60
+	private void Start() { }
+
+	// RVA: 0x13E8C14 Offset: 0x13E8C14 VA: 0x13E8C14
+	private void OnEnable() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x483D0C Offset: 0x483D0C VA: 0x483D0C
+	// RVA: 0x13E8B90 Offset: 0x13E8B90 VA: 0x13E8B90
+	private IEnumerator DelaySelectBox() { }
+}
+
+// ORIGINAL DUMP LINES 430105-430143; TypeDefIndex 10655
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0x483488 Offset: 0x483488 VA: 0x483488
+private sealed class TVNavigDelay.<DelaySelectBox>c__Iterator0 : IEnumerator, IDisposable, IEnumerator<object> // TypeDefIndex: 10655
+{
+	// Fields
+	internal TVNavigDelay $this; // 0x8
+	internal object $current; // 0xC
+	internal bool $disposing; // 0x10
+	internal int $PC; // 0x14
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHiddenAttribute] // RVA: 0x484454 Offset: 0x484454 VA: 0x484454
+	// RVA: 0x13E8D50 Offset: 0x13E8D50 VA: 0x13E8D50
+	public void .ctor() { }
+
+	// RVA: 0x13E8D58 Offset: 0x13E8D58 VA: 0x13E8D58 Slot: 5
+	public bool MoveNext() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x484464 Offset: 0x484464 VA: 0x484464
+	// RVA: 0x13E8EE0 Offset: 0x13E8EE0 VA: 0x13E8EE0 Slot: 8
+	private object System.Collections.Generic.IEnumerator<object>.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x484474 Offset: 0x484474 VA: 0x484474
+	// RVA: 0x13E8EE8 Offset: 0x13E8EE8 VA: 0x13E8EE8 Slot: 4
+	private object System.Collections.IEnumerator.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x484484 Offset: 0x484484 VA: 0x484484
+	// RVA: 0x13E8EF0 Offset: 0x13E8EF0 VA: 0x13E8EF0 Slot: 7
+	public void Dispose() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x484494 Offset: 0x484494 VA: 0x484494
+	// RVA: 0x13E8F04 Offset: 0x13E8F04 VA: 0x13E8F04 Slot: 6
+	public void Reset() { }
+}
+
+// ORIGINAL DUMP LINES 430145-430152; TypeDefIndex 10656
+// Namespace: TVGameMatrix
+public class TVNavigDown : TVNavigArrowBase // TypeDefIndex: 10656
+{
+	// Methods
+
+	// RVA: 0x13E8F8C Offset: 0x13E8F8C VA: 0x13E8F8C
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 430154-430161; TypeDefIndex 10657
+// Namespace: TVGameMatrix
+public class TVNavigLeft : TVNavigArrowBase // TypeDefIndex: 10657
+{
+	// Methods
+
+	// RVA: 0x13EB478 Offset: 0x13EB478 VA: 0x13EB478
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 430163-430183; TypeDefIndex 10658
+// Namespace: TVGameMatrix
+public class TVNavigNexter : TVNavigUIConfig // TypeDefIndex: 10658
+{
+	// Fields
+	private float interval; // 0xC
+	public string nextNodePath; // 0x10
+
+	// Methods
+
+	// RVA: 0x13EB480 Offset: 0x13EB480 VA: 0x13EB480
+	public void .ctor() { }
+
+	// RVA: 0x13EB488 Offset: 0x13EB488 VA: 0x13EB488
+	private void Update() { }
+
+	// RVA: 0x13EB648 Offset: 0x13EB648 VA: 0x13EB648
+	private void OnDisable() { }
+
+	// RVA: 0x13EB59C Offset: 0x13EB59C VA: 0x13EB59C
+	private void MoveToNext() { }
+}
+
+// ORIGINAL DUMP LINES 430185-430192; TypeDefIndex 10659
+// Namespace: TVGameMatrix
+public class TVNavigRight : TVNavigArrowBase // TypeDefIndex: 10659
+{
+	// Methods
+
+	// RVA: 0x13EEBE0 Offset: 0x13EEBE0 VA: 0x13EEBE0
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 430194-430210; TypeDefIndex 10660
+// Namespace: TVGameMatrix
+public class TVNavigTouchOffset : TVNavigUIConfig // TypeDefIndex: 10660
+{
+	// Fields
+	public Vector3 offset; // 0xC
+
+	// Methods
+
+	// RVA: 0x13EF904 Offset: 0x13EF904 VA: 0x13EF904
+	public void .ctor() { }
+
+	// RVA: 0x13EF90C Offset: 0x13EF90C VA: 0x13EF90C Slot: 5
+	public override void InitWithConfig(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x13EF9A4 Offset: 0x13EF9A4 VA: 0x13EF9A4 Slot: 6
+	public override TVComponentConfig SaveToConfig(TVComponentConfig itemConfig) { }
+}
+
+// ORIGINAL DUMP LINES 430212-430219; TypeDefIndex 10661
+// Namespace: TVGameMatrix
+public class TVNavigUp : TVNavigArrowBase // TypeDefIndex: 10661
+{
+	// Methods
+
+	// RVA: 0x13EFA2C Offset: 0x13EFA2C VA: 0x13EFA2C
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 430221-430263; TypeDefIndex 10662
+// Namespace: TVGameMatrix
+public class TVResLoader // TypeDefIndex: 10662
+{
+	// Fields
+	private static TVResLoader sInstance; // 0x0
+	private AssetBundle navigCfgAssetBundle; // 0x8
+	private TVNavigAppConfig appConfig; // 0xC
+
+	// Methods
+
+	// RVA: 0x13F0438 Offset: 0x13F0438 VA: 0x13F0438
+	public void .ctor() { }
+
+	// RVA: 0x13E06CC Offset: 0x13E06CC VA: 0x13E06CC
+	public static TVResLoader GetInstance() { }
+
+	// RVA: 0x13F0440 Offset: 0x13F0440 VA: 0x13F0440
+	public void Init() { }
+
+	// RVA: 0x13E079C Offset: 0x13E079C VA: 0x13E079C
+	public static int LoadItemConfig(string key, int defautValue) { }
+
+	// RVA: 0x13DEC2C Offset: 0x13DEC2C VA: 0x13DEC2C
+	public static string LoadItemText(string key, string defautValue) { }
+
+	// RVA: 0x13F05F8 Offset: 0x13F05F8 VA: 0x13F05F8
+	public static Sprite LoadSprite(string assetPath) { }
+
+	// RVA: 0x13F0940 Offset: 0x13F0940 VA: 0x13F0940
+	public static Sprite LoadSliceSprite(string assetPath, Vector2 border) { }
+
+	// RVA: 0x13F0B48 Offset: 0x13F0B48 VA: 0x13F0B48
+	public static Sprite LoadSprite(string assetPath, Vector4 borders) { }
+
+	// RVA: 0x13F0800 Offset: 0x13F0800 VA: 0x13F0800
+	public static Texture LoadTexture(string assetPath) { }
+
+	// RVA: 0x13EC794 Offset: 0x13EC794 VA: 0x13EC794
+	public static string[] LoadNavigConfigContent(string panelName) { }
+
+	// RVA: 0x13E4224 Offset: 0x13E4224 VA: 0x13E4224
+	public static string[] ReadAllLines(string assetPath) { }
+}
+
+// ORIGINAL DUMP LINES 430265-430291; TypeDefIndex 10663
+// Namespace: TVGameMatrix
+public class TVScreenTouchPos : TVNavigUIConfig // TypeDefIndex: 10663
+{
+	// Fields
+	[CompilerGeneratedAttribute] // RVA: 0x483648 Offset: 0x483648 VA: 0x483648
+	[DebuggerBrowsableAttribute] // RVA: 0x483648 Offset: 0x483648 VA: 0x483648
+	private Vector3 <touchPos>k__BackingField; // 0xC
+
+	// Properties
+	public Vector3 touchPos { get; set; }
+
+	// Methods
+
+	// RVA: 0x13F0E80 Offset: 0x13F0E80 VA: 0x13F0E80
+	public void .ctor() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483D1C Offset: 0x483D1C VA: 0x483D1C
+	// RVA: 0x13F0E88 Offset: 0x13F0E88 VA: 0x13F0E88
+	public Vector3 get_touchPos() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483D2C Offset: 0x483D2C VA: 0x483D2C
+	// RVA: 0x13F0E9C Offset: 0x13F0E9C VA: 0x13F0E9C
+	public void set_touchPos(Vector3 value) { }
+
+	// RVA: 0x13F0EA8 Offset: 0x13F0EA8 VA: 0x13F0EA8 Slot: 5
+	public override void InitWithConfig(TVComponentConfig itemConfig) { }
+}
+
+// ORIGINAL DUMP LINES 430293-430348; TypeDefIndex 10664
+// Namespace: TVGameMatrix
+public class TVAxisBinding : TVNavigUIConfig // TypeDefIndex: 10664
+{
+	// Fields
+	public static float AXIS_THRESHOLD; // 0x0
+	public string axisName; // 0xC
+	public TVAxisBinding.AxisDirection direction; // 0x10
+	public float axisThreshold; // 0x14
+	private bool isRegistered; // 0x18
+	private PointerEventData pointerData; // 0x1C
+	private bool mPress; // 0x20
+
+	// Methods
+
+	// RVA: 0x13DC110 Offset: 0x13DC110 VA: 0x13DC110
+	public void .ctor() { }
+
+	// RVA: 0x13DC120 Offset: 0x13DC120 VA: 0x13DC120 Slot: 7
+	public override bool IsCreateBy(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x13DC1E8 Offset: 0x13DC1E8 VA: 0x13DC1E8 Slot: 5
+	public override void InitWithConfig(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x13DC3F4 Offset: 0x13DC3F4 VA: 0x13DC3F4 Slot: 6
+	public override TVComponentConfig SaveToConfig(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x13DC468 Offset: 0x13DC468 VA: 0x13DC468
+	private void Start() { }
+
+	// RVA: 0x13DC534 Offset: 0x13DC534 VA: 0x13DC534
+	private void OnEnable() { }
+
+	// RVA: 0x13DC5B4 Offset: 0x13DC5B4 VA: 0x13DC5B4
+	private void OnDisable() { }
+
+	// RVA: 0x13DC6F0 Offset: 0x13DC6F0 VA: 0x13DC6F0
+	public bool IsHitVisible() { }
+
+	// RVA: 0x13DC7F8 Offset: 0x13DC7F8 VA: 0x13DC7F8
+	public bool GetKeyDown(string keyAxis) { }
+
+	// RVA: 0x13DC850 Offset: 0x13DC850 VA: 0x13DC850
+	public bool GetKeyUp(string keyAxis) { }
+
+	// RVA: 0x13DC8A8 Offset: 0x13DC8A8 VA: 0x13DC8A8
+	public void OnKeyPress() { }
+
+	// RVA: 0x13DC9F4 Offset: 0x13DC9F4 VA: 0x13DC9F4 Slot: 8
+	protected virtual void OnBindingPress(bool pressed) { }
+
+	// RVA: 0x13DD1D0 Offset: 0x13DD1D0 VA: 0x13DD1D0 Slot: 9
+	protected virtual void OnBindingClick() { }
+
+	// RVA: 0x13DD4AC Offset: 0x13DD4AC VA: 0x13DD4AC
+	private static void .cctor() { }
+}
+
+// ORIGINAL DUMP LINES 430350-430357; TypeDefIndex 10665
+// Namespace: 
+public enum TVAxisBinding.AxisDirection // TypeDefIndex: 10665
+{
+	// Fields
+	public int value__; // 0x0
+	public const TVAxisBinding.AxisDirection Positive = 0;
+	public const TVAxisBinding.AxisDirection Negative = 1;
+}
+
+// ORIGINAL DUMP LINES 430359-430405; TypeDefIndex 10666
+// Namespace: TVGameMatrix
+public class TVKeyBinding : TVNavigUIConfig // TypeDefIndex: 10666
+{
+	// Fields
+	public KeyCode keyCode; // 0xC
+	public TVKeyBinding.Modifier modifier; // 0x10
+	public TVKeyBinding.Action action; // 0x14
+	private PointerEventData pointerData; // 0x18
+	private bool mIgnoreUp; // 0x1C
+	private bool mPress; // 0x1D
+	private float mPressBegin; // 0x20
+
+	// Methods
+
+	// RVA: 0x13E1C48 Offset: 0x13E1C48 VA: 0x13E1C48
+	public void .ctor() { }
+
+	// RVA: 0x13E1C50 Offset: 0x13E1C50 VA: 0x13E1C50 Slot: 5
+	public override void InitWithConfig(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x13E1C9C Offset: 0x13E1C9C VA: 0x13E1C9C Slot: 6
+	public override TVComponentConfig SaveToConfig(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x13E1CEC Offset: 0x13E1CEC VA: 0x13E1CEC Slot: 7
+	public override bool IsCreateBy(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x13E1D38 Offset: 0x13E1D38 VA: 0x13E1D38
+	protected void Start() { }
+
+	// RVA: 0x13E1E04 Offset: 0x13E1E04 VA: 0x13E1E04
+	private void OnEnable() { }
+
+	// RVA: 0x13E1F40 Offset: 0x13E1F40 VA: 0x13E1F40
+	private void OnDisable() { }
+
+	// RVA: 0x13E207C Offset: 0x13E207C VA: 0x13E207C
+	public bool IsModifierActive() { }
+
+	// RVA: 0x13E21D0 Offset: 0x13E21D0 VA: 0x13E21D0 Slot: 8
+	public virtual void OnKeyPress() { }
+
+	// RVA: 0x13E22D8 Offset: 0x13E22D8 VA: 0x13E22D8 Slot: 9
+	protected virtual void OnBindingPress(bool pressed) { }
+
+	// RVA: 0x13E27F8 Offset: 0x13E27F8 VA: 0x13E27F8 Slot: 10
+	protected virtual void OnBindingClick() { }
+}
+
+// ORIGINAL DUMP LINES 430407-430415; TypeDefIndex 10667
+// Namespace: 
+public enum TVKeyBinding.Action // TypeDefIndex: 10667
+{
+	// Fields
+	public int value__; // 0x0
+	public const TVKeyBinding.Action PressAndClick = 0;
+	public const TVKeyBinding.Action Select = 1;
+	public const TVKeyBinding.Action All = 2;
+}
+
+// ORIGINAL DUMP LINES 430417-430427; TypeDefIndex 10668
+// Namespace: 
+public enum TVKeyBinding.Modifier // TypeDefIndex: 10668
+{
+	// Fields
+	public int value__; // 0x0
+	public const TVKeyBinding.Modifier Any = 0;
+	public const TVKeyBinding.Modifier LeftShift = 1;
+	public const TVKeyBinding.Modifier RightShift = 2;
+	public const TVKeyBinding.Modifier LeftTrigger = 3;
+	public const TVKeyBinding.Modifier RightTrigger = 4;
+}
+
+// ORIGINAL DUMP LINES 430429-430442; TypeDefIndex 10669
+// Namespace: 
+public class TVKeyLongPressBinding : MonoBehaviour // TypeDefIndex: 10669
+{
+	// Methods
+
+	// RVA: 0x14B40E0 Offset: 0x14B40E0 VA: 0x14B40E0
+	public void .ctor() { }
+
+	// RVA: 0x14B40E8 Offset: 0x14B40E8 VA: 0x14B40E8
+	private void Start() { }
+
+	// RVA: 0x14B40EC Offset: 0x14B40EC VA: 0x14B40EC
+	private void Update() { }
+}
+
+// ORIGINAL DUMP LINES 430444-430457; TypeDefIndex 10670
+// Namespace: TVGameMatrix
+public class TVPlayBinding : TVNavigUIConfig // TypeDefIndex: 10670
+{
+	// Methods
+
+	// RVA: 0x13F0330 Offset: 0x13F0330 VA: 0x13F0330
+	public void .ctor() { }
+
+	// RVA: 0x13F0338 Offset: 0x13F0338 VA: 0x13F0338
+	private void OnEnable() { }
+
+	// RVA: 0x13F03B8 Offset: 0x13F03B8 VA: 0x13F03B8
+	private void OnDisable() { }
+}
+
+// ORIGINAL DUMP LINES 430459-430493; TypeDefIndex 10671
+// Namespace: TVGameMatrix
+public class TVAxisList : MonoBehaviour // TypeDefIndex: 10671
+{
+	// Fields
+	public static List<TVAxisBinding> list; // 0x0
+	public static List<TVPlayBinding> arrowList; // 0x4
+	public List<TVAxisBinding> totalList; // 0xC
+	public List<TVPlayBinding> totalArrowList; // 0x10
+
+	// Methods
+
+	// RVA: 0x13DD514 Offset: 0x13DD514 VA: 0x13DD514
+	public void .ctor() { }
+
+	// RVA: 0x13DD51C Offset: 0x13DD51C VA: 0x13DD51C
+	public static void AddPlayBinding(TVPlayBinding player) { }
+
+	// RVA: 0x13DD5D8 Offset: 0x13DD5D8 VA: 0x13DD5D8
+	public static void RemovePlayBinding(TVPlayBinding player) { }
+
+	// RVA: 0x13DC31C Offset: 0x13DC31C VA: 0x13DC31C
+	public static void AddAxisBinding(TVAxisBinding axis) { }
+
+	// RVA: 0x13DC634 Offset: 0x13DC634 VA: 0x13DC634
+	public static void RemoveAxisBinding(TVAxisBinding axis) { }
+
+	// RVA: 0x13DD694 Offset: 0x13DD694 VA: 0x13DD694
+	public static bool IsArrowAxisShow() { }
+
+	// RVA: 0x13DD908 Offset: 0x13DD908 VA: 0x13DD908
+	public void Awake() { }
+
+	// RVA: 0x13DD9A8 Offset: 0x13DD9A8 VA: 0x13DD9A8
+	private static void .cctor() { }
+}
+
+// ORIGINAL DUMP LINES 430495-430519; TypeDefIndex 10672
+// Namespace: TVGameMatrix
+public class TVKeyList : MonoBehaviour // TypeDefIndex: 10672
+{
+	// Fields
+	public static List<TVKeyBinding> list; // 0x0
+	public List<TVKeyBinding> totalList; // 0xC
+	public List<TVKeyBinding> arrowKeyList; // 0x10
+
+	// Methods
+
+	// RVA: 0x13E2B54 Offset: 0x13E2B54 VA: 0x13E2B54
+	public void .ctor() { }
+
+	// RVA: 0x13E1E84 Offset: 0x13E1E84 VA: 0x13E1E84
+	public static void AddKeyBinding(TVKeyBinding key) { }
+
+	// RVA: 0x13E1FC0 Offset: 0x13E1FC0 VA: 0x13E1FC0
+	public static void RemoveKeyBinding(TVKeyBinding key) { }
+
+	// RVA: 0x13E2B5C Offset: 0x13E2B5C VA: 0x13E2B5C
+	public void Awake() { }
+
+	// RVA: 0x13E2BF0 Offset: 0x13E2BF0 VA: 0x13E2BF0
+	private static void .cctor() { }
+}
+
+// ORIGINAL DUMP LINES 430521-430544; TypeDefIndex 10673
+// Namespace: TVGameMatrix
+public class TVNavigBoxList : MonoBehaviour // TypeDefIndex: 10673
+{
+	// Fields
+	public static List<TVNavigBox> list; // 0x0
+	public List<TVNavigBox> totalBoxList; // 0xC
+
+	// Methods
+
+	// RVA: 0x13E64D8 Offset: 0x13E64D8 VA: 0x13E64D8
+	public void .ctor() { }
+
+	// RVA: 0x13E5CCC Offset: 0x13E5CCC VA: 0x13E5CCC
+	public static void AddNavigBox(TVNavigBox panel) { }
+
+	// RVA: 0x13E5E8C Offset: 0x13E5E8C VA: 0x13E5E8C
+	public static void RemoveNavigBox(TVNavigBox panel) { }
+
+	// RVA: 0x13E64E0 Offset: 0x13E64E0 VA: 0x13E64E0
+	public void Awake() { }
+
+	// RVA: 0x13E6574 Offset: 0x13E6574 VA: 0x13E6574
+	private static void .cctor() { }
+}
+
+// ORIGINAL DUMP LINES 430546-430570; TypeDefIndex 10674
+// Namespace: TVGameMatrix
+public class TVNavigPanelList : MonoBehaviour // TypeDefIndex: 10674
+{
+	// Fields
+	public static TVNavigPanelList current; // 0x0
+	public static List<TVNavigPanel> list; // 0x4
+	public List<TVNavigPanel> totalPanelList; // 0xC
+
+	// Methods
+
+	// RVA: 0x13EE6D0 Offset: 0x13EE6D0 VA: 0x13EE6D0
+	public void .ctor() { }
+
+	// RVA: 0x13EC448 Offset: 0x13EC448 VA: 0x13EC448
+	public static void AddNavigPanel(TVNavigPanel panel) { }
+
+	// RVA: 0x13EC618 Offset: 0x13EC618 VA: 0x13EC618
+	public static void RemoveNavigPanel(TVNavigPanel panel) { }
+
+	// RVA: 0x13EE6D8 Offset: 0x13EE6D8 VA: 0x13EE6D8
+	public void Awake() { }
+
+	// RVA: 0x13EE784 Offset: 0x13EE784 VA: 0x13EE784
+	private static void .cctor() { }
+}
+
+// ORIGINAL DUMP LINES 430572-430585; TypeDefIndex 10675
+// Namespace: TVGameMatrix
+public class TVTutorialKey : TVKeyBinding // TypeDefIndex: 10675
+{
+	// Methods
+
+	// RVA: 0x13F10F4 Offset: 0x13F10F4 VA: 0x13F10F4
+	public void .ctor() { }
+
+	// RVA: 0x13F10FC Offset: 0x13F10FC VA: 0x13F10FC
+	public static void AddTutorialKey(GameObject go) { }
+
+	// RVA: 0x13F134C Offset: 0x13F134C VA: 0x13F134C Slot: 8
+	public override void OnKeyPress() { }
+}
+
+// ORIGINAL DUMP LINES 430587-430617; TypeDefIndex 10676
+// Namespace: TVGameMatrix
+public class TVTutorialMode : TVNavigUIConfig // TypeDefIndex: 10676
+{
+	// Fields
+	private static TVTutorialMode sInstance; // 0x0
+	public Hashtable boxPathTable; // 0xC
+	public List<string> regexPathList; // 0x10
+
+	// Methods
+
+	// RVA: 0x13F1370 Offset: 0x13F1370 VA: 0x13F1370
+	public void .ctor() { }
+
+	// RVA: 0x13E8C58 Offset: 0x13E8C58 VA: 0x13E8C58
+	public static bool IsTutorialActive() { }
+
+	// RVA: 0x13E7B10 Offset: 0x13E7B10 VA: 0x13E7B10
+	public static void OnNavigChildChanged(GameObject go) { }
+
+	// RVA: 0x13F1378 Offset: 0x13F1378 VA: 0x13F1378
+	private void Start() { }
+
+	// RVA: 0x13F141C Offset: 0x13F141C VA: 0x13F141C
+	public void InitBoxTable(string panelName) { }
+
+	// RVA: 0x13F1F3C Offset: 0x13F1F3C VA: 0x13F1F3C
+	public void AddTransConfig(string panelPath, TVComponentConfig boxCfg) { }
+
+	// RVA: 0x13F1854 Offset: 0x13F1854 VA: 0x13F1854
+	public void InitChild() { }
+}
+
+// ORIGINAL DUMP LINES 430619-430665; TypeDefIndex 10677
+// Namespace: TVGameMatrix
+public class TVInputCore : MonoBehaviour // TypeDefIndex: 10677
+{
+	// Fields
+	private static TVInputCore sInstance; // 0x0
+	public static bool IS_DEBUG; // 0x4
+	public static bool isInited; // 0x5
+	private static bool isTVEnv; // 0x6
+	private static bool isCloudEnv; // 0x7
+	private TVNavigAlgo navigAlgo; // 0xC
+	private TVNavigFocus navigFocus; // 0x10
+	private AssetBundle navigCfgAssetBundle; // 0x14
+	private TVNavigAppConfig appConfig; // 0x18
+	private List<string> activeBoxTagList; // 0x1C
+
+	// Methods
+
+	// RVA: 0x13E05C4 Offset: 0x13E05C4 VA: 0x13E05C4
+	public void .ctor() { }
+
+	// RVA: 0x13E0650 Offset: 0x13E0650 VA: 0x13E0650
+	public static bool IsCloudGameEnv() { }
+
+	// RVA: 0x13DFE70 Offset: 0x13DFE70 VA: 0x13DFE70
+	public static GameObject Init(bool isDebug = False) { }
+
+	// RVA: 0x13E0530 Offset: 0x13E0530 VA: 0x13E0530
+	public static int LoadItemConfig(string key, int defautValue) { }
+
+	// RVA: 0x13E05BC Offset: 0x13E05BC VA: 0x13E05BC
+	public static string LoadItemText(string key, string defautValue) { }
+
+	// RVA: 0x13E0360 Offset: 0x13E0360 VA: 0x13E0360
+	public static void SetSelectBox(GameObject box) { }
+
+	// RVA: 0x13E0CBC Offset: 0x13E0CBC VA: 0x13E0CBC
+	public static void ClearActiveBoxTag() { }
+
+	// RVA: 0x13E0E0C Offset: 0x13E0E0C VA: 0x13E0E0C
+	public static void AddActiveBoxTag(string boxTag) { }
+
+	// RVA: 0x13E0FE8 Offset: 0x13E0FE8 VA: 0x13E0FE8
+	public static bool IsActiveBox(TVNavigBox box) { }
+
+	// RVA: 0x13E134C Offset: 0x13E134C VA: 0x13E134C
+	private static void .cctor() { }
+}
+
+// ORIGINAL DUMP LINES 430667-430687; TypeDefIndex 10678
+// Namespace: 
+public class TVLogger // TypeDefIndex: 10678
+{
+	// Fields
+	public static bool debug; // 0x0
+	public static bool info; // 0x1
+
+	// Methods
+
+	// RVA: 0x14B40F0 Offset: 0x14B40F0 VA: 0x14B40F0
+	public void .ctor() { }
+
+	// RVA: 0x14B40F8 Offset: 0x14B40F8 VA: 0x14B40F8
+	public static void Debug(string message, Object context) { }
+
+	// RVA: 0x14B421C Offset: 0x14B421C VA: 0x14B421C
+	public static void Debug(string message) { }
+
+	// RVA: 0x14B4338 Offset: 0x14B4338 VA: 0x14B4338
+	private static void .cctor() { }
+}
+
+// ORIGINAL DUMP LINES 430689-430761; TypeDefIndex 10679
+// Namespace: TVGameMatrix
+public class TVUtil : MonoBehaviour // TypeDefIndex: 10679
+{
+	// Fields
+	private static int mNotifying; // 0x0
+	private static float mNextEvent; // 0x4
+
+	// Methods
+
+	// RVA: 0x13F2270 Offset: 0x13F2270 VA: 0x13F2270
+	public void .ctor() { }
+
+	// RVA: 0x13DCF00 Offset: 0x13DCF00 VA: 0x13DCF00
+	public static void Notify(GameObject go, string funcName, object obj) { }
+
+	// RVA: 0x13F2278 Offset: 0x13F2278 VA: 0x13F2278
+	public static int GetDirection(string axis) { }
+
+	// RVA: 0x13F2448 Offset: 0x13F2448 VA: 0x13F2448
+	public static GameObject GetRoot(GameObject go) { }
+
+	// RVA: 0x13E6F4C Offset: 0x13E6F4C VA: 0x13E6F4C
+	public static TVNavigPanel GetNavigPanelInParent(GameObject go) { }
+
+	// RVA: 0x13DE058 Offset: 0x13DE058 VA: 0x13DE058
+	public static string GetNodePath(GameObject obj) { }
+
+	// RVA: -1 Offset: -1
+	public static T FindInParents<T>(GameObject go) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x1C4CE74 Offset: 0x1C4CE74 VA: 0x1C4CE74
+	|-TVUtil.FindInParents<object>
+	*/
+
+	// RVA: -1 Offset: -1
+	public static T FindInParents<T>(Transform trans) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x1C4D0C4 Offset: 0x1C4D0C4 VA: 0x1C4D0C4
+	|-TVUtil.FindInParents<object>
+	*/
+
+	// RVA: 0x13F2538 Offset: 0x13F2538 VA: 0x13F2538
+	public static string Read(string fileName) { }
+
+	// RVA: 0x13F0DB8 Offset: 0x13F0DB8 VA: 0x13F0DB8
+	public static string[] ReadAllLines(string fileName) { }
+
+	// RVA: 0x13F28C8 Offset: 0x13F28C8 VA: 0x13F28C8
+	public static void Write(string fileName, string contents) { }
+
+	// RVA: 0x13F2AEC Offset: 0x13F2AEC VA: 0x13F2AEC
+	public static void DeleteFile(string fileName) { }
+
+	// RVA: 0x13F2BB0 Offset: 0x13F2BB0 VA: 0x13F2BB0
+	public static bool IsFolderExists(string folderPath) { }
+
+	// RVA: 0x13F2A28 Offset: 0x13F2A28 VA: 0x13F2A28
+	public static void CreateFolder(string folderPath) { }
+
+	// RVA: 0x13F273C Offset: 0x13F273C VA: 0x13F273C
+	public static string GetFullPath(string srcName) { }
+
+	// RVA: 0x13F2644 Offset: 0x13F2644 VA: 0x13F2644
+	public static bool IsFileExists(string fileName) { }
+
+	// RVA: 0x13F2CA8 Offset: 0x13F2CA8 VA: 0x13F2CA8
+	public static string GetComponentList(GameObject go) { }
+
+	// RVA: 0x13F2E44 Offset: 0x13F2E44 VA: 0x13F2E44
+	private static void .cctor() { }
+}
+
+// ORIGINAL DUMP LINES 430763-430789; TypeDefIndex 10680
+// Namespace: TVGameMatrix
+public class TVInputEx : MonoBehaviour // TypeDefIndex: 10680
+{
+	// Fields
+	private static bool isInit; // 0x0
+	private static bool isTVAssetFileExit; // 0x1
+
+	// Methods
+
+	// RVA: 0x13E13B4 Offset: 0x13E13B4 VA: 0x13E13B4
+	public void .ctor() { }
+
+	// RVA: 0x13E13BC Offset: 0x13E13BC VA: 0x13E13BC
+	public static bool IsTVAssetExit() { }
+
+	// RVA: 0x13E156C Offset: 0x13E156C VA: 0x13E156C
+	public static void CallJavaFunc(string clz, string func, int value) { }
+
+	// RVA: 0x13E181C Offset: 0x13E181C VA: 0x13E181C
+	public static void CallMidasFunc(string clz, string func, int value) { }
+
+	// RVA: 0x13E1B8C Offset: 0x13E1B8C VA: 0x13E1B8C
+	public static void SetPayScreenLandscape() { }
+
+	// RVA: 0x13E1C44 Offset: 0x13E1C44 VA: 0x13E1C44
+	private static void .cctor() { }
+}
+
+// ORIGINAL DUMP LINES 430791-430822; TypeDefIndex 10681
+// Namespace: 
+public class TVFileUtil : MonoBehaviour // TypeDefIndex: 10681
+{
+	// Methods
+
+	// RVA: 0x13DBA98 Offset: 0x13DBA98 VA: 0x13DBA98
+	public void .ctor() { }
+
+	// RVA: 0x13DBAA0 Offset: 0x13DBAA0 VA: 0x13DBAA0
+	public static string Read(string fileName) { }
+
+	// RVA: 0x13DBD5C Offset: 0x13DBD5C VA: 0x13DBD5C
+	public static string[] ReadAllLines(string fileName) { }
+
+	// RVA: 0x13DBD8C Offset: 0x13DBD8C VA: 0x13DBD8C
+	public static void Write(string fileName, string contents) { }
+
+	// RVA: 0x13DBEE4 Offset: 0x13DBEE4 VA: 0x13DBEE4
+	public static void DeleteFile(string fileName) { }
+
+	// RVA: 0x13DBF10 Offset: 0x13DBF10 VA: 0x13DBF10
+	public static bool IsFolderExists(string folderPath) { }
+
+	// RVA: 0x13DBEB8 Offset: 0x13DBEB8 VA: 0x13DBEB8
+	public static void CreateFolder(string folderPath) { }
+
+	// RVA: 0x13DBC20 Offset: 0x13DBC20 VA: 0x13DBC20
+	public static string GetFullPath(string srcName) { }
+
+	// RVA: 0x13DBB54 Offset: 0x13DBB54 VA: 0x13DBB54
+	public static bool IsFileExists(string fileName) { }
+}
+
+// ORIGINAL DUMP LINES 430824-430981; TypeDefIndex 10682
+// Namespace: 
+public class TVInputGM : MonoBehaviour // TypeDefIndex: 10682
+{
+	// Fields
+	[CompilerGeneratedAttribute] // RVA: 0x48367C Offset: 0x48367C VA: 0x48367C
+	[DebuggerBrowsableAttribute] // RVA: 0x48367C Offset: 0x48367C VA: 0x48367C
+	private GameObject <toolBar>k__BackingField; // 0xC
+	[CompilerGeneratedAttribute] // RVA: 0x4836B0 Offset: 0x4836B0 VA: 0x4836B0
+	[DebuggerBrowsableAttribute] // RVA: 0x4836B0 Offset: 0x4836B0 VA: 0x4836B0
+	private GameObject <homeView>k__BackingField; // 0x10
+	[CompilerGeneratedAttribute] // RVA: 0x4836E4 Offset: 0x4836E4 VA: 0x4836E4
+	[DebuggerBrowsableAttribute] // RVA: 0x4836E4 Offset: 0x4836E4 VA: 0x4836E4
+	private GameObject <panelView>k__BackingField; // 0x14
+	[CompilerGeneratedAttribute] // RVA: 0x483718 Offset: 0x483718 VA: 0x483718
+	[DebuggerBrowsableAttribute] // RVA: 0x483718 Offset: 0x483718 VA: 0x483718
+	private GameObject <boxView>k__BackingField; // 0x18
+	[CompilerGeneratedAttribute] // RVA: 0x48374C Offset: 0x48374C VA: 0x48374C
+	[DebuggerBrowsableAttribute] // RVA: 0x48374C Offset: 0x48374C VA: 0x48374C
+	private GameObject <boxEditView>k__BackingField; // 0x1C
+	[CompilerGeneratedAttribute] // RVA: 0x483780 Offset: 0x483780 VA: 0x483780
+	[DebuggerBrowsableAttribute] // RVA: 0x483780 Offset: 0x483780 VA: 0x483780
+	private GameObject <boxLogView>k__BackingField; // 0x20
+	[CompilerGeneratedAttribute] // RVA: 0x4837B4 Offset: 0x4837B4 VA: 0x4837B4
+	[DebuggerBrowsableAttribute] // RVA: 0x4837B4 Offset: 0x4837B4 VA: 0x4837B4
+	private GameObject <boxSelectView>k__BackingField; // 0x24
+	[CompilerGeneratedAttribute] // RVA: 0x4837E8 Offset: 0x4837E8 VA: 0x4837E8
+	[DebuggerBrowsableAttribute] // RVA: 0x4837E8 Offset: 0x4837E8 VA: 0x4837E8
+	private GameObject <boxMouseView>k__BackingField; // 0x28
+	[CompilerGeneratedAttribute] // RVA: 0x48381C Offset: 0x48381C VA: 0x48381C
+	[DebuggerBrowsableAttribute] // RVA: 0x48381C Offset: 0x48381C VA: 0x48381C
+	private GameObject <versionView>k__BackingField; // 0x2C
+	public TVNavigHomeGM homeLayout; // 0x30
+	public TVNavigPanelGM panelLayout; // 0x34
+
+	// Properties
+	public GameObject toolBar { get; set; }
+	public GameObject homeView { get; set; }
+	public GameObject panelView { get; set; }
+	public GameObject boxView { get; set; }
+	public GameObject boxEditView { get; set; }
+	public GameObject boxLogView { get; set; }
+	public GameObject boxSelectView { get; set; }
+	public GameObject boxMouseView { get; set; }
+	public GameObject versionView { get; set; }
+
+	// Methods
+
+	// RVA: 0x14ABAA8 Offset: 0x14ABAA8 VA: 0x14ABAA8
+	public void .ctor() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483D3C Offset: 0x483D3C VA: 0x483D3C
+	// RVA: 0x14ABAB0 Offset: 0x14ABAB0 VA: 0x14ABAB0
+	public GameObject get_toolBar() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483D4C Offset: 0x483D4C VA: 0x483D4C
+	// RVA: 0x14ABAB8 Offset: 0x14ABAB8 VA: 0x14ABAB8
+	public void set_toolBar(GameObject value) { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483D5C Offset: 0x483D5C VA: 0x483D5C
+	// RVA: 0x14ABAC0 Offset: 0x14ABAC0 VA: 0x14ABAC0
+	public GameObject get_homeView() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483D6C Offset: 0x483D6C VA: 0x483D6C
+	// RVA: 0x14ABAC8 Offset: 0x14ABAC8 VA: 0x14ABAC8
+	public void set_homeView(GameObject value) { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483D7C Offset: 0x483D7C VA: 0x483D7C
+	// RVA: 0x14ABAD0 Offset: 0x14ABAD0 VA: 0x14ABAD0
+	public GameObject get_panelView() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483D8C Offset: 0x483D8C VA: 0x483D8C
+	// RVA: 0x14ABAD8 Offset: 0x14ABAD8 VA: 0x14ABAD8
+	public void set_panelView(GameObject value) { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483D9C Offset: 0x483D9C VA: 0x483D9C
+	// RVA: 0x14ABAE0 Offset: 0x14ABAE0 VA: 0x14ABAE0
+	public GameObject get_boxView() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483DAC Offset: 0x483DAC VA: 0x483DAC
+	// RVA: 0x14ABAE8 Offset: 0x14ABAE8 VA: 0x14ABAE8
+	public void set_boxView(GameObject value) { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483DBC Offset: 0x483DBC VA: 0x483DBC
+	// RVA: 0x14ABAF0 Offset: 0x14ABAF0 VA: 0x14ABAF0
+	public GameObject get_boxEditView() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483DCC Offset: 0x483DCC VA: 0x483DCC
+	// RVA: 0x14ABAF8 Offset: 0x14ABAF8 VA: 0x14ABAF8
+	public void set_boxEditView(GameObject value) { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483DDC Offset: 0x483DDC VA: 0x483DDC
+	// RVA: 0x14ABB00 Offset: 0x14ABB00 VA: 0x14ABB00
+	public GameObject get_boxLogView() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483DEC Offset: 0x483DEC VA: 0x483DEC
+	// RVA: 0x14ABB08 Offset: 0x14ABB08 VA: 0x14ABB08
+	public void set_boxLogView(GameObject value) { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483DFC Offset: 0x483DFC VA: 0x483DFC
+	// RVA: 0x14ABB10 Offset: 0x14ABB10 VA: 0x14ABB10
+	public GameObject get_boxSelectView() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483E0C Offset: 0x483E0C VA: 0x483E0C
+	// RVA: 0x14ABB18 Offset: 0x14ABB18 VA: 0x14ABB18
+	public void set_boxSelectView(GameObject value) { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483E1C Offset: 0x483E1C VA: 0x483E1C
+	// RVA: 0x14ABB20 Offset: 0x14ABB20 VA: 0x14ABB20
+	public GameObject get_boxMouseView() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483E2C Offset: 0x483E2C VA: 0x483E2C
+	// RVA: 0x14ABB28 Offset: 0x14ABB28 VA: 0x14ABB28
+	public void set_boxMouseView(GameObject value) { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483E3C Offset: 0x483E3C VA: 0x483E3C
+	// RVA: 0x14ABB30 Offset: 0x14ABB30 VA: 0x14ABB30
+	public GameObject get_versionView() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483E4C Offset: 0x483E4C VA: 0x483E4C
+	// RVA: 0x14ABB38 Offset: 0x14ABB38 VA: 0x14ABB38
+	public void set_versionView(GameObject value) { }
+
+	// RVA: 0x14ABB40 Offset: 0x14ABB40 VA: 0x14ABB40
+	public void Start() { }
+
+	// RVA: 0x14B1570 Offset: 0x14B1570 VA: 0x14B1570
+	public void OnBntSelectClk() { }
+
+	// RVA: 0x14B15C8 Offset: 0x14B15C8 VA: 0x14B15C8
+	public void OnBntMouseClk() { }
+
+	// RVA: 0x14B1620 Offset: 0x14B1620 VA: 0x14B1620
+	public void OnBntLogClk() { }
+
+	// RVA: 0x14B1650 Offset: 0x14B1650 VA: 0x14B1650
+	public void OnBntPrintClk() { }
+
+	// RVA: 0x14B1654 Offset: 0x14B1654 VA: 0x14B1654
+	public void OnBtnVersionClk() { }
+
+	// RVA: 0x14B1684 Offset: 0x14B1684 VA: 0x14B1684
+	public void OnBntMinClk() { }
+
+	// RVA: 0x14B0C20 Offset: 0x14B0C20 VA: 0x14B0C20
+	public void OnBtnLeftClk() { }
+
+	// RVA: 0x14B17B4 Offset: 0x14B17B4 VA: 0x14B17B4
+	public void OnBtnRightClk() { }
+
+	// RVA: 0x14B2018 Offset: 0x14B2018 VA: 0x14B2018
+	public void OnBtnDownClk() { }
+
+	// RVA: 0x14B29D8 Offset: 0x14B29D8 VA: 0x14B29D8
+	public void OnBtnHomeClk() { }
+
+	// RVA: 0x14B2F2C Offset: 0x14B2F2C VA: 0x14B2F2C
+	public void OnBntPanelClk() { }
+}
+
+// ORIGINAL DUMP LINES 430983-431038; TypeDefIndex 10683
+// Namespace: 
+public class TVInputGMHelper : MonoBehaviour // TypeDefIndex: 10683
+{
+	// Methods
+
+	// RVA: 0x14B2FA8 Offset: 0x14B2FA8 VA: 0x14B2FA8
+	public void .ctor() { }
+
+	// RVA: 0x14B2FB0 Offset: 0x14B2FB0 VA: 0x14B2FB0
+	public static Text CreateLabel(GameObject parent, string name, string text = "") { }
+
+	// RVA: 0x14AFE00 Offset: 0x14AFE00 VA: 0x14AFE00
+	public static Image CreateImage(GameObject parent, string name) { }
+
+	// RVA: 0x14B0B90 Offset: 0x14B0B90 VA: 0x14B0B90
+	public static Button CreateButton(GameObject parent, string name, string text) { }
+
+	// RVA: 0x14B33A0 Offset: 0x14B33A0 VA: 0x14B33A0
+	public static InputField CreateInputField(GameObject parent, string name, string text) { }
+
+	// RVA: 0x14AFE98 Offset: 0x14AFE98 VA: 0x14AFE98
+	public static ScrollRect CreateScrollView(GameObject parent, string name, Vector2 size) { }
+
+	// RVA: 0x14B0A24 Offset: 0x14B0A24 VA: 0x14B0A24
+	public static void AddVerticalLayoutGroup(GameObject go) { }
+
+	// RVA: 0x14B37B8 Offset: 0x14B37B8 VA: 0x14B37B8
+	public static void AddHorizontalLayoutGroup(GameObject go) { }
+
+	// RVA: 0x14AFB68 Offset: 0x14AFB68 VA: 0x14AFB68
+	public static GameObject AddChild(GameObject parent, string name) { }
+
+	// RVA: 0x14B3924 Offset: 0x14B3924 VA: 0x14B3924
+	public static Image AddImage(GameObject go, string assetPath) { }
+
+	// RVA: 0x14B3214 Offset: 0x14B3214 VA: 0x14B3214
+	public static Image AddSliceImage(GameObject go, string assetPath, Vector4 borders) { }
+
+	// RVA: 0x14B32F4 Offset: 0x14B32F4 VA: 0x14B32F4
+	public static Button AddButton(GameObject go) { }
+
+	// RVA: 0x14B3090 Offset: 0x14B3090 VA: 0x14B3090
+	public static Text AddLabel(GameObject go, string text) { }
+
+	// RVA: 0x14B3578 Offset: 0x14B3578 VA: 0x14B3578
+	public static ScrollRect AddScrollView(GameObject go) { }
+
+	// RVA: 0x14B33E0 Offset: 0x14B33E0 VA: 0x14B33E0
+	public static InputField AddInputField(GameObject go) { }
+
+	// RVA: 0x14B39D4 Offset: 0x14B39D4 VA: 0x14B39D4
+	public static void RemoveAllChild(GameObject go) { }
+
+	// RVA: 0x14B3D7C Offset: 0x14B3D7C VA: 0x14B3D7C
+	public static void SetButtonSize(GameObject go, Vector2 size) { }
+}
+
+// ORIGINAL DUMP LINES 431040-431142; TypeDefIndex 10684
+// Namespace: 
+public class TVNavigBoxEditPanel : MonoBehaviour // TypeDefIndex: 10684
+{
+	// Fields
+	[CompilerGeneratedAttribute] // RVA: 0x483850 Offset: 0x483850 VA: 0x483850
+	[DebuggerBrowsableAttribute] // RVA: 0x483850 Offset: 0x483850 VA: 0x483850
+	private GameObject <panel>k__BackingField; // 0xC
+	[CompilerGeneratedAttribute] // RVA: 0x483884 Offset: 0x483884 VA: 0x483884
+	[DebuggerBrowsableAttribute] // RVA: 0x483884 Offset: 0x483884 VA: 0x483884
+	private GameObject <box>k__BackingField; // 0x10
+	private string strNodePath; // 0x14
+	private string strBoxConfig; // 0x18
+	private InputField lblBoxConfig; // 0x1C
+	private ScrollRect scrollView; // 0x20
+
+	// Properties
+	public GameObject panel { get; set; }
+	public GameObject box { get; set; }
+
+	// Methods
+
+	// RVA: 0x14B52E8 Offset: 0x14B52E8 VA: 0x14B52E8
+	public void .ctor() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483E5C Offset: 0x483E5C VA: 0x483E5C
+	// RVA: 0x14B52F0 Offset: 0x14B52F0 VA: 0x14B52F0
+	public GameObject get_panel() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483E6C Offset: 0x483E6C VA: 0x483E6C
+	// RVA: 0x14B52F8 Offset: 0x14B52F8 VA: 0x14B52F8
+	public void set_panel(GameObject value) { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483E7C Offset: 0x483E7C VA: 0x483E7C
+	// RVA: 0x14B5300 Offset: 0x14B5300 VA: 0x14B5300
+	public GameObject get_box() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483E8C Offset: 0x483E8C VA: 0x483E8C
+	// RVA: 0x14B5308 Offset: 0x14B5308 VA: 0x14B5308
+	public void set_box(GameObject value) { }
+
+	// RVA: 0x14B5310 Offset: 0x14B5310 VA: 0x14B5310
+	private void Start() { }
+
+	// RVA: 0x14B5428 Offset: 0x14B5428 VA: 0x14B5428
+	public void Show(GameObject navigPanel, GameObject navigBox) { }
+
+	// RVA: 0x14B7C5C Offset: 0x14B7C5C VA: 0x14B7C5C
+	public GameObject CreateListItem(GameObject go) { }
+
+	// RVA: 0x14B7E20 Offset: 0x14B7E20 VA: 0x14B7E20
+	public Text CreateListItemText(GameObject parent, string name, string txt) { }
+
+	// RVA: 0x14B800C Offset: 0x14B800C VA: 0x14B800C
+	public InputField CreateListItemInputField(GameObject parent, string name, string txt) { }
+
+	// RVA: 0x14B58D8 Offset: 0x14B58D8 VA: 0x14B58D8
+	public void InitView() { }
+
+	// RVA: 0x14B8364 Offset: 0x14B8364 VA: 0x14B8364
+	public void OnBtnAddBoxClk() { }
+
+	// RVA: 0x14B8508 Offset: 0x14B8508 VA: 0x14B8508
+	public void OnBtnAddBoxInvalidClk() { }
+
+	// RVA: 0x14B86AC Offset: 0x14B86AC VA: 0x14B86AC
+	public void OnBtnAddBackKeyClk() { }
+
+	// RVA: 0x14B8888 Offset: 0x14B8888 VA: 0x14B8888
+	public void OnBtnAddPanBoxClk() { }
+
+	// RVA: 0x14B9030 Offset: 0x14B9030 VA: 0x14B9030
+	public void OnBtnAddHorizListClk() { }
+
+	// RVA: 0x14B9398 Offset: 0x14B9398 VA: 0x14B9398
+	public void OnBtnAddVertListClk() { }
+
+	// RVA: 0x14B9700 Offset: 0x14B9700 VA: 0x14B9700
+	public void OnBtnAddTouchOffsetClk() { }
+
+	// RVA: 0x14B98A4 Offset: 0x14B98A4 VA: 0x14B98A4
+	public void OnBtnAddBoxTagClk() { }
+
+	// RVA: 0x14B9A48 Offset: 0x14B9A48 VA: 0x14B9A48
+	public void OnBtnAddSreenTouchBoxClk() { }
+
+	// RVA: 0x14B9BEC Offset: 0x14B9BEC VA: 0x14B9BEC
+	public void OnBtnAddChildBoxClk() { }
+
+	// RVA: 0x14BA248 Offset: 0x14BA248 VA: 0x14BA248
+	public void OnBtnAddNavigContainerClk() { }
+
+	// RVA: 0x14BA3EC Offset: 0x14BA3EC VA: 0x14BA3EC
+	public void OnBtnAddDelayBoxClk() { }
+
+	// RVA: 0x14BA590 Offset: 0x14BA590 VA: 0x14BA590
+	public void OnBtnCloseClk() { }
+
+	// RVA: 0x14BA5C8 Offset: 0x14BA5C8 VA: 0x14BA5C8
+	public void OnBtnSaveClk() { }
+
+	// RVA: 0x14BAD4C Offset: 0x14BAD4C VA: 0x14BAD4C
+	public void OnBtnReloadClk() { }
+}
+
+// ORIGINAL DUMP LINES 431144-431201; TypeDefIndex 10685
+// Namespace: 
+public class TVNavigBoxGM : MonoBehaviour // TypeDefIndex: 10685
+{
+	// Fields
+	[CompilerGeneratedAttribute] // RVA: 0x4838B8 Offset: 0x4838B8 VA: 0x4838B8
+	[DebuggerBrowsableAttribute] // RVA: 0x4838B8 Offset: 0x4838B8 VA: 0x4838B8
+	private GameObject <box>k__BackingField; // 0xC
+	[CompilerGeneratedAttribute] // RVA: 0x4838EC Offset: 0x4838EC VA: 0x4838EC
+	[DebuggerBrowsableAttribute] // RVA: 0x4838EC Offset: 0x4838EC VA: 0x4838EC
+	private GameObject <editView>k__BackingField; // 0x10
+	private ScrollRect scrollView; // 0x14
+
+	// Properties
+	public GameObject box { get; set; }
+	public GameObject editView { get; set; }
+
+	// Methods
+
+	// RVA: 0x14BB1D0 Offset: 0x14BB1D0 VA: 0x14BB1D0
+	public void .ctor() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483E9C Offset: 0x483E9C VA: 0x483E9C
+	// RVA: 0x14BB1D8 Offset: 0x14BB1D8 VA: 0x14BB1D8
+	public GameObject get_box() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483EAC Offset: 0x483EAC VA: 0x483EAC
+	// RVA: 0x14BB1E0 Offset: 0x14BB1E0 VA: 0x14BB1E0
+	public void set_box(GameObject value) { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483EBC Offset: 0x483EBC VA: 0x483EBC
+	// RVA: 0x14BB1E8 Offset: 0x14BB1E8 VA: 0x14BB1E8
+	public GameObject get_editView() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483ECC Offset: 0x483ECC VA: 0x483ECC
+	// RVA: 0x14AFDF0 Offset: 0x14AFDF0 VA: 0x14AFDF0
+	public void set_editView(GameObject value) { }
+
+	// RVA: 0x14BB1F0 Offset: 0x14BB1F0 VA: 0x14BB1F0
+	private void Start() { }
+
+	// RVA: 0x14BB308 Offset: 0x14BB308 VA: 0x14BB308
+	public void ShowBox(GameObject navigBox) { }
+
+	// RVA: 0x14BC7A8 Offset: 0x14BC7A8 VA: 0x14BC7A8
+	public GameObject CreateListItem(GameObject go) { }
+
+	// RVA: 0x14BC964 Offset: 0x14BC964 VA: 0x14BC964
+	public Text CreateListItemText(GameObject parent, string name, string txt) { }
+
+	// RVA: 0x14BCB50 Offset: 0x14BCB50 VA: 0x14BCB50
+	public void CreatePanelItem(GameObject parent, GameObject panel) { }
+
+	// RVA: 0x14BCFC8 Offset: 0x14BCFC8 VA: 0x14BCFC8
+	public void OnBtnPanelItemClk(GameObject panel) { }
+
+	// RVA: 0x14BB3CC Offset: 0x14BB3CC VA: 0x14BB3CC
+	public void InitView() { }
+}
+
+// ORIGINAL DUMP LINES 431203-431218; TypeDefIndex 10686
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0x483498 Offset: 0x483498 VA: 0x483498
+private sealed class TVNavigBoxGM.<CreatePanelItem>c__AnonStorey0 // TypeDefIndex: 10686
+{
+	// Fields
+	internal GameObject panel; // 0x8
+	internal TVNavigBoxGM $this; // 0xC
+
+	// Methods
+
+	// RVA: 0x14BCFC0 Offset: 0x14BCFC0 VA: 0x14BCFC0
+	public void .ctor() { }
+
+	// RVA: 0x14BD06C Offset: 0x14BD06C VA: 0x14BD06C
+	internal void <>m__0() { }
+}
+
+// ORIGINAL DUMP LINES 431220-431233; TypeDefIndex 10687
+// Namespace: 
+public class TVNavigControlGM : MonoBehaviour // TypeDefIndex: 10687
+{
+	// Methods
+
+	// RVA: 0x14BD09C Offset: 0x14BD09C VA: 0x14BD09C
+	public void .ctor() { }
+
+	// RVA: 0x14BD0A4 Offset: 0x14BD0A4 VA: 0x14BD0A4
+	private void Start() { }
+
+	// RVA: 0x14BD0A8 Offset: 0x14BD0A8 VA: 0x14BD0A8
+	private void Update() { }
+}
+
+// ORIGINAL DUMP LINES 431235-431288; TypeDefIndex 10688
+// Namespace: 
+public class TVNavigHomeGM : MonoBehaviour // TypeDefIndex: 10688
+{
+	// Fields
+	[CompilerGeneratedAttribute] // RVA: 0x483920 Offset: 0x483920 VA: 0x483920
+	[DebuggerBrowsableAttribute] // RVA: 0x483920 Offset: 0x483920 VA: 0x483920
+	private GameObject <panelListView>k__BackingField; // 0xC
+	[CompilerGeneratedAttribute] // RVA: 0x483954 Offset: 0x483954 VA: 0x483954
+	[DebuggerBrowsableAttribute] // RVA: 0x483954 Offset: 0x483954 VA: 0x483954
+	private TVNavigPanelGM <panelDetailView>k__BackingField; // 0x10
+
+	// Properties
+	public GameObject panelListView { get; set; }
+	public TVNavigPanelGM panelDetailView { get; set; }
+
+	// Methods
+
+	// RVA: 0x14BD470 Offset: 0x14BD470 VA: 0x14BD470
+	public void .ctor() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483EDC Offset: 0x483EDC VA: 0x483EDC
+	// RVA: 0x14BD478 Offset: 0x14BD478 VA: 0x14BD478
+	public GameObject get_panelListView() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483EEC Offset: 0x483EEC VA: 0x483EEC
+	// RVA: 0x14BD480 Offset: 0x14BD480 VA: 0x14BD480
+	public void set_panelListView(GameObject value) { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483EFC Offset: 0x483EFC VA: 0x483EFC
+	// RVA: 0x14BD488 Offset: 0x14BD488 VA: 0x14BD488
+	public TVNavigPanelGM get_panelDetailView() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483F0C Offset: 0x483F0C VA: 0x483F0C
+	// RVA: 0x14AFDE0 Offset: 0x14AFDE0 VA: 0x14AFDE0
+	public void set_panelDetailView(TVNavigPanelGM value) { }
+
+	// RVA: 0x14BD490 Offset: 0x14BD490 VA: 0x14BD490
+	private void Start() { }
+
+	// RVA: 0x14BD574 Offset: 0x14BD574 VA: 0x14BD574
+	public void OnBntReScanClk() { }
+
+	// RVA: 0x14BD578 Offset: 0x14BD578 VA: 0x14BD578
+	public void OnBtnPanelItemClk(TVNavigPanel panel) { }
+
+	// RVA: 0x14BDFA8 Offset: 0x14BDFA8 VA: 0x14BDFA8
+	public GameObject CratePanelReScanItem(GameObject parent) { }
+
+	// RVA: 0x14BE530 Offset: 0x14BE530 VA: 0x14BE530
+	public GameObject CreatePanelListItem(GameObject parent, TVNavigPanel panel) { }
+
+	// RVA: 0x14B2AB8 Offset: 0x14B2AB8 VA: 0x14B2AB8
+	public void InitPanelListView() { }
+}
+
+// ORIGINAL DUMP LINES 431290-431305; TypeDefIndex 10689
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0x4834A8 Offset: 0x4834A8 VA: 0x4834A8
+private sealed class TVNavigHomeGM.<CreatePanelListItem>c__AnonStorey0 // TypeDefIndex: 10689
+{
+	// Fields
+	internal TVNavigPanel panel; // 0x8
+	internal TVNavigHomeGM $this; // 0xC
+
+	// Methods
+
+	// RVA: 0x14BEEDC Offset: 0x14BEEDC VA: 0x14BEEDC
+	public void .ctor() { }
+
+	// RVA: 0x14BEEE4 Offset: 0x14BEEE4 VA: 0x14BEEE4
+	internal void <>m__0() { }
+}
+
+// ORIGINAL DUMP LINES 431307-431338; TypeDefIndex 10690
+// Namespace: 
+public class TVNavigLogGM : MonoBehaviour // TypeDefIndex: 10690
+{
+	// Fields
+	private static TVNavigLogGM sInstance; // 0x0
+	private Text lblLog; // 0xC
+	private Text lblClickLog; // 0x10
+	private Text lblCallLog; // 0x14
+
+	// Methods
+
+	// RVA: 0x14BEF14 Offset: 0x14BEF14 VA: 0x14BEF14
+	public void .ctor() { }
+
+	// RVA: 0x14BEF1C Offset: 0x14BEF1C VA: 0x14BEF1C
+	public static void OnItemClick(GameObject go) { }
+
+	// RVA: 0x14BFA10 Offset: 0x14BFA10 VA: 0x14BFA10
+	private void Start() { }
+
+	// RVA: 0x14BFBBC Offset: 0x14BFBBC VA: 0x14BFBBC
+	public void InitListView() { }
+
+	// RVA: 0x14C039C Offset: 0x14C039C VA: 0x14C039C
+	public void OnBoxSelect(GameObject go) { }
+
+	// RVA: 0x14C051C Offset: 0x14C051C VA: 0x14C051C
+	public void OnBoxClick(GameObject go) { }
+
+	// RVA: 0x14BEFF4 Offset: 0x14BEFF4 VA: 0x14BEFF4
+	public void OnUIClick(GameObject go) { }
+}
+
+// ORIGINAL DUMP LINES 431340-431404; TypeDefIndex 10691
+// Namespace: 
+public class TVNavigMouseGM : MonoBehaviour // TypeDefIndex: 10691
+{
+	// Fields
+	private static TVNavigMouseGM sInstance; // 0x0
+	[CompilerGeneratedAttribute] // RVA: 0x483988 Offset: 0x483988 VA: 0x483988
+	[DebuggerBrowsableAttribute] // RVA: 0x483988 Offset: 0x483988 VA: 0x483988
+	private GameObject <box>k__BackingField; // 0xC
+	[CompilerGeneratedAttribute] // RVA: 0x4839BC Offset: 0x4839BC VA: 0x4839BC
+	[DebuggerBrowsableAttribute] // RVA: 0x4839BC Offset: 0x4839BC VA: 0x4839BC
+	private GameObject <editView>k__BackingField; // 0x10
+	private ScrollRect scrollView; // 0x14
+
+	// Properties
+	public GameObject box { get; set; }
+	public GameObject editView { get; set; }
+
+	// Methods
+
+	// RVA: 0x14C0948 Offset: 0x14C0948 VA: 0x14C0948
+	public void .ctor() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483F1C Offset: 0x483F1C VA: 0x483F1C
+	// RVA: 0x14C0950 Offset: 0x14C0950 VA: 0x14C0950
+	public GameObject get_box() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483F2C Offset: 0x483F2C VA: 0x483F2C
+	// RVA: 0x14C0958 Offset: 0x14C0958 VA: 0x14C0958
+	public void set_box(GameObject value) { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483F3C Offset: 0x483F3C VA: 0x483F3C
+	// RVA: 0x14C0960 Offset: 0x14C0960 VA: 0x14C0960
+	public GameObject get_editView() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483F4C Offset: 0x483F4C VA: 0x483F4C
+	// RVA: 0x14AFDF8 Offset: 0x14AFDF8 VA: 0x14AFDF8
+	public void set_editView(GameObject value) { }
+
+	// RVA: 0x14C0968 Offset: 0x14C0968 VA: 0x14C0968
+	public static bool IsGMMouseMode() { }
+
+	// RVA: 0x14C0A60 Offset: 0x14C0A60 VA: 0x14C0A60
+	public static void OnMouseClick(GameObject go) { }
+
+	// RVA: 0x14C0D7C Offset: 0x14C0D7C VA: 0x14C0D7C
+	private void Start() { }
+
+	// RVA: 0x14C0CB4 Offset: 0x14C0CB4 VA: 0x14C0CB4
+	public void ShowBox(GameObject navigBox) { }
+
+	// RVA: 0x14C246C Offset: 0x14C246C VA: 0x14C246C
+	public GameObject CreateListItem(GameObject go) { }
+
+	// RVA: 0x14C2628 Offset: 0x14C2628 VA: 0x14C2628
+	public Text CreateListItemText(GameObject parent, string name, string txt) { }
+
+	// RVA: 0x14C2814 Offset: 0x14C2814 VA: 0x14C2814
+	public void CreatePanelItem(GameObject parent, GameObject panel) { }
+
+	// RVA: 0x14C2C8C Offset: 0x14C2C8C VA: 0x14C2C8C
+	public void OnBtnPanelItemClk(GameObject panel) { }
+
+	// RVA: 0x14C0EAC Offset: 0x14C0EAC VA: 0x14C0EAC
+	public void InitView() { }
+}
+
+// ORIGINAL DUMP LINES 431406-431421; TypeDefIndex 10692
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0x4834B8 Offset: 0x4834B8 VA: 0x4834B8
+private sealed class TVNavigMouseGM.<CreatePanelItem>c__AnonStorey0 // TypeDefIndex: 10692
+{
+	// Fields
+	internal GameObject panel; // 0x8
+	internal TVNavigMouseGM $this; // 0xC
+
+	// Methods
+
+	// RVA: 0x14C2C84 Offset: 0x14C2C84 VA: 0x14C2C84
+	public void .ctor() { }
+
+	// RVA: 0x14C2D30 Offset: 0x14C2D30 VA: 0x14C2D30
+	internal void <>m__0() { }
+}
+
+// ORIGINAL DUMP LINES 431423-431502; TypeDefIndex 10693
+// Namespace: 
+public class TVNavigPanelGM : MonoBehaviour // TypeDefIndex: 10693
+{
+	// Fields
+	private GameObject navigPanel; // 0xC
+	[CompilerGeneratedAttribute] // RVA: 0x4839F0 Offset: 0x4839F0 VA: 0x4839F0
+	[DebuggerBrowsableAttribute] // RVA: 0x4839F0 Offset: 0x4839F0 VA: 0x4839F0
+	private GameObject <panelListView>k__BackingField; // 0x10
+	[CompilerGeneratedAttribute] // RVA: 0x483A24 Offset: 0x483A24 VA: 0x483A24
+	[DebuggerBrowsableAttribute] // RVA: 0x483A24 Offset: 0x483A24 VA: 0x483A24
+	private GameObject <panelDetailView>k__BackingField; // 0x14
+	[CompilerGeneratedAttribute] // RVA: 0x483A58 Offset: 0x483A58 VA: 0x483A58
+	[DebuggerBrowsableAttribute] // RVA: 0x483A58 Offset: 0x483A58 VA: 0x483A58
+	private GameObject <boxDetailView>k__BackingField; // 0x18
+	private InputField lblScanTime; // 0x1C
+
+	// Properties
+	public GameObject panelListView { get; set; }
+	public GameObject panelDetailView { get; set; }
+	public GameObject boxDetailView { get; set; }
+
+	// Methods
+
+	// RVA: 0x14C2D60 Offset: 0x14C2D60 VA: 0x14C2D60
+	public void .ctor() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483F5C Offset: 0x483F5C VA: 0x483F5C
+	// RVA: 0x14C2D68 Offset: 0x14C2D68 VA: 0x14C2D68
+	public GameObject get_panelListView() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483F6C Offset: 0x483F6C VA: 0x483F6C
+	// RVA: 0x14C2D70 Offset: 0x14C2D70 VA: 0x14C2D70
+	public void set_panelListView(GameObject value) { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483F7C Offset: 0x483F7C VA: 0x483F7C
+	// RVA: 0x14C2D78 Offset: 0x14C2D78 VA: 0x14C2D78
+	public GameObject get_panelDetailView() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483F8C Offset: 0x483F8C VA: 0x483F8C
+	// RVA: 0x14C2D80 Offset: 0x14C2D80 VA: 0x14C2D80
+	public void set_panelDetailView(GameObject value) { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483F9C Offset: 0x483F9C VA: 0x483F9C
+	// RVA: 0x14C2D88 Offset: 0x14C2D88 VA: 0x14C2D88
+	public GameObject get_boxDetailView() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483FAC Offset: 0x483FAC VA: 0x483FAC
+	// RVA: 0x14AFDE8 Offset: 0x14AFDE8 VA: 0x14AFDE8
+	public void set_boxDetailView(GameObject value) { }
+
+	// RVA: 0x14C2D90 Offset: 0x14C2D90 VA: 0x14C2D90
+	private void Start() { }
+
+	// RVA: 0x14C2F0C Offset: 0x14C2F0C VA: 0x14C2F0C
+	public void OnBtnBoxItemClk(GameObject box) { }
+
+	// RVA: 0x14C305C Offset: 0x14C305C VA: 0x14C305C
+	public void OnBtnReScanBtn() { }
+
+	// RVA: 0x14C3064 Offset: 0x14C3064 VA: 0x14C3064
+	public void OnBtnSaveClk() { }
+
+	// RVA: 0x14BD6F0 Offset: 0x14BD6F0 VA: 0x14BD6F0
+	public void InitPanelDetailView(GameObject panel) { }
+
+	// RVA: 0x14C4850 Offset: 0x14C4850 VA: 0x14C4850
+	public GameObject CreateListItem(GameObject go) { }
+
+	// RVA: 0x14C37EC Offset: 0x14C37EC VA: 0x14C37EC
+	public Text CreateListItemText(GameObject parent, string name, string txt) { }
+
+	// RVA: 0x14C33D0 Offset: 0x14C33D0 VA: 0x14C33D0
+	public GameObject CreateReScanButton(GameObject parent) { }
+
+	// RVA: 0x14C3B30 Offset: 0x14C3B30 VA: 0x14C3B30
+	public GameObject CreateReScanTime(GameObject parent, GameObject panel) { }
+
+	// RVA: 0x14C43A0 Offset: 0x14C43A0 VA: 0x14C43A0
+	public GameObject CreateBoxItem(GameObject parent, GameObject box, string path) { }
+}
+
+// ORIGINAL DUMP LINES 431504-431519; TypeDefIndex 10694
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0x4834C8 Offset: 0x4834C8 VA: 0x4834C8
+private sealed class TVNavigPanelGM.<CreateBoxItem>c__AnonStorey0 // TypeDefIndex: 10694
+{
+	// Fields
+	internal GameObject box; // 0x8
+	internal TVNavigPanelGM $this; // 0xC
+
+	// Methods
+
+	// RVA: 0x1CC1318 Offset: 0x1CC1318 VA: 0x1CC1318
+	public void .ctor() { }
+
+	// RVA: 0x1CC1320 Offset: 0x1CC1320 VA: 0x1CC1320
+	internal void <>m__0() { }
+}
+
+// ORIGINAL DUMP LINES 431521-431581; TypeDefIndex 10695
+// Namespace: 
+public class TVNavigSelectGM : MonoBehaviour // TypeDefIndex: 10695
+{
+	// Fields
+	[CompilerGeneratedAttribute] // RVA: 0x483A8C Offset: 0x483A8C VA: 0x483A8C
+	[DebuggerBrowsableAttribute] // RVA: 0x483A8C Offset: 0x483A8C VA: 0x483A8C
+	private GameObject <box>k__BackingField; // 0xC
+	[CompilerGeneratedAttribute] // RVA: 0x483AC0 Offset: 0x483AC0 VA: 0x483AC0
+	[DebuggerBrowsableAttribute] // RVA: 0x483AC0 Offset: 0x483AC0 VA: 0x483AC0
+	private GameObject <editView>k__BackingField; // 0x10
+	private ScrollRect scrollView; // 0x14
+
+	// Properties
+	public GameObject box { get; set; }
+	public GameObject editView { get; set; }
+
+	// Methods
+
+	// RVA: 0x1CC1354 Offset: 0x1CC1354 VA: 0x1CC1354
+	public void .ctor() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483FBC Offset: 0x483FBC VA: 0x483FBC
+	// RVA: 0x1CC135C Offset: 0x1CC135C VA: 0x1CC135C
+	public GameObject get_box() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483FCC Offset: 0x483FCC VA: 0x483FCC
+	// RVA: 0x1CC1364 Offset: 0x1CC1364 VA: 0x1CC1364
+	public void set_box(GameObject value) { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483FDC Offset: 0x483FDC VA: 0x483FDC
+	// RVA: 0x1CC136C Offset: 0x1CC136C VA: 0x1CC136C
+	public GameObject get_editView() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0x483FEC Offset: 0x483FEC VA: 0x483FEC
+	// RVA: 0x1CC1374 Offset: 0x1CC1374 VA: 0x1CC1374
+	public void set_editView(GameObject value) { }
+
+	// RVA: 0x1CC137C Offset: 0x1CC137C VA: 0x1CC137C
+	private void Start() { }
+
+	// RVA: 0x1CC14DC Offset: 0x1CC14DC VA: 0x1CC14DC
+	public void OnBoxSelect(GameObject go) { }
+
+	// RVA: 0x1CC14E4 Offset: 0x1CC14E4 VA: 0x1CC14E4
+	public void ShowBox(GameObject navigBox) { }
+
+	// RVA: 0x1CC2AB4 Offset: 0x1CC2AB4 VA: 0x1CC2AB4
+	public GameObject CreateListItem(GameObject go) { }
+
+	// RVA: 0x1CC2C70 Offset: 0x1CC2C70 VA: 0x1CC2C70
+	public Text CreateListItemText(GameObject parent, string name, string txt) { }
+
+	// RVA: 0x1CC2E60 Offset: 0x1CC2E60 VA: 0x1CC2E60
+	public void CreatePanelItem(GameObject parent, GameObject panel) { }
+
+	// RVA: 0x1CC32E0 Offset: 0x1CC32E0 VA: 0x1CC32E0
+	public void OnBtnPanelItemClk(GameObject panel) { }
+
+	// RVA: 0x1CC14EC Offset: 0x1CC14EC VA: 0x1CC14EC
+	public void InitView() { }
+}
+
+// ORIGINAL DUMP LINES 431583-431598; TypeDefIndex 10696
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0x4834D8 Offset: 0x4834D8 VA: 0x4834D8
+private sealed class TVNavigSelectGM.<CreatePanelItem>c__AnonStorey0 // TypeDefIndex: 10696
+{
+	// Fields
+	internal GameObject panel; // 0x8
+	internal TVNavigSelectGM $this; // 0xC
+
+	// Methods
+
+	// RVA: 0x1CC32D8 Offset: 0x1CC32D8 VA: 0x1CC32D8
+	public void .ctor() { }
+
+	// RVA: 0x1CC3388 Offset: 0x1CC3388 VA: 0x1CC3388
+	internal void <>m__0() { }
+}
+
+// ORIGINAL DUMP LINES 431600-431613; TypeDefIndex 10697
+// Namespace: 
+public class TVNavigVersionGM : MonoBehaviour // TypeDefIndex: 10697
+{
+	// Methods
+
+	// RVA: 0x1CC33B8 Offset: 0x1CC33B8 VA: 0x1CC33B8
+	public void .ctor() { }
+
+	// RVA: 0x1CC33C0 Offset: 0x1CC33C0 VA: 0x1CC33C0
+	private void Start() { }
+
+	// RVA: 0x1CC34A8 Offset: 0x1CC34A8 VA: 0x1CC34A8
+	public void InitListView() { }
+}
+
+// ORIGINAL DUMP LINES 431615-431646; TypeDefIndex 10698
+// Namespace: 
+public class TVMic : MonoBehaviour // TypeDefIndex: 10698
+{
+	// Methods
+
+	// RVA: 0x14B43AC Offset: 0x14B43AC VA: 0x14B43AC
+	public void .ctor() { }
+
+	// RVA: 0x14B43B4 Offset: 0x14B43B4 VA: 0x14B43B4
+	public static bool IsTVGamematrix() { }
+
+	// RVA: 0x14B4494 Offset: 0x14B4494 VA: 0x14B4494
+	public static void SetTVBoxTag(GameObject go, string tag_name) { }
+
+	// RVA: 0x14B4580 Offset: 0x14B4580 VA: 0x14B4580
+	public static void StartSelfRound() { }
+
+	// RVA: 0x14B47F4 Offset: 0x14B47F4 VA: 0x14B47F4
+	public static void SelectCard(GameObject go, string card_id) { }
+
+	// RVA: 0x14B4A7C Offset: 0x14B4A7C VA: 0x14B4A7C
+	public static void UnselectCard(GameObject go, string card_id) { }
+
+	// RVA: 0x14B4BD4 Offset: 0x14B4BD4 VA: 0x14B4BD4
+	public static void SelectBox(GameObject go) { }
+
+	// RVA: 0x14B4C64 Offset: 0x14B4C64 VA: 0x14B4C64
+	public static void FinishSelfRound() { }
+
+	// RVA: 0x14B4CEC Offset: 0x14B4CEC VA: 0x14B4CEC
+	public static void StartAutoMode() { }
+}
+
+// ORIGINAL DUMP LINES 431648-431697; TypeDefIndex 10699
+// Namespace: 
+public class TVMicGame : TVNavigUIConfig // TypeDefIndex: 10699
+{
+	// Fields
+	private static TVMicGame sInstance; // 0x0
+	private GameObject card; // 0xC
+	private bool isAutoMode; // 0x10
+
+	// Properties
+	public GameObject SelectCard { get; set; }
+	public bool AutoMode { get; set; }
+
+	// Methods
+
+	// RVA: 0x14B4EFC Offset: 0x14B4EFC VA: 0x14B4EFC
+	public void .ctor() { }
+
+	// RVA: 0x14B4F04 Offset: 0x14B4F04 VA: 0x14B4F04
+	public GameObject get_SelectCard() { }
+
+	// RVA: 0x14B499C Offset: 0x14B499C VA: 0x14B499C
+	public void set_SelectCard(GameObject value) { }
+
+	// RVA: 0x14B4F0C Offset: 0x14B4F0C VA: 0x14B4F0C
+	public bool get_AutoMode() { }
+
+	// RVA: 0x14B4F14 Offset: 0x14B4F14 VA: 0x14B4F14
+	public void set_AutoMode(bool value) { }
+
+	// RVA: 0x14B46B8 Offset: 0x14B46B8 VA: 0x14B46B8
+	public static TVMicGame GetInstance() { }
+
+	// RVA: 0x14B4F1C Offset: 0x14B4F1C VA: 0x14B4F1C
+	public void Awake() { }
+
+	// RVA: 0x14B4F80 Offset: 0x14B4F80 VA: 0x14B4F80
+	public void OnDestroy() { }
+
+	// RVA: 0x14B4FFC Offset: 0x14B4FFC VA: 0x14B4FFC
+	public GameObject FindFirstBox(string boxtag) { }
+
+	// RVA: 0x14B471C Offset: 0x14B471C VA: 0x14B471C
+	public void SelectFirstCard() { }
+
+	// RVA: 0x14B49A4 Offset: 0x14B49A4 VA: 0x14B49A4
+	public void SelectFristEnemy() { }
+
+	// RVA: 0x14B4E24 Offset: 0x14B4E24 VA: 0x14B4E24
+	public void SelectBtnCancleAutoMode() { }
+}
+
+// ORIGINAL DUMP LINES 431699-431718; TypeDefIndex 10700
+// Namespace: AnimationOrTween
+public enum Trigger // TypeDefIndex: 10700
+{
+	// Fields
+	public int value__; // 0x0
+	public const Trigger OnClick = 0;
+	public const Trigger OnHover = 1;
+	public const Trigger OnPress = 2;
+	public const Trigger OnHoverTrue = 3;
+	public const Trigger OnHoverFalse = 4;
+	public const Trigger OnPressTrue = 5;
+	public const Trigger OnPressFalse = 6;
+	public const Trigger OnActivate = 7;
+	public const Trigger OnActivateTrue = 8;
+	public const Trigger OnActivateFalse = 9;
+	public const Trigger OnDoubleClick = 10;
+	public const Trigger OnSelect = 11;
+	public const Trigger OnSelectTrue = 12;
+	public const Trigger OnSelectFalse = 13;
+}
+
+// ORIGINAL DUMP LINES 431720-431728; TypeDefIndex 10701
+// Namespace: AnimationOrTween
+public enum Direction // TypeDefIndex: 10701
+{
+	// Fields
+	public int value__; // 0x0
+	public const Direction Reverse = -1;
+	public const Direction Toggle = 0;
+	public const Direction Forward = 1;
+}
+
+// ORIGINAL DUMP LINES 431730-431738; TypeDefIndex 10702
+// Namespace: AnimationOrTween
+public enum EnableCondition // TypeDefIndex: 10702
+{
+	// Fields
+	public int value__; // 0x0
+	public const EnableCondition DoNothing = 0;
+	public const EnableCondition EnableThenPlay = 1;
+	public const EnableCondition IgnoreDisabledState = 2;
+}
+
+// ORIGINAL DUMP LINES 431740-431748; TypeDefIndex 10703
+// Namespace: AnimationOrTween
+public enum DisableCondition // TypeDefIndex: 10703
+{
+	// Fields
+	public int value__; // 0x0
+	public const DisableCondition DisableAfterReverse = -1;
+	public const DisableCondition DoNotDisable = 0;
+	public const DisableCondition DisableAfterForward = 1;
+}
+
+// ORIGINAL DUMP LINES 431750-431871; TypeDefIndex 10704
+// Namespace: 
+[Serializable]
+public class EventDelegate // TypeDefIndex: 10704
+{
+	// Fields
+	[SerializeField] // RVA: 0x483AF4 Offset: 0x483AF4 VA: 0x483AF4
+	private MonoBehaviour mTarget; // 0x8
+	[SerializeField] // RVA: 0x483B04 Offset: 0x483B04 VA: 0x483B04
+	private string mMethodName; // 0xC
+	[SerializeField] // RVA: 0x483B14 Offset: 0x483B14 VA: 0x483B14
+	private EventDelegate.Parameter[] mParameters; // 0x10
+	public bool oneShot; // 0x14
+	private EventDelegate.Callback mCachedCallback; // 0x18
+	private bool mRawDelegate; // 0x1C
+	private bool mCached; // 0x1D
+	private MethodInfo mMethod; // 0x20
+	private ParameterInfo[] mParameterInfos; // 0x24
+	private object[] mArgs; // 0x28
+	private static int s_Hash; // 0x0
+
+	// Properties
+	public MonoBehaviour target { get; set; }
+	public string methodName { get; set; }
+	public EventDelegate.Parameter[] parameters { get; }
+	public bool isValid { get; }
+	public bool isEnabled { get; }
+
+	// Methods
+
+	// RVA: 0x13D8274 Offset: 0x13D8274 VA: 0x13D8274
+	public void .ctor() { }
+
+	// RVA: 0x13D827C Offset: 0x13D827C VA: 0x13D827C
+	public void .ctor(EventDelegate.Callback call) { }
+
+	// RVA: 0x13D8454 Offset: 0x13D8454 VA: 0x13D8454
+	public void .ctor(MonoBehaviour target, string methodName) { }
+
+	// RVA: 0x13D84BC Offset: 0x13D84BC VA: 0x13D84BC
+	public MonoBehaviour get_target() { }
+
+	// RVA: 0x13D84C4 Offset: 0x13D84C4 VA: 0x13D84C4
+	public void set_target(MonoBehaviour value) { }
+
+	// RVA: 0x13D84E4 Offset: 0x13D84E4 VA: 0x13D84E4
+	public string get_methodName() { }
+
+	// RVA: 0x13D84EC Offset: 0x13D84EC VA: 0x13D84EC
+	public void set_methodName(string value) { }
+
+	// RVA: 0x13D850C Offset: 0x13D850C VA: 0x13D850C
+	public EventDelegate.Parameter[] get_parameters() { }
+
+	// RVA: 0x13D906C Offset: 0x13D906C VA: 0x13D906C
+	public bool get_isValid() { }
+
+	// RVA: 0x13D9170 Offset: 0x13D9170 VA: 0x13D9170
+	public bool get_isEnabled() { }
+
+	// RVA: 0x13D92A0 Offset: 0x13D92A0 VA: 0x13D92A0
+	private static string GetMethodName(EventDelegate.Callback callback) { }
+
+	// RVA: 0x13D92F4 Offset: 0x13D92F4 VA: 0x13D92F4
+	private static bool IsValid(EventDelegate.Callback callback) { }
+
+	// RVA: 0x13D931C Offset: 0x13D931C VA: 0x13D931C Slot: 0
+	public override bool Equals(object obj) { }
+
+	// RVA: 0x13D9580 Offset: 0x13D9580 VA: 0x13D9580 Slot: 2
+	public override int GetHashCode() { }
+
+	// RVA: 0x13D82A4 Offset: 0x13D82A4 VA: 0x13D82A4
+	private void Set(EventDelegate.Callback call) { }
+
+	// RVA: 0x13D8498 Offset: 0x13D8498 VA: 0x13D8498
+	public void Set(MonoBehaviour target, string methodName) { }
+
+	// RVA: 0x13D8530 Offset: 0x13D8530 VA: 0x13D8530
+	private void Cache() { }
+
+	// RVA: 0x13D96D8 Offset: 0x13D96D8 VA: 0x13D96D8
+	public bool Execute() { }
+
+	// RVA: 0x13D960C Offset: 0x13D960C VA: 0x13D960C
+	public void Clear() { }
+
+	// RVA: 0x13DA89C Offset: 0x13DA89C VA: 0x13DA89C Slot: 3
+	public override string ToString() { }
+
+	// RVA: 0x13DAACC Offset: 0x13DAACC VA: 0x13DAACC
+	public static void Execute(List<EventDelegate> list) { }
+
+	// RVA: 0x13DADC8 Offset: 0x13DADC8 VA: 0x13DADC8
+	public static bool IsValid(List<EventDelegate> list) { }
+
+	// RVA: 0x13DAE94 Offset: 0x13DAE94 VA: 0x13DAE94
+	public static EventDelegate Set(List<EventDelegate> list, EventDelegate.Callback callback) { }
+
+	// RVA: 0x13DAF58 Offset: 0x13DAF58 VA: 0x13DAF58
+	public static void Set(List<EventDelegate> list, EventDelegate del) { }
+
+	// RVA: 0x13DAFE4 Offset: 0x13DAFE4 VA: 0x13DAFE4
+	public static EventDelegate Add(List<EventDelegate> list, EventDelegate.Callback callback) { }
+
+	// RVA: 0x13DB070 Offset: 0x13DB070 VA: 0x13DB070
+	public static EventDelegate Add(List<EventDelegate> list, EventDelegate.Callback callback, bool oneShot) { }
+
+	// RVA: 0x13DB1FC Offset: 0x13DB1FC VA: 0x13DB1FC
+	public static void Add(List<EventDelegate> list, EventDelegate ev) { }
+
+	// RVA: 0x13DB2A4 Offset: 0x13DB2A4 VA: 0x13DB2A4
+	public static void Add(List<EventDelegate> list, EventDelegate ev, bool oneShot) { }
+
+	// RVA: 0x13DB654 Offset: 0x13DB654 VA: 0x13DB654
+	public static bool Remove(List<EventDelegate> list, EventDelegate.Callback callback) { }
+
+	// RVA: 0x13DB750 Offset: 0x13DB750 VA: 0x13DB750
+	public static bool Remove(List<EventDelegate> list, EventDelegate ev) { }
+
+	// RVA: 0x13DB84C Offset: 0x13DB84C VA: 0x13DB84C
+	private static void .cctor() { }
+}
+
+// ORIGINAL DUMP LINES 431873-431909; TypeDefIndex 10705
+// Namespace: 
+[Serializable]
+public class EventDelegate.Parameter // TypeDefIndex: 10705
+{
+	// Fields
+	public Object obj; // 0x8
+	public string field; // 0xC
+	private object mValue; // 0x10
+	public Type expectedType; // 0x14
+	public bool cached; // 0x18
+	public PropertyInfo propInfo; // 0x1C
+	public FieldInfo fieldInfo; // 0x20
+
+	// Properties
+	public object value { get; set; }
+	public Type type { get; }
+
+	// Methods
+
+	// RVA: 0x13D9634 Offset: 0x13D9634 VA: 0x13D9634
+	public void .ctor() { }
+
+	// RVA: 0x13DB938 Offset: 0x13DB938 VA: 0x13DB938
+	public void .ctor(Object obj, string field) { }
+
+	// RVA: 0x13DB9EC Offset: 0x13DB9EC VA: 0x13DB9EC
+	public void .ctor(object val) { }
+
+	// RVA: 0x13DA4F4 Offset: 0x13DA4F4 VA: 0x13DA4F4
+	public object get_value() { }
+
+	// RVA: 0x13DA894 Offset: 0x13DA894 VA: 0x13DA894
+	public void set_value(object value) { }
+
+	// RVA: 0x13DA788 Offset: 0x13DA788 VA: 0x13DA788
+	public Type get_type() { }
+}
+
+// ORIGINAL DUMP LINES 431911-431927; TypeDefIndex 10706
+// Namespace: 
+public sealed class EventDelegate.Callback : MulticastDelegate // TypeDefIndex: 10706
+{
+	// Methods
+
+	// RVA: 0x13DB8EC Offset: 0x13DB8EC VA: 0x13DB8EC
+	public void .ctor(object object, IntPtr method) { }
+
+	// RVA: 0x13DA2E4 Offset: 0x13DA2E4 VA: 0x13DA2E4 Slot: 11
+	public virtual void Invoke() { }
+
+	// RVA: 0x13DB900 Offset: 0x13DB900 VA: 0x13DB900 Slot: 12
+	public virtual IAsyncResult BeginInvoke(AsyncCallback callback, object object) { }
+
+	// RVA: 0x13DB92C Offset: 0x13DB92C VA: 0x13DB92C Slot: 13
+	public virtual void EndInvoke(IAsyncResult result) { }
+}
+
+// ORIGINAL DUMP LINES 431929-431986; TypeDefIndex 10707
+// Namespace: TVGameMatrix.UGUI
+[AddComponentMenu] // RVA: 0x4833C4 Offset: 0x4833C4 VA: 0x4833C4
+public class TVTweenColor : TVUITweener // TypeDefIndex: 10707
+{
+	// Fields
+	public Color from; // 0x54
+	public Color to; // 0x64
+	private bool mCached; // 0x74
+	private Light mLight; // 0x78
+	private Graphic mSr; // 0x7C
+
+	// Properties
+	[ObsoleteAttribute] // RVA: 0x484564 Offset: 0x484564 VA: 0x484564
+	public Color color { get; set; }
+	public Color value { get; set; }
+
+	// Methods
+
+	// RVA: 0x14A593C Offset: 0x14A593C VA: 0x14A593C
+	public void .ctor() { }
+
+	// RVA: 0x14A5B6C Offset: 0x14A5B6C VA: 0x14A5B6C
+	private void Cache() { }
+
+	// RVA: 0x14A5C40 Offset: 0x14A5C40 VA: 0x14A5C40
+	public Color get_color() { }
+
+	// RVA: 0x14A5DA4 Offset: 0x14A5DA4 VA: 0x14A5DA4
+	public void set_color(Color value) { }
+
+	// RVA: 0x14A5C50 Offset: 0x14A5C50 VA: 0x14A5C50
+	public Color get_value() { }
+
+	// RVA: 0x14A5DC4 Offset: 0x14A5DC4 VA: 0x14A5DC4
+	public void set_value(Color value) { }
+
+	// RVA: 0x14A5FAC Offset: 0x14A5FAC VA: 0x14A5FAC Slot: 6
+	protected override void OnUpdate(float factor, bool isFinished) { }
+
+	// RVA: 0x14A601C Offset: 0x14A601C VA: 0x14A601C
+	public static TVTweenColor Begin(GameObject go, float duration, Color color) { }
+
+	[ContextMenu] // RVA: 0x483FFC Offset: 0x483FFC VA: 0x483FFC
+	// RVA: 0x14A6400 Offset: 0x14A6400 VA: 0x14A6400 Slot: 7
+	public override void SetStartToCurrentValue() { }
+
+	[ContextMenu] // RVA: 0x484030 Offset: 0x484030 VA: 0x484030
+	// RVA: 0x14A6438 Offset: 0x14A6438 VA: 0x14A6438 Slot: 8
+	public override void SetEndToCurrentValue() { }
+
+	[ContextMenu] // RVA: 0x484064 Offset: 0x484064 VA: 0x484064
+	// RVA: 0x14A6470 Offset: 0x14A6470 VA: 0x14A6470
+	private void SetCurrentValueToStart() { }
+
+	[ContextMenu] // RVA: 0x484098 Offset: 0x484098 VA: 0x484098
+	// RVA: 0x14A6494 Offset: 0x14A6494 VA: 0x14A6494
+	private void SetCurrentValueToEnd() { }
+}
+
+// ORIGINAL DUMP LINES 431988-432048; TypeDefIndex 10708
+// Namespace: TVGameMatrix.UGUI
+public class TVTweenPosition : TVUITweener // TypeDefIndex: 10708
+{
+	// Fields
+	public Vector3 from; // 0x54
+	public Vector3 to; // 0x60
+	[HideInInspector] // RVA: 0x483B24 Offset: 0x483B24 VA: 0x483B24
+	public bool worldSpace; // 0x6C
+	private Transform mTrans; // 0x70
+
+	// Properties
+	public Transform cachedTransform { get; }
+	[ObsoleteAttribute] // RVA: 0x484598 Offset: 0x484598 VA: 0x484598
+	public Vector3 position { get; set; }
+	public Vector3 value { get; set; }
+
+	// Methods
+
+	// RVA: 0x14A64B8 Offset: 0x14A64B8 VA: 0x14A64B8
+	public void .ctor() { }
+
+	// RVA: 0x14A64BC Offset: 0x14A64BC VA: 0x14A64BC
+	public Transform get_cachedTransform() { }
+
+	// RVA: 0x14A6564 Offset: 0x14A6564 VA: 0x14A6564
+	public Vector3 get_position() { }
+
+	// RVA: 0x14A65EC Offset: 0x14A65EC VA: 0x14A65EC
+	public void set_position(Vector3 value) { }
+
+	// RVA: 0x14A6574 Offset: 0x14A6574 VA: 0x14A6574
+	public Vector3 get_value() { }
+
+	// RVA: 0x14A6604 Offset: 0x14A6604 VA: 0x14A6604
+	public void set_value(Vector3 value) { }
+
+	// RVA: 0x14A6684 Offset: 0x14A6684 VA: 0x14A6684 Slot: 6
+	protected override void OnUpdate(float factor, bool isFinished) { }
+
+	// RVA: 0x14A04C4 Offset: 0x14A04C4 VA: 0x14A04C4
+	public static TVTweenPosition Begin(GameObject go, float duration, Vector3 pos) { }
+
+	// RVA: 0x14A6794 Offset: 0x14A6794 VA: 0x14A6794
+	public static TVTweenPosition Begin(GameObject go, float duration, Vector3 pos, bool worldSpace) { }
+
+	[ContextMenu] // RVA: 0x4840CC Offset: 0x4840CC VA: 0x4840CC
+	// RVA: 0x14A68CC Offset: 0x14A68CC VA: 0x14A68CC Slot: 7
+	public override void SetStartToCurrentValue() { }
+
+	[ContextMenu] // RVA: 0x484100 Offset: 0x484100 VA: 0x484100
+	// RVA: 0x14A68FC Offset: 0x14A68FC VA: 0x14A68FC Slot: 8
+	public override void SetEndToCurrentValue() { }
+
+	[ContextMenu] // RVA: 0x484134 Offset: 0x484134 VA: 0x484134
+	// RVA: 0x14A692C Offset: 0x14A692C VA: 0x14A692C
+	private void SetCurrentValueToStart() { }
+
+	[ContextMenu] // RVA: 0x484168 Offset: 0x484168 VA: 0x484168
+	// RVA: 0x14A694C Offset: 0x14A694C VA: 0x14A694C
+	private void SetCurrentValueToEnd() { }
+}
+
+// ORIGINAL DUMP LINES 432050-432184; TypeDefIndex 10709
+// Namespace: TVGameMatrix.UGUI
+public abstract class TVUITweener : MonoBehaviour // TypeDefIndex: 10709
+{
+	// Fields
+	public static TVUITweener current; // 0x0
+	[HideInInspector] // RVA: 0x483B34 Offset: 0x483B34 VA: 0x483B34
+	public TVUITweener.Method method; // 0xC
+	[HideInInspector] // RVA: 0x483B44 Offset: 0x483B44 VA: 0x483B44
+	public TVUITweener.Style style; // 0x10
+	[HideInInspector] // RVA: 0x483B54 Offset: 0x483B54 VA: 0x483B54
+	public AnimationCurve animationCurve; // 0x14
+	[HideInInspector] // RVA: 0x483B64 Offset: 0x483B64 VA: 0x483B64
+	public bool ignoreTimeScale; // 0x18
+	[HideInInspector] // RVA: 0x483B74 Offset: 0x483B74 VA: 0x483B74
+	public float delay; // 0x1C
+	[HideInInspector] // RVA: 0x483B84 Offset: 0x483B84 VA: 0x483B84
+	public float duration; // 0x20
+	[HideInInspector] // RVA: 0x483B94 Offset: 0x483B94 VA: 0x483B94
+	public bool steeperCurves; // 0x24
+	[HideInInspector] // RVA: 0x483BA4 Offset: 0x483BA4 VA: 0x483BA4
+	public int tweenGroup; // 0x28
+	[TooltipAttribute] // RVA: 0x483BB4 Offset: 0x483BB4 VA: 0x483BB4
+	public bool useFixedUpdate; // 0x2C
+	[HideInInspector] // RVA: 0x483BE8 Offset: 0x483BE8 VA: 0x483BE8
+	public List<EventDelegate> onFinished; // 0x30
+	[HideInInspector] // RVA: 0x483BF8 Offset: 0x483BF8 VA: 0x483BF8
+	public GameObject eventReceiver; // 0x34
+	[HideInInspector] // RVA: 0x483C08 Offset: 0x483C08 VA: 0x483C08
+	public string callWhenFinished; // 0x38
+	private bool mStarted; // 0x3C
+	private float mStartTime; // 0x40
+	private float mDuration; // 0x44
+	private float mAmountPerDelta; // 0x48
+	private float mFactor; // 0x4C
+	private List<EventDelegate> mTemp; // 0x50
+
+	// Properties
+	public float amountPerDelta { get; }
+	public float tweenFactor { get; set; }
+	public Direction direction { get; }
+
+	// Methods
+
+	// RVA: 0x14A5998 Offset: 0x14A5998 VA: 0x14A5998
+	protected void .ctor() { }
+
+	// RVA: 0x14AA2DC Offset: 0x14AA2DC VA: 0x14AA2DC
+	public float get_amountPerDelta() { }
+
+	// RVA: 0x14AA3BC Offset: 0x14AA3BC VA: 0x14AA3BC
+	public float get_tweenFactor() { }
+
+	// RVA: 0x14AA3C4 Offset: 0x14AA3C4 VA: 0x14AA3C4
+	public void set_tweenFactor(float value) { }
+
+	// RVA: 0x14AA450 Offset: 0x14AA450 VA: 0x14AA450
+	public Direction get_direction() { }
+
+	// RVA: 0x14AA474 Offset: 0x14AA474 VA: 0x14AA474
+	private void Reset() { }
+
+	// RVA: 0x14AA4B8 Offset: 0x14AA4B8 VA: 0x14AA4B8 Slot: 4
+	protected virtual void Start() { }
+
+	// RVA: 0x14AAA80 Offset: 0x14AAA80 VA: 0x14AAA80
+	protected void Update() { }
+
+	// RVA: 0x14AAA90 Offset: 0x14AAA90 VA: 0x14AAA90
+	protected void FixedUpdate() { }
+
+	// RVA: 0x14AA4BC Offset: 0x14AA4BC VA: 0x14AA4BC
+	protected void DoUpdate() { }
+
+	// RVA: 0x14AAAA0 Offset: 0x14AAAA0 VA: 0x14AAAA0
+	public void SetOnFinished(EventDelegate.Callback del) { }
+
+	// RVA: 0x14AAB30 Offset: 0x14AAB30 VA: 0x14AAB30
+	public void SetOnFinished(EventDelegate del) { }
+
+	// RVA: 0x14AABC0 Offset: 0x14AABC0 VA: 0x14AABC0
+	public void AddOnFinished(EventDelegate.Callback del) { }
+
+	// RVA: 0x14AAC50 Offset: 0x14AAC50 VA: 0x14AAC50
+	public void AddOnFinished(EventDelegate del) { }
+
+	// RVA: 0x14AACE0 Offset: 0x14AACE0 VA: 0x14AACE0
+	public void RemoveOnFinished(EventDelegate del) { }
+
+	// RVA: 0x14AAD78 Offset: 0x14AAD78 VA: 0x14AAD78
+	private void OnDisable() { }
+
+	// RVA: 0x14A614C Offset: 0x14A614C VA: 0x14A614C
+	public void Sample(float factor, bool isFinished) { }
+
+	// RVA: 0x14AAD84 Offset: 0x14AAD84 VA: 0x14AAD84
+	private float BounceLogic(float val) { }
+
+	[ObsoleteAttribute] // RVA: 0x48419C Offset: 0x48419C VA: 0x48419C
+	// RVA: 0x14AAE3C Offset: 0x14AAE3C VA: 0x14AAE3C
+	public void Play() { }
+
+	// RVA: 0x14AAE50 Offset: 0x14AAE50 VA: 0x14AAE50
+	public void PlayForward() { }
+
+	// RVA: 0x14AAE64 Offset: 0x14AAE64 VA: 0x14AAE64
+	public void PlayReverse() { }
+
+	// RVA: 0x14AAE78 Offset: 0x14AAE78 VA: 0x14AAE78 Slot: 5
+	public virtual void Play(bool forward) { }
+
+	// RVA: 0x14AAF54 Offset: 0x14AAF54 VA: 0x14AAF54
+	public void ResetToBeginning() { }
+
+	// RVA: 0x14AAFBC Offset: 0x14AAFBC VA: 0x14AAFBC
+	public void Toggle() { }
+
+	// RVA: -1 Offset: -1 Slot: 6
+	protected abstract void OnUpdate(float factor, bool isFinished);
+
+	// RVA: -1 Offset: -1
+	public static T Begin<T>(GameObject go, float duration, float delay = 0) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x1C4D19C Offset: 0x1C4D19C VA: 0x1C4D19C
+	|-TVUITweener.Begin<object>
+	|-TVUITweener.Begin<TVTweenColor>
+	|-TVUITweener.Begin<TVTweenPosition>
+	*/
+
+	// RVA: 0x14AB078 Offset: 0x14AB078 VA: 0x14AB078 Slot: 7
+	public virtual void SetStartToCurrentValue() { }
+
+	// RVA: 0x14AB07C Offset: 0x14AB07C VA: 0x14AB07C Slot: 8
+	public virtual void SetEndToCurrentValue() { }
+}
+
+// ORIGINAL DUMP LINES 432186-432197; TypeDefIndex 10710
+// Namespace: 
+public enum TVUITweener.Method // TypeDefIndex: 10710
+{
+	// Fields
+	public int value__; // 0x0
+	public const TVUITweener.Method Linear = 0;
+	public const TVUITweener.Method EaseIn = 1;
+	public const TVUITweener.Method EaseOut = 2;
+	public const TVUITweener.Method EaseInOut = 3;
+	public const TVUITweener.Method BounceIn = 4;
+	public const TVUITweener.Method BounceOut = 5;
+}
+
+// ORIGINAL DUMP LINES 432199-432207; TypeDefIndex 10711
+// Namespace: 
+public enum TVUITweener.Style // TypeDefIndex: 10711
+{
+	// Fields
+	public int value__; // 0x0
+	public const TVUITweener.Style Once = 0;
+	public const TVUITweener.Style Loop = 1;
+	public const TVUITweener.Style PingPong = 2;
+}
+
+// ORIGINAL DUMP LINES 432209-432232; TypeDefIndex 10712
+// Namespace: TVGameMatrix.UGUI
+public class TVImageDepth : TVNavigUIConfig // TypeDefIndex: 10712
+{
+	// Fields
+	public int depth; // 0xC
+	public string tvtag; // 0x10
+
+	// Methods
+
+	// RVA: 0x13F6010 Offset: 0x13F6010 VA: 0x13F6010
+	public void .ctor() { }
+
+	// RVA: 0x13F6018 Offset: 0x13F6018 VA: 0x13F6018 Slot: 7
+	public override bool IsCreateBy(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x13F60BC Offset: 0x13F60BC VA: 0x13F60BC Slot: 5
+	public override void InitWithConfig(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x13F6108 Offset: 0x13F6108 VA: 0x13F6108 Slot: 6
+	public override TVComponentConfig SaveToConfig(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x13F5A48 Offset: 0x13F5A48 VA: 0x13F5A48
+	public static int GetImageDepth(GameObject go, string name, int defaultValue) { }
+}
+
+// ORIGINAL DUMP LINES 432234-432257; TypeDefIndex 10713
+// Namespace: TVGameMatrix.UGUI
+public class TVImageOffset : TVNavigUIConfig // TypeDefIndex: 10713
+{
+	// Fields
+	public string tvtag; // 0xC
+	public Vector3 offset; // 0x10
+
+	// Methods
+
+	// RVA: 0x13F6158 Offset: 0x13F6158 VA: 0x13F6158
+	public void .ctor() { }
+
+	// RVA: 0x13F6160 Offset: 0x13F6160 VA: 0x13F6160 Slot: 7
+	public override bool IsCreateBy(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x13F6204 Offset: 0x13F6204 VA: 0x13F6204 Slot: 5
+	public override void InitWithConfig(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x13F62B8 Offset: 0x13F62B8 VA: 0x13F62B8 Slot: 6
+	public override TVComponentConfig SaveToConfig(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x13F4918 Offset: 0x13F4918 VA: 0x13F4918
+	public static Vector3 GetImagePos(GameObject go, string name, Vector3 defaultValue) { }
+}
+
+// ORIGINAL DUMP LINES 432259-432282; TypeDefIndex 10714
+// Namespace: TVGameMatrix.UGUI
+public class TVImageRes : TVNavigUIConfig // TypeDefIndex: 10714
+{
+	// Fields
+	public string tvtag; // 0xC
+	public string path; // 0x10
+
+	// Methods
+
+	// RVA: 0x13F6340 Offset: 0x13F6340 VA: 0x13F6340
+	public void .ctor() { }
+
+	// RVA: 0x13F6348 Offset: 0x13F6348 VA: 0x13F6348 Slot: 7
+	public override bool IsCreateBy(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x13F63EC Offset: 0x13F63EC VA: 0x13F63EC Slot: 5
+	public override void InitWithConfig(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x13F6438 Offset: 0x13F6438 VA: 0x13F6438 Slot: 6
+	public override TVComponentConfig SaveToConfig(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x13F591C Offset: 0x13F591C VA: 0x13F591C
+	public static string GetImagePath(GameObject go, string name, string defaultValue) { }
+}
+
+// ORIGINAL DUMP LINES 432284-432307; TypeDefIndex 10715
+// Namespace: TVGameMatrix.UGUI
+public class TVImageRotate : TVNavigUIConfig // TypeDefIndex: 10715
+{
+	// Fields
+	public Vector3 rotate; // 0xC
+	public string tvtag; // 0x18
+
+	// Methods
+
+	// RVA: 0x13F6488 Offset: 0x13F6488 VA: 0x13F6488
+	public void .ctor() { }
+
+	// RVA: 0x13F6490 Offset: 0x13F6490 VA: 0x13F6490 Slot: 7
+	public override bool IsCreateBy(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x13F6534 Offset: 0x13F6534 VA: 0x13F6534 Slot: 5
+	public override void InitWithConfig(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x13F65E8 Offset: 0x13F65E8 VA: 0x13F65E8 Slot: 6
+	public override TVComponentConfig SaveToConfig(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x13F5B74 Offset: 0x13F5B74 VA: 0x13F5B74
+	public static Vector3 GetImageRotate(GameObject go, string name, Vector3 defaultValue) { }
+}
+
+// ORIGINAL DUMP LINES 432309-432332; TypeDefIndex 10716
+// Namespace: TVGameMatrix.UGUI
+public class TVImageSize : TVNavigUIConfig // TypeDefIndex: 10716
+{
+	// Fields
+	public Vector2 size; // 0xC
+	public string tvtag; // 0x14
+
+	// Methods
+
+	// RVA: 0x13F6670 Offset: 0x13F6670 VA: 0x13F6670
+	public void .ctor() { }
+
+	// RVA: 0x13F6678 Offset: 0x13F6678 VA: 0x13F6678 Slot: 7
+	public override bool IsCreateBy(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x13F671C Offset: 0x13F671C VA: 0x13F671C Slot: 5
+	public override void InitWithConfig(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x13F67AC Offset: 0x13F67AC VA: 0x13F67AC Slot: 6
+	public override TVComponentConfig SaveToConfig(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x13F47C8 Offset: 0x13F47C8 VA: 0x13F47C8
+	public static Vector2 GetImageSize(GameObject go, string name, Vector2 defaultValue) { }
+}
+
+// ORIGINAL DUMP LINES 432334-432368; TypeDefIndex 10717
+// Namespace: TVGameMatrix.UGUI
+public class TVKeyTipsArrow : TVNavigUIConfig // TypeDefIndex: 10717
+{
+	// Fields
+	public TVKeyArrow keyArrow; // 0xC
+
+	// Methods
+
+	// RVA: 0x149C400 Offset: 0x149C400 VA: 0x149C400
+	public void .ctor() { }
+
+	// RVA: 0x149C408 Offset: 0x149C408 VA: 0x149C408 Slot: 5
+	public override void InitWithConfig(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x149C6CC Offset: 0x149C6CC VA: 0x149C6CC Slot: 6
+	public override TVComponentConfig SaveToConfig(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x149C928 Offset: 0x149C928 VA: 0x149C928
+	public static int GetImageDepth(GameObject go, string name, int defaultValue) { }
+
+	// RVA: 0x149CAF4 Offset: 0x149CAF4 VA: 0x149CAF4
+	public static string GetKeyTexure(GameObject go, TVKeyArrow arrow, KeyCode keyCode) { }
+
+	// RVA: 0x149D03C Offset: 0x149D03C VA: 0x149D03C
+	public static string GetKeyBreathMask(TVKeyArrow arrow, KeyCode keyCode) { }
+
+	// RVA: 0x149D0C8 Offset: 0x149D0C8 VA: 0x149D0C8
+	public static Vector3 GetKeyTipsPos(GameObject box, Vector3 defaultPos) { }
+
+	// RVA: 0x149D230 Offset: 0x149D230 VA: 0x149D230
+	public static int GetKeyTipsDepth(GameObject box) { }
+
+	// RVA: 0x149D364 Offset: 0x149D364 VA: 0x149D364
+	public static TVKeyArrow GetKeyTipsArrow(GameObject box, RectTransform boxFrame) { }
+}
+
+// ORIGINAL DUMP LINES 432370-432392; TypeDefIndex 10718
+// Namespace: TVGameMatrix.UGUI
+public class TVKeyTipsBuilder : MonoBehaviour // TypeDefIndex: 10718
+{
+	// Fields
+	[HideInInspector] // RVA: 0x483C18 Offset: 0x483C18 VA: 0x483C18
+	public GameObject box; // 0xC
+	public TVKeyArrow keyArrow; // 0x10
+	public KeyCode keyCode; // 0x14
+	public string imagePath; // 0x18
+	public int imageDepth; // 0x1C
+	public Vector3 imagePos; // 0x20
+
+	// Methods
+
+	// RVA: 0x149E1BC Offset: 0x149E1BC VA: 0x149E1BC
+	public void .ctor() { }
+
+	// RVA: 0x149E1C4 Offset: 0x149E1C4 VA: 0x149E1C4
+	public static Image CreateKeyTips(GameObject btnBox, Image boxFrame, KeyCode boxKey) { }
+
+	// RVA: 0x149E368 Offset: 0x149E368 VA: 0x149E368
+	public Image BuildKeyTips(GameObject btnBox, RectTransform boxFrame) { }
+}
+
+// ORIGINAL DUMP LINES 432394-432410; TypeDefIndex 10719
+// Namespace: TVGameMatrix.UGUI
+public class TVKeyTipsFloatBuilder : TVKeyTipsBuilder // TypeDefIndex: 10719
+{
+	// Fields
+	public Image keyTexture; // 0x2C
+
+	// Methods
+
+	// RVA: 0x149EC70 Offset: 0x149EC70 VA: 0x149EC70
+	public void .ctor() { }
+
+	// RVA: 0x149EC78 Offset: 0x149EC78 VA: 0x149EC78
+	public static Image CreateFloatKeyTips(GameObject btnBox, Image boxFrame, KeyCode boxKey) { }
+
+	// RVA: 0x149EDBC Offset: 0x149EDBC VA: 0x149EDBC
+	public Image BuildFloatKeyTips(GameObject btnBox, RectTransform boxFrame) { }
+}
+
+// ORIGINAL DUMP LINES 432412-432434; TypeDefIndex 10720
+// Namespace: TVGameMatrix.UGUI
+public class TVCanvas : MonoBehaviour // TypeDefIndex: 10720
+{
+	// Fields
+	public Camera eventCamera; // 0xC
+	public BaseRaycaster raycaster; // 0x10
+	public TVFloatPanel panelKeyTips; // 0x14
+	public bool isRootCanvas; // 0x18
+
+	// Methods
+
+	// RVA: 0x13F2E48 Offset: 0x13F2E48 VA: 0x13F2E48
+	public void .ctor() { }
+
+	// RVA: 0x13F2E50 Offset: 0x13F2E50 VA: 0x13F2E50
+	public void Start() { }
+
+	// RVA: 0x13F32AC Offset: 0x13F32AC VA: 0x13F32AC
+	public void OnTransformChildrenChanged() { }
+
+	// RVA: 0x13F37FC Offset: 0x13F37FC VA: 0x13F37FC
+	public Vector3 WorldToScreenPoint(Vector3 worldPoint) { }
+}
+
+// ORIGINAL DUMP LINES 432436-432450; TypeDefIndex 10721
+// Namespace: TVGameMatrix.UGUI
+public class TVFloatPanel : MonoBehaviour // TypeDefIndex: 10721
+{
+	// Fields
+	public GameObject panelKeyTips; // 0xC
+	public GameObject tipsBar; // 0x10
+
+	// Methods
+
+	// RVA: 0x13F3A88 Offset: 0x13F3A88 VA: 0x13F3A88
+	public void .ctor() { }
+
+	// RVA: 0x13F3A90 Offset: 0x13F3A90 VA: 0x13F3A90
+	public void Start() { }
+}
+
+// ORIGINAL DUMP LINES 432452-432485; TypeDefIndex 10722
+// Namespace: TVGameMatrix.UGUI
+public class TVGameKeyTips : TVNavigUIConfig // TypeDefIndex: 10722
+{
+	// Fields
+	public Image keyTexture; // 0xC
+	public string keyCode; // 0x10
+	public string keyAxis; // 0x14
+	public string imagePath; // 0x18
+	public int imageDepth; // 0x1C
+	public Vector3 imagePos; // 0x20
+	public Vector2 imageSize; // 0x2C
+	public Vector3 imageRotate; // 0x34
+	private BoxCollider boxCollider; // 0x40
+
+	// Methods
+
+	// RVA: 0x13F3F90 Offset: 0x13F3F90 VA: 0x13F3F90
+	public void .ctor() { }
+
+	// RVA: 0x13F3F98 Offset: 0x13F3F98 VA: 0x13F3F98 Slot: 5
+	public override void InitWithConfig(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x13F3F9C Offset: 0x13F3F9C VA: 0x13F3F9C Slot: 6
+	public override TVComponentConfig SaveToConfig(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x13F3FA4 Offset: 0x13F3FA4 VA: 0x13F3FA4
+	public void Start() { }
+
+	// RVA: 0x13F5CD4 Offset: 0x13F5CD4 VA: 0x13F5CD4
+	public void Update() { }
+
+	// RVA: 0x13F4A78 Offset: 0x13F4A78 VA: 0x13F4A78
+	public string GetDefaultImage(string code, string axis) { }
+}
+
+// ORIGINAL DUMP LINES 432487-432500; TypeDefIndex 10723
+// Namespace: TVGameMatrix.UGUI
+public class TVGamepadInput : BaseInput // TypeDefIndex: 10723
+{
+	// Properties
+	public override Vector2 mousePosition { get; }
+
+	// Methods
+
+	// RVA: 0x13F5ED4 Offset: 0x13F5ED4 VA: 0x13F5ED4
+	public void .ctor() { }
+
+	// RVA: 0x13F5EDC Offset: 0x13F5EDC VA: 0x13F5EDC Slot: 26
+	public override Vector2 get_mousePosition() { }
+}
+
+// ORIGINAL DUMP LINES 432502-432512; TypeDefIndex 10724
+// Namespace: TVGameMatrix.UGUI
+public class TVInputModule : BaseInputModule // TypeDefIndex: 10724
+{
+	// Methods
+
+	// RVA: 0x149C3EC Offset: 0x149C3EC VA: 0x149C3EC
+	public void .ctor() { }
+
+	// RVA: 0x149C3F4 Offset: 0x149C3F4 VA: 0x149C3F4 Slot: 17
+	public override void Process() { }
+}
+
+// ORIGINAL DUMP LINES 432514-432521; TypeDefIndex 10725
+// Namespace: TVGameMatrix.UGUI
+public class TVKeyPointEvent // TypeDefIndex: 10725
+{
+	// Methods
+
+	// RVA: 0x149C3F8 Offset: 0x149C3F8 VA: 0x149C3F8
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 432523-432548; TypeDefIndex 10726
+// Namespace: TVGameMatrix.UGUI
+public class TVNavigBoxBorder : TVComponent // TypeDefIndex: 10726
+{
+	// Fields
+	public Image frameTexture; // 0xC
+
+	// Methods
+
+	// RVA: 0x14A05E4 Offset: 0x14A05E4 VA: 0x14A05E4
+	public void .ctor() { }
+
+	// RVA: 0x14A05EC Offset: 0x14A05EC VA: 0x14A05EC Slot: 4
+	public override void Clear() { }
+
+	// RVA: 0x14A05F4 Offset: 0x14A05F4 VA: 0x14A05F4
+	private void Start() { }
+
+	// RVA: 0x14A07A8 Offset: 0x14A07A8 VA: 0x14A07A8
+	private void OnEnable() { }
+
+	// RVA: 0x14A0A74 Offset: 0x14A0A74 VA: 0x14A0A74
+	private void OnDestroy() { }
+
+	// RVA: 0x14A0BC8 Offset: 0x14A0BC8 VA: 0x14A0BC8
+	public void RemoveBoxBorder() { }
+}
+
+// ORIGINAL DUMP LINES 432550-432575; TypeDefIndex 10727
+// Namespace: TVGameMatrix.UGUI
+public class TVNavigBoxFrame : MonoBehaviour // TypeDefIndex: 10727
+{
+	// Fields
+	public Image frameTexture; // 0xC
+
+	// Methods
+
+	// RVA: 0x14A0C7C Offset: 0x14A0C7C VA: 0x14A0C7C
+	public void .ctor() { }
+
+	// RVA: 0x14A0C84 Offset: 0x14A0C84 VA: 0x14A0C84
+	public void InitBoxFrame() { }
+
+	// RVA: 0x14A1188 Offset: 0x14A1188 VA: 0x14A1188
+	private void Start() { }
+
+	// RVA: 0x14A0E64 Offset: 0x14A0E64 VA: 0x14A0E64
+	private void OnEnable() { }
+
+	// RVA: 0x14A118C Offset: 0x14A118C VA: 0x14A118C
+	private void OnDestroy() { }
+
+	// RVA: 0x14A12E0 Offset: 0x14A12E0 VA: 0x14A12E0
+	public bool IsFrameShow() { }
+}
+
+// ORIGINAL DUMP LINES 432577-432593; TypeDefIndex 10728
+// Namespace: TVGameMatrix.UGUI
+public class TVNavigBoxTipsChild : TVNavigBoxFrame // TypeDefIndex: 10728
+{
+	// Fields
+	public Image keyTexture; // 0x10
+
+	// Methods
+
+	// RVA: 0x14A132C Offset: 0x14A132C VA: 0x14A132C
+	public void .ctor() { }
+
+	// RVA: 0x14A1334 Offset: 0x14A1334 VA: 0x14A1334
+	public void OnBoxHover(bool isOver) { }
+
+	// RVA: 0x14A143C Offset: 0x14A143C VA: 0x14A143C
+	public void OnBoxShake() { }
+}
+
+// ORIGINAL DUMP LINES 432595-432626; TypeDefIndex 10729
+// Namespace: TVGameMatrix.UGUI
+public class TVNavigBoxTipsFloat : TVNavigBoxFrame // TypeDefIndex: 10729
+{
+	// Fields
+	public GameObject keyTips; // 0x10
+	public Image keyTexture; // 0x14
+	public Vector3 keyOffset; // 0x18
+	private Vector3 boxOffset; // 0x24
+
+	// Methods
+
+	// RVA: 0x14A1440 Offset: 0x14A1440 VA: 0x14A1440
+	public void .ctor() { }
+
+	// RVA: 0x14A14E4 Offset: 0x14A14E4 VA: 0x14A14E4
+	public void LateUpdate() { }
+
+	// RVA: 0x14A16F4 Offset: 0x14A16F4 VA: 0x14A16F4
+	public void OnDisable() { }
+
+	// RVA: 0x14A1814 Offset: 0x14A1814 VA: 0x14A1814
+	public void OnDestroy() { }
+
+	// RVA: 0x14A19F8 Offset: 0x14A19F8 VA: 0x14A19F8
+	public void OnBoxHover(bool isOver) { }
+
+	// RVA: 0x14A1C48 Offset: 0x14A1C48 VA: 0x14A1C48
+	public void OnBoxShake() { }
+
+	// RVA: 0x14A1CD4 Offset: 0x14A1CD4 VA: 0x14A1CD4
+	public void UpdateDragBoxPos(Vector3 boxPos) { }
+}
+
+// ORIGINAL DUMP LINES 432628-432635; TypeDefIndex 10730
+// Namespace: TVGameMatrix
+public class TVNavigTipsStyle : TVNavigUIConfig // TypeDefIndex: 10730
+{
+	// Methods
+
+	// RVA: 0x13EF8FC Offset: 0x13EF8FC VA: 0x13EF8FC
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 432637-432665; TypeDefIndex 10731
+// Namespace: TVGameMatrix.UGUI
+public class TVPanelUpdate : TVNavigUIConfig // TypeDefIndex: 10731
+{
+	// Fields
+	[HideInInspector] // RVA: 0x483C28 Offset: 0x483C28 VA: 0x483C28
+	public bool isStartFinish; // 0xC
+	public float delayTime; // 0x10
+
+	// Methods
+
+	// RVA: 0x14A28A8 Offset: 0x14A28A8 VA: 0x14A28A8
+	public void .ctor() { }
+
+	// RVA: 0x14A28BC Offset: 0x14A28BC VA: 0x14A28BC Slot: 5
+	public override void InitWithConfig(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x14A28E8 Offset: 0x14A28E8 VA: 0x14A28E8 Slot: 6
+	public override TVComponentConfig SaveToConfig(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x14A2914 Offset: 0x14A2914 VA: 0x14A2914
+	private void Start() { }
+
+	// RVA: 0x14A2920 Offset: 0x14A2920 VA: 0x14A2920
+	private void OnEnable() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x4841E4 Offset: 0x4841E4 VA: 0x4841E4
+	// RVA: 0x14A2954 Offset: 0x14A2954 VA: 0x14A2954
+	private IEnumerator ScanBoxCollider() { }
+}
+
+// ORIGINAL DUMP LINES 432667-432705; TypeDefIndex 10732
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0x4834E8 Offset: 0x4834E8 VA: 0x4834E8
+private sealed class TVPanelUpdate.<ScanBoxCollider>c__Iterator0 : IEnumerator, IDisposable, IEnumerator<object> // TypeDefIndex: 10732
+{
+	// Fields
+	internal TVPanelUpdate $this; // 0x8
+	internal object $current; // 0xC
+	internal bool $disposing; // 0x10
+	internal int $PC; // 0x14
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHiddenAttribute] // RVA: 0x4844A4 Offset: 0x4844A4 VA: 0x4844A4
+	// RVA: 0x14A29D8 Offset: 0x14A29D8 VA: 0x14A29D8
+	public void .ctor() { }
+
+	// RVA: 0x14A29E0 Offset: 0x14A29E0 VA: 0x14A29E0 Slot: 5
+	public bool MoveNext() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x4844B4 Offset: 0x4844B4 VA: 0x4844B4
+	// RVA: 0x14A2E94 Offset: 0x14A2E94 VA: 0x14A2E94 Slot: 8
+	private object System.Collections.Generic.IEnumerator<object>.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x4844C4 Offset: 0x4844C4 VA: 0x4844C4
+	// RVA: 0x14A2E9C Offset: 0x14A2E9C VA: 0x14A2E9C Slot: 4
+	private object System.Collections.IEnumerator.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x4844D4 Offset: 0x4844D4 VA: 0x4844D4
+	// RVA: 0x14A2EA4 Offset: 0x14A2EA4 VA: 0x14A2EA4 Slot: 7
+	public void Dispose() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x4844E4 Offset: 0x4844E4 VA: 0x4844E4
+	// RVA: 0x14A2EB8 Offset: 0x14A2EB8 VA: 0x14A2EB8 Slot: 6
+	public void Reset() { }
+}
+
+// ORIGINAL DUMP LINES 432707-432753; TypeDefIndex 10733
+// Namespace: TVGameMatrix.UGUI
+public class TVSubmitKeyEvent : MonoBehaviour // TypeDefIndex: 10733
+{
+	// Fields
+	[CompilerGeneratedAttribute] // RVA: 0x483C38 Offset: 0x483C38 VA: 0x483C38
+	[DebuggerBrowsableAttribute] // RVA: 0x483C38 Offset: 0x483C38 VA: 0x483C38
+	private static TVSubmitKeyEvent.BoxClickCallHandler OnBoxClickEvent; // 0x0
+	private KeyCode pressKeyCode; // 0xC
+	public bool keyDown; // 0x10
+	public bool keyUp; // 0x11
+	public bool keyPress; // 0x12
+	public int dragBeginFrameId; // 0x14
+	public int dragEndFrameId; // 0x18
+	public bool dragBegin; // 0x1C
+	public bool dragging; // 0x1D
+	public bool dragEnd; // 0x1E
+	public PointerEventData pointerData; // 0x20
+	public PointerEventData dragEvent; // 0x24
+	private static KeyCode[] arrSubmitKey; // 0x4
+
+	// Methods
+
+	// RVA: 0x14A2F40 Offset: 0x14A2F40 VA: 0x14A2F40
+	public void .ctor() { }
+
+	// RVA: 0x14A3088 Offset: 0x14A3088 VA: 0x14A3088
+	public static void add_OnBoxClickEvent(TVSubmitKeyEvent.BoxClickCallHandler value) { }
+
+	// RVA: 0x14A3208 Offset: 0x14A3208 VA: 0x14A3208
+	public static void remove_OnBoxClickEvent(TVSubmitKeyEvent.BoxClickCallHandler value) { }
+
+	// RVA: 0x14A3388 Offset: 0x14A3388 VA: 0x14A3388
+	public void UpdateKeyEvent() { }
+
+	// RVA: 0x14A3988 Offset: 0x14A3988 VA: 0x14A3988
+	public void ProcessSubmitKeyEvent() { }
+
+	// RVA: 0x14A4C34 Offset: 0x14A4C34 VA: 0x14A4C34
+	public void ProcessPanEvent() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x4841F4 Offset: 0x4841F4 VA: 0x4841F4
+	// RVA: 0x14A4BB0 Offset: 0x14A4BB0 VA: 0x14A4BB0
+	private IEnumerator DelayCheckBox(GameObject curBox) { }
+
+	// RVA: 0x14A5644 Offset: 0x14A5644 VA: 0x14A5644
+	private static void .cctor() { }
+}
+
+// ORIGINAL DUMP LINES 432755-432771; TypeDefIndex 10734
+// Namespace: 
+public sealed class TVSubmitKeyEvent.BoxClickCallHandler : MulticastDelegate // TypeDefIndex: 10734
+{
+	// Methods
+
+	// RVA: 0x14A58F0 Offset: 0x14A58F0 VA: 0x14A58F0
+	public void .ctor(object object, IntPtr method) { }
+
+	// RVA: 0x14A4540 Offset: 0x14A4540 VA: 0x14A4540 Slot: 11
+	public virtual void Invoke(GameObject go) { }
+
+	// RVA: 0x14A5904 Offset: 0x14A5904 VA: 0x14A5904 Slot: 12
+	public virtual IAsyncResult BeginInvoke(GameObject go, AsyncCallback callback, object object) { }
+
+	// RVA: 0x14A5930 Offset: 0x14A5930 VA: 0x14A5930 Slot: 13
+	public virtual void EndInvoke(IAsyncResult result) { }
+}
+
+// ORIGINAL DUMP LINES 432773-432811; TypeDefIndex 10735
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0x4834F8 Offset: 0x4834F8 VA: 0x4834F8
+private sealed class TVSubmitKeyEvent.<DelayCheckBox>c__Iterator0 : IEnumerator, IDisposable, IEnumerator<object> // TypeDefIndex: 10735
+{
+	// Fields
+	internal GameObject curBox; // 0x8
+	internal object $current; // 0xC
+	internal bool $disposing; // 0x10
+	internal int $PC; // 0x14
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHiddenAttribute] // RVA: 0x4844F4 Offset: 0x4844F4 VA: 0x4844F4
+	// RVA: 0x14A563C Offset: 0x14A563C VA: 0x14A563C
+	public void .ctor() { }
+
+	// RVA: 0x14A56DC Offset: 0x14A56DC VA: 0x14A56DC Slot: 5
+	public bool MoveNext() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x484504 Offset: 0x484504 VA: 0x484504
+	// RVA: 0x14A5844 Offset: 0x14A5844 VA: 0x14A5844 Slot: 8
+	private object System.Collections.Generic.IEnumerator<object>.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x484514 Offset: 0x484514 VA: 0x484514
+	// RVA: 0x14A584C Offset: 0x14A584C VA: 0x14A584C Slot: 4
+	private object System.Collections.IEnumerator.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x484524 Offset: 0x484524 VA: 0x484524
+	// RVA: 0x14A5854 Offset: 0x14A5854 VA: 0x14A5854 Slot: 7
+	public void Dispose() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0x484534 Offset: 0x484534 VA: 0x484534
+	// RVA: 0x14A5868 Offset: 0x14A5868 VA: 0x14A5868 Slot: 6
+	public void Reset() { }
+}
+
+// ORIGINAL DUMP LINES 432813-432839; TypeDefIndex 10736
+// Namespace: TVGameMatrix.UGUI
+public class TVUGUIFocus : MonoBehaviour // TypeDefIndex: 10736
+{
+	// Fields
+	private bool isSubmitDown; // 0xC
+	private TVSubmitKeyEvent focusEvent; // 0x10
+
+	// Methods
+
+	// RVA: 0x14A696C Offset: 0x14A696C VA: 0x14A696C
+	public void .ctor() { }
+
+	// RVA: 0x14A6974 Offset: 0x14A6974 VA: 0x14A6974
+	public void Start() { }
+
+	// RVA: 0x14A69FC Offset: 0x14A69FC VA: 0x14A69FC
+	public void Update() { }
+
+	// RVA: 0x14A6DD8 Offset: 0x14A6DD8 VA: 0x14A6DD8
+	public void PreocessNavigKeyEvent() { }
+
+	// RVA: 0x14A70B8 Offset: 0x14A70B8 VA: 0x14A70B8
+	public void OnNavigate(KeyCode key) { }
+
+	// RVA: 0x14A6AF4 Offset: 0x14A6AF4 VA: 0x14A6AF4
+	public void ProcessAllKeyEvent() { }
+}
+
+// ORIGINAL DUMP LINES 432841-432878; TypeDefIndex 10737
+// Namespace: TVGameMatrix.UGUI
+public class TVUGUIHitTester : IHitTestHandler // TypeDefIndex: 10737
+{
+	// Methods
+
+	// RVA: 0x14A721C Offset: 0x14A721C VA: 0x14A721C
+	public void .ctor() { }
+
+	// RVA: 0x14A7224 Offset: 0x14A7224 VA: 0x14A7224 Slot: 6
+	public Camera FindCamera(GameObject go) { }
+
+	// RVA: 0x149E0D8 Offset: 0x149E0D8 VA: 0x149E0D8
+	public static TVCanvas FindRootCanvas(GameObject go) { }
+
+	// RVA: 0x14A7344 Offset: 0x14A7344 VA: 0x14A7344 Slot: 7
+	public Vector3 GetCenterOnScreen(GameObject go) { }
+
+	// RVA: 0x14A7630 Offset: 0x14A7630 VA: 0x14A7630 Slot: 8
+	public Vector3 GetSizeOnScreen(GameObject go) { }
+
+	// RVA: 0x14A7CE4 Offset: 0x14A7CE4 VA: 0x14A7CE4 Slot: 9
+	public Vector3 GetTouchPosOnScreen(GameObject go) { }
+
+	// RVA: 0x14A82B0 Offset: 0x14A82B0 VA: 0x14A82B0
+	public GameObject FindProcessObject(GameObject go) { }
+
+	// RVA: 0x14A8770 Offset: 0x14A8770 VA: 0x14A8770 Slot: 4
+	public bool IsHitVisible(GameObject go) { }
+
+	// RVA: 0x14A8BA4 Offset: 0x14A8BA4 VA: 0x14A8BA4 Slot: 5
+	public bool IsHitBoxRect(GameObject go) { }
+
+	// RVA: 0x14A4484 Offset: 0x14A4484 VA: 0x14A4484
+	public static RaycastResult FindFirstRaycast(GameObject go) { }
+
+	// RVA: 0x14A48FC Offset: 0x14A48FC VA: 0x14A48FC
+	public static RaycastResult FindFirstRaycast(GameObject go, Vector2 touchPos) { }
+}
+
+// ORIGINAL DUMP LINES 432880-432913; TypeDefIndex 10738
+// Namespace: TVGameMatrix.UGUI
+public class TVUGUIInput : MonoBehaviour // TypeDefIndex: 10738
+{
+	// Fields
+	private static bool isDebugMode; // 0x0
+	private static bool isInited; // 0x1
+	[CompilerGeneratedAttribute] // RVA: 0x483C6C Offset: 0x483C6C VA: 0x483C6C
+	private static TVNavigBox.BoxAwakeHandler <>f__mg$cache0; // 0x4
+	[CompilerGeneratedAttribute] // RVA: 0x483C7C Offset: 0x483C7C VA: 0x483C7C
+	private static TVNavigFocus.PanelShowHandler <>f__mg$cache1; // 0x8
+
+	// Methods
+
+	// RVA: 0x14A9084 Offset: 0x14A9084 VA: 0x14A9084
+	public void .ctor() { }
+
+	// RVA: 0x14A908C Offset: 0x14A908C VA: 0x14A908C
+	public static void Init(GameObject go) { }
+
+	// RVA: 0x14A94B8 Offset: 0x14A94B8 VA: 0x14A94B8
+	public static void OnNavigPanelShow(GameObject go) { }
+
+	// RVA: 0x14A96F0 Offset: 0x14A96F0 VA: 0x14A96F0
+	public static void OnNavigBoxAwake(GameObject go) { }
+
+	// RVA: 0x14A99B4 Offset: 0x14A99B4 VA: 0x14A99B4
+	public static void OnNavigBoxHover(GameObject go, bool isOver) { }
+
+	// RVA: 0x14A99B8 Offset: 0x14A99B8 VA: 0x14A99B8
+	public static void SetSelectBox(GameObject box) { }
+
+	// RVA: 0x14A9A84 Offset: 0x14A9A84 VA: 0x14A9A84
+	private static void .cctor() { }
+}
+
+// ORIGINAL DUMP LINES 432915-432931; TypeDefIndex 10739
+// Namespace: TVGameMatrix.UGUI
+public class TVUGUIScaner : MonoBehaviour // TypeDefIndex: 10739
+{
+	// Fields
+	public float interval; // 0xC
+
+	// Methods
+
+	// RVA: 0x14A9A88 Offset: 0x14A9A88 VA: 0x14A9A88
+	public void .ctor() { }
+
+	// RVA: 0x14A9A9C Offset: 0x14A9A9C VA: 0x14A9A9C
+	private void Start() { }
+
+	// RVA: 0x14A9AA8 Offset: 0x14A9AA8 VA: 0x14A9AA8
+	private void Update() { }
+}
+
+// ORIGINAL DUMP LINES 432933-432946; TypeDefIndex 10740
+// Namespace: TVGameMatrix.UGUI
+[ExtensionAttribute] // RVA: 0x483408 Offset: 0x483408 VA: 0x483408
+public static class TVUGUITools // TypeDefIndex: 10740
+{
+	// Methods
+
+	[ExtensionAttribute] // RVA: 0x484204 Offset: 0x484204 VA: 0x484204
+	// RVA: 0x14A07A0 Offset: 0x14A07A0 VA: 0x14A07A0
+	public static GameObject AddChild(GameObject parent) { }
+
+	[ExtensionAttribute] // RVA: 0x484214 Offset: 0x484214 VA: 0x484214
+	// RVA: 0x14A9CE0 Offset: 0x14A9CE0 VA: 0x14A9CE0
+	public static GameObject AddChild(GameObject parent, int layer) { }
+}
+
+// ORIGINAL DUMP LINES 432948-432967; TypeDefIndex 10741
+// Namespace: TVGameMatrix.UGUI
+public class TVUGUIUtil : MonoBehaviour // TypeDefIndex: 10741
+{
+	// Methods
+
+	// RVA: 0x14A9F64 Offset: 0x14A9F64 VA: 0x14A9F64
+	public void .ctor() { }
+
+	// RVA: 0x149F758 Offset: 0x149F758 VA: 0x149F758
+	public static GameObject AddChild(string name, GameObject parent) { }
+
+	// RVA: 0x149E2BC Offset: 0x149E2BC VA: 0x149E2BC
+	public static GameObject CreateUIObject(string name, GameObject parent) { }
+
+	// RVA: 0x14A9F6C Offset: 0x14A9F6C VA: 0x14A9F6C
+	public static void SetParentAndAlign(GameObject child, GameObject parent) { }
+
+	// RVA: 0x14AA204 Offset: 0x14AA204 VA: 0x14AA204
+	public static void SetLayerRecursively(GameObject go, int layer) { }
+}
+
+// ORIGINAL DUMP LINES 432969-433013; TypeDefIndex 10742
+// Namespace: TVGameMatrix.UGUI
+public class TVNavigAutoScroller : TVNavigUIConfig // TypeDefIndex: 10742
+{
+	// Fields
+	private string viewportPath; // 0xC
+	private string contentPath; // 0x10
+	private RectTransform viewport; // 0x14
+	private RectTransform content; // 0x18
+
+	// Properties
+	public RectTransform ScrollView { get; set; }
+	public RectTransform ScrollContent { get; set; }
+
+	// Methods
+
+	// RVA: 0x149F9AC Offset: 0x149F9AC VA: 0x149F9AC
+	public void .ctor() { }
+
+	// RVA: 0x149F9B4 Offset: 0x149F9B4 VA: 0x149F9B4
+	public RectTransform get_ScrollView() { }
+
+	// RVA: 0x149F9BC Offset: 0x149F9BC VA: 0x149F9BC
+	public void set_ScrollView(RectTransform value) { }
+
+	// RVA: 0x149F9C4 Offset: 0x149F9C4 VA: 0x149F9C4
+	public RectTransform get_ScrollContent() { }
+
+	// RVA: 0x149F9CC Offset: 0x149F9CC VA: 0x149F9CC
+	public void set_ScrollContent(RectTransform value) { }
+
+	// RVA: 0x149F9D4 Offset: 0x149F9D4 VA: 0x149F9D4 Slot: 5
+	public override void InitWithConfig(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x149FA20 Offset: 0x149FA20 VA: 0x149FA20 Slot: 6
+	public override TVComponentConfig SaveToConfig(TVComponentConfig itemConfig) { }
+
+	// RVA: 0x149FA70 Offset: 0x149FA70 VA: 0x149FA70
+	public void Start() { }
+
+	// RVA: 0x149FC74 Offset: 0x149FC74 VA: 0x149FC74
+	public bool ScrollIfNeed(KeyCode keyCode, GameObject curBox, GameObject nextBox) { }
+
+	// RVA: 0x14A0118 Offset: 0x14A0118 VA: 0x14A0118
+	public Vector3 GetBorderDist(KeyCode keyCode) { }
+}
+
+// ORIGINAL DUMP LINES 433015-433022; TypeDefIndex 10743
+// Namespace: TVGameMatrix.UGUI
+public class TVNavigHorizList : TVNavigUIConfig // TypeDefIndex: 10743
+{
+	// Methods
+
+	// RVA: 0x14A1E0C Offset: 0x14A1E0C VA: 0x14A1E0C
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 433024-433034; TypeDefIndex 10744
+// Namespace: TVGameMatrix.UGUI
+public class TVNavigKeyTips : TVNavigUIConfig // TypeDefIndex: 10744
+{
+	// Methods
+
+	// RVA: 0x14A1E14 Offset: 0x14A1E14 VA: 0x14A1E14
+	public void .ctor() { }
+
+	// RVA: 0x14A1E1C Offset: 0x14A1E1C VA: 0x14A1E1C
+	public void Start() { }
+}
+
+// ORIGINAL DUMP LINES 433036-433052; TypeDefIndex 10745
+// Namespace: TVGameMatrix.UGUI
+public class TVNavigKeyTipsChild : TVNavigBoxFrame // TypeDefIndex: 10745
+{
+	// Fields
+	public Image keyTexture; // 0x10
+
+	// Methods
+
+	// RVA: 0x14A1F74 Offset: 0x14A1F74 VA: 0x14A1F74
+	public void .ctor() { }
+
+	// RVA: 0x14A1F7C Offset: 0x14A1F7C VA: 0x14A1F7C
+	public void Start() { }
+
+	// RVA: 0x14A20FC Offset: 0x14A20FC VA: 0x14A20FC
+	public void OnBoxHover(bool isOver) { }
+}
+
+// ORIGINAL DUMP LINES 433054-433085; TypeDefIndex 10746
+// Namespace: TVGameMatrix.UGUI
+public class TVNavigKeyTipsFloat : TVNavigBoxFrame // TypeDefIndex: 10746
+{
+	// Fields
+	public Image keyTexture; // 0x10
+	public GameObject keyTips; // 0x14
+	[HideInInspector] // RVA: 0x483C8C Offset: 0x483C8C VA: 0x483C8C
+	public Vector3 keyOffset; // 0x18
+
+	// Methods
+
+	// RVA: 0x14A2150 Offset: 0x14A2150 VA: 0x14A2150
+	public void .ctor() { }
+
+	// RVA: 0x14A2158 Offset: 0x14A2158 VA: 0x14A2158
+	public void LateUpdate() { }
+
+	// RVA: 0x14A2304 Offset: 0x14A2304 VA: 0x14A2304
+	public void OnDisable() { }
+
+	// RVA: 0x14A23BC Offset: 0x14A23BC VA: 0x14A23BC
+	public void OnDestroy() { }
+
+	// RVA: 0x14A2498 Offset: 0x14A2498 VA: 0x14A2498
+	public void Start() { }
+
+	// RVA: 0x14A2688 Offset: 0x14A2688 VA: 0x14A2688
+	public void OnBoxHover(bool isOver) { }
+
+	// RVA: 0x14A278C Offset: 0x14A278C VA: 0x14A278C
+	public void OnPanelHide() { }
+}
+
+// ORIGINAL DUMP LINES 433087-433094; TypeDefIndex 10747
+// Namespace: TVGameMatrix.UGUI
+public class TVNavigVertList : TVNavigUIConfig // TypeDefIndex: 10747
+{
+	// Methods
+
+	// RVA: 0x14A28A0 Offset: 0x14A28A0 VA: 0x14A28A0
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 433096-433136; TypeDefIndex 10748
+// Namespace: 
+public class WebViewObject : MonoBehaviour // TypeDefIndex: 10748
+{
+	// Fields
+	private Action<string> callback; // 0xC
+	private Action<string> callbackH5Game; // 0x10
+	private AndroidJavaObject webView; // 0x14
+	private Vector2 offset; // 0x18
+
+	// Methods
+
+	// RVA: 0x1CC3B18 Offset: 0x1CC3B18 VA: 0x1CC3B18
+	public void .ctor() { }
+
+	// RVA: 0x1CC3B20 Offset: 0x1CC3B20 VA: 0x1CC3B20
+	public void Init(Action<string> cb) { }
+
+	// RVA: 0x1CC3CB0 Offset: 0x1CC3CB0 VA: 0x1CC3CB0
+	private void OnDestroy() { }
+
+	// RVA: 0x1CC3D40 Offset: 0x1CC3D40 VA: 0x1CC3D40
+	public void SetMargins(int left, int top, int right, int bottom) { }
+
+	// RVA: 0x1CC4010 Offset: 0x1CC4010 VA: 0x1CC4010
+	public void SetVisibility(bool v) { }
+
+	// RVA: 0x1CC4130 Offset: 0x1CC4130 VA: 0x1CC4130
+	public void LoadURL(string url) { }
+
+	// RVA: 0x1CC4228 Offset: 0x1CC4228 VA: 0x1CC4228
+	public void LoadH5URL(string url, Action<string> cb) { }
+
+	// RVA: 0x1CC4508 Offset: 0x1CC4508 VA: 0x1CC4508
+	public void EvaluateJS(string js) { }
+
+	// RVA: 0x1CC464C Offset: 0x1CC464C VA: 0x1CC464C
+	public void CallFromJS(string message) { }
+
+	// RVA: 0x1CC46E4 Offset: 0x1CC46E4 VA: 0x1CC46E4
+	public void OnPageFinished(string url) { }
+}
+
+// ORIGINAL DUMP LINES 433138-433144; TypeDefIndex 10749
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0x483508 Offset: 0x483508 VA: 0x483508
+internal static class <PrivateImplementationDetails> // TypeDefIndex: 10749
+{
+	// Fields
+	internal static readonly <PrivateImplementationDetails>.$ArrayType=12 $field-E24F48B1FE4BC7CCE7DD346A38033951914AC9AE /*Metadata offset 0x598D0A*/; // 0x0
+}
+
+// ORIGINAL DUMP LINES 433146-433148; TypeDefIndex 10750
+// Namespace: 
+private struct <PrivateImplementationDetails>.$ArrayType=12 // TypeDefIndex: 10750
+{}
+

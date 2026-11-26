@@ -1,0 +1,969 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_fp_subskillattrconfig.bytes.ab",
+    "path_id": 5102378528764122954,
+    "name": "SubSkillAttrConfig",
+    "sha256": "eb82edb85515ba225f604306e56f483d4ffd11ef6028cc42fdc8ab3bf68f41c1",
+    "export": "derived/unity/text/assets_resources_config_resbin_fp_subskillattrconfig.bytes/SubSkillAttrConfig__5102378528764122954.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 2428,
+      "version": 1,
+      "record_count": 86,
+      "stored_crc32": "d4895a34",
+      "computed_inverted_crc32": "d4895a34"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "BattleCore",
+      "name": "SubSkillAttrConfig",
+      "fields": [
+        {
+          "type": "uint",
+          "name": "SkillID",
+          "object_offset": 16
+        },
+        {
+          "type": "int",
+          "name": "StackNum",
+          "object_offset": 20
+        },
+        {
+          "type": "int",
+          "name": "AddCount",
+          "object_offset": 24
+        },
+        {
+          "type": "FP",
+          "name": "DamageRatio",
+          "object_offset": 32
+        },
+        {
+          "type": "FP",
+          "name": "FiveEleDamageRatio",
+          "object_offset": 40
+        }
+      ],
+      "unpack_va": 35220712,
+      "dump_line": 168455
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x2196d1c",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x2196d40",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x2196d64",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x2196d88",
+        "target_va": "0x21f6938",
+        "opcode": "BL",
+        "reader": "readInt64",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x2196dc8",
+        "target_va": "0x21f6938",
+        "opcode": "B-tail",
+        "reader": "readInt64",
+        "destination_object_offset": 40,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 86
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "SkillID": 3001,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 3865470566,
+      "FiveEleDamageRatio__raw_int64": 3865470566,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 48,
+      "SkillID": 3001,
+      "StackNum": 2,
+      "AddCount": 2,
+      "DamageRatio__raw_int64": 3435973836,
+      "FiveEleDamageRatio__raw_int64": 3435973836,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 76,
+      "SkillID": 3002,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4294967296,
+      "FiveEleDamageRatio__raw_int64": 4294967296,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 104,
+      "SkillID": 3002,
+      "StackNum": 2,
+      "AddCount": 2,
+      "DamageRatio__raw_int64": 4294967296,
+      "FiveEleDamageRatio__raw_int64": 4294967296,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 132,
+      "SkillID": 3003,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4294967296,
+      "FiveEleDamageRatio__raw_int64": 4294967296,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 160,
+      "SkillID": 3003,
+      "StackNum": 2,
+      "AddCount": 2,
+      "DamageRatio__raw_int64": 4294967296,
+      "FiveEleDamageRatio__raw_int64": 4294967296,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 188,
+      "SkillID": 3004,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4294967296,
+      "FiveEleDamageRatio__raw_int64": 4294967296,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 216,
+      "SkillID": 3004,
+      "StackNum": 2,
+      "AddCount": 2,
+      "DamageRatio__raw_int64": 4294967296,
+      "FiveEleDamageRatio__raw_int64": 4294967296,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 244,
+      "SkillID": 3005,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4294967296,
+      "FiveEleDamageRatio__raw_int64": 4294967296,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 272,
+      "SkillID": 3006,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4294967296,
+      "FiveEleDamageRatio__raw_int64": 4294967296,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 300,
+      "SkillID": 3007,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4294967296,
+      "FiveEleDamageRatio__raw_int64": 4294967296,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 328,
+      "SkillID": 3008,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 3006477107,
+      "FiveEleDamageRatio__raw_int64": 3006477107,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 356,
+      "SkillID": 3008,
+      "StackNum": 2,
+      "AddCount": 2,
+      "DamageRatio__raw_int64": 2576980377,
+      "FiveEleDamageRatio__raw_int64": 2576980377,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 384,
+      "SkillID": 3015,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4294967296,
+      "FiveEleDamageRatio__raw_int64": 4294967296,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 412,
+      "SkillID": 3017,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4294967296,
+      "FiveEleDamageRatio__raw_int64": 4294967296,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 440,
+      "SkillID": 3018,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4294967296,
+      "FiveEleDamageRatio__raw_int64": 4294967296,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 468,
+      "SkillID": 3019,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 3865470566,
+      "FiveEleDamageRatio__raw_int64": 3865470566,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 496,
+      "SkillID": 3019,
+      "StackNum": 2,
+      "AddCount": 2,
+      "DamageRatio__raw_int64": 3435973836,
+      "FiveEleDamageRatio__raw_int64": 3435973836,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 524,
+      "SkillID": 3020,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4294967296,
+      "FiveEleDamageRatio__raw_int64": 4294967296,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 19,
+      "_byte_offset": 552,
+      "SkillID": 3020,
+      "StackNum": 2,
+      "AddCount": 2,
+      "DamageRatio__raw_int64": 4294967296,
+      "FiveEleDamageRatio__raw_int64": 4294967296,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 20,
+      "_byte_offset": 580,
+      "SkillID": 3021,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 3435973836,
+      "FiveEleDamageRatio__raw_int64": 3435973836,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 21,
+      "_byte_offset": 608,
+      "SkillID": 3021,
+      "StackNum": 2,
+      "AddCount": 2,
+      "DamageRatio__raw_int64": 3435973836,
+      "FiveEleDamageRatio__raw_int64": 3435973836,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 22,
+      "_byte_offset": 636,
+      "SkillID": 3022,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4294967296,
+      "FiveEleDamageRatio__raw_int64": 4294967296,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 23,
+      "_byte_offset": 664,
+      "SkillID": 3023,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4294967296,
+      "FiveEleDamageRatio__raw_int64": 4294967296,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 24,
+      "_byte_offset": 692,
+      "SkillID": 3024,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4294967296,
+      "FiveEleDamageRatio__raw_int64": 4294967296,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 25,
+      "_byte_offset": 720,
+      "SkillID": 3025,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4294967296,
+      "FiveEleDamageRatio__raw_int64": 4294967296,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 26,
+      "_byte_offset": 748,
+      "SkillID": 3031,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4294967296,
+      "FiveEleDamageRatio__raw_int64": 4294967296,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 27,
+      "_byte_offset": 776,
+      "SkillID": 3041,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4294967296,
+      "FiveEleDamageRatio__raw_int64": 4294967296,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 28,
+      "_byte_offset": 804,
+      "SkillID": 99999,
+      "StackNum": 1,
+      "AddCount": 60,
+      "DamageRatio__raw_int64": 4294967296,
+      "FiveEleDamageRatio__raw_int64": 4294967296,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 29,
+      "_byte_offset": 832,
+      "SkillID": 921501,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 3865470566,
+      "FiveEleDamageRatio__raw_int64": 3865470566,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 30,
+      "_byte_offset": 860,
+      "SkillID": 921502,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4037269258,
+      "FiveEleDamageRatio__raw_int64": 4037269258,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 31,
+      "_byte_offset": 888,
+      "SkillID": 921503,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4209067950,
+      "FiveEleDamageRatio__raw_int64": 4209067950,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 32,
+      "_byte_offset": 916,
+      "SkillID": 921504,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4380866641,
+      "FiveEleDamageRatio__raw_int64": 4380866641,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 33,
+      "_byte_offset": 944,
+      "SkillID": 921505,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4552665333,
+      "FiveEleDamageRatio__raw_int64": 4552665333,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 34,
+      "_byte_offset": 972,
+      "SkillID": 921506,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4724464025,
+      "FiveEleDamageRatio__raw_int64": 4724464025,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 35,
+      "_byte_offset": 1000,
+      "SkillID": 921507,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4896262717,
+      "FiveEleDamageRatio__raw_int64": 4896262717,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 36,
+      "_byte_offset": 1028,
+      "SkillID": 921508,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 5068061409,
+      "FiveEleDamageRatio__raw_int64": 5068061409,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 37,
+      "_byte_offset": 1056,
+      "SkillID": 921509,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 5239860101,
+      "FiveEleDamageRatio__raw_int64": 5239860101,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 38,
+      "_byte_offset": 1084,
+      "SkillID": 921510,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 5411658792,
+      "FiveEleDamageRatio__raw_int64": 5411658792,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 39,
+      "_byte_offset": 1112,
+      "SkillID": 921601,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 3865470566,
+      "FiveEleDamageRatio__raw_int64": 3865470566,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 40,
+      "_byte_offset": 1140,
+      "SkillID": 921602,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4037269258,
+      "FiveEleDamageRatio__raw_int64": 4037269258,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 41,
+      "_byte_offset": 1168,
+      "SkillID": 921603,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4209067950,
+      "FiveEleDamageRatio__raw_int64": 4209067950,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 42,
+      "_byte_offset": 1196,
+      "SkillID": 921604,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4380866641,
+      "FiveEleDamageRatio__raw_int64": 4380866641,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 43,
+      "_byte_offset": 1224,
+      "SkillID": 921605,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4552665333,
+      "FiveEleDamageRatio__raw_int64": 4552665333,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 44,
+      "_byte_offset": 1252,
+      "SkillID": 921606,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4724464025,
+      "FiveEleDamageRatio__raw_int64": 4724464025,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 45,
+      "_byte_offset": 1280,
+      "SkillID": 921607,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4896262717,
+      "FiveEleDamageRatio__raw_int64": 4896262717,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 46,
+      "_byte_offset": 1308,
+      "SkillID": 921608,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 5068061409,
+      "FiveEleDamageRatio__raw_int64": 5068061409,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 47,
+      "_byte_offset": 1336,
+      "SkillID": 921609,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 5239860101,
+      "FiveEleDamageRatio__raw_int64": 5239860101,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 48,
+      "_byte_offset": 1364,
+      "SkillID": 921610,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 5411658792,
+      "FiveEleDamageRatio__raw_int64": 5411658792,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 49,
+      "_byte_offset": 1392,
+      "SkillID": 921701,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 3865470566,
+      "FiveEleDamageRatio__raw_int64": 3865470566,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 50,
+      "_byte_offset": 1420,
+      "SkillID": 921702,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4037269258,
+      "FiveEleDamageRatio__raw_int64": 4037269258,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 51,
+      "_byte_offset": 1448,
+      "SkillID": 921703,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4209067950,
+      "FiveEleDamageRatio__raw_int64": 4209067950,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 52,
+      "_byte_offset": 1476,
+      "SkillID": 921704,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4380866641,
+      "FiveEleDamageRatio__raw_int64": 4380866641,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 53,
+      "_byte_offset": 1504,
+      "SkillID": 921705,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4552665333,
+      "FiveEleDamageRatio__raw_int64": 4552665333,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 54,
+      "_byte_offset": 1532,
+      "SkillID": 921706,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4724464025,
+      "FiveEleDamageRatio__raw_int64": 4724464025,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 55,
+      "_byte_offset": 1560,
+      "SkillID": 921707,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4896262717,
+      "FiveEleDamageRatio__raw_int64": 4896262717,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 56,
+      "_byte_offset": 1588,
+      "SkillID": 921708,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 5068061409,
+      "FiveEleDamageRatio__raw_int64": 5068061409,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 57,
+      "_byte_offset": 1616,
+      "SkillID": 921709,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 5239860101,
+      "FiveEleDamageRatio__raw_int64": 5239860101,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 58,
+      "_byte_offset": 1644,
+      "SkillID": 921710,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 5411658792,
+      "FiveEleDamageRatio__raw_int64": 5411658792,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 59,
+      "_byte_offset": 1672,
+      "SkillID": 921801,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 3865470566,
+      "FiveEleDamageRatio__raw_int64": 3865470566,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 60,
+      "_byte_offset": 1700,
+      "SkillID": 921802,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4037269258,
+      "FiveEleDamageRatio__raw_int64": 4037269258,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 61,
+      "_byte_offset": 1728,
+      "SkillID": 921803,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4209067950,
+      "FiveEleDamageRatio__raw_int64": 4209067950,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 62,
+      "_byte_offset": 1756,
+      "SkillID": 921804,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4380866641,
+      "FiveEleDamageRatio__raw_int64": 4380866641,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 63,
+      "_byte_offset": 1784,
+      "SkillID": 921805,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4552665333,
+      "FiveEleDamageRatio__raw_int64": 4552665333,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 64,
+      "_byte_offset": 1812,
+      "SkillID": 921806,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4724464025,
+      "FiveEleDamageRatio__raw_int64": 4724464025,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 65,
+      "_byte_offset": 1840,
+      "SkillID": 921807,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4896262717,
+      "FiveEleDamageRatio__raw_int64": 4896262717,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 66,
+      "_byte_offset": 1868,
+      "SkillID": 921808,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 5068061409,
+      "FiveEleDamageRatio__raw_int64": 5068061409,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 67,
+      "_byte_offset": 1896,
+      "SkillID": 921809,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 5239860101,
+      "FiveEleDamageRatio__raw_int64": 5239860101,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 68,
+      "_byte_offset": 1924,
+      "SkillID": 921810,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 5411658792,
+      "FiveEleDamageRatio__raw_int64": 5411658792,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 69,
+      "_byte_offset": 1952,
+      "SkillID": 1040004,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4294967296,
+      "FiveEleDamageRatio__raw_int64": 4294967296,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 70,
+      "_byte_offset": 1980,
+      "SkillID": 1040004,
+      "StackNum": 2,
+      "AddCount": 2,
+      "DamageRatio__raw_int64": 4294967296,
+      "FiveEleDamageRatio__raw_int64": 4294967296,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 71,
+      "_byte_offset": 2008,
+      "SkillID": 1040004,
+      "StackNum": 3,
+      "AddCount": 3,
+      "DamageRatio__raw_int64": 4294967296,
+      "FiveEleDamageRatio__raw_int64": 4294967296,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 72,
+      "_byte_offset": 2036,
+      "SkillID": 1040005,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4294967296,
+      "FiveEleDamageRatio__raw_int64": 4294967296,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 73,
+      "_byte_offset": 2064,
+      "SkillID": 1040005,
+      "StackNum": 2,
+      "AddCount": 2,
+      "DamageRatio__raw_int64": 4294967296,
+      "FiveEleDamageRatio__raw_int64": 4294967296,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 74,
+      "_byte_offset": 2092,
+      "SkillID": 1040005,
+      "StackNum": 3,
+      "AddCount": 3,
+      "DamageRatio__raw_int64": 4294967296,
+      "FiveEleDamageRatio__raw_int64": 4294967296,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 75,
+      "_byte_offset": 2120,
+      "SkillID": 1040006,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4294967296,
+      "FiveEleDamageRatio__raw_int64": 4294967296,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 76,
+      "_byte_offset": 2148,
+      "SkillID": 1040006,
+      "StackNum": 2,
+      "AddCount": 2,
+      "DamageRatio__raw_int64": 4294967296,
+      "FiveEleDamageRatio__raw_int64": 4294967296,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 77,
+      "_byte_offset": 2176,
+      "SkillID": 1040006,
+      "StackNum": 3,
+      "AddCount": 3,
+      "DamageRatio__raw_int64": 4294967296,
+      "FiveEleDamageRatio__raw_int64": 4294967296,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 78,
+      "_byte_offset": 2204,
+      "SkillID": 1040007,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4294967296,
+      "FiveEleDamageRatio__raw_int64": 4294967296,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 79,
+      "_byte_offset": 2232,
+      "SkillID": 1040007,
+      "StackNum": 2,
+      "AddCount": 2,
+      "DamageRatio__raw_int64": 4294967296,
+      "FiveEleDamageRatio__raw_int64": 4294967296,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 80,
+      "_byte_offset": 2260,
+      "SkillID": 1040007,
+      "StackNum": 3,
+      "AddCount": 3,
+      "DamageRatio__raw_int64": 4294967296,
+      "FiveEleDamageRatio__raw_int64": 4294967296,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 81,
+      "_byte_offset": 2288,
+      "SkillID": 1040008,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4294967296,
+      "FiveEleDamageRatio__raw_int64": 4294967296,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 82,
+      "_byte_offset": 2316,
+      "SkillID": 1040008,
+      "StackNum": 2,
+      "AddCount": 2,
+      "DamageRatio__raw_int64": 4294967296,
+      "FiveEleDamageRatio__raw_int64": 4294967296,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 83,
+      "_byte_offset": 2344,
+      "SkillID": 1040008,
+      "StackNum": 3,
+      "AddCount": 3,
+      "DamageRatio__raw_int64": 4294967296,
+      "FiveEleDamageRatio__raw_int64": 4294967296,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 84,
+      "_byte_offset": 2372,
+      "SkillID": 2000301,
+      "StackNum": 1,
+      "AddCount": 60,
+      "DamageRatio__raw_int64": 4294967296,
+      "FiveEleDamageRatio__raw_int64": 4294967296,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 85,
+      "_byte_offset": 2400,
+      "SkillID": 2000401,
+      "StackNum": 1,
+      "AddCount": 1,
+      "DamageRatio__raw_int64": 4294967296,
+      "FiveEleDamageRatio__raw_int64": 4294967296,
+      "_byte_length": 28
+    }
+  ]
+}

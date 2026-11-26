@@ -1,0 +1,54 @@
+0x2197cd8: stp       x22, x21, [sp, #-0x30]!
+0x2197cdc: stp       x20, x19, [sp, #0x10]
+0x2197ce0: stp       x29, x30, [sp, #0x20]
+0x2197ce4: add       x29, sp, #0x20
+0x2197ce8: mov       x20, x0
+0x2197cec: mov       x19, x1
+0x2197cf0: add       x21, x20, #0x10
+0x2197cf4: cbnz      x19, #0x2197d00
+0x2197cf8: mov       x0, xzr
+0x2197cfc: bl        #0xd2b72c ; 
+0x2197d00: mov       x0, x19
+0x2197d04: mov       x1, x21
+0x2197d08: mov       x2, xzr
+0x2197d0c: bl        #0x21f6908 ; ProtoBase.PbReadBuf$$readUInt32
+0x2197d10: cbnz      w0, #0x2197da0
+0x2197d14: add       x21, x20, #0x14
+0x2197d18: cbnz      x19, #0x2197d24
+0x2197d1c: mov       x0, xzr
+0x2197d20: bl        #0xd2b72c ; 
+0x2197d24: mov       x0, x19
+0x2197d28: mov       x1, x21
+0x2197d2c: mov       x2, xzr
+0x2197d30: bl        #0x21f6908 ; ProtoBase.PbReadBuf$$readUInt32
+0x2197d34: cbnz      w0, #0x2197da0
+0x2197d38: mov       x22, xzr
+0x2197d3c: ldr       x21, [x20, #0x18]
+0x2197d40: cbnz      x21, #0x2197d4c
+0x2197d44: mov       x0, xzr
+0x2197d48: bl        #0xd2b72c ; 
+0x2197d4c: ldr       w8, [x21, #0x18]
+0x2197d50: cmp       x22, x8
+0x2197d54: b.lo      #0x2197d68
+0x2197d58: bl        #0xd2c410 ; 
+0x2197d5c: mov       x1, xzr
+0x2197d60: mov       x2, xzr
+0x2197d64: bl        #0xd2b69c ; 
+0x2197d68: add       x8, x21, x22, lsl #3
+0x2197d6c: ldr       x21, [x8, #0x20]
+0x2197d70: cbnz      x21, #0x2197d7c
+0x2197d74: mov       x0, xzr
+0x2197d78: bl        #0xd2b72c ; 
+0x2197d7c: mov       w2, #1
+0x2197d80: mov       x0, x21
+0x2197d84: mov       x1, x19
+0x2197d88: bl        #0x2197db0 ; BattleCore.XianYuanRankEnhanceVal$$unpack
+0x2197d8c: cbnz      w0, #0x2197da0
+0x2197d90: cmp       x22, #6
+0x2197d94: add       x22, x22, #1
+0x2197d98: b.lt      #0x2197d3c
+0x2197d9c: mov       w0, wzr
+0x2197da0: ldp       x29, x30, [sp, #0x20]
+0x2197da4: ldp       x20, x19, [sp, #0x10]
+0x2197da8: ldp       x22, x21, [sp], #0x30
+0x2197dac: ret       

@@ -1,0 +1,6 @@
+0x21f6594: mov       w8, #1
+0x21f6598: stp       x1, xzr, [x0, #0x10]
+0x21f659c: strb      w8, [x0, #0x20]
+0x21f65a0: cbz       x1, #0x21f65a8
+0x21f65a4: str       w2, [x0, #0x1c]
+0x21f65a8: ret       

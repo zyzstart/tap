@@ -1,0 +1,117 @@
+{
+  "namespace": "BattleCore",
+  "name": "MonsterWuXingAddAttrConfig",
+  "fields": [
+    {
+      "type": "uint",
+      "name": "LevelID",
+      "object_offset": 16
+    },
+    {
+      "type": "uint",
+      "name": "WuXingType",
+      "object_offset": 20
+    },
+    {
+      "type": "ResAttrImpactData",
+      "name": "ImpactData",
+      "object_offset": 24
+    }
+  ],
+  "unpack_va": 35214520,
+  "dump_line": 167034,
+  "layout": [
+    {
+      "type": "uint",
+      "name": "LevelID",
+      "object_offset": 16,
+      "wire_type": "uint",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x21954ec",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "self",
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "type": "uint",
+      "name": "WuXingType",
+      "object_offset": 20,
+      "wire_type": "uint",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x2195510",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "self",
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ResAttrImpactData",
+      "name": "ImpactData",
+      "object_offset": 24,
+      "wire_type": "ResAttrImpactData",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x2195550",
+          "target_va": "0x2195554",
+          "target_names": [
+            "BattleCore.ResAttrImpactData$$unpack"
+          ],
+          "opcode": "B",
+          "kind": "nested",
+          "nested_schema": "BattleCore.ResAttrImpactData",
+          "destination": [
+            "field",
+            24
+          ],
+          "cut_version": 1
+        }
+      ],
+      "nested_schema": "BattleCore.ResAttrImpactData"
+    }
+  ],
+  "native_evidence": {
+    "method_start_va": "0x21954b8",
+    "instruction_steps": 29,
+    "event_count": 3,
+    "branch_evidence": [],
+    "loops": [],
+    "instruction_sha256": "bd6ec12ea695c66a6f0ed70df109d7945dd7669c9508d223075e2a0aced8420d",
+    "gate": "concrete-success-path; all sequential readers/nested callees; full field/destination/stride matching",
+    "assumptions": [
+      "non-null input buffer and created nested objects/arrays",
+      "managed array bounds valid",
+      "AAPCS64 callee-saved register preservation",
+      "reader and nested call success; version 1 only"
+    ]
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_pingconfig.bytes.ab",
+    "path_id": -5908630484911919237,
+    "name": "PingConfig",
+    "sha256": "7b2c7efd84105515eee4d70e77940e65200f88ceb75cdd7d24100a8934a6fb26",
+    "export": "derived/unity/text/assets_resources_config_resbin_pingconfig.bytes/PingConfig__-5908630484911919237.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 321,
+      "version": 1,
+      "record_count": 3,
+      "stored_crc32": "ca5a1da8",
+      "computed_inverted_crc32": "ca5a1da8"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "PingConfig",
+      "fields": [
+        {
+          "type": "int",
+          "name": "ID",
+          "object_offset": 16
+        },
+        {
+          "type": "int",
+          "name": "PingRangeMin",
+          "object_offset": 20
+        },
+        {
+          "type": "int",
+          "name": "PingRangeMax",
+          "object_offset": 24
+        },
+        {
+          "type": "string",
+          "name": "wifiIcon",
+          "object_offset": 32
+        },
+        {
+          "type": "string",
+          "name": "noWifiIcon",
+          "object_offset": 40
+        },
+        {
+          "type": "string",
+          "name": "bkgIcon",
+          "object_offset": 48
+        },
+        {
+          "type": "string",
+          "name": "Color",
+          "object_offset": 56
+        },
+        {
+          "type": "string",
+          "name": "IOSVestBag",
+          "object_offset": 64
+        }
+      ],
+      "unpack_va": 32023920,
+      "dump_line": 209912
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1e8a5a4",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8a5c8",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8a5ec",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8a614",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8a63c",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 40,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8a664",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 48,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8a68c",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 56,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8a6d0",
+        "target_va": "0x21f6ce8",
+        "opcode": "B-tail",
+        "reader": "readString",
+        "destination_object_offset": 64,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 3
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "ID": 1,
+      "PingRangeMin": 0,
+      "PingRangeMax": 100,
+      "wifiIcon": "ty_img_greenwifi",
+      "noWifiIcon": "ty_img_greennet",
+      "bkgIcon": "ty_img_pingmask",
+      "Color": "8cf95a",
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 101
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 121,
+      "ID": 2,
+      "PingRangeMin": 101,
+      "PingRangeMax": 200,
+      "wifiIcon": "ty_img_yellowwifi",
+      "noWifiIcon": "ty_img_yellownet",
+      "bkgIcon": "ty_img_pingmask",
+      "Color": "ec4e46",
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 103
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 224,
+      "ID": 3,
+      "PingRangeMin": 201,
+      "PingRangeMax": 300,
+      "wifiIcon": "ty_img_redwifi",
+      "noWifiIcon": "ty_img_rednet",
+      "bkgIcon": "ty_img_pingmask",
+      "Color": "ffa647",
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 97
+    }
+  ]
+}

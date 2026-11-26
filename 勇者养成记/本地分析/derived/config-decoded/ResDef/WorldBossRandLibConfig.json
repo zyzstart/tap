@@ -1,0 +1,167 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_worldbossrandlibconfig.bytes.ab",
+    "path_id": -7294969755221945373,
+    "name": "WorldBossRandLibConfig",
+    "sha256": "9d463a737abd1ec27178191b2f799a7fa7bcb5e101c32b3e45f259d908e0c2c5",
+    "export": "derived/unity/text/assets_resources_config_resbin_worldbossrandlibconfig.bytes/WorldBossRandLibConfig__-7294969755221945373.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 216,
+      "version": 1,
+      "record_count": 4,
+      "stored_crc32": "49cdffe4",
+      "computed_inverted_crc32": "49cdffe4"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "WorldBossRandLibConfig",
+      "fields": [
+        {
+          "type": "int",
+          "name": "BossID",
+          "object_offset": 16
+        },
+        {
+          "type": "int",
+          "name": "Prob",
+          "object_offset": 20
+        },
+        {
+          "type": "string",
+          "name": "BossName",
+          "object_offset": 24
+        },
+        {
+          "type": "int",
+          "name": "MonsterID",
+          "object_offset": 32
+        },
+        {
+          "type": "int",
+          "name": "ModelID",
+          "object_offset": 36
+        },
+        {
+          "type": "string",
+          "name": "BossBg",
+          "object_offset": 40
+        }
+      ],
+      "unpack_va": 29416608,
+      "dump_line": 202273
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1c0dcd4",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1c0dcf8",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1c0dd20",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1c0dd44",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1c0dd68",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 36,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1c0ddac",
+        "target_va": "0x21f6ce8",
+        "opcode": "B-tail",
+        "reader": "readString",
+        "destination_object_offset": 40,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 4
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "BossID": 1,
+      "Prob": 500,
+      "BossName": "暴龙王",
+      "MonsterID": 98001,
+      "ModelID": 200003,
+      "BossBg": "Shijie_bg02",
+      "_byte_length": 46
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 66,
+      "BossID": 2,
+      "Prob": 500,
+      "BossName": "冰雪猛犸王",
+      "MonsterID": 98002,
+      "ModelID": 200002,
+      "BossBg": "Shijie_bg01",
+      "_byte_length": 52
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 118,
+      "BossID": 3,
+      "Prob": 500,
+      "BossName": "暴龙王",
+      "MonsterID": 98003,
+      "ModelID": 200004,
+      "BossBg": "Shijie_bg02",
+      "_byte_length": 46
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 164,
+      "BossID": 4,
+      "Prob": 500,
+      "BossName": "冰雪猛犸王",
+      "MonsterID": 98002,
+      "ModelID": 200002,
+      "BossBg": "Shijie_bg01",
+      "_byte_length": 52
+    }
+  ]
+}

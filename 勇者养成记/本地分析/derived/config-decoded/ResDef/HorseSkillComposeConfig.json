@@ -1,0 +1,207 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_horseskillcomposeconfig.bytes.ab",
+    "path_id": 8232603160868819128,
+    "name": "HorseSkillComposeConfig",
+    "sha256": "fb1fc2609afd746dc3b3d31030ae0b59cddbcaffe55f38ffc7ecb5e8f53dcadb",
+    "export": "derived/unity/text/assets_resources_config_resbin_horseskillcomposeconfig.bytes/HorseSkillComposeConfig__8232603160868819128.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 128,
+      "version": 1,
+      "record_count": 3,
+      "stored_crc32": "24d0fc25",
+      "computed_inverted_crc32": "24d0fc25"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "HorseSkillComposeConfig",
+      "fields": [
+        {
+          "type": "uint",
+          "name": "GroupID",
+          "object_offset": 16
+        },
+        {
+          "type": "uint",
+          "name": "ShowComposeItem",
+          "object_offset": 20
+        },
+        {
+          "type": "uint",
+          "name": "SuccRate",
+          "object_offset": 24
+        },
+        {
+          "type": "uint",
+          "name": "FailGroupID",
+          "object_offset": 28
+        },
+        {
+          "type": "uint",
+          "name": "SuccGroupID",
+          "object_offset": 32
+        },
+        {
+          "type": "uint",
+          "name": "ConsumeMoneyType",
+          "object_offset": 36
+        },
+        {
+          "type": "uint",
+          "name": "ConsumeMoneyNum",
+          "object_offset": 40
+        },
+        {
+          "type": "uint",
+          "name": "NeedSkillNum",
+          "object_offset": 44
+        },
+        {
+          "type": "uint",
+          "name": "MinRoleLv",
+          "object_offset": 48
+        }
+      ],
+      "unpack_va": 30725340,
+      "dump_line": 205314
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1d4d510",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d4d534",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d4d558",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d4d57c",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 28,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d4d5a0",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d4d5c4",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 36,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d4d5e8",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 40,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d4d60c",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 44,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d4d64c",
+        "target_va": "0x21f6908",
+        "opcode": "B-tail",
+        "reader": "readUInt32",
+        "destination_object_offset": 48,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 3
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "GroupID": 1,
+      "ShowComposeItem": 301001,
+      "SuccRate": 2000,
+      "FailGroupID": 1,
+      "SuccGroupID": 2,
+      "ConsumeMoneyType": 0,
+      "ConsumeMoneyNum": 0,
+      "NeedSkillNum": 3,
+      "MinRoleLv": 50,
+      "_byte_length": 36
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 56,
+      "GroupID": 2,
+      "ShowComposeItem": 301002,
+      "SuccRate": 2000,
+      "FailGroupID": 2,
+      "SuccGroupID": 3,
+      "ConsumeMoneyType": 0,
+      "ConsumeMoneyNum": 0,
+      "NeedSkillNum": 3,
+      "MinRoleLv": 60,
+      "_byte_length": 36
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 92,
+      "GroupID": 3,
+      "ShowComposeItem": 301002,
+      "SuccRate": 1000,
+      "FailGroupID": 3,
+      "SuccGroupID": 3,
+      "ConsumeMoneyType": 0,
+      "ConsumeMoneyNum": 0,
+      "NeedSkillNum": 3,
+      "MinRoleLv": 65,
+      "_byte_length": 36
+    }
+  ]
+}

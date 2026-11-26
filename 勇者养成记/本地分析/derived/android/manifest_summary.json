@@ -1,0 +1,703 @@
+{
+  "package": "com.tencent.tmgp.yzycj",
+  "versionName": "1.227",
+  "versionCode": "227",
+  "compileSdkVersion": null,
+  "sdk": {
+    "minSdkVersion": "18",
+    "targetSdkVersion": "28",
+    "maxSdkVersion": null
+  },
+  "application": {
+    "theme": "@7F0D012D",
+    "label": "@7F0C0020",
+    "icon": "@7F0B0000",
+    "allowBackup": "false",
+    "usesCleartextTraffic": "true"
+  },
+  "launchers": [
+    "com.dodjoy.unityplayer.DodUnityPlayerActivity"
+  ],
+  "permissions": [
+    {
+      "name": "android.permission.INTERNET",
+      "maxSdkVersion": null,
+      "tag": "uses-permission",
+      "usesPermissionFlags": null
+    },
+    {
+      "name": "android.permission.ACCESS_NETWORK_STATE",
+      "maxSdkVersion": null,
+      "tag": "uses-permission",
+      "usesPermissionFlags": null
+    },
+    {
+      "name": "android.permission.READ_PHONE_STATE",
+      "maxSdkVersion": null,
+      "tag": "uses-permission",
+      "usesPermissionFlags": null
+    },
+    {
+      "name": "android.permission.WRITE_EXTERNAL_STORAGE",
+      "maxSdkVersion": null,
+      "tag": "uses-permission",
+      "usesPermissionFlags": null
+    },
+    {
+      "name": "android.permission.READ_EXTERNAL_STORAGE",
+      "maxSdkVersion": null,
+      "tag": "uses-permission",
+      "usesPermissionFlags": null
+    },
+    {
+      "name": "android.permission.WAKE_LOCK",
+      "maxSdkVersion": null,
+      "tag": "uses-permission",
+      "usesPermissionFlags": null
+    },
+    {
+      "name": "android.permission.ACCESS_WIFI_STATE",
+      "maxSdkVersion": null,
+      "tag": "uses-permission",
+      "usesPermissionFlags": null
+    },
+    {
+      "name": "android.permission.VIBRATE",
+      "maxSdkVersion": null,
+      "tag": "uses-permission",
+      "usesPermissionFlags": null
+    },
+    {
+      "name": "android.permission.RECEIVE_BOOT_COMPLETED",
+      "maxSdkVersion": null,
+      "tag": "uses-permission",
+      "usesPermissionFlags": null
+    },
+    {
+      "name": "android.permission.BROADCAST_STICKY",
+      "maxSdkVersion": null,
+      "tag": "uses-permission",
+      "usesPermissionFlags": null
+    },
+    {
+      "name": "android.permission.RECEIVE_USER_PRESENT",
+      "maxSdkVersion": null,
+      "tag": "uses-permission",
+      "usesPermissionFlags": null
+    },
+    {
+      "name": "android.permission.KILL_BACKGROUND_PROCESSES",
+      "maxSdkVersion": null,
+      "tag": "uses-permission",
+      "usesPermissionFlags": null
+    },
+    {
+      "name": "android.permission.RECORD_AUDIO",
+      "maxSdkVersion": null,
+      "tag": "uses-permission",
+      "usesPermissionFlags": null
+    },
+    {
+      "name": "android.permission.SYSTEM_ALERT_WINDOW",
+      "maxSdkVersion": null,
+      "tag": "uses-permission",
+      "usesPermissionFlags": null
+    },
+    {
+      "name": "com.android.launcher.permission.INSTALL_SHORTCUT",
+      "maxSdkVersion": null,
+      "tag": "uses-permission",
+      "usesPermissionFlags": null
+    },
+    {
+      "name": "android.permission.GET_TASKS",
+      "maxSdkVersion": null,
+      "tag": "uses-permission",
+      "usesPermissionFlags": null
+    },
+    {
+      "name": "android.permission.WRITE_SETTINGS",
+      "maxSdkVersion": null,
+      "tag": "uses-permission",
+      "usesPermissionFlags": null
+    },
+    {
+      "name": "android.permission.MOUNT_UNMOUNT_FILESYSTEMS",
+      "maxSdkVersion": null,
+      "tag": "uses-permission",
+      "usesPermissionFlags": null
+    },
+    {
+      "name": "android.permission.READ_LOGS",
+      "maxSdkVersion": null,
+      "tag": "uses-permission",
+      "usesPermissionFlags": null
+    },
+    {
+      "name": "android.permission.ACCESS_FINE_LOCATION",
+      "maxSdkVersion": null,
+      "tag": "uses-permission",
+      "usesPermissionFlags": null
+    },
+    {
+      "name": "android.permission.RESTART_PACKAGES",
+      "maxSdkVersion": null,
+      "tag": "uses-permission",
+      "usesPermissionFlags": null
+    },
+    {
+      "name": "android.permission.REQUEST_INSTALL_PACKAGES",
+      "maxSdkVersion": null,
+      "tag": "uses-permission",
+      "usesPermissionFlags": null
+    },
+    {
+      "name": "android.permission.CHANGE_WIFI_STATE",
+      "maxSdkVersion": null,
+      "tag": "uses-permission",
+      "usesPermissionFlags": null
+    },
+    {
+      "name": "android.permission.READ_SMS",
+      "maxSdkVersion": null,
+      "tag": "uses-permission",
+      "usesPermissionFlags": null
+    },
+    {
+      "name": "android.permission.SEND_SMS",
+      "maxSdkVersion": null,
+      "tag": "uses-permission",
+      "usesPermissionFlags": null
+    },
+    {
+      "name": "com.asus.msa.SupplementaryDID.ACCESS",
+      "maxSdkVersion": null,
+      "tag": "uses-permission",
+      "usesPermissionFlags": null
+    }
+  ],
+  "defined_permissions": [],
+  "components": [
+    {
+      "type": "activity",
+      "name": "com.dodjoy.unityplayer.DodUnityPlayerActivity",
+      "exported_declared": "true",
+      "exported_effective_legacy": true,
+      "exported_basis": "explicit_manifest",
+      "enabled_declared": null,
+      "permission": null,
+      "readPermission": null,
+      "writePermission": null,
+      "authorities": null,
+      "targetActivity": null,
+      "process": null,
+      "launchMode": "1",
+      "grantUriPermissions": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.MAIN"
+          ],
+          "categories": [
+            "android.intent.category.LAUNCHER",
+            "android.intent.category.DEFAULT"
+          ],
+          "data": []
+        }
+      ],
+      "metadata": [
+        {
+          "name": "unityplayer.UnityActivity",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "type": "activity",
+      "name": "com.dodjoy.unitywebview.DodWebView",
+      "exported_declared": null,
+      "exported_effective_legacy": false,
+      "exported_basis": "legacy_intent_filter_default",
+      "enabled_declared": null,
+      "permission": null,
+      "readPermission": null,
+      "writePermission": null,
+      "authorities": null,
+      "targetActivity": null,
+      "process": null,
+      "launchMode": "2",
+      "grantUriPermissions": null,
+      "intent_filters": [],
+      "metadata": []
+    },
+    {
+      "type": "activity",
+      "name": "com.soundcloud.android.crop.CropImageActivity",
+      "exported_declared": null,
+      "exported_effective_legacy": false,
+      "exported_basis": "legacy_intent_filter_default",
+      "enabled_declared": null,
+      "permission": null,
+      "readPermission": null,
+      "writePermission": null,
+      "authorities": null,
+      "targetActivity": null,
+      "process": null,
+      "launchMode": null,
+      "grantUriPermissions": null,
+      "intent_filters": [],
+      "metadata": []
+    },
+    {
+      "type": "receiver",
+      "name": "com.youme.im.NetworkStatusReceiver",
+      "exported_declared": null,
+      "exported_effective_legacy": true,
+      "exported_basis": "legacy_intent_filter_default",
+      "enabled_declared": null,
+      "permission": null,
+      "readPermission": null,
+      "writePermission": null,
+      "authorities": null,
+      "targetActivity": null,
+      "process": null,
+      "launchMode": null,
+      "grantUriPermissions": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.net.conn.CONNECTIVITY_CHANGE"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ],
+      "metadata": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodjoy.thirdPlatform.DodYSDKLoginActivity",
+      "exported_declared": null,
+      "exported_effective_legacy": false,
+      "exported_basis": "legacy_intent_filter_default",
+      "enabled_declared": null,
+      "permission": null,
+      "readPermission": null,
+      "writePermission": null,
+      "authorities": null,
+      "targetActivity": null,
+      "process": null,
+      "launchMode": null,
+      "grantUriPermissions": null,
+      "intent_filters": [],
+      "metadata": []
+    },
+    {
+      "type": "activity",
+      "name": "com.tencent.ysdk.module.realName.impl.RegisterRealNameActivity",
+      "exported_declared": null,
+      "exported_effective_legacy": false,
+      "exported_basis": "legacy_intent_filter_default",
+      "enabled_declared": null,
+      "permission": null,
+      "readPermission": null,
+      "writePermission": null,
+      "authorities": null,
+      "targetActivity": null,
+      "process": null,
+      "launchMode": null,
+      "grantUriPermissions": null,
+      "intent_filters": [],
+      "metadata": []
+    },
+    {
+      "type": "activity",
+      "name": "com.tencent.tauth.AuthActivity",
+      "exported_declared": null,
+      "exported_effective_legacy": true,
+      "exported_basis": "legacy_intent_filter_default",
+      "enabled_declared": null,
+      "permission": null,
+      "readPermission": null,
+      "writePermission": null,
+      "authorities": null,
+      "targetActivity": null,
+      "process": null,
+      "launchMode": "2",
+      "grantUriPermissions": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "scheme": "tencent1112071649"
+            }
+          ]
+        }
+      ],
+      "metadata": []
+    },
+    {
+      "type": "activity",
+      "name": "com.tencent.connect.common.AssistActivity",
+      "exported_declared": null,
+      "exported_effective_legacy": false,
+      "exported_basis": "legacy_intent_filter_default",
+      "enabled_declared": null,
+      "permission": null,
+      "readPermission": null,
+      "writePermission": null,
+      "authorities": null,
+      "targetActivity": null,
+      "process": null,
+      "launchMode": null,
+      "grantUriPermissions": null,
+      "intent_filters": [],
+      "metadata": []
+    },
+    {
+      "type": "activity",
+      "name": "com.tencent.tmgp.yzycj.wxapi.WXEntryActivity",
+      "exported_declared": "true",
+      "exported_effective_legacy": true,
+      "exported_basis": "explicit_manifest",
+      "enabled_declared": null,
+      "permission": null,
+      "readPermission": null,
+      "writePermission": null,
+      "authorities": null,
+      "targetActivity": null,
+      "process": null,
+      "launchMode": "1",
+      "grantUriPermissions": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT"
+          ],
+          "data": [
+            {
+              "scheme": "wx5852b7d56b37c701"
+            }
+          ]
+        }
+      ],
+      "metadata": []
+    },
+    {
+      "type": "activity",
+      "name": "com.tencent.ysdk.module.user.impl.wx.qrcode.QRActivity",
+      "exported_declared": null,
+      "exported_effective_legacy": false,
+      "exported_basis": "legacy_intent_filter_default",
+      "enabled_declared": null,
+      "permission": null,
+      "readPermission": null,
+      "writePermission": null,
+      "authorities": null,
+      "targetActivity": null,
+      "process": null,
+      "launchMode": null,
+      "grantUriPermissions": null,
+      "intent_filters": [],
+      "metadata": []
+    },
+    {
+      "type": "activity",
+      "name": "com.tencent.ysdk.module.user.impl.freelogin.FreeLoginInfoActivity",
+      "exported_declared": "true",
+      "exported_effective_legacy": true,
+      "exported_basis": "explicit_manifest",
+      "enabled_declared": null,
+      "permission": null,
+      "readPermission": null,
+      "writePermission": null,
+      "authorities": null,
+      "targetActivity": null,
+      "process": null,
+      "launchMode": null,
+      "grantUriPermissions": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "scheme": "tencentysdk1112071649"
+            }
+          ]
+        },
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "data": [
+            {
+              "scheme": "tencentysdkcom.tencent.tmgp.yzycj"
+            }
+          ]
+        }
+      ],
+      "metadata": []
+    },
+    {
+      "type": "activity",
+      "name": "com.tencent.midas.proxyactivity.APMidasPayProxyActivity",
+      "exported_declared": null,
+      "exported_effective_legacy": false,
+      "exported_basis": "legacy_intent_filter_default",
+      "enabled_declared": null,
+      "permission": null,
+      "readPermission": null,
+      "writePermission": null,
+      "authorities": null,
+      "targetActivity": null,
+      "process": null,
+      "launchMode": null,
+      "grantUriPermissions": null,
+      "intent_filters": [],
+      "metadata": []
+    },
+    {
+      "type": "activity",
+      "name": "com.tencent.midas.wx.APMidasWXPayActivity",
+      "exported_declared": "true",
+      "exported_effective_legacy": true,
+      "exported_basis": "explicit_manifest",
+      "enabled_declared": null,
+      "permission": null,
+      "readPermission": null,
+      "writePermission": null,
+      "authorities": null,
+      "targetActivity": null,
+      "process": null,
+      "launchMode": null,
+      "grantUriPermissions": null,
+      "intent_filters": [],
+      "metadata": []
+    },
+    {
+      "type": "activity",
+      "name": "com.tencent.midas.qq.APMidasQQWalletActivity",
+      "exported_declared": "true",
+      "exported_effective_legacy": true,
+      "exported_basis": "explicit_manifest",
+      "enabled_declared": null,
+      "permission": null,
+      "readPermission": null,
+      "writePermission": null,
+      "authorities": null,
+      "targetActivity": null,
+      "process": null,
+      "launchMode": "1",
+      "grantUriPermissions": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.BROWSABLE",
+            "android.intent.category.DEFAULT"
+          ],
+          "data": [
+            {
+              "scheme": "qwallet100703379"
+            }
+          ]
+        }
+      ],
+      "metadata": []
+    },
+    {
+      "type": "activity",
+      "name": "com.tencent.midas.jsbridge.APWebJSBridgeActivity",
+      "exported_declared": null,
+      "exported_effective_legacy": false,
+      "exported_basis": "legacy_intent_filter_default",
+      "enabled_declared": null,
+      "permission": null,
+      "readPermission": null,
+      "writePermission": null,
+      "authorities": null,
+      "targetActivity": null,
+      "process": null,
+      "launchMode": null,
+      "grantUriPermissions": null,
+      "intent_filters": [],
+      "metadata": []
+    },
+    {
+      "type": "service",
+      "name": "com.tencent.tmdownloader.TMAssistantDownloadService",
+      "exported_declared": "false",
+      "exported_effective_legacy": false,
+      "exported_basis": "explicit_manifest",
+      "enabled_declared": null,
+      "permission": null,
+      "readPermission": null,
+      "writePermission": null,
+      "authorities": null,
+      "targetActivity": null,
+      "process": ":TMAssistantDownloadSDKService",
+      "launchMode": null,
+      "grantUriPermissions": null,
+      "intent_filters": [],
+      "metadata": []
+    },
+    {
+      "type": "activity",
+      "name": "com.tencent.tmgp.yzycj.module.submodule.inner.WebActivity",
+      "exported_declared": null,
+      "exported_effective_legacy": false,
+      "exported_basis": "legacy_intent_filter_default",
+      "enabled_declared": null,
+      "permission": null,
+      "readPermission": null,
+      "writePermission": null,
+      "authorities": null,
+      "targetActivity": null,
+      "process": null,
+      "launchMode": null,
+      "grantUriPermissions": null,
+      "intent_filters": [],
+      "metadata": []
+    },
+    {
+      "type": "service",
+      "name": "com.tencent.ysdk.module.sandbox.pipe.PipeService",
+      "exported_declared": null,
+      "exported_effective_legacy": true,
+      "exported_basis": "legacy_intent_filter_default",
+      "enabled_declared": null,
+      "permission": null,
+      "readPermission": null,
+      "writePermission": null,
+      "authorities": null,
+      "targetActivity": null,
+      "process": null,
+      "launchMode": null,
+      "grantUriPermissions": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "com.tencent.ysdk.framework.communicate.PipeService"
+          ],
+          "categories": [],
+          "data": []
+        }
+      ],
+      "metadata": []
+    },
+    {
+      "type": "activity",
+      "name": "com.jakewharton.processphoenix.ProcessPhoenix",
+      "exported_declared": "false",
+      "exported_effective_legacy": false,
+      "exported_basis": "explicit_manifest",
+      "enabled_declared": null,
+      "permission": null,
+      "readPermission": null,
+      "writePermission": null,
+      "authorities": null,
+      "targetActivity": null,
+      "process": ":phoenix",
+      "launchMode": null,
+      "grantUriPermissions": null,
+      "intent_filters": [],
+      "metadata": []
+    },
+    {
+      "type": "provider",
+      "name": "com.tencent.ysdk.framework.YSDKInitProvider",
+      "exported_declared": "false",
+      "exported_effective_legacy": false,
+      "exported_basis": "explicit_manifest",
+      "enabled_declared": null,
+      "permission": null,
+      "readPermission": null,
+      "writePermission": null,
+      "authorities": "com.tencent.tmgp.yzycj.ysdk.ysdkinitprovider",
+      "targetActivity": null,
+      "process": null,
+      "launchMode": null,
+      "grantUriPermissions": null,
+      "intent_filters": [],
+      "metadata": []
+    }
+  ],
+  "network_policy": {
+    "usesCleartextTraffic_declared": "true",
+    "networkSecurityConfig_ref": null,
+    "networkSecurityConfig_xml_present": [],
+    "interpretation": "Declared flags only; no traffic was sent. targetSdk >=28 defaults cleartext off unless explicitly overridden. Missing per-domain config does not prove requests execute."
+  },
+  "application_metadata": [
+    {
+      "name": "unity.build-id",
+      "value": "757cd48e-b708-449c-89ab-55d800e3fc6a"
+    },
+    {
+      "name": "unity.splash-mode",
+      "value": "2"
+    },
+    {
+      "name": "unity.splash-enable",
+      "value": "true"
+    },
+    {
+      "name": "HaveDodNative",
+      "value": "false"
+    },
+    {
+      "name": "HaveHotIl2cpp",
+      "value": "true"
+    },
+    {
+      "name": "android.max_aspect",
+      "value": "2.100000"
+    },
+    {
+      "name": "unityplayer.SkipPermissionsDialog",
+      "value": "true"
+    },
+    {
+      "name": "isSDKVersion",
+      "value": "true"
+    },
+    {
+      "name": "DOD_PLATFORM_NAME",
+      "value": "hardtime"
+    },
+    {
+      "name": "ChannelId",
+      "value": "550"
+    },
+    {
+      "name": "MAIN_ACTIVITY",
+      "value": "com.dodjoy.unityplayer.DodUnityPlayerActivity"
+    },
+    {
+      "name": "android.support.VERSION",
+      "value": "26.0.2"
+    }
+  ]
+}

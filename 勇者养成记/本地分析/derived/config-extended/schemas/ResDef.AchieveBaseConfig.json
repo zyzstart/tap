@@ -1,0 +1,331 @@
+{
+  "namespace": "ResDef",
+  "name": "AchieveBaseConfig",
+  "fields": [
+    {
+      "type": "byte",
+      "name": "Classify",
+      "object_offset": 16
+    },
+    {
+      "type": "byte",
+      "name": "ClassifySubType",
+      "object_offset": 17
+    },
+    {
+      "type": "byte",
+      "name": "ShowProgress",
+      "object_offset": 18
+    },
+    {
+      "type": "int",
+      "name": "SortNO",
+      "object_offset": 20
+    },
+    {
+      "type": "uint",
+      "name": "ID",
+      "object_offset": 24
+    },
+    {
+      "type": "string",
+      "name": "Name",
+      "object_offset": 32
+    },
+    {
+      "type": "string",
+      "name": "Desc",
+      "object_offset": 40
+    },
+    {
+      "type": "ResBehaviorRule",
+      "name": "Behavior",
+      "object_offset": 48
+    },
+    {
+      "type": "uint",
+      "name": "BootyID",
+      "object_offset": 56
+    },
+    {
+      "type": "uint",
+      "name": "MaxProgress",
+      "object_offset": 60
+    }
+  ],
+  "unpack_va": 31219472,
+  "dump_line": 201023,
+  "layout": [
+    {
+      "type": "byte",
+      "name": "Classify",
+      "object_offset": 16,
+      "wire_type": "byte",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dc5f48",
+          "target_va": "0x21f65e0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt8"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt8",
+          "destination": [
+            "self",
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "type": "byte",
+      "name": "ClassifySubType",
+      "object_offset": 17,
+      "wire_type": "byte",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dc5f6c",
+          "target_va": "0x21f65e0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt8"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt8",
+          "destination": [
+            "self",
+            17
+          ]
+        }
+      ]
+    },
+    {
+      "type": "byte",
+      "name": "ShowProgress",
+      "object_offset": 18,
+      "wire_type": "byte",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dc5f90",
+          "target_va": "0x21f65e0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt8"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt8",
+          "destination": [
+            "self",
+            18
+          ]
+        }
+      ]
+    },
+    {
+      "type": "int",
+      "name": "SortNO",
+      "object_offset": 20,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dc5fb4",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "type": "uint",
+      "name": "ID",
+      "object_offset": 24,
+      "wire_type": "uint",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dc5fd8",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "self",
+            24
+          ]
+        }
+      ]
+    },
+    {
+      "type": "string",
+      "name": "Name",
+      "object_offset": 32,
+      "wire_type": "string",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dc6000",
+          "target_va": "0x21f6ce8",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readString"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readString",
+          "destination": [
+            "self",
+            32
+          ],
+          "max_string_size": 128
+        }
+      ],
+      "max_string_size": 128
+    },
+    {
+      "type": "string",
+      "name": "Desc",
+      "object_offset": 40,
+      "wire_type": "string",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dc6028",
+          "target_va": "0x21f6ce8",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readString"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readString",
+          "destination": [
+            "self",
+            40
+          ],
+          "max_string_size": 256
+        }
+      ],
+      "max_string_size": 256
+    },
+    {
+      "type": "ResBehaviorRule",
+      "name": "Behavior",
+      "object_offset": 48,
+      "wire_type": "ResBehaviorRule",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dc6054",
+          "target_va": "0x1e8dbdc",
+          "target_names": [
+            "ResDef.ResBehaviorRule$$unpack"
+          ],
+          "opcode": "BL",
+          "kind": "nested",
+          "nested_schema": "ResDef.ResBehaviorRule",
+          "destination": [
+            "field",
+            48
+          ],
+          "cut_version": 1
+        }
+      ],
+      "nested_schema": "ResDef.ResBehaviorRule"
+    },
+    {
+      "type": "uint",
+      "name": "BootyID",
+      "object_offset": 56,
+      "wire_type": "uint",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dc6078",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "self",
+            56
+          ]
+        }
+      ]
+    },
+    {
+      "type": "uint",
+      "name": "MaxProgress",
+      "object_offset": 60,
+      "wire_type": "uint",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dc60b8",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "B",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "self",
+            60
+          ]
+        }
+      ]
+    }
+  ],
+  "native_evidence": {
+    "method_start_va": "0x1dc5f10",
+    "instruction_steps": 83,
+    "event_count": 10,
+    "branch_evidence": [],
+    "loops": [],
+    "instruction_sha256": "662a1c4ef717ca9cac73235d5f6321e3913cf1a0d79ff5625e4580e71533f507",
+    "gate": "concrete-success-path; all sequential readers/nested callees; full field/destination/stride matching",
+    "assumptions": [
+      "non-null input buffer and created nested objects/arrays",
+      "managed array bounds valid",
+      "AAPCS64 callee-saved register preservation",
+      "reader and nested call success; version 1 only"
+    ]
+  }
+}

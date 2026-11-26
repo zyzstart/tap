@@ -1,0 +1,12 @@
+0x21f651c: str       x19, [sp, #-0x20]!
+0x21f6520: stp       x29, x30, [sp, #0x10]
+0x21f6524: add       x29, sp, #0x10
+0x21f6528: mov       x1, xzr
+0x21f652c: mov       x19, x0
+0x21f6530: bl        #0x1a0cdac ; System.Object$$.ctor
+0x21f6534: mov       w8, #1
+0x21f6538: stp       xzr, xzr, [x19, #0x10]
+0x21f653c: strb      w8, [x19, #0x20]
+0x21f6540: ldp       x29, x30, [sp, #0x10]
+0x21f6544: ldr       x19, [sp], #0x20
+0x21f6548: ret       

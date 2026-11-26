@@ -1,0 +1,109 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_summondispatchconfig.bytes.ab",
+    "path_id": -6932095151029284883,
+    "name": "SummonDispatchConfig",
+    "sha256": "a16cd5ddfe7adffb0a7850c3da4199d334c65b82021cb8ebd568dbae70de5076",
+    "export": "derived/unity/text/assets_resources_config_resbin_summondispatchconfig.bytes/SummonDispatchConfig__-6932095151029284883.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 68,
+      "version": 1,
+      "record_count": 6,
+      "stored_crc32": "10b2ff35",
+      "computed_inverted_crc32": "10b2ff35"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "SummonDispatchConfig",
+      "fields": [
+        {
+          "type": "uint",
+          "name": "SummonQuality",
+          "object_offset": 16
+        },
+        {
+          "type": "uint",
+          "name": "DisMaximum",
+          "object_offset": 20
+        }
+      ],
+      "unpack_va": 32083980,
+      "dump_line": 212117
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1e99040",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e99080",
+        "target_va": "0x21f6908",
+        "opcode": "B-tail",
+        "reader": "readUInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 6
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "SummonQuality": 4,
+      "DisMaximum": 4,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 28,
+      "SummonQuality": 5,
+      "DisMaximum": 6,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 36,
+      "SummonQuality": 6,
+      "DisMaximum": 8,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 44,
+      "SummonQuality": 7,
+      "DisMaximum": 10,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 52,
+      "SummonQuality": 8,
+      "DisMaximum": 12,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 60,
+      "SummonQuality": 9,
+      "DisMaximum": 14,
+      "_byte_length": 8
+    }
+  ]
+}

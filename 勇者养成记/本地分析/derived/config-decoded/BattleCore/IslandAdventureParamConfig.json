@@ -1,0 +1,200 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_fp_islandadventureparamconfig.bytes.ab",
+    "path_id": -255976098034905820,
+    "name": "IslandAdventureParamConfig",
+    "sha256": "99139b432aca9e5eec05fc8bfd17c6bc17d9e3df42da20d16a469733d8b17a77",
+    "export": "derived/unity/text/assets_resources_config_resbin_fp_islandadventureparamconfig.bytes/IslandAdventureParamConfig__-255976098034905820.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 248,
+      "version": 1,
+      "record_count": 19,
+      "stored_crc32": "4387adaa",
+      "computed_inverted_crc32": "4387adaa"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "BattleCore",
+      "name": "IslandAdventureParamConfig",
+      "fields": [
+        {
+          "type": "int",
+          "name": "FuncID",
+          "object_offset": 16
+        },
+        {
+          "type": "FP",
+          "name": "FuncVal",
+          "object_offset": 24
+        }
+      ],
+      "unpack_va": 23345124,
+      "dump_line": 167187
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1643818",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1643858",
+        "target_va": "0x21f6938",
+        "opcode": "B-tail",
+        "reader": "readInt64",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 19
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "FuncID": 100,
+      "FuncVal__raw_int64": 648540061696,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 32,
+      "FuncID": 101,
+      "FuncVal__raw_int64": 12884901888,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 44,
+      "FuncID": 102,
+      "FuncVal__raw_int64": 12884901888,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 56,
+      "FuncID": 103,
+      "FuncVal__raw_int64": 21474836480,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 68,
+      "FuncID": 104,
+      "FuncVal__raw_int64": 21474836480,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 80,
+      "FuncID": 105,
+      "FuncVal__raw_int64": 47678431952896,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 92,
+      "FuncID": 106,
+      "FuncVal__raw_int64": 6485404911927296,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 104,
+      "FuncID": 107,
+      "FuncVal__raw_int64": -377957122048,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 116,
+      "FuncID": 108,
+      "FuncVal__raw_int64": 240518168576,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 128,
+      "FuncID": 109,
+      "FuncVal__raw_int64": 111669149696,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 140,
+      "FuncID": 110,
+      "FuncVal__raw_int64": -111669149696,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 152,
+      "FuncID": 111,
+      "FuncVal__raw_int64": 25769803776,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 164,
+      "FuncID": 112,
+      "FuncVal__raw_int64": 6442476713803776,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 176,
+      "FuncID": 113,
+      "FuncVal__raw_int64": 258196253966336,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 188,
+      "FuncID": 114,
+      "FuncVal__raw_int64": 4294967296,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 200,
+      "FuncID": 115,
+      "FuncVal__raw_int64": 8589934592,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 212,
+      "FuncID": 116,
+      "FuncVal__raw_int64": 68719476736,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 224,
+      "FuncID": 117,
+      "FuncVal__raw_int64": 343597383680,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 236,
+      "FuncID": 118,
+      "FuncVal__raw_int64": -171798691840,
+      "_byte_length": 12
+    }
+  ]
+}

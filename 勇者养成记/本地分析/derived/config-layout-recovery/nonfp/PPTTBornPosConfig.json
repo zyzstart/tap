@@ -1,0 +1,203 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_ppttbornposconfig.bytes.ab",
+    "path_id": 1689278531436890899,
+    "name": "PPTTBornPosConfig",
+    "sha256": "176ad8b335948a016ce952a0731f9966671ddb238d7cbfb3bcb180c194afdb6f",
+    "export": "derived/unity/text/assets_resources_config_resbin_ppttbornposconfig.bytes/PPTTBornPosConfig__1689278531436890899.bin",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 308,
+      "version": 1,
+      "record_count": 12,
+      "stored_crc32": "d2d0036b",
+      "computed_inverted_crc32": "d2d0036b"
+    },
+    "status": "cross-variant-layout-candidate",
+    "legacy_reason": "ValueError: Truncated field PosLibID",
+    "layout_rule": "same-order-with-float-FP-transfer",
+    "fields": [
+      {
+        "type": "uint",
+        "name": "PosLibID",
+        "object_offset": 16
+      },
+      {
+        "type": "int",
+        "name": "PosType",
+        "object_offset": 20
+      },
+      {
+        "type": "float",
+        "name": "Row",
+        "object_offset": 24
+      },
+      {
+        "type": "float",
+        "name": "Column",
+        "object_offset": 32
+      },
+      {
+        "type": "int",
+        "name": "EffectID",
+        "object_offset": 40
+      },
+      {
+        "type": "float",
+        "name": "PosCooling",
+        "object_offset": 48
+      }
+    ],
+    "companion_json": "derived/config-decoded/BattleCore/PPTTBornPosConfig.json",
+    "companion_export": "derived/unity/text/assets_resources_config_resbin_fp_ppttbornposconfig.bytes/PPTTBornPosConfig__3214890751961108325.bin",
+    "companion_sha256": "31b9c4f9ee0d4ed1b4f110d6840e8b17e887ad20feb14f89c1b57ea29b6747ba",
+    "named_value_checks": {
+      "exact_named_value": 36,
+      "FP_to_float32_projection": 36
+    },
+    "decoded_record_count": 12,
+    "payload_roundtrip_sha256": "8bea9c4f3b1ad97d5aa38a5b6784d5632d52545bf397fef9c59bedc66656fef3",
+    "decoded_json": "derived/config-layout-recovery/nonfp/PPTTBornPosConfig.json",
+    "decoded_csv": "derived/config-layout-recovery/nonfp/PPTTBornPosConfig.csv"
+  },
+  "limits": [
+    "Cross-variant hypothesis constrained by every companion named value, not the exact target unpack function.",
+    "Unnamed cells retain bytes/text only; no claimed gameplay meaning.",
+    "Q32.32 projection is a consistency check, not a statement of field units.",
+    "No sample execution or game-server contact."
+  ],
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "PosLibID": 0,
+      "PosType": 1,
+      "Row": -3.0,
+      "Column": 6.0,
+      "EffectID": 0,
+      "PosCooling": 0.0,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 44,
+      "PosLibID": 1,
+      "PosType": 2,
+      "Row": 14.0,
+      "Column": 1.2999999523162842,
+      "EffectID": 0,
+      "PosCooling": 0.8999999761581421,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 68,
+      "PosLibID": 1,
+      "PosType": 2,
+      "Row": 14.0,
+      "Column": 2.9000000953674316,
+      "EffectID": 0,
+      "PosCooling": 0.8999999761581421,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 92,
+      "PosLibID": 1,
+      "PosType": 2,
+      "Row": 14.0,
+      "Column": 4.5,
+      "EffectID": 0,
+      "PosCooling": 0.8999999761581421,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 116,
+      "PosLibID": 1,
+      "PosType": 2,
+      "Row": 14.0,
+      "Column": 6.050000190734863,
+      "EffectID": 0,
+      "PosCooling": 0.8999999761581421,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 140,
+      "PosLibID": 1,
+      "PosType": 2,
+      "Row": 14.0,
+      "Column": 7.599999904632568,
+      "EffectID": 0,
+      "PosCooling": 0.8999999761581421,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 164,
+      "PosLibID": 1,
+      "PosType": 2,
+      "Row": 14.0,
+      "Column": 9.199999809265137,
+      "EffectID": 0,
+      "PosCooling": 0.8999999761581421,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 188,
+      "PosLibID": 1,
+      "PosType": 2,
+      "Row": 14.0,
+      "Column": 10.75,
+      "EffectID": 0,
+      "PosCooling": 0.8999999761581421,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 212,
+      "PosLibID": 2,
+      "PosType": 2,
+      "Row": 15.0,
+      "Column": 2.890000104904175,
+      "EffectID": 0,
+      "PosCooling": 5.0,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 236,
+      "PosLibID": 2,
+      "PosType": 2,
+      "Row": 15.0,
+      "Column": 6.039999961853027,
+      "EffectID": 0,
+      "PosCooling": 5.0,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 260,
+      "PosLibID": 2,
+      "PosType": 2,
+      "Row": 15.0,
+      "Column": 9.210000038146973,
+      "EffectID": 0,
+      "PosCooling": 5.0,
+      "_byte_length": 24
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 284,
+      "PosLibID": 3,
+      "PosType": 2,
+      "Row": 16.0,
+      "Column": 6.059999942779541,
+      "EffectID": 0,
+      "PosCooling": 5.0,
+      "_byte_length": 24
+    }
+  ]
+}

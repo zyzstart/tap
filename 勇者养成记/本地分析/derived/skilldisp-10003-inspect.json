@@ -1,0 +1,947 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -7564932137612707756
+  },
+  "m_Name": "10003",
+  "m_skillDispId": 0,
+  "m_skillDispData": {
+    "m_allElemAnimation": [
+      {
+        "m_elemIndex": -1,
+        "m_isMasterElement": 0,
+        "m_triggerType": 0,
+        "m_triggleStart": {
+          "m_eventType": 0,
+          "m_eventTime": {
+            "_serializedValue": 0
+          }
+        },
+        "m_triggleStop": {
+          "m_eventType": 0,
+          "m_eventTime": {
+            "_serializedValue": 0
+          }
+        },
+        "m_triggleRepeat": {
+          "m_eventType": 0,
+          "m_shootId": 0,
+          "m_triggerSelfId": 0,
+          "m_triggerRandomId": 0,
+          "m_translateId": 0,
+          "m_isMissTriggle": 1,
+          "m_isDeadTriggle": 1,
+          "m_buffStateIdTrigger": 0,
+          "m_needAssignType": 0,
+          "m_isBoss": 0,
+          "m_maskWall": 1,
+          "m_maskGround": 1,
+          "m_maskItem": 1,
+          "m_startBattleDelayTime": {
+            "_serializedValue": 0
+          },
+          "m_startBattleDurTime": {
+            "_serializedValue": 4294967296
+          },
+          "m_addHpTriggle": 0,
+          "m_hittedMissTriggle": 0,
+          "m_useSkillTrigger": 0
+        },
+        "m_dispType": 0,
+        "m_needAimToTargetDir": 1,
+        "m_prepareAnim": 0,
+        "m_animatorId": 2,
+        "m_animatorTime": {
+          "m_durTime": {
+            "_serializedValue": 858993472
+          },
+          "m_animationClipPath": ""
+        }
+      }
+    ],
+    "m_allRuleEvent": [
+      {
+        "m_elemIndex": -1,
+        "m_isMasterElement": 0,
+        "m_triggerType": 0,
+        "m_triggleStart": {
+          "m_eventType": 1,
+          "m_eventTime": {
+            "_serializedValue": 858993472
+          }
+        },
+        "m_triggleStop": {
+          "m_eventType": 1,
+          "m_eventTime": {
+            "_serializedValue": 13743895552
+          }
+        },
+        "m_triggleRepeat": {
+          "m_eventType": 0,
+          "m_shootId": 0,
+          "m_triggerSelfId": 0,
+          "m_triggerRandomId": 0,
+          "m_translateId": 0,
+          "m_isMissTriggle": 1,
+          "m_isDeadTriggle": 1,
+          "m_buffStateIdTrigger": 0,
+          "m_needAssignType": 0,
+          "m_isBoss": 0,
+          "m_maskWall": 1,
+          "m_maskGround": 1,
+          "m_maskItem": 1,
+          "m_startBattleDelayTime": {
+            "_serializedValue": 0
+          },
+          "m_startBattleDurTime": {
+            "_serializedValue": 4294967296
+          },
+          "m_addHpTriggle": 0,
+          "m_hittedMissTriggle": 0,
+          "m_useSkillTrigger": 0
+        },
+        "m_eventType": 4,
+        "m_triggerShootEvent": {
+          "m_shootId": 0
+        },
+        "m_triggerRandomEvent": [],
+        "m_triggerHitScene": {
+          "m_shootId": 0,
+          "m_type": 0,
+          "m_posOffset": {
+            "x": {
+              "_serializedValue": 0
+            },
+            "y": {
+              "_serializedValue": 0
+            },
+            "z": {
+              "_serializedValue": 0
+            }
+          },
+          "m_range": {
+            "_serializedValue": 4294967296
+          },
+          "m_randomDeltaOffset": {
+            "_serializedValue": 0
+          },
+          "m_triggerCount": {
+            "_serializedValue": 4294967296
+          },
+          "m_degreeDeltaMin": {
+            "_serializedValue": 0
+          },
+          "m_degreeDeltaMax": {
+            "_serializedValue": 0
+          },
+          "m_isUseTimeTriggerParam": 0,
+          "m_timmTriggerParam": {
+            "m_loopType": 1,
+            "m_tickCount": -1,
+            "m_runWhenTrigger": 0,
+            "m_delayStartTime": {
+              "_serializedValue": 0
+            },
+            "m_intervalTime": {
+              "_serializedValue": 4294967296
+            },
+            "m_coolTime": {
+              "_serializedValue": 0
+            },
+            "m_randomRate": {
+              "_serializedValue": 4294967296
+            }
+          }
+        },
+        "m_hitRandomTriggerHit": {
+          "m_random": {
+            "_serializedValue": 429496730
+          },
+          "m_shootId": 0
+        },
+        "m_selectRandomEnemy": {
+          "m_shootId": 0,
+          "m_durTime": {
+            "_serializedValue": 4294967296
+          },
+          "m_randomRate": {
+            "_serializedValue": 4294967296
+          },
+          "m_distance": {
+            "_serializedValue": -4294967296
+          },
+          "m_isTriggerImmediately": 0
+        },
+        "m_rangeSelectRandomEnemy": {
+          "m_shootId": 0,
+          "m_durTime": {
+            "_serializedValue": 4294967296
+          },
+          "m_randomRate": {
+            "_serializedValue": 4294967296
+          },
+          "m_distance": {
+            "_serializedValue": -4294967296
+          },
+          "m_isTriggerImmediately": 0
+        },
+        "m_randomSelectTarget": {
+          "m_campType": 0,
+          "m_shootId": 0,
+          "m_durTime": {
+            "_serializedValue": 4294967296
+          },
+          "m_randomRate": {
+            "_serializedValue": 4294967296
+          },
+          "m_distance": {
+            "_serializedValue": -4294967296
+          },
+          "m_isTriggerImmediately": 0,
+          "m_minValue": 1,
+          "m_maxValue": 1
+        },
+        "m_selfTriggerEvent": {
+          "m_loopType": 0,
+          "m_tickCount": -1,
+          "m_runWhenTrigger": 0,
+          "m_delayStartTime": {
+            "_serializedValue": 0
+          },
+          "m_intervalTime": {
+            "_serializedValue": 4294967296
+          },
+          "m_coolTime": {
+            "_serializedValue": 0
+          },
+          "m_randomRate": {
+            "_serializedValue": 4294967296
+          },
+          "m_triggerSelfId": 0
+        },
+        "m_isAddFaBaoTriggerRatio": 0,
+        "m_triggerNeedCount": 0,
+        "m_relayOnBufftrigger": {
+          "m_checkType": 0,
+          "m_buffIdSourceType": 0,
+          "m_buffId": 0,
+          "m_buffIndex": 0,
+          "m_buffMaxStackNum": 0,
+          "m_triggerCnt": 0,
+          "m_triggerInternal": {
+            "_serializedValue": 4294967296
+          },
+          "m_isClearBuff": 0,
+          "m_shootId": 0
+        }
+      }
+    ],
+    "m_allElemEffect": [
+      {
+        "m_elemIndex": -1,
+        "m_isMasterElement": 0,
+        "m_triggerType": 0,
+        "m_triggleStart": {
+          "m_eventType": 1,
+          "m_eventTime": {
+            "_serializedValue": 0
+          }
+        },
+        "m_triggleStop": {
+          "m_eventType": 1,
+          "m_eventTime": {
+            "_serializedValue": 4294967296
+          }
+        },
+        "m_triggleRepeat": {
+          "m_eventType": 0,
+          "m_shootId": 0,
+          "m_triggerSelfId": 0,
+          "m_triggerRandomId": 0,
+          "m_translateId": 0,
+          "m_isMissTriggle": 1,
+          "m_isDeadTriggle": 1,
+          "m_buffStateIdTrigger": 0,
+          "m_needAssignType": 0,
+          "m_isBoss": 0,
+          "m_maskWall": 1,
+          "m_maskGround": 1,
+          "m_maskItem": 1,
+          "m_startBattleDelayTime": {
+            "_serializedValue": 0
+          },
+          "m_startBattleDurTime": {
+            "_serializedValue": 4294967296
+          },
+          "m_addHpTriggle": 0,
+          "m_hittedMissTriggle": 0,
+          "m_useSkillTrigger": 0
+        },
+        "m_position": {
+          "m_posMode": 1,
+          "m_dummyParam": {
+            "m_pos": 1,
+            "m_posOffset": {
+              "x": {
+                "_serializedValue": 0
+              },
+              "y": {
+                "_serializedValue": 0
+              },
+              "z": {
+                "_serializedValue": 0
+              }
+            }
+          },
+          "m_dirType": 0,
+          "m_syncRotateWithDummy": 0
+        },
+        "m_effectInfo": {
+          "m_prefabPath": "Effect/Skill/zhoushu/huzhualianji/huzhaulianji_prepare1",
+          "m_scale": {
+            "_serializedValue": 4294967296
+          },
+          "m_lifeTime": {
+            "_serializedValue": 0
+          },
+          "m_delayShowTime": {
+            "_serializedValue": 0
+          },
+          "m_delayDestroyTime": {
+            "_serializedValue": 0
+          },
+          "m_isLocalTrailEffect": 0,
+          "m_isPlaySkillAni": 0,
+          "m_aniIdx": {
+            "_serializedValue": 0
+          }
+        },
+        "m_effectInfo2": {
+          "m_prefabPath": "",
+          "m_scale": {
+            "_serializedValue": 4294967296
+          },
+          "m_lifeTime": {
+            "_serializedValue": 0
+          },
+          "m_delayShowTime": {
+            "_serializedValue": 0
+          },
+          "m_delayDestroyTime": {
+            "_serializedValue": 0
+          },
+          "m_isLocalTrailEffect": 0,
+          "m_isPlaySkillAni": 0,
+          "m_aniIdx": {
+            "_serializedValue": 0
+          }
+        },
+        "m_effectInfo3": {
+          "m_prefabPath": "",
+          "m_scale": {
+            "_serializedValue": 4294967296
+          },
+          "m_lifeTime": {
+            "_serializedValue": 0
+          },
+          "m_delayShowTime": {
+            "_serializedValue": 0
+          },
+          "m_delayDestroyTime": {
+            "_serializedValue": 0
+          },
+          "m_isLocalTrailEffect": 0,
+          "m_isPlaySkillAni": 0,
+          "m_aniIdx": {
+            "_serializedValue": 0
+          }
+        },
+        "m_effectInfo4": {
+          "m_prefabPath": "",
+          "m_scale": {
+            "_serializedValue": 4294967296
+          },
+          "m_lifeTime": {
+            "_serializedValue": 0
+          },
+          "m_delayShowTime": {
+            "_serializedValue": 0
+          },
+          "m_delayDestroyTime": {
+            "_serializedValue": 0
+          },
+          "m_isLocalTrailEffect": 0,
+          "m_isPlaySkillAni": 0,
+          "m_aniIdx": {
+            "_serializedValue": 0
+          }
+        },
+        "m_effectInfo5": {
+          "m_prefabPath": "",
+          "m_scale": {
+            "_serializedValue": 4294967296
+          },
+          "m_lifeTime": {
+            "_serializedValue": 0
+          },
+          "m_delayShowTime": {
+            "_serializedValue": 0
+          },
+          "m_delayDestroyTime": {
+            "_serializedValue": 0
+          },
+          "m_isLocalTrailEffect": 0,
+          "m_isPlaySkillAni": 0,
+          "m_aniIdx": {
+            "_serializedValue": 0
+          }
+        }
+      },
+      {
+        "m_elemIndex": -1,
+        "m_isMasterElement": 0,
+        "m_triggerType": 1,
+        "m_triggleStart": {
+          "m_eventType": 0,
+          "m_eventTime": {
+            "_serializedValue": 0
+          }
+        },
+        "m_triggleStop": {
+          "m_eventType": 0,
+          "m_eventTime": {
+            "_serializedValue": 0
+          }
+        },
+        "m_triggleRepeat": {
+          "m_eventType": 1,
+          "m_shootId": 0,
+          "m_triggerSelfId": 0,
+          "m_triggerRandomId": 0,
+          "m_translateId": 0,
+          "m_isMissTriggle": 1,
+          "m_isDeadTriggle": 1,
+          "m_buffStateIdTrigger": 0,
+          "m_needAssignType": 0,
+          "m_isBoss": 0,
+          "m_maskWall": 1,
+          "m_maskGround": 1,
+          "m_maskItem": 1,
+          "m_startBattleDelayTime": {
+            "_serializedValue": 0
+          },
+          "m_startBattleDurTime": {
+            "_serializedValue": 4294967296
+          },
+          "m_addHpTriggle": 0,
+          "m_hittedMissTriggle": 0,
+          "m_useSkillTrigger": 0
+        },
+        "m_position": {
+          "m_posMode": 4,
+          "m_dummyParam": {
+            "m_pos": 1,
+            "m_posOffset": {
+              "x": {
+                "_serializedValue": 0
+              },
+              "y": {
+                "_serializedValue": 0
+              },
+              "z": {
+                "_serializedValue": 0
+              }
+            }
+          },
+          "m_dirType": 0,
+          "m_syncRotateWithDummy": 0
+        },
+        "m_effectInfo": {
+          "m_prefabPath": "Effect/Skill/zhoushu/huzhualianji/huzhualianji_hit",
+          "m_scale": {
+            "_serializedValue": 4294967296
+          },
+          "m_lifeTime": {
+            "_serializedValue": 4294967296
+          },
+          "m_delayShowTime": {
+            "_serializedValue": 0
+          },
+          "m_delayDestroyTime": {
+            "_serializedValue": 0
+          },
+          "m_isLocalTrailEffect": 0,
+          "m_isPlaySkillAni": 0,
+          "m_aniIdx": {
+            "_serializedValue": 0
+          }
+        },
+        "m_effectInfo2": {
+          "m_prefabPath": "",
+          "m_scale": {
+            "_serializedValue": 4294967296
+          },
+          "m_lifeTime": {
+            "_serializedValue": 0
+          },
+          "m_delayShowTime": {
+            "_serializedValue": 0
+          },
+          "m_delayDestroyTime": {
+            "_serializedValue": 0
+          },
+          "m_isLocalTrailEffect": 0,
+          "m_isPlaySkillAni": 0,
+          "m_aniIdx": {
+            "_serializedValue": 0
+          }
+        },
+        "m_effectInfo3": {
+          "m_prefabPath": "",
+          "m_scale": {
+            "_serializedValue": 4294967296
+          },
+          "m_lifeTime": {
+            "_serializedValue": 0
+          },
+          "m_delayShowTime": {
+            "_serializedValue": 0
+          },
+          "m_delayDestroyTime": {
+            "_serializedValue": 0
+          },
+          "m_isLocalTrailEffect": 0,
+          "m_isPlaySkillAni": 0,
+          "m_aniIdx": {
+            "_serializedValue": 0
+          }
+        },
+        "m_effectInfo4": {
+          "m_prefabPath": "",
+          "m_scale": {
+            "_serializedValue": 4294967296
+          },
+          "m_lifeTime": {
+            "_serializedValue": 0
+          },
+          "m_delayShowTime": {
+            "_serializedValue": 0
+          },
+          "m_delayDestroyTime": {
+            "_serializedValue": 0
+          },
+          "m_isLocalTrailEffect": 0,
+          "m_isPlaySkillAni": 0,
+          "m_aniIdx": {
+            "_serializedValue": 0
+          }
+        },
+        "m_effectInfo5": {
+          "m_prefabPath": "",
+          "m_scale": {
+            "_serializedValue": 4294967296
+          },
+          "m_lifeTime": {
+            "_serializedValue": 0
+          },
+          "m_delayShowTime": {
+            "_serializedValue": 0
+          },
+          "m_delayDestroyTime": {
+            "_serializedValue": 0
+          },
+          "m_isLocalTrailEffect": 0,
+          "m_isPlaySkillAni": 0,
+          "m_aniIdx": {
+            "_serializedValue": 0
+          }
+        }
+      },
+      {
+        "m_elemIndex": -1,
+        "m_isMasterElement": 0,
+        "m_triggerType": 1,
+        "m_triggleStart": {
+          "m_eventType": 0,
+          "m_eventTime": {
+            "_serializedValue": 0
+          }
+        },
+        "m_triggleStop": {
+          "m_eventType": 0,
+          "m_eventTime": {
+            "_serializedValue": 0
+          }
+        },
+        "m_triggleRepeat": {
+          "m_eventType": 1,
+          "m_shootId": 0,
+          "m_triggerSelfId": 0,
+          "m_triggerRandomId": 0,
+          "m_translateId": 0,
+          "m_isMissTriggle": 1,
+          "m_isDeadTriggle": 1,
+          "m_buffStateIdTrigger": 0,
+          "m_needAssignType": 0,
+          "m_isBoss": 0,
+          "m_maskWall": 1,
+          "m_maskGround": 1,
+          "m_maskItem": 1,
+          "m_startBattleDelayTime": {
+            "_serializedValue": 0
+          },
+          "m_startBattleDurTime": {
+            "_serializedValue": 4294967296
+          },
+          "m_addHpTriggle": 0,
+          "m_hittedMissTriggle": 0,
+          "m_useSkillTrigger": 0
+        },
+        "m_position": {
+          "m_posMode": 4,
+          "m_dummyParam": {
+            "m_pos": 1,
+            "m_posOffset": {
+              "x": {
+                "_serializedValue": 0
+              },
+              "y": {
+                "_serializedValue": 0
+              },
+              "z": {
+                "_serializedValue": 0
+              }
+            }
+          },
+          "m_dirType": 0,
+          "m_syncRotateWithDummy": 0
+        },
+        "m_effectInfo": {
+          "m_prefabPath": "Effect/Skill/zhoushu/huzhualianji/huzhualianji_prepare2",
+          "m_scale": {
+            "_serializedValue": 6442450944
+          },
+          "m_lifeTime": {
+            "_serializedValue": 4294967296
+          },
+          "m_delayShowTime": {
+            "_serializedValue": 0
+          },
+          "m_delayDestroyTime": {
+            "_serializedValue": 0
+          },
+          "m_isLocalTrailEffect": 0,
+          "m_isPlaySkillAni": 0,
+          "m_aniIdx": {
+            "_serializedValue": 0
+          }
+        },
+        "m_effectInfo2": {
+          "m_prefabPath": "",
+          "m_scale": {
+            "_serializedValue": 4294967296
+          },
+          "m_lifeTime": {
+            "_serializedValue": 0
+          },
+          "m_delayShowTime": {
+            "_serializedValue": 0
+          },
+          "m_delayDestroyTime": {
+            "_serializedValue": 0
+          },
+          "m_isLocalTrailEffect": 0,
+          "m_isPlaySkillAni": 0,
+          "m_aniIdx": {
+            "_serializedValue": 0
+          }
+        },
+        "m_effectInfo3": {
+          "m_prefabPath": "",
+          "m_scale": {
+            "_serializedValue": 4294967296
+          },
+          "m_lifeTime": {
+            "_serializedValue": 0
+          },
+          "m_delayShowTime": {
+            "_serializedValue": 0
+          },
+          "m_delayDestroyTime": {
+            "_serializedValue": 0
+          },
+          "m_isLocalTrailEffect": 0,
+          "m_isPlaySkillAni": 0,
+          "m_aniIdx": {
+            "_serializedValue": 0
+          }
+        },
+        "m_effectInfo4": {
+          "m_prefabPath": "",
+          "m_scale": {
+            "_serializedValue": 4294967296
+          },
+          "m_lifeTime": {
+            "_serializedValue": 0
+          },
+          "m_delayShowTime": {
+            "_serializedValue": 0
+          },
+          "m_delayDestroyTime": {
+            "_serializedValue": 0
+          },
+          "m_isLocalTrailEffect": 0,
+          "m_isPlaySkillAni": 0,
+          "m_aniIdx": {
+            "_serializedValue": 0
+          }
+        },
+        "m_effectInfo5": {
+          "m_prefabPath": "",
+          "m_scale": {
+            "_serializedValue": 4294967296
+          },
+          "m_lifeTime": {
+            "_serializedValue": 0
+          },
+          "m_delayShowTime": {
+            "_serializedValue": 0
+          },
+          "m_delayDestroyTime": {
+            "_serializedValue": 0
+          },
+          "m_isLocalTrailEffect": 0,
+          "m_isPlaySkillAni": 0,
+          "m_aniIdx": {
+            "_serializedValue": 0
+          }
+        }
+      }
+    ],
+    "m_allElemShootPoint": [
+      {
+        "m_elemIndex": -1,
+        "m_isMasterElement": 0,
+        "m_triggerType": 1,
+        "m_triggleStart": {
+          "m_eventType": 0,
+          "m_eventTime": {
+            "_serializedValue": 0
+          }
+        },
+        "m_triggleStop": {
+          "m_eventType": 0,
+          "m_eventTime": {
+            "_serializedValue": 0
+          }
+        },
+        "m_triggleRepeat": {
+          "m_eventType": 1,
+          "m_shootId": 0,
+          "m_triggerSelfId": 1,
+          "m_triggerRandomId": 0,
+          "m_translateId": 0,
+          "m_isMissTriggle": 1,
+          "m_isDeadTriggle": 1,
+          "m_buffStateIdTrigger": 0,
+          "m_needAssignType": 0,
+          "m_isBoss": 0,
+          "m_maskWall": 1,
+          "m_maskGround": 1,
+          "m_maskItem": 1,
+          "m_startBattleDelayTime": {
+            "_serializedValue": 0
+          },
+          "m_startBattleDurTime": {
+            "_serializedValue": 4294967296
+          },
+          "m_addHpTriggle": 0,
+          "m_hittedMissTriggle": 0,
+          "m_useSkillTrigger": 0
+        },
+        "m_targetType": 0,
+        "m_position": {
+          "m_type": 1,
+          "m_shootPoint": 1,
+          "m_posOffset": {
+            "x": {
+              "_serializedValue": 0
+            },
+            "y": {
+              "_serializedValue": 0
+            },
+            "z": {
+              "_serializedValue": 0
+            }
+          },
+          "m_moveType": 0,
+          "m_rotateParma": {
+            "m_initRotate": {
+              "_serializedValue": 0
+            },
+            "m_randomDeltaMin": {
+              "_serializedValue": 0
+            },
+            "m_randomDeltaMax": {
+              "_serializedValue": 0
+            },
+            "m_distance": {
+              "_serializedValue": 4294967296
+            },
+            "m_moveRotateSpeed": {
+              "_serializedValue": 773094113280
+            },
+            "m_syncRotateWithDummy": 0,
+            "m_exParam": {
+              "m_distType": 0,
+              "m_targetDis": {
+                "_serializedValue": 0
+              },
+              "m_initSpeed": {
+                "_serializedValue": 0
+              },
+              "m_acceleration": {
+                "_serializedValue": 0
+              }
+            }
+          },
+          "m_rotateParmas": []
+        },
+        "m_shootPointLife": {
+          "m_lifeType": 1,
+          "m_lifeTime": {
+            "_serializedValue": 4294967296
+          }
+        },
+        "m_rotateParamLifes": [],
+        "m_shootTestParam": {
+          "m_type": 0,
+          "m_centerParam": {
+            "m_distance": {
+              "_serializedValue": 0
+            }
+          },
+          "m_range": {
+            "m_radiusOut": {
+              "_serializedValue": 2147483648
+            },
+            "m_angle": {
+              "_serializedValue": 1546188226560
+            }
+          },
+          "m_rect": {
+            "m_length": {
+              "_serializedValue": 8589934592
+            },
+            "m_width": {
+              "_serializedValue": 8589934592
+            }
+          },
+          "m_dynamicRay": {
+            "m_width": {
+              "_serializedValue": 4294967296
+            }
+          }
+        },
+        "m_shootFireCount": {
+          "m_fireCount": 1,
+          "m_delayStart": {
+            "_serializedValue": 0
+          },
+          "m_fireInterval": {
+            "_serializedValue": 0
+          },
+          "m_minTargetImpactDurTime": {
+            "_serializedValue": 2147483650
+          }
+        },
+        "m_shareFireInterval": {
+          "_serializedValue": 0
+        },
+        "m_effectInfo": {
+          "m_prefabPath": "Effect/Skill/zhoushu/huzhualianji/huzhualianji_prepare2",
+          "m_scale": {
+            "_serializedValue": 4294967296
+          },
+          "m_lifeTime": {
+            "_serializedValue": 4294967296
+          },
+          "m_delayShowTime": {
+            "_serializedValue": 0
+          },
+          "m_delayDestroyTime": {
+            "_serializedValue": 0
+          },
+          "m_isLocalTrailEffect": 0,
+          "m_isPlaySkillAni": 0,
+          "m_aniIdx": {
+            "_serializedValue": 0
+          }
+        },
+        "m_disableImpact": 0,
+        "m_impactData": {
+          "m_damageType": 0,
+          "m_ImpactType": 1,
+          "m_impcatMinInteravl": {
+            "_serializedValue": 429496730
+          },
+          "m_shootId": 1,
+          "m_backOffDist": {
+            "_serializedValue": 0
+          },
+          "m_backOffTime": {
+            "_serializedValue": 858993460
+          },
+          "m_backAccTime": {
+            "_serializedValue": 0
+          },
+          "m_backOffInterval": {
+            "_serializedValue": 858993460
+          },
+          "m_moveData": {
+            "m_moveType": 0,
+            "m_moveDist": {
+              "_serializedValue": 4294967296
+            },
+            "m_moveTime": {
+              "_serializedValue": 858993460
+            },
+            "m_moveAccTime": {
+              "_serializedValue": 4294967296
+            }
+          },
+          "m_damageIndex": 0,
+          "m_damageRatio": {
+            "_serializedValue": 4294967296
+          },
+          "m_fiveEleDamageRatio": {
+            "_serializedValue": 4294967296
+          },
+          "m_impactAudio": {
+            "m_audioMatType": 0,
+            "m_customAudioMatId": 10
+          },
+          "m_damageWhenCasterDeath": 0
+        },
+        "m_hitDestroy": 0
+      }
+    ],
+    "m_allElemBullet": [],
+    "m_allElemTranslate": [],
+    "m_allElemBuff": [],
+    "m_allElemShakeCamera": [],
+    "m_allElemSound": [],
+    "m_allElemRotate": [],
+    "m_allElemSummonNpc": [],
+    "m_allElemLineEffect": [],
+    "m_allElemLightChain": [],
+    "m_allElemClear": [],
+    "m_allSubElemBullet": [],
+    "m_AllElemHideObj": []
+  }
+}

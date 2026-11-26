@@ -1,0 +1,121 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_elfplaceconfig.bytes.ab",
+    "path_id": -5989158017827829592,
+    "name": "ElfPlaceConfig",
+    "sha256": "5605b287420642fcb199ab4ead1d524747a3099af0b056a81886ebf80431c65e",
+    "export": "derived/unity/text/assets_resources_config_resbin_elfplaceconfig.bytes/ElfPlaceConfig__-5989158017827829592.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 80,
+      "version": 1,
+      "record_count": 5,
+      "stored_crc32": "e2bf51cf",
+      "computed_inverted_crc32": "e2bf51cf"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "ElfPlaceConfig",
+      "fields": [
+        {
+          "type": "int",
+          "name": "SlotID",
+          "object_offset": 16
+        },
+        {
+          "type": "int",
+          "name": "Type",
+          "object_offset": 20
+        },
+        {
+          "type": "int",
+          "name": "UnlockLevel",
+          "object_offset": 24
+        }
+      ],
+      "unpack_va": 31273180,
+      "dump_line": 203407
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1dd3110",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd3134",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dd3174",
+        "target_va": "0x21f67d0",
+        "opcode": "B-tail",
+        "reader": "readInt32",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 5
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "SlotID": 1,
+      "Type": 1,
+      "UnlockLevel": 1,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 32,
+      "SlotID": 2,
+      "Type": 2,
+      "UnlockLevel": 1,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 44,
+      "SlotID": 3,
+      "Type": 2,
+      "UnlockLevel": 1,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 56,
+      "SlotID": 4,
+      "Type": 2,
+      "UnlockLevel": 115,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 68,
+      "SlotID": 5,
+      "Type": 2,
+      "UnlockLevel": 125,
+      "_byte_length": 12
+    }
+  ]
+}

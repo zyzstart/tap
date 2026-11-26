@@ -1,0 +1,7329 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_islandadvitemgrouplibraryconfig.bytes.ab",
+    "path_id": -7156706366596398342,
+    "name": "IslandAdvItemGroupLibraryConfig",
+    "sha256": "efcc60477d91f9f3ad8448eeafde9a0a368b31ed8d40fbc624cde84fac7e0ae5",
+    "export": "derived/unity/text/assets_resources_config_resbin_islandadvitemgrouplibraryconfig.bytes/IslandAdvItemGroupLibraryConfig__-7156706366596398342.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 10892,
+      "version": 1,
+      "record_count": 906,
+      "stored_crc32": "66c0cb26",
+      "computed_inverted_crc32": "66c0cb26"
+    },
+    "schema_selection": "Unique exact class name across supported namespaces, verified against readers and payload",
+    "schema": {
+      "namespace": "BattleCore",
+      "name": "IslandAdvItemGroupLibraryConfig",
+      "fields": [
+        {
+          "type": "uint",
+          "name": "LibID",
+          "object_offset": 16
+        },
+        {
+          "type": "uint",
+          "name": "GroupID",
+          "object_offset": 20
+        },
+        {
+          "type": "uint",
+          "name": "Weight",
+          "object_offset": 24
+        }
+      ],
+      "unpack_va": 23343848,
+      "dump_line": 167147
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x164331c",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1643340",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1643380",
+        "target_va": "0x21f6908",
+        "opcode": "B-tail",
+        "reader": "readUInt32",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 906
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "LibID": 101,
+      "GroupID": 10001,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 32,
+      "LibID": 101,
+      "GroupID": 10002,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 44,
+      "LibID": 201,
+      "GroupID": 11001,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 56,
+      "LibID": 201,
+      "GroupID": 11002,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 68,
+      "LibID": 201,
+      "GroupID": 11003,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 80,
+      "LibID": 201,
+      "GroupID": 11004,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 92,
+      "LibID": 201,
+      "GroupID": 11005,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 104,
+      "LibID": 201,
+      "GroupID": 11006,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 116,
+      "LibID": 202,
+      "GroupID": 11007,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 128,
+      "LibID": 202,
+      "GroupID": 11008,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 140,
+      "LibID": 202,
+      "GroupID": 11009,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 152,
+      "LibID": 202,
+      "GroupID": 11010,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 164,
+      "LibID": 202,
+      "GroupID": 11011,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 176,
+      "LibID": 202,
+      "GroupID": 11012,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 188,
+      "LibID": 2001,
+      "GroupID": 11101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 200,
+      "LibID": 2001,
+      "GroupID": 11102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 212,
+      "LibID": 301,
+      "GroupID": 13001,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 224,
+      "LibID": 302,
+      "GroupID": 13002,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 236,
+      "LibID": 302,
+      "GroupID": 13003,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 19,
+      "_byte_offset": 248,
+      "LibID": 302,
+      "GroupID": 13004,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 20,
+      "_byte_offset": 260,
+      "LibID": 302,
+      "GroupID": 13005,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 21,
+      "_byte_offset": 272,
+      "LibID": 302,
+      "GroupID": 13006,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 22,
+      "_byte_offset": 284,
+      "LibID": 302,
+      "GroupID": 13007,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 23,
+      "_byte_offset": 296,
+      "LibID": 302,
+      "GroupID": 13008,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 24,
+      "_byte_offset": 308,
+      "LibID": 302,
+      "GroupID": 13009,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 25,
+      "_byte_offset": 320,
+      "LibID": 303,
+      "GroupID": 13011,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 26,
+      "_byte_offset": 332,
+      "LibID": 304,
+      "GroupID": 13015,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 27,
+      "_byte_offset": 344,
+      "LibID": 304,
+      "GroupID": 13016,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 28,
+      "_byte_offset": 356,
+      "LibID": 304,
+      "GroupID": 13017,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 29,
+      "_byte_offset": 368,
+      "LibID": 304,
+      "GroupID": 13018,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 30,
+      "_byte_offset": 380,
+      "LibID": 304,
+      "GroupID": 13019,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 31,
+      "_byte_offset": 392,
+      "LibID": 304,
+      "GroupID": 13020,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 32,
+      "_byte_offset": 404,
+      "LibID": 305,
+      "GroupID": 13021,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 33,
+      "_byte_offset": 416,
+      "LibID": 305,
+      "GroupID": 13022,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 34,
+      "_byte_offset": 428,
+      "LibID": 305,
+      "GroupID": 13023,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 35,
+      "_byte_offset": 440,
+      "LibID": 306,
+      "GroupID": 13024,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 36,
+      "_byte_offset": 452,
+      "LibID": 3001,
+      "GroupID": 13010,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 37,
+      "_byte_offset": 464,
+      "LibID": 311,
+      "GroupID": 13101,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 38,
+      "_byte_offset": 476,
+      "LibID": 312,
+      "GroupID": 13103,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 39,
+      "_byte_offset": 488,
+      "LibID": 313,
+      "GroupID": 13101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 40,
+      "_byte_offset": 500,
+      "LibID": 313,
+      "GroupID": 13103,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 41,
+      "_byte_offset": 512,
+      "LibID": 313,
+      "GroupID": 13104,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 42,
+      "_byte_offset": 524,
+      "LibID": 313,
+      "GroupID": 13105,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 43,
+      "_byte_offset": 536,
+      "LibID": 314,
+      "GroupID": 13109,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 44,
+      "_byte_offset": 548,
+      "LibID": 315,
+      "GroupID": 13109,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 45,
+      "_byte_offset": 560,
+      "LibID": 315,
+      "GroupID": 13110,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 46,
+      "_byte_offset": 572,
+      "LibID": 315,
+      "GroupID": 13111,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 47,
+      "_byte_offset": 584,
+      "LibID": 315,
+      "GroupID": 13112,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 48,
+      "_byte_offset": 596,
+      "LibID": 3101,
+      "GroupID": 13102,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 49,
+      "_byte_offset": 608,
+      "LibID": 3102,
+      "GroupID": 13106,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 50,
+      "_byte_offset": 620,
+      "LibID": 3103,
+      "GroupID": 13107,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 51,
+      "_byte_offset": 632,
+      "LibID": 3104,
+      "GroupID": 13108,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 52,
+      "_byte_offset": 644,
+      "LibID": 321,
+      "GroupID": 13201,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 53,
+      "_byte_offset": 656,
+      "LibID": 322,
+      "GroupID": 13201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 54,
+      "_byte_offset": 668,
+      "LibID": 322,
+      "GroupID": 13202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 55,
+      "_byte_offset": 680,
+      "LibID": 322,
+      "GroupID": 13203,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 56,
+      "_byte_offset": 692,
+      "LibID": 322,
+      "GroupID": 13204,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 57,
+      "_byte_offset": 704,
+      "LibID": 322,
+      "GroupID": 13205,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 58,
+      "_byte_offset": 716,
+      "LibID": 322,
+      "GroupID": 13206,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 59,
+      "_byte_offset": 728,
+      "LibID": 3211,
+      "GroupID": 132011,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 60,
+      "_byte_offset": 740,
+      "LibID": 3221,
+      "GroupID": 132011,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 61,
+      "_byte_offset": 752,
+      "LibID": 3221,
+      "GroupID": 132021,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 62,
+      "_byte_offset": 764,
+      "LibID": 3221,
+      "GroupID": 132031,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 63,
+      "_byte_offset": 776,
+      "LibID": 3221,
+      "GroupID": 132041,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 64,
+      "_byte_offset": 788,
+      "LibID": 3221,
+      "GroupID": 132051,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 65,
+      "_byte_offset": 800,
+      "LibID": 3221,
+      "GroupID": 132061,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 66,
+      "_byte_offset": 812,
+      "LibID": 3231,
+      "GroupID": 132911,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 67,
+      "_byte_offset": 824,
+      "LibID": 323,
+      "GroupID": 13291,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 68,
+      "_byte_offset": 836,
+      "LibID": 324,
+      "GroupID": 13207,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 69,
+      "_byte_offset": 848,
+      "LibID": 325,
+      "GroupID": 13207,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 70,
+      "_byte_offset": 860,
+      "LibID": 325,
+      "GroupID": 13208,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 71,
+      "_byte_offset": 872,
+      "LibID": 325,
+      "GroupID": 13209,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 72,
+      "_byte_offset": 884,
+      "LibID": 325,
+      "GroupID": 13210,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 73,
+      "_byte_offset": 896,
+      "LibID": 325,
+      "GroupID": 13211,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 74,
+      "_byte_offset": 908,
+      "LibID": 325,
+      "GroupID": 13212,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 75,
+      "_byte_offset": 920,
+      "LibID": 326,
+      "GroupID": 13292,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 76,
+      "_byte_offset": 932,
+      "LibID": 327,
+      "GroupID": 13293,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 77,
+      "_byte_offset": 944,
+      "LibID": 401,
+      "GroupID": 12001,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 78,
+      "_byte_offset": 956,
+      "LibID": 4001,
+      "GroupID": 12011,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 79,
+      "_byte_offset": 968,
+      "LibID": 4002,
+      "GroupID": 12012,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 80,
+      "_byte_offset": 980,
+      "LibID": 4002,
+      "GroupID": 12013,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 81,
+      "_byte_offset": 992,
+      "LibID": 4002,
+      "GroupID": 12016,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 82,
+      "_byte_offset": 1004,
+      "LibID": 4002,
+      "GroupID": 12017,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 83,
+      "_byte_offset": 1016,
+      "LibID": 4002,
+      "GroupID": 12018,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 84,
+      "_byte_offset": 1028,
+      "LibID": 4003,
+      "GroupID": 12014,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 85,
+      "_byte_offset": 1040,
+      "LibID": 4003,
+      "GroupID": 12015,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 86,
+      "_byte_offset": 1052,
+      "LibID": 4003,
+      "GroupID": 12033,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 87,
+      "_byte_offset": 1064,
+      "LibID": 4003,
+      "GroupID": 12034,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 88,
+      "_byte_offset": 1076,
+      "LibID": 4003,
+      "GroupID": 12035,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 89,
+      "_byte_offset": 1088,
+      "LibID": 4003,
+      "GroupID": 12036,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 90,
+      "_byte_offset": 1100,
+      "LibID": 4004,
+      "GroupID": 12019,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 91,
+      "_byte_offset": 1112,
+      "LibID": 4004,
+      "GroupID": 12020,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 92,
+      "_byte_offset": 1124,
+      "LibID": 4004,
+      "GroupID": 12021,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 93,
+      "_byte_offset": 1136,
+      "LibID": 4004,
+      "GroupID": 12022,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 94,
+      "_byte_offset": 1148,
+      "LibID": 4004,
+      "GroupID": 12023,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 95,
+      "_byte_offset": 1160,
+      "LibID": 4004,
+      "GroupID": 12024,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 96,
+      "_byte_offset": 1172,
+      "LibID": 4004,
+      "GroupID": 12025,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 97,
+      "_byte_offset": 1184,
+      "LibID": 4004,
+      "GroupID": 12026,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 98,
+      "_byte_offset": 1196,
+      "LibID": 4004,
+      "GroupID": 12027,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 99,
+      "_byte_offset": 1208,
+      "LibID": 4004,
+      "GroupID": 12028,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 100,
+      "_byte_offset": 1220,
+      "LibID": 4004,
+      "GroupID": 12029,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 101,
+      "_byte_offset": 1232,
+      "LibID": 4004,
+      "GroupID": 12030,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 102,
+      "_byte_offset": 1244,
+      "LibID": 4004,
+      "GroupID": 12031,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 103,
+      "_byte_offset": 1256,
+      "LibID": 4004,
+      "GroupID": 12032,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 104,
+      "_byte_offset": 1268,
+      "LibID": 4005,
+      "GroupID": 12037,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 105,
+      "_byte_offset": 1280,
+      "LibID": 106,
+      "GroupID": 13011,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 106,
+      "_byte_offset": 1292,
+      "LibID": 106,
+      "GroupID": 13012,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 107,
+      "_byte_offset": 1304,
+      "LibID": 106,
+      "GroupID": 13013,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 108,
+      "_byte_offset": 1316,
+      "LibID": 106,
+      "GroupID": 13014,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 109,
+      "_byte_offset": 1328,
+      "LibID": 106,
+      "GroupID": 13015,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 110,
+      "_byte_offset": 1340,
+      "LibID": 106,
+      "GroupID": 13016,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 111,
+      "_byte_offset": 1352,
+      "LibID": 106,
+      "GroupID": 13017,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 112,
+      "_byte_offset": 1364,
+      "LibID": 106,
+      "GroupID": 13018,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 113,
+      "_byte_offset": 1376,
+      "LibID": 107,
+      "GroupID": 13019,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 114,
+      "_byte_offset": 1388,
+      "LibID": 108,
+      "GroupID": 13020,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 115,
+      "_byte_offset": 1400,
+      "LibID": 108,
+      "GroupID": 13021,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 116,
+      "_byte_offset": 1412,
+      "LibID": 108,
+      "GroupID": 13022,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 117,
+      "_byte_offset": 1424,
+      "LibID": 108,
+      "GroupID": 13023,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 118,
+      "_byte_offset": 1436,
+      "LibID": 108,
+      "GroupID": 13024,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 119,
+      "_byte_offset": 1448,
+      "LibID": 108,
+      "GroupID": 13025,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 120,
+      "_byte_offset": 1460,
+      "LibID": 108,
+      "GroupID": 13026,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 121,
+      "_byte_offset": 1472,
+      "LibID": 108,
+      "GroupID": 13027,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 122,
+      "_byte_offset": 1484,
+      "LibID": 501,
+      "GroupID": 14001,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 123,
+      "_byte_offset": 1496,
+      "LibID": 501,
+      "GroupID": 14002,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 124,
+      "_byte_offset": 1508,
+      "LibID": 21001,
+      "GroupID": 21001,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 125,
+      "_byte_offset": 1520,
+      "LibID": 21002,
+      "GroupID": 21004,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 126,
+      "_byte_offset": 1532,
+      "LibID": 21002,
+      "GroupID": 21005,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 127,
+      "_byte_offset": 1544,
+      "LibID": 21002,
+      "GroupID": 21006,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 128,
+      "_byte_offset": 1556,
+      "LibID": 21002,
+      "GroupID": 21007,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 129,
+      "_byte_offset": 1568,
+      "LibID": 21002,
+      "GroupID": 21008,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 130,
+      "_byte_offset": 1580,
+      "LibID": 21002,
+      "GroupID": 21009,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 131,
+      "_byte_offset": 1592,
+      "LibID": 21003,
+      "GroupID": 21002,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 132,
+      "_byte_offset": 1604,
+      "LibID": 21003,
+      "GroupID": 21003,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 133,
+      "_byte_offset": 1616,
+      "LibID": 21004,
+      "GroupID": 21010,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 134,
+      "_byte_offset": 1628,
+      "LibID": 21004,
+      "GroupID": 21011,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 135,
+      "_byte_offset": 1640,
+      "LibID": 21005,
+      "GroupID": 21012,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 136,
+      "_byte_offset": 1652,
+      "LibID": 21006,
+      "GroupID": 21013,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 137,
+      "_byte_offset": 1664,
+      "LibID": 21007,
+      "GroupID": 21014,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 138,
+      "_byte_offset": 1676,
+      "LibID": 21008,
+      "GroupID": 21015,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 139,
+      "_byte_offset": 1688,
+      "LibID": 21009,
+      "GroupID": 21016,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 140,
+      "_byte_offset": 1700,
+      "LibID": 21010,
+      "GroupID": 21017,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 141,
+      "_byte_offset": 1712,
+      "LibID": 21011,
+      "GroupID": 21018,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 142,
+      "_byte_offset": 1724,
+      "LibID": 21011,
+      "GroupID": 21019,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 143,
+      "_byte_offset": 1736,
+      "LibID": 21011,
+      "GroupID": 21020,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 144,
+      "_byte_offset": 1748,
+      "LibID": 21011,
+      "GroupID": 21021,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 145,
+      "_byte_offset": 1760,
+      "LibID": 21011,
+      "GroupID": 21022,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 146,
+      "_byte_offset": 1772,
+      "LibID": 21011,
+      "GroupID": 21023,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 147,
+      "_byte_offset": 1784,
+      "LibID": 21011,
+      "GroupID": 21024,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 148,
+      "_byte_offset": 1796,
+      "LibID": 21012,
+      "GroupID": 21025,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 149,
+      "_byte_offset": 1808,
+      "LibID": 21013,
+      "GroupID": 21026,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 150,
+      "_byte_offset": 1820,
+      "LibID": 21013,
+      "GroupID": 21027,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 151,
+      "_byte_offset": 1832,
+      "LibID": 21013,
+      "GroupID": 21028,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 152,
+      "_byte_offset": 1844,
+      "LibID": 21013,
+      "GroupID": 21029,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 153,
+      "_byte_offset": 1856,
+      "LibID": 21013,
+      "GroupID": 21030,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 154,
+      "_byte_offset": 1868,
+      "LibID": 21013,
+      "GroupID": 21031,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 155,
+      "_byte_offset": 1880,
+      "LibID": 21014,
+      "GroupID": 21032,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 156,
+      "_byte_offset": 1892,
+      "LibID": 21014,
+      "GroupID": 21033,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 157,
+      "_byte_offset": 1904,
+      "LibID": 21015,
+      "GroupID": 21034,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 158,
+      "_byte_offset": 1916,
+      "LibID": 21015,
+      "GroupID": 21035,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 159,
+      "_byte_offset": 1928,
+      "LibID": 21016,
+      "GroupID": 21036,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 160,
+      "_byte_offset": 1940,
+      "LibID": 21017,
+      "GroupID": 21037,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 161,
+      "_byte_offset": 1952,
+      "LibID": 21017,
+      "GroupID": 21038,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 162,
+      "_byte_offset": 1964,
+      "LibID": 21017,
+      "GroupID": 21039,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 163,
+      "_byte_offset": 1976,
+      "LibID": 21017,
+      "GroupID": 21040,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 164,
+      "_byte_offset": 1988,
+      "LibID": 21017,
+      "GroupID": 21041,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 165,
+      "_byte_offset": 2000,
+      "LibID": 21017,
+      "GroupID": 21042,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 166,
+      "_byte_offset": 2012,
+      "LibID": 21017,
+      "GroupID": 21043,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 167,
+      "_byte_offset": 2024,
+      "LibID": 21017,
+      "GroupID": 21044,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 168,
+      "_byte_offset": 2036,
+      "LibID": 21017,
+      "GroupID": 21045,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 169,
+      "_byte_offset": 2048,
+      "LibID": 21017,
+      "GroupID": 21046,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 170,
+      "_byte_offset": 2060,
+      "LibID": 21018,
+      "GroupID": 21047,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 171,
+      "_byte_offset": 2072,
+      "LibID": 21019,
+      "GroupID": 21048,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 172,
+      "_byte_offset": 2084,
+      "LibID": 21019,
+      "GroupID": 21049,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 173,
+      "_byte_offset": 2096,
+      "LibID": 100011,
+      "GroupID": 100011,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 174,
+      "_byte_offset": 2108,
+      "LibID": 100011,
+      "GroupID": 100021,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 175,
+      "_byte_offset": 2120,
+      "LibID": 100012,
+      "GroupID": 100031,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 176,
+      "_byte_offset": 2132,
+      "LibID": 100012,
+      "GroupID": 100041,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 177,
+      "_byte_offset": 2144,
+      "LibID": 1010101,
+      "GroupID": 101010101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 178,
+      "_byte_offset": 2156,
+      "LibID": 1010101,
+      "GroupID": 101010102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 179,
+      "_byte_offset": 2168,
+      "LibID": 1010201,
+      "GroupID": 101020101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 180,
+      "_byte_offset": 2180,
+      "LibID": 1010201,
+      "GroupID": 101020102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 181,
+      "_byte_offset": 2192,
+      "LibID": 1010201,
+      "GroupID": 101020103,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 182,
+      "_byte_offset": 2204,
+      "LibID": 1010201,
+      "GroupID": 101020104,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 183,
+      "_byte_offset": 2216,
+      "LibID": 1010201,
+      "GroupID": 101020105,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 184,
+      "_byte_offset": 2228,
+      "LibID": 1010201,
+      "GroupID": 101020106,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 185,
+      "_byte_offset": 2240,
+      "LibID": 1010202,
+      "GroupID": 101020201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 186,
+      "_byte_offset": 2252,
+      "LibID": 1010202,
+      "GroupID": 101020202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 187,
+      "_byte_offset": 2264,
+      "LibID": 1010202,
+      "GroupID": 101020203,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 188,
+      "_byte_offset": 2276,
+      "LibID": 1019901,
+      "GroupID": 101990101,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 189,
+      "_byte_offset": 2288,
+      "LibID": 1020101,
+      "GroupID": 102010101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 190,
+      "_byte_offset": 2300,
+      "LibID": 1020101,
+      "GroupID": 102010102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 191,
+      "_byte_offset": 2312,
+      "LibID": 1020102,
+      "GroupID": 102010201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 192,
+      "_byte_offset": 2324,
+      "LibID": 1020102,
+      "GroupID": 102010202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 193,
+      "_byte_offset": 2336,
+      "LibID": 1020301,
+      "GroupID": 102030101,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 194,
+      "_byte_offset": 2348,
+      "LibID": 1020201,
+      "GroupID": 102020101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 195,
+      "_byte_offset": 2360,
+      "LibID": 1020201,
+      "GroupID": 102020102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 196,
+      "_byte_offset": 2372,
+      "LibID": 1020202,
+      "GroupID": 102020201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 197,
+      "_byte_offset": 2384,
+      "LibID": 1020202,
+      "GroupID": 102020202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 198,
+      "_byte_offset": 2396,
+      "LibID": 1020202,
+      "GroupID": 102020203,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 199,
+      "_byte_offset": 2408,
+      "LibID": 1020202,
+      "GroupID": 102020204,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 200,
+      "_byte_offset": 2420,
+      "LibID": 1020202,
+      "GroupID": 102020205,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 201,
+      "_byte_offset": 2432,
+      "LibID": 1020202,
+      "GroupID": 102020206,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 202,
+      "_byte_offset": 2444,
+      "LibID": 1020203,
+      "GroupID": 102020301,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 203,
+      "_byte_offset": 2456,
+      "LibID": 1029901,
+      "GroupID": 102990101,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 204,
+      "_byte_offset": 2468,
+      "LibID": 1030101,
+      "GroupID": 103010101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 205,
+      "_byte_offset": 2480,
+      "LibID": 1030101,
+      "GroupID": 103010102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 206,
+      "_byte_offset": 2492,
+      "LibID": 1030301,
+      "GroupID": 103030101,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 207,
+      "_byte_offset": 2504,
+      "LibID": 1030201,
+      "GroupID": 103020101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 208,
+      "_byte_offset": 2516,
+      "LibID": 1030201,
+      "GroupID": 103020102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 209,
+      "_byte_offset": 2528,
+      "LibID": 1030201,
+      "GroupID": 103020103,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 210,
+      "_byte_offset": 2540,
+      "LibID": 1030201,
+      "GroupID": 103020104,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 211,
+      "_byte_offset": 2552,
+      "LibID": 1030201,
+      "GroupID": 103020105,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 212,
+      "_byte_offset": 2564,
+      "LibID": 1030201,
+      "GroupID": 103020106,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 213,
+      "_byte_offset": 2576,
+      "LibID": 1030201,
+      "GroupID": 103020107,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 214,
+      "_byte_offset": 2588,
+      "LibID": 1030201,
+      "GroupID": 103020108,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 215,
+      "_byte_offset": 2600,
+      "LibID": 1030201,
+      "GroupID": 103020109,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 216,
+      "_byte_offset": 2612,
+      "LibID": 1030201,
+      "GroupID": 103020110,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 217,
+      "_byte_offset": 2624,
+      "LibID": 1030202,
+      "GroupID": 103020201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 218,
+      "_byte_offset": 2636,
+      "LibID": 1030202,
+      "GroupID": 103020202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 219,
+      "_byte_offset": 2648,
+      "LibID": 1030203,
+      "GroupID": 103020301,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 220,
+      "_byte_offset": 2660,
+      "LibID": 1030203,
+      "GroupID": 103020302,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 221,
+      "_byte_offset": 2672,
+      "LibID": 1030203,
+      "GroupID": 103020303,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 222,
+      "_byte_offset": 2684,
+      "LibID": 1030204,
+      "GroupID": 103020401,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 223,
+      "_byte_offset": 2696,
+      "LibID": 1030205,
+      "GroupID": 103020501,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 224,
+      "_byte_offset": 2708,
+      "LibID": 1030205,
+      "GroupID": 103020502,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 225,
+      "_byte_offset": 2720,
+      "LibID": 1030205,
+      "GroupID": 103020503,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 226,
+      "_byte_offset": 2732,
+      "LibID": 1030205,
+      "GroupID": 103020504,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 227,
+      "_byte_offset": 2744,
+      "LibID": 1030205,
+      "GroupID": 103020505,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 228,
+      "_byte_offset": 2756,
+      "LibID": 1030302,
+      "GroupID": 103030201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 229,
+      "_byte_offset": 2768,
+      "LibID": 1030302,
+      "GroupID": 103030202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 230,
+      "_byte_offset": 2780,
+      "LibID": 1030302,
+      "GroupID": 103030203,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 231,
+      "_byte_offset": 2792,
+      "LibID": 1030206,
+      "GroupID": 103020601,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 232,
+      "_byte_offset": 2804,
+      "LibID": 1030207,
+      "GroupID": 103020701,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 233,
+      "_byte_offset": 2816,
+      "LibID": 1030207,
+      "GroupID": 103020702,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 234,
+      "_byte_offset": 2828,
+      "LibID": 1030208,
+      "GroupID": 103020801,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 235,
+      "_byte_offset": 2840,
+      "LibID": 1030208,
+      "GroupID": 103020802,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 236,
+      "_byte_offset": 2852,
+      "LibID": 1030208,
+      "GroupID": 103020803,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 237,
+      "_byte_offset": 2864,
+      "LibID": 1030208,
+      "GroupID": 103020804,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 238,
+      "_byte_offset": 2876,
+      "LibID": 1030208,
+      "GroupID": 103020805,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 239,
+      "_byte_offset": 2888,
+      "LibID": 1030208,
+      "GroupID": 103020806,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 240,
+      "_byte_offset": 2900,
+      "LibID": 1030208,
+      "GroupID": 103020807,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 241,
+      "_byte_offset": 2912,
+      "LibID": 1030209,
+      "GroupID": 103020901,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 242,
+      "_byte_offset": 2924,
+      "LibID": 1030209,
+      "GroupID": 103020902,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 243,
+      "_byte_offset": 2936,
+      "LibID": 1030209,
+      "GroupID": 103020903,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 244,
+      "_byte_offset": 2948,
+      "LibID": 1030210,
+      "GroupID": 103021001,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 245,
+      "_byte_offset": 2960,
+      "LibID": 1039901,
+      "GroupID": 103990101,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 246,
+      "_byte_offset": 2972,
+      "LibID": 1040101,
+      "GroupID": 104010101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 247,
+      "_byte_offset": 2984,
+      "LibID": 1040101,
+      "GroupID": 104010102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 248,
+      "_byte_offset": 2996,
+      "LibID": 1040301,
+      "GroupID": 104030101,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 249,
+      "_byte_offset": 3008,
+      "LibID": 1040201,
+      "GroupID": 104020101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 250,
+      "_byte_offset": 3020,
+      "LibID": 1040201,
+      "GroupID": 104020102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 251,
+      "_byte_offset": 3032,
+      "LibID": 1040201,
+      "GroupID": 104020103,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 252,
+      "_byte_offset": 3044,
+      "LibID": 1040201,
+      "GroupID": 104020104,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 253,
+      "_byte_offset": 3056,
+      "LibID": 1040201,
+      "GroupID": 104020105,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 254,
+      "_byte_offset": 3068,
+      "LibID": 1040201,
+      "GroupID": 104020106,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 255,
+      "_byte_offset": 3080,
+      "LibID": 1040201,
+      "GroupID": 104020107,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 256,
+      "_byte_offset": 3092,
+      "LibID": 1040201,
+      "GroupID": 104020108,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 257,
+      "_byte_offset": 3104,
+      "LibID": 1040201,
+      "GroupID": 104020109,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 258,
+      "_byte_offset": 3116,
+      "LibID": 1040201,
+      "GroupID": 104020110,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 259,
+      "_byte_offset": 3128,
+      "LibID": 1040202,
+      "GroupID": 104020201,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 260,
+      "_byte_offset": 3140,
+      "LibID": 1040202,
+      "GroupID": 104020202,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 261,
+      "_byte_offset": 3152,
+      "LibID": 1040203,
+      "GroupID": 104020301,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 262,
+      "_byte_offset": 3164,
+      "LibID": 1040302,
+      "GroupID": 104030201,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 263,
+      "_byte_offset": 3176,
+      "LibID": 1040302,
+      "GroupID": 104030202,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 264,
+      "_byte_offset": 3188,
+      "LibID": 1040302,
+      "GroupID": 104030203,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 265,
+      "_byte_offset": 3200,
+      "LibID": 1040204,
+      "GroupID": 104020401,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 266,
+      "_byte_offset": 3212,
+      "LibID": 1040204,
+      "GroupID": 104020402,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 267,
+      "_byte_offset": 3224,
+      "LibID": 1040204,
+      "GroupID": 104020403,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 268,
+      "_byte_offset": 3236,
+      "LibID": 1040204,
+      "GroupID": 104020404,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 269,
+      "_byte_offset": 3248,
+      "LibID": 1040204,
+      "GroupID": 104020405,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 270,
+      "_byte_offset": 3260,
+      "LibID": 1040204,
+      "GroupID": 104020406,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 271,
+      "_byte_offset": 3272,
+      "LibID": 1040204,
+      "GroupID": 104020407,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 272,
+      "_byte_offset": 3284,
+      "LibID": 1040204,
+      "GroupID": 104020408,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 273,
+      "_byte_offset": 3296,
+      "LibID": 1040204,
+      "GroupID": 104020409,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 274,
+      "_byte_offset": 3308,
+      "LibID": 1040204,
+      "GroupID": 104020410,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 275,
+      "_byte_offset": 3320,
+      "LibID": 1040205,
+      "GroupID": 104020501,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 276,
+      "_byte_offset": 3332,
+      "LibID": 1040205,
+      "GroupID": 104020502,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 277,
+      "_byte_offset": 3344,
+      "LibID": 1040205,
+      "GroupID": 104020503,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 278,
+      "_byte_offset": 3356,
+      "LibID": 1040303,
+      "GroupID": 104030301,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 279,
+      "_byte_offset": 3368,
+      "LibID": 1040206,
+      "GroupID": 104020601,
+      "Weight": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 280,
+      "_byte_offset": 3380,
+      "LibID": 1040206,
+      "GroupID": 104020602,
+      "Weight": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 281,
+      "_byte_offset": 3392,
+      "LibID": 1040206,
+      "GroupID": 104020603,
+      "Weight": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 282,
+      "_byte_offset": 3404,
+      "LibID": 1040206,
+      "GroupID": 104020604,
+      "Weight": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 283,
+      "_byte_offset": 3416,
+      "LibID": 1040206,
+      "GroupID": 104020605,
+      "Weight": 0,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 284,
+      "_byte_offset": 3428,
+      "LibID": 1040207,
+      "GroupID": 104020701,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 285,
+      "_byte_offset": 3440,
+      "LibID": 1049901,
+      "GroupID": 104990101,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 286,
+      "_byte_offset": 3452,
+      "LibID": 1050101,
+      "GroupID": 105010101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 287,
+      "_byte_offset": 3464,
+      "LibID": 1050101,
+      "GroupID": 105010102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 288,
+      "_byte_offset": 3476,
+      "LibID": 1050301,
+      "GroupID": 105030101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 289,
+      "_byte_offset": 3488,
+      "LibID": 1050301,
+      "GroupID": 105030102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 290,
+      "_byte_offset": 3500,
+      "LibID": 1050301,
+      "GroupID": 105030103,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 291,
+      "_byte_offset": 3512,
+      "LibID": 1050301,
+      "GroupID": 105030104,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 292,
+      "_byte_offset": 3524,
+      "LibID": 1050301,
+      "GroupID": 105030105,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 293,
+      "_byte_offset": 3536,
+      "LibID": 1050301,
+      "GroupID": 105030106,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 294,
+      "_byte_offset": 3548,
+      "LibID": 1050201,
+      "GroupID": 105020101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 295,
+      "_byte_offset": 3560,
+      "LibID": 1050201,
+      "GroupID": 105020102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 296,
+      "_byte_offset": 3572,
+      "LibID": 1050201,
+      "GroupID": 105020103,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 297,
+      "_byte_offset": 3584,
+      "LibID": 1050201,
+      "GroupID": 105020104,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 298,
+      "_byte_offset": 3596,
+      "LibID": 1050201,
+      "GroupID": 105020105,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 299,
+      "_byte_offset": 3608,
+      "LibID": 1050201,
+      "GroupID": 105020106,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 300,
+      "_byte_offset": 3620,
+      "LibID": 1050202,
+      "GroupID": 105020201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 301,
+      "_byte_offset": 3632,
+      "LibID": 1050202,
+      "GroupID": 105020202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 302,
+      "_byte_offset": 3644,
+      "LibID": 1050202,
+      "GroupID": 105020203,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 303,
+      "_byte_offset": 3656,
+      "LibID": 1050202,
+      "GroupID": 105020204,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 304,
+      "_byte_offset": 3668,
+      "LibID": 1050102,
+      "GroupID": 105010201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 305,
+      "_byte_offset": 3680,
+      "LibID": 1050102,
+      "GroupID": 105010202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 306,
+      "_byte_offset": 3692,
+      "LibID": 1050302,
+      "GroupID": 105030201,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 307,
+      "_byte_offset": 3704,
+      "LibID": 1050203,
+      "GroupID": 105020301,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 308,
+      "_byte_offset": 3716,
+      "LibID": 1050204,
+      "GroupID": 105020401,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 309,
+      "_byte_offset": 3728,
+      "LibID": 1050205,
+      "GroupID": 105020501,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 310,
+      "_byte_offset": 3740,
+      "LibID": 1050206,
+      "GroupID": 105020601,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 311,
+      "_byte_offset": 3752,
+      "LibID": 1050103,
+      "GroupID": 105010301,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 312,
+      "_byte_offset": 3764,
+      "LibID": 1050103,
+      "GroupID": 105010302,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 313,
+      "_byte_offset": 3776,
+      "LibID": 1050207,
+      "GroupID": 105020701,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 314,
+      "_byte_offset": 3788,
+      "LibID": 1050303,
+      "GroupID": 105030301,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 315,
+      "_byte_offset": 3800,
+      "LibID": 1050303,
+      "GroupID": 105030302,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 316,
+      "_byte_offset": 3812,
+      "LibID": 1050208,
+      "GroupID": 105020801,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 317,
+      "_byte_offset": 3824,
+      "LibID": 1050208,
+      "GroupID": 105020802,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 318,
+      "_byte_offset": 3836,
+      "LibID": 1050208,
+      "GroupID": 105020803,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 319,
+      "_byte_offset": 3848,
+      "LibID": 1050208,
+      "GroupID": 105020804,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 320,
+      "_byte_offset": 3860,
+      "LibID": 1050304,
+      "GroupID": 105030401,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 321,
+      "_byte_offset": 3872,
+      "LibID": 1050104,
+      "GroupID": 105010401,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 322,
+      "_byte_offset": 3884,
+      "LibID": 1050104,
+      "GroupID": 105010402,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 323,
+      "_byte_offset": 3896,
+      "LibID": 1050209,
+      "GroupID": 105020901,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 324,
+      "_byte_offset": 3908,
+      "LibID": 1050209,
+      "GroupID": 105020902,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 325,
+      "_byte_offset": 3920,
+      "LibID": 1050209,
+      "GroupID": 105020903,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 326,
+      "_byte_offset": 3932,
+      "LibID": 1050209,
+      "GroupID": 105020904,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 327,
+      "_byte_offset": 3944,
+      "LibID": 1050209,
+      "GroupID": 105020905,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 328,
+      "_byte_offset": 3956,
+      "LibID": 1050209,
+      "GroupID": 105020906,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 329,
+      "_byte_offset": 3968,
+      "LibID": 1059801,
+      "GroupID": 105980101,
+      "Weight": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 330,
+      "_byte_offset": 3980,
+      "LibID": 1060101,
+      "GroupID": 106010101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 331,
+      "_byte_offset": 3992,
+      "LibID": 1060101,
+      "GroupID": 106010102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 332,
+      "_byte_offset": 4004,
+      "LibID": 1060101,
+      "GroupID": 106010103,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 333,
+      "_byte_offset": 4016,
+      "LibID": 1060101,
+      "GroupID": 106010104,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 334,
+      "_byte_offset": 4028,
+      "LibID": 1060101,
+      "GroupID": 106010105,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 335,
+      "_byte_offset": 4040,
+      "LibID": 1060101,
+      "GroupID": 106010106,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 336,
+      "_byte_offset": 4052,
+      "LibID": 1060102,
+      "GroupID": 106010201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 337,
+      "_byte_offset": 4064,
+      "LibID": 1060102,
+      "GroupID": 106010202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 338,
+      "_byte_offset": 4076,
+      "LibID": 1060102,
+      "GroupID": 106010203,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 339,
+      "_byte_offset": 4088,
+      "LibID": 1060102,
+      "GroupID": 106010204,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 340,
+      "_byte_offset": 4100,
+      "LibID": 1060103,
+      "GroupID": 106010301,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 341,
+      "_byte_offset": 4112,
+      "LibID": 1060104,
+      "GroupID": 106010401,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 342,
+      "_byte_offset": 4124,
+      "LibID": 1060105,
+      "GroupID": 106010501,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 343,
+      "_byte_offset": 4136,
+      "LibID": 1060106,
+      "GroupID": 106010601,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 344,
+      "_byte_offset": 4148,
+      "LibID": 1060107,
+      "GroupID": 106010701,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 345,
+      "_byte_offset": 4160,
+      "LibID": 1060108,
+      "GroupID": 106010801,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 346,
+      "_byte_offset": 4172,
+      "LibID": 1060108,
+      "GroupID": 106010802,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 347,
+      "_byte_offset": 4184,
+      "LibID": 1060108,
+      "GroupID": 106010803,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 348,
+      "_byte_offset": 4196,
+      "LibID": 1060108,
+      "GroupID": 106010804,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 349,
+      "_byte_offset": 4208,
+      "LibID": 1060109,
+      "GroupID": 106010901,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 350,
+      "_byte_offset": 4220,
+      "LibID": 1060109,
+      "GroupID": 106010902,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 351,
+      "_byte_offset": 4232,
+      "LibID": 1060109,
+      "GroupID": 106010903,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 352,
+      "_byte_offset": 4244,
+      "LibID": 1060109,
+      "GroupID": 106010904,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 353,
+      "_byte_offset": 4256,
+      "LibID": 1060109,
+      "GroupID": 106010905,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 354,
+      "_byte_offset": 4268,
+      "LibID": 1060109,
+      "GroupID": 106010906,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 355,
+      "_byte_offset": 4280,
+      "LibID": 1060110,
+      "GroupID": 106011001,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 356,
+      "_byte_offset": 4292,
+      "LibID": 1060110,
+      "GroupID": 106011002,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 357,
+      "_byte_offset": 4304,
+      "LibID": 1060110,
+      "GroupID": 106011003,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 358,
+      "_byte_offset": 4316,
+      "LibID": 1060110,
+      "GroupID": 106011004,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 359,
+      "_byte_offset": 4328,
+      "LibID": 1060110,
+      "GroupID": 106011005,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 360,
+      "_byte_offset": 4340,
+      "LibID": 1060110,
+      "GroupID": 106011006,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 361,
+      "_byte_offset": 4352,
+      "LibID": 1060201,
+      "GroupID": 106020101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 362,
+      "_byte_offset": 4364,
+      "LibID": 1060202,
+      "GroupID": 106020202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 363,
+      "_byte_offset": 4376,
+      "LibID": 1060203,
+      "GroupID": 106020303,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 364,
+      "_byte_offset": 4388,
+      "LibID": 1060301,
+      "GroupID": 106030101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 365,
+      "_byte_offset": 4400,
+      "LibID": 1060301,
+      "GroupID": 106030102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 366,
+      "_byte_offset": 4412,
+      "LibID": 1060301,
+      "GroupID": 106030103,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 367,
+      "_byte_offset": 4424,
+      "LibID": 1060301,
+      "GroupID": 106030104,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 368,
+      "_byte_offset": 4436,
+      "LibID": 1060301,
+      "GroupID": 106030105,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 369,
+      "_byte_offset": 4448,
+      "LibID": 1060301,
+      "GroupID": 106030106,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 370,
+      "_byte_offset": 4460,
+      "LibID": 1060302,
+      "GroupID": 106030201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 371,
+      "_byte_offset": 4472,
+      "LibID": 1060302,
+      "GroupID": 106030202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 372,
+      "_byte_offset": 4484,
+      "LibID": 1060401,
+      "GroupID": 106040101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 373,
+      "_byte_offset": 4496,
+      "LibID": 1060401,
+      "GroupID": 106040102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 374,
+      "_byte_offset": 4508,
+      "LibID": 1060402,
+      "GroupID": 106040201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 375,
+      "_byte_offset": 4520,
+      "LibID": 1060402,
+      "GroupID": 106040202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 376,
+      "_byte_offset": 4532,
+      "LibID": 1060403,
+      "GroupID": 106040301,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 377,
+      "_byte_offset": 4544,
+      "LibID": 1060403,
+      "GroupID": 106040302,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 378,
+      "_byte_offset": 4556,
+      "LibID": 1060404,
+      "GroupID": 106040401,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 379,
+      "_byte_offset": 4568,
+      "LibID": 1060404,
+      "GroupID": 106040402,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 380,
+      "_byte_offset": 4580,
+      "LibID": 1069801,
+      "GroupID": 106980101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 381,
+      "_byte_offset": 4592,
+      "LibID": 1070101,
+      "GroupID": 107010101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 382,
+      "_byte_offset": 4604,
+      "LibID": 1070101,
+      "GroupID": 107010102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 383,
+      "_byte_offset": 4616,
+      "LibID": 1070101,
+      "GroupID": 107010103,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 384,
+      "_byte_offset": 4628,
+      "LibID": 1070101,
+      "GroupID": 107010104,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 385,
+      "_byte_offset": 4640,
+      "LibID": 1070101,
+      "GroupID": 107010105,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 386,
+      "_byte_offset": 4652,
+      "LibID": 1070101,
+      "GroupID": 107010106,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 387,
+      "_byte_offset": 4664,
+      "LibID": 1070102,
+      "GroupID": 107010201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 388,
+      "_byte_offset": 4676,
+      "LibID": 1070102,
+      "GroupID": 107010202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 389,
+      "_byte_offset": 4688,
+      "LibID": 1070102,
+      "GroupID": 107010203,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 390,
+      "_byte_offset": 4700,
+      "LibID": 1070102,
+      "GroupID": 107010204,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 391,
+      "_byte_offset": 4712,
+      "LibID": 1070103,
+      "GroupID": 107010301,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 392,
+      "_byte_offset": 4724,
+      "LibID": 1070104,
+      "GroupID": 107010401,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 393,
+      "_byte_offset": 4736,
+      "LibID": 1070105,
+      "GroupID": 107010501,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 394,
+      "_byte_offset": 4748,
+      "LibID": 1070106,
+      "GroupID": 107010601,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 395,
+      "_byte_offset": 4760,
+      "LibID": 1070107,
+      "GroupID": 107010701,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 396,
+      "_byte_offset": 4772,
+      "LibID": 1070108,
+      "GroupID": 107010801,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 397,
+      "_byte_offset": 4784,
+      "LibID": 1070108,
+      "GroupID": 107010802,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 398,
+      "_byte_offset": 4796,
+      "LibID": 1070108,
+      "GroupID": 107010803,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 399,
+      "_byte_offset": 4808,
+      "LibID": 1070108,
+      "GroupID": 107010804,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 400,
+      "_byte_offset": 4820,
+      "LibID": 1070109,
+      "GroupID": 107010901,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 401,
+      "_byte_offset": 4832,
+      "LibID": 1070109,
+      "GroupID": 107010902,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 402,
+      "_byte_offset": 4844,
+      "LibID": 1070109,
+      "GroupID": 107010903,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 403,
+      "_byte_offset": 4856,
+      "LibID": 1070109,
+      "GroupID": 107010904,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 404,
+      "_byte_offset": 4868,
+      "LibID": 1070109,
+      "GroupID": 107010905,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 405,
+      "_byte_offset": 4880,
+      "LibID": 1070109,
+      "GroupID": 107010906,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 406,
+      "_byte_offset": 4892,
+      "LibID": 1070110,
+      "GroupID": 107011001,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 407,
+      "_byte_offset": 4904,
+      "LibID": 1070110,
+      "GroupID": 107011002,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 408,
+      "_byte_offset": 4916,
+      "LibID": 1070110,
+      "GroupID": 107011003,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 409,
+      "_byte_offset": 4928,
+      "LibID": 1070110,
+      "GroupID": 107011004,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 410,
+      "_byte_offset": 4940,
+      "LibID": 1070110,
+      "GroupID": 107011005,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 411,
+      "_byte_offset": 4952,
+      "LibID": 1070110,
+      "GroupID": 107011006,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 412,
+      "_byte_offset": 4964,
+      "LibID": 1070201,
+      "GroupID": 107020101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 413,
+      "_byte_offset": 4976,
+      "LibID": 1070202,
+      "GroupID": 107020202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 414,
+      "_byte_offset": 4988,
+      "LibID": 1070203,
+      "GroupID": 107020303,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 415,
+      "_byte_offset": 5000,
+      "LibID": 1070301,
+      "GroupID": 107030101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 416,
+      "_byte_offset": 5012,
+      "LibID": 1070301,
+      "GroupID": 107030102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 417,
+      "_byte_offset": 5024,
+      "LibID": 1070301,
+      "GroupID": 107030103,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 418,
+      "_byte_offset": 5036,
+      "LibID": 1070301,
+      "GroupID": 107030104,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 419,
+      "_byte_offset": 5048,
+      "LibID": 1070301,
+      "GroupID": 107030105,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 420,
+      "_byte_offset": 5060,
+      "LibID": 1070301,
+      "GroupID": 107030106,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 421,
+      "_byte_offset": 5072,
+      "LibID": 1070302,
+      "GroupID": 107030201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 422,
+      "_byte_offset": 5084,
+      "LibID": 1070302,
+      "GroupID": 107030202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 423,
+      "_byte_offset": 5096,
+      "LibID": 1070401,
+      "GroupID": 107040101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 424,
+      "_byte_offset": 5108,
+      "LibID": 1070401,
+      "GroupID": 107040102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 425,
+      "_byte_offset": 5120,
+      "LibID": 1070402,
+      "GroupID": 107040201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 426,
+      "_byte_offset": 5132,
+      "LibID": 1070402,
+      "GroupID": 107040202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 427,
+      "_byte_offset": 5144,
+      "LibID": 1070403,
+      "GroupID": 107040301,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 428,
+      "_byte_offset": 5156,
+      "LibID": 1070403,
+      "GroupID": 107040302,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 429,
+      "_byte_offset": 5168,
+      "LibID": 1070404,
+      "GroupID": 107040401,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 430,
+      "_byte_offset": 5180,
+      "LibID": 1070404,
+      "GroupID": 107040402,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 431,
+      "_byte_offset": 5192,
+      "LibID": 1079801,
+      "GroupID": 107980101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 432,
+      "_byte_offset": 5204,
+      "LibID": 1080101,
+      "GroupID": 108010101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 433,
+      "_byte_offset": 5216,
+      "LibID": 1080101,
+      "GroupID": 108010102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 434,
+      "_byte_offset": 5228,
+      "LibID": 1080101,
+      "GroupID": 108010103,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 435,
+      "_byte_offset": 5240,
+      "LibID": 1080101,
+      "GroupID": 108010104,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 436,
+      "_byte_offset": 5252,
+      "LibID": 1080101,
+      "GroupID": 108010105,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 437,
+      "_byte_offset": 5264,
+      "LibID": 1080101,
+      "GroupID": 108010106,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 438,
+      "_byte_offset": 5276,
+      "LibID": 1080102,
+      "GroupID": 108010201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 439,
+      "_byte_offset": 5288,
+      "LibID": 1080102,
+      "GroupID": 108010202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 440,
+      "_byte_offset": 5300,
+      "LibID": 1080102,
+      "GroupID": 108010203,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 441,
+      "_byte_offset": 5312,
+      "LibID": 1080102,
+      "GroupID": 108010204,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 442,
+      "_byte_offset": 5324,
+      "LibID": 1080103,
+      "GroupID": 108010301,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 443,
+      "_byte_offset": 5336,
+      "LibID": 1080104,
+      "GroupID": 108010401,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 444,
+      "_byte_offset": 5348,
+      "LibID": 1080105,
+      "GroupID": 108010501,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 445,
+      "_byte_offset": 5360,
+      "LibID": 1080106,
+      "GroupID": 108010601,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 446,
+      "_byte_offset": 5372,
+      "LibID": 1080107,
+      "GroupID": 108010701,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 447,
+      "_byte_offset": 5384,
+      "LibID": 1080108,
+      "GroupID": 108010801,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 448,
+      "_byte_offset": 5396,
+      "LibID": 1080108,
+      "GroupID": 108010802,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 449,
+      "_byte_offset": 5408,
+      "LibID": 1080108,
+      "GroupID": 108010803,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 450,
+      "_byte_offset": 5420,
+      "LibID": 1080108,
+      "GroupID": 108010804,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 451,
+      "_byte_offset": 5432,
+      "LibID": 1080109,
+      "GroupID": 108010901,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 452,
+      "_byte_offset": 5444,
+      "LibID": 1080109,
+      "GroupID": 108010902,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 453,
+      "_byte_offset": 5456,
+      "LibID": 1080109,
+      "GroupID": 108010903,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 454,
+      "_byte_offset": 5468,
+      "LibID": 1080109,
+      "GroupID": 108010904,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 455,
+      "_byte_offset": 5480,
+      "LibID": 1080109,
+      "GroupID": 108010905,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 456,
+      "_byte_offset": 5492,
+      "LibID": 1080109,
+      "GroupID": 108010906,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 457,
+      "_byte_offset": 5504,
+      "LibID": 1080110,
+      "GroupID": 108011001,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 458,
+      "_byte_offset": 5516,
+      "LibID": 1080110,
+      "GroupID": 108011002,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 459,
+      "_byte_offset": 5528,
+      "LibID": 1080110,
+      "GroupID": 108011003,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 460,
+      "_byte_offset": 5540,
+      "LibID": 1080110,
+      "GroupID": 108011004,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 461,
+      "_byte_offset": 5552,
+      "LibID": 1080110,
+      "GroupID": 108011005,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 462,
+      "_byte_offset": 5564,
+      "LibID": 1080110,
+      "GroupID": 108011006,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 463,
+      "_byte_offset": 5576,
+      "LibID": 1080201,
+      "GroupID": 108020101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 464,
+      "_byte_offset": 5588,
+      "LibID": 1080202,
+      "GroupID": 108020202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 465,
+      "_byte_offset": 5600,
+      "LibID": 1080203,
+      "GroupID": 108020303,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 466,
+      "_byte_offset": 5612,
+      "LibID": 1080301,
+      "GroupID": 108030101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 467,
+      "_byte_offset": 5624,
+      "LibID": 1080301,
+      "GroupID": 108030102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 468,
+      "_byte_offset": 5636,
+      "LibID": 1080301,
+      "GroupID": 108030103,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 469,
+      "_byte_offset": 5648,
+      "LibID": 1080301,
+      "GroupID": 108030104,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 470,
+      "_byte_offset": 5660,
+      "LibID": 1080301,
+      "GroupID": 108030105,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 471,
+      "_byte_offset": 5672,
+      "LibID": 1080301,
+      "GroupID": 108030106,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 472,
+      "_byte_offset": 5684,
+      "LibID": 1080302,
+      "GroupID": 108030201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 473,
+      "_byte_offset": 5696,
+      "LibID": 1080302,
+      "GroupID": 108030202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 474,
+      "_byte_offset": 5708,
+      "LibID": 1080401,
+      "GroupID": 108040101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 475,
+      "_byte_offset": 5720,
+      "LibID": 1080401,
+      "GroupID": 108040102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 476,
+      "_byte_offset": 5732,
+      "LibID": 1080402,
+      "GroupID": 108040201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 477,
+      "_byte_offset": 5744,
+      "LibID": 1080402,
+      "GroupID": 108040202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 478,
+      "_byte_offset": 5756,
+      "LibID": 1080403,
+      "GroupID": 108040301,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 479,
+      "_byte_offset": 5768,
+      "LibID": 1080403,
+      "GroupID": 108040302,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 480,
+      "_byte_offset": 5780,
+      "LibID": 1080404,
+      "GroupID": 108040401,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 481,
+      "_byte_offset": 5792,
+      "LibID": 1080404,
+      "GroupID": 108040402,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 482,
+      "_byte_offset": 5804,
+      "LibID": 1089801,
+      "GroupID": 108980101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 483,
+      "_byte_offset": 5816,
+      "LibID": 1090101,
+      "GroupID": 109010101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 484,
+      "_byte_offset": 5828,
+      "LibID": 1090101,
+      "GroupID": 109010102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 485,
+      "_byte_offset": 5840,
+      "LibID": 1090101,
+      "GroupID": 109010103,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 486,
+      "_byte_offset": 5852,
+      "LibID": 1090101,
+      "GroupID": 109010104,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 487,
+      "_byte_offset": 5864,
+      "LibID": 1090101,
+      "GroupID": 109010105,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 488,
+      "_byte_offset": 5876,
+      "LibID": 1090101,
+      "GroupID": 109010106,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 489,
+      "_byte_offset": 5888,
+      "LibID": 1090102,
+      "GroupID": 109010201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 490,
+      "_byte_offset": 5900,
+      "LibID": 1090102,
+      "GroupID": 109010202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 491,
+      "_byte_offset": 5912,
+      "LibID": 1090102,
+      "GroupID": 109010203,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 492,
+      "_byte_offset": 5924,
+      "LibID": 1090102,
+      "GroupID": 109010204,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 493,
+      "_byte_offset": 5936,
+      "LibID": 1090103,
+      "GroupID": 109010301,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 494,
+      "_byte_offset": 5948,
+      "LibID": 1090104,
+      "GroupID": 109010401,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 495,
+      "_byte_offset": 5960,
+      "LibID": 1090105,
+      "GroupID": 109010501,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 496,
+      "_byte_offset": 5972,
+      "LibID": 1090106,
+      "GroupID": 109010601,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 497,
+      "_byte_offset": 5984,
+      "LibID": 1090107,
+      "GroupID": 109010701,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 498,
+      "_byte_offset": 5996,
+      "LibID": 1090108,
+      "GroupID": 109010801,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 499,
+      "_byte_offset": 6008,
+      "LibID": 1090108,
+      "GroupID": 109010802,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 500,
+      "_byte_offset": 6020,
+      "LibID": 1090108,
+      "GroupID": 109010803,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 501,
+      "_byte_offset": 6032,
+      "LibID": 1090108,
+      "GroupID": 109010804,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 502,
+      "_byte_offset": 6044,
+      "LibID": 1090109,
+      "GroupID": 109010901,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 503,
+      "_byte_offset": 6056,
+      "LibID": 1090109,
+      "GroupID": 109010902,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 504,
+      "_byte_offset": 6068,
+      "LibID": 1090109,
+      "GroupID": 109010903,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 505,
+      "_byte_offset": 6080,
+      "LibID": 1090109,
+      "GroupID": 109010904,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 506,
+      "_byte_offset": 6092,
+      "LibID": 1090109,
+      "GroupID": 109010905,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 507,
+      "_byte_offset": 6104,
+      "LibID": 1090109,
+      "GroupID": 109010906,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 508,
+      "_byte_offset": 6116,
+      "LibID": 1090110,
+      "GroupID": 109011001,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 509,
+      "_byte_offset": 6128,
+      "LibID": 1090110,
+      "GroupID": 109011002,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 510,
+      "_byte_offset": 6140,
+      "LibID": 1090110,
+      "GroupID": 109011003,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 511,
+      "_byte_offset": 6152,
+      "LibID": 1090110,
+      "GroupID": 109011004,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 512,
+      "_byte_offset": 6164,
+      "LibID": 1090110,
+      "GroupID": 109011005,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 513,
+      "_byte_offset": 6176,
+      "LibID": 1090110,
+      "GroupID": 109011006,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 514,
+      "_byte_offset": 6188,
+      "LibID": 1090201,
+      "GroupID": 109020101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 515,
+      "_byte_offset": 6200,
+      "LibID": 1090202,
+      "GroupID": 109020202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 516,
+      "_byte_offset": 6212,
+      "LibID": 1090203,
+      "GroupID": 109020303,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 517,
+      "_byte_offset": 6224,
+      "LibID": 1090301,
+      "GroupID": 109030101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 518,
+      "_byte_offset": 6236,
+      "LibID": 1090301,
+      "GroupID": 109030102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 519,
+      "_byte_offset": 6248,
+      "LibID": 1090301,
+      "GroupID": 109030103,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 520,
+      "_byte_offset": 6260,
+      "LibID": 1090301,
+      "GroupID": 109030104,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 521,
+      "_byte_offset": 6272,
+      "LibID": 1090301,
+      "GroupID": 109030105,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 522,
+      "_byte_offset": 6284,
+      "LibID": 1090301,
+      "GroupID": 109030106,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 523,
+      "_byte_offset": 6296,
+      "LibID": 1090302,
+      "GroupID": 109030201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 524,
+      "_byte_offset": 6308,
+      "LibID": 1090302,
+      "GroupID": 109030202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 525,
+      "_byte_offset": 6320,
+      "LibID": 1090401,
+      "GroupID": 109040101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 526,
+      "_byte_offset": 6332,
+      "LibID": 1090401,
+      "GroupID": 109040102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 527,
+      "_byte_offset": 6344,
+      "LibID": 1090402,
+      "GroupID": 109040201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 528,
+      "_byte_offset": 6356,
+      "LibID": 1090402,
+      "GroupID": 109040202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 529,
+      "_byte_offset": 6368,
+      "LibID": 1090403,
+      "GroupID": 109040301,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 530,
+      "_byte_offset": 6380,
+      "LibID": 1090403,
+      "GroupID": 109040302,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 531,
+      "_byte_offset": 6392,
+      "LibID": 1090404,
+      "GroupID": 109040401,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 532,
+      "_byte_offset": 6404,
+      "LibID": 1090404,
+      "GroupID": 109040402,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 533,
+      "_byte_offset": 6416,
+      "LibID": 1099801,
+      "GroupID": 109980101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 534,
+      "_byte_offset": 6428,
+      "LibID": 1100101,
+      "GroupID": 110010101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 535,
+      "_byte_offset": 6440,
+      "LibID": 1100101,
+      "GroupID": 110010102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 536,
+      "_byte_offset": 6452,
+      "LibID": 1100101,
+      "GroupID": 110010103,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 537,
+      "_byte_offset": 6464,
+      "LibID": 1100101,
+      "GroupID": 110010104,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 538,
+      "_byte_offset": 6476,
+      "LibID": 1100101,
+      "GroupID": 110010105,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 539,
+      "_byte_offset": 6488,
+      "LibID": 1100101,
+      "GroupID": 110010106,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 540,
+      "_byte_offset": 6500,
+      "LibID": 1100102,
+      "GroupID": 110010201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 541,
+      "_byte_offset": 6512,
+      "LibID": 1100102,
+      "GroupID": 110010202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 542,
+      "_byte_offset": 6524,
+      "LibID": 1100102,
+      "GroupID": 110010203,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 543,
+      "_byte_offset": 6536,
+      "LibID": 1100102,
+      "GroupID": 110010204,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 544,
+      "_byte_offset": 6548,
+      "LibID": 1100103,
+      "GroupID": 110010301,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 545,
+      "_byte_offset": 6560,
+      "LibID": 1100104,
+      "GroupID": 110010401,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 546,
+      "_byte_offset": 6572,
+      "LibID": 1100105,
+      "GroupID": 110010501,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 547,
+      "_byte_offset": 6584,
+      "LibID": 1100106,
+      "GroupID": 110010601,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 548,
+      "_byte_offset": 6596,
+      "LibID": 1100107,
+      "GroupID": 110010701,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 549,
+      "_byte_offset": 6608,
+      "LibID": 1100108,
+      "GroupID": 110010801,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 550,
+      "_byte_offset": 6620,
+      "LibID": 1100108,
+      "GroupID": 110010802,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 551,
+      "_byte_offset": 6632,
+      "LibID": 1100108,
+      "GroupID": 110010803,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 552,
+      "_byte_offset": 6644,
+      "LibID": 1100108,
+      "GroupID": 110010804,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 553,
+      "_byte_offset": 6656,
+      "LibID": 1100109,
+      "GroupID": 110010901,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 554,
+      "_byte_offset": 6668,
+      "LibID": 1100109,
+      "GroupID": 110010902,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 555,
+      "_byte_offset": 6680,
+      "LibID": 1100109,
+      "GroupID": 110010903,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 556,
+      "_byte_offset": 6692,
+      "LibID": 1100109,
+      "GroupID": 110010904,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 557,
+      "_byte_offset": 6704,
+      "LibID": 1100109,
+      "GroupID": 110010905,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 558,
+      "_byte_offset": 6716,
+      "LibID": 1100109,
+      "GroupID": 110010906,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 559,
+      "_byte_offset": 6728,
+      "LibID": 1100110,
+      "GroupID": 110011001,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 560,
+      "_byte_offset": 6740,
+      "LibID": 1100110,
+      "GroupID": 110011002,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 561,
+      "_byte_offset": 6752,
+      "LibID": 1100110,
+      "GroupID": 110011003,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 562,
+      "_byte_offset": 6764,
+      "LibID": 1100110,
+      "GroupID": 110011004,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 563,
+      "_byte_offset": 6776,
+      "LibID": 1100110,
+      "GroupID": 110011005,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 564,
+      "_byte_offset": 6788,
+      "LibID": 1100110,
+      "GroupID": 110011006,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 565,
+      "_byte_offset": 6800,
+      "LibID": 1100201,
+      "GroupID": 110020101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 566,
+      "_byte_offset": 6812,
+      "LibID": 1100202,
+      "GroupID": 110020202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 567,
+      "_byte_offset": 6824,
+      "LibID": 1100203,
+      "GroupID": 110020303,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 568,
+      "_byte_offset": 6836,
+      "LibID": 1100301,
+      "GroupID": 110030101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 569,
+      "_byte_offset": 6848,
+      "LibID": 1100301,
+      "GroupID": 110030102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 570,
+      "_byte_offset": 6860,
+      "LibID": 1100301,
+      "GroupID": 110030103,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 571,
+      "_byte_offset": 6872,
+      "LibID": 1100301,
+      "GroupID": 110030104,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 572,
+      "_byte_offset": 6884,
+      "LibID": 1100301,
+      "GroupID": 110030105,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 573,
+      "_byte_offset": 6896,
+      "LibID": 1100301,
+      "GroupID": 110030106,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 574,
+      "_byte_offset": 6908,
+      "LibID": 1100302,
+      "GroupID": 110030201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 575,
+      "_byte_offset": 6920,
+      "LibID": 1100302,
+      "GroupID": 110030202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 576,
+      "_byte_offset": 6932,
+      "LibID": 1100401,
+      "GroupID": 110040101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 577,
+      "_byte_offset": 6944,
+      "LibID": 1100401,
+      "GroupID": 110040102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 578,
+      "_byte_offset": 6956,
+      "LibID": 1100402,
+      "GroupID": 110040201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 579,
+      "_byte_offset": 6968,
+      "LibID": 1100402,
+      "GroupID": 110040202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 580,
+      "_byte_offset": 6980,
+      "LibID": 1100403,
+      "GroupID": 110040301,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 581,
+      "_byte_offset": 6992,
+      "LibID": 1100403,
+      "GroupID": 110040302,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 582,
+      "_byte_offset": 7004,
+      "LibID": 1100404,
+      "GroupID": 110040401,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 583,
+      "_byte_offset": 7016,
+      "LibID": 1100404,
+      "GroupID": 110040402,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 584,
+      "_byte_offset": 7028,
+      "LibID": 1109801,
+      "GroupID": 110980101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 585,
+      "_byte_offset": 7040,
+      "LibID": 1110101,
+      "GroupID": 111010101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 586,
+      "_byte_offset": 7052,
+      "LibID": 1110101,
+      "GroupID": 111010102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 587,
+      "_byte_offset": 7064,
+      "LibID": 1110101,
+      "GroupID": 111010103,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 588,
+      "_byte_offset": 7076,
+      "LibID": 1110101,
+      "GroupID": 111010104,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 589,
+      "_byte_offset": 7088,
+      "LibID": 1110101,
+      "GroupID": 111010105,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 590,
+      "_byte_offset": 7100,
+      "LibID": 1110101,
+      "GroupID": 111010106,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 591,
+      "_byte_offset": 7112,
+      "LibID": 1110102,
+      "GroupID": 111010201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 592,
+      "_byte_offset": 7124,
+      "LibID": 1110102,
+      "GroupID": 111010202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 593,
+      "_byte_offset": 7136,
+      "LibID": 1110102,
+      "GroupID": 111010203,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 594,
+      "_byte_offset": 7148,
+      "LibID": 1110102,
+      "GroupID": 111010204,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 595,
+      "_byte_offset": 7160,
+      "LibID": 1110103,
+      "GroupID": 111010301,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 596,
+      "_byte_offset": 7172,
+      "LibID": 1110104,
+      "GroupID": 111010401,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 597,
+      "_byte_offset": 7184,
+      "LibID": 1110105,
+      "GroupID": 111010501,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 598,
+      "_byte_offset": 7196,
+      "LibID": 1110106,
+      "GroupID": 111010601,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 599,
+      "_byte_offset": 7208,
+      "LibID": 1110107,
+      "GroupID": 111010701,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 600,
+      "_byte_offset": 7220,
+      "LibID": 1110108,
+      "GroupID": 111010801,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 601,
+      "_byte_offset": 7232,
+      "LibID": 1110108,
+      "GroupID": 111010802,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 602,
+      "_byte_offset": 7244,
+      "LibID": 1110108,
+      "GroupID": 111010803,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 603,
+      "_byte_offset": 7256,
+      "LibID": 1110108,
+      "GroupID": 111010804,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 604,
+      "_byte_offset": 7268,
+      "LibID": 1110109,
+      "GroupID": 111010901,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 605,
+      "_byte_offset": 7280,
+      "LibID": 1110109,
+      "GroupID": 111010902,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 606,
+      "_byte_offset": 7292,
+      "LibID": 1110109,
+      "GroupID": 111010903,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 607,
+      "_byte_offset": 7304,
+      "LibID": 1110109,
+      "GroupID": 111010904,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 608,
+      "_byte_offset": 7316,
+      "LibID": 1110109,
+      "GroupID": 111010905,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 609,
+      "_byte_offset": 7328,
+      "LibID": 1110109,
+      "GroupID": 111010906,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 610,
+      "_byte_offset": 7340,
+      "LibID": 1110110,
+      "GroupID": 111011001,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 611,
+      "_byte_offset": 7352,
+      "LibID": 1110110,
+      "GroupID": 111011002,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 612,
+      "_byte_offset": 7364,
+      "LibID": 1110110,
+      "GroupID": 111011003,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 613,
+      "_byte_offset": 7376,
+      "LibID": 1110110,
+      "GroupID": 111011004,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 614,
+      "_byte_offset": 7388,
+      "LibID": 1110110,
+      "GroupID": 111011005,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 615,
+      "_byte_offset": 7400,
+      "LibID": 1110110,
+      "GroupID": 111011006,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 616,
+      "_byte_offset": 7412,
+      "LibID": 1110201,
+      "GroupID": 111020101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 617,
+      "_byte_offset": 7424,
+      "LibID": 1110202,
+      "GroupID": 111020202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 618,
+      "_byte_offset": 7436,
+      "LibID": 1110203,
+      "GroupID": 111020303,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 619,
+      "_byte_offset": 7448,
+      "LibID": 1110301,
+      "GroupID": 111030101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 620,
+      "_byte_offset": 7460,
+      "LibID": 1110301,
+      "GroupID": 111030102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 621,
+      "_byte_offset": 7472,
+      "LibID": 1110301,
+      "GroupID": 111030103,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 622,
+      "_byte_offset": 7484,
+      "LibID": 1110301,
+      "GroupID": 111030104,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 623,
+      "_byte_offset": 7496,
+      "LibID": 1110301,
+      "GroupID": 111030105,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 624,
+      "_byte_offset": 7508,
+      "LibID": 1110301,
+      "GroupID": 111030106,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 625,
+      "_byte_offset": 7520,
+      "LibID": 1110302,
+      "GroupID": 111030201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 626,
+      "_byte_offset": 7532,
+      "LibID": 1110302,
+      "GroupID": 111030202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 627,
+      "_byte_offset": 7544,
+      "LibID": 1110401,
+      "GroupID": 111040101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 628,
+      "_byte_offset": 7556,
+      "LibID": 1110401,
+      "GroupID": 111040102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 629,
+      "_byte_offset": 7568,
+      "LibID": 1110402,
+      "GroupID": 111040201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 630,
+      "_byte_offset": 7580,
+      "LibID": 1110402,
+      "GroupID": 111040202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 631,
+      "_byte_offset": 7592,
+      "LibID": 1110403,
+      "GroupID": 111040301,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 632,
+      "_byte_offset": 7604,
+      "LibID": 1110403,
+      "GroupID": 111040302,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 633,
+      "_byte_offset": 7616,
+      "LibID": 1110404,
+      "GroupID": 111040401,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 634,
+      "_byte_offset": 7628,
+      "LibID": 1110404,
+      "GroupID": 111040402,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 635,
+      "_byte_offset": 7640,
+      "LibID": 1119801,
+      "GroupID": 111980101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 636,
+      "_byte_offset": 7652,
+      "LibID": 1120101,
+      "GroupID": 112010101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 637,
+      "_byte_offset": 7664,
+      "LibID": 1120101,
+      "GroupID": 112010102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 638,
+      "_byte_offset": 7676,
+      "LibID": 1120101,
+      "GroupID": 112010103,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 639,
+      "_byte_offset": 7688,
+      "LibID": 1120101,
+      "GroupID": 112010104,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 640,
+      "_byte_offset": 7700,
+      "LibID": 1120101,
+      "GroupID": 112010105,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 641,
+      "_byte_offset": 7712,
+      "LibID": 1120101,
+      "GroupID": 112010106,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 642,
+      "_byte_offset": 7724,
+      "LibID": 1120102,
+      "GroupID": 112010201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 643,
+      "_byte_offset": 7736,
+      "LibID": 1120102,
+      "GroupID": 112010202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 644,
+      "_byte_offset": 7748,
+      "LibID": 1120102,
+      "GroupID": 112010203,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 645,
+      "_byte_offset": 7760,
+      "LibID": 1120102,
+      "GroupID": 112010204,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 646,
+      "_byte_offset": 7772,
+      "LibID": 1120103,
+      "GroupID": 112010301,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 647,
+      "_byte_offset": 7784,
+      "LibID": 1120104,
+      "GroupID": 112010401,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 648,
+      "_byte_offset": 7796,
+      "LibID": 1120105,
+      "GroupID": 112010501,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 649,
+      "_byte_offset": 7808,
+      "LibID": 1120106,
+      "GroupID": 112010601,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 650,
+      "_byte_offset": 7820,
+      "LibID": 1120107,
+      "GroupID": 112010701,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 651,
+      "_byte_offset": 7832,
+      "LibID": 1120108,
+      "GroupID": 112010801,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 652,
+      "_byte_offset": 7844,
+      "LibID": 1120108,
+      "GroupID": 112010802,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 653,
+      "_byte_offset": 7856,
+      "LibID": 1120108,
+      "GroupID": 112010803,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 654,
+      "_byte_offset": 7868,
+      "LibID": 1120108,
+      "GroupID": 112010804,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 655,
+      "_byte_offset": 7880,
+      "LibID": 1120109,
+      "GroupID": 112010901,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 656,
+      "_byte_offset": 7892,
+      "LibID": 1120109,
+      "GroupID": 112010902,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 657,
+      "_byte_offset": 7904,
+      "LibID": 1120109,
+      "GroupID": 112010903,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 658,
+      "_byte_offset": 7916,
+      "LibID": 1120109,
+      "GroupID": 112010904,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 659,
+      "_byte_offset": 7928,
+      "LibID": 1120109,
+      "GroupID": 112010905,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 660,
+      "_byte_offset": 7940,
+      "LibID": 1120109,
+      "GroupID": 112010906,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 661,
+      "_byte_offset": 7952,
+      "LibID": 1120110,
+      "GroupID": 112011001,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 662,
+      "_byte_offset": 7964,
+      "LibID": 1120110,
+      "GroupID": 112011002,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 663,
+      "_byte_offset": 7976,
+      "LibID": 1120110,
+      "GroupID": 112011003,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 664,
+      "_byte_offset": 7988,
+      "LibID": 1120110,
+      "GroupID": 112011004,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 665,
+      "_byte_offset": 8000,
+      "LibID": 1120110,
+      "GroupID": 112011005,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 666,
+      "_byte_offset": 8012,
+      "LibID": 1120110,
+      "GroupID": 112011006,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 667,
+      "_byte_offset": 8024,
+      "LibID": 1120201,
+      "GroupID": 112020101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 668,
+      "_byte_offset": 8036,
+      "LibID": 1120202,
+      "GroupID": 112020202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 669,
+      "_byte_offset": 8048,
+      "LibID": 1120203,
+      "GroupID": 112020303,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 670,
+      "_byte_offset": 8060,
+      "LibID": 1120301,
+      "GroupID": 112030101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 671,
+      "_byte_offset": 8072,
+      "LibID": 1120301,
+      "GroupID": 112030102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 672,
+      "_byte_offset": 8084,
+      "LibID": 1120301,
+      "GroupID": 112030103,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 673,
+      "_byte_offset": 8096,
+      "LibID": 1120301,
+      "GroupID": 112030104,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 674,
+      "_byte_offset": 8108,
+      "LibID": 1120301,
+      "GroupID": 112030105,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 675,
+      "_byte_offset": 8120,
+      "LibID": 1120301,
+      "GroupID": 112030106,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 676,
+      "_byte_offset": 8132,
+      "LibID": 1120302,
+      "GroupID": 112030201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 677,
+      "_byte_offset": 8144,
+      "LibID": 1120302,
+      "GroupID": 112030202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 678,
+      "_byte_offset": 8156,
+      "LibID": 1120401,
+      "GroupID": 112040101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 679,
+      "_byte_offset": 8168,
+      "LibID": 1120401,
+      "GroupID": 112040102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 680,
+      "_byte_offset": 8180,
+      "LibID": 1120402,
+      "GroupID": 112040201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 681,
+      "_byte_offset": 8192,
+      "LibID": 1120402,
+      "GroupID": 112040202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 682,
+      "_byte_offset": 8204,
+      "LibID": 1120403,
+      "GroupID": 112040301,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 683,
+      "_byte_offset": 8216,
+      "LibID": 1120403,
+      "GroupID": 112040302,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 684,
+      "_byte_offset": 8228,
+      "LibID": 1120404,
+      "GroupID": 112040401,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 685,
+      "_byte_offset": 8240,
+      "LibID": 1120404,
+      "GroupID": 112040402,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 686,
+      "_byte_offset": 8252,
+      "LibID": 1129801,
+      "GroupID": 112980101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 687,
+      "_byte_offset": 8264,
+      "LibID": 1130101,
+      "GroupID": 113010101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 688,
+      "_byte_offset": 8276,
+      "LibID": 1130101,
+      "GroupID": 113010102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 689,
+      "_byte_offset": 8288,
+      "LibID": 1130101,
+      "GroupID": 113010103,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 690,
+      "_byte_offset": 8300,
+      "LibID": 1130101,
+      "GroupID": 113010104,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 691,
+      "_byte_offset": 8312,
+      "LibID": 1130101,
+      "GroupID": 113010105,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 692,
+      "_byte_offset": 8324,
+      "LibID": 1130101,
+      "GroupID": 113010106,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 693,
+      "_byte_offset": 8336,
+      "LibID": 1130102,
+      "GroupID": 113010201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 694,
+      "_byte_offset": 8348,
+      "LibID": 1130102,
+      "GroupID": 113010202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 695,
+      "_byte_offset": 8360,
+      "LibID": 1130102,
+      "GroupID": 113010203,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 696,
+      "_byte_offset": 8372,
+      "LibID": 1130102,
+      "GroupID": 113010204,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 697,
+      "_byte_offset": 8384,
+      "LibID": 1130103,
+      "GroupID": 113010301,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 698,
+      "_byte_offset": 8396,
+      "LibID": 1130104,
+      "GroupID": 113010401,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 699,
+      "_byte_offset": 8408,
+      "LibID": 1130105,
+      "GroupID": 113010501,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 700,
+      "_byte_offset": 8420,
+      "LibID": 1130106,
+      "GroupID": 113010601,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 701,
+      "_byte_offset": 8432,
+      "LibID": 1130107,
+      "GroupID": 113010701,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 702,
+      "_byte_offset": 8444,
+      "LibID": 1130108,
+      "GroupID": 113010801,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 703,
+      "_byte_offset": 8456,
+      "LibID": 1130108,
+      "GroupID": 113010802,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 704,
+      "_byte_offset": 8468,
+      "LibID": 1130108,
+      "GroupID": 113010803,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 705,
+      "_byte_offset": 8480,
+      "LibID": 1130108,
+      "GroupID": 113010804,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 706,
+      "_byte_offset": 8492,
+      "LibID": 1130109,
+      "GroupID": 113010901,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 707,
+      "_byte_offset": 8504,
+      "LibID": 1130109,
+      "GroupID": 113010902,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 708,
+      "_byte_offset": 8516,
+      "LibID": 1130109,
+      "GroupID": 113010903,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 709,
+      "_byte_offset": 8528,
+      "LibID": 1130109,
+      "GroupID": 113010904,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 710,
+      "_byte_offset": 8540,
+      "LibID": 1130109,
+      "GroupID": 113010905,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 711,
+      "_byte_offset": 8552,
+      "LibID": 1130109,
+      "GroupID": 113010906,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 712,
+      "_byte_offset": 8564,
+      "LibID": 1130110,
+      "GroupID": 113011001,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 713,
+      "_byte_offset": 8576,
+      "LibID": 1130110,
+      "GroupID": 113011002,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 714,
+      "_byte_offset": 8588,
+      "LibID": 1130110,
+      "GroupID": 113011003,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 715,
+      "_byte_offset": 8600,
+      "LibID": 1130110,
+      "GroupID": 113011004,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 716,
+      "_byte_offset": 8612,
+      "LibID": 1130110,
+      "GroupID": 113011005,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 717,
+      "_byte_offset": 8624,
+      "LibID": 1130110,
+      "GroupID": 113011006,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 718,
+      "_byte_offset": 8636,
+      "LibID": 1130201,
+      "GroupID": 113020101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 719,
+      "_byte_offset": 8648,
+      "LibID": 1130202,
+      "GroupID": 113020202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 720,
+      "_byte_offset": 8660,
+      "LibID": 1130203,
+      "GroupID": 113020303,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 721,
+      "_byte_offset": 8672,
+      "LibID": 1130301,
+      "GroupID": 113030101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 722,
+      "_byte_offset": 8684,
+      "LibID": 1130301,
+      "GroupID": 113030102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 723,
+      "_byte_offset": 8696,
+      "LibID": 1130301,
+      "GroupID": 113030103,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 724,
+      "_byte_offset": 8708,
+      "LibID": 1130301,
+      "GroupID": 113030104,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 725,
+      "_byte_offset": 8720,
+      "LibID": 1130301,
+      "GroupID": 113030105,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 726,
+      "_byte_offset": 8732,
+      "LibID": 1130301,
+      "GroupID": 113030106,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 727,
+      "_byte_offset": 8744,
+      "LibID": 1130302,
+      "GroupID": 113030201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 728,
+      "_byte_offset": 8756,
+      "LibID": 1130302,
+      "GroupID": 113030202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 729,
+      "_byte_offset": 8768,
+      "LibID": 1130401,
+      "GroupID": 113040101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 730,
+      "_byte_offset": 8780,
+      "LibID": 1130401,
+      "GroupID": 113040102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 731,
+      "_byte_offset": 8792,
+      "LibID": 1130402,
+      "GroupID": 113040201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 732,
+      "_byte_offset": 8804,
+      "LibID": 1130402,
+      "GroupID": 113040202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 733,
+      "_byte_offset": 8816,
+      "LibID": 1130403,
+      "GroupID": 113040301,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 734,
+      "_byte_offset": 8828,
+      "LibID": 1130403,
+      "GroupID": 113040302,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 735,
+      "_byte_offset": 8840,
+      "LibID": 1130404,
+      "GroupID": 113040401,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 736,
+      "_byte_offset": 8852,
+      "LibID": 1130404,
+      "GroupID": 113040402,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 737,
+      "_byte_offset": 8864,
+      "LibID": 1139801,
+      "GroupID": 113980101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 738,
+      "_byte_offset": 8876,
+      "LibID": 1140101,
+      "GroupID": 114010101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 739,
+      "_byte_offset": 8888,
+      "LibID": 1140101,
+      "GroupID": 114010102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 740,
+      "_byte_offset": 8900,
+      "LibID": 1140101,
+      "GroupID": 114010103,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 741,
+      "_byte_offset": 8912,
+      "LibID": 1140101,
+      "GroupID": 114010104,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 742,
+      "_byte_offset": 8924,
+      "LibID": 1140101,
+      "GroupID": 114010105,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 743,
+      "_byte_offset": 8936,
+      "LibID": 1140101,
+      "GroupID": 114010106,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 744,
+      "_byte_offset": 8948,
+      "LibID": 1140102,
+      "GroupID": 114010201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 745,
+      "_byte_offset": 8960,
+      "LibID": 1140102,
+      "GroupID": 114010202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 746,
+      "_byte_offset": 8972,
+      "LibID": 1140102,
+      "GroupID": 114010203,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 747,
+      "_byte_offset": 8984,
+      "LibID": 1140102,
+      "GroupID": 114010204,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 748,
+      "_byte_offset": 8996,
+      "LibID": 1140103,
+      "GroupID": 114010301,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 749,
+      "_byte_offset": 9008,
+      "LibID": 1140104,
+      "GroupID": 114010401,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 750,
+      "_byte_offset": 9020,
+      "LibID": 1140105,
+      "GroupID": 114010501,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 751,
+      "_byte_offset": 9032,
+      "LibID": 1140106,
+      "GroupID": 114010601,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 752,
+      "_byte_offset": 9044,
+      "LibID": 1140107,
+      "GroupID": 114010701,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 753,
+      "_byte_offset": 9056,
+      "LibID": 1140108,
+      "GroupID": 114010801,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 754,
+      "_byte_offset": 9068,
+      "LibID": 1140108,
+      "GroupID": 114010802,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 755,
+      "_byte_offset": 9080,
+      "LibID": 1140108,
+      "GroupID": 114010803,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 756,
+      "_byte_offset": 9092,
+      "LibID": 1140108,
+      "GroupID": 114010804,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 757,
+      "_byte_offset": 9104,
+      "LibID": 1140109,
+      "GroupID": 114010901,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 758,
+      "_byte_offset": 9116,
+      "LibID": 1140109,
+      "GroupID": 114010902,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 759,
+      "_byte_offset": 9128,
+      "LibID": 1140109,
+      "GroupID": 114010903,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 760,
+      "_byte_offset": 9140,
+      "LibID": 1140109,
+      "GroupID": 114010904,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 761,
+      "_byte_offset": 9152,
+      "LibID": 1140109,
+      "GroupID": 114010905,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 762,
+      "_byte_offset": 9164,
+      "LibID": 1140109,
+      "GroupID": 114010906,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 763,
+      "_byte_offset": 9176,
+      "LibID": 1140110,
+      "GroupID": 114011001,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 764,
+      "_byte_offset": 9188,
+      "LibID": 1140110,
+      "GroupID": 114011002,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 765,
+      "_byte_offset": 9200,
+      "LibID": 1140110,
+      "GroupID": 114011003,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 766,
+      "_byte_offset": 9212,
+      "LibID": 1140110,
+      "GroupID": 114011004,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 767,
+      "_byte_offset": 9224,
+      "LibID": 1140110,
+      "GroupID": 114011005,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 768,
+      "_byte_offset": 9236,
+      "LibID": 1140110,
+      "GroupID": 114011006,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 769,
+      "_byte_offset": 9248,
+      "LibID": 1140111,
+      "GroupID": 114011101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 770,
+      "_byte_offset": 9260,
+      "LibID": 1140112,
+      "GroupID": 114011201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 771,
+      "_byte_offset": 9272,
+      "LibID": 1140113,
+      "GroupID": 114011301,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 772,
+      "_byte_offset": 9284,
+      "LibID": 1140114,
+      "GroupID": 114011401,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 773,
+      "_byte_offset": 9296,
+      "LibID": 1140201,
+      "GroupID": 114020101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 774,
+      "_byte_offset": 9308,
+      "LibID": 1140202,
+      "GroupID": 114020202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 775,
+      "_byte_offset": 9320,
+      "LibID": 1140203,
+      "GroupID": 114020303,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 776,
+      "_byte_offset": 9332,
+      "LibID": 1140301,
+      "GroupID": 114030101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 777,
+      "_byte_offset": 9344,
+      "LibID": 1140301,
+      "GroupID": 114030102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 778,
+      "_byte_offset": 9356,
+      "LibID": 1140301,
+      "GroupID": 114030103,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 779,
+      "_byte_offset": 9368,
+      "LibID": 1140301,
+      "GroupID": 114030104,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 780,
+      "_byte_offset": 9380,
+      "LibID": 1140301,
+      "GroupID": 114030105,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 781,
+      "_byte_offset": 9392,
+      "LibID": 1140301,
+      "GroupID": 114030106,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 782,
+      "_byte_offset": 9404,
+      "LibID": 1140302,
+      "GroupID": 114030201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 783,
+      "_byte_offset": 9416,
+      "LibID": 1140302,
+      "GroupID": 114030202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 784,
+      "_byte_offset": 9428,
+      "LibID": 1140401,
+      "GroupID": 114040101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 785,
+      "_byte_offset": 9440,
+      "LibID": 1140401,
+      "GroupID": 114040102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 786,
+      "_byte_offset": 9452,
+      "LibID": 1140402,
+      "GroupID": 114040201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 787,
+      "_byte_offset": 9464,
+      "LibID": 1140402,
+      "GroupID": 114040202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 788,
+      "_byte_offset": 9476,
+      "LibID": 1140403,
+      "GroupID": 114040301,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 789,
+      "_byte_offset": 9488,
+      "LibID": 1140403,
+      "GroupID": 114040302,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 790,
+      "_byte_offset": 9500,
+      "LibID": 1140404,
+      "GroupID": 114040401,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 791,
+      "_byte_offset": 9512,
+      "LibID": 1140404,
+      "GroupID": 114040402,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 792,
+      "_byte_offset": 9524,
+      "LibID": 1149801,
+      "GroupID": 114980101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 793,
+      "_byte_offset": 9536,
+      "LibID": 1150101,
+      "GroupID": 115010101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 794,
+      "_byte_offset": 9548,
+      "LibID": 1150101,
+      "GroupID": 115010102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 795,
+      "_byte_offset": 9560,
+      "LibID": 1150101,
+      "GroupID": 115010103,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 796,
+      "_byte_offset": 9572,
+      "LibID": 1150101,
+      "GroupID": 115010104,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 797,
+      "_byte_offset": 9584,
+      "LibID": 1150101,
+      "GroupID": 115010105,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 798,
+      "_byte_offset": 9596,
+      "LibID": 1150101,
+      "GroupID": 115010106,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 799,
+      "_byte_offset": 9608,
+      "LibID": 1150102,
+      "GroupID": 115010201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 800,
+      "_byte_offset": 9620,
+      "LibID": 1150102,
+      "GroupID": 115010202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 801,
+      "_byte_offset": 9632,
+      "LibID": 1150102,
+      "GroupID": 115010203,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 802,
+      "_byte_offset": 9644,
+      "LibID": 1150102,
+      "GroupID": 115010204,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 803,
+      "_byte_offset": 9656,
+      "LibID": 1150103,
+      "GroupID": 115010301,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 804,
+      "_byte_offset": 9668,
+      "LibID": 1150104,
+      "GroupID": 115010401,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 805,
+      "_byte_offset": 9680,
+      "LibID": 1150105,
+      "GroupID": 115010501,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 806,
+      "_byte_offset": 9692,
+      "LibID": 1150106,
+      "GroupID": 115010601,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 807,
+      "_byte_offset": 9704,
+      "LibID": 1150107,
+      "GroupID": 115010701,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 808,
+      "_byte_offset": 9716,
+      "LibID": 1150108,
+      "GroupID": 115010801,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 809,
+      "_byte_offset": 9728,
+      "LibID": 1150108,
+      "GroupID": 115010802,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 810,
+      "_byte_offset": 9740,
+      "LibID": 1150108,
+      "GroupID": 115010803,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 811,
+      "_byte_offset": 9752,
+      "LibID": 1150108,
+      "GroupID": 115010804,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 812,
+      "_byte_offset": 9764,
+      "LibID": 1150109,
+      "GroupID": 115010901,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 813,
+      "_byte_offset": 9776,
+      "LibID": 1150109,
+      "GroupID": 115010902,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 814,
+      "_byte_offset": 9788,
+      "LibID": 1150109,
+      "GroupID": 115010903,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 815,
+      "_byte_offset": 9800,
+      "LibID": 1150109,
+      "GroupID": 115010904,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 816,
+      "_byte_offset": 9812,
+      "LibID": 1150109,
+      "GroupID": 115010905,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 817,
+      "_byte_offset": 9824,
+      "LibID": 1150109,
+      "GroupID": 115010906,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 818,
+      "_byte_offset": 9836,
+      "LibID": 1150110,
+      "GroupID": 115011001,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 819,
+      "_byte_offset": 9848,
+      "LibID": 1150110,
+      "GroupID": 115011002,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 820,
+      "_byte_offset": 9860,
+      "LibID": 1150110,
+      "GroupID": 115011003,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 821,
+      "_byte_offset": 9872,
+      "LibID": 1150110,
+      "GroupID": 115011004,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 822,
+      "_byte_offset": 9884,
+      "LibID": 1150110,
+      "GroupID": 115011005,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 823,
+      "_byte_offset": 9896,
+      "LibID": 1150110,
+      "GroupID": 115011006,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 824,
+      "_byte_offset": 9908,
+      "LibID": 1150111,
+      "GroupID": 115011101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 825,
+      "_byte_offset": 9920,
+      "LibID": 1150112,
+      "GroupID": 115011201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 826,
+      "_byte_offset": 9932,
+      "LibID": 1150113,
+      "GroupID": 115011301,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 827,
+      "_byte_offset": 9944,
+      "LibID": 1150114,
+      "GroupID": 115011401,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 828,
+      "_byte_offset": 9956,
+      "LibID": 1150201,
+      "GroupID": 115020101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 829,
+      "_byte_offset": 9968,
+      "LibID": 1150202,
+      "GroupID": 115020202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 830,
+      "_byte_offset": 9980,
+      "LibID": 1150203,
+      "GroupID": 115020303,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 831,
+      "_byte_offset": 9992,
+      "LibID": 1150301,
+      "GroupID": 115030101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 832,
+      "_byte_offset": 10004,
+      "LibID": 1150301,
+      "GroupID": 115030102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 833,
+      "_byte_offset": 10016,
+      "LibID": 1150301,
+      "GroupID": 115030103,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 834,
+      "_byte_offset": 10028,
+      "LibID": 1150301,
+      "GroupID": 115030104,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 835,
+      "_byte_offset": 10040,
+      "LibID": 1150301,
+      "GroupID": 115030105,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 836,
+      "_byte_offset": 10052,
+      "LibID": 1150301,
+      "GroupID": 115030106,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 837,
+      "_byte_offset": 10064,
+      "LibID": 1150302,
+      "GroupID": 115030201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 838,
+      "_byte_offset": 10076,
+      "LibID": 1150302,
+      "GroupID": 115030202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 839,
+      "_byte_offset": 10088,
+      "LibID": 1150401,
+      "GroupID": 115040101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 840,
+      "_byte_offset": 10100,
+      "LibID": 1150401,
+      "GroupID": 115040102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 841,
+      "_byte_offset": 10112,
+      "LibID": 1150402,
+      "GroupID": 115040201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 842,
+      "_byte_offset": 10124,
+      "LibID": 1150402,
+      "GroupID": 115040202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 843,
+      "_byte_offset": 10136,
+      "LibID": 1150403,
+      "GroupID": 115040301,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 844,
+      "_byte_offset": 10148,
+      "LibID": 1150403,
+      "GroupID": 115040302,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 845,
+      "_byte_offset": 10160,
+      "LibID": 1150404,
+      "GroupID": 115040401,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 846,
+      "_byte_offset": 10172,
+      "LibID": 1150404,
+      "GroupID": 115040402,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 847,
+      "_byte_offset": 10184,
+      "LibID": 1159801,
+      "GroupID": 115980101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 848,
+      "_byte_offset": 10196,
+      "LibID": 1160101,
+      "GroupID": 116010101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 849,
+      "_byte_offset": 10208,
+      "LibID": 1160101,
+      "GroupID": 116010102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 850,
+      "_byte_offset": 10220,
+      "LibID": 1160101,
+      "GroupID": 116010103,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 851,
+      "_byte_offset": 10232,
+      "LibID": 1160101,
+      "GroupID": 116010104,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 852,
+      "_byte_offset": 10244,
+      "LibID": 1160101,
+      "GroupID": 116010105,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 853,
+      "_byte_offset": 10256,
+      "LibID": 1160101,
+      "GroupID": 116010106,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 854,
+      "_byte_offset": 10268,
+      "LibID": 1160102,
+      "GroupID": 116010201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 855,
+      "_byte_offset": 10280,
+      "LibID": 1160102,
+      "GroupID": 116010202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 856,
+      "_byte_offset": 10292,
+      "LibID": 1160102,
+      "GroupID": 116010203,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 857,
+      "_byte_offset": 10304,
+      "LibID": 1160102,
+      "GroupID": 116010204,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 858,
+      "_byte_offset": 10316,
+      "LibID": 1160103,
+      "GroupID": 116010301,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 859,
+      "_byte_offset": 10328,
+      "LibID": 1160104,
+      "GroupID": 116010401,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 860,
+      "_byte_offset": 10340,
+      "LibID": 1160105,
+      "GroupID": 116010501,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 861,
+      "_byte_offset": 10352,
+      "LibID": 1160106,
+      "GroupID": 116010601,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 862,
+      "_byte_offset": 10364,
+      "LibID": 1160107,
+      "GroupID": 116010701,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 863,
+      "_byte_offset": 10376,
+      "LibID": 1160108,
+      "GroupID": 116010801,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 864,
+      "_byte_offset": 10388,
+      "LibID": 1160108,
+      "GroupID": 116010802,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 865,
+      "_byte_offset": 10400,
+      "LibID": 1160108,
+      "GroupID": 116010803,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 866,
+      "_byte_offset": 10412,
+      "LibID": 1160108,
+      "GroupID": 116010804,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 867,
+      "_byte_offset": 10424,
+      "LibID": 1160109,
+      "GroupID": 116010901,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 868,
+      "_byte_offset": 10436,
+      "LibID": 1160109,
+      "GroupID": 116010902,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 869,
+      "_byte_offset": 10448,
+      "LibID": 1160109,
+      "GroupID": 116010903,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 870,
+      "_byte_offset": 10460,
+      "LibID": 1160109,
+      "GroupID": 116010904,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 871,
+      "_byte_offset": 10472,
+      "LibID": 1160109,
+      "GroupID": 116010905,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 872,
+      "_byte_offset": 10484,
+      "LibID": 1160109,
+      "GroupID": 116010906,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 873,
+      "_byte_offset": 10496,
+      "LibID": 1160110,
+      "GroupID": 116011001,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 874,
+      "_byte_offset": 10508,
+      "LibID": 1160110,
+      "GroupID": 116011002,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 875,
+      "_byte_offset": 10520,
+      "LibID": 1160110,
+      "GroupID": 116011003,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 876,
+      "_byte_offset": 10532,
+      "LibID": 1160110,
+      "GroupID": 116011004,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 877,
+      "_byte_offset": 10544,
+      "LibID": 1160110,
+      "GroupID": 116011005,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 878,
+      "_byte_offset": 10556,
+      "LibID": 1160110,
+      "GroupID": 116011006,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 879,
+      "_byte_offset": 10568,
+      "LibID": 1160111,
+      "GroupID": 116011101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 880,
+      "_byte_offset": 10580,
+      "LibID": 1160112,
+      "GroupID": 116011201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 881,
+      "_byte_offset": 10592,
+      "LibID": 1160113,
+      "GroupID": 116011301,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 882,
+      "_byte_offset": 10604,
+      "LibID": 1160114,
+      "GroupID": 116011401,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 883,
+      "_byte_offset": 10616,
+      "LibID": 1160115,
+      "GroupID": 116011501,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 884,
+      "_byte_offset": 10628,
+      "LibID": 1160115,
+      "GroupID": 116011502,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 885,
+      "_byte_offset": 10640,
+      "LibID": 1160115,
+      "GroupID": 116011503,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 886,
+      "_byte_offset": 10652,
+      "LibID": 1160201,
+      "GroupID": 116020101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 887,
+      "_byte_offset": 10664,
+      "LibID": 1160202,
+      "GroupID": 116020202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 888,
+      "_byte_offset": 10676,
+      "LibID": 1160203,
+      "GroupID": 116020303,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 889,
+      "_byte_offset": 10688,
+      "LibID": 1160301,
+      "GroupID": 116030101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 890,
+      "_byte_offset": 10700,
+      "LibID": 1160301,
+      "GroupID": 116030102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 891,
+      "_byte_offset": 10712,
+      "LibID": 1160301,
+      "GroupID": 116030103,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 892,
+      "_byte_offset": 10724,
+      "LibID": 1160301,
+      "GroupID": 116030104,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 893,
+      "_byte_offset": 10736,
+      "LibID": 1160301,
+      "GroupID": 116030105,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 894,
+      "_byte_offset": 10748,
+      "LibID": 1160301,
+      "GroupID": 116030106,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 895,
+      "_byte_offset": 10760,
+      "LibID": 1160302,
+      "GroupID": 116030201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 896,
+      "_byte_offset": 10772,
+      "LibID": 1160302,
+      "GroupID": 116030202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 897,
+      "_byte_offset": 10784,
+      "LibID": 1160401,
+      "GroupID": 116040101,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 898,
+      "_byte_offset": 10796,
+      "LibID": 1160401,
+      "GroupID": 116040102,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 899,
+      "_byte_offset": 10808,
+      "LibID": 1160402,
+      "GroupID": 116040201,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 900,
+      "_byte_offset": 10820,
+      "LibID": 1160402,
+      "GroupID": 116040202,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 901,
+      "_byte_offset": 10832,
+      "LibID": 1160403,
+      "GroupID": 116040301,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 902,
+      "_byte_offset": 10844,
+      "LibID": 1160403,
+      "GroupID": 116040302,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 903,
+      "_byte_offset": 10856,
+      "LibID": 1160404,
+      "GroupID": 116040401,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 904,
+      "_byte_offset": 10868,
+      "LibID": 1160404,
+      "GroupID": 116040402,
+      "Weight": 50,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 905,
+      "_byte_offset": 10880,
+      "LibID": 1169801,
+      "GroupID": 116980101,
+      "Weight": 50,
+      "_byte_length": 12
+    }
+  ]
+}

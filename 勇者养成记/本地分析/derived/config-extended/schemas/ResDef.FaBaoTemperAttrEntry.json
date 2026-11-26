@@ -1,0 +1,205 @@
+{
+  "namespace": "ResDef",
+  "name": "FaBaoTemperAttrEntry",
+  "fields": [
+    {
+      "type": "short",
+      "name": "DataType",
+      "object_offset": 16
+    },
+    {
+      "type": "byte",
+      "name": "AddType",
+      "object_offset": 18
+    },
+    {
+      "type": "float",
+      "name": "Value",
+      "object_offset": 20
+    },
+    {
+      "type": "float",
+      "name": "MaxValue",
+      "object_offset": 24
+    },
+    {
+      "type": "float",
+      "name": "RandMinLimit",
+      "object_offset": 28
+    },
+    {
+      "type": "float",
+      "name": "RandMaxLimit",
+      "object_offset": 32
+    }
+  ],
+  "unpack_va": 31299164,
+  "dump_line": 203784,
+  "layout": [
+    {
+      "type": "short",
+      "name": "DataType",
+      "object_offset": 16,
+      "wire_type": "short",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dd9690",
+          "target_va": "0x21f6668",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt16"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt16",
+          "destination": [
+            "self",
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "type": "byte",
+      "name": "AddType",
+      "object_offset": 18,
+      "wire_type": "byte",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dd96b4",
+          "target_va": "0x21f65e0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt8"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt8",
+          "destination": [
+            "self",
+            18
+          ]
+        }
+      ]
+    },
+    {
+      "type": "float",
+      "name": "Value",
+      "object_offset": 20,
+      "wire_type": "float",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dd96d8",
+          "target_va": "0x21f6b98",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readFloat"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readFloat",
+          "destination": [
+            "self",
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "type": "float",
+      "name": "MaxValue",
+      "object_offset": 24,
+      "wire_type": "float",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dd96fc",
+          "target_va": "0x21f6b98",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readFloat"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readFloat",
+          "destination": [
+            "self",
+            24
+          ]
+        }
+      ]
+    },
+    {
+      "type": "float",
+      "name": "RandMinLimit",
+      "object_offset": 28,
+      "wire_type": "float",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dd9720",
+          "target_va": "0x21f6b98",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readFloat"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readFloat",
+          "destination": [
+            "self",
+            28
+          ]
+        }
+      ]
+    },
+    {
+      "type": "float",
+      "name": "RandMaxLimit",
+      "object_offset": 32,
+      "wire_type": "float",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dd9760",
+          "target_va": "0x21f6b98",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readFloat"
+          ],
+          "opcode": "B",
+          "kind": "reader",
+          "reader": "readFloat",
+          "destination": [
+            "self",
+            32
+          ]
+        }
+      ]
+    }
+  ],
+  "native_evidence": {
+    "method_start_va": "0x1dd965c",
+    "instruction_steps": 50,
+    "event_count": 6,
+    "branch_evidence": [],
+    "loops": [],
+    "instruction_sha256": "a6aeff1739c34b9f58a6855d8494e17498e64b4130f7c24ee506037b2903a1a6",
+    "gate": "concrete-success-path; all sequential readers/nested callees; full field/destination/stride matching",
+    "assumptions": [
+      "non-null input buffer and created nested objects/arrays",
+      "managed array bounds valid",
+      "AAPCS64 callee-saved register preservation",
+      "reader and nested call success; version 1 only"
+    ]
+  }
+}

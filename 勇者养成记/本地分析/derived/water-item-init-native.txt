@@ -1,0 +1,534 @@
+
+void A3Game_LevelItemVisual__Init (A3Game_LevelItemVisual_o* __this, A3BattleCore_LevelItemEntity_o* _entity, const MethodInfo* method);
+1527d00 sub sp, sp, #0xb0
+1527d04 str d10, [sp, #0x30]
+1527d08 stp d9, d8, [sp, #0x40]
+1527d0c stp x28, x27, [sp, #0x50]
+1527d10 stp x26, x25, [sp, #0x60]
+1527d14 stp x24, x23, [sp, #0x70]
+1527d18 stp x22, x21, [sp, #0x80]
+1527d1c stp x20, x19, [sp, #0x90]
+1527d20 stp x29, x30, [sp, #0xa0]
+1527d24 add x29, sp, #0xa0
+1527d28 adrp x21, #0x2f3f000
+1527d2c ldrb w8, [x21, #0x30f]
+1527d30 mov x20, x1
+1527d34 mov x19, x0
+1527d38 tbnz w8, #0, #0x1527d54
+1527d3c adrp x8, #0x2cfd000
+1527d40 ldr x8, [x8, #0xe0]
+1527d44 ldr w0, [x8]
+1527d48 bl #0xd04f28
+1527d4c mov w8, #1
+1527d50 strb w8, [x21, #0x30f]
+1527d54 str x20, [x19, #0x10]
+1527d58 adrp x8, #0x2d25000
+1527d5c ldr x8, [x8]
+1527d60 ldr x0, [x8]
+1527d64 bl #0x17fa038 A3Game.Singleton<UISpriteHelper>$$get_Instance
+1527d68 mov x21, x0
+1527d6c cbnz x20, #0x1527d78
+1527d70 mov x0, xzr
+1527d74 bl #0xd2b72c
+1527d78 mov x0, x20
+1527d7c mov x1, xzr
+1527d80 bl #0x15f554c A3BattleCore.LevelItemEntity$$get_ItemID
+1527d84 mov w20, w0
+1527d88 cbnz x21, #0x1527d94
+1527d8c mov x0, xzr
+1527d90 bl #0xd2b72c
+1527d94 mov x0, x21
+1527d98 mov w1, w20
+1527d9c mov x2, xzr
+1527da0 bl #0xed92d8 A3Game.MonsterCfgMgr$$GetMapItemCfg
+1527da4 str x0, [x19, #0x30]
+1527da8 cbz x0, #0x1528374
+1527dac adrp x24, #0x2cc5000
+1527db0 ldr x24, [x24, #0x498]
+1527db4 ldr x0, [x24]
+1527db8 bl #0x17ec894 A3Game.BaseLogicSys<object>$$get_Instance
+1527dbc mov x20, x0
+1527dc0 cbnz x20, #0x1527dc8
+1527dc4 bl #0xd2b72c
+1527dc8 mov x0, x20
+1527dcc mov x1, xzr
+1527dd0 bl #0xe7e47c A3Game.BattleSys$$GetLevelMgr
+1527dd4 mov x20, x0
+1527dd8 cbnz x20, #0x1527de0
+1527ddc bl #0xd2b72c
+1527de0 ldr x22, [x19, #0x30]
+1527de4 ldrsw x21, [x20, #0x9c]
+1527de8 cbnz x22, #0x1527df4
+1527dec mov x0, xzr
+1527df0 bl #0xd2b72c
+1527df4 ldr x22, [x22, #0x20]
+1527df8 cbnz x22, #0x1527e04
+1527dfc mov x0, xzr
+1527e00 bl #0xd2b72c
+1527e04 ldr w8, [x22, #0x18]
+1527e08 cmp w21, w8
+1527e0c b.lo #0x1527e20
+1527e10 bl #0xd2c410
+1527e14 mov x1, xzr
+1527e18 mov x2, xzr
+1527e1c bl #0xd2b69c
+1527e20 add x8, x22, x21, lsl #3
+1527e24 ldr x22, [x19, #0x30]
+1527e28 ldr x21, [x8, #0x20]
+1527e2c cbnz x22, #0x1527e38
+1527e30 mov x0, xzr
+1527e34 bl #0xd2b72c
+1527e38 ldrb w8, [x22, #0x28]
+1527e3c cmp w8, #2
+1527e40 b.ne #0x1527f30
+1527e44 ldr x22, [x19, #0x10]
+1527e48 cbnz x22, #0x1527e54
+1527e4c mov x0, xzr
+1527e50 bl #0xd2b72c
+1527e54 mov x0, x22
+1527e58 mov x1, xzr
+1527e5c bl #0x15f5578 A3BattleCore.LevelItemEntity$$get_GridPos
+1527e60 adrp x8, #0x2c80000
+1527e64 ldr x8, [x8, #0xfa8]
+1527e68 mov x22, x0
+1527e6c mov x23, x1
+1527e70 ldr x0, [x8]
+1527e74 ldrb w8, [x0, #0x127]
+1527e78 tbz w8, #1, #0x1527e88
+1527e7c ldr w8, [x0, #0xd8]
+1527e80 cbnz w8, #0x1527e88
+1527e84 bl #0xd14168
+1527e88 mov x0, x22
+1527e8c mov x1, x23
+1527e90 mov x2, xzr
+1527e94 bl #0xeccea4 A3Game.BattleCoreUtil$$TsToVec2
+1527e98 fcvtzs w1, s0
+1527e9c fcvtzs w2, s1
+1527ea0 mov x0, x20
+1527ea4 bl #0x152839c A3Game.LevelMgr$$GetWaterRes
+1527ea8 mov x22, x0
+1527eac cbz x21, #0x1527ec4
+1527eb0 mov x0, x21
+1527eb4 mov x1, xzr
+1527eb8 bl #0x1ba534c System.String$$get_Length
+1527ebc mov w23, w0
+1527ec0 b #0x1527ee4
+1527ec4 mov x0, xzr
+1527ec8 bl #0xd2b72c
+1527ecc mov x0, xzr
+1527ed0 mov x1, xzr
+1527ed4 bl #0x1ba534c System.String$$get_Length
+1527ed8 mov w23, w0
+1527edc mov x0, xzr
+1527ee0 bl #0xd2b72c
+1527ee4 sub w1, w23, #2
+1527ee8 mov x0, x21
+1527eec mov x2, xzr
+1527ef0 bl #0x1bad58c System.String$$Remove
+1527ef4 adrp x8, #0x2c87000
+1527ef8 ldr x8, [x8, #0xcc8]
+1527efc mov x21, x0
+1527f00 ldr x8, [x8]
+1527f04 ldrb w9, [x8, #0x127]
+1527f08 tbz w9, #1, #0x1527f1c
+1527f0c ldr w9, [x8, #0xd8]
+1527f10 cbnz w9, #0x1527f1c
+1527f14 mov x0, x8
+1527f18 bl #0xd14168
+1527f1c mov x0, x21
+1527f20 mov x1, x22
+1527f24 mov x2, xzr
+1527f28 bl #0x1ba4dac System.String$$Concat
+1527f2c mov x21, x0
+1527f30 ldr x0, [x24]
+1527f34 bl #0x17ec894 A3Game.BaseLogicSys<object>$$get_Instance
+1527f38 mov x22, x0
+1527f3c cbnz x22, #0x1527f44
+1527f40 bl #0xd2b72c
+1527f44 ldr x1, [x22, #0x48]
+1527f48 mov x0, x21
+1527f4c mov x2, xzr
+1527f50 bl #0x16f832c A3Game.DResources$$AllocGameObject
+1527f54 mov x21, x0
+1527f58 str x21, [x19, #0x18]
+1527f5c adrp x26, #0x2c78000
+1527f60 ldr x26, [x26, #0x1b8]
+1527f64 ldr x0, [x26]
+1527f68 ldrb w8, [x0, #0x127]
+1527f6c tbz w8, #1, #0x1527f7c
+1527f70 ldr w8, [x0, #0xd8]
+1527f74 cbnz w8, #0x1527f7c
+1527f78 bl #0xd14168
+1527f7c mov x0, x21
+1527f80 mov x1, xzr
+1527f84 mov x2, xzr
+1527f88 bl #0x1bdd4dc UnityEngine.Object$$op_Inequality
+1527f8c tbz w0, #0, #0x1528374
+1527f90 ldr x21, [x19, #0x18]
+1527f94 cbnz x21, #0x1527fa0
+1527f98 mov x0, xzr
+1527f9c bl #0xd2b72c
+1527fa0 adrp x8, #0x2caa000
+1527fa4 ldr x8, [x8, #0x468]
+1527fa8 mov x0, x21
+1527fac ldr x1, [x8]
+1527fb0 bl #0x216e560 UnityEngine.GameObject$$GetComponentInChildren<object>
+1527fb4 ldr x21, [x19, #0x18]
+1527fb8 str x0, [x19, #0x20]
+1527fbc cbnz x21, #0x1527fc8
+1527fc0 mov x0, xzr
+1527fc4 bl #0xd2b72c
+1527fc8 mov x0, x21
+1527fcc mov x1, xzr
+1527fd0 bl #0x1c583a8 UnityEngine.GameObject$$get_transform
+1527fd4 ldr x22, [x19, #0x10]
+1527fd8 mov x21, x0
+1527fdc cbnz x22, #0x1527fe8
+1527fe0 mov x0, xzr
+1527fe4 bl #0xd2b72c
+1527fe8 ldr x22, [x22, #0x28]
+1527fec cbnz x22, #0x1527ff8
+1527ff0 mov x0, xzr
+1527ff4 bl #0xd2b72c
+1527ff8 add x8, sp, #0x18
+1527ffc mov x0, x22
+1528000 mov x1, xzr
+1528004 bl #0x156fb08 A3BattleCore.EntityTransform$$get_position
+1528008 adrp x25, #0x2c80000
+152800c ldr x25, [x25, #0xfa8]
+1528010 ldr x0, [x25]
+1528014 ldrb w8, [x0, #0x127]
+1528018 tbz w8, #1, #0x1528028
+152801c ldr w8, [x0, #0xd8]
+1528020 cbnz w8, #0x1528028
+1528024 bl #0xd14168
+1528028 ldr x8, [sp, #0x28]
+152802c ldur q0, [sp, #0x18]
+1528030 mov x0, sp
+1528034 mov x1, xzr
+1528038 str x8, [sp, #0x10]
+152803c str q0, [sp]
+1528040 bl #0xec4b38 A3Game.BattleCoreUtil$$TsToVec
+1528044 mov v9.16b, v0.16b
+1528048 mov v10.16b, v1.16b
+152804c mov v8.16b, v2.16b
+1528050 cbnz x21, #0x152805c
+1528054 mov x0, xzr
+1528058 bl #0xd2b72c
+152805c mov x0, x21
+1528060 mov v0.16b, v9.16b
+1528064 mov v1.16b, v10.16b
+1528068 mov v2.16b, v8.16b
+152806c mov x1, xzr
+1528070 bl #0x2178458 UnityEngine.Transform$$set_position
+1528074 ldr x22, [x19, #0x30]
+1528078 cbnz x22, #0x1528084
+152807c mov x0, xzr
+1528080 bl #0xd2b72c
+1528084 ldrb w8, [x22, #0x29]
+1528088 cbnz w8, #0x15282ac
+152808c ldr x22, [x19, #0x30]
+1528090 cbnz x22, #0x152809c
+1528094 mov x0, xzr
+1528098 bl #0xd2b72c
+152809c ldrb w8, [x22, #0x28]
+15280a0 ldr x22, [x19, #0x18]
+15280a4 cmp w8, #2
+15280a8 b.ne #0x15280d4
+15280ac adrp x8, #0x2ca1000
+15280b0 ldr x8, [x8, #0x9b8]
+15280b4 mov w2, #0x64
+15280b8 mov x0, x22
+15280bc mov w3, wzr
+15280c0 ldr x1, [x8]
+15280c4 mov x4, xzr
+15280c8 bl #0x16feaa0 A3Game.DUnityUtil$$SetRendererOrder
+15280cc cbnz x20, #0x15282b8
+15280d0 b #0x15282b0
+15280d4 cbnz x22, #0x15280e0
+15280d8 mov x0, xzr
+15280dc bl #0xd2b72c
+15280e0 mov x0, x22
+15280e4 mov x1, xzr
+15280e8 bl #0x1c583a8 UnityEngine.GameObject$$get_transform
+15280ec adrp x8, #0x2cec000
+15280f0 ldr x8, [x8, #0x1f8]
+15280f4 mov x2, xzr
+15280f8 ldr x1, [x8]
+15280fc bl #0x16fd980 A3Game.DUnityUtil$$FindChild
+1528100 ldr x8, [x26]
+1528104 mov x22, x0
+1528108 ldrb w9, [x8, #0x127]
+152810c tbz w9, #1, #0x1528120
+1528110 ldr w9, [x8, #0xd8]
+1528114 cbnz w9, #0x1528120
+1528118 mov x0, x8
+152811c bl #0xd14168
+1528120 mov x0, x22
+1528124 mov x1, xzr
+1528128 mov x2, xzr
+152812c bl #0x1bdd4dc UnityEngine.Object$$op_Inequality
+1528130 tbz w0, #0, #0x1528200
+1528134 cbnz x22, #0x1528140
+1528138 mov x0, xzr
+152813c bl #0xd2b72c
+1528140 adrp x8, #0x2d15000
+1528144 ldr x8, [x8, #0x568]
+1528148 mov w1, #1
+152814c mov x0, x22
+1528150 ldr x2, [x8]
+1528154 bl #0x21709a4 UnityEngine.Component$$GetComponentsInChildren<object>
+1528158 adrp x8, #0x22c3000
+152815c adrp x28, #0x2cec000
+1528160 ldr s9, [x8, #0x260]
+1528164 ldr x28, [x28, #0xe08]
+1528168 mov x22, x0
+152816c mov w27, wzr
+1528170 b #0x15281e8
+1528174 ldr x0, [x28]
+1528178 ldrb w8, [x0, #0x127]
+152817c tbz w8, #1, #0x152818c
+1528180 ldr w8, [x0, #0xd8]
+1528184 cbnz w8, #0x152818c
+1528188 bl #0xd14168
+152818c mov v0.16b, v8.16b
+1528190 mov v1.16b, v9.16b
+1528194 bl #0x1527b2c A3Game.LevelHelper$$GetSceneItemBaseOrderByZ
+1528198 bl #0x1527ac0 A3Game.LevelHelper$$GetOder
+152819c ldr w8, [x22, #0x18]
+15281a0 mov w23, w0
+15281a4 sxtw x24, w27
+15281a8 cmp w27, w8
+15281ac b.lo #0x15281c0
+15281b0 bl #0xd2c410
+15281b4 mov x1, xzr
+15281b8 mov x2, xzr
+15281bc bl #0xd2b69c
+15281c0 add x8, x22, x24, lsl #3
+15281c4 ldr x24, [x8, #0x20]
+15281c8 cbnz x24, #0x15281d4
+15281cc mov x0, xzr
+15281d0 bl #0xd2b72c
+15281d4 mov x0, x24
+15281d8 mov w1, w23
+15281dc mov x2, xzr
+15281e0 bl #0x1be62f4 UnityEngine.Renderer$$set_sortingOrder
+15281e4 add w27, w27, #1
+15281e8 cbnz x22, #0x15281f4
+15281ec mov x0, xzr
+15281f0 bl #0xd2b72c
+15281f4 ldr w8, [x22, #0x18]
+15281f8 cmp w27, w8
+15281fc b.lt #0x1528174
+1528200 adrp x8, #0x2d22000
+1528204 adrp x9, #0x2d09000
+1528208 ldr x8, [x8, #0xa70]
+152820c ldr x9, [x9, #0x848]
+1528210 mov x0, x21
+1528214 ldr x1, [x8]
+1528218 ldr x2, [x9]
+152821c bl #0x18e1a64 A3Game.DUnityUtil$$FindChildComponent<object>
+1528220 ldr x8, [x26]
+1528224 mov x21, x0
+1528228 ldrb w9, [x8, #0x127]
+152822c tbz w9, #1, #0x1528240
+1528230 ldr w9, [x8, #0xd8]
+1528234 cbnz w9, #0x1528240
+1528238 mov x0, x8
+152823c bl #0xd14168
+1528240 mov x0, x21
+1528244 mov x1, xzr
+1528248 mov x2, xzr
+152824c bl #0x1bdd4dc UnityEngine.Object$$op_Inequality
+1528250 tbz w0, #0, #0x15282ac
+1528254 cbz x21, #0x1528274
+1528258 adrp x8, #0x2ca1000
+152825c ldr x8, [x8, #0x9b8]
+1528260 mov x0, x21
+1528264 mov x2, xzr
+1528268 ldr x1, [x8]
+152826c bl #0x1be6134 UnityEngine.Renderer$$set_sortingLayerName
+1528270 b #0x152829c
+1528274 mov x0, xzr
+1528278 bl #0xd2b72c
+152827c adrp x8, #0x2ca1000
+1528280 ldr x8, [x8, #0x9b8]
+1528284 mov x0, xzr
+1528288 mov x2, xzr
+152828c ldr x1, [x8]
+1528290 bl #0x1be6134 UnityEngine.Renderer$$set_sortingLayerName
+1528294 mov x0, xzr
+1528298 bl #0xd2b72c
+152829c mov w1, #0x65
+15282a0 mov x0, x21
+15282a4 mov x2, xzr
+15282a8 bl #0x1be62f4 UnityEngine.Renderer$$set_sortingOrder
+15282ac cbnz x20, #0x15282b8
+15282b0 mov x0, xzr
+15282b4 bl #0xd2b72c
+15282b8 mov x0, x20
+15282bc bl #0x15283e0 A3Game.LevelMgr$$GetSceneColor
+15282c0 mov w8, w0
+15282c4 cbz w8, #0x15282d8
+15282c8 ldr x0, [x19, #0x18]
+15282cc mov w1, w8
+15282d0 mov x2, xzr
+15282d4 bl #0x16ff34c A3Game.DUnityUtil$$SetSpriteRendererColor
+15282d8 ldr x21, [x19, #0x10]
+15282dc ldr x20, [x19, #0x28]
+15282e0 cbnz x21, #0x15282ec
+15282e4 mov x0, xzr
+15282e8 bl #0xd2b72c
+15282ec ldr x0, [x25]
+15282f0 ldr x21, [x21, #0x28]
+15282f4 ldrb w8, [x0, #0x127]
+15282f8 tbz w8, #1, #0x1528308
+15282fc ldr w8, [x0, #0xd8]
+1528300 cbnz w8, #0x1528308
+1528304 bl #0xd14168
+1528308 mov x0, xzr
+152830c bl #0xeccdbc A3Game.BattleCoreUtil$$get_SmoothDeltaTime
+1528310 mov v8.16b, v0.16b
+1528314 cbnz x20, #0x1528320
+1528318 mov x0, xzr
+152831c bl #0xd2b72c
+1528320 mov x0, x20
+1528324 mov x1, x21
+1528328 mov v0.16b, v8.16b
+152832c mov x2, xzr
+1528330 bl #0xe357e8 A3Game.EntityTransformBinder$$Create
+1528334 ldr x20, [x19, #0x18]
+1528338 ldr x19, [x19, #0x28]
+152833c cbnz x20, #0x1528348
+1528340 mov x0, xzr
+1528344 bl #0xd2b72c
+1528348 mov x0, x20
+152834c mov x1, xzr
+1528350 bl #0x1c583a8 UnityEngine.GameObject$$get_transform
+1528354 mov x20, x0
+1528358 cbnz x19, #0x1528364
+152835c mov x0, xzr
+1528360 bl #0xd2b72c
+1528364 mov x0, x19
+1528368 mov x1, x20
+152836c mov x2, xzr
+1528370 bl #0xe357f4 A3Game.EntityTransformBinder$$AddTrans
+1528374 ldp x29, x30, [sp, #0xa0]
+1528378 ldp x20, x19, [sp, #0x90]
+152837c ldp x22, x21, [sp, #0x80]
+1528380 ldp x24, x23, [sp, #0x70]
+1528384 ldp x26, x25, [sp, #0x60]
+1528388 ldp x28, x27, [sp, #0x50]
+152838c ldp d9, d8, [sp, #0x40]
+1528390 ldr d10, [sp, #0x30]
+1528394 add sp, sp, #0xb0
+1528398 ret
+
+int64_t BattleCore_FP__op_Explicit (BattleCore_FP_o value, const MethodInfo* method);
+1ed4a34 asr x0, x0, #0x20
+1ed4a38 ret
+
+float BattleCore_FP__op_Explicit (BattleCore_FP_o value, const MethodInfo* method);
+1ed5234 adrp x8, #0x23b1000
+1ed5238 ldr s0, [x8, #0x46c]
+1ed523c scvtf s1, x0
+1ed5240 fmul s0, s1, s0
+1ed5244 ret
+
+BattleCore_FP_o BattleCore_FP__op_Explicit (System_Decimal_o value, const MethodInfo* method);
+1ed5248 sub sp, sp, #0x40
+1ed524c str x21, [sp, #0x10]
+1ed5250 stp x20, x19, [sp, #0x20]
+1ed5254 stp x29, x30, [sp, #0x30]
+1ed5258 add x29, sp, #0x30
+1ed525c adrp x21, #0x2f44000
+1ed5260 ldrb w8, [x21, #0xfbe]
+1ed5264 mov x19, x1
+1ed5268 mov x20, x0
+1ed526c tbnz w8, #0, #0x1ed5288
+1ed5270 adrp x8, #0x2cc5000
+1ed5274 ldr x8, [x8, #0xa50]
+1ed5278 ldr w0, [x8]
+1ed527c bl #0xd04f28
+1ed5280 mov w8, #1
+1ed5284 strb w8, [x21, #0xfbe]
+1ed5288 mov x0, sp
+1ed528c mov x1, #0x100000000
+1ed5290 mov x2, xzr
+1ed5294 stp xzr, xzr, [sp]
+1ed5298 bl #0x1d37ec0
+1ed529c adrp x8, #0x2d0f000
+1ed52a0 ldr x8, [x8, #0x700]
+1ed52a4 ldr x0, [x8]
+1ed52a8 ldrb w8, [x0, #0x127]
+1ed52ac tbz w8, #1, #0x1ed52bc
+1ed52b0 ldr w8, [x0, #0xd8]
+1ed52b4 cbnz w8, #0x1ed52bc
+1ed52b8 bl #0xd14168
+1ed52bc ldp x2, x3, [sp]
+1ed52c0 mov x0, x20
+1ed52c4 mov x1, x19
+1ed52c8 mov x4, xzr
+1ed52cc bl #0x1d3b074 System.Decimal$$op_Multiply
+1ed52d0 mov x2, xzr
+1ed52d4 bl #0x1d3b538 System.Decimal$$op_Explicit
+1ed52d8 ldp x29, x30, [sp, #0x30]
+1ed52dc ldp x20, x19, [sp, #0x20]
+1ed52e0 ldr x21, [sp, #0x10]
+1ed52e4 add sp, sp, #0x40
+1ed52e8 ret
+1ed52ec stp x20, x19, [sp, #-0x20]!
+1ed52f0 stp x29, x30, [sp, #0x10]
+1ed52f4 add x29, sp, #0x10
+1ed52f8 adrp x20, #0x2f44000
+1ed52fc ldrb w8, [x20, #0xfbf]
+1ed5300 mov x19, x0
+1ed5304 tbnz w8, #0, #0x1ed5320
+1ed5308 adrp x8, #0x2c8a000
+1ed530c ldr x8, [x8, #0x98]
+1ed5310 ldr w0, [x8]
+1ed5314 bl #0xd04f28
+1ed5318 mov w8, #1
+1ed531c strb w8, [x20, #0xfbf]
+1ed5320 adrp x8, #0x2cbd000
+1ed5324 ldr x8, [x8, #0xfb8]
+1ed5328 ldr x19, [x19]
+1ed532c ldr x0, [x8]
+1ed5330 ldrb w8, [x0, #0x127]
+1ed5334 tbz w8, #1, #0x1ed5344
+1ed5338 ldr w8, [x0, #0xd8]
+1ed533c cbnz w8, #0x1ed5344
+1ed5340 bl #0xd14168
+1ed5344 adrp x8, #0x23b1000
+1ed5348 ldr s0, [x8, #0x46c]
+1ed534c ldp x29, x30, [sp, #0x10]
+1ed5350 scvtf s1, x19
+1ed5354 fmul s0, s1, s0
+1ed5358 ldp x20, x19, [sp], #0x20
+1ed535c ret
+1ed5360 stp x20, x19, [sp, #-0x20]!
+1ed5364 stp x29, x30, [sp, #0x10]
+1ed5368 add x29, sp, #0x10
+1ed536c adrp x20, #0x2f44000
+1ed5370 ldrb w8, [x20, #0xfc0]
+1ed5374 mov x19, x0
+1ed5378 tbnz w8, #0, #0x1ed5394
+1ed537c adrp x8, #0x2d13000
+1ed5380 ldr x8, [x8, #0x838]
+1ed5384 ldr w0, [x8]
+1ed5388 bl #0xd04f28
+1ed538c mov w8, #1
+1ed5390 strb w8, [x20, #0xfc0]
+1ed5394 adrp x8, #0x2cbd000
+1ed5398 ldr x8, [x8, #0xfb8]
+1ed539c ldr x19, [x19]
+1ed53a0 ldr x0, [x8]
+1ed53a4 ldrb w8, [x0, #0x127]
+1ed53a8 tbz w8, #1, #0x1ed53b8
+1ed53ac ldr w8, [x0, #0xd8]
+1ed53b0 cbnz w8, #0x1ed53b8
+1ed53b4 bl #0xd14168
+1ed53b8 ldp x29, x30, [sp, #0x10]
+1ed53bc lsr x0, x19, #0x20
+1ed53c0 ldp x20, x19, [sp], #0x20
+1ed53c4 ret

@@ -1,0 +1,465 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_fashionrangeconfig.bytes.ab",
+    "path_id": 30441085374772552,
+    "name": "FashionRangeConfig",
+    "sha256": "f2e7cd02dbcfa7664f9cef1e24eb738739dd63009fabfa9b57a87a33fc0b0793",
+    "export": "derived/unity/text/assets_resources_config_resbin_fashionrangeconfig.bytes/FashionRangeConfig__30441085374772552.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 3140,
+      "version": 1,
+      "record_count": 48,
+      "stored_crc32": "345ecdf5",
+      "computed_inverted_crc32": "345ecdf5"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "FashionRangeConfig",
+      "fields": [
+        {
+          "type": "uint",
+          "name": "FashionID",
+          "object_offset": 16
+        },
+        {
+          "type": "string",
+          "name": "Icon",
+          "object_offset": 24
+        },
+        {
+          "type": "string",
+          "name": "EffectPath",
+          "object_offset": 32
+        }
+      ],
+      "unpack_va": 31306476,
+      "dump_line": 206219
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1ddb320",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1ddb348",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1ddb38c",
+        "target_va": "0x21f6ce8",
+        "opcode": "B-tail",
+        "reader": "readString",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 48
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "FashionID": 41001,
+      "Icon": "icon_quality_baoshi",
+      "EffectPath": "",
+      "_byte_length": 33
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 53,
+      "FashionID": 42001,
+      "Icon": "icon_quality_baoshi",
+      "EffectPath": "",
+      "_byte_length": 33
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 86,
+      "FashionID": 43001,
+      "Icon": "icon_quality_baoshi",
+      "EffectPath": "",
+      "_byte_length": 33
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 119,
+      "FashionID": 44001,
+      "Icon": "icon_quality_baoshi",
+      "EffectPath": "",
+      "_byte_length": 33
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 152,
+      "FashionID": 45001,
+      "Icon": "icon_quality_baoshi",
+      "EffectPath": "",
+      "_byte_length": 33
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 185,
+      "FashionID": 46001,
+      "Icon": "icon_quality_baoshi",
+      "EffectPath": "",
+      "_byte_length": 33
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 218,
+      "FashionID": 41002,
+      "Icon": "icon_quality_huoyan",
+      "EffectPath": "Effect/ui/pinzhi/eff_ui_kuang_huoyan",
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 287,
+      "FashionID": 42002,
+      "Icon": "icon_quality_huoyan",
+      "EffectPath": "Effect/ui/pinzhi/eff_ui_kuang_huoyan",
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 356,
+      "FashionID": 43002,
+      "Icon": "icon_quality_huoyan",
+      "EffectPath": "Effect/ui/pinzhi/eff_ui_kuang_huoyan",
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 425,
+      "FashionID": 44002,
+      "Icon": "icon_quality_huoyan",
+      "EffectPath": "Effect/ui/pinzhi/eff_ui_kuang_huoyan",
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 494,
+      "FashionID": 45002,
+      "Icon": "icon_quality_huoyan",
+      "EffectPath": "Effect/ui/pinzhi/eff_ui_kuang_huoyan",
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 563,
+      "FashionID": 46002,
+      "Icon": "icon_quality_huoyan",
+      "EffectPath": "Effect/ui/pinzhi/eff_ui_kuang_huoyan",
+      "_byte_length": 69
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 632,
+      "FashionID": 41003,
+      "Icon": "icon_quality_leidian",
+      "EffectPath": "Effect/ui/pinzhi/eff_ui_kuang_lei",
+      "_byte_length": 67
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 699,
+      "FashionID": 42003,
+      "Icon": "icon_quality_leidian",
+      "EffectPath": "Effect/ui/pinzhi/eff_ui_kuang_lei",
+      "_byte_length": 67
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 766,
+      "FashionID": 43003,
+      "Icon": "icon_quality_leidian",
+      "EffectPath": "Effect/ui/pinzhi/eff_ui_kuang_lei",
+      "_byte_length": 67
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 833,
+      "FashionID": 44003,
+      "Icon": "icon_quality_leidian",
+      "EffectPath": "Effect/ui/pinzhi/eff_ui_kuang_lei",
+      "_byte_length": 67
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 900,
+      "FashionID": 45003,
+      "Icon": "icon_quality_leidian",
+      "EffectPath": "Effect/ui/pinzhi/eff_ui_kuang_lei",
+      "_byte_length": 67
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 967,
+      "FashionID": 46003,
+      "Icon": "icon_quality_leidian",
+      "EffectPath": "Effect/ui/pinzhi/eff_ui_kuang_lei",
+      "_byte_length": 67
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 1034,
+      "FashionID": 41006,
+      "Icon": "icon_quality_liujin",
+      "EffectPath": "",
+      "_byte_length": 33
+    },
+    {
+      "_record_index": 19,
+      "_byte_offset": 1067,
+      "FashionID": 42006,
+      "Icon": "icon_quality_liujin",
+      "EffectPath": "",
+      "_byte_length": 33
+    },
+    {
+      "_record_index": 20,
+      "_byte_offset": 1100,
+      "FashionID": 43006,
+      "Icon": "icon_quality_liujin",
+      "EffectPath": "",
+      "_byte_length": 33
+    },
+    {
+      "_record_index": 21,
+      "_byte_offset": 1133,
+      "FashionID": 44006,
+      "Icon": "icon_quality_liujin",
+      "EffectPath": "",
+      "_byte_length": 33
+    },
+    {
+      "_record_index": 22,
+      "_byte_offset": 1166,
+      "FashionID": 45006,
+      "Icon": "icon_quality_liujin",
+      "EffectPath": "",
+      "_byte_length": 33
+    },
+    {
+      "_record_index": 23,
+      "_byte_offset": 1199,
+      "FashionID": 46006,
+      "Icon": "icon_quality_liujin",
+      "EffectPath": "",
+      "_byte_length": 33
+    },
+    {
+      "_record_index": 24,
+      "_byte_offset": 1232,
+      "FashionID": 41007,
+      "Icon": "icon_quality_emojianglin",
+      "EffectPath": "Effect/ui/pinzhi/eff_ui_kuang_emojianglin",
+      "_byte_length": 79
+    },
+    {
+      "_record_index": 25,
+      "_byte_offset": 1311,
+      "FashionID": 42007,
+      "Icon": "icon_quality_emojianglin",
+      "EffectPath": "Effect/ui/pinzhi/eff_ui_kuang_emojianglin",
+      "_byte_length": 79
+    },
+    {
+      "_record_index": 26,
+      "_byte_offset": 1390,
+      "FashionID": 43007,
+      "Icon": "icon_quality_emojianglin",
+      "EffectPath": "Effect/ui/pinzhi/eff_ui_kuang_emojianglin",
+      "_byte_length": 79
+    },
+    {
+      "_record_index": 27,
+      "_byte_offset": 1469,
+      "FashionID": 44007,
+      "Icon": "icon_quality_emojianglin",
+      "EffectPath": "Effect/ui/pinzhi/eff_ui_kuang_emojianglin",
+      "_byte_length": 79
+    },
+    {
+      "_record_index": 28,
+      "_byte_offset": 1548,
+      "FashionID": 45007,
+      "Icon": "icon_quality_emojianglin",
+      "EffectPath": "Effect/ui/pinzhi/eff_ui_kuang_emojianglin",
+      "_byte_length": 79
+    },
+    {
+      "_record_index": 29,
+      "_byte_offset": 1627,
+      "FashionID": 46007,
+      "Icon": "icon_quality_emojianglin",
+      "EffectPath": "Effect/ui/pinzhi/eff_ui_kuang_emojianglin",
+      "_byte_length": 79
+    },
+    {
+      "_record_index": 30,
+      "_byte_offset": 1706,
+      "FashionID": 41008,
+      "Icon": "icon_quality_yinianshenmo",
+      "EffectPath": "Effect/ui/pinzhi/eff_ui_kuang_yinianshenmo",
+      "_byte_length": 81
+    },
+    {
+      "_record_index": 31,
+      "_byte_offset": 1787,
+      "FashionID": 42008,
+      "Icon": "icon_quality_yinianshenmo",
+      "EffectPath": "Effect/ui/pinzhi/eff_ui_kuang_yinianshenmo",
+      "_byte_length": 81
+    },
+    {
+      "_record_index": 32,
+      "_byte_offset": 1868,
+      "FashionID": 43008,
+      "Icon": "icon_quality_yinianshenmo",
+      "EffectPath": "Effect/ui/pinzhi/eff_ui_kuang_yinianshenmo",
+      "_byte_length": 81
+    },
+    {
+      "_record_index": 33,
+      "_byte_offset": 1949,
+      "FashionID": 44008,
+      "Icon": "icon_quality_yinianshenmo",
+      "EffectPath": "Effect/ui/pinzhi/eff_ui_kuang_yinianshenmo",
+      "_byte_length": 81
+    },
+    {
+      "_record_index": 34,
+      "_byte_offset": 2030,
+      "FashionID": 45008,
+      "Icon": "icon_quality_yinianshenmo",
+      "EffectPath": "Effect/ui/pinzhi/eff_ui_kuang_yinianshenmo",
+      "_byte_length": 81
+    },
+    {
+      "_record_index": 35,
+      "_byte_offset": 2111,
+      "FashionID": 46008,
+      "Icon": "icon_quality_yinianshenmo",
+      "EffectPath": "Effect/ui/pinzhi/eff_ui_kuang_yinianshenmo",
+      "_byte_length": 81
+    },
+    {
+      "_record_index": 36,
+      "_byte_offset": 2192,
+      "FashionID": 100018,
+      "Icon": "quality_sj_bhzz_k",
+      "EffectPath": "Effect/ui/pinzhi_icon/eff_ui_kuang_binghuozhizun",
+      "_byte_length": 79
+    },
+    {
+      "_record_index": 37,
+      "_byte_offset": 2271,
+      "FashionID": 100019,
+      "Icon": "quality_sj_bhzz_k",
+      "EffectPath": "Effect/ui/pinzhi_icon/eff_ui_kuang_binghuozhizun",
+      "_byte_length": 79
+    },
+    {
+      "_record_index": 38,
+      "_byte_offset": 2350,
+      "FashionID": 100020,
+      "Icon": "quality_sj_bhzz_k",
+      "EffectPath": "Effect/ui/pinzhi_icon/eff_ui_kuang_binghuozhizun",
+      "_byte_length": 79
+    },
+    {
+      "_record_index": 39,
+      "_byte_offset": 2429,
+      "FashionID": 100021,
+      "Icon": "quality_sj_bhzz_k",
+      "EffectPath": "Effect/ui/pinzhi_icon/eff_ui_kuang_binghuozhizun",
+      "_byte_length": 79
+    },
+    {
+      "_record_index": 40,
+      "_byte_offset": 2508,
+      "FashionID": 100022,
+      "Icon": "quality_sj_bhzz_k",
+      "EffectPath": "Effect/ui/pinzhi_icon/eff_ui_kuang_binghuozhizun",
+      "_byte_length": 79
+    },
+    {
+      "_record_index": 41,
+      "_byte_offset": 2587,
+      "FashionID": 100023,
+      "Icon": "quality_sj_bhzz_k",
+      "EffectPath": "Effect/ui/pinzhi_icon/eff_ui_kuang_binghuozhizun",
+      "_byte_length": 79
+    },
+    {
+      "_record_index": 42,
+      "_byte_offset": 2666,
+      "FashionID": 100024,
+      "Icon": "quality_sj_zyml_k",
+      "EffectPath": "Effect/ui/pinzhi_icon/eff_ui_kuang_ziyouminglong",
+      "_byte_length": 79
+    },
+    {
+      "_record_index": 43,
+      "_byte_offset": 2745,
+      "FashionID": 100025,
+      "Icon": "quality_sj_zyml_k",
+      "EffectPath": "Effect/ui/pinzhi_icon/eff_ui_kuang_ziyouminglong",
+      "_byte_length": 79
+    },
+    {
+      "_record_index": 44,
+      "_byte_offset": 2824,
+      "FashionID": 100026,
+      "Icon": "quality_sj_zyml_k",
+      "EffectPath": "Effect/ui/pinzhi_icon/eff_ui_kuang_ziyouminglong",
+      "_byte_length": 79
+    },
+    {
+      "_record_index": 45,
+      "_byte_offset": 2903,
+      "FashionID": 100027,
+      "Icon": "quality_sj_zyml_k",
+      "EffectPath": "Effect/ui/pinzhi_icon/eff_ui_kuang_ziyouminglong",
+      "_byte_length": 79
+    },
+    {
+      "_record_index": 46,
+      "_byte_offset": 2982,
+      "FashionID": 100028,
+      "Icon": "quality_sj_zyml_k",
+      "EffectPath": "Effect/ui/pinzhi_icon/eff_ui_kuang_ziyouminglong",
+      "_byte_length": 79
+    },
+    {
+      "_record_index": 47,
+      "_byte_offset": 3061,
+      "FashionID": 100029,
+      "Icon": "quality_sj_zyml_k",
+      "EffectPath": "Effect/ui/pinzhi_icon/eff_ui_kuang_ziyouminglong",
+      "_byte_length": 79
+    }
+  ]
+}

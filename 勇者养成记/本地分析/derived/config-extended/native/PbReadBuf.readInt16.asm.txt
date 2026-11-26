@@ -1,0 +1,78 @@
+0x21f6668: str       x23, [sp, #-0x40]!
+0x21f666c: stp       x22, x21, [sp, #0x10]
+0x21f6670: stp       x20, x19, [sp, #0x20]
+0x21f6674: stp       x29, x30, [sp, #0x30]
+0x21f6678: add       x29, sp, #0x30
+0x21f667c: adrp      x21, #0x2f47000
+0x21f6680: ldrb      w8, [x21, #0xb3]
+0x21f6684: mov       x19, x1
+0x21f6688: mov       x20, x0
+0x21f668c: tbnz      w8, #0, #0x21f66a8
+0x21f6690: adrp      x8, #0x2caa000
+0x21f6694: ldr       x8, [x8, #0x770]
+0x21f6698: ldr       w0, [x8]
+0x21f669c: bl        #0xd04f28 ; 
+0x21f66a0: mov       w8, #1
+0x21f66a4: strb      w8, [x21, #0xb3]
+0x21f66a8: ldr       x21, [x20, #0x10]
+0x21f66ac: cbz       x21, #0x21f66cc
+0x21f66b0: ldp       w22, w8, [x20, #0x18]
+0x21f66b4: sub       w8, w8, w22
+0x21f66b8: cmp       w8, #1
+0x21f66bc: b.gt      #0x21f66d8
+0x21f66c0: mov       w0, wzr
+0x21f66c4: strh      wzr, [x19]
+0x21f66c8: b         #0x21f678c ; 
+0x21f66cc: strh      wzr, [x19]
+0x21f66d0: mov       w0, #-0x16
+0x21f66d4: b         #0x21f678c ; 
+0x21f66d8: adrp      x23, #0x2c99000
+0x21f66dc: ldr       x23, [x23, #0x490]
+0x21f66e0: ldr       x0, [x23]
+0x21f66e4: ldrb      w8, [x0, #0x127]
+0x21f66e8: tbz       w8, #1, #0x21f66f8
+0x21f66ec: ldr       w8, [x0, #0xd8]
+0x21f66f0: cbnz      w8, #0x21f66f8
+0x21f66f4: bl        #0xd14168 ; 
+0x21f66f8: mov       x0, x21
+0x21f66fc: mov       w1, w22
+0x21f6700: mov       x2, xzr
+0x21f6704: bl        #0x1c21668 ; System.BitConverter$$ToInt16
+0x21f6708: strh      w0, [x19]
+0x21f670c: ldr       w8, [x20, #0x18]
+0x21f6710: ldrb      w9, [x20, #0x20]
+0x21f6714: add       w8, w8, #2
+0x21f6718: str       w8, [x20, #0x18]
+0x21f671c: cbz       w9, #0x21f6788
+0x21f6720: ldr       x0, [x23]
+0x21f6724: ldrb      w8, [x0, #0x127]
+0x21f6728: tbz       w8, #1, #0x21f673c
+0x21f672c: ldr       w8, [x0, #0xd8]
+0x21f6730: cbnz      w8, #0x21f673c
+0x21f6734: bl        #0xd14168 ; 
+0x21f6738: ldr       x0, [x23]
+0x21f673c: ldr       x8, [x0, #0xb8]
+0x21f6740: ldrb      w8, [x8, #1]
+0x21f6744: cbz       w8, #0x21f6788
+0x21f6748: adrp      x8, #0x2cb1000
+0x21f674c: ldr       x8, [x8, #0x1c8]
+0x21f6750: ldrh      w20, [x19]
+0x21f6754: ldr       x0, [x8]
+0x21f6758: ldrb      w8, [x0, #0x127]
+0x21f675c: tbz       w8, #1, #0x21f676c
+0x21f6760: ldr       w8, [x0, #0xd8]
+0x21f6764: cbnz      w8, #0x21f676c
+0x21f6768: bl        #0xd14168 ; 
+0x21f676c: mov       w0, w20
+0x21f6770: mov       x1, xzr
+0x21f6774: bl        #0x1973bb8 ; System.Net.IPAddress$$NetworkToHostOrder
+0x21f6778: mov       w8, w0
+0x21f677c: mov       w0, wzr
+0x21f6780: strh      w8, [x19]
+0x21f6784: b         #0x21f678c ; 
+0x21f6788: mov       w0, wzr
+0x21f678c: ldp       x29, x30, [sp, #0x30]
+0x21f6790: ldp       x20, x19, [sp, #0x20]
+0x21f6794: ldp       x22, x21, [sp, #0x10]
+0x21f6798: ldr       x23, [sp], #0x40
+0x21f679c: ret       

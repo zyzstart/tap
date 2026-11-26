@@ -1,0 +1,147 @@
+{
+  "namespace": "ResDef",
+  "name": "ExtraAttrCfg",
+  "fields": [
+    {
+      "type": "int",
+      "name": "PlanID",
+      "object_offset": 16
+    },
+    {
+      "type": "int",
+      "name": "AttrIdx",
+      "object_offset": 20
+    },
+    {
+      "type": "int",
+      "name": "Weight",
+      "object_offset": 24
+    },
+    {
+      "type": "ResZhaoShiAttrImpactData",
+      "name": "ImpactData",
+      "object_offset": 32
+    }
+  ],
+  "unpack_va": 31289260,
+  "dump_line": 206268,
+  "layout": [
+    {
+      "type": "int",
+      "name": "PlanID",
+      "object_offset": 16,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dd6fe4",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "type": "int",
+      "name": "AttrIdx",
+      "object_offset": 20,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dd7008",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "type": "int",
+      "name": "Weight",
+      "object_offset": 24,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dd702c",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            24
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ResZhaoShiAttrImpactData",
+      "name": "ImpactData",
+      "object_offset": 32,
+      "wire_type": "ResZhaoShiAttrImpactData",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1dd7074",
+          "target_va": "0x1e8dd90",
+          "target_names": [
+            "ResDef.ResZhaoShiAttrImpactData$$unpack"
+          ],
+          "opcode": "B",
+          "kind": "nested",
+          "nested_schema": "ResDef.ResZhaoShiAttrImpactData",
+          "destination": [
+            "field",
+            32
+          ],
+          "cut_version": 1
+        }
+      ],
+      "nested_schema": "ResDef.ResZhaoShiAttrImpactData"
+    }
+  ],
+  "native_evidence": {
+    "method_start_va": "0x1dd6fac",
+    "instruction_steps": 39,
+    "event_count": 4,
+    "branch_evidence": [],
+    "loops": [],
+    "instruction_sha256": "72080ae98081de41538fbe562e2b3317bbc2131586456da6356402ab861a3adc",
+    "gate": "concrete-success-path; all sequential readers/nested callees; full field/destination/stride matching",
+    "assumptions": [
+      "non-null input buffer and created nested objects/arrays",
+      "managed array bounds valid",
+      "AAPCS64 callee-saved register preservation",
+      "reader and nested call success; version 1 only"
+    ]
+  }
+}

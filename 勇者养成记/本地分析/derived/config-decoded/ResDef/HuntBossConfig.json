@@ -1,0 +1,1909 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_huntbossconfig.bytes.ab",
+    "path_id": 8356597174443578804,
+    "name": "HuntBossConfig",
+    "sha256": "208b756cf54bea756befb06236eff291d519d71d3c33af431600e27f8bb20e24",
+    "export": "derived/unity/text/assets_resources_config_resbin_huntbossconfig.bytes/HuntBossConfig__8356597174443578804.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 2000,
+      "version": 1,
+      "record_count": 180,
+      "stored_crc32": "18349976",
+      "computed_inverted_crc32": "18349976"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "HuntBossConfig",
+      "fields": [
+        {
+          "type": "byte",
+          "name": "Major",
+          "object_offset": 16
+        },
+        {
+          "type": "byte",
+          "name": "BossLevel",
+          "object_offset": 17
+        },
+        {
+          "type": "byte",
+          "name": "Quality",
+          "object_offset": 18
+        },
+        {
+          "type": "uint",
+          "name": "Progress",
+          "object_offset": 20
+        },
+        {
+          "type": "int",
+          "name": "Weight",
+          "object_offset": 24
+        }
+      ],
+      "unpack_va": 30730364,
+      "dump_line": 205491
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1d4e8b0",
+        "target_va": "0x21f65e0",
+        "opcode": "BL",
+        "reader": "readUInt8",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d4e8d4",
+        "target_va": "0x21f65e0",
+        "opcode": "BL",
+        "reader": "readUInt8",
+        "destination_object_offset": 17,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d4e8f8",
+        "target_va": "0x21f65e0",
+        "opcode": "BL",
+        "reader": "readUInt8",
+        "destination_object_offset": 18,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d4e91c",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d4e95c",
+        "target_va": "0x21f67d0",
+        "opcode": "B-tail",
+        "reader": "readInt32",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 180
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "Major": 1,
+      "BossLevel": 1,
+      "Quality": 2,
+      "Progress": 150,
+      "Weight": 225,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 31,
+      "Major": 1,
+      "BossLevel": 2,
+      "Quality": 3,
+      "Progress": 300,
+      "Weight": 350,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 42,
+      "Major": 1,
+      "BossLevel": 3,
+      "Quality": 4,
+      "Progress": 450,
+      "Weight": 275,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 53,
+      "Major": 1,
+      "BossLevel": 4,
+      "Quality": 5,
+      "Progress": 600,
+      "Weight": 100,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 64,
+      "Major": 1,
+      "BossLevel": 5,
+      "Quality": 6,
+      "Progress": 750,
+      "Weight": 50,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 75,
+      "Major": 2,
+      "BossLevel": 1,
+      "Quality": 2,
+      "Progress": 300,
+      "Weight": 225,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 86,
+      "Major": 2,
+      "BossLevel": 2,
+      "Quality": 3,
+      "Progress": 600,
+      "Weight": 350,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 97,
+      "Major": 2,
+      "BossLevel": 3,
+      "Quality": 4,
+      "Progress": 900,
+      "Weight": 275,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 108,
+      "Major": 2,
+      "BossLevel": 4,
+      "Quality": 5,
+      "Progress": 1200,
+      "Weight": 100,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 119,
+      "Major": 2,
+      "BossLevel": 5,
+      "Quality": 6,
+      "Progress": 1500,
+      "Weight": 50,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 130,
+      "Major": 3,
+      "BossLevel": 1,
+      "Quality": 2,
+      "Progress": 450,
+      "Weight": 225,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 141,
+      "Major": 3,
+      "BossLevel": 2,
+      "Quality": 3,
+      "Progress": 900,
+      "Weight": 350,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 152,
+      "Major": 3,
+      "BossLevel": 3,
+      "Quality": 4,
+      "Progress": 1350,
+      "Weight": 275,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 163,
+      "Major": 3,
+      "BossLevel": 4,
+      "Quality": 5,
+      "Progress": 1800,
+      "Weight": 100,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 174,
+      "Major": 3,
+      "BossLevel": 5,
+      "Quality": 6,
+      "Progress": 2250,
+      "Weight": 50,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 185,
+      "Major": 4,
+      "BossLevel": 1,
+      "Quality": 2,
+      "Progress": 600,
+      "Weight": 225,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 196,
+      "Major": 4,
+      "BossLevel": 2,
+      "Quality": 3,
+      "Progress": 1200,
+      "Weight": 350,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 207,
+      "Major": 4,
+      "BossLevel": 3,
+      "Quality": 4,
+      "Progress": 1800,
+      "Weight": 275,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 218,
+      "Major": 4,
+      "BossLevel": 4,
+      "Quality": 5,
+      "Progress": 2400,
+      "Weight": 100,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 19,
+      "_byte_offset": 229,
+      "Major": 4,
+      "BossLevel": 5,
+      "Quality": 6,
+      "Progress": 3000,
+      "Weight": 50,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 20,
+      "_byte_offset": 240,
+      "Major": 5,
+      "BossLevel": 1,
+      "Quality": 2,
+      "Progress": 750,
+      "Weight": 225,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 21,
+      "_byte_offset": 251,
+      "Major": 5,
+      "BossLevel": 2,
+      "Quality": 3,
+      "Progress": 1500,
+      "Weight": 350,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 22,
+      "_byte_offset": 262,
+      "Major": 5,
+      "BossLevel": 3,
+      "Quality": 4,
+      "Progress": 2250,
+      "Weight": 275,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 23,
+      "_byte_offset": 273,
+      "Major": 5,
+      "BossLevel": 4,
+      "Quality": 5,
+      "Progress": 3000,
+      "Weight": 100,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 24,
+      "_byte_offset": 284,
+      "Major": 5,
+      "BossLevel": 5,
+      "Quality": 6,
+      "Progress": 3750,
+      "Weight": 50,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 25,
+      "_byte_offset": 295,
+      "Major": 6,
+      "BossLevel": 1,
+      "Quality": 2,
+      "Progress": 1000,
+      "Weight": 225,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 26,
+      "_byte_offset": 306,
+      "Major": 6,
+      "BossLevel": 2,
+      "Quality": 3,
+      "Progress": 2000,
+      "Weight": 350,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 27,
+      "_byte_offset": 317,
+      "Major": 6,
+      "BossLevel": 3,
+      "Quality": 4,
+      "Progress": 3000,
+      "Weight": 275,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 28,
+      "_byte_offset": 328,
+      "Major": 6,
+      "BossLevel": 4,
+      "Quality": 5,
+      "Progress": 4000,
+      "Weight": 100,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 29,
+      "_byte_offset": 339,
+      "Major": 6,
+      "BossLevel": 5,
+      "Quality": 6,
+      "Progress": 5000,
+      "Weight": 50,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 30,
+      "_byte_offset": 350,
+      "Major": 7,
+      "BossLevel": 1,
+      "Quality": 2,
+      "Progress": 1500,
+      "Weight": 225,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 31,
+      "_byte_offset": 361,
+      "Major": 7,
+      "BossLevel": 2,
+      "Quality": 3,
+      "Progress": 3000,
+      "Weight": 350,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 32,
+      "_byte_offset": 372,
+      "Major": 7,
+      "BossLevel": 3,
+      "Quality": 4,
+      "Progress": 4500,
+      "Weight": 275,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 33,
+      "_byte_offset": 383,
+      "Major": 7,
+      "BossLevel": 4,
+      "Quality": 5,
+      "Progress": 6000,
+      "Weight": 100,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 34,
+      "_byte_offset": 394,
+      "Major": 7,
+      "BossLevel": 5,
+      "Quality": 6,
+      "Progress": 7500,
+      "Weight": 50,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 35,
+      "_byte_offset": 405,
+      "Major": 8,
+      "BossLevel": 1,
+      "Quality": 2,
+      "Progress": 2000,
+      "Weight": 225,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 36,
+      "_byte_offset": 416,
+      "Major": 8,
+      "BossLevel": 2,
+      "Quality": 3,
+      "Progress": 4000,
+      "Weight": 350,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 37,
+      "_byte_offset": 427,
+      "Major": 8,
+      "BossLevel": 3,
+      "Quality": 4,
+      "Progress": 6000,
+      "Weight": 275,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 38,
+      "_byte_offset": 438,
+      "Major": 8,
+      "BossLevel": 4,
+      "Quality": 5,
+      "Progress": 8000,
+      "Weight": 100,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 39,
+      "_byte_offset": 449,
+      "Major": 8,
+      "BossLevel": 5,
+      "Quality": 6,
+      "Progress": 10000,
+      "Weight": 50,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 40,
+      "_byte_offset": 460,
+      "Major": 9,
+      "BossLevel": 1,
+      "Quality": 2,
+      "Progress": 3000,
+      "Weight": 225,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 41,
+      "_byte_offset": 471,
+      "Major": 9,
+      "BossLevel": 2,
+      "Quality": 3,
+      "Progress": 6000,
+      "Weight": 350,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 42,
+      "_byte_offset": 482,
+      "Major": 9,
+      "BossLevel": 3,
+      "Quality": 4,
+      "Progress": 9000,
+      "Weight": 275,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 43,
+      "_byte_offset": 493,
+      "Major": 9,
+      "BossLevel": 4,
+      "Quality": 5,
+      "Progress": 12000,
+      "Weight": 100,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 44,
+      "_byte_offset": 504,
+      "Major": 9,
+      "BossLevel": 5,
+      "Quality": 6,
+      "Progress": 15000,
+      "Weight": 50,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 45,
+      "_byte_offset": 515,
+      "Major": 10,
+      "BossLevel": 1,
+      "Quality": 2,
+      "Progress": 4000,
+      "Weight": 225,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 46,
+      "_byte_offset": 526,
+      "Major": 10,
+      "BossLevel": 2,
+      "Quality": 3,
+      "Progress": 8000,
+      "Weight": 350,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 47,
+      "_byte_offset": 537,
+      "Major": 10,
+      "BossLevel": 3,
+      "Quality": 4,
+      "Progress": 12000,
+      "Weight": 275,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 48,
+      "_byte_offset": 548,
+      "Major": 10,
+      "BossLevel": 4,
+      "Quality": 5,
+      "Progress": 16000,
+      "Weight": 100,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 49,
+      "_byte_offset": 559,
+      "Major": 10,
+      "BossLevel": 5,
+      "Quality": 6,
+      "Progress": 20000,
+      "Weight": 50,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 50,
+      "_byte_offset": 570,
+      "Major": 11,
+      "BossLevel": 1,
+      "Quality": 2,
+      "Progress": 5000,
+      "Weight": 225,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 51,
+      "_byte_offset": 581,
+      "Major": 11,
+      "BossLevel": 2,
+      "Quality": 3,
+      "Progress": 10000,
+      "Weight": 350,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 52,
+      "_byte_offset": 592,
+      "Major": 11,
+      "BossLevel": 3,
+      "Quality": 4,
+      "Progress": 15000,
+      "Weight": 275,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 53,
+      "_byte_offset": 603,
+      "Major": 11,
+      "BossLevel": 4,
+      "Quality": 5,
+      "Progress": 20000,
+      "Weight": 100,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 54,
+      "_byte_offset": 614,
+      "Major": 11,
+      "BossLevel": 5,
+      "Quality": 6,
+      "Progress": 25000,
+      "Weight": 50,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 55,
+      "_byte_offset": 625,
+      "Major": 12,
+      "BossLevel": 1,
+      "Quality": 2,
+      "Progress": 6000,
+      "Weight": 225,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 56,
+      "_byte_offset": 636,
+      "Major": 12,
+      "BossLevel": 2,
+      "Quality": 3,
+      "Progress": 12000,
+      "Weight": 350,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 57,
+      "_byte_offset": 647,
+      "Major": 12,
+      "BossLevel": 3,
+      "Quality": 4,
+      "Progress": 18000,
+      "Weight": 275,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 58,
+      "_byte_offset": 658,
+      "Major": 12,
+      "BossLevel": 4,
+      "Quality": 5,
+      "Progress": 24000,
+      "Weight": 100,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 59,
+      "_byte_offset": 669,
+      "Major": 12,
+      "BossLevel": 5,
+      "Quality": 6,
+      "Progress": 30000,
+      "Weight": 50,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 60,
+      "_byte_offset": 680,
+      "Major": 13,
+      "BossLevel": 1,
+      "Quality": 2,
+      "Progress": 7000,
+      "Weight": 225,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 61,
+      "_byte_offset": 691,
+      "Major": 13,
+      "BossLevel": 2,
+      "Quality": 3,
+      "Progress": 14000,
+      "Weight": 350,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 62,
+      "_byte_offset": 702,
+      "Major": 13,
+      "BossLevel": 3,
+      "Quality": 4,
+      "Progress": 21000,
+      "Weight": 275,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 63,
+      "_byte_offset": 713,
+      "Major": 13,
+      "BossLevel": 4,
+      "Quality": 5,
+      "Progress": 28000,
+      "Weight": 100,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 64,
+      "_byte_offset": 724,
+      "Major": 13,
+      "BossLevel": 5,
+      "Quality": 6,
+      "Progress": 35000,
+      "Weight": 50,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 65,
+      "_byte_offset": 735,
+      "Major": 14,
+      "BossLevel": 1,
+      "Quality": 2,
+      "Progress": 8000,
+      "Weight": 225,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 66,
+      "_byte_offset": 746,
+      "Major": 14,
+      "BossLevel": 2,
+      "Quality": 3,
+      "Progress": 16000,
+      "Weight": 350,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 67,
+      "_byte_offset": 757,
+      "Major": 14,
+      "BossLevel": 3,
+      "Quality": 4,
+      "Progress": 24000,
+      "Weight": 275,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 68,
+      "_byte_offset": 768,
+      "Major": 14,
+      "BossLevel": 4,
+      "Quality": 5,
+      "Progress": 32000,
+      "Weight": 100,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 69,
+      "_byte_offset": 779,
+      "Major": 14,
+      "BossLevel": 5,
+      "Quality": 6,
+      "Progress": 40000,
+      "Weight": 50,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 70,
+      "_byte_offset": 790,
+      "Major": 15,
+      "BossLevel": 1,
+      "Quality": 2,
+      "Progress": 9000,
+      "Weight": 225,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 71,
+      "_byte_offset": 801,
+      "Major": 15,
+      "BossLevel": 2,
+      "Quality": 3,
+      "Progress": 18000,
+      "Weight": 350,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 72,
+      "_byte_offset": 812,
+      "Major": 15,
+      "BossLevel": 3,
+      "Quality": 4,
+      "Progress": 27000,
+      "Weight": 275,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 73,
+      "_byte_offset": 823,
+      "Major": 15,
+      "BossLevel": 4,
+      "Quality": 5,
+      "Progress": 36000,
+      "Weight": 100,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 74,
+      "_byte_offset": 834,
+      "Major": 15,
+      "BossLevel": 5,
+      "Quality": 6,
+      "Progress": 45000,
+      "Weight": 50,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 75,
+      "_byte_offset": 845,
+      "Major": 16,
+      "BossLevel": 1,
+      "Quality": 2,
+      "Progress": 10000,
+      "Weight": 225,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 76,
+      "_byte_offset": 856,
+      "Major": 16,
+      "BossLevel": 2,
+      "Quality": 3,
+      "Progress": 20000,
+      "Weight": 350,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 77,
+      "_byte_offset": 867,
+      "Major": 16,
+      "BossLevel": 3,
+      "Quality": 4,
+      "Progress": 30000,
+      "Weight": 275,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 78,
+      "_byte_offset": 878,
+      "Major": 16,
+      "BossLevel": 4,
+      "Quality": 5,
+      "Progress": 40000,
+      "Weight": 100,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 79,
+      "_byte_offset": 889,
+      "Major": 16,
+      "BossLevel": 5,
+      "Quality": 6,
+      "Progress": 50000,
+      "Weight": 50,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 80,
+      "_byte_offset": 900,
+      "Major": 17,
+      "BossLevel": 1,
+      "Quality": 2,
+      "Progress": 11000,
+      "Weight": 225,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 81,
+      "_byte_offset": 911,
+      "Major": 17,
+      "BossLevel": 2,
+      "Quality": 3,
+      "Progress": 22000,
+      "Weight": 350,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 82,
+      "_byte_offset": 922,
+      "Major": 17,
+      "BossLevel": 3,
+      "Quality": 4,
+      "Progress": 33000,
+      "Weight": 275,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 83,
+      "_byte_offset": 933,
+      "Major": 17,
+      "BossLevel": 4,
+      "Quality": 5,
+      "Progress": 44000,
+      "Weight": 100,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 84,
+      "_byte_offset": 944,
+      "Major": 17,
+      "BossLevel": 5,
+      "Quality": 6,
+      "Progress": 55000,
+      "Weight": 50,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 85,
+      "_byte_offset": 955,
+      "Major": 18,
+      "BossLevel": 1,
+      "Quality": 2,
+      "Progress": 12000,
+      "Weight": 225,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 86,
+      "_byte_offset": 966,
+      "Major": 18,
+      "BossLevel": 2,
+      "Quality": 3,
+      "Progress": 24000,
+      "Weight": 350,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 87,
+      "_byte_offset": 977,
+      "Major": 18,
+      "BossLevel": 3,
+      "Quality": 4,
+      "Progress": 36000,
+      "Weight": 275,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 88,
+      "_byte_offset": 988,
+      "Major": 18,
+      "BossLevel": 4,
+      "Quality": 5,
+      "Progress": 48000,
+      "Weight": 100,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 89,
+      "_byte_offset": 999,
+      "Major": 18,
+      "BossLevel": 5,
+      "Quality": 6,
+      "Progress": 60000,
+      "Weight": 50,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 90,
+      "_byte_offset": 1010,
+      "Major": 19,
+      "BossLevel": 1,
+      "Quality": 2,
+      "Progress": 13000,
+      "Weight": 225,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 91,
+      "_byte_offset": 1021,
+      "Major": 19,
+      "BossLevel": 2,
+      "Quality": 3,
+      "Progress": 26000,
+      "Weight": 350,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 92,
+      "_byte_offset": 1032,
+      "Major": 19,
+      "BossLevel": 3,
+      "Quality": 4,
+      "Progress": 39000,
+      "Weight": 275,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 93,
+      "_byte_offset": 1043,
+      "Major": 19,
+      "BossLevel": 4,
+      "Quality": 5,
+      "Progress": 52000,
+      "Weight": 100,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 94,
+      "_byte_offset": 1054,
+      "Major": 19,
+      "BossLevel": 5,
+      "Quality": 6,
+      "Progress": 65000,
+      "Weight": 50,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 95,
+      "_byte_offset": 1065,
+      "Major": 20,
+      "BossLevel": 1,
+      "Quality": 2,
+      "Progress": 14000,
+      "Weight": 225,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 96,
+      "_byte_offset": 1076,
+      "Major": 20,
+      "BossLevel": 2,
+      "Quality": 3,
+      "Progress": 28000,
+      "Weight": 350,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 97,
+      "_byte_offset": 1087,
+      "Major": 20,
+      "BossLevel": 3,
+      "Quality": 4,
+      "Progress": 42000,
+      "Weight": 275,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 98,
+      "_byte_offset": 1098,
+      "Major": 20,
+      "BossLevel": 4,
+      "Quality": 5,
+      "Progress": 56000,
+      "Weight": 100,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 99,
+      "_byte_offset": 1109,
+      "Major": 20,
+      "BossLevel": 5,
+      "Quality": 6,
+      "Progress": 70000,
+      "Weight": 50,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 100,
+      "_byte_offset": 1120,
+      "Major": 21,
+      "BossLevel": 1,
+      "Quality": 2,
+      "Progress": 15000,
+      "Weight": 225,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 101,
+      "_byte_offset": 1131,
+      "Major": 21,
+      "BossLevel": 2,
+      "Quality": 3,
+      "Progress": 30000,
+      "Weight": 350,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 102,
+      "_byte_offset": 1142,
+      "Major": 21,
+      "BossLevel": 3,
+      "Quality": 4,
+      "Progress": 45000,
+      "Weight": 275,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 103,
+      "_byte_offset": 1153,
+      "Major": 21,
+      "BossLevel": 4,
+      "Quality": 5,
+      "Progress": 60000,
+      "Weight": 100,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 104,
+      "_byte_offset": 1164,
+      "Major": 21,
+      "BossLevel": 5,
+      "Quality": 6,
+      "Progress": 75000,
+      "Weight": 50,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 105,
+      "_byte_offset": 1175,
+      "Major": 22,
+      "BossLevel": 1,
+      "Quality": 2,
+      "Progress": 16000,
+      "Weight": 225,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 106,
+      "_byte_offset": 1186,
+      "Major": 22,
+      "BossLevel": 2,
+      "Quality": 3,
+      "Progress": 32000,
+      "Weight": 350,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 107,
+      "_byte_offset": 1197,
+      "Major": 22,
+      "BossLevel": 3,
+      "Quality": 4,
+      "Progress": 48000,
+      "Weight": 275,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 108,
+      "_byte_offset": 1208,
+      "Major": 22,
+      "BossLevel": 4,
+      "Quality": 5,
+      "Progress": 64000,
+      "Weight": 100,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 109,
+      "_byte_offset": 1219,
+      "Major": 22,
+      "BossLevel": 5,
+      "Quality": 6,
+      "Progress": 80000,
+      "Weight": 50,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 110,
+      "_byte_offset": 1230,
+      "Major": 23,
+      "BossLevel": 1,
+      "Quality": 2,
+      "Progress": 17000,
+      "Weight": 225,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 111,
+      "_byte_offset": 1241,
+      "Major": 23,
+      "BossLevel": 2,
+      "Quality": 3,
+      "Progress": 34000,
+      "Weight": 350,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 112,
+      "_byte_offset": 1252,
+      "Major": 23,
+      "BossLevel": 3,
+      "Quality": 4,
+      "Progress": 51000,
+      "Weight": 275,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 113,
+      "_byte_offset": 1263,
+      "Major": 23,
+      "BossLevel": 4,
+      "Quality": 5,
+      "Progress": 68000,
+      "Weight": 100,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 114,
+      "_byte_offset": 1274,
+      "Major": 23,
+      "BossLevel": 5,
+      "Quality": 6,
+      "Progress": 85000,
+      "Weight": 50,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 115,
+      "_byte_offset": 1285,
+      "Major": 24,
+      "BossLevel": 1,
+      "Quality": 2,
+      "Progress": 18000,
+      "Weight": 225,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 116,
+      "_byte_offset": 1296,
+      "Major": 24,
+      "BossLevel": 2,
+      "Quality": 3,
+      "Progress": 36000,
+      "Weight": 350,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 117,
+      "_byte_offset": 1307,
+      "Major": 24,
+      "BossLevel": 3,
+      "Quality": 4,
+      "Progress": 54000,
+      "Weight": 275,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 118,
+      "_byte_offset": 1318,
+      "Major": 24,
+      "BossLevel": 4,
+      "Quality": 5,
+      "Progress": 72000,
+      "Weight": 100,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 119,
+      "_byte_offset": 1329,
+      "Major": 24,
+      "BossLevel": 5,
+      "Quality": 6,
+      "Progress": 90000,
+      "Weight": 50,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 120,
+      "_byte_offset": 1340,
+      "Major": 25,
+      "BossLevel": 1,
+      "Quality": 2,
+      "Progress": 19000,
+      "Weight": 225,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 121,
+      "_byte_offset": 1351,
+      "Major": 25,
+      "BossLevel": 2,
+      "Quality": 3,
+      "Progress": 38000,
+      "Weight": 350,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 122,
+      "_byte_offset": 1362,
+      "Major": 25,
+      "BossLevel": 3,
+      "Quality": 4,
+      "Progress": 57000,
+      "Weight": 275,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 123,
+      "_byte_offset": 1373,
+      "Major": 25,
+      "BossLevel": 4,
+      "Quality": 5,
+      "Progress": 76000,
+      "Weight": 100,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 124,
+      "_byte_offset": 1384,
+      "Major": 25,
+      "BossLevel": 5,
+      "Quality": 6,
+      "Progress": 95000,
+      "Weight": 50,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 125,
+      "_byte_offset": 1395,
+      "Major": 26,
+      "BossLevel": 1,
+      "Quality": 2,
+      "Progress": 20000,
+      "Weight": 225,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 126,
+      "_byte_offset": 1406,
+      "Major": 26,
+      "BossLevel": 2,
+      "Quality": 3,
+      "Progress": 40000,
+      "Weight": 350,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 127,
+      "_byte_offset": 1417,
+      "Major": 26,
+      "BossLevel": 3,
+      "Quality": 4,
+      "Progress": 60000,
+      "Weight": 275,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 128,
+      "_byte_offset": 1428,
+      "Major": 26,
+      "BossLevel": 4,
+      "Quality": 5,
+      "Progress": 80000,
+      "Weight": 100,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 129,
+      "_byte_offset": 1439,
+      "Major": 26,
+      "BossLevel": 5,
+      "Quality": 6,
+      "Progress": 100000,
+      "Weight": 50,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 130,
+      "_byte_offset": 1450,
+      "Major": 27,
+      "BossLevel": 1,
+      "Quality": 2,
+      "Progress": 21000,
+      "Weight": 225,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 131,
+      "_byte_offset": 1461,
+      "Major": 27,
+      "BossLevel": 2,
+      "Quality": 3,
+      "Progress": 42000,
+      "Weight": 350,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 132,
+      "_byte_offset": 1472,
+      "Major": 27,
+      "BossLevel": 3,
+      "Quality": 4,
+      "Progress": 63000,
+      "Weight": 275,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 133,
+      "_byte_offset": 1483,
+      "Major": 27,
+      "BossLevel": 4,
+      "Quality": 5,
+      "Progress": 84000,
+      "Weight": 100,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 134,
+      "_byte_offset": 1494,
+      "Major": 27,
+      "BossLevel": 5,
+      "Quality": 6,
+      "Progress": 105000,
+      "Weight": 50,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 135,
+      "_byte_offset": 1505,
+      "Major": 28,
+      "BossLevel": 1,
+      "Quality": 2,
+      "Progress": 22000,
+      "Weight": 225,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 136,
+      "_byte_offset": 1516,
+      "Major": 28,
+      "BossLevel": 2,
+      "Quality": 3,
+      "Progress": 44000,
+      "Weight": 350,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 137,
+      "_byte_offset": 1527,
+      "Major": 28,
+      "BossLevel": 3,
+      "Quality": 4,
+      "Progress": 66000,
+      "Weight": 275,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 138,
+      "_byte_offset": 1538,
+      "Major": 28,
+      "BossLevel": 4,
+      "Quality": 5,
+      "Progress": 88000,
+      "Weight": 100,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 139,
+      "_byte_offset": 1549,
+      "Major": 28,
+      "BossLevel": 5,
+      "Quality": 6,
+      "Progress": 110000,
+      "Weight": 50,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 140,
+      "_byte_offset": 1560,
+      "Major": 29,
+      "BossLevel": 1,
+      "Quality": 2,
+      "Progress": 23000,
+      "Weight": 225,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 141,
+      "_byte_offset": 1571,
+      "Major": 29,
+      "BossLevel": 2,
+      "Quality": 3,
+      "Progress": 46000,
+      "Weight": 350,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 142,
+      "_byte_offset": 1582,
+      "Major": 29,
+      "BossLevel": 3,
+      "Quality": 4,
+      "Progress": 69000,
+      "Weight": 275,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 143,
+      "_byte_offset": 1593,
+      "Major": 29,
+      "BossLevel": 4,
+      "Quality": 5,
+      "Progress": 92000,
+      "Weight": 100,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 144,
+      "_byte_offset": 1604,
+      "Major": 29,
+      "BossLevel": 5,
+      "Quality": 6,
+      "Progress": 115000,
+      "Weight": 50,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 145,
+      "_byte_offset": 1615,
+      "Major": 30,
+      "BossLevel": 1,
+      "Quality": 2,
+      "Progress": 24000,
+      "Weight": 225,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 146,
+      "_byte_offset": 1626,
+      "Major": 30,
+      "BossLevel": 2,
+      "Quality": 3,
+      "Progress": 48000,
+      "Weight": 350,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 147,
+      "_byte_offset": 1637,
+      "Major": 30,
+      "BossLevel": 3,
+      "Quality": 4,
+      "Progress": 72000,
+      "Weight": 275,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 148,
+      "_byte_offset": 1648,
+      "Major": 30,
+      "BossLevel": 4,
+      "Quality": 5,
+      "Progress": 96000,
+      "Weight": 100,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 149,
+      "_byte_offset": 1659,
+      "Major": 30,
+      "BossLevel": 5,
+      "Quality": 6,
+      "Progress": 120000,
+      "Weight": 50,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 150,
+      "_byte_offset": 1670,
+      "Major": 31,
+      "BossLevel": 1,
+      "Quality": 2,
+      "Progress": 25000,
+      "Weight": 225,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 151,
+      "_byte_offset": 1681,
+      "Major": 31,
+      "BossLevel": 2,
+      "Quality": 3,
+      "Progress": 50000,
+      "Weight": 350,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 152,
+      "_byte_offset": 1692,
+      "Major": 31,
+      "BossLevel": 3,
+      "Quality": 4,
+      "Progress": 75000,
+      "Weight": 275,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 153,
+      "_byte_offset": 1703,
+      "Major": 31,
+      "BossLevel": 4,
+      "Quality": 5,
+      "Progress": 100000,
+      "Weight": 100,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 154,
+      "_byte_offset": 1714,
+      "Major": 31,
+      "BossLevel": 5,
+      "Quality": 6,
+      "Progress": 125000,
+      "Weight": 50,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 155,
+      "_byte_offset": 1725,
+      "Major": 32,
+      "BossLevel": 1,
+      "Quality": 2,
+      "Progress": 26000,
+      "Weight": 225,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 156,
+      "_byte_offset": 1736,
+      "Major": 32,
+      "BossLevel": 2,
+      "Quality": 3,
+      "Progress": 52000,
+      "Weight": 350,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 157,
+      "_byte_offset": 1747,
+      "Major": 32,
+      "BossLevel": 3,
+      "Quality": 4,
+      "Progress": 78000,
+      "Weight": 275,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 158,
+      "_byte_offset": 1758,
+      "Major": 32,
+      "BossLevel": 4,
+      "Quality": 5,
+      "Progress": 104000,
+      "Weight": 100,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 159,
+      "_byte_offset": 1769,
+      "Major": 32,
+      "BossLevel": 5,
+      "Quality": 6,
+      "Progress": 130000,
+      "Weight": 50,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 160,
+      "_byte_offset": 1780,
+      "Major": 33,
+      "BossLevel": 1,
+      "Quality": 2,
+      "Progress": 27000,
+      "Weight": 225,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 161,
+      "_byte_offset": 1791,
+      "Major": 33,
+      "BossLevel": 2,
+      "Quality": 3,
+      "Progress": 54000,
+      "Weight": 350,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 162,
+      "_byte_offset": 1802,
+      "Major": 33,
+      "BossLevel": 3,
+      "Quality": 4,
+      "Progress": 81000,
+      "Weight": 275,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 163,
+      "_byte_offset": 1813,
+      "Major": 33,
+      "BossLevel": 4,
+      "Quality": 5,
+      "Progress": 108000,
+      "Weight": 100,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 164,
+      "_byte_offset": 1824,
+      "Major": 33,
+      "BossLevel": 5,
+      "Quality": 6,
+      "Progress": 135000,
+      "Weight": 50,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 165,
+      "_byte_offset": 1835,
+      "Major": 34,
+      "BossLevel": 1,
+      "Quality": 2,
+      "Progress": 28000,
+      "Weight": 225,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 166,
+      "_byte_offset": 1846,
+      "Major": 34,
+      "BossLevel": 2,
+      "Quality": 3,
+      "Progress": 56000,
+      "Weight": 350,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 167,
+      "_byte_offset": 1857,
+      "Major": 34,
+      "BossLevel": 3,
+      "Quality": 4,
+      "Progress": 84000,
+      "Weight": 275,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 168,
+      "_byte_offset": 1868,
+      "Major": 34,
+      "BossLevel": 4,
+      "Quality": 5,
+      "Progress": 112000,
+      "Weight": 100,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 169,
+      "_byte_offset": 1879,
+      "Major": 34,
+      "BossLevel": 5,
+      "Quality": 6,
+      "Progress": 140000,
+      "Weight": 50,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 170,
+      "_byte_offset": 1890,
+      "Major": 35,
+      "BossLevel": 1,
+      "Quality": 2,
+      "Progress": 29000,
+      "Weight": 225,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 171,
+      "_byte_offset": 1901,
+      "Major": 35,
+      "BossLevel": 2,
+      "Quality": 3,
+      "Progress": 58000,
+      "Weight": 350,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 172,
+      "_byte_offset": 1912,
+      "Major": 35,
+      "BossLevel": 3,
+      "Quality": 4,
+      "Progress": 87000,
+      "Weight": 275,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 173,
+      "_byte_offset": 1923,
+      "Major": 35,
+      "BossLevel": 4,
+      "Quality": 5,
+      "Progress": 116000,
+      "Weight": 100,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 174,
+      "_byte_offset": 1934,
+      "Major": 35,
+      "BossLevel": 5,
+      "Quality": 6,
+      "Progress": 145000,
+      "Weight": 50,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 175,
+      "_byte_offset": 1945,
+      "Major": 36,
+      "BossLevel": 1,
+      "Quality": 2,
+      "Progress": 30000,
+      "Weight": 225,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 176,
+      "_byte_offset": 1956,
+      "Major": 36,
+      "BossLevel": 2,
+      "Quality": 3,
+      "Progress": 60000,
+      "Weight": 350,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 177,
+      "_byte_offset": 1967,
+      "Major": 36,
+      "BossLevel": 3,
+      "Quality": 4,
+      "Progress": 90000,
+      "Weight": 275,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 178,
+      "_byte_offset": 1978,
+      "Major": 36,
+      "BossLevel": 4,
+      "Quality": 5,
+      "Progress": 120000,
+      "Weight": 100,
+      "_byte_length": 11
+    },
+    {
+      "_record_index": 179,
+      "_byte_offset": 1989,
+      "Major": 36,
+      "BossLevel": 5,
+      "Quality": 6,
+      "Progress": 150000,
+      "Weight": 50,
+      "_byte_length": 11
+    }
+  ]
+}

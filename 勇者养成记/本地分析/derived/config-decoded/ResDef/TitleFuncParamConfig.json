@@ -1,0 +1,95 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_titlefuncparamconfig.bytes.ab",
+    "path_id": 4858804425617363080,
+    "name": "TitleFuncParamConfig",
+    "sha256": "ee71c7ca45af6958484f2cbeee834f9ffda96599bf1d96e58b269ec6d5b2d98b",
+    "export": "derived/unity/text/assets_resources_config_resbin_titlefuncparamconfig.bytes/TitleFuncParamConfig__4858804425617363080.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 52,
+      "version": 1,
+      "record_count": 4,
+      "stored_crc32": "c23fb86f",
+      "computed_inverted_crc32": "c23fb86f"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "TitleFuncParamConfig",
+      "fields": [
+        {
+          "type": "int",
+          "name": "FuncID",
+          "object_offset": 16
+        },
+        {
+          "type": "int",
+          "name": "FuncVal",
+          "object_offset": 20
+        }
+      ],
+      "unpack_va": 29406472,
+      "dump_line": 212821
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1c0b53c",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1c0b57c",
+        "target_va": "0x21f67d0",
+        "opcode": "B-tail",
+        "reader": "readInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 4
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "FuncID": 1,
+      "FuncVal": 8,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 28,
+      "FuncID": 2,
+      "FuncVal": 6,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 36,
+      "FuncID": 3,
+      "FuncVal": 1,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 44,
+      "FuncID": 4,
+      "FuncVal": 1,
+      "_byte_length": 8
+    }
+  ]
+}

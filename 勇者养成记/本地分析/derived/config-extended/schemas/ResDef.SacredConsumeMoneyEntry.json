@@ -1,0 +1,115 @@
+{
+  "namespace": "ResDef",
+  "name": "SacredConsumeMoneyEntry",
+  "fields": [
+    {
+      "type": "int",
+      "name": "MoneyType",
+      "object_offset": 16
+    },
+    {
+      "type": "uint",
+      "name": "MoneyNum",
+      "object_offset": 20
+    },
+    {
+      "type": "uint",
+      "name": "DecomposeMoneyNum",
+      "object_offset": 24
+    }
+  ],
+  "unpack_va": 32041708,
+  "dump_line": 210693,
+  "layout": [
+    {
+      "type": "int",
+      "name": "MoneyType",
+      "object_offset": 16,
+      "wire_type": "int",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e8eb20",
+          "target_va": "0x21f67d0",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readInt32",
+          "destination": [
+            "self",
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "type": "uint",
+      "name": "MoneyNum",
+      "object_offset": 20,
+      "wire_type": "uint",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e8eb44",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "BL",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "self",
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "type": "uint",
+      "name": "DecomposeMoneyNum",
+      "object_offset": 24,
+      "wire_type": "uint",
+      "kind": "scalar",
+      "count": 1,
+      "count_encoding": null,
+      "native_calls": [
+        {
+          "instruction_va": "0x1e8eb84",
+          "target_va": "0x21f6908",
+          "target_names": [
+            "ProtoBase.PbReadBuf$$readUInt32"
+          ],
+          "opcode": "B",
+          "kind": "reader",
+          "reader": "readUInt32",
+          "destination": [
+            "self",
+            24
+          ]
+        }
+      ]
+    }
+  ],
+  "native_evidence": {
+    "method_start_va": "0x1e8eaec",
+    "instruction_steps": 29,
+    "event_count": 3,
+    "branch_evidence": [],
+    "loops": [],
+    "instruction_sha256": "d2e347eccf45a976af6edb17854af0c2dcb5faecc350a924742d42a39c774882",
+    "gate": "concrete-success-path; all sequential readers/nested callees; full field/destination/stride matching",
+    "assumptions": [
+      "non-null input buffer and created nested objects/arrays",
+      "managed array bounds valid",
+      "AAPCS64 callee-saved register preservation",
+      "reader and nested call success; version 1 only"
+    ]
+  }
+}

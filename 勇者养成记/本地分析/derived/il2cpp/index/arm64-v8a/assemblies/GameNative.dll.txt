@@ -1,0 +1,2128 @@
+// TEXT-ONLY METADATA/SIGNATURE EXCERPT; NOT RECOVERED C# IMPLEMENTATION.
+// Source: derived/il2cpp/arm64-v8a/dump.cs
+// SHA256: aea4266774a2fd2364bf05084439735f82caed6bffefbef1008ad5ecd4081e08
+// Assembly: GameNative.dll; types: 59; original dump lines 426359-428421
+
+// ORIGINAL DUMP LINES 426359-426361; TypeDefIndex 10541
+// Namespace: 
+internal class <Module> // TypeDefIndex: 10541
+{}
+
+// ORIGINAL DUMP LINES 426363-426389; TypeDefIndex 10542
+// Namespace: 
+public class AsyncImageDownloadBehaviour : BBehaviourSingleton<AsyncImageDownloadBehaviour> // TypeDefIndex: 10542
+{
+	// Fields
+	private Sprite[] _pics; // 0x18
+	private Dictionary<int, int> code2PicID; // 0x20
+	private static int spriteCnt; // 0x0
+	private const int _maxCount = 5;
+	private bool hasInit; // 0x28
+
+	// Methods
+
+	// RVA: 0x1F00080 Offset: 0x1F00080 VA: 0x1F00080
+	private void Awake() { }
+
+	// RVA: 0x1F00084 Offset: 0x1F00084 VA: 0x1F00084
+	public void Init() { }
+
+	// RVA: 0x1F00128 Offset: 0x1F00128 VA: 0x1F00128
+	public void SetAsyncImage(string url, Image image) { }
+
+	// RVA: 0x1F0033C Offset: 0x1F0033C VA: 0x1F0033C
+	private IEnumerator DownloadImage(string url, Image image, int code) { }
+
+	// RVA: 0x1F00434 Offset: 0x1F00434 VA: 0x1F00434
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 426391-426432; TypeDefIndex 10543
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0xC8531C Offset: 0xC8531C VA: 0xC8531C
+private sealed class AsyncImageDownloadBehaviour.<DownloadImage>d__8 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10543
+{
+	// Fields
+	private int <>1__state; // 0x10
+	private object <>2__current; // 0x18
+	public string url; // 0x20
+	public Image image; // 0x28
+	public AsyncImageDownloadBehaviour <>4__this; // 0x30
+	public int code; // 0x38
+	private WWW <www>5__2; // 0x40
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8548C Offset: 0xC8548C VA: 0xC8548C
+	// RVA: 0x1F00408 Offset: 0x1F00408 VA: 0x1F00408
+	public void .ctor(int <>1__state) { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8549C Offset: 0xC8549C VA: 0xC8549C
+	// RVA: 0x1F00484 Offset: 0x1F00484 VA: 0x1F00484 Slot: 8
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x1F00488 Offset: 0x1F00488 VA: 0x1F00488 Slot: 6
+	private bool MoveNext() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC854AC Offset: 0xC854AC VA: 0xC854AC
+	// RVA: 0x1F007A4 Offset: 0x1F007A4 VA: 0x1F007A4 Slot: 4
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC854BC Offset: 0xC854BC VA: 0xC854BC
+	// RVA: 0x1F007AC Offset: 0x1F007AC VA: 0x1F007AC Slot: 7
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC854CC Offset: 0xC854CC VA: 0xC854CC
+	// RVA: 0x1F00814 Offset: 0x1F00814 VA: 0x1F00814 Slot: 5
+	private object System.Collections.IEnumerator.get_Current() { }
+}
+
+// ORIGINAL DUMP LINES 426434-426460; TypeDefIndex 10544
+// Namespace: 
+public class WWWEx // TypeDefIndex: 10544
+{
+	// Fields
+	private float timeOut; // 0x10
+	private int retryCnt; // 0x14
+	public WWW result; // 0x18
+	public bool isTimeOut; // 0x20
+	private int m_retryCnt; // 0x24
+
+	// Methods
+
+	// RVA: 0x1F020A0 Offset: 0x1F020A0 VA: 0x1F020A0
+	private void .ctor() { }
+
+	// RVA: 0x1EEFBBC Offset: 0x1EEFBBC VA: 0x1EEFBBC
+	public IEnumerator Request(string url) { }
+
+	// RVA: 0x1EFB924 Offset: 0x1EFB924 VA: 0x1EFB924
+	public IEnumerator Request(string url, WWWForm form) { }
+
+	// RVA: 0x1EEFB20 Offset: 0x1EEFB20 VA: 0x1EEFB20
+	public static WWWEx Init(float timeOut = 10, int retryCnt = 3) { }
+
+	// RVA: 0x1EFB9D0 Offset: 0x1EFB9D0 VA: 0x1EFB9D0
+	public void Destroy() { }
+}
+
+// ORIGINAL DUMP LINES 426462-426503; TypeDefIndex 10545
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0xC8532C Offset: 0xC8532C VA: 0xC8532C
+private sealed class WWWEx.<Request>d__7 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10545
+{
+	// Fields
+	private int <>1__state; // 0x10
+	private object <>2__current; // 0x18
+	public WWWForm form; // 0x20
+	public string url; // 0x28
+	public WWWEx <>4__this; // 0x30
+	private WWW <www>5__2; // 0x38
+	private float <endTime>5__3; // 0x40
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHiddenAttribute] // RVA: 0xC854DC Offset: 0xC854DC VA: 0xC854DC
+	// RVA: 0x1F020B4 Offset: 0x1F020B4 VA: 0x1F020B4
+	public void .ctor(int <>1__state) { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC854EC Offset: 0xC854EC VA: 0xC854EC
+	// RVA: 0x1F020E0 Offset: 0x1F020E0 VA: 0x1F020E0 Slot: 8
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x1F020E4 Offset: 0x1F020E4 VA: 0x1F020E4 Slot: 6
+	private bool MoveNext() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC854FC Offset: 0xC854FC VA: 0xC854FC
+	// RVA: 0x1F022EC Offset: 0x1F022EC VA: 0x1F022EC Slot: 4
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8550C Offset: 0xC8550C VA: 0xC8550C
+	// RVA: 0x1F022F4 Offset: 0x1F022F4 VA: 0x1F022F4 Slot: 7
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8551C Offset: 0xC8551C VA: 0xC8551C
+	// RVA: 0x1F0235C Offset: 0x1F0235C VA: 0x1F0235C Slot: 5
+	private object System.Collections.IEnumerator.get_Current() { }
+}
+
+// ORIGINAL DUMP LINES 426505-426528; TypeDefIndex 10546
+// Namespace: DodGame
+public class DodWebGLFileCache : BBehaviourSingleton<DodWebGLFileCache> // TypeDefIndex: 10546
+{
+	// Fields
+	private Dictionary<string, string> m_contentCache; // 0x18
+	private string m_thisLoadError; // 0x20
+
+	// Properties
+	public string error { get; }
+
+	// Methods
+
+	// RVA: 0x1F0081C Offset: 0x1F0081C VA: 0x1F0081C
+	public string get_error() { }
+
+	// RVA: 0x1F00824 Offset: 0x1F00824 VA: 0x1F00824
+	public IEnumerator StartLoad(List<string> listFile, List<string> listCanSkip) { }
+
+	// RVA: 0x1F008FC Offset: 0x1F008FC VA: 0x1F008FC
+	public string FetchFileContent(string fileName) { }
+
+	// RVA: 0x1F009B0 Offset: 0x1F009B0 VA: 0x1F009B0
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 426530-426570; TypeDefIndex 10547
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0xC8533C Offset: 0xC8533C VA: 0xC8533C
+private sealed class DodWebGLFileCache.<StartLoad>d__4 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10547
+{
+	// Fields
+	private int <>1__state; // 0x10
+	private object <>2__current; // 0x18
+	public DodWebGLFileCache <>4__this; // 0x20
+	public List<string> listFile; // 0x28
+	public List<string> listCanSkip; // 0x30
+	private AsyncTextFileSet <fileSet>5__2; // 0x38
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8552C Offset: 0xC8552C VA: 0xC8552C
+	// RVA: 0x1F008D0 Offset: 0x1F008D0 VA: 0x1F008D0
+	public void .ctor(int <>1__state) { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8553C Offset: 0xC8553C VA: 0xC8553C
+	// RVA: 0x1F00A28 Offset: 0x1F00A28 VA: 0x1F00A28 Slot: 8
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x1F00A2C Offset: 0x1F00A2C VA: 0x1F00A2C Slot: 6
+	private bool MoveNext() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8554C Offset: 0xC8554C VA: 0xC8554C
+	// RVA: 0x1F00D0C Offset: 0x1F00D0C VA: 0x1F00D0C Slot: 4
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8555C Offset: 0xC8555C VA: 0xC8555C
+	// RVA: 0x1F00D14 Offset: 0x1F00D14 VA: 0x1F00D14 Slot: 7
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8556C Offset: 0xC8556C VA: 0xC8556C
+	// RVA: 0x1F00D7C Offset: 0x1F00D7C VA: 0x1F00D7C Slot: 5
+	private object System.Collections.IEnumerator.get_Current() { }
+}
+
+// ORIGINAL DUMP LINES 426572-426582; TypeDefIndex 10548
+// Namespace: DodGame
+public class WebGLImagePrepare : BBehaviourSingleton<WebGLImagePrepare> // TypeDefIndex: 10548
+{
+	// Methods
+
+	// RVA: 0x1F00D84 Offset: 0x1F00D84 VA: 0x1F00D84
+	public void InitUrl() { }
+
+	// RVA: 0x1F00F1C Offset: 0x1F00F1C VA: 0x1F00F1C
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 426584-426620; TypeDefIndex 10549
+// Namespace: DodGame
+public class WebGLPrepare : BBehaviourSingleton<WebGLPrepare> // TypeDefIndex: 10549
+{
+	// Fields
+	private string m_error; // 0x18
+
+	// Properties
+	public string error { get; }
+	public string systemAbDir { get; }
+	public string destAbDir { get; }
+
+	// Methods
+
+	// RVA: 0x1F00F6C Offset: 0x1F00F6C VA: 0x1F00F6C
+	public string get_error() { }
+
+	// RVA: 0x1F00F74 Offset: 0x1F00F74 VA: 0x1F00F74
+	public IEnumerator StartPrepare() { }
+
+	// RVA: 0x1F01014 Offset: 0x1F01014 VA: 0x1F01014
+	public bool CheckNeedPrepareIOSDllFile() { }
+
+	// RVA: 0x1F0112C Offset: 0x1F0112C VA: 0x1F0112C
+	private IEnumerator PrepareIOSDllFile() { }
+
+	// RVA: 0x1F011CC Offset: 0x1F011CC VA: 0x1F011CC
+	private IEnumerator CopyFile(string fileName, string destDir) { }
+
+	// RVA: 0x1F012A4 Offset: 0x1F012A4 VA: 0x1F012A4
+	public string get_systemAbDir() { }
+
+	// RVA: 0x1F010CC Offset: 0x1F010CC VA: 0x1F010CC
+	public string get_destAbDir() { }
+
+	// RVA: 0x1F0140C Offset: 0x1F0140C VA: 0x1F0140C
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 426622-426660; TypeDefIndex 10550
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0xC8534C Offset: 0xC8534C VA: 0xC8534C
+private sealed class WebGLPrepare.<StartPrepare>d__3 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10550
+{
+	// Fields
+	private int <>1__state; // 0x10
+	private object <>2__current; // 0x18
+	public WebGLPrepare <>4__this; // 0x20
+	private WWW <configWWW>5__2; // 0x28
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8557C Offset: 0xC8557C VA: 0xC8557C
+	// RVA: 0x1F00FE8 Offset: 0x1F00FE8 VA: 0x1F00FE8
+	public void .ctor(int <>1__state) { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8558C Offset: 0xC8558C VA: 0xC8558C
+	// RVA: 0x1F01A04 Offset: 0x1F01A04 VA: 0x1F01A04 Slot: 8
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x1F01A08 Offset: 0x1F01A08 VA: 0x1F01A08 Slot: 6
+	private bool MoveNext() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8559C Offset: 0xC8559C VA: 0xC8559C
+	// RVA: 0x1F01EF4 Offset: 0x1F01EF4 VA: 0x1F01EF4 Slot: 4
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC855AC Offset: 0xC855AC VA: 0xC855AC
+	// RVA: 0x1F01EFC Offset: 0x1F01EFC VA: 0x1F01EFC Slot: 7
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC855BC Offset: 0xC855BC VA: 0xC855BC
+	// RVA: 0x1F01F64 Offset: 0x1F01F64 VA: 0x1F01F64 Slot: 5
+	private object System.Collections.IEnumerator.get_Current() { }
+}
+
+// ORIGINAL DUMP LINES 426662-426701; TypeDefIndex 10551
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0xC8535C Offset: 0xC8535C VA: 0xC8535C
+private sealed class WebGLPrepare.<PrepareIOSDllFile>d__5 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10551
+{
+	// Fields
+	private int <>1__state; // 0x10
+	private object <>2__current; // 0x18
+	public WebGLPrepare <>4__this; // 0x20
+	private string[] <dllFiles>5__2; // 0x28
+	private int <i>5__3; // 0x30
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHiddenAttribute] // RVA: 0xC855CC Offset: 0xC855CC VA: 0xC855CC
+	// RVA: 0x1F011A0 Offset: 0x1F011A0 VA: 0x1F011A0
+	public void .ctor(int <>1__state) { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC855DC Offset: 0xC855DC VA: 0xC855DC
+	// RVA: 0x1F016F4 Offset: 0x1F016F4 VA: 0x1F016F4 Slot: 8
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x1F016F8 Offset: 0x1F016F8 VA: 0x1F016F8 Slot: 6
+	private bool MoveNext() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC855EC Offset: 0xC855EC VA: 0xC855EC
+	// RVA: 0x1F0198C Offset: 0x1F0198C VA: 0x1F0198C Slot: 4
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC855FC Offset: 0xC855FC VA: 0xC855FC
+	// RVA: 0x1F01994 Offset: 0x1F01994 VA: 0x1F01994 Slot: 7
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8560C Offset: 0xC8560C VA: 0xC8560C
+	// RVA: 0x1F019FC Offset: 0x1F019FC VA: 0x1F019FC Slot: 5
+	private object System.Collections.IEnumerator.get_Current() { }
+}
+
+// ORIGINAL DUMP LINES 426703-426743; TypeDefIndex 10552
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0xC8536C Offset: 0xC8536C VA: 0xC8536C
+private sealed class WebGLPrepare.<CopyFile>d__6 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10552
+{
+	// Fields
+	private int <>1__state; // 0x10
+	private object <>2__current; // 0x18
+	public WebGLPrepare <>4__this; // 0x20
+	public string fileName; // 0x28
+	public string destDir; // 0x30
+	private WWW <www>5__2; // 0x38
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8561C Offset: 0xC8561C VA: 0xC8561C
+	// RVA: 0x1F01278 Offset: 0x1F01278 VA: 0x1F01278
+	public void .ctor(int <>1__state) { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8562C Offset: 0xC8562C VA: 0xC8562C
+	// RVA: 0x1F0145C Offset: 0x1F0145C VA: 0x1F0145C Slot: 8
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x1F01460 Offset: 0x1F01460 VA: 0x1F01460 Slot: 6
+	private bool MoveNext() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8563C Offset: 0xC8563C VA: 0xC8563C
+	// RVA: 0x1F0167C Offset: 0x1F0167C VA: 0x1F0167C Slot: 4
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8564C Offset: 0xC8564C VA: 0xC8564C
+	// RVA: 0x1F01684 Offset: 0x1F01684 VA: 0x1F01684 Slot: 7
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8565C Offset: 0xC8565C VA: 0xC8565C
+	// RVA: 0x1F016EC Offset: 0x1F016EC VA: 0x1F016EC Slot: 5
+	private object System.Collections.IEnumerator.get_Current() { }
+}
+
+// ORIGINAL DUMP LINES 426745-426752; TypeDefIndex 10553
+// Namespace: A3Game
+public interface ILuaProfileNativeCallBack // TypeDefIndex: 10553
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract int GetCurrLuaMemory();
+}
+
+// ORIGINAL DUMP LINES 426754-426771; TypeDefIndex 10554
+// Namespace: A3Game
+internal class LuaCallerInfo // TypeDefIndex: 10554
+{
+	// Fields
+	public string funcName; // 0x10
+	public bool m_inTailReturn; // 0x18
+	public int m_startMemory; // 0x1C
+	public int m_profileUsedMemory; // 0x20
+	public int m_childGcMemory; // 0x24
+
+	// Methods
+
+	// RVA: 0x1EFC64C Offset: 0x1EFC64C VA: 0x1EFC64C
+	public void .ctor(string name) { }
+
+	// RVA: 0x1EFC678 Offset: 0x1EFC678 VA: 0x1EFC678
+	public void Reset() { }
+}
+
+// ORIGINAL DUMP LINES 426773-426789; TypeDefIndex 10555
+// Namespace: A3Game
+internal class LuaCallerInfoPool // TypeDefIndex: 10555
+{
+	// Fields
+	private List<LuaCallerInfo> m_list; // 0x10
+
+	// Methods
+
+	// RVA: 0x1EFC368 Offset: 0x1EFC368 VA: 0x1EFC368
+	public LuaCallerInfo Alloc(string name) { }
+
+	// RVA: 0x1EFBFB8 Offset: 0x1EFBFB8 VA: 0x1EFBFB8
+	public void Free(LuaCallerInfo info) { }
+
+	// RVA: 0x1EFC5DC Offset: 0x1EFC5DC VA: 0x1EFC5DC
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 426791-426826; TypeDefIndex 10556
+// Namespace: A3Game
+public class LuaCallProfiler : BBehaviourSingleton<LuaCallProfiler> // TypeDefIndex: 10556
+{
+	// Fields
+	public uint m_callCount; // 0x18
+	public uint m_retCount; // 0x1C
+	public uint m_atomCallCount; // 0x20
+	public int m_callStackCount; // 0x24
+	private bool m_silence; // 0x28
+	private Stack<LuaCallerInfo> m_listCallStack; // 0x30
+	private LuaCallerInfoPool m_pool; // 0x38
+	private ILuaProfileNativeCallBack m_callback; // 0x40
+
+	// Methods
+
+	// RVA: 0x1EFBCFC Offset: 0x1EFBCFC VA: 0x1EFBCFC
+	public void SetProfileCallBack(ILuaProfileNativeCallBack cb) { }
+
+	// RVA: 0x1EFBD04 Offset: 0x1EFBD04 VA: 0x1EFBD04
+	private int GetCurrLuaMemory() { }
+
+	// RVA: 0x1EFBDB8 Offset: 0x1EFBDB8 VA: 0x1EFBDB8
+	private LuaCallerInfo RemoveTop(int profileUsedMem) { }
+
+	// RVA: 0x1EFC028 Offset: 0x1EFC028 VA: 0x1EFC028
+	private void RemoveQueue(string funcId, int profileUsedMem) { }
+
+	// RVA: 0x1EFC190 Offset: 0x1EFC190 VA: 0x1EFC190
+	public void Report(int eventType, string funcId, int memSize) { }
+
+	// RVA: 0x1EFC4E0 Offset: 0x1EFC4E0 VA: 0x1EFC4E0
+	private void Update() { }
+
+	// RVA: 0x1EFC548 Offset: 0x1EFC548 VA: 0x1EFC548
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 426828-426889; TypeDefIndex 10557
+// Namespace: A3Game
+public class ClientTcpSocket : IClientSocket // TypeDefIndex: 10557
+{
+	// Fields
+	private TcpSocket m_socket; // 0x10
+	[CompilerGeneratedAttribute] // RVA: 0xC8545C Offset: 0xC8545C VA: 0xC8545C
+	private Action<ClientSocketEventType> m_eventHandle; // 0x18
+
+	// Properties
+	public bool IsConnected { get; }
+	public SocketError LastSockError { get; }
+	public string LastErrDesc { get; }
+
+	// Methods
+
+	[CompilerGeneratedAttribute] // RVA: 0xC8566C Offset: 0xC8566C VA: 0xC8566C
+	// RVA: 0x1EF5044 Offset: 0x1EF5044 VA: 0x1EF5044
+	private void add_m_eventHandle(Action<ClientSocketEventType> value) { }
+
+	[CompilerGeneratedAttribute] // RVA: 0xC8567C Offset: 0xC8567C VA: 0xC8567C
+	// RVA: 0x1EF5130 Offset: 0x1EF5130 VA: 0x1EF5130
+	private void remove_m_eventHandle(Action<ClientSocketEventType> value) { }
+
+	// RVA: 0x1EF521C Offset: 0x1EF521C VA: 0x1EF521C Slot: 4
+	public bool get_IsConnected() { }
+
+	// RVA: 0x1EF5250 Offset: 0x1EF5250 VA: 0x1EF5250 Slot: 5
+	public SocketError get_LastSockError() { }
+
+	// RVA: 0x1EF5280 Offset: 0x1EF5280 VA: 0x1EF5280 Slot: 6
+	public string get_LastErrDesc() { }
+
+	// RVA: 0x1EF52B0 Offset: 0x1EF52B0 VA: 0x1EF52B0
+	public void .ctor() { }
+
+	// RVA: 0x1EF5380 Offset: 0x1EF5380 VA: 0x1EF5380 Slot: 7
+	public void RegEventHandle(Action<ClientSocketEventType> handler) { }
+
+	// RVA: 0x1EF5384 Offset: 0x1EF5384 VA: 0x1EF5384 Slot: 8
+	public bool Connect(string server, int port, int iTimeout, int retryNum) { }
+
+	// RVA: 0x1EF53E8 Offset: 0x1EF53E8 VA: 0x1EF53E8 Slot: 9
+	public void Close() { }
+
+	// RVA: 0x1EF5418 Offset: 0x1EF5418 VA: 0x1EF5418 Slot: 10
+	public void Shutdown() { }
+
+	// RVA: 0x1EF5448 Offset: 0x1EF5448 VA: 0x1EF5448 Slot: 11
+	public bool Send(byte[] data, int offset, int len) { }
+
+	// RVA: 0x1EF549C Offset: 0x1EF549C VA: 0x1EF549C Slot: 12
+	public int Recv(byte[] buf, int iOffset, int maxSize) { }
+
+	// RVA: 0x1EF54F0 Offset: 0x1EF54F0 VA: 0x1EF54F0 Slot: 13
+	public void Update() { }
+
+	// RVA: 0x1EF5524 Offset: 0x1EF5524 VA: 0x1EF5524 Slot: 14
+	public void LateUpdate() { }
+
+	// RVA: 0x1EF5554 Offset: 0x1EF5554 VA: 0x1EF5554
+	private void HandleSockEventDelegate(CSocketEventParam param) { }
+}
+
+// ORIGINAL DUMP LINES 426891-426933; TypeDefIndex 10558
+// Namespace: A3Game
+public interface IClientSocket // TypeDefIndex: 10558
+{
+	// Properties
+	public abstract bool IsConnected { get; }
+	public abstract SocketError LastSockError { get; }
+	public abstract string LastErrDesc { get; }
+
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract bool get_IsConnected();
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract SocketError get_LastSockError();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract string get_LastErrDesc();
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract void RegEventHandle(Action<ClientSocketEventType> handler);
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract bool Connect(string server, int port, int iTimeout, int retryNum);
+
+	// RVA: -1 Offset: -1 Slot: 5
+	public abstract void Close();
+
+	// RVA: -1 Offset: -1 Slot: 6
+	public abstract void Shutdown();
+
+	// RVA: -1 Offset: -1 Slot: 7
+	public abstract bool Send(byte[] data, int offset, int len);
+
+	// RVA: -1 Offset: -1 Slot: 8
+	public abstract int Recv(byte[] buf, int iOffset, int maxSize);
+
+	// RVA: -1 Offset: -1 Slot: 9
+	public abstract void Update();
+
+	// RVA: -1 Offset: -1 Slot: 10
+	public abstract void LateUpdate();
+}
+
+// ORIGINAL DUMP LINES 426935-426942; TypeDefIndex 10559
+// Namespace: A3Game
+public interface INetClientNativeCallback // TypeDefIndex: 10559
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract string GetIpV6Host(string host, int port);
+}
+
+// ORIGINAL DUMP LINES 426944-426960; TypeDefIndex 10560
+// Namespace: A3Game
+public class NetClientUtil // TypeDefIndex: 10560
+{
+	// Fields
+	private static INetClientNativeCallback m_nativeCallback; // 0x0
+
+	// Methods
+
+	// RVA: 0x1EFF6C0 Offset: 0x1EFF6C0 VA: 0x1EFF6C0
+	public static void SetNativeCallBack(INetClientNativeCallback callBack) { }
+
+	// RVA: 0x1EFD028 Offset: 0x1EFD028 VA: 0x1EFD028
+	public static INetClientNativeCallback GetNativeCallBack() { }
+
+	// RVA: 0x1EFF72C Offset: 0x1EFF72C VA: 0x1EFF72C
+	private static void .cctor() { }
+}
+
+// ORIGINAL DUMP LINES 426962-426973; TypeDefIndex 10561
+// Namespace: A3Game
+public enum GameClientConnState // TypeDefIndex: 10561
+{
+	// Fields
+	public int value__; // 0x0
+	public const GameClientConnState StatusInit = 0;
+	public const GameClientConnState StatusWaitClose = 1;
+	public const GameClientConnState StatusClosed = 2;
+	public const GameClientConnState StatusConnect = 3;
+	public const GameClientConnState StatusConnectFail = 4;
+	public const GameClientConnState StatusConnected = 5;
+}
+
+// ORIGINAL DUMP LINES 426975-426991; TypeDefIndex 10562
+// Namespace: A3Game
+public interface IGameClientEventHandle // TypeDefIndex: 10562
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract void OnConnectFail(int errCode, string err);
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract void OnConnected();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract void OnClosed(int errCode, string err);
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract void OnRecvData(PbReadBuf data);
+}
+
+// ORIGINAL DUMP LINES 426993-427107; TypeDefIndex 10563
+// Namespace: A3Game
+public class NetClient // TypeDefIndex: 10563
+{
+	// Fields
+	private string m_serevrHost; // 0x10
+	private int m_serverPort; // 0x18
+	private GameClientConnState m_eConnState; // 0x1C
+	private float m_stateTime; // 0x20
+	private IClientSocket m_socket; // 0x28
+	private NetClientConfig m_config; // 0x30
+	private int m_ping; // 0x38
+	private int m_iPeekMsgCntPerFrame; // 0x3C
+	private byte[] m_recvBuff; // 0x40
+	private int m_iRecvBuffTail; // 0x48
+	private byte[] m_sendEncBuff; // 0x50
+	private CSSecHead m_secHead; // 0x58
+	private GameClientDisconnReason m_lastDisconnReason; // 0x60
+	private PbReadBuf m_headBuff; // 0x68
+	private PbReadBuf m_secHeadBuff; // 0x70
+	private PbReadBuf m_crcBuff; // 0x78
+	private Crc32 m_crc; // 0x80
+	private uint[] m_encKey; // 0x88
+	private byte[] m_simpleEncKey; // 0x90
+	private IGameClientEventHandle m_eventHandle; // 0x98
+	private CSSecPkgPart m_encParkPkg; // 0xA0
+	private bool m_isReconnect; // 0xA8
+	private ushort m_encSeq; // 0xAA
+	private PbStack m_pbStack; // 0xB0
+	private PbWriteBuf m_writePbBuff; // 0xB8
+	private PbReadBuf m_readPbBuff; // 0xC0
+	private const int m_secHeadLen = 4;
+	private const int m_secBodyLen = 6;
+	private const int m_secPkgPartLen = 10;
+	private int m_lastPrevCmdId; // 0xC8
+
+	// Properties
+	public GameClientConnState ClientState { get; set; }
+
+	// Methods
+
+	// RVA: 0x1EFC688 Offset: 0x1EFC688 VA: 0x1EFC688
+	public void .ctor(IGameClientEventHandle eventHandle, IClientSocket socket, NetClientConfig config) { }
+
+	// RVA: 0x1EFC92C Offset: 0x1EFC92C VA: 0x1EFC92C
+	private uint[] GetEncodeKey() { }
+
+	// RVA: 0x1EFC9E8 Offset: 0x1EFC9E8 VA: 0x1EFC9E8
+	public void SetSimpleEncKey(uint key) { }
+
+	// RVA: 0x1EFCA80 Offset: 0x1EFCA80 VA: 0x1EFCA80
+	public void SetEncryptKey(string key) { }
+
+	// RVA: 0x1EFCB24 Offset: 0x1EFCB24 VA: 0x1EFCB24
+	public GameClientConnState get_ClientState() { }
+
+	// RVA: 0x1EFCB2C Offset: 0x1EFCB2C VA: 0x1EFCB2C
+	public void set_ClientState(GameClientConnState value) { }
+
+	// RVA: 0x1EFCB64 Offset: 0x1EFCB64 VA: 0x1EFCB64
+	public void CloseClient() { }
+
+	// RVA: 0x1EFCB9C Offset: 0x1EFCB9C VA: 0x1EFCB9C
+	private void CloseConnect() { }
+
+	// RVA: 0x1EFCC68 Offset: 0x1EFCC68 VA: 0x1EFCC68
+	private void ResetSocketParam() { }
+
+	// RVA: 0x1EFCC80 Offset: 0x1EFCC80 VA: 0x1EFCC80
+	public bool Connect(string serverHost, int serevrPort) { }
+
+	// RVA: 0x1EFD0E0 Offset: 0x1EFD0E0 VA: 0x1EFD0E0
+	public bool SendMsg(PbWriteBuf buff, bool simpleEnc) { }
+
+	// RVA: 0x1EFD224 Offset: 0x1EFD224 VA: 0x1EFD224
+	private int EncTdrBuff(byte[] tdrBuff, int tdrBuffLen, byte[] encBuff) { }
+
+	// RVA: 0x1EFD7B0 Offset: 0x1EFD7B0 VA: 0x1EFD7B0
+	private void EncSimpleBuff(byte[] buff, int offset, int size) { }
+
+	// RVA: 0x1EFD8F4 Offset: 0x1EFD8F4 VA: 0x1EFD8F4
+	private void DecSimpleBuff(byte[] buff, int offset, int size) { }
+
+	// RVA: 0x1EFD4AC Offset: 0x1EFD4AC VA: 0x1EFD4AC
+	private int EncSimpleTdrBuff(byte[] dataBuff, int dataLen, byte[] encBuff, bool useUdpType) { }
+
+	// RVA: 0x1EFD748 Offset: 0x1EFD748 VA: 0x1EFD748
+	private uint CalcBuffCrc(byte[] buff, int offset, int size) { }
+
+	// RVA: 0x1EFD8F8 Offset: 0x1EFD8F8 VA: 0x1EFD8F8
+	private uint CalcRecvBuffCrc(byte[] recvBuff, int pkgLen) { }
+
+	// RVA: 0x1EFD798 Offset: 0x1EFD798 VA: 0x1EFD798
+	protected int AlignEncLen(int bodyLen) { }
+
+	// RVA: 0x1EFDB94 Offset: 0x1EFDB94 VA: 0x1EFDB94
+	public void Update() { }
+
+	// RVA: 0x1EFEF70 Offset: 0x1EFEF70 VA: 0x1EFEF70
+	public void LateUpdate() { }
+
+	// RVA: 0x1EFF02C Offset: 0x1EFF02C VA: 0x1EFF02C
+	protected void OnSocketEvent(ClientSocketEventType eventType) { }
+
+	// RVA: 0x1EFF200 Offset: 0x1EFF200 VA: 0x1EFF200
+	private void OnConnectFailed(GameClientDisconnReason reason) { }
+
+	// RVA: 0x1EFF050 Offset: 0x1EFF050 VA: 0x1EFF050
+	private void OnConnectSucc() { }
+
+	// RVA: 0x1EFEE14 Offset: 0x1EFEE14 VA: 0x1EFEE14
+	private void OnDisconnect(GameClientDisconnReason reason) { }
+
+	// RVA: 0x1EFD090 Offset: 0x1EFD090 VA: 0x1EFD090
+	private void ChangeStateOnEnterFail() { }
+}
+
+// ORIGINAL DUMP LINES 427109-427143; TypeDefIndex 10564
+// Namespace: A3Game
+public class HttpRequestParam // TypeDefIndex: 10564
+{
+	// Fields
+	private Dictionary<string, string> m_mapParam; // 0x10
+	private WWWForm m_form; // 0x18
+	[CompilerGeneratedAttribute] // RVA: 0xC8546C Offset: 0xC8546C VA: 0xC8546C
+	private bool <hasParamSign>k__BackingField; // 0x20
+
+	// Properties
+	public WWWForm Form { get; }
+	public bool hasParamSign { get; set; }
+
+	// Methods
+
+	// RVA: 0x1EF6AE8 Offset: 0x1EF6AE8 VA: 0x1EF6AE8
+	public void .ctor() { }
+
+	// RVA: 0x1EF6B7C Offset: 0x1EF6B7C VA: 0x1EF6B7C
+	public WWWForm get_Form() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0xC8568C Offset: 0xC8568C VA: 0xC8568C
+	// RVA: 0x1EFBA70 Offset: 0x1EFBA70 VA: 0x1EFBA70
+	public bool get_hasParamSign() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0xC8569C Offset: 0xC8569C VA: 0xC8569C
+	// RVA: 0x1EFBA64 Offset: 0x1EFBA64 VA: 0x1EFBA64
+	public void set_hasParamSign(bool value) { }
+
+	// RVA: 0x1EF6B14 Offset: 0x1EF6B14 VA: 0x1EF6B14
+	public void InitForm() { }
+
+	// RVA: 0x1EFBA78 Offset: 0x1EFBA78 VA: 0x1EFBA78 Slot: 3
+	public override string ToString() { }
+}
+
+// ORIGINAL DUMP LINES 427145-427167; TypeDefIndex 10565
+// Namespace: A3Game
+public class HttpConnection : BBehaviourSingleton<HttpConnection> // TypeDefIndex: 10565
+{
+	// Fields
+	private bool m_needLog; // 0x18
+
+	// Methods
+
+	// RVA: 0x1EFB49C Offset: 0x1EFB49C VA: 0x1EFB49C
+	private void Awake() { }
+
+	// RVA: 0x1EF7550 Offset: 0x1EF7550 VA: 0x1EF7550
+	public void Request(string url, HttpRequestParam param, DHttpRequest.CallBack callback, float timeout = 0, bool recordLog = False) { }
+
+	// RVA: 0x1EFB5D4 Offset: 0x1EFB5D4 VA: 0x1EFB5D4
+	public void Request(string url, WWWForm form, DHttpRequest.CallBack callback, float timeout, bool recordLog) { }
+
+	// RVA: 0x1EFB4CC Offset: 0x1EFB4CC VA: 0x1EFB4CC
+	public IEnumerator ReuqestCort(string url, WWWForm form, DHttpRequest.CallBack callback, float timeout, bool recordLog) { }
+
+	// RVA: 0x1EFB630 Offset: 0x1EFB630 VA: 0x1EFB630
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 427169-427212; TypeDefIndex 10566
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0xC8537C Offset: 0xC8537C VA: 0xC8537C
+private sealed class HttpConnection.<ReuqestCort>d__4 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10566
+{
+	// Fields
+	private int <>1__state; // 0x10
+	private object <>2__current; // 0x18
+	public bool recordLog; // 0x20
+	public string url; // 0x28
+	public float timeout; // 0x30
+	public HttpConnection <>4__this; // 0x38
+	public WWWForm form; // 0x40
+	public DHttpRequest.CallBack callback; // 0x48
+	private WWWEx <game>5__2; // 0x50
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHiddenAttribute] // RVA: 0xC856AC Offset: 0xC856AC VA: 0xC856AC
+	// RVA: 0x1EFB604 Offset: 0x1EFB604 VA: 0x1EFB604
+	public void .ctor(int <>1__state) { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC856BC Offset: 0xC856BC VA: 0xC856BC
+	// RVA: 0x1EFB680 Offset: 0x1EFB680 VA: 0x1EFB680 Slot: 8
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x1EFB684 Offset: 0x1EFB684 VA: 0x1EFB684 Slot: 6
+	private bool MoveNext() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC856CC Offset: 0xC856CC VA: 0xC856CC
+	// RVA: 0x1EFB9EC Offset: 0x1EFB9EC VA: 0x1EFB9EC Slot: 4
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC856DC Offset: 0xC856DC VA: 0xC856DC
+	// RVA: 0x1EFB9F4 Offset: 0x1EFB9F4 VA: 0x1EFB9F4 Slot: 7
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC856EC Offset: 0xC856EC VA: 0xC856EC
+	// RVA: 0x1EFBA5C Offset: 0x1EFBA5C VA: 0x1EFBA5C Slot: 5
+	private object System.Collections.IEnumerator.get_Current() { }
+}
+
+// ORIGINAL DUMP LINES 427214-427226; TypeDefIndex 10567
+// Namespace: A3Game
+internal class EditorAbDirPackConfigItem // TypeDefIndex: 10567
+{
+	// Fields
+	public string m_assetDir; // 0x10
+	public int m_priority; // 0x18
+	public int m_deep; // 0x1C
+
+	// Methods
+
+	// RVA: 0x1EEE7B4 Offset: 0x1EEE7B4 VA: 0x1EEE7B4
+	public void .ctor(string assetDir, int priority, int deep) { }
+}
+
+// ORIGINAL DUMP LINES 427228-427239; TypeDefIndex 10568
+// Namespace: A3Game
+internal struct EditorAbPreloadWebGLItem // TypeDefIndex: 10568
+{
+	// Fields
+	public string m_assetDir; // 0x0
+	public int m_useCount; // 0x8
+
+	// Methods
+
+	// RVA: 0xCF0390 Offset: 0xCF0390 VA: 0xCF0390
+	public void .ctor(string assetDir, int useOnce) { }
+}
+
+// ORIGINAL DUMP LINES 427241-427298; TypeDefIndex 10569
+// Namespace: A3Game
+public class AssetBunldeEffectCommRule : AssetBundleRule // TypeDefIndex: 10569
+{
+	// Fields
+	private List<EditorAbDirPackConfigItem> m_listPack2Dir; // 0x10
+	private List<string> m_listPack2DirNumExt; // 0x18
+	private List<string> m_listPack2FileNameHead; // 0x20
+	private List<string> m_listDirNeverExpire; // 0x28
+	private List<string> m_listResourceDir; // 0x30
+	private List<string> m_listSharedDependAsset; // 0x38
+	private List<string> m_listIgnorAsset; // 0x40
+	private List<EditorAbPreloadWebGLItem> m_listPreloadResourceWebGL; // 0x48
+	private List<EditorAbPreloadWebGLItem> m_listPreloadSceneWebGL; // 0x50
+
+	// Properties
+	private string abEditorConfigPath { get; }
+
+	// Methods
+
+	// RVA: 0x1EED6AC Offset: 0x1EED6AC VA: 0x1EED6AC
+	private string get_abEditorConfigPath() { }
+
+	// RVA: 0x1EEABE8 Offset: 0x1EEABE8 VA: 0x1EEABE8
+	public bool Init(bool runTime, bool useWebGL) { }
+
+	// RVA: 0x1EED9A8 Offset: 0x1EED9A8 VA: 0x1EED9A8
+	private bool ReadNeverExpireList() { }
+
+	// RVA: 0x1EEDB50 Offset: 0x1EEDB50 VA: 0x1EEDB50
+	private bool ReadResourceDirList() { }
+
+	// RVA: 0x1EEDCF8 Offset: 0x1EEDCF8 VA: 0x1EEDCF8
+	private bool ReadSharedDependList() { }
+
+	// RVA: 0x1EEDEA4 Offset: 0x1EEDEA4 VA: 0x1EEDEA4
+	private bool ReadPack2DirNumExt() { }
+
+	// RVA: 0x1EED7FC Offset: 0x1EED7FC VA: 0x1EED7FC
+	private bool ReadPack2DirFileNameHead() { }
+
+	// RVA: 0x1EEE050 Offset: 0x1EEE050 VA: 0x1EEE050
+	private bool ReadIgnorList() { }
+
+	// RVA: 0x1EED6F4 Offset: 0x1EED6F4 VA: 0x1EED6F4
+	private bool ReadPackInDirRule(bool useWebGL) { }
+
+	// RVA: 0x1EEE1FC Offset: 0x1EEE1FC VA: 0x1EEE1FC
+	private bool ReadPackInDirRuleFromFile(string ruleCfgFile) { }
+
+	// RVA: 0x1EED784 Offset: 0x1EED784 VA: 0x1EED784
+	private bool ReadPreloadWebGLConfig() { }
+
+	// RVA: 0x1EEE7F4 Offset: 0x1EEE7F4 VA: 0x1EEE7F4
+	private bool DoLoadPreloadWebGLList(List<EditorAbPreloadWebGLItem> listResult, string path) { }
+
+	// RVA: 0x1EEAA90 Offset: 0x1EEAA90 VA: 0x1EEAA90
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 427300-427319; TypeDefIndex 10570
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0xC8538C Offset: 0xC8538C VA: 0xC8538C
+[Serializable]
+private sealed class AssetBunldeEffectCommRule.<>c // TypeDefIndex: 10570
+{
+	// Fields
+	public static readonly AssetBunldeEffectCommRule.<>c <>9; // 0x0
+	public static Comparison<EditorAbDirPackConfigItem> <>9__19_0; // 0x8
+
+	// Methods
+
+	// RVA: 0x1EEECC0 Offset: 0x1EEECC0 VA: 0x1EEECC0
+	private static void .cctor() { }
+
+	// RVA: 0x1EEED24 Offset: 0x1EEED24 VA: 0x1EEED24
+	public void .ctor() { }
+
+	// RVA: 0x1EEED2C Offset: 0x1EEED2C VA: 0x1EEED2C
+	internal int <ReadPackInDirRuleFromFile>b__19_0(EditorAbDirPackConfigItem a, EditorAbDirPackConfigItem b) { }
+}
+
+// ORIGINAL DUMP LINES 427321-427328; TypeDefIndex 10571
+// Namespace: A3Game
+public class AssetBundleConfig // TypeDefIndex: 10571
+{
+	// Methods
+
+	// RVA: 0x1EEA9C8 Offset: 0x1EEA9C8 VA: 0x1EEA9C8
+	public static void InitConfig(bool runTime, bool useWebGL) { }
+}
+
+// ORIGINAL DUMP LINES 427330-427336; TypeDefIndex 10572
+// Namespace: A3Game
+internal class AbPrepareWWW // TypeDefIndex: 10572
+{
+	// Fields
+	public WWW m_www; // 0x10
+	public string m_filePath; // 0x18
+}
+
+// ORIGINAL DUMP LINES 427338-427427; TypeDefIndex 10573
+// Namespace: A3Game
+public class AssetBundlePrepare : BBehaviourSingleton<AssetBundlePrepare> // TypeDefIndex: 10573
+{
+	// Fields
+	private string m_error; // 0x18
+	private bool m_isNeedPrepare; // 0x20
+	private bool m_isIl2cppUpdate; // 0x21
+	private List<string> m_abFileList; // 0x28
+	[CompilerGeneratedAttribute] // RVA: 0xC8547C Offset: 0xC8547C VA: 0xC8547C
+	private string <TempDecompressDir>k__BackingField; // 0x30
+	private int m_curDecompIdx; // 0x38
+	private int[] m_decompressedArray; // 0x40
+	private int m_tarSplitCount; // 0x48
+	private int[] m_decompProgress; // 0x50
+
+	// Properties
+	public string error { get; set; }
+	private string TempDecompressDir { get; set; }
+	public bool NeedPrepare { get; }
+	public bool IsIl2cppUpdate { get; }
+	public string systemAbDir { get; }
+	public string destAbDir { get; }
+
+	// Methods
+
+	// RVA: 0x1EEAC58 Offset: 0x1EEAC58 VA: 0x1EEAC58
+	public string get_error() { }
+
+	// RVA: 0x1EEAC60 Offset: 0x1EEAC60 VA: 0x1EEAC60
+	public void set_error(string value) { }
+
+	[CompilerGeneratedAttribute] // RVA: 0xC856FC Offset: 0xC856FC VA: 0xC856FC
+	// RVA: 0x1EEAC68 Offset: 0x1EEAC68 VA: 0x1EEAC68
+	private string get_TempDecompressDir() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0xC8570C Offset: 0xC8570C VA: 0xC8570C
+	// RVA: 0x1EEAC70 Offset: 0x1EEAC70 VA: 0x1EEAC70
+	private void set_TempDecompressDir(string value) { }
+
+	// RVA: 0x1EEAC78 Offset: 0x1EEAC78 VA: 0x1EEAC78
+	public bool get_NeedPrepare() { }
+
+	// RVA: 0x1EEAC80 Offset: 0x1EEAC80 VA: 0x1EEAC80
+	public bool get_IsIl2cppUpdate() { }
+
+	// RVA: 0x1EEAC88 Offset: 0x1EEAC88 VA: 0x1EEAC88
+	public bool IsHaveErr() { }
+
+	// RVA: 0x1EEAD00 Offset: 0x1EEAD00 VA: 0x1EEAD00
+	public string get_systemAbDir() { }
+
+	// RVA: 0x1EEAE68 Offset: 0x1EEAE68 VA: 0x1EEAE68
+	public string get_destAbDir() { }
+
+	// RVA: 0x1EEAEC8 Offset: 0x1EEAEC8 VA: 0x1EEAEC8
+	public IEnumerator CheckNeedPrepare() { }
+
+	// RVA: 0x1EEAF68 Offset: 0x1EEAF68 VA: 0x1EEAF68
+	private bool CheckReadList(string destDir, List<AbPrepareWWW> waitFinList, ref int finCount, ref float loadingProgress) { }
+
+	// RVA: 0x1EEB260 Offset: 0x1EEB260 VA: 0x1EEB260
+	private bool WriteFile(string tarDir, string tarFileName, ref FileStream tarOutStream, byte[] data) { }
+
+	// RVA: 0x1EEB3E8 Offset: 0x1EEB3E8 VA: 0x1EEB3E8
+	private void DeleteFolder(string dir) { }
+
+	// RVA: 0x1EEB560 Offset: 0x1EEB560 VA: 0x1EEB560
+	private int GetDecompressedCnt() { }
+
+	// RVA: 0x1EEB658 Offset: 0x1EEB658 VA: 0x1EEB658
+	public IEnumerator StartPrepareAb(StartupUI process) { }
+
+	// RVA: 0x1EEB71C Offset: 0x1EEB71C VA: 0x1EEB71C
+	public IEnumerator CheckNeedUpdateIl2cppSo(string webIl2cppMd5) { }
+
+	// RVA: 0x1EEB7E0 Offset: 0x1EEB7E0 VA: 0x1EEB7E0
+	public IEnumerator SaveIl2cppFile(string fileName, string content) { }
+
+	// RVA: 0x1EEB8B8 Offset: 0x1EEB8B8 VA: 0x1EEB8B8
+	private IEnumerator PrepareIndexFile() { }
+
+	// RVA: 0x1EEB958 Offset: 0x1EEB958 VA: 0x1EEB958
+	private IEnumerator PrepareIOSDllFile() { }
+
+	// RVA: 0x1EEB9F8 Offset: 0x1EEB9F8 VA: 0x1EEB9F8
+	private IEnumerator CopyFile(string fileName, string destDir) { }
+
+	// RVA: 0x1EEBAD0 Offset: 0x1EEBAD0 VA: 0x1EEBAD0
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 427429-427468; TypeDefIndex 10574
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0xC8539C Offset: 0xC8539C VA: 0xC8539C
+private sealed class AssetBundlePrepare.<CheckNeedPrepare>d__24 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10574
+{
+	// Fields
+	private int <>1__state; // 0x10
+	private object <>2__current; // 0x18
+	public AssetBundlePrepare <>4__this; // 0x20
+	private string <destText>5__2; // 0x28
+	private WWW <www>5__3; // 0x30
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8571C Offset: 0xC8571C VA: 0xC8571C
+	// RVA: 0x1EEAF3C Offset: 0x1EEAF3C VA: 0x1EEAF3C
+	public void .ctor(int <>1__state) { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8572C Offset: 0xC8572C VA: 0xC8572C
+	// RVA: 0x1EEBB60 Offset: 0x1EEBB60 VA: 0x1EEBB60 Slot: 8
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x1EEBB64 Offset: 0x1EEBB64 VA: 0x1EEBB64 Slot: 6
+	private bool MoveNext() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8573C Offset: 0xC8573C VA: 0xC8573C
+	// RVA: 0x1EEBE2C Offset: 0x1EEBE2C VA: 0x1EEBE2C Slot: 4
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8574C Offset: 0xC8574C VA: 0xC8574C
+	// RVA: 0x1EEBE34 Offset: 0x1EEBE34 VA: 0x1EEBE34 Slot: 7
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8575C Offset: 0xC8575C VA: 0xC8575C
+	// RVA: 0x1EEBE9C Offset: 0x1EEBE9C VA: 0x1EEBE9C Slot: 5
+	private object System.Collections.IEnumerator.get_Current() { }
+}
+
+// ORIGINAL DUMP LINES 427470-427508; TypeDefIndex 10575
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0xC853AC Offset: 0xC853AC VA: 0xC853AC
+private sealed class AssetBundlePrepare.<StartPrepareAb>d__29 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10575
+{
+	// Fields
+	private int <>1__state; // 0x10
+	private object <>2__current; // 0x18
+	public AssetBundlePrepare <>4__this; // 0x20
+	public StartupUI process; // 0x28
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8576C Offset: 0xC8576C VA: 0xC8576C
+	// RVA: 0x1EEB6F0 Offset: 0x1EEB6F0 VA: 0x1EEB6F0
+	public void .ctor(int <>1__state) { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8577C Offset: 0xC8577C VA: 0xC8577C
+	// RVA: 0x1EED278 Offset: 0x1EED278 VA: 0x1EED278 Slot: 8
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x1EED27C Offset: 0x1EED27C VA: 0x1EED27C Slot: 6
+	private bool MoveNext() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8578C Offset: 0xC8578C VA: 0xC8578C
+	// RVA: 0x1EED634 Offset: 0x1EED634 VA: 0x1EED634 Slot: 4
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8579C Offset: 0xC8579C VA: 0xC8579C
+	// RVA: 0x1EED63C Offset: 0x1EED63C VA: 0x1EED63C Slot: 7
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC857AC Offset: 0xC857AC VA: 0xC857AC
+	// RVA: 0x1EED6A4 Offset: 0x1EED6A4 VA: 0x1EED6A4 Slot: 5
+	private object System.Collections.IEnumerator.get_Current() { }
+}
+
+// ORIGINAL DUMP LINES 427510-427548; TypeDefIndex 10576
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0xC853BC Offset: 0xC853BC VA: 0xC853BC
+private sealed class AssetBundlePrepare.<CheckNeedUpdateIl2cppSo>d__30 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10576
+{
+	// Fields
+	private int <>1__state; // 0x10
+	private object <>2__current; // 0x18
+	public AssetBundlePrepare <>4__this; // 0x20
+	public string webIl2cppMd5; // 0x28
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHiddenAttribute] // RVA: 0xC857BC Offset: 0xC857BC VA: 0xC857BC
+	// RVA: 0x1EEB7B4 Offset: 0x1EEB7B4 VA: 0x1EEB7B4
+	public void .ctor(int <>1__state) { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC857CC Offset: 0xC857CC VA: 0xC857CC
+	// RVA: 0x1EEBEA4 Offset: 0x1EEBEA4 VA: 0x1EEBEA4 Slot: 8
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x1EEBEA8 Offset: 0x1EEBEA8 VA: 0x1EEBEA8 Slot: 6
+	private bool MoveNext() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC857DC Offset: 0xC857DC VA: 0xC857DC
+	// RVA: 0x1EEC100 Offset: 0x1EEC100 VA: 0x1EEC100 Slot: 4
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC857EC Offset: 0xC857EC VA: 0xC857EC
+	// RVA: 0x1EEC108 Offset: 0x1EEC108 VA: 0x1EEC108 Slot: 7
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC857FC Offset: 0xC857FC VA: 0xC857FC
+	// RVA: 0x1EEC170 Offset: 0x1EEC170 VA: 0x1EEC170 Slot: 5
+	private object System.Collections.IEnumerator.get_Current() { }
+}
+
+// ORIGINAL DUMP LINES 427550-427589; TypeDefIndex 10577
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0xC853CC Offset: 0xC853CC VA: 0xC853CC
+private sealed class AssetBundlePrepare.<SaveIl2cppFile>d__31 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10577
+{
+	// Fields
+	private int <>1__state; // 0x10
+	private object <>2__current; // 0x18
+	public AssetBundlePrepare <>4__this; // 0x20
+	public string fileName; // 0x28
+	public string content; // 0x30
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8580C Offset: 0xC8580C VA: 0xC8580C
+	// RVA: 0x1EEB88C Offset: 0x1EEB88C VA: 0x1EEB88C
+	public void .ctor(int <>1__state) { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8581C Offset: 0xC8581C VA: 0xC8581C
+	// RVA: 0x1EECFD0 Offset: 0x1EECFD0 VA: 0x1EECFD0 Slot: 8
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x1EECFD4 Offset: 0x1EECFD4 VA: 0x1EECFD4 Slot: 6
+	private bool MoveNext() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8582C Offset: 0xC8582C VA: 0xC8582C
+	// RVA: 0x1EED200 Offset: 0x1EED200 VA: 0x1EED200 Slot: 4
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8583C Offset: 0xC8583C VA: 0xC8583C
+	// RVA: 0x1EED208 Offset: 0x1EED208 VA: 0x1EED208 Slot: 7
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8584C Offset: 0xC8584C VA: 0xC8584C
+	// RVA: 0x1EED270 Offset: 0x1EED270 VA: 0x1EED270 Slot: 5
+	private object System.Collections.IEnumerator.get_Current() { }
+}
+
+// ORIGINAL DUMP LINES 427591-427635; TypeDefIndex 10578
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0xC853DC Offset: 0xC853DC VA: 0xC853DC
+private sealed class AssetBundlePrepare.<PrepareIndexFile>d__32 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10578
+{
+	// Fields
+	private int <>1__state; // 0x10
+	private object <>2__current; // 0x18
+	public AssetBundlePrepare <>4__this; // 0x20
+	private string <rootDestPath>5__2; // 0x28
+	private string <errInfo>5__3; // 0x30
+	private List<AssetMd5FileInfo> <listMd5Index>5__4; // 0x38
+	private List.Enumerator<AssetMd5FileInfo> <>7__wrap4; // 0x40
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8585C Offset: 0xC8585C VA: 0xC8585C
+	// RVA: 0x1EEB92C Offset: 0x1EEB92C VA: 0x1EEB92C
+	public void .ctor(int <>1__state) { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8586C Offset: 0xC8586C VA: 0xC8586C
+	// RVA: 0x1EEC720 Offset: 0x1EEC720 VA: 0x1EEC720 Slot: 8
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x1EEC794 Offset: 0x1EEC794 VA: 0x1EEC794 Slot: 6
+	private bool MoveNext() { }
+
+	// RVA: 0x1EEC73C Offset: 0x1EEC73C VA: 0x1EEC73C
+	private void <>m__Finally1() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8587C Offset: 0xC8587C VA: 0xC8587C
+	// RVA: 0x1EECF58 Offset: 0x1EECF58 VA: 0x1EECF58 Slot: 4
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8588C Offset: 0xC8588C VA: 0xC8588C
+	// RVA: 0x1EECF60 Offset: 0x1EECF60 VA: 0x1EECF60 Slot: 7
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8589C Offset: 0xC8589C VA: 0xC8589C
+	// RVA: 0x1EECFC8 Offset: 0x1EECFC8 VA: 0x1EECFC8 Slot: 5
+	private object System.Collections.IEnumerator.get_Current() { }
+}
+
+// ORIGINAL DUMP LINES 427637-427676; TypeDefIndex 10579
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0xC853EC Offset: 0xC853EC VA: 0xC853EC
+private sealed class AssetBundlePrepare.<PrepareIOSDllFile>d__33 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10579
+{
+	// Fields
+	private int <>1__state; // 0x10
+	private object <>2__current; // 0x18
+	public AssetBundlePrepare <>4__this; // 0x20
+	private string[] <dllFiles>5__2; // 0x28
+	private int <i>5__3; // 0x30
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHiddenAttribute] // RVA: 0xC858AC Offset: 0xC858AC VA: 0xC858AC
+	// RVA: 0x1EEB9CC Offset: 0x1EEB9CC VA: 0x1EEB9CC
+	public void .ctor(int <>1__state) { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC858BC Offset: 0xC858BC VA: 0xC858BC
+	// RVA: 0x1EEC410 Offset: 0x1EEC410 VA: 0x1EEC410 Slot: 8
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x1EEC414 Offset: 0x1EEC414 VA: 0x1EEC414 Slot: 6
+	private bool MoveNext() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC858CC Offset: 0xC858CC VA: 0xC858CC
+	// RVA: 0x1EEC6A8 Offset: 0x1EEC6A8 VA: 0x1EEC6A8 Slot: 4
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC858DC Offset: 0xC858DC VA: 0xC858DC
+	// RVA: 0x1EEC6B0 Offset: 0x1EEC6B0 VA: 0x1EEC6B0 Slot: 7
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC858EC Offset: 0xC858EC VA: 0xC858EC
+	// RVA: 0x1EEC718 Offset: 0x1EEC718 VA: 0x1EEC718 Slot: 5
+	private object System.Collections.IEnumerator.get_Current() { }
+}
+
+// ORIGINAL DUMP LINES 427678-427718; TypeDefIndex 10580
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0xC853FC Offset: 0xC853FC VA: 0xC853FC
+private sealed class AssetBundlePrepare.<CopyFile>d__34 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10580
+{
+	// Fields
+	private int <>1__state; // 0x10
+	private object <>2__current; // 0x18
+	public AssetBundlePrepare <>4__this; // 0x20
+	public string fileName; // 0x28
+	public string destDir; // 0x30
+	private WWW <www>5__2; // 0x38
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHiddenAttribute] // RVA: 0xC858FC Offset: 0xC858FC VA: 0xC858FC
+	// RVA: 0x1EEBAA4 Offset: 0x1EEBAA4 VA: 0x1EEBAA4
+	public void .ctor(int <>1__state) { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8590C Offset: 0xC8590C VA: 0xC8590C
+	// RVA: 0x1EEC178 Offset: 0x1EEC178 VA: 0x1EEC178 Slot: 8
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x1EEC17C Offset: 0x1EEC17C VA: 0x1EEC17C Slot: 6
+	private bool MoveNext() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8591C Offset: 0xC8591C VA: 0xC8591C
+	// RVA: 0x1EEC398 Offset: 0x1EEC398 VA: 0x1EEC398 Slot: 4
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8592C Offset: 0xC8592C VA: 0xC8592C
+	// RVA: 0x1EEC3A0 Offset: 0x1EEC3A0 VA: 0x1EEC3A0 Slot: 7
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8593C Offset: 0xC8593C VA: 0xC8593C
+	// RVA: 0x1EEC408 Offset: 0x1EEC408 VA: 0x1EEC408 Slot: 5
+	private object System.Collections.IEnumerator.get_Current() { }
+}
+
+// ORIGINAL DUMP LINES 427720-427739; TypeDefIndex 10581
+// Namespace: A3Game
+public interface IDodLibNative // TypeDefIndex: 10581
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract bool ManualDownload(string url);
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract string GetDataDir();
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract int Decompress7zip(string filePath, string exctractionPath, bool largeFiles = False, bool fullPaths = False, string entry, byte[] FileBuffer);
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract byte[] LoadStreamAssetFile(string filePath);
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract string GetPlatformName();
+}
+
+// ORIGINAL DUMP LINES 427741-427757; TypeDefIndex 10582
+// Namespace: A3Game
+public class DodLibUtil // TypeDefIndex: 10582
+{
+	// Fields
+	private static IDodLibNative m_dodLibNative; // 0x0
+
+	// Methods
+
+	// RVA: 0x1EF5648 Offset: 0x1EF5648 VA: 0x1EF5648
+	public static void SetDodLib(IDodLibNative dodLibNative) { }
+
+	// RVA: 0x1EF03B0 Offset: 0x1EF03B0 VA: 0x1EF03B0
+	public static IDodLibNative GetDodLib() { }
+
+	// RVA: 0x1EF56B4 Offset: 0x1EF56B4 VA: 0x1EF56B4
+	private static void .cctor() { }
+}
+
+// ORIGINAL DUMP LINES 427759-427852; TypeDefIndex 10583
+// Namespace: A3Game
+public class EventLogReport // TypeDefIndex: 10583
+{
+	// Fields
+	public static readonly EventLogReport Instance; // 0x0
+	private string m_reportUrl; // 0x10
+	private string m_appId; // 0x18
+	private string m_douyinXFCAppId; // 0x20
+	private string m_webGLClientAppId; // 0x28
+	private string m_webGLXHAppId; // 0x30
+	private string m_enAppId; // 0x38
+	private string m_lwAppId; // 0x40
+	private string m_gzAppId; // 0x48
+	private string m_clientIP; // 0x50
+	private string m_igByteAppId; // 0x58
+	private string m_qqAppId; // 0x60
+	private string m_xwAppId; // 0x68
+	private string m_authUin; // 0x70
+	private string m_playerName; // 0x78
+	private string m_serverId; // 0x80
+	private string m_curMapId; // 0x88
+	private float m_lastReportTime; // 0x90
+	private Func<string> m_getTopUiNameFunc; // 0x98
+
+	// Methods
+
+	// RVA: 0x1EF56B8 Offset: 0x1EF56B8 VA: 0x1EF56B8
+	private string GetAppId(bool useClientId) { }
+
+	// RVA: 0x1EF5B5C Offset: 0x1EF5B5C VA: 0x1EF5B5C
+	private string GetNetworkType() { }
+
+	// RVA: 0x1EF5BCC Offset: 0x1EF5BCC VA: 0x1EF5BCC
+	private string GetGuid() { }
+
+	// RVA: 0x1EF5D48 Offset: 0x1EF5D48 VA: 0x1EF5D48
+	private int GetFirstStartUp() { }
+
+	// RVA: 0x1EF5EC4 Offset: 0x1EF5EC4 VA: 0x1EF5EC4
+	private long GetNowTime() { }
+
+	// RVA: 0x1EF5FAC Offset: 0x1EF5FAC VA: 0x1EF5FAC
+	private bool CheckFirstReport(string eventName) { }
+
+	// RVA: 0x1EF60FC Offset: 0x1EF60FC VA: 0x1EF60FC
+	private Dictionary<string, object> CreateReportDict() { }
+
+	// RVA: 0x1EF6890 Offset: 0x1EF6890 VA: 0x1EF6890
+	private HttpRequestParam CreateRequestParam(Dictionary<string, object> data, bool useClientId = False) { }
+
+	// RVA: 0x1EF6B84 Offset: 0x1EF6B84 VA: 0x1EF6B84
+	private bool IsValid(bool useClientId = False) { }
+
+	// RVA: 0x1EF6C88 Offset: 0x1EF6C88 VA: 0x1EF6C88
+	public void UpdatePlayerInfo(string authUin, string playerName, string serverId) { }
+
+	// RVA: 0x1EF6C94 Offset: 0x1EF6C94 VA: 0x1EF6C94
+	public void UpdateMapId(string mapId) { }
+
+	// RVA: 0x1EF6C9C Offset: 0x1EF6C9C VA: 0x1EF6C9C
+	public void ReportEvent(string eventName, string error, Dictionary<string, string> extraParam) { }
+
+	// RVA: 0x1EF70A4 Offset: 0x1EF70A4 VA: 0x1EF70A4
+	public void ReportEvent(string eventName, float duration, string error, Dictionary<string, string> extraParam) { }
+
+	// RVA: 0x1EF70BC Offset: 0x1EF70BC VA: 0x1EF70BC
+	private bool CheckTimes() { }
+
+	// RVA: 0x1EF7110 Offset: 0x1EF7110 VA: 0x1EF7110
+	public void ReportWebGLEvent(string eventLogType, string exception, string message, string stackTrace, bool checkTimes = False) { }
+
+	// RVA: 0x1EF763C Offset: 0x1EF763C VA: 0x1EF763C
+	public void SetGetTopUiNameFunc(Func<string> getTopUiNameFunc) { }
+
+	// RVA: 0x1EF6CB8 Offset: 0x1EF6CB8 VA: 0x1EF6CB8
+	private void ReportEvent(string eventName, bool hasDurTime, float duration, string error, Dictionary<string, string> extraParam) { }
+
+	// RVA: 0x1EF7644 Offset: 0x1EF7644 VA: 0x1EF7644
+	public void SetClientIP(string clientIP) { }
+
+	// RVA: 0x1EF764C Offset: 0x1EF764C VA: 0x1EF764C
+	public void .ctor() { }
+
+	// RVA: 0x1EF77A8 Offset: 0x1EF77A8 VA: 0x1EF77A8
+	private static void .cctor() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0xC8594C Offset: 0xC8594C VA: 0xC8594C
+	// RVA: 0x1EF7808 Offset: 0x1EF7808 VA: 0x1EF7808
+	private void <ReportWebGLEvent>b__36_0(CSMsgResult result, string respone) { }
+
+	[CompilerGeneratedAttribute] // RVA: 0xC8595C Offset: 0xC8595C VA: 0xC8595C
+	// RVA: 0x1EF795C Offset: 0x1EF795C VA: 0x1EF795C
+	private void <ReportEvent>b__39_0(CSMsgResult result, string respone) { }
+}
+
+// ORIGINAL DUMP LINES 427854-427896; TypeDefIndex 10584
+// Namespace: A3Game
+public class HardtimeLogReport // TypeDefIndex: 10584
+{
+	// Fields
+	public static readonly HardtimeLogReport Instance; // 0x0
+	private readonly string m_reportUrl; // 0x10
+	private readonly string m_hardtimeAppkey; // 0x18
+	private List<string> m_alwaysReportList; // 0x20
+	private string m_userLoginID; // 0x28
+
+	// Methods
+
+	// RVA: 0x1EF7AB0 Offset: 0x1EF7AB0 VA: 0x1EF7AB0
+	public void .ctor() { }
+
+	// RVA: 0x1EF7B6C Offset: 0x1EF7B6C VA: 0x1EF7B6C
+	public void ReportLog(string eventName, Dictionary<string, string> extraParam) { }
+
+	// RVA: 0x1EFB16C Offset: 0x1EFB16C VA: 0x1EFB16C
+	private HttpRequestParam CreateRequestParam(string text) { }
+
+	// RVA: 0x1EFB124 Offset: 0x1EFB124 VA: 0x1EFB124
+	private string GetIP() { }
+
+	// RVA: 0x1EFB038 Offset: 0x1EFB038 VA: 0x1EFB038
+	private string GetGuid() { }
+
+	// RVA: 0x1EFAF68 Offset: 0x1EFAF68 VA: 0x1EFAF68
+	private bool CheckFirstReport(string eventName) { }
+
+	// RVA: 0x1EFB230 Offset: 0x1EFB230 VA: 0x1EFB230
+	private string GetFirstReportStr(string eventName) { }
+
+	// RVA: 0x1EFB2B8 Offset: 0x1EFB2B8 VA: 0x1EFB2B8
+	public void SetUserLoginID(uint userLoginID) { }
+
+	// RVA: 0x1EFB2E8 Offset: 0x1EFB2E8 VA: 0x1EFB2E8
+	private static void .cctor() { }
+
+	[CompilerGeneratedAttribute] // RVA: 0xC8596C Offset: 0xC8596C VA: 0xC8596C
+	// RVA: 0x1EFB348 Offset: 0x1EFB348 VA: 0x1EFB348
+	private void <ReportLog>b__6_0(CSMsgResult result, string respone) { }
+}
+
+// ORIGINAL DUMP LINES 427898-427900; TypeDefIndex 10585
+// Namespace: A3Game
+public class ProgDownloadState // TypeDefIndex: 10585
+{}
+
+// ORIGINAL DUMP LINES 427902-427927; TypeDefIndex 10586
+// Namespace: A3Game
+public class ReleaseUtil // TypeDefIndex: 10586
+{
+	// Methods
+
+	// RVA: 0x1EFF730 Offset: 0x1EFF730 VA: 0x1EFF730
+	private static bool IsPcOrEditor() { }
+
+	// RVA: 0x1EFF75C Offset: 0x1EFF75C VA: 0x1EFF75C
+	public static string GetDataDir() { }
+
+	// RVA: 0x1EFF760 Offset: 0x1EFF760 VA: 0x1EFF760
+	public static string GetExternStorageDir() { }
+
+	// RVA: 0x1EEFFA0 Offset: 0x1EEFFA0 VA: 0x1EEFFA0
+	public static string GetDownTempDir() { }
+
+	// RVA: 0x1EF4E88 Offset: 0x1EF4E88 VA: 0x1EF4E88
+	public static void DeleteFolder(string dir) { }
+
+	// RVA: 0x1EFF89C Offset: 0x1EFF89C VA: 0x1EFF89C
+	public static bool StartManualDownLoadProg(string url) { }
+
+	// RVA: 0x1EFFA44 Offset: 0x1EFFA44 VA: 0x1EFFA44
+	public static void OnGameEnter() { }
+}
+
+// ORIGINAL DUMP LINES 427929-427941; TypeDefIndex 10587
+// Namespace: A3Game
+public class TextConfigItem // TypeDefIndex: 10587
+{
+	// Fields
+	public bool NeedReplace; // 0x10
+	public short ArgNum; // 0x12
+	public string Text; // 0x18
+
+	// Methods
+
+	// RVA: 0x1EFFCF4 Offset: 0x1EFFCF4 VA: 0x1EFFCF4
+	public void .ctor(CSharpTextConfig src) { }
+}
+
+// ORIGINAL DUMP LINES 427943-427962; TypeDefIndex 10588
+// Namespace: A3Game
+public class StartupTextConfigMgr : BSingleton<StartupTextConfigMgr> // TypeDefIndex: 10588
+{
+	// Fields
+	private Dictionary<uint, TextConfigItem> m_TextConfigs; // 0x10
+
+	// Methods
+
+	// RVA: 0x1EFFAF4 Offset: 0x1EFFAF4 VA: 0x1EFFAF4
+	public void .ctor() { }
+
+	// RVA: 0x1EFFDE8 Offset: 0x1EFFDE8 VA: 0x1EFFDE8
+	private TextConfigItem GetTextConfigs(int strID) { }
+
+	// RVA: 0x1EEFBC4 Offset: 0x1EEFBC4 VA: 0x1EEFBC4
+	public string GetText(int textId) { }
+
+	// RVA: 0x1EEFC5C Offset: 0x1EEFC5C VA: 0x1EEFC5C
+	public string GetText(int textId, object[] args) { }
+}
+
+// ORIGINAL DUMP LINES 427964-428010; TypeDefIndex 10589
+// Namespace: A3Game
+public class StartupTextDefine // TypeDefIndex: 10589
+{
+	// Fields
+	public static int ID_STARTUP_CHECK_UPDATE_JSON_ERROR; // 0x0
+	public static int ID_STARTUP_CHECK_UPDATE_TIMEOUT; // 0x4
+	public static int ID_STARTUP_CHECK_UPDATE_WWW_ERROR; // 0x8
+	public static int ID_STARTUP_GAME_ETNERING; // 0xC
+	public static int ID_STARTUP_UPDATE_ASSET_DOWNLOAD_FAILED; // 0x10
+	public static int ID_STARTUP_UPDATE_ASSET_INSTALL_PROGRESS; // 0x14
+	public static int ID_STARTUP_UPDATE_ASSET_SUCCESS; // 0x18
+	public static int ID_STARTUP_UPDATE_CRC_CHECK_FAILED; // 0x1C
+	public static int ID_STARTUP_UPDATE_WRITE_FAILED; // 0x20
+	public static int ID_STARTUP_UPDATE_EXTRACT_DOWNFILE_FAILED; // 0x24
+	public static int ID_STARTUP_UPDATE_READ_LOCAL_FAILED; // 0x28
+	public static int ID_STARTUP_UPDATE_READ_LOCAL_FAILED_NO_ERRORCODE; // 0x2C
+	public static int ID_STARTUP_ASSETVER_INIT_FAILED; // 0x30
+	public static int ID_STARTUP_ASSET_UPDATE; // 0x34
+	public static int ID_STARTUP_ASSET_UPDATE_FAILED; // 0x38
+	public static int ID_STARTUP_UPDATE_NEED_RESTART; // 0x3C
+	public static int ID_STARTUP_ASSET_UPDATE_INFO; // 0x40
+	public static int ID_STARTUP_VERSION_INFO; // 0x44
+	public static int ID_STARTUP_CHECK_UPDATE; // 0x48
+	public static int ID_STARTUP_CHECK_UPDATE_CONTENT; // 0x4C
+	public static int ID_STARTUP_CHECK_UPDATE_CONTENT_FAILED; // 0x50
+	public static int ID_STARTUP_CHECK_UPDATE_JSON_DETAIL; // 0x54
+	public static int ID_STARTUP_UPDATE_FINISH; // 0x58
+	public static int ID_STARTUP_DOWNLOAD_PROG_PAUSE; // 0x5C
+	public static int ID_STARTUP_DOWNLOAD_PROG_PROGRESS; // 0x60
+	public static int ID_STARTUP_DOWNLOAD_PROG_START; // 0x64
+	public static int ID_STARTUP_DOWNLOAD_PROG_SUCCESS; // 0x68
+	public static int ID_STARTUP_DOWNLOAD_PROG_WAIT; // 0x6C
+	public static int ID_STARTUP_ENTER_GAME_FAILED; // 0x70
+	public static int ID_STARTUP_FIND_SDCARD_FAILD; // 0x74
+	public static int ID_STARTUP_DOWNLOAD_PROG_FAILED; // 0x78
+	public static int ID_STARTUP_PREPARE_FAILED; // 0x7C
+	public static int ID_STARTUP_TXT_DOWNINFO; // 0x80
+	public static int ID_STARTUP_CHECK_VERSION_FAILED; // 0x84
+	public static int ID_STARTUP_DECOMPRESS_FAILED; // 0x88
+	public static int ID_STARTUP_CHECKCRC_FAILED; // 0x8C
+	public static int ID_STARTUP_UNCOMPRESS_RES; // 0x90
+
+	// Methods
+
+	// RVA: 0x1EFFE70 Offset: 0x1EFFE70 VA: 0x1EFFE70
+	private static void .cctor() { }
+}
+
+// ORIGINAL DUMP LINES 428012-428031; TypeDefIndex 10590
+// Namespace: A3Game
+public interface StartupUI // TypeDefIndex: 10590
+{
+	// Methods
+
+	// RVA: -1 Offset: -1 Slot: 0
+	public abstract void ShowText(string title);
+
+	// RVA: -1 Offset: -1 Slot: 1
+	public abstract void SetProgress(uint curValue, uint maxValue, bool isPercentage = False);
+
+	// RVA: -1 Offset: -1 Slot: 2
+	public abstract void ShowProgressBar(bool show);
+
+	// RVA: -1 Offset: -1 Slot: 3
+	public abstract void ShowDownInfo(float downzise, float totalsize, bool show, float speendown, bool init = False);
+
+	// RVA: -1 Offset: -1 Slot: 4
+	public abstract void BeginDownload();
+}
+
+// ORIGINAL DUMP LINES 428033-428073; TypeDefIndex 10591
+// Namespace: A3Game
+public class AssetUpdater : BBehaviourSingleton<AssetUpdater> // TypeDefIndex: 10591
+{
+	// Fields
+	private bool m_canEnterGame; // 0x18
+	private bool m_needRestart; // 0x19
+	private AssetVerInfo m_svrVerInfo; // 0x20
+
+	// Properties
+	public AssetVerInfo svrVerInfo { get; }
+	public string NewVersion { get; }
+
+	// Methods
+
+	// RVA: 0x1EEED70 Offset: 0x1EEED70 VA: 0x1EEED70
+	public AssetVerInfo get_svrVerInfo() { }
+
+	// RVA: 0x1EEED78 Offset: 0x1EEED78 VA: 0x1EEED78
+	public string get_NewVersion() { }
+
+	// RVA: 0x1EEEDA4 Offset: 0x1EEEDA4 VA: 0x1EEEDA4
+	public IEnumerator CheckUpdate(bool repairClient, StartupUI startUI) { }
+
+	// RVA: 0x1EEEE88 Offset: 0x1EEEE88 VA: 0x1EEEE88
+	public AssetVerInfo ParseVerInfo(Dictionary<string, object> verJson) { }
+
+	// RVA: -1 Offset: -1
+	private T ReadJsonKey<T>(Dictionary<string, object> json, string key) { }
+	/* GenericInstMethod :
+	|
+	|-RVA: 0x18E0B4C Offset: 0x18E0B4C VA: 0x18E0B4C
+	|-AssetUpdater.ReadJsonKey<long>
+	|
+	|-RVA: 0x18E0BD0 Offset: 0x18E0BD0 VA: 0x18E0BD0
+	|-AssetUpdater.ReadJsonKey<object>
+	|-AssetUpdater.ReadJsonKey<string>
+	*/
+
+	// RVA: 0x1EEF100 Offset: 0x1EEF100 VA: 0x1EEF100
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 428075-428116; TypeDefIndex 10592
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0xC8540C Offset: 0xC8540C VA: 0xC8540C
+private sealed class AssetUpdater.<CheckUpdate>d__7 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10592
+{
+	// Fields
+	private int <>1__state; // 0x10
+	private object <>2__current; // 0x18
+	public AssetUpdater <>4__this; // 0x20
+	public bool repairClient; // 0x28
+	public StartupUI startUI; // 0x30
+	private string <fullUrl>5__2; // 0x38
+	private WWWEx <wwwEx>5__3; // 0x40
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8597C Offset: 0xC8597C VA: 0xC8597C
+	// RVA: 0x1EEEE5C Offset: 0x1EEEE5C VA: 0x1EEEE5C
+	public void .ctor(int <>1__state) { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8598C Offset: 0xC8598C VA: 0xC8598C
+	// RVA: 0x1EEF150 Offset: 0x1EEF150 VA: 0x1EEF150 Slot: 8
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x1EEF154 Offset: 0x1EEF154 VA: 0x1EEF154 Slot: 6
+	private bool MoveNext() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC8599C Offset: 0xC8599C VA: 0xC8599C
+	// RVA: 0x1EEFDB8 Offset: 0x1EEFDB8 VA: 0x1EEFDB8 Slot: 4
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC859AC Offset: 0xC859AC VA: 0xC859AC
+	// RVA: 0x1EEFDC0 Offset: 0x1EEFDC0 VA: 0x1EEFDC0 Slot: 7
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC859BC Offset: 0xC859BC VA: 0xC859BC
+	// RVA: 0x1EEFE28 Offset: 0x1EEFE28 VA: 0x1EEFE28 Slot: 5
+	private object System.Collections.IEnumerator.get_Current() { }
+}
+
+// ORIGINAL DUMP LINES 428118-428223; TypeDefIndex 10593
+// Namespace: A3Game
+public class AssetVersionMgr : BSingleton<AssetVersionMgr> // TypeDefIndex: 10593
+{
+	// Fields
+	public Dictionary<string, AssetMd5FileInfo> m_localAssetMd5Dict; // 0x10
+	private List<string> m_localIndexList; // 0x18
+	private bool m_loadedAllAssetMd5; // 0x20
+	private Dictionary<string, AssetMd5FileInfo> m_downAssetMd5Dict; // 0x28
+	private List<string> m_downIndexList; // 0x30
+	private Dictionary<string, AssetMd5FileInfo> m_latestAssetMd5Dict; // 0x38
+	private AssetRootMetaInfo m_localRootMeta; // 0x40
+	private string m_error; // 0x48
+	private bool m_inited; // 0x50
+	private bool m_scriptUpdate; // 0x51
+
+	// Properties
+	public string error { get; set; }
+	public bool haveErr { get; }
+	public string assetVersion { get; }
+	public bool isAssetLua { get; }
+	public bool scriptUpdated { get; }
+	public string downTempDir { get; }
+
+	// Methods
+
+	// RVA: 0x1EEFE30 Offset: 0x1EEFE30 VA: 0x1EEFE30
+	public string get_error() { }
+
+	// RVA: 0x1EEFC54 Offset: 0x1EEFC54 VA: 0x1EEFC54
+	public void set_error(string value) { }
+
+	// RVA: 0x1EEFE38 Offset: 0x1EEFE38 VA: 0x1EEFE38
+	public bool get_haveErr() { }
+
+	// RVA: 0x1EEFEB0 Offset: 0x1EEFEB0 VA: 0x1EEFEB0
+	public string get_assetVersion() { }
+
+	// RVA: 0x1EEFF68 Offset: 0x1EEFF68 VA: 0x1EEFF68
+	public bool get_isAssetLua() { }
+
+	// RVA: 0x1EEFF94 Offset: 0x1EEFF94 VA: 0x1EEFF94
+	public bool get_scriptUpdated() { }
+
+	// RVA: 0x1EEFF9C Offset: 0x1EEFF9C VA: 0x1EEFF9C
+	public string get_downTempDir() { }
+
+	// RVA: 0x1EF001C Offset: 0x1EF001C VA: 0x1EF001C
+	public List<AssetMd5FileInfo> ParseAssetMd5List(string url, string content) { }
+
+	// RVA: 0x1EF00A0 Offset: 0x1EF00A0 VA: 0x1EF00A0
+	private bool IsNeedUpdate(AssetMd5FileInfo newInfo) { }
+
+	// RVA: 0x1EF0204 Offset: 0x1EF0204 VA: 0x1EF0204
+	private byte[] LoadStreamAsset(string path) { }
+
+	// RVA: 0x1EF0418 Offset: 0x1EF0418 VA: 0x1EF0418
+	public bool Init() { }
+
+	// RVA: 0x1EF06FC Offset: 0x1EF06FC VA: 0x1EF06FC
+	public IEnumerator DownloadLatestIndex(string urlPath) { }
+
+	// RVA: 0x1EF07C0 Offset: 0x1EF07C0 VA: 0x1EF07C0
+	public IEnumerator BeginUpdateIndex(string urlPath) { }
+
+	// RVA: 0x1EF0860 Offset: 0x1EF0860 VA: 0x1EF0860
+	public int GetUpdateFileCount() { }
+
+	// RVA: 0x1EF08C0 Offset: 0x1EF08C0 VA: 0x1EF08C0
+	public int GetToUpdateSize() { }
+
+	// RVA: 0x1EF0A18 Offset: 0x1EF0A18 VA: 0x1EF0A18
+	public int GetUpdateSize() { }
+
+	// RVA: 0x1EF0D04 Offset: 0x1EF0D04 VA: 0x1EF0D04
+	private bool CheckFileCrc(Crc32 crc, string path, uint expectCrc) { }
+
+	// RVA: 0x1EF0DAC Offset: 0x1EF0DAC VA: 0x1EF0DAC
+	protected bool ExtractAndWriteDownFile(string compressDir, string destDir, string fileName, byte[] data) { }
+
+	// RVA: 0x1EF10EC Offset: 0x1EF10EC VA: 0x1EF10EC
+	protected string GetDownloadCompressDir() { }
+
+	// RVA: 0x1EF1168 Offset: 0x1EF1168 VA: 0x1EF1168
+	public IEnumerator BeginUpdateAsset(string urlPath, StartupUI ui) { }
+
+	// RVA: 0x1EF1244 Offset: 0x1EF1244 VA: 0x1EF1244
+	public bool LoadRootBaseInfo(string content) { }
+
+	// RVA: 0x1EF137C Offset: 0x1EF137C VA: 0x1EF137C
+	public bool LoadWebGLRootBaseInfo() { }
+
+	// RVA: 0x1EF0650 Offset: 0x1EF0650 VA: 0x1EF0650
+	private bool ParseLocalConfig(string configText) { }
+
+	// RVA: 0x1EF145C Offset: 0x1EF145C VA: 0x1EF145C
+	public bool LoadLocalAllAssetMd5() { }
+
+	// RVA: 0x1EF18D8 Offset: 0x1EF18D8 VA: 0x1EF18D8
+	public bool ReadBaseInfo() { }
+
+	// RVA: 0x1EF1C20 Offset: 0x1EF1C20 VA: 0x1EF1C20
+	public void SaveResult() { }
+
+	// RVA: 0x1EF1C24 Offset: 0x1EF1C24 VA: 0x1EF1C24
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 428225-428273; TypeDefIndex 10594
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0xC8541C Offset: 0xC8541C VA: 0xC8541C
+private sealed class AssetVersionMgr.<DownloadLatestIndex>d__27 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10594
+{
+	// Fields
+	private int <>1__state; // 0x10
+	private object <>2__current; // 0x18
+	public AssetVersionMgr <>4__this; // 0x20
+	public string urlPath; // 0x28
+	private string <urlMd5Root>5__2; // 0x30
+	private WWW <wwwRoot>5__3; // 0x38
+	private Crc32 <crc>5__4; // 0x40
+	private List.Enumerator<AssetMd5FileInfo> <>7__wrap4; // 0x48
+	private AssetMd5FileInfo <indexFileInfo>5__6; // 0x60
+	private string <urlItem>5__7; // 0x68
+	private WWW <www>5__8; // 0x70
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHiddenAttribute] // RVA: 0xC859CC Offset: 0xC859CC VA: 0xC859CC
+	// RVA: 0x1EF0794 Offset: 0x1EF0794 VA: 0x1EF0794
+	public void .ctor(int <>1__state) { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC859DC Offset: 0xC859DC VA: 0xC859DC
+	// RVA: 0x1EF3BFC Offset: 0x1EF3BFC VA: 0x1EF3BFC Slot: 8
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x1EF3C70 Offset: 0x1EF3C70 VA: 0x1EF3C70 Slot: 6
+	private bool MoveNext() { }
+
+	// RVA: 0x1EF3C18 Offset: 0x1EF3C18 VA: 0x1EF3C18
+	private void <>m__Finally1() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC859EC Offset: 0xC859EC VA: 0xC859EC
+	// RVA: 0x1EF4FCC Offset: 0x1EF4FCC VA: 0x1EF4FCC Slot: 4
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC859FC Offset: 0xC859FC VA: 0xC859FC
+	// RVA: 0x1EF4FD4 Offset: 0x1EF4FD4 VA: 0x1EF4FD4 Slot: 7
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC85A0C Offset: 0xC85A0C VA: 0xC85A0C
+	// RVA: 0x1EF503C Offset: 0x1EF503C VA: 0x1EF503C Slot: 5
+	private object System.Collections.IEnumerator.get_Current() { }
+}
+
+// ORIGINAL DUMP LINES 428275-428312; TypeDefIndex 10595
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0xC8542C Offset: 0xC8542C VA: 0xC8542C
+private sealed class AssetVersionMgr.<BeginUpdateIndex>d__28 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10595
+{
+	// Fields
+	private int <>1__state; // 0x10
+	private object <>2__current; // 0x18
+	public AssetVersionMgr <>4__this; // 0x20
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHiddenAttribute] // RVA: 0xC85A1C Offset: 0xC85A1C VA: 0xC85A1C
+	// RVA: 0x1EF0834 Offset: 0x1EF0834 VA: 0x1EF0834
+	public void .ctor(int <>1__state) { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC85A2C Offset: 0xC85A2C VA: 0xC85A2C
+	// RVA: 0x1EF395C Offset: 0x1EF395C VA: 0x1EF395C Slot: 8
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x1EF3960 Offset: 0x1EF3960 VA: 0x1EF3960 Slot: 6
+	private bool MoveNext() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC85A3C Offset: 0xC85A3C VA: 0xC85A3C
+	// RVA: 0x1EF3B84 Offset: 0x1EF3B84 VA: 0x1EF3B84 Slot: 4
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC85A4C Offset: 0xC85A4C VA: 0xC85A4C
+	// RVA: 0x1EF3B8C Offset: 0x1EF3B8C VA: 0x1EF3B8C Slot: 7
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC85A5C Offset: 0xC85A5C VA: 0xC85A5C
+	// RVA: 0x1EF3BF4 Offset: 0x1EF3BF4 VA: 0x1EF3BF4 Slot: 5
+	private object System.Collections.IEnumerator.get_Current() { }
+}
+
+// ORIGINAL DUMP LINES 428314-428372; TypeDefIndex 10596
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0xC8543C Offset: 0xC8543C VA: 0xC8543C
+private sealed class AssetVersionMgr.<BeginUpdateAsset>d__35 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10596
+{
+	// Fields
+	private int <>1__state; // 0x10
+	private object <>2__current; // 0x18
+	public AssetVersionMgr <>4__this; // 0x20
+	public StartupUI ui; // 0x28
+	public string urlPath; // 0x30
+	private float <downLoadFileCnt>5__2; // 0x38
+	private float <downLoadSize>5__3; // 0x3C
+	private float <totalSize>5__4; // 0x40
+	private List<string> <listDownloadFile>5__5; // 0x48
+	private string <downCompressDir>5__6; // 0x50
+	private Crc32 <crc>5__7; // 0x58
+	private string <fromDir>5__8; // 0x60
+	private string <destDir>5__9; // 0x68
+	private int <copyDownFile>5__10; // 0x70
+	private Dictionary.Enumerator<string, AssetMd5FileInfo> <>7__wrap10; // 0x78
+	private KeyValuePair<string, AssetMd5FileInfo> <kv>5__12; // 0x98
+	private WWW <www>5__13; // 0xA8
+	private List.Enumerator<string> <>7__wrap13; // 0xB0
+
+	// Properties
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+	// Methods
+
+	[DebuggerHiddenAttribute] // RVA: 0xC85A6C Offset: 0xC85A6C VA: 0xC85A6C
+	// RVA: 0x1EF1218 Offset: 0x1EF1218 VA: 0x1EF1218
+	public void .ctor(int <>1__state) { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC85A7C Offset: 0xC85A7C VA: 0xC85A7C
+	// RVA: 0x1EF1D3C Offset: 0x1EF1D3C VA: 0x1EF1D3C Slot: 8
+	private void System.IDisposable.Dispose() { }
+
+	// RVA: 0x1EF1E24 Offset: 0x1EF1E24 VA: 0x1EF1E24 Slot: 6
+	private bool MoveNext() { }
+
+	// RVA: 0x1EF1D74 Offset: 0x1EF1D74 VA: 0x1EF1D74
+	private void <>m__Finally1() { }
+
+	// RVA: 0x1EF1DCC Offset: 0x1EF1DCC VA: 0x1EF1DCC
+	private void <>m__Finally2() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC85A8C Offset: 0xC85A8C VA: 0xC85A8C
+	// RVA: 0x1EF38E4 Offset: 0x1EF38E4 VA: 0x1EF38E4 Slot: 4
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC85A9C Offset: 0xC85A9C VA: 0xC85A9C
+	// RVA: 0x1EF38EC Offset: 0x1EF38EC VA: 0x1EF38EC Slot: 7
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] // RVA: 0xC85AAC Offset: 0xC85AAC VA: 0xC85AAC
+	// RVA: 0x1EF3954 Offset: 0x1EF3954 VA: 0x1EF3954 Slot: 5
+	private object System.Collections.IEnumerator.get_Current() { }
+}
+
+// ORIGINAL DUMP LINES 428374-428392; TypeDefIndex 10597
+// Namespace: ResDef
+public class CSharpTextConfig : BProtoBaseStruct // TypeDefIndex: 10597
+{
+	// Fields
+	public uint ID; // 0x10
+	public short ArgNum; // 0x14
+	public string Content; // 0x18
+
+	// Methods
+
+	// RVA: 0x1F01FF4 Offset: 0x1F01FF4 VA: 0x1F01FF4 Slot: 5
+	public void create() { }
+
+	// RVA: 0x1F01FF8 Offset: 0x1F01FF8 VA: 0x1F01FF8 Slot: 4
+	public PbError.ErrorType unpack(PbReadBuf srcBuf, uint cutVer, PbStack stack) { }
+
+	// RVA: 0x1F02098 Offset: 0x1F02098 VA: 0x1F02098
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 428394-428411; TypeDefIndex 10598
+// Namespace: ResDef
+public class CSharpColorConfig : BProtoBaseStruct // TypeDefIndex: 10598
+{
+	// Fields
+	public uint ID; // 0x10
+	public string Color; // 0x18
+
+	// Methods
+
+	// RVA: 0x1F01F6C Offset: 0x1F01F6C VA: 0x1F01F6C Slot: 5
+	public void create() { }
+
+	// RVA: 0x1F01F70 Offset: 0x1F01F70 VA: 0x1F01F70 Slot: 4
+	public PbError.ErrorType unpack(PbReadBuf srcBuf, uint cutVer, PbStack stack) { }
+
+	// RVA: 0x1F01FEC Offset: 0x1F01FEC VA: 0x1F01FEC
+	public void .ctor() { }
+}
+
+// ORIGINAL DUMP LINES 428413-428421; TypeDefIndex 10599
+// Namespace: 
+[CompilerGeneratedAttribute] // RVA: 0xC8544C Offset: 0xC8544C VA: 0xC8544C
+internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 10599
+{
+	// Methods
+
+	// RVA: 0x1EEA938 Offset: 0x1EEA938 VA: 0x1EEA938
+	internal static uint ComputeStringHash(string s) { }
+}
+

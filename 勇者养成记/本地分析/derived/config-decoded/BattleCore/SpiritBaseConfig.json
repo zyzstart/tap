@@ -1,0 +1,269 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_fp_spiritbaseconfig.bytes.ab",
+    "path_id": -313157488669589358,
+    "name": "SpiritBaseConfig",
+    "sha256": "2806a8ef6dc3615c9bef9d9a83e0093e55571d643f8b2de8d8d1310a8ac1b0a9",
+    "export": "derived/unity/text/assets_resources_config_resbin_fp_spiritbaseconfig.bytes/SpiritBaseConfig__-313157488669589358.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 468,
+      "version": 1,
+      "record_count": 16,
+      "stored_crc32": "57d503c5",
+      "computed_inverted_crc32": "57d503c5"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "BattleCore",
+      "name": "SpiritBaseConfig",
+      "fields": [
+        {
+          "type": "uint",
+          "name": "SpiritID",
+          "object_offset": 16
+        },
+        {
+          "type": "FP",
+          "name": "OriginalModelSize",
+          "object_offset": 24
+        },
+        {
+          "type": "FP",
+          "name": "UpStarLvModelChangeBattle",
+          "object_offset": 32
+        },
+        {
+          "type": "uint",
+          "name": "ColorID",
+          "object_offset": 40
+        },
+        {
+          "type": "uint",
+          "name": "EffectID",
+          "object_offset": 44
+        }
+      ],
+      "unpack_va": 35219896,
+      "dump_line": 168496
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x21969ec",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x2196a10",
+        "target_va": "0x21f6938",
+        "opcode": "BL",
+        "reader": "readInt64",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x2196a34",
+        "target_va": "0x21f6938",
+        "opcode": "BL",
+        "reader": "readInt64",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x2196a58",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 40,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x2196a98",
+        "target_va": "0x21f6908",
+        "opcode": "B-tail",
+        "reader": "readUInt32",
+        "destination_object_offset": 44,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 16
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "SpiritID": 1,
+      "OriginalModelSize__raw_int64": 4939212390,
+      "UpStarLvModelChangeBattle__raw_int64": 214748364,
+      "ColorID": 1,
+      "EffectID": 6001,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 48,
+      "SpiritID": 2,
+      "OriginalModelSize__raw_int64": 4939212390,
+      "UpStarLvModelChangeBattle__raw_int64": 214748364,
+      "ColorID": 2,
+      "EffectID": 6002,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 76,
+      "SpiritID": 3,
+      "OriginalModelSize__raw_int64": 4939212390,
+      "UpStarLvModelChangeBattle__raw_int64": 214748364,
+      "ColorID": 3,
+      "EffectID": 6003,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 104,
+      "SpiritID": 4,
+      "OriginalModelSize__raw_int64": 4939212390,
+      "UpStarLvModelChangeBattle__raw_int64": 214748364,
+      "ColorID": 4,
+      "EffectID": 6004,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 132,
+      "SpiritID": 5,
+      "OriginalModelSize__raw_int64": 4939212390,
+      "UpStarLvModelChangeBattle__raw_int64": 214748364,
+      "ColorID": 5,
+      "EffectID": 6005,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 160,
+      "SpiritID": 6,
+      "OriginalModelSize__raw_int64": 4939212390,
+      "UpStarLvModelChangeBattle__raw_int64": 214748364,
+      "ColorID": 6,
+      "EffectID": 6006,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 188,
+      "SpiritID": 7,
+      "OriginalModelSize__raw_int64": 4939212390,
+      "UpStarLvModelChangeBattle__raw_int64": 214748364,
+      "ColorID": 7,
+      "EffectID": 6007,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 216,
+      "SpiritID": 8,
+      "OriginalModelSize__raw_int64": 4939212390,
+      "UpStarLvModelChangeBattle__raw_int64": 214748364,
+      "ColorID": 8,
+      "EffectID": 6008,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 244,
+      "SpiritID": 9,
+      "OriginalModelSize__raw_int64": 4939212390,
+      "UpStarLvModelChangeBattle__raw_int64": 214748364,
+      "ColorID": 9,
+      "EffectID": 6009,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 272,
+      "SpiritID": 10,
+      "OriginalModelSize__raw_int64": 6012954214,
+      "UpStarLvModelChangeBattle__raw_int64": 214748364,
+      "ColorID": 10,
+      "EffectID": 6010,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 300,
+      "SpiritID": 11,
+      "OriginalModelSize__raw_int64": 4939212390,
+      "UpStarLvModelChangeBattle__raw_int64": 214748364,
+      "ColorID": 11,
+      "EffectID": 6011,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 328,
+      "SpiritID": 12,
+      "OriginalModelSize__raw_int64": 4939212390,
+      "UpStarLvModelChangeBattle__raw_int64": 214748364,
+      "ColorID": 12,
+      "EffectID": 6012,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 356,
+      "SpiritID": 13,
+      "OriginalModelSize__raw_int64": 4939212390,
+      "UpStarLvModelChangeBattle__raw_int64": 214748364,
+      "ColorID": 13,
+      "EffectID": 6013,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 384,
+      "SpiritID": 14,
+      "OriginalModelSize__raw_int64": 4939212390,
+      "UpStarLvModelChangeBattle__raw_int64": 214748364,
+      "ColorID": 14,
+      "EffectID": 6014,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 412,
+      "SpiritID": 15,
+      "OriginalModelSize__raw_int64": 4939212390,
+      "UpStarLvModelChangeBattle__raw_int64": 214748364,
+      "ColorID": 15,
+      "EffectID": 6015,
+      "_byte_length": 28
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 440,
+      "SpiritID": 16,
+      "OriginalModelSize__raw_int64": 4939212390,
+      "UpStarLvModelChangeBattle__raw_int64": 214748364,
+      "ColorID": 16,
+      "EffectID": 6016,
+      "_byte_length": 28
+    }
+  ]
+}

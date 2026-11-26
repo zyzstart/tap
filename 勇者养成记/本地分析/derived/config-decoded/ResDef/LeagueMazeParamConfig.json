@@ -1,0 +1,151 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_leaguemazeparamconfig.bytes.ab",
+    "path_id": 7278355681424356401,
+    "name": "LeagueMazeParamConfig",
+    "sha256": "dc4c177ffc0fe260913e5eececbf9a5b5ff624bbbb24f201b40c7973badb049a",
+    "export": "derived/unity/text/assets_resources_config_resbin_leaguemazeparamconfig.bytes/LeagueMazeParamConfig__7278355681424356401.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 116,
+      "version": 1,
+      "record_count": 12,
+      "stored_crc32": "11b83b19",
+      "computed_inverted_crc32": "11b83b19"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "LeagueMazeParamConfig",
+      "fields": [
+        {
+          "type": "uint",
+          "name": "FuncID",
+          "object_offset": 16
+        },
+        {
+          "type": "uint",
+          "name": "FuncParam",
+          "object_offset": 20
+        }
+      ],
+      "unpack_va": 30748716,
+      "dump_line": 207076
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1d53060",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1d530a0",
+        "target_va": "0x21f6908",
+        "opcode": "B-tail",
+        "reader": "readUInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 12
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "FuncID": 1,
+      "FuncParam": 5,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 28,
+      "FuncID": 2,
+      "FuncParam": 119,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 36,
+      "FuncID": 3,
+      "FuncParam": 10,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 44,
+      "FuncID": 4,
+      "FuncParam": 30,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 52,
+      "FuncID": 5,
+      "FuncParam": 40,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 60,
+      "FuncID": 6,
+      "FuncParam": 9,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 68,
+      "FuncID": 7,
+      "FuncParam": 600,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 76,
+      "FuncID": 8,
+      "FuncParam": 10,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 84,
+      "FuncID": 9,
+      "FuncParam": 5,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 92,
+      "FuncID": 10,
+      "FuncParam": 9,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 100,
+      "FuncID": 11,
+      "FuncParam": 10,
+      "_byte_length": 8
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 108,
+      "FuncID": 12,
+      "FuncParam": 99052,
+      "_byte_length": 8
+    }
+  ]
+}

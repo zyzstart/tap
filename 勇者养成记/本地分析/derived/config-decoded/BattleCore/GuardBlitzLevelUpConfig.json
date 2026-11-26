@@ -1,0 +1,1281 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_fp_guardblitzlevelupconfig.bytes.ab",
+    "path_id": -5600575072348730019,
+    "name": "GuardBlitzLevelUpConfig",
+    "sha256": "f8842c2d4783c0227b66625116f82f23359469f35a14175d638f200c6dd08fc1",
+    "export": "derived/unity/text/assets_resources_config_resbin_fp_guardblitzlevelupconfig.bytes/GuardBlitzLevelUpConfig__-5600575072348730019.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 1820,
+      "version": 1,
+      "record_count": 150,
+      "stored_crc32": "6490b867",
+      "computed_inverted_crc32": "6490b867"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "BattleCore",
+      "name": "GuardBlitzLevelUpConfig",
+      "fields": [
+        {
+          "type": "int",
+          "name": "Difficult",
+          "object_offset": 16
+        },
+        {
+          "type": "int",
+          "name": "Lv",
+          "object_offset": 20
+        },
+        {
+          "type": "int",
+          "name": "Score",
+          "object_offset": 24
+        }
+      ],
+      "unpack_va": 23339540,
+      "dump_line": 166975
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1642248",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x164226c",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x16422ac",
+        "target_va": "0x21f67d0",
+        "opcode": "B-tail",
+        "reader": "readInt32",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 150
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "Difficult": 1,
+      "Lv": 1,
+      "Score": 10,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 32,
+      "Difficult": 1,
+      "Lv": 2,
+      "Score": 20,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 44,
+      "Difficult": 1,
+      "Lv": 3,
+      "Score": 30,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 56,
+      "Difficult": 1,
+      "Lv": 4,
+      "Score": 40,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 68,
+      "Difficult": 1,
+      "Lv": 5,
+      "Score": 60,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 80,
+      "Difficult": 1,
+      "Lv": 6,
+      "Score": 80,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 92,
+      "Difficult": 1,
+      "Lv": 7,
+      "Score": 100,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 104,
+      "Difficult": 1,
+      "Lv": 8,
+      "Score": 130,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 116,
+      "Difficult": 1,
+      "Lv": 9,
+      "Score": 160,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 128,
+      "Difficult": 1,
+      "Lv": 10,
+      "Score": 190,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 140,
+      "Difficult": 1,
+      "Lv": 11,
+      "Score": 220,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 152,
+      "Difficult": 1,
+      "Lv": 12,
+      "Score": 280,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 164,
+      "Difficult": 1,
+      "Lv": 13,
+      "Score": 300,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 176,
+      "Difficult": 1,
+      "Lv": 14,
+      "Score": 450,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 188,
+      "Difficult": 1,
+      "Lv": 15,
+      "Score": 600,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 200,
+      "Difficult": 2,
+      "Lv": 1,
+      "Score": 20,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 212,
+      "Difficult": 2,
+      "Lv": 2,
+      "Score": 40,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 224,
+      "Difficult": 2,
+      "Lv": 3,
+      "Score": 60,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 236,
+      "Difficult": 2,
+      "Lv": 4,
+      "Score": 80,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 19,
+      "_byte_offset": 248,
+      "Difficult": 2,
+      "Lv": 5,
+      "Score": 120,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 20,
+      "_byte_offset": 260,
+      "Difficult": 2,
+      "Lv": 6,
+      "Score": 160,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 21,
+      "_byte_offset": 272,
+      "Difficult": 2,
+      "Lv": 7,
+      "Score": 200,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 22,
+      "_byte_offset": 284,
+      "Difficult": 2,
+      "Lv": 8,
+      "Score": 260,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 23,
+      "_byte_offset": 296,
+      "Difficult": 2,
+      "Lv": 9,
+      "Score": 320,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 24,
+      "_byte_offset": 308,
+      "Difficult": 2,
+      "Lv": 10,
+      "Score": 380,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 25,
+      "_byte_offset": 320,
+      "Difficult": 2,
+      "Lv": 11,
+      "Score": 440,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 26,
+      "_byte_offset": 332,
+      "Difficult": 2,
+      "Lv": 12,
+      "Score": 560,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 27,
+      "_byte_offset": 344,
+      "Difficult": 2,
+      "Lv": 13,
+      "Score": 600,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 28,
+      "_byte_offset": 356,
+      "Difficult": 2,
+      "Lv": 14,
+      "Score": 900,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 29,
+      "_byte_offset": 368,
+      "Difficult": 2,
+      "Lv": 15,
+      "Score": 1200,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 30,
+      "_byte_offset": 380,
+      "Difficult": 3,
+      "Lv": 1,
+      "Score": 40,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 31,
+      "_byte_offset": 392,
+      "Difficult": 3,
+      "Lv": 2,
+      "Score": 80,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 32,
+      "_byte_offset": 404,
+      "Difficult": 3,
+      "Lv": 3,
+      "Score": 120,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 33,
+      "_byte_offset": 416,
+      "Difficult": 3,
+      "Lv": 4,
+      "Score": 160,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 34,
+      "_byte_offset": 428,
+      "Difficult": 3,
+      "Lv": 5,
+      "Score": 240,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 35,
+      "_byte_offset": 440,
+      "Difficult": 3,
+      "Lv": 6,
+      "Score": 320,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 36,
+      "_byte_offset": 452,
+      "Difficult": 3,
+      "Lv": 7,
+      "Score": 400,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 37,
+      "_byte_offset": 464,
+      "Difficult": 3,
+      "Lv": 8,
+      "Score": 520,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 38,
+      "_byte_offset": 476,
+      "Difficult": 3,
+      "Lv": 9,
+      "Score": 640,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 39,
+      "_byte_offset": 488,
+      "Difficult": 3,
+      "Lv": 10,
+      "Score": 760,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 40,
+      "_byte_offset": 500,
+      "Difficult": 3,
+      "Lv": 11,
+      "Score": 880,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 41,
+      "_byte_offset": 512,
+      "Difficult": 3,
+      "Lv": 12,
+      "Score": 1120,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 42,
+      "_byte_offset": 524,
+      "Difficult": 3,
+      "Lv": 13,
+      "Score": 1200,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 43,
+      "_byte_offset": 536,
+      "Difficult": 3,
+      "Lv": 14,
+      "Score": 1800,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 44,
+      "_byte_offset": 548,
+      "Difficult": 3,
+      "Lv": 15,
+      "Score": 2400,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 45,
+      "_byte_offset": 560,
+      "Difficult": 4,
+      "Lv": 1,
+      "Score": 80,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 46,
+      "_byte_offset": 572,
+      "Difficult": 4,
+      "Lv": 2,
+      "Score": 160,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 47,
+      "_byte_offset": 584,
+      "Difficult": 4,
+      "Lv": 3,
+      "Score": 240,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 48,
+      "_byte_offset": 596,
+      "Difficult": 4,
+      "Lv": 4,
+      "Score": 320,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 49,
+      "_byte_offset": 608,
+      "Difficult": 4,
+      "Lv": 5,
+      "Score": 480,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 50,
+      "_byte_offset": 620,
+      "Difficult": 4,
+      "Lv": 6,
+      "Score": 640,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 51,
+      "_byte_offset": 632,
+      "Difficult": 4,
+      "Lv": 7,
+      "Score": 800,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 52,
+      "_byte_offset": 644,
+      "Difficult": 4,
+      "Lv": 8,
+      "Score": 1040,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 53,
+      "_byte_offset": 656,
+      "Difficult": 4,
+      "Lv": 9,
+      "Score": 1280,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 54,
+      "_byte_offset": 668,
+      "Difficult": 4,
+      "Lv": 10,
+      "Score": 1520,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 55,
+      "_byte_offset": 680,
+      "Difficult": 4,
+      "Lv": 11,
+      "Score": 1760,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 56,
+      "_byte_offset": 692,
+      "Difficult": 4,
+      "Lv": 12,
+      "Score": 2240,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 57,
+      "_byte_offset": 704,
+      "Difficult": 4,
+      "Lv": 13,
+      "Score": 2400,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 58,
+      "_byte_offset": 716,
+      "Difficult": 4,
+      "Lv": 14,
+      "Score": 3600,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 59,
+      "_byte_offset": 728,
+      "Difficult": 4,
+      "Lv": 15,
+      "Score": 4800,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 60,
+      "_byte_offset": 740,
+      "Difficult": 5,
+      "Lv": 1,
+      "Score": 160,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 61,
+      "_byte_offset": 752,
+      "Difficult": 5,
+      "Lv": 2,
+      "Score": 320,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 62,
+      "_byte_offset": 764,
+      "Difficult": 5,
+      "Lv": 3,
+      "Score": 480,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 63,
+      "_byte_offset": 776,
+      "Difficult": 5,
+      "Lv": 4,
+      "Score": 640,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 64,
+      "_byte_offset": 788,
+      "Difficult": 5,
+      "Lv": 5,
+      "Score": 960,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 65,
+      "_byte_offset": 800,
+      "Difficult": 5,
+      "Lv": 6,
+      "Score": 1280,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 66,
+      "_byte_offset": 812,
+      "Difficult": 5,
+      "Lv": 7,
+      "Score": 1600,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 67,
+      "_byte_offset": 824,
+      "Difficult": 5,
+      "Lv": 8,
+      "Score": 2080,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 68,
+      "_byte_offset": 836,
+      "Difficult": 5,
+      "Lv": 9,
+      "Score": 2560,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 69,
+      "_byte_offset": 848,
+      "Difficult": 5,
+      "Lv": 10,
+      "Score": 3040,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 70,
+      "_byte_offset": 860,
+      "Difficult": 5,
+      "Lv": 11,
+      "Score": 3520,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 71,
+      "_byte_offset": 872,
+      "Difficult": 5,
+      "Lv": 12,
+      "Score": 4480,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 72,
+      "_byte_offset": 884,
+      "Difficult": 5,
+      "Lv": 13,
+      "Score": 4800,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 73,
+      "_byte_offset": 896,
+      "Difficult": 5,
+      "Lv": 14,
+      "Score": 7200,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 74,
+      "_byte_offset": 908,
+      "Difficult": 5,
+      "Lv": 15,
+      "Score": 9600,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 75,
+      "_byte_offset": 920,
+      "Difficult": 6,
+      "Lv": 1,
+      "Score": 320,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 76,
+      "_byte_offset": 932,
+      "Difficult": 6,
+      "Lv": 2,
+      "Score": 640,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 77,
+      "_byte_offset": 944,
+      "Difficult": 6,
+      "Lv": 3,
+      "Score": 960,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 78,
+      "_byte_offset": 956,
+      "Difficult": 6,
+      "Lv": 4,
+      "Score": 1280,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 79,
+      "_byte_offset": 968,
+      "Difficult": 6,
+      "Lv": 5,
+      "Score": 1920,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 80,
+      "_byte_offset": 980,
+      "Difficult": 6,
+      "Lv": 6,
+      "Score": 2560,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 81,
+      "_byte_offset": 992,
+      "Difficult": 6,
+      "Lv": 7,
+      "Score": 3200,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 82,
+      "_byte_offset": 1004,
+      "Difficult": 6,
+      "Lv": 8,
+      "Score": 4160,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 83,
+      "_byte_offset": 1016,
+      "Difficult": 6,
+      "Lv": 9,
+      "Score": 5120,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 84,
+      "_byte_offset": 1028,
+      "Difficult": 6,
+      "Lv": 10,
+      "Score": 6080,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 85,
+      "_byte_offset": 1040,
+      "Difficult": 6,
+      "Lv": 11,
+      "Score": 7040,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 86,
+      "_byte_offset": 1052,
+      "Difficult": 6,
+      "Lv": 12,
+      "Score": 8960,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 87,
+      "_byte_offset": 1064,
+      "Difficult": 6,
+      "Lv": 13,
+      "Score": 9600,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 88,
+      "_byte_offset": 1076,
+      "Difficult": 6,
+      "Lv": 14,
+      "Score": 14400,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 89,
+      "_byte_offset": 1088,
+      "Difficult": 6,
+      "Lv": 15,
+      "Score": 19200,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 90,
+      "_byte_offset": 1100,
+      "Difficult": 7,
+      "Lv": 1,
+      "Score": 640,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 91,
+      "_byte_offset": 1112,
+      "Difficult": 7,
+      "Lv": 2,
+      "Score": 1280,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 92,
+      "_byte_offset": 1124,
+      "Difficult": 7,
+      "Lv": 3,
+      "Score": 1920,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 93,
+      "_byte_offset": 1136,
+      "Difficult": 7,
+      "Lv": 4,
+      "Score": 2560,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 94,
+      "_byte_offset": 1148,
+      "Difficult": 7,
+      "Lv": 5,
+      "Score": 3840,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 95,
+      "_byte_offset": 1160,
+      "Difficult": 7,
+      "Lv": 6,
+      "Score": 5120,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 96,
+      "_byte_offset": 1172,
+      "Difficult": 7,
+      "Lv": 7,
+      "Score": 6400,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 97,
+      "_byte_offset": 1184,
+      "Difficult": 7,
+      "Lv": 8,
+      "Score": 8320,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 98,
+      "_byte_offset": 1196,
+      "Difficult": 7,
+      "Lv": 9,
+      "Score": 10240,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 99,
+      "_byte_offset": 1208,
+      "Difficult": 7,
+      "Lv": 10,
+      "Score": 12160,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 100,
+      "_byte_offset": 1220,
+      "Difficult": 7,
+      "Lv": 11,
+      "Score": 14080,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 101,
+      "_byte_offset": 1232,
+      "Difficult": 7,
+      "Lv": 12,
+      "Score": 17920,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 102,
+      "_byte_offset": 1244,
+      "Difficult": 7,
+      "Lv": 13,
+      "Score": 19200,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 103,
+      "_byte_offset": 1256,
+      "Difficult": 7,
+      "Lv": 14,
+      "Score": 28800,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 104,
+      "_byte_offset": 1268,
+      "Difficult": 7,
+      "Lv": 15,
+      "Score": 38400,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 105,
+      "_byte_offset": 1280,
+      "Difficult": 8,
+      "Lv": 1,
+      "Score": 640,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 106,
+      "_byte_offset": 1292,
+      "Difficult": 8,
+      "Lv": 2,
+      "Score": 1280,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 107,
+      "_byte_offset": 1304,
+      "Difficult": 8,
+      "Lv": 3,
+      "Score": 1920,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 108,
+      "_byte_offset": 1316,
+      "Difficult": 8,
+      "Lv": 4,
+      "Score": 2560,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 109,
+      "_byte_offset": 1328,
+      "Difficult": 8,
+      "Lv": 5,
+      "Score": 3840,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 110,
+      "_byte_offset": 1340,
+      "Difficult": 8,
+      "Lv": 6,
+      "Score": 5120,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 111,
+      "_byte_offset": 1352,
+      "Difficult": 8,
+      "Lv": 7,
+      "Score": 6400,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 112,
+      "_byte_offset": 1364,
+      "Difficult": 8,
+      "Lv": 8,
+      "Score": 8320,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 113,
+      "_byte_offset": 1376,
+      "Difficult": 8,
+      "Lv": 9,
+      "Score": 10240,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 114,
+      "_byte_offset": 1388,
+      "Difficult": 8,
+      "Lv": 10,
+      "Score": 12160,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 115,
+      "_byte_offset": 1400,
+      "Difficult": 8,
+      "Lv": 11,
+      "Score": 14080,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 116,
+      "_byte_offset": 1412,
+      "Difficult": 8,
+      "Lv": 12,
+      "Score": 17920,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 117,
+      "_byte_offset": 1424,
+      "Difficult": 8,
+      "Lv": 13,
+      "Score": 19200,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 118,
+      "_byte_offset": 1436,
+      "Difficult": 8,
+      "Lv": 14,
+      "Score": 28800,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 119,
+      "_byte_offset": 1448,
+      "Difficult": 8,
+      "Lv": 15,
+      "Score": 38400,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 120,
+      "_byte_offset": 1460,
+      "Difficult": 9,
+      "Lv": 1,
+      "Score": 640,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 121,
+      "_byte_offset": 1472,
+      "Difficult": 9,
+      "Lv": 2,
+      "Score": 1280,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 122,
+      "_byte_offset": 1484,
+      "Difficult": 9,
+      "Lv": 3,
+      "Score": 1920,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 123,
+      "_byte_offset": 1496,
+      "Difficult": 9,
+      "Lv": 4,
+      "Score": 2560,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 124,
+      "_byte_offset": 1508,
+      "Difficult": 9,
+      "Lv": 5,
+      "Score": 3840,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 125,
+      "_byte_offset": 1520,
+      "Difficult": 9,
+      "Lv": 6,
+      "Score": 5120,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 126,
+      "_byte_offset": 1532,
+      "Difficult": 9,
+      "Lv": 7,
+      "Score": 6400,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 127,
+      "_byte_offset": 1544,
+      "Difficult": 9,
+      "Lv": 8,
+      "Score": 8320,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 128,
+      "_byte_offset": 1556,
+      "Difficult": 9,
+      "Lv": 9,
+      "Score": 10240,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 129,
+      "_byte_offset": 1568,
+      "Difficult": 9,
+      "Lv": 10,
+      "Score": 12160,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 130,
+      "_byte_offset": 1580,
+      "Difficult": 9,
+      "Lv": 11,
+      "Score": 14080,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 131,
+      "_byte_offset": 1592,
+      "Difficult": 9,
+      "Lv": 12,
+      "Score": 17920,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 132,
+      "_byte_offset": 1604,
+      "Difficult": 9,
+      "Lv": 13,
+      "Score": 19200,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 133,
+      "_byte_offset": 1616,
+      "Difficult": 9,
+      "Lv": 14,
+      "Score": 28800,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 134,
+      "_byte_offset": 1628,
+      "Difficult": 9,
+      "Lv": 15,
+      "Score": 38400,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 135,
+      "_byte_offset": 1640,
+      "Difficult": 10,
+      "Lv": 1,
+      "Score": 640,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 136,
+      "_byte_offset": 1652,
+      "Difficult": 10,
+      "Lv": 2,
+      "Score": 1280,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 137,
+      "_byte_offset": 1664,
+      "Difficult": 10,
+      "Lv": 3,
+      "Score": 1920,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 138,
+      "_byte_offset": 1676,
+      "Difficult": 10,
+      "Lv": 4,
+      "Score": 2560,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 139,
+      "_byte_offset": 1688,
+      "Difficult": 10,
+      "Lv": 5,
+      "Score": 3840,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 140,
+      "_byte_offset": 1700,
+      "Difficult": 10,
+      "Lv": 6,
+      "Score": 5120,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 141,
+      "_byte_offset": 1712,
+      "Difficult": 10,
+      "Lv": 7,
+      "Score": 6400,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 142,
+      "_byte_offset": 1724,
+      "Difficult": 10,
+      "Lv": 8,
+      "Score": 8320,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 143,
+      "_byte_offset": 1736,
+      "Difficult": 10,
+      "Lv": 9,
+      "Score": 10240,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 144,
+      "_byte_offset": 1748,
+      "Difficult": 10,
+      "Lv": 10,
+      "Score": 12160,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 145,
+      "_byte_offset": 1760,
+      "Difficult": 10,
+      "Lv": 11,
+      "Score": 14080,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 146,
+      "_byte_offset": 1772,
+      "Difficult": 10,
+      "Lv": 12,
+      "Score": 17920,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 147,
+      "_byte_offset": 1784,
+      "Difficult": 10,
+      "Lv": 13,
+      "Score": 19200,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 148,
+      "_byte_offset": 1796,
+      "Difficult": 10,
+      "Lv": 14,
+      "Score": 28800,
+      "_byte_length": 12
+    },
+    {
+      "_record_index": 149,
+      "_byte_offset": 1808,
+      "Difficult": 10,
+      "Lv": 15,
+      "Score": 38400,
+      "_byte_length": 12
+    }
+  ]
+}

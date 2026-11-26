@@ -1,0 +1,681 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_custombossawardconfig.bytes.ab",
+    "path_id": 9208671898294395321,
+    "name": "CustomBossAwardConfig",
+    "sha256": "8d38f094b1ceaf6505ff71d81e2db41217fa1cbbb763d560e3f796f742c47a88",
+    "export": "derived/unity/text/assets_resources_config_resbin_custombossawardconfig.bytes/CustomBossAwardConfig__9208671898294395321.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 3181,
+      "version": 1,
+      "record_count": 75,
+      "stored_crc32": "8777bf4f",
+      "computed_inverted_crc32": "8777bf4f"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "CustomBossAwardConfig",
+      "fields": [
+        {
+          "type": "int",
+          "name": "HardPoint",
+          "object_offset": 16
+        },
+        {
+          "type": "string",
+          "name": "Desc",
+          "object_offset": 24
+        },
+        {
+          "type": "uint",
+          "name": "BootyID",
+          "object_offset": 32
+        }
+      ],
+      "unpack_va": 31257232,
+      "dump_line": 202948
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1dcf2c4",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dcf2ec",
+        "target_va": "0x21f6ce8",
+        "opcode": "BL",
+        "reader": "readString",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1dcf32c",
+        "target_va": "0x21f6908",
+        "opcode": "B-tail",
+        "reader": "readUInt32",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 75
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "HardPoint": 1000,
+      "Desc": "今日挑战难度达到1000",
+      "BootyID": 9000001,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 61,
+      "HardPoint": 1150,
+      "Desc": "今日挑战难度达到1150",
+      "BootyID": 9000002,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 102,
+      "HardPoint": 1450,
+      "Desc": "今日挑战难度达到1450",
+      "BootyID": 9000003,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 143,
+      "HardPoint": 1900,
+      "Desc": "今日挑战难度达到1900",
+      "BootyID": 9000004,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 184,
+      "HardPoint": 2350,
+      "Desc": "今日挑战难度达到2350",
+      "BootyID": 9000005,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 225,
+      "HardPoint": 3000,
+      "Desc": "今日挑战难度达到3000",
+      "BootyID": 9000006,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 266,
+      "HardPoint": 3200,
+      "Desc": "今日挑战难度达到3200",
+      "BootyID": 9000007,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 307,
+      "HardPoint": 3600,
+      "Desc": "今日挑战难度达到3600",
+      "BootyID": 9000008,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 348,
+      "HardPoint": 4200,
+      "Desc": "今日挑战难度达到4200",
+      "BootyID": 9000009,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 389,
+      "HardPoint": 4800,
+      "Desc": "今日挑战难度达到4800",
+      "BootyID": 9000010,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 430,
+      "HardPoint": 5000,
+      "Desc": "今日挑战难度达到5000",
+      "BootyID": 9000011,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 471,
+      "HardPoint": 5200,
+      "Desc": "今日挑战难度达到5200",
+      "BootyID": 9000012,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 12,
+      "_byte_offset": 512,
+      "HardPoint": 5600,
+      "Desc": "今日挑战难度达到5600",
+      "BootyID": 9000013,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 13,
+      "_byte_offset": 553,
+      "HardPoint": 6200,
+      "Desc": "今日挑战难度达到6200",
+      "BootyID": 9000014,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 14,
+      "_byte_offset": 594,
+      "HardPoint": 6800,
+      "Desc": "今日挑战难度达到6800",
+      "BootyID": 9000015,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 15,
+      "_byte_offset": 635,
+      "HardPoint": 7000,
+      "Desc": "今日挑战难度达到7000",
+      "BootyID": 9000016,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 16,
+      "_byte_offset": 676,
+      "HardPoint": 7300,
+      "Desc": "今日挑战难度达到7300",
+      "BootyID": 9000017,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 17,
+      "_byte_offset": 717,
+      "HardPoint": 7900,
+      "Desc": "今日挑战难度达到7900",
+      "BootyID": 9000018,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 18,
+      "_byte_offset": 758,
+      "HardPoint": 8800,
+      "Desc": "今日挑战难度达到8800",
+      "BootyID": 9000019,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 19,
+      "_byte_offset": 799,
+      "HardPoint": 9700,
+      "Desc": "今日挑战难度达到9700",
+      "BootyID": 9000020,
+      "_byte_length": 41
+    },
+    {
+      "_record_index": 20,
+      "_byte_offset": 840,
+      "HardPoint": 10000,
+      "Desc": "今日挑战难度达到10000",
+      "BootyID": 9000021,
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 21,
+      "_byte_offset": 882,
+      "HardPoint": 11000,
+      "Desc": "今日挑战难度达到11000",
+      "BootyID": 9000022,
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 22,
+      "_byte_offset": 924,
+      "HardPoint": 13000,
+      "Desc": "今日挑战难度达到13000",
+      "BootyID": 9000023,
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 23,
+      "_byte_offset": 966,
+      "HardPoint": 16000,
+      "Desc": "今日挑战难度达到16000",
+      "BootyID": 9000024,
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 24,
+      "_byte_offset": 1008,
+      "HardPoint": 19000,
+      "Desc": "今日挑战难度达到19000",
+      "BootyID": 9000025,
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 25,
+      "_byte_offset": 1050,
+      "HardPoint": 25000,
+      "Desc": "今日挑战难度达到25000",
+      "BootyID": 9000026,
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 26,
+      "_byte_offset": 1092,
+      "HardPoint": 26000,
+      "Desc": "今日挑战难度达到26000",
+      "BootyID": 9000027,
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 27,
+      "_byte_offset": 1134,
+      "HardPoint": 28000,
+      "Desc": "今日挑战难度达到28000",
+      "BootyID": 9000028,
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 28,
+      "_byte_offset": 1176,
+      "HardPoint": 31000,
+      "Desc": "今日挑战难度达到31000",
+      "BootyID": 9000029,
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 29,
+      "_byte_offset": 1218,
+      "HardPoint": 34000,
+      "Desc": "今日挑战难度达到34000",
+      "BootyID": 9000030,
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 30,
+      "_byte_offset": 1260,
+      "HardPoint": 40000,
+      "Desc": "今日挑战难度达到40000",
+      "BootyID": 9000031,
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 31,
+      "_byte_offset": 1302,
+      "HardPoint": 41300,
+      "Desc": "今日挑战难度达到41300",
+      "BootyID": 9000032,
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 32,
+      "_byte_offset": 1344,
+      "HardPoint": 43900,
+      "Desc": "今日挑战难度达到43900",
+      "BootyID": 9000033,
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 33,
+      "_byte_offset": 1386,
+      "HardPoint": 47800,
+      "Desc": "今日挑战难度达到47800",
+      "BootyID": 9000034,
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 34,
+      "_byte_offset": 1428,
+      "HardPoint": 51700,
+      "Desc": "今日挑战难度达到51700",
+      "BootyID": 9000035,
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 35,
+      "_byte_offset": 1470,
+      "HardPoint": 60000,
+      "Desc": "今日挑战难度达到60000",
+      "BootyID": 9000036,
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 36,
+      "_byte_offset": 1512,
+      "HardPoint": 61400,
+      "Desc": "今日挑战难度达到61400",
+      "BootyID": 9000037,
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 37,
+      "_byte_offset": 1554,
+      "HardPoint": 64200,
+      "Desc": "今日挑战难度达到64200",
+      "BootyID": 9000038,
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 38,
+      "_byte_offset": 1596,
+      "HardPoint": 68400,
+      "Desc": "今日挑战难度达到68400",
+      "BootyID": 9000039,
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 39,
+      "_byte_offset": 1638,
+      "HardPoint": 72600,
+      "Desc": "今日挑战难度达到72600",
+      "BootyID": 9000040,
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 40,
+      "_byte_offset": 1680,
+      "HardPoint": 80000,
+      "Desc": "今日挑战难度达到80000",
+      "BootyID": 9000041,
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 41,
+      "_byte_offset": 1722,
+      "HardPoint": 81500,
+      "Desc": "今日挑战难度达到81500",
+      "BootyID": 9000042,
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 42,
+      "_byte_offset": 1764,
+      "HardPoint": 84500,
+      "Desc": "今日挑战难度达到84500",
+      "BootyID": 9000043,
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 43,
+      "_byte_offset": 1806,
+      "HardPoint": 89000,
+      "Desc": "今日挑战难度达到89000",
+      "BootyID": 9000044,
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 44,
+      "_byte_offset": 1848,
+      "HardPoint": 93500,
+      "Desc": "今日挑战难度达到93500",
+      "BootyID": 9000045,
+      "_byte_length": 42
+    },
+    {
+      "_record_index": 45,
+      "_byte_offset": 1890,
+      "HardPoint": 100000,
+      "Desc": "今日挑战难度达到100000",
+      "BootyID": 9000046,
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 46,
+      "_byte_offset": 1933,
+      "HardPoint": 101600,
+      "Desc": "今日挑战难度达到101600",
+      "BootyID": 9000047,
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 47,
+      "_byte_offset": 1976,
+      "HardPoint": 104800,
+      "Desc": "今日挑战难度达到104800",
+      "BootyID": 9000048,
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 48,
+      "_byte_offset": 2019,
+      "HardPoint": 109600,
+      "Desc": "今日挑战难度达到109600",
+      "BootyID": 9000049,
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 49,
+      "_byte_offset": 2062,
+      "HardPoint": 114400,
+      "Desc": "今日挑战难度达到114400",
+      "BootyID": 9000050,
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 50,
+      "_byte_offset": 2105,
+      "HardPoint": 120000,
+      "Desc": "今日挑战难度达到120000",
+      "BootyID": 9000051,
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 51,
+      "_byte_offset": 2148,
+      "HardPoint": 152000,
+      "Desc": "今日挑战难度达到152000",
+      "BootyID": 9000052,
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 52,
+      "_byte_offset": 2191,
+      "HardPoint": 216000,
+      "Desc": "今日挑战难度达到216000",
+      "BootyID": 9000053,
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 53,
+      "_byte_offset": 2234,
+      "HardPoint": 312000,
+      "Desc": "今日挑战难度达到312000",
+      "BootyID": 9000054,
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 54,
+      "_byte_offset": 2277,
+      "HardPoint": 408000,
+      "Desc": "今日挑战难度达到408000",
+      "BootyID": 9000055,
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 55,
+      "_byte_offset": 2320,
+      "HardPoint": 240000,
+      "Desc": "今日挑战难度达到240000",
+      "BootyID": 9000056,
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 56,
+      "_byte_offset": 2363,
+      "HardPoint": 278000,
+      "Desc": "今日挑战难度达到278000",
+      "BootyID": 9000057,
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 57,
+      "_byte_offset": 2406,
+      "HardPoint": 354000,
+      "Desc": "今日挑战难度达到354000",
+      "BootyID": 9000058,
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 58,
+      "_byte_offset": 2449,
+      "HardPoint": 468000,
+      "Desc": "今日挑战难度达到468000",
+      "BootyID": 9000059,
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 59,
+      "_byte_offset": 2492,
+      "HardPoint": 582000,
+      "Desc": "今日挑战难度达到582000",
+      "BootyID": 9000060,
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 60,
+      "_byte_offset": 2535,
+      "HardPoint": 360000,
+      "Desc": "今日挑战难度达到360000",
+      "BootyID": 9000061,
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 61,
+      "_byte_offset": 2578,
+      "HardPoint": 402800,
+      "Desc": "今日挑战难度达到402800",
+      "BootyID": 9000062,
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 62,
+      "_byte_offset": 2621,
+      "HardPoint": 488400,
+      "Desc": "今日挑战难度达到488400",
+      "BootyID": 9000063,
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 63,
+      "_byte_offset": 2664,
+      "HardPoint": 616800,
+      "Desc": "今日挑战难度达到616800",
+      "BootyID": 9000064,
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 64,
+      "_byte_offset": 2707,
+      "HardPoint": 745200,
+      "Desc": "今日挑战难度达到745200",
+      "BootyID": 9000065,
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 65,
+      "_byte_offset": 2750,
+      "HardPoint": 480000,
+      "Desc": "今日挑战难度达到480000",
+      "BootyID": 9000066,
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 66,
+      "_byte_offset": 2793,
+      "HardPoint": 528000,
+      "Desc": "今日挑战难度达到528000",
+      "BootyID": 9000067,
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 67,
+      "_byte_offset": 2836,
+      "HardPoint": 624000,
+      "Desc": "今日挑战难度达到624000",
+      "BootyID": 9000068,
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 68,
+      "_byte_offset": 2879,
+      "HardPoint": 768000,
+      "Desc": "今日挑战难度达到768000",
+      "BootyID": 9000069,
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 69,
+      "_byte_offset": 2922,
+      "HardPoint": 912000,
+      "Desc": "今日挑战难度达到912000",
+      "BootyID": 9000070,
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 70,
+      "_byte_offset": 2965,
+      "HardPoint": 600000,
+      "Desc": "今日挑战难度达到600000",
+      "BootyID": 9000071,
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 71,
+      "_byte_offset": 3008,
+      "HardPoint": 654000,
+      "Desc": "今日挑战难度达到654000",
+      "BootyID": 9000072,
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 72,
+      "_byte_offset": 3051,
+      "HardPoint": 762000,
+      "Desc": "今日挑战难度达到762000",
+      "BootyID": 9000073,
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 73,
+      "_byte_offset": 3094,
+      "HardPoint": 924000,
+      "Desc": "今日挑战难度达到924000",
+      "BootyID": 9000074,
+      "_byte_length": 43
+    },
+    {
+      "_record_index": 74,
+      "_byte_offset": 3137,
+      "HardPoint": 1086000,
+      "Desc": "今日挑战难度达到1086000",
+      "BootyID": 9000075,
+      "_byte_length": 44
+    }
+  ]
+}

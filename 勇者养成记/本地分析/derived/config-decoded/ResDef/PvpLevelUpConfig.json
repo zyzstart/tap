@@ -1,0 +1,177 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_pvplevelupconfig.bytes.ab",
+    "path_id": 6974238603910308969,
+    "name": "PvpLevelUpConfig",
+    "sha256": "abe747061b3f81a3b4b6c68558890185440b02850dd1af1e36a110840c7900a8",
+    "export": "derived/unity/text/assets_resources_config_resbin_pvplevelupconfig.bytes/PvpLevelUpConfig__6974238603910308969.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 320,
+      "version": 1,
+      "record_count": 12,
+      "stored_crc32": "216cb093",
+      "computed_inverted_crc32": "216cb093"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "ResDef",
+      "name": "PvpLevelUpConfig",
+      "fields": [
+        {
+          "type": "int",
+          "name": "Lv",
+          "object_offset": 16
+        },
+        {
+          "type": "int",
+          "name": "Exp",
+          "object_offset": 20
+        },
+        {
+          "type": "string",
+          "name": "IOSVestBag",
+          "object_offset": 24
+        }
+      ],
+      "unpack_va": 32028000,
+      "dump_line": 210116
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x1e8b594",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8b5b8",
+        "target_va": "0x21f67d0",
+        "opcode": "BL",
+        "reader": "readInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x1e8b5fc",
+        "target_va": "0x21f6ce8",
+        "opcode": "B-tail",
+        "reader": "readString",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 12
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "Lv": 1,
+      "Exp": 3,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 25
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 45,
+      "Lv": 2,
+      "Exp": 3,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 25
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 70,
+      "Lv": 3,
+      "Exp": 4,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 25
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 95,
+      "Lv": 4,
+      "Exp": 4,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 25
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 120,
+      "Lv": 5,
+      "Exp": 4,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 25
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 145,
+      "Lv": 6,
+      "Exp": 5,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 25
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 170,
+      "Lv": 7,
+      "Exp": 5,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 25
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 195,
+      "Lv": 8,
+      "Exp": 5,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 25
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 220,
+      "Lv": 9,
+      "Exp": 6,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 25
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 245,
+      "Lv": 10,
+      "Exp": 6,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 25
+    },
+    {
+      "_record_index": 10,
+      "_byte_offset": 270,
+      "Lv": 11,
+      "Exp": 6,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 25
+    },
+    {
+      "_record_index": 11,
+      "_byte_offset": 295,
+      "Lv": 12,
+      "Exp": 6,
+      "IOSVestBag": "IOS马甲包",
+      "_byte_length": 25
+    }
+  ]
+}

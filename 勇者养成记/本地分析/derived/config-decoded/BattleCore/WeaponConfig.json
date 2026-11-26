@@ -1,0 +1,185 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_fp_weaponconfig.bytes.ab",
+    "path_id": -442447586500942334,
+    "name": "WeaponConfig",
+    "sha256": "0c3d488acaf3b8ddb7538663a43287b77356137259b5fc4e6b1235e035c9e859",
+    "export": "derived/unity/text/assets_resources_config_resbin_fp_weaponconfig.bytes/WeaponConfig__-442447586500942334.bin",
+    "status": "decoded-validated-static",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 230,
+      "version": 1,
+      "record_count": 10,
+      "stored_crc32": "5c410962",
+      "computed_inverted_crc32": "5c410962"
+    },
+    "schema_selection": "Namespace preference from fp bundle prefix",
+    "schema": {
+      "namespace": "BattleCore",
+      "name": "WeaponConfig",
+      "fields": [
+        {
+          "type": "byte",
+          "name": "WeaponType",
+          "object_offset": 16
+        },
+        {
+          "type": "uint",
+          "name": "AttackSkillID",
+          "object_offset": 20
+        },
+        {
+          "type": "FP",
+          "name": "AttackSpeed",
+          "object_offset": 24
+        },
+        {
+          "type": "FP",
+          "name": "PvpBulletDisappearTime",
+          "object_offset": 32
+        }
+      ],
+      "unpack_va": 35223388,
+      "dump_line": 167370
+    },
+    "unpack_reader_calls": [
+      {
+        "instruction_va": "0x2197790",
+        "target_va": "0x21f65e0",
+        "opcode": "BL",
+        "reader": "readUInt8",
+        "destination_object_offset": 16,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x21977b4",
+        "target_va": "0x21f6908",
+        "opcode": "BL",
+        "reader": "readUInt32",
+        "destination_object_offset": 20,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x21977d8",
+        "target_va": "0x21f6938",
+        "opcode": "BL",
+        "reader": "readInt64",
+        "destination_object_offset": 24,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      },
+      {
+        "instruction_va": "0x2197818",
+        "target_va": "0x21f6938",
+        "opcode": "B-tail",
+        "reader": "readInt64",
+        "destination_object_offset": 32,
+        "receiver_is_entry_buffer": true,
+        "sequential_overload_verified": true
+      }
+    ],
+    "native_analysis_checks": {
+      "local_cfg_acyclic": true,
+      "reader_order_dominates": true,
+      "scan_not_capped": true,
+      "callee_saved_register_assumption": "AAPCS64; callees not independently proved"
+    },
+    "decoded_record_count": 10
+  },
+  "validation": "Big-endian header/size/inverted payload CRC; reader-call sequence and destination object offsets (bounded local-branch CFG, conservative MOV/ADD register tracking and ABI clobbers); record count; UTF-8 string terminators; exact EOF. Not full control-flow or runtime verification. FP columns are raw int64.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "WeaponType": 0,
+      "AttackSkillID": 1004,
+      "AttackSpeed__raw_int64": 2147483648,
+      "PvpBulletDisappearTime__raw_int64": 2147483648,
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 41,
+      "WeaponType": 1,
+      "AttackSkillID": 1001,
+      "AttackSpeed__raw_int64": 2147483648,
+      "PvpBulletDisappearTime__raw_int64": 2147483648,
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 2,
+      "_byte_offset": 62,
+      "WeaponType": 2,
+      "AttackSkillID": 1002,
+      "AttackSpeed__raw_int64": 2576980377,
+      "PvpBulletDisappearTime__raw_int64": 2147483648,
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 3,
+      "_byte_offset": 83,
+      "WeaponType": 3,
+      "AttackSkillID": 1003,
+      "AttackSpeed__raw_int64": 2147483648,
+      "PvpBulletDisappearTime__raw_int64": 2147483648,
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 4,
+      "_byte_offset": 104,
+      "WeaponType": 4,
+      "AttackSkillID": 1004,
+      "AttackSpeed__raw_int64": 2362232012,
+      "PvpBulletDisappearTime__raw_int64": 2147483648,
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 5,
+      "_byte_offset": 125,
+      "WeaponType": 5,
+      "AttackSkillID": 0,
+      "AttackSpeed__raw_int64": 0,
+      "PvpBulletDisappearTime__raw_int64": 0,
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 6,
+      "_byte_offset": 146,
+      "WeaponType": 6,
+      "AttackSkillID": 1005,
+      "AttackSpeed__raw_int64": 2147483648,
+      "PvpBulletDisappearTime__raw_int64": 2147483648,
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 7,
+      "_byte_offset": 167,
+      "WeaponType": 7,
+      "AttackSkillID": 1006,
+      "AttackSpeed__raw_int64": 2576980377,
+      "PvpBulletDisappearTime__raw_int64": 2147483648,
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 8,
+      "_byte_offset": 188,
+      "WeaponType": 8,
+      "AttackSkillID": 1007,
+      "AttackSpeed__raw_int64": 2147483648,
+      "PvpBulletDisappearTime__raw_int64": 2147483648,
+      "_byte_length": 21
+    },
+    {
+      "_record_index": 9,
+      "_byte_offset": 209,
+      "WeaponType": 9,
+      "AttackSkillID": 1008,
+      "AttackSpeed__raw_int64": 2362232012,
+      "PvpBulletDisappearTime__raw_int64": 2147483648,
+      "_byte_length": 21
+    }
+  ]
+}

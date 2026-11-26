@@ -1,0 +1,109 @@
+{
+  "source": {
+    "bundle": "assets/ab/assets_resources_config_resbin_takecardconfig.bytes.ab",
+    "path_id": -4031358007871526891,
+    "name": "TakeCardConfig",
+    "sha256": "6ea58401628e524e50d5020515b997423e849c7a041e441ee2c281d22faca231",
+    "export": "derived/unity/text/assets_resources_config_resbin_takecardconfig.bytes/TakeCardConfig__-4031358007871526891.bin",
+    "schema": "ResDef.TakeCardConfig",
+    "path_id_decimal": "-4031358007871526891",
+    "legacy_status": "raw-header-verified",
+    "legacy_reason": "Unsupported arrays/nested/enum fields: uint[] AwardID",
+    "status": "decoded-validated-native-recursive",
+    "header": {
+      "tag": "0x2def",
+      "file_size": 216,
+      "version": 1,
+      "record_count": 2,
+      "stored_crc32": "17132abe",
+      "computed_inverted_crc32": "17132abe"
+    },
+    "native_layout_verified": true,
+    "schema_file": "derived/config-extended/schemas/ResDef.TakeCardConfig.json",
+    "minimum_record_size": 88,
+    "min_expected_payload_bytes": 176,
+    "actual_payload_bytes": 196,
+    "decoded_record_count": 2,
+    "validation": {
+      "header_verified": true,
+      "count_verified": true,
+      "exact_eof": true,
+      "full_reencode_equal": true,
+      "full_reencode_sha256": "6ea58401628e524e50d5020515b997423e849c7a041e441ee2c281d22faca231",
+      "decoded_node_count": 46,
+      "payload_bytes": 196
+    },
+    "arrays": [
+      {
+        "field": "AwardID",
+        "count": 10,
+        "count_encoding": "none-native-fixed"
+      }
+    ],
+    "decoded_json": "derived/config-extended/ResDef/TakeCardConfig.json",
+    "decoded_csv": "derived/config-extended/ResDef/TakeCardConfig.csv"
+  },
+  "precision": "Exact JSON integer number tokens, with decimal-string mirrors for every int64/uint64/FP. FP is raw signed int64; no scaling.",
+  "records": [
+    {
+      "_record_index": 0,
+      "_byte_offset": 20,
+      "TakeCardType": 1,
+      "MultyTakeCnt": 5,
+      "TakeCardName": "游学1次",
+      "NextTakeDesc": "",
+      "MoneyType": 2,
+      "MoneyValOnce": 6000,
+      "MoneyValMulty": 30000,
+      "CostItemID": 200019,
+      "FreeTime": 0,
+      "FirstAwardID": 0,
+      "MaxFreeNumDaily": 0,
+      "MaxNumDaily": 30,
+      "AddCardChipNum": 5,
+      "AwardID": [
+        1011,
+        1011,
+        1011,
+        1011,
+        1011,
+        1011,
+        1011,
+        1011,
+        1011,
+        1011
+      ],
+      "_byte_length": 98
+    },
+    {
+      "_record_index": 1,
+      "_byte_offset": 118,
+      "TakeCardType": 2,
+      "MultyTakeCnt": 5,
+      "TakeCardName": "闯荡1次",
+      "NextTakeDesc": "",
+      "MoneyType": 3,
+      "MoneyValOnce": 60,
+      "MoneyValMulty": 300,
+      "CostItemID": 200020,
+      "FreeTime": 86400,
+      "FirstAwardID": 0,
+      "MaxFreeNumDaily": 1,
+      "MaxNumDaily": 30,
+      "AddCardChipNum": 25,
+      "AwardID": [
+        1012,
+        1012,
+        1012,
+        1012,
+        1012,
+        1012,
+        1012,
+        1012,
+        1012,
+        1012
+      ],
+      "_byte_length": 98
+    }
+  ]
+}

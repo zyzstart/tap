@@ -1,0 +1,441 @@
+
+A3Game.BattleSys$$InitCameraMgr
+e7ee34 stp x22, x21, [sp, #-0x30]!
+e7ee38 stp x20, x19, [sp, #0x10]
+e7ee3c stp x29, x30, [sp, #0x20]
+e7ee40 add x29, sp, #0x20
+e7ee44 adrp x20, #0x2f3b000
+e7ee48 ldrb w8, [x20, #0x289]
+e7ee4c mov x19, x0
+e7ee50 tbnz w8, #0, #0xe7ee6c
+e7ee54 adrp x8, #0x2cfe000
+e7ee58 ldr x8, [x8, #0xc38]
+e7ee5c ldr w0, [x8]
+e7ee60 bl #0xd04f28
+e7ee64 mov w8, #1
+e7ee68 strb w8, [x20, #0x289]
+e7ee6c adrp x8, #0x2d1f000
+e7ee70 ldr x8, [x8, #0x320]
+e7ee74 ldr x0, [x8]
+e7ee78 bl #0xd38978
+e7ee7c mov x1, xzr
+e7ee80 mov x20, x0
+e7ee84 bl #0x1051d7c A3Game.CameraMgr$$.ctor
+e7ee88 str x20, [x19, #0x58]
+e7ee8c adrp x8, #0x2cd6000
+e7ee90 ldr x8, [x8, #0xa58]
+e7ee94 mov x1, xzr
+e7ee98 ldr x0, [x8]
+e7ee9c bl #0x1c587ac UnityEngine.GameObject$$Find
+e7eea0 adrp x8, #0x2c78000
+e7eea4 ldr x8, [x8, #0x1b8]
+e7eea8 mov x20, x0
+e7eeac ldr x8, [x8]
+e7eeb0 ldrb w9, [x8, #0x127]
+e7eeb4 tbz w9, #1, #0xe7eec8
+e7eeb8 ldr w9, [x8, #0xd8]
+e7eebc cbnz w9, #0xe7eec8
+e7eec0 mov x0, x8
+e7eec4 bl #0xd14168
+e7eec8 mov x0, x20
+e7eecc mov x1, xzr
+e7eed0 mov x2, xzr
+e7eed4 bl #0x1bdd4dc UnityEngine.Object$$op_Inequality
+e7eed8 adrp x8, #0x2cec000
+e7eedc ldr x8, [x8, #0x808]
+e7eee0 mov w21, w0
+e7eee4 mov x1, xzr
+e7eee8 ldr x8, [x8]
+e7eeec mov x0, x8
+e7eef0 bl #0xd3e178
+e7eef4 adrp x8, #0x2c99000
+e7eef8 ldr x8, [x8, #0xb28]
+e7eefc mov x22, x0
+e7ef00 ldr x8, [x8]
+e7ef04 ldrb w9, [x8, #0x127]
+e7ef08 tbz w9, #1, #0xe7ef1c
+e7ef0c ldr w9, [x8, #0xd8]
+e7ef10 cbnz w9, #0xe7ef1c
+e7ef14 mov x0, x8
+e7ef18 bl #0xd14168
+e7ef1c adrp x8, #0x2cf5000
+e7ef20 ldr x8, [x8, #0x1e0]
+e7ef24 and w0, w21, #1
+e7ef28 mov x2, x22
+e7ef2c mov x3, xzr
+e7ef30 ldr x1, [x8]
+e7ef34 bl #0xea1d60 A3Game.DLogger$$EditorAssert
+e7ef38 ldr x19, [x19, #0x58]
+e7ef3c cbnz x19, #0xe7ef48
+e7ef40 mov x0, xzr
+e7ef44 bl #0xd2b72c
+e7ef48 mov x0, x19
+e7ef4c mov x1, x20
+e7ef50 ldp x29, x30, [sp, #0x20]
+e7ef54 ldp x20, x19, [sp, #0x10]
+e7ef58 mov x2, xzr
+e7ef5c ldp x22, x21, [sp], #0x30
+e7ef60 b #0x1051574 A3Game.CameraMgr$$Init
+
+A3Game.CameraMgr$$Init
+1051574 str d8, [sp, #-0x30]!
+1051578 str x21, [sp, #8]
+105157c stp x20, x19, [sp, #0x10]
+1051580 stp x29, x30, [sp, #0x20]
+1051584 add x29, sp, #0x20
+1051588 adrp x21, #0x2f3c000
+105158c ldrb w8, [x21, #0x429]
+1051590 mov x20, x1
+1051594 mov x19, x0
+1051598 tbnz w8, #0, #0x10515b4
+105159c adrp x8, #0x2d12000
+10515a0 ldr x8, [x8, #0xf10]
+10515a4 ldr w0, [x8]
+10515a8 bl #0xd04f28
+10515ac mov w8, #1
+10515b0 strb w8, [x21, #0x429]
+10515b4 str x20, [x19, #0x10]
+10515b8 cbnz x20, #0x10515c4
+10515bc mov x0, xzr
+10515c0 bl #0xd2b72c
+10515c4 mov x0, x20
+10515c8 mov x1, xzr
+10515cc bl #0x1c583a8 UnityEngine.GameObject$$get_transform
+10515d0 mov x21, x0
+10515d4 str x21, [x19, #0x28]
+10515d8 cbnz x21, #0x10515e0
+10515dc bl #0xd2b72c
+10515e0 mov x0, x21
+10515e4 mov x1, xzr
+10515e8 bl #0x21784f4 UnityEngine.Transform$$get_localPosition
+10515ec stp s0, s1, [x19, #0x18]
+10515f0 str s2, [x19, #0x20]
+10515f4 cbnz x20, #0x1051600
+10515f8 mov x0, xzr
+10515fc bl #0xd2b72c
+1051600 adrp x8, #0x2ca9000
+1051604 ldr x8, [x8, #0x670]
+1051608 mov x0, x20
+105160c ldr x1, [x8]
+1051610 bl #0x216e560 UnityEngine.GameObject$$GetComponentInChildren<object>
+1051614 str x0, [x19, #0x30]
+1051618 cbnz x20, #0x1051624
+105161c mov x0, xzr
+1051620 bl #0xd2b72c
+1051624 adrp x8, #0x2caa000
+1051628 ldr x8, [x8, #0x468]
+105162c mov x0, x20
+1051630 ldr x1, [x8]
+1051634 bl #0x216e560 UnityEngine.GameObject$$GetComponentInChildren<object>
+1051638 str x0, [x19, #0x38]
+105163c adrp x8, #0x2c78000
+1051640 ldr x8, [x8, #0x1b8]
+1051644 ldr x20, [x19, #0x30]
+1051648 ldr x0, [x8]
+105164c ldrb w8, [x0, #0x127]
+1051650 tbz w8, #1, #0x1051660
+1051654 ldr w8, [x0, #0xd8]
+1051658 cbnz w8, #0x1051660
+105165c bl #0xd14168
+1051660 mov x0, x20
+1051664 mov x1, xzr
+1051668 mov x2, xzr
+105166c bl #0x1bdd4dc UnityEngine.Object$$op_Inequality
+1051670 tbz w0, #0, #0x10516b8
+1051674 bl #0x10516e8 A3Game.CameraMgr$$GetBaseWidth
+1051678 mov w20, w0
+105167c str w20, [x19, #0x58]
+1051680 adrp x8, #0x2cd3000
+1051684 ldr x8, [x8, #0xf38]
+1051688 ldr x21, [x19, #0x30]
+105168c ldr x8, [x8]
+1051690 ldr x8, [x8, #0xb8]
+1051694 ldr s8, [x8, #8]
+1051698 cbnz x21, #0x10516a4
+105169c mov x0, xzr
+10516a0 bl #0xd2b72c
+10516a4 scvtf s0, w20
+10516a8 fmul s0, s8, s0
+10516ac mov x0, x21
+10516b0 mov x1, xzr
+10516b4 bl #0x1c4f0a4 UnityEngine.Camera$$set_orthographicSize
+10516b8 ldr x19, [x19, #0x10]
+10516bc cbnz x19, #0x10516c8
+10516c0 mov x0, xzr
+10516c4 bl #0xd2b72c
+10516c8 mov x0, x19
+10516cc ldp x29, x30, [sp, #0x20]
+10516d0 ldp x20, x19, [sp, #0x10]
+10516d4 ldr x21, [sp, #8]
+10516d8 mov w1, wzr
+10516dc mov x2, xzr
+10516e0 ldr d8, [sp], #0x30
+10516e4 b #0x1c58560 UnityEngine.GameObject$$SetActive
+
+A3Game.CameraMgr$$GetBaseWidth
+10516e8 str x19, [sp, #-0x20]!
+10516ec stp x29, x30, [sp, #0x10]
+10516f0 add x29, sp, #0x10
+10516f4 adrp x19, #0x2f3c000
+10516f8 ldrb w8, [x19, #0x42e]
+10516fc tbnz w8, #0, #0x1051718
+1051700 adrp x8, #0x2cb9000
+1051704 ldr x8, [x8, #0xb08]
+1051708 ldr w0, [x8]
+105170c bl #0xd04f28
+1051710 mov w8, #1
+1051714 strb w8, [x19, #0x42e]
+1051718 adrp x8, #0x2cc5000
+105171c ldr x8, [x8, #0x498]
+1051720 ldr x0, [x8]
+1051724 bl #0x17ec894 A3Game.BaseLogicSys<object>$$get_Instance
+1051728 mov x19, x0
+105172c cbnz x19, #0x1051734
+1051730 bl #0xd2b72c
+1051734 mov x0, x19
+1051738 mov x1, xzr
+105173c bl #0xe7bb14 A3Game.BattleSys$$IsYiJieShouChao
+1051740 tbz w0, #0, #0x1051778
+1051744 adrp x8, #0x2c94000
+1051748 ldr x8, [x8, #0xdf0]
+105174c ldr x0, [x8]
+1051750 bl #0x17fa038 A3Game.Singleton<UISpriteHelper>$$get_Instance
+1051754 mov x19, x0
+1051758 cbnz x19, #0x1051760
+105175c bl #0xd2b72c
+1051760 mov w1, #0xc
+1051764 mov x0, x19
+1051768 mov x2, xzr
+105176c bl #0xe8f7d4 A3Game.BeastTideConfigMgr$$GetBeastTideParam
+1051770 fcvtzs w0, s0
+1051774 b #0x105177c
+1051778 mov w0, #0xb
+105177c ldp x29, x30, [sp, #0x10]
+1051780 ldr x19, [sp], #0x20
+1051784 ret
+
+A3Game.CameraMgr$$.ctor
+1051d7c stp x20, x19, [sp, #-0x20]!
+1051d80 stp x29, x30, [sp, #0x10]
+1051d84 add x29, sp, #0x10
+1051d88 adrp x20, #0x2f3c000
+1051d8c ldrb w8, [x20, #0x42f]
+1051d90 mov x19, x0
+1051d94 tbnz w8, #0, #0x1051db0
+1051d98 adrp x8, #0x2cb5000
+1051d9c ldr x8, [x8, #0x2e0]
+1051da0 ldr w0, [x8]
+1051da4 bl #0xd04f28
+1051da8 mov w8, #1
+1051dac strb w8, [x20, #0x42f]
+1051db0 adrp x8, #0x2ce5000
+1051db4 ldr x8, [x8, #0x4f0]
+1051db8 ldr x0, [x8]
+1051dbc bl #0xd38978
+1051dc0 mov x1, xzr
+1051dc4 mov x20, x0
+1051dc8 bl #0x16ec9fc A3Game.CameraSmooth$$.ctor
+1051dcc mov w8, #0xb
+1051dd0 str x20, [x19, #0x50]
+1051dd4 str w8, [x19, #0x58]
+1051dd8 ldp x29, x30, [sp, #0x10]
+1051ddc mov x0, x19
+1051de0 mov x1, xzr
+1051de4 ldp x20, x19, [sp], #0x20
+1051de8 b #0x1a0cdac System.Object$$.ctor
+
+A3Game.CameraMgr$$OnEnterBattle
+1051ae4 sub sp, sp, #0x40
+1051ae8 str d8, [sp, #0x10]
+1051aec str x21, [sp, #0x18]
+1051af0 stp x20, x19, [sp, #0x20]
+1051af4 stp x29, x30, [sp, #0x30]
+1051af8 add x29, sp, #0x30
+1051afc adrp x20, #0x2f3c000
+1051b00 ldrb w8, [x20, #0x42c]
+1051b04 mov x19, x0
+1051b08 tbnz w8, #0, #0x1051b24
+1051b0c adrp x8, #0x2cb4000
+1051b10 ldr x8, [x8, #0xa68]
+1051b14 ldr w0, [x8]
+1051b18 bl #0xd04f28
+1051b1c mov w8, #1
+1051b20 strb w8, [x20, #0x42c]
+1051b24 adrp x21, #0x2c78000
+1051b28 ldr x21, [x21, #0x1b8]
+1051b2c ldr x20, [x19, #0x10]
+1051b30 ldr x0, [x21]
+1051b34 ldrb w8, [x0, #0x127]
+1051b38 tbz w8, #1, #0x1051b48
+1051b3c ldr w8, [x0, #0xd8]
+1051b40 cbnz w8, #0x1051b48
+1051b44 bl #0xd14168
+1051b48 mov x0, x20
+1051b4c mov x1, xzr
+1051b50 mov x2, xzr
+1051b54 bl #0x1bda5e4 UnityEngine.Object$$op_Equality
+1051b58 tbnz w0, #0, #0x1051d2c
+1051b5c ldr x0, [x21]
+1051b60 ldr x20, [x19, #0x30]
+1051b64 ldrb w8, [x0, #0x127]
+1051b68 tbz w8, #1, #0x1051b78
+1051b6c ldr w8, [x0, #0xd8]
+1051b70 cbnz w8, #0x1051b78
+1051b74 bl #0xd14168
+1051b78 mov x0, x20
+1051b7c mov x1, xzr
+1051b80 mov x2, xzr
+1051b84 bl #0x1bda5e4 UnityEngine.Object$$op_Equality
+1051b88 tbnz w0, #0, #0x1051d2c
+1051b8c ldr x20, [x19, #0x10]
+1051b90 cbnz x20, #0x1051b9c
+1051b94 mov x0, xzr
+1051b98 bl #0xd2b72c
+1051b9c mov w1, #1
+1051ba0 mov x0, x20
+1051ba4 mov x2, xzr
+1051ba8 bl #0x1c58560 UnityEngine.GameObject$$SetActive
+1051bac adrp x21, #0x2cc5000
+1051bb0 ldr x21, [x21, #0x498]
+1051bb4 ldr x0, [x21]
+1051bb8 bl #0x17ec894 A3Game.BaseLogicSys<object>$$get_Instance
+1051bbc mov x20, x0
+1051bc0 cbnz x20, #0x1051bc8
+1051bc4 bl #0xd2b72c
+1051bc8 mov x0, x20
+1051bcc mov x1, xzr
+1051bd0 bl #0xe80188 A3Game.BattleSys$$IsPengPengTuTeng
+1051bd4 tbnz w0, #0, #0x1051c20
+1051bd8 ldr x0, [x21]
+1051bdc bl #0x17ec894 A3Game.BaseLogicSys<object>$$get_Instance
+1051be0 mov x20, x0
+1051be4 cbnz x20, #0x1051bec
+1051be8 bl #0xd2b72c
+1051bec mov x0, x20
+1051bf0 mov x1, xzr
+1051bf4 bl #0xe83dd4 A3Game.BattleSys$$IsIslandAdventure
+1051bf8 tbnz w0, #0, #0x1051c20
+1051bfc ldr x0, [x21]
+1051c00 bl #0x17ec894 A3Game.BaseLogicSys<object>$$get_Instance
+1051c04 mov x20, x0
+1051c08 cbnz x20, #0x1051c10
+1051c0c bl #0xd2b72c
+1051c10 mov x0, x20
+1051c14 mov x1, xzr
+1051c18 bl #0xe83df4 A3Game.BattleSys$$IsTanShe
+1051c1c tbz w0, #0, #0x1051ce8
+1051c20 ldr x20, [x19, #0x30]
+1051c24 cbnz x20, #0x1051c30
+1051c28 mov x0, xzr
+1051c2c bl #0xd2b72c
+1051c30 mov x0, x20
+1051c34 mov x1, xzr
+1051c38 bl #0x1c511e0 UnityEngine.Component$$get_transform
+1051c3c ldr x21, [x19, #0x30]
+1051c40 mov x20, x0
+1051c44 cbnz x21, #0x1051c50
+1051c48 mov x0, xzr
+1051c4c bl #0xd2b72c
+1051c50 mov x0, x21
+1051c54 mov x1, xzr
+1051c58 bl #0x1c511e0 UnityEngine.Component$$get_transform
+1051c5c mov x21, x0
+1051c60 cbnz x21, #0x1051c68
+1051c64 bl #0xd2b72c
+1051c68 mov x0, x21
+1051c6c mov x1, xzr
+1051c70 bl #0x21784f4 UnityEngine.Transform$$get_localPosition
+1051c74 ldr x21, [x19, #0x30]
+1051c78 mov v8.16b, v0.16b
+1051c7c cbnz x21, #0x1051c88
+1051c80 mov x0, xzr
+1051c84 bl #0xd2b72c
+1051c88 mov x0, x21
+1051c8c mov x1, xzr
+1051c90 bl #0x1c511e0 UnityEngine.Component$$get_transform
+1051c94 mov x21, x0
+1051c98 cbnz x21, #0x1051ca0
+1051c9c bl #0xd2b72c
+1051ca0 mov x0, x21
+1051ca4 mov x1, xzr
+1051ca8 bl #0x21784f4 UnityEngine.Transform$$get_localPosition
+1051cac fmov s1, #3.00000000
+1051cb0 mov x0, sp
+1051cb4 mov v0.16b, v8.16b
+1051cb8 mov x1, xzr
+1051cbc str wzr, [sp, #8]
+1051cc0 str xzr, [sp]
+1051cc4 bl #0x217c0fc
+1051cc8 cbnz x20, #0x1051cd4
+1051ccc mov x0, xzr
+1051cd0 bl #0xd2b72c
+1051cd4 ldp s0, s1, [sp]
+1051cd8 ldr s2, [sp, #8]
+1051cdc mov x0, x20
+1051ce0 mov x1, xzr
+1051ce4 bl #0x2178598 UnityEngine.Transform$$set_localPosition
+1051ce8 bl #0x10516e8 A3Game.CameraMgr$$GetBaseWidth
+1051cec mov w20, w0
+1051cf0 str w20, [x19, #0x58]
+1051cf4 adrp x8, #0x2cd3000
+1051cf8 ldr x8, [x8, #0xf38]
+1051cfc ldr x19, [x19, #0x30]
+1051d00 ldr x8, [x8]
+1051d04 ldr x8, [x8, #0xb8]
+1051d08 ldr s8, [x8, #8]
+1051d0c cbnz x19, #0x1051d18
+1051d10 mov x0, xzr
+1051d14 bl #0xd2b72c
+1051d18 scvtf s0, w20
+1051d1c fmul s0, s8, s0
+1051d20 mov x0, x19
+1051d24 mov x1, xzr
+1051d28 bl #0x1c4f0a4 UnityEngine.Camera$$set_orthographicSize
+1051d2c ldp x29, x30, [sp, #0x30]
+1051d30 ldp x20, x19, [sp, #0x20]
+1051d34 ldr x21, [sp, #0x18]
+1051d38 ldr d8, [sp, #0x10]
+1051d3c add sp, sp, #0x40
+1051d40 ret
+
+A3Game.CameraMgr$$UpdateCamera
+1051474 str d8, [sp, #-0x40]!
+1051478 stp x22, x21, [sp, #0x10]
+105147c stp x20, x19, [sp, #0x20]
+1051480 stp x29, x30, [sp, #0x30]
+1051484 add x29, sp, #0x30
+1051488 mov x19, x0
+105148c ldr x0, [x19, #0x40]
+1051490 mov x1, xzr
+1051494 mov x2, xzr
+1051498 bl #0xdfce34 A3Game.GameActor$$op_Inequality
+105149c tbz w0, #0, #0x1051500
+10514a0 ldr x20, [x19, #0x50]
+10514a4 ldr x22, [x19, #0x40]
+10514a8 ldr x21, [x19, #0x28]
+10514ac cbnz x22, #0x10514b8
+10514b0 mov x0, xzr
+10514b4 bl #0xd2b72c
+10514b8 mov x0, x22
+10514bc mov x1, xzr
+10514c0 bl #0xdfcba8 A3Game.GameActor$$get_ModelTrans
+10514c4 ldr s8, [x19, #0x48]
+10514c8 mov x19, x0
+10514cc cbnz x20, #0x10514d8
+10514d0 mov x0, xzr
+10514d4 bl #0xd2b72c
+10514d8 mov x0, x20
+10514dc mov x1, x21
+10514e0 mov x2, x19
+10514e4 ldp x29, x30, [sp, #0x30]
+10514e8 ldp x20, x19, [sp, #0x20]
+10514ec ldp x22, x21, [sp, #0x10]
+10514f0 mov v0.16b, v8.16b
+10514f4 mov x3, xzr
+10514f8 ldr d8, [sp], #0x40
+10514fc b #0x16ec7ac A3Game.CameraSmooth$$SmootFollowCamera
+1051500 ldp x29, x30, [sp, #0x30]
+1051504 ldp x20, x19, [sp, #0x20]
+1051508 ldp x22, x21, [sp, #0x10]
+105150c ldr d8, [sp], #0x40
+1051510 ret
